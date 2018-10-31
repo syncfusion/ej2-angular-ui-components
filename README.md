@@ -1,1 +1,1 @@
-Repository for angular github-source
+# Syncfusion Angular UI Components Library
