@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### ListView
+
+#### New Features
+
+- Included `refreshItemHeight` public API to recalculate list item height in `UI Virtualization`.
+
 ## 16.3.27 (2018-10-23)
 
 ### ListView

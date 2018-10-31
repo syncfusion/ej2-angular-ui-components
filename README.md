@@ -1,1 +1,1 @@
-# ej2-angular-ui-components
+Repository for angular github-source
