@@ -1,1 +1,1 @@
-# ej2-angular-ui-components
+# Syncfusion Angular UI Components Library
