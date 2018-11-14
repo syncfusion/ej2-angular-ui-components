@@ -20,6 +20,7 @@ export function compile(templateEle: AngularElementType, helper?: Object):
             let context: Object = { $implicit: data };
             let conRef: ViewContainerRef = contRef ? contRef : component.viewContainerRef;
             let viewRef: EmbeddedViewRef<Object> = conRef.createEmbeddedView(templateEle as TemplateRef<Object>, context);
+            viewRef.markForCheck();
             let viewCollection: { [key: string]: EmbeddedViewRef<Object>[] } = component ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
             propName = propName ? propName : pName;

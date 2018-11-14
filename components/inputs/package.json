@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-inputs",
-	"version": "16.3.27",
+	"version": "16.3.21",
 	"description": "A package of Essential JS 2 input components such as Textbox, Color-picker, Masked-textbox, Numeric-textbox, Slider, Upload, and Form-validator that is used to get input from the users. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -119,7 +119,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-angular.git"
+		"url": "https://github.com/syncfusion/ej2-angular-inputs.git"
 	},
 	"scripts": {
 		"build": "gulp build"

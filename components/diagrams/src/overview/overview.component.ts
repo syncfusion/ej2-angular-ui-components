@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Overview } from '@syncfusion/ej2-diagrams';
 
 
@@ -24,6 +24,7 @@ export const twoWays: string[] = [''];
         
     }
 })
+@ComponentMixins([ComponentBase])
 export class OverviewComponent extends Overview implements IComponentBase {
 
     public tags: string[] = [''];
@@ -55,4 +56,3 @@ export class OverviewComponent extends Overview implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(OverviewComponent, [ComponentBase]);

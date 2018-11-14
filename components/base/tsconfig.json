@@ -17,7 +17,8 @@
     "allowJs": false,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "types": ["jasmine","jasmine-ajax","core-js"]
+    "types": ["jasmine","jasmine-ajax","core-js"],
+    "lib": [ "es2015", "dom" ]
   },
   "exclude": [
     "node_modules",

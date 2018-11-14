@@ -398,12 +398,12 @@ class ComponentBase {
         if (eventArgs) {
             eventArgs.name = eventName;
         }
-        if (!isUndefined(eventObj)) {
-            eventObj.next(eventArgs);
-        }
         let localEventObj = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
         if (!isUndefined(localEventObj)) {
             localEventObj.call(this, eventArgs);
+        }
+        if (!isUndefined(eventObj)) {
+            eventObj.next(eventArgs);
         }
         this.isProtectedOnChange = prevDetection;
     }
@@ -505,6 +505,7 @@ function compile(templateEle, helper) {
             let context = { $implicit: data };
             let conRef = contRef ? contRef : component.viewContainerRef;
             let viewRef = conRef.createEmbeddedView(templateEle, context);
+            viewRef.markForCheck();
             let viewCollection = component ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
             propName = propName ? propName : pName;

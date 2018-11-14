@@ -64,6 +64,9 @@ export class GridComponent extends Grid implements IComponentBase {
     @ContentChild('editSettingsTemplate')
     @Template()
     public editSettings_template: any;
+    @ContentChild('groupSettingsCaptionTemplate')
+    @Template()
+    public groupSettings_captionTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

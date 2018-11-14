@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, forwardRef, ContentChild } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Uploader } from '@syncfusion/ej2-inputs';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { FilesDirective } from './files.directive';
@@ -32,7 +32,6 @@ export const twoWays: string[] = [];
         childFiles: new ContentChild(FilesDirective)
     }
 })
-@ComponentMixins([ComponentBase, FormBase])
 export class UploaderComponent extends Uploader implements IComponentBase {
     public childFiles: any;
     public tags: string[] = ['files'];
@@ -88,3 +87,4 @@ export class UploaderComponent extends Uploader implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
+applyMixins(UploaderComponent, [ComponentBase, FormBase]);

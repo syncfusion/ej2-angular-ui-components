@@ -2,12 +2,6 @@
 
 ## [Unreleased]
 
-### CheckBox
-
-#### Bug Fixes
-
-- Change event triggers twice issue fixed.
-
 ## 16.2.49 (2018-08-21)
 
 ### Common
@@ -166,6 +160,14 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Label** - Supports label and its positioning.
 - **Sizes** - Provided with different sizes of RadioButton.
 
+
+## 16.3.29 (2018-10-31)
+
+### CheckBox
+
+#### Bug Fixes
+
+- Change event triggers twice issue fixed.
 
 ## 16.3.25 (2018-10-15)
 

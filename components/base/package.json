@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "16.3.21",
+	"version": "16.3.30",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -16,14 +16,14 @@
 		"ng"
 	],
 	"peerDependencies": {
-		"@angular/common": "2.2.1 - 6.10.0",
-		"@angular/compiler": "2.2.1 - 6.10.0",
-		"@angular/core": "2.2.1 - 6.10.0",
-		"@angular/forms": "2.2.1 - 6.10.0",
-		"@angular/http": "2.2.1 - 6.10.0",
-		"@angular/platform-browser": "2.2.1 - 6.10.0",
-		"@angular/platform-browser-dynamic": "2.2.1 - 6.10.0",
-		"@angular/router": "2.2.1 - 6.10.0"
+		"@angular/common": "2.2.1 - 7.10.0",
+		"@angular/compiler": "2.2.1 - 7.10.0",
+		"@angular/core": "2.2.1 - 7.10.0",
+		"@angular/forms": "2.2.1 - 7.10.0",
+		"@angular/http": "2.2.1 - 7.10.0",
+		"@angular/platform-browser": "2.2.1 - 7.10.0",
+		"@angular/platform-browser-dynamic": "2.2.1 - 7.10.0",
+		"@angular/router": "2.2.1 - 7.10.0"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
@@ -42,7 +42,7 @@
 		"@angular/platform-browser-dynamic": "2.2.1 - 4.10.0",
 		"@angular/router": "2.2.1 - 4.10.0",
 		"@types/chai": "^3.4.28",
-		"@types/core-js": "0.9.35",
+		"@types/core-js": "0.9.39",
 		"@types/jasmine": "^2.2.29",
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/node": "^6.0.46",
@@ -74,7 +74,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-angular-base.git"
+		"url": "https://github.com/syncfusion/ej2-angular-ui-components"
 	},
 	"homepage": "https://www.syncfusion.com/products/angular",
 	"scripts": {

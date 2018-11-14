@@ -52,13 +52,13 @@ export function addModuleImportToModule(
     }
 
     moduleName.split(',').forEach((module) => {
-        if (!isImported(moduleSource, module.trim(), src) && module !== '') {
+        if (!isImported(<any>moduleSource, module.trim(), src) && module !== '') {
             modulesToBeAdded.push(module);
         }
     });
 
     if (modulesToBeAdded.length) {
-        const changes: Change[] = addImportToModule(moduleSource, modulePath, modulesToBeAdded.toString().trim(), src);
+        const changes: Change[] = addImportToModule(<any>moduleSource, modulePath, modulesToBeAdded.toString().trim(), src);
         const recorder: UpdateRecorder = host.beginUpdate(modulePath);
 
         changes.forEach((change: any) => {

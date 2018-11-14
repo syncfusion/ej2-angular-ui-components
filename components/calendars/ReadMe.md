@@ -47,9 +47,9 @@ The `calendar` is a graphical user interface component that displays a Gregorian
 #### Resources
 
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/calendar/getting-started.html?utm_source=npm&utm_campaign=calendar)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/calendar/api-calendarComponent.html?utm_source=npm&utm_campaign=calendar)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/calendar?utm_source=npm&utm_campaign=calendar)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/default)
-* [Product page](https://www.syncfusion.com/products/angular/calendar)
+* [Product page](https://www.syncfusion.com/angular-ui-components/calendar?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ### DatePicker
 
@@ -65,9 +65,9 @@ The date picker is inherited from the calendar component. So, all the key featur
 #### Resources
 
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started.html?utm_source=npm&utm_campaign=datepicker)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/datepicker/api-datePickerComponent.html?utm_source=npm&utm_campaign=datepicker)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/datepicker?utm_source=npm&utm_campaign=datepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datepicker#/material/datepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular/datepicker)
+* [Product page](https://www.syncfusion.com/angular-ui-components/datepicker?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ### TimePicker
 
@@ -87,9 +87,9 @@ The date picker is inherited from the calendar component. So, all the key featur
 #### Resources
 
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started.html?utm_source=npm&utm_campaign=timepicker)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/timepicker/api-timePickerComponent.html?utm_source=npm&utm_campaign=timepicker)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/timepicker?utm_source=npm&utm_campaign=timepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular/timepicker)
+* [Product page](https://www.syncfusion.com/angular-ui-components/time-picker?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ### DateTimePicker
 
@@ -99,15 +99,15 @@ The `date time picker` is a graphical user interface component that allows an en
 
 The date time picker is inherited from the date picker and time picker component. So, all the key features of the date picker and time picker component can be accessed in the date time picker component. Additionally, it has some specific features such as `Date time range` and `Date time format`, which are described below.
 
-* [Date time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/range) - Restricts the entry or selection of values within a specific range of dates and times by using `min` and `max` properties.
-* [Date time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/format) - The control’s input value can be custom formatted apart from the default culture’s specific date time format.
+* [Date time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/date-time-range) - Restricts the entry or selection of values within a specific range of dates and times by using `min` and `max` properties.
+* [Date time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/date-time-format) - The control’s input value can be custom formatted apart from the default culture’s specific date time format.
 
 #### Resources
 
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started.html?utm_source=npm&utm_campaign=datetimepicker)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/datetimepicker/api-dateTimePickerComponent.html?utm_source=npm&utm_campaign=datetimepicker)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker?utm_source=npm&utm_campaign=datetimepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular/datetimepicker)
+* [Product page](https://www.syncfusion.com/angular-ui-components/datetime-picker?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ### DateRangePicker
 
@@ -127,19 +127,19 @@ The `date range picker` is a graphical user interface control that allows an end
 #### Resources
 
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started.html?utm_source=npm&utm_campaign=daterangepicker)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/daterangepicker/api-dateRangePickerComponent.html?utm_source=npm&utm_campaign=daterangepicker)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker?utm_source=npm&utm_campaign=daterangepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular/daterangepicker)
+* [Product page](https://www.syncfusion.com/angular-ui-components/date-range-picker?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ## Supported Frameworks
 
 Date time components are also offered in the following list of frameworks.
 
-* [React](https://github.com/syncfusion/ej2-react-calendars?utm_source=npm&utm_campaign=calendars)
-* [VueJS](https://github.com/syncfusion/ej2-vue-calendars?utm_source=npm&utm_campaign=calendars)
-* [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore/calendar)
-* [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc/calendar)
-* [JavaScript](https://www.syncfusion.com/products/javascript/calendar)
+* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-calendars)
+* [React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-angular-calendars)
+* [Vue](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-angular-calendars)
+* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-calendars)
+* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-calendars)
 
 ## Showcase samples
 
@@ -147,22 +147,22 @@ Date time components are also offered in the following list of frameworks.
 
 2. Loan calculator ([Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=datepicker)) - Date picker component in this showcase sample displays the balance from monthly payment.
 
-3. Stock chart ([Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component in this showcase sample to display the stock analysis.
+3. Stock chart ([Source](https://github.com/syncfusion/ej2-showcase-angular-stockChart),[Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component in this showcase sample to display the stock analysis.
 
 ## Support
 
 Product support is available through the following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=calendar) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=calendar).
-* New [GitHub issue](https://github.com/syncfusion/ej2-ng-calendars/issues/new).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
 * Ask your queries in Stack Overflow with tag `syncfusion`, `ej2`, and so on.
 
 ## License
 
-Check the license details [here](https://github.com/syncfusion/ej2/blob/master/license).
+Check the license details [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-ng-calendars/blob/master/CHANGELOG.md).
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/calendars/CHANGELOG.md).
 
 © Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

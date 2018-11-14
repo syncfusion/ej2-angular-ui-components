@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 16.3.32 (2018-11-15)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with date and time displaying wrongly on `quick popup` in the presence of Daylight Saving Time has been fixed.
+
+## 16.3.31 (2018-11-07)
+
+### Schedule
+
+#### Breaking Changes
+
+- Misalignment issue with edit and delete icons on edit `event popup` has been fixed.
+
+## 16.3.29 (2018-10-31)
+
 ### Schedule
 
 #### New Features
@@ -148,6 +166,14 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
 - **RTL** - Supports displaying the component to display in the direction from right to left.
 
+
+## 16.3.30 (2018-11-01)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with the template options of `headerRows` property, while defining it within the angular template has been fixed.
 
 ## 16.3.22 (2018-09-25)
 

@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PivotView } from '@syncfusion/ej2-pivotview';
 
 
@@ -24,7 +24,6 @@ export const twoWays: string[] = ['datasource'];
 
     }
 })
-@ComponentMixins([ComponentBase])
 export class PivotViewComponent extends PivotView implements IComponentBase {
 
 
@@ -61,3 +60,4 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
+applyMixins(PivotViewComponent, [ComponentBase]);

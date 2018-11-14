@@ -18,19 +18,19 @@ npm install @syncfusion/ej2-angular-lists
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/list-view/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=listview)
+* [Getting Started](https://ej2.syncfusion.com/angular/documentation/list-view/getting-started.html?utm_source=npm&utm_campaign=listview)
 * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=listview#/material/listview/default)
-* [Product Page](https://www.syncfusion.com/products/angular/listview)
+* [Product Page](https://www.syncfusion.com/angular-ui-components/listview)
 
 ## Supported Frameworks
 
 `Lists` component is also offered in following list of frameworks.
 
-1. [React](https://github.com/syncfusion/ej2-react-lists?utm_source=npm&utm_campaign=listview)
-2. [VueJS](https://github.com/syncfusion/ej2-vue-lists?utm_source=npm&utm_campaign=listview)
-3. [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore/listview)
-4. [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc/listview)
-5. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/listview)
+1. [React](https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/lists?utm_source=npm&utm_campaign=listview)
+2. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/lists?utm_source=npm&utm_campaign=listview)
+3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/listview)
+4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview)
+5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/listview)
 
 ## Showcase samples
 
@@ -58,15 +58,15 @@ npm install @syncfusion/ej2-angular-lists
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=listview) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=listview).
-* New [GitHub issue](https://github.com/syncfusion/ej2-ng-lists/issues/new).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_campaign=listview) with tag `syncfusion` and `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-ng-lists/blob/master/license?utm_source=npm&utm_campaign=listview).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=listview).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-ng-lists/blob/master/CHANGELOG.md?utm_source=npm&utm_campaign=listview)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/lists/CHANGELOG.md?utm_source=npm&utm_campaign=listview)
 
 © Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

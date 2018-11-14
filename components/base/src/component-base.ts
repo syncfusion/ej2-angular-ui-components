@@ -148,6 +148,7 @@ export class ComponentBase<T> {
             this.clearTemplate(null);
         }
     }
+
     //tslint:disable-next-line
     public clearTemplate(templateNames?: string[], index?: any): void {
         clearTemplate(this, templateNames, index);
@@ -228,12 +229,13 @@ export class ComponentBase<T> {
             (<{ name: string }>eventArgs).name = eventName;
         }
 
-        if (!isUndefined(eventObj)) {
-            eventObj.next(eventArgs);
-        }
+
         let localEventObj: Function = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
         if (!isUndefined(localEventObj)) {
             localEventObj.call(this, eventArgs);
+        }
+        if (!isUndefined(eventObj)) {
+            eventObj.next(eventArgs);
         }
 
         this.isProtectedOnChange = prevDetection;

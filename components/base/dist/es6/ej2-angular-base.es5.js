@@ -430,12 +430,12 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         if (eventArgs) {
             eventArgs.name = eventName;
         }
-        if (!isUndefined(eventObj)) {
-            eventObj.next(eventArgs);
-        }
         var localEventObj = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
         if (!isUndefined(localEventObj)) {
             localEventObj.call(this, eventArgs);
+        }
+        if (!isUndefined(eventObj)) {
+            eventObj.next(eventArgs);
         }
         this.isProtectedOnChange = prevDetection;
     };
@@ -542,6 +542,7 @@ function compile(templateEle, helper) {
             var context = { $implicit: data };
             var conRef = contRef_1 ? contRef_1 : component.viewContainerRef;
             var viewRef = conRef.createEmbeddedView(templateEle, context);
+            viewRef.markForCheck();
             var viewCollection = component ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
             propName = propName ? propName : pName_1;

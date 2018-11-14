@@ -15,7 +15,7 @@ export function applyMixins(derivedClass: any, baseClass: any[]): void {
 /* tslint:disable */
 export function ComponentMixins(baseClass: Function[]): ClassDecorator {
     return function (derivedClass: Function) {
-        applyMixins(derivedClass, baseClass);
+       applyMixins(derivedClass, baseClass);
     };
 }
 

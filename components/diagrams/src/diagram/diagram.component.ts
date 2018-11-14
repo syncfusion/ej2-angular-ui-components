@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Diagram } from '@syncfusion/ej2-diagrams';
 
 import { LayersDirective } from './layers.directive';
@@ -28,6 +28,7 @@ export const twoWays: string[] = [''];
         childNodes: new ContentChild(NodesDirective)
     }
 })
+@ComponentMixins([ComponentBase])
 export class DiagramComponent extends Diagram implements IComponentBase {
     public childLayers: any;
     public childConnectors: any;
@@ -75,4 +76,3 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(DiagramComponent, [ComponentBase]);

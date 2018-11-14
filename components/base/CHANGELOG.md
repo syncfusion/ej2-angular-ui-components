@@ -2,15 +2,61 @@
 
 ## [Unreleased]
 
-## 16.3.17 (2018-09-12)
+## 16.3.32 (2018-11-15)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed angular ng-template `interpolation` issue when using Change Detection `onPush strategy`.
+
+## 16.3.29 (2018-10-31)
 
 ### Common
 
 #### New Features
 
+- Upgraded TypeScript version to 3.0
+
+## 16.3.24 (2018-10-09)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed Angular production build issue.
+
+## 16.3.22 (2018-09-25)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed `ngModel` value update issue.
+
+## 16.3.21 (2018-09-22)
+
+### Common
+
+#### Breaking Changes
+
+- Angular `npm` package name has been changed from `ng` to `angular`. i.e. `ej2-ng-base` to `ej2-angular-base`.
+- The individual `npm` package will no longer bundle dependent component's style. The online web tool [CRG](https://crg.syncfusion.com/) can be used to combine specific set of component and its dependent component styles.
+
+## 16.3.17 (2018-09-12)
+
+### Common
+
+#### Breaking Changes
+
+- Angular `npm` package name has been changed from `ng` to `angular`. i.e. `ej2-ng-base` to `ej2-angular-base`.
+- The individual `npm` package will no longer bundle dependent component's style. The online web tool [CRG](https://crg.syncfusion.com/) can be used to combine specific set of component and its dependent component styles.
+
+#### New Features
+
 - Provided Angular [Schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2) support for our Essential JS 2 Angular suite, which performs the below,
-    - Installs the specific package.
-    - Import the required modules in `app.module.ts`.
+- Installs the specific package.
+- Import the required modules in `app.module.ts`.
 
 ## 16.2.48 (2018-08-14)
 
@@ -20,7 +66,7 @@
 
 - Fixed Angular `attribute` issue.
 
-## 16.2.47 (2018-08-09)
+## 16.2.47 (2018-08-07)
 
 ### Common
 

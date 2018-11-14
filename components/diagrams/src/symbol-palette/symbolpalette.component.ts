@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { SymbolPalette } from '@syncfusion/ej2-diagrams';
 
 import { PalettesDirective } from './palettes.directive';
@@ -24,6 +24,7 @@ export const twoWays: string[] = [''];
         childPalettes: new ContentChild(PalettesDirective)
     }
 })
+@ComponentMixins([ComponentBase])
 export class SymbolPaletteComponent extends SymbolPalette implements IComponentBase {
     public childPalettes: any;
     public tags: string[] = ['palettes'];
@@ -56,4 +57,3 @@ export class SymbolPaletteComponent extends SymbolPalette implements IComponentB
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(SymbolPaletteComponent, [ComponentBase]);

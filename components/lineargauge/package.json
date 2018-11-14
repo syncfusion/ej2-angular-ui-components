@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-lineargauge",
-	"version": "16.3.24",
+	"version": "16.3.30",
 	"description": "Essential JS 2 LinearGauge Components for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -59,7 +59,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/syncfusion/ej2-angular.git"
+		"url": "https://github.com/syncfusion/ej2-angular-ui-components.git"
 	},
 	"scripts": {
 		"build": "gulp build"

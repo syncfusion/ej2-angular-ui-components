@@ -1,8 +1,8 @@
 [![coverage](http://ej2.syncfusion.com/badges/ej2-angular-base/coverage.svg)](http://ej2.syncfusion.com/badges/ej2-angular-base)
 
-# ej2-ng-base
+# ej2-angular-base
 
-A common package of Essential JS 2 for Angular which contains base libraries, methods and class definitions.
+A common package of Syncfusion Angular UI Components which contains base libraries, methods and class definitions.
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
@@ -10,17 +10,17 @@ A common package of Essential JS 2 for Angular which contains base libraries, me
 
 ## Setup
 
-To install `ej2-ng-base` and its dependent packages, use the following command
+To install `ej2-angular-base` and its dependent packages, use the following command
 
 ```sh
-npm install @syncfusion/ej2-ng-base
+npm install @syncfusion/ej2-angular-base
 ```
 
 ## Resources
 
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/common/getting-started.html?utm_source=npm&utm_campaign=ej2-ng-base)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Product Page](https://www.syncfusion.com/products/angular?utm_source=npm&utm_campaign=ej2-ng-base)
+* [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_campaign=ej2-angular-base)
+* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-anuglar-base)
+* [Product Page](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-angular-base)
 
 ## Framework highlights
 
@@ -56,35 +56,35 @@ With our commitment to at least four major updates per year, you receive the mos
 
 The Essential JS 2 is also offered in following list of frameworks.
 
-* [JavaScript](https://www.syncfusion.com/products/javascript?utm_source=npm&utm_campaign=ej2-ng-base)
-* [React](https://www.syncfusion.com/products/react?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Vue.js](https://www.syncfusion.com/products/vue?utm_source=npm&utm_campaign=ej2-ng-base)
-* [ASP.NET Core](https://www.syncfusion.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-ng-base)
-* [ASP.NET MVC](https://www.syncfusion.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-ng-base)
+* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-base)
+* [React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-angular-base)
+* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-angular-base)
+* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-base)
+* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-base)
 
 ## Showcase Applications
 
-* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-ng-base)
-* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-ng-base)
+* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-angular-base)
+* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_campaign=ej2-angular-base)
+* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_campaign=ej2-angular-base)
+* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-angular-base)
+* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-angular-base)
 
 ## Support
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-ng-base) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-ng-base).
-* New [GitHub issue](https://github.com/syncfusion/ej2-base/issues/new).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-angular-base) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-angular-base).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-ng-base/blob/master/license).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
 
 ## Changelog
 
-Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes?utm_source=npm&utm_campaign=ej2-ng-base)
+Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes?utm_source=npm&utm_campaign=ej2-angular-base)
 
     © Copyright 2018 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
