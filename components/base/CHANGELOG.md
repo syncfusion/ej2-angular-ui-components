@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 16.3.32 (2018-11-15)
+## 16.3.32 (2018-11-13)
+
+### Common
+
+#### New Features
+
+- Provided `Angular 7` support.
 
 ### Common
 

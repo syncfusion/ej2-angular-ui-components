@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, forwardRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 
@@ -32,6 +32,7 @@ export const twoWays: string[] = ['value'];
 
     }
 })
+@ComponentMixins([ComponentBase, FormBase])
 export class NumericTextBoxComponent extends NumericTextBox implements IComponentBase {
 
 
@@ -76,4 +77,3 @@ export class NumericTextBoxComponent extends NumericTextBox implements IComponen
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(NumericTextBoxComponent, [ComponentBase, FormBase]);

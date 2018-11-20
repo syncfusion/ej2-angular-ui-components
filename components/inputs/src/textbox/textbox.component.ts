@@ -1,12 +1,12 @@
 import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, forwardRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { TextBox } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['blur','change','focus','input','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','locale','placeholder','readonly','showClearButton','type','value'];
-export const outputs: string[] = ['created','destroyed','valueChange'];
+export const inputs: string[] = ['cssClass','enablePersistence','enableRtl','enabled','floatLabelType','locale','placeholder','readonly','showClearButton','type','value'];
+export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -32,6 +32,7 @@ export const twoWays: string[] = ['value'];
 
     }
 })
+@ComponentMixins([ComponentBase, FormBase])
 export class TextBoxComponent extends TextBox implements IComponentBase {
 
 
@@ -76,4 +77,3 @@ export class TextBoxComponent extends TextBox implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(TextBoxComponent, [ComponentBase, FormBase]);

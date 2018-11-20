@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { HeatMap } from '@syncfusion/ej2-heatmap';
 
 
@@ -24,6 +24,7 @@ export const twoWays: string[] = [''];
         
     }
 })
+@ComponentMixins([ComponentBase])
 export class HeatMapComponent extends HeatMap implements IComponentBase {
 
     public tags: string[] = [''];
@@ -58,4 +59,3 @@ export class HeatMapComponent extends HeatMap implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(HeatMapComponent, [ComponentBase]);

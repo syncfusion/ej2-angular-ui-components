@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, forwardRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Slider } from '@syncfusion/ej2-inputs';
 
 
@@ -32,6 +32,7 @@ export const twoWays: string[] = ['value'];
 
     }
 })
+@ComponentMixins([ComponentBase, FormBase])
 export class SliderComponent extends Slider implements IComponentBase {
 
 
@@ -77,4 +78,3 @@ export class SliderComponent extends Slider implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(SliderComponent, [ComponentBase, FormBase]);
