@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortsDirective } from './ports.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'children', 'collapseIcon', 'constraints', 'data', 'excludeFromLayout', 'expandIcon', 'height', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'shadow', 'shape', 'style', 'tooltip', 'visible', 'width', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -66,6 +66,24 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public collapseIcon: any;
     /** 
+     * Used to define a index of column in the grid
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public columnIndex: any;
+    /** 
+     * Merge the column use the property in the grid container
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public columnSpan: any;
+    /** 
+     * Used to define the column for the grid container
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public columns: any;
+    /** 
      * Enables/Disables certain features of nodes 
      * * None - Disable all node Constraints 
      * * Select - Enables node to be selected 
@@ -99,6 +117,12 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public constraints: any;
     /** 
+     * Defines the type of the container
+     * @aspdefaultvalueignore 
+     * @default null
+     */
+    public container: any;
+    /** 
      * Sets the data source of the node
      */
     public data: any;
@@ -118,6 +142,11 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @default undefined
      */
     public height: any;
+    /** 
+     * Sets the horizontalAlignment of the node
+     * @default 'Stretch'
+     */
+    public horizontalAlignment: any;
     /** 
      * Represents the unique id of nodes/connectors
      * @default ''
@@ -184,6 +213,24 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public rotateAngle: any;
     /** 
+     * Used to define a index of row in the grid
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public rowIndex: any;
+    /** 
+     * Merge the row use the property in the grid container
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public rowSpan: any;
+    /** 
+     * Used to define the rows for the grid container
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public rows: any;
+    /** 
      * Defines the shadow of a shape/path
      * @default null
      */
@@ -205,6 +252,11 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @default {}
      */
     public tooltip: any;
+    /** 
+     * Sets the verticalAlignment of the node
+     * @default 'Stretch'
+     */
+    public verticalAlignment: any;
     /** 
      * Sets the visibility of the node/connector
      * @default true

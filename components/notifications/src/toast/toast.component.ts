@@ -18,7 +18,7 @@ export const twoWays: string[] = [''];
     selector: 'ejs-toast',
     inputs: inputs,
     outputs: outputs,
-    template: '<ng-content></ng-content>',
+    template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
         childButtons: new ContentChild(ButtonModelPropDirective)

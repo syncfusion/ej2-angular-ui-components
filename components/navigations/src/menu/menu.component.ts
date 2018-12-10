@@ -4,7 +4,7 @@ import { Menu } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','fields','filter','items','locale','orientation','showItemOnClick','target','template'];
+export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','enableScrolling','fields','filter','items','locale','orientation','showItemOnClick','target','template'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','created','onClose','onOpen','select'];
 export const twoWays: string[] = [''];
 

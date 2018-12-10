@@ -4,7 +4,7 @@ import { TreeView } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','animation','autoCheck','checkedNodes','cssClass','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowSelect','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
+export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','animation','autoCheck','checkedNodes','cssClass','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowSelect','loadOnDemand','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
 export const outputs: string[] = ['created','dataBound','dataSourceChanged','destroyed','drawNode','keyPress','nodeChecked','nodeChecking','nodeClicked','nodeCollapsed','nodeCollapsing','nodeDragStart','nodeDragStop','nodeDragging','nodeDropped','nodeEdited','nodeEditing','nodeExpanded','nodeExpanding','nodeSelected','nodeSelecting'];
 export const twoWays: string[] = [''];
 
@@ -34,7 +34,7 @@ export class TreeViewComponent extends TreeView implements IComponentBase {
      * is set, the template content overrides the displayed node text. The property accepts template string 
      * [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
      * or HTML element ID holding the content. For more information on template concept, refer to 
-     * [Template](./template.html).
+     * [Template](../treeview/template/).
      * @default null
      */
     @ContentChild('nodeTemplate')

@@ -10,4 +10,8 @@ export { RadioButtonAllModule } from './radio-button/radiobutton-all.module';
 export { SwitchComponent} from './switch/switch.component';
 export { SwitchModule } from './switch/switch.module';
 export { SwitchAllModule } from './switch/switch-all.module';
+export {ChipDirective,ChipsDirective} from './chips/chips.directive';
+export { ChipListComponent} from './chips/chiplist.component';
+export { ChipListModule } from './chips/chiplist.module';
+export { ChipListAllModule } from './chips/chiplist-all.module';
 export * from '@syncfusion/ej2-buttons';

@@ -83,7 +83,7 @@ function addEJ2PackageRootConfig(options: OptionsSchema, libOptions: LibOptionsS
             validModules = libOptions.moduleName;
         }
         (options.modulePath !== undefined && options.modulePath !== "") ? addModuleImportToCustomModule(host, options, validModules, libOptions) :
-            addModuleImportToRootModule(host, validModules, libOptions.pkgName, project);;
+            addModuleImportToRootModule(host, validModules, libOptions.pkgName, project);
         return host;
     };
 }

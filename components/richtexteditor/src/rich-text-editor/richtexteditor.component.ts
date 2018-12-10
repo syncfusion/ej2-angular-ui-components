@@ -39,7 +39,6 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
     public valueChange: any;
     /** 
      * Accepts the template design and assigns it as RichTextEditor’s content. 
-     * For more details about the available template options refer to [`Template`](./templates.html) documentation. 
      * The built-in template engine which provides options to compile template string into a executable function. 
      * For EX: We have expression evolution as like ES6 expression string literals
      * @default null

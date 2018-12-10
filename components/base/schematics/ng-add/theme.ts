@@ -22,7 +22,7 @@ export function addEJ2ThemeToPackageJson(options: OptionsSchema, libOptions: Lib
  */
 export function addEJ2Theme(options: OptionsSchema, theme: string): (host: Tree) => Tree {
     return (host: Tree) => {
-        const themePath: string = `@import \'node_modules/@syncfusion/ej2-${theme}-theme/styles/${theme}.css\';\n`;
+        const themePath: string = `@import \'..\/node_modules/@syncfusion/ej2-${theme}-theme/styles/${theme}.css\';\n`;
         const strippedThemePath = `./node_modules/@syncfusion/ej2-${theme}-theme/styles/${theme}.css`;
         const workspace: WorkspaceSchema = getWorkspace(host);
         const project: WorkspaceProject = getProjectFromWorkspace(workspace, options.project);

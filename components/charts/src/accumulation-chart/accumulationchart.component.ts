@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['annotations','background','border','currencyCode','dataSource','enableAnimation','enablePersistence','enableRtl','enableSmartLabels','height','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','width'];
+export const inputs: string[] = ['annotations','background','border','center','currencyCode','dataSource','enableAnimation','enablePersistence','enableRtl','enableSmartLabels','height','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','width'];
 export const outputs: string[] = ['animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender'];
 export const twoWays: string[] = [''];
 

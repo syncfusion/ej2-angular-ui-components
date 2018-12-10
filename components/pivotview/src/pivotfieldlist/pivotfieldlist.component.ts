@@ -1,10 +1,10 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PivotFieldList } from '@syncfusion/ej2-pivotview';
 
 
 
-export const inputs: string[] = ['allowCalculatedField','cssClass','dataSource','enablePersistence','enableRtl','locale','renderMode','showValuesButton','target'];
+export const inputs: string[] = ['allowCalculatedField','allowDeferLayoutUpdate','cssClass','dataSource','enablePersistence','enableRtl','locale','maxNodeLimitInMemberEditor','renderMode','showValuesButton','target'];
 export const outputs: string[] = ['created','dataBound','destroyed','enginePopulated','enginePopulating','load','onFieldDropped'];
 export const twoWays: string[] = [''];
 
@@ -24,6 +24,7 @@ export const twoWays: string[] = [''];
 
     }
 })
+@ComponentMixins([ComponentBase])
 export class PivotFieldListComponent extends PivotFieldList implements IComponentBase {
 
 
@@ -55,4 +56,3 @@ export class PivotFieldListComponent extends PivotFieldList implements IComponen
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(PivotFieldListComponent, [ComponentBase]);

@@ -18,7 +18,7 @@ export const twoWays: string[] = [];
     selector: 'ejs-splitbutton',
     inputs: inputs,
     outputs: outputs,
-    template: '<ng-content></ng-content>',
+    template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
 

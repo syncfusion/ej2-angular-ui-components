@@ -4,7 +4,7 @@ import { TreeMap } from '@syncfusion/ej2-treemap';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { LevelsDirective } from './levels.directive';
 
-export const inputs: string[] = ['background','border','dataSource','description','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
+export const inputs: string[] = ['background','border','colorValuePath','dataSource','description','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
 export const outputs: string[] = ['beforePrint','click','drillEnd','drillStart','itemClick','itemHighlight','itemMove','itemRendering','itemSelected','load','loaded','mouseMove','resize','tooltipRendering'];
 export const twoWays: string[] = [''];
 

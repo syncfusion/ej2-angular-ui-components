@@ -18,7 +18,7 @@ export const twoWays: string[] = ['isOpen'];
     selector: 'ejs-sidebar',
     inputs: inputs,
     outputs: outputs,
-    template: '<ng-content></ng-content>',
+    template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
 

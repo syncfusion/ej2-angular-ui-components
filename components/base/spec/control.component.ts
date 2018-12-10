@@ -112,5 +112,4 @@ export class ControlComponent extends DemoBase implements IComponentBase {
 
 }
 
-
 export const ControlComponents = [ControlComponent, ChildDirective, ChildsDirective, SubChildDirective, SubChildsDirective];

@@ -4,7 +4,7 @@ import { ContextMenu } from '@syncfusion/ej2-navigations';
 
 
 
-export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','fields','filter','items','locale','showItemOnClick','target','template'];
+export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','enableScrolling','fields','filter','items','locale','showItemOnClick','target','template'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','created','onClose','onOpen','select'];
 export const twoWays: string[] = [''];
 

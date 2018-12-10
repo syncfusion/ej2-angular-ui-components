@@ -1,7 +1,6 @@
 import { EventEmitter, ElementRef } from '@angular/core';
 import { getValue, setValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { ControlValueAccessor } from '@angular/forms';
-
 /**
  * Angular Form Base Module
  */

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 16.4.40-beta (2018-12-10)
+
+### Dialog
+
+#### New Features
+
+- Provided resizable support to the dialog for both modal dialog and modeless dialog (non-modal).
+
+- Provided two-way binding support to `visible` property of dialog.
+
 ## 16.3.32 (2018-11-13)
 
 ### Dialog
@@ -39,8 +49,6 @@
 #### New Features
 
 - Provided option to specify the type of the dialog's buttons such as submit, reset.
-
-- Provided two-way binding support to `visible` property of dialog.
 
 ## 16.3.21 (2018-09-22)
 

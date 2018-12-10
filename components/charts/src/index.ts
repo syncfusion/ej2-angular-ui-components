@@ -30,4 +30,16 @@ export {SmithchartSeriesDirective,SmithchartSeriesCollectionDirective} from './s
 export { SmithchartComponent} from './smithchart/smithchart.component';
 export { SmithchartModule } from './smithchart/smithchart.module';
 export { SmithchartAllModule, SmithchartLegendService, TooltipRenderService } from './smithchart/smithchart-all.module';
+export {StockChartTrendlineDirective,StockChartTrendlinesDirective} from './stock-chart/trendlines.directive';
+export {StockChartSeriesDirective,StockChartSeriesCollectionDirective} from './stock-chart/series.directive';
+export {StockChartStripLineDirective,StockChartStripLinesDirective} from './stock-chart/striplines.directive';
+export {StockChartAxisDirective,StockChartAxesDirective} from './stock-chart/axes.directive';
+export {StockChartRowDirective,StockChartRowsDirective} from './stock-chart/rows.directive';
+export {StockChartAnnotationDirective,StockChartAnnotationsDirective} from './stock-chart/annotations.directive';
+export {StockChartSelectedDataIndexDirective,StockChartSelectedDataIndexesDirective} from './stock-chart/selecteddataindexes.directive';
+export {StockChartPeriodDirective,StockChartPeriodsDirective} from './stock-chart/periods.directive';
+export {StockChartIndicatorDirective,StockChartIndicatorsDirective} from './stock-chart/indicators.directive';
+export { StockChartComponent} from './stock-chart/stockchart.component';
+export { StockChartModule } from './stock-chart/stockchart.module';
+export { StockChartAllModule } from './stock-chart/stockchart-all.module';
 export * from '@syncfusion/ej2-charts';

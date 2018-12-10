@@ -4,7 +4,7 @@ A package of Syncfusion angular UI Components (Essential JS 2) Input textbox com
 
 ![ej2-angular-inputs](https://ej2.syncfusion.com/products/images/input/readme.gif)
 
-> Input is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2?utm_source=npm&utm_campaign=input)
+> Input is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2/?utm_source=npm&utm_campaign=input)
 
 ## Setup
 
@@ -19,44 +19,44 @@ npm install @syncfusion/ej2-angular-inputs
 Following list of components are available in the package.
 
 * **ColorPicker** - Color picker is a user interface that is used to select and adjust color values.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started?utm_source=npm&utm_campaign=color-picker)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started/?utm_source=npm&utm_campaign=color-picker)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=color-picker#/material/color-picker/default)
   * [Product Page](https://www.syncfusion.com/angular-ui-components/color-picker)
 
 * **TextBox** - The text box component is an extended version of the HTML input control which is used to edit or display text input on a form.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/textbox/getting-started?utm_source=npm&utm_campaign=textbox)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/textbox/getting-started/?utm_source=npm&utm_campaign=textbox)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=textbox#/material/textboxes/default)
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/text-box?utm_source=npm&utm_campaign=text-box)
+  * [Product Page](https://www.syncfusion.com/angular-ui-components/text-box/?utm_source=npm&utm_campaign=text-box)
 
 * **MaskedTextBox** - MaskedTextBox allows the user to enter the valid input only based on the provided mask.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started?utm_source=npm&utm_campaign=maskedtextbox)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started/?utm_source=npm&utm_campaign=maskedtextbox)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=maskedtextbox#/material/maskedtextbox/default)
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/maskedtextbox?utm_source=npm&utm_campaign=maskedtextbox)
+  * [Product Page](https://www.syncfusion.com/angular-ui-components/maskedtextbox/?utm_source=npm&utm_campaign=maskedtextbox)
 
 * **NumericTextBox** - NumericTextBox is used to get the number inputs from the user. The input values can be incremented or decremented by a predefined step value.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started?utm_source=npm&utm_campaign=numerictextbox)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started/?utm_source=npm&utm_campaign=numerictextbox)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=numerictextbox#/material/numerictextbox/default)
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/numerictextbox?utm_source=npm&utm_campaign=numerictextbox)
+  * [Product Page](https://www.syncfusion.com/angular-ui-components/numerictextbox/?utm_source=npm&utm_campaign=numerictextbox)
 
 * **Slider** - The slider component allows you to select a value or range of values between the min and max range.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/slider/getting-started?utm_source=npm&utm_campaign=slider)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/slider/getting-started/?utm_source=npm&utm_campaign=slider)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=slider#/material/slider/default)
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/slider?utm_source=npm&utm_campaign=slider)
+  * [Product Page](https://www.syncfusion.com/angular-ui-components/slider/?utm_source=npm&utm_campaign=slider)
 
 * **Uploader** - The uploader component is an extended version of the HTML5 upload control which is used to upload images, documents, and other files to a server.
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started?utm_source=npm&utm_campaign=upload)
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started/?utm_source=npm&utm_campaign=upload)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=uploader#/material/uploader/default)
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/uploader?utm_source=npm&utm_campaign=uploader)
+  * [Product Page](https://www.syncfusion.com/angular-ui-components/uploader/?utm_source=npm&utm_campaign=uploader)
 
 ## Supported frameworks
 
 Input component is also offered in following list of frameworks.
 
 1. [React](https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/inputs?utm_source=npm&utm_campaign=input)
-2. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/inputs?utm_source=npm&utm_campaign=input)
-3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox)
-4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/input-mask)
-5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/range-slider)
+2. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/inputs/?utm_source=npm&utm_campaign=input)
+3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox/?utm_source=npm&utm_campaign=input)
+4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/input-mask/?utm_source=npm&utm_campaign=input)
+5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/range-slider/?utm_source=npm&utm_campaign=input)
 
 ## Showcase samples
 
@@ -117,14 +117,14 @@ Input component is also offered in following list of frameworks.
 
 Product support is available for through following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=input) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=input).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents/?utm_source=npm&utm_campaign=input) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2/?utm_source=npm&utm_campaign=input).
 * New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=input).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license/?utm_source=npm&utm_campaign=input).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/inputs/CHANGELOG.md?utm_source=npm&utm_campaign=input)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/inputs/CHANGELOG.md/?utm_source=npm&utm_campaign=input)

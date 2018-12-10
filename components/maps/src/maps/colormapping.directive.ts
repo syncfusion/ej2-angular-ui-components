@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'from', 'label', 'to', 'value'];
+let input: string[] = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
 let outputs: string[] = [];
 /**
  * ColorMapping Directive
@@ -47,6 +47,21 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
      * @default null
      */
     public label: any;
+    /** 
+     * To configure max opacity
+     * @default null
+     */
+    public maxOpacity: any;
+    /** 
+     * To configure min opacity
+     * @default null
+     */
+    public minOpacity: any;
+    /** 
+     * To enable or disable the legend
+     * @default true
+     */
+    public showLegend: any;
     /** 
      * To configure to
      * @aspdefaultvalueignore 

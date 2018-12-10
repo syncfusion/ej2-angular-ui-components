@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PivotViewComponent } from './pivotview.component';
 import { PivotViewModule } from './pivotview.module';
-import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll} from '@syncfusion/ej2-pivotview'
+import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough} from '@syncfusion/ej2-pivotview'
 
 
 export const GroupingBarService: ValueProvider = { provide: 'PivotViewGroupingBar', useValue: GroupingBar};
@@ -10,6 +10,7 @@ export const FieldListService: ValueProvider = { provide: 'PivotViewFieldList', 
 export const CalculatedFieldService: ValueProvider = { provide: 'PivotViewCalculatedField', useValue: CalculatedField};
 export const ConditionalFormattingService: ValueProvider = { provide: 'PivotViewConditionalFormatting', useValue: ConditionalFormatting};
 export const VirtualScrollService: ValueProvider = { provide: 'PivotViewVirtualScroll', useValue: VirtualScroll};
+export const DrillThroughService: ValueProvider = { provide: 'PivotViewDrillThrough', useValue: DrillThrough};
 
 /**
  * NgModule definition for the PivotView component with providers.
@@ -24,7 +25,8 @@ export const VirtualScrollService: ValueProvider = { provide: 'PivotViewVirtualS
         FieldListService,
         CalculatedFieldService,
         ConditionalFormattingService,
-        VirtualScrollService
+        VirtualScrollService,
+        DrillThroughService
     ]
 })
 export class PivotViewAllModule { }

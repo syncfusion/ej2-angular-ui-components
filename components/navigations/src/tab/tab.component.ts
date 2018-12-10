@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Tab } from '@syncfusion/ej2-navigations';
 
 import { TabItemsDirective } from './items.directive';
@@ -18,7 +18,7 @@ export const twoWays: string[] = [''];
     selector: 'ejs-tab',
     inputs: inputs,
     outputs: outputs,
-    template: '',
+    template: `<ng-content select='div'></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
         childItems: new ContentChild(TabItemsDirective)

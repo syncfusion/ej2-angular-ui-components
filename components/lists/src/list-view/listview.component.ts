@@ -31,10 +31,10 @@ export class ListViewComponent extends ListView implements IComponentBase {
 
     /** 
      * The ListView supports to customize the content of each list items with the help of template property. 
-     * Refer the documentation [here](./customizing-templates.html) 
+     * Refer the documentation [here](./listview/customizing-templates) 
      *  to know more about this property with demo.
      * 
-     * {% codeBlock src="list-view/template-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="listview/template-api/index.ts" %}{% endcodeBlock %}     
      * @default null
      */
     @ContentChild('template')
@@ -43,10 +43,10 @@ export class ListViewComponent extends ListView implements IComponentBase {
     /** 
      * The ListView has an option to custom design the group header title with the help of groupTemplate property. 
      * Refer the documentation [here] 
-     * (./customizing-templates.html#group-template) 
+     * (./listview/customizing-templates#group-template) 
      *  to know more about this property with demo.
      * 
-     * {% codeBlock src="list-view/grouptemplate-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="listview/grouptemplate-api/index.ts" %}{% endcodeBlock %}     
      * @default null
      */
     @ContentChild('groupTemplate')
@@ -55,10 +55,10 @@ export class ListViewComponent extends ListView implements IComponentBase {
     /** 
      * The ListView has an option to custom design the ListView header title with the help of headerTemplate property. 
      * Refer the documentation [here] 
-     * (./customizing-templates.html#header-template) 
+     * (./listview/customizing-templates#header-template) 
      *  to know more about this property with demo.
      * 
-     * {% codeBlock src="list-view/headertemplate-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="listview/headertemplate-api/index.ts" %}{% endcodeBlock %}     
      * @default null
      */
     @ContentChild('headerTemplate')

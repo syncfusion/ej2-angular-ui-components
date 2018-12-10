@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
-import { ComponentBase, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
+import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PivotView } from '@syncfusion/ej2-pivotview';
 
 
 
-export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowExcelExport','allowPdfExport','currencyCode','dataSource','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','locale','pivotValues','showFieldList','showGroupingBar','showValuesButton','width'];
-export const outputs: string[] = ['beforeExport','cellClick','created','dataBound','destroyed','enginePopulated','enginePopulating','load','onFieldDropped','datasourceChange'];
+export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','currencyCode','dataSource','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showTooltip','showValuesButton','width'];
+export const outputs: string[] = ['beforeExport','cellClick','cellSelected','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','hyperlinkCellClick','load','onFieldDropped','datasourceChange'];
 export const twoWays: string[] = ['datasource'];
 
 /**
@@ -24,6 +24,7 @@ export const twoWays: string[] = ['datasource'];
 
     }
 })
+@ComponentMixins([ComponentBase])
 export class PivotViewComponent extends PivotView implements IComponentBase {
 
 
@@ -38,6 +39,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('PivotViewCalculatedField')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('PivotViewConditionalFormatting')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('PivotViewVirtualScroll')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('PivotViewDrillThrough')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
@@ -60,4 +62,3 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
     public addTwoWay: (propList: string[]) => void;
 }
 
-applyMixins(PivotViewComponent, [ComponentBase]);

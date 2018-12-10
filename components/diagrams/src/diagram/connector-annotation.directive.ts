@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -71,6 +71,11 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      */
     public displacement: any;
     /** 
+     * Sets the space to be left between an annotation and its parent node/connector
+     * @default new Margin(20,20,20,20)
+     */
+    public dragLimit: any;
+    /** 
      * Sets the height of the text
      * @aspdefaultvalueignore 
      * @default undefined
@@ -123,6 +128,11 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * @default new TextStyle()
      */
     public style: any;
+    /** 
+     * Sets the textual description of the node/connector
+     * @default undefined
+     */
+    public template: any;
     /** 
      * Sets the vertical alignment of the text with respect to the parent node/connector 
      * * Stretch - Stretches the diagram element throughout its immediate parent 

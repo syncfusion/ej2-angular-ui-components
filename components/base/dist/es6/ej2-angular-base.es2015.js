@@ -398,12 +398,12 @@ class ComponentBase {
         if (eventArgs) {
             eventArgs.name = eventName;
         }
+        if (!isUndefined(eventObj)) {
+            eventObj.next(eventArgs);
+        }
         let localEventObj = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
         if (!isUndefined(localEventObj)) {
             localEventObj.call(this, eventArgs);
-        }
-        if (!isUndefined(eventObj)) {
-            eventObj.next(eventArgs);
         }
         this.isProtectedOnChange = prevDetection;
     }

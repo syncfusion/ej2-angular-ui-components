@@ -5,7 +5,7 @@ import { AnnotationsDirective } from './annotations.directive';
 import { RangesDirective } from './ranges.directive';
 import { PointersDirective } from './pointers.directive';
 
-let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'ranges', 'startAngle'];
+let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'startAndEndRangeGap', 'startAngle'];
 let outputs: string[] = [];
 /**
  * Axes directive
@@ -87,9 +87,19 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public radius: any;
     /** 
+     * Specifies the range gap property by pixel value.
+     * @default null
+     */
+    public rangeGap: any;
+    /** 
      * Options for customizing the ranges of an axis
      */
     public ranges: any;
+    /** 
+     * Specifies the start and end range gap.
+     * @default false
+     */
+    public startAndEndRangeGap: any;
     /** 
      * The start angle of an axis
      * @default 200
