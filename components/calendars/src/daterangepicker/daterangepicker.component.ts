@@ -5,7 +5,7 @@ import { DateRangePicker } from '@syncfusion/ej2-calendars';
 
 import { PresetsDirective } from './presets.directive';
 
-export const inputs: string[] = ['allowEdit','cssClass','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','showClearButton','startDate','strictMode','value','weekNumber','width','zIndex'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','showClearButton','startDate','strictMode','value','weekNumber','width','zIndex'];
 export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
 export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 

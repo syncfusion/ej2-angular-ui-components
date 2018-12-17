@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'border', 'dashArray', 'dataSource', 'fill', 'query', 'type', 'width', 'xName', 'yName'];
+let input: string[] = ['animation', 'border', 'dashArray', 'dataSource', 'fill', 'opacity', 'query', 'type', 'width', 'xName', 'yName'];
 let outputs: string[] = [];
 /**
  * RangenavigatorSeries Directive
@@ -54,6 +54,11 @@ export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSer
      * @default null
      */
     public fill: any;
+    /** 
+     * The opacity for the background.
+     * @default 1
+     */
+    public opacity: any;
     /** 
      * It defines the query for the data source
      * @default null

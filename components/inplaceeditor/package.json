@@ -1,6 +1,6 @@
 {
-	"name": "@syncfusion/ej2-angular-inplaceeditor",
-	"version": "1.20.1",
+	"name": "@syncfusion/ej2-angular-inplace-editor",
+	"version": "16.4.40",
 	"description": "A package of Essential JS 2 Inplace editor components, which is used to edit and update the value dynamically in server. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -47,8 +47,9 @@
 		"editor",
 		"angular",
 		"ng",
-		"ng-inplace-editor",
-		"ej2-ng-inplace-editor"
+		"angular-inplace-editor",
+		"angular-inplace-editor-component",
+		"ej2-angular-inplace-editor"
 	],
 	"repository": {
 		"type": "git",

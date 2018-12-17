@@ -29,30 +29,37 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
 
     /** 
      * This avatarIconCss property helps to customize avatar element.
+     * @default ''
      */
     public avatarIconCss: any;
     /** 
      * This avatarText property helps to customize avatar content.
+     * @default ''
      */
     public avatarText: any;
     /** 
      * This cssClass property helps to customize ChipList component.
+     * @default ''
      */
     public cssClass: any;
     /** 
      * This enabled property helps to enable/disable ChipList component.
+     * @default true
      */
     public enabled: any;
     /** 
      * This leadingIconCss property helps to customize leading icon element.
+     * @default ''
      */
     public leadingIconCss: any;
     /** 
      * This text property helps to render ChipList component.
+     * @default ''
      */
     public text: any;
     /** 
      * This trailingIconCss property helps to customize trailing icon element.
+     * @default ''
      */
     public trailingIconCss: any;
 

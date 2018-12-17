@@ -140,6 +140,16 @@ describe('Form Base Coverage Test', () => {
         formCmpt.writeValue(formCmpt.value);
         expect(formCmpt.angularValue).toBe('name');
     });
+    it("checking value type, if obj type do stringify", () => {
+        let formCmpt: FormBase<any> = new FormBase();
+        formCmpt.value = { value: { check: 'hello' } };
+        formCmpt.writeValue(formCmpt.value);
+        formCmpt.localChange(formCmpt.value);
+        let check = formCmpt.objCheck;
+        let stringy = JSON.stringify(formCmpt.value.value);
+        expect(check).toBe(true);
+        expect(stringy).toBe(formCmpt.duplicateValue);
+    });
     it("test for setDisableState", () => {
         let formCmpt: FormBase<any> = new FormBase();
         formCmpt.setDisabledState(true);

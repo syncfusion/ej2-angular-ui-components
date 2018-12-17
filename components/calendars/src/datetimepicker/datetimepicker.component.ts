@@ -5,7 +5,7 @@ import { DateTimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','cssClass','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','isMultiSelection','locale','max','min','placeholder','readonly','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','width','zIndex'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','isMultiSelection','locale','max','min','placeholder','readonly','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','width','zIndex'];
 export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -43,6 +43,7 @@ export class DateTimePickerComponent extends DateTimePicker implements IComponen
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try{ this.injectedModules.push(this.injector.get('CalendarsIslamic')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

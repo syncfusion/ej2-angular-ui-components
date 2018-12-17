@@ -6,7 +6,7 @@ import { LayersDirective } from './layers.directive';
 import { ConnectorsDirective } from './connectors.directive';
 import { NodesDirective } from './nodes.directive';
 
-export const inputs: string[] = ['addInfo','backgroundColor','bridgeDirection','commandManager','connectors','constraints','contextMenuSettings','dataSourceSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','layers','layout','locale','mode','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','setNodeTemplate','snapSettings','tool','tooltip','width'];
+export const inputs: string[] = ['addInfo','backgroundColor','bridgeDirection','commandManager','connectors','constraints','contextMenuSettings','dataSourceSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','setNodeTemplate','snapSettings','tool','tooltip','width'];
 export const outputs: string[] = ['animationComplete','click','collectionChange','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','historyChange','mouseEnter','mouseLeave','mouseOver','positionChange','propertyChange','rotateChange','scrollChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
 export const twoWays: string[] = [''];
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.42 (2018-12-10)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed ng-dirty class adding issue when patching object value to control.
+
 ## 16.3.17 (2018-09-12)
 
 ### Common

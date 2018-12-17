@@ -5,14 +5,14 @@ import { InPlaceEditorModule } from './inplaceeditor.module';
 import {AutoComplete, ColorPicker, ComboBox, DateRangePicker, MultiSelect, Rte, Slider, TimePicker} from '@syncfusion/ej2-inplace-editor'
 
 
-export const AutoCompleteService: ValueProvider = { provide: 'InPlaceEditorAutoComplete', useValue: AutoComplete};
-export const ColorPickerService: ValueProvider = { provide: 'InPlaceEditorColorPicker', useValue: ColorPicker};
-export const ComboBoxService: ValueProvider = { provide: 'InPlaceEditorComboBox', useValue: ComboBox};
-export const DateRangePickerService: ValueProvider = { provide: 'InPlaceEditorDateRangePicker', useValue: DateRangePicker};
-export const MultiSelectService: ValueProvider = { provide: 'InPlaceEditorMultiSelect', useValue: MultiSelect};
-export const RteService: ValueProvider = { provide: 'InPlaceEditorRte', useValue: Rte};
-export const SliderService: ValueProvider = { provide: 'InPlaceEditorSlider', useValue: Slider};
-export const TimePickerService: ValueProvider = { provide: 'InPlaceEditorTimePicker', useValue: TimePicker};
+export const AutoCompleteService: ValueProvider = { provide: 'InPlace-EditorAutoComplete', useValue: AutoComplete};
+export const ColorPickerService: ValueProvider = { provide: 'InPlace-EditorColorPicker', useValue: ColorPicker};
+export const ComboBoxService: ValueProvider = { provide: 'InPlace-EditorComboBox', useValue: ComboBox};
+export const DateRangePickerService: ValueProvider = { provide: 'InPlace-EditorDateRangePicker', useValue: DateRangePicker};
+export const MultiSelectService: ValueProvider = { provide: 'InPlace-EditorMultiSelect', useValue: MultiSelect};
+export const RteService: ValueProvider = { provide: 'InPlace-EditorRte', useValue: Rte};
+export const SliderService: ValueProvider = { provide: 'InPlace-EditorSlider', useValue: Slider};
+export const TimePickerService: ValueProvider = { provide: 'InPlace-EditorTimePicker', useValue: TimePicker};
 
 /**
  * NgModule definition for the InPlaceEditor component with providers.

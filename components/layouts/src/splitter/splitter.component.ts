@@ -18,7 +18,7 @@ export const twoWays: string[] = [''];
     selector: 'ejs-splitter',
     inputs: inputs,
     outputs: outputs,
-    template: `<ng-content ></ng-content>`,
+    template: `<ng-content select='div'></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
         childPaneSettings: new ContentChild(PanesDirective)

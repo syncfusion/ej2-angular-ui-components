@@ -1,5 +1,5 @@
 import { EventEmitter, ElementRef } from '@angular/core';
-import { getValue, setValue, isNullOrUndefined } from '@syncfusion/ej2-base';
+import { getValue, setValue, isNullOrUndefined, isObject } from '@syncfusion/ej2-base';
 import { ControlValueAccessor } from '@angular/forms';
 /**
  * Angular Form Base Module
@@ -13,6 +13,9 @@ export class FormBase<T> implements ControlValueAccessor {
     public propagateTouch(): void { return; }
     public enabled: Object;
     public angularValue: T;
+    public objCheck: Boolean;
+    public duplicateValue: string;
+    public duplicateAngularValue: string;
 
     public element: HTMLElement;
     public inputElement: HTMLInputElement;
@@ -24,10 +27,21 @@ export class FormBase<T> implements ControlValueAccessor {
 
     public localChange(e: { value?: T, checked?: T }): void {
         let value: T = (e.checked === undefined ? e.value : e.checked);
-        if (value !== this.angularValue && this.propagateChange !== undefined && value !== undefined) {
-            // Update angular from our control
-            this.propagateChange(value);
-            this.angularValue = value;
+        this.objCheck = isObject(value);
+        if (this.objCheck === true) {
+            this.duplicateValue = JSON.stringify(value);
+            this.duplicateAngularValue = JSON.stringify(this.angularValue);
+            if (this.duplicateValue !== this.duplicateAngularValue && this.propagateChange !== undefined && value !== undefined) {
+                // Update angular from our control
+                this.propagateChange(value);
+                this.angularValue = value;
+            }
+        } else {
+            if (value !== this.angularValue && this.propagateChange !== undefined && value !== undefined) {
+                // Update angular from our control
+                this.propagateChange(value);
+                this.angularValue = value;
+            }
         }
     }
 

@@ -10,7 +10,7 @@ import { StockChartSelectedDataIndexesDirective } from './selecteddataindexes.di
 import { StockChartPeriodsDirective } from './periods.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isSingleAxis','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
+export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
 export const outputs: string[] = ['axisLabelRender','load','loaded','selectorRender','seriesRender','tooltipRender'];
 export const twoWays: string[] = [''];
 
@@ -58,6 +58,7 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsLineSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsColumnSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsSplineSeries')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('ChartsSplineAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsStripLine')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsTooltip')); }catch {} 
@@ -82,6 +83,7 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsBollingerBands')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsTrendlines')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsRangeTooltip')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

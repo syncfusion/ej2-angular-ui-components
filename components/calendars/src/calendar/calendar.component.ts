@@ -5,7 +5,7 @@ import { Calendar } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['depth','enablePersistence','enableRtl','firstDayOfWeek','isMultiSelection','locale','max','min','showTodayButton','start','value','values','weekNumber'];
+export const inputs: string[] = ['calendarMode','depth','enablePersistence','enableRtl','firstDayOfWeek','isMultiSelection','locale','max','min','showTodayButton','start','value','values','weekNumber'];
 export const outputs: string[] = ['focus', 'blur', 'change','created','destroyed','navigated','renderDayCell','valueChange','valuesChange'];
 export const twoWays: string[] = ['value', 'values'];
 
@@ -45,6 +45,7 @@ export class CalendarComponent extends Calendar implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try{ this.injectedModules.push(this.injector.get('CalendarsIslamic')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

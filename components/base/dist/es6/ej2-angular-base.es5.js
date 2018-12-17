@@ -1,4 +1,4 @@
-import { attributes, createElement, getTemplateEngine, getValue, isNullOrUndefined, isUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
+import { attributes, createElement, getTemplateEngine, getValue, isNullOrUndefined, isObject, isUndefined, setTemplateEngine, setValue } from '@syncfusion/ej2-base';
 import { EventEmitter } from '@angular/core';
 
 /**
@@ -452,10 +452,22 @@ var FormBase = /** @__PURE__ @class */ (function () {
     FormBase.prototype.propagateTouch = function () { return; };
     FormBase.prototype.localChange = function (e) {
         var value = (e.checked === undefined ? e.value : e.checked);
-        if (value !== this.angularValue && this.propagateChange !== undefined && value !== undefined) {
-            // Update angular from our control
-            this.propagateChange(value);
-            this.angularValue = value;
+        this.objCheck = isObject(value);
+        if (this.objCheck === true) {
+            this.duplicateValue = JSON.stringify(value);
+            this.duplicateAngularValue = JSON.stringify(this.angularValue);
+            if (this.duplicateValue !== this.duplicateAngularValue && this.propagateChange !== undefined && value !== undefined) {
+                // Update angular from our control
+                this.propagateChange(value);
+                this.angularValue = value;
+            }
+        }
+        else {
+            if (value !== this.angularValue && this.propagateChange !== undefined && value !== undefined) {
+                // Update angular from our control
+                this.propagateChange(value);
+                this.angularValue = value;
+            }
         }
     };
     FormBase.prototype.registerOnChange = function (registerFunction) {

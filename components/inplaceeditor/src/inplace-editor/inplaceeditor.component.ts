@@ -51,14 +51,14 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorAutoComplete')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorColorPicker')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorComboBox')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorDateRangePicker')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorMultiSelect')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorRte')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorSlider')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlaceEditorTimePicker')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorAutoComplete')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorColorPicker')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorComboBox')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorDateRangePicker')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorMultiSelect')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorRte')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorSlider')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('InPlace-EditorTimePicker')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

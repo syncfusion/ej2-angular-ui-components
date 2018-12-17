@@ -1,6 +1,6 @@
 export { CalendarComponent} from './calendar/calendar.component';
 export { CalendarModule } from './calendar/calendar.module';
-export { CalendarAllModule } from './calendar/calendar-all.module';
+export { CalendarAllModule, IslamicService } from './calendar/calendar-all.module';
 export { DatePickerComponent} from './datepicker/datepicker.component';
 export { DatePickerModule } from './datepicker/datepicker.module';
 export { DatePickerAllModule } from './datepicker/datepicker-all.module';
