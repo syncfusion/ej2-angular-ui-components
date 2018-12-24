@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.44 (2018-12-24)
+
+### Diagram
+
+#### Bug Fixes
+
+- Alignment issue on complex hierarchical tree layout with complex data source is working fine.
+
 ## 16.4.40-beta (2018-12-10)
 
 ### Diagram

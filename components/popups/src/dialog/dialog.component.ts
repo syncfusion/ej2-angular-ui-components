@@ -35,7 +35,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      * By default, the footer is configured with action [buttons](#buttons). 
      * If footer template is configured to dialog, the action buttons property will be disabled.
      * 
-     * > More information on the footer template configuration can be found on this [documentation](./template.html#footer) section.
+     * > More information on the footer template configuration can be found on this [documentation](../../dialog/template/#footer) section.
      *     
      * @default ''
      */

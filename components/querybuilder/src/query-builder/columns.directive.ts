@@ -65,7 +65,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public template: any;
     /** 
      * Specifies the validation for columns (text, number and date).
-     * @default null
+     * @default { isRequired: true , min: 0, max: Number.MAX_VALUE }
      */
     public validation: any;
     /** 
