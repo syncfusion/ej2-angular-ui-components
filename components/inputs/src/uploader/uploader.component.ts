@@ -40,7 +40,7 @@ export class UploaderComponent extends Uploader implements IComponentBase {
     /** 
      * Specifies the HTML string that used to customize the content of each file in the list.
      * 
-     * > For more information, refer to the [template](./template.html) section from the documentation.
+     * > For more information, refer to the [template](../../uploader/template/) section from the documentation.
      *     
      * @default null
      */

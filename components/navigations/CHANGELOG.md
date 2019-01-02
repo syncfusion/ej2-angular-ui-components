@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 16.4.45 (2018-12-24)
+
+### Toolbar
+
+#### Bug Fixes
+
+- While resizing, Toolbar items are not moving from popup to toolbar in `extended` overflow mode issue is fixed.
+
+### Menu
+
+#### Bug Fixes
+
+- Getting custom properties from menu items in `beforeItemRender` event issue fixed.
+
+### Sidebar
+
+#### Bug Fixes
+
+- Fixed the issue with rendering the Sidebar using `isOpen` property and type `Auto`.
+
+### Accordion
+
+#### Bug Fixes
+
+- Accordion rendering issue with ng-template is fixed.
+
 ## 16.4.44 (2018-12-24)
 
 ### Accordion
