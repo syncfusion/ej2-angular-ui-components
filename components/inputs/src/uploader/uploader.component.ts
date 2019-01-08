@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { FilesDirective } from './files.directive';
 
 export const inputs: string[] = ['allowedExtensions','asyncSettings','autoUpload','buttons','directoryUpload','dropArea','enablePersistence','enableRtl','enabled','files','locale','maxFileSize','minFileSize','multiple','sequentialUpload','showFileList','template'];
-export const outputs: string[] = ['focus', 'blur', 'canceling','change','chunkFailure','chunkSuccess','chunkUploading','clearing','created','failure','pausing','progress','removing','resuming','selected','success','uploading'];
+export const outputs: string[] = ['focus', 'blur', 'actionComplete','canceling','change','chunkFailure','chunkSuccess','chunkUploading','clearing','created','failure','pausing','progress','removing','rendering','resuming','selected','success','uploading'];
 export const twoWays: string[] = [];
 
 /**

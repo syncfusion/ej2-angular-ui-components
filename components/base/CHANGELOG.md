@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.46 (2019-01-02)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed Angular peer dependencies warning issue.
+
 ## 16.4.42 (2018-12-14)
 
 ### Common
