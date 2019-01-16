@@ -151,7 +151,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
     public pointColorMapping: any;
     /** 
      * Specifies query to select data from DataSource. This property is applicable only when the DataSource is `ej.DataManager`.
-     * @default null
+     * @default ''
      */
     public query: any;
     /** 

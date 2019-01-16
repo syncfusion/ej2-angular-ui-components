@@ -19,6 +19,7 @@ export { TreeViewAllModule } from './treeview/treeview-all.module';
 export { SidebarComponent} from './sidebar/sidebar.component';
 export { SidebarModule } from './sidebar/sidebar.module';
 export { SidebarAllModule } from './sidebar/sidebar-all.module';
+export {MenuItemDirective,MenuItemsDirective} from './menu/items.directive';
 export { MenuComponent} from './menu/menu.component';
 export { MenuModule } from './menu/menu.module';
 export { MenuAllModule } from './menu/menu-all.module';

@@ -1,5 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MenuItemDirective, MenuItemsDirective } from './items.directive';
 import { MenuComponent } from './menu.component';
 import { MenuModule } from './menu.module';
 

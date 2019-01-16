@@ -11,7 +11,7 @@ import { StockChartPeriodsDirective } from './periods.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
-export const outputs: string[] = ['axisLabelRender','load','loaded','selectorRender','seriesRender','tooltipRender'];
+export const outputs: string[] = ['axisLabelRender','load','loaded','rangeChange','selectorRender','seriesRender','tooltipRender'];
 export const twoWays: string[] = [''];
 
 /**

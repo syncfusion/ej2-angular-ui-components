@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 16.4.46 (2019-01-02)
-
-### Toast
-
-#### Bug Fixes
-
-- Resolved the issue "document is not defined" in angular universal platform.
-
 ## 16.3.31 (2018-11-07)
 
 ### Toast
@@ -54,4 +46,12 @@ The toast is a small container, in which user can show a single or multiple info
 - **Action Buttons**: Supports to add buttons in the toast for archiving any actions within the toast.
 - **Template**: User customized element can be defined for the toast using the template property.
 
+
+## 16.4.44 (2018-12-24)
+
+### Toast
+
+#### Bug Fixes
+
+- Resolved the issue "document is not defined" in angular universal platform.
 

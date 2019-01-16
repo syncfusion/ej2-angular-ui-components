@@ -78,4 +78,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-com
 
 Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/grids/CHANGELOG.md)
 
-&copy; Copyright 2018 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

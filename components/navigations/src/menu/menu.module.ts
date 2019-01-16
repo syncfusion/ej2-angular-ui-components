@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MenuItemDirective, MenuItemsDirective } from './items.directive';
 import { MenuComponent } from './menu.component';
 
 /**
@@ -8,10 +9,14 @@ import { MenuComponent } from './menu.component';
 @NgModule({
     imports: [CommonModule],
     declarations: [
-        MenuComponent
+        MenuComponent,
+        MenuItemDirective,
+        MenuItemsDirective
     ],
     exports: [
-        MenuComponent
+        MenuComponent,
+        MenuItemDirective,
+        MenuItemsDirective
     ]
 })
 export class MenuModule { }

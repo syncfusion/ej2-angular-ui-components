@@ -2,7 +2,7 @@ import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Rende
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Menu } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
-
+import { MenuItemsDirective } from './items.directive';
 
 export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','enableScrolling','fields','filter','items','locale','orientation','showItemOnClick','target','template'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','created','onClose','onOpen','select'];
@@ -21,13 +21,13 @@ export const twoWays: string[] = [''];
     template: '',
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-
+        childItems: new ContentChild(MenuItemsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
 export class MenuComponent extends Menu implements IComponentBase {
-
-
+    public childItems: any;
+    public tags: string[] = ['items'];
 
     /** 
      * Specifies the template for Menu item.
