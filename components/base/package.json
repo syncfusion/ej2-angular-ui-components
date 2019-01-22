@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "16.4.46",
+	"version": "16.4.47",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -16,18 +16,18 @@
 		"ng"
 	],
 	"peerDependencies": {
-		"@angular/common": "2.2.1 - 7.1.0",
-		"@angular/compiler": "2.2.1 - 7.1.0",
-		"@angular/core": "2.2.1 - 7.1.0",
-		"@angular/forms": "2.2.1 - 7.1.0",
-		"@angular/http": "2.2.1 - 7.1.0",
-		"@angular/platform-browser": "2.2.1 - 7.1.0",
-		"@angular/platform-browser-dynamic": "2.2.1 - 7.1.0",
-		"@angular/router": "2.2.1 - 7.1.0"
+		"@angular/common": "2.2.1 - 7.10.0",
+		"@angular/compiler": "2.2.1 - 7.10.0",
+		"@angular/core": "2.2.1 - 7.10.0",
+		"@angular/forms": "2.2.1 - 7.10.0",
+		"@angular/http": "2.2.1 - 7.10.0",
+		"@angular/platform-browser": "2.2.1 - 7.10.0",
+		"@angular/platform-browser-dynamic": "2.2.1 - 7.10.0",
+		"@angular/router": "2.2.1 - 7.10.0"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
-		"zone.js": "^0.7.2",
+		"zone.js": "0.7.2 - 0.8.28",
 		"core-js": "^2.4.1",
 		"reflect-metadata": "^0.1.9",
 		"rxjs": "^5.0.0"

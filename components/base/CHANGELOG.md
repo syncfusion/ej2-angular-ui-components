@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.48 (2019-01-16)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed script error throwing issue while using `ngx-translate`.
+
 ## 16.4.46 (2019-01-08)
 
 ### Common

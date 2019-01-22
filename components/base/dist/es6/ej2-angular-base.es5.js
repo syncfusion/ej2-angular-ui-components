@@ -371,7 +371,10 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                         var list = _c[_b];
                         if (list.hasChanges) {
                             var curIndex = tagObject.instance.list.indexOf(list);
-                            getValue(tagObject.name, this)[curIndex].setProperties(list.getProperties());
+                            var curChild = getValue(tagObject.name, this)[curIndex];
+                            if (curChild !== undefined) {
+                                curChild.setProperties(list.getProperties());
+                            }
                         }
                     }
                 }

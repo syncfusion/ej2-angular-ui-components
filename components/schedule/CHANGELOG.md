@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 16.4.47 (2019-01-08)
+## 16.4.48 (2019-01-16)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with retrieving event fields value within the event template of Agenda view has been fixed.
+
+## 16.4.47 (2019-01-16)
 
 ### Schedule
 

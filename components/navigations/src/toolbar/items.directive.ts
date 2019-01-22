@@ -55,7 +55,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
     /** 
      * Defines htmlAttributes used to add custom attributes to Toolbar command. 
      * Supports HTML attributes such as style, class, etc.
-     * @default 'null'
+     * @default null
      */
     public htmlAttributes: any;
     /** 

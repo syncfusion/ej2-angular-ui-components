@@ -165,7 +165,10 @@ export class ComponentBase<T> {
                     for (let list of tagObject.instance.list) {
                         if (list.hasChanges) {
                             let curIndex: number = tagObject.instance.list.indexOf(list);
-                            getValue(tagObject.name, this)[curIndex].setProperties(list.getProperties());
+                            let curChild: { setProperties: Function } = getValue(tagObject.name, this)[curIndex];
+                            if (curChild !== undefined) {
+                                curChild.setProperties(list.getProperties());
+                            }
                         }
                     }
                 }

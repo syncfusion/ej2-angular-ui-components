@@ -111,7 +111,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
     public style: any;
     /** 
      * Sets the textual description of the node/connector
-     * @default undefined
+     * @default 'undefined'
      */
     public template: any;
     /** 

@@ -19,7 +19,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
 
     /** 
      * perform animation of series based on animation duration.
-     * @default 2000ms
+     * @default '2000ms'
      */
     public animationDuration: any;
     /** 
@@ -77,7 +77,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
     public tooltip: any;
     /** 
      * visibility for series.
-     * @default visible
+     * @default 'visible'
      */
     public visibility: any;
     /** 

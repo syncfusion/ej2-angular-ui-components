@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { AxesDirective } from './axes.directive';
 
 export const inputs: string[] = ['axes','background','border','centerX','centerY','description','enablePersistence','enablePointerDrag','enableRtl','height','locale','margin','moveToCenter','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender'];
+export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','radiusCalculate','resized','tooltipRender'];
 export const twoWays: string[] = [''];
 
 /**

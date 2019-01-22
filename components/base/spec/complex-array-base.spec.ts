@@ -3,6 +3,9 @@ import { DebugElement } from '@angular/core';
 import { ComponentBase } from '../src/component-base';
 import { ControlComponents } from './control.component';
 import { AppComponent } from './app.module';
+import { pipeComponents } from './pipe.component';
+import { check } from './app.pipe';
+
 /**
  * Complex Spec
  */
@@ -68,6 +71,56 @@ describe('=> Complex Component => ', () => {
 
 });
 
+describe('=> Complex Component for pipe => ', () => {
+    let comp: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
+    let de: DebugElement;
+    let el: HTMLElement;
+    let directives: any[] = pipeComponents;
+    directives.push(AppComponent);
+    beforeEach((done) => {
+        TestBed.configureTestingModule({
+            declarations: [directives, check],
+            providers: [ComponentBase]
+        });
+        /* tslint:disable */
+        TestBed.overrideComponent(AppComponent, {
+            set: {
+                template: `<ej2-control>
+                <e-childs>
+                <e-child  [text]='child1.text' header='{{ child1.header | check }}' ></e-child>
+                <e-child  [text]='child2.text' [header]='child2.header' ></e-child>
+                <e-child  [text]='child3.text' [header]='child3.header' ></e-child>
+                </e-childs>
+                </ej2-control>`
+            }
+        });
+        /* tslint:enable */
+
+        TestBed.compileComponents().then(() => {
+            fixture = TestBed.createComponent(AppComponent);
+            comp = fixture.componentInstance;
+            de = fixture.debugElement;
+            el = de.nativeElement;
+            fixture.detectChanges();
+            setTimeout(() => { done(); }, 100);
+        });
+    });
+
+    it('complex data binding with pipe', (done: Function) => {
+        fixture.detectChanges();
+        setTimeout(() => {
+            let instance: any = (el.querySelector('.e-control') as any).ej2_instances[0];
+            expect(JSON.stringify(instance.childs[0].properties.header)).toEqual('"false"');
+            done();
+        }, 100);
+    });
+
+    afterAll(() => {
+        el.remove();
+    });
+
+});
 
 describe('=> Complex Component => ', () => {
     let comp: AppComponent;

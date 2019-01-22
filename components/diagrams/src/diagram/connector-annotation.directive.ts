@@ -130,7 +130,7 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
     public style: any;
     /** 
      * Sets the textual description of the node/connector
-     * @default undefined
+     * @default 'undefined'
      */
     public template: any;
     /** 

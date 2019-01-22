@@ -15,6 +15,7 @@ export class AppComponent {
     public dest: string = '';
     public text: string = 'EJButton';
     public val: string = '';
+    public check: boolean = false;
     public child1: Object = { text: 'Child1', header: true };
     public child2: Object = { text: 'Child2', header: false };
     public child3: Object = { text: 'Child3', header: true };
