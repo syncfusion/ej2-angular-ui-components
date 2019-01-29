@@ -43,7 +43,6 @@ export class RangeNavigatorComponent extends RangeNavigator implements IComponen
         try{ this.injectedModules.push(this.injector.get('ChartsStepLineSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsDateTime')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsLogarithmic')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

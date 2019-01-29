@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 16.4.48 (2019-01-16)
-
-### Common
-
-#### Bug Fixes
-
-- Fixed script error throwing issue while using `ngx-translate`.
-
-## 16.4.46 (2019-01-08)
-
-### Common
-
-#### Bug Fixes
-
-- Fixed Angular peer dependencies warning issue.
-
-## 16.4.42 (2018-12-14)
+## 17.1.1-beta (2019-01-22)
 
 ### Common
 

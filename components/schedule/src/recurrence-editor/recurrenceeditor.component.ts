@@ -4,7 +4,7 @@ import { RecurrenceEditor } from '@syncfusion/ej2-schedule';
 
 
 
-export const inputs: string[] = ['cssClass','dateFormat','enablePersistence','enableRtl','firstDayOfWeek','frequencies','locale','maxDate','minDate','selectedType','startDate','value'];
+export const inputs: string[] = ['calendarMode','cssClass','dateFormat','enablePersistence','enableRtl','firstDayOfWeek','frequencies','locale','maxDate','minDate','selectedType','startDate','value'];
 export const outputs: string[] = ['change'];
 export const twoWays: string[] = [];
 

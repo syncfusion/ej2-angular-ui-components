@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-pivotview';
-export const pkgVer = '^16.4.42';
+export const pkgVer = '^16.4.40';
 export const moduleName = 'PivotViewModule, PivotFieldListModule';
-export const themeVer = '~16.4.42';
+export const themeVer = '~16.4.40';

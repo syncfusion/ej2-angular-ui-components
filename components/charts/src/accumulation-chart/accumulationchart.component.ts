@@ -48,7 +48,6 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
         try{ this.injectedModules.push(this.injector.get('ChartsAccumulationSelection')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsAccumulationDataLabel')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsAccumulationAnnotation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

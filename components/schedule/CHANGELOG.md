@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 16.4.48 (2019-01-16)
+## 17.1.1-beta (2019-01-22)
 
 ### Schedule
 
-#### Bug Fixes
+#### New Features
 
-- An issue with retrieving event fields value within the event template of Agenda view has been fixed.
+- Improvements done to support creation of recurring events based on the recurrence rule properties, that lies under the criteria of limited combination.
+- The recurring appointments of Scheduler can be now created and processed successfully based on the Islamic calendar dates.
 
 ## 16.4.47 (2019-01-16)
 
@@ -229,6 +230,14 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
 - **RTL** - Supports displaying the component to display in the direction from right to left.
 
+
+## 16.4.48 (2019-01-22)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with retrieving event fields value within the event template of Agenda view has been fixed.
 
 ## 16.3.30 (2018-11-01)
 

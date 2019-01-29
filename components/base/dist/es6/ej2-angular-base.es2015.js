@@ -346,7 +346,7 @@ class ComponentBase {
                         if (list.hasChanges) {
                             let curIndex = tagObject.instance.list.indexOf(list);
                             let curChild = getValue(tagObject.name, this)[curIndex];
-                            if (curChild !== undefined) {
+                            if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
                         }

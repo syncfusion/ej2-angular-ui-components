@@ -166,7 +166,7 @@ export class ComponentBase<T> {
                         if (list.hasChanges) {
                             let curIndex: number = tagObject.instance.list.indexOf(list);
                             let curChild: { setProperties: Function } = getValue(tagObject.name, this)[curIndex];
-                            if (curChild !== undefined) {
+                            if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
                         }

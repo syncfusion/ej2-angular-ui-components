@@ -58,7 +58,6 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsLineSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsColumnSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsSplineSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsSplineAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsStripLine')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsTooltip')); }catch {} 
@@ -83,7 +82,6 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsBollingerBands')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsTrendlines')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsRangeTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
