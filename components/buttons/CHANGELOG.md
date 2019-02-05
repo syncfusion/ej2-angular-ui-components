@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 17.1.1-beta (2019-01-22)
+## 16.4.40-beta (2018-12-10)
 
 ### Chips
 
@@ -13,6 +13,12 @@ The Chip control contains a small block of essential information that triggers a
 - `Choice chip` - Used to select a choice from the available options.
 - `Filter chip` - Used to select multiple choices from the available options.
 - `Action chip` - Used to trigger actions for primary content.
+
+### CheckBox
+
+#### Bug Fixes
+
+- Change event triggers twice issue fixed.
 
 ## 16.3.33 (2018-11-20)
 
@@ -180,14 +186,6 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Label** - Supports label and its positioning.
 - **Sizes** - Provided with different sizes of RadioButton.
 
-
-## 16.4.40-beta (2018-12-10)
-
-### CheckBox
-
-#### Bug Fixes
-
-- Change event triggers twice issue fixed.
 
 ## 16.3.25 (2018-10-15)
 

@@ -5,7 +5,7 @@ import { PivotView } from '@syncfusion/ej2-pivotview';
 
 
 export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','currencyCode','dataSource','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showTooltip','showValuesButton','width'];
-export const outputs: string[] = ['beforeExport','beginDrillThrough','cellClick','cellSelected','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','hyperlinkCellClick','load','onFieldDropped','datasourceChange'];
+export const outputs: string[] = ['beforeExport','cellClick','cellSelected','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','hyperlinkCellClick','load','onFieldDropped','datasourceChange'];
 export const twoWays: string[] = ['datasource'];
 
 /**

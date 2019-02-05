@@ -37,16 +37,66 @@ export class MapsComponent extends Maps implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('MapsBubble')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsLegend')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsMarker')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsHighlight')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsMapsTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsZoom')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsDataLabel')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsNavigationLine')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('MapsAnnotations')); }catch {} 
+        try {
+                let mod = this.injector.get('MapsBubble');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsMarker');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsHighlight');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsMapsTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsZoom');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsDataLabel');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsNavigationLine');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('MapsAnnotations');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

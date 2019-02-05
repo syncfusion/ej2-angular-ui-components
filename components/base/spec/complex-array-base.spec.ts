@@ -122,7 +122,6 @@ describe('=> Complex Component for pipe => ', () => {
 
 });
 
-
 describe('=> Complex Component => ', () => {
     let comp: AppComponent;
     let fixture: ComponentFixture<AppComponent>;

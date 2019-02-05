@@ -40,10 +40,30 @@ export class TreeMapComponent extends TreeMap implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('TreeMapTreeMapTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('TreeMapTreeMapLegend')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('TreeMapTreeMapHighlight')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('TreeMapTreeMapSelection')); }catch {} 
+        try {
+                let mod = this.injector.get('TreeMapTreeMapTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapTreeMapLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapTreeMapHighlight');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapTreeMapSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

@@ -111,16 +111,66 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ScheduleDay')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleWeek')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleWorkWeek')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleMonth')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleAgenda')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleMonthAgenda')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleTimelineViews')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleTimelineMonth')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleResize')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ScheduleDragAndDrop')); }catch {} 
+        try {
+                let mod = this.injector.get('ScheduleDay');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleWeek');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleWorkWeek');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleMonth');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleAgenda');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleMonthAgenda');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleTimelineViews');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleTimelineMonth');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleResize');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleDragAndDrop');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

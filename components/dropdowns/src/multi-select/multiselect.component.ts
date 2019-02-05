@@ -90,7 +90,12 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('DropDownsCheckBoxSelection')); }catch {} 
+        try {
+                let mod = this.injector.get('DropDownsCheckBoxSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

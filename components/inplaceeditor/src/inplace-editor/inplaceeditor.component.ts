@@ -51,14 +51,54 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorAutoComplete')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorColorPicker')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorComboBox')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorDateRangePicker')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorMultiSelect')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorRte')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorSlider')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('InPlace-EditorTimePicker')); }catch {} 
+        try {
+                let mod = this.injector.get('InPlace-EditorAutoComplete');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorColorPicker');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorComboBox');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorDateRangePicker');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorMultiSelect');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorRte');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorSlider');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('InPlace-EditorTimePicker');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

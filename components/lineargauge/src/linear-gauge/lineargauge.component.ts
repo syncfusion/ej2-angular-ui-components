@@ -40,8 +40,18 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('LinearGaugeGaugeTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('LinearGaugeAnnotations')); }catch {} 
+        try {
+                let mod = this.injector.get('LinearGaugeGaugeTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeAnnotations');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

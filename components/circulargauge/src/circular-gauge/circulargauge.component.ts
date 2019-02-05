@@ -37,8 +37,18 @@ export class CircularGaugeComponent extends CircularGauge implements IComponentB
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('CircularGaugeGaugeTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('CircularGaugeAnnotations')); }catch {} 
+        try {
+                let mod = this.injector.get('CircularGaugeGaugeTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CircularGaugeAnnotations');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

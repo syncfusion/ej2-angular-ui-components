@@ -67,7 +67,6 @@ export class ChartComponent extends Chart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsStepAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsStackingColumnSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsStackingAreaSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsStackingLineSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsBarSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsStackingBarSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsRangeColumnSeries')); }catch {} 
@@ -108,6 +107,7 @@ export class ChartComponent extends Chart implements IComponentBase {
         try{ this.injectedModules.push(this.injector.get('ChartsMultiColoredAreaSeries')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsMultiLevelLabel')); }catch {} 
         try{ this.injectedModules.push(this.injector.get('ChartsParetoSeries')); }catch {} 
+        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

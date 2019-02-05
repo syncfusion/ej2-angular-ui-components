@@ -72,28 +72,138 @@ export class GridComponent extends Grid implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('GridsFilter')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsPage')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsSort')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsGroup')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsReorder')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsRowDD')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsDetailRow')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsToolbar')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsAggregate')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsSearch')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsVirtualScroll')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsEdit')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsResize')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsExcelExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsPdfExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsCommandColumn')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsContextMenu')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsFreeze')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsColumnMenu')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsColumnChooser')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('GridsForeignKey')); }catch {} 
+        try {
+                let mod = this.injector.get('GridsFilter');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsPage');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsSort');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsGroup');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsReorder');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsRowDD');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsDetailRow');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsAggregate');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsSearch');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsVirtualScroll');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsEdit');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsResize');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsExcelExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsPdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsCommandColumn');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsContextMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsFreeze');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsColumnMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsColumnChooser');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GridsForeignKey');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
