@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 16.4.53 (2019-02-13)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- Console error is thrown while validating `RTE` editor value issue has been fixed.
+
+#### New Features
+
+- Schematic samples are added by feature wise for `In-place editor` component.
+
 ## 16.4.48 (2019-01-22)
 
 ### In-place Editor

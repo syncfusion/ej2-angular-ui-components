@@ -34,12 +34,42 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('PivotViewGroupingBar')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PivotViewFieldList')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PivotViewCalculatedField')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PivotViewConditionalFormatting')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PivotViewVirtualScroll')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PivotViewDrillThrough')); }catch {} 
+        try {
+                let mod = this.injector.get('PivotViewGroupingBar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewFieldList');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewCalculatedField');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewConditionalFormatting');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewVirtualScroll');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewDrillThrough');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

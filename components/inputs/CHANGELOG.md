@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 16.4.53 (2019-02-13)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Form reset issue is fixed.
+
+### TextBox
+
+#### Bug Fixes
+
+- The events `input` and `change` event are no longer triggered multiple time in Angular application.
+
 ## 16.4.52 (2019-02-05)
 
 ### MaskedTextBox

@@ -34,8 +34,18 @@ export class SmithchartComponent extends Smithchart implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ChartsSmithchartLegend')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsTooltipRender')); }catch {} 
+        try {
+                let mod = this.injector.get('ChartsSmithchartLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsTooltipRender');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

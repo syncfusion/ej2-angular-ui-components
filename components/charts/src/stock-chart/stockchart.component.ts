@@ -55,35 +55,180 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ChartsLineSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsColumnSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsSplineSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsSplineAreaSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsStripLine')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAreaSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsCrosshair')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsDateTime')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsZoom')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsDataLabel')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsChartAnnotation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsHiloSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsHiloOpenCloseSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsCandleSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsSmaIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsTmaIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsEmaIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationDistributionIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsMacdIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAtrIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsRsiIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsMomentumIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsStochasticIndicator')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsBollingerBands')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsTrendlines')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsRangeTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
+        try {
+                let mod = this.injector.get('ChartsLineSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsColumnSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsSplineSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsSplineAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsStripLine');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsCrosshair');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsDateTime');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsZoom');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsDataLabel');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsChartAnnotation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsHiloSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsHiloOpenCloseSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsCandleSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsSmaIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsTmaIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsEmaIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationDistributionIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsMacdIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAtrIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsRsiIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsMomentumIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsStochasticIndicator');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsBollingerBands');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsTrendlines');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsRangeTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

@@ -52,14 +52,54 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorToolbar')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorLink')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorImage')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorCount')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorQuickToolbar')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorHtmlEditor')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorMarkdownEditor')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('RichTextEditorTable')); }catch {} 
+        try {
+                let mod = this.injector.get('RichTextEditorToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorLink');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorImage');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorCount');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorQuickToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorHtmlEditor');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorMarkdownEditor');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorTable');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

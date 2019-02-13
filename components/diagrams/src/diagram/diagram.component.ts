@@ -40,20 +40,90 @@ export class DiagramComponent extends Diagram implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('DiagramsHierarchicalTree')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsMindMap')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsRadialTree')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsComplexHierarchicalTree')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsDataBinding')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsSnapping')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsPrintAndExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsBpmnDiagrams')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsSymmetricLayout')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsConnectorBridging')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsUndoRedo')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsLayoutAnimation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsDiagramContextMenu')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DiagramsConnectorEditing')); }catch {} 
+        try {
+                let mod = this.injector.get('DiagramsHierarchicalTree');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsMindMap');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsRadialTree');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsComplexHierarchicalTree');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsDataBinding');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsSnapping');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsPrintAndExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsBpmnDiagrams');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsSymmetricLayout');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsConnectorBridging');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsUndoRedo');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsLayoutAnimation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsDiagramContextMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsConnectorEditing');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

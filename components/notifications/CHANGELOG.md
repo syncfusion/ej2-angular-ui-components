@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.53 (2019-02-13)
+
+### Toast
+
+#### New Features
+
+- Schematic samples are added by feature wise for `Toast` component.
+
 ## 16.3.31 (2018-11-07)
 
 ### Toast

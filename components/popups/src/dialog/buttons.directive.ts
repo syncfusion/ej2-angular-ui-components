@@ -3,8 +3,8 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['buttonModel'];
-let outputs: string[] = ['click', 'type'];
+let input: string[] = ['buttonModel', 'type'];
+let outputs: string[] = ['click'];
 /**
  * 'e-button' directive represent a button of angular dialog 
  * It must be contained in a Dialog component(`ej-dialog`). 
@@ -28,6 +28,13 @@ let outputs: string[] = ['click', 'type'];
 export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
 
 
+    /** 
+     * Specify the type of the button. 
+     * Possible values are Button, Submit and Reset.
+     * @default 'Button'
+     * @asptype string
+     */
+    public type: any;
     /** 
      * Specifies the button component properties to render the dialog buttons.
      */

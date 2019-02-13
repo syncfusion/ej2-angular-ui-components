@@ -31,7 +31,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
 
     /** 
      * The ListView supports to customize the content of each list items with the help of template property. 
-     * Refer the documentation [here](./listview/customizing-templates) 
+     * Refer the documentation [here](../../listview/customizing-templates) 
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/template-api/index.ts" %}{% endcodeBlock %}     
@@ -43,7 +43,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
     /** 
      * The ListView has an option to custom design the group header title with the help of groupTemplate property. 
      * Refer the documentation [here] 
-     * (./listview/customizing-templates#group-template) 
+     * (../../listview/customizing-templates#group-template) 
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/grouptemplate-api/index.ts" %}{% endcodeBlock %}     
@@ -55,7 +55,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
     /** 
      * The ListView has an option to custom design the ListView header title with the help of headerTemplate property. 
      * Refer the documentation [here] 
-     * (./listview/customizing-templates#header-template) 
+     * (../../listview/customizing-templates#header-template) 
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/headertemplate-api/index.ts" %}{% endcodeBlock %}     
@@ -69,7 +69,12 @@ export class ListViewComponent extends ListView implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ListsVirtualization')); }catch {} 
+        try {
+                let mod = this.injector.get('ListsVirtualization');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

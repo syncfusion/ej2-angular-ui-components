@@ -40,15 +40,60 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ChartsPieSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsFunnelSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsPyramidSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationLegend')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationDataLabel')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAccumulationAnnotation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
+        try {
+                let mod = this.injector.get('ChartsPieSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsFunnelSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsPyramidSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationDataLabel');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAccumulationAnnotation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

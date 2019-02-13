@@ -37,13 +37,48 @@ export class RangeNavigatorComponent extends RangeNavigator implements IComponen
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ChartsRangeTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsPeriodSelector')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsAreaSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsStepLineSeries')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsDateTime')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsLogarithmic')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('ChartsExport')); }catch {} 
+        try {
+                let mod = this.injector.get('ChartsRangeTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsPeriodSelector');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsStepLineSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsDateTime');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsLogarithmic');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

@@ -34,7 +34,12 @@ export class SparklineComponent extends Sparkline implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('ChartsSparklineTooltip')); }catch {} 
+        try {
+                let mod = this.injector.get('ChartsSparklineTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

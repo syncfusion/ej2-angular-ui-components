@@ -34,32 +34,162 @@ export class DocumentEditorComponent extends DocumentEditor implements IComponen
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorPrint')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorSfdtExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorWordExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorTextExport')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorSearch')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorEditor')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorEditorHistory')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorOptionsPane')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorContextMenu')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorImageResizer')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorHyperlinkDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorTableDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorBookmarkDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorTableOfContentsDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorPageSetupDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorParagraphDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorListDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorStyleDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorStylesDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorBulletsAndNumberingDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorFontDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorTablePropertiesDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorBordersAndShadingDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorTableOptionsDialog')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('DocumentEditorCellOptionsDialog')); }catch {} 
+        try {
+                let mod = this.injector.get('DocumentEditorPrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorSfdtExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorWordExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTextExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorSearch');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorEditor');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorEditorHistory');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorOptionsPane');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorContextMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorImageResizer');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorHyperlinkDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTableDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorBookmarkDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTableOfContentsDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorPageSetupDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorParagraphDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorListDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorStyleDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorStylesDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorBulletsAndNumberingDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorFontDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTablePropertiesDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorBordersAndShadingDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTableOptionsDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorCellOptionsDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

@@ -31,7 +31,7 @@ export class TooltipComponent extends Tooltip implements IComponentBase {
 
     /** 
      * It is used to display the content of Tooltip which can be both string and HTML Elements. 
-     * Refer the documentation [here](https://ej2.syncfusion.com/documentation/tooltip/content.html?lang=typescript) 
+     * Refer the documentation [here](../../tooltip/content/) 
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="tooltip/content-api/index.ts" %}{% endcodeBlock %}

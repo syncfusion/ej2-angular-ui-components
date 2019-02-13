@@ -34,7 +34,12 @@ export class SymbolPaletteComponent extends SymbolPalette implements IComponentB
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('DiagramsBpmnDiagrams')); }catch {} 
+        try {
+                let mod = this.injector.get('DiagramsBpmnDiagrams');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

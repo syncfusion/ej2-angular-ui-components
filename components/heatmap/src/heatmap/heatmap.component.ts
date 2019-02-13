@@ -34,9 +34,24 @@ export class HeatMapComponent extends HeatMap implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('HeatMapLegend')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('HeatMapTooltip')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('HeatMapAdaptor')); }catch {} 
+        try {
+                let mod = this.injector.get('HeatMapLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('HeatMapTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('HeatMapAdaptor');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
