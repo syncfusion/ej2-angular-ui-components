@@ -524,6 +524,9 @@ var FormBase = /** @__PURE__ @class */ (function () {
             return;
         }
         this.angularValue = value;
+        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
+        // To prevent change event, trigger change in component side based on `preventChange` value
+        this.preventChange = true;
     };
     FormBase.prototype.ngOnFocus = function (e) {
         /* istanbul ignore else */

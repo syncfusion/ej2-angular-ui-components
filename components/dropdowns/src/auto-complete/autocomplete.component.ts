@@ -39,7 +39,7 @@ export class AutoCompleteComponent extends AutoComplete implements IComponentBas
     public valueChange: any;
     /** 
      * Accepts the template design and assigns it to the footer container of the popup list. 
-     * > For more details about the available template options refer to [`Template`](./templates.html) documentation.
+     * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
      */
     @ContentChild('footerTemplate')
@@ -47,7 +47,7 @@ export class AutoCompleteComponent extends AutoComplete implements IComponentBas
     public footerTemplate: any;
     /** 
      * Accepts the template design and assigns it to the header container of the popup list. 
-     * > For more details about the available template options refer to [`Template`](./templates.html) documentation.
+     * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
      */
     @ContentChild('headerTemplate')
@@ -62,7 +62,7 @@ export class AutoCompleteComponent extends AutoComplete implements IComponentBas
     public groupTemplate: any;
     /** 
      * Accepts the template design and assigns it to each list item present in the popup. 
-     * We have built-in [`template engine`](./template-engine.html)
+     * We have built-in `template engine`
      * 
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     

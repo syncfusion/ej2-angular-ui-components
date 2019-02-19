@@ -134,11 +134,17 @@ describe('Form Base Coverage Test', () => {
         formCmpt.writeValue('not')
         expect(formCmpt.checked).toBe(false);
     });
-    it("write value test to check with ngrvalue", () => {
+    it("write value test to check with angularValue", () => {
         let formCmpt: FormBase<any> = new FormBase();
         formCmpt.value = 'name';
         formCmpt.writeValue(formCmpt.value);
         expect(formCmpt.angularValue).toBe('name');
+    });
+    it("write value test to check with preventChange Value", () => {
+        let formCmpt: FormBase<any> = new FormBase();
+        formCmpt.value = 'names';
+        formCmpt.writeValue(formCmpt.value);
+        expect(formCmpt.preventChange).toBe(true);
     });
     it("checking value type, if obj type do stringify", () => {
         let formCmpt: FormBase<any> = new FormBase();

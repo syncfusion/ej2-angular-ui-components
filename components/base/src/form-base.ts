@@ -24,6 +24,7 @@ export class FormBase<T> implements ControlValueAccessor {
 
     public focus: EventEmitter<Object>;
     public blur: EventEmitter<Object>;
+    public preventChange: boolean;
 
     public localChange(e: { value?: T, checked?: T }): void {
         let value: T = (e.checked === undefined ? e.value : e.checked);
@@ -99,6 +100,9 @@ export class FormBase<T> implements ControlValueAccessor {
             return;
         }
         this.angularValue = value;
+        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
+        // To prevent change event, trigger change in component side based on `preventChange` value
+        this.preventChange = true;
     }
 
     public ngOnFocus(e: Event): void {

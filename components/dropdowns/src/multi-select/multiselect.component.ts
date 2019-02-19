@@ -39,7 +39,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     public valueChange: any;
     /** 
      * Accepts the template design and assigns it to the footer container of the popup list. 
-     * > For more details about the available template options refer to [`Template`](./templates.html) documentation.
+     * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.
      * @default null
      */
     @ContentChild('footerTemplate')
@@ -47,7 +47,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     public footerTemplate: any;
     /** 
      * Accepts the template design and assigns it to the header container of the popup list. 
-     * > For more details about the available template options refer to [`Template`](./templates.html) documentation.
+     * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.
      * @default null
      */
     @ContentChild('headerTemplate')
@@ -56,9 +56,9 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     /** 
      * Accepts the template design and assigns it to the selected list item in the input element of the component. 
      * For more details about the available template options refer to 
-     * [`Template`](./templates.html) documentation.
+     * [`Template`](../../multi-select/templates.html) documentation.
      * 
-     * We have built-in [`template engine`](./template-engine.html)
+     * We have built-in `template engine`
      *which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
@@ -68,9 +68,9 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     public valueTemplate: any;
     /** 
      * Accepts the template design and assigns it to each list item present in the popup. 
-     * > For more details about the available template options refer to [`Template`](./templates.html) documentation.
+     * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.
      * 
-     * We have built-in [`template engine`](./template-engine.html)
+     * We have built-in `template engine`
      *which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null

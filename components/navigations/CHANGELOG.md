@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 16.4.54 (2019-02-19)
+
+### Tab
+
+#### Breaking Changes
+
+- The initial focus set on active tab item is removed from the component on initial load.
+
+#### Bug Fixes
+
+- An issue with destroy method of Tab component getting called twice while using it with ng-template has been fixed.
+
 ## 16.4.53 (2019-02-13)
 
 ### Accordion

@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 16.4.54 (2019-02-19)
+
+### TextBox
+
+#### Bug Fixes
+
+- Now, input event will trigger after clear the textbox value using clear icon.
+
+- Now, textbox model value will update on every key press.
+
+#### Breaking Changes
+
+- While setting the textbox value programmatically, the `change` event will not trigger.
+
+### Uploader
+
+#### New Features
+
+- Provided `cssClass` property to add custom CSS classes to an uploader.
+
 ## 16.4.53 (2019-02-13)
 
 ### ColorPicker
