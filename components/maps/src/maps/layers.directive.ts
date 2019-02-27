@@ -120,7 +120,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public tooltipSettings: any;
     /** 
      * Specifies the urlTemplate for the layer.
-     * @default 'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
+     * @default 'https://a.tile.openstreetmap.org/level/tileX/tileY.png'
      */
     public urlTemplate: any;
     /** 

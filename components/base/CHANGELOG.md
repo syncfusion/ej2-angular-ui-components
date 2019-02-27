@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 16.4.55 (2019-02-27)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed `TextBox` change event not triggering issue.
+
 ## 16.4.48 (2019-01-22)
 
 ### Common

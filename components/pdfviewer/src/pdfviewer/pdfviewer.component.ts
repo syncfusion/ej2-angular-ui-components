@@ -34,15 +34,60 @@ export class PdfViewerComponent extends PdfViewer implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try{ this.injectedModules.push(this.injector.get('PdfViewerLinkAnnotation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerBookmarkView')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerMagnification')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerThumbnailView')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerToolbar')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerNavigation')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerPrint')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerTextSelection')); }catch {} 
-        try{ this.injectedModules.push(this.injector.get('PdfViewerTextSearch')); }catch {} 
+        try {
+                let mod = this.injector.get('PdfViewerLinkAnnotation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerBookmarkView');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerMagnification');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerThumbnailView');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerNavigation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerPrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerTextSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerTextSearch');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

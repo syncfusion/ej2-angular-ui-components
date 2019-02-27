@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 16.4.54 (2019-02-19)
+## 16.4.55 (2019-02-27)
+
+### CheckBox
+
+#### Bug Fixes
+
+- Performance issue with key press is fixed.
+
+## 16.4.53 (2019-02-13)
 
 ### Button
 
