@@ -1,0 +1,92 @@
+.schedule-group.e-schedule .template-wrap {
+    display: flex;
+    text-align: left;
+}
+
+.schedule-group.schedule-demo-heading {
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: 500
+}
+
+.schedule-group.e-schedule .e-agenda-view .template-wrap {
+    display: table;
+    width: inherit;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.schedule-group.e-schedule:not(.e-device) .e-agenda-view .e-content-wrap table td:first-child {
+    width: 110px;
+}
+
+.schedule-group.e-schedule .template-wrap .airline-image {
+    width: 30px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+}
+
+.schedule-group.e-schedule.e-device .template-wrap .airline-image {
+    margin-top: 5px;
+}
+
+.schedule-group.e-schedule .e-agenda-view .template-wrap .airline-image {
+    height: 30px;
+    margin-top: 0;
+    margin-left: 35%;
+}
+
+.schedule-group.e-schedule .e-vertical-view .e-resource-cells {
+    height: 76px;
+}
+
+.e-bigger .schedule-group.e-schedule .e-vertical-view .e-resource-cells {
+    height: 80px;
+}
+
+.schedule-group.e-schedule .template-wrap .airline-details {
+    padding-left: 15px;
+}
+
+.schedule-group.e-schedule .e-agenda-view .template-wrap .airline-details {
+    padding: 0;
+}
+
+.schedule-group.e-schedule .template-wrap .airline-details .airline-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schedule-group.e-schedule.e-device .template-wrap .airline-model,
+.schedule-group.e-schedule.e-device .template-wrap .airline-seats {
+    display: none;
+}
+
+.schedule-group.e-schedule.e-device .template-wrap .airline-details .airline-name {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.schedule-group.e-schedule .template-wrap .airline-image.airways-1 {
+    background-image: url('https://ej2.syncfusion.com/angular/demos/src/schedule/images/airways-1.svg');
+}
+
+.schedule-group.e-schedule .template-wrap .airline-image.airways-2 {
+    background-image: url('https://ej2.syncfusion.com/angular/demos/src/schedule/images/airways-2.svg');
+}
+
+.schedule-group.e-schedule .template-wrap .airline-image.airways-3 {
+    background-image: url('https://ej2.syncfusion.com/angular/demos/src/schedule/images/airways-3.svg');
+}
+
+.schedule-group.e-schedule .e-agenda-view .template-wrap .airline-model,
+.schedule-group.e-schedule .e-agenda-view .template-wrap .airline-seats {
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .schedule-demo-heading {
+        font-size: 14px;
+    }
+}

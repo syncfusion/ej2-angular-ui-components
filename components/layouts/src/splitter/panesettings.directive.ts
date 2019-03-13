@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'max', 'min', 'resizable', 'size'];
+let input: string[] = ['collapsed', 'collapsible', 'content', 'max', 'min', 'resizable', 'size'];
 let outputs: string[] = [];
 /**
  * 'e-panesettings' directive represent a panes of angular splitter 
@@ -28,6 +28,16 @@ let outputs: string[] = [];
 export class PaneDirective extends ComplexBase<PaneDirective> {
 
 
+    /** 
+     * Specifies whether a pane is collapsed or not collapsed at the initial rendering of splitter.
+     * @default false
+     */
+    public collapsed: any;
+    /** 
+     * Specifies whether a pane is collapsible or not collapsible.
+     * @default false
+     */
+    public collapsible: any;
     /** 
      * Specifies the maximum size of a pane. The pane cannot be resized if it is more than the specified maximum limit.
      * @default null

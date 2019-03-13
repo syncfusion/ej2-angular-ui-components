@@ -8,10 +8,11 @@ import { StockChartRowsDirective } from './rows.directive';
 import { StockChartAnnotationsDirective } from './annotations.directive';
 import { StockChartSelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { StockChartPeriodsDirective } from './periods.directive';
+import { StockChartStockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
-export const outputs: string[] = ['axisLabelRender','load','loaded','rangeChange','selectorRender','seriesRender','tooltipRender'];
+export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','stockEvents','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
+export const outputs: string[] = ['axisLabelRender','load','loaded','rangeChange','selectorRender','seriesRender','stockEventRender','tooltipRender'];
 export const twoWays: string[] = [''];
 
 /**
@@ -33,6 +34,7 @@ export const twoWays: string[] = [''];
         childAnnotations: new ContentChild(StockChartAnnotationsDirective), 
         childSelectedDataIndexes: new ContentChild(StockChartSelectedDataIndexesDirective), 
         childPeriods: new ContentChild(StockChartPeriodsDirective), 
+        childStockEvents: new ContentChild(StockChartStockEventsDirective), 
         childIndicators: new ContentChild(StockChartIndicatorsDirective)
     }
 })
@@ -44,8 +46,9 @@ export class StockChartComponent extends StockChart implements IComponentBase {
     public childAnnotations: any;
     public childSelectedDataIndexes: any;
     public childPeriods: any;
+    public childStockEvents: any;
     public childIndicators: any;
-    public tags: string[] = ['series', 'axes', 'rows', 'annotations', 'selectedDataIndexes', 'periods', 'indicators'];
+    public tags: string[] = ['series', 'axes', 'rows', 'annotations', 'selectedDataIndexes', 'periods', 'stockEvents', 'indicators'];
 
     @ContentChild('tooltipTemplate')
     @Template()

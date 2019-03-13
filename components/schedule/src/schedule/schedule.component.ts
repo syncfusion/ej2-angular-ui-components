@@ -6,7 +6,7 @@ import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowKeyboardInteraction','allowResizing','calendarMode','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','editorTemplate','enablePersistence','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','group','headerRows','height','hideEmptyAgendaDays','locale','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeScale','timezone','views','width','workDays','workHours'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowKeyboardInteraction','allowResizing','calendarMode','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','editorTemplate','enableAdaptiveRows','enablePersistence','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','group','headerRows','height','hideEmptyAgendaDays','locale','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeScale','timezone','views','width','workDays','workHours'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','navigating','popupOpen','renderCell','resizeStart','resizeStop','resizing','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
@@ -167,6 +167,24 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ScheduleDragAndDrop');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleExcelExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleICalendarExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleICalendarImport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

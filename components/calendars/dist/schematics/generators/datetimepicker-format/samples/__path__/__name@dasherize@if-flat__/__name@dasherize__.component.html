@@ -1,0 +1,27 @@
+<div class="control-section dateformat">
+    <div class="col-lg-8 content-wrapper">
+        <div class="content">
+            <div id="control_wrapper">
+                <ejs-datetimepicker #datetimepick [value]="date" [format]="format" [placeholder]="placeholder"></ejs-datetimepicker>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 property-section" id="property">
+        <div class="property-panel-section">
+            <div class="property-panel-content">
+                <table id="property" class="property-panel-table" title="Properties">
+                    <tr>
+                        <td>
+                            <div>Select Format:</div><br/>
+            <select id='dateformats' (change)='changeFormat($event)'>
+              <option>dd-MMM-yy hh:mm a</option>
+              <option>yyyy-MM-dd HH:mm</option>
+              <option>dd-MMMM HH:mm</option>
+            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

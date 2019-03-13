@@ -66,8 +66,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      */
     public customAggregate: any;
     /** 
-     * If `showChildSummary` is set to true, display TreeGrid child summary.
-     * @default true
+     * Defines the column name to perform aggregation.
+     * @default null
      */
     public field: any;
     /** 

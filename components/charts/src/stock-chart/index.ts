@@ -6,6 +6,7 @@ export {StockChartRowDirective,StockChartRowsDirective} from './rows.directive';
 export {StockChartAnnotationDirective,StockChartAnnotationsDirective} from './annotations.directive';
 export {StockChartSelectedDataIndexDirective,StockChartSelectedDataIndexesDirective} from './selecteddataindexes.directive';
 export {StockChartPeriodDirective,StockChartPeriodsDirective} from './periods.directive';
+export {StockChartStockEventDirective,StockChartStockEventsDirective} from './stockevents.directive';
 export {StockChartIndicatorDirective,StockChartIndicatorsDirective} from './indicators.directive';
 export { StockChartComponent} from './stockchart.component';
 export { StockChartModule } from './stockchart.module';

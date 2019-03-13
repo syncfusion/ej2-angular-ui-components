@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PivotView } from '@syncfusion/ej2-pivotview';
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
-
-export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','currencyCode','dataSource','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showTooltip','showValuesButton','width'];
-export const outputs: string[] = ['beforeExport','cellClick','cellSelected','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','hyperlinkCellClick','load','onFieldDropped','datasourceChange'];
+export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSource','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
+export const outputs: string[] = ['beforeExport','beginDrillThrough','cellClick','cellSelected','chartSeriesCreated','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender','datasourceChange'];
 export const twoWays: string[] = ['datasource'];
 
 /**
@@ -29,6 +29,14 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
 
 
     public datasourceChange: any;
+    /** 
+     * The template option which is used to render the pivot cells on the pivotview. Here, the template accepts either 
+     *  the string or HTMLElement as template design and then the parsed design is displayed onto the pivot cells.
+     * @default null
+     */
+    @ContentChild('cellTemplate')
+    @Template()
+    public cellTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -66,6 +74,30 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('PivotViewDrillThrough');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewPivotChart');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewPDFExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewExcelExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

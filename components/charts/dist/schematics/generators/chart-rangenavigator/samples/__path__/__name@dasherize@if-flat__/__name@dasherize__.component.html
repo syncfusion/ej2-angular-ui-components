@@ -1,0 +1,66 @@
+
+<div class="control-section">
+    <h4 id="days" style="font-family: Segoe UI;font-weight: 500; font-style:normal; font-size:15px;" align="center">Bitcoin (USD) Price Range</h4>
+    <div align="center">
+        <ejs-rangenavigator id='defaultRn' [valueType]='valueType' [value]='value' [width]='width' [theme]='theme' [tooltip]='tooltip'
+        [navigatorStyleSettings]='navigatorStyleSettings' [labelFormat]='labelFormat' (load)='load($event)'>
+            <e-rangenavigator-series-collection>
+                <e-rangenavigator-series [dataSource]='dataSource' type='Area' xName='x' yName='y' width=2 [fill]='fill' [border]='border'>
+                </e-rangenavigator-series>
+            </e-rangenavigator-series-collection>
+        </ejs-rangenavigator>
+    </div>
+</div>
+<style>
+    #control-container {
+        padding: 0px !important;
+    }
+
+    #container {
+        transform: translate(0, 25%);
+    }
+
+    #material-gradient-chart stop {
+        stop-color: #00bdae;
+    }
+
+    #fabric-gradient-chart stop {
+        stop-color: #4472c4;
+    }
+
+    #bootstrap-gradient-chart stop {
+        stop-color: #a16ee5;
+    }
+
+    #highcontrast-gradient-chart stop {
+        stop-color: #79ECE4;
+    }
+
+    .chart-gradient stop[offset="0"] {
+        stop-opacity: 0.9;
+    }
+
+    .chart-gradient stop[offset="1"] {
+        stop-opacity: 0.3;
+    }
+</style>
+<svg style="height: 0">
+    <defs>
+        <linearGradient id="material-gradient-chart" style="opacity: 0.75" class="chart-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+        <linearGradient id="fabric-gradient-chart" style="opacity: 0.75" class="chart-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+        <linearGradient id="bootstrap-gradient-chart" style="opacity: 0.75" class="chart-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+        <linearGradient id="highcontrast-gradient-chart" style="opacity: 0.75" class="chart-gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+    </defs>
+</svg>

@@ -5,7 +5,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { TreeGridComponent } from './treegrid.component';
 import { TreeGridModule } from './treegrid.module';
-import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit} from '@syncfusion/ej2-treegrid'
+import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit, Selection} from '@syncfusion/ej2-treegrid'
 
 
 export const FilterService: ValueProvider = { provide: 'TreeGridFilter', useValue: Filter};
@@ -21,6 +21,7 @@ export const PdfExportService: ValueProvider = { provide: 'TreeGridPdfExport', u
 export const CommandColumnService: ValueProvider = { provide: 'TreeGridCommandColumn', useValue: CommandColumn};
 export const ContextMenuService: ValueProvider = { provide: 'TreeGridContextMenu', useValue: ContextMenu};
 export const EditService: ValueProvider = { provide: 'TreeGridEdit', useValue: Edit};
+export const SelectionService: ValueProvider = { provide: 'TreeGridSelection', useValue: Selection};
 
 /**
  * NgModule definition for the TreeGrid component with providers.
@@ -43,7 +44,8 @@ export const EditService: ValueProvider = { provide: 'TreeGridEdit', useValue: E
         PdfExportService,
         CommandColumnService,
         ContextMenuService,
-        EditService
+        EditService,
+        SelectionService
     ]
 })
 export class TreeGridAllModule { }

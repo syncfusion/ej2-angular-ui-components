@@ -122,6 +122,12 @@ export class ChartComponent extends Chart implements IComponentBase {
                 }
             } catch { }
         try {
+                let mod = this.injector.get('ChartsStackingLineSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('ChartsStackingAreaSeries');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)

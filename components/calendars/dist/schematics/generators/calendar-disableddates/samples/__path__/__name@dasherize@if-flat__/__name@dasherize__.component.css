@@ -1,0 +1,16 @@
+#control_wrapper {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.control-section {
+    margin: 25px auto;
+}
+#selected {
+    height: 50px;
+    width: 248px;
+    display: block;
+    font-weight: inherit;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.58);
+}

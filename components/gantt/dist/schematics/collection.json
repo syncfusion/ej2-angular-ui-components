@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "gantt-default": {
+      "description": "Create an Angular component with EJ2 Gantt",
+      "factory": "./generators/gantt-default",
+      "schema": "./generators/gantt-default/schema.json"
+    }
+  }
+}

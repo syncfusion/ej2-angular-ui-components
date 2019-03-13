@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'maxWidth', 'minWidth', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular TreeGrid. 
@@ -137,7 +137,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public edit: any;
     /** 
      * Defines the type of component for editing.
-     * @default stringedit
+     * @default 'stringedit'
      */
     public editType: any;
     /** 
@@ -145,7 +145,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * The bounded columns can be sort, filter etc., 
      * The `field` name must be a valid JavaScript identifier, 
      * the first character must be an alphabet and should not contain spaces and special characters.
-     * @default undefined
+     * @default 'undefined'
      */
     public field: any;
     /** 
@@ -209,7 +209,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the header text of column which is used to display in column header. 
      * If `headerText` is not defined, then field name value will be assigned to header text.
-     * @default undefined
+     * @default 'undefined'
      */
     public headerText: any;
     /** 
@@ -223,7 +223,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Column visibility can change based on [`Media Queries`](http://cssmediaqueries.com/what-are-css-media-queries.html). 
      * `hideAtMedia` accepts only valid Media Queries.
-     * @default undefined
+     * @default 'undefined'
      */
     public hideAtMedia: any;
     /** 
@@ -238,14 +238,19 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public isPrimaryKey: any;
     /** 
      * Defines the maximum width of the column in pixels or percentage, which will restrict resizing beyond this pixels or percentage.
-     * @default undefined
+     * @default 'undefined'
      */
     public maxWidth: any;
     /** 
      * Defines the minimum width of the column in pixels or percentage.
-     * @default undefined
+     * @default 'undefined'
      */
     public minWidth: any;
+    /** 
+     * If `showCheckbox` set to true, then the checkboxes will be displayed in particular column.
+     * @default false
+     */
+    public showCheckbox: any;
     /** 
      * If `showColumnMenu` set to false, then it disable the column menu of a particular column. 
      * By default column menu will show for all columns
@@ -254,7 +259,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public showColumnMenu: any;
     /** 
      * Defines the sort comparer property.
-     * @default undefined
+     * @default 'undefined'
      */
     public sortComparer: any;
     /** 
@@ -267,7 +272,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public textAlign: any;
     /** 
      * Gets the unique identifier value of the column. It is used to get the object.
-     * @default undefined
+     * @default 'undefined'
      */
     public uid: any;
     /** 
@@ -287,7 +292,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public visible: any;
     /** 
      * Defines the width of the column in pixels or percentage.
-     * @default undefined
+     * @default 'undefined'
      */
     public width: any;
     /** 

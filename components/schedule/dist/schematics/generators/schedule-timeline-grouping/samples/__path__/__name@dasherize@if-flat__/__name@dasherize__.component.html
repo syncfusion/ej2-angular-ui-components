@@ -1,0 +1,23 @@
+<div class="control-section">
+    <div class="col-lg-12 content-wrapper">
+        <ejs-schedule #scheduleObj width='100%' cssClass='timeline-resource-grouping' height='650px' [selectedDate]="selectedDate"
+            [group]="group" [eventSettings]="eventSettings">
+            <e-resources>
+                <e-resource field='RoomId' title='Choose Project' [dataSource]='roomDataSource' [allowMultiple]='allowMultiple' name='Room'
+                    textField='text' idField='id' colorField='color'>
+                </e-resource>
+                <e-resource field='OwnerId' title='Category' [dataSource]='ownerDataSource' [allowMultiple]='allowMultiple' name='Owner'
+                    textField='text' idField='id' groupIDField="groupId" colorField='color'>
+                </e-resource>
+            </e-resources>
+            <e-views>
+                <e-view option="TimelineDay"></e-view>
+                <e-view option="TimelineWeek"></e-view>
+                <e-view option="TimelineWorkWeek"></e-view>
+                <e-view option="TimelineMonth"></e-view> 
+            </e-views>
+        </ejs-schedule>
+    </div>
+  </div>
+  
+  

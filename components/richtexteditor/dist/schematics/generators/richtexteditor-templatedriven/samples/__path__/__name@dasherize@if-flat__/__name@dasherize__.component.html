@@ -1,0 +1,19 @@
+<div class="control-section">
+    <div id='inline-rte'>
+        <h4>Template form RTE</h4>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group"> 
+                <ejs-richtexteditor #fromRTE #name='ngModel' [(value)]='value' required name="name" [(ngModel)]="value" (created)="rteCreated()"></ejs-richtexteditor>
+                <div *ngIf="(name.invalid && (name.dirty || name.touched))" class="alert alert-danger">
+                    <div *ngIf="name.errors.required">
+                        Value is required.
+                    </div> 
+                </div>
+            </div> 
+            <div>
+                <button type="submit" ejs-button>Submit</button>
+                <button type="reset" ejs-button style="margin-left: 20px">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

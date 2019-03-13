@@ -1,0 +1,155 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "accordion-default": {
+      "description": "Create an Angular component with EJ2 undefined with default",
+      "factory": "./generators/accordion-default",
+      "schema": "./generators/accordion-default/schema.json"
+    },
+    "accordion-html-template": {
+      "description": "Create an Angular component with EJ2 undefined with html-template",
+      "factory": "./generators/accordion-html-template",
+      "schema": "./generators/accordion-html-template/schema.json"
+    },
+    "accordion-multiple-expand": {
+      "description": "Create an Angular component with EJ2 undefined with multiple-expand",
+      "factory": "./generators/accordion-multiple-expand",
+      "schema": "./generators/accordion-multiple-expand/schema.json"
+    },
+    "accordion-nested": {
+      "description": "Create an Angular component with EJ2 undefined with nested",
+      "factory": "./generators/accordion-nested",
+      "schema": "./generators/accordion-nested/schema.json"
+    },
+    "contextmenu-default": {
+      "description": "Create an Angular component with EJ2 contextmenu",
+      "factory": "./generators/contextmenu-default",
+      "schema": "./generators/contextmenu-default/schema.json"
+    },
+    "menu-default": {
+      "description": "Create an Angular component with EJ2 menu",
+      "factory": "./generators/menu-default",
+      "schema": "./generators/menu-default/schema.json"
+    },
+    "sidebar-backdrop": {
+      "description": "Create an Angular sidebar component with enable backdrop option.",
+      "factory": "./generators/sidebar-backdrop",
+      "schema": "./generators/sidebar-backdrop/schema.json"
+    },
+    "sidebar-dock": {
+      "description": "Create an Angular sidebar component with enable docking feature.",
+      "factory": "./generators/sidebar-dock",
+      "schema": "./generators/sidebar-dock/schema.json"
+    },
+    "sidebar-target": {
+      "description": "Create an Angular sidebar component with target option.",
+      "factory": "./generators/sidebar-target",
+      "schema": "./generators/sidebar-target/schema.json"
+    },
+    "sidebar-types": {
+      "description": "Create an Angular sidebar component with different types.",
+      "factory": "./generators/sidebar-types",
+      "schema": "./generators/sidebar-types/schema.json"
+    },
+    "tab-html-template": {
+      "description": "Create an Angular Tab component with HTML template",
+      "factory": "./generators/tab-html-template",
+      "schema": "./generators/tab-html-template/schema.json"
+    },
+    "tab-icon": {
+      "description": "Create an Angular Tab component with an icon",
+      "factory": "./generators/tab-icon",
+      "schema": "./generators/tab-icon/schema.json"
+    },
+    "tab-nested": {
+      "description": "Create an Angular Tab component with nested tabs",
+      "factory": "./generators/tab-nested",
+      "schema": "./generators/tab-nested/schema.json"
+    },
+    "tab-popup": {
+      "description": "Create an Angular Tab component with popup mode",
+      "factory": "./generators/tab-popup",
+      "schema": "./generators/tab-popup/schema.json"
+    },
+    "tab-scrollable": {
+      "description": "Create an Angular Tab component with scrollable mode",
+      "factory": "./generators/tab-scrollable",
+      "schema": "./generators/tab-scrollable/schema.json"
+    },
+    "tab-vertical": {
+      "description": "Create an Angular Tab component with vertical orientation",
+      "factory": "./generators/tab-vertical",
+      "schema": "./generators/tab-vertical/schema.json"
+    },
+    "toolbar-alignment": {
+      "description": "Create an Angular Toolbar component with alignment",
+      "factory": "./generators/toolbar-alignment",
+      "schema": "./generators/toolbar-alignment/schema.json"
+    },
+    "toolbar-extended": {
+      "description": "Create an Angular Toolbar component with extended mode",
+      "factory": "./generators/toolbar-extended",
+      "schema": "./generators/toolbar-extended/schema.json"
+    },
+    "toolbar-html-template": {
+      "description": "Create an Angular Toolbar component with HTML template",
+      "factory": "./generators/toolbar-html-template",
+      "schema": "./generators/toolbar-html-template/schema.json"
+    },
+    "toolbar-multi-row": {
+      "description": "Create an Angular Toolbar component with multi-row mode",
+      "factory": "./generators/toolbar-multi-row",
+      "schema": "./generators/toolbar-multi-row/schema.json"
+    },
+    "toolbar-popup": {
+      "description": "Create an Angular Toolbar component with popup mode",
+      "factory": "./generators/toolbar-popup",
+      "schema": "./generators/toolbar-popup/schema.json"
+    },
+    "toolbar-scrollable": {
+      "description": "Create an Angular Toolbar component with scrollable mode",
+      "factory": "./generators/toolbar-scrollable",
+      "schema": "./generators/toolbar-scrollable/schema.json"
+    },
+    "treeview-checkbox": {
+      "description": "Create an Angular TreeView component with checkbox",
+      "factory": "./generators/treeview-checkbox",
+      "schema": "./generators/treeview-checkbox/schema.json"
+    },
+    "treeview-default": {
+      "description": "Create an Angular component with TreeView",
+      "factory": "./generators/treeview-default",
+      "schema": "./generators/treeview-default/schema.json"
+    },
+    "treeview-draganddrop": {
+      "description": "Create an Angular TreeView component with drag and drop",
+      "factory": "./generators/treeview-draganddrop",
+      "schema": "./generators/treeview-draganddrop/schema.json"
+    },
+    "treeview-multiselection": {
+      "description": "Create an Angular TreeView component with multi selection",
+      "factory": "./generators/treeview-multiselection",
+      "schema": "./generators/treeview-multiselection/schema.json"
+    },
+    "treeview-nodeediting": {
+      "description": "Create an Angular TreeView component with node editing",
+      "factory": "./generators/treeview-nodeediting",
+      "schema": "./generators/treeview-nodeediting/schema.json"
+    },
+    "treeview-remotedata": {
+      "description": "Create an Angular TreeView component with remote datasource",
+      "factory": "./generators/treeview-remotedata",
+      "schema": "./generators/treeview-remotedata/schema.json"
+    },
+    "treeview-treetemplate": {
+      "description": "Create an Angular TreeView component with template",
+      "factory": "./generators/treeview-treetemplate",
+      "schema": "./generators/treeview-treetemplate/schema.json"
+    }
+  }
+}

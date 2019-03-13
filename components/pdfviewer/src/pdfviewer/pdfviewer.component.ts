@@ -4,8 +4,8 @@ import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 
-export const inputs: string[] = ['documentPath','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableNavigation','enablePersistence','enablePrint','enableRtl','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','hyperlinkOpenState','interactionMode','locale','serverActionSettings','serviceUrl','toolbarSettings','width'];
-export const outputs: string[] = ['ajaxRequestFailed','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','pageChange','pageClick','zoomChange'];
+export const inputs: string[] = ['annotationToolbarSettings','documentPath','enableAnnotation','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableNavigation','enablePersistence','enablePrint','enableRtl','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','locale','serverActionSettings','serviceUrl','strikethroughSettings','toolbarSettings','underlineSettings','width'];
+export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','pageChange','pageClick','zoomChange'];
 export const twoWays: string[] = [];
 
 /**
@@ -84,6 +84,12 @@ export class PdfViewerComponent extends PdfViewer implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('PdfViewerTextSearch');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerAnnotation');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

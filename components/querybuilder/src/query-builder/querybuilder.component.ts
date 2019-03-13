@@ -5,7 +5,7 @@ import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { ColumnsDirective } from './columns.directive';
 
 export const inputs: string[] = ['allowValidation','columns','cssClass','dataSource','displayMode','enablePersistence','enableRtl','height','locale','maxGroupCount','rule','showButtons','sortDirection','summaryView','width'];
-export const outputs: string[] = ['beforeConditionChange','beforeFieldChange','beforeOperatorChange','beforeValueChange','conditionChanged','created','fieldChanged','groupDelete','groupInsert','operatorChanged','ruleDelete','ruleInsert','valueChanged'];
+export const outputs: string[] = ['beforeChange','change','created'];
 export const twoWays: string[] = [''];
 
 /**

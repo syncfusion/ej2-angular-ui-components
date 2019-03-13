@@ -1,0 +1,41 @@
+<ejs-sidebar #dockBar id="dockSidebar" [enableDock]='enableDock' [width]='width' [dockSize]='dockSize'>
+    <div class="dock">
+        <ul>
+            <li class="sidebar-item" id="toggle" (click)="toggleClick()">
+                <span class="e-icons expand"></span>
+                <span class="e-text" title="menu">Menu</span>
+            </li>
+            <li class="sidebar-item">
+                <span class="e-icons home"></span>
+                <span class="e-text" title="home">Home</span>
+            </li>
+            <li class="sidebar-item">
+                <span class="e-icons profile"></span>
+                <span class="e-text" title="profile">Profile</span>
+            </li>
+            <li class="sidebar-item">
+                <span class="e-icons info"></span>
+                <span class="e-text" title="info">Info</span>
+            </li>
+            <li class="sidebar-item">
+                <span class="e-icons settings"></span>
+                <span class="e-text" title="settings">Settings</span>
+            </li>
+        </ul>
+    </div>
+</ejs-sidebar>
+<div id="main-content container-fluid col-md-12 ">
+    <div class="title">Main content</div>
+    <div class="sub-title">Click the radio button to switch the sidebar position
+        <div className="center-align">
+            <div class="column">
+              <input type="radio" id="left" name="state" value="left" (change)="positionChange($event)" checked="true">Left<br/>
+            </div>
+            <div class="column">
+          <input type="radio" id="right" name="state" value="right" (change)="positionChange($event)" >Right<br/>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+</div>

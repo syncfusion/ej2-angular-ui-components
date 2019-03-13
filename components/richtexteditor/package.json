@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-richtexteditor",
-	"version": "16.4.54",
+	"version": "17.1.1",
 	"description": "Essential JS 2 RichTextEditor component for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -32,6 +32,8 @@
 		"rollup-plugin-uglify": "^1.0.1",
 		"systemjs": "^0.19.40",
 		"systemjs-plugin-babel": "0.0.17",
+		"ng-packagr": "1.5.0",
+		"tsickle": "0.34.0",
 		"es6-promise": "^3.2.1",
 		"gulp": "^3.9.1",
 		"gulp-sass": "^3.1.0",

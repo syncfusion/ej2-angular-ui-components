@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "splitter-horizontalsplitter": {
+      "description": "Create an Angular splitter component with horizontal orientation.",
+      "factory": "./generators/splitter-horizontalsplitter",
+      "schema": "./generators/splitter-horizontalsplitter/schema.json"
+    },
+    "splitter-nestedsplitter": {
+      "description": "Create an Angular splitter component with nested layout.",
+      "factory": "./generators/splitter-nestedsplitter",
+      "schema": "./generators/splitter-nestedsplitter/schema.json"
+    },
+    "splitter-verticalsplitter": {
+      "description": "Create an Angular splitter component with vertical orientation.",
+      "factory": "./generators/splitter-verticalsplitter",
+      "schema": "./generators/splitter-verticalsplitter/schema.json"
+    }
+  }
+}

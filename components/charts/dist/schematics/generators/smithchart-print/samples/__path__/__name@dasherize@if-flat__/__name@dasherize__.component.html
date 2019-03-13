@@ -1,0 +1,25 @@
+<div class="control-section">
+        <ejs-smithchart style='display:block' align='center' id='smithchartcontainer' #smithchart [legendSettings] = 'legend'  (load)='load($event)'>
+            <e-seriesCollection>
+                <e-series [points]='data' name='Transmission'[marker]='marker' [enableAnimation] = true [tooltip] = 'tooltip'> </e-series>
+            </e-seriesCollection>
+        </ejs-smithchart>
+    </div>
+<div>
+    <table>
+        <tr id="button-control" style="height: 50px" align="center">
+            <td>
+                 <div style="margin-left: 40%;">
+                    <button ejs-button id="togglebtn1" iconCss='e-icons e-play-icon' cssClass= 'e-flat' isPrimary=true (click)='onClick1($event)' style="width: 100px">Export</button>
+                </div>
+            </td>
+        </tr>
+        <tr id="button-control" style="height: 50px">
+            <td align="center">
+                    <div style="margin-left: 40%;">
+                    <button ejs-button id="togglebtn2" iconCss='e-icons e-play-icon' cssClass= 'e-flat' isPrimary=true (click)='onClick2($event)' style="width: 100px">Print</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

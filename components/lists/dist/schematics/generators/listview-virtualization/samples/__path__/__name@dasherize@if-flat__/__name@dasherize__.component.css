@@ -1,0 +1,83 @@
+.control-section {
+  overflow: auto;
+}
+
+.content-wrapper {
+  width: 52%;
+  margin: 0 auto;
+  min-width: 185px;
+}
+
+/* ListView position alignment */
+
+#ui-list.e-listview {
+  margin: auto;
+  max-width: 325px;
+  line-height: initial;
+  border: 1px solid lightgray;
+}
+
+/* ListView header alignment */
+
+#ui-list.e-listview .e-list-header {
+  height: 50px
+}
+
+#ui-list.e-listview .e-list-header .e-text {
+  line-height: 18px
+}
+
+/* ListView template customization */
+
+#ui-list.e-listview .showUI {
+  display: flex;
+}
+
+#ui-list.e-listview .hideUI {
+  display: none;
+}
+
+#ui-list.e-listview .e-list-item {
+  padding: 3px 0;
+}
+
+#ui-list.e-listview .R {
+  background: lightgrey;
+}
+
+#ui-list.e-listview .M {
+  background: pink;
+}
+
+#ui-list.e-listview .A {
+  background: lightgreen;
+}
+
+#ui-list.e-listview .S {
+  background: lightskyblue;
+}
+
+#ui-list.e-listview .J {
+  background: orange;
+}
+
+#ui-list.e-listview .N {
+  background: lightblue;
+}
+
+/* ListView theme customization */
+
+.highcontrast #ui-list.e-listview .e-list-item,
+.highcontrast #ui-list.e-listview .e-list-header {
+  background: rgb(0, 0, 0);
+}
+
+.highcontrast #ui-list.e-listview .e-list-item.e-active {
+  background: #ffd939;
+  color: #000000;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}

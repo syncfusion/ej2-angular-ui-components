@@ -14,7 +14,7 @@ import { SelectedDataIndexDirective, SelectedDataIndexesDirective } from './sele
 import { IndicatorDirective, IndicatorsDirective } from './indicators.directive';
 import { ChartComponent } from './chart.component';
 import { ChartModule } from './chart.module';
-import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export} from '@syncfusion/ej2-charts'
+import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export} from '@syncfusion/ej2-charts'
 
 
 export const LineSeriesService: ValueProvider = { provide: 'ChartsLineSeries', useValue: LineSeries};
@@ -28,6 +28,7 @@ export const ScrollBarService: ValueProvider = { provide: 'ChartsScrollBar', use
 export const StepLineSeriesService: ValueProvider = { provide: 'ChartsStepLineSeries', useValue: StepLineSeries};
 export const StepAreaSeriesService: ValueProvider = { provide: 'ChartsStepAreaSeries', useValue: StepAreaSeries};
 export const StackingColumnSeriesService: ValueProvider = { provide: 'ChartsStackingColumnSeries', useValue: StackingColumnSeries};
+export const StackingLineSeriesService: ValueProvider = { provide: 'ChartsStackingLineSeries', useValue: StackingLineSeries};
 export const StackingAreaSeriesService: ValueProvider = { provide: 'ChartsStackingAreaSeries', useValue: StackingAreaSeries};
 export const BarSeriesService: ValueProvider = { provide: 'ChartsBarSeries', useValue: BarSeries};
 export const StackingBarSeriesService: ValueProvider = { provide: 'ChartsStackingBarSeries', useValue: StackingBarSeries};
@@ -91,6 +92,7 @@ export const ExportService: ValueProvider = { provide: 'ChartsExport', useValue:
         StepLineSeriesService,
         StepAreaSeriesService,
         StackingColumnSeriesService,
+        StackingLineSeriesService,
         StackingAreaSeriesService,
         BarSeriesService,
         StackingBarSeriesService,

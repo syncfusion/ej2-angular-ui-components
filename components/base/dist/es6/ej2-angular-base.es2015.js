@@ -470,6 +470,7 @@ class FormBase {
     }
     setDisabledState(disabled) {
         this.enabled = !disabled;
+        this.disabled = disabled;
     }
     writeValue(value) {
         //update control value from angular

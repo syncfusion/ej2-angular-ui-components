@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -143,6 +143,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public sourceID: any;
     /** 
+     * Sets the source padding of the connector
+     * @default 0
+     */
+    public sourcePadding: any;
+    /** 
      * Sets the beginning point of the connector
      * @default new Point(0,0)
      */
@@ -167,6 +172,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default null
      */
     public targetID: any;
+    /** 
+     * Sets the target padding of the connector
+     * @default 0
+     */
+    public targetPadding: any;
     /** 
      * Sets the end point of the connector
      * @default new Point(0,0)

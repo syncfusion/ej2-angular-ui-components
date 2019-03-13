@@ -148,7 +148,7 @@ describe('Form Base Coverage Test', () => {
     });
     it("checking value type, if obj type do stringify", () => {
         let formCmpt: FormBase<any> = new FormBase();
-        formCmpt.value = { value: { check: 'hello' } };
+        formCmpt.value = {value:{check:'hello'}};
         formCmpt.writeValue(formCmpt.value);
         formCmpt.localChange(formCmpt.value);
         let check = formCmpt.objCheck;
@@ -160,6 +160,7 @@ describe('Form Base Coverage Test', () => {
         let formCmpt: FormBase<any> = new FormBase();
         formCmpt.setDisabledState(true);
         expect(formCmpt.enabled).toEqual(false);
+        expect(formCmpt.disabled).toEqual(true);
     });
 })
 

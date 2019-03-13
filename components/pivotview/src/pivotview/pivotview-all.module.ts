@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PivotViewComponent } from './pivotview.component';
 import { PivotViewModule } from './pivotview.module';
-import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough} from '@syncfusion/ej2-pivotview'
+import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough, Toolbar, PivotChart, PDFExport, ExcelExport} from '@syncfusion/ej2-pivotview'
 
 
 export const GroupingBarService: ValueProvider = { provide: 'PivotViewGroupingBar', useValue: GroupingBar};
@@ -11,6 +11,10 @@ export const CalculatedFieldService: ValueProvider = { provide: 'PivotViewCalcul
 export const ConditionalFormattingService: ValueProvider = { provide: 'PivotViewConditionalFormatting', useValue: ConditionalFormatting};
 export const VirtualScrollService: ValueProvider = { provide: 'PivotViewVirtualScroll', useValue: VirtualScroll};
 export const DrillThroughService: ValueProvider = { provide: 'PivotViewDrillThrough', useValue: DrillThrough};
+export const ToolbarService: ValueProvider = { provide: 'PivotViewToolbar', useValue: Toolbar};
+export const PivotChartService: ValueProvider = { provide: 'PivotViewPivotChart', useValue: PivotChart};
+export const PDFExportService: ValueProvider = { provide: 'PivotViewPDFExport', useValue: PDFExport};
+export const ExcelExportService: ValueProvider = { provide: 'PivotViewExcelExport', useValue: ExcelExport};
 
 /**
  * NgModule definition for the PivotView component with providers.
@@ -26,7 +30,11 @@ export const DrillThroughService: ValueProvider = { provide: 'PivotViewDrillThro
         CalculatedFieldService,
         ConditionalFormattingService,
         VirtualScrollService,
-        DrillThroughService
+        DrillThroughService,
+        ToolbarService,
+        PivotChartService,
+        PDFExportService,
+        ExcelExportService
     ]
 })
 export class PivotViewAllModule { }

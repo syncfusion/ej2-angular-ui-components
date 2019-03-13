@@ -5,7 +5,7 @@ import { Splitter } from '@syncfusion/ej2-layouts';
 import { PanesDirective } from './panesettings.directive';
 
 export const inputs: string[] = ['cssClass','enablePersistence','enableRtl','enabled','height','locale','orientation','paneSettings','separatorSize','width'];
-export const outputs: string[] = ['created','resizeStart','resizeStop','resizing'];
+export const outputs: string[] = ['beforeCollapse','beforeExpand','collapsed','created','expanded','resizeStart','resizeStop','resizing'];
 export const twoWays: string[] = [''];
 
 /**

@@ -4,8 +4,8 @@ import { TreeMap } from '@syncfusion/ej2-treemap';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { LevelsDirective } from './levels.directive';
 
-export const inputs: string[] = ['background','border','colorValuePath','dataSource','description','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
-export const outputs: string[] = ['beforePrint','click','drillEnd','drillStart','itemClick','itemHighlight','itemMove','itemRendering','itemSelected','load','loaded','mouseMove','resize','tooltipRendering'];
+export const inputs: string[] = ['background','border','breadcrumbConnector','colorValuePath','dataSource','description','drillDownView','enableBreadcrumb','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','renderDirection','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
+export const outputs: string[] = ['beforePrint','click','doubleClick','drillEnd','drillStart','itemClick','itemHighlight','itemMove','itemRendering','itemSelected','legendItemRendering','legendRendering','load','loaded','mouseMove','resize','rightClick','tooltipRendering'];
 export const twoWays: string[] = [''];
 
 /**

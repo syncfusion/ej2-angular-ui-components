@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "treegrid-default": {
+      "description": "Creates an Angular TreeGrid component",
+      "factory": "./generators/treegrid-default",
+      "schema": "./generators/treegrid-default/schema.json"
+    },
+    "treegrid-feature": {
+      "description": "Creates an Angular TreeGrid component with paging, filtering, sorting feature",
+      "factory": "./generators/treegrid-feature",
+      "schema": "./generators/treegrid-feature/schema.json"
+    }
+  }
+}

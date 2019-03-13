@@ -14,7 +14,7 @@ let outputs: string[] = [];
  * ```
  */
 @Directive({
-    selector: 'e-stockchart-periods>e-stockchart-period',
+    selector: 'e-stockchart-indicators>e-stockchart-period',
     inputs: input,
     outputs: outputs,    
     queries: {

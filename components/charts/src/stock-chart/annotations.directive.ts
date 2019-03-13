@@ -60,7 +60,7 @@ export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotat
     /** 
      * if set coordinateUnit as `Pixel` X specifies the axis value 
      * else is specifies pixel or percentage of coordinate
-     * @default 0
+     * @default '0'
      */
     public x: any;
     /** 
@@ -72,7 +72,7 @@ export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotat
     /** 
      * if set coordinateUnit as `Pixel` Y specifies the axis value 
      * else is specifies pixel or percentage of coordinate
-     * @default 0
+     * @default '0'
      */
     public y: any;
     /** 

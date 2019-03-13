@@ -2,10 +2,10 @@ import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Inje
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { DateRangePicker } from '@syncfusion/ej2-calendars';
-
+import { Template } from '@syncfusion/ej2-angular-base';
 import { PresetsDirective } from './presets.directive';
 
-export const inputs: string[] = ['allowEdit','calendarMode','cssClass','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','showClearButton','startDate','strictMode','value','weekNumber','width','zIndex'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','depth','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','showClearButton','start','startDate','strictMode','value','weekNumber','width','zIndex'];
 export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
 export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 
@@ -39,6 +39,17 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
     public startDateChange: any;
     public endDateChange: any;
     public valueChange: any;
+    /** 
+     * Specifies the initial view of the Calendar when it is opened. 
+     * With the help of this property, initial view can be changed to year or decade view.
+     * @default Month
+     */
+    @ContentChild('start')
+    @Template()
+    public start: any;
+    @ContentChild('end')
+    @Template()
+    public end: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {

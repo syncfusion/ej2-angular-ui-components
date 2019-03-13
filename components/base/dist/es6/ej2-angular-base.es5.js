@@ -506,6 +506,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
     };
     FormBase.prototype.setDisabledState = function (disabled) {
         this.enabled = !disabled;
+        this.disabled = disabled;
     };
     FormBase.prototype.writeValue = function (value) {
         //update control value from angular

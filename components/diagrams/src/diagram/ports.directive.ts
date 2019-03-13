@@ -37,7 +37,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
     public addInfo: any;
     /** 
      * Defines the constraints of port
-     * @default 'None'
+     * @default 'Default'
      * @aspnumberenum 
      */
     public constraints: any;

@@ -12,6 +12,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public propagateChange(_: T): void { return; }
     public propagateTouch(): void { return; }
     public enabled: Object;
+    public disabled: Object;
     public angularValue: T;
     public objCheck: Boolean;
     public duplicateValue: string;
@@ -83,6 +84,7 @@ export class FormBase<T> implements ControlValueAccessor {
     }
     public setDisabledState(disabled: boolean): void {
         this.enabled = !disabled;
+        this.disabled = disabled;
     }
 
     public writeValue(value: T): void {

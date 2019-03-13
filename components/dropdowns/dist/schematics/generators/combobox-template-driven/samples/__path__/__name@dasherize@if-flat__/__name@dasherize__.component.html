@@ -1,0 +1,23 @@
+
+                <form #form="ngForm" class='box-form'>
+                        <div class="form-group">
+                            <ejs-combobox name="skillname" #value='ngModel' required [(ngModel)]= 'autoskillname' allowCustom=false
+                            [dataSource]='autoSkillsetData' [placeholder]='autoDrivenPlaceholder' floatLabelType='Auto'>
+                            </ejs-combobox>
+                             <div *ngIf="(value.invalid && (value.dirty || value.touched))" class="alert alert-danger">
+                                <div *ngIf="value.errors.required">
+                                    Value is required.
+                                </div>
+                            </div>
+                        </div>
+                     
+                            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                          <button ejs-button [disabled]="!form.valid">Submit</button>
+                          </div>
+                          <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                            <button ejs-button (click)="onreset($event)" type="reset" [disabled]="!form.valid">Reset</button>
+                          </div>
+                     
+                      </form>
+  
+    

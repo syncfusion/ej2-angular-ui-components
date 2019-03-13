@@ -1,0 +1,8 @@
+<div class="control-section">
+       <ejs-smithchart style='display:block' align='center' id='smithchartcontainer' #smithchart   [radius] = 'radius' (load)='load($event)' [renderType] = 'renderType'>
+           <e-seriesCollection>
+               <e-series [points]='data' name='Transmission1' [enableAnimation] = true > </e-series>
+               <e-series [points]='data1' name='Transmission2'[enableAnimation] = true > </e-series>
+           </e-seriesCollection>
+       </ejs-smithchart>
+   </div>
