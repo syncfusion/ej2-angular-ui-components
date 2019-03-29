@@ -459,6 +459,7 @@ exports.htmlKeyConfig = ej2Richtexteditor.htmlKeyConfig;
 exports.markdownKeyConfig = ej2Richtexteditor.markdownKeyConfig;
 exports.pasteCleanupGroupingTags = ej2Richtexteditor.pasteCleanupGroupingTags;
 exports.listConversionFilters = ej2Richtexteditor.listConversionFilters;
+exports.selfClosingTags = ej2Richtexteditor.selfClosingTags;
 exports.KEY_DOWN = ej2Richtexteditor.KEY_DOWN;
 exports.ACTION = ej2Richtexteditor.ACTION;
 exports.FORMAT_TYPE = ej2Richtexteditor.FORMAT_TYPE;

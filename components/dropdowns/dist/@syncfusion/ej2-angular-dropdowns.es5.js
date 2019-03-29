@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef, forwardRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComponentBase, ComponentMixins, FormBase, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { AutoComplete, CheckBoxSelection, ComboBox, DropDownList, MultiSelect } from '@syncfusion/ej2-dropdowns';
+import { AutoComplete, CheckBoxSelection, ComboBox, DropDownList, ListBox, MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { CommonModule } from '@angular/common';
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -832,9 +832,191 @@ MultiSelectAllModule.decorators = [
  * @nocollapse
  */
 MultiSelectAllModule.ctorParameters = function () { return []; };
+var __decorate$4 = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+        r = Reflect.decorate(decorators, target, key, desc);
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$4 = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+        return Reflect.metadata(k, v);
+};
+var inputs$4 = ['actionFailureTemplate', 'allowDragAndDrop', 'cssClass', 'dataSource', 'enablePersistence', 'enableRtl', 'enabled', 'fields', 'groupTemplate', 'height', 'ignoreAccent', 'itemTemplate', 'locale', 'noRecordsTemplate', 'query', 'scope', 'selectionSettings', 'sortOrder', 'toolbarSettings', 'value', 'zIndex'];
+var outputs$4 = ['focus', 'blur', 'actionBegin', 'actionComplete', 'actionFailure', 'beforeItemRender', 'created', 'dataBound', 'destroyed', 'drag', 'dragStart', 'drop', 'select', 'valueChange'];
+var twoWays$4 = ['value'];
+/**
+ * The ListBox allows the user to select values from the predefined list of values.
+ * ```html
+ * <ejs-listbox [dataSource]='data'></ejs-listbox>
+ * ```
+ */
+var ListBoxComponent = ListBoxComponent_1 = /** @class */ (function (_super) {
+    __extends(ListBoxComponent, _super);
+    /**
+     * @param {?} ngEle
+     * @param {?} srenderer
+     * @param {?} viewContainerRef
+     * @param {?} injector
+     */
+    function ListBoxComponent(ngEle, srenderer, viewContainerRef, injector) {
+        var _this = _super.call(this) || this;
+        _this.ngEle = ngEle;
+        _this.srenderer = srenderer;
+        _this.viewContainerRef = viewContainerRef;
+        _this.injector = injector;
+        _this.element = _this.ngEle.nativeElement;
+        _this.injectedModules = _this.injectedModules || [];
+        try {
+            var mod = _this.injector.get('DropDownsCheckBoxSelection');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_a) { }
+        _this.registerEvents(outputs$4);
+        _this.addTwoWay.call(_this, twoWays$4);
+        setValue('currentInstance', _this, _this.viewContainerRef);
+        return _this;
+    }
+    /**
+     * @param {?} registerFunction
+     * @return {?}
+     */
+    ListBoxComponent.prototype.registerOnChange = function (registerFunction) {
+    };
+    /**
+     * @param {?} registerFunction
+     * @return {?}
+     */
+    ListBoxComponent.prototype.registerOnTouched = function (registerFunction) {
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    ListBoxComponent.prototype.writeValue = function (value) {
+    };
+    /**
+     * @param {?} disabled
+     * @return {?}
+     */
+    ListBoxComponent.prototype.setDisabledState = function (disabled) {
+    };
+    /**
+     * @return {?}
+     */
+    ListBoxComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * @return {?}
+     */
+    ListBoxComponent.prototype.ngAfterViewInit = function () {
+    };
+    /**
+     * @return {?}
+     */
+    ListBoxComponent.prototype.ngOnDestroy = function () {
+    };
+    /**
+     * @return {?}
+     */
+    ListBoxComponent.prototype.ngAfterContentChecked = function () {
+    };
+    return ListBoxComponent;
+}(ListBox));
+ListBoxComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'ejs-listbox',
+                inputs: inputs$4,
+                outputs: outputs$4,
+                template: '',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                providers: [
+                    {
+                        provide: NG_VALUE_ACCESSOR,
+                        useExisting: forwardRef(function () { return ListBoxComponent_1; }),
+                        multi: true
+                    }
+                ],
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ListBoxComponent.ctorParameters = function () { return [
+    { type: ElementRef, },
+    { type: Renderer2, },
+    { type: ViewContainerRef, },
+    { type: Injector, },
+]; };
+ListBoxComponent.propDecorators = {
+    'itemTemplate': [{ type: ContentChild, args: ['itemTemplate',] },],
+};
+__decorate$4([
+    Template(),
+    __metadata$4("design:type", Object)
+], ListBoxComponent.prototype, "itemTemplate", void 0);
+ListBoxComponent = ListBoxComponent_1 = __decorate$4([
+    ComponentMixins([ComponentBase, FormBase]),
+    __metadata$4("design:paramtypes", [ElementRef,
+        Renderer2,
+        ViewContainerRef,
+        Injector])
+], ListBoxComponent);
+var ListBoxComponent_1;
+/**
+ * NgModule definition for the ListBox component.
+ */
+var ListBoxModule = /** @class */ (function () {
+    function ListBoxModule() {
+    }
+    return ListBoxModule;
+}());
+ListBoxModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule],
+                declarations: [
+                    ListBoxComponent
+                ],
+                exports: [
+                    ListBoxComponent
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ListBoxModule.ctorParameters = function () { return []; };
+/**
+ * NgModule definition for the ListBox component with providers.
+ */
+var ListBoxAllModule = /** @class */ (function () {
+    function ListBoxAllModule() {
+    }
+    return ListBoxAllModule;
+}());
+ListBoxAllModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule, ListBoxModule],
+                exports: [
+                    ListBoxModule
+                ],
+                providers: []
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ListBoxAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { DropDownListComponent, DropDownListModule, DropDownListAllModule, ComboBoxComponent, ComboBoxModule, ComboBoxAllModule, AutoCompleteComponent, AutoCompleteModule, AutoCompleteAllModule, MultiSelectComponent, MultiSelectModule, MultiSelectAllModule, CheckBoxSelectionService, inputs$2 as ɵe, outputs$2 as ɵf, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb, inputs$3 as ɵg, outputs$3 as ɵh };
-export { incrementalSearch, Search, highlightSearch, revertHighlightSearch, FieldSettings, dropDownBaseClasses, DropDownBase, dropDownListClasses, DropDownList, ComboBox, AutoComplete, MultiSelect, CheckBoxSelection } from '@syncfusion/ej2-dropdowns';
+export { DropDownListComponent, DropDownListModule, DropDownListAllModule, ComboBoxComponent, ComboBoxModule, ComboBoxAllModule, AutoCompleteComponent, AutoCompleteModule, AutoCompleteAllModule, MultiSelectComponent, MultiSelectModule, MultiSelectAllModule, CheckBoxSelectionService, ListBoxComponent, ListBoxModule, ListBoxAllModule, inputs$2 as ɵe, outputs$2 as ɵf, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb, inputs$4 as ɵi, outputs$4 as ɵj, inputs$3 as ɵg, outputs$3 as ɵh };
+export { incrementalSearch, Search, highlightSearch, revertHighlightSearch, FieldSettings, dropDownBaseClasses, DropDownBase, dropDownListClasses, DropDownList, ComboBox, AutoComplete, MultiSelect, CheckBoxSelection, SelectionSettings, ToolbarSettings, ListBox } from '@syncfusion/ej2-dropdowns';
 //# sourceMappingURL=ej2-angular-dropdowns.es5.js.map

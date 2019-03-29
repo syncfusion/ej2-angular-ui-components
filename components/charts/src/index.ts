@@ -38,7 +38,7 @@ export {StockChartRowDirective,StockChartRowsDirective} from './stock-chart/rows
 export {StockChartAnnotationDirective,StockChartAnnotationsDirective} from './stock-chart/annotations.directive';
 export {StockChartSelectedDataIndexDirective,StockChartSelectedDataIndexesDirective} from './stock-chart/selecteddataindexes.directive';
 export {StockChartPeriodDirective,StockChartPeriodsDirective} from './stock-chart/periods.directive';
-export {StockChartStockEventDirective,StockChartStockEventsDirective} from './stock-chart/stockevents.directive';
+export {StockEventDirective,StockEventsDirective} from './stock-chart/stockevents.directive';
 export {StockChartIndicatorDirective,StockChartIndicatorsDirective} from './stock-chart/indicators.directive';
 export { StockChartComponent} from './stock-chart/stockchart.component';
 export { StockChartModule } from './stock-chart/stockchart.module';

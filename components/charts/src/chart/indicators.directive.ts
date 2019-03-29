@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'improveChartPerformance', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+let input: string[] = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 let outputs: string[] = [];
 /**
  * Indicator Directive
@@ -61,6 +61,11 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public dataSource: any;
     /** 
+     * This property used to improve chart performance via data mapping for series dataSource.
+     * @default false
+     */
+    public enableComplexProperty: any;
+    /** 
      * Sets the fast period to define the Macd line
      * @default 26
      */
@@ -83,11 +88,6 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      * @default ''
      */
     public high: any;
-    /** 
-     * This property used to improve chart performance via data mapping for series dataSource.
-     * @default true
-     */
-    public improveChartPerformance: any;
     /** 
      * Defines the look back period, the price changes over which will define the %K value in stochastic indicators
      * @default 14

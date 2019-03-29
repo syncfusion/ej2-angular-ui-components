@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 17.1.38 (2019-03-29)
+
+### Form Validator
+
+#### Bug Fixes
+
+- Resolved issue with same validation message displays for all fields when provide validation messages using data attribute.
+
+### Uploader
+
+#### Bug Fixes
+
+- File name ellipsis issue in `edge` browser has been fixed.
+
+### TextBox
+
+#### Bug Fixes
+
+- When textbox contains value initially, no more change event will trigger while focus followed by focus out.
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Value not updated properly in reactive forms issue fixed.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### MaskedTextBox

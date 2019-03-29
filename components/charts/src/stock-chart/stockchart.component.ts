@@ -8,7 +8,7 @@ import { StockChartRowsDirective } from './rows.directive';
 import { StockChartAnnotationsDirective } from './annotations.directive';
 import { StockChartSelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { StockChartPeriodsDirective } from './periods.directive';
-import { StockChartStockEventsDirective } from './stockevents.directive';
+import { StockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','stockEvents','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
@@ -34,7 +34,7 @@ export const twoWays: string[] = [''];
         childAnnotations: new ContentChild(StockChartAnnotationsDirective), 
         childSelectedDataIndexes: new ContentChild(StockChartSelectedDataIndexesDirective), 
         childPeriods: new ContentChild(StockChartPeriodsDirective), 
-        childStockEvents: new ContentChild(StockChartStockEventsDirective), 
+        childStockEvents: new ContentChild(StockEventsDirective), 
         childIndicators: new ContentChild(StockChartIndicatorsDirective)
     }
 })

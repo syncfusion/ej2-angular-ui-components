@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+var input = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 var outputs = [];
 /**
  * `e-column` directive represent a column of the Angular TreeGrid.
@@ -653,6 +653,9 @@ exports.batchSave = ej2Treegrid.batchSave;
 exports.keyPressed = ej2Treegrid.keyPressed;
 exports.updateData = ej2Treegrid.updateData;
 exports.doubleTap = ej2Treegrid.doubleTap;
+exports.beforeStartEdit = ej2Treegrid.beforeStartEdit;
+exports.beforeBatchCancel = ej2Treegrid.beforeBatchCancel;
+exports.batchEditFormRendered = ej2Treegrid.batchEditFormRendered;
 exports.DataManipulation = ej2Treegrid.DataManipulation;
 exports.Reorder = ej2Treegrid.Reorder;
 exports.Resize = ej2Treegrid.Resize;

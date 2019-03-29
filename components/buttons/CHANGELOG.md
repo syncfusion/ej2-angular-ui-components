@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.38 (2019-03-29)
+
+### RadioButton
+
+#### Bug Fixes
+
+- Reactive form value change issue fixed.
+
 ## 17.1.1-beta (2019-01-29)
 
 ### Chips
@@ -13,6 +21,32 @@ The Chip control contains a small block of essential information that triggers a
 - `Choice chip` - Used to select a choice from the available options.
 - `Filter chip` - Used to select multiple choices from the available options.
 - `Action chip` - Used to trigger actions for primary content.
+
+## 16.4.53 (2019-02-13)
+
+### Button
+
+#### Bug Fixes
+
+- Flat button text is not visible in bootstrap theme issue is fixed.
+
+## 16.4.40-beta (2018-12-10)
+
+### Chips
+
+The Chip control contains a small block of essential information that triggers an event on click action. It also contains the primary text, image, or both, and is mostly used in mails, contacts, or filter tags.
+
+
+- `Input chip` - Basic chip with delete icon that represents a person or entity and enables  removal of chips from the chip list collection.
+- `Choice chip` - Used to select a choice from the available options.
+- `Filter chip` - Used to select multiple choices from the available options.
+- `Action chip` - Used to trigger actions for primary content.
+
+### CheckBox
+
+#### Bug Fixes
+
+- Change event triggers twice issue fixed.
 
 ## 16.3.33 (2018-11-20)
 
@@ -181,13 +215,13 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Sizes** - Provided with different sizes of RadioButton.
 
 
-## 16.4.40-beta (2018-12-10)
+## 16.4.55 (2019-02-27)
 
 ### CheckBox
 
 #### Bug Fixes
 
-- Change event triggers twice issue fixed.
+- Performance issue with key press is fixed.
 
 ## 16.3.25 (2018-10-15)
 

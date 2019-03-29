@@ -21,7 +21,7 @@ let outputs: string[] = [];
 
     }
 })
-export class StockChartStockEventDirective extends ComplexBase<StockChartStockEventDirective> {
+export class StockEventDirective extends ComplexBase<StockEventDirective> {
 
 
     /** 
@@ -88,16 +88,16 @@ export class StockChartStockEventDirective extends ComplexBase<StockChartStockEv
 }
 
 /**
- * StockChartStockEvent Array Directive
+ * StockEvent Array Directive
  * @private
  */
 @Directive({
     selector: 'ejs-stockchart>e-stockchart-stockevents',
     queries: {
-        children: new ContentChildren(StockChartStockEventDirective)
+        children: new ContentChildren(StockEventDirective)
     },
 })
-export class StockChartStockEventsDirective extends ArrayBase<StockChartStockEventsDirective> {
+export class StockEventsDirective extends ArrayBase<StockEventsDirective> {
     constructor() {
         super('stockevents');
     }

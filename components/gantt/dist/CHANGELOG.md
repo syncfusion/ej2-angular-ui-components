@@ -20,7 +20,3 @@
 - **Localization** - Provides inherent support to localize the UI.
 
 
-#### Bug Fixes
-
-#### Improvement
-

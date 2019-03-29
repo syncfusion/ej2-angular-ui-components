@@ -8,7 +8,7 @@ import { StockChartRowDirective, StockChartRowsDirective } from './rows.directiv
 import { StockChartAnnotationDirective, StockChartAnnotationsDirective } from './annotations.directive';
 import { StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { StockChartPeriodDirective, StockChartPeriodsDirective } from './periods.directive';
-import { StockChartStockEventDirective, StockChartStockEventsDirective } from './stockevents.directive';
+import { StockEventDirective, StockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorDirective, StockChartIndicatorsDirective } from './indicators.directive';
 import { StockChartComponent } from './stockchart.component';
 
@@ -35,8 +35,8 @@ import { StockChartComponent } from './stockchart.component';
         StockChartSelectedDataIndexesDirective,
         StockChartPeriodDirective,
         StockChartPeriodsDirective,
-        StockChartStockEventDirective,
-        StockChartStockEventsDirective,
+        StockEventDirective,
+        StockEventsDirective,
         StockChartIndicatorDirective,
         StockChartIndicatorsDirective
     ],
@@ -58,8 +58,8 @@ import { StockChartComponent } from './stockchart.component';
         StockChartSelectedDataIndexesDirective,
         StockChartPeriodDirective,
         StockChartPeriodsDirective,
-        StockChartStockEventDirective,
-        StockChartStockEventsDirective,
+        StockEventDirective,
+        StockEventsDirective,
         StockChartIndicatorDirective,
         StockChartIndicatorsDirective
     ]

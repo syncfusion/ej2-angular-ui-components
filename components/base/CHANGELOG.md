@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.1.38 (2019-03-29)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed `CheckBox` not disabling issue.
+- Fixed binding not working properly while using `ngx-tanslate` pipe.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### Common

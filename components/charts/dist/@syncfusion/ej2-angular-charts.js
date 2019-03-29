@@ -132,7 +132,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'drawType', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'improveChartPerformance', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
+let input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
 let outputs$2 = [];
 /**
  * Series Directive
@@ -669,7 +669,7 @@ SelectedDataIndexesDirective.decorators = [
  */
 SelectedDataIndexesDirective.ctorParameters = () => [];
 
-let input$11 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'improveChartPerformance', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+let input$11 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 let outputs$11 = [];
 /**
  * Indicator Directive
@@ -2886,7 +2886,7 @@ let outputs$30 = [];
  * </e-stockchart-stockevents>
  * ```
  */
-class StockChartStockEventDirective extends ComplexBase {
+class StockEventDirective extends ComplexBase {
     /**
      * @param {?} viewContainerRef
      */
@@ -2897,7 +2897,7 @@ class StockChartStockEventDirective extends ComplexBase {
         this.registerEvents(outputs$30);
     }
 }
-StockChartStockEventDirective.decorators = [
+StockEventDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-stockevent',
                 inputs: input$25,
@@ -2908,29 +2908,29 @@ StockChartStockEventDirective.decorators = [
 /**
  * @nocollapse
  */
-StockChartStockEventDirective.ctorParameters = () => [
+StockEventDirective.ctorParameters = () => [
     { type: ViewContainerRef, },
 ];
 /**
- * StockChartStockEvent Array Directive
+ * StockEvent Array Directive
  */
-class StockChartStockEventsDirective extends ArrayBase {
+class StockEventsDirective extends ArrayBase {
     constructor() {
         super('stockevents');
     }
 }
-StockChartStockEventsDirective.decorators = [
+StockEventsDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'ejs-stockchart>e-stockchart-stockevents',
                 queries: {
-                    children: new ContentChildren(StockChartStockEventDirective)
+                    children: new ContentChildren(StockEventDirective)
                 },
             },] },
 ];
 /**
  * @nocollapse
  */
-StockChartStockEventsDirective.ctorParameters = () => [];
+StockEventsDirective.ctorParameters = () => [];
 
 let input$26 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 let outputs$31 = [];
@@ -3264,7 +3264,7 @@ StockChartComponent.decorators = [
                     childAnnotations: new ContentChild(StockChartAnnotationsDirective),
                     childSelectedDataIndexes: new ContentChild(StockChartSelectedDataIndexesDirective),
                     childPeriods: new ContentChild(StockChartPeriodsDirective),
-                    childStockEvents: new ContentChild(StockChartStockEventsDirective),
+                    childStockEvents: new ContentChild(StockEventsDirective),
                     childIndicators: new ContentChild(StockChartIndicatorsDirective)
                 }
             },] },
@@ -3319,8 +3319,8 @@ StockChartModule.decorators = [
                     StockChartSelectedDataIndexesDirective,
                     StockChartPeriodDirective,
                     StockChartPeriodsDirective,
-                    StockChartStockEventDirective,
-                    StockChartStockEventsDirective,
+                    StockEventDirective,
+                    StockEventsDirective,
                     StockChartIndicatorDirective,
                     StockChartIndicatorsDirective
                 ],
@@ -3342,8 +3342,8 @@ StockChartModule.decorators = [
                     StockChartSelectedDataIndexesDirective,
                     StockChartPeriodDirective,
                     StockChartPeriodsDirective,
-                    StockChartStockEventDirective,
-                    StockChartStockEventsDirective,
+                    StockEventDirective,
+                    StockEventsDirective,
                     StockChartIndicatorDirective,
                     StockChartIndicatorsDirective
                 ]
@@ -3377,6 +3377,6 @@ StockChartAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockChartStockEventDirective, StockChartStockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, inputs$1 as ɵc, outputs$15 as ɵd, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$32 as ɵl };
+export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, inputs$1 as ɵc, outputs$15 as ɵd, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$32 as ɵl };
 export { CrosshairSettings, ZoomSettings, Chart, Row, Column, MajorGridLines, MinorGridLines, AxisLine, MajorTickLines, MinorTickLines, CrosshairTooltip, Axis, VisibleLabels, DateTime, Category, Logarithmic, DateTimeCategory, NiceInterval, StripLine, Connector, Font, Border, ChartArea, Margin, Animation, Indexes, CornerRadius, Index, EmptyPointSettings, TooltipSettings, Periods, PeriodSelectorSettings, LineSeries, ColumnSeries, AreaSeries, BarSeries, PolarSeries, RadarSeries, StackingBarSeries, CandleSeries, StackingColumnSeries, StepLineSeries, StepAreaSeries, StackingAreaSeries, StackingLineSeries, ScatterSeries, RangeColumnSeries, WaterfallSeries, HiloSeries, HiloOpenCloseSeries, RangeAreaSeries, BubbleSeries, SplineSeries, HistogramSeries, SplineAreaSeries, TechnicalIndicator, SmaIndicator, EmaIndicator, TmaIndicator, AccumulationDistributionIndicator, AtrIndicator, MomentumIndicator, RsiIndicator, StochasticIndicator, BollingerBands, MacdIndicator, Trendlines, sort, rotateTextSize, removeElement, logBase, showTooltip, inside, withIn, logWithIn, withInRange, sum, subArraySum, subtractThickness, subtractRect, degreeToLocation, getAngle, subArray, valueToCoefficient, TransformToVisible, indexFinder, CoefficientToVector, valueToPolarCoefficient, Mean, PolarArc, createTooltip, createZoomingLabels, withInBounds, getValueXByPoint, getValueYByPoint, findClipRect, firstToLowerCase, getMinPointsDelta, getAnimationFunction, linear, markerAnimate, animateRectElement, pathAnimation, appendClipElement, triggerLabelRender, setRange, getActualDesiredIntervalsCount, templateAnimate, drawSymbol, calculateShapes, getRectLocation, minMax, getElement, getTemplateFunction, createTemplate, getFontStyle, measureElementRect, findlElement, getPoint, appendElement, appendChildElement, getDraggedRectLocation, checkBounds, getLabelText, stopTimer, isCollide, isOverlap, containsRect, calculateRect, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, getSaturationColor, getMedian, calculateLegendShapes, textTrim, lineBreakLabelTrim, stringToNumber, redrawElement, animateRedrawElement, textElement, calculateSize, createSvg, getTitle, titlePositionX, textWrap, CustomizeOption, StackValues, RectOption, CircleOption, PolygonOption, ChartLocation, Thickness, ColorValue, PointData, AccPointData, ControlPoints, Crosshair, Tooltip, Zoom, Selection, DataLabel, ErrorBar, DataLabelSettings, MarkerSettings, Points, Trendline, ErrorBarCapSettings, ChartSegment, ErrorBarSettings, SeriesBase, Series, Legend, ChartAnnotation, ChartAnnotationSettings, LabelBorder, MultiLevelCategories, StripLineSettings, MultiLevelLabels, ScrollbarSettingsRange, ScrollbarSettings, BoxAndWhiskerSeries, MultiColoredAreaSeries, MultiColoredLineSeries, MultiColoredSeries, MultiLevelLabel, ScrollBar, ParetoSeries, Export, AccumulationChart, AccumulationAnnotationSettings, AccumulationDataLabelSettings, PieCenter, AccPoints, AccumulationSeries, getSeriesFromIndex, pointByIndex, PieSeries, FunnelSeries, PyramidSeries, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, AccumulationSelection, AccumulationAnnotation, StockChart, StockChartFont, StockChartBorder, StockChartArea, StockMargin, StockChartStripLineSettings, StockEmptyPointSettings, StockChartConnector, StockSeries, StockChartIndicator, StockChartAxis, StockChartRow, StockChartTrendline, StockChartAnnotationSettings, StockChartIndexes, StockEventsSettings, loaded, load, animationComplete, legendRender, textRender, pointRender, seriesRender, axisLabelRender, axisRangeCalculated, axisMultiLabelRender, tooltipRender, chartMouseMove, chartMouseClick, pointClick, pointMove, chartMouseLeave, chartMouseDown, chartMouseUp, zoomComplete, dragComplete, resized, beforePrint, annotationRender, scrollStart, scrollEnd, scrollChanged, stockEventRender, Theme, getSeriesColor, getThemeColor, getScrollbarThemeColor, PeriodSelector, RangeNavigator, rangeValueToCoefficient, getXLocation, getRangeValueXByPoint, getExactData, getNearestValue, DataPoint, RangeNavigatorTheme, getRangeThemeColor, RangeNavigatorAxis, RangeSeries, RangeSlider, RangeNavigatorSeries, ThumbSettings, StyleSettings, RangeTooltipSettings, Double, RangeTooltip, Smithchart, SmithchartMajorGridLines, SmithchartMinorGridLines, SmithchartAxisLine, SmithchartAxis, LegendTitle, LegendLocation, LegendItemStyleBorder, LegendItemStyle, LegendBorder, SmithchartLegendSettings, SeriesTooltipBorder, SeriesTooltip, SeriesMarkerBorder, SeriesMarkerDataLabelBorder, SeriesMarkerDataLabelConnectorLine, SeriesMarkerDataLabel, SeriesMarker, SmithchartSeries, TooltipRender, Subtitle, Title, SmithchartFont, SmithchartMargin, SmithchartBorder, SmithchartRect, LabelCollection, LegendSeries, LabelRegion, HorizontalLabelCollection, RadialLabelCollections, LineSegment, PointRegion, Point, ClosestPoint, MarkerOptions, SmithchartLabelPosition, Direction, DataLabelTextOptions, LabelOption, SmithchartSize, GridArcPoints, smithchartBeforePrint, SmithchartLegend, Sparkline, SparklineTooltip, SparklineBorder, SparklineFont, TrackLineSettings, SparklineTooltipSettings, ContainerArea, LineSettings, RangeBandSettings, AxisSettings, Padding, SparklineMarkerSettings, LabelOffset, SparklineDataLabelSettings } from '@syncfusion/ej2-charts';
 //# sourceMappingURL=ej2-angular-charts.js.map

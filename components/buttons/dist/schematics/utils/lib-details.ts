@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-buttons';
-export const pkgVer = '^17.1.1';
+export const pkgVer = '^17.1.32';
 export const moduleName = 'ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule, ChipListModule';
-export const themeVer = '~17.1.1';
+export const themeVer = '~17.1.32';

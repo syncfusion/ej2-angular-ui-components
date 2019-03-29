@@ -170,7 +170,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public edit: any;
     /** 
      * Defines the type of component for editing.
-     * @default stringedit
+     * @default 'stringedit'
      */
     public editType: any;
     /** 
@@ -185,7 +185,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * If the `field` name contains “dot”, then it is considered as complex binding. 
      * The `field` name must be a valid JavaScript identifier, 
      * the first character must be an alphabet and should not contain spaces and special characters.
-     * @default undefined
+     * @default ''
      */
     public field: any;
     /** 
@@ -279,7 +279,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the header text of column which is used to display in column header. 
      * If `headerText` is not defined, then field name value will be assigned to header text.
-     * @default undefined
+     * @default ''
      */
     public headerText: any;
     /** 
@@ -291,7 +291,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * column visibility can change based on its [`Media Queries`](http://cssmediaqueries.com/what-are-css-media-queries.html). 
      * `hideAtMedia` accepts only valid Media Queries.
-     * @default undefined
+     * @default ''
      */
     public hideAtMedia: any;
     /** 
@@ -317,12 +317,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public lockColumn: any;
     /** 
      * Defines the maximum width of the column in pixel or percentage, which will restrict resizing beyond this pixel or percentage.
-     * @default undefined
+     * @default ''
      */
     public maxWidth: any;
     /** 
      * Defines the minimum width of the column in pixels or percentage.
-     * @default undefined
+     * @default ''
      */
     public minWidth: any;
     /** 
@@ -348,7 +348,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public textAlign: any;
     /** 
      * Gets the unique identifier value of the column. It is used to get the object.
-     * @default undefined
+     * @default ''
      */
     public uid: any;
     /** 
@@ -385,7 +385,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public visible: any;
     /** 
      * Defines the width of the column in pixels or percentage.
-     * @default undefined
+     * @default ''
      */
     public width: any;
     /** 

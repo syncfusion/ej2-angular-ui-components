@@ -73,7 +73,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enablePersistence', 'enableRtl', 'height', 'locale', 'maxGroupCount', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
-const outputs$1 = ['beforeChange', 'change', 'created'];
+const outputs$1 = ['beforeChange', 'change', 'created', 'ruleChange'];
 const twoWays = [''];
 /**
  * Represents the EJ2 Angular QueryBuilder Component.
@@ -200,5 +200,5 @@ QueryBuilderAllModule.ctorParameters = () => [];
  */
 
 export { ColumnDirective, ColumnsDirective, QueryBuilderComponent, QueryBuilderModule, QueryBuilderAllModule, inputs as ɵa, outputs$1 as ɵb };
-export { Columns, Rules, Rule, ShowButtons, QueryBuilder } from '@syncfusion/ej2-querybuilder';
+export { Columns, Rule, ShowButtons, QueryBuilder } from '@syncfusion/ej2-querybuilder';
 //# sourceMappingURL=ej2-angular-querybuilder.js.map
