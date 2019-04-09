@@ -2,8 +2,6 @@
 
 ## [Unreleased]
 
-## 17.1.38 (2019-03-29)
-
 ### QueryBuilder
 
 #### Breaking Changes

@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Dashboard Layout
+
+#### Breaking Changes
+
+- Renamed the folder within the package from `dashboardlayout` to `dashboard-layout`.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### Splitter

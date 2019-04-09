@@ -1,0 +1,22 @@
+/*! maskedtextbox layout */
+.e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+  font-family: Arial, "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 13px;
+}
+
+.e-bigger .e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+  font-size: 14px;
+}
+
+.e-widget.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
+  font-size: 14px;
+}
+
+/*! maskedtextbox theme */
+.e-widget.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
+  color: #c12f2f;
+}
+
+.e-utility-mask.e-error {
+  color: #c12f2f;
+}

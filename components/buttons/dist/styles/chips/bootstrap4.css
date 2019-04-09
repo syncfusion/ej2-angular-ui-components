@@ -1,0 +1,2269 @@
+.e-chip-list .e-chip-delete.e-dlt-btn::before {
+  content: '\e745';
+  font-size: 10px;
+}
+
+.e-chip-list.e-multi-selection .e-chip::before {
+  content: '\e7ab';
+}
+
+.e-chip-list {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+}
+
+.e-chip-list.e-chip,
+.e-chip-list .e-chip {
+  -webkit-tap-highlight-color: transparent;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1.5em;
+  margin: 4px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 8px;
+  position: relative;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-chip-list.e-chip .e-chip-avatar,
+.e-chip-list .e-chip .e-chip-avatar {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  height: 24px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 8px 0 -10px;
+  overflow: hidden;
+  width: 24px;
+}
+
+.e-chip-list.e-chip .e-chip-avatar-wrap, .e-chip-list.e-chip.e-chip-avatar-wrap,
+.e-chip-list .e-chip .e-chip-avatar-wrap,
+.e-chip-list .e-chip.e-chip-avatar-wrap {
+  border-radius: 14px 4px 4px 14px;
+}
+
+.e-chip-list.e-chip .e-chip-icon,
+.e-chip-list .e-chip .e-chip-icon {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 0%;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  height: 18px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 8px 0 -6px;
+  overflow: hidden;
+  width: 18px;
+}
+
+.e-chip-list.e-chip .e-chip-text,
+.e-chip-list .e-chip .e-chip-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.e-chip-list.e-chip .e-chip-delete,
+.e-chip-list .e-chip .e-chip-delete {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 0%;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8px;
+  height: 14px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 -2px 0 8px;
+  overflow: hidden;
+  width: 14px;
+}
+
+.e-chip-list.e-chip .e-chip-delete.e-dlt-btn::before,
+.e-chip-list .e-chip .e-chip-delete.e-dlt-btn::before {
+  font-family: 'e-icons';
+}
+
+.e-chip-list:not(.e-chip) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.e-chip-list.e-multi-selection .e-chip::before {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'e-icons';
+  height: 18px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 8px 0 -6px;
+  margin-top: 2px;
+  overflow: hidden;
+  transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 18px;
+}
+
+.e-chip-list.e-multi-selection .e-chip:not(.e-chip-icon-wrap):not(.e-chip-avatar-wrap)::before {
+  width: 0;
+}
+
+.e-chip-list.e-multi-selection .e-chip.e-chip-icon-wrap::before, .e-chip-list.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
+  display: none;
+}
+
+.e-chip-list.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
+  height: 24px;
+  margin: 0 8px 0 -10px;
+  margin-top: 2px;
+  width: 24px;
+}
+
+.e-chip-list.e-multi-selection .e-chip.e-active .e-chip-icon,
+.e-chip-list.e-multi-selection .e-chip.e-active .e-chip-avatar {
+  display: none;
+}
+
+.e-chip-list.e-multi-selection .e-chip.e-active.e-chip-icon-wrap::before, .e-chip-list.e-multi-selection .e-chip.e-active.e-chip-avatar-wrap::before {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-chip-list.e-multi-selection .e-chip.e-active:not(.e-chip-icon-wrap):not(.e-chip-avatar-wrap)::before {
+  width: 18px;
+}
+
+.e-chip-list.e-rtl.e-chip .e-chip-avatar,
+.e-chip-list.e-rtl .e-chip .e-chip-avatar {
+  margin: 0 -10px 0 8px;
+}
+
+.e-chip-list.e-rtl.e-chip .e-chip-icon,
+.e-chip-list.e-rtl .e-chip .e-chip-icon {
+  margin: 0 -6px 0 8px;
+}
+
+.e-chip-list.e-rtl.e-chip .e-chip-delete,
+.e-chip-list.e-rtl .e-chip .e-chip-delete {
+  margin: 0 8px 0 -2px;
+}
+
+.e-chip-list.e-rtl.e-chip .e-chip-avatar-wrap, .e-chip-list.e-rtl.e-chip.e-chip-avatar-wrap,
+.e-chip-list.e-rtl .e-chip .e-chip-avatar-wrap,
+.e-chip-list.e-rtl .e-chip.e-chip-avatar-wrap {
+  border-radius: 4px 14px 14px 4px;
+}
+
+.e-chip-list.e-rtl.e-multi-selection .e-chip::before {
+  margin: 0 -6px 0 8px;
+  margin-top: 2px;
+}
+
+.e-chip-list.e-rtl.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
+  margin: 0 -10px 0 8px;
+  margin-top: 2px;
+}
+
+.e-bigger .e-chip-list.e-chip,
+.e-bigger .e-chip-list .e-chip,
+.e-bigger.e-chip-list.e-chip,
+.e-bigger.e-chip-list .e-chip {
+  border-radius: 4px;
+  font-size: 14px;
+  height: 30px;
+  padding: 0 12px;
+}
+
+.e-bigger .e-chip-list .e-chip-avatar,
+.e-bigger.e-chip-list .e-chip-avatar {
+  font-size: 15px;
+  height: 30px;
+  margin: -2px 8px 0 -12px;
+  width: 30px;
+}
+
+.e-bigger .e-chip-list .e-chip-avatar-wrap, .e-bigger .e-chip-list.e-chip-avatar-wrap,
+.e-bigger.e-chip-list .e-chip-avatar-wrap,
+.e-bigger.e-chip-list.e-chip-avatar-wrap {
+  border-radius: 16px 4px 4px 16px;
+}
+
+.e-bigger .e-chip-list .e-chip-icon,
+.e-bigger.e-chip-list .e-chip-icon {
+  font-size: 16px;
+  height: 24px;
+  margin: -2px 8px 0 -8px;
+  width: 24px;
+}
+
+.e-bigger .e-chip-list .e-chip-delete,
+.e-bigger.e-chip-list .e-chip-delete {
+  font-size: 10px;
+  height: 18px;
+  margin: 0 -4px 0 8px;
+  width: 18px;
+}
+
+.e-bigger .e-chip-list .e-chip-delete.e-dlt-btn::before,
+.e-bigger.e-chip-list .e-chip-delete.e-dlt-btn::before {
+  font-size: small;
+}
+
+.e-bigger .e-chip-list.e-multi-selection .e-chip::before,
+.e-bigger.e-chip-list.e-multi-selection .e-chip::before {
+  height: 24px;
+  margin: -2px 8px 0 -8px;
+  margin-top: 2px;
+  width: 24px;
+}
+
+.e-bigger .e-chip-list.e-multi-selection .e-chip.e-chip-avatar-wrap::before,
+.e-bigger.e-chip-list.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
+  height: 30px;
+  margin: -2px 8px 0 -12px;
+  margin-top: 2px;
+  width: 30px;
+}
+
+.e-bigger .e-chip-list.e-multi-selection .e-chip.e-active:not(.e-chip-icon-wrap):not(.e-chip-avatar-wrap)::before,
+.e-bigger.e-chip-list.e-multi-selection .e-chip.e-active:not(.e-chip-icon-wrap):not(.e-chip-avatar-wrap)::before {
+  width: 24px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-chip .e-chip-avatar,
+.e-bigger .e-chip-list.e-rtl .e-chip .e-chip-avatar,
+.e-bigger.e-chip-list.e-rtl.e-chip .e-chip-avatar,
+.e-bigger.e-chip-list.e-rtl .e-chip .e-chip-avatar {
+  margin: 0 -12px 0 8px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-chip .e-chip-icon,
+.e-bigger .e-chip-list.e-rtl .e-chip .e-chip-icon,
+.e-bigger.e-chip-list.e-rtl.e-chip .e-chip-icon,
+.e-bigger.e-chip-list.e-rtl .e-chip .e-chip-icon {
+  margin: 0 -8px 0 8px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-chip .e-chip-delete,
+.e-bigger .e-chip-list.e-rtl .e-chip .e-chip-delete,
+.e-bigger.e-chip-list.e-rtl.e-chip .e-chip-delete,
+.e-bigger.e-chip-list.e-rtl .e-chip .e-chip-delete {
+  margin: 0 8px 0 -4px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-chip .e-chip-avatar-wrap, .e-bigger .e-chip-list.e-rtl.e-chip.e-chip-avatar-wrap,
+.e-bigger .e-chip-list.e-rtl .e-chip .e-chip-avatar-wrap,
+.e-bigger .e-chip-list.e-rtl .e-chip.e-chip-avatar-wrap,
+.e-bigger.e-chip-list.e-rtl.e-chip .e-chip-avatar-wrap,
+.e-bigger.e-chip-list.e-rtl.e-chip.e-chip-avatar-wrap,
+.e-bigger.e-chip-list.e-rtl .e-chip .e-chip-avatar-wrap,
+.e-bigger.e-chip-list.e-rtl .e-chip.e-chip-avatar-wrap {
+  border-radius: 4px 16px 16px 4px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-multi-selection .e-chip::before,
+.e-bigger.e-chip-list.e-rtl.e-multi-selection .e-chip::before {
+  margin: 0 -8px 0 8px;
+  margin-top: 2px;
+}
+
+.e-bigger .e-chip-list.e-rtl.e-multi-selection .e-chip.e-chip-avatar-wrap::before,
+.e-bigger.e-chip-list.e-rtl.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
+  margin: 0 -12px 0 8px;
+  margin-top: 2px;
+}
+
+.e-chip-list.e-chip,
+.e-chip-list .e-chip {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip .e-chip-icon,
+.e-chip-list.e-chip .e-chip-delete,
+.e-chip-list .e-chip .e-chip-icon,
+.e-chip-list .e-chip .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip .e-chip-avatar,
+.e-chip-list .e-chip .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip:hover,
+.e-chip-list .e-chip:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-chip:hover .e-chip-icon,
+.e-chip-list.e-chip:hover .e-chip-delete,
+.e-chip-list .e-chip:hover .e-chip-icon,
+.e-chip-list .e-chip:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip:hover .e-chip-avatar,
+.e-chip-list .e-chip:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-focused,
+.e-chip-list .e-chip.e-focused {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.e-chip-list.e-chip.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-active,
+.e-chip-list .e-chip.e-active {
+  background-color: #545b62;
+  border-color: #4e555b;
+  color: #fff;
+  box-shadow: none;
+}
+
+.e-chip-list.e-chip.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-focused.e-active,
+.e-chip-list .e-chip.e-focused.e-active {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.e-chip-list.e-chip.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-focused.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip:active,
+.e-chip-list .e-chip:active {
+  background-color: #545b62;
+  border-color: #4e555b;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.e-chip-list.e-chip:active .e-chip-icon,
+.e-chip-list.e-chip:active .e-chip-delete,
+.e-chip-list .e-chip:active .e-chip-icon,
+.e-chip-list .e-chip:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip:active .e-chip-avatar,
+.e-chip-list .e-chip:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-disabled,
+.e-chip-list .e-chip.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-outline,
+.e-chip-list .e-chip.e-outline {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+  border-width: 1px;
+}
+
+.e-chip-list.e-chip.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-outline .e-chip-delete {
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-outline .e-chip-delete.e-dlt-btn {
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-outline .e-chip-avatar {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:hover,
+.e-chip-list .e-chip.e-outline:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-outline:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-outline:hover .e-chip-avatar {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused,
+.e-chip-list .e-chip.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-outline.e-focused .e-chip-delete {
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-outline.e-focused .e-chip-avatar {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-active,
+.e-chip-list .e-chip.e-outline.e-active {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-outline.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-outline.e-active .e-chip-avatar {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-outline.e-focused.e-active .e-chip-delete {
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:active,
+.e-chip-list .e-chip.e-outline:active {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-outline:active .e-chip-delete {
+  color: #6c757d;
+}
+
+.e-chip-list.e-chip.e-outline:active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-outline:active .e-chip-delete.e-dlt-btn {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-outline:active .e-chip-avatar {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-outline.e-disabled,
+.e-chip-list .e-chip.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-selection .e-chip.e-active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active .e-chip-icon,
+.e-chip-list.e-selection .e-chip.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-selection .e-chip.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-focused {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-focused .e-chip-icon,
+.e-chip-list.e-selection .e-chip.e-active.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline .e-chip-icon,
+.e-chip-list.e-selection .e-chip.e-active.e-outline .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline .e-chip-avatar {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-focused .e-chip-delete {
+  color: #6c757d;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-focused .e-chip-delete.e-dlt-btn {
+  color: #6c757d;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-focused .e-chip-avatar {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-disabled {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-disabled .e-chip-icon,
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-disabled .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip.e-active.e-outline.e-disabled .e-chip-avatar {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active {
+  background-color: #545b62;
+  border-color: #4e555b;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active .e-chip-icon,
+.e-chip-list.e-selection .e-chip:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active.e-outline {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active.e-outline .e-chip-icon,
+.e-chip-list.e-selection .e-chip:active.e-outline .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active.e-outline .e-chip-delete.e-dlt-btn {
+  color: #fff;
+}
+
+.e-chip-list.e-selection .e-chip:active.e-outline .e-chip-avatar {
+  background-color: #545b62;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary,
+.e-chip-list .e-chip.e-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary .e-chip-icon,
+.e-chip-list.e-chip.e-primary .e-chip-delete,
+.e-chip-list .e-chip.e-primary .e-chip-icon,
+.e-chip-list .e-chip.e-primary .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-primary .e-chip-avatar,
+.e-chip-list .e-chip.e-primary .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-primary:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-primary:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:hover,
+.e-chip-list .e-chip.e-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:hover .e-chip-icon,
+.e-chip-list.e-chip.e-primary:hover .e-chip-delete,
+.e-chip-list .e-chip.e-primary:hover .e-chip-icon,
+.e-chip-list .e-chip.e-primary:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-primary:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-focused,
+.e-chip-list .e-chip.e-primary.e-focused {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.e-chip-list.e-chip.e-primary.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-primary.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-active,
+.e-chip-list .e-chip.e-primary.e-active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-primary.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-focused.e-active,
+.e-chip-list .e-chip.e-primary.e-focused.e-active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-focused.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-primary.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:active,
+.e-chip-list .e-chip.e-primary:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.e-chip-list.e-chip.e-primary:active .e-chip-icon,
+.e-chip-list.e-chip.e-primary:active .e-chip-delete,
+.e-chip-list .e-chip.e-primary:active .e-chip-icon,
+.e-chip-list .e-chip.e-primary:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary:active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-disabled,
+.e-chip-list .e-chip.e-primary.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline,
+.e-chip-list .e-chip.e-primary.e-outline {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline .e-chip-delete {
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary.e-outline .e-chip-delete.e-dlt-btn {
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline .e-chip-avatar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-primary.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-primary.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:hover,
+.e-chip-list .e-chip.e-primary.e-outline:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline:hover .e-chip-avatar {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused .e-chip-delete {
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused .e-chip-avatar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-active,
+.e-chip-list .e-chip.e-primary.e-outline.e-active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline.e-active .e-chip-avatar {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused.e-active .e-chip-delete {
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: #007bff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:active,
+.e-chip-list .e-chip.e-primary.e-outline:active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-primary.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-primary.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-primary.e-outline:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-primary.e-outline:active .e-chip-avatar {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-primary.e-outline.e-disabled,
+.e-chip-list .e-chip.e-primary.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-success,
+.e-chip-list .e-chip.e-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success .e-chip-icon,
+.e-chip-list.e-chip.e-success .e-chip-delete,
+.e-chip-list .e-chip.e-success .e-chip-icon,
+.e-chip-list .e-chip.e-success .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-success .e-chip-avatar,
+.e-chip-list .e-chip.e-success .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-success:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-success:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:hover,
+.e-chip-list .e-chip.e-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:hover .e-chip-icon,
+.e-chip-list.e-chip.e-success:hover .e-chip-delete,
+.e-chip-list .e-chip.e-success:hover .e-chip-icon,
+.e-chip-list .e-chip.e-success:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-success:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-focused,
+.e-chip-list .e-chip.e-success.e-focused {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.e-chip-list.e-chip.e-success.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-success.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-active,
+.e-chip-list .e-chip.e-success.e-active {
+  background-color: #1e7e34;
+  border-color: #1c7430;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-success.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-focused.e-active,
+.e-chip-list .e-chip.e-success.e-focused.e-active {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-focused.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-success.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:active,
+.e-chip-list .e-chip.e-success:active {
+  background-color: #1e7e34;
+  border-color: #1c7430;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.e-chip-list.e-chip.e-success:active .e-chip-icon,
+.e-chip-list.e-chip.e-success:active .e-chip-delete,
+.e-chip-list .e-chip.e-success:active .e-chip-icon,
+.e-chip-list .e-chip.e-success:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success:active .e-chip-avatar,
+.e-chip-list .e-chip.e-success:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-disabled,
+.e-chip-list .e-chip.e-success.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-success.e-outline,
+.e-chip-list .e-chip.e-success.e-outline {
+  background-color: transparent;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline .e-chip-delete {
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success.e-outline .e-chip-delete.e-dlt-btn {
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline .e-chip-avatar {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-success.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-success.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:hover,
+.e-chip-list .e-chip.e-success.e-outline:hover {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline:hover .e-chip-avatar {
+  background-color: #1e7e34;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused,
+.e-chip-list .e-chip.e-success.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline.e-focused .e-chip-delete {
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline.e-focused .e-chip-avatar {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-active,
+.e-chip-list .e-chip.e-success.e-outline.e-active {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline.e-active .e-chip-avatar {
+  background-color: #1e7e34;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-success.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline.e-focused.e-active .e-chip-delete {
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-success.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: #28a745;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:active,
+.e-chip-list .e-chip.e-success.e-outline:active {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-success.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-success.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-success.e-outline:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-success.e-outline:active .e-chip-avatar {
+  background-color: #1e7e34;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-success.e-outline.e-disabled,
+.e-chip-list .e-chip.e-success.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-info,
+.e-chip-list .e-chip.e-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info .e-chip-icon,
+.e-chip-list.e-chip.e-info .e-chip-delete,
+.e-chip-list .e-chip.e-info .e-chip-icon,
+.e-chip-list .e-chip.e-info .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-info .e-chip-avatar,
+.e-chip-list .e-chip.e-info .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-info:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-info:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:hover,
+.e-chip-list .e-chip.e-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:hover .e-chip-icon,
+.e-chip-list.e-chip.e-info:hover .e-chip-delete,
+.e-chip-list .e-chip.e-info:hover .e-chip-icon,
+.e-chip-list .e-chip.e-info:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-info:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-focused,
+.e-chip-list .e-chip.e-info.e-focused {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.e-chip-list.e-chip.e-info.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-info.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-active,
+.e-chip-list .e-chip.e-info.e-active {
+  background-color: #117a8b;
+  border-color: #10707f;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-info.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-focused.e-active,
+.e-chip-list .e-chip.e-info.e-focused.e-active {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-focused.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-info.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:active,
+.e-chip-list .e-chip.e-info:active {
+  background-color: #117a8b;
+  border-color: #10707f;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.e-chip-list.e-chip.e-info:active .e-chip-icon,
+.e-chip-list.e-chip.e-info:active .e-chip-delete,
+.e-chip-list .e-chip.e-info:active .e-chip-icon,
+.e-chip-list .e-chip.e-info:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info:active .e-chip-avatar,
+.e-chip-list .e-chip.e-info:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-disabled,
+.e-chip-list .e-chip.e-info.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-info.e-outline,
+.e-chip-list .e-chip.e-info.e-outline {
+  background-color: transparent;
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline .e-chip-delete {
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info.e-outline .e-chip-delete.e-dlt-btn {
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline .e-chip-avatar {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-info.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-info.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:hover,
+.e-chip-list .e-chip.e-info.e-outline:hover {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline:hover .e-chip-avatar {
+  background-color: #117a8b;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused,
+.e-chip-list .e-chip.e-info.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline.e-focused .e-chip-delete {
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline.e-focused .e-chip-avatar {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-active,
+.e-chip-list .e-chip.e-info.e-outline.e-active {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline.e-active .e-chip-avatar {
+  background-color: #117a8b;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-info.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline.e-focused.e-active .e-chip-delete {
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-info.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: #17a2b8;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:active,
+.e-chip-list .e-chip.e-info.e-outline:active {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-info.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-info.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-info.e-outline:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-info.e-outline:active .e-chip-avatar {
+  background-color: #117a8b;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-info.e-outline.e-disabled,
+.e-chip-list .e-chip.e-info.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-warning,
+.e-chip-list .e-chip.e-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning .e-chip-icon,
+.e-chip-list.e-chip.e-warning .e-chip-delete,
+.e-chip-list .e-chip.e-warning .e-chip-icon,
+.e-chip-list .e-chip.e-warning .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning .e-chip-delete.e-dlt-btn {
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.e-chip-list.e-chip.e-warning .e-chip-avatar,
+.e-chip-list .e-chip.e-warning .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-warning:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-warning:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning:hover,
+.e-chip-list .e-chip.e-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning:hover .e-chip-icon,
+.e-chip-list.e-chip.e-warning:hover .e-chip-delete,
+.e-chip-list .e-chip.e-warning:hover .e-chip-icon,
+.e-chip-list .e-chip.e-warning:hover .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-warning:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-focused,
+.e-chip-list .e-chip.e-warning.e-focused {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.e-chip-list.e-chip.e-warning.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-focused .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.e-chip-list.e-chip.e-warning.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-active,
+.e-chip-list .e-chip.e-warning.e-active {
+  background-color: #d39e00;
+  border-color: #c69500;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-active .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.e-chip-list.e-chip.e-warning.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-focused.e-active,
+.e-chip-list .e-chip.e-warning.e-focused.e-active {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-focused.e-active .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.e-chip-list.e-chip.e-warning.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning:active,
+.e-chip-list .e-chip.e-warning:active {
+  background-color: #d39e00;
+  border-color: #c69500;
+  color: #212529;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.e-chip-list.e-chip.e-warning:active .e-chip-icon,
+.e-chip-list.e-chip.e-warning:active .e-chip-delete,
+.e-chip-list .e-chip.e-warning:active .e-chip-icon,
+.e-chip-list .e-chip.e-warning:active .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning:active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-disabled,
+.e-chip-list .e-chip.e-warning.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline,
+.e-chip-list .e-chip.e-warning.e-outline {
+  background-color: transparent;
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline .e-chip-delete {
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-outline .e-chip-delete.e-dlt-btn {
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline .e-chip-avatar {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-warning.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-warning.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:hover,
+.e-chip-list .e-chip.e-warning.e-outline:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline:hover .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline:hover .e-chip-avatar {
+  background-color: #d39e00;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused .e-chip-delete {
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused .e-chip-avatar {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-active,
+.e-chip-list .e-chip.e-warning.e-outline.e-active {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline.e-active .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline.e-active .e-chip-avatar {
+  background-color: #d39e00;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused.e-active .e-chip-delete {
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: #ffc107;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:active,
+.e-chip-list .e-chip.e-warning.e-outline:active {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-warning.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-warning.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-warning.e-outline:active .e-chip-delete {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-warning.e-outline:active .e-chip-delete.e-dlt-btn {
+  color: #212529;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-warning.e-outline:active .e-chip-avatar {
+  background-color: #d39e00;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-warning.e-outline.e-disabled,
+.e-chip-list .e-chip.e-warning.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-danger,
+.e-chip-list .e-chip.e-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger .e-chip-icon,
+.e-chip-list.e-chip.e-danger .e-chip-delete,
+.e-chip-list .e-chip.e-danger .e-chip-icon,
+.e-chip-list .e-chip.e-danger .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-danger .e-chip-avatar,
+.e-chip-list .e-chip.e-danger .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-danger:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-danger:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:hover,
+.e-chip-list .e-chip.e-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:hover .e-chip-icon,
+.e-chip-list.e-chip.e-danger:hover .e-chip-delete,
+.e-chip-list .e-chip.e-danger:hover .e-chip-icon,
+.e-chip-list .e-chip.e-danger:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-danger:hover .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-focused,
+.e-chip-list .e-chip.e-danger.e-focused {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.e-chip-list.e-chip.e-danger.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-focused .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-focused .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger.e-focused .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-danger.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-focused .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-active,
+.e-chip-list .e-chip.e-danger.e-active {
+  background-color: #bd2130;
+  border-color: #b21f2d;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-danger.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-focused.e-active,
+.e-chip-list .e-chip.e-danger.e-focused.e-active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-focused.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.e-chip-list.e-chip.e-danger.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-focused.e-active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:active,
+.e-chip-list .e-chip.e-danger:active {
+  background-color: #bd2130;
+  border-color: #b21f2d;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.e-chip-list.e-chip.e-danger:active .e-chip-icon,
+.e-chip-list.e-chip.e-danger:active .e-chip-delete,
+.e-chip-list .e-chip.e-danger:active .e-chip-icon,
+.e-chip-list .e-chip.e-danger:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger:active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger:active .e-chip-avatar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-disabled,
+.e-chip-list .e-chip.e-danger.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline,
+.e-chip-list .e-chip.e-danger.e-outline {
+  background-color: transparent;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline .e-chip-delete {
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger.e-outline .e-chip-delete.e-dlt-btn {
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline .e-chip-avatar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover,
+.e-chip-list .e-chip.e-danger.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:hover {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active,
+.e-chip-list .e-chip.e-danger.e-outline:not(.e-active) .e-chip-delete.e-dlt-btn:active {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:hover,
+.e-chip-list .e-chip.e-danger.e-outline:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:hover .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline:hover .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline:hover .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline:hover .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:hover .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline:hover .e-chip-avatar {
+  background-color: #bd2130;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused {
+  background-color: transparent;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline.e-focused .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused .e-chip-delete {
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused .e-chip-avatar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-active,
+.e-chip-list .e-chip.e-danger.e-outline.e-active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline.e-active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline.e-active .e-chip-avatar {
+  background-color: #bd2130;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused.e-active,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused.e-active {
+  background-color: transparent;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline.e-focused.e-active .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused.e-active .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused.e-active .e-chip-delete {
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused.e-active .e-chip-delete.e-dlt-btn {
+  color: #dc3545;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-focused.e-active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline.e-focused.e-active .e-chip-avatar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:active,
+.e-chip-list .e-chip.e-danger.e-outline:active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:active .e-chip-icon,
+.e-chip-list.e-chip.e-danger.e-outline:active .e-chip-delete,
+.e-chip-list .e-chip.e-danger.e-outline:active .e-chip-icon,
+.e-chip-list .e-chip.e-danger.e-outline:active .e-chip-delete {
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline:active .e-chip-avatar,
+.e-chip-list .e-chip.e-danger.e-outline:active .e-chip-avatar {
+  background-color: #bd2130;
+  color: #fff;
+}
+
+.e-chip-list.e-chip.e-danger.e-outline.e-disabled,
+.e-chip-list .e-chip.e-danger.e-outline.e-disabled {
+  opacity: .65;
+  pointer-events: none;
+}

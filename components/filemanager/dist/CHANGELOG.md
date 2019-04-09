@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### File Manager
+
+#### Breaking Changes
+
+- The `beforeFileLoad` event’s `module` argument values have been changed as follows:
+
+|Argument Name|Old Value|New Value|
+|----|----|----|
+|module|navigationpane|NavigationPane|
+|module|Grid|DetailsView|
+|module|LargeIcon|LargeIconView|
+
 ## 17.1.32-beta (2019-03-13)
 
 ### File Manager

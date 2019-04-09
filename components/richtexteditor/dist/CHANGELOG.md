@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### RichTextEditor
+
+#### Bug Fixes
+
+- Insert image functionality of `RichTextEditor` is not working when render with `File Upload`, that issue has been fixed.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### RichTextEditor

@@ -1,0 +1,22 @@
+.e-input-group-icon.e-spin-up::before {
+  content: '\e85e';
+  font-family: 'e-icons';
+}
+
+.e-input-group-icon.e-spin-down::before {
+  content: '\e84f';
+  font-family: 'e-icons';
+}
+
+.e-numeric-container {
+  width: 100%;
+}
+
+.e-numeric.e-control-wrapper.e-input-group .e-input-group-icon {
+  font-size: 14px;
+}
+
+.e-bigger .e-control-wrapper.e-numeric.e-input-group .e-input-group-icon,
+.e-bigger.e-control-wrapper.e-numeric.e-input-group .e-input-group-icon {
+  font-size: 12px;
+}

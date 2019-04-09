@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### TreeView
+
+#### Bug Fixes
+
+- Now the selected node background color is removed before collapsing the parent node.
+
 ## 17.1.38 (2019-03-29)
 
 ### Menu

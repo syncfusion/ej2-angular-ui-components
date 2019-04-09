@@ -1,9 +1,3 @@
-<!-- markdownlint-disable MD010 -->
-
-<!-- markdownlint-disable MD030 -->
-
-<!-- markdownlint-disable MD004 -->
-
 # Changelog
 
 ## [Unreleased]
@@ -108,11 +102,18 @@
 - Support had been provided for printing and exporting the maps.
 - Support has been provided for printing.
 
+- Support has been added for animating the shapes on zooming.
+- Support has been added to trim the maps title, when it exceeds the available width.
+- Support had been provided for printing and exporting the maps.
+- Support has been provided for printing.
+
+
 ## 16.1.24 (2018-02-22)
 
 ### Maps
 
 The Maps control is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the map elements are rendered using Scalable Vector Graphics (SVG).
+
 
 - **Layers** - Map is maintained through layers and it can accommodate one or more layers.
 - **GeoJSON Data Input** - Supports GeoJSON data, which allows you to plot your own shapes in the maps.
@@ -125,3 +126,13 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Navigation Lines** - Lines can be rendered between various points in map.
 - **Annotations** - Supports placing any HTML element on desired location in the map.
 - **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.
+
+
+## 17.1.38 (2019-03-29)
+
+### Maps
+
+#### Bug Fixes
+
+- The ng-template support has been provided to render custom annotation.
+

@@ -1,0 +1,289 @@
+/*! contextmenu layout */
+.e-contextmenu-wrapper ul .e-menu-item .e-previous::before {
+  content: '\e94b';
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret::before {
+  content: '\e207';
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-caret::before {
+  content: '\e990';
+}
+
+/*! contextmenu layout */
+.e-contextmenu-wrapper ul {
+  font-weight: normal;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 14px;
+  padding: 3px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+  min-width: 120px;
+  position: absolute;
+}
+
+.e-contextmenu-wrapper ul.e-ul,
+.e-contextmenu-wrapper ul.e-ul * {
+  box-sizing: border-box;
+}
+
+.e-contextmenu-wrapper ul.e-ul:focus,
+.e-contextmenu-wrapper ul.e-ul *:focus {
+  outline: none;
+}
+
+.e-contextmenu-wrapper ul.e-contextmenu {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.e-contextmenu-wrapper ul.e-ul {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}
+
+.e-contextmenu-wrapper ul .e-menu-item {
+  cursor: pointer;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 14px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-menu-hide {
+  display: none;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-menu-header {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-url {
+  text-decoration: none;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-separator {
+  cursor: auto;
+  line-height: normal;
+  pointer-events: none;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-url {
+  display: inline-block;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
+  font-size: 16px;
+  line-height: 26px;
+  margin-right: 12px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  line-height: 26px;
+  margin-left: 16px;
+  margin-right: 0;
+  position: absolute;
+  right: 7px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-menu-caret-icon {
+  padding-right: 36px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-separator {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  height: auto;
+  margin: 3px 0;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-blankicon {
+  padding-left: 42px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  font-size: 12px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-previous {
+  margin-right: 12px;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-disabled {
+  cursor: auto;
+  pointer-events: none;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-menu-icon {
+  float: right;
+  margin-right: 0;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-caret {
+  margin-left: 0;
+  right: auto;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-menu-icon {
+  margin-left: 12px;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item .e-caret {
+  left: 7px;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item.e-menu-caret-icon {
+  padding-left: 36px;
+  padding-right: 14px;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item.e-blankicon {
+  padding-left: 14px;
+  padding-right: 42px;
+}
+
+.e-rtl.e-contextmenu-wrapper .e-menu-item.e-blankicon.e-menu-caret-icon {
+  padding-left: 36px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul,
+.e-bigger.e-contextmenu-wrapper ul {
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  max-width: 280px;
+  min-width: 112px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-menu-icon,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  line-height: 40px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item.e-separator,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item.e-separator {
+  height: auto;
+  line-height: normal;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item.e-blankicon,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item.e-blankicon {
+  padding-left: 42px;
+}
+
+.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-bigger.e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  font-size: 12px;
+}
+
+.e-bigger .e-contextmenu-wrapper.e-rtl ul .e-blankicon,
+.e-bigger.e-contextmenu-wrapper.e-rtl ul .e-blankicon {
+  padding-left: 14px;
+  padding-right: 42px;
+}
+
+.e-bigger .e-contextmenu-wrapper.e-rtl ul .e-blankicon.e-menu-caret-icon,
+.e-bigger.e-contextmenu-wrapper.e-rtl ul .e-blankicon.e-menu-caret-icon {
+  padding-left: 36px;
+}
+
+/*! contextmenu theme */
+.e-contextmenu-wrapper ul {
+  background-color: #fff;
+  color: #555;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-menu-header {
+  border-bottom-color: #e6e6e6;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-url {
+  color: #555;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-focused {
+  background-color: #f5f5f5;
+  color: #555;
+  outline: 0 solid #e6e6e6;
+  outline-offset: 0;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-focused .e-caret {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-focused .e-menu-icon {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-selected {
+  background-color: #e6e6e6;
+  color: #555;
+  outline: 0 solid #e6e6e6;
+  outline-offset: 0;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-selected .e-caret {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
+  color: #333;
+}
+
+.e-contextmenu-wrapper ul .e-disabled {
+  color: rgba(85, 85, 85, 0.65);
+  opacity: 1;
+}
+
+.e-contextmenu-wrapper ul .e-disabled .e-menu-icon {
+  color: rgba(51, 51, 51, 0.65);
+}
+
+.e-contextmenu-wrapper ul .e-disabled .e-caret {
+  color: rgba(51, 51, 51, 0.65);
+}
+
+.e-contextmenu-wrapper ul .e-disabled .e-menu-url {
+  color: rgba(85, 85, 85, 0.65);
+}
+
+.e-contextmenu-wrapper ul .e-separator {
+  border-bottom-color: #e6e6e6;
+}

@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+### Uploader
+
+#### Bug Fixes
+
+- In latest chrome browser, file list is not generated issue fixed.
+
+### Form Validator
+
+#### Bug Fixes
+
+- When using multiple forms with same name fields, validation not occurs issue has been fixed.
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Value not updated properly in reactive forms issue fixed.
+
 ## 17.1.38 (2019-03-29)
 
 ### Form Validator
@@ -21,12 +39,6 @@
 #### Bug Fixes
 
 - When textbox contains value initially, no more change event will trigger while focus followed by focus out.
-
-### ColorPicker
-
-#### Bug Fixes
-
-- Value not updated properly in reactive forms issue fixed.
 
 ## 17.1.32-beta (2019-03-13)
 

@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+/*! recurrence editor theme wise definitions*/
+/*! Recurrence-Editor component layout */
+.e-recurrenceeditor .e-editor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+}
+
+.e-recurrenceeditor .e-recurrence-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.e-recurrenceeditor .e-recurrence-table.e-repeat-content-wrapper td:last-child {
+  width: 27%;
+}
+
+.e-recurrenceeditor .e-recurrence-table.e-month-expand-wrapper td:first-child {
+  width: 24%;
+}
+
+.e-recurrenceeditor .e-recurrence-table .e-repeat-content {
+  display: inline-block;
+  font-weight: normal;
+  padding: 18px 0 0 8px;
+}
+
+.e-recurrenceeditor .e-recurrence-table .e-input-wrapper {
+  float: none;
+  width: 100%;
+}
+
+.e-recurrenceeditor .e-recurrence-table .e-week-position {
+  position: relative;
+  right: 16px;
+}
+
+.e-recurrenceeditor .e-recurrence-table .e-monthday-element {
+  padding-left: 10px;
+}
+
+.e-recurrenceeditor .e-icons {
+  height: 0;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-form-left {
+  padding: 0 8px 10px 0;
+}
+
+.e-recurrenceeditor .e-form-left {
+  padding: 0 8px 16px 0;
+}
+
+.e-recurrenceeditor .e-form-right,
+.e-recurrenceeditor .e-input-wrapper-side.e-form-right {
+  padding: 0 0 10px 8px;
+}
+
+.e-recurrenceeditor .e-input-wrapper {
+  float: left;
+  width: 50%;
+}
+
+.e-recurrenceeditor .e-input-wrapper div {
+  margin-bottom: 2.5%;
+}
+
+.e-recurrenceeditor .e-input-wrapper.e-end-on-date,
+.e-recurrenceeditor .e-input-wrapper.e-end-on-count {
+  padding-right: 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-end-on > div,
+.e-recurrenceeditor.e-rtl .e-month-expander > div > div {
+  float: right;
+}
+
+.e-recurrenceeditor.e-rtl .e-form-left,
+.e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-form-left {
+  padding: 0 0 10px 8px;
+}
+
+.e-recurrenceeditor.e-rtl .e-form-right,
+.e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-form-right {
+  padding: 0 8px 10px 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-recurrence-table .e-monthday-element {
+  padding-left: 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-week-position {
+  padding-left: 16px;
+  right: 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-label,
+.e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-non-week > .e-month-expander-label {
+  padding-right: 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-end-on-label {
+  margin-bottom: 5px;
+}
+
+.e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-left {
+  padding-left: 8px;
+  padding-right: 0;
+}
+
+.e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-date,
+.e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-count {
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+.e-recurrenceeditor.e-rtl .e-recurrenceeditor .e-recurrence-table.e-month-expand-wrapper td:first-child {
+  width: 0;
+}
+
+.e-recurrenceeditor .e-days .e-week-expander-label {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.e-recurrenceeditor .e-days button {
+  border-radius: 50%;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  height: 35px;
+  margin: 0 8px 10px;
+  width: 35px;
+}
+
+.e-recurrenceeditor .e-hide-recurrence-element {
+  display: none;
+}
+
+.e-recurrenceeditor .e-half-space {
+  width: 20%;
+}
+
+.e-recurrenceeditor .e-year-expander {
+  margin-bottom: 11px;
+}
+
+.e-recurrenceeditor .e-month-expander tr:first-child .e-input-wrapper {
+  margin-bottom: 11px;
+}
+
+.e-recurrenceeditor .e-month-expander-checkbox-wrapper.e-input-wrapper {
+  margin-top: -3px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side {
+  float: left;
+  padding: 16px 20px 0;
+  width: 50%;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-end-on .e-end-on-label {
+  float: none;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding-right: 16px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-end-on .e-end-on-left {
+  padding-right: 16px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-non-week > .e-input-wrapper {
+  margin: 0;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-non-week > .e-month-expander-label {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding-right: 16px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side .e-days .e-form-left {
+  padding-bottom: 6px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side .e-non-week .e-form-left {
+  padding-bottom: 12px;
+}
+
+.e-recurrenceeditor .e-input-wrapper-side.e-form-right {
+  margin-bottom: 11px;
+}
+
+.e-bigger .e-recurrenceeditor {
+  padding: 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side.e-form-left {
+  padding: 0 12px 11px 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-form-left {
+  padding: 0 12px 14px 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-form-right,
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side.e-form-right {
+  padding: 0 0 10px 12px;
+}
+
+.e-bigger .e-recurrenceeditor .e-recurrence-table .e-week-position {
+  right: 24px;
+}
+
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side .e-days .e-form-left {
+  padding-bottom: 6px;
+}
+
+.e-bigger .e-recurrenceeditor .e-recurrence-table .e-monthday-element {
+  padding-left: 70px;
+}
+
+.e-bigger .e-recurrenceeditor .e-week-position {
+  padding-left: 55px;
+  padding-right: 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side.e-non-week > .e-month-expander-label {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-end-on-label {
+  margin-bottom: 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-days .e-week-expander-label {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side .e-non-week .e-form-left {
+  padding-bottom: 12px;
+}
+
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side.e-end-on .e-end-on-label {
+  font-size: 12px;
+  margin-bottom: 1px;
+}
+
+.e-bigger .e-recurrenceeditor .e-month-expander tr:first-child .e-input-wrapper,
+.e-bigger .e-recurrenceeditor .e-year-expander,
+.e-bigger .e-recurrenceeditor .e-input-wrapper-side.e-form-right {
+  margin-bottom: 11px;
+}
+
+.e-bigger .e-recurrenceeditor .e-recurrence-table.e-month-expand-wrapper td:first-child {
+  width: 0;
+}
+
+.e-bigger .e-recurrenceeditor .e-days button {
+  height: 40px;
+  width: 40px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-form-left,
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-form-left {
+  padding: 0 0 10px 12px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-form-right,
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-form-right {
+  padding: 0 12px 10px 0;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-recurrence-table .e-monthday-element {
+  padding-left: 0;
+  padding-right: 64px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-label,
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-non-week > .e-month-expander-label {
+  padding-right: 0;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-end-on-label {
+  margin-bottom: 5px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-left {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-date,
+.e-bigger .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-count {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-recurrence-table .e-week-position {
+  right: 33px;
+}
+
+.e-bigger .e-recurrenceeditor.e-rtl .e-week-position {
+  padding-left: 46px;
+}
+
+.e-device .e-recurrenceeditor .e-recurrence-table.e-repeat-content-wrapper td:last-child {
+  width: 25%;
+}
+
+.e-device .e-recurrenceeditor .e-recurrence-table.e-month-expand-wrapper td:first-child {
+  width: 20%;
+}
+
+.e-device .e-recurrenceeditor .e-week-expander-label {
+  margin-bottom: 6px;
+}
+
+.e-device .e-recurrenceeditor .e-month-expander-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.e-device .e-recurrenceeditor .e-footer-content {
+  padding: 12px;
+}
+
+.e-device .e-recurrenceeditor .e-form-left,
+.e-device .e-recurrenceeditor .e-input-wrapper-side.e-form-left {
+  padding: 0 0 10px;
+}
+
+.e-device .e-recurrenceeditor .e-form-right,
+.e-device .e-recurrenceeditor .e-input-wrapper-side.e-form-right {
+  padding: 0 0 10px;
+}
+
+.e-device .e-recurrenceeditor .e-input-wrapper.e-end-on-date,
+.e-device .e-recurrenceeditor .e-input-wrapper.e-end-on-count {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor .e-input-wrapper-side.e-end-on .e-end-on-left {
+  padding-right: 10px;
+}
+
+.e-device .e-recurrenceeditor.e-end-on {
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor.e-end-on .e-end-on-label {
+  float: none;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+
+.e-device .e-recurrenceeditor.e-end-on .e-end-on-left {
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-left {
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-date,
+.e-device .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-count {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.e-device .e-recurrenceeditor.e-rtl .e-recurrence-table .e-monthday-element {
+  padding-left: 0;
+}
+
+.e-device .e-recurrenceeditor.e-rtl .e-week-position {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor .e-recurrence-table .e-monthday-element {
+  padding-left: 20px;
+}
+
+.e-device .e-recurrenceeditor .e-week-position {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.e-device .e-recurrenceeditor .e-week-position {
+  padding-left: 0;
+}
+
+.e-device.e-recurrence-dialog .e-dlg-header-content {
+  background: none;
+  box-shadow: none;
+  padding-bottom: 10px;
+}
+
+.e-device.e-recurrence-dialog .e-editor .e-input-wrapper-side.e-end-on .e-end-on-label {
+  margin-bottom: 1px;
+}
+
+.e-device.e-recurrence-dialog .e-footer-content {
+  padding: 16px 8px;
+}
+
+@media (max-width: 580px) {
+  .e-recurrenceeditor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .e-recurrenceeditor .e-editor {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .e-recurrenceeditor .e-editor > .e-input-wrapper.e-form-left {
+    margin-top: 0;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-non-week > .e-month-expander-label,
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-end-on .e-end-on-label {
+    margin-bottom: 1px;
+  }
+  .e-recurrenceeditor .e-editor > div {
+    margin-top: 20px;
+  }
+  .e-recurrenceeditor .e-editor > .e-input-wrapper {
+    width: 100%;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-end-on {
+    width: 100%;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-end-on .e-input-wrapper {
+    width: 50%;
+  }
+  .e-recurrenceeditor .e-editor .e-form-left,
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-form-left {
+    padding: 0 0 10px;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper.e-end-on-date,
+  .e-recurrenceeditor .e-editor .e-input-wrapper.e-end-on-count {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-end-on .e-end-on-left {
+    padding-right: 10px;
+  }
+  .e-recurrenceeditor .e-editor .e-form-right,
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-form-right {
+    padding-left: 0;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-days {
+    width: 100%;
+  }
+  .e-recurrenceeditor .e-editor .e-input-wrapper-side.e-non-week {
+    width: 100%;
+  }
+  .e-recurrenceeditor.e-rtl .e-input-wrapper-side.e-end-on .e-end-on-left {
+    padding-right: 0;
+  }
+  .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-date,
+  .e-recurrenceeditor.e-rtl .e-input-wrapper.e-end-on-count {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+/*! Recurrence-Editor component theme */

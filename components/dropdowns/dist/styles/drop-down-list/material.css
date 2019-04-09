@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+.e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 16px 0 0;
+}
+
+.e-ddl.e-control-wrapper .e-ddl-icon::before {
+  transform: rotate(0deg);
+  transition: transform 300ms ease;
+}
+
+.e-ddl.e-control-wrapper.e-icon-anim .e-ddl-icon::before {
+  transform: rotate(180deg);
+  transition: transform 300ms ease;
+}
+
+.e-dropdownbase .e-list-item.e-active.e-hover {
+  color: #e3165b;
+}
+
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:hover,
+.e-input-group:not(.e-disabled) .e-back-icon:active,
+.e-input-group:not(.e-disabled) .e-back-icon:hover,
+.e-popup.e-ddl .e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-popup.e-ddl .e-input-group:not(.e-disabled) .e-clear-icon:hover {
+  background: transparent;
+}
+
+.e-input-group .e-ddl-icon:not(:active)::after {
+  animation: none;
+}
+
+.e-ddl.e-popup {
+  border: 0;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.21);
+  margin-top: 2px;
+}
+
+.e-bigger .e-popup.e-ddl-device-filter .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
+  border-color: #e0e0e0;
+}
+
+.e-bigger .e-popup.e-ddl-device-filter {
+  margin-top: 0;
+}
+
+.e-bigger .e-ddl-device .e-input-group,
+.e-bigger .e-ddl-device .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
+  background: #f5f5f5;
+  border-width: 0;
+  box-shadow: 0;
+  margin-bottom: 0;
+}
+
+.e-bigger .e-ddl-device .e-input-group .e-back-icon,
+.e-bigger .e-ddl-device .e-input-group input.e-input,
+.e-bigger .e-ddl-device .e-input-group .e-clear-icon {
+  background-color: #f5f5f5;
+}
+
+.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+  margin: 6px 6px 5px;
+  min-height: 12px;
+  min-width: 12px;
+  padding: 6px;
+}
+
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+  min-height: 16px;
+  min-width: 16px;
+}
+
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
+  padding: 8px 16px 8px 0;
+}
+
+.e-input-group.e-ddl,
+.e-input-group.e-ddl .e-input,
+.e-input-group.e-ddl .e-ddl-icon {
+  background: transparent;
+}
+
+.e-ddl.e-ddl-device.e-ddl-device-filter .e-input-group:hover:not(.e-disabled):not(.e-float-icon-left),
+.e-ddl.e-ddl-device.e-ddl-device-filter .e-input-group.e-control-wrapper:hover:not(.e-disabled):not(.e-float-icon-left) {
+  border-bottom-width: 0;
+}
+
+.e-ddl .e-search-icon::before {
+  content: '\e993';
+}
+
+.e-ddl .e-back-icon::before {
+  content: '\e977';
+  font-size: 20px;
+}
+
+.e-ddl.e-input-group.e-control-wrapper .e-ddl-icon::before {
+  content: '\e969';
+  font-family: 'e-icons';
+}
+
+.e-bigger .e-input-group.e-ddl .e-input-filter,
+.e-bigger .e-input-group.e-ddl .e-input-filter:focus {
+  margin-left: -20px;
+}
+
+.e-bigger .e-ddl.e-popup .e-list-item,
+.e-bigger .e-ddl.e-popup .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
+.e-popup-full-page {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  right: 0;
+  top: 0;
+}
+
+.e-ddl.e-control-wrapper .e-ddl-disable-icon {
+  position: relative;
+}
+
+.e-ddl.e-control-wrapper .e-ddl-disable-icon::before {
+  content: '';
+}
+
+.e-bigger .e-ddl-device .e-input-group {
+  margin-left: 52px;
+}
+
+.e-bigger .e-ddl-device .e-input-group .e-clear-icon {
+  margin-right: 66px;
+}
+
+.e-ddl-device-filter .e-filter-parent {
+  background-color: #f5f5f5;
+}
+
+.e-ddl input.e-input::-webkit-contacts-auto-fill-button {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+.e-filter-parent {
+  border: 0;
+  border-top-width: 0;
+  box-shadow: 0 1.5px 5px -2px rgba(0, 0, 0, 0.3);
+  display: block;
+  padding: 0;
+}
+
+.e-ddl.e-input-group:not(.e-disabled) {
+  cursor: pointer;
+}
+
+.e-ddl.e-popup.e-ddl-device-filter .e-input-group.e-input-focus::before,
+.e-ddl.e-popup.e-ddl-device-filter .e-input-group.e-input-focus::after {
+  width: 0;
+}
+
+.e-ddl.e-popup {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  position: absolute;
+}
+
+.e-ddl.e-popup .e-search-icon {
+  margin: 0;
+  opacity: .57;
+  padding: 12px 8px 8px;
+}
+
+.e-ddl.e-popup .e-filter-parent .e-back-icon {
+  margin: 0 10px 0 -52px;
+  padding: 8px 16px;
+  position: absolute;
+}
+
+.e-ddl.e-popup.e-rtl .e-filter-parent .e-input-group.e-control-wrapper .e-input-filter,
+.e-ddl.e-popup .e-filter-parent .e-input-filter,
+.e-ddl.e-popup .e-filter-parent .e-input-filter:focus {
+  padding: 8px 16px 8px;
+}
+
+.e-ddl.e-popup .e-input-group {
+  margin-bottom: 0;
+}
+
+.e-ddl.e-popup .e-ddl-footer,
+.e-ddl.e-popup .e-ddl-header {
+  cursor: default;
+}
+
+.e-bigger .e-popup .e-clear-icon {
+  display: none;
+}
+
+.e-ddl.e-input-group .e-ddl-hidden {
+  border: 0;
+  height: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.e-ddl.e-input-group,
+.e-ddl.e-input-group.e-input-focus:focus {
+  outline: none;
+}
+
+.e-dropdownbase .e-list-item .e-highlight {
+  display: inline;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+.e-ddl.e-input-group input[readonly] ~ .e-clear-icon:not(.e-clear-icon-hide),
+.e-float-input input[readonly] ~ .e-clear-icon:not(.e-clear-icon-hide),
+.e-float-input.e-input-group input[readonly] ~ .e-clear-icon:not(.e-clear-icon-hide) {
+  opacity: 1;
+}
+
+.e-ddl.e-input-group .e-input-value,
+.e-ddl.e-input-group .e-input-value:focus {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: none;
+  width: 100%;
+}
+
+.e-ddl.e-input-group input[readonly].e-input,
+.e-ddl.e-input-group input[readonly],
+.e-ddl.e-input-group .e-dropdownlist {
+  pointer-events: none;
+}
+
+ejs-autocomplete,
+ejs-combobox,
+ejs-dropdownlist {
+  display: block;
+}
+
+.e-popup {
+  border-color: #e0e0e0;
+}
+
+.e-float-input.e-input-group.e-ddl.e-control.e-icon-anim > .e-float-text,
+.e-float-input.e-input-focus.e-input-group.e-ddl.e-control.e-keyboard > .e-float-text {
+  color: #e3165b;
+}

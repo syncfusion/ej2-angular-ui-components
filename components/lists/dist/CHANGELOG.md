@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### ListBase
+
+#### Bug Fixes
+
+- Issue with single level element generation with fields mapping has been fixed.
+
 ## 17.1.32-beta (2019-03-13)
 
 ### ListView

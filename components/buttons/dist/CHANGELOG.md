@@ -2,13 +2,11 @@
 
 ## [Unreleased]
 
-## 17.1.38 (2019-03-29)
-
 ### RadioButton
 
-#### Bug Fixes
+#### New Features
 
-- Reactive form value change issue fixed.
+- Provided `getSelectedValue` method to find the value of selected radio button in a group.
 
 ## 17.1.1-beta (2019-01-29)
 
@@ -214,6 +212,14 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Label** - Supports label and its positioning.
 - **Sizes** - Provided with different sizes of RadioButton.
 
+
+## 17.1.38 (2019-03-29)
+
+### RadioButton
+
+#### Bug Fixes
+
+- Reactive form value change issue fixed.
 
 ## 16.4.55 (2019-02-27)
 
