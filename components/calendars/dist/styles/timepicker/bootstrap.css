@@ -4,6 +4,12 @@
   content: '\e93e';
 }
 
+.e-input-group.e-control-wrapper.e-time-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-time-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-time-wrapper,
 .e-control-wrapper.e-time-wrapper {
   -webkit-tap-highlight-color: transparent;
@@ -12,8 +18,6 @@
 .e-time-wrapper .e-time-icon.e-icons,
 .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons {
   font-size: 16px;
-  min-height: 34px;
-  min-width: 34px;
 }
 
 .e-time-wrapper .e-time-icon.e-icons.e-disabled,
@@ -78,8 +82,6 @@
 .e-bigger .e-control-wrapper .e-time-wrapper .e-time-icon.e-icons,
 .e-control-wrapper.e-bigger.e-time-wrapper .e-time-icon.e-icons {
   font-size: 16px;
-  min-height: 40px;
-  min-width: 40px;
 }
 
 .e-bigger .e-timepicker.e-popup .e-list-parent.e-ul,

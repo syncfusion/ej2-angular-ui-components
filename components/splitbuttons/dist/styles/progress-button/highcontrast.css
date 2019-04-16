@@ -1,0 +1,644 @@
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*! Progress Button Layout */
+.e-progress-btn {
+  position: relative;
+}
+
+.e-progress-btn .e-progress {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s linear;
+}
+
+.e-progress-btn .e-spinner {
+  transition: all 0.3s linear;
+}
+
+.e-progress-btn .e-btn-content {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.e-progress-btn.e-vertical .e-progress {
+  bottom: 0;
+  height: 0%;
+  top: auto;
+  width: 100%;
+}
+
+.e-progress-btn.e-progress-top .e-progress {
+  height: 10%;
+}
+
+.e-progress-btn.e-progress-bottom .e-progress {
+  bottom: -1px;
+  height: 10%;
+  top: auto;
+}
+
+.e-progress-btn.e-progress-active {
+  overflow: hidden;
+}
+
+.e-progress-btn.e-progress-active .e-progress {
+  opacity: 1;
+}
+
+.e-progress-btn.e-progress-active .e-animate-end {
+  opacity: 0;
+}
+
+.e-progress-btn.e-spin-top, .e-progress-btn.e-spin-bottom {
+  transition: padding .3s linear;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top .e-btn-content,
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top .e-spinner, .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom .e-btn-content,
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom .e-spinner {
+  display: block;
+  line-height: 1;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-center .e-spinner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round) .e-spinner {
+  padding-right: 12px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round) .e-spinner .e-spinner-inner {
+  top: -1px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round).e-rtl .e-spinner {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round) .e-spinner {
+  padding-left: 12px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round) .e-spinner .e-spinner-inner {
+  top: -1px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round).e-rtl .e-spinner {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top .e-spinner {
+  padding-bottom: 12px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom .e-spinner {
+  padding-top: 12px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round) .e-spinner {
+  padding-right: 10px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round).e-rtl .e-spinner {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round) .e-spinner {
+  padding-left: 10px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round).e-rtl .e-spinner {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top .e-spinner {
+  padding-bottom: 10px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom .e-spinner {
+  padding-top: 10px;
+}
+
+.e-progress-btn.e-round-corner {
+  border-radius: 5em;
+  outline: none;
+  overflow: hidden;
+}
+
+.e-progress-btn.e-rtl .e-progress {
+  left: auto;
+  right: 0;
+}
+
+.e-progress-btn.e-rtl.e-vertical .e-progress {
+  bottom: auto;
+  top: 0;
+}
+
+.e-progress-btn .e-spinner-pane {
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.e-progress-btn .e-spinner-pane .e-spinner-inner {
+  left: auto;
+  position: relative;
+  top: auto;
+  transform: none;
+}
+
+.e-progress-btn .e-cont-animate {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes ProgressSlideLeft {
+  from {
+    left: 0%;
+    opacity: 1;
+  }
+  to {
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes ProgressSlideRight {
+  from {
+    left: 0%;
+    opacity: 1;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes ProgressSlideUp {
+  from {
+    height: auto;
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    height: auto;
+    opacity: 0;
+    top: -100px;
+  }
+}
+
+@keyframes ProgressSlideDown {
+  from {
+    height: auto;
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    height: auto;
+    opacity: 0;
+    top: 100px;
+  }
+}
+
+@keyframes ProgressZoomIn {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(0, 0) scale(3);
+  }
+}
+
+@keyframes ProgressZoomOut {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(0, 0) scale(0);
+  }
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round) .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round) .e-spinner {
+  padding-right: 14px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round).e-rtl .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-left:not(.e-round).e-rtl .e-spinner {
+  padding-left: 14px;
+  padding-right: 0;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round) .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round) .e-spinner {
+  padding-left: 14px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round).e-rtl .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-right:not(.e-round).e-rtl .e-spinner {
+  padding-left: 0;
+  padding-right: 14px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-top .e-spinner {
+  padding-bottom: 14px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-spin-bottom .e-spinner {
+  padding-top: 14px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round) .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round) .e-spinner {
+  padding-right: 12px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round).e-rtl .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-left:not(.e-round).e-rtl .e-spinner {
+  padding-left: 12px;
+  padding-right: 0;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round) .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round) .e-spinner {
+  padding-left: 12px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round).e-rtl .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-right:not(.e-round).e-rtl .e-spinner {
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top {
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-top .e-spinner {
+  padding-bottom: 12px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom {
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
+.e-bigger .e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom .e-spinner,
+.e-bigger.e-progress-btn.e-progress-active:not(.e-hide-spinner).e-small.e-spin-bottom .e-spinner {
+  padding-top: 12px;
+}
+
+/*! Progress Button Theme */
+.e-progress-btn .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-primary .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-primary.e-outline:hover .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-primary.e-outline:focus .e-spinner-pane .e-spinner-inner svg {
+  fill: #000;
+  stroke: #000;
+}
+
+.e-progress-btn.e-primary .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-primary.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-primary.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(0, 0, 0, 0);
+}
+
+.e-progress-btn.e-primary .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-primary.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-primary.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #000;
+}
+
+.e-progress-btn.e-primary.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-primary.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-primary.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg {
+  fill: #000;
+  stroke: #000;
+}
+
+.e-progress-btn.e-primary.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-primary.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-primary.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(0, 0, 0, 0);
+}
+
+.e-progress-btn.e-primary.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-primary.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-primary.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #000;
+}
+
+.e-progress-btn.e-success .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-success.e-outline:hover .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-success.e-outline:focus .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-success .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-success.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-success.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-success .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-success.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-success.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-success.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-success.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-success.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-success.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-success.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-success.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-success.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-success.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-success.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-info .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-info.e-outline:hover .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-info.e-outline:focus .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-info .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-info.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-info.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-info .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-info.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-info.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-info.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-info.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-info.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-info.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-info.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-info.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-info.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-info.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-info.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-warning .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-warning.e-outline:hover .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-warning.e-outline:focus .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-warning .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-warning.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-warning.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-warning .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-warning.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-warning.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-warning.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-warning.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-warning.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-warning.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-warning.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-warning.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-warning.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-warning.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-warning.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-danger .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-danger.e-outline:hover .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-danger.e-outline:focus .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-danger .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-danger.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-danger.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-danger .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-danger.e-outline:hover .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-danger.e-outline:focus .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-danger.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-danger.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg, .e-progress-btn.e-danger.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.e-progress-btn.e-danger.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-danger.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle, .e-progress-btn.e-danger.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.e-progress-btn.e-danger.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-danger.e-outline:hover.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc, .e-progress-btn.e-danger.e-outline:focus.e-flat .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #fff;
+}
+
+.e-progress-btn.e-outline.e-primary .e-spinner-pane .e-spinner-inner svg {
+  fill: #ffd939;
+  stroke: #ffd939;
+}
+
+.e-progress-btn.e-outline.e-primary .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(255, 217, 57, 0);
+}
+
+.e-progress-btn.e-outline.e-primary .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #ffd939;
+}
+
+.e-progress-btn.e-outline.e-success .e-spinner-pane .e-spinner-inner svg {
+  fill: #166600;
+  stroke: #166600;
+}
+
+.e-progress-btn.e-outline.e-success .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(22, 102, 0, 0);
+}
+
+.e-progress-btn.e-outline.e-success .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #166600;
+}
+
+.e-progress-btn.e-outline.e-info .e-spinner-pane .e-spinner-inner svg {
+  fill: #0056b3;
+  stroke: #0056b3;
+}
+
+.e-progress-btn.e-outline.e-info .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(0, 86, 179, 0);
+}
+
+.e-progress-btn.e-outline.e-info .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #0056b3;
+}
+
+.e-progress-btn.e-outline.e-warning .e-spinner-pane .e-spinner-inner svg {
+  fill: #944000;
+  stroke: #944000;
+}
+
+.e-progress-btn.e-outline.e-warning .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(148, 64, 0, 0);
+}
+
+.e-progress-btn.e-outline.e-warning .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #944000;
+}
+
+.e-progress-btn.e-outline.e-danger .e-spinner-pane .e-spinner-inner svg {
+  fill: #b30900;
+  stroke: #b30900;
+}
+
+.e-progress-btn.e-outline.e-danger .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(179, 9, 0, 0);
+}
+
+.e-progress-btn.e-outline.e-danger .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #b30900;
+}
+
+.e-progress-btn.e-link .e-spinner-pane .e-spinner-inner svg {
+  fill: #8a8aff;
+  stroke: #8a8aff;
+}
+
+.e-progress-btn.e-link .e-spinner-pane .e-spinner-inner svg .e-path-circle {
+  stroke: rgba(138, 138, 255, 0);
+}
+
+.e-progress-btn.e-link .e-spinner-pane .e-spinner-inner svg .e-path-arc {
+  stroke: #8a8aff;
+}
+
+.e-progress {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.e-primary .e-progress,
+.e-success .e-progress,
+.e-danger .e-progress,
+.e-info .e-progress {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.e-warning .e-progress {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.e-flat.e-primary .e-progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.e-flat.e-success .e-progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.e-flat.e-info .e-progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.e-flat.e-warning .e-progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.e-flat.e-danger .e-progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.e-outline:not(:focus).e-primary .e-progress {
+  background-color: rgba(255, 217, 57, 0.2);
+}
+
+.e-outline:not(:focus).e-success .e-progress {
+  background-color: rgba(22, 102, 0, 0.2);
+}
+
+.e-outline:not(:focus).e-info .e-progress {
+  background-color: rgba(0, 86, 179, 0.2);
+}
+
+.e-outline:not(:focus).e-warning .e-progress {
+  background-color: rgba(148, 64, 0, 0.2);
+}
+
+.e-outline:not(:focus).e-danger .e-progress {
+  background-color: rgba(179, 9, 0, 0.2);
+}

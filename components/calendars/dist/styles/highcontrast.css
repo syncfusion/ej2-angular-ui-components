@@ -726,6 +726,12 @@ ejs-calendar {
   content: '\e97f';
 }
 
+.e-input-group.e-control-wrapper.e-time-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-time-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-time-wrapper,
 .e-control-wrapper.e-time-wrapper {
   -webkit-tap-highlight-color: transparent;
@@ -734,8 +740,6 @@ ejs-calendar {
 .e-time-wrapper .e-time-icon.e-icons,
 .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons {
   font-size: 16px;
-  min-height: 30px;
-  min-width: 30px;
 }
 
 .e-time-wrapper .e-time-icon.e-icons.e-disabled,
@@ -800,8 +804,6 @@ ejs-calendar {
 .e-bigger .e-control-wrapper .e-time-wrapper .e-time-icon.e-icons,
 .e-control-wrapper.e-bigger.e-time-wrapper .e-time-icon.e-icons {
   font-size: 20px;
-  min-height: 38px;
-  min-width: 38px;
 }
 
 .e-bigger .e-timepicker.e-popup .e-list-parent.e-ul,
@@ -868,18 +870,10 @@ ejs-calendar {
 
 /*! calendar fabric theme variables */
 /*! component icons */
-.e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
-.e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .e-input-group-icon.e-date-icon,
 .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
@@ -900,8 +894,6 @@ ejs-calendar {
 .e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 20px;
   margin: 0;
-  min-height: 38px;
-  min-width: 38px;
 }
 
 .e-bigger .e-input-group-icon.e-date-icon::before,
@@ -918,8 +910,10 @@ ejs-calendar {
   border-radius: 0;
 }
 
-.e-date-wrapper .e-date-icon.e-icons {
-  box-sizing: border-box;
+.e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .e-datepicker .e-calendar .e-content table tbody tr.e-month-hide:last-child {
@@ -993,10 +987,6 @@ ejs-calendar {
   border: 2px solid #fff;
 }
 
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons:hover:not(:active) {
-  background: #685708;
-}
-
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
   color: #fff;
 }
@@ -1011,8 +1001,6 @@ ejs-calendar {
 .e-control-wrapper .e-input-group-icon.e-range-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
@@ -1057,12 +1045,16 @@ ejs-calendar {
 .e-bigger .e-control-wrapper .e-input-group-icon.e-range-icon {
   font-size: 20px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
 /*! daterangepicker layout */
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-date-range-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-daterangepicker.e-popup {
   border: 1px solid #fff;
   border-radius: 0;
@@ -1759,6 +1751,12 @@ ejs-calendar {
   font-family: 'e-icons';
 }
 
+.e-input-group.e-control-wrapper.e-datetime-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-datetime-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-datetime-wrapper {
   -webkit-tap-highlight-color: transparent;
 }
@@ -1788,8 +1786,6 @@ ejs-calendar {
 .e-datetime-wrapper .e-input-group-icon.e-time-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
@@ -1859,8 +1855,6 @@ ejs-calendar {
 .e-bigger.e-datetime-wrapper .e-input-group-icon.e-time-icon,
 .e-bigger .e-datetime-wrapper .e-input-group-icon.e-time-icon {
   margin: 0;
-  min-height: 38px;
-  min-width: 38px;
 }
 
 .e-bigger.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon,

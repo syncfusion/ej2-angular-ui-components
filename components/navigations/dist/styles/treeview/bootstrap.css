@@ -575,6 +575,19 @@
   border-color: #317ab9;
 }
 
+.e-treeview .e-list-item.e-active.e-animation-active > .e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content {
+  color: #333;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content .e-list-text {
+  color: #333;
+}
+
 .e-treeview .e-list-item.e-active.e-hover > .e-fullrow {
   background-color: #317ab9;
   border-color: #66afe9;

@@ -7585,6 +7585,19 @@
   border-color: #400074;
 }
 
+.e-treeview .e-list-item.e-active.e-animation-active > .e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content {
+  color: #000;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content .e-list-text {
+  color: #000;
+}
+
 .e-treeview .e-list-item.e-active.e-hover > .e-fullrow {
   background-color: #400074;
   border-color: #000;

@@ -4,6 +4,12 @@
   font-family: 'e-icons';
 }
 
+.e-input-group.e-control-wrapper.e-datetime-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-datetime-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-datetime-wrapper {
   -webkit-tap-highlight-color: transparent;
 }
@@ -33,8 +39,6 @@
 .e-datetime-wrapper .e-input-group-icon.e-time-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 34px;
-  min-width: 34px;
   outline: none;
 }
 
@@ -104,8 +108,6 @@
 .e-bigger.e-datetime-wrapper .e-input-group-icon.e-time-icon,
 .e-bigger .e-datetime-wrapper .e-input-group-icon.e-time-icon {
   margin: 0;
-  min-height: 40px;
-  min-width: 40px;
 }
 
 .e-bigger.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon,

@@ -68,8 +68,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * * `Ellipsis` -  Displays ellipsis when the cell content overflows its area. 
      * * `EllipsisWithTooltip` - Displays ellipsis when the cell content overflows its area 
      * also it will display tooltip while hover on ellipsis applied cell.
-     * @default Ellipsis
-     * @aspdefaultvalueignore 
+     * @default Syncfusion.EJ2.Grids.ClipMode.Ellipsis
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
      */
@@ -270,8 +269,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public sortComparer: any;
     /** 
      * Defines the alignment of the column in both header and content cells.
-     * @default Left
-     * @aspdefaultvalueignore 
+     * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
      */

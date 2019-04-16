@@ -817,6 +817,7 @@ exports.getWeekNumber = ej2Schedule.getWeekNumber;
 exports.setTime = ej2Schedule.setTime;
 exports.resetTime = ej2Schedule.resetTime;
 exports.getDateInMs = ej2Schedule.getDateInMs;
+exports.getDateCount = ej2Schedule.getDateCount;
 exports.addDays = ej2Schedule.addDays;
 exports.addMonths = ej2Schedule.addMonths;
 exports.addYears = ej2Schedule.addYears;

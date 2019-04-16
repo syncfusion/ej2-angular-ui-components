@@ -7069,6 +7069,19 @@
   border-color: transparent;
 }
 
+.e-treeview .e-list-item.e-active.e-animation-active > .e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content {
+  color: #fff;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content .e-list-text {
+  color: #fff;
+}
+
 .e-treeview .e-list-item.e-active.e-hover > .e-fullrow {
   background-color: rgba(255, 255, 255, 0.18);
   border-color: transparent;

@@ -1908,6 +1908,7 @@
 }
 
 .e-grid .e-chk-hidden {
+  -moz-appearance: none;
   height: 1px;
   opacity: 0;
   width: 1px;

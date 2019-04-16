@@ -4,8 +4,6 @@
 .e-control-wrapper .e-input-group-icon.e-range-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
@@ -50,12 +48,16 @@
 .e-bigger .e-control-wrapper .e-input-group-icon.e-range-icon {
   font-size: 20px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
 /*! daterangepicker layout */
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-date-range-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-daterangepicker.e-popup {
   border: 1px solid #fff;
   border-radius: 0;

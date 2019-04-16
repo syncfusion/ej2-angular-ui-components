@@ -7248,6 +7248,19 @@
   border-color: #0070f0;
 }
 
+.e-treeview .e-list-item.e-active.e-animation-active > .e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content {
+  color: #f0f0f0;
+}
+
+.e-treeview .e-list-item.e-active.e-animation-active > .e-text-content .e-list-text {
+  color: #f0f0f0;
+}
+
 .e-treeview .e-list-item.e-active.e-hover > .e-fullrow {
   background-color: #0070f0;
   border-color: #104888;

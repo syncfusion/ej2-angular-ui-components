@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 17.1.40 (2019-04-09)
+
 ### Dashboard Layout
 
 #### Breaking Changes

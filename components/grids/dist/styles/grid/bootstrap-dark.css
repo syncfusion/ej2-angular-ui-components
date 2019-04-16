@@ -1942,6 +1942,7 @@
 }
 
 .e-grid .e-chk-hidden {
+  -moz-appearance: none;
   height: 1px;
   opacity: 0;
   width: 1px;
@@ -3291,7 +3292,7 @@
 }
 
 .e-grid .e-content {
-  background-color: #6e6e6e;
+  background-color: #1a1a1a;
 }
 
 .e-grid .e-icons {

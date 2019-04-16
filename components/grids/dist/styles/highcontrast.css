@@ -2679,6 +2679,7 @@
 }
 
 .e-grid .e-chk-hidden {
+  -moz-appearance: none;
   height: 1px;
   opacity: 0;
   width: 1px;
@@ -3376,7 +3377,7 @@
 }
 
 .e-grid .e-checkboxfiltertext {
-  width: 150px;
+  width: 135px;
   word-break: normal;
 }
 

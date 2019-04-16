@@ -735,7 +735,7 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #ced4da;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -751,7 +751,7 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover {
-  background: #5a6268;
+  background-color: #5a6268;
   border: 1px solid #545b62;
 }
 
@@ -759,7 +759,7 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus {
-  background: #6c757d;
+  background-color: #6c757d;
   border: 1px solid #6c757d;
 }
 
@@ -767,7 +767,7 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active {
-  background: #545b62;
+  background-color: #545b62;
   border: 1px solid #4e555b;
 }
 

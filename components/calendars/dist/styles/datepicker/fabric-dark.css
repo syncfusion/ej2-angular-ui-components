@@ -1,16 +1,8 @@
 /*! component icons */
-.e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
-.e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .e-input-group-icon.e-date-icon,
 .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 16px;
   margin: 0;
-  min-height: 30px;
-  min-width: 30px;
   outline: none;
 }
 
@@ -31,8 +23,6 @@
 .e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 20px;
   margin: 0;
-  min-height: 38px;
-  min-width: 38px;
 }
 
 .e-bigger .e-input-group-icon.e-date-icon::before,
@@ -49,8 +39,10 @@
   border-radius: 0;
 }
 
-.e-date-wrapper .e-date-icon.e-icons {
-  box-sizing: border-box;
+.e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .e-datepicker .e-calendar .e-content table tbody tr.e-month-hide:last-child {
@@ -122,10 +114,6 @@
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: 1px solid #0074cc;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons:hover:not(:active) {
-  background: "";
 }
 
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {

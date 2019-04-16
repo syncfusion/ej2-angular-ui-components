@@ -63,6 +63,12 @@
 }
 
 /*! daterangepicker layout */
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
+.e-float-input.e-control-wrapper.e-input-group.e-date-range-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-daterangepicker.e-popup {
   border: #616161;
   border-radius: 0;
