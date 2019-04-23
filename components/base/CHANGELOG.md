@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.1.41 (2019-04-16)
+## 17.1.42 (2019-04-23)
+
+### Common
+
+#### Bug Fixes
+
+- #232746, #232286, #233615 , #233849, #233946 - Fixed `template` properties are not working in `production mode` issue.
+
+## 17.1.38 (2019-03-29)
 
 ### Common
 

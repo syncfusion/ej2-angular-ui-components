@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.42 (2019-04-23)
+
+### TextBox
+
+#### Bug Fixes
+
+- #143987– Issue with duplicate ID present in input element has been fixed.
+
 ## 17.1.41 (2019-04-16)
 
 ### NumericTextBox

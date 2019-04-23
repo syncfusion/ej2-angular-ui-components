@@ -2231,6 +2231,13 @@
   background: #514f4f;
 }
 
+.e-schedule .e-agenda-view .e-appointment.e-template {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
 .e-schedule .e-agenda-view .e-no-event {
   color: #dadada;
   cursor: default;

@@ -1920,7 +1920,7 @@
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay .e-tbar-btn-text {
-  color: #000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay .e-icons {

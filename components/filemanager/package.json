@@ -63,5 +63,6 @@
 	},
 	"scripts": {
 		"build": "gulp build"
-	}
+	},
+	"sideEffects": true
 }

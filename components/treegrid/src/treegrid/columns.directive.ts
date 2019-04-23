@@ -301,7 +301,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public width: any;
     /** 
      * Defines the column template that renders customized element in each cell of the column. 
-     * It accepts either [template string](../base/template-engine.html) or HTML element ID.
+     * It accepts either [template string](../../../common/template-engine/) or HTML element ID.
      * @default null
      */
     @ContentChild('template')

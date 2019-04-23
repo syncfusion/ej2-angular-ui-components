@@ -1850,7 +1850,7 @@
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay .e-tbar-btn-text {
-  color: #dadada;
+  color: rgba(218, 218, 218, 0.4);
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay .e-icons {
