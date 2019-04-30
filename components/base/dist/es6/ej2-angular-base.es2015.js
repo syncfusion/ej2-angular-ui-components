@@ -138,6 +138,7 @@ class ComplexBase {
             let changedVal = changes[propName];
             this.propCollection[propName] = changedVal.currentValue;
         }
+        this.isUpdated = false;
         this.hasChanges = true;
     }
     clearTemplate(templateNames) {
@@ -164,7 +165,10 @@ class ComplexBase {
         });
     }
     ngAfterViewChecked() {
-        this.hasChanges = false;
+        /* istanbul ignore next */
+        if (this.isUpdated) {
+            this.hasChanges = false;
+        }
     }
 }
 class ArrayBase {
@@ -219,6 +223,9 @@ class ArrayBase {
     }
     ngAfterContentChecked() {
         this.hasChanges = this.isChanged();
+        for (let i = 0; i < this.list.length; i++) {
+            this.list[i].isUpdated = true;
+        }
     }
     ngAfterViewInit() {
         this.isInitChanges = false;
@@ -349,6 +356,7 @@ class ComponentBase {
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
+                            list.isUpdated = true;
                         }
                     }
                 }

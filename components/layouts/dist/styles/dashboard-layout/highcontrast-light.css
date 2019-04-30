@@ -28,7 +28,6 @@
 
 .e-dashboardlayout.e-control .e-panel:hover {
   border: 1px #000 solid;
-  cursor: move;
 }
 
 .e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize {
@@ -134,6 +133,10 @@
 .e-dashboardlayout.e-control .e-panel .e-resize.e-double::before {
   font-family: 'e-icons';
   position: absolute;
+}
+
+.e-dashboardlayout.e-control .e-panel.e-draggable:hover {
+  cursor: move;
 }
 
 .e-dashboardlayout.e-control .e-panel.e-dragging,

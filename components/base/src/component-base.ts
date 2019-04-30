@@ -24,6 +24,7 @@ interface Tag {
 interface TagList {
     getProperties: Function;
     hasChanges: boolean;
+    isUpdated : boolean;
 }
 
 export class ComponentBase<T> {
@@ -169,6 +170,7 @@ export class ComponentBase<T> {
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
+                            list.isUpdated = true;
                         }
                     }
                 }

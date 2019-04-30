@@ -4,7 +4,7 @@ import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 
-export const inputs: string[] = ['annotationToolbarSettings','documentPath','enableAnnotation','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableNavigation','enableNavigationToolbar','enablePersistence','enablePrint','enableRtl','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','locale','serverActionSettings','serviceUrl','strikethroughSettings','toolbarSettings','underlineSettings','width'];
+export const inputs: string[] = ['ajaxRequestSettings','annotationToolbarSettings','documentPath','enableAnnotation','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableNavigation','enableNavigationToolbar','enablePersistence','enablePrint','enableRtl','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','locale','serverActionSettings','serviceUrl','strikethroughSettings','toolbarSettings','underlineSettings','width'];
 export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','pageChange','pageClick','zoomChange'];
 export const twoWays: string[] = [];
 

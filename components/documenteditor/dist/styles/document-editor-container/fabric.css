@@ -346,10 +346,17 @@
   color: #fff;
 }
 
+.e-de-tool-ctnr-properties-pane {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: calc(100% - 113px);
+  width: 100%;
+}
+
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 36px);
   width: 100%;
 }
 
@@ -381,7 +388,7 @@
   border-right: 1px solid #dadada;
 }
 
-.e-de-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane {
   background-color: #fff;
   border-bottom: 1px solid #dadada;
   border-top: 1px solid #dadada;
@@ -1133,10 +1140,17 @@
   padding-right: 16px;
 }
 
-.e-bigger .e-de-ctnr-properties-pane {
+.e-bigger .e-de-tool-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: calc(100% - 118px);
+  width: 100%;
+}
+
+.e-bigger .e-de-ctnr-properties-pane {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: calc(100% - 36px);
   width: 100%;
 }
 

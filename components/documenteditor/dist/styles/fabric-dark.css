@@ -2680,10 +2680,17 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   color: #201f1f;
 }
 
+.e-de-tool-ctnr-properties-pane {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: calc(100% - 113px);
+  width: 100%;
+}
+
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 36px);
   width: 100%;
 }
 
@@ -2715,7 +2722,7 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   border-right: 1px solid #4a4848;
 }
 
-.e-de-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane {
   background-color: #282727;
   border-bottom: 1px solid #4a4848;
   border-top: 1px solid #4a4848;
@@ -3463,10 +3470,17 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   padding-right: 16px;
 }
 
-.e-bigger .e-de-ctnr-properties-pane {
+.e-bigger .e-de-tool-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: calc(100% - 118px);
+  width: 100%;
+}
+
+.e-bigger .e-de-ctnr-properties-pane {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: calc(100% - 36px);
   width: 100%;
 }
 

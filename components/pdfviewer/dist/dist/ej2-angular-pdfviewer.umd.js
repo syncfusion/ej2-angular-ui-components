@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotationToolbarSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'locale', 'serverActionSettings', 'serviceUrl', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'width'];
+var inputs = ['ajaxRequestSettings', 'annotationToolbarSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'locale', 'serverActionSettings', 'serviceUrl', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'width'];
 var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
 var twoWays = [];
 /**
@@ -269,6 +269,7 @@ exports.ThumbnailView = ej2Pdfviewer.ThumbnailView;
 exports.Toolbar = ej2Pdfviewer.Toolbar;
 exports.AnnotationToolbar = ej2Pdfviewer.AnnotationToolbar;
 exports.ToolbarSettings = ej2Pdfviewer.ToolbarSettings;
+exports.AjaxRequestSettings = ej2Pdfviewer.AjaxRequestSettings;
 exports.AnnotationToolbarSettings = ej2Pdfviewer.AnnotationToolbarSettings;
 exports.ServerActionSettings = ej2Pdfviewer.ServerActionSettings;
 exports.StrikethroughSettings = ej2Pdfviewer.StrikethroughSettings;

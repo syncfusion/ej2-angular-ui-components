@@ -12,7 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['annotationToolbarSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'locale', 'serverActionSettings', 'serviceUrl', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'width'];
+const inputs = ['ajaxRequestSettings', 'annotationToolbarSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'locale', 'serverActionSettings', 'serviceUrl', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'width'];
 const outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
 const twoWays = [];
 /**
@@ -224,5 +224,5 @@ PdfViewerAllModule.ctorParameters = () => [];
  */
 
 export { PdfViewerComponent, PdfViewerModule, PdfViewerAllModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService, PrintService, TextSelectionService, TextSearchService, AnnotationService, inputs as ɵa, outputs as ɵb };
-export { Annotation, LinkAnnotation, TextMarkupAnnotation, NavigationPane, PdfViewerBase, TextLayer, ContextMenu, Magnification, Navigation, ThumbnailView, Toolbar, AnnotationToolbar, ToolbarSettings, AnnotationToolbarSettings, ServerActionSettings, StrikethroughSettings, UnderlineSettings, HighlightSettings, PdfViewer, BookmarkView, TextSelection, TextSearch, Print } from '@syncfusion/ej2-pdfviewer';
+export { Annotation, LinkAnnotation, TextMarkupAnnotation, NavigationPane, PdfViewerBase, TextLayer, ContextMenu, Magnification, Navigation, ThumbnailView, Toolbar, AnnotationToolbar, ToolbarSettings, AjaxRequestSettings, AnnotationToolbarSettings, ServerActionSettings, StrikethroughSettings, UnderlineSettings, HighlightSettings, PdfViewer, BookmarkView, TextSelection, TextSearch, Print } from '@syncfusion/ej2-pdfviewer';
 //# sourceMappingURL=ej2-angular-pdfviewer.js.map

@@ -890,6 +890,7 @@ exports.textTrim = ej2Maps.textTrim;
 exports.findPosition = ej2Maps.findPosition;
 exports.removeElement = ej2Maps.removeElement;
 exports.getTranslate = ej2Maps.getTranslate;
+exports.getZoomTranslate = ej2Maps.getZoomTranslate;
 exports.getElementByID = ej2Maps.getElementByID;
 exports.Internalize = ej2Maps.Internalize;
 exports.getTemplateFunction = ej2Maps.getTemplateFunction;

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 17.1.42 (2019-04-23)
-
-### TextBox
-
-#### Bug Fixes
-
-- #143987– Issue with duplicate ID present in input element has been fixed.
-
 ## 17.1.41 (2019-04-16)
 
 ### NumericTextBox
@@ -682,4 +674,12 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 17.1.42 (2019-04-23)
+
+### TextBox
+
+#### Bug Fixes
+
+- #143987 - Issue with duplicate ID present in input element has been fixed.
 

@@ -148,6 +148,7 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
             var changedVal = changes[propName];
             this.propCollection[propName] = changedVal.currentValue;
         }
+        this.isUpdated = false;
         this.hasChanges = true;
     };
     ComplexBase.prototype.clearTemplate = function (templateNames) {
@@ -176,7 +177,10 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
         });
     };
     ComplexBase.prototype.ngAfterViewChecked = function () {
-        this.hasChanges = false;
+        /* istanbul ignore next */
+        if (this.isUpdated) {
+            this.hasChanges = false;
+        }
     };
     return ComplexBase;
 }());
@@ -238,6 +242,9 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
     };
     ArrayBase.prototype.ngAfterContentChecked = function () {
         this.hasChanges = this.isChanged();
+        for (var i = 0; i < this.list.length; i++) {
+            this.list[i].isUpdated = true;
+        }
     };
     ArrayBase.prototype.ngAfterViewInit = function () {
         this.isInitChanges = false;
@@ -375,6 +382,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
+                            list.isUpdated = true;
                         }
                     }
                 }

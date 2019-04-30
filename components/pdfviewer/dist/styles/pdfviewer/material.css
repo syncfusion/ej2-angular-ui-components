@@ -814,13 +814,18 @@
   width: 202px;
 }
 
+.e-pv-sidebar-content-container.e-thumbnail {
+  height: 100%;
+  left: 1px;
+  position: unset;
+}
+
 .e-pv-sidebar-title-container {
   background: #fafafa;
   height: 50px;
   position: absolute;
   top: 0;
   width: 202px;
-  z-index: 102;
 }
 
 .e-pv-sidebar-title {
@@ -863,6 +868,10 @@
   top: 48px;
   width: 202px;
   z-index: 103;
+}
+
+.e-pv-sidebar-content.e-thumbnail {
+  top: 1px;
 }
 
 .e-pv-sidebar-resizer {

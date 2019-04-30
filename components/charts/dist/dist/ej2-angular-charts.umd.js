@@ -3797,6 +3797,7 @@ exports.BollingerBands = ej2Charts.BollingerBands;
 exports.MacdIndicator = ej2Charts.MacdIndicator;
 exports.Trendlines = ej2Charts.Trendlines;
 exports.sort = ej2Charts.sort;
+exports.isBreakLabel = ej2Charts.isBreakLabel;
 exports.rotateTextSize = ej2Charts.rotateTextSize;
 exports.removeElement = ej2Charts.removeElement;
 exports.logBase = ej2Charts.logBase;

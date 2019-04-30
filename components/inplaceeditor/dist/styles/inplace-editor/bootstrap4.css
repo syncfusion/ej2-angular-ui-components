@@ -701,7 +701,7 @@
 /*! inplaceeditor theme */
 .e-inplaceeditor .e-editable-value-wrapper .e-editable-value {
   border-bottom: 1px dashed #495057;
-  color: #6c757d;
+  color: #495057;
 }
 
 .e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon {
@@ -791,7 +791,7 @@
 
 .e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content {
   border-radius: 4px;
-  color: #6c757d;
+  color: #495057;
 }
 
 .e-inplaceeditor-tip.e-tooltip-wrap .e-arrow-tip-inner {

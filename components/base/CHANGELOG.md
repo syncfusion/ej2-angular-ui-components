@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Common
+
+#### Bug Fixes
+
+- #227272, #227958 - Fixed binding not working properly while using `ngx-tanslate` pipe.
+
 ## 17.1.42 (2019-04-23)
 
 ### Common

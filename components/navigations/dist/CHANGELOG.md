@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### Toolbar
+
+#### Bug Fixes
+
+- #231019 - An issue with RTL mode of Toolbar scroller has not working in Firefox browser has been resolved.
+
 ## 17.1.41 (2019-04-16)
 
 ### Accordion

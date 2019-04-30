@@ -19,6 +19,7 @@ interface Tag {
 }
 
 export class ComplexBase<T> {
+    public isUpdated: boolean;
     public hasChanges?: boolean = false;
     public index?: number;
     public propCollection?: { [key: string]: Object } = {};
@@ -53,6 +54,7 @@ export class ComplexBase<T> {
             let changedVal: SimpleChange = changes[propName];
             this.propCollection[propName] = changedVal.currentValue;
         }
+        this.isUpdated = false;
         this.hasChanges = true;
     }
 
@@ -84,7 +86,10 @@ export class ComplexBase<T> {
     }
 
     public ngAfterViewChecked(): void {
-        this.hasChanges = false;
+        /* istanbul ignore next */
+        if (this.isUpdated) {
+            this.hasChanges = false;
+        }
     }
 
 }
@@ -152,6 +157,9 @@ export class ArrayBase<T> {
 
     public ngAfterContentChecked(): void {
         this.hasChanges = this.isChanged();
+        for (let i: number = 0; i < this.list.length; i++) {
+            this.list[i].isUpdated = true;
+        }
     }
 
     public ngAfterViewInit(): void {

@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 17.1.43 (2019-04-30)
+
+### ComboBox
+
+#### Bug Fixes
+
+- #233483 - The List not generated properly while clear the value using clear button issue has been resolved.
+- #234100 - The search not working on enabling read only in the control initialization issue has been resolved.
+- #233137 - The combobox is not focused when click the tab key at single time issue has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- #231680 - The data source is observable using Async Pipe with pre select value not updated issue has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- #234350 - SelectAll checkbox not displayed with dynamic data issue fixed.
+
 ## 17.1.42 (2019-04-23)
 
 ### MultiSelect
@@ -9,6 +31,7 @@
 #### Bug Fixes
 
 - #232673 - Issue with prevent the first value when clear value using clear button has been fixed.
+- #233432 - The group template text not updated while enable the allow filtering issue has been fixed.
 
 ## 17.1.41 (2019-04-16)
 
