@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSource','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
-export const outputs: string[] = ['beforeExport','beginDrillThrough','cellClick','cellSelected','chartSeriesCreated','created','dataBound','destroyed','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender','datasourceChange'];
+export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender','datasourceChange'];
 export const twoWays: string[] = ['datasource'];
 
 /**

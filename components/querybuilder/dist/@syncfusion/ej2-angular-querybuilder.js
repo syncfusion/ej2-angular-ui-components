@@ -3,7 +3,7 @@ import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from
 import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { CommonModule } from '@angular/common';
 
-let input = ['field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'values'];
+let input = ['field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder.
@@ -72,7 +72,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enablePersistence', 'enableRtl', 'height', 'locale', 'maxGroupCount', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
+const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enablePersistence', 'enableRtl', 'height', 'locale', 'matchCase', 'maxGroupCount', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
 const outputs$1 = ['beforeChange', 'change', 'created', 'ruleChange'];
 const twoWays = [''];
 /**

@@ -39,7 +39,7 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
     public colorMapping: any;
     /** 
      * Specifies the background of level.
-     * @default '#808080'
+     * @default null
      */
     public fill: any;
     /** 

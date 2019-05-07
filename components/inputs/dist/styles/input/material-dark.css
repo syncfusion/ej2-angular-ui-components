@@ -3053,34 +3053,6 @@ textarea.e-input.e-bigger.e-small,
   transform: translate3d(0, 6px, 0) scale(0.92);
 }
 
-.e-float-input textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
-.e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
-  transform: translate3d(0, 16px, 0) scale(1);
-}
-
-.e-float-input textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
-.e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  left: 0;
-  overflow: hidden;
-  padding-left: 0;
-  pointer-events: none;
-  position: absolute;
-  text-overflow: ellipsis;
-  top: -11px;
-  transform: translate3d(0, 16px, 0) scale(1);
-  transform-origin: left top;
-  transition: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  white-space: nowrap;
-  width: 100%;
-}
-
 .e-float-input.e-bigger textarea:focus ~ label.e-float-text,
 .e-float-input.e-bigger textarea:valid ~ label.e-float-text,
 .e-float-input.e-bigger textarea ~ label.e-label-top.e-float-text,
@@ -3127,6 +3099,14 @@ textarea.e-input.e-bigger.e-small,
 
 .e-float-input textarea ~ .e-float-text,
 .e-float-input.e-control-wrapper textarea ~ .e-float-text {
+  top: -11px;
+}
+
+.e-float-input.e-small textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-small .e-float-input textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input.e-control-wrapper.e-small textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-small .e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
+  font-size: 12px;
   top: -11px;
 }
 
@@ -3406,6 +3386,34 @@ textarea.e-input.e-bigger.e-small,
 .e-small .e-float-input.e-control-wrapper.e-bigger textarea[disabled] ~ label.e-label-top.e-float-text,
 .e-small .e-float-input.e-control-wrapper.e-bigger textarea label.e-float-text.e-label-top {
   transform: translate3d(0, 6px, 0) scale(0.92);
+}
+
+.e-float-input textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
+  transform: translate3d(0, 16px, 0) scale(1);
+}
+
+.e-float-input textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  left: 0;
+  overflow: hidden;
+  padding-left: 0;
+  pointer-events: none;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: -11px;
+  transform: translate3d(0, 16px, 0) scale(1);
+  transform-origin: left top;
+  transition: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: 100%;
 }
 
 textarea.e-input::-webkit-textarea-placeholder,

@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-pivotview",
-	"version": "17.1.38",
+	"version": "17.1.42",
 	"description": "The pivot grid, or pivot table, is used to visualize large sets of relational data in a cross-tabular format, similar to an Excel pivot table. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -61,5 +61,6 @@
 	},
 	"scripts": {
 		"build": "gulp build"
-	}
+	},
+	"sideEffects": true
 }

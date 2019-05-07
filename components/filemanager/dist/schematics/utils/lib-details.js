@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-filemanager';
-exports.pkgVer = '^17.1.40';
+exports.pkgVer = '^17.1.42';
 exports.moduleName = 'FileManagerModule';
-exports.themeVer = '~17.1.40';
+exports.themeVer = '~17.1.42';
