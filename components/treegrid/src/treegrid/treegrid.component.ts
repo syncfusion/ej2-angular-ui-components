@@ -35,6 +35,18 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
     @ContentChild('toolbarTemplate')
     @Template()
     public toolbarTemplate: any;
+    /** 
+     * The row template that renders customized rows from the given template. 
+     * By default, TreeGrid renders a table row for every data source item. 
+     * > * It accepts either [template string](../../common/template-engine.html) or HTML element ID. 
+     * > * The row template must be a table row.
+     * 
+     * > Check the [`Row Template`](../../treegrid/row) customization.
+     *     
+     */
+    @ContentChild('rowTemplate')
+    @Template()
+    public rowTemplate: any;
     @ContentChild('pagerTemplate')
     @Template()
     public pagerTemplate: any;

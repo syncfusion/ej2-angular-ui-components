@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+let input: string[] = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder. 
@@ -33,6 +33,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default null
      */
     public type: any;
+    /** 
+     * Specifies the category for columns.
+     * @default null
+     */
+    public category: any;
     /** 
      * Specifies the fields in columns.
      * @default null

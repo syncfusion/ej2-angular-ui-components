@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { RangenavigatorSeriesCollectionDirective } from './series.directive';
 
 export const inputs: string[] = ['allowSnapping','animationDuration','dataSource','disableRangeSelector','enableDeferredUpdate','enableGrouping','enablePersistence','enableRtl','groupBy','height','interval','intervalType','labelFormat','labelIntersectAction','labelPosition','labelStyle','locale','logBase','majorGridLines','majorTickLines','margin','maximum','minimum','navigatorBorder','navigatorStyleSettings','periodSelectorSettings','query','secondaryLabelAlignment','series','skeleton','skeletonType','theme','tickPosition','tooltip','useGroupingSeparator','value','valueType','width','xName','yName'];
-export const outputs: string[] = ['beforePrint','changed','labelRender','load','loaded','resized','selectorRender','tooltipRender'];
-export const twoWays: string[] = [''];
+export const outputs: string[] = ['beforePrint','changed','labelRender','load','loaded','resized','selectorRender','tooltipRender','dataSourceChange'];
+export const twoWays: string[] = ['dataSource'];
 
 /**
  * RangeNavigator Component
@@ -28,7 +28,7 @@ export const twoWays: string[] = [''];
 export class RangeNavigatorComponent extends RangeNavigator implements IComponentBase {
     public childSeries: any;
     public tags: string[] = ['series'];
-
+    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

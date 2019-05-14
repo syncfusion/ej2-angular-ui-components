@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+var input = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
 var outputs = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder.

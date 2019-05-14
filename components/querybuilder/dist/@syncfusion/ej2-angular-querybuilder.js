@@ -3,7 +3,7 @@ import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from
 import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { CommonModule } from '@angular/common';
 
-let input = ['field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+let input = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder.

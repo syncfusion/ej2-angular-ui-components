@@ -437,6 +437,7 @@ TreeGridComponent.ctorParameters = () => [
 ];
 TreeGridComponent.propDecorators = {
     'toolbarTemplate': [{ type: ContentChild, args: ['toolbarTemplate',] },],
+    'rowTemplate': [{ type: ContentChild, args: ['rowTemplate',] },],
     'pagerTemplate': [{ type: ContentChild, args: ['pagerTemplate',] },],
     'editSettings_template': [{ type: ContentChild, args: ['editSettingsTemplate',] },],
 };
@@ -444,6 +445,10 @@ __decorate$2([
     Template(),
     __metadata$2("design:type", Object)
 ], TreeGridComponent.prototype, "toolbarTemplate", void 0);
+__decorate$2([
+    Template(),
+    __metadata$2("design:type", Object)
+], TreeGridComponent.prototype, "rowTemplate", void 0);
 __decorate$2([
     Template(),
     __metadata$2("design:type", Object)

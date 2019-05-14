@@ -6,8 +6,8 @@ import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['annotations','background','border','center','currencyCode','dataSource','enableAnimation','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','width'];
-export const outputs: string[] = ['animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender'];
-export const twoWays: string[] = [''];
+export const outputs: string[] = ['animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
+export const twoWays: string[] = ['dataSource'];
 
 /**
  * AccumulationChart Component
@@ -31,7 +31,7 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
     public childSeries: any;
     public childAnnotations: any;
     public tags: string[] = ['series', 'annotations'];
-
+    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

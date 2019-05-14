@@ -478,6 +478,7 @@ exports.TreeGridComponent.ctorParameters = function () { return [
 ]; };
 exports.TreeGridComponent.propDecorators = {
     'toolbarTemplate': [{ type: core.ContentChild, args: ['toolbarTemplate',] },],
+    'rowTemplate': [{ type: core.ContentChild, args: ['rowTemplate',] },],
     'pagerTemplate': [{ type: core.ContentChild, args: ['pagerTemplate',] },],
     'editSettings_template': [{ type: core.ContentChild, args: ['editSettingsTemplate',] },],
 };
@@ -485,6 +486,10 @@ __decorate$2([
     ej2AngularBase.Template(),
     __metadata$2("design:type", Object)
 ], exports.TreeGridComponent.prototype, "toolbarTemplate", void 0);
+__decorate$2([
+    ej2AngularBase.Template(),
+    __metadata$2("design:type", Object)
+], exports.TreeGridComponent.prototype, "rowTemplate", void 0);
 __decorate$2([
     ej2AngularBase.Template(),
     __metadata$2("design:type", Object)

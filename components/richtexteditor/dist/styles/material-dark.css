@@ -1027,6 +1027,12 @@
   min-width: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .e-rte-dropdown-popup.e-rte-dropdown-icons ul {
+    min-width: 30px;
+  }
+}
+
 .e-rte-content .e-content .e-imgbreak {
   border: 0;
   cursor: pointer;

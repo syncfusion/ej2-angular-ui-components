@@ -248,12 +248,12 @@
   width: auto;
 }
 
-.e-menu-wrapper.e-menu-icon-left .e-menu-header .e-menu-icon {
-  float: left;
+.e-menu-wrapper.e-menu-icon-right .e-menu-header .e-menu-icon {
+  float: right;
 }
 
-.e-menu-wrapper.e-menu-icon-left .e-menu-header .e-menu-title {
-  padding: 0;
+.e-menu-wrapper.e-menu-icon-right .e-menu-header .e-menu-title {
+  padding: 0 16px;
 }
 
 .e-menu-wrapper .e-menu-header {
@@ -269,14 +269,15 @@
 
 .e-menu-wrapper .e-menu-header .e-menu-title,
 .e-menu-wrapper .e-menu-header .e-menu-icon {
+  display: inline-block;
   line-height: inherit;
-  padding: 0 16px;
 }
 
 .e-menu-wrapper .e-menu-header .e-menu-icon {
   cursor: pointer;
-  float: right;
+  float: left;
   outline: none;
+  padding: 0 16px;
 }
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll:not(.e-scroll-device) {
@@ -624,8 +625,8 @@
 }
 
 .e-menu-wrapper.e-hamburger .e-popup.e-menu-popup {
-  border-left: 0;
-  border-right: 0;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
   display: block;
   position: relative;
@@ -655,6 +656,15 @@
   text-indent: 0;
 }
 
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item .e-caret {
+  transition: transform .3s ease-in-out;
+  text-indent: 0;
+}
+
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item.e-selected > .e-caret {
+  transform: rotate(-180deg);
+}
+
 .e-menu-wrapper.e-hamburger ul.e-menu:not(.e-vertical) {
   border-top: 0;
   display: block;
@@ -668,6 +678,7 @@
 }
 
 .e-menu-wrapper.e-hamburger ul.e-ul .e-menu-item {
+  line-height: 40px;
   text-indent: inherit;
 }
 
@@ -688,6 +699,16 @@
 }
 
 .e-menu-wrapper.e-hamburger ul .e-menu-item.e-menu-caret-icon {
+  padding: 0;
+}
+
+.e-menu-wrapper.e-hamburger ul .e-menu-item .e-menu-url {
+  display: inline-block;
+  text-indent: 0;
+  width: 100%;
+}
+
+.e-menu-wrapper.e-hamburger ul .e-menu-item.e-blankicon {
   padding: 0;
 }
 
@@ -720,6 +741,7 @@
 .e-bigger .e-menu-wrapper.e-hamburger ul .e-ul .e-menu-item,
 .e-bigger.e-menu-wrapper.e-hamburger ul .e-ul .e-menu-item {
   height: auto;
+  line-height: 50px;
   padding: 0;
 }
 
@@ -943,10 +965,14 @@
   background: #e6e6e6;
 }
 
-.e-menu-wrapper .e-menu-header {
+.e-menu-wrapper.e-hamburger .e-menu-header {
   color: #333;
 }
 
-.e-menu-wrapper .e-menu-header .e-menu-icon {
+.e-menu-wrapper.e-hamburger .e-menu-header .e-menu-icon {
+  color: #333;
+}
+
+.e-menu-wrapper.e-hamburger ul {
   color: #333;
 }

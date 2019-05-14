@@ -802,8 +802,8 @@
   padding: 0 0 8px;
 }
 
-.e-bigger .e-grid:not(.e-grid-min-height).e-frozenheader table tr td.e-rowcell,
-.e-grid.e-bigger:not(.e-grid-min-height).e-frozenheader table tr td.e-rowcell {
+.e-bigger .e-grid .e-frozenheader table tr td.e-rowcell,
+.e-grid.e-bigger .e-frozenheader table tr td.e-rowcell {
   height: 37px;
 }
 
@@ -1469,7 +1469,7 @@
   width: auto;
 }
 
-.e-grid:not(.e-grid-min-height).e-frozenheader table tr td.e-rowcell {
+.e-grid .e-frozenheader table tr td.e-rowcell {
   height: 35px;
 }
 
@@ -1799,6 +1799,11 @@
 .e-grid.e-rtl .e-columnmenu {
   left: 5px;
   right: auto;
+  margin: -19px -18px -18px 1px;
+}
+
+.e-grid.e-wrap.e-rtl .e-columnmenu {
+  margin: -15px -13px -23px -3px;
 }
 
 .e-grid [class^='e-'] {
@@ -3231,7 +3236,7 @@
 }
 
 .e-grid-min-height .e-rowcell {
-  line-height: initial;
+  line-height: 0;
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -3262,7 +3267,7 @@
 .e-bigger .e-grid.e-grid-min-height .e-rowcell,
 .e-bigger .e-grid.e-grid-min-height .e-rowcell:first-child,
 .e-bigger .e-grid.e-grid-min-height .e-rowcell:last-child {
-  line-height: initial;
+  line-height: 0;
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -3421,12 +3426,13 @@
   border-right-color: #ddd;
 }
 
-.e-grid .e-rowcell,
-.e-grid .e-detailrowcollapse,
-.e-grid .e-detailrowexpand,
-.e-grid .e-gridcontent .e-rowdragdrop,
-.e-grid .e-emptyrow {
-  color: #333333;
+.e-grid .e-rowcell:not(.e-editedbatchcell),
+.e-grid .e-detailrowcollapse:not(.e-editedbatchcell),
+.e-grid .e-detailrowexpand:not(.e-editedbatchcell),
+.e-grid .e-gridcontent .e-rowdragdrop:not(.e-editedbatchcell),
+.e-grid .e-emptyrow:not(.e-editedbatchcell) {
+  color: #333;
+  opacity: 1;
 }
 
 .e-grid .e-summarycell {
@@ -3678,7 +3684,7 @@
 
 .e-grid td.e-updatedtd {
   background-color: #d7f9c7;
-  color: #333333;
+  color: #333;
 }
 
 .e-grid .e-gridcontent .e-normaledit .e-rowcell {
@@ -3709,7 +3715,7 @@
 }
 
 .e-grid .e-cloneproperties.e-draganddrop .e-rowcell {
-  color: #333333;
+  color: #333;
 }
 
 .e-grid .e-cloneproperties.e-draganddrop table,
