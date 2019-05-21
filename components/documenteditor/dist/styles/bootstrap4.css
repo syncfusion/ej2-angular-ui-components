@@ -2428,6 +2428,11 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   height: 145px;
 }
 
+.e-de-disabledbutton {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 .e-bigger .e-de-insert-table {
   height: auto;
   width: auto;

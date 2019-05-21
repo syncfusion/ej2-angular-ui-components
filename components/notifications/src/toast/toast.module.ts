@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModelPropsDirective, ButtonModelPropDirective } from './buttons.directive';
+import { ButtonModelPropDirective, ButtonModelPropsDirective } from './buttons.directive';
 import { ToastComponent } from './toast.component';
 
 /**
@@ -10,13 +10,13 @@ import { ToastComponent } from './toast.component';
     imports: [CommonModule],
     declarations: [
         ToastComponent,
-        ButtonModelPropsDirective,
-        ButtonModelPropDirective
+        ButtonModelPropDirective,
+        ButtonModelPropsDirective
     ],
     exports: [
         ToastComponent,
-        ButtonModelPropsDirective,
-        ButtonModelPropDirective
+        ButtonModelPropDirective,
+        ButtonModelPropsDirective
     ]
 })
 export class ToastModule { }

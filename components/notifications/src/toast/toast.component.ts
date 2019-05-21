@@ -2,7 +2,7 @@ import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDet
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Toast } from '@syncfusion/ej2-notifications';
 import { Template } from '@syncfusion/ej2-angular-base';
-import { ButtonModelPropDirective } from './buttons.directive';
+import { ButtonModelPropsDirective } from './buttons.directive';
 
 export const inputs: string[] = ['animation','buttons','content','cssClass','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
 export const outputs: string[] = ['beforeOpen','click','close','created','destroyed','open'];
@@ -21,7 +21,7 @@ export const twoWays: string[] = [''];
     template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-        childButtons: new ContentChild(ButtonModelPropDirective)
+        childButtons: new ContentChild(ButtonModelPropsDirective)
     }
 })
 @ComponentMixins([ComponentBase])

@@ -59,6 +59,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public lineStyle: any;
     /** 
      * Options for customizing the major tick lines.
+     * @default { width: 2, height: 10 }
      */
     public majorTicks: any;
     /** 
@@ -75,6 +76,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public minimum: any;
     /** 
      * Options for customizing the minor tick lines.
+     * @default { width: 2, height: 5 }
      */
     public minorTicks: any;
     /** 

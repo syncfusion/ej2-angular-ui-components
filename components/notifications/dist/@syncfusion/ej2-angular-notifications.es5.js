@@ -26,23 +26,23 @@ var outputs = ['click'];
  * </ejs-toast>
  * ```
  */
-var ButtonModelPropsDirective = /** @class */ (function (_super) {
-    __extends(ButtonModelPropsDirective, _super);
+var ButtonModelPropDirective = /** @class */ (function (_super) {
+    __extends(ButtonModelPropDirective, _super);
     /**
      * @param {?} viewContainerRef
      */
-    function ButtonModelPropsDirective(viewContainerRef) {
+    function ButtonModelPropDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
         return _this;
     }
-    return ButtonModelPropsDirective;
+    return ButtonModelPropDirective;
 }(ComplexBase));
-ButtonModelPropsDirective.decorators = [
+ButtonModelPropDirective.decorators = [
     { type: Directive, args: [{
-                selector: 'e-buttonmodelprop>e-buttonmodelprops',
+                selector: 'e-buttonmodelprops>e-buttonmodelprop',
                 inputs: input,
                 outputs: outputs,
                 queries: {}
@@ -51,31 +51,31 @@ ButtonModelPropsDirective.decorators = [
 /**
  * @nocollapse
  */
-ButtonModelPropsDirective.ctorParameters = function () { return [
+ButtonModelPropDirective.ctorParameters = function () { return [
     { type: ViewContainerRef, },
 ]; };
 /**
- * ButtonModelProps Array Directive
+ * ButtonModelProp Array Directive
  */
-var ButtonModelPropDirective = /** @class */ (function (_super) {
-    __extends(ButtonModelPropDirective, _super);
-    function ButtonModelPropDirective() {
+var ButtonModelPropsDirective = /** @class */ (function (_super) {
+    __extends(ButtonModelPropsDirective, _super);
+    function ButtonModelPropsDirective() {
         return _super.call(this, 'buttons') || this;
     }
-    return ButtonModelPropDirective;
+    return ButtonModelPropsDirective;
 }(ArrayBase));
-ButtonModelPropDirective.decorators = [
+ButtonModelPropsDirective.decorators = [
     { type: Directive, args: [{
-                selector: 'ejs-toast>e-buttonmodelprop',
+                selector: 'ejs-toast>e-buttonmodelprops',
                 queries: {
-                    children: new ContentChildren(ButtonModelPropsDirective)
+                    children: new ContentChildren(ButtonModelPropDirective)
                 },
             },] },
 ];
 /**
  * @nocollapse
  */
-ButtonModelPropDirective.ctorParameters = function () { return []; };
+ButtonModelPropsDirective.ctorParameters = function () { return []; };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -151,7 +151,7 @@ ToastComponent.decorators = [
                 template: "<ng-content ></ng-content>",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
-                    childButtons: new ContentChild(ButtonModelPropDirective)
+                    childButtons: new ContentChild(ButtonModelPropsDirective)
                 }
             },] },
 ];
@@ -201,13 +201,13 @@ ToastModule.decorators = [
                 imports: [CommonModule],
                 declarations: [
                     ToastComponent,
-                    ButtonModelPropsDirective,
-                    ButtonModelPropDirective
+                    ButtonModelPropDirective,
+                    ButtonModelPropsDirective
                 ],
                 exports: [
                     ToastComponent,
-                    ButtonModelPropsDirective,
-                    ButtonModelPropDirective
+                    ButtonModelPropDirective,
+                    ButtonModelPropsDirective
                 ]
             },] },
 ];
@@ -239,6 +239,6 @@ ToastAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { ButtonModelPropsDirective, ButtonModelPropDirective, ToastComponent, ToastModule, ToastAllModule, inputs as ɵa, outputs$1 as ɵb };
+export { ButtonModelPropDirective, ButtonModelPropsDirective, ToastComponent, ToastModule, ToastAllModule, inputs as ɵa, outputs$1 as ɵb };
 export { ToastPosition, ButtonModelProps, ToastAnimations, ToastAnimationSettings, Toast } from '@syncfusion/ej2-notifications';
 //# sourceMappingURL=ej2-angular-notifications.es5.js.map

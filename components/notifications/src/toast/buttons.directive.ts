@@ -18,14 +18,14 @@ let outputs: string[] = ['click'];
  * ```
  */
 @Directive({
-    selector: 'e-buttonmodelprop>e-buttonmodelprops',
+    selector: 'e-buttonmodelprops>e-buttonmodelprop',
     inputs: input,
     outputs: outputs,    
     queries: {
 
     }
 })
-export class ButtonModelPropsDirective extends ComplexBase<ButtonModelPropsDirective> {
+export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropDirective> {
 
 
     /** 
@@ -43,16 +43,16 @@ export class ButtonModelPropsDirective extends ComplexBase<ButtonModelPropsDirec
 }
 
 /**
- * ButtonModelProps Array Directive
+ * ButtonModelProp Array Directive
  * @private
  */
 @Directive({
-    selector: 'ejs-toast>e-buttonmodelprop',
+    selector: 'ejs-toast>e-buttonmodelprops',
     queries: {
-        children: new ContentChildren(ButtonModelPropsDirective)
+        children: new ContentChildren(ButtonModelPropDirective)
     },
 })
-export class ButtonModelPropDirective extends ArrayBase<ButtonModelPropDirective> {
+export class ButtonModelPropsDirective extends ArrayBase<ButtonModelPropsDirective> {
     constructor() {
         super('buttons');
     }

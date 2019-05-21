@@ -31,7 +31,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     /** 
      * Specifies the maximum value of the range.
      * @aspdefaultvalueignore 
-     * @default null
+     * @default 0
      */
     public end: any;
     /** 
@@ -57,7 +57,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     /** 
      * Specifies the minimum value of the range.
      * @aspdefaultvalueignore 
-     * @default null
+     * @default 0
      */
     public start: any;
     /** 

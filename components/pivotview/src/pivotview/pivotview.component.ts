@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSource','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
-export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender','datasourceChange'];
-export const twoWays: string[] = ['datasource'];
+export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender','dataSourceChange'];
+export const twoWays: string[] = ['dataSource'];
 
 /**
  * `ej-pivotview` represents the Angular PivotView Component.
@@ -28,7 +28,7 @@ export const twoWays: string[] = ['datasource'];
 export class PivotViewComponent extends PivotView implements IComponentBase {
 
 
-    public datasourceChange: any;
+    public dataSourceChange: any;
     /** 
      * The template option which is used to render the pivot cells on the pivotview. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the pivot cells.

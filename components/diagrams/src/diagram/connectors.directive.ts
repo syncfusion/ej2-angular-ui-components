@@ -30,6 +30,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * Orthogonal - Sets the segment type as Orthogonal 
      * * Bezier - Sets the segment type as Bezier
      * @default 'Straight'
+     * @asptype Syncfusion.EJ2.Diagrams.Segments
      */
     public type: any;
     /** 

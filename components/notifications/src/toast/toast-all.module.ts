@@ -1,6 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModelPropsDirective, ButtonModelPropDirective } from './buttons.directive';
+import { ButtonModelPropDirective, ButtonModelPropsDirective } from './buttons.directive';
 import { ToastComponent } from './toast.component';
 import { ToastModule } from './toast.module';
 

@@ -810,6 +810,7 @@ exports.Annotation = ej2Maps.Annotation;
 exports.Arrow = ej2Maps.Arrow;
 exports.Font = ej2Maps.Font;
 exports.Border = ej2Maps.Border;
+exports.CenterPosition = ej2Maps.CenterPosition;
 exports.TooltipSettings = ej2Maps.TooltipSettings;
 exports.Margin = ej2Maps.Margin;
 exports.ColorMappingSettings = ej2Maps.ColorMappingSettings;

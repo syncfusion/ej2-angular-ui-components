@@ -1796,7 +1796,7 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 }
 
 .e-de-style-bold-button-size {
-  height: 18px;
+  height: 31px;
   margin-left: 6px;
   margin-right: 8px;
 }
@@ -2293,6 +2293,11 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 
 .e-para-dlg-sub-height {
   height: 145px;
+}
+
+.e-de-disabledbutton {
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .e-bigger .e-de-insert-table {
