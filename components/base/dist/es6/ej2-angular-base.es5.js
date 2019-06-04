@@ -51,7 +51,7 @@ function clearTemplate(_this, templateNames, index) {
         for (var _i = 0, _a = (regProperties && regProperties || regTemplates); _i < _a.length; _i++) {
             var registeredTemplate = _a[_i];
             /* istanbul ignore next */
-            if (index) {
+            if (index && index.length) {
                 for (var e = 0; e < index.length; e++) {
                     for (var m = 0; m < _this.registeredTemplate.template.length; m++) {
                         var value = _this.registeredTemplate.template[m].rootNodes[0];

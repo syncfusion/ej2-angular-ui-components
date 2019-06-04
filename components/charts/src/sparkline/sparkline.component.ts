@@ -4,7 +4,7 @@ import { Sparkline } from '@syncfusion/ej2-charts';
 
 import { RangeBandSettingsDirective } from './rangebandsettings.directive';
 
-export const inputs: string[] = ['axisSettings','border','containerArea','dataLabelSettings','dataSource','enablePersistence','enableRtl','endPointColor','fill','format','height','highPointColor','lineWidth','locale','lowPointColor','markerSettings','negativePointColor','opacity','padding','palette','rangeBandSettings','startPointColor','theme','tiePointColor','tooltipSettings','type','useGroupingSeparator','valueType','width','xName','yName'];
+export const inputs: string[] = ['axisSettings','border','containerArea','dataLabelSettings','dataSource','enablePersistence','enableRtl','endPointColor','fill','format','height','highPointColor','lineWidth','locale','lowPointColor','markerSettings','negativePointColor','opacity','padding','palette','query','rangeBandSettings','startPointColor','theme','tiePointColor','tooltipSettings','type','useGroupingSeparator','valueType','width','xName','yName'];
 export const outputs: string[] = ['axisRendering','dataLabelRendering','load','loaded','markerRendering','pointRegionMouseClick','pointRegionMouseMove','pointRendering','resize','seriesRendering','sparklineMouseClick','sparklineMouseMove','tooltipInitialize'];
 export const twoWays: string[] = [''];
 

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 17.1.50 (2019-06-04)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with preventing the event to be created, while clicking on the add icon in mobile devices with read only property is enabled is fixed.
+- #234667 - An issue with Scheduler is not properly navigating to selected date in timeline views has been fixed.
+- #234343 - An issue with adding resources dynamically when it has empty collection in initially has been fixed.
+
+- An issue with opening editor window multiple times, editor contents are rendered multiple times is fixed.
+
 ## 17.1.48 (2019-05-21)
 
 ### Schedule

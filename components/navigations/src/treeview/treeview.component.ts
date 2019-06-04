@@ -34,7 +34,7 @@ export class TreeViewComponent extends TreeView implements IComponentBase {
      * is set, the template content overrides the displayed node text. The property accepts template string 
      * [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
      * or HTML element ID holding the content. For more information on template concept, refer to 
-     * [Template](../treeview/template/).
+     * [Template](../../treeview/template/).
      * @default null
      */
     @ContentChild('nodeTemplate')

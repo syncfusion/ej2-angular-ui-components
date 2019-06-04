@@ -73,8 +73,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
     /** 
      * Format is applied to a calculated value before it is displayed. 
      * Gets the format from the user, which can be standard or custom 
-     * [`number`](../common/intl.html#number-formatter-and-parser) 
-     * and [`date`](../common/intl.html#date-formatter-and-parser) formats.
+     * [`number`](../../common/internationalization/#number-formatting/) 
+     * and [`date`](../../common/internationalization/#formatting/) formats.
      * @asptype string
      * @default null
      */

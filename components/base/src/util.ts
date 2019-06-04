@@ -51,7 +51,7 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
             });
         for (let registeredTemplate of (regProperties && regProperties || regTemplates)) {
             /* istanbul ignore next */
-            if (index) {
+            if (index && index.length) {
                 for (let e = 0; e < index.length; e++) {
                     for (let m = 0; m < _this.registeredTemplate.template.length; m++) {
                         let value = _this.registeredTemplate.template[m].rootNodes[0];

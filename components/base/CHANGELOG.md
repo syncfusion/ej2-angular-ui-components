@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.1.50 (2019-06-04)
+
+### Common
+
+#### New Features
+
+- Provided Angular 8 compatibility support.
+
 ## 17.1.49 (2019-05-29)
 
 ### Common

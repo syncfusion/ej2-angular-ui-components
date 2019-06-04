@@ -35,10 +35,10 @@ export class GridComponent extends Grid implements IComponentBase {
     /** 
      * The row template that renders customized rows from the given template. 
      * By default, Grid renders a table row for every data source item. 
-     * > * It accepts either [template string](../common/template-engine.html) or HTML element ID. 
+     * > * It accepts either [template string](../../common/template-engine/) or HTML element ID. 
      * > * The row template must be a table row.
      * 
-     * > Check the [`Row Template`](./row.html) customization.
+     * > Check the [`Row Template`](grid/row/) customization.
      *     
      */
     @ContentChild('rowTemplate')
@@ -47,7 +47,7 @@ export class GridComponent extends Grid implements IComponentBase {
     /** 
      * The detail template allows you to show or hide additional information about a particular row.
      * 
-     * > It accepts either the [template string](../common/template-engine.html) or the HTML element ID.
+     * > It accepts either the [template string](../../common/template-engine/) or the HTML element ID.
      *
      *{% codeBlock src="grid/detail-template-api/index.ts" %}{% endcodeBlock %}
      *     

@@ -31,7 +31,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
 
     /** 
      * The ListView supports to customize the content of each list items with the help of template property. 
-     * Refer the documentation [here](./listview/customizing-templates) 
+     * Refer the documentation [here](../../listview/customizing-templates/) 
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/template-api/index.ts" %}{% endcodeBlock %}     
