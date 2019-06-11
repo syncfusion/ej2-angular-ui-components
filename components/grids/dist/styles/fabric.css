@@ -2239,7 +2239,6 @@
 .e-grid .e-summarycontent .e-frozenfootercontent {
   float: left;
   width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 
@@ -3382,7 +3381,6 @@
 .e-grid .e-frozenheader {
   float: left;
   width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 
@@ -3416,7 +3414,6 @@
   height: inherit;
   overflow: hidden;
   width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 

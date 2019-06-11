@@ -573,7 +573,31 @@
 }
 
 .e-range-overflow {
-  overflow: auto;
+  overflow: hidden;
+}
+
+.e-daterangepick-mob-popup-wrap {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+.e-daterangepick-mob-popup-wrap .e-daterangepicker.e-popup.e-control.e-lib.e-device.e-popup-open {
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
 }
 
 /*! daterangepicker theme */

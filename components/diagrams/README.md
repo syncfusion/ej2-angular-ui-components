@@ -13,7 +13,7 @@ The diagram component visually represents information. It is also used to create
 To install Diagram and its dependent packages, use the following command
 
 ```sh
-npm install @syncfusion/ej2-ng-diagrams
+npm install @syncfusion/ej2-angular-diagrams
 ```
 
 ## Resources

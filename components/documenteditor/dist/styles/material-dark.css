@@ -1131,7 +1131,6 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   max-width: 200px;
   padding: 5px;
   width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   word-wrap: break-word;
 }

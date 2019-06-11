@@ -3999,7 +3999,6 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-sort {
   height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   transform: rotateX(0deg);
   transition: transform 200ms ease-in-out;
@@ -4373,7 +4372,6 @@
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-sort {
   height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   transform: rotateX(0deg);
   transition: transform 200ms ease-in-out;

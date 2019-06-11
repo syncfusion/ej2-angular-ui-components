@@ -286,7 +286,6 @@ ejs-filemanager {
 
 .e-filemanager .e-toolbar .e-toolbar-pop {
   width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
 }
 

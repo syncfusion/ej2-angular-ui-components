@@ -1028,7 +1028,6 @@ label[for='container_wholeWord'] {
   max-width: 200px;
   padding: 5px;
   width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   word-wrap: break-word;
 }

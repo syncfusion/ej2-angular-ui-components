@@ -239,7 +239,6 @@
   display: inline-flex;
   white-space: nowrap;
   width: -webkit-min-content;
-  width: -moz-min-content;
   width: min-content;
 }
 

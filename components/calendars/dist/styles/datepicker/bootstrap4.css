@@ -99,6 +99,30 @@
   overflow: hidden !important;
 }
 
+.e-datepick-mob-popup-wrap {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+.e-datepick-mob-popup-wrap .e-datepicker.e-popup-wrapper.e-lib.e-popup.e-control.e-popup-open {
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
+}
+
 @media screen and (orientation: landscape) and (max-device-height: 360px) {
   .e-datepicker .e-calendar .e-month table tbody {
     display: inline-block;
