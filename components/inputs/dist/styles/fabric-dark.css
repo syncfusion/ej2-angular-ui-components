@@ -4183,6 +4183,17 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   width: 100%;
 }
 
+.e-content-placeholder.e-numeric.e-placeholder-numeric {
+  background-size: 300px 33px;
+  min-height: 33px;
+}
+
+.e-bigger.e-content-placeholder.e-numeric.e-placeholder-numeric,
+.e-bigger .e-content-placeholder.e-numeric.e-placeholder-numeric {
+  background-size: 300px 40px;
+  min-height: 40px;
+}
+
 .e-numeric.e-control-wrapper.e-input-group .e-input-group-icon {
   font-size: 12px;
 }
@@ -4204,6 +4215,17 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-widget.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
   font-size: 14px;
+}
+
+.e-content-placeholder.e-mask.e-placeholder-mask {
+  background-size: 300px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-mask.e-placeholder-mask,
+.e-bigger.e-content-placeholder.e-mask.e-placeholder-mask {
+  background-size: 300px 40px;
+  min-height: 40px;
 }
 
 /*! maskedtextbox theme */
@@ -5332,6 +5354,17 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 .e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-size,
 .e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
   color: #6f6c6c;
+}
+
+.e-upload .e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 65px;
+  min-height: 65px;
+}
+
+.e-upload .e-bigger .e-content-placeholder.e-upload.e-placeholder-upload,
+.e-upload .e-bigger.e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 80px;
+  min-height: 80px;
 }
 
 .e-upload {

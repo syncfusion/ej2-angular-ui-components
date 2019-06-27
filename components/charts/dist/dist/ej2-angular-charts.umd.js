@@ -156,7 +156,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 var outputs$2 = [];
 /**
  * Series Directive
@@ -289,7 +289,7 @@ StripLinesDirective.decorators = [
  * @nocollapse
  */
 StripLinesDirective.ctorParameters = function () { return []; };
-var input$4 = ['end', 'maximumTextWidth', 'start', 'text'];
+var input$4 = ['customAttributes', 'end', 'maximumTextWidth', 'start', 'text', 'type'];
 var outputs$4 = [];
 /**
  * MultiLevelLabels Directive
@@ -808,8 +808,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'axes', 'background', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'dragComplete', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var inputs = ['annotations', 'axes', 'background', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$12 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -1212,6 +1212,13 @@ exports.ChartComponent = /** @class */ (function (_super) {
             }
         }
         catch (_29) { }
+        try {
+            var mod = _this.injector.get('ChartsDataEditing');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_30) { }
         _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -1405,6 +1412,7 @@ var MultiColoredAreaSeriesService = { provide: 'ChartsMultiColoredAreaSeries', u
 var MultiLevelLabelService = { provide: 'ChartsMultiLevelLabel', useValue: ej2Charts.MultiLevelLabel };
 var ParetoSeriesService = { provide: 'ChartsParetoSeries', useValue: ej2Charts.ParetoSeries };
 var ExportService = { provide: 'ChartsExport', useValue: ej2Charts.Export };
+var DataEditingService = { provide: 'ChartsDataEditing', useValue: ej2Charts.DataEditing };
 /**
  * NgModule definition for the Chart component with providers.
  */
@@ -1473,7 +1481,8 @@ ChartAllModule.decorators = [
                     MultiColoredAreaSeriesService,
                     MultiLevelLabelService,
                     ParetoSeriesService,
-                    ExportService
+                    ExportService,
+                    DataEditingService
                 ]
             },] },
 ];
@@ -1657,7 +1666,7 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['annotations', 'background', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'width'];
+var inputs$1 = ['annotations', 'background', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$15 = ['animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$1 = ['dataSource'];
 /**
@@ -3664,6 +3673,7 @@ exports.MultiColoredAreaSeriesService = MultiColoredAreaSeriesService;
 exports.MultiLevelLabelService = MultiLevelLabelService;
 exports.ParetoSeriesService = ParetoSeriesService;
 exports.ExportService = ExportService;
+exports.DataEditingService = DataEditingService;
 exports.AccumulationSeriesDirective = AccumulationSeriesDirective;
 exports.AccumulationSeriesCollectionDirective = AccumulationSeriesCollectionDirective;
 exports.AccumulationAnnotationDirective = AccumulationAnnotationDirective;
@@ -3758,6 +3768,7 @@ exports.Indexes = ej2Charts.Indexes;
 exports.CornerRadius = ej2Charts.CornerRadius;
 exports.Index = ej2Charts.Index;
 exports.EmptyPointSettings = ej2Charts.EmptyPointSettings;
+exports.DragSettings = ej2Charts.DragSettings;
 exports.TooltipSettings = ej2Charts.TooltipSettings;
 exports.Periods = ej2Charts.Periods;
 exports.PeriodSelectorSettings = ej2Charts.PeriodSelectorSettings;
@@ -3827,6 +3838,7 @@ exports.getValueXByPoint = ej2Charts.getValueXByPoint;
 exports.getValueYByPoint = ej2Charts.getValueYByPoint;
 exports.findClipRect = ej2Charts.findClipRect;
 exports.firstToLowerCase = ej2Charts.firstToLowerCase;
+exports.getTransform = ej2Charts.getTransform;
 exports.getMinPointsDelta = ej2Charts.getMinPointsDelta;
 exports.getAnimationFunction = ej2Charts.getAnimationFunction;
 exports.linear = ej2Charts.linear;
@@ -3877,6 +3889,7 @@ exports.createSvg = ej2Charts.createSvg;
 exports.getTitle = ej2Charts.getTitle;
 exports.titlePositionX = ej2Charts.titlePositionX;
 exports.textWrap = ej2Charts.textWrap;
+exports.blazorTemplatesReset = ej2Charts.blazorTemplatesReset;
 exports.CustomizeOption = ej2Charts.CustomizeOption;
 exports.StackValues = ej2Charts.StackValues;
 exports.RectOption = ej2Charts.RectOption;
@@ -3892,6 +3905,7 @@ exports.Crosshair = ej2Charts.Crosshair;
 exports.Tooltip = ej2Charts.Tooltip;
 exports.Zoom = ej2Charts.Zoom;
 exports.Selection = ej2Charts.Selection;
+exports.DataEditing = ej2Charts.DataEditing;
 exports.DataLabel = ej2Charts.DataLabel;
 exports.ErrorBar = ej2Charts.ErrorBar;
 exports.DataLabelSettings = ej2Charts.DataLabelSettings;
@@ -3953,6 +3967,7 @@ exports.StockChartAnnotationSettings = ej2Charts.StockChartAnnotationSettings;
 exports.StockChartIndexes = ej2Charts.StockChartIndexes;
 exports.StockEventsSettings = ej2Charts.StockEventsSettings;
 exports.loaded = ej2Charts.loaded;
+exports.legendClick = ej2Charts.legendClick;
 exports.load = ej2Charts.load;
 exports.animationComplete = ej2Charts.animationComplete;
 exports.legendRender = ej2Charts.legendRender;
@@ -3979,6 +3994,10 @@ exports.scrollStart = ej2Charts.scrollStart;
 exports.scrollEnd = ej2Charts.scrollEnd;
 exports.scrollChanged = ej2Charts.scrollChanged;
 exports.stockEventRender = ej2Charts.stockEventRender;
+exports.multiLevelLabelClick = ej2Charts.multiLevelLabelClick;
+exports.dragStart = ej2Charts.dragStart;
+exports.drag = ej2Charts.drag;
+exports.dragEnd = ej2Charts.dragEnd;
 exports.Theme = ej2Charts.Theme;
 exports.getSeriesColor = ej2Charts.getSeriesColor;
 exports.getThemeColor = ej2Charts.getThemeColor;

@@ -4,8 +4,8 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 
-export const inputs: string[] = ['enableLocalPaste','enablePersistence','enableRtl','enableToolbar','locale','restrictEditing','serviceUrl','showPropertiesPane'];
-export const outputs: string[] = ['contentChange','created','destroyed','selectionChange'];
+export const inputs: string[] = ['enableLocalPaste','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','locale','restrictEditing','serverActionSettings','serviceUrl','showPropertiesPane'];
+export const outputs: string[] = ['contentChange','created','destroyed','documentChange','selectionChange'];
 export const twoWays: string[] = [];
 
 /**

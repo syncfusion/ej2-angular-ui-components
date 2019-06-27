@@ -534,6 +534,17 @@
   color: rgba(240, 240, 240, 0.38);
 }
 
+.e-upload .e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 65px;
+  min-height: 65px;
+}
+
+.e-upload .e-bigger .e-content-placeholder.e-upload.e-placeholder-upload,
+.e-upload .e-bigger.e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 80px;
+  min-height: 80px;
+}
+
 .e-upload {
   border: 1px solid #414141;
 }

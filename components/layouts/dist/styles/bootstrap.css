@@ -393,7 +393,7 @@
 
 .e-card .e-card-header .e-card-header-caption .e-card-header-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -558,7 +558,6 @@
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 21px;
 }
 
 /*! card theme */
@@ -1032,6 +1031,17 @@
   width: 20px;
 }
 
+.e-content-placeholder.e-splitter.e-placeholder-splitter {
+  background-size: 100px 110px;
+  min-height: 110px;
+}
+
+.e-bigger .e-content-placeholder.e-splitter.e-placeholder-splitter,
+.e-bigger.e-content-placeholder.e-splitter.e-placeholder-splitter {
+  background-size: 100px 110px;
+  min-height: 110px;
+}
+
 .e-splitter.e-splitter-horizontal, .e-splitter.e-splitter-vertical {
   border: solid 1px #ddd;
 }
@@ -1324,10 +1334,19 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header {
+  border-bottom: 1px solid #e6e6e6;
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 14px;
   font-weight: 500;
   height: 28px;
-  padding: 0 12px;
+  padding: 4px 12px;
+}
+
+.e-dashboardlayout.e-control .e-panel .e-panel-header div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header .e-header-content {
@@ -1356,6 +1375,8 @@
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single,
 .e-dashboardlayout.e-control .e-panel .e-resize.e-double {
   position: absolute;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-east, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-west, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-north, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-south,
@@ -1445,6 +1466,11 @@
   padding: 0 12px;
 }
 
+.e-content-placeholder.e-dashboardlayout.e-placeholder-dashboardlayout {
+  height: 100%;
+  width: 100%;
+}
+
 .e-dashboardlayout.e-control {
   display: block;
   position: relative;
@@ -1458,7 +1484,7 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-header {
-  color: none;
+  color: #333;
 }
 
 .e-dashboardlayout.e-control .e-panel {
@@ -1469,7 +1495,7 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-header {
-  color: none;
+  color: #333;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-single {

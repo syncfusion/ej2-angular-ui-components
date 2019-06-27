@@ -28,17 +28,17 @@ export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
 
 
     /** 
-     * Define custom css class for event marker to customize line and label
+     * Define custom css class for event marker to customize line and label.
      * @default null
      */
     public cssClass: any;
     /** 
-     * Defines day of event marker
+     * Defines day of event marker.
      * @default null
      */
     public day: any;
     /** 
-     * Defines label of event marker
+     * Defines label of event marker.
      * @default null
      */
     public label: any;

@@ -11,6 +11,11 @@
       "factory": "./generators/gantt-daymarkers",
       "schema": "./generators/gantt-daymarkers/schema.json"
     },
+    "gantt-default": {
+      "description": "Create an Angular component with EJ2 gantt with default",
+      "factory": "./generators/gantt-default",
+      "schema": "./generators/gantt-default/schema.json"
+    },
     "gantt-editing": {
       "description": "Create an Angular Gantt component with editing features and toolbars",
       "factory": "./generators/gantt-editing",

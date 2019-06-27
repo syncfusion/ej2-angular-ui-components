@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { AggregatesDirective } from './aggregates.directive';
 
-export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowSelection','allowSorting','allowTextWrap','autoCheckHierarchy','childMapping','columnMenuItems','columnQueryMode','columns','contextMenuItems','dataSource','editSettings','enableAltRow','enableCollapseAll','enableHover','enablePersistence','enableRtl','expandStateMapping','filterSettings','gridLines','hasChildMapping','height','idMapping','locale','pageSettings','parentIdMapping','printMode','query','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeDataBound','beforeExcelExport','beforePdfExport','beforePrint','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','checkboxChange','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
+export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowSelection','allowSorting','allowTextWrap','autoCheckHierarchy','childMapping','columnMenuItems','columnQueryMode','columns','contextMenuItems','dataSource','detailTemplate','editSettings','enableAltRow','enableCollapseAll','enableHover','enablePersistence','enableRtl','enableVirtualization','expandStateMapping','filterSettings','gridLines','hasChildMapping','height','idMapping','locale','pageSettings','parentIdMapping','printMode','query','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeDataBound','beforeExcelExport','beforePdfExport','beforePrint','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSelected','cellSelecting','checkboxChange','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','detailDataBound','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -35,6 +35,9 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
     @ContentChild('toolbarTemplate')
     @Template()
     public toolbarTemplate: any;
+    @ContentChild('pagerTemplate')
+    @Template()
+    public pagerTemplate: any;
     /** 
      * The row template that renders customized rows from the given template. 
      * By default, TreeGrid renders a table row for every data source item. 
@@ -47,9 +50,16 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
     @ContentChild('rowTemplate')
     @Template()
     public rowTemplate: any;
-    @ContentChild('pagerTemplate')
+    /** 
+     * The detail template allows you to show or hide additional information about a particular row.
+     * 
+     * > It accepts either the [template string](../../common/template-engine/) or the HTML element ID.
+     *
+     *     
+     */
+    @ContentChild('detailTemplate')
     @Template()
-    public pagerTemplate: any;
+    public detailTemplate: any;
     @ContentChild('editSettingsTemplate')
     @Template()
     public editSettings_template: any;
@@ -138,6 +148,18 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('TreeGridSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeGridVirtualScroll');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeGridDetailRow');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

@@ -29,22 +29,22 @@ export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective
 
 
     /** 
-     * Defines types of tab which contains editor for columns 
-     * * `General` - Defines tab container type as general 
-     * * `Dependency` - Defines tab as dependency editor 
-     * * `Resources` - Defines tab as resources editor 
-     * * `Notes` - Defines tab as notes editor 
-     * * `Custom` - Defines tab as custom column editor
+     * Defines types of tab which contains editor for columns. 
+     * * `General` - Defines tab container type as general. 
+     * * `Dependency` - Defines tab as dependency editor. 
+     * * `Resources` - Defines tab as resources editor. 
+     * * `Notes` - Defines tab as notes editor. 
+     * * `Custom` - Defines tab as custom column editor.
      * @default null
      */
     public type: any;
     /** 
-     * Defines edited column fields placed inside the tab
+     * Defines edited column fields placed inside the tab.
      * @default null
      */
     public fields: any;
     /** 
-     * Defines header text of tab item
+     * Defines header text of tab item.
      * @default null
      */
     public headerText: any;

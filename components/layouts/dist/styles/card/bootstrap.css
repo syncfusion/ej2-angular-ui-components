@@ -344,7 +344,7 @@
 
 .e-card .e-card-header .e-card-header-caption .e-card-header-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -509,7 +509,6 @@
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 21px;
 }
 
 /*! card theme */

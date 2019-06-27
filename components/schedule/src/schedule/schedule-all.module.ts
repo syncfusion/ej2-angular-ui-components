@@ -5,7 +5,7 @@ import { ResourceDirective, ResourcesDirective } from './resources.directive';
 import { HeaderRowDirective, HeaderRowsDirective } from './headerrows.directive';
 import { ScheduleComponent } from './schedule.component';
 import { ScheduleModule } from './schedule.module';
-import {Day, Week, WorkWeek, Month, Agenda, MonthAgenda, TimelineViews, TimelineMonth, Resize, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport} from '@syncfusion/ej2-schedule'
+import {Day, Week, WorkWeek, Month, Agenda, MonthAgenda, TimelineViews, TimelineMonth, Resize, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Print} from '@syncfusion/ej2-schedule'
 
 
 export const DayService: ValueProvider = { provide: 'ScheduleDay', useValue: Day};
@@ -21,6 +21,7 @@ export const DragAndDropService: ValueProvider = { provide: 'ScheduleDragAndDrop
 export const ExcelExportService: ValueProvider = { provide: 'ScheduleExcelExport', useValue: ExcelExport};
 export const ICalendarExportService: ValueProvider = { provide: 'ScheduleICalendarExport', useValue: ICalendarExport};
 export const ICalendarImportService: ValueProvider = { provide: 'ScheduleICalendarImport', useValue: ICalendarImport};
+export const PrintService: ValueProvider = { provide: 'SchedulePrint', useValue: Print};
 
 /**
  * NgModule definition for the Schedule component with providers.
@@ -43,7 +44,8 @@ export const ICalendarImportService: ValueProvider = { provide: 'ScheduleICalend
         DragAndDropService,
         ExcelExportService,
         ICalendarExportService,
-        ICalendarImportService
+        ICalendarImportService,
+        PrintService
     ]
 })
 export class ScheduleAllModule { }

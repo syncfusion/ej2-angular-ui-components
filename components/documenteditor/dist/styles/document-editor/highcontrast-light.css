@@ -2082,7 +2082,7 @@ label[for='container_wholeWord'] {
   font-size: 10px;
 }
 
-.e-documenteditor .e-de-op-close-icon {
+.e-documenteditor .e-de-op .e-de-op-close-icon {
   font-size: 12px;
   height: 20px;
   margin-left: -4px;
@@ -2288,6 +2288,10 @@ label[for='container_wholeWord'] {
   content: '\e279';
 }
 
+.e-menu-item .e-de-spellcheck::before {
+  content: '\e689';
+}
+
 .e-menu-item .e-de-copy::before {
   content: '\e280';
 }
@@ -2489,4 +2493,20 @@ label[for='container_wholeWord'] {
 .e-de-icon-auto-fitwindow::before {
   content: '\ebaa';
   font-family: 'e-icons';
+}
+
+.e-item .e-de-paste-text::before {
+  content: '\e687';
+}
+
+.e-item .e-de-paste-source::before {
+  content: '\e686';
+}
+
+.e-item .e-de-paste-merge::before {
+  content: '\e688';
+}
+
+.e-icon-btn.e-de-paste::before {
+  content: '\e684';
 }

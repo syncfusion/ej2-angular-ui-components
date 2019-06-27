@@ -142,12 +142,24 @@
   padding: 7px;
 }
 
+.e-bigger .e-treeview.e-drag-item .e-text-content,
+.e-treeview.e-bigger.e-drag-item .e-text-content {
+  padding-left: 12px;
+}
+
 .e-bigger .e-treeview.e-drag-item .e-icon-collapsible,
 .e-bigger .e-treeview.e-drag-item .e-icon-expandable,
 .e-treeview.e-bigger.e-drag-item .e-icon-collapsible,
 .e-treeview.e-bigger.e-drag-item .e-icon-expandable {
   font-size: 16px;
-  padding: 10px 8px 10px 12px;
+  margin: -6px 0px 5px -14px;
+}
+
+.e-bigger .e-treeview.e-drag-item .e-icon-collapsible::before,
+.e-bigger .e-treeview.e-drag-item .e-icon-expandable::before,
+.e-treeview.e-bigger.e-drag-item .e-icon-collapsible::before,
+.e-treeview.e-bigger.e-drag-item .e-icon-expandable::before {
+  padding: 12px;
 }
 
 .e-bigger .e-treeview.e-drag-item .e-drop-count,
@@ -445,6 +457,7 @@
 .e-treeview.e-drag-item .e-icon-expandable::before {
   font-size: 14px;
   padding: 8px;
+  padding-right: 4px;
 }
 
 .e-treeview.e-drag-item .e-drop-count {
@@ -538,12 +551,12 @@
 .e-bigger .e-treeview.e-drag-item .e-icon-expandable,
 .e-treeview.e-bigger.e-drag-item .e-icon-collapsible,
 .e-treeview.e-bigger.e-drag-item .e-icon-expandable {
-  padding: 10px 8px 10px 12px;
+  padding: 0px 12px 0px 4px;
 }
 
 .e-bigger .e-treeview.e-drag-item .e-list-text,
 .e-treeview.e-bigger.e-drag-item .e-list-text {
-  padding: 7px 12px 0 4px;
+  padding: 2px 12px 0 4px;
 }
 
 .e-treeview {
@@ -750,7 +763,7 @@
 
 .e-treeview.e-drag-item .e-list-text {
   color: #212529;
-  padding: 6px 8px 6px 8px;
+  padding: 0px 8px 0px 4px;
 }
 
 .e-treeview.e-drag-item .e-text-content {

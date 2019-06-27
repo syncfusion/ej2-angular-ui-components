@@ -22,7 +22,7 @@
   font-size: 12px;
 }
 
-.e-documenteditor .e-de-op-close-icon {
+.e-documenteditor .e-de-op .e-de-op-close-icon {
   font-size: 12px;
   height: 20px;
   margin-left: -4px;
@@ -228,6 +228,10 @@
   content: '\e279';
 }
 
+.e-menu-item .e-de-spellcheck::before {
+  content: '\e689';
+}
+
 .e-menu-item .e-de-copy::before {
   content: '\e280';
 }
@@ -431,6 +435,22 @@
   font-family: 'e-icons';
 }
 
+.e-item .e-de-paste-text::before {
+  content: '\e685';
+}
+
+.e-item .e-de-paste-source::before {
+  content: '\e687';
+}
+
+.e-item .e-de-paste-merge::before {
+  content: '\e688';
+}
+
+.e-icon-btn .e-de-paste::before {
+  content: '\e684';
+}
+
 .e-de-blink-cursor {
   border-left: 1px solid;
   pointer-events: none;
@@ -572,8 +592,17 @@
 }
 
 .e-de-para-dlg-container {
-  height: 425px;
+  height: auto;
   width: 400px;
+}
+
+.e-de-para-dlg-cs-check-box {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.e-de-para-dlg-spacing-div {
+  margin-left: 40px;
 }
 
 .e-de-toc-dlg-heading {
@@ -590,6 +619,10 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.e-content-placeholder.e-documenteditor.e-placeholder-documenteditor {
+  background-size: 100%;
 }
 
 .e-de-toc-reset-button {
@@ -832,6 +865,7 @@
   margin-right: 20px;
 }
 
+.e-de-restrict-pane,
 .e-de-op {
   border-right: 1px solid #505050;
   padding-left: 15px;
@@ -1186,10 +1220,12 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   margin-top: 7px;
 }
 
+.e-de-restrict-pane,
 .e-de-op {
   background-color: #1a1a1a;
 }
 
+.e-de-restrict-pane .e-tab-header .e-toolbar-items,
 .e-de-op .e-tab-header .e-toolbar-items {
   margin-bottom: none;
   margin-top: 20px;
@@ -1494,6 +1530,56 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 .e-de-insert-table {
   height: 139px;
   width: 247px;
+}
+
+.e-de-insert-spellchecker {
+  height: 350px;
+  width: 513px;
+}
+
+.e-de-dlg-spellcheck-listview {
+  border: 1px solid #e4e4e4;
+  border-radius: 2px !important;
+  height: 122px !important;
+  margin-top: 8px;
+  position: relative;
+  float: left;
+  width: 343px;
+}
+
+.e-de-spellcheck-error-container {
+  height: 140px;
+  margin-bottom: 25px;
+}
+
+.e-de-spellcheck-suggestion-container {
+  height: 140px;
+}
+
+.e-dlg-spellcheck-listitem {
+  font-size: 15px !important;
+}
+
+.e-de-spellcheck-btncontainer {
+  margin-top: 8px;
+  position: relative;
+  width: 154px;
+  float: right;
+}
+
+.e-de-spellcheck-btn {
+  height: 36px;
+  margin-bottom: 8px;
+  width: 154px;
+}
+
+.e-de-dlg-spellchecker-subheader {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.e-de-dlg-spellchecker-subheaderbtm {
+  font-size: 15px;
 }
 
 .e-de-list-dlg {
@@ -2336,6 +2422,193 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   width: 173px;
 }
 
+.e-de-restrict-format {
+  margin-top: 16px;
+}
+
+.e-de-rp-format {
+  font-size: 13px;
+  margin-bottom: 12px;
+  opacity: .65;
+}
+
+.e-de-rp-checkbox {
+  font-size: 12px;
+}
+
+.e-de-rp-border {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.e-de-rp-header {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: .87;
+}
+
+.e-de-restrict-pane .e-checkbox-wrapper .e-label {
+  color: "";
+  font-size: 12px;
+}
+
+.e-de-restrict-pane .e-checkbox-wrapper .e-frame {
+  height: 16px;
+  width: 16px;
+}
+
+.e-de-restrict-pane .e-checkbox-wrapper {
+  margin-bottom: 8px;
+}
+
+.e-de-rp-user .e-checkbox-wrapper {
+  width: auto;
+}
+
+.e-de-rp-nav-btn,
+.e-de-rp-btn-enforce {
+  background: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  height: 36px;
+  opacity: .87;
+}
+
+.e-de-rp-nav-btn {
+  margin: 0 12px;
+  width: 210px;
+}
+
+.e-de-rp-btn-stop-enforce {
+  background: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  height: 36px;
+  margin: 0 46px;
+  opacity: .87;
+}
+
+.e-de-rp-nav-lbl {
+  font-size: 13px;
+  margin: 0 28px;
+}
+
+.e-de-rp-sub-div {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 12px;
+}
+
+.e-de-restrict-pane {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.e-de-rp-whole-header {
+  padding: 12px;
+}
+
+.e-de-rp-user {
+  background: #1a1a1a;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  font-size: 12px;
+  height: 110px;
+  width: 238px;
+}
+
+.e-de-rp-enforce {
+  padding-top: 12px;
+}
+
+.e-de-rp-enforce-nav {
+  margin: 12px 0;
+}
+
+.e-de-enforce-dlg-title {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.e-de-enforce .e-de-enforce-dlg-input {
+  height: 32px;
+  margin-bottom: 8px;
+  width: 300px;
+}
+
+.e-de-user-add-btn {
+  background: #e0e0e0;
+  border-radius: 2px;
+  width: 74px;
+}
+
+.e-de-user-dlg .e-de-user-dlg-textbox-input {
+  margin-right: 16px;
+  width: 304px;
+}
+
+.e-de-user-dlg-list {
+  margin-bottom: 15px;
+}
+
+.e-de-user-listview {
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  height: 106px;
+}
+
+.e-de-user-dlg-user {
+  margin-bottom: 12px;
+}
+
+.e-user-delete {
+  float: left;
+}
+
+.e-de-unprotect-dlg-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.e-de-rp-stop-div1 {
+  opacity: .87;
+  padding: 12px 12px 6px 12px;
+  font-weight: 500;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.e-de-rp-stop-div2 {
+  padding: 12px 12px 24px;
+}
+
+.e-de-rp-stop-div3 {
+  padding: 0 0 12px 12px;
+}
+
+.e-de-rp-close-icon {
+  float: right;
+  position: relative;
+  top: -7px;
+}
+
+.e-de-restrict-pane {
+  height: 100%;
+  overflow: auto;
+  width: 268px;
+}
+
+.e-de-rp-nav-lbl {
+  font-size: 13px;
+  margin: 0 28px;
+}
+
+.e-documenteditor-optionspane {
+  height: 100%;
+}
+
 .e-de-ctnr-close::before {
   content: '\eb1e';
 }
@@ -2621,6 +2894,18 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   content: '\e935';
 }
 
+.e-de-selected-spellcheck-item::before {
+  content: '\e935';
+  font-family: 'e-icons';
+  font-size: 10px;
+}
+
+.e-de-selected-underline-item::before {
+  content: '\e935';
+  font-family: 'e-icons';
+  font-size: 10px;
+}
+
 .e-de-ctnr-break::before {
   content: '\eba1';
 }
@@ -2698,8 +2983,22 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 36px);
+  height: calc(100% - 113px);
   width: 100%;
+}
+
+.e-de-statusbar-seperator {
+  border: 1px solid #ccc;
+  height: 16px;
+  margin-left: 15.5px;
+  margin-top: 10px;
+}
+
+.e-de-statusbar-spellcheck {
+  border-radius: 2px;
+  height: 34px;
+  margin-left: 7.5px;
+  width: 91px;
 }
 
 .e-de-ctn {
@@ -2708,6 +3007,13 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   height: calc(100%);
   position: relative;
   width: 100%;
+}
+
+.e-bigger .e-de-statusbar-spellcheck {
+  border-radius: 2px;
+  height: 34px;
+  margin-left: 7.5px;
+  width: 111px;
 }
 
 .e-de-ctnr-toolbar {
@@ -3277,15 +3583,43 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   display: inline-flex;
   font-size: 13px;
   height: 100%;
+  width: 100px;
+}
+
+.e-de-ctnr-pg-no-spellout {
+  color: #fff;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  height: 100%;
   width: calc(100% - 75px);
 }
 
-.e-de-statusbar-zoom {
+.e-bigger .e-de-ctnr-pg-no-spellout {
+  color: #fff;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  height: 100%;
+  width: calc(100% - 90px);
+}
+
+.e-de-statusbar-zoom-spell {
   background-color: #1a1a1a;
   border: 0;
   color: #fff;
   float: right;
   height: 34px;
+  margin-left: calc(100% - 292px);
+}
+
+.e-bigger .e-de-statusbar-zoom-spell {
+  background-color: #1a1a1a;
+  border: 0;
+  color: #fff;
+  float: right;
+  height: 34px;
+  margin-left: calc(100% - 325px);
 }
 
 .e-de-btn-cancel {
@@ -3499,7 +3833,7 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 36px);
+  height: calc(100% - 118px);
   width: 100%;
 }
 
@@ -3863,15 +4197,6 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   display: inline-flex;
   height: 36px;
   width: 100%;
-}
-
-.e-bigger .e-de-ctnr-pg-no {
-  color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 13px;
-  height: 100%;
-  width: calc(100% - 90px);
 }
 
 .e-bigger .e-de-statusbar-zoom {

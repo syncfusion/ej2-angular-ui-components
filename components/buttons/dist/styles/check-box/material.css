@@ -200,6 +200,94 @@
   width: 32px;
 }
 
+.e-small .e-checkbox-wrapper .e-frame,
+.e-small.e-checkbox-wrapper .e-frame,
+.e-small .e-css.e-checkbox-wrapper .e-frame,
+.e-small.e-css.e-checkbox-wrapper .e-frame {
+  height: 14px;
+  line-height: 6px;
+  width: 14px;
+}
+
+.e-small .e-checkbox-wrapper .e-check,
+.e-small.e-checkbox-wrapper .e-check,
+.e-small .e-css.e-checkbox-wrapper .e-check,
+.e-small.e-css.e-checkbox-wrapper .e-check {
+  font-size: 10px;
+}
+
+.e-small .e-checkbox-wrapper .e-stop,
+.e-small.e-checkbox-wrapper .e-stop,
+.e-small .e-css.e-checkbox-wrapper .e-stop,
+.e-small.e-css.e-checkbox-wrapper .e-stop {
+  font-size: 8px;
+  line-height: 6px;
+}
+
+.e-small .e-checkbox-wrapper .e-label,
+.e-small.e-checkbox-wrapper .e-label,
+.e-small .e-css.e-checkbox-wrapper .e-label,
+.e-small.e-css.e-checkbox-wrapper .e-label {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.e-small .e-checkbox-wrapper .e-ripple-container,
+.e-small.e-checkbox-wrapper .e-ripple-container,
+.e-small .e-css.e-checkbox-wrapper .e-ripple-container,
+.e-small.e-css.e-checkbox-wrapper .e-ripple-container {
+  bottom: -9px;
+  height: 32px;
+  left: -9px;
+  right: -9px;
+  top: -9px;
+  width: 32px;
+}
+
+.e-bigger.e-small .e-checkbox-wrapper .e-frame,
+.e-bigger.e-small.e-checkbox-wrapper .e-frame,
+.e-bigger.e-small .e-css.e-checkbox-wrapper .e-frame,
+.e-bigger.e-small.e-css.e-checkbox-wrapper .e-frame {
+  height: 20px;
+  line-height: 12px;
+  width: 20px;
+}
+
+.e-bigger.e-small .e-checkbox-wrapper .e-check,
+.e-bigger.e-small.e-checkbox-wrapper .e-check,
+.e-bigger.e-small .e-css.e-checkbox-wrapper .e-check,
+.e-bigger.e-small.e-css.e-checkbox-wrapper .e-check {
+  font-size: 12px;
+}
+
+.e-bigger.e-small .e-checkbox-wrapper .e-stop,
+.e-bigger.e-small.e-checkbox-wrapper .e-stop,
+.e-bigger.e-small .e-css.e-checkbox-wrapper .e-stop,
+.e-bigger.e-small.e-css.e-checkbox-wrapper .e-stop {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.e-bigger.e-small .e-checkbox-wrapper .e-label,
+.e-bigger.e-small.e-checkbox-wrapper .e-label,
+.e-bigger.e-small .e-css.e-checkbox-wrapper .e-label,
+.e-bigger.e-small.e-css.e-checkbox-wrapper .e-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.e-bigger.e-small .e-checkbox-wrapper .e-ripple-container,
+.e-bigger.e-small.e-checkbox-wrapper .e-ripple-container,
+.e-bigger.e-small .e-css.e-checkbox-wrapper .e-ripple-container,
+.e-bigger.e-small.e-css.e-checkbox-wrapper .e-ripple-container {
+  bottom: -9px;
+  height: 38px;
+  left: -9px;
+  right: -9px;
+  top: -9px;
+  width: 38px;
+}
+
 .e-bigger .e-checkbox-wrapper .e-frame,
 .e-bigger.e-checkbox-wrapper .e-frame,
 .e-bigger .e-css.e-checkbox-wrapper .e-frame,

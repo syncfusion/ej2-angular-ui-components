@@ -347,7 +347,7 @@ NavigationLinesDirective.decorators = [
  * @nocollapse
  */
 NavigationLinesDirective.ctorParameters = function () { return []; };
-var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 var outputs$4 = [];
 /**
  * Layer Directive
@@ -508,7 +508,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'zoom', 'dataSourceChange'];
+var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'zoom', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Represents Maps Component
@@ -791,8 +791,11 @@ exports.mousedown = ej2Maps.mousedown;
 exports.layerRendering = ej2Maps.layerRendering;
 exports.shapeRendering = ej2Maps.shapeRendering;
 exports.markerRendering = ej2Maps.markerRendering;
+exports.markerClusterRendering = ej2Maps.markerClusterRendering;
 exports.markerClick = ej2Maps.markerClick;
+exports.markerClusterClick = ej2Maps.markerClusterClick;
 exports.markerMouseMove = ej2Maps.markerMouseMove;
+exports.markerClusterMouseMove = ej2Maps.markerClusterMouseMove;
 exports.dataLabelRendering = ej2Maps.dataLabelRendering;
 exports.bubbleRendering = ej2Maps.bubbleRendering;
 exports.bubbleClick = ej2Maps.bubbleClick;
@@ -813,6 +816,7 @@ exports.Border = ej2Maps.Border;
 exports.CenterPosition = ej2Maps.CenterPosition;
 exports.TooltipSettings = ej2Maps.TooltipSettings;
 exports.Margin = ej2Maps.Margin;
+exports.MarkerClusterSettings = ej2Maps.MarkerClusterSettings;
 exports.ColorMappingSettings = ej2Maps.ColorMappingSettings;
 exports.SelectionSettings = ej2Maps.SelectionSettings;
 exports.HighlightSettings = ej2Maps.HighlightSettings;
@@ -865,6 +869,10 @@ exports.PatternOptions = ej2Maps.PatternOptions;
 exports.renderTextElement = ej2Maps.renderTextElement;
 exports.convertElement = ej2Maps.convertElement;
 exports.convertElementFromLabel = ej2Maps.convertElementFromLabel;
+exports.drawSymbols = ej2Maps.drawSymbols;
+exports.clusterTemplate = ej2Maps.clusterTemplate;
+exports.marker = ej2Maps.marker;
+exports.markerTemplate = ej2Maps.markerTemplate;
 exports.appendShape = ej2Maps.appendShape;
 exports.drawCircle = ej2Maps.drawCircle;
 exports.drawRectangle = ej2Maps.drawRectangle;

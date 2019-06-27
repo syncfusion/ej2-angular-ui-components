@@ -2,13 +2,32 @@
   padding: 0 10px 0 0;
 }
 
-.e-bigger .e-dropdownbase .e-list-item .e-list-icon {
+.e-bigger .e-dropdownbase .e-list-item .e-list-icon,
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon {
   padding: 0 12px 0 0;
+}
+
+.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 8px 0 0;
 }
 
 .e-multi-select-wrapper.e-down-icon .e-input-group-icon.e-ddl-icon {
   height: 30px;
   width: 30px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips,
+.e-small.e-bigger .e-multi-select-wrapper .e-chips {
+  padding: 0;
+}
+
+.e-small .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small.e-bigger .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  padding: 0 8px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips {
+  margin: 2px 2px 2px 0;
 }
 
 .e-multiselect.e-input-group .e-ddl-icon::before {
@@ -372,12 +391,42 @@
   vertical-align: middle;
 }
 
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group:not(.e-rtl) .e-list-item .e-checkbox-wrapper {
+  padding-left: 14px;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-rtl .e-list-item .e-checkbox-wrapper {
+  padding-right: 18px;
+}
+
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-rtl .e-list-item .e-checkbox-wrapper {
+  padding-right: 5px;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-list-group-item .e-checkbox-wrapper {
+  bottom: 1px;
+  margin-right: 8px;
+  position: relative;
+  text-indent: 0;
+  vertical-align: middle;
+}
+
 .e-bigger .e-popup.e-multi-select-list-wrapper .e-list-item .e-checkbox-wrapper {
   bottom: 1px;
   margin-right: 10px;
 }
 
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-mulltiselect-group .e-list-group-item .e-checkbox-wrapper {
+  bottom: 1px;
+  margin-right: 10px;
+}
+
 .e-popup.e-multi-select-list-wrapper.e-rtl .e-list-item .e-checkbox-wrapper {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-rtl .e-list-group-item .e-checkbox-wrapper {
   margin-left: 12px;
   margin-right: 0;
 }
@@ -388,6 +437,22 @@
 
 .e-popup.e-multi-select-list-wrapper.e-rtl .e-dropdownbase.e-rtl.e-dd-group .e-list-item {
   padding-right: 19px;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-rtl .e-dropdownbase.e-rtl.e-dd-group .e-list-group-item {
+  padding-right: 10px;
+}
+
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-rtl .e-dropdownbase.e-rtl.e-dd-group .e-list-group-item {
+  padding-right: 16px;
+}
+
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-dropdownbase.e-dd-group .e-list-group-item {
+  padding-left: 16px;
+}
+
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-multiselect-group:not(.e-rtl) .e-dropdownbase.e-dd-group .e-list-item .e-checkbox-wrapper {
+  padding-left: 20px;
 }
 
 .e-multi-select-list-wrapper .e-selectall-parent {
@@ -496,6 +561,72 @@ ejs-multiselect {
   display: block;
 }
 
+.e-small .e-multi-select-list-wrapper .e-selectall-parent {
+  line-height: 26px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips-close {
+  height: 22px;
+  width: 22px;
+}
+
+.e-small .e-multi-select-wrapper {
+  min-height: 24px;
+}
+
+.e-small .e-multi-select-wrapper input[type='text'] {
+  height: 24px;
+  min-height: 24px;
+}
+
+.e-small .e-multi-select-wrapper .e-delim-values {
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  margin-top: -2.8em;
+}
+
+.e-bigger.e-small .e-multi-select-list-wrapper .e-selectall-parent {
+  line-height: 40px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper .e-chips-close {
+  height: 26px;
+  width: 26px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper {
+  min-height: 26px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper input[type='text'] {
+  height: 34px;
+  min-height: 34px;
+}
+
+.e-small.e-bigger .e-multi-select-wrapper .e-delim-values {
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  margin-top: -3.2em;
+  right: 0;
+}
+
+.e-content-placeholder.e-multiselect.e-placeholder-multiselect {
+  background-size: 300px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-multiselect.e-placeholder-multiselect,
+.e-bigger.e-content-placeholder.e-multiselect.e-placeholder-multiselect {
+  background-size: 300px 40px;
+  min-height: 40px;
+}
+
 .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
   color: #fff;
 }
@@ -581,11 +712,25 @@ ejs-multiselect {
   color: #dadada;
 }
 
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-checkbox .e-list-group-item.e-active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #dadada;
+}
+
 .e-popup.e-multi-select-list-wrapper.e-checkbox .e-list-item.e-active.e-item-focus {
   color: #dadada;
 }
 
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-checkbox .e-list-group-item.e-active.e-item-focus {
+  color: #dadada;
+}
+
 .e-popup.e-multi-select-list-wrapper.e-checkbox .e-list-item.e-active.e-hover {
+  background-color: #333232;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-checkbox .e-list-group-item.e-active.e-hover {
   background-color: #333232;
 }
 
@@ -609,7 +754,18 @@ ejs-multiselect {
   color: #fff;
 }
 
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-list-group-item.e-active.e-item-focus {
+  background-color: #514f4f;
+  border: 1px solid #dadada;
+  box-shadow: none;
+  color: #fff;
+}
+
 .e-popup.e-multi-select-list-wrapper .e-list-item {
+  border: 1px solid transparent;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-list-group-item {
   border: 1px solid transparent;
 }
 
@@ -643,4 +799,32 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   color: #dadada;
+}
+
+.e-small .e-multi-select-wrapper .e-chips {
+  height: 22px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 12px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  font-size: 8px;
+}
+
+.e-small .e-multi-select-wrapper .e-close-hooker::before {
+  left: 7px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper .e-chips {
+  height: 26px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 12px;
+}
+
+.e-bigger.e-small .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  font-size: 10px;
 }

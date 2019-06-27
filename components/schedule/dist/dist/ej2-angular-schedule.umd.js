@@ -409,6 +409,13 @@ exports.ScheduleComponent = /** @class */ (function (_super) {
             }
         }
         catch (_o) { }
+        try {
+            var mod = _this.injector.get('SchedulePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_p) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -576,6 +583,7 @@ var DragAndDropService = { provide: 'ScheduleDragAndDrop', useValue: ej2Schedule
 var ExcelExportService = { provide: 'ScheduleExcelExport', useValue: ej2Schedule.ExcelExport };
 var ICalendarExportService = { provide: 'ScheduleICalendarExport', useValue: ej2Schedule.ICalendarExport };
 var ICalendarImportService = { provide: 'ScheduleICalendarImport', useValue: ej2Schedule.ICalendarImport };
+var PrintService = { provide: 'SchedulePrint', useValue: ej2Schedule.Print };
 /**
  * NgModule definition for the Schedule component with providers.
  */
@@ -603,7 +611,8 @@ ScheduleAllModule.decorators = [
                     DragAndDropService,
                     ExcelExportService,
                     ICalendarExportService,
-                    ICalendarImportService
+                    ICalendarImportService,
+                    PrintService
                 ]
             },] },
 ];
@@ -769,6 +778,7 @@ exports.DragAndDropService = DragAndDropService;
 exports.ExcelExportService = ExcelExportService;
 exports.ICalendarExportService = ICalendarExportService;
 exports.ICalendarImportService = ICalendarImportService;
+exports.PrintService = PrintService;
 exports.RecurrenceEditorModule = RecurrenceEditorModule;
 exports.RecurrenceEditorAllModule = RecurrenceEditorAllModule;
 exports.ɵc = inputs$1;
@@ -831,6 +841,7 @@ exports.getOuterHeight = ej2Schedule.getOuterHeight;
 exports.Resize = ej2Schedule.Resize;
 exports.DragAndDrop = ej2Schedule.DragAndDrop;
 exports.HeaderRenderer = ej2Schedule.HeaderRenderer;
+exports.ViewHelper = ej2Schedule.ViewHelper;
 exports.ViewBase = ej2Schedule.ViewBase;
 exports.Day = ej2Schedule.Day;
 exports.Week = ej2Schedule.Week;
@@ -842,9 +853,10 @@ exports.TimelineViews = ej2Schedule.TimelineViews;
 exports.TimelineMonth = ej2Schedule.TimelineMonth;
 exports.Timezone = ej2Schedule.Timezone;
 exports.timezoneData = ej2Schedule.timezoneData;
-exports.ExcelExport = ej2Schedule.ExcelExport;
 exports.ICalendarExport = ej2Schedule.ICalendarExport;
 exports.ICalendarImport = ej2Schedule.ICalendarImport;
+exports.ExcelExport = ej2Schedule.ExcelExport;
+exports.Print = ej2Schedule.Print;
 exports.RecurrenceEditor = ej2Schedule.RecurrenceEditor;
 exports.Gregorian = ej2Schedule.Gregorian;
 exports.Islamic = ej2Schedule.Islamic;

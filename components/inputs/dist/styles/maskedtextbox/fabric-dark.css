@@ -12,6 +12,17 @@
   font-size: 14px;
 }
 
+.e-content-placeholder.e-mask.e-placeholder-mask {
+  background-size: 300px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-mask.e-placeholder-mask,
+.e-bigger.e-content-placeholder.e-mask.e-placeholder-mask {
+  background-size: 300px 40px;
+  min-height: 40px;
+}
+
 /*! maskedtextbox theme */
 .e-widget.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
   color: #ff5f5f;

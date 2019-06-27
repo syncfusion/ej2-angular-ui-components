@@ -212,6 +212,214 @@
   width: 100%;
 }
 
+.e-small .e-btn,
+.e-small.e-btn,
+.e-small .e-css.e-btn,
+.e-small.e-css.e-btn {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 2px 8px 2px;
+}
+
+.e-small .e-btn .e-btn-icon,
+.e-small.e-btn .e-btn-icon,
+.e-small .e-css.e-btn .e-btn-icon,
+.e-small.e-css.e-btn .e-btn-icon {
+  font-size: 12px;
+  width: 1em;
+}
+
+.e-small .e-btn .e-btn-icon.e-icon-left,
+.e-small.e-btn .e-btn-icon.e-icon-left,
+.e-small .e-css.e-btn .e-btn-icon.e-icon-left,
+.e-small.e-css.e-btn .e-btn-icon.e-icon-left {
+  margin-left: -0.57143em;
+  width: 2em;
+  padding: 0 8px;
+}
+
+.e-small .e-btn .e-btn-icon.e-icon-right,
+.e-small.e-btn .e-btn-icon.e-icon-right,
+.e-small .e-css.e-btn .e-btn-icon.e-icon-right,
+.e-small.e-css.e-btn .e-btn-icon.e-icon-right {
+  margin-right: -0.57143em;
+  width: 2em;
+  padding: 0 8px;
+}
+
+.e-small .e-btn .e-btn-icon.e-icon-top,
+.e-small.e-btn .e-btn-icon.e-icon-top,
+.e-small .e-css.e-btn .e-btn-icon.e-icon-top,
+.e-small.e-css.e-btn .e-btn-icon.e-icon-top {
+  padding-bottom: 6px;
+  width: auto;
+}
+
+.e-small .e-btn .e-btn-icon.e-icon-bottom,
+.e-small.e-btn .e-btn-icon.e-icon-bottom,
+.e-small .e-css.e-btn .e-btn-icon.e-icon-bottom,
+.e-small.e-css.e-btn .e-btn-icon.e-icon-bottom {
+  padding-top: 6px;
+  width: auto;
+}
+
+.e-small .e-btn.e-icon-btn,
+.e-small.e-btn.e-icon-btn,
+.e-small .e-css.e-btn.e-icon-btn,
+.e-small.e-css.e-btn.e-icon-btn {
+  padding: 2px 5px;
+}
+
+.e-small .e-btn.e-top-icon-btn, .e-small .e-btn.e-bottom-icon-btn,
+.e-small.e-btn.e-top-icon-btn,
+.e-small.e-btn.e-bottom-icon-btn,
+.e-small .e-css.e-btn.e-top-icon-btn,
+.e-small .e-css.e-btn.e-bottom-icon-btn,
+.e-small.e-css.e-btn.e-top-icon-btn,
+.e-small.e-css.e-btn.e-bottom-icon-btn {
+  line-height: 1;
+  padding: 12px 12px;
+}
+
+.e-small .e-btn.e-round,
+.e-small.e-btn.e-round,
+.e-small .e-css.e-btn.e-round,
+.e-small.e-css.e-btn.e-round {
+  height: 24px;
+  line-height: 1;
+  padding: 0;
+  width: 24px;
+}
+
+.e-small .e-btn.e-round .e-btn-icon,
+.e-small.e-btn.e-round .e-btn-icon,
+.e-small .e-css.e-btn.e-round .e-btn-icon,
+.e-small.e-css.e-btn.e-round .e-btn-icon {
+  font-size: 12px;
+  line-height: 1.5;
+  width: auto;
+}
+
+.e-small .e-btn.e-rtl .e-icon-right,
+.e-small.e-btn.e-rtl .e-icon-right,
+.e-small .e-css.e-btn.e-rtl .e-icon-right,
+.e-small.e-css.e-btn.e-rtl .e-icon-right {
+  margin-left: -0.57143em;
+  margin-right: 0;
+}
+
+.e-small .e-btn.e-rtl .e-icon-left,
+.e-small.e-btn.e-rtl .e-icon-left,
+.e-small .e-css.e-btn.e-rtl .e-icon-left,
+.e-small.e-css.e-btn.e-rtl .e-icon-left {
+  margin-left: 0;
+  margin-right: btn-small-icon-margin;
+}
+
+.e-bigger.e-small .e-btn,
+.e-bigger.e-small.e-btn,
+.e-bigger.e-small .e-css.e-btn,
+.e-bigger.e-small.e-css.e-btn {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 4px 8px;
+}
+
+.e-bigger.e-small .e-btn .e-btn-icon,
+.e-bigger.e-small.e-btn .e-btn-icon,
+.e-bigger.e-small .e-css.e-btn .e-btn-icon,
+.e-bigger.e-small.e-css.e-btn .e-btn-icon {
+  font-size: 14px;
+  width: 1em;
+}
+
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-left,
+.e-bigger.e-small.e-btn .e-btn-icon.e-icon-left,
+.e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-left,
+.e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-left {
+  margin-left: -0.5em;
+  width: 2em;
+  padding: 0 8px;
+}
+
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-right,
+.e-bigger.e-small.e-btn .e-btn-icon.e-icon-right,
+.e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-right,
+.e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-right {
+  margin-right: -0.5em;
+  width: 2em;
+  padding: 0 8px;
+}
+
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-top,
+.e-bigger.e-small.e-btn .e-btn-icon.e-icon-top,
+.e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-top,
+.e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-top {
+  padding-bottom: 6px;
+  width: auto;
+}
+
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-bottom,
+.e-bigger.e-small.e-btn .e-btn-icon.e-icon-bottom,
+.e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-bottom,
+.e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-bottom {
+  padding-top: 6px;
+  width: auto;
+}
+
+.e-bigger.e-small .e-btn.e-icon-btn,
+.e-bigger.e-small.e-btn.e-icon-btn,
+.e-bigger.e-small .e-css.e-btn.e-icon-btn,
+.e-bigger.e-small.e-css.e-btn.e-icon-btn {
+  padding: 4px 8px;
+}
+
+.e-bigger.e-small .e-btn.e-top-icon-btn, .e-bigger.e-small .e-btn.e-bottom-icon-btn,
+.e-bigger.e-small.e-btn.e-top-icon-btn,
+.e-bigger.e-small.e-btn.e-bottom-icon-btn,
+.e-bigger.e-small .e-css.e-btn.e-top-icon-btn,
+.e-bigger.e-small .e-css.e-btn.e-bottom-icon-btn,
+.e-bigger.e-small.e-css.e-btn.e-top-icon-btn,
+.e-bigger.e-small.e-css.e-btn.e-bottom-icon-btn {
+  line-height: 1;
+  padding: 16px 16px;
+}
+
+.e-bigger.e-small .e-btn.e-round,
+.e-bigger.e-small.e-btn.e-round,
+.e-bigger.e-small .e-css.e-btn.e-round,
+.e-bigger.e-small.e-css.e-btn.e-round {
+  height: 32px;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+}
+
+.e-bigger.e-small .e-btn.e-round .e-btn-icon,
+.e-bigger.e-small.e-btn.e-round .e-btn-icon,
+.e-bigger.e-small .e-css.e-btn.e-round .e-btn-icon,
+.e-bigger.e-small.e-css.e-btn.e-round .e-btn-icon {
+  font-size: 14px;
+  line-height: 1.6;
+  width: auto;
+}
+
+.e-bigger.e-small .e-btn.e-rtl .e-icon-right,
+.e-bigger.e-small.e-btn.e-rtl .e-icon-right,
+.e-bigger.e-small .e-css.e-btn.e-rtl .e-icon-right,
+.e-bigger.e-small.e-css.e-btn.e-rtl .e-icon-right {
+  margin-left: -0.5em;
+  margin-right: 0;
+}
+
+.e-bigger.e-small .e-btn.e-rtl .e-icon-left,
+.e-bigger.e-small.e-btn.e-rtl .e-icon-left,
+.e-bigger.e-small .e-css.e-btn.e-rtl .e-icon-left,
+.e-bigger.e-small.e-css.e-btn.e-rtl .e-icon-left {
+  margin-left: 0;
+  margin-right: -0.5em;
+}
+
 .e-bigger .e-btn,
 .e-bigger.e-btn,
 .e-bigger .e-css.e-btn,

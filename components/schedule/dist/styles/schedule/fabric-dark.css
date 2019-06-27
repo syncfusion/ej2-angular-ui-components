@@ -2471,6 +2471,26 @@
   font-weight: 500;
 }
 
+.e-dialog.e-quick-dialog.e-following-events-dialog {
+  width: 420px;
+}
+
+.e-dialog.e-quick-dialog.e-following-events-dialog .e-footer-content {
+  padding: 2%;
+}
+
+@media screen and (max-width: 767px) {
+  .e-dialog.e-quick-dialog.e-following-events-dialog {
+    width: 289px;
+  }
+  .e-dialog.e-quick-dialog.e-following-events-dialog .e-footer-content {
+    padding: 5%;
+  }
+  .e-dialog.e-quick-dialog.e-following-events-dialog .e-footer-content button {
+    margin-bottom: 5%;
+  }
+}
+
 .e-dialog.e-quick-dialog {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2645,9 +2665,9 @@
 }
 
 .e-ddl.e-popup .e-resource-template .e-resource-color {
-  height: 15px;
-  margin-top: 10px;
-  width: 15px;
+  height: 14px;
+  margin-top: 12px;
+  width: 14px;
 }
 
 .e-bigger .e-ddl.e-popup .e-resource-template {
@@ -2655,7 +2675,9 @@
 }
 
 .e-bigger .e-ddl.e-popup .e-resource-template .e-resource-color {
-  margin-top: 15px;
+  height: 16px;
+  margin-top: 14px;
+  width: 16px;
 }
 
 .e-bigger .e-schedule-dialog .e-disable {
@@ -3341,8 +3363,8 @@
 
 .e-appointment.e-schedule-event-clone .e-recurrence-icon,
 .e-appointment.e-schedule-event-clone .e-recurrence-edit-icon,
-.e-appointment.e-schedule-event-clone .e-left-icon,
-.e-appointment.e-schedule-event-clone .e-right-icon,
+.e-appointment.e-schedule-event-clone .e-indicator.e-left-icon,
+.e-appointment.e-schedule-event-clone .e-indicator.e-right-icon,
 .e-appointment.e-schedule-event-clone .e-event-resize.e-left-handler,
 .e-appointment.e-schedule-event-clone .e-event-resize.e-right-handler {
   display: none;

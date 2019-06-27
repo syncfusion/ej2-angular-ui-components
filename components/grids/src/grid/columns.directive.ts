@@ -245,8 +245,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * It is used to change display value with the given format and does not affect the original data. 
      * Gets the format from the user which can be standard or custom 
-     * [`number`](../common/intl.html#number-formatter-and-parser) 
-     * and [`date`](../common/intl.html#date-formatter-and-parser) formats.
+     * [`number`](../../common/internationalization/#number-formatting/) 
+     * and [`date`](../common/internationalization/#number-formatting/) formats.
      * @default null
      * @asptype string
      */
@@ -279,7 +279,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the header text of column which is used to display in column header. 
      * If `headerText` is not defined, then field name value will be assigned to header text.
-     * @default ''
+     * @default null
      */
     public headerText: any;
     /** 
@@ -296,7 +296,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public hideAtMedia: any;
     /** 
      * Gets the unique identifier value of the column. It is used to get the object.
-     * @default undefined
+     * @default null
      */
     public index: any;
     /** 
@@ -395,7 +395,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public width: any;
     /** 
      * Defines the column template that renders customized element in each cell of the column. 
-     * It accepts either [template string](../common/template-engine.html) or HTML element ID.
+     * It accepts either [template string](../../common/template-engine/) or HTML element ID.
      * @default null
      */
     @ContentChild('template')

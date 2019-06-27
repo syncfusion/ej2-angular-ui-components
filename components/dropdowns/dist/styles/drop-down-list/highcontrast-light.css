@@ -22,6 +22,14 @@
   border: 2px solid #ecf;
 }
 
+.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 8px 0 0;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 12px 0 0;
+}
+
 .e-bigger .e-ddl.e-popup .e-input-group .e-clear-icon {
   height: 36px;
 }
@@ -97,6 +105,27 @@
 
 .e-bigger .e-ddl.e-popup .e-input-group input {
   height: 30px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-list-item,
+.e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger.e-small .e-ddl.e-popup .e-fixed-head {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group {
+  padding: 0;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input {
+  height: 34px;
 }
 
 .e-ddl .e-search-icon::before {
@@ -263,6 +292,37 @@ ejs-autocomplete,
 ejs-combobox,
 ejs-dropdownlist {
   display: block;
+}
+
+.e-small .e-ddl.e-popup .e-list-item,
+.e-small .e-ddl.e-popup .e-list-group-item,
+.e-input-group.e-ddl.e-small .e-list-item,
+.e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 13px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-list-item,
+.e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-content-placeholder.e-ddl.e-placeholder-ddl,
+.e-content-placeholder.e-autocomplete.e-placeholder-autocomplete,
+.e-content-placeholder.e-combobox.e-placeholder-combobox {
+  background-size: 300px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-ddl.e-placeholder-ddl,
+.e-bigger.e-content-placeholder.e-ddl.e-placeholder-ddl,
+.e-bigger .e-content-placeholder.e-autocomplete.e-placeholder-autocomplete,
+.e-bigger.e-content-placeholder.e-autocomplete.e-placeholder-autocomplete,
+.e-bigger .e-content-placeholder.e-combobox.e-placeholder-combobox,
+.e-bigger.e-content-placeholder.e-combobox.e-placeholder-combobox {
+  background-size: 300px 40px;
+  min-height: 40px;
 }
 
 .e-popup {

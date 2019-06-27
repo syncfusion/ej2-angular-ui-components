@@ -37,6 +37,7 @@ export class ComponentBase<T> {
     protected oldProperties: { [key: string]: Object };
     protected changedProperties: { [key: string]: Object };
     protected finalUpdate: Function;
+    protected isUpdated: boolean;
 
     private tagObjects: { name: string, instance: Tag }[];
     public onPropertyChanged: (newProp: Object, oldProp: Object) => void;
@@ -222,7 +223,7 @@ export class ComponentBase<T> {
         }
     }
 
-    public trigger(eventName: string, eventArgs: Object): void {
+    public trigger(eventName: string, eventArgs: Object, success?: Function): void {
 
         let eventObj: { next: Function } = getValue(eventName, this);
 
@@ -242,8 +243,11 @@ export class ComponentBase<T> {
         }
 
         this.isProtectedOnChange = prevDetection;
+        /* istanbul ignore else  */
+        if (success) {
+            success.call(this, eventArgs);
+        }
 
     }
-
 
 }

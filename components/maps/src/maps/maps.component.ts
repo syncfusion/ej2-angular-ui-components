@@ -6,7 +6,7 @@ import { LayersDirective } from './layers.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['annotations','background','baseLayerIndex','border','centerPosition','description','enablePersistence','enableRtl','format','height','layers','legendSettings','locale','mapsArea','margin','projectionType','tabIndex','theme','titleSettings','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','load','loaded','markerClick','markerMouseMove','markerRendering','pan','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','zoom','dataSourceChange'];
+export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','load','loaded','markerClick','markerClusterClick','markerClusterMouseMove','markerClusterRendering','markerMouseMove','markerRendering','pan','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','zoom','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**

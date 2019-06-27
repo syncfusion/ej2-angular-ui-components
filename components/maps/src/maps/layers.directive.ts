@@ -5,7 +5,7 @@ import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -55,6 +55,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public dataLabelSettings: any;
     /** 
      * Specifies the data source for the layer.
+     * @isdatamanager false
      * @default []
      */
     public dataSource: any;
@@ -77,6 +78,10 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * @default Geometry
      */
     public layerType: any;
+    /** 
+     * To configure the cluster settings.
+     */
+    public markerClusterSettings: any;
     /** 
      * To configure the marker settings.
      */

@@ -48,6 +48,7 @@
 }
 
 /*! component's default definitions and variables */
+/*! component's theme wise override material-definitions and variables */
 /*! card layout */
 .e-bigger .e-card,
 .e-bigger.e-card {
@@ -59,7 +60,6 @@
 .e-bigger.e-card > .e-card-header-title {
   line-height: 12px;
   padding: 12px;
-  min-height: 45px;
 }
 
 .e-bigger .e-card > .e-card-header-title + :not(.e-card-header-title),
@@ -226,17 +226,6 @@
   text-overflow: ellipsis;
   vertical-align: middle;
   width: 100%;
-  padding: 1px;
-}
-
-.e-card:hover {
-  border-width: 2px;
-  padding: 0;
-}
-
-.e-card:active {
-  border-width: 2px;
-  padding: 0;
 }
 
 .e-card > * {
@@ -249,7 +238,6 @@
   font-size: 15px;
   line-height: 16px;
   padding: 16px;
-  min-height: 34px;
 }
 
 .e-card > .e-card-header-title + :not(.e-card-header-title) {
@@ -404,7 +392,7 @@
 
 .e-card .e-card-header .e-card-header-caption .e-card-header-title {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 18px;
 }
 
@@ -569,7 +557,6 @@
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 21px;
 }
 
 /*! card theme */
@@ -1043,6 +1030,17 @@
   width: 20px;
 }
 
+.e-content-placeholder.e-splitter.e-placeholder-splitter {
+  background-size: 100px 110px;
+  min-height: 110px;
+}
+
+.e-bigger .e-content-placeholder.e-splitter.e-placeholder-splitter,
+.e-bigger.e-content-placeholder.e-splitter.e-placeholder-splitter {
+  background-size: 100px 110px;
+  min-height: 110px;
+}
+
 .e-splitter.e-splitter-horizontal, .e-splitter.e-splitter-vertical {
   border: solid 1px #414040;
 }
@@ -1335,10 +1333,19 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header {
-  font-size: 14px;
-  font-weight: 500;
+  border-bottom: none;
+  color: #dadada;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 15px;
+  font-weight: 200;
   height: 28px;
-  padding: 0 12px;
+  padding: 2px 10px;
+}
+
+.e-dashboardlayout.e-control .e-panel .e-panel-header div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header .e-header-content {
@@ -1367,6 +1374,8 @@
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single,
 .e-dashboardlayout.e-control .e-panel .e-resize.e-double {
   position: absolute;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-east, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-west, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-north, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-south,
@@ -1454,6 +1463,11 @@
   font-weight: 500;
   height: 30;
   padding: 0 12px;
+}
+
+.e-content-placeholder.e-dashboardlayout.e-placeholder-dashboardlayout {
+  height: 100%;
+  width: 100%;
 }
 
 .e-dashboardlayout.e-control {

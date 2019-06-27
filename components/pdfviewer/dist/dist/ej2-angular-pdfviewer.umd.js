@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['ajaxRequestSettings', 'annotationToolbarSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'locale', 'serverActionSettings', 'serviceUrl', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'width'];
-var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
+var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
+var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'annotationResize', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
 var twoWays = [];
 /**
  * `ejs-pdfviewer` represents the Angular PdfViewer Component.
@@ -259,6 +259,10 @@ exports.ɵb = outputs;
 exports.Annotation = ej2Pdfviewer.Annotation;
 exports.LinkAnnotation = ej2Pdfviewer.LinkAnnotation;
 exports.TextMarkupAnnotation = ej2Pdfviewer.TextMarkupAnnotation;
+exports.MeasureAnnotation = ej2Pdfviewer.MeasureAnnotation;
+exports.ShapeAnnotation = ej2Pdfviewer.ShapeAnnotation;
+exports.StampAnnotation = ej2Pdfviewer.StampAnnotation;
+exports.StickyNotesAnnotation = ej2Pdfviewer.StickyNotesAnnotation;
 exports.NavigationPane = ej2Pdfviewer.NavigationPane;
 exports.PdfViewerBase = ej2Pdfviewer.PdfViewerBase;
 exports.TextLayer = ej2Pdfviewer.TextLayer;
@@ -276,6 +280,19 @@ exports.ServerActionSettings = ej2Pdfviewer.ServerActionSettings;
 exports.StrikethroughSettings = ej2Pdfviewer.StrikethroughSettings;
 exports.UnderlineSettings = ej2Pdfviewer.UnderlineSettings;
 exports.HighlightSettings = ej2Pdfviewer.HighlightSettings;
+exports.LineSettings = ej2Pdfviewer.LineSettings;
+exports.ArrowSettings = ej2Pdfviewer.ArrowSettings;
+exports.RectangleSettings = ej2Pdfviewer.RectangleSettings;
+exports.CircleSettings = ej2Pdfviewer.CircleSettings;
+exports.PolygonSettings = ej2Pdfviewer.PolygonSettings;
+exports.StampSettings = ej2Pdfviewer.StampSettings;
+exports.CustomStampSettings = ej2Pdfviewer.CustomStampSettings;
+exports.DistanceSettings = ej2Pdfviewer.DistanceSettings;
+exports.PerimeterSettings = ej2Pdfviewer.PerimeterSettings;
+exports.AreaSettings = ej2Pdfviewer.AreaSettings;
+exports.RadiusSettings = ej2Pdfviewer.RadiusSettings;
+exports.VolumeSettings = ej2Pdfviewer.VolumeSettings;
+exports.StickyNotesSettings = ej2Pdfviewer.StickyNotesSettings;
 exports.PdfViewer = ej2Pdfviewer.PdfViewer;
 exports.BookmarkView = ej2Pdfviewer.BookmarkView;
 exports.TextSelection = ej2Pdfviewer.TextSelection;

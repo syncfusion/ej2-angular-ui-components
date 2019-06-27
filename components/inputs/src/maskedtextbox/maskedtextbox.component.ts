@@ -5,7 +5,7 @@ import { MaskedTextBox } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['cssClass','customCharacters','enablePersistence','enableRtl','enabled','floatLabelType','locale','mask','placeholder','promptChar','showClearButton','value','width'];
+export const inputs: string[] = ['cssClass','customCharacters','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','mask','placeholder','promptChar','showClearButton','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','valueChange'];
 export const twoWays: string[] = ['value'];
 

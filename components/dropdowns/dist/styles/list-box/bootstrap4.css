@@ -12,7 +12,15 @@
 
 .e-bigger .e-dropdownbase .e-list-item .e-list-icon {
   font-size: 16px;
+}
+
+.e-bigger .e-dropdownbase .e-list-item .e-list-icon,
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon {
   padding: 0 12px 0 0;
+}
+
+.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 8px 0 0;
 }
 
 .e-input-group.e-ddl .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
@@ -292,6 +300,20 @@
   margin: 0 10px 0 0;
   text-indent: 0;
   vertical-align: middle;
+}
+
+.e-listbox-wrapper.e-right .e-checkbox-wrapper {
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.e-listbox-wrapper .e-input-group {
+  padding: 4px 8px;
+}
+
+.e-listbox-wrapper .e-input-focus {
+  padding: 4px 4px 4px 8px;
 }
 
 .e-listbox-wrapper .e-hidden-select {

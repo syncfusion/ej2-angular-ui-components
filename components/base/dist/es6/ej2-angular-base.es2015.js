@@ -402,7 +402,7 @@ class ComponentBase {
             this.ngBoundedEvents[eventName].get(handler).unsubscribe();
         }
     }
-    trigger(eventName, eventArgs) {
+    trigger(eventName, eventArgs, success) {
         let eventObj = getValue(eventName, this);
         let prevDetection = this.isProtectedOnChange;
         this.isProtectedOnChange = false;
@@ -417,6 +417,10 @@ class ComponentBase {
             localEventObj.call(this, eventArgs);
         }
         this.isProtectedOnChange = prevDetection;
+        /* istanbul ignore else  */
+        if (success) {
+            success.call(this, eventArgs);
+        }
     }
 }
 

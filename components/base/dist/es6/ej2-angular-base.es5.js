@@ -434,7 +434,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
             this.ngBoundedEvents[eventName].get(handler).unsubscribe();
         }
     };
-    ComponentBase.prototype.trigger = function (eventName, eventArgs) {
+    ComponentBase.prototype.trigger = function (eventName, eventArgs, success) {
         var eventObj = getValue(eventName, this);
         var prevDetection = this.isProtectedOnChange;
         this.isProtectedOnChange = false;
@@ -449,6 +449,10 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
             localEventObj.call(this, eventArgs);
         }
         this.isProtectedOnChange = prevDetection;
+        /* istanbul ignore else  */
+        if (success) {
+            success.call(this, eventArgs);
+        }
     };
     return ComponentBase;
 }());

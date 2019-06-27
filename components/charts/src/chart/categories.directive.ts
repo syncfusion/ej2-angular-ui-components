@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['end', 'maximumTextWidth', 'start', 'text'];
+let input: string[] = ['customAttributes', 'end', 'maximumTextWidth', 'start', 'text', 'type'];
 let outputs: string[] = [];
 /**
  * MultiLevelLabels Directive
@@ -29,6 +29,23 @@ let outputs: string[] = [];
 export class CategoryDirective extends ComplexBase<CategoryDirective> {
 
 
+    /** 
+     * Border type for labels 
+     * * Rectangle 
+     * * Without Top Border 
+     * * Without Top and BottomBorder 
+     * * Without Border 
+     * * Brace 
+     * * CurlyBrace
+     * @default ''
+     * @aspdefaultvalueignore 
+     */
+    public type: any;
+    /** 
+     * multi level labels custom data.
+     * @default null
+     */
+    public customAttributes: any;
     /** 
      * End value of the multi level labels
      * @default null

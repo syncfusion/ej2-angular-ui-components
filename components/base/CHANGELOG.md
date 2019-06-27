@@ -2,39 +2,7 @@
 
 ## [Unreleased]
 
-## 17.1.50 (2019-06-04)
-
-### Common
-
-#### New Features
-
-- Provided Angular 8 compatibility support.
-
-## 17.1.49 (2019-05-29)
-
-### Common
-
-#### Bug Fixes
-
-- #2352892 - Fixed `Form base` components delay rendering issue.
-
-## 17.1.43 (2019-04-30)
-
-### Common
-
-#### Bug Fixes
-
-- #227272, #227958 - Fixed binding not working properly while using `ngx-tanslate` pipe.
-
-## 17.1.42 (2019-04-23)
-
-### Common
-
-#### Bug Fixes
-
-- #232746, #232286, #233615 , #233849, #233946 - Fixed `template` properties are not working in `production mode` issue.
-
-## 17.1.38 (2019-03-29)
+## 17.2.28-beta (2019-06-27)
 
 ### Common
 
@@ -42,14 +10,6 @@
 
 - Fixed `CheckBox` not disabling issue.
 - Fixed binding not working properly while using `ngx-tanslate` pipe.
-
-## 17.1.32-beta (2019-03-13)
-
-### Common
-
-#### Bug Fixes
-
-- Fixed `CheckBox` not disabling issue.
 
 ## 17.1.1-beta (2019-01-29)
 

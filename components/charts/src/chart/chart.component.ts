@@ -10,8 +10,8 @@ import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','dragComplete','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
+export const inputs: string[] = ['annotations','axes','background','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','pointClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -375,6 +375,12 @@ export class ChartComponent extends Chart implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ChartsExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsDataEditing');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

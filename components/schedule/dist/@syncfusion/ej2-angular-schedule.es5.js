@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Agenda, Day, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Month, MonthAgenda, RecurrenceEditor, Resize, Schedule, TimelineMonth, TimelineViews, Week, WorkWeek } from '@syncfusion/ej2-schedule';
+import { Agenda, Day, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Month, MonthAgenda, Print, RecurrenceEditor, Resize, Schedule, TimelineMonth, TimelineViews, Week, WorkWeek } from '@syncfusion/ej2-schedule';
 import { CommonModule } from '@angular/common';
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -407,6 +407,13 @@ var ScheduleComponent = /** @class */ (function (_super) {
             }
         }
         catch (_o) { }
+        try {
+            var mod = _this.injector.get('SchedulePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_p) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
@@ -574,6 +581,7 @@ var DragAndDropService = { provide: 'ScheduleDragAndDrop', useValue: DragAndDrop
 var ExcelExportService = { provide: 'ScheduleExcelExport', useValue: ExcelExport };
 var ICalendarExportService = { provide: 'ScheduleICalendarExport', useValue: ICalendarExport };
 var ICalendarImportService = { provide: 'ScheduleICalendarImport', useValue: ICalendarImport };
+var PrintService = { provide: 'SchedulePrint', useValue: Print };
 /**
  * NgModule definition for the Schedule component with providers.
  */
@@ -601,7 +609,8 @@ ScheduleAllModule.decorators = [
                     DragAndDropService,
                     ExcelExportService,
                     ICalendarExportService,
-                    ICalendarImportService
+                    ICalendarImportService,
+                    PrintService
                 ]
             },] },
 ];
@@ -748,6 +757,6 @@ RecurrenceEditorAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { ViewDirective, ViewsDirective, ResourceDirective, ResourcesDirective, HeaderRowDirective, HeaderRowsDirective, ScheduleComponent, ScheduleModule, ScheduleAllModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService, ExcelExportService, ICalendarExportService, ICalendarImportService, RecurrenceEditorComponent, RecurrenceEditorModule, RecurrenceEditorAllModule, inputs$1 as ɵc, outputs$4 as ɵd, inputs as ɵa, outputs$3 as ɵb };
-export { Schedule, cellClick, cellDoubleClick, select, actionBegin, actionComplete, actionFailure, navigating, renderCell, eventClick, eventRendered, dataBinding, dataBound, popupOpen, dragStart, drag, dragStop, resizeStart, resizing, resizeStop, initialLoad, initialEnd, dataReady, contentReady, scroll, virtualScroll, scrollUiUpdate, uiUpdate, documentClick, cellMouseDown, WEEK_LENGTH, MS_PER_DAY, MS_PER_MINUTE, getElementHeightFromClass, getTranslateY, getWeekFirstDate, firstDateOfMonth, lastDateOfMonth, getWeekNumber, setTime, resetTime, getDateInMs, getDateCount, addDays, addMonths, addYears, getStartEndHours, getMaxDays, getDaysCount, getDateFromString, getScrollBarWidth, findIndexInData, getOuterHeight, Resize, DragAndDrop, HeaderRenderer, ViewBase, Day, Week, WorkWeek, Month, Agenda, MonthAgenda, TimelineViews, TimelineMonth, Timezone, timezoneData, ExcelExport, ICalendarExport, ICalendarImport, RecurrenceEditor, Gregorian, Islamic } from '@syncfusion/ej2-schedule';
+export { ViewDirective, ViewsDirective, ResourceDirective, ResourcesDirective, HeaderRowDirective, HeaderRowsDirective, ScheduleComponent, ScheduleModule, ScheduleAllModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService, ExcelExportService, ICalendarExportService, ICalendarImportService, PrintService, RecurrenceEditorComponent, RecurrenceEditorModule, RecurrenceEditorAllModule, inputs$1 as ɵc, outputs$4 as ɵd, inputs as ɵa, outputs$3 as ɵb };
+export { Schedule, cellClick, cellDoubleClick, select, actionBegin, actionComplete, actionFailure, navigating, renderCell, eventClick, eventRendered, dataBinding, dataBound, popupOpen, dragStart, drag, dragStop, resizeStart, resizing, resizeStop, initialLoad, initialEnd, dataReady, contentReady, scroll, virtualScroll, scrollUiUpdate, uiUpdate, documentClick, cellMouseDown, WEEK_LENGTH, MS_PER_DAY, MS_PER_MINUTE, getElementHeightFromClass, getTranslateY, getWeekFirstDate, firstDateOfMonth, lastDateOfMonth, getWeekNumber, setTime, resetTime, getDateInMs, getDateCount, addDays, addMonths, addYears, getStartEndHours, getMaxDays, getDaysCount, getDateFromString, getScrollBarWidth, findIndexInData, getOuterHeight, Resize, DragAndDrop, HeaderRenderer, ViewHelper, ViewBase, Day, Week, WorkWeek, Month, Agenda, MonthAgenda, TimelineViews, TimelineMonth, Timezone, timezoneData, ICalendarExport, ICalendarImport, ExcelExport, Print, RecurrenceEditor, Gregorian, Islamic } from '@syncfusion/ej2-schedule';
 //# sourceMappingURL=ej2-angular-schedule.es5.js.map

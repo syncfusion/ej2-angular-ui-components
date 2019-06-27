@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableContextMenu', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'isReadOnly', 'locale', 'zoomFactor'];
+var inputs = ['acceptTab', 'currentUser', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'isReadOnly', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'useCtrlClickToFollowHyperlink', 'userColor', 'zoomFactor'];
 var outputs = ['contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'viewChange', 'zoomFactorChange'];
 var twoWays = [];
 /**
@@ -235,6 +235,20 @@ exports.DocumentEditorComponent = /** @class */ (function (_super) {
             }
         }
         catch (_1) { }
+        try {
+            var mod = _this.injector.get('DocumentEditorSpellChecker');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_2) { }
+        try {
+            var mod = _this.injector.get('DocumentEditorSpellCheckDialog');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_3) { }
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -337,6 +351,8 @@ var TablePropertiesDialogService = { provide: 'DocumentEditorTablePropertiesDial
 var BordersAndShadingDialogService = { provide: 'DocumentEditorBordersAndShadingDialog', useValue: ej2Documenteditor.BordersAndShadingDialog };
 var TableOptionsDialogService = { provide: 'DocumentEditorTableOptionsDialog', useValue: ej2Documenteditor.TableOptionsDialog };
 var CellOptionsDialogService = { provide: 'DocumentEditorCellOptionsDialog', useValue: ej2Documenteditor.CellOptionsDialog };
+var SpellCheckerService = { provide: 'DocumentEditorSpellChecker', useValue: ej2Documenteditor.SpellChecker };
+var SpellCheckDialogService = { provide: 'DocumentEditorSpellCheckDialog', useValue: ej2Documenteditor.SpellCheckDialog };
 /**
  * NgModule definition for the DocumentEditor component with providers.
  */
@@ -377,7 +393,9 @@ DocumentEditorAllModule.decorators = [
                     TablePropertiesDialogService,
                     BordersAndShadingDialogService,
                     TableOptionsDialogService,
-                    CellOptionsDialogService
+                    CellOptionsDialogService,
+                    SpellCheckerService,
+                    SpellCheckDialogService
                 ]
             },] },
 ];
@@ -399,8 +417,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableToolbar', 'locale', 'restrictEditing', 'serviceUrl', 'showPropertiesPane'];
-var outputs$1 = ['contentChange', 'created', 'destroyed', 'selectionChange'];
+var inputs$1 = ['enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane'];
+var outputs$1 = ['contentChange', 'created', 'destroyed', 'documentChange', 'selectionChange'];
 var twoWays$1 = [];
 /**
  * `ejs-documenteditor-container` represents the Angular Document Editor Container.
@@ -560,6 +578,8 @@ exports.TablePropertiesDialogService = TablePropertiesDialogService;
 exports.BordersAndShadingDialogService = BordersAndShadingDialogService;
 exports.TableOptionsDialogService = TableOptionsDialogService;
 exports.CellOptionsDialogService = CellOptionsDialogService;
+exports.SpellCheckerService = SpellCheckerService;
+exports.SpellCheckDialogService = SpellCheckDialogService;
 exports.DocumentEditorContainerModule = DocumentEditorContainerModule;
 exports.DocumentEditorContainerAllModule = DocumentEditorContainerAllModule;
 exports.ToolbarService = ToolbarService;
@@ -570,7 +590,10 @@ exports.ɵb = outputs;
 exports.Dictionary = ej2Documenteditor.Dictionary;
 exports.WUniqueFormat = ej2Documenteditor.WUniqueFormat;
 exports.WUniqueFormats = ej2Documenteditor.WUniqueFormats;
+exports.XmlHttpRequestHandler = ej2Documenteditor.XmlHttpRequestHandler;
 exports.DocumentEditor = ej2Documenteditor.DocumentEditor;
+exports.ServerActionSettings = ej2Documenteditor.ServerActionSettings;
+exports.ContainerServerActionSettings = ej2Documenteditor.ContainerServerActionSettings;
 exports.Print = ej2Documenteditor.Print;
 exports.ContextMenu = ej2Documenteditor.ContextMenu;
 exports.WSectionFormat = ej2Documenteditor.WSectionFormat;
@@ -610,11 +633,30 @@ exports.LineWidget = ej2Documenteditor.LineWidget;
 exports.ElementBox = ej2Documenteditor.ElementBox;
 exports.FieldElementBox = ej2Documenteditor.FieldElementBox;
 exports.TextElementBox = ej2Documenteditor.TextElementBox;
+exports.ErrorTextElementBox = ej2Documenteditor.ErrorTextElementBox;
 exports.FieldTextElementBox = ej2Documenteditor.FieldTextElementBox;
 exports.TabElementBox = ej2Documenteditor.TabElementBox;
 exports.BookmarkElementBox = ej2Documenteditor.BookmarkElementBox;
 exports.ImageElementBox = ej2Documenteditor.ImageElementBox;
 exports.ListTextElementBox = ej2Documenteditor.ListTextElementBox;
+exports.EditRangeEndElementBox = ej2Documenteditor.EditRangeEndElementBox;
+exports.EditRangeStartElementBox = ej2Documenteditor.EditRangeStartElementBox;
+exports.ChartElementBox = ej2Documenteditor.ChartElementBox;
+exports.ChartArea = ej2Documenteditor.ChartArea;
+exports.ChartCategory = ej2Documenteditor.ChartCategory;
+exports.ChartData = ej2Documenteditor.ChartData;
+exports.ChartLegend = ej2Documenteditor.ChartLegend;
+exports.ChartSeries = ej2Documenteditor.ChartSeries;
+exports.ChartErrorBar = ej2Documenteditor.ChartErrorBar;
+exports.ChartSeriesFormat = ej2Documenteditor.ChartSeriesFormat;
+exports.ChartDataLabels = ej2Documenteditor.ChartDataLabels;
+exports.ChartTrendLines = ej2Documenteditor.ChartTrendLines;
+exports.ChartTitleArea = ej2Documenteditor.ChartTitleArea;
+exports.ChartDataFormat = ej2Documenteditor.ChartDataFormat;
+exports.ChartFill = ej2Documenteditor.ChartFill;
+exports.ChartLayout = ej2Documenteditor.ChartLayout;
+exports.ChartCategoryAxis = ej2Documenteditor.ChartCategoryAxis;
+exports.ChartDataTable = ej2Documenteditor.ChartDataTable;
 exports.Page = ej2Documenteditor.Page;
 exports.WTableHolder = ej2Documenteditor.WTableHolder;
 exports.WColumn = ej2Documenteditor.WColumn;
@@ -648,6 +690,7 @@ exports.SelectedImageInfo = ej2Documenteditor.SelectedImageInfo;
 exports.TableResizer = ej2Documenteditor.TableResizer;
 exports.HelperMethods = ej2Documenteditor.HelperMethods;
 exports.Point = ej2Documenteditor.Point;
+exports.Base64 = ej2Documenteditor.Base64;
 exports.EditorHistory = ej2Documenteditor.EditorHistory;
 exports.BaseHistoryInfo = ej2Documenteditor.BaseHistoryInfo;
 exports.HistoryInfo = ej2Documenteditor.HistoryInfo;
@@ -678,6 +721,12 @@ exports.BordersAndShadingDialog = ej2Documenteditor.BordersAndShadingDialog;
 exports.TableOptionsDialog = ej2Documenteditor.TableOptionsDialog;
 exports.CellOptionsDialog = ej2Documenteditor.CellOptionsDialog;
 exports.StylesDialog = ej2Documenteditor.StylesDialog;
+exports.SpellCheckDialog = ej2Documenteditor.SpellCheckDialog;
+exports.SpellChecker = ej2Documenteditor.SpellChecker;
+exports.AddUserDialog = ej2Documenteditor.AddUserDialog;
+exports.EnforceProtectionDialog = ej2Documenteditor.EnforceProtectionDialog;
+exports.UnProtectDocumentDialog = ej2Documenteditor.UnProtectDocumentDialog;
+exports.RestrictEditing = ej2Documenteditor.RestrictEditing;
 exports.Toolbar = ej2Documenteditor.Toolbar;
 exports.DocumentEditorContainer = ej2Documenteditor.DocumentEditorContainer;
 

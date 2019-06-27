@@ -128,10 +128,19 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header {
+  border-bottom: 1px solid #e6e6e6;
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 14px;
   font-weight: 500;
   height: 28px;
-  padding: 0 12px;
+  padding: 4px 12px;
+}
+
+.e-dashboardlayout.e-control .e-panel .e-panel-header div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-header .e-header-content {
@@ -160,6 +169,8 @@
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single,
 .e-dashboardlayout.e-control .e-panel .e-resize.e-double {
   position: absolute;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-east, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-west, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-north, .e-dashboardlayout.e-control .e-panel .e-resize.e-single.e-south,
@@ -249,6 +260,11 @@
   padding: 0 12px;
 }
 
+.e-content-placeholder.e-dashboardlayout.e-placeholder-dashboardlayout {
+  height: 100%;
+  width: 100%;
+}
+
 .e-dashboardlayout.e-control {
   display: block;
   position: relative;
@@ -262,7 +278,7 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-header {
-  color: none;
+  color: #333;
 }
 
 .e-dashboardlayout.e-control .e-panel {
@@ -273,7 +289,7 @@
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-header {
-  color: none;
+  color: #333;
 }
 
 .e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-single {

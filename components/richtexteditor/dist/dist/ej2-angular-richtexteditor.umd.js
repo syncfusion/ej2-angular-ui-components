@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['backgroundColor', 'cssClass', 'editorMode', 'enableHtmlEncode', 'enablePersistence', 'enableRtl', 'enableTabKey', 'enabled', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
-var outputs = ['actionBegin', 'actionComplete', 'blur', 'change', 'created', 'destroyed', 'focus', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'valueChange'];
+var outputs = ['actionBegin', 'actionComplete', 'beforeDialogOpen', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
 var twoWays = ['value'];
 /**
  * `ejs-richtexteditor` represents the Angular richtexteditor Component.
@@ -353,8 +353,8 @@ exports.editLink = ej2Richtexteditor.editLink;
 exports.openLink = ej2Richtexteditor.openLink;
 exports.actionBegin = ej2Richtexteditor.actionBegin;
 exports.actionComplete = ej2Richtexteditor.actionComplete;
+exports.toolbarStatusUpdate = ej2Richtexteditor.toolbarStatusUpdate;
 exports.actionSuccess = ej2Richtexteditor.actionSuccess;
-exports.popupOpen = ej2Richtexteditor.popupOpen;
 exports.updateToolbarItem = ej2Richtexteditor.updateToolbarItem;
 exports.insertImage = ej2Richtexteditor.insertImage;
 exports.insertCompleted = ej2Richtexteditor.insertCompleted;
@@ -398,6 +398,13 @@ exports.tableToolbarAction = ej2Richtexteditor.tableToolbarAction;
 exports.checkUndo = ej2Richtexteditor.checkUndo;
 exports.readOnlyMode = ej2Richtexteditor.readOnlyMode;
 exports.pasteClean = ej2Richtexteditor.pasteClean;
+exports.beforeDialogOpen = ej2Richtexteditor.beforeDialogOpen;
+exports.dialogOpen = ej2Richtexteditor.dialogOpen;
+exports.dialogClose = ej2Richtexteditor.dialogClose;
+exports.beforeQuickToolbarOpen = ej2Richtexteditor.beforeQuickToolbarOpen;
+exports.quickToolbarOpen = ej2Richtexteditor.quickToolbarOpen;
+exports.quickToolbarClose = ej2Richtexteditor.quickToolbarClose;
+exports.popupHide = ej2Richtexteditor.popupHide;
 exports.ServiceLocator = ej2Richtexteditor.ServiceLocator;
 exports.RendererFactory = ej2Richtexteditor.RendererFactory;
 exports.EditorManager = ej2Richtexteditor.EditorManager;

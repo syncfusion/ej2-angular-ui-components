@@ -29,7 +29,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
 
 
     /** 
-     * To define column type
+     * To define column type.
      */
     public type: any;
     /** 
@@ -188,7 +188,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public width: any;
     /** 
      * Defines the column template that renders customized element in each cell of the column. 
-     * It accepts either [template string](../../../common/template-engine/) or HTML element ID.
+     * It accepts either template string or HTML element ID.
      * @default null
      */
     @ContentChild('template')

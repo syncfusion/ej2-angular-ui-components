@@ -22,6 +22,14 @@
   border: 2px solid #685708;
 }
 
+.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 8px 0 0;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 12px 0 0;
+}
+
 .e-bigger .e-dropdownbase,
 .e-dropdownbase.e-bigger {
   min-height: 45px;
@@ -104,6 +112,33 @@
 .e-dropdownbase.e-dd-group .e-list-item {
   padding-left: 20px;
   text-indent: 0;
+}
+
+.e-small .e-dropdownbase.e-dd-group .e-list-item {
+  text-indent: 0;
+}
+
+.e-small.e-bigger .e-dropdownbase.e-dd-group .e-list-item {
+  text-indent: 0;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-dropdownbase.e-dd-group .e-list-group-item {
+  text-indent: 0;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-dropdownbase.e-dd-group .e-list-group-item {
+  cursor: pointer;
+  font-weight: normal;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.e-rtl.e-multiselect-group .e-dropdownbase.e-dd-group .e-list-item {
+  padding-right: 20px;
 }
 
 .e-dropdownbase {
@@ -218,4 +253,81 @@
 
 .e-multi-column.e-ddl.e-popup.e-popup-open .e-text-left {
   text-align: left;
+}
+
+.e-small .e-dropdownbase .e-list-item,
+.e-dropdownbase.e-small .e-list-item {
+  color: #fff;
+  line-height: 26px;
+  min-height: 26px;
+  text-indent: 10px;
+}
+
+.e-small .e-dropdownbase .e-list-group-item,
+.e-small .e-dropdownbase .e-fixed-head,
+.e-dropdownbase.e-small .e-list-group-item,
+.e-dropdownbase.e-small .e-fixed-head {
+  line-height: 26px;
+  min-height: 26px;
+}
+
+.e-small .e-dropdownbase .e-list-item .e-list-icon,
+.e-dropdownbase.e-small .e-list-item .e-list-icon {
+  font-size: 14px;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-item,
+.e-dropdownbase.e-small.e-bigger .e-list-item {
+  color: #fff;
+  line-height: 40px;
+  min-height: 40px;
+  text-indent: 16px;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-group-item,
+.e-bigger.e-small .e-dropdownbase .e-fixed-head,
+.e-dropdownbase.e-small.e-bigger .e-list-group-item,
+.e-dropdownbase.e-small.e-bigger .e-fixed-head {
+  line-height: 40px;
+  min-height: 40px;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon,
+.e-dropdownbase.e-small.e-bigger .e-list-item .e-list-icon {
+  font-size: 18px;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-group-item,
+.e-bigger.e-small .e-dropdownbase .e-fixed-head,
+.e-dropdownbase.e-bigger.e-small .e-list-group-item,
+.e-dropdownbase.e-bigger.e-small .e-fixed-head {
+  font-size: 14px;
+}
+
+.e-ddl.e-popup.e-multiselect-group .e-list-group-item {
+  background-color: #000;
+  border-bottom: 2px;
+  border-color: none;
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  padding-right: 16px;
+  text-indent: 10px;
+}
+
+.e-ddl.e-popup.e-multiselect-group .e-list-group-item.e-item-focus {
+  background-color: #685708;
+}
+
+.e-ddl.e-popup.e-multiselect-group .e-list-group-item.e-active,
+.e-ddl.e-popup.e-multiselect-group .e-list-group-item.e-active.e-hover {
+  background-color: #ffd939;
+  border-color: #ffd939;
+  color: #000;
+}
+
+.e-ddl.e-popup.e-multiselect-group .e-list-group-item.e-hover {
+  background-color: #685708;
+  border-color: #fff;
+  color: #fff;
 }

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 /*! component's default definitions and variables */
+/*! component's theme wise override material-definitions and variables */
 /*! card layout */
 .e-bigger .e-card,
 .e-bigger.e-card {
@@ -343,7 +344,7 @@
 
 .e-card .e-card-header .e-card-header-caption .e-card-header-title {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 18px;
 }
 
@@ -508,7 +509,6 @@
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 21px;
 }
 
 /*! card theme */

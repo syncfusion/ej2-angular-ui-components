@@ -5,8 +5,8 @@ import { ListBox } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowDragAndDrop','cssClass','dataSource','enablePersistence','enableRtl','enabled','fields','groupTemplate','height','ignoreAccent','itemTemplate','locale','noRecordsTemplate','query','scope','selectionSettings','sortOrder','toolbarSettings','value','zIndex'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionComplete','actionFailure','beforeItemRender','change','created','dataBound','destroyed','drag','dragStart','drop','select','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','allowDragAndDrop','allowFiltering','cssClass','dataSource','enablePersistence','enableRtl','enabled','fields','groupTemplate','height','ignoreAccent','itemTemplate','locale','noRecordsTemplate','query','scope','selectionSettings','sortOrder','toolbarSettings','value','zIndex'];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionComplete','actionFailure','beforeItemRender','change','created','dataBound','destroyed','drag','dragStart','drop','filtering','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**

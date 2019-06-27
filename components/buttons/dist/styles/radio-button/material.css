@@ -174,6 +174,138 @@
   transition: transform ease 280ms, background-color ease 280ms;
 }
 
+.e-small .e-radio + label .e-label,
+.e-radio + label.e-small .e-label {
+  line-height: 14px;
+  padding-left: 24px;
+}
+
+.e-small .e-radio + label::before,
+.e-radio + label.e-small::before {
+  height: 14px;
+  width: 14px;
+}
+
+.e-small .e-radio + label::after,
+.e-radio + label.e-small::after {
+  height: 6px;
+  left: 4px;
+  top: 4px;
+  width: 6px;
+}
+
+.e-small .e-radio + label .e-ripple-container,
+.e-radio + label.e-small .e-ripple-container {
+  left: -10px;
+  top: -10px;
+}
+
+.e-small .e-radio + label.e-right .e-label, .e-small .e-radio + label.e-rtl .e-label,
+.e-radio + label.e-small.e-right .e-label,
+.e-radio + label.e-small.e-rtl .e-label {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+.e-small .e-radio + label.e-right::after, .e-small .e-radio + label.e-rtl::after,
+.e-radio + label.e-small.e-right::after,
+.e-radio + label.e-small.e-rtl::after {
+  left: auto;
+  right: 4px;
+}
+
+.e-small .e-radio + label.e-right .e-ripple-container, .e-small .e-radio + label.e-rtl .e-ripple-container,
+.e-radio + label.e-small.e-right .e-ripple-container,
+.e-radio + label.e-small.e-rtl .e-ripple-container {
+  left: auto;
+  right: -10px;
+}
+
+.e-small .e-radio + label.e-right.e-rtl .e-label,
+.e-radio + label.e-small.e-right.e-rtl .e-label {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+.e-small .e-radio + label.e-right.e-rtl::after,
+.e-radio + label.e-small.e-right.e-rtl::after {
+  left: 4px;
+  right: auto;
+}
+
+.e-small .e-radio + label.e-right.e-rtl .e-ripple-container,
+.e-radio + label.e-small.e-right.e-rtl .e-ripple-container {
+  left: -10px;
+  right: auto;
+}
+
+.e-bigger.e-small .e-radio + label .e-label,
+.e-radio + label.e-bigger.e-small .e-label {
+  line-height: 20px;
+  padding-left: 32px;
+}
+
+.e-bigger.e-small .e-radio + label::before,
+.e-radio + label.e-bigger.e-small::before {
+  height: 20px;
+  width: 20px;
+}
+
+.e-bigger.e-small .e-radio + label::after,
+.e-radio + label.e-bigger.e-small::after {
+  height: 8px;
+  left: 6px;
+  top: 6px;
+  width: 8px;
+}
+
+.e-bigger.e-small .e-radio + label .e-ripple-container,
+.e-radio + label.e-bigger.e-small .e-ripple-container {
+  height: 40px;
+  left: -10px;
+  top: -10px;
+  width: 40px;
+}
+
+.e-bigger.e-small .e-radio + label.e-right .e-label, .e-bigger.e-small .e-radio + label.e-rtl .e-label,
+.e-radio + label.e-bigger.e-small.e-right .e-label,
+.e-radio + label.e-bigger.e-small.e-rtl .e-label {
+  padding-left: 0;
+  padding-right: 32px;
+}
+
+.e-bigger.e-small .e-radio + label.e-right::after, .e-bigger.e-small .e-radio + label.e-rtl::after,
+.e-radio + label.e-bigger.e-small.e-right::after,
+.e-radio + label.e-bigger.e-small.e-rtl::after {
+  left: auto;
+  right: 6px;
+}
+
+.e-bigger.e-small .e-radio + label.e-right .e-ripple-container, .e-bigger.e-small .e-radio + label.e-rtl .e-ripple-container,
+.e-radio + label.e-bigger.e-small.e-right .e-ripple-container,
+.e-radio + label.e-bigger.e-small.e-rtl .e-ripple-container {
+  left: auto;
+  right: -10px;
+}
+
+.e-bigger.e-small .e-radio + label.e-right.e-rtl .e-label,
+.e-radio + label.e-bigger.e-small.e-right.e-rtl .e-label {
+  padding-left: 32px;
+  padding-right: 0;
+}
+
+.e-bigger.e-small .e-radio + label.e-right.e-rtl::after,
+.e-radio + label.e-bigger.e-small.e-right.e-rtl::after {
+  left: 6px;
+  right: auto;
+}
+
+.e-bigger.e-small .e-radio + label.e-right.e-rtl .e-ripple-container,
+.e-radio + label.e-bigger.e-small.e-right.e-rtl .e-ripple-container {
+  left: -10px;
+  right: auto;
+}
+
 .e-bigger .e-radio + label .e-label,
 .e-radio + label.e-bigger .e-label {
   font-size: 14px;

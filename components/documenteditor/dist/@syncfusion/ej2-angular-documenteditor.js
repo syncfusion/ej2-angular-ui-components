@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ComponentBase, ComponentMixins, setValue } from '@syncfusion/ej2-angular-base';
-import { BookmarkDialog, BordersAndShadingDialog, BulletsAndNumberingDialog, CellOptionsDialog, ContextMenu, DocumentEditor, DocumentEditorContainer, Editor, EditorHistory, FontDialog, HyperlinkDialog, ImageResizer, ListDialog, OptionsPane, PageSetupDialog, ParagraphDialog, Print, Search, Selection, SfdtExport, StyleDialog, StylesDialog, TableDialog, TableOfContentsDialog, TableOptionsDialog, TablePropertiesDialog, TextExport, Toolbar, WordExport } from '@syncfusion/ej2-documenteditor';
+import { BookmarkDialog, BordersAndShadingDialog, BulletsAndNumberingDialog, CellOptionsDialog, ContextMenu, DocumentEditor, DocumentEditorContainer, Editor, EditorHistory, FontDialog, HyperlinkDialog, ImageResizer, ListDialog, OptionsPane, PageSetupDialog, ParagraphDialog, Print, Search, Selection, SfdtExport, SpellCheckDialog, SpellChecker, StyleDialog, StylesDialog, TableDialog, TableOfContentsDialog, TableOptionsDialog, TablePropertiesDialog, TextExport, Toolbar, WordExport } from '@syncfusion/ej2-documenteditor';
 import { CommonModule } from '@angular/common';
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12,7 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableContextMenu', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'isReadOnly', 'locale', 'zoomFactor'];
+const inputs = ['acceptTab', 'currentUser', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'isReadOnly', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'useCtrlClickToFollowHyperlink', 'userColor', 'zoomFactor'];
 const outputs = ['contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'viewChange', 'zoomFactorChange'];
 const twoWays = [];
 /**
@@ -218,6 +218,20 @@ let DocumentEditorComponent = class DocumentEditorComponent extends DocumentEdit
             }
         }
         catch (_1) { }
+        try {
+            let mod = this.injector.get('DocumentEditorSpellChecker');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_2) { }
+        try {
+            let mod = this.injector.get('DocumentEditorSpellCheckDialog');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_3) { }
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
@@ -317,6 +331,8 @@ const TablePropertiesDialogService = { provide: 'DocumentEditorTablePropertiesDi
 const BordersAndShadingDialogService = { provide: 'DocumentEditorBordersAndShadingDialog', useValue: BordersAndShadingDialog };
 const TableOptionsDialogService = { provide: 'DocumentEditorTableOptionsDialog', useValue: TableOptionsDialog };
 const CellOptionsDialogService = { provide: 'DocumentEditorCellOptionsDialog', useValue: CellOptionsDialog };
+const SpellCheckerService = { provide: 'DocumentEditorSpellChecker', useValue: SpellChecker };
+const SpellCheckDialogService = { provide: 'DocumentEditorSpellCheckDialog', useValue: SpellCheckDialog };
 /**
  * NgModule definition for the DocumentEditor component with providers.
  */
@@ -354,7 +370,9 @@ DocumentEditorAllModule.decorators = [
                     TablePropertiesDialogService,
                     BordersAndShadingDialogService,
                     TableOptionsDialogService,
-                    CellOptionsDialogService
+                    CellOptionsDialogService,
+                    SpellCheckerService,
+                    SpellCheckDialogService
                 ]
             },] },
 ];
@@ -372,8 +390,8 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$1 = ['enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableToolbar', 'locale', 'restrictEditing', 'serviceUrl', 'showPropertiesPane'];
-const outputs$1 = ['contentChange', 'created', 'destroyed', 'selectionChange'];
+const inputs$1 = ['enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane'];
+const outputs$1 = ['contentChange', 'created', 'destroyed', 'documentChange', 'selectionChange'];
 const twoWays$1 = [];
 /**
  * `ejs-documenteditor-container` represents the Angular Document Editor Container.
@@ -502,6 +520,6 @@ DocumentEditorContainerAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { DocumentEditorComponent, DocumentEditorModule, DocumentEditorAllModule, PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService, SearchService, EditorService, EditorHistoryService, OptionsPaneService, ContextMenuService, ImageResizerService, HyperlinkDialogService, TableDialogService, BookmarkDialogService, TableOfContentsDialogService, PageSetupDialogService, ParagraphDialogService, ListDialogService, StyleDialogService, StylesDialogService, BulletsAndNumberingDialogService, FontDialogService, TablePropertiesDialogService, BordersAndShadingDialogService, TableOptionsDialogService, CellOptionsDialogService, DocumentEditorContainerComponent, DocumentEditorContainerModule, DocumentEditorContainerAllModule, ToolbarService, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb };
-export { Dictionary, WUniqueFormat, WUniqueFormats, DocumentEditor, Print, ContextMenu, WSectionFormat, WStyle, WParagraphStyle, WCharacterStyle, WStyles, WCharacterFormat, WListFormat, WTabStop, WParagraphFormat, WTableFormat, WRowFormat, WCellFormat, WBorder, WBorders, WShading, WList, WAbstractList, WListLevel, WLevelOverride, LayoutViewer, PageLayoutViewer, Layout, Rect, Margin, Widget, BlockContainer, BodyWidget, HeaderFooterWidget, BlockWidget, ParagraphWidget, TableWidget, TableRowWidget, TableCellWidget, LineWidget, ElementBox, FieldElementBox, TextElementBox, FieldTextElementBox, TabElementBox, BookmarkElementBox, ImageElementBox, ListTextElementBox, Page, WTableHolder, WColumn, ColumnSizeInfo, Renderer, SfdtReader, TextHelper, Zoom, Selection, SelectionCharacterFormat, SelectionParagraphFormat, SelectionSectionFormat, SelectionTableFormat, SelectionCellFormat, SelectionRowFormat, SelectionImageFormat, TextPosition, SelectionWidgetInfo, Hyperlink, ImageFormat, Search, OptionsPane, TextSearch, SearchWidgetInfo, TextSearchResult, TextSearchResults, Editor, ImageResizer, ImageResizingPoints, SelectedImageInfo, TableResizer, HelperMethods, Point, EditorHistory, BaseHistoryInfo, HistoryInfo, ModifiedLevel, ModifiedParagraphFormat, RowHistoryFormat, TableHistoryInfo, TableFormatHistoryInfo, RowFormatHistoryInfo, CellFormatHistoryInfo, CellHistoryFormat, WordExport, TextExport, SfdtExport, HtmlExport, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, StylesDialog, Toolbar, DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
+export { DocumentEditorComponent, DocumentEditorModule, DocumentEditorAllModule, PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService, SearchService, EditorService, EditorHistoryService, OptionsPaneService, ContextMenuService, ImageResizerService, HyperlinkDialogService, TableDialogService, BookmarkDialogService, TableOfContentsDialogService, PageSetupDialogService, ParagraphDialogService, ListDialogService, StyleDialogService, StylesDialogService, BulletsAndNumberingDialogService, FontDialogService, TablePropertiesDialogService, BordersAndShadingDialogService, TableOptionsDialogService, CellOptionsDialogService, SpellCheckerService, SpellCheckDialogService, DocumentEditorContainerComponent, DocumentEditorContainerModule, DocumentEditorContainerAllModule, ToolbarService, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb };
+export { Dictionary, WUniqueFormat, WUniqueFormats, XmlHttpRequestHandler, DocumentEditor, ServerActionSettings, ContainerServerActionSettings, Print, ContextMenu, WSectionFormat, WStyle, WParagraphStyle, WCharacterStyle, WStyles, WCharacterFormat, WListFormat, WTabStop, WParagraphFormat, WTableFormat, WRowFormat, WCellFormat, WBorder, WBorders, WShading, WList, WAbstractList, WListLevel, WLevelOverride, LayoutViewer, PageLayoutViewer, Layout, Rect, Margin, Widget, BlockContainer, BodyWidget, HeaderFooterWidget, BlockWidget, ParagraphWidget, TableWidget, TableRowWidget, TableCellWidget, LineWidget, ElementBox, FieldElementBox, TextElementBox, ErrorTextElementBox, FieldTextElementBox, TabElementBox, BookmarkElementBox, ImageElementBox, ListTextElementBox, EditRangeEndElementBox, EditRangeStartElementBox, ChartElementBox, ChartArea, ChartCategory, ChartData, ChartLegend, ChartSeries, ChartErrorBar, ChartSeriesFormat, ChartDataLabels, ChartTrendLines, ChartTitleArea, ChartDataFormat, ChartFill, ChartLayout, ChartCategoryAxis, ChartDataTable, Page, WTableHolder, WColumn, ColumnSizeInfo, Renderer, SfdtReader, TextHelper, Zoom, Selection, SelectionCharacterFormat, SelectionParagraphFormat, SelectionSectionFormat, SelectionTableFormat, SelectionCellFormat, SelectionRowFormat, SelectionImageFormat, TextPosition, SelectionWidgetInfo, Hyperlink, ImageFormat, Search, OptionsPane, TextSearch, SearchWidgetInfo, TextSearchResult, TextSearchResults, Editor, ImageResizer, ImageResizingPoints, SelectedImageInfo, TableResizer, HelperMethods, Point, Base64, EditorHistory, BaseHistoryInfo, HistoryInfo, ModifiedLevel, ModifiedParagraphFormat, RowHistoryFormat, TableHistoryInfo, TableFormatHistoryInfo, RowFormatHistoryInfo, CellFormatHistoryInfo, CellHistoryFormat, WordExport, TextExport, SfdtExport, HtmlExport, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, StylesDialog, SpellCheckDialog, SpellChecker, AddUserDialog, EnforceProtectionDialog, UnProtectDocumentDialog, RestrictEditing, Toolbar, DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 //# sourceMappingURL=ej2-angular-documenteditor.js.map

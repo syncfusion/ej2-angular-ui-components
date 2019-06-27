@@ -60,6 +60,7 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public colorValuePath: any;
     /** 
      * Specifies the data source for bubble.
+     * @isdatamanager false
      * @default []
      */
     public dataSource: any;

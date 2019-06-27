@@ -771,7 +771,7 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul {
-  margin-left: -35px;
+  margin-left: -25px;
   overflow: hidden;
 }
 
@@ -940,7 +940,7 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul,
 .e-pivotfieldlist-wrapper .e-value-field-settings.e-rtl .e-member-editor-wrapper ul {
   margin-left: 0;
-  margin-right: -35px;
+  margin-right: -25px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-rtl .e-footer-content .e-clear-filter-button,
@@ -1096,6 +1096,20 @@
 .e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
 .e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
   height: 133px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul {
+  margin-left: -30px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul {
+  margin-right: -30px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-header-content .e-clear-filter-button.e-small,
@@ -1486,7 +1500,7 @@
 
 .e-pivotfieldlist-wrapper {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
-  font-size: 12px;
+  font-size: 14px;
   max-width: 700px;
   min-width: 300px;
 }
@@ -1785,6 +1799,7 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button {
+  background-color: #f8f9fa;
   border-bottom: 1px solid #dee2e6;
   border-left: 0;
   border-radius: 0;
@@ -1800,7 +1815,6 @@
   padding: 9px 8px;
   text-transform: none;
   width: 100%;
-  background-color: #f8f9fa;
   color: #212529;
 }
 
@@ -1819,6 +1833,13 @@
   background-color: #f2f4f6;
 }
 
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:hover .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:hover .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:hover .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:hover .e-content {
+  background-color: transparent;
+}
+
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus, .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active,
@@ -1828,6 +1849,16 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active {
   background-color: #eceff2;
   color: #333;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-content, .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-content,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-content {
+  background-color: transparent;
 }
 
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-sort,
@@ -1868,6 +1899,7 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-content,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-content,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-content {
+  background-color: transparent;
   -ms-flex: auto;
       flex: auto;
   font-size: 14px;
@@ -2039,7 +2071,7 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-draggable-prompt {
   bottom: 32%;
   color: #6c757d;
-  font-size: 12px;
+  font-size: 14px;
   height: 25px;
   pointer-events: none;
   position: absolute;
@@ -3020,6 +3052,25 @@
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-drag {
   font-size: 16px;
   width: 24px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-draggable-prompt,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-draggable-prompt,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-draggable-prompt {
+  font-size: 16px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-calculated-field,

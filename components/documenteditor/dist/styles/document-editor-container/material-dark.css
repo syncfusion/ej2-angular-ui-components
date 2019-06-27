@@ -19,6 +19,18 @@
   content: '\eb3a';
 }
 
+.e-de-selected-spellcheck-item::before {
+  content: '\e935';
+  font-family: 'e-icons';
+  font-size: 10px;
+}
+
+.e-de-selected-underline-item::before {
+  content: '\e935';
+  font-family: 'e-icons';
+  font-size: 10px;
+}
+
 .e-de-ctnr-italic::before {
   content: '\eb3b';
 }
@@ -370,8 +382,22 @@
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 36px);
+  height: calc(100% - 113px);
   width: 100%;
+}
+
+.e-de-statusbar-seperator {
+  border: 1px solid #626161;
+  height: 16px;
+  margin-left: 15.5px;
+  margin-top: 10px;
+}
+
+.e-de-statusbar-spellcheck {
+  border-radius: 2px;
+  height: 34px;
+  margin-left: 7.5px;
+  width: 91px;
 }
 
 .e-de-ctn {
@@ -380,6 +406,13 @@
   height: calc(100%);
   position: relative;
   width: 100%;
+}
+
+.e-bigger .e-de-statusbar-spellcheck {
+  border-radius: 2px;
+  height: 34px;
+  margin-left: 7.5px;
+  width: 111px;
 }
 
 .e-de-ctnr-toolbar {
@@ -938,15 +971,43 @@
   display: inline-flex;
   font-size: 13px;
   height: 100%;
+  width: 100px;
+}
+
+.e-de-ctnr-pg-no-spellout {
+  color: #fff;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  height: 100%;
   width: calc(100% - 75px);
 }
 
-.e-de-statusbar-zoom {
+.e-bigger .e-de-ctnr-pg-no-spellout {
+  color: #fff;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  height: 100%;
+  width: calc(100% - 90px);
+}
+
+.e-de-statusbar-zoom-spell {
   background-color: #303030;
   border: 0;
   color: #fff;
   float: right;
   height: 34px;
+  margin-left: calc(100% - 292px);
+}
+
+.e-bigger .e-de-statusbar-zoom-spell {
+  background-color: #303030;
+  border: 0;
+  color: #fff;
+  float: right;
+  height: 34px;
+  margin-left: calc(100% - 325px);
 }
 
 .e-de-btn-cancel {
@@ -1160,7 +1221,7 @@
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 36px);
+  height: calc(100% - 118px);
   width: 100%;
 }
 
@@ -1513,15 +1574,6 @@
   display: inline-flex;
   height: 36px;
   width: 100%;
-}
-
-.e-bigger .e-de-ctnr-pg-no {
-  color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 13px;
-  height: 100%;
-  width: calc(100% - 90px);
 }
 
 .e-bigger .e-de-statusbar-zoom {

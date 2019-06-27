@@ -615,6 +615,17 @@ button .e-badge.e-badge-circle.e-badge-ghost {
   position: absolute;
 }
 
+.e-content-placeholder.e-toast.e-placeholder-toast {
+  background-size: 400px 100px;
+  min-height: 100px;
+}
+
+.e-bigger .e-content-placeholder.e-toast.e-placeholder-toast,
+.e-bigger.e-content-placeholder.e-toast.e-placeholder-toast {
+  background-size: 400px 100px;
+  min-height: 100px;
+}
+
 .e-toast-container .e-toast {
   background-color: #303030;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);

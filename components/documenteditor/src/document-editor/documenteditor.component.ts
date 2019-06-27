@@ -4,7 +4,7 @@ import { DocumentEditor } from '@syncfusion/ej2-documenteditor';
 
 
 
-export const inputs: string[] = ['enableBookmarkDialog','enableBordersAndShadingDialog','enableContextMenu','enableEditor','enableEditorHistory','enableFontDialog','enableHyperlinkDialog','enableImageResizer','enableListDialog','enableOptionsPane','enablePageSetupDialog','enableParagraphDialog','enablePersistence','enablePrint','enableRtl','enableSearch','enableSelection','enableSfdtExport','enableStyleDialog','enableTableDialog','enableTableOfContentsDialog','enableTableOptionsDialog','enableTablePropertiesDialog','enableTextExport','enableWordExport','isReadOnly','locale','zoomFactor'];
+export const inputs: string[] = ['acceptTab','currentUser','documentName','enableBookmarkDialog','enableBordersAndShadingDialog','enableContextMenu','enableCursorOnReadOnly','enableEditor','enableEditorHistory','enableFontDialog','enableHyperlinkDialog','enableImageResizer','enableListDialog','enableLocalPaste','enableOptionsPane','enablePageSetupDialog','enableParagraphDialog','enablePersistence','enablePrint','enableRtl','enableSearch','enableSelection','enableSfdtExport','enableSpellCheck','enableStyleDialog','enableTableDialog','enableTableOfContentsDialog','enableTableOptionsDialog','enableTablePropertiesDialog','enableTextExport','enableWordExport','isReadOnly','locale','pageGap','pageOutline','serverActionSettings','serviceUrl','useCtrlClickToFollowHyperlink','userColor','zoomFactor'];
 export const outputs: string[] = ['contentChange','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','keyDown','requestNavigate','searchResultsChange','selectionChange','viewChange','zoomFactorChange'];
 export const twoWays: string[] = [];
 
@@ -186,6 +186,18 @@ export class DocumentEditorComponent extends DocumentEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('DocumentEditorCellOptionsDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorSpellChecker');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorSpellCheckDialog');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['allowSelection', 'cellSettings', 'dataSource', 'enablePersistence', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'paletteSettings', 'renderingMode', 'showTooltip', 'theme', 'titleSettings', 'tooltipSettings', 'width', 'xAxis', 'yAxis'];
-var outputs = ['cellClick', 'cellRender', 'cellSelected', 'created', 'load', 'loaded', 'resized', 'tooltipRender'];
+var outputs = ['cellClick', 'cellRender', 'cellSelected', 'created', 'legendRender', 'load', 'loaded', 'resized', 'tooltipRender'];
 var twoWays = [''];
 /**
  * `ejs-heatmap` represents the Angular HeatMap Component.

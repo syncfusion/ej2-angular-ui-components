@@ -189,6 +189,12 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('SchedulePrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

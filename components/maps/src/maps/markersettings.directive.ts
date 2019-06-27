@@ -49,6 +49,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public dashArray: any;
     /** 
      * To configure the dataSource of the marker.
+     * @isdatamanager false
      * @default []
      */
     public dataSource: any;

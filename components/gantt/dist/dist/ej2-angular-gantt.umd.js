@@ -437,8 +437,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['addDialogFields', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowUnscheduledTasks', 'autoFocusTasks', 'baselineColor', 'collapseAllParentTasks', 'columns', 'connectorLineBackground', 'connectorLineWidth', 'dataSource', 'dateFormat', 'dayWorkingTime', 'durationUnit', 'editDialogFields', 'editSettings', 'enablePersistence', 'enablePredecessorValidation', 'enableRtl', 'eventMarkers', 'filterSettings', 'gridLines', 'height', 'highlightWeekends', 'holidays', 'includeWeekend', 'labelSettings', 'locale', 'milestoneTemplate', 'parentTaskbarTemplate', 'projectEndDate', 'projectStartDate', 'query', 'renderBaseline', 'resourceIDMapping', 'resourceNameMapping', 'resources', 'rowHeight', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'showInlineNotes', 'sortSettings', 'splitterSettings', 'taskFields', 'taskbarHeight', 'taskbarTemplate', 'timelineSettings', 'toolbar', 'tooltipSettings', 'treeColumnIndex', 'width', 'workWeek'];
-var outputs$6 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeTooltipRender', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSelected', 'cellSelecting', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'dataBound', 'endEdit', 'expanded', 'expanding', 'headerCellInfo', 'load', 'queryCellInfo', 'queryTaskbarInfo', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'splitterResizeStart', 'splitterResized', 'splitterResizing', 'taskbarEdited', 'taskbarEditing', 'toolbarClick', 'dataSourceChange'];
+var inputs = ['addDialogFields', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowUnscheduledTasks', 'autoFocusTasks', 'baselineColor', 'collapseAllParentTasks', 'columns', 'connectorLineBackground', 'connectorLineWidth', 'contextMenuItems', 'dataSource', 'dateFormat', 'dayWorkingTime', 'durationUnit', 'editDialogFields', 'editSettings', 'enableContextMenu', 'enablePersistence', 'enablePredecessorValidation', 'enableRtl', 'eventMarkers', 'filterSettings', 'gridLines', 'height', 'highlightWeekends', 'holidays', 'includeWeekend', 'labelSettings', 'locale', 'milestoneTemplate', 'parentTaskbarTemplate', 'projectEndDate', 'projectStartDate', 'query', 'renderBaseline', 'resourceIDMapping', 'resourceNameMapping', 'resources', 'rowHeight', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'showInlineNotes', 'sortSettings', 'splitterSettings', 'taskFields', 'taskbarHeight', 'taskbarTemplate', 'timelineSettings', 'toolbar', 'tooltipSettings', 'treeColumnIndex', 'width', 'workWeek'];
+var outputs$6 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeTooltipRender', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSelected', 'cellSelecting', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'dataBound', 'endEdit', 'expanded', 'expanding', 'headerCellInfo', 'load', 'queryCellInfo', 'queryTaskbarInfo', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'splitterResizeStart', 'splitterResized', 'splitterResizing', 'taskbarEdited', 'taskbarEditing', 'toolbarClick', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * `ejs-gantt` represents the Angular Gantt Component.
@@ -519,6 +519,13 @@ exports.GanttComponent = /** @class */ (function (_super) {
             }
         }
         catch (_h) { }
+        try {
+            var mod = _this.injector.get('GanttContextMenu');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_j) { }
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -686,6 +693,7 @@ var ResizeService = { provide: 'GanttResize', useValue: ej2Gantt.Resize };
 var EditService = { provide: 'GanttEdit', useValue: ej2Gantt.Edit };
 var DayMarkersService = { provide: 'GanttDayMarkers', useValue: ej2Gantt.DayMarkers };
 var ToolbarService = { provide: 'GanttToolbar', useValue: ej2Gantt.Toolbar };
+var ContextMenuService = { provide: 'GanttContextMenu', useValue: ej2Gantt.ContextMenu };
 /**
  * NgModule definition for the Gantt component with providers.
  */
@@ -708,7 +716,8 @@ GanttAllModule.decorators = [
                     ResizeService,
                     EditService,
                     DayMarkersService,
-                    ToolbarService
+                    ToolbarService,
+                    ContextMenuService
                 ]
             },] },
 ];
@@ -739,6 +748,7 @@ exports.ResizeService = ResizeService;
 exports.EditService = EditService;
 exports.DayMarkersService = DayMarkersService;
 exports.ToolbarService = ToolbarService;
+exports.ContextMenuService = ContextMenuService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$6;
 exports.Gantt = ej2Gantt.Gantt;
@@ -751,6 +761,7 @@ exports.formatString = ej2Gantt.formatString;
 exports.getIndex = ej2Gantt.getIndex;
 exports.DurationUnits = ej2Gantt.DurationUnits;
 exports.EditType = ej2Gantt.EditType;
+exports.TemplateName = ej2Gantt.TemplateName;
 exports.load = ej2Gantt.load;
 exports.rowDataBound = ej2Gantt.rowDataBound;
 exports.queryCellInfo = ej2Gantt.queryCellInfo;
@@ -765,6 +776,7 @@ exports.Dependency = ej2Gantt.Dependency;
 exports.Selection = ej2Gantt.Selection;
 exports.Toolbar = ej2Gantt.Toolbar;
 exports.DayMarkers = ej2Gantt.DayMarkers;
+exports.ContextMenu = ej2Gantt.ContextMenu;
 exports.Column = ej2Gantt.Column;
 exports.DayWorkingTime = ej2Gantt.DayWorkingTime;
 exports.AddDialogFieldSettings = ej2Gantt.AddDialogFieldSettings;

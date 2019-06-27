@@ -1942,3 +1942,7 @@
 .e-bigger.e-pivotview.e-rtl .e-stackedheadercelldiv.e-cellvalue {
   padding-right: 13px !important;
 }
+
+.e-content-placeholder.e-pivotview.e-placeholder-pivotview {
+  background-size: 100% 200px;
+}

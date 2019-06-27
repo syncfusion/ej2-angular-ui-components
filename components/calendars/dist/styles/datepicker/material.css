@@ -52,6 +52,18 @@
   border-radius: 50%;
 }
 
+.e-small .e-input-group-icon.e-date-icon,
+.e-control-wrapper.e-small .e-input-group-icon.e-date-icon,
+.e-small .e-control-wrapper .e-input-group-icon.e-date-icon {
+  font-size: 14px;
+}
+
+.e-small.e-bigger .e-input-group-icon.e-date-icon,
+.e-control-wrapper.e-small.e-bigger .e-input-group-icon.e-date-icon,
+.e-small.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
+  font-size: 18px;
+}
+
 .e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
 .e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
   display: -ms-flexbox;
@@ -135,6 +147,17 @@
   left: 0 !important;
 }
 
+.e-content-placeholder.e-datepicker.e-placeholder-datepicker {
+  background-size: 250px 33px;
+  min-height: 33px;
+}
+
+.e-bigger .e-content-placeholder.e-datepicker.e-placeholder-datepicker,
+.e-bigger.e-content-placeholder.e-datepicker.e-placeholder-datepicker {
+  background-size: 250px 40px;
+  min-height: 40px;
+}
+
 @media screen and (orientation: landscape) and (max-device-height: 360px) {
   .e-datepicker .e-calendar .e-month table tbody {
     display: inline-block;
@@ -143,12 +166,14 @@
   }
 }
 
-.e-datepicker.e-popup-wrapper {
+.e-datepicker.e-popup-wrapper,
+.e-bigger.e-small .e-datepicker.e-popup-wrapper {
   border: none;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-.e-datepicker .e-calendar {
+.e-datepicker .e-calendar,
+.e-bigger.e-small .e-datepicker .e-calendar {
   background-color: #fff;
   border: none;
 }

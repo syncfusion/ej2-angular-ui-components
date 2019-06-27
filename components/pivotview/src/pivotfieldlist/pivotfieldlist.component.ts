@@ -4,9 +4,9 @@ import { PivotFieldList } from '@syncfusion/ej2-pivotview';
 
 
 
-export const inputs: string[] = ['allowCalculatedField','allowDeferLayoutUpdate','cssClass','dataSource','enablePersistence','enableRtl','locale','maxNodeLimitInMemberEditor','renderMode','showValuesButton','target'];
+export const inputs: string[] = ['allowCalculatedField','allowDeferLayoutUpdate','cssClass','dataSourceSettings','enablePersistence','enableRtl','locale','maxNodeLimitInMemberEditor','renderMode','showValuesButton','target'];
 export const outputs: string[] = ['aggregateCellInfo','created','dataBound','destroyed','enginePopulated','enginePopulating','load','onFieldDropped'];
-export const twoWays: string[] = [''];
+export const twoWays: string[] = [];
 
 /**
  * `ej-pivotfieldlist` represents the Angular PivotFieldList Component.

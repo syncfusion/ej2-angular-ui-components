@@ -303,8 +303,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowTextWrap', 'autoCheckHierarchy', 'childMapping', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'dataSource', 'editSettings', 'enableAltRow', 'enableCollapseAll', 'enableHover', 'enablePersistence', 'enableRtl', 'expandStateMapping', 'filterSettings', 'gridLines', 'hasChildMapping', 'height', 'idMapping', 'locale', 'pageSettings', 'parentIdMapping', 'printMode', 'query', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'treeColumnIndex', 'width'];
-var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeDataBound', 'beforeExcelExport', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSelected', 'cellSelecting', 'checkboxChange', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'expanded', 'expanding', 'headerCellInfo', 'load', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
+var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowTextWrap', 'autoCheckHierarchy', 'childMapping', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'dataSource', 'detailTemplate', 'editSettings', 'enableAltRow', 'enableCollapseAll', 'enableHover', 'enablePersistence', 'enableRtl', 'enableVirtualization', 'expandStateMapping', 'filterSettings', 'gridLines', 'hasChildMapping', 'height', 'idMapping', 'locale', 'pageSettings', 'parentIdMapping', 'printMode', 'query', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'treeColumnIndex', 'width'];
+var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeDataBound', 'beforeExcelExport', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSave', 'cellSelected', 'cellSelecting', 'checkboxChange', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'detailDataBound', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'expanded', 'expanding', 'headerCellInfo', 'load', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * `ejs-treegrid` represents the Angular TreeTreeGrid Component.
@@ -427,6 +427,20 @@ exports.TreeGridComponent = /** @class */ (function (_super) {
             }
         }
         catch (_p) { }
+        try {
+            var mod = _this.injector.get('TreeGridVirtualScroll');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_q) { }
+        try {
+            var mod = _this.injector.get('TreeGridDetailRow');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_r) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -478,8 +492,9 @@ exports.TreeGridComponent.ctorParameters = function () { return [
 ]; };
 exports.TreeGridComponent.propDecorators = {
     'toolbarTemplate': [{ type: core.ContentChild, args: ['toolbarTemplate',] },],
-    'rowTemplate': [{ type: core.ContentChild, args: ['rowTemplate',] },],
     'pagerTemplate': [{ type: core.ContentChild, args: ['pagerTemplate',] },],
+    'rowTemplate': [{ type: core.ContentChild, args: ['rowTemplate',] },],
+    'detailTemplate': [{ type: core.ContentChild, args: ['detailTemplate',] },],
     'editSettings_template': [{ type: core.ContentChild, args: ['editSettingsTemplate',] },],
 };
 __decorate$2([
@@ -489,11 +504,15 @@ __decorate$2([
 __decorate$2([
     ej2AngularBase.Template(),
     __metadata$2("design:type", Object)
+], exports.TreeGridComponent.prototype, "pagerTemplate", void 0);
+__decorate$2([
+    ej2AngularBase.Template(),
+    __metadata$2("design:type", Object)
 ], exports.TreeGridComponent.prototype, "rowTemplate", void 0);
 __decorate$2([
     ej2AngularBase.Template(),
     __metadata$2("design:type", Object)
-], exports.TreeGridComponent.prototype, "pagerTemplate", void 0);
+], exports.TreeGridComponent.prototype, "detailTemplate", void 0);
 __decorate$2([
     ej2AngularBase.Template(),
     __metadata$2("design:type", Object)
@@ -554,6 +573,8 @@ var CommandColumnService = { provide: 'TreeGridCommandColumn', useValue: ej2Tree
 var ContextMenuService = { provide: 'TreeGridContextMenu', useValue: ej2Treegrid.ContextMenu };
 var EditService = { provide: 'TreeGridEdit', useValue: ej2Treegrid.Edit };
 var SelectionService = { provide: 'TreeGridSelection', useValue: ej2Treegrid.Selection };
+var VirtualScrollService = { provide: 'TreeGridVirtualScroll', useValue: ej2Treegrid.VirtualScroll };
+var DetailRowService = { provide: 'TreeGridDetailRow', useValue: ej2Treegrid.DetailRow };
 /**
  * NgModule definition for the TreeGrid component with providers.
  */
@@ -582,7 +603,9 @@ TreeGridAllModule.decorators = [
                     CommandColumnService,
                     ContextMenuService,
                     EditService,
-                    SelectionService
+                    SelectionService,
+                    VirtualScrollService,
+                    DetailRowService
                 ]
             },] },
 ];
@@ -613,6 +636,8 @@ exports.CommandColumnService = CommandColumnService;
 exports.ContextMenuService = ContextMenuService;
 exports.EditService = EditService;
 exports.SelectionService = SelectionService;
+exports.VirtualScrollService = VirtualScrollService;
+exports.DetailRowService = DetailRowService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$3;
 exports.TreeGrid = ej2Treegrid.TreeGrid;
@@ -658,9 +683,14 @@ exports.batchSave = ej2Treegrid.batchSave;
 exports.keyPressed = ej2Treegrid.keyPressed;
 exports.updateData = ej2Treegrid.updateData;
 exports.doubleTap = ej2Treegrid.doubleTap;
+exports.virtualColumnIndex = ej2Treegrid.virtualColumnIndex;
+exports.virtualActionArgs = ej2Treegrid.virtualActionArgs;
+exports.dataListener = ej2Treegrid.dataListener;
+exports.indexModifier = ej2Treegrid.indexModifier;
 exports.beforeStartEdit = ej2Treegrid.beforeStartEdit;
 exports.beforeBatchCancel = ej2Treegrid.beforeBatchCancel;
 exports.batchEditFormRendered = ej2Treegrid.batchEditFormRendered;
+exports.detailDataBound = ej2Treegrid.detailDataBound;
 exports.DataManipulation = ej2Treegrid.DataManipulation;
 exports.Reorder = ej2Treegrid.Reorder;
 exports.Resize = ej2Treegrid.Resize;
@@ -675,6 +705,7 @@ exports.AggregateRow = ej2Treegrid.AggregateRow;
 exports.SortDescriptor = ej2Treegrid.SortDescriptor;
 exports.SortSettings = ej2Treegrid.SortSettings;
 exports.Render = ej2Treegrid.Render;
+exports.TreeVirtualRowModelGenerator = ej2Treegrid.TreeVirtualRowModelGenerator;
 exports.isRemoteData = ej2Treegrid.isRemoteData;
 exports.findParentRecords = ej2Treegrid.findParentRecords;
 exports.getExpandStatus = ej2Treegrid.getExpandStatus;
@@ -697,6 +728,9 @@ exports.ContextMenu = ej2Treegrid.ContextMenu;
 exports.Edit = ej2Treegrid.Edit;
 exports.CommandColumn = ej2Treegrid.CommandColumn;
 exports.Selection = ej2Treegrid.Selection;
+exports.DetailRow = ej2Treegrid.DetailRow;
+exports.VirtualScroll = ej2Treegrid.VirtualScroll;
+exports.TreeVirtual = ej2Treegrid.TreeVirtual;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

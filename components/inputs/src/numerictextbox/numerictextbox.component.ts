@@ -5,7 +5,7 @@ import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['cssClass','currency','currencyCode','decimals','enablePersistence','enableRtl','enabled','floatLabelType','format','locale','max','min','placeholder','readonly','showClearButton','showSpinButton','step','strictMode','validateDecimalOnType','value','width'];
+export const inputs: string[] = ['cssClass','currency','currencyCode','decimals','enablePersistence','enableRtl','enabled','floatLabelType','format','htmlAttributes','locale','max','min','placeholder','readonly','showClearButton','showSpinButton','step','strictMode','validateDecimalOnType','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','valueChange'];
 export const twoWays: string[] = ['value'];
 
