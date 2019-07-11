@@ -37,8 +37,9 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
      * * Without Border 
      * * Brace 
      * * CurlyBrace
-     * @default ''
+     * @default 'Rectangle'
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      */
     public type: any;
     /** 

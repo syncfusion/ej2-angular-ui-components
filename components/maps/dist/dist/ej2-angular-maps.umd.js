@@ -893,6 +893,7 @@ exports.getFieldData = ej2Maps.getFieldData;
 exports.checkShapeDataFields = ej2Maps.checkShapeDataFields;
 exports.checkPropertyPath = ej2Maps.checkPropertyPath;
 exports.filter = ej2Maps.filter;
+exports.getRatioOfBubble = ej2Maps.getRatioOfBubble;
 exports.findMidPointOfPolygon = ej2Maps.findMidPointOfPolygon;
 exports.isCustomPath = ej2Maps.isCustomPath;
 exports.textTrim = ej2Maps.textTrim;

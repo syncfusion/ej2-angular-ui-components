@@ -40,6 +40,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
      * Allows the user to save custom information/data about an annotation 
      * 
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
@@ -49,6 +50,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
      * * InheritReadOnly - Enables/Disables the InheritReadOnly Constraints
      * @default 'InheritReadOnly'
      * @aspnumberenum 
+     * @blazornumberenum 
      */
     public constraints: any;
     /** 
@@ -64,6 +66,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
     /** 
      * Sets the height of the text
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public height: any;
@@ -81,6 +84,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
      * Sets the hyperlink of the label 
      * 
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public hyperlink: any;
@@ -132,6 +136,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
     /** 
      * Sets the width of the text
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public width: any;

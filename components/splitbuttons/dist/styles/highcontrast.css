@@ -130,7 +130,7 @@
 }
 
 .e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 42px;
+  padding-left: 36px;
 }
 
 .e-dropdown-popup ul .e-item.e-disabled {
@@ -149,7 +149,7 @@
 }
 
 .e-rtl.e-dropdown-popup .e-item.e-blank-icon {
-  padding-right: 42px;
+  padding-right: 36px;
 }
 
 .e-rtl.e-dropdown-popup .e-item .e-menu-icon {
@@ -182,7 +182,7 @@
 
 .e-bigger .e-dropdown-popup ul .e-item.e-blank-icon,
 .e-bigger.e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 42px;
+  padding-left: 38px;
 }
 
 .e-bigger .e-dropdown-popup ul .e-item.e-separator,

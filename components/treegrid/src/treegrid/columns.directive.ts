@@ -71,6 +71,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.ClipMode.Ellipsis
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode
      */
     public clipMode: any;
     /** 
@@ -197,6 +198,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * and [`date`](../../../common/internationalization/#supported-format-string-1) formats.
      * @default null
      * @asptype string
+     * @blazortype string
      */
     public format: any;
     /** 
@@ -215,8 +217,10 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Define the alignment of column header which is used to align the text of column header.
      * @default null
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public headerTextAlign: any;
     /** 
@@ -272,6 +276,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public textAlign: any;
     /** 
@@ -327,6 +332,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines the cell edit template that used as editor for a particular column. 
      * It accepts either template string or HTML element ID.
      * @aspignore 
+     * @blazorignore 
      */
     @ContentChild('editTemplate')
     @Template()

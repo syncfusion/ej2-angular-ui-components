@@ -264,12 +264,18 @@
   font-family: 'e-icons';
 }
 
+.e-pv-comment-panel-icon::before {
+  content: '\eb8b';
+  font-family: 'e-icons';
+}
+
 .e-pv-accepted-icon::before {
   color: #fff;
   content: '\e682';
   font-family: 'e-icons';
   font-size: 14px;
-  padding-left: 3px;
+  padding: 1px 1px 1px 4px;
+  position: absolute;
 }
 
 .e-pv-rejected-icon::before {
@@ -277,7 +283,8 @@
   content: '\e683';
   font-family: 'e-icons';
   font-size: 14px;
-  padding-left: 3px;
+  padding: 2px 1px 1px 4px;
+  position: absolute;
 }
 
 .e-pv-completed-icon::before {
@@ -285,7 +292,8 @@
   content: '\e614';
   font-family: 'e-icons';
   font-size: 14px;
-  padding-left: 3px;
+  padding: 2px 1px 1px 3.5px;
+  position: absolute;
 }
 
 .e-pv-cancelled-icon::before {
@@ -293,7 +301,8 @@
   content: '\e60a';
   font-family: 'e-icons';
   font-size: 14px;
-  padding-left: 3px;
+  padding: 2px 1px 1px 3.5px;
+  position: absolute;
 }
 
 .e-pv-scale-ratio-icon::before {
@@ -1791,6 +1800,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 }
 
 .e-pv-line-styles-container {
+  line-height: 0;
   padding: 17px;
 }
 
@@ -1809,6 +1819,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-properties-line-style-content {
   float: left;
+  line-height: 16px;
   width: 44px;
 }
 
@@ -1820,19 +1831,21 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-properties-line-style.e-btn {
   height: 32px;
+  line-height: 0;
   padding: 8px;
   white-space: pre;
 }
 
 .e-pv-properties-line-start.e-btn .e-caret,
 .e-pv-properties-line-end.e-btn .e-caret {
+  display: inline;
+  line-height: 16px;
   margin-left: 80px;
-  margin-top: 9.5px;
 }
 
 .e-pv-line-styles-content-container {
   float: left;
-  line-height: 0;
+  font-size: 0;
   margin-right: 7.5px;
   margin-top: 2.5px;
   width: 138px;
@@ -1995,7 +2008,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   position: absolute;
 }
 
-.e-pdfviewer .e-editable-value-wrapper.e-hide {
+.e-pdfviewer .e-inplaceeditor .e-editable-value-wrapper.e-hide {
   display: none;
 }
 
@@ -2003,12 +2016,16 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   padding: 7px 8px 42px;
 }
 
+.e-pv-comment-textbox {
+  min-height: 22px;
+}
+
 .e-pdfviewer .e-editable-value-wrapper {
   color: rgba(51, 51, 51, 0.9);
   font-size: 14px;
   line-height: normal;
   min-height: 22px;
-  padding: 2px 8px;
+  padding: 2px 8px 3px;
 }
 
 .e-pdfviewer .e-pv-comment-textbox .e-editable-value-wrapper {
@@ -2016,7 +2033,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   font-size: 14px;
   line-height: normal;
   min-height: 24px;
-  padding: 2px 8px 2px 32px;
+  padding: 2px 8px 3px 32px;
 }
 
 .e-pdfviewer .e-inplaceeditor .e-editable-action-buttons {
@@ -2049,7 +2066,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   border-radius: none;
   box-shadow: none;
   float: right;
-  padding: 10px 8px 1px 1px;
+  padding: 5px 7px 1px 1px;
 }
 
 .e-pdfviewer .e-editable-inline .e-btn.e-outline.e-primary,
@@ -2078,10 +2095,10 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   padding-right: 7px;
 }
 
-.e-pdfviewer .e-btn .e-outline .e-primary :disabled {
-  background-color: #e0e0e0;
+.e-pdfviewer .e-btn-save.e-outline.e-primary:disabled {
+  background-color: #eaeaea;
   border-radius: 2px;
-  color: #a6a6a6;
+  color: rgba(51, 51, 51, 0.6);
 }
 
 .e-pdfviewer .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-content {
@@ -2097,8 +2114,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pv-comment-panel {
   background-color: #fff;
   border: 1px solid #d0d0d0;
-  border-width: 1px;
-  bottom: 1px;
+  border-width: 1px 1px 0;
   opacity: 1;
   overflow: hidden;
   position: absolute;
@@ -2147,6 +2163,9 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-pv-comments-content-container {
   background-color: #fff;
+  border-color: #adadad;
+  border-style: double;
+  border-width: 0 1px 1px 0;
   height: calc(100% - 45px);
   overflow: auto;
 }
@@ -2168,8 +2187,8 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pv-comment-title {
   color: rgba(51, 51, 51, 0.6);
   font-size: 14px;
-  padding-left: 31px;
-  padding-top: 8px;
+  padding-left: 32px;
+  padding-top: 5px;
   position: absolute;
 }
 
@@ -2177,7 +2196,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   color: rgba(51, 51, 51, 0.6);
   font-size: 14px;
   padding-left: 8px;
-  padding-top: 8px;
+  padding-top: 5px;
   position: absolute;
 }
 
@@ -2225,7 +2244,11 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   word-break: break-all;
 }
 
-.e-pdfviewer .e-inplaceeditor.e-editable-value-wrapper:hover {
+.e-pdfviewer .e-inplaceeditor .e-editable-value-wrapper {
+  display: block;
+}
+
+.e-pdfviewer .e-inplaceeditor .e-editable-value-wrapper:hover {
   background: transparent;
 }
 
@@ -2242,7 +2265,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 }
 
 .e-pdfviewer .e-input-group.e-control-wrapper.e-editable-elements.e-input-focus {
-  caret-color: #e3165b;
+  caret-color: #3150b9;
 }
 
 .e-pv-reply-div {
@@ -2265,4 +2288,8 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-content-placeholder.e-pdfviewer.e-placeholder-pdfviewer {
   background-size: 100%;
+}
+
+.e-pdfviewer .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-content {
+  line-height: normal;
 }

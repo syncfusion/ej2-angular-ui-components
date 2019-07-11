@@ -39,6 +39,7 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the content to be displayed on the Toast.
      * @default null
+     * @blazortype string
      */
     @ContentChild('content')
     @Template()

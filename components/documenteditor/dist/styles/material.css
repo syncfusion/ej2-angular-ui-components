@@ -603,6 +603,11 @@
   margin-left: 40px;
 }
 
+.e-de-para-dlg-spacing-div.e-de-rtl {
+  margin-left: 0;
+  margin-right: 40px;
+}
+
 .e-de-toc-dlg-heading {
   color: rgba(0, 0, 0, 0.87);
   display: block;
@@ -1393,11 +1398,6 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 
 .e-de-font-content-label {
   width: 115px;
-}
-
-.e-de-font-content-label.e-rtl {
-  margin-left: 6px;
-  margin-right: 15px;
 }
 
 .e-de-font-color-margin {
@@ -2334,7 +2334,7 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-43%, -43%);
 }
 
 .e-de-header-footer-list {
@@ -2690,6 +2690,10 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 .e-de-ctnr-showhide::before {
   content: '\eb5d';
   font-size: 16px;
+}
+
+.e-de-flip {
+  transform: scaleX(-1);
 }
 
 .e-de-ctnr-print::before {

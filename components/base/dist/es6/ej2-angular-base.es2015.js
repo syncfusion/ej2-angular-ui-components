@@ -431,6 +431,7 @@ class FormBase {
     propagateChange(_) { return; }
     propagateTouch() { return; }
     localChange(e) {
+        //tslint:disable-next-line
         let value = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
         if (this.objCheck === true) {
@@ -444,9 +445,15 @@ class FormBase {
         }
         else {
             if (value !== this.angularValue && this.propagateChange !== undefined && value !== undefined) {
-                // Update angular from our control
-                this.propagateChange(value);
-                this.angularValue = value;
+                // While reset form using reset() method ng-dirty not get updated, so while value is empty just update angularValue only
+                if (value !== '' && value !== null) {
+                    // Update angular from our control
+                    this.propagateChange(value);
+                    this.angularValue = value;
+                }
+                else {
+                    this.angularValue = value;
+                }
             }
         }
     }

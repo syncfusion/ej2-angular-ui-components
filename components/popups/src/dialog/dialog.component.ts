@@ -38,6 +38,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      * > More information on the footer template configuration can be found on this [documentation](../../dialog/template/#footer) section.
      *     
      * @default ''
+     * @blazortype string
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -46,6 +47,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      * Specifies the value that can be displayed in the dialog's title area that can be configured with plain text or HTML elements. 
      * This is optional property and the dialog can be displayed without header, if the header property is null.
      * @default ''
+     * @blazortype string
      */
     @ContentChild('header')
     @Template()
@@ -59,6 +61,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      *
      *{% codeBlock src="dialog/content-api/index.html" %}{% endcodeBlock %}     
      * @default ''
+     * @blazortype string
      */
     @ContentChild('content')
     @Template()

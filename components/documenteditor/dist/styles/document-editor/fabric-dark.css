@@ -605,6 +605,11 @@
   margin-left: 40px;
 }
 
+.e-de-para-dlg-spacing-div.e-de-rtl {
+  margin-left: 0;
+  margin-right: 40px;
+}
+
 .e-de-toc-dlg-heading {
   color: #dadada;
   display: block;
@@ -1395,11 +1400,6 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
 
 .e-de-font-content-label {
   width: 130px;
-}
-
-.e-de-font-content-label.e-rtl {
-  margin-left: 1px;
-  margin-right: 20px;
 }
 
 .e-de-font-color-margin {
@@ -2336,7 +2336,7 @@ label[for='container_editor_wholeWord_e-de-rtl'] {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-43%, -43%);
 }
 
 .e-de-header-footer-list {

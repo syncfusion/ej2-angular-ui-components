@@ -32,6 +32,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
     /** 
      * Allows the user to save custom information/data about a port
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
@@ -39,6 +40,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * Defines the constraints of port
      * @default 'Default'
      * @aspnumberenum 
+     * @blazornumberenum 
      */
     public constraints: any;
     /** 
@@ -109,6 +111,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * * Connect - Shows the port when a connection end point is dragged over a node
      * @default 'Connect'
      * @aspnumberenum 
+     * @blazornumberenum 
      */
     public visibility: any;
     /** 

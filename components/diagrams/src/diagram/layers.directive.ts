@@ -28,6 +28,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * Defines the description of the layer 
      * 
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
@@ -44,6 +45,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * Defines the collection of the objects that are added to a particular layer
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public objects: any;

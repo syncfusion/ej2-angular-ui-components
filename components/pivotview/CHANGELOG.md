@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.2.34 (2019-07-11)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#240219` - Menu items in the toolbar now works properly.
+- `#239685`, `#240221`, `#240220` - Alignment of the toolbar looks proper when the control is bound to remote data source.
+
 ## 17.2.28-beta (2019-06-27)
 
 ### Pivot Table
@@ -19,8 +28,8 @@
 
 - #144352 – The fields can be added dynamically for Pivot Chart control.
 
-- #237515 – Date grouping is now working properly with column axis.
-- #237535 – You can add fields dynamically with pivot table component in virtual scrolling mode.
+- `#237515` – Date grouping is now working properly with column axis.
+- `#237535` – You can add fields dynamically with pivot table component in virtual scrolling mode.
 
 ## 17.1.47 (2019-05-14)
 

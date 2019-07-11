@@ -295,7 +295,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * * Category: Renders a category axis. 
      * * Logarithmic: Renders a log axis.
      * @default 'Double'
-     * @asptype Syncfusion.EJ2.Charts.ValueType
+     * @blazortype Syncfusion.EJ2.Blazor.Charts.ValueType
      * @isenumeration true
      */
     public valueType: any;

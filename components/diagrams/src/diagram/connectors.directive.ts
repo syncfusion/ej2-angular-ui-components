@@ -36,6 +36,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Allows the user to save custom information/data about a node/connector
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
@@ -72,6 +73,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * ReadOnly - Enables ReadOnly
      * @default 'None'
      * @aspnumberenum 
+     * @blazornumberenum 
      */
     public constraints: any;
     /** 
@@ -92,6 +94,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default None
      */
     public flip: any;
@@ -118,6 +121,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the collection of connection points of nodes/connectors
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public ports: any;
@@ -146,6 +150,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Sets the source padding of the connector
      * @default 0
+     * @isblazornullabletype true
      */
     public sourcePadding: any;
     /** 
@@ -176,6 +181,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Sets the target padding of the connector
      * @default 0
+     * @isblazornullabletype true
      */
     public targetPadding: any;
     /** 

@@ -32,6 +32,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * Defines the column value where the panel to be placed.
      * @default 0
      * @asptype int
+     * @blazortype int
      */
     public col: any;
     /** 
@@ -54,6 +55,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * *
      * @default null
      * @asptype int
+     * @blazortype int
      */
     public maxSizeX: any;
     /** 
@@ -61,6 +63,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * *
      * @default null
      * @asptype int
+     * @blazortype int
 
      */
     public maxSizeY: any;
@@ -79,6 +82,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * Defines a row value where the panel should be placed.
      * @default 0
      * @asptype int
+     * @blazortype int
      */
     public row: any;
     /** 
@@ -95,7 +99,8 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * Specifies the z-index of the panel 
      * *
      * @default 1000
-     * @asptype int
+     * @asptype double
+     * @blazortype double
      */
     public zIndex: any;
     /** 

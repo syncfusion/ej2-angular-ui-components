@@ -76,6 +76,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * [`number`](../../common/internationalization/#number-formatting/) 
      * and [`date`](../../common/internationalization/#number-formatting/) formats.
      * @asptype string
+     * @blazortype string
      * @default null
      */
     public format: any;

@@ -62,6 +62,7 @@ export class PaneDirective extends ComplexBase<PaneDirective> {
     /** 
      * Specifies the content of split pane as plain text, HTML markup, or any other JavaScript controls.
      * @default ''
+     * @blazortype string
      */
     @ContentChild('content')
     @Template()

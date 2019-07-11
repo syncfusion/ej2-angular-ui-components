@@ -30,12 +30,14 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Allows the user to save custom information/data about a node/connector
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
     /** 
      * Defines the collection of textual annotations of nodes/connectors
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public annotations: any;
@@ -52,11 +54,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the border width of the node
      * @default 0
+     * @isblazornullabletype true
      */
     public borderWidth: any;
     /** 
      * Defines the children of group element
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public children: any;
@@ -68,18 +72,21 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Used to define a index of column in the grid
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columnIndex: any;
     /** 
      * Merge the column use the property in the grid container
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columnSpan: any;
     /** 
      * Used to define the column for the grid container
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columns: any;
@@ -114,11 +121,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * * ReadOnly - Enables the  ReadOnly support for Annotation
      * @default 'Default'
      * @aspnumberenum 
+     * @blazornumberenum 
      */
     public constraints: any;
     /** 
      * Defines the type of the container
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default null
      */
     public container: any;
@@ -139,12 +148,14 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default None
      */
     public flip: any;
     /** 
      * Sets the height of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public height: any;
@@ -171,24 +182,28 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the maximum height of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public maxHeight: any;
     /** 
      * Sets the maximum width of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public maxWidth: any;
     /** 
      * Sets the minimum height of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public minHeight: any;
     /** 
      * Sets the minimum width of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public minWidth: any;
@@ -210,6 +225,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Defines the collection of connection points of nodes/connectors
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public ports: any;
@@ -221,18 +237,21 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Used to define a index of row in the grid
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public rowIndex: any;
     /** 
      * Merge the row use the property in the grid container
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public rowSpan: any;
     /** 
      * Used to define the rows for the grid container
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public rows: any;
@@ -271,6 +290,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the width of the node
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public width: any;

@@ -68,10 +68,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * * `Ellipsis` -  Displays ellipsis when the cell content overflows its area. 
      * * `EllipsisWithTooltip` - Displays ellipsis when the cell content overflows its area 
      * also it will display tooltip while hover on ellipsis applied cell.
-     * @default EllipsisWithTooltip
+     * @default Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode
      */
     public clipMode: any;
     /** 
@@ -122,6 +124,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * and [`date`](../../../common/internationalization/#formatting) formats.
      * @default null
      * @asptype string
+     * @blazortype string
      */
     public format: any;
     /** 
@@ -141,6 +144,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public headerTextAlign: any;
     /** 
@@ -169,6 +173,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public textAlign: any;
     /** 

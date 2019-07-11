@@ -127,6 +127,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  shade.
      * @default '[1, 2, 3, 4, 5]'
      * @asptype int[]
+     * @blazortype int[]
      */
     public workDays: any;
     /** 

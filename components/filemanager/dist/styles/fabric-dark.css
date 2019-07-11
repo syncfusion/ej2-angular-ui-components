@@ -566,6 +566,11 @@ ejs-filemanager {
   display: none !important;
 }
 
+.e-filemanager .e-grid .e-gridheader .e-emptyrow,
+.e-filemanager .e-grid .e-gridcontent .e-emptyrow {
+  display: none;
+}
+
 .e-filemanager .e-grid .e-gridheader .e-fe-checkbox,
 .e-filemanager .e-grid .e-gridcontent .e-fe-checkbox {
   overflow: inherit;
@@ -594,6 +599,22 @@ ejs-filemanager {
 
 .e-filemanager .e-grid .e-row .e-checkbox-wrapper {
   visibility: hidden;
+}
+
+.e-filemanager .e-grid .e-row.e-focused {
+  box-shadow: none;
+}
+
+.e-filemanager .e-grid .e-row.e-focused td {
+  box-shadow: inset 0 1px 0 0 #dadada, inset 0 -1px 0 0 #dadada;
+}
+
+.e-filemanager .e-grid .e-row.e-focused td:first-child {
+  box-shadow: inset 1px 1px 0 0 #dadada, inset 1px -1px 0 0 #dadada;
+}
+
+.e-filemanager .e-grid .e-row.e-focused td:last-child {
+  box-shadow: inset -1px 1px 0 0 #dadada, inset -1px -1px 0 0 #dadada;
 }
 
 .e-filemanager .e-grid .e-row:hover .e-checkbox-wrapper,
@@ -1693,10 +1714,6 @@ ejs-filemanager {
 }
 
 .e-filemanager .e-grid .e-gridheader .e-headercell:not(.e-fe-grid-icon):hover {
-  background: #414040;
-}
-
-.e-filemanager .e-grid .e-gridheader .e-headercell:not(.e-fe-grid-icon):focus {
   background: #414040;
 }
 

@@ -30,6 +30,7 @@ export class PaletteDirective extends ComplexBase<PaletteDirective> {
     /** 
      * Sets the height of the symbol group
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default undefined
      */
     public height: any;

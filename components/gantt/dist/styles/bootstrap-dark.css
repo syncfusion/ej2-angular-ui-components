@@ -1522,6 +1522,10 @@
   border-right-color: #0070f0;
 }
 
+.e-gantt .e-grid .e-icons {
+  color: #f0f0f0 !important;
+}
+
 .e-gantt.e-device .e-left-resize-gripper,
 .e-gantt.e-device .e-right-resize-gripper {
   border-color: #9e9e9e;
