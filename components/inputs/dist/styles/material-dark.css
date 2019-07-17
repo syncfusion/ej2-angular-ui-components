@@ -3886,9 +3886,9 @@ input.e-input.e-bigger.e-small,
 }
 
 .e-filled.e-float-input.e-bigger,
-.e-filled.e-bigger .e-float-input,
+.e-bigger .e-filled.e-float-input,
 .e-filled.e-float-input.e-control-wrapper.e-bigger,
-.e-filled.e-bigger .e-float-input.e-control-wrapper {
+.e-bigger .e-filled.e-float-input.e-control-wrapper {
   font-size: 16px;
 }
 
@@ -9267,6 +9267,10 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.e-upload .e-upload-files .e-icons:focus {
+  outline: none;
 }
 
 .e-upload .e-upload-files .e-upload-file-list {

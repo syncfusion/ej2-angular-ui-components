@@ -3886,9 +3886,9 @@ input.e-input.e-bigger.e-small,
 }
 
 .e-filled.e-float-input.e-bigger,
-.e-filled.e-bigger .e-float-input,
+.e-bigger .e-filled.e-float-input,
 .e-filled.e-float-input.e-control-wrapper.e-bigger,
-.e-filled.e-bigger .e-float-input.e-control-wrapper {
+.e-bigger .e-filled.e-float-input.e-control-wrapper {
   font-size: 16px;
 }
 

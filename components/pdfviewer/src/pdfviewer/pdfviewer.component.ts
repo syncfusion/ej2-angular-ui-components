@@ -5,7 +5,7 @@ import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 export const inputs: string[] = ['annotations','drawingObject','tool','ajaxRequestSettings','annotationToolbarSettings','areaSettings','arrowSettings','circleSettings','customStampSettings','distanceSettings','documentPath','enableAnnotation','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableMeasureAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','lineSettings','locale','perimeterSettings','polygonSettings','radiusSettings','rectangleSettings','selectedItems','serverActionSettings','serviceUrl','stampSettings','stickyNotesSettings','strikethroughSettings','toolbarSettings','underlineSettings','volumeSettings','width'];
-export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','annotationResize','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','pageChange','pageClick','zoomChange'];
+export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','pageChange','pageClick','zoomChange'];
 export const twoWays: string[] = [];
 
 /**

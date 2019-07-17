@@ -288,6 +288,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Define the alignment of column header which is used to align the text of column header.
      * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
      * @default null
      */
     public headerTextAlign: any;

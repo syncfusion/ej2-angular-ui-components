@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
-var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'annotationResize', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
+var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'annotationResize', 'annotationSelect', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
 var twoWays = [];
 /**
  * `ejs-pdfviewer` represents the Angular PdfViewer Component.
