@@ -5462,6 +5462,110 @@ input.e-input.e-bigger.e-small,
   right: 0;
 }
 
+.e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child {
+  margin-right: 0;
+}
+
+.e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger .e-input-group-icon:last-child,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child {
+  margin-left: 0;
+}
+
+.e-filled.e-input-group .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-filled.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-right: 8px;
+}
+
+.e-filled.e-rtl.e-input-group .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-small.e-bigger .e-rtl.e-filled.e-input-group .e-input-group-icon,
+.e-small.e-bigger .e-rtl.e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-rtl .e-filled.e-input-group .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.e-filled.e-input-group.e-small .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
+.e-small .e-filled.e-input-group .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-right: 4px;
+}
+
+.e-filled.e-input-group.e-small.e-rtl .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small.e-rtl .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-rtl .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-small .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
+.e-rtl.e-small .e-filled.e-input-group .e-input-group-icon,
+.e-rtl.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
 .e-filled textarea.e-input,
 .e-filled.e-input-group textarea,
 .e-filled.e-input-group textarea.e-input,
@@ -6815,6 +6919,20 @@ textarea.e-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.e-outline.e-float-input:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-input-group:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.e-outline.e-float-input:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:active {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .e-filled.e-input-group,
 .e-filled.e-input-group.e-control-wrapper,
 .e-filled.e-float-input,
@@ -7339,6 +7457,20 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 }
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input::-webkit-input-placeholder {
+  color: none;
+}
+
+.e-filled.e-float-input:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-input-group:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover {
+  color: none;
+}
+
+.e-filled.e-float-input:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:active {
   color: none;
 }
 

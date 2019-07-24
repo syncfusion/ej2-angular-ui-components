@@ -365,6 +365,7 @@ exports.nodeExpand = ej2Filemanager.nodeExpand;
 exports.detailsInit = ej2Filemanager.detailsInit;
 exports.menuItemData = ej2Filemanager.menuItemData;
 exports.renameInit = ej2Filemanager.renameInit;
+exports.renameEndParent = ej2Filemanager.renameEndParent;
 exports.renameEnd = ej2Filemanager.renameEnd;
 exports.showPaste = ej2Filemanager.showPaste;
 exports.hidePaste = ej2Filemanager.hidePaste;

@@ -124,7 +124,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * and [`date`](../../../common/internationalization/#formatting) formats.
      * @default null
      * @asptype string
-     * @blazortype string
+     * @blazortype object
      */
     public format: any;
     /** 

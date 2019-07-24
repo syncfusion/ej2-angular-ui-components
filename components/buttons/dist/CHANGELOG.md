@@ -128,7 +128,7 @@ Pascal casing changes in Button Component.
 
 
 | Enum Name | Old Property Value | New Property Value | 
-|: ---------:| ---------:| ---------:| 
+|---|---|---|
 | `IconPosition` | left | Left | 
 | `IconPosition` | right | Right | 
 
@@ -136,7 +136,7 @@ Pascal casing changes in CheckBox Component.
 
 
 | Enum Name | Old Property Value | New Property Value | 
-|: ---------:| ---------:| ---------:| 
+|---|---|---|
 | `LabelPosition` | after | After | 
 | `LabelPosition` | before | Before | 
 
@@ -144,7 +144,7 @@ Pascal casing changes in RadioButton Component.
 
 
 | Enum Name | Old Property Value | New Property Value | 
-|: ---------:| ---------:| ---------:| 
+|---|---|---|
 | `RadioLabelPosition` | after | After | 
 | `RadioLabelPosition` | before | Before | 
 

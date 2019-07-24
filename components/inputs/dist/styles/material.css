@@ -18,6 +18,30 @@
   font-family: 'e-icons';
 }
 
+.e-filled.e-float-input .e-clear-icon::before,
+.e-filled.e-float-input.e-control-wrapper .e-clear-icon::before {
+  content: '\e208';
+  font-family: 'e-icons';
+}
+
+.e-filled.e-input-group .e-clear-icon::before,
+.e-filled.e-input-group.e-control-wrapper .e-clear-icon::before {
+  content: '\e208';
+  font-family: 'e-icons';
+}
+
+.e-outline.e-float-input .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper .e-clear-icon::before {
+  content: '\e208';
+  font-family: 'e-icons';
+}
+
+.e-outline.e-input-group .e-clear-icon::before,
+.e-outline.e-input-group.e-control-wrapper .e-clear-icon::before {
+  content: '\e208';
+  font-family: 'e-icons';
+}
+
 /*! input layout */
 .e-input-group,
 .e-input-group.e-control-wrapper {
@@ -3967,7 +3991,7 @@ textarea.e-outline.e-input,
 .e-outline.e-float-input.e-control-wrapper .e-clear-icon,
 .e-outline.e-input-group .e-clear-icon,
 .e-outline.e-input-group.e-control-wrapper .e-clear-icon {
-  font-size: 10px;
+  font-size: 16px;
   padding: 9px 12px 9px 0;
 }
 
@@ -4351,6 +4375,7 @@ textarea.e-input.e-small.e-outline,
 .e-outline.e-input-group.e-control-wrapper.e-small .e-clear-icon,
 .e-outline.e-input-group.e-control-wrapper .e-clear-icon.e-small,
 .e-small .e-outline.e-input-group.e-control-wrapper .e-clear-icon {
+  font-size: 14px;
   padding: 7px 10px 7px 0;
 }
 
@@ -4380,7 +4405,7 @@ textarea.e-input.e-small.e-outline,
 .e-outline.e-input-group.e-control-wrapper .e-clear-icon.e-bigger,
 .e-bigger .e-outline.e-input-group .e-clear-icon,
 .e-bigger .e-outline.e-input-group.e-control-wrapper .e-clear-icon {
-  font-size: 12px;
+  font-size: 20px;
   padding: 15px 16px 15px 0;
 }
 
@@ -4550,6 +4575,7 @@ textarea.e-input.e-bigger.e-small.e-outline,
 .e-outline.e-input-group.e-control-wrapper.e-small.e-bigger .e-clear-icon,
 .e-outline.e-input-group.e-control-wrapper.e-small .e-clear-icon.e-bigger,
 .e-bigger .e-outline.e-input-group.e-control-wrapper.e-small .e-clear-icon {
+  font-size: 18px;
   padding: 9px 12px 9px 0;
 }
 
@@ -5499,6 +5525,54 @@ textarea.e-outline,
 .e-rtl.e-outline.e-float-input.e-control-wrapper textarea.e-small ~ label.e-float-text,
 .e-small .e-rtl.e-outline.e-float-input.e-control-wrapper textarea ~ label.e-float-text {
   top: -7px;
+}
+
+.e-outline.e-float-input.e-small .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper.e-small .e-clear-icon::before,
+.e-outline.e-input-group.e-small .e-clear-icon::before,
+.e-outline.e-input-group.e-control-wrapper.e-small .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper input.e-small:first-child ~ .e-clear-icon::before,
+.e-outline.e-small .e-float-input.e-control-wrapper .e-clear-icon::before,
+.e-outline.e-float-input input.e-small:first-child ~ .e-clear-icon::before,
+.e-outline.e-small .e-float-input .e-clear-icon::before,
+.e-outline.e-small .e-input-group .e-clear-icon::before,
+.e-outline.e-small .e-input-group.e-control-wrapper .e-clear-icon::before {
+  font-size: 14px;
+}
+
+.e-outline.e-float-input .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper .e-clear-icon::before,
+.e-outline.e-input-group .e-clear-icon::before,
+.e-outline.e-input-group.e-control-wrapper .e-clear-icon::before {
+  font-size: 16px;
+}
+
+.e-outline.e-float-input.e-bigger .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper.e-bigger .e-clear-icon::before,
+.e-outline.e-input-group.e-bigger .e-clear-icon::before,
+.e-outline.e-input-group.e-control-wrapper.e-bigger .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper input.e-bigger:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-float-input.e-control-wrapper .e-clear-icon::before,
+.e-outline.e-float-input input.e-bigger:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-float-input .e-clear-icon::before,
+.e-outline.e-bigger .e-input-group .e-clear-icon::before,
+.e-outline.e-bigger .e-input-group.e-control-wrapper .e-clear-icon::before {
+  font-size: 20px;
+}
+
+.e-outline.e-float-input.e-small.e-bigger .e-clear-icon::before,
+.e-outline.e-float-input.e-control-wrapper.e-small.e-bigger .e-clear-icon::before,
+.e-outline.e-input-group.e-small.e-bigger .e-clear-icon::before,
+.e-outline.e-input-group.e-control-wrapper.e-small.e-bigger .e-clear-icon::before,
+.e-outline.e-small .e-input-group.e-bigger input:first-child ~ .e-clear-icon::before,
+.e-outline.e-small .e-input-group.e-control-wrapper.e-bigger input:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-input-group.e-small input:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-input-group.e-control-wrapper.e-small input:first-child ~ .e-clear-icon::before,
+.e-outline.e-small .e-float-input.e-control-wrapper.e-bigger input:first-child ~ .e-clear-icon::before,
+.e-outline.e-small .e-float-input.e-bigger input:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-float-input.e-control-wrapper.e-small input:first-child ~ .e-clear-icon::before,
+.e-outline.e-bigger .e-float-input.e-small input:first-child ~ .e-clear-icon::before {
+  font-size: 18px;
 }
 
 .e-filled.e-input-group,
@@ -6604,7 +6678,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
 .e-small .e-filled.e-input-group .e-input-group-icon,
 .e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
-  font-size: 14px;
+  font-size: 16px;
   height: 100%;
   margin-bottom: 0;
   margin-top: 0;
@@ -6616,7 +6690,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
 .e-small .e-filled.e-input-group .e-input-group-icon,
 .e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
-  font-size: 12px;
+  font-size: 14px;
   min-height: 21px;
   min-width: 21px;
 }
@@ -6627,7 +6701,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-input-group .e-input-group-icon,
 .e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
-  font-size: 16px;
+  font-size: 20px;
   min-height: 23px;
   min-width: 23px;
 }
@@ -6638,7 +6712,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-input-group.e-small .e-input-group-icon,
 .e-bigger .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon {
-  font-size: 14px;
+  font-size: 18px;
   min-height: 19px;
   min-width: 19px;
 }
@@ -6661,7 +6735,7 @@ textarea.e-outline,
 .e-small .e-filled.e-float-input.e-input-group .e-input-group-icon,
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-small .e-input-group-icon,
 .e-small .e-filled.e-float-input.e-control-wrapper.e-input-group .e-input-group-icon {
-  font-size: 14px;
+  font-size: 16px;
   height: 100%;
   margin-bottom: 0;
   margin-top: 0;
@@ -6672,7 +6746,7 @@ textarea.e-outline,
 .e-small .e-filled.e-float-input.e-input-group .e-input-group-icon,
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-small .e-input-group-icon,
 .e-small .e-filled.e-float-input.e-control-wrapper.e-input-group .e-input-group-icon {
-  font-size: 12px;
+  font-size: 14px;
   min-height: 0;
 }
 
@@ -6682,7 +6756,7 @@ textarea.e-outline,
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-bigger .e-input-group-icon,
 .e-filled.e-float-input.e-control-wrapper.e-input-group .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-input-group .e-input-group-icon {
-  font-size: 16px;
+  font-size: 20px;
   min-height: 0;
 }
 
@@ -6692,7 +6766,7 @@ textarea.e-outline,
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-small.e-bigger .e-input-group-icon,
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-small .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-input-group.e-small .e-input-group-icon {
-  font-size: 14px;
+  font-size: 18px;
   min-height: 0;
 }
 
@@ -6700,7 +6774,7 @@ textarea.e-outline,
 .e-filled.e-float-input.e-control-wrapper .e-clear-icon,
 .e-filled.e-input-group .e-clear-icon,
 .e-filled.e-input-group.e-control-wrapper .e-clear-icon {
-  font-size: 10px;
+  font-size: 16px;
   height: 100%;
   min-height: 0;
   padding-bottom: 0;
@@ -6726,7 +6800,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper .e-clear-icon.e-bigger,
 .e-bigger .e-filled.e-input-group .e-clear-icon,
 .e-bigger .e-filled.e-input-group.e-control-wrapper .e-clear-icon {
-  font-size: 12px;
+  font-size: 20px;
   height: 100%;
   min-height: 23px;
   min-width: 23px;
@@ -6751,7 +6825,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper.e-small.e-bigger .e-clear-icon,
 .e-filled.e-input-group.e-control-wrapper.e-small .e-clear-icon.e-bigger,
 .e-bigger .e-filled.e-input-group.e-control-wrapper.e-small .e-clear-icon {
-  font-size: 10px;
+  font-size: 18px;
   height: 100%;
   min-height: 19px;
   min-width: 19px;
@@ -6782,7 +6856,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper.e-small .e-clear-icon,
 .e-filled.e-input-group.e-control-wrapper .e-clear-icon.e-small,
 .e-small .e-filled.e-input-group.e-control-wrapper .e-clear-icon {
-  font-size: 8px;
+  font-size: 14px;
   height: 100%;
   min-height: 21px;
   min-width: 21px;
@@ -6811,7 +6885,7 @@ textarea.e-outline,
 .e-filled.e-float-input.e-control-wrapper .e-clear-icon::before,
 .e-filled.e-input-group .e-clear-icon::before,
 .e-filled.e-input-group.e-control-wrapper .e-clear-icon::before {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .e-filled.e-float-input.e-small .e-clear-icon::before,
@@ -6824,7 +6898,7 @@ textarea.e-outline,
 .e-small .e-filled.e-float-input .e-clear-icon::before,
 .e-small .e-filled.e-input-group .e-clear-icon::before,
 .e-small .e-filled.e-input-group.e-control-wrapper .e-clear-icon::before {
-  font-size: 8px;
+  font-size: 14px;
 }
 
 .e-filled.e-float-input.e-bigger .e-clear-icon::before,
@@ -6837,7 +6911,7 @@ textarea.e-outline,
 .e-bigger .e-filled.e-float-input .e-clear-icon::before,
 .e-bigger .e-filled.e-input-group .e-clear-icon::before,
 .e-bigger .e-filled.e-input-group.e-control-wrapper .e-clear-icon::before {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .e-filled.e-float-input.e-small.e-bigger .e-clear-icon::before,
@@ -6852,7 +6926,7 @@ textarea.e-outline,
 .e-small .e-filled.e-float-input.e-bigger input:first-child ~ .e-clear-icon::before,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small input:first-child ~ .e-clear-icon::before,
 .e-bigger .e-filled.e-float-input.e-small input:first-child ~ .e-clear-icon::before {
-  font-size: 10px;
+  font-size: 18px;
 }
 
 .e-filled.e-float-input .e-input-in-wrap input:focus ~ label.e-float-text,
@@ -6993,7 +7067,7 @@ textarea.e-outline,
 
 .e-filled.e-input-group:not(.e-float-input).e-float-icon-left > .e-input-group-icon,
 .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-float-icon-left > .e-input-group-icon {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   min-height: 19px;
   min-width: 20px;
@@ -7011,7 +7085,7 @@ textarea.e-outline,
 .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-bigger.e-float-icon-left > .e-input-group-icon,
 .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-float-icon-left > .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-float-icon-left > .e-input-group-icon {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
   min-height: 23px;
   min-width: 24px;
@@ -7033,7 +7107,7 @@ textarea.e-outline,
 .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-float-icon-left > .e-input-group-icon.e-small,
 .e-small .e-filled.e-input-group:not(.e-float-input).e-float-icon-left > .e-input-group-icon,
 .e-small .e-filled.e-input-group:not(.e-float-input).e-control-wrapper.e-float-icon-left > .e-input-group-icon {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   min-height: 21px;
   min-width: 18px;
@@ -7055,7 +7129,7 @@ textarea.e-outline,
 .e-filled.e-input-group.e-control-wrapper:not(.e-float-input).e-small.e-bigger.e-float-icon-left > .e-input-group-icon,
 .e-filled.e-input-group.e-control-wrapper:not(.e-float-input).e-small.e-float-icon-left > .e-input-group-icon.e-bigger,
 .e-bigger .e-filled.e-input-group.e-control-wrapper:not(.e-float-input).e-small.e-float-icon-left > .e-input-group-icon {
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
   min-height: 19px;
   min-width: 20px;
@@ -7207,6 +7281,110 @@ textarea.e-outline,
 .e-rtl.e-small.e-bigger .e-filled.e-float-input .e-input-in-wrap input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-rtl.e-small.e-bigger .e-filled.e-float-input.e-control-wrapper .e-input-in-wrap input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   right: 0;
+}
+
+.e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child {
+  margin-right: 0;
+}
+
+.e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-filled.e-input-group.e-small.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper.e-rtl .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger .e-input-group-icon:last-child,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-small .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-bigger .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-bigger .e-filled.e-input-group.e-small.e-control-wrapper .e-input-group-icon:last-child,
+.e-rtl.e-small .e-filled.e-input-group.e-bigger.e-control-wrapper .e-input-group-icon:last-child {
+  margin-left: 0;
+}
+
+.e-filled.e-input-group .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-filled.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon,
+.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-right: 8px;
+}
+
+.e-filled.e-rtl.e-input-group .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-filled.e-rtl.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-small.e-bigger .e-rtl.e-filled.e-input-group .e-input-group-icon,
+.e-small.e-bigger .e-rtl.e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-rtl .e-filled.e-input-group .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-small.e-bigger .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper.e-small.e-bigger .e-input-group-icon,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group .e-input-group-icon,
+.e-rtl.e-small.e-bigger .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.e-filled.e-input-group.e-small .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
+.e-small .e-filled.e-input-group .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-right: 4px;
+}
+
+.e-filled.e-input-group.e-small.e-rtl .e-input-group-icon,
+.e-filled.e-input-group.e-control-wrapper.e-small.e-rtl .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-rtl .e-input-group-icon,
+.e-small .e-filled.e-input-group.e-control-wrapper.e-rtl .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-small .e-input-group-icon,
+.e-rtl .e-filled.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
+.e-rtl.e-small .e-filled.e-input-group .e-input-group-icon,
+.e-rtl.e-small .e-filled.e-input-group.e-control-wrapper .e-input-group-icon {
+  margin-left: 4px;
+  margin-right: 0;
 }
 
 .e-filled textarea.e-input,
@@ -8879,6 +9057,20 @@ textarea.e-input::-webkit-input-placeholder {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
+.e-outline.e-float-input:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-input-group:not(.e-disabled) .e-clear-icon:hover,
+.e-outline.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.e-outline.e-float-input:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-outline.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:active {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .e-filled.e-input-group,
 .e-filled.e-input-group.e-control-wrapper,
 .e-filled.e-float-input,
@@ -9404,6 +9596,20 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.e-filled.e-float-input:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-input-group:not(.e-disabled) .e-clear-icon:hover,
+.e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.e-filled.e-float-input:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:active {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-filled.e-float-input.e-disabled .e-clear-icon,

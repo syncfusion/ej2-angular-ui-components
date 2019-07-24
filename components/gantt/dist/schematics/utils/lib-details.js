@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-gantt';
-exports.pkgVer = '^17.2.28';
+exports.pkgVer = '^17.2.35';
 exports.moduleName = 'GanttModule';
-exports.themeVer = '~17.2.28';
+exports.themeVer = '~17.2.35';

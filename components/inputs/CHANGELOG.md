@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.2.36 (2019-07-24)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#F145967`, `#242158` - Resolved removing event restricted while the `args.cancel` is enabled.
+- Now, provided `postRawFile` argument to the `remove` method for post either file/file name to the server.
+
 ## 17.2.35 (2019-07-17)
 
 ### Form Validator
@@ -569,7 +578,7 @@
 - The following API namings are renamed.
 
 | Existing API Name | New API Name | 
-|: ---------:| ---------:| 
+|:-:|:-:|
 | readOnly | readonly | 
 
 ### ColorPicker
@@ -666,6 +675,10 @@ Color picker is a user interface that is used to select and adjust color values.
 ## 16.1.24 (2018-02-22)
 
 ### Uploader
+
+```
+The Uploader component is useful to upload images, documents, and other files to server.
+```
 
 The component is extended version of HTML5 upload with multiple file selection, auto upload,
 drag and drop, progress bar, preload files, and validation.

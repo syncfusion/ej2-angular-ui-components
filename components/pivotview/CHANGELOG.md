@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 17.2.35 (2019-07-17)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#240219` - Menu items in the toolbar now works properly.
-- `#239685`, `#240221`, `#240220` - Alignment of the toolbar looks proper when the control is bound to remote data source.
-
 ## 17.2.28-beta (2019-06-27)
 
 ### Pivot Table
@@ -173,4 +164,13 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 17.2.35 (2019-07-17)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#240219` - Menu items in the toolbar now works properly.
+- `#239685`, `#240221`, `#240220` - Alignment of the toolbar looks proper when the control is bound to remote data source.
 
