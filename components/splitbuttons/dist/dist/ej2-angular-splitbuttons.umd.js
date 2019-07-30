@@ -439,6 +439,7 @@ exports.getModel = ej2Splitbuttons.getModel;
 exports.Item = ej2Splitbuttons.Item;
 exports.DropDownButton = ej2Splitbuttons.DropDownButton;
 exports.SplitButton = ej2Splitbuttons.SplitButton;
+exports.Deferred = ej2Splitbuttons.Deferred;
 exports.createButtonGroup = ej2Splitbuttons.createButtonGroup;
 exports.SpinSettings = ej2Splitbuttons.SpinSettings;
 exports.AnimationSettings = ej2Splitbuttons.AnimationSettings;

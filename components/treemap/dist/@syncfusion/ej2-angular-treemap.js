@@ -3,6 +3,54 @@ import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setVa
 import { TreeMap, TreeMapHighlight, TreeMapLegend, TreeMapSelection, TreeMapTooltip } from '@syncfusion/ej2-treemap';
 import { CommonModule } from '@angular/common';
 
+let input = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
+let outputs = [];
+class ColorMappingDirective extends ComplexBase {
+    /**
+     * @param {?} viewContainerRef
+     */
+    constructor(viewContainerRef) {
+        super();
+        this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', this, this.viewContainerRef);
+        this.registerEvents(outputs);
+    }
+}
+ColorMappingDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-levels>e-colorMappings>e-colorMapping',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ColorMappingDirective.ctorParameters = () => [
+    { type: ViewContainerRef, },
+];
+/**
+ * ColorMapping Array Directive
+ */
+class ColorMappingsDirective extends ArrayBase {
+    constructor() {
+        super('colormapping');
+    }
+}
+ColorMappingsDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-levels>e-colorMappings',
+                queries: {
+                    children: new ContentChildren(ColorMappingDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ColorMappingsDirective.ctorParameters = () => [];
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12,8 +60,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input = ['autoFill', 'border', 'colorMapping', 'fill', 'groupGap', 'groupPadding', 'groupPath', 'headerAlignment', 'headerFormat', 'headerHeight', 'headerStyle', 'headerTemplate', 'opacity', 'showHeader', 'templatePosition'];
-let outputs = [];
+let input$1 = ['autoFill', 'border', 'colorMapping', 'fill', 'groupGap', 'groupPadding', 'groupPath', 'headerAlignment', 'headerFormat', 'headerHeight', 'headerStyle', 'headerTemplate', 'opacity', 'showHeader', 'templatePosition'];
+let outputs$1 = [];
 /**
  * Level Directive
  * ```html
@@ -29,16 +77,19 @@ class LevelDirective extends ComplexBase {
     constructor(viewContainerRef) {
         super();
         this.viewContainerRef = viewContainerRef;
+        this.tags = ['colorMapping'];
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs);
+        this.registerEvents(outputs$1);
     }
 }
 LevelDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-levels>e-level',
-                inputs: input,
-                outputs: outputs,
-                queries: {}
+                inputs: input$1,
+                outputs: outputs$1,
+                queries: {
+                    childColorMapping: new ContentChild(ColorMappingsDirective)
+                }
             },] },
 ];
 /**
@@ -85,7 +136,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs = ['background', 'border', 'breadcrumbConnector', 'colorValuePath', 'dataSource', 'description', 'drillDownView', 'enableBreadcrumb', 'enableDrillDown', 'enablePersistence', 'enableRtl', 'equalColorValuePath', 'format', 'height', 'highlightSettings', 'initialDrillDown', 'layoutType', 'leafItemSettings', 'legendSettings', 'levels', 'locale', 'margin', 'palette', 'query', 'rangeColorValuePath', 'renderDirection', 'selectionSettings', 'tabIndex', 'theme', 'titleSettings', 'tooltipSettings', 'useGroupingSeparator', 'weightValuePath', 'width'];
-const outputs$1 = ['beforePrint', 'click', 'doubleClick', 'drillEnd', 'drillStart', 'itemClick', 'itemHighlight', 'itemMove', 'itemRendering', 'itemSelected', 'legendItemRendering', 'legendRendering', 'load', 'loaded', 'mouseMove', 'resize', 'rightClick', 'tooltipRendering'];
+const outputs$2 = ['beforePrint', 'click', 'doubleClick', 'drillEnd', 'drillStart', 'itemClick', 'itemHighlight', 'itemMove', 'itemRendering', 'itemSelected', 'legendItemRendering', 'legendRendering', 'load', 'loaded', 'mouseMove', 'resize', 'rightClick', 'tooltipRendering'];
 const twoWays = [''];
 /**
  * TreeMap Component
@@ -137,7 +188,7 @@ let TreeMapComponent = class TreeMapComponent extends TreeMap {
             }
         }
         catch (_d) { }
-        this.registerEvents(outputs$1);
+        this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
     }
@@ -166,7 +217,7 @@ TreeMapComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-treemap',
                 inputs: inputs,
-                outputs: outputs$1,
+                outputs: outputs$2,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -213,11 +264,15 @@ TreeMapModule.decorators = [
                 imports: [CommonModule],
                 declarations: [
                     TreeMapComponent,
+                    ColorMappingDirective,
+                    ColorMappingsDirective,
                     LevelDirective,
                     LevelsDirective
                 ],
                 exports: [
                     TreeMapComponent,
+                    ColorMappingDirective,
+                    ColorMappingsDirective,
                     LevelDirective,
                     LevelsDirective
                 ]
@@ -260,6 +315,6 @@ TreeMapAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { LevelDirective, LevelsDirective, TreeMapComponent, TreeMapModule, TreeMapAllModule, TreeMapTooltipService, TreeMapLegendService, TreeMapHighlightService, TreeMapSelectionService, inputs as ɵa, outputs$1 as ɵb };
+export { ColorMappingDirective, ColorMappingsDirective, LevelDirective, LevelsDirective, TreeMapComponent, TreeMapModule, TreeMapAllModule, TreeMapTooltipService, TreeMapLegendService, TreeMapHighlightService, TreeMapSelectionService, inputs as ɵa, outputs$2 as ɵb };
 export { TreeMap, Border, Margin, Font, CommonTitleSettings, SubTitleSettings, TitleSettings, ColorMapping, LegendSettings, InitialDrillSettings, LeafItemSettings, TooltipSettings, SelectionSettings, HighlightSettings, LevelSettings, load, loaded, beforePrint, itemRendering, drillStart, drillEnd, itemSelected, itemHighlight, tooltipRendering, itemClick, itemMove, click, doubleClick, rightClick, mouseMove, legendItemRendering, legendRendering, resize, defaultFont, Theme, getThemeStyle, Size, stringToNumber, Rect, RectOption, PathOption, measureText, TextOption, textTrim, Location, findPosition, createTextStyle, renderTextElement, getElement, itemsToOrder, isContainsData, findChildren, findHightLightItems, getTemplateFunction, convertElement, findLabelLocation, measureElement, getArea, getShortestEdge, convertToContainer, convertToRect, getMousePosition, colorMap, deSaturationColor, colorCollections, rgbToHex, getColorByValue, getGradientColor, getPercentageColor, getPercentage, wordWrap, textWrap, hide, orderByArea, removeClassNames, applyOptions, textFormatter, formatValue, ColorValue, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, drawSymbol, renderLegendShape, isParentItem, TreeMapAjax, removeShape, removeLegend, setColor, removeSelectionWithHighlight, getLegendIndex, pushCollection, ExportUtils, TreeMapLegend, LayoutPanel, TreeMapHighlight, TreeMapSelection, TreeMapTooltip } from '@syncfusion/ej2-treemap';
 //# sourceMappingURL=ej2-angular-treemap.js.map

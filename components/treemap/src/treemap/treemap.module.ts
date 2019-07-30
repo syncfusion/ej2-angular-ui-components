@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ColorMappingDirective, ColorMappingsDirective } from './colormapping.directive';
 import { LevelDirective, LevelsDirective } from './levels.directive';
 import { TreeMapComponent } from './treemap.component';
 
@@ -10,11 +11,15 @@ import { TreeMapComponent } from './treemap.component';
     imports: [CommonModule],
     declarations: [
         TreeMapComponent,
+        ColorMappingDirective,
+        ColorMappingsDirective,
         LevelDirective,
         LevelsDirective
     ],
     exports: [
         TreeMapComponent,
+        ColorMappingDirective,
+        ColorMappingsDirective,
         LevelDirective,
         LevelsDirective
     ]

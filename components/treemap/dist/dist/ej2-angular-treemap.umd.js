@@ -14,6 +14,58 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var input = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
+var outputs = [];
+var ColorMappingDirective = /** @class */ (function (_super) {
+    __extends(ColorMappingDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function ColorMappingDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        return _this;
+    }
+    return ColorMappingDirective;
+}(ej2AngularBase.ComplexBase));
+ColorMappingDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-levels>e-colorMappings>e-colorMapping',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ColorMappingDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * ColorMapping Array Directive
+ */
+var ColorMappingsDirective = /** @class */ (function (_super) {
+    __extends(ColorMappingsDirective, _super);
+    function ColorMappingsDirective() {
+        return _super.call(this, 'colormapping') || this;
+    }
+    return ColorMappingsDirective;
+}(ej2AngularBase.ArrayBase));
+ColorMappingsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-levels>e-colorMappings',
+                queries: {
+                    children: new core.ContentChildren(ColorMappingDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ColorMappingsDirective.ctorParameters = function () { return []; };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -28,8 +80,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['autoFill', 'border', 'colorMapping', 'fill', 'groupGap', 'groupPadding', 'groupPath', 'headerAlignment', 'headerFormat', 'headerHeight', 'headerStyle', 'headerTemplate', 'opacity', 'showHeader', 'templatePosition'];
-var outputs = [];
+var input$1 = ['autoFill', 'border', 'colorMapping', 'fill', 'groupGap', 'groupPadding', 'groupPath', 'headerAlignment', 'headerFormat', 'headerHeight', 'headerStyle', 'headerTemplate', 'opacity', 'showHeader', 'templatePosition'];
+var outputs$1 = [];
 /**
  * Level Directive
  * ```html
@@ -46,8 +98,9 @@ var LevelDirective = /** @class */ (function (_super) {
     function LevelDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
+        _this.tags = ['colorMapping'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs);
+        _this.registerEvents(outputs$1);
         return _this;
     }
     return LevelDirective;
@@ -55,9 +108,11 @@ var LevelDirective = /** @class */ (function (_super) {
 LevelDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-levels>e-level',
-                inputs: input,
-                outputs: outputs,
-                queries: {}
+                inputs: input$1,
+                outputs: outputs$1,
+                queries: {
+                    childColorMapping: new core.ContentChild(ColorMappingsDirective)
+                }
             },] },
 ];
 /**
@@ -110,7 +165,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['background', 'border', 'breadcrumbConnector', 'colorValuePath', 'dataSource', 'description', 'drillDownView', 'enableBreadcrumb', 'enableDrillDown', 'enablePersistence', 'enableRtl', 'equalColorValuePath', 'format', 'height', 'highlightSettings', 'initialDrillDown', 'layoutType', 'leafItemSettings', 'legendSettings', 'levels', 'locale', 'margin', 'palette', 'query', 'rangeColorValuePath', 'renderDirection', 'selectionSettings', 'tabIndex', 'theme', 'titleSettings', 'tooltipSettings', 'useGroupingSeparator', 'weightValuePath', 'width'];
-var outputs$1 = ['beforePrint', 'click', 'doubleClick', 'drillEnd', 'drillStart', 'itemClick', 'itemHighlight', 'itemMove', 'itemRendering', 'itemSelected', 'legendItemRendering', 'legendRendering', 'load', 'loaded', 'mouseMove', 'resize', 'rightClick', 'tooltipRendering'];
+var outputs$2 = ['beforePrint', 'click', 'doubleClick', 'drillEnd', 'drillStart', 'itemClick', 'itemHighlight', 'itemMove', 'itemRendering', 'itemSelected', 'legendItemRendering', 'legendRendering', 'load', 'loaded', 'mouseMove', 'resize', 'rightClick', 'tooltipRendering'];
 var twoWays = [''];
 /**
  * TreeMap Component
@@ -163,7 +218,7 @@ exports.TreeMapComponent = /** @class */ (function (_super) {
             }
         }
         catch (_d) { }
-        _this.registerEvents(outputs$1);
+        _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -194,7 +249,7 @@ exports.TreeMapComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-treemap',
                 inputs: inputs,
-                outputs: outputs$1,
+                outputs: outputs$2,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -243,11 +298,15 @@ TreeMapModule.decorators = [
                 imports: [common.CommonModule],
                 declarations: [
                     exports.TreeMapComponent,
+                    ColorMappingDirective,
+                    ColorMappingsDirective,
                     LevelDirective,
                     LevelsDirective
                 ],
                 exports: [
                     exports.TreeMapComponent,
+                    ColorMappingDirective,
+                    ColorMappingsDirective,
                     LevelDirective,
                     LevelsDirective
                 ]
@@ -288,6 +347,8 @@ TreeMapAllModule.decorators = [
  */
 TreeMapAllModule.ctorParameters = function () { return []; };
 
+exports.ColorMappingDirective = ColorMappingDirective;
+exports.ColorMappingsDirective = ColorMappingsDirective;
 exports.LevelDirective = LevelDirective;
 exports.LevelsDirective = LevelsDirective;
 exports.TreeMapModule = TreeMapModule;
@@ -297,7 +358,7 @@ exports.TreeMapLegendService = TreeMapLegendService;
 exports.TreeMapHighlightService = TreeMapHighlightService;
 exports.TreeMapSelectionService = TreeMapSelectionService;
 exports.ɵa = inputs;
-exports.ɵb = outputs$1;
+exports.ɵb = outputs$2;
 exports.TreeMap = ej2Treemap.TreeMap;
 exports.Border = ej2Treemap.Border;
 exports.Margin = ej2Treemap.Margin;

@@ -47,6 +47,9 @@ export class FormBase<T> implements ControlValueAccessor {
                     this.propagateChange(value);
                     this.angularValue = value;
                 } else {
+                    //tslint:disable-next-line
+                    let optionalValue: any = value;
+                    this.propagateChange(optionalValue);
                     this.angularValue = value;
                 }
             }

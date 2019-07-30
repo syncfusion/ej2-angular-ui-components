@@ -1,7 +1,7 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
-
+import { ColorMappingsDirective } from './colormapping.directive';
 
 let input: string[] = ['autoFill', 'border', 'colorMapping', 'fill', 'groupGap', 'groupPadding', 'groupPath', 'headerAlignment', 'headerFormat', 'headerHeight', 'headerStyle', 'headerTemplate', 'opacity', 'showHeader', 'templatePosition'];
 let outputs: string[] = [];
@@ -18,12 +18,12 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
-
+        childColorMapping: new ContentChild(ColorMappingsDirective)
     }
 })
 export class LevelDirective extends ComplexBase<LevelDirective> {
-
-
+    public childColorMapping: any;
+    public tags: string[] = ['colorMapping'];
     /** 
      * Items rendering with random colors.
      * @default false

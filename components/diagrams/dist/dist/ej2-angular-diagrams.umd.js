@@ -1348,6 +1348,7 @@ exports.addChildToContainer = ej2Diagrams.addChildToContainer;
 exports.updateLaneBoundsAfterAddChild = ej2Diagrams.updateLaneBoundsAfterAddChild;
 exports.renderStackHighlighter = ej2Diagrams.renderStackHighlighter;
 exports.moveChildInStack = ej2Diagrams.moveChildInStack;
+exports.LineRouting = ej2Diagrams.LineRouting;
 exports.CrudAction = ej2Diagrams.CrudAction;
 exports.ConnectionDataSource = ej2Diagrams.ConnectionDataSource;
 exports.DataSource = ej2Diagrams.DataSource;

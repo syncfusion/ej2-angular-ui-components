@@ -31,6 +31,8 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * Bezier - Sets the segment type as Bezier
      * @default 'Straight'
      * @asptype Syncfusion.EJ2.Diagrams.Segments
+     * @blazordefaultvalueignore 
+     * @blazordefaultvalue Syncfusion.EJ2.Blazor.Diagrams.Segments.Straight
      */
     public type: any;
     /** 
@@ -129,6 +131,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * Defines the segments
      * @default []
      * @asptype object
+     * @blazortype object
      */
     public segments: any;
     /** 

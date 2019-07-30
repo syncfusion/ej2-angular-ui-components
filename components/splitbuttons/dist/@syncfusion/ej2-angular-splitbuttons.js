@@ -383,5 +383,5 @@ ProgressButtonAllModule.ctorParameters = () => [];
  */
 
 export { DropDownButtonComponent, DropDownButtonModule, DropDownButtonAllModule, SplitButtonComponent, SplitButtonModule, SplitButtonAllModule, ProgressButtonComponent, ProgressButtonModule, ProgressButtonAllModule, inputs as ɵa, outputs as ɵb, inputs$2 as ɵe, outputs$2 as ɵf, inputs$1 as ɵc, outputs$1 as ɵd };
-export { getModel, Item, DropDownButton, SplitButton, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
+export { getModel, Item, DropDownButton, SplitButton, Deferred, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
 //# sourceMappingURL=ej2-angular-splitbuttons.js.map

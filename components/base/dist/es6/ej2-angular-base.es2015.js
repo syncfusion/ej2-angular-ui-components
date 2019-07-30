@@ -452,6 +452,9 @@ class FormBase {
                     this.angularValue = value;
                 }
                 else {
+                    //tslint:disable-next-line
+                    let optionalValue = value;
+                    this.propagateChange(optionalValue);
                     this.angularValue = value;
                 }
             }

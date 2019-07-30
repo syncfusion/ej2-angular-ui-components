@@ -52,6 +52,7 @@ export class ResourceDirective extends ComplexBase<ResourceDirective> {
      * With the remote data assigned to dataSource, check the available 
      *  [adaptors](http://ej2.syncfusion.com/documentation/data/adaptors.html) to customize the data processing.
      * @default []
+     * @isgenerictype true
      */
     public dataSource: any;
     /** 

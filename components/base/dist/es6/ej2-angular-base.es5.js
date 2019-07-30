@@ -487,6 +487,9 @@ var FormBase = /** @__PURE__ @class */ (function () {
                     this.angularValue = value;
                 }
                 else {
+                    //tslint:disable-next-line
+                    var optionalValue = value;
+                    this.propagateChange(optionalValue);
                     this.angularValue = value;
                 }
             }
