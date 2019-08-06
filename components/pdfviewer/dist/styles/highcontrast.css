@@ -361,6 +361,13 @@
   position: absolute;
 }
 
+.e-pdfviewer .e-pv-search-text-highlight,
+.e-pdfviewer .e-pv-search-text-highlightother {
+  line-height: normal;
+  opacity: 0.6;
+  position: absolute;
+}
+
 .e-pdfviewer .e-pv-hyperlink {
   z-index: 2;
 }
@@ -1413,11 +1420,11 @@ div > .e-pv-bookmark-icon.e-pv-icon {
   padding-right: 5px;
 }
 
-.e-pv-text .e-pv-search-text-highlight {
+.e-pv-search-text-highlight {
   background-color: #fdd835;
 }
 
-.e-pv-text .e-pv-search-text-highlightother {
+.e-pv-search-text-highlightother {
   background-color: #8b4c12;
 }
 

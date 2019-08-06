@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableAnnotationToolbar', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
+var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'contextMenuOption', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableAnnotationToolbar', 'enableBookmark', 'enableDownload', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'measurementSettings', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
 var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'annotationResize', 'annotationSelect', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'hyperlinkClick', 'pageChange', 'pageClick', 'zoomChange'];
 var twoWays = [];
 /**
@@ -293,6 +293,7 @@ exports.AreaSettings = ej2Pdfviewer.AreaSettings;
 exports.RadiusSettings = ej2Pdfviewer.RadiusSettings;
 exports.VolumeSettings = ej2Pdfviewer.VolumeSettings;
 exports.StickyNotesSettings = ej2Pdfviewer.StickyNotesSettings;
+exports.MeasurementSettings = ej2Pdfviewer.MeasurementSettings;
 exports.PdfViewer = ej2Pdfviewer.PdfViewer;
 exports.BookmarkView = ej2Pdfviewer.BookmarkView;
 exports.TextSelection = ej2Pdfviewer.TextSelection;

@@ -606,6 +606,9 @@
 }
 
 .e-de-prop-pane {
+  height: 100%;
+  min-height: 200px;
+  overflow: auto;
   width: 260px;
 }
 
@@ -614,6 +617,9 @@
 }
 
 .e-bigger .e-de-prop-pane {
+  height: 100%;
+  min-height: 200px;
+  overflow: auto;
   width: 272px;
 }
 
@@ -1214,6 +1220,7 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: calc(100% - 118px);
+  min-height: 200px;
   width: 100%;
 }
 

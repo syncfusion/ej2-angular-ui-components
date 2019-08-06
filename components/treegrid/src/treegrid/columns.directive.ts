@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular TreeGrid. 
@@ -322,6 +322,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('filterItemTemplate')
     @Template()
     public filter_itemTemplate: any;
+    /** 
+     * Defines the filter template/UI that is used as filter for a particular column. 
+     * It accepts either template string or HTML element ID.
+     * @aspignore 
+     */
     @ContentChild('filterTemplate')
     @Template()
     public filterTemplate: any;
@@ -332,7 +337,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines the cell edit template that used as editor for a particular column. 
      * It accepts either template string or HTML element ID.
      * @aspignore 
-     * @blazorignore 
      */
     @ContentChild('editTemplate')
     @Template()

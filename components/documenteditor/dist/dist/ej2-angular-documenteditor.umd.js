@@ -418,7 +418,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$1 = ['enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane'];
-var outputs$1 = ['contentChange', 'created', 'destroyed', 'documentChange', 'selectionChange'];
+var outputs$1 = ['contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'selectionChange'];
 var twoWays$1 = [];
 /**
  * `ejs-documenteditor-container` represents the Angular Document Editor Container.

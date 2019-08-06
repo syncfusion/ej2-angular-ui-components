@@ -577,7 +577,7 @@
   z-index: 3;
 }
 
-.e-gantt .e-gantt-chart .e-left-label-container {
+.e-gantt .e-gantt-chart .e-left-label-container.e-left-label-temp-container {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-inline-flexbox;
@@ -589,24 +589,59 @@
   white-space: nowrap;
 }
 
-.e-gantt .e-gantt-chart .e-left-label-inner-div,
-.e-gantt .e-gantt-chart .e-right-label-container {
-  overflow: hidden;
-}
-
-.e-gantt .e-gantt-chart .e-right-label-container {
+.e-gantt .e-gantt-chart .e-right-label-container.e-right-label-temp-container {
   -ms-flex-align: center;
       align-items: center;
-  background-color: transparent;
   display: -ms-inline-flexbox;
   display: inline-flex;
   float: left;
-  margin: 0;
   outline: none;
   overflow: hidden;
   position: absolute;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.e-gantt .e-gantt-chart .e-left-label-container {
+  display: inline-block;
+}
+
+.e-gantt .e-gantt-chart .e-left-label-inner-div,
+.e-gantt .e-gantt-chart .e-right-label-container {
+  overflow: hidden;
+}
+
+.e-gantt .e-gantt-chart .e-left-label-inner-div {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100%;
+}
+
+.e-gantt .e-gantt-chart .e-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.e-gantt .e-gantt-chart .e-right-label-container {
+  background-color: transparent;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-right-label-inner-div {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+  outline: none;
+  overflow: hidden;
 }
 
 .e-gantt .e-gantt-chart .e-indicator-span {
@@ -1397,18 +1432,33 @@
   border-color: #ffd939;
 }
 
+.e-gantt .e-gantt-chart .e-left-label-inner-div,
+.e-gantt .e-gantt-chart .e-right-label-inner-div {
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 13px;
+}
+
+.e-gantt .e-gantt-chart .e-left-label-temp-container {
+  padding-right: 25px;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 13px;
+  color: #fff;
+}
+
+.e-gantt .e-gantt-chart .e-right-label-temp-container {
+  margin-left: 25px;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 13px;
+  color: #fff;
+}
+
 .e-gantt .e-gantt-chart .e-right-label-container {
   margin-left: 25px;
-  font-size: 13px;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
-  color: #fff;
 }
 
 .e-gantt .e-gantt-chart .e-left-label-container {
   padding-right: 25px;
-  font-size: 13px;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
-  color: #fff;
 }
 
 .e-gantt .e-gantt-chart .e-connectorpoint-right {
@@ -1458,6 +1508,11 @@
 
 .e-gantt .e-gantt-chart .e-milestone-bottom {
   border-top-color: #fff;
+}
+
+.e-gantt .e-gantt-chart .e-label {
+  font-size: 13px;
+  color: #fff;
 }
 
 .e-gantt .e-gantt-chart .e-active {

@@ -28,7 +28,7 @@ export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingDirec
     public endRange: any;
     /** 
      * To configure sparkline rangeband opacity
-     * @aspdefaultvalueignore 
+     * @default 1
      */
     public opacity: any;
     /** 

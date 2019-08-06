@@ -147,6 +147,18 @@
   vertical-align: middle;
 }
 
+.e-treegrid .e-rowcell:not(.e-gridclip) .e-treecolumn-container {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.e-treegrid .e-rowcell:not(.e-gridclip) .e-treecolumn-container span.e-treecell {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .e-treegrid .e-rowcell.e-treerowcell {
   padding-left: 5px;
 }
@@ -177,6 +189,7 @@
 
 .e-treegrid .e-treecell {
   display: table-cell;
+  line-height: normal;
 }
 
 .e-treegrid .e-grid.e-wrap .e-rowcell .e-treecolumn-container {

@@ -60,7 +60,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public fill: any;
     /** 
      * To customize the height of the marker.
-     * @default 1
+     * @default 10
      */
     public height: any;
     /** 
@@ -105,7 +105,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public visible: any;
     /** 
      * To customize the width of the marker.
-     * @default 1
+     * @default 10
      */
     public width: any;
     /** 

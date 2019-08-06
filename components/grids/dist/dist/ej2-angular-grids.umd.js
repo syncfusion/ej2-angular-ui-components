@@ -930,6 +930,7 @@ exports.getPrintGridModel = ej2Grids.getPrintGridModel;
 exports.extendObjWithFn = ej2Grids.extendObjWithFn;
 exports.measureColumnDepth = ej2Grids.measureColumnDepth;
 exports.checkDepth = ej2Grids.checkDepth;
+exports.refreshFilteredColsUid = ej2Grids.refreshFilteredColsUid;
 exports.created = ej2Grids.created;
 exports.destroyed = ej2Grids.destroyed;
 exports.load = ej2Grids.load;

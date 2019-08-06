@@ -1201,7 +1201,9 @@ label.e-float-text,
 }
 
 .e-float-input.e-rtl label.e-float-text,
-.e-float-input.e-control-wrapper.e-rtl label.e-float-text {
+.e-float-input.e-control-wrapper.e-rtl label.e-float-text,
+.e-rtl .e-float-input label.e-float-text,
+.e-rtl .e-float-input.e-control-wrapper label.e-float-text {
   right: 0;
   transform-origin: right top;
 }
@@ -3457,135 +3459,11 @@ textarea.e-input,
 }
 
 .e-filled textarea.e-input,
-.e-filled.e-input-group textarea,
-.e-filled.e-input-group textarea.e-input,
-.e-filled.e-input-group.e-input-focus textarea,
-.e-filled.e-input-group.e-input-focus textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper textarea,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus textarea,
-.e-filled.e-input-group.e-control-wrapper textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input,
-.e-filled.e-float-input textarea,
-.e-filled.e-float-input.e-control-wrapper textarea {
-  padding: 0;
-  padding-right: 12px;
-}
-
-.e-filled.e-input-group.e-bigger textarea,
-.e-filled.e-input-group.e-bigger textarea.e-input,
-.e-filled.e-input-group textarea.e-bigger,
-.e-filled.e-input-group textarea.e-input.e-bigger,
-.e-filled.e-input-group.e-control-wrapper.e-bigger textarea,
-.e-filled.e-input-group.e-control-wrapper.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper textarea.e-bigger,
-.e-filled.e-input-group.e-control-wrapper textarea.e-input.e-bigger,
-.e-bigger .e-filled.e-input-group textarea,
-.e-bigger .e-filled.e-input-group textarea.e-input,
-.e-bigger .e-filled.e-input-group.e-control-wrapper textarea,
-.e-bigger .e-filled.e-input-group.e-control-wrapper textarea.e-input,
-.e-filled.e-float-input.e-bigger textarea,
-.e-filled.e-float-input textarea.e-bigger,
-.e-filled.e-float-input.e-control-wrapper.e-bigger textarea,
-.e-filled.e-float-input.e-control-wrapper textarea.e-bigger,
-.e-bigger .e-filled.e-float-input textarea,
-.e-bigger .e-filled.e-float-input.e-control-wrapper textarea {
-  padding: 0;
-  padding-right: 16px;
-}
-
-.e-filled.e-input-group.e-input-focus.e-bigger textarea,
-.e-filled.e-input-group.e-input-focus.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-input-focus textarea.e-bigger,
-.e-filled.e-input-group.e-input-focus textarea.e-input.e-bigger,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-bigger textarea,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-bigger,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input.e-bigger,
-.e-bigger .e-filled.e-input-group.e-input-focus textarea,
-.e-bigger .e-filled.e-input-group.e-control-wrapper.e-input-focus textarea,
-.e-bigger .e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input {
-  padding: 0;
-  padding-right: 16px;
-}
-
-.e-filled.e-input-group.e-small textarea,
-.e-filled.e-input-group.e-small textarea.e-input,
-.e-filled.e-input-group textarea.e-small,
-.e-filled.e-input-group textarea.e-input.e-small,
-.e-filled.e-input-group.e-control-wrapper.e-small textarea,
-.e-filled.e-input-group.e-control-wrapper.e-small textarea.e-input,
-.e-small .e-filled.e-input-group textarea,
-.e-small .e-filled.e-input-group textarea.e-input,
-.e-filled.e-float-input.e-small textarea,
-.e-filled.e-float-input textarea.e-small,
-.e-filled.e-float-input.e-control-wrapper.e-small textarea,
-.e-filled.e-float-input.e-control-wrapper textarea.e-small,
-.e-small .e-filled.e-float-input textarea,
-.e-small .e-filled.e-float-input.e-control-wrapper textarea {
-  padding: 0;
-  padding-right: 8px;
-}
-
-.e-filled.e-input-group.e-input-focus.e-small textarea,
-.e-filled.e-input-group.e-input-focus.e-small textarea.e-input,
-.e-filled.e-input-group.e-input-focus textarea.e-small,
-.e-filled.e-input-group.e-input-focus textarea.e-input.e-small,
-.e-filled.e-input-group.e-input-focus textarea.e-input.e-small,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-small textarea,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-small textarea.e-input,
-.e-small .e-filled.e-input-group.e-input-focus textarea,
-.e-small .e-filled.e-input-group.e-input-focus textarea.e-input {
-  padding: 0;
-  padding-right: 8px;
-}
-
-.e-filled.e-input-group.e-small.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-small textarea.e-input.e-bigger,
-.e-filled.e-input-group textarea.e-input.e-bigger.e-small,
-.e-filled.e-input-group.e-bigger textarea.e-small,
-.e-filled.e-input-group.e-control-wrapper.e-small.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper.e-small textarea.e-input.e-bigger,
-.e-bigger.e-small .e-filled.e-input-group textarea.e-input,
-.e-bigger.e-small .e-filled.e-input-group.e-control-wrapper textarea.e-input,
-.e-bigger .input-group textarea.e-small,
-.e-bigger .e-filled.e-input-group.e-small textarea.e-input,
-.e-bigger .e-filled.e-input-group.e-control-wrapper.e-small textarea.e-input,
-.e-bigger .e-small.e-filled.e-input-group.e-control-wrapper textarea.e-input,
-.e-small .input-group textarea.e-bigger,
-.e-small .e-filled.e-input-group.e-bigger textarea.e-input,
-.e-small .e-filled.e-input-group.e-control-wrapper textarea.e-input.e-bigger,
-.e-small .e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input.e-bigger,
-.e-filled.e-float-input textarea.e-bigger.e-small,
-.e-filled.e-float-input.e-small.e-bigger textarea,
-.e-filled.e-float-input.e-small textarea.e-bigger,
-.e-filled.e-float-input.e-bigger textarea.e-small,
-.e-bigger .e-filled.e-float-input.e-small textarea,
-.e-bigger.e-small .e-filled.e-float-input textarea,
-.e-bigger .float-input textarea.e-small,
-.e-small .e-filled.e-float-input.e-bigger textarea,
-.e-small .float-input textarea.e-bigger,
-.e-small .e-filled.e-float-input.e-control-wrapper textarea.e-bigger,
-.e-filled.e-float-input.e-control-wrapper.e-small.e-bigger textarea,
-.e-filled.e-float-input.e-control-wrapper.e-small textarea.e-bigger,
-.e-bigger .e-filled.e-float-input.e-control-wrapper.e-small textarea,
-.e-bigger.e-small .e-filled.e-float-input.e-control-wrapper textarea,
-.e-bigger .e-small.e-filled.e-float-input.e-control-wrapper textarea {
-  padding: 0;
-  padding-right: 12px;
-}
-
-.e-filled.e-input-group.e-input-focus textarea.e-input.e-bigger.e-small,
-.e-filled.e-input-group.e-input-focus.e-small.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-input-focus.e-small textarea.e-input.e-bigger,
-.e-filled.e-input-group.e-input-focus.e-bigger textarea.e-small,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-small.e-bigger textarea.e-input,
-.e-filled.e-input-group.e-control-wrapper.e-input-focus.e-small textarea.e-input.e-bigger,
-.e-bigger.e-small .e-filled.e-input-group.e-input-focus textarea.e-input,
-.e-bigger .e-filled.e-input-group.e-control-wrapper.e-input-focus.e-small textarea.e-input,
-.e-bigger.e-small .e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input,
-.e-bigger .e-small.e-filled.e-input-group.e-control-wrapper.e-input-focus textarea.e-input {
-  padding: 0;
-  padding-right: 12px;
+.e-filled.e-input-group.e-multi-line-input textarea,
+.e-filled.e-input-group.e-control-wrapper.e-multi-line-input textarea,
+.e-filled.e-float-input.e-multi-line-input textarea,
+.e-filled.e-float-input.e-control-wrapper.e-multi-line-input textarea {
+  box-sizing: border-box;
 }
 
 /*! input theme */
