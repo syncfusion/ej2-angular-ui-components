@@ -53,8 +53,7 @@
   width: auto;
 }
 
-.e-dialog .e-dlg-header,
-.e-dialog .e-dlg-header * {
+.e-dialog .e-dlg-header {
   display: block;
   font-size: 18px;
   font-weight: normal;

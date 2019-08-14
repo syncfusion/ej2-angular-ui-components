@@ -30,6 +30,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * Specifies the value of axis.
      * @aspdefaultvalueignore 
+     * @blazordefaultvalue null
      */
     public axisValue: any;
     /** 

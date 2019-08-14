@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { CalculatedField, ConditionalFormatting, DrillThrough, ExcelExport, FieldList, GroupingBar, PDFExport, PivotChart, PivotFieldList, PivotView, Toolbar, VirtualScroll } from '@syncfusion/ej2-pivotview';
+import { CalculatedField, ConditionalFormatting, DrillThrough, ExcelExport, FieldList, GroupingBar, NumberFormatting, PDFExport, PivotChart, PivotFieldList, PivotView, Toolbar, VirtualScroll } from '@syncfusion/ej2-pivotview';
 import { CommonModule } from '@angular/common';
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -26,8 +26,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'locale', 'maxNodeLimitInMemberEditor', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'toolbar', 'width'];
-var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
+var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'locale', 'maxNodeLimitInMemberEditor', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'toolbar', 'width'];
+var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldListRefreshed', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
 var twoWays = [];
 /**
  * `ej-pivotview` represents the Angular PivotView Component.
@@ -121,6 +121,13 @@ var PivotViewComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
+        try {
+            var mod = _this.injector.get('PivotViewNumberFormatting');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
@@ -214,6 +221,7 @@ var ToolbarService = { provide: 'PivotViewToolbar', useValue: Toolbar };
 var PivotChartService = { provide: 'PivotViewPivotChart', useValue: PivotChart };
 var PDFExportService = { provide: 'PivotViewPDFExport', useValue: PDFExport };
 var ExcelExportService = { provide: 'PivotViewExcelExport', useValue: ExcelExport };
+var NumberFormattingService = { provide: 'PivotViewNumberFormatting', useValue: NumberFormatting };
 /**
  * NgModule definition for the PivotView component with providers.
  */
@@ -238,7 +246,8 @@ PivotViewAllModule.decorators = [
                     ToolbarService,
                     PivotChartService,
                     PDFExportService,
-                    ExcelExportService
+                    ExcelExportService,
+                    NumberFormattingService
                 ]
             },] },
 ];
@@ -385,6 +394,6 @@ PivotFieldListAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { PivotViewComponent, PivotViewModule, PivotViewAllModule, GroupingBarService, FieldListService, CalculatedFieldService, ConditionalFormattingService, VirtualScrollService, DrillThroughService, ToolbarService, PivotChartService, PDFExportService, ExcelExportService, PivotFieldListComponent, PivotFieldListModule, PivotFieldListAllModule, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb };
-export { GroupingBarSettings, CellEditSettings, ConditionalSettings, HyperlinkSettings, DisplayOption, PivotView, Render, ExcelExport, PDFExport, KeyboardInteraction, VirtualScroll, DrillThrough, PivotChart, PivotFieldList, TreeViewRenderer, AxisFieldRenderer, AxisTableRenderer, DialogRenderer, EventBase, NodeStateModified, DataSourceUpdate, FieldList, CommonKeyboardInteraction, GroupingBar, CalculatedField, ConditionalFormatting, PivotCommon, load, enginePopulating, enginePopulated, onFieldDropped, beforePivotTableRender, afterPivotTableRender, beforeExport, excelHeaderQueryCellInfo, pdfHeaderQueryCellInfo, excelQueryCellInfo, pdfQueryCellInfo, onPdfCellRender, dataBound, queryCellInfo, headerCellInfo, hyperlinkCellClick, resizing, resizeStop, cellClick, drillThrough, beforeColumnsRender, selected, cellSelecting, drill, cellSelected, cellDeselected, rowSelected, rowDeselected, beginDrillThrough, saveReport, fetchReport, loadReport, renameReport, removeReport, newReport, toolbarRender, toolbarClick, chartTooltipRender, chartLoaded, chartLoad, chartResized, chartAxisLabelRender, chartSeriesCreated, aggregateCellInfo, contextMenuClick, contextMenuOpen, initialLoad, uiUpdate, scroll, contentReady, dataReady, initSubComponent, treeViewUpdate, pivotButtonUpdate, initCalculatedField, click, initToolbar, ErrorDialog, FilterDialog, PivotContextMenu, AggregateMenu, Toolbar, PivotEngine, PivotUtil } from '@syncfusion/ej2-pivotview';
+export { PivotViewComponent, PivotViewModule, PivotViewAllModule, GroupingBarService, FieldListService, CalculatedFieldService, ConditionalFormattingService, VirtualScrollService, DrillThroughService, ToolbarService, PivotChartService, PDFExportService, ExcelExportService, NumberFormattingService, PivotFieldListComponent, PivotFieldListModule, PivotFieldListAllModule, inputs$1 as ɵc, outputs$1 as ɵd, inputs as ɵa, outputs as ɵb };
+export { GroupingBarSettings, CellEditSettings, ConditionalSettings, HyperlinkSettings, DisplayOption, PivotView, Render, ExcelExport, PDFExport, KeyboardInteraction, VirtualScroll, DrillThrough, PivotChart, PivotFieldList, TreeViewRenderer, AxisFieldRenderer, AxisTableRenderer, DialogRenderer, EventBase, NodeStateModified, DataSourceUpdate, FieldList, CommonKeyboardInteraction, GroupingBar, CalculatedField, ConditionalFormatting, PivotCommon, load, enginePopulating, enginePopulated, onFieldDropped, beforePivotTableRender, afterPivotTableRender, beforeExport, excelHeaderQueryCellInfo, pdfHeaderQueryCellInfo, excelQueryCellInfo, pdfQueryCellInfo, onPdfCellRender, dataBound, queryCellInfo, headerCellInfo, hyperlinkCellClick, resizing, resizeStop, cellClick, drillThrough, beforeColumnsRender, selected, cellSelecting, drill, cellSelected, cellDeselected, rowSelected, rowDeselected, beginDrillThrough, saveReport, fetchReport, loadReport, renameReport, removeReport, newReport, toolbarRender, toolbarClick, chartTooltipRender, chartLoaded, chartLoad, chartResized, chartAxisLabelRender, chartSeriesCreated, aggregateCellInfo, contextMenuClick, contextMenuOpen, fieldListRefreshed, initialLoad, uiUpdate, scroll, contentReady, dataReady, initSubComponent, treeViewUpdate, pivotButtonUpdate, initCalculatedField, click, initToolbar, initFormatting, ErrorDialog, FilterDialog, PivotContextMenu, AggregateMenu, Toolbar, NumberFormatting, PivotEngine, PivotUtil } from '@syncfusion/ej2-pivotview';
 //# sourceMappingURL=ej2-angular-pivotview.es5.js.map

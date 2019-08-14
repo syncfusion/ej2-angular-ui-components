@@ -646,8 +646,6 @@ ejs-dropdownlist {
 .e-multiselect .e-input-group-icon.e-ddl-icon {
   border-radius: 0 4px 4px 0;
   border-right-width: 0;
-  height: 34px;
-  width: 36px;
 }
 
 .e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
@@ -685,7 +683,7 @@ ejs-dropdownlist {
   box-sizing: border-box;
   cursor: text;
   line-height: normal;
-  min-height: 34px;
+  min-height: 32px;
   padding: 0 32px 0 2px;
   position: relative;
   -webkit-user-select: none;
@@ -1122,8 +1120,6 @@ ejs-dropdownlist {
 .e-multiselect .e-input-group-icon.e-ddl-icon {
   float: right;
   margin-top: 0;
-  height: 36px;
-  width: 36px;
 }
 
 .e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
@@ -1132,7 +1128,6 @@ ejs-dropdownlist {
 
 .e-multiselect.e-checkbox .e-multi-select-wrapper,
 .e-multiselect .e-multi-select-wrapper.e-down-icon {
-  padding: 2px 0 0;
   padding: 0;
 }
 

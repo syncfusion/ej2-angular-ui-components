@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'locale', 'maxNodeLimitInMemberEditor', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'toolbar', 'width'];
-var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
+var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'locale', 'maxNodeLimitInMemberEditor', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'toolbar', 'width'];
+var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldListRefreshed', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
 var twoWays = [];
 /**
  * `ej-pivotview` represents the Angular PivotView Component.
@@ -123,6 +123,13 @@ exports.PivotViewComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
+        try {
+            var mod = _this.injector.get('PivotViewNumberFormatting');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -216,6 +223,7 @@ var ToolbarService = { provide: 'PivotViewToolbar', useValue: ej2Pivotview.Toolb
 var PivotChartService = { provide: 'PivotViewPivotChart', useValue: ej2Pivotview.PivotChart };
 var PDFExportService = { provide: 'PivotViewPDFExport', useValue: ej2Pivotview.PDFExport };
 var ExcelExportService = { provide: 'PivotViewExcelExport', useValue: ej2Pivotview.ExcelExport };
+var NumberFormattingService = { provide: 'PivotViewNumberFormatting', useValue: ej2Pivotview.NumberFormatting };
 /**
  * NgModule definition for the PivotView component with providers.
  */
@@ -240,7 +248,8 @@ PivotViewAllModule.decorators = [
                     ToolbarService,
                     PivotChartService,
                     PDFExportService,
-                    ExcelExportService
+                    ExcelExportService,
+                    NumberFormattingService
                 ]
             },] },
 ];
@@ -397,6 +406,7 @@ exports.ToolbarService = ToolbarService;
 exports.PivotChartService = PivotChartService;
 exports.PDFExportService = PDFExportService;
 exports.ExcelExportService = ExcelExportService;
+exports.NumberFormattingService = NumberFormattingService;
 exports.PivotFieldListModule = PivotFieldListModule;
 exports.PivotFieldListAllModule = PivotFieldListAllModule;
 exports.ɵc = inputs$1;
@@ -476,6 +486,7 @@ exports.chartSeriesCreated = ej2Pivotview.chartSeriesCreated;
 exports.aggregateCellInfo = ej2Pivotview.aggregateCellInfo;
 exports.contextMenuClick = ej2Pivotview.contextMenuClick;
 exports.contextMenuOpen = ej2Pivotview.contextMenuOpen;
+exports.fieldListRefreshed = ej2Pivotview.fieldListRefreshed;
 exports.initialLoad = ej2Pivotview.initialLoad;
 exports.uiUpdate = ej2Pivotview.uiUpdate;
 exports.scroll = ej2Pivotview.scroll;
@@ -487,11 +498,13 @@ exports.pivotButtonUpdate = ej2Pivotview.pivotButtonUpdate;
 exports.initCalculatedField = ej2Pivotview.initCalculatedField;
 exports.click = ej2Pivotview.click;
 exports.initToolbar = ej2Pivotview.initToolbar;
+exports.initFormatting = ej2Pivotview.initFormatting;
 exports.ErrorDialog = ej2Pivotview.ErrorDialog;
 exports.FilterDialog = ej2Pivotview.FilterDialog;
 exports.PivotContextMenu = ej2Pivotview.PivotContextMenu;
 exports.AggregateMenu = ej2Pivotview.AggregateMenu;
 exports.Toolbar = ej2Pivotview.Toolbar;
+exports.NumberFormatting = ej2Pivotview.NumberFormatting;
 exports.PivotEngine = ej2Pivotview.PivotEngine;
 exports.PivotUtil = ej2Pivotview.PivotUtil;
 

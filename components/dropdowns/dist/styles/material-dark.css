@@ -1080,7 +1080,7 @@ ejs-dropdownlist {
 
 .e-multiselect .e-input-group-icon.e-ddl-icon {
   float: right;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
@@ -1099,7 +1099,7 @@ ejs-dropdownlist {
 
 .e-multiselect.e-checkbox .e-multi-select-wrapper,
 .e-multiselect .e-multi-select-wrapper.e-down-icon {
-  padding: 2px 0 0;
+  padding: 0;
 }
 
 .e-ddl.e-popup.e-multi-select-list-wrapper .e-filter-parent .e-input-filter,

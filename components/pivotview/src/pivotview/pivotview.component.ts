@@ -4,8 +4,8 @@ import { PivotView } from '@syncfusion/ej2-pivotview';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSourceSettings','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
-export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
+export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSourceSettings','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
+export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','fieldListRefreshed','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
 export const twoWays: string[] = [];
 
 /**
@@ -98,6 +98,12 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('PivotViewExcelExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewNumberFormatting');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

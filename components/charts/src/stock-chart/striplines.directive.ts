@@ -53,7 +53,7 @@ export class StockChartStripLineDirective extends ComplexBase<StockChartStripLin
     public duration: any;
     /** 
      * If set to true, series gets animated on initial loading.
-     * @default true
+     * @default false
      */
     public enable: any;
     /** 

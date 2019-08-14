@@ -30,14 +30,16 @@ export class ToastComponent extends Toast implements IComponentBase {
     public tags: string[] = ['buttons'];
 
     /** 
-     * Specifies the title to be displayed on the Toast.
+     * Specifies the title to be displayed on the Toast. 
+     * Works only with string values.
      * @default null
      */
     @ContentChild('title')
     @Template()
     public title: any;
     /** 
-     * Specifies the content to be displayed on the Toast.
+     * Specifies the content to be displayed on the Toast. 
+     * Accepts selectors, string values and HTML elements.
      * @default null
      * @blazortype string
      */

@@ -340,6 +340,7 @@ exports.modelChanged = ej2Filemanager.modelChanged;
 exports.initialEnd = ej2Filemanager.initialEnd;
 exports.finalizeEnd = ej2Filemanager.finalizeEnd;
 exports.createEnd = ej2Filemanager.createEnd;
+exports.filterEnd = ej2Filemanager.filterEnd;
 exports.beforeDelete = ej2Filemanager.beforeDelete;
 exports.pathDrag = ej2Filemanager.pathDrag;
 exports.deleteInit = ej2Filemanager.deleteInit;

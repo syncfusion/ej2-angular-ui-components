@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Aggregate, ColumnMenu, CommandColumn, ContextMenu, DetailRow, Edit, ExcelExport, Filter, Page, PdfExport, Reorder, Resize, Selection, Sort, Toolbar, TreeGrid, VirtualScroll } from '@syncfusion/ej2-treegrid';
+import { Aggregate, ColumnMenu, CommandColumn, ContextMenu, DetailRow, Edit, ExcelExport, Filter, Page, PdfExport, Reorder, Resize, RowDD, Selection, Sort, Toolbar, TreeGrid, VirtualScroll } from '@syncfusion/ej2-treegrid';
 import { CommonModule } from '@angular/common';
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -301,8 +301,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowTextWrap', 'autoCheckHierarchy', 'childMapping', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'dataSource', 'detailTemplate', 'editSettings', 'enableAltRow', 'enableCollapseAll', 'enableHover', 'enablePersistence', 'enableRtl', 'enableVirtualization', 'expandStateMapping', 'filterSettings', 'gridLines', 'hasChildMapping', 'height', 'idMapping', 'locale', 'pageSettings', 'parentIdMapping', 'printMode', 'query', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'treeColumnIndex', 'width'];
-var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeDataBound', 'beforeExcelExport', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSave', 'cellSelected', 'cellSelecting', 'checkboxChange', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'detailDataBound', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'expanded', 'expanding', 'headerCellInfo', 'load', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
+var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowRowDragAndDrop', 'allowSelection', 'allowSorting', 'allowTextWrap', 'autoCheckHierarchy', 'childMapping', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'dataSource', 'detailTemplate', 'editSettings', 'enableAltRow', 'enableCollapseAll', 'enableHover', 'enablePersistence', 'enableRtl', 'enableVirtualization', 'expandStateMapping', 'filterSettings', 'gridLines', 'hasChildMapping', 'height', 'idMapping', 'loadChildOnDemand', 'locale', 'pageSettings', 'parentIdMapping', 'printMode', 'query', 'rowDropSettings', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'treeColumnIndex', 'width'];
+var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeDataBound', 'beforeExcelExport', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSave', 'cellSelected', 'cellSelecting', 'checkboxChange', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'detailDataBound', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'expanded', 'expanding', 'headerCellInfo', 'load', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowDrag', 'rowDragStart', 'rowDragStartHelper', 'rowDrop', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * `ejs-treegrid` represents the Angular TreeTreeGrid Component.
@@ -439,6 +439,13 @@ var TreeGridComponent = /** @class */ (function (_super) {
             }
         }
         catch (_r) { }
+        try {
+            var mod = _this.injector.get('TreeGridRowDD');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_s) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
@@ -573,6 +580,7 @@ var EditService = { provide: 'TreeGridEdit', useValue: Edit };
 var SelectionService = { provide: 'TreeGridSelection', useValue: Selection };
 var VirtualScrollService = { provide: 'TreeGridVirtualScroll', useValue: VirtualScroll };
 var DetailRowService = { provide: 'TreeGridDetailRow', useValue: DetailRow };
+var RowDDService = { provide: 'TreeGridRowDD', useValue: RowDD };
 /**
  * NgModule definition for the TreeGrid component with providers.
  */
@@ -603,7 +611,8 @@ TreeGridAllModule.decorators = [
                     EditService,
                     SelectionService,
                     VirtualScrollService,
-                    DetailRowService
+                    DetailRowService,
+                    RowDDService
                 ]
             },] },
 ];
@@ -614,6 +623,6 @@ TreeGridAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { ColumnDirective, ColumnsDirective, AggregateColumnDirective, AggregateColumnsDirective, AggregateDirective, AggregatesDirective, TreeGridComponent, TreeGridModule, TreeGridAllModule, FilterService, PageService, SortService, ReorderService, ToolbarService, AggregateService, ResizeService, ColumnMenuService, ExcelExportService, PdfExportService, CommandColumnService, ContextMenuService, EditService, SelectionService, VirtualScrollService, DetailRowService, inputs as ɵa, outputs$3 as ɵb };
-export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, DataManipulation, Reorder, Resize, Column, EditSettings, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual } from '@syncfusion/ej2-treegrid';
+export { ColumnDirective, ColumnsDirective, AggregateColumnDirective, AggregateColumnsDirective, AggregateDirective, AggregatesDirective, TreeGridComponent, TreeGridModule, TreeGridAllModule, FilterService, PageService, SortService, ReorderService, ToolbarService, AggregateService, ResizeService, ColumnMenuService, ExcelExportService, PdfExportService, CommandColumnService, ContextMenuService, EditService, SelectionService, VirtualScrollService, DetailRowService, RowDDService, inputs as ɵa, outputs$3 as ɵb };
+export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, rowDrag, rowDragStartHelper, rowDrop, rowDragStart, rowsAdd, rowsRemove, rowdraging, rowDropped, DataManipulation, Reorder, Resize, RowDD, Column, EditSettings, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual } from '@syncfusion/ej2-treegrid';
 //# sourceMappingURL=ej2-angular-treegrid.es5.js.map

@@ -703,8 +703,6 @@ ejs-dropdownlist {
 .e-multiselect .e-input-group-icon.e-ddl-icon {
   border-radius: 0 4px 4px 0;
   border-right-width: 0;
-  height: 34px;
-  width: 36px;
 }
 
 .e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
@@ -1237,7 +1235,6 @@ ejs-dropdownlist {
 
 .e-multiselect.e-checkbox .e-multi-select-wrapper,
 .e-multiselect .e-multi-select-wrapper.e-down-icon {
-  padding: 2px 0 0;
   padding: 0;
 }
 

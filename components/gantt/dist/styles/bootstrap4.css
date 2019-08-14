@@ -297,8 +297,6 @@
 .e-multiselect .e-input-group-icon.e-ddl-icon {
   border-radius: 0 4px 4px 0;
   border-right-width: 0;
-  height: 34px;
-  width: 36px;
 }
 
 .e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
