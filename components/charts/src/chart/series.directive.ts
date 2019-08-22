@@ -53,7 +53,8 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * * Candle 
      * * Polar 
      * * Radar 
-     * * BoxAndWhisker
+     * * BoxAndWhisker 
+     * * Pareto
      * @default 'Line'
      */
     public type: any;

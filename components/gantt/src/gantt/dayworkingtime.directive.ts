@@ -31,10 +31,15 @@ export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeDirective
     /** 
      * Defines start time of working time range.
      * @default null
+     * @blazortype double?
+     * @blazordefaultvalue null
      */
     public from: any;
     /** 
      * Defines end time of working time range.
+     * @default null
+     * @blazortype double?
+     * @blazordefaultvalue null
      */
     public to: any;
 

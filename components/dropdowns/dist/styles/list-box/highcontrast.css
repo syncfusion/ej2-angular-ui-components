@@ -102,6 +102,10 @@
   pointer-events: none;
 }
 
+.e-listbox-wrapper .e-disable {
+  opacity: .7;
+}
+
 .e-listbox-wrapper .e-list-parent {
   margin: 0;
   padding: 0;

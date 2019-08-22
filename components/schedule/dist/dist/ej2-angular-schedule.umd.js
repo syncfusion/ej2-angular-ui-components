@@ -838,6 +838,7 @@ exports.getDateFromString = ej2Schedule.getDateFromString;
 exports.getScrollBarWidth = ej2Schedule.getScrollBarWidth;
 exports.findIndexInData = ej2Schedule.findIndexInData;
 exports.getOuterHeight = ej2Schedule.getOuterHeight;
+exports.removeChildren = ej2Schedule.removeChildren;
 exports.Resize = ej2Schedule.Resize;
 exports.DragAndDrop = ej2Schedule.DragAndDrop;
 exports.HeaderRenderer = ej2Schedule.HeaderRenderer;

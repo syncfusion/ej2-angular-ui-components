@@ -500,6 +500,14 @@
   display: inline-block;
 }
 
+.e-query-builder .e-group-body .e-rule-value.e-hide {
+  display: none;
+}
+
+.e-query-builder .e-group-body .e-rule-value.e-show {
+  display: inline-block;
+}
+
 .e-query-builder .e-group-body .e-rule-container.e-vertical-mode .e-rule-delete {
   margin-bottom: 12px;
   padding-right: none;

@@ -1636,6 +1636,10 @@ e-ddl.e-popup.e-multi-select-list-wrapper.e-multiselct-group.e-checkbox .e-list-
   pointer-events: none;
 }
 
+.e-listbox-wrapper .e-disable {
+  opacity: .7;
+}
+
 .e-listbox-wrapper .e-list-parent {
   margin: 0;
   padding: 0;

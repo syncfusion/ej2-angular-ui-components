@@ -50,6 +50,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     /** 
      * To configure the dataSource of the marker.
      * @isdatamanager false
+     * @isobservable true
      * @default []
      */
     public dataSource: any;

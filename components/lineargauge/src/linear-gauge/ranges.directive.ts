@@ -32,7 +32,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     public color: any;
     /** 
      * End of the axis range.
-     * @default null
+     * @default 0
      */
     public end: any;
     /** 
@@ -52,7 +52,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     public position: any;
     /** 
      * Start of the axis range.
-     * @default null
+     * @default 0
      */
     public start: any;
     /** 

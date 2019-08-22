@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['backgroundColor','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enablePersistence','enableRtl','enableTabKey','enabled','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','valueChange'];
+export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**

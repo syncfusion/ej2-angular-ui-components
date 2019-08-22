@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['backgroundColor', 'cssClass', 'editorMode', 'enableAutoUrl', 'enableHtmlEncode', 'enablePersistence', 'enableRtl', 'enableTabKey', 'enabled', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
-var outputs = ['actionBegin', 'actionComplete', 'beforeDialogOpen', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
+var outputs = ['actionBegin', 'actionComplete', 'beforeDialogOpen', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
 var twoWays = ['value'];
 /**
  * `ejs-richtexteditor` represents the Angular richtexteditor Component.
@@ -405,6 +405,11 @@ exports.beforeQuickToolbarOpen = ej2Richtexteditor.beforeQuickToolbarOpen;
 exports.quickToolbarOpen = ej2Richtexteditor.quickToolbarOpen;
 exports.quickToolbarClose = ej2Richtexteditor.quickToolbarClose;
 exports.popupHide = ej2Richtexteditor.popupHide;
+exports.imageSelected = ej2Richtexteditor.imageSelected;
+exports.imageUploading = ej2Richtexteditor.imageUploading;
+exports.imageUploadSuccess = ej2Richtexteditor.imageUploadSuccess;
+exports.imageUploadFailed = ej2Richtexteditor.imageUploadFailed;
+exports.imageRemoving = ej2Richtexteditor.imageRemoving;
 exports.ServiceLocator = ej2Richtexteditor.ServiceLocator;
 exports.RendererFactory = ej2Richtexteditor.RendererFactory;
 exports.EditorManager = ej2Richtexteditor.EditorManager;
