@@ -1177,6 +1177,7 @@ exports.findNodeByName = ej2Diagrams.findNodeByName;
 exports.findObjectType = ej2Diagrams.findObjectType;
 exports.setSwimLaneDefaults = ej2Diagrams.setSwimLaneDefaults;
 exports.setUMLActivityDefaults = ej2Diagrams.setUMLActivityDefaults;
+exports.setConnectorDefaults = ej2Diagrams.setConnectorDefaults;
 exports.findNearestPoint = ej2Diagrams.findNearestPoint;
 exports.isDiagramChild = ej2Diagrams.isDiagramChild;
 exports.groupHasType = ej2Diagrams.groupHasType;

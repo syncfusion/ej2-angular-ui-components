@@ -391,6 +391,7 @@ exports.dropPath = ej2Filemanager.dropPath;
 exports.dragHelper = ej2Filemanager.dragHelper;
 exports.dragging = ej2Filemanager.dragging;
 exports.updateSelectionData = ej2Filemanager.updateSelectionData;
+exports.methodCall = ej2Filemanager.methodCall;
 exports.FileManager = ej2Filemanager.FileManager;
 exports.Toolbar = ej2Filemanager.Toolbar;
 exports.BreadCrumbBar = ej2Filemanager.BreadCrumbBar;

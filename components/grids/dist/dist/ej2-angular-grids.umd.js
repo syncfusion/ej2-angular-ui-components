@@ -1103,6 +1103,7 @@ exports.beforeStartEdit = ej2Grids.beforeStartEdit;
 exports.beforeBatchCancel = ej2Grids.beforeBatchCancel;
 exports.batchEditFormRendered = ej2Grids.batchEditFormRendered;
 exports.partialRefresh = ej2Grids.partialRefresh;
+exports.blazorId = ej2Grids.blazorId;
 exports.Data = ej2Grids.Data;
 exports.Sort = ej2Grids.Sort;
 exports.Page = ej2Grids.Page;
