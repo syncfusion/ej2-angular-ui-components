@@ -102,22 +102,6 @@
   content: '\e725';
 }
 
-.e-pivotview-png-export::before {
-  content: '\e84b';
-}
-
-.e-pivotview-jpeg-export::before {
-  content: '\e84a';
-}
-
-.e-pivotview-svg-export::before {
-  content: '\e84c';
-}
-
-.e-mdx::before {
-  content: '\e689';
-}
-
 .e-pivotview-select-icon::before {
   content: '\e718';
 }
@@ -352,28 +336,13 @@
   width: 100%;
 }
 
-.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
-  display: inline-block;
-  height: 164px;
-  max-width: 400px;
-  overflow: auto;
-  width: 100%;
-}
-
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
-  display: inline-table;
-  height: 100%;
-  width: 100%;
-}
-
-.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree {
-  overflow-x: auto;
+  height: 164px;
+  max-width: 400px;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul,
@@ -395,19 +364,10 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
 }
 
-.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
-.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon {
-  margin: 0;
-}
-
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-disable {
-  display: none !important;
+  display: none;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-filter-tab-wrapper,
@@ -448,9 +408,9 @@
   padding-top: 20px;
 }
 
-.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
+.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container {
   height: 134px;
 }
 
@@ -567,54 +527,6 @@
 .e-pivotview .e-member-editor-dialog.e-rtl .e-footer-content .e-clear-filter-button,
 .e-pivotview .e-pivot-format-dialog.e-rtl .e-footer-content .e-clear-filter-button {
   float: right;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul {
-  margin-left: 0;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop {
-  margin: 0 5px;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret {
-  display: none;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled {
-  opacity: .5;
-  pointer-events: none;
-}
-
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul {
-  margin-right: 0;
 }
 
 .e-pivotview .e-value-field-settings .e-footer-content,
@@ -734,17 +646,6 @@
   max-width: 350px;
 }
 
-.e-mdx-query-content {
-  font-weight: 500;
-  height: 200px;
-  resize: none;
-  width: 100%;
-}
-
-.e-pivotview-mdx-dialog {
-  max-width: 500px;
-}
-
 .e-pivotview-report-label {
   float: left;
   margin-top: 10px;
@@ -801,10 +702,10 @@
   height: 48px;
 }
 
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
   height: 144px;
 }
 
@@ -868,18 +769,18 @@
   margin: 0 6px 0 0;
 }
 
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
-.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
+.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container {
   height: 99px;
 }
 

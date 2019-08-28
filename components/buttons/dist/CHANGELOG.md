@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.2.47 (2019-08-27)
+
+### Switch
+
+#### Bug Fixes
+
+- Change event triggers twice while clicking the space bar issue fixed.
+
 ## 17.2.35 (2019-07-17)
 
 ### Chips

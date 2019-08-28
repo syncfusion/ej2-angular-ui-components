@@ -230,14 +230,6 @@
   content: '\e659';
 }
 
-.e-gantt .e-csvexport::before {
-  content: '\e241';
-}
-
-.e-gantt .e-excelexport::before {
-  content: '\e242';
-}
-
 .e-gantt.e-device .e-backarrowspan::before,
 .e-gantt.e-device .e-icon-dlg-close::before {
   content: '\e85b';

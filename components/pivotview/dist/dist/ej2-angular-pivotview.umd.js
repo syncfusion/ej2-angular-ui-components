@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'loadMaximumMembers', 'locale', 'maxNodeLimitInMemberEditor', 'maxRowsForDrillThrough', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'spinnerTemplate', 'toolbar', 'width'];
-var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'conditionalFormatCreating', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldListRefreshed', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
+var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'locale', 'maxNodeLimitInMemberEditor', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'toolbar', 'width'];
+var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldListRefreshed', 'hyperlinkCellClick', 'load', 'loadReport', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
 var twoWays = [];
 /**
  * `ej-pivotview` represents the Angular PivotView Component.
@@ -271,7 +271,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['allowCalculatedField', 'allowDeferLayoutUpdate', 'cssClass', 'dataSourceSettings', 'enablePersistence', 'enableRtl', 'loadMaximumMembers', 'locale', 'maxNodeLimitInMemberEditor', 'renderMode', 'showValuesButton', 'spinnerTemplate', 'target'];
+var inputs$1 = ['allowCalculatedField', 'allowDeferLayoutUpdate', 'cssClass', 'dataSourceSettings', 'enablePersistence', 'enableRtl', 'locale', 'maxNodeLimitInMemberEditor', 'renderMode', 'showValuesButton', 'target'];
 var outputs$1 = ['aggregateCellInfo', 'created', 'dataBound', 'destroyed', 'enginePopulated', 'enginePopulating', 'load', 'onFieldDropped'];
 var twoWays$1 = [];
 /**
@@ -487,7 +487,6 @@ exports.aggregateCellInfo = ej2Pivotview.aggregateCellInfo;
 exports.contextMenuClick = ej2Pivotview.contextMenuClick;
 exports.contextMenuOpen = ej2Pivotview.contextMenuOpen;
 exports.fieldListRefreshed = ej2Pivotview.fieldListRefreshed;
-exports.conditionalFormatCreating = ej2Pivotview.conditionalFormatCreating;
 exports.initialLoad = ej2Pivotview.initialLoad;
 exports.uiUpdate = ej2Pivotview.uiUpdate;
 exports.scroll = ej2Pivotview.scroll;
@@ -508,8 +507,6 @@ exports.Toolbar = ej2Pivotview.Toolbar;
 exports.NumberFormatting = ej2Pivotview.NumberFormatting;
 exports.PivotEngine = ej2Pivotview.PivotEngine;
 exports.PivotUtil = ej2Pivotview.PivotUtil;
-exports.OlapEngine = ej2Pivotview.OlapEngine;
-exports.MDXQuery = ej2Pivotview.MDXQuery;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

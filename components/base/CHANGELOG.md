@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.2.48-beta (2019-08-28)
+## 17.2.39 (2019-07-30)
+
+### Common
+
+#### Bug Fixes
+
+- `#242999` - Fixed `ng-valid` and `ng-invalid` classes are not getting added properly in Angular reactive forms issue.
+
+## 17.2.28-beta (2019-06-27)
 
 ### Common
 

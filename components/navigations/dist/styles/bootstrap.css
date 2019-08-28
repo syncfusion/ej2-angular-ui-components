@@ -7525,6 +7525,14 @@ ejs-sidebar {
   z-index: 999;
 }
 
+.e-content-placeholder.e-sidebar.e-placeholder-sidebar {
+  left: 0;
+  position: fixed;
+  right: auto;
+  top: 0;
+  visibility: visible;
+}
+
 /*! component's theme wise override definitions and variables */
 /*! component's theme wise override definitions and variables */
 /*! menu layout */

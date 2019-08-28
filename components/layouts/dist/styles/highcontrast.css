@@ -1371,6 +1371,11 @@
   width: 100%;
 }
 
+.e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-content .e-blazor-template {
+  height: inherit;
+  width: inherit;
+}
+
 .e-dashboardlayout.e-control .e-panel {
   border: 1px #969696 solid;
   height: 100%;
