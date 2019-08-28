@@ -1361,6 +1361,7 @@ exports.ɵd = outputs$3;
 exports.ɵi = inputs$4;
 exports.ɵj = outputs$7;
 exports.MenuAnimationSettings = ej2Navigations.MenuAnimationSettings;
+exports.MenuItem = ej2Navigations.MenuItem;
 exports.HScroll = ej2Navigations.HScroll;
 exports.VScroll = ej2Navigations.VScroll;
 exports.Item = ej2Navigations.Item;

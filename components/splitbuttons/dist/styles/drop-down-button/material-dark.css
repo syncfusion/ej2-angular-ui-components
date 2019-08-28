@@ -92,6 +92,7 @@
   border: none;
   border-radius: 0;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: normal;
   list-style-image: none;

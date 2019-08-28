@@ -167,6 +167,11 @@
   text-overflow: ellipsis;
 }
 
+.e-treegrid .e-treegridexpand:hover::before,
+.e-treegrid .e-treegridcollapse:hover::before {
+  color: #fff;
+}
+
 .e-treegrid .e-rowcell.e-treerowcell {
   padding-left: 5px;
 }

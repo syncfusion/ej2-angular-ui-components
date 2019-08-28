@@ -1,0 +1,95 @@
+.e-ribbon .e-drop-icon::before {
+  content: '\e95d';
+}
+
+.e-ribbon .e-menu-wrapper.e-file-menu ul .e-menu-item .e-caret::before {
+  content: '\e969';
+}
+
+.e-ribbon .e-tab .e-content .e-toolbar {
+  border-bottom-width: 0;
+  border-radius: 0;
+  border-top-width: 0;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-hscroll {
+  display: inline-block !important;
+  width: calc(100% - 28px);
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) {
+  border-width: 0;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-tab-wrap {
+  padding: 0;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-text-wrap {
+  vertical-align: top;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-indicator {
+  z-index: 1;
+}
+
+.e-ribbon .e-drop-icon {
+  cursor: pointer;
+  float: right;
+  font-family: 'e-icons';
+  margin: 15px 4px;
+  text-align: center;
+  transform: rotate(180deg);
+  transition: transform 300ms ease;
+  width: 18px;
+  font-size: 10px;
+}
+
+.e-ribbon.e-collapsed .e-content,
+.e-ribbon.e-collapsed .e-indicator,
+.e-ribbon.e-collapsed .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {
+  display: none;
+}
+
+.e-ribbon.e-collapsed .e-tab .e-tab-header:not(.e-vertical)::before {
+  border-width: 0;
+}
+
+.e-ribbon.e-collapsed .e-tab .e-tab-header:not(.e-vertical) .e-toolbar-item.e-active {
+  border: 0;
+}
+
+.e-ribbon.e-collapsed .e-drop-icon {
+  transform: rotate(0deg);
+}
+
+.e-ribbon .e-content .e-toolbar.e-overlay .e-toolbar-items .e-toolbar-item.e-overlay {
+  opacity: 1;
+}
+
+.e-ribbon .e-menu-wrapper {
+  border-width: 0;
+}
+
+.e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper ul.e-menu,
+.e-bigger.e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+
+.e-bigger .e-ribbon .e-drop-icon,
+.e-bigger.e-ribbon .e-drop-icon {
+  font-size: 12px;
+  margin: 19px 4px;
+}
+
+.e-ribbon .e-tab .e-content .e-toolbar {
+  border-color: #e5e5e5;
+}
+
+.e-ribbon .e-menu-wrapper {
+  background-color: transparent;
+}

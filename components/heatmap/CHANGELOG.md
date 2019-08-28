@@ -1,12 +1,3 @@
-<!-- markdownlint-disable MD010 -->
-
-
-<!-- markdownlint-disable MD030 -->
-
-
-<!-- markdownlint-disable MD004 -->
-
-
 # Changelog
 
 ## [Unreleased]
