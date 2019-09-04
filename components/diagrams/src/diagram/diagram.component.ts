@@ -3,11 +3,12 @@ import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCo
 import { Diagram } from '@syncfusion/ej2-diagrams';
 
 import { LayersDirective } from './layers.directive';
+import { CustomCursorsDirective } from './customcursor.directive';
 import { ConnectorsDirective } from './connectors.directive';
 import { NodesDirective } from './nodes.directive';
 
-export const inputs: string[] = ['addInfo','backgroundColor','bridgeDirection','commandManager','connectors','constraints','contextMenuSettings','dataSourceSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','width'];
-export const outputs: string[] = ['animationComplete','click','collectionChange','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','expandStateChange','historyChange','mouseEnter','mouseLeave','mouseOver','positionChange','propertyChange','rotateChange','scrollChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
+export const inputs: string[] = ['addInfo','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodeDefaults','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','width'];
+export const outputs: string[] = ['animationComplete','click','collectionChange','commandExecute','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','expandStateChange','historyChange','historyStateChange','mouseEnter','mouseLeave','mouseOver','positionChange','propertyChange','rotateChange','scrollChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
 export const twoWays: string[] = [''];
 
 /**
@@ -24,6 +25,7 @@ export const twoWays: string[] = [''];
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
         childLayers: new ContentChild(LayersDirective), 
+        childCustomCursor: new ContentChild(CustomCursorsDirective), 
         childConnectors: new ContentChild(ConnectorsDirective), 
         childNodes: new ContentChild(NodesDirective)
     }
@@ -31,9 +33,10 @@ export const twoWays: string[] = [''];
 @ComponentMixins([ComponentBase])
 export class DiagramComponent extends Diagram implements IComponentBase {
     public childLayers: any;
+    public childCustomCursor: any;
     public childConnectors: any;
     public childNodes: any;
-    public tags: string[] = ['layers', 'connectors', 'nodes'];
+    public tags: string[] = ['layers', 'customCursor', 'connectors', 'nodes'];
 
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
@@ -114,6 +117,12 @@ export class DiagramComponent extends Diagram implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('DiagramsDiagramContextMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsLineRouting');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

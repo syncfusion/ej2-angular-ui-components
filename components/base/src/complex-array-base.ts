@@ -131,8 +131,22 @@ export class ArrayBase<T> {
     public isChanged(): boolean {
         let result: boolean = false;
         let index: number = 0;
+        let isSourceChanged: boolean = false;
+        // tslint:disable-next-line
+        let childrenDataSource: any = this.children.map(
+          (child: T & ComplexBase<T>) => {
+            return child;
+          }
+        );
         /* istanbul ignore next */
-        this.hasNewChildren = (this.list.length !== this.children.length) ? true : null;
+        if (this.list.length === this.children.length) {
+            for (let i: number = 0; i < this.list.length; i++) {
+              isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+            }
+        }
+        /* istanbul ignore next */
+        this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map((child: T & ComplexBase<T>) => {

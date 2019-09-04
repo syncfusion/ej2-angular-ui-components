@@ -7327,6 +7327,14 @@ ejs-sidebar {
   z-index: 999;
 }
 
+.e-content-placeholder.e-sidebar.e-placeholder-sidebar {
+  left: 0;
+  position: fixed;
+  right: auto;
+  top: 0;
+  visibility: visible;
+}
+
 @keyframes hscroll-popup-shadow {
   0% {
     border-color: rgba(255, 255, 255, 0.5);

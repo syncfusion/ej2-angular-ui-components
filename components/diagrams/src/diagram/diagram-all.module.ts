@@ -1,6 +1,7 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayerDirective, LayersDirective } from './layers.directive';
+import { CustomCursorDirective, CustomCursorsDirective } from './customcursor.directive';
 import { ConnectorAnnotationDirective, ConnectorAnnotationsDirective } from './connector-annotation.directive';
 import { ConnectorDirective, ConnectorsDirective } from './connectors.directive';
 import { NodeAnnotationDirective, NodeAnnotationsDirective } from './node-annotation.directive';
@@ -8,7 +9,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, ConnectorEditing} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -24,6 +25,7 @@ export const ConnectorBridgingService: ValueProvider = { provide: 'DiagramsConne
 export const UndoRedoService: ValueProvider = { provide: 'DiagramsUndoRedo', useValue: UndoRedo};
 export const LayoutAnimationService: ValueProvider = { provide: 'DiagramsLayoutAnimation', useValue: LayoutAnimation};
 export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu};
+export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
 
 /**
@@ -48,6 +50,7 @@ export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnec
         UndoRedoService,
         LayoutAnimationService,
         DiagramContextMenuService,
+        LineRoutingService,
         ConnectorEditingService
     ]
 })

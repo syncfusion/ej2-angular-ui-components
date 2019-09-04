@@ -74,8 +74,68 @@ LayersDirective.decorators = [
  * @nocollapse
  */
 LayersDirective.ctorParameters = function () { return []; };
-var input$1 = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$1 = ['action', 'cursor'];
 var outputs$1 = [];
+/**
+ * Cursor Maps Directive
+ * ```html
+ * <e-cusrsormaps>
+ * <e-cursormap></e-cursormap>
+ * </e-cursormaps>
+ * ```
+ */
+var CustomCursorDirective = /** @class */ (function (_super) {
+    __extends(CustomCursorDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function CustomCursorDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$1);
+        return _this;
+    }
+    return CustomCursorDirective;
+}(ej2AngularBase.ComplexBase));
+CustomCursorDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-cursormaps>e-cursormap',
+                inputs: input$1,
+                outputs: outputs$1,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+CustomCursorDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * CustomCursor Array Directive
+ */
+var CustomCursorsDirective = /** @class */ (function (_super) {
+    __extends(CustomCursorsDirective, _super);
+    function CustomCursorsDirective() {
+        return _super.call(this, 'customcursor') || this;
+    }
+    return CustomCursorsDirective;
+}(ej2AngularBase.ArrayBase));
+CustomCursorsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'ej-diagram>e-cursormaps',
+                queries: {
+                    children: new core.ContentChildren(CustomCursorDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+CustomCursorsDirective.ctorParameters = function () { return []; };
+var input$2 = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var outputs$2 = [];
 /**
  * Connectors Directive
  * ```html
@@ -98,7 +158,7 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$1);
+        _this.registerEvents(outputs$2);
         return _this;
     }
     return ConnectorAnnotationDirective;
@@ -106,8 +166,8 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
 ConnectorAnnotationDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-connector>e-connector-annotations>e-connector-annotation',
-                inputs: input$1,
-                outputs: outputs$1,
+                inputs: input$2,
+                outputs: outputs$2,
                 queries: {}
             },] },
 ];
@@ -139,8 +199,8 @@ ConnectorAnnotationsDirective.decorators = [
  * @nocollapse
  */
 ConnectorAnnotationsDirective.ctorParameters = function () { return []; };
-var input$2 = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
-var outputs$2 = [];
+var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+var outputs$3 = [];
 /**
  * Connectors Directive
  * ```html
@@ -159,7 +219,7 @@ var ConnectorDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['annotations'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
+        _this.registerEvents(outputs$3);
         return _this;
     }
     return ConnectorDirective;
@@ -167,8 +227,8 @@ var ConnectorDirective = /** @class */ (function (_super) {
 ConnectorDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-connectors>e-connector',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {
                     childAnnotations: new core.ContentChild(ConnectorAnnotationsDirective)
                 }
@@ -202,8 +262,8 @@ ConnectorsDirective.decorators = [
  * @nocollapse
  */
 ConnectorsDirective.ctorParameters = function () { return []; };
-var input$3 = ['addInfo', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
-var outputs$3 = [];
+var input$4 = ['addInfo', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var outputs$4 = [];
 /**
  * Nodes Directive
  * ```html
@@ -226,7 +286,7 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
+        _this.registerEvents(outputs$4);
         return _this;
     }
     return NodeAnnotationDirective;
@@ -234,8 +294,8 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
 NodeAnnotationDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-node>e-node-annotations>e-node-annotation',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {}
             },] },
 ];
@@ -267,8 +327,8 @@ NodeAnnotationsDirective.decorators = [
  * @nocollapse
  */
 NodeAnnotationsDirective.ctorParameters = function () { return []; };
-var input$4 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'margin', 'offset', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
-var outputs$4 = [];
+var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'margin', 'offset', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+var outputs$5 = [];
 /**
  * Nodes Directive
  * ```html
@@ -291,7 +351,7 @@ var PortDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
+        _this.registerEvents(outputs$5);
         return _this;
     }
     return PortDirective;
@@ -299,8 +359,8 @@ var PortDirective = /** @class */ (function (_super) {
 PortDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-node>e-node-ports>e-node-port',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {}
             },] },
 ];
@@ -332,8 +392,8 @@ PortsDirective.decorators = [
  * @nocollapse
  */
 PortsDirective.ctorParameters = function () { return []; };
-var input$5 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
-var outputs$5 = [];
+var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+var outputs$6 = [];
 /**
  * Nodes Directive
  * ```html
@@ -352,7 +412,7 @@ var NodeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['annotations', 'ports'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
+        _this.registerEvents(outputs$6);
         return _this;
     }
     return NodeDirective;
@@ -360,8 +420,8 @@ var NodeDirective = /** @class */ (function (_super) {
 NodeDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-nodes>e-node',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {
                     childAnnotations: new core.ContentChild(NodeAnnotationsDirective),
                     childPorts: new core.ContentChild(PortsDirective)
@@ -410,8 +470,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['addInfo', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectors', 'constraints', 'contextMenuSettings', 'dataSourceSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'width'];
-var outputs$6 = ['animationComplete', 'click', 'collectionChange', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'mouseEnter', 'mouseLeave', 'mouseOver', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
+var inputs = ['addInfo', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'width'];
+var outputs$7 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'historyStateChange', 'mouseEnter', 'mouseLeave', 'mouseOver', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
 var twoWays = [''];
 /**
  * Diagram Component
@@ -433,7 +493,7 @@ exports.DiagramComponent = /** @class */ (function (_super) {
         _this.srenderer = srenderer;
         _this.viewContainerRef = viewContainerRef;
         _this.injector = injector;
-        _this.tags = ['layers', 'connectors', 'nodes'];
+        _this.tags = ['layers', 'customCursor', 'connectors', 'nodes'];
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
@@ -528,13 +588,20 @@ exports.DiagramComponent = /** @class */ (function (_super) {
         }
         catch (_o) { }
         try {
-            var mod = _this.injector.get('DiagramsConnectorEditing');
+            var mod = _this.injector.get('DiagramsLineRouting');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_p) { }
-        _this.registerEvents(outputs$6);
+        try {
+            var mod = _this.injector.get('DiagramsConnectorEditing');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_q) { }
+        _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -565,11 +632,12 @@ exports.DiagramComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-diagram',
                 inputs: inputs,
-                outputs: outputs$6,
+                outputs: outputs$7,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
                     childLayers: new core.ContentChild(LayersDirective),
+                    childCustomCursor: new core.ContentChild(CustomCursorsDirective),
                     childConnectors: new core.ContentChild(ConnectorsDirective),
                     childNodes: new core.ContentChild(NodesDirective)
                 }
@@ -606,6 +674,8 @@ DiagramModule.decorators = [
                     exports.DiagramComponent,
                     LayerDirective,
                     LayersDirective,
+                    CustomCursorDirective,
+                    CustomCursorsDirective,
                     ConnectorAnnotationDirective,
                     ConnectorAnnotationsDirective,
                     ConnectorDirective,
@@ -621,6 +691,8 @@ DiagramModule.decorators = [
                     exports.DiagramComponent,
                     LayerDirective,
                     LayersDirective,
+                    CustomCursorDirective,
+                    CustomCursorsDirective,
                     ConnectorAnnotationDirective,
                     ConnectorAnnotationsDirective,
                     ConnectorDirective,
@@ -651,6 +723,7 @@ var ConnectorBridgingService = { provide: 'DiagramsConnectorBridging', useValue:
 var UndoRedoService = { provide: 'DiagramsUndoRedo', useValue: ej2Diagrams.UndoRedo };
 var LayoutAnimationService = { provide: 'DiagramsLayoutAnimation', useValue: ej2Diagrams.LayoutAnimation };
 var DiagramContextMenuService = { provide: 'DiagramsDiagramContextMenu', useValue: ej2Diagrams.DiagramContextMenu };
+var LineRoutingService = { provide: 'DiagramsLineRouting', useValue: ej2Diagrams.LineRouting };
 var ConnectorEditingService = { provide: 'DiagramsConnectorEditing', useValue: ej2Diagrams.ConnectorEditing };
 /**
  * NgModule definition for the Diagram component with providers.
@@ -680,6 +753,7 @@ DiagramAllModule.decorators = [
                     UndoRedoService,
                     LayoutAnimationService,
                     DiagramContextMenuService,
+                    LineRoutingService,
                     ConnectorEditingService
                 ]
             },] },
@@ -688,8 +762,8 @@ DiagramAllModule.decorators = [
  * @nocollapse
  */
 DiagramAllModule.ctorParameters = function () { return []; };
-var input$6 = ['expanded', 'height', 'iconCss', 'id', 'symbols', 'title'];
-var outputs$7 = [];
+var input$7 = ['expanded', 'height', 'iconCss', 'id', 'symbols', 'title'];
+var outputs$8 = [];
 /**
  * Palette Directive
  * ```html
@@ -705,7 +779,7 @@ var PaletteDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$7);
+        _this.registerEvents(outputs$8);
         return _this;
     }
     return PaletteDirective;
@@ -713,8 +787,8 @@ var PaletteDirective = /** @class */ (function (_super) {
 PaletteDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-palettes>e-palette',
-                inputs: input$6,
-                outputs: outputs$7,
+                inputs: input$7,
+                outputs: outputs$8,
                 queries: {}
             },] },
 ];
@@ -760,8 +834,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['accessKey', 'allowDrag', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'locale', 'palettes', 'symbolHeight', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
-var outputs$8 = ['paletteSelectionChange'];
+var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
+var outputs$9 = ['paletteSelectionChange'];
 var twoWays$1 = [''];
 /**
  * SymbolPalette Component
@@ -793,7 +867,7 @@ exports.SymbolPaletteComponent = /** @class */ (function (_super) {
             }
         }
         catch (_a) { }
-        _this.registerEvents(outputs$8);
+        _this.registerEvents(outputs$9);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -824,7 +898,7 @@ exports.SymbolPaletteComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-symbolpalette',
                 inputs: inputs$1,
-                outputs: outputs$8,
+                outputs: outputs$9,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -911,7 +985,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$2 = ['enablePersistence', 'enableRtl', 'height', 'locale', 'sourceID', 'width'];
-var outputs$9 = ['created'];
+var outputs$10 = ['created'];
 var twoWays$2 = [''];
 /**
  * Overview Component
@@ -936,7 +1010,7 @@ exports.OverviewComponent = /** @class */ (function (_super) {
         _this.tags = [''];
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
-        _this.registerEvents(outputs$9);
+        _this.registerEvents(outputs$10);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -967,7 +1041,7 @@ exports.OverviewComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-overview',
                 inputs: inputs$2,
-                outputs: outputs$9,
+                outputs: outputs$10,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {}
@@ -1036,6 +1110,8 @@ OverviewAllModule.ctorParameters = function () { return []; };
 
 exports.LayerDirective = LayerDirective;
 exports.LayersDirective = LayersDirective;
+exports.CustomCursorDirective = CustomCursorDirective;
+exports.CustomCursorsDirective = CustomCursorsDirective;
 exports.ConnectorAnnotationDirective = ConnectorAnnotationDirective;
 exports.ConnectorAnnotationsDirective = ConnectorAnnotationsDirective;
 exports.ConnectorDirective = ConnectorDirective;
@@ -1061,6 +1137,7 @@ exports.ConnectorBridgingService = ConnectorBridgingService;
 exports.UndoRedoService = UndoRedoService;
 exports.LayoutAnimationService = LayoutAnimationService;
 exports.DiagramContextMenuService = DiagramContextMenuService;
+exports.LineRoutingService = LineRoutingService;
 exports.ConnectorEditingService = ConnectorEditingService;
 exports.PaletteDirective = PaletteDirective;
 exports.PalettesDirective = PalettesDirective;
@@ -1069,11 +1146,11 @@ exports.SymbolPaletteAllModule = SymbolPaletteAllModule;
 exports.OverviewModule = OverviewModule;
 exports.OverviewAllModule = OverviewAllModule;
 exports.ɵa = inputs;
-exports.ɵb = outputs$6;
+exports.ɵb = outputs$7;
 exports.ɵe = inputs$2;
-exports.ɵf = outputs$9;
+exports.ɵf = outputs$10;
 exports.ɵc = inputs$1;
-exports.ɵd = outputs$8;
+exports.ɵd = outputs$9;
 exports.Diagram = ej2Diagrams.Diagram;
 exports.PrintAndExport = ej2Diagrams.PrintAndExport;
 exports.Size = ej2Diagrams.Size;
@@ -1181,6 +1258,8 @@ exports.setConnectorDefaults = ej2Diagrams.setConnectorDefaults;
 exports.findNearestPoint = ej2Diagrams.findNearestPoint;
 exports.isDiagramChild = ej2Diagrams.isDiagramChild;
 exports.groupHasType = ej2Diagrams.groupHasType;
+exports.updateDefaultValues = ej2Diagrams.updateDefaultValues;
+exports.updateLayoutValue = ej2Diagrams.updateLayoutValue;
 exports.isPointOverConnector = ej2Diagrams.isPointOverConnector;
 exports.intersect3 = ej2Diagrams.intersect3;
 exports.intersect2 = ej2Diagrams.intersect2;
@@ -1221,6 +1300,8 @@ exports.scaleElement = ej2Diagrams.scaleElement;
 exports.arrangeChild = ej2Diagrams.arrangeChild;
 exports.insertObject = ej2Diagrams.insertObject;
 exports.getElement = ej2Diagrams.getElement;
+exports.getCollectionChangeEventArguements = ej2Diagrams.getCollectionChangeEventArguements;
+exports.getDropEventArguements = ej2Diagrams.getDropEventArguements;
 exports.getPoint = ej2Diagrams.getPoint;
 exports.getObjectType = ej2Diagrams.getObjectType;
 exports.flipConnector = ej2Diagrams.flipConnector;
@@ -1229,6 +1310,7 @@ exports.alignElement = ej2Diagrams.alignElement;
 exports.updatePathElement = ej2Diagrams.updatePathElement;
 exports.findPath = ej2Diagrams.findPath;
 exports.findDistance = ej2Diagrams.findDistance;
+exports.cloneBlazorObject = ej2Diagrams.cloneBlazorObject;
 exports.CanvasRenderer = ej2Diagrams.CanvasRenderer;
 exports.DiagramRenderer = ej2Diagrams.DiagramRenderer;
 exports.DataBinding = ej2Diagrams.DataBinding;
@@ -1359,6 +1441,8 @@ exports.KeyGesture = ej2Diagrams.KeyGesture;
 exports.Command = ej2Diagrams.Command;
 exports.CommandManager = ej2Diagrams.CommandManager;
 exports.ContextMenuSettings = ej2Diagrams.ContextMenuSettings;
+exports.CustomCursorAction = ej2Diagrams.CustomCursorAction;
+exports.DataMappingItems = ej2Diagrams.DataMappingItems;
 exports.Layout = ej2Diagrams.Layout;
 exports.MindMap = ej2Diagrams.MindMap;
 exports.HierarchicalTree = ej2Diagrams.HierarchicalTree;

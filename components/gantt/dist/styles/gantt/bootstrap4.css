@@ -425,14 +425,6 @@
   content: '\e657';
 }
 
-.e-gantt .e-csvexport::before {
-  content: '\e725';
-}
-
-.e-gantt .e-excelexport::before {
-  content: '\e74e';
-}
-
 .e-gantt .e-add-above::before {
   content: '\e658';
 }

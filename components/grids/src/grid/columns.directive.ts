@@ -31,6 +31,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the data type of the column.
      * @default null
+     * @blazortype ColumnType
      */
     public type: any;
     /** 
@@ -180,6 +181,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the type of component for editing.
      * @default 'stringedit'
+     * @blazortype EditType
+     * @blazordefaultvalue EditType.DefaultEdit
      */
     public editType: any;
     /** 

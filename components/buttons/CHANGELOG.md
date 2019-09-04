@@ -239,6 +239,14 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Sizes** - Provided with different sizes of RadioButton.
 
 
+## 17.2.47 (2019-08-27)
+
+### Switch
+
+#### Bug Fixes
+
+- Change event triggers twice while clicking the space bar issue fixed.
+
 ## 17.1.38 (2019-03-29)
 
 ### RadioButton

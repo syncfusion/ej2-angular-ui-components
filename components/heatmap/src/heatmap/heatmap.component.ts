@@ -4,7 +4,7 @@ import { HeatMap } from '@syncfusion/ej2-heatmap';
 
 
 
-export const inputs: string[] = ['allowSelection','cellSettings','dataSource','enablePersistence','enableRtl','height','legendSettings','locale','margin','paletteSettings','renderingMode','showTooltip','theme','titleSettings','tooltipSettings','width','xAxis','yAxis'];
+export const inputs: string[] = ['allowSelection','cellSettings','dataSource','dataSourceSettings','enablePersistence','enableRtl','height','legendSettings','locale','margin','paletteSettings','renderingMode','showTooltip','theme','titleSettings','tooltipSettings','width','xAxis','yAxis'];
 export const outputs: string[] = ['cellClick','cellRender','cellSelected','created','legendRender','load','loaded','resized','tooltipRender'];
 export const twoWays: string[] = [''];
 

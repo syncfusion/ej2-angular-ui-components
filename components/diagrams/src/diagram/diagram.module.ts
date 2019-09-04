@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayerDirective, LayersDirective } from './layers.directive';
+import { CustomCursorDirective, CustomCursorsDirective } from './customcursor.directive';
 import { ConnectorAnnotationDirective, ConnectorAnnotationsDirective } from './connector-annotation.directive';
 import { ConnectorDirective, ConnectorsDirective } from './connectors.directive';
 import { NodeAnnotationDirective, NodeAnnotationsDirective } from './node-annotation.directive';
@@ -17,6 +18,8 @@ import { DiagramComponent } from './diagram.component';
         DiagramComponent,
         LayerDirective,
         LayersDirective,
+        CustomCursorDirective,
+        CustomCursorsDirective,
         ConnectorAnnotationDirective,
         ConnectorAnnotationsDirective,
         ConnectorDirective,
@@ -32,6 +35,8 @@ import { DiagramComponent } from './diagram.component';
         DiagramComponent,
         LayerDirective,
         LayersDirective,
+        CustomCursorDirective,
+        CustomCursorsDirective,
         ConnectorAnnotationDirective,
         ConnectorAnnotationsDirective,
         ConnectorDirective,

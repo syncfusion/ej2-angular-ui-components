@@ -2194,6 +2194,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pv-comment-title {
   color: rgba(51, 51, 51, 0.6);
   font-size: 14px;
+  max-width: 237px;
   padding-left: 32px;
   padding-top: 5px;
   position: absolute;
@@ -2202,6 +2203,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pv-reply-title {
   color: rgba(51, 51, 51, 0.6);
   font-size: 14px;
+  max-width: 212px;
   padding-left: 8px;
   padding-top: 5px;
   position: absolute;

@@ -25,6 +25,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
     /** 
      *  Specifies the dataSource
      * @default null
+     * @isdatamanager false
      */
     public dataSource: any;
     /** 

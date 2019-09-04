@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['ajaxSettings', 'allowDragAndDrop', 'allowMultiSelection', 'contextMenuSettings', 'cssClass', 'detailsViewSettings', 'enablePersistence', 'enableRtl', 'height', 'locale', 'navigationPaneSettings', 'path', 'searchSettings', 'selectedItems', 'showFileExtension', 'showHiddenItems', 'showThumbnail', 'toolbarSettings', 'uploadSettings', 'view', 'width'];
-var outputs = ['beforeSend', 'created', 'destroyed', 'failure', 'fileDragStart', 'fileDragStop', 'fileDragging', 'fileDropped', 'fileLoad', 'fileOpen', 'fileSelect', 'menuClick', 'menuOpen', 'success', 'toolbarClick', 'toolbarCreate', 'uploadListCreate'];
+var outputs = ['beforePopupClose', 'beforePopupOpen', 'beforeSend', 'created', 'destroyed', 'failure', 'fileDragStart', 'fileDragStop', 'fileDragging', 'fileDropped', 'fileLoad', 'fileOpen', 'fileSelect', 'menuClick', 'menuOpen', 'popupClose', 'popupOpen', 'success', 'toolbarClick', 'toolbarCreate', 'uploadListCreate'];
 var twoWays = [''];
 /**
  * Represents the Essential JS 2 Angular FileManager Component.
@@ -228,7 +228,6 @@ exports.layoutItems = ej2Filemanager.layoutItems;
 exports.ContextMenuSettings = ej2Filemanager.ContextMenuSettings;
 exports.NavigationPaneSettings = ej2Filemanager.NavigationPaneSettings;
 exports.UploadSettings = ej2Filemanager.UploadSettings;
-exports.Column = ej2Filemanager.Column;
 exports.TOOLBAR_ID = ej2Filemanager.TOOLBAR_ID;
 exports.LAYOUT_ID = ej2Filemanager.LAYOUT_ID;
 exports.NAVIGATION_ID = ej2Filemanager.NAVIGATION_ID;
@@ -356,6 +355,7 @@ exports.upload = ej2Filemanager.upload;
 exports.afterRequest = ej2Filemanager.afterRequest;
 exports.download = ej2Filemanager.download;
 exports.layoutRefresh = ej2Filemanager.layoutRefresh;
+exports.actionFailure = ej2Filemanager.actionFailure;
 exports.search = ej2Filemanager.search;
 exports.openInit = ej2Filemanager.openInit;
 exports.openEnd = ej2Filemanager.openEnd;
@@ -392,6 +392,7 @@ exports.dropPath = ej2Filemanager.dropPath;
 exports.dragHelper = ej2Filemanager.dragHelper;
 exports.dragging = ej2Filemanager.dragging;
 exports.updateSelectionData = ej2Filemanager.updateSelectionData;
+exports.methodCall = ej2Filemanager.methodCall;
 exports.FileManager = ej2Filemanager.FileManager;
 exports.Toolbar = ej2Filemanager.Toolbar;
 exports.BreadCrumbBar = ej2Filemanager.BreadCrumbBar;

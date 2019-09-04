@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-calendars';
-export const pkgVer = '^17.2.46';
+export const pkgVer = '^17.2.47';
 export const moduleName = 'CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule';
-export const themeVer = '~17.2.46';
+export const themeVer = '~17.2.47';

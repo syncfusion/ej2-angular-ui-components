@@ -344,7 +344,7 @@ var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'width'];
+var inputs$1 = ['enableCollision', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
 var outputs$3 = ['beforeCreate', 'clicked', 'created', 'destroyed'];
 var twoWays$1 = [''];
 /**
@@ -624,7 +624,7 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['content', 'cssClass', 'disabled', 'header'];
+var input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
 var outputs$5 = [];
 /**
  * TabItemDirective represent a item of the EJ2 Angular Tab.
@@ -668,6 +668,7 @@ TabItemDirective.ctorParameters = function () { return [
 TabItemDirective.propDecorators = {
     'content': [{ type: core.ContentChild, args: ['content',] },],
     'header_text': [{ type: core.ContentChild, args: ['headerText',] },],
+    'headerTemplate': [{ type: core.ContentChild, args: ['headerTemplate',] },],
 };
 __decorate$5([
     ej2AngularBase.Template(),
@@ -677,6 +678,10 @@ __decorate$5([
     ej2AngularBase.Template(),
     __metadata$5("design:type", Object)
 ], TabItemDirective.prototype, "header_text", void 0);
+__decorate$5([
+    ej2AngularBase.Template(),
+    __metadata$5("design:type", Object)
+], TabItemDirective.prototype, "headerTemplate", void 0);
 /**
  * TabItem Array Directive
  */
@@ -713,7 +718,7 @@ var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'selectedItem', 'showCloseButton', 'width'];
+var inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
 var outputs$6 = ['added', 'adding', 'created', 'destroyed', 'removed', 'removing', 'selected', 'selecting'];
 var twoWays$3 = [''];
 /**
@@ -1361,7 +1366,6 @@ exports.ɵd = outputs$3;
 exports.ɵi = inputs$4;
 exports.ɵj = outputs$7;
 exports.MenuAnimationSettings = ej2Navigations.MenuAnimationSettings;
-exports.MenuItem = ej2Navigations.MenuItem;
 exports.HScroll = ej2Navigations.HScroll;
 exports.VScroll = ej2Navigations.VScroll;
 exports.Item = ej2Navigations.Item;

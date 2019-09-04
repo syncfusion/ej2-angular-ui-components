@@ -215,8 +215,20 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
         var _this = this;
         var result = false;
         var index = 0;
+        var isSourceChanged = false;
+        // tslint:disable-next-line
+        var childrenDataSource = this.children.map(function (child) {
+            return child;
+        });
         /* istanbul ignore next */
-        this.hasNewChildren = (this.list.length !== this.children.length) ? true : null;
+        if (this.list.length === this.children.length) {
+            for (var i = 0; i < this.list.length; i++) {
+                isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                    JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+            }
+        }
+        /* istanbul ignore next */
+        this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map(function (child) {

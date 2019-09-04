@@ -299,7 +299,7 @@ var __decorate$3 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$1 = ['enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'width'];
+const inputs$1 = ['enableCollision', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
 const outputs$3 = ['beforeCreate', 'clicked', 'created', 'destroyed'];
 const twoWays$1 = [''];
 /**
@@ -557,7 +557,7 @@ var __decorate$5 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input$2 = ['content', 'cssClass', 'disabled', 'header'];
+let input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
 let outputs$5 = [];
 /**
  * TabItemDirective represent a item of the EJ2 Angular Tab.
@@ -598,6 +598,7 @@ TabItemDirective.ctorParameters = () => [
 TabItemDirective.propDecorators = {
     'content': [{ type: ContentChild, args: ['content',] },],
     'header_text': [{ type: ContentChild, args: ['headerText',] },],
+    'headerTemplate': [{ type: ContentChild, args: ['headerTemplate',] },],
 };
 __decorate$5([
     Template(),
@@ -607,6 +608,10 @@ __decorate$5([
     Template(),
     __metadata$5("design:type", Object)
 ], TabItemDirective.prototype, "header_text", void 0);
+__decorate$5([
+    Template(),
+    __metadata$5("design:type", Object)
+], TabItemDirective.prototype, "headerTemplate", void 0);
 /**
  * TabItem Array Directive
  */
@@ -637,7 +642,7 @@ var __decorate$6 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'selectedItem', 'showCloseButton', 'width'];
+const inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
 const outputs$6 = ['added', 'adding', 'created', 'destroyed', 'removed', 'removing', 'selected', 'selecting'];
 const twoWays$3 = [''];
 /**
@@ -1209,5 +1214,5 @@ MenuAllModule.ctorParameters = () => [];
  */
 
 export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, AccordionModule, AccordionAllModule, ItemDirective, ItemsDirective, ToolbarComponent, ToolbarModule, ToolbarAllModule, ContextMenuComponent, ContextMenuModule, ContextMenuAllModule, TabItemDirective, TabItemsDirective, TabComponent, TabModule, TabAllModule, TreeViewComponent, TreeViewModule, TreeViewAllModule, SidebarComponent, SidebarModule, SidebarAllModule, MenuItemDirective, MenuItemsDirective, MenuComponent, MenuModule, MenuAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$2 as ɵe, outputs$4 as ɵf, inputs$6 as ɵm, outputs$10 as ɵn, inputs$5 as ɵk, outputs$8 as ɵl, inputs$3 as ɵg, outputs$6 as ɵh, inputs$1 as ɵc, outputs$3 as ɵd, inputs$4 as ɵi, outputs$7 as ɵj };
-export { MenuAnimationSettings, MenuItem, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
+export { MenuAnimationSettings, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
 //# sourceMappingURL=ej2-angular-navigations.js.map

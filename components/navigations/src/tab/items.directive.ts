@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'cssClass', 'disabled', 'header'];
+let input: string[] = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
 let outputs: string[] = [];
 /**
  * TabItemDirective represent a item of the EJ2 Angular Tab.
@@ -52,6 +52,13 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
     @ContentChild('headerText')
     @Template()
     public header_text: any;
+    /** 
+     * Specifies the header text of Tab item.
+     * @default null
+     */
+    @ContentChild('headerTemplate')
+    @Template()
+    public headerTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

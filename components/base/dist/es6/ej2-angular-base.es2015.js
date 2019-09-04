@@ -199,8 +199,20 @@ class ArrayBase {
     isChanged() {
         let result = false;
         let index = 0;
+        let isSourceChanged = false;
+        // tslint:disable-next-line
+        let childrenDataSource = this.children.map((child) => {
+            return child;
+        });
         /* istanbul ignore next */
-        this.hasNewChildren = (this.list.length !== this.children.length) ? true : null;
+        if (this.list.length === this.children.length) {
+            for (let i = 0; i < this.list.length; i++) {
+                isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                    JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+            }
+        }
+        /* istanbul ignore next */
+        this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map((child) => {

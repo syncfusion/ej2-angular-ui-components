@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-calendars';
-exports.pkgVer = '^17.2.46';
+exports.pkgVer = '^17.2.47';
 exports.moduleName = 'CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule';
-exports.themeVer = '~17.2.46';
+exports.themeVer = '~17.2.47';
