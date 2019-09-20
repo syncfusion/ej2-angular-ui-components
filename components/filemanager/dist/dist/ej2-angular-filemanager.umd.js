@@ -228,6 +228,7 @@ exports.layoutItems = ej2Filemanager.layoutItems;
 exports.ContextMenuSettings = ej2Filemanager.ContextMenuSettings;
 exports.NavigationPaneSettings = ej2Filemanager.NavigationPaneSettings;
 exports.UploadSettings = ej2Filemanager.UploadSettings;
+exports.Column = ej2Filemanager.Column;
 exports.TOOLBAR_ID = ej2Filemanager.TOOLBAR_ID;
 exports.LAYOUT_ID = ej2Filemanager.LAYOUT_ID;
 exports.NAVIGATION_ID = ej2Filemanager.NAVIGATION_ID;

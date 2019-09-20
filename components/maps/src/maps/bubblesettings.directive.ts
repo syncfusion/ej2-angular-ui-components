@@ -61,6 +61,7 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     /** 
      * Specifies the data source for bubble.
      * @isdatamanager false
+     * @isobservable true
      * @default []
      */
     public dataSource: any;

@@ -2066,6 +2066,10 @@
   cursor: col-resize;
 }
 
+.e-grid.e-editing .e-gridheader .e-rcursor {
+  cursor: default;
+}
+
 .e-grid .e-table {
   border-collapse: separate;
   table-layout: fixed;

@@ -27,7 +27,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['cssClass', 'enablePersistence', 'enableRtl', 'enabled', 'floatLabelType', 'htmlAttributes', 'locale', 'multiline', 'placeholder', 'readonly', 'showClearButton', 'type', 'value'];
+var inputs = ['autocomplete', 'cssClass', 'enablePersistence', 'enableRtl', 'enabled', 'floatLabelType', 'htmlAttributes', 'locale', 'multiline', 'placeholder', 'readonly', 'showClearButton', 'type', 'value'];
 var outputs = ['blur', 'change', 'created', 'destroyed', 'focus', 'input', 'valueChange'];
 var twoWays = ['value'];
 /**
@@ -534,7 +534,7 @@ var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$3 = ['cssClass', 'customValues', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enabled', 'limits', 'locale', 'max', 'min', 'orientation', 'readonly', 'showButtons', 'step', 'ticks', 'tooltip', 'type', 'value'];
+var inputs$3 = ['colorRange', 'cssClass', 'customValues', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enabled', 'limits', 'locale', 'max', 'min', 'orientation', 'readonly', 'showButtons', 'step', 'ticks', 'tooltip', 'type', 'value'];
 var outputs$3 = ['focus', 'blur', 'change', 'changed', 'created', 'renderedTicks', 'renderingTicks', 'tooltipChange', 'valueChange'];
 var twoWays$3 = ['value'];
 /**
@@ -767,7 +767,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$4 = ['allowedExtensions', 'asyncSettings', 'autoUpload', 'buttons', 'cssClass', 'directoryUpload', 'dropArea', 'enablePersistence', 'enableRtl', 'enabled', 'files', 'htmlAttributes', 'locale', 'maxFileSize', 'minFileSize', 'multiple', 'sequentialUpload', 'showFileList', 'template'];
-var outputs$5 = ['focus', 'blur', 'actionComplete', 'canceling', 'change', 'chunkFailure', 'chunkSuccess', 'chunkUploading', 'clearing', 'created', 'failure', 'fileListRendering', 'pausing', 'progress', 'removing', 'rendering', 'resuming', 'selected', 'success', 'uploading'];
+var outputs$5 = ['focus', 'blur', 'actionComplete', 'beforeRemove', 'beforeUpload', 'canceling', 'change', 'chunkFailure', 'chunkSuccess', 'chunkUploading', 'clearing', 'created', 'failure', 'fileListRendering', 'pausing', 'progress', 'removing', 'rendering', 'resuming', 'selected', 'success', 'uploading'];
 var twoWays$4 = [];
 /**
  * Represents the EJ2 Angular Uploader Component.
@@ -1347,5 +1347,5 @@ var FormValidators = /** @class */ (function () {
  * Generated bundle index. Do not edit.
  */
 export { TextBoxComponent, TextBoxModule, TextBoxAllModule, NumericTextBoxComponent, NumericTextBoxModule, NumericTextBoxAllModule, MaskedTextBoxComponent, MaskedTextBoxModule, MaskedTextBoxAllModule, SliderComponent, SliderModule, SliderAllModule, UploadedFilesDirective, FilesDirective, UploaderComponent, UploaderModule, UploaderAllModule, ColorPickerComponent, ColorPickerModule, ColorPickerAllModule, FormValidators, inputs$5 as ɵk, outputs$6 as ɵl, inputs$2 as ɵe, outputs$2 as ɵf, inputs$1 as ɵc, outputs$1 as ɵd, inputs$3 as ɵg, outputs$3 as ɵh, inputs as ɵa, outputs as ɵb, inputs$4 as ɵi, outputs$5 as ɵj };
-export { NumericTextBox, regularExpressions, createMask, applyMask, wireEvents, unwireEvents, bindClearEvent, unstrippedValue, strippedValue, maskInputFocusHandler, maskInputBlurHandler, maskInputDropHandler, mobileRemoveFunction, setMaskValue, setElementValue, maskInput, getVal, getMaskedVal, MaskUndo, MaskedTextBox, Input, TicksData, LimitData, TooltipData, Slider, regex, ErrorOption, FormValidator, FilesProp, ButtonsProps, AsyncSettings, Uploader, ColorPicker, TextBox } from '@syncfusion/ej2-inputs';
+export { NumericTextBox, regularExpressions, createMask, applyMask, wireEvents, unwireEvents, bindClearEvent, unstrippedValue, strippedValue, maskInputFocusHandler, maskInputBlurHandler, maskInputDropHandler, mobileRemoveFunction, setMaskValue, setElementValue, maskInput, getVal, getMaskedVal, MaskUndo, MaskedTextBox, Input, TicksData, ColorRangeData, LimitData, TooltipData, Slider, regex, ErrorOption, FormValidator, FilesProp, ButtonsProps, AsyncSettings, Uploader, ColorPicker, TextBox } from '@syncfusion/ej2-inputs';
 //# sourceMappingURL=ej2-angular-inputs.es5.js.map

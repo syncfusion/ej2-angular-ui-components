@@ -129,8 +129,8 @@ ejs-calendar {
 .e-calendar .e-content td.e-week-number,
 .e-bigger.e-small .e-calendar .e-content td.e-week-number {
   color: rgba(0, 0, 0, 0.87);
-  font-family: italic;
   font-size: 12px;
+  font-style: italic;
   font-weight: 500;
 }
 

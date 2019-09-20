@@ -207,6 +207,7 @@
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
 }
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-icon {
@@ -702,6 +703,7 @@
 
 .e-menu-wrapper.e-hamburger ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
   text-indent: 0;
   width: 100%;
 }

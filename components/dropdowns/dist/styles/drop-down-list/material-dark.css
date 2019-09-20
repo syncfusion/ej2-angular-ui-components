@@ -253,7 +253,7 @@
 
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: auto;
   margin: 0;

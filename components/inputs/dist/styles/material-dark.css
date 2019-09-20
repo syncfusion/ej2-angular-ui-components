@@ -1159,7 +1159,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-float-input input:valid ~ label.e-float-text,
@@ -3156,7 +3156,7 @@ textarea.e-input.e-bigger.e-small,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group input,
 .e-float-input.e-control-wrapper.e-input-group.e-bigger input,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group input {
-  min-height: 21px;
+  min-height: 27px;
 }
 
 .e-input-group.e-small:not(.e-float-input) .e-input,
@@ -3175,7 +3175,7 @@ textarea.e-input.e-bigger.e-small,
 .e-small .e-float-input.e-control-wrapper.e-input-group input,
 .e-float-input.e-control-wrapper.e-input-group.e-small input,
 .e-small .e-float-input.e-control-wrapper.e-input-group input {
-  min-height: 16px;
+  min-height: 18px;
 }
 
 .e-input-group.e-bigger.e-small:not(.e-float-input) .e-input,
@@ -3199,7 +3199,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-control-wrapper.e-input-group.e-bigger.e-small input,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group.e-small input,
 .e-small .e-float-input.e-control-wrapper.e-input-group.e-bigger input {
-  min-height: 18px;
+  min-height: 22px;
 }
 
 .e-input-group input.e-input,
@@ -3208,7 +3208,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-input-group.e-control-wrapper input,
 .e-float-input input,
 .e-float-input.e-control-wrapper input {
-  min-height: 18px;
+  min-height: 22px;
 }
 
 .e-input-group:hover:not(.e-disabled):not(.e-float-icon-left),
@@ -3754,6 +3754,11 @@ textarea.e-input.e-bigger {
 input.e-input.e-bigger.e-small,
 .e-small .e-bigger input.e-input {
   min-height: 19px;
+}
+
+.e-outline.e-float-input,
+.e-outline.e-float-input.e-control-wrapper {
+  margin-top: 0;
 }
 
 .e-filled.e-input-group,
@@ -9270,16 +9275,16 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 }
 
 /*! maskedtextbox layout */
-.e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+.e-control-wrapper.e-mask .e-maskedtextbox {
   font-family: Arial, "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
   font-size: 12.5px;
 }
 
-.e-bigger .e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+.e-bigger .e-control-wrapper.e-mask .e-maskedtextbox {
   font-size: 13px;
 }
 
-.e-widget.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
+.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
   font-size: 13px;
 }
 
@@ -9295,7 +9300,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 }
 
 /*! maskedtextbox theme */
-.e-widget.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
+.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
   color: #ff6652;
 }
 
@@ -9456,6 +9461,18 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default .e-tip-content.e-material-tooltip-hide {
   color: transparent;
+}
+
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
 }
 
 .e-bigger.e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
@@ -9625,6 +9642,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
   position: absolute;
   width: 100%;
   background: rgba(255, 255, 255, 0.26);
+  overflow: hidden;
   top: calc(50% - 1px);
 }
 
@@ -9668,6 +9686,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
   height: 100%;
   position: absolute;
   left: calc(50% - 1px);
+  overflow: hidden;
   width: 2px;
 }
 
@@ -10259,6 +10278,10 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
   width: 100%;
 }
 
+.e-upload.e-control-wrapper {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+}
+
 .e-upload .e-file-select-wrap {
   padding: 16px 0 16px 12px;
 }
@@ -10274,7 +10297,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 }
 
 .e-upload .e-file-select-wrap .e-file-drop {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   margin-left: 12px;
 }
@@ -10290,7 +10313,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 }
 
 .e-upload .e-upload-files .e-upload-file-list {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: 100%;
   line-height: normal;
@@ -10310,7 +10333,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
   float: left;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   max-width: 75%;
   overflow: hidden;
@@ -10328,7 +10351,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
   display: block;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-top: 12px;
 }
@@ -10341,7 +10364,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
   display: block;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 11px;
   padding-bottom: 12px;
 }
@@ -10374,7 +10397,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
   float: right;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 11px;
   position: relative;
   right: 6px;
@@ -10465,7 +10488,7 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 
 .e-upload .e-file-select-wrap .e-btn,
 .e-upload .e-upload-actions .e-btn {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-upload .e-upload-actions {

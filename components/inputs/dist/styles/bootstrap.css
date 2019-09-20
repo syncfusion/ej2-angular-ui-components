@@ -991,7 +991,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-float-input input:valid ~ label.e-float-text,
@@ -4303,6 +4303,18 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   text-align: center;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger .e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   padding: 2px 12px;
 }
@@ -4450,6 +4462,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
+  overflow: hidden;
   top: calc(50% - 5px);
 }
 
@@ -4495,6 +4508,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   border: 1px solid #ccc;
   border-radius: 3px;
   left: calc(50% - 5px);
+  overflow: hidden;
   width: 10px;
 }
 
@@ -5081,6 +5095,10 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   width: 100%;
 }
 
+.e-upload.e-control-wrapper {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}
+
 .e-upload .e-file-select-wrap {
   padding: 16px 0 16px 12px;
 }
@@ -5096,7 +5114,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 }
 
 .e-upload .e-file-select-wrap .e-file-drop {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   margin-left: 11px;
 }
@@ -5108,7 +5126,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 }
 
 .e-upload .e-upload-files .e-upload-file-list {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: 100%;
   line-height: normal;
@@ -5128,7 +5146,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
   float: left;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   max-width: 75%;
   overflow: hidden;
@@ -5146,7 +5164,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-top: 12px;
 }
@@ -5159,7 +5177,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   padding-bottom: 12px;
 }
@@ -5192,7 +5210,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
   float: right;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   position: relative;
   right: 0;
@@ -5283,7 +5301,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-upload .e-file-select-wrap .e-btn,
 .e-upload .e-upload-actions .e-btn {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-upload .e-upload-actions {

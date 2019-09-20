@@ -4,8 +4,8 @@ import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 
-export const inputs: string[] = ['annotations','drawingObject','tool','ajaxRequestSettings','annotationToolbarSettings','areaSettings','arrowSettings','circleSettings','contextMenuOption','customStampItems','customStampSettings','distanceSettings','documentPath','enableAnnotation','enableAnnotationToolbar','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableMeasureAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','lineSettings','locale','measurementSettings','perimeterSettings','polygonSettings','radiusSettings','rectangleSettings','selectedItems','serverActionSettings','serviceUrl','stampSettings','stickyNotesSettings','strikethroughSettings','toolbarSettings','underlineSettings','volumeSettings','width'];
-export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','hyperlinkMouseOver','pageChange','pageClick','zoomChange'];
+export const inputs: string[] = ['annotations','drawingObject','tool','ajaxRequestSettings','annotationToolbarSettings','areaSettings','arrowSettings','circleSettings','contextMenuOption','customStampItems','customStampSettings','distanceSettings','documentPath','enableAnnotation','enableAnnotationToolbar','enableBookmark','enableDownload','enableFormFields','enableFreeText','enableHyperlink','enableMagnification','enableMeasureAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableShapeLabel','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','freeTextSettings','height','highlightSettings','hyperlinkOpenState','interactionMode','lineSettings','locale','measurementSettings','perimeterSettings','polygonSettings','radiusSettings','rectangleSettings','selectedItems','serverActionSettings','serviceUrl','shapeLabelSettings','stampSettings','stickyNotesSettings','strikethroughSettings','toolbarSettings','underlineSettings','volumeSettings','width'];
+export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','hyperlinkMouseOver','pageChange','pageClick','thumbnailClick','zoomChange'];
 export const twoWays: string[] = [];
 
 /**
@@ -90,6 +90,12 @@ export class PdfViewerComponent extends PdfViewer implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('PdfViewerAnnotation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerFormFields');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

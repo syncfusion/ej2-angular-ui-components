@@ -336,6 +336,11 @@
   content: '\ea9f';
 }
 
+.e-south-east::before,
+.e-south-west::before {
+  content: '\eb05';
+}
+
 /*! tab layout */
 .e-bigger .e-richtexteditor .e-rte-toolbar .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:first-child,
 .e-richtexteditor.e-bigger .e-rte-toolbar .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:first-child {
@@ -724,6 +729,7 @@
 .e-richtexteditor .e-source-content .e-content {
   background: unset;
   box-sizing: border-box;
+  height: 100%;
   min-height: 100px;
   outline: 0 solid transparent;
   padding: 16px;
@@ -901,6 +907,19 @@
 .e-richtexteditor img::selection {
   background: transparent;
   color: transparent;
+}
+
+.e-richtexteditor .e-resize-handle {
+  height: 15px;
+  position: absolute;
+  width: 15px;
+}
+
+.e-richtexteditor .e-resize-handle.e-south-east {
+  bottom: 0;
+  cursor: nwse-resize;
+  right: 0;
+  z-index: 100;
 }
 
 .e-rte-linkcontent .e-rte-label {
@@ -1909,6 +1928,22 @@ span.e-table-box.e-rmob {
   min-height: 190px;
 }
 
+.e-upload .e-upload-files .e-upload-file-list .e-file-container {
+  margin-right: 50px;
+}
+
+.e-rte-upload-popup {
+  width: 250px;
+}
+
+.e-rte-dialog-upload .e-upload-files {
+  border-top: 0;
+}
+
+.e-rte-dialog-upload .e-upload-files .e-upload-file-list {
+  border-bottom: 0;
+}
+
 /*! tab layout */
 .e-richtexteditor .e-rte-toolbar {
   border: 1px solid #616161;
@@ -2067,6 +2102,10 @@ span.e-table-box.e-rmob {
   color: #42a1ff;
 }
 
+.e-richtexteditor.e-rte-resize {
+  background: #303030;
+}
+
 .e-richtexteditor .e-input.e-rte-linkurl.e-error,
 .e-richtexteditor .e-input.e-img-link.e-error {
   color: #f00;
@@ -2125,6 +2164,11 @@ span.e-table-box.e-rmob {
   border: 0;
   border-bottom: 1px solid #616161;
   border-top: 1px solid #616161;
+}
+
+.e-richtexteditor.e-rte-tb-expand.e-rte-resize .e-rte-content,
+.e-richtexteditor.e-rte-tb-expand.e-rte-resize .e-source-content {
+  border-bottom: 0;
 }
 
 .e-rte-quick-popup {
@@ -2351,4 +2395,8 @@ span.e-table-box.e-rbox-select {
 
 .e-table-rhelper {
   background-color: #00b0ff;
+}
+
+.e-rte-dialog-upload.e-upload.e-lib.e-keyboard {
+  background: #303030;
 }

@@ -91,6 +91,7 @@
   border: 1px solid #414040;
   border-radius: 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: normal;
   list-style-image: none;

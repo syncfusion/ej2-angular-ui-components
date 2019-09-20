@@ -221,6 +221,10 @@
   width: 100%;
 }
 
+.e-upload.e-control-wrapper {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}
+
 .e-upload .e-file-select-wrap {
   padding: 16px 0 16px 16px;
 }
@@ -236,7 +240,7 @@
 }
 
 .e-upload .e-file-select-wrap .e-file-drop {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   margin-left: 14px;
 }
@@ -248,7 +252,7 @@
 }
 
 .e-upload .e-upload-files .e-upload-file-list {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: 100%;
   line-height: normal;
@@ -268,7 +272,7 @@
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
   float: left;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   max-width: 75%;
   overflow: hidden;
@@ -286,7 +290,7 @@
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-top: 16px;
 }
@@ -299,7 +303,7 @@
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   padding-bottom: 16px;
 }
@@ -332,7 +336,7 @@
 
 .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
   float: right;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   position: relative;
   right: 0;
@@ -423,7 +427,7 @@
 
 .e-upload .e-file-select-wrap .e-btn,
 .e-upload .e-upload-actions .e-btn {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-upload .e-upload-actions {

@@ -69,8 +69,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * * `EllipsisWithTooltip` - Displays ellipsis when the cell content overflows its area 
      * also it will display tooltip while hover on ellipsis applied cell.
      * @default Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
      * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode

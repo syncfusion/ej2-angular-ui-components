@@ -2,7 +2,7 @@
  * Angular Component Base Module
  */
 import { getValue, isUndefined, setValue, isNullOrUndefined, attributes, createElement  } from '@syncfusion/ej2-base';
-import { EventEmitter, EmbeddedViewRef, Renderer2 } from '@angular/core';
+import { EventEmitter, EmbeddedViewRef, Renderer2, ElementRef } from '@angular/core';
 import { clearTemplate, registerEvents } from './util';
 
 const SVG_REG: RegExp = /^svg|^path|^g/;
@@ -38,6 +38,7 @@ export class ComponentBase<T> {
     protected changedProperties: { [key: string]: Object };
     protected finalUpdate: Function;
     protected isUpdated: boolean;
+    public ngEle: ElementRef;
 
     private tagObjects: { name: string, instance: Tag }[];
     public onPropertyChanged: (newProp: Object, oldProp: Object) => void;
@@ -133,12 +134,14 @@ export class ComponentBase<T> {
     };
 
     public ngAfterViewInit(): void {
+        this.ngEle.nativeElement.hidden = true;
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(() => {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined') {
                 this.appendTo(this.element);
+                this.ngEle.nativeElement.hidden = false;
             }
         });
     }

@@ -589,6 +589,11 @@ ejs-filemanager {
   padding: 0 0 0 12px;
 }
 
+.e-filemanager .e-grid .e-gridheader .e-fe-grid-icon .e-headercelldiv,
+.e-filemanager .e-grid .e-gridcontent .e-fe-grid-icon .e-headercelldiv {
+  text-overflow: unset;
+}
+
 .e-filemanager .e-grid .e-gridheader .e-fe-grid-icon + .e-rowcell,
 .e-filemanager .e-grid .e-gridheader .e-fe-grid-icon + .e-headercell,
 .e-filemanager .e-grid .e-gridcontent .e-fe-grid-icon + .e-rowcell,
@@ -930,6 +935,7 @@ ejs-filemanager {
 
 .e-filemanager .e-fe-overlay {
   border: 2px dashed #007bff;
+  bottom: 0;
   display: block;
   height: calc(100% - 34px);
   pointer-events: none;

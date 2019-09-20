@@ -661,6 +661,18 @@
   display: inline-block;
 }
 
+.e-query-builder.e-device .e-group-body .e-rule-value.e-hide,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-hide,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-hide {
+  display: none;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-show,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-show,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-show {
+  display: inline-block;
+}
+
 .e-query-builder.e-device .e-group-body .e-rule-field.e-btn.e-small.e-round,
 .e-query-builder.e-device .e-group-body .e-rule-delete.e-btn.e-small.e-round,
 .e-bigger.e-query-builder .e-group-body .e-rule-field.e-btn.e-small.e-round,

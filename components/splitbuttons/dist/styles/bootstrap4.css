@@ -84,6 +84,7 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-shadow: none;
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: normal;
   list-style-image: none;

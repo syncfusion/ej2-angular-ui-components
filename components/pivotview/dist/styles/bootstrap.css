@@ -103,6 +103,22 @@
   content: '\e712';
 }
 
+.e-pivotview-png-export::before {
+  content: '\e715';
+}
+
+.e-pivotview-jpeg-export::before {
+  content: '\e713';
+}
+
+.e-pivotview-svg-export::before {
+  content: '\e716';
+}
+
+.e-mdx::before {
+  content: '\e724';
+}
+
 .e-pivotview-select-icon::before {
   content: '\e614';
 }
@@ -139,10 +155,13 @@
   content: '\e711';
 }
 
+.e-level-options .e-selected-level-icon::before {
+  content: '\e614';
+}
+
 /*! PivotView layout */
 .e-pivotview .e-value-field-settings,
-.e-pivotview .e-member-editor-dialog,
-.e-pivotview .e-pivot-format-dialog {
+.e-pivotview .e-member-editor-dialog {
   max-height: 450px !important;
 }
 
@@ -203,7 +222,6 @@
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-editor-label-wrapper {
   background-color: #f8f8f8;
   padding: 15px 10px 16px 20px;
-  width: 240px;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-editor-label-wrapper .e-editor-label,
@@ -212,6 +230,9 @@
   color: #333;
   font: 500 13px Helvetica;
   opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-value-field-div-content,
@@ -337,13 +358,28 @@
   width: 100%;
 }
 
-.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
+  display: inline-block;
   height: 164px;
   max-width: 400px;
   overflow: auto;
-  overflow-x: hidden;
+  width: 100%;
+}
+
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+  display: inline-table;
+  height: 100%;
+  width: 100%;
+}
+
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-olap-field-list-tree {
+  overflow-x: auto;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul,
@@ -365,10 +401,19 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
 }
 
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon {
+  margin: 0;
+}
+
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-disable {
-  display: none;
+  display: none !important;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-filter-tab-wrapper,
@@ -409,9 +454,9 @@
   padding-top: 20px;
 }
 
-.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container {
+.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
   height: 134px;
 }
 
@@ -514,7 +559,6 @@
 .e-pivotview .e-member-editor-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotview .e-pivot-format-dialog.e-excel-filter .e-editor-label-wrapper {
   padding: 15px 10px 12px 20px;
-  width: 312px;
 }
 
 .e-pivotview .e-value-field-settings.e-rtl .e-member-editor-wrapper ul,
@@ -528,6 +572,54 @@
 .e-pivotview .e-member-editor-dialog.e-rtl .e-footer-content .e-clear-filter-button,
 .e-pivotview .e-pivot-format-dialog.e-rtl .e-footer-content .e-clear-filter-button {
   float: right;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul {
+  margin-left: 0;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop {
+  margin: 0 5px;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret {
+  display: none;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.e-pivotview .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul {
+  margin-right: 0;
 }
 
 .e-pivotview .e-value-field-settings .e-footer-content,
@@ -546,6 +638,7 @@
 }
 
 .e-pivotview .e-pivot-format-dialog {
+  max-height: 500px !important;
   max-width: 350px;
 }
 
@@ -556,37 +649,18 @@
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-value-lable,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-lable,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-custom-lable,
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-symbol-lable,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-grouping-lable,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-decimal-lable {
+  color: #333333;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-value-drop,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-drop,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-custom-text,
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-symbol-drop,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-grouping-drop,
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-decimal-drop {
-  margin-bottom: 25px;
-}
-
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-custom-text.e-disable,
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-symbol-drop.e-disable,
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-custom-lable.e-disable,
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer .e-pivot-format-symbol-lable.e-disable {
-  display: none;
-}
-
-.e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer table tr td:nth-child(1) {
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.e-pivotview .e-pivot-format-dialog.e-rtl .e-pivot-format-dialog-outer table tr td:nth-child(1) {
-  padding-left: 30px;
-  padding-right: 0;
+  margin-bottom: 20px;
 }
 
 .e-pivotview .e-pivot-toolbar {
@@ -609,6 +683,7 @@
 }
 
 .e-pivotview .e-pivot-toolbar .e-menu-wrapper ul .e-menu-item .e-menu-icon {
+  margin-left: 0;
   margin-right: 0;
   font-size: 16px;
 }
@@ -635,6 +710,11 @@
   float: left;
 }
 
+.e-pivotview .e-pivot-toolbar.e-rtl .e-menu-wrapper ul .e-menu-item {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
 .e-pivotview-disable-icon {
   visibility: hidden;
 }
@@ -645,6 +725,22 @@
 
 .e-pivotview-report-dialog {
   max-width: 350px;
+}
+
+.e-mdx-query-content {
+  background-color: #fff;
+  color: #333;
+  font-size: #333;
+  font-weight: 500;
+  height: 200px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  resize: none;
+  width: 100%;
+}
+
+.e-pivotview-mdx-dialog {
+  max-width: 500px;
 }
 
 .e-pivotview-report-label {
@@ -703,10 +799,10 @@
   height: 48px;
 }
 
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
   height: 144px;
 }
 
@@ -756,18 +852,18 @@
   margin: 0 6px 0 0;
 }
 
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container {
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
   height: 99px;
 }
 
@@ -1145,6 +1241,10 @@
 
 .e-pivotview .e-pivotchart > svg {
   border: 1px solid #e6e6e6;
+}
+
+.e-pivotview .e-pivotchart.e-ltr {
+  direction: ltr;
 }
 
 .e-pivotview .e-grid .e-columnheader.e-wrap .e-sortfilterdiv,
@@ -2185,8 +2285,16 @@
   content: '\e35f';
 }
 
+.e-level-options .e-selected-level-icon::before {
+  content: '\e614';
+}
+
 .e-pivot-calc-dialog-div .e-drag::before {
   content: '\e330';
+}
+
+.e-pivot-calc-dialog-div .e-pivot-all-field-title-wrapper .e-info.e-icons::before {
+  content: '\e607';
 }
 
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-edited.e-icons::before {
@@ -2199,6 +2307,106 @@
 
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-format.e-icons::before {
   content: '\e22f';
+}
+
+.e-pivot-calc-dialog-div .e-measureGroupCDB-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivot-calc-dialog-div .e-measure-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivot-calc-dialog-div .e-folderCDB-icon::before {
+  content: '\e60b' !important;
+}
+
+.e-pivot-calc-dialog-div .e-folderCDB-open-icon::before {
+  content: '\e609' !important;
+}
+
+.e-pivot-calc-dialog-div .e-dimensionCDB-icon::before {
+  content: '\e65b' !important;
+}
+
+.e-pivot-calc-dialog-div .e-kpiCDB-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivot-calc-dialog-div .e-kpiGoal-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivot-calc-dialog-div .e-kpiStatus-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivot-calc-dialog-div .e-kpiTrend-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivot-calc-dialog-div .e-kpiValue-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivot-calc-dialog-div .e-namedSetCDB-icon::before {
+  content: '\e65d' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchyCDB-icon::before {
+  content: '\e663' !important;
+}
+
+.e-pivot-calc-dialog-div .e-attributeCDB-icon::before {
+  content: '\e65c' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-0-icon::before {
+  content: '\e65a' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-1-icon::before {
+  content: '\e65a' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-2-icon::before {
+  content: '\e662' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-3-icon::before {
+  content: '\e65e' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-4-icon::before {
+  content: '\e660' !important;
+}
+
+.e-pivot-calc-dialog-div .e-hierarchy-level-5-icon::before {
+  content: '\e661' !important;
+}
+
+.e-pivot-calc-dialog-div .e-calcMemberGroupCDB::before {
+  content: '\e729' !important;
+}
+
+.e-pivot-calc-dialog-div .e-calc-measure-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivot-calc-dialog-div .e-calc-dimension-icon::before {
+  content: '\e65b' !important;
+}
+
+.e-pivot-calc-dialog-div .e-sort-none::before {
+  content: '\e666' !important;
+}
+
+.e-pivot-calc-dialog-div .e-sort-ascend::before {
+  content: '\e667' !important;
+}
+
+.e-pivot-calc-dialog-div .e-sort-descend::before {
+  content: '\e665' !important;
 }
 
 .e-pivotfieldlist-wrapper .e-field-list-back-icon::before {
@@ -2256,6 +2464,106 @@
 
 .e-pivotfieldlist-wrapper .e-dropdown-icon::before {
   content: '\e95d';
+}
+
+.e-pivotfieldlist-wrapper .e-measureGroupCDB-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-measure-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-folderCDB-icon::before {
+  content: '\e60b' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-folderCDB-open-icon::before {
+  content: '\e609' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-dimensionCDB-icon::before {
+  content: '\e65b' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-kpiCDB-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-kpiGoal-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-kpiStatus-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-kpiTrend-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-kpiValue-icon::before {
+  content: '\e664' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-namedSetCDB-icon::before {
+  content: '\e65d' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchyCDB-icon::before {
+  content: '\e663' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-attributeCDB-icon::before {
+  content: '\e65c' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-0-icon::before {
+  content: '\e65a' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-1-icon::before {
+  content: '\e65a' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-2-icon::before {
+  content: '\e662' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-3-icon::before {
+  content: '\e65e' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-4-icon::before {
+  content: '\e660' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-hierarchy-level-5-icon::before {
+  content: '\e661' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-calcMemberGroupCDB::before {
+  content: '\e729' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-calc-measure-icon::before {
+  content: '\ea76' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-calc-dimension-icon::before {
+  content: '\e65b' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-sort-none::before {
+  content: '\e666' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-sort-ascend::before {
+  content: '\e667' !important;
+}
+
+.e-pivotfieldlist-wrapper .e-sort-descend::before {
+  content: '\e665' !important;
 }
 
 /*! field-list theme */
@@ -2530,16 +2838,27 @@
 }
 
 .e-pivot-calc-dialog-div .e-pivot-all-field-title,
-.e-pivot-calc-dialog-div .e-pivot-formula-title {
+.e-pivot-calc-dialog-div .e-pivot-field-name-title,
+.e-pivot-calc-dialog-div .e-pivot-formula-title,
+.e-pivot-calc-dialog-div .e-olap-hierarchy-title,
+.e-pivot-calc-dialog-div .e-olap-format-title,
+.e-pivot-calc-dialog-div .e-olap-member-title {
   color: #333;
   font-size: 13px;
   margin-top: 15px;
+  overflow: hidden;
   padding: 4px;
   padding-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-pivot-calc-dialog-div .e-treeview .e-sibling {
   display: none;
+}
+
+.e-pivot-calc-dialog-div .e-treeview .e-list-selected {
+  opacity: .5;
 }
 
 .e-pivot-calc-dialog-div .e-treeview ul {
@@ -2552,6 +2871,11 @@
 
 .e-pivot-calc-dialog-div .e-treeview ul li .e-list-text {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}
+
+.e-pivot-calc-dialog-div .e-treeview ul li .e-list-icon {
+  color: #333;
+  margin: 0;
 }
 
 .e-pivot-calc-dialog-div .e-treeview ul .e-fullrow {
@@ -2616,6 +2940,19 @@
   width: 24px;
 }
 
+.e-pivot-calc-dialog-div.e-rtl .e-treeview ul {
+  margin-right: 0;
+}
+
+.e-pivot-calc-dialog-div.e-rtl .e-treeview ul li {
+  margin-left: 0;
+  margin-right: -40px;
+}
+
+.e-pivot-calc-dialog-div.e-rtl .e-treeview ul li .e-text-content {
+  padding: 0 24px 0 0;
+}
+
 .e-pivot-calc-dialog-div .e-pivot-calc-input.e-empty-field::-webkit-input-placeholder {
   color: #a94442 !important;
   font-weight: 600 !important;
@@ -2649,6 +2986,10 @@
   width: 100%;
 }
 
+.e-pivot-calc-dialog-div .e-pivot-formula.e-copy-drop {
+  cursor: copy;
+}
+
 .e-pivot-calc-dialog-div .e-list-parent .e-list-text {
   margin-bottom: 8px;
   min-width: 100px;
@@ -2667,6 +3008,171 @@
   overflow: auto;
 }
 
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div {
+  min-width: 550px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div {
+  height: 450px;
+  width: 50%;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer {
+  height: 100%;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-treeview-outer-div {
+  display: inline-block;
+  height: 421px;
+  overflow: auto;
+  width: 100%;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview {
+  display: inline-table;
+  height: 100%;
+  width: 100%;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-fullrow {
+  cursor: move;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-text {
+  margin-bottom: 0;
+  overflow: unset;
+  width: 100%;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-item .e-text-content {
+  height: 30px;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon {
+  cursor: auto;
+  font-size: 14px;
+  width: auto;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon.e-edit {
+  cursor: pointer;
+  padding: 7px !important;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon.e-edited {
+  cursor: pointer;
+  padding: 7px !important;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-item div.e-icons {
+  padding: 0;
+  height: auto;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview.e-rtl ul .e-list-icon {
+  transform: rotateX(0deg) rotateY(180deg);
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview.e-rtl ul .e-list-item .e-text-content {
+  padding: 0 24px 0 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview.e-rtl ul li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title {
+  color: #333;
+  -ms-flex: auto;
+      flex: auto;
+  margin-top: 0;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper {
+  background-color: #eee;
+  color: #333;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper .e-info {
+  padding: 7px !important;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper .e-info:hover {
+  color: #317ab9;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div {
+  -ms-flex: auto;
+      flex: auto;
+  margin-left: 18px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-pivot-formula {
+  height: 100px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-olap-calc-custom-format-div {
+  margin-top: 15px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-pivot-formula-title,
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-pivot-field-name-title,
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-olap-hierarchy-title,
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-olap-format-title,
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-olap-member-title {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div .e-pivot-field-name-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-dialog {
+  max-height: 700px !important;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-dialog .e-calc-clear-btn {
+  float: left;
+  margin: 0;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl .e-pivot-calc-outer-div .e-olap-calculated-div {
+  margin-left: 0;
+  margin-right: 18px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl.e-dialog .e-calc-clear-btn {
+  float: right;
+}
+
 .e-bigger.e-pivot-calc-dialog-div,
 .e-bigger .e-pivot-calc-dialog-div,
 .e-bigger.e-pivot-calc-dialog-div,
@@ -2675,13 +3181,29 @@
 }
 
 .e-bigger.e-pivot-calc-dialog-div .e-pivot-all-field-title,
+.e-bigger.e-pivot-calc-dialog-div .e-pivot-field-name-title,
 .e-bigger.e-pivot-calc-dialog-div .e-pivot-formula-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-hierarchy-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-format-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-member-title,
 .e-bigger .e-pivot-calc-dialog-div .e-pivot-all-field-title,
+.e-bigger .e-pivot-calc-dialog-div .e-pivot-field-name-title,
 .e-bigger .e-pivot-calc-dialog-div .e-pivot-formula-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-hierarchy-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-format-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-member-title,
 .e-bigger.e-pivot-calc-dialog-div .e-pivot-all-field-title,
+.e-bigger.e-pivot-calc-dialog-div .e-pivot-field-name-title,
 .e-bigger.e-pivot-calc-dialog-div .e-pivot-formula-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-hierarchy-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-format-title,
+.e-bigger.e-pivot-calc-dialog-div .e-olap-member-title,
 .e-bigger .e-pivot-calc-dialog-div .e-pivot-all-field-title,
-.e-bigger .e-pivot-calc-dialog-div .e-pivot-formula-title {
+.e-bigger .e-pivot-calc-dialog-div .e-pivot-field-name-title,
+.e-bigger .e-pivot-calc-dialog-div .e-pivot-formula-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-hierarchy-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-format-title,
+.e-bigger .e-pivot-calc-dialog-div .e-olap-member-title {
   font-size: 14px;
   padding: 6px;
   padding-bottom: 0;
@@ -2714,6 +3236,63 @@
 .e-bigger .e-pivot-calc-dialog-div .e-footer-content {
   padding-right: auto;
   padding-top: auto;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div {
+  min-width: 580px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div {
+  height: 495px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-treeview-outer-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-treeview-outer-div,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-treeview-outer-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-treeview-outer-div {
+  height: 463px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title {
+  padding-bottom: 6px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-pivot-all-field-title-wrapper {
+  font-size: 14px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon {
+  font-size: 16px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-calculated-div {
+  margin-left: 24px;
+}
+
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl .e-pivot-calc-outer-div .e-olap-calculated-div,
+.e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div.e-rtl .e-pivot-calc-outer-div .e-olap-calculated-div {
+  margin-left: 0;
+  margin-right: 24px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog,
@@ -2752,6 +3331,7 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-footer-content .e-clear-filter-button,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-footer-content .e-clear-filter-button {
   float: left;
+  margin: 0;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-footer-content .e-clear-filter-button.e-disable,
@@ -2772,7 +3352,6 @@
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-editor-label-wrapper {
   background-color: #f8f8f8;
   padding: 15px 10px 16px 20px;
-  width: 240px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-editor-label-wrapper .e-editor-label,
@@ -2781,6 +3360,9 @@
   color: #333;
   font: 500 13px Helvetica;
   opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-value-field-div-content,
@@ -2906,13 +3488,28 @@
   width: 100%;
 }
 
-.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
+  display: inline-block;
   height: 150px;
   max-width: 400px;
   overflow: auto;
-  overflow-x: hidden;
+  width: 100%;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+  display: inline-table;
+  height: 100%;
+  width: 100%;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-rtl ul .e-list-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-rtl ul .e-list-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container.e-rtl ul .e-list-icon {
+  transform: rotateX(0deg) rotateY(180deg);
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul,
@@ -2934,10 +3531,88 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
 }
 
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-list-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-list-icon {
+  margin: 0;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-select-all-wrapper ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-editor-container ul li .e-kpiValue-icon {
+  margin-left: 10px;
+}
+
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-disable,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-disable {
-  display: none;
+  display: none !important;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-filter-tab-wrapper,
@@ -2978,9 +3653,9 @@
   padding-top: 20px;
 }
 
-.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container {
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
   height: 134px;
 }
 
@@ -3083,7 +3758,6 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotfieldlist-wrapper .e-value-field-settings.e-excel-filter .e-editor-label-wrapper {
   padding: 15px 10px 12px 20px;
-  width: 312px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-rtl .e-member-editor-wrapper ul,
@@ -3099,6 +3773,91 @@
   float: right;
 }
 
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-member-editor-container ul {
+  margin-left: 0;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-treeview ul:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop {
+  margin: 0 5px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop .e-caret {
+  display: none;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop li .e-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul {
+  margin-right: 0;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .e-pivotfieldlist-wrapper .e-member-editor-dialog {
   max-width: 400px;
 }
@@ -3112,7 +3871,7 @@
   overflow: auto;
 }
 
-.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
   height: 200px;
 }
 
@@ -3144,14 +3903,50 @@
 
 .e-field-list-tree.e-drag-item.e-treeview .e-text-content > .e-icons,
 .e-field-list-tree.e-drag-item.e-treeview .e-checkbox-wrapper,
+.e-field-list-tree.e-drag-item.e-treeview .e-list-icon,
 .e-pivot-calc.e-drag-item.e-treeview .e-text-content > .e-icons,
-.e-pivot-calc.e-drag-item.e-treeview .e-checkbox-wrapper {
+.e-pivot-calc.e-drag-item.e-treeview .e-checkbox-wrapper,
+.e-pivot-calc.e-drag-item.e-treeview .e-list-icon {
   display: none;
 }
 
 .e-field-list-tree.e-drag-item.e-treeview.e-rtl .e-text-content,
 .e-pivot-calc.e-drag-item.e-treeview.e-rtl .e-text-content {
   padding-right: 0;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-text-content,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-text-content {
+  padding-left: 24px;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-text-content .e-list-text,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-text-content .e-list-text {
+  padding: 0;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-no-drop,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop {
+  display: inline-block !important;
+  line-height: 0em;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before {
+  float: left;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict.e-rtl .e-text-content,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict.e-rtl .e-text-content {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict.e-rtl .e-text-content .e-icons,
+.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict.e-rtl .e-text-content .e-icons {
+  transform: rotateY(180deg);
 }
 
 .e-bigger .e-field-list-tree.e-drag-item.e-treeview,
@@ -3175,6 +3970,17 @@
 .e-bigger.e-field-list-tree.e-drag-item.e-treeview
 .e-bigger.e-pivot-calc.e-drag-item.e-treeview .e-text-content .e-list-text {
   line-height: 1.5em;
+}
+
+.e-bigger .e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger .e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger.e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger .e-field-list-tree.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger .e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before,
+.e-bigger.e-field-list-tree.e-drag-item.e-treeview
+.e-bigger.e-pivot-calc.e-drag-item.e-treeview.e-drag-restrict .e-no-drop::before {
+  padding: 4px;
 }
 
 .e-button-drag-clone {
@@ -3227,15 +4033,109 @@
   opacity: 1;
 }
 
-.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container {
+.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
   height: 133px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-kpiValue-icon {
+  margin-left: 10px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper ul li .e-kpiValue-icon {
+  margin-left: 10px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-header-content .e-clear-filter-button.e-small,
@@ -3284,18 +4184,18 @@
   margin: 0 6px 0 0;
 }
 
-.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container,
-.e-bigger.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container {
+.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
+.e-bigger.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
   height: 99px;
 }
 
@@ -3708,6 +4608,11 @@
   width: 100%;
 }
 
+.e-pivotfieldlist-wrapper .e-title-header .e-title-content {
+  -ms-flex: auto;
+      flex: auto;
+}
+
 .e-pivotfieldlist-wrapper .e-field-list-container {
   display: -ms-flexbox;
   display: flex;
@@ -3746,10 +4651,60 @@
   word-break: break-all;
 }
 
-.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper {
+  background-color: #eee;
+  color: #333;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15px;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-field-header {
+  -ms-flex: auto;
+      flex: auto;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-descend {
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  height: 20px;
+  padding: 7px 0 0 4px;
+  width: 20px;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-none.e-selected::before,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-ascend.e-selected::before,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-descend.e-selected::before {
+  color: #317ab9;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-none:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-ascend:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-descend:hover {
+  font-weight: bold;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-none:focus,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-ascend:focus,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-header-wrapper .e-sort-descend:focus {
+  font-weight: bold;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list-tree-outer-div {
+  display: inline-block;
   height: 310px;
   overflow: auto;
+  width: 100%;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list {
+  display: inline-table;
+  height: 100%;
   padding-left: 2px;
+  width: 100%;
 }
 
 .e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul {
@@ -3778,6 +4733,25 @@
   width: 20px;
 }
 
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-list-icon {
+  color: #333;
+  margin: 0;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-level-members,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-kpiValue-icon {
+  margin-left: 10px;
+}
+
 .e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-list-selected {
   opacity: .5;
 }
@@ -3788,6 +4762,30 @@
 
 .e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-list-text {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list.e-olap-field-list-tree ul li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list.e-olap-field-list-tree ul .e-list-icon {
+  font-size: 14px;
+  height: auto;
+  width: auto;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list.e-olap-field-list-tree.e-treeview ul:first-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list.e-olap-field-list-tree.e-rtl ul .e-list-icon {
+  transform: rotateX(0deg) rotateY(180deg);
+}
+
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table.e-olap-field-table {
+  width: 40%;
 }
 
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table {
@@ -4214,6 +5212,10 @@
   margin-top: 8px;
 }
 
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table.e-olap-axis-table {
+  width: 60%;
+}
+
 .e-pivotfieldlist-wrapper .e-calculated-field {
   color: #333;
   font-size: 13px;
@@ -4245,9 +5247,36 @@
   margin-right: 0 !important;
 }
 
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-calc-measure-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-calc-dimension-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-attributeCDB-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-hierarchyCDB-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-level-members,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-namedSetCDB-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-measure-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-kpiGoal-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-kpiStatus-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-kpiTrend-icon,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list ul li .e-kpiValue-icon {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header {
-  padding-right: 14px;
+  padding-left: 0;
+  padding-right: 15px;
   text-align: right;
+}
+
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-descend {
+  padding: 7px 4px 0 0;
 }
 
 .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields,
@@ -4286,7 +5315,7 @@
   width: 100%;
 }
 
-.e-pivotfieldlist-wrapper.e-static .e-field-list-container .e-field-table .e-field-list {
+.e-pivotfieldlist-wrapper.e-static .e-field-list-container .e-field-table .e-field-list-tree-outer-div {
   height: 175px;
 }
 
@@ -4342,6 +5371,8 @@
 
 .e-pivotfieldlist-wrapper.e-device {
   height: 100%;
+  max-height: 100% !important;
+  max-width: 100% !important;
   min-height: 500px;
   width: 100%;
 }
@@ -4353,6 +5384,11 @@
   height: 48px;
   padding-bottom: 9px;
   padding-top: 9px;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-field-list-dialog .e-dlg-header-content {
+  background-color: transparent;
+  color: #333;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-title-mobile-header {
@@ -4628,11 +5664,13 @@
   width: 90%;
 }
 
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-calc-input-div {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-calc-input-div,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-member-options,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-olap-calc-custom-format-div {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
-  width: 90%;
+  width: 90% !important;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion {
@@ -4664,13 +5702,30 @@
   margin-top: 32px;
 }
 
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-ok-button {
+  bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord {
   max-height: 290px;
+  overflow: auto;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord.e-rtl ul .e-list-icon {
+  transform: rotateX(0deg) rotateY(180deg);
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-checkbox-wrapper .e-icons {
   height: 18px;
   width: 18px;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div.e-olap-calc-outer-div {
+  max-height: 350px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-field-list-footer {
@@ -4814,6 +5869,31 @@
   padding: 7px 0 0 20px;
 }
 
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper {
+  padding-right: 20px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-header-wrapper .e-sort-descend {
+  font-size: 16px;
+  height: 24px;
+  padding: 7px 0 0 4px;
+  width: 24px;
+}
+
 .e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list,
 .e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list,
 .e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list,
@@ -4837,6 +5917,60 @@
   margin-bottom: 3px !important;
   margin-right: 4px !important;
   width: 24px !important;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list .e-kpiValue-icon {
+  margin-left: 10px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list.e-olap-field-list-tree ul .e-list-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list.e-olap-field-list-tree ul .e-list-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-field-list.e-olap-field-list-tree ul .e-list-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-field-table .e-field-list.e-olap-field-list-tree ul .e-list-icon {
+  font-size: 16px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-left-axis-fields .e-field-list-rows,
@@ -5239,6 +6373,83 @@
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-drag {
   margin-left: 4px !important;
   margin-right: 0 !important;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-level-members,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-measure-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiValue-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-calc-dimension-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-attributeCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-hierarchyCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-level-members,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-namedSetCDB-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-measure-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiGoal-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiStatus-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiTrend-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-list .e-kpiValue-icon {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header {
+  padding-right: 20px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper {
+  padding-left: 20px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-descend,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-none,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-ascend,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-field-table .e-field-header-wrapper .e-sort-descend {
+  padding: 7px 4px 0 0;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields,

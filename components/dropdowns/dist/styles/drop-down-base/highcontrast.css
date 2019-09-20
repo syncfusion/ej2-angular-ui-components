@@ -99,7 +99,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #fff;
   cursor: default;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -150,7 +150,7 @@
   border-bottom: 2px;
   border-color: none;
   color: #fff;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   line-height: 36px;
   min-height: 36px;
@@ -163,7 +163,7 @@
   background-color: #000;
   border-color: none;
   color: #ffd939;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: 36px;
@@ -224,7 +224,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #ffd939;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   text-indent: 10px;
@@ -309,7 +309,7 @@
   border-bottom: 2px;
   border-color: none;
   color: #fff;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 16px;
   text-indent: 10px;

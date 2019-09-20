@@ -29,7 +29,7 @@
 
 .e-ddl.e-popup {
   border: 0;
-  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
   margin-top: 2px;
 }
 
@@ -633,6 +633,18 @@
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-operator,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value-delete {
+  display: inline-block;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-hide,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-hide,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-hide {
+  display: none;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-show,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-show,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-show {
   display: inline-block;
 }
 

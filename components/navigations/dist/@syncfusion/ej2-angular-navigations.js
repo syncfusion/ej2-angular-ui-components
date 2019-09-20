@@ -92,7 +92,7 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['animation', 'enablePersistence', 'enableRtl', 'expandMode', 'height', 'items', 'locale', 'width'];
+const inputs = ['animation', 'dataSource', 'enablePersistence', 'enableRtl', 'expandMode', 'headerTemplate', 'height', 'itemTemplate', 'items', 'locale', 'width'];
 const outputs$1 = ['clicked', 'created', 'destroyed', 'expanded', 'expanding'];
 const twoWays = [''];
 /**
@@ -163,6 +163,18 @@ AccordionComponent.ctorParameters = () => [
     { type: ViewContainerRef, },
     { type: Injector, },
 ];
+AccordionComponent.propDecorators = {
+    'headerTemplate': [{ type: ContentChild, args: ['headerTemplate',] },],
+    'itemTemplate': [{ type: ContentChild, args: ['itemTemplate',] },],
+};
+__decorate$1([
+    Template(),
+    __metadata$1("design:type", Object)
+], AccordionComponent.prototype, "headerTemplate", void 0);
+__decorate$1([
+    Template(),
+    __metadata$1("design:type", Object)
+], AccordionComponent.prototype, "itemTemplate", void 0);
 AccordionComponent = __decorate$1([
     ComponentMixins([ComponentBase]),
     __metadata$1("design:paramtypes", [ElementRef,
@@ -1214,5 +1226,5 @@ MenuAllModule.ctorParameters = () => [];
  */
 
 export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, AccordionModule, AccordionAllModule, ItemDirective, ItemsDirective, ToolbarComponent, ToolbarModule, ToolbarAllModule, ContextMenuComponent, ContextMenuModule, ContextMenuAllModule, TabItemDirective, TabItemsDirective, TabComponent, TabModule, TabAllModule, TreeViewComponent, TreeViewModule, TreeViewAllModule, SidebarComponent, SidebarModule, SidebarAllModule, MenuItemDirective, MenuItemsDirective, MenuComponent, MenuModule, MenuAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$2 as ɵe, outputs$4 as ɵf, inputs$6 as ɵm, outputs$10 as ɵn, inputs$5 as ɵk, outputs$8 as ɵl, inputs$3 as ɵg, outputs$6 as ɵh, inputs$1 as ɵc, outputs$3 as ɵd, inputs$4 as ɵi, outputs$7 as ɵj };
-export { MenuAnimationSettings, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
+export { MenuAnimationSettings, MenuItem, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
 //# sourceMappingURL=ej2-angular-navigations.js.map

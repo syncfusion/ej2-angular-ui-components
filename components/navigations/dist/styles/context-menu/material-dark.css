@@ -86,6 +86,7 @@
 
 .e-contextmenu-wrapper ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
 }
 
 .e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {

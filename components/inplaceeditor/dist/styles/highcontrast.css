@@ -104,28 +104,28 @@
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }

@@ -5,7 +5,7 @@ import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -56,6 +56,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * Specifies the data source for the layer.
      * @isdatamanager false
+     * @isobservable true
      * @default []
      */
     public dataSource: any;
@@ -120,6 +121,10 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * Specifies the shape properties
      */
     public shapeSettings: any;
+    /** 
+     * To configure the legend toggle settings.
+     */
+    public toggleLegendSettings: any;
     /** 
      * To configure the tooltip settings of the maps layer.
      */

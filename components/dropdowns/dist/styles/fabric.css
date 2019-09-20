@@ -80,7 +80,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #333;
   cursor: default;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -131,7 +131,7 @@
   border-bottom: 1px;
   border-color: none;
   color: rgba(51, 51, 51, 0.87);
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 36px;
   min-height: 36px;
@@ -144,7 +144,7 @@
   background-color: #fff;
   border-color: none;
   color: #0078d6;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: 36px;
@@ -205,7 +205,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #0078d6;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   text-indent: 10px;
@@ -290,7 +290,7 @@
   border-bottom: 1px;
   border-color: none;
   color: rgba(51, 51, 51, 0.87);
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 16px;
   text-indent: 10px;
@@ -540,7 +540,7 @@
 
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: auto;
   margin: 0;
@@ -811,7 +811,7 @@ ejs-dropdownlist {
 .e-multi-select-wrapper input[type='text'] {
   background: none;
   border: 0;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   height: 28px;
@@ -843,7 +843,7 @@ ejs-dropdownlist {
 }
 
 .e-multi-select-wrapper .e-delim-values {
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 30px;
   max-width: 100%;
@@ -1062,7 +1062,7 @@ ejs-dropdownlist {
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {
   color: rgba(51, 51, 51, 0.87);
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -1238,7 +1238,7 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
   color: #666;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 

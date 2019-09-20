@@ -354,12 +354,14 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
     
     ComponentBase.prototype.ngAfterViewInit = function () {
         var _this = this;
+        this.ngEle.nativeElement.hidden = true;
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(function () {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined') {
                 _this.appendTo(_this.element);
+                _this.ngEle.nativeElement.hidden = false;
             }
         });
     };

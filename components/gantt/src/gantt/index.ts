@@ -6,4 +6,4 @@ export {HolidayDirective,HolidaysDirective} from './holidays.directive';
 export {EventMarkerDirective,EventMarkersDirective} from './eventmarkers.directive';
 export { GanttComponent} from './gantt.component';
 export { GanttModule } from './gantt.module';
-export { GanttAllModule, FilterService, SelectionService, SortService, ReorderService, ResizeService, EditService, DayMarkersService, ToolbarService, ContextMenuService } from './gantt-all.module';
+export { GanttAllModule, FilterService, SelectionService, SortService, ReorderService, ResizeService, EditService, DayMarkersService, ToolbarService, ContextMenuService, ExcelExportService } from './gantt-all.module';

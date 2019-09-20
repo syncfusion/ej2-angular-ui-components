@@ -961,7 +961,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text {
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-float-input input:valid ~ label.e-float-text,

@@ -1,10 +1,10 @@
 import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Accordion } from '@syncfusion/ej2-navigations';
-
+import { Template } from '@syncfusion/ej2-angular-base';
 import { AccordionItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animation','enablePersistence','enableRtl','expandMode','height','items','locale','width'];
+export const inputs: string[] = ['animation','dataSource','enablePersistence','enableRtl','expandMode','headerTemplate','height','itemTemplate','items','locale','width'];
 export const outputs: string[] = ['clicked','created','destroyed','expanded','expanding'];
 export const twoWays: string[] = [''];
 
@@ -29,6 +29,20 @@ export class AccordionComponent extends Accordion implements IComponentBase {
     public childItems: any;
     public tags: string[] = ['items'];
 
+    /** 
+     * Specifies the header title template option for accordion items.
+     * @default null
+     */
+    @ContentChild('headerTemplate')
+    @Template()
+    public headerTemplate: any;
+    /** 
+     * Specifies the template option for accordion items.
+     * @default null
+     */
+    @ContentChild('itemTemplate')
+    @Template()
+    public itemTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

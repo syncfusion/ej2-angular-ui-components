@@ -383,5 +383,5 @@ TooltipAllModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 export { DialogButtonDirective, ButtonsDirective, DialogComponent, DialogModule, DialogAllModule, TooltipComponent, TooltipModule, TooltipAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$1 as ɵc, outputs$2 as ɵd };
-export { PositionData, Popup, getScrollableParent, getZindexPartial, getMaxZindex, calculateRelativeBasedPosition, calculatePosition, fit, isCollide, flip, ButtonProps, AnimationSettings, Dialog, DialogUtility, Animation, Tooltip, createSpinner, showSpinner, hideSpinner, setSpinner } from '@syncfusion/ej2-popups';
+export { PositionData, Popup, getScrollableParent, getZindexPartial, getMaxZindex, calculateRelativeBasedPosition, calculatePosition, fit, isCollide, flip, ButtonProps, AnimationSettings, Dialog, DialogUtility, Animation, Tooltip, blazorSpinner, createSpinner, showSpinner, hideSpinner, setSpinner } from '@syncfusion/ej2-popups';
 //# sourceMappingURL=ej2-angular-popups.es5.js.map

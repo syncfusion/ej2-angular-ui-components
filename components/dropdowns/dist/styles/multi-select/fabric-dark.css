@@ -222,7 +222,7 @@
 .e-multi-select-wrapper input[type='text'] {
   background: none;
   border: 0;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   height: 28px;
@@ -254,7 +254,7 @@
 }
 
 .e-multi-select-wrapper .e-delim-values {
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 30px;
   max-width: 100%;
@@ -473,7 +473,7 @@
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {
   color: #dadada;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -649,7 +649,7 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
   color: #dadada;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 

@@ -9,6 +9,18 @@
   text-align: center;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger .e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   padding: 2px 12px;
 }
@@ -266,6 +278,7 @@
   width: 100%;
   background: #dee2e6;
   border-radius: 6px;
+  overflow: hidden;
   top: calc(50% - 3px);
 }
 
@@ -311,6 +324,7 @@
   position: absolute;
   border-radius: 6px;
   left: calc(50% - 3px);
+  overflow: hidden;
   width: 6px;
 }
 

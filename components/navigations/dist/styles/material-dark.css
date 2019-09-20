@@ -2310,7 +2310,7 @@
 /*! accordion theme */
 .e-accordion {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #fff;
+  background: #303030;
   border: 1px solid #616161;
 }
 
@@ -2332,7 +2332,7 @@
 }
 
 .e-accordion .e-acrdn-item.e-overlay {
-  background: #fff;
+  background: #303030;
 }
 
 .e-accordion .e-acrdn-item.e-selected.e-select.e-expand-state > .e-acrdn-header:focus {
@@ -2517,6 +2517,7 @@
 
 .e-contextmenu-wrapper ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
 }
 
 .e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
@@ -7564,6 +7565,7 @@ ejs-sidebar {
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
 }
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-icon {
@@ -8059,6 +8061,7 @@ ejs-sidebar {
 
 .e-menu-wrapper.e-hamburger ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
   text-indent: 0;
   width: 100%;
 }

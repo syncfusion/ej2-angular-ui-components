@@ -347,7 +347,7 @@ NavigationLinesDirective.decorators = [
  * @nocollapse
  */
 NavigationLinesDirective.ctorParameters = function () { return []; };
-var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 var outputs$4 = [];
 /**
  * Layer Directive
@@ -826,6 +826,7 @@ exports.CommonTitleSettings = ej2Maps.CommonTitleSettings;
 exports.SubTitleSettings = ej2Maps.SubTitleSettings;
 exports.TitleSettings = ej2Maps.TitleSettings;
 exports.ZoomSettings = ej2Maps.ZoomSettings;
+exports.ToggleLegendSettings = ej2Maps.ToggleLegendSettings;
 exports.LegendSettings = ej2Maps.LegendSettings;
 exports.DataLabelSettings = ej2Maps.DataLabelSettings;
 exports.ShapeSettings = ej2Maps.ShapeSettings;

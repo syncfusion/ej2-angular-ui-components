@@ -2,19 +2,21 @@
 
 ## [Unreleased]
 
-## 17.2.46 (2019-08-22)
+## 17.3.9-beta (2019-09-20)
 
 ### Pivot Table
 
+#### Bug Fixes
+
+- #244842 – Field list icon will be now placed inside the pivot table when field list option isn't included in toolbar.
+- The last column of the pivot table can be displayed in Excel exported page properly.
+
+- #247376 – The localization text for calculated fields is now displayed properly in tooltip.
+
 #### New Features
 
-- `#F144352` – The `fieldListRefreshed` event has been introduced; it occurs on each UI operation performed in field list.
-- `#F144382` – Localization text for aggregation types has been included.
-- `#232925`, `#234552` - Number formatting can be applied through built-in UI.
-
-- `#242845` – Localization text for aggregation types has been included.
-- `#239461` - Scroll position is maintained on external data source refresh.
-- `#237962` - Performance has been improved with date format fields.
+- #245423 – Provision provided to persist and reload the pivot report.
+- Provided SSAS OLAP data source support.
 
 ## 17.2.28-beta (2019-06-27)
 
@@ -179,7 +181,7 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
 
-## 17.2.35 (2019-07-17)
+## 17.2.34 (2019-07-11)
 
 ### Pivot Table
 

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+.e-ribbon .e-drop-icon::before {
+  content: '\e94d';
+}
+
+.e-ribbon .e-menu-wrapper.e-file-menu ul .e-menu-item .e-caret::before {
+  content: '\e969';
+}
+
+.e-ribbon {
+  border: 1px solid #e0e0e0;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-hscroll {
+  display: inline-block !important;
+  width: calc(100% - 28px);
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-tab-wrap {
+  padding: 0;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-text-wrap {
+  vertical-align: top;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-indicator {
+  z-index: 1;
+}
+
+.e-ribbon .e-drop-icon {
+  cursor: pointer;
+  float: right;
+  font-family: 'e-icons';
+  margin: 13px 4px;
+  text-align: center;
+  transform: rotate(180deg);
+  transition: transform 300ms ease;
+  width: 18px;
+  font-size: 10px;
+}
+
+.e-ribbon.e-collapsed .e-content,
+.e-ribbon.e-collapsed .e-indicator,
+.e-ribbon.e-collapsed .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {
+  display: none;
+}
+
+.e-ribbon.e-collapsed .e-drop-icon {
+  transform: rotate(0deg);
+}
+
+.e-ribbon .e-content .e-toolbar.e-overlay .e-toolbar-items .e-toolbar-item.e-overlay {
+  opacity: 1;
+}
+
+.e-ribbon .e-menu-wrapper {
+  border-width: 0;
+}
+
+.e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+
+.e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon .e-caret {
+  line-height: 36px;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper ul.e-menu,
+.e-bigger.e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper ul.e-menu .e-menu-item.e-menu-caret-icon,
+.e-bigger.e-ribbon .e-menu-wrapper ul.e-menu .e-menu-item.e-menu-caret-icon {
+  height: 48px;
+  line-height: 48px;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret,
+.e-bigger.e-ribbon .e-menu-wrapper ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret {
+  line-height: 48px;
+}
+
+.e-bigger .e-ribbon .e-drop-icon,
+.e-bigger.e-ribbon .e-drop-icon {
+  font-size: 12px;
+  margin: 18px 5px;
+}
+
+.e-ribbon .e-tab .e-tab-header {
+  background: #fafafa;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-drop-icon {
+  color: #5f6368;
+}
+
+.e-ribbon .e-tab .e-content .e-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
+  border-color: #dcdcdc;
+}
+
+.e-ribbon .e-menu-wrapper {
+  background-color: transparent;
+}

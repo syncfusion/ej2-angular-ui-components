@@ -154,6 +154,18 @@
   color: transparent;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger.e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   font-size: 11px;
   line-height: 16px;
@@ -321,6 +333,7 @@
   position: absolute;
   width: 100%;
   background: rgba(0, 0, 0, 0.26);
+  overflow: hidden;
   top: calc(50% - 1px);
 }
 
@@ -364,6 +377,7 @@
   height: 100%;
   position: absolute;
   left: calc(50% - 1px);
+  overflow: hidden;
   width: 2px;
 }
 

@@ -15,6 +15,18 @@
   color: #3d3d3d;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger .e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   padding: 2px 12px;
 }
@@ -187,6 +199,7 @@
   width: 100%;
   background: #3d3d3d;
   border-radius: 4px;
+  overflow: hidden;
   top: calc(50% - 4px);
 }
 
@@ -237,6 +250,7 @@
   position: absolute;
   border-radius: 4px;
   left: calc(50% - 4px);
+  overflow: hidden;
   width: 8px;
 }
 

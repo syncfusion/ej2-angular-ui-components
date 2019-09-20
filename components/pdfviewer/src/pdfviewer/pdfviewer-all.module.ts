@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PdfViewerComponent } from './pdfviewer.component';
 import { PdfViewerModule } from './pdfviewer.module';
-import {LinkAnnotation, BookmarkView, Magnification, ThumbnailView, Toolbar, Navigation, Print, TextSelection, TextSearch, Annotation} from '@syncfusion/ej2-pdfviewer'
+import {LinkAnnotation, BookmarkView, Magnification, ThumbnailView, Toolbar, Navigation, Print, TextSelection, TextSearch, Annotation, FormFields} from '@syncfusion/ej2-pdfviewer'
 
 
 export const LinkAnnotationService: ValueProvider = { provide: 'PdfViewerLinkAnnotation', useValue: LinkAnnotation};
@@ -15,6 +15,7 @@ export const PrintService: ValueProvider = { provide: 'PdfViewerPrint', useValue
 export const TextSelectionService: ValueProvider = { provide: 'PdfViewerTextSelection', useValue: TextSelection};
 export const TextSearchService: ValueProvider = { provide: 'PdfViewerTextSearch', useValue: TextSearch};
 export const AnnotationService: ValueProvider = { provide: 'PdfViewerAnnotation', useValue: Annotation};
+export const FormFieldsService: ValueProvider = { provide: 'PdfViewerFormFields', useValue: FormFields};
 
 /**
  * NgModule definition for the PdfViewer component with providers.
@@ -34,7 +35,8 @@ export const AnnotationService: ValueProvider = { provide: 'PdfViewerAnnotation'
         PrintService,
         TextSelectionService,
         TextSearchService,
-        AnnotationService
+        AnnotationService,
+        FormFieldsService
     ]
 })
 export class PdfViewerAllModule { }

@@ -87,7 +87,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
     public roundedCornerRadius: any;
     /** 
      * Specifies value of the pointer.
-     * @aspdefaultvalueignore 
+     * @blazordefaultvalue 0
      * @default null
      */
     public value: any;

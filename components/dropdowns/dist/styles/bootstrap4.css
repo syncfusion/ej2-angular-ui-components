@@ -96,7 +96,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #212529;
   cursor: default;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -147,7 +147,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #212529;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 26px;
   min-height: 26px;
@@ -160,7 +160,7 @@
   background-color: #fff;
   border-color: #fff;
   color: #6c757d;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   line-height: 26px;
@@ -221,7 +221,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #6c757d;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   text-indent: 10px;
@@ -306,7 +306,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #212529;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 24px;
   text-indent: 20px;
@@ -619,7 +619,7 @@
 
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: auto;
   margin: 0;
@@ -948,7 +948,7 @@ ejs-dropdownlist {
 .e-multi-select-wrapper input[type='text'] {
   background: none;
   border: 0;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   height: 29px;
@@ -981,7 +981,7 @@ ejs-dropdownlist {
 }
 
 .e-multi-select-wrapper .e-delim-values {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 29px;
   max-width: 100%;
@@ -1196,7 +1196,7 @@ ejs-dropdownlist {
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {
   color: #212529;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -1380,7 +1380,7 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
   color: #fff;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 

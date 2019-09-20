@@ -167,6 +167,11 @@
   text-overflow: ellipsis;
 }
 
+.e-treegrid .e-treegridexpand:hover::before,
+.e-treegrid .e-treegridcollapse:hover::before {
+  color: #000;
+}
+
 .e-treegrid .e-rowcell.e-treerowcell {
   padding-left: 5px;
 }
@@ -182,6 +187,13 @@
 .e-treegrid .e-treecolumn-container span {
   display: inline-block;
   vertical-align: middle;
+}
+
+.e-treegrid .e-checkselection .e-frozenheader .e-rowcell,
+.e-treegrid .e-checkselection .e-movableheader .e-rowcell,
+.e-treegrid .e-checkselection .e-frozencontent .e-rowcell,
+.e-treegrid .e-checkselection .e-movablecontent .e-rowcell {
+  line-height: 21px;
 }
 
 .e-treegrid .e-treegridexpand,

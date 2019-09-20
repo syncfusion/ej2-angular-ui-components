@@ -6,8 +6,8 @@ import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowKeyboardInteraction','allowResizing','calendarMode','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','editorTemplate','enablePersistence','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','group','headerRows','height','hideEmptyAgendaDays','locale','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeScale','timezone','views','width','workDays','workHours'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','navigating','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowKeyboardInteraction','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','editorTemplate','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','group','headerRows','height','hideEmptyAgendaDays','locale','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeScale','timezone','views','width','workDays','workHours'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
 /**
@@ -59,6 +59,14 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     @ContentChild('cellTemplate')
     @Template()
     public cellTemplate: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
+     *  the month date cells. This template is only applicable for month view day cells.
+     * @default null
+     */
+    @ContentChild('cellHeaderTemplate')
+    @Template()
+    public cellHeaderTemplate: any;
     @ContentChild('eventSettingsTooltipTemplate')
     @Template()
     public eventSettings_tooltipTemplate: any;
@@ -155,6 +163,12 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ScheduleTimelineMonth');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ScheduleTimelineYear');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

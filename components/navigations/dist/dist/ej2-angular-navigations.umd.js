@@ -117,7 +117,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['animation', 'enablePersistence', 'enableRtl', 'expandMode', 'height', 'items', 'locale', 'width'];
+var inputs = ['animation', 'dataSource', 'enablePersistence', 'enableRtl', 'expandMode', 'headerTemplate', 'height', 'itemTemplate', 'items', 'locale', 'width'];
 var outputs$1 = ['clicked', 'created', 'destroyed', 'expanded', 'expanding'];
 var twoWays = [''];
 /**
@@ -191,6 +191,18 @@ exports.AccordionComponent.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
     { type: core.Injector, },
 ]; };
+exports.AccordionComponent.propDecorators = {
+    'headerTemplate': [{ type: core.ContentChild, args: ['headerTemplate',] },],
+    'itemTemplate': [{ type: core.ContentChild, args: ['itemTemplate',] },],
+};
+__decorate$1([
+    ej2AngularBase.Template(),
+    __metadata$1("design:type", Object)
+], exports.AccordionComponent.prototype, "headerTemplate", void 0);
+__decorate$1([
+    ej2AngularBase.Template(),
+    __metadata$1("design:type", Object)
+], exports.AccordionComponent.prototype, "itemTemplate", void 0);
 exports.AccordionComponent = __decorate$1([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
     __metadata$1("design:paramtypes", [core.ElementRef,
@@ -1366,6 +1378,7 @@ exports.ɵd = outputs$3;
 exports.ɵi = inputs$4;
 exports.ɵj = outputs$7;
 exports.MenuAnimationSettings = ej2Navigations.MenuAnimationSettings;
+exports.MenuItem = ej2Navigations.MenuItem;
 exports.HScroll = ej2Navigations.HScroll;
 exports.VScroll = ej2Navigations.VScroll;
 exports.Item = ej2Navigations.Item;

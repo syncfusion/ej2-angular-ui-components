@@ -37,28 +37,28 @@
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
   color: #4f4f4f;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
   color: #4f4f4f;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
   color: #4f4f4f;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
   color: #4f4f4f;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
@@ -343,7 +343,7 @@
 .e-multi-select-wrapper input[type='text'] {
   background: none;
   border: 0;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   height: 28px;
@@ -375,7 +375,7 @@
 }
 
 .e-multi-select-wrapper .e-delim-values {
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   line-height: 29px;
   max-width: 100%;
@@ -594,7 +594,7 @@
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {
   color: #000;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -766,7 +766,7 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
   color: #fff;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
 }
 

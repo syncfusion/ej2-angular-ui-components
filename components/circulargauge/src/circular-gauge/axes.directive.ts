@@ -5,7 +5,7 @@ import { AnnotationsDirective } from './annotations.directive';
 import { RangesDirective } from './ranges.directive';
 import { PointersDirective } from './pointers.directive';
 
-let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
+let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'hideIntersectingLabel', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
 let outputs: string[] = [];
 /**
  * Axes directive
@@ -49,6 +49,11 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * @default 160
      */
     public endAngle: any;
+    /** 
+     * Specifies to hide the intersecting axis labels
+     * @default false
+     */
+    public hideIntersectingLabel: any;
     /** 
      * Options to customize the axis label.
      */

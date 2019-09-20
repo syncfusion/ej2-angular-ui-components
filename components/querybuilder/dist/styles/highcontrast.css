@@ -104,28 +104,28 @@
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
@@ -736,6 +736,18 @@
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-operator,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value-delete {
+  display: inline-block;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-hide,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-hide,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-hide {
+  display: none;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-show,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-show,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-show {
   display: inline-block;
 }
 

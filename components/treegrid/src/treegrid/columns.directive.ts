@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular TreeGrid. 
@@ -31,6 +31,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the data type of the column.
      * @default null
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.ColumnType
+     * @blazordefaultvalueignore 
      */
     public type: any;
     /** 
@@ -118,6 +120,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines default values for the component when adding a new record to the TreeGrid.
      * @default null
+     * @blazortype object
      */
     public defaultValue: any;
     /** 
@@ -138,6 +141,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the type of component for editing.
      * @default 'stringedit'
+     * @blazortype Syncfusion.EJ2.Blazor.Grids.EditType
+     * @blazordefaultvalue Syncfusion.EJ2.Blazor.Grids.EditType.DefaultEdit
      */
     public editType: any;
     /** 
@@ -229,6 +234,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default 'undefined'
      */
     public hideAtMedia: any;
+    /** 
+     * You can use this property to freeze selected columns in grid.
+     * @default false
+     */
+    public isFrozen: any;
     /** 
      * If `isIdentity` is set to true, then this column is considered as identity column.
      * @default false

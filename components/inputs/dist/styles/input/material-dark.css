@@ -1159,7 +1159,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
 }
 
 .e-float-input input:valid ~ label.e-float-text,
@@ -3156,7 +3156,7 @@ textarea.e-input.e-bigger.e-small,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group input,
 .e-float-input.e-control-wrapper.e-input-group.e-bigger input,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group input {
-  min-height: 21px;
+  min-height: 27px;
 }
 
 .e-input-group.e-small:not(.e-float-input) .e-input,
@@ -3175,7 +3175,7 @@ textarea.e-input.e-bigger.e-small,
 .e-small .e-float-input.e-control-wrapper.e-input-group input,
 .e-float-input.e-control-wrapper.e-input-group.e-small input,
 .e-small .e-float-input.e-control-wrapper.e-input-group input {
-  min-height: 16px;
+  min-height: 18px;
 }
 
 .e-input-group.e-bigger.e-small:not(.e-float-input) .e-input,
@@ -3199,7 +3199,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-control-wrapper.e-input-group.e-bigger.e-small input,
 .e-bigger .e-float-input.e-control-wrapper.e-input-group.e-small input,
 .e-small .e-float-input.e-control-wrapper.e-input-group.e-bigger input {
-  min-height: 18px;
+  min-height: 22px;
 }
 
 .e-input-group input.e-input,
@@ -3208,7 +3208,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-input-group.e-control-wrapper input,
 .e-float-input input,
 .e-float-input.e-control-wrapper input {
-  min-height: 18px;
+  min-height: 22px;
 }
 
 .e-input-group:hover:not(.e-disabled):not(.e-float-icon-left),
@@ -3754,6 +3754,11 @@ textarea.e-input.e-bigger {
 input.e-input.e-bigger.e-small,
 .e-small .e-bigger input.e-input {
   min-height: 19px;
+}
+
+.e-outline.e-float-input,
+.e-outline.e-float-input.e-control-wrapper {
+  margin-top: 0;
 }
 
 .e-filled.e-input-group,

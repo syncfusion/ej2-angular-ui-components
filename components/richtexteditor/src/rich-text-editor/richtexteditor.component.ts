@@ -5,7 +5,7 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['backgroundColor','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enablePersistence','enableRtl','enableTabKey','enabled','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const inputs: string[] = ['backgroundColor','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enablePersistence','enableResize','enableRtl','enableTabKey','enabled','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -102,6 +102,12 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('RichTextEditorPasteCleanup');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorResize');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

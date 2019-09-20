@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'end', 'endWidth', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input: string[] = ['color', 'end', 'endWidth', 'legendText', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs: string[] = [];
 /**
  * Ranges directive
@@ -39,6 +39,11 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * @default '10'
      */
     public endWidth: any;
+    /** 
+     * Specifies the text for legend.
+     * @default ''
+     */
+    public legendText: any;
     /** 
      * Specifies the opacity for ranges.
      * @default 1

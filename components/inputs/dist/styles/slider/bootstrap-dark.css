@@ -9,6 +9,18 @@
   text-align: center;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: -1px;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger .e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   padding: 2px 12px;
 }
@@ -156,6 +168,7 @@
   background: #505050;
   border: 1px solid #505050;
   border-radius: 4px;
+  overflow: hidden;
   top: calc(50% - 5px);
 }
 
@@ -201,6 +214,7 @@
   border: 1px solid #505050;
   border-radius: 3px;
   left: calc(50% - 5px);
+  overflow: hidden;
   width: 10px;
 }
 

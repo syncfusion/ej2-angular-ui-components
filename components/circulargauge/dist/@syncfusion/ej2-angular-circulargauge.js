@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Annotations, CircularGauge, GaugeTooltip } from '@syncfusion/ej2-circulargauge';
+import { Annotations, CircularGauge, GaugeTooltip, Legend } from '@syncfusion/ej2-circulargauge';
 import { CommonModule } from '@angular/common';
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -73,7 +73,7 @@ AnnotationsDirective.decorators = [
  */
 AnnotationsDirective.ctorParameters = () => [];
 
-let input$1 = ['color', 'end', 'endWidth', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input$1 = ['color', 'end', 'endWidth', 'legendText', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs$1 = [];
 /**
  * Ranges directive
@@ -181,7 +181,7 @@ PointersDirective.decorators = [
  */
 PointersDirective.ctorParameters = () => [];
 
-let input$3 = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
+let input$3 = ['annotations', 'background', 'direction', 'endAngle', 'hideIntersectingLabel', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
 let outputs$3 = [];
 /**
  * Axes directive
@@ -249,8 +249,8 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRtl', 'height', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-const outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
+const inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+const outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
 const twoWays = [''];
 /**
  * Circular Gauge Component
@@ -288,6 +288,13 @@ let CircularGaugeComponent = class CircularGaugeComponent extends CircularGauge 
             }
         }
         catch (_b) { }
+        try {
+            let mod = this.injector.get('CircularGaugeLegend');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_c) { }
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
@@ -388,6 +395,7 @@ CircularGaugeModule.ctorParameters = () => [];
 
 const GaugeTooltipService = { provide: 'CircularGaugeGaugeTooltip', useValue: GaugeTooltip };
 const AnnotationsService = { provide: 'CircularGaugeAnnotations', useValue: Annotations };
+const LegendService = { provide: 'CircularGaugeLegend', useValue: Legend };
 /**
  * NgModule definition for the CircularGauge component with providers.
  */
@@ -401,7 +409,8 @@ CircularGaugeAllModule.decorators = [
                 ],
                 providers: [
                     GaugeTooltipService,
-                    AnnotationsService
+                    AnnotationsService,
+                    LegendService
                 ]
             },] },
 ];
@@ -414,6 +423,6 @@ CircularGaugeAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, GaugeTooltipService, AnnotationsService, inputs as ɵa, outputs$4 as ɵb };
-export { CircularGauge, Annotations, Line, Label, Range, Tick, Cap, NeedleTail, Animation, Annotation, Pointer, Axis, Border, Font, Margin, TooltipSettings, GaugeTooltip, measureText, toPixel, getFontStyle, setStyles, measureElementRect, stringToNumber, textElement, appendPath, calculateSum, linear, getAngleFromValue, getDegree, getValueFromAngle, isCompleteAngle, getAngleFromLocation, getLocationFromAngle, getPathArc, getRangePath, getRoundedPathArc, getRoundedPath, getCompleteArc, getCirclePath, getCompletePath, getElement, getTemplateFunction, removeElement, getPointer, getElementSize, getMousePosition, getLabelFormat, calculateShapes, getRangeColor, CustomizeOption, PathOption, RectOption, Size, GaugeLocation, Rect, TextOption, VisibleLabels } from '@syncfusion/ej2-circulargauge';
+export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, GaugeTooltipService, AnnotationsService, LegendService, inputs as ɵa, outputs$4 as ɵb };
+export { CircularGauge, Annotations, Line, Label, Range, Tick, Cap, NeedleTail, Animation, Annotation, Pointer, Axis, Border, Font, RangeTooltip, AnnotationTooltip, Margin, TooltipSettings, GaugeTooltip, measureText, toPixel, getFontStyle, setStyles, measureElementRect, stringToNumber, textElement, appendPath, calculateSum, linear, getAngleFromValue, getDegree, getValueFromAngle, isCompleteAngle, getAngleFromLocation, getLocationFromAngle, getPathArc, getRangePath, getRoundedPathArc, getRoundedPath, getCompleteArc, getCirclePath, getCompletePath, getElement, getTemplateFunction, removeElement, getPointer, getElementSize, getMousePosition, getLabelFormat, calculateShapes, getRangeColor, CustomizeOption, PathOption, RectOption, Size, GaugeLocation, Rect, textTrim, showTooltip, TextOption, VisibleLabels, Location, LegendSettings, Legend, Index, LegendOptions } from '@syncfusion/ej2-circulargauge';
 //# sourceMappingURL=ej2-angular-circulargauge.js.map

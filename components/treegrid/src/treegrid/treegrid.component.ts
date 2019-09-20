@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { AggregatesDirective } from './aggregates.directive';
 
-export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','autoCheckHierarchy','childMapping','columnMenuItems','columnQueryMode','columns','contextMenuItems','dataSource','detailTemplate','editSettings','enableAltRow','enableCollapseAll','enableHover','enablePersistence','enableRtl','enableVirtualization','expandStateMapping','filterSettings','gridLines','hasChildMapping','height','idMapping','loadChildOnDemand','locale','pageSettings','parentIdMapping','printMode','query','rowDropSettings','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','width'];
+export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','autoCheckHierarchy','childMapping','columnMenuItems','columnQueryMode','columns','contextMenuItems','dataSource','detailTemplate','editSettings','enableAltRow','enableCollapseAll','enableHover','enablePersistence','enableRtl','enableVirtualization','expandStateMapping','filterSettings','frozenColumns','frozenRows','gridLines','hasChildMapping','height','idMapping','loadChildOnDemand','locale','pageSettings','parentIdMapping','printMode','query','rowDropSettings','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeDataBound','beforeExcelExport','beforePdfExport','beforePrint','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSelected','cellSelecting','checkboxChange','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','detailDataBound','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -166,6 +166,12 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('TreeGridRowDD');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeGridFreeze');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }
