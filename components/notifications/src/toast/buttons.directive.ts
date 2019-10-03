@@ -31,7 +31,7 @@ export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropDirecti
     /** 
      * Specifies the Button component model properties to render the Toast action buttons. 
      * 
-     * @default null
+
      */
     public model: any;
 

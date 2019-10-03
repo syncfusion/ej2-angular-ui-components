@@ -29,12 +29,12 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
 
     /** 
      * Defines single/multiple classes (separated by a space) are to be used for Accordion item customization.
-     * @default null
+
      */
     public cssClass: any;
     /** 
      * Sets the expand (true) or collapse (false) state of the Accordion item. By default, all the items are in a collapsed state.
-     * @default false
+
      */
     public expanded: any;
     /** 
@@ -42,7 +42,7 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * Add the css classes to the `iconCss` property and write the css styles to the defined class to set images/icons. 
      * Adding icon is applicable only to the header. 
      * 
-     * @default null
+
      */
     public iconCss: any;
     /** 
@@ -50,7 +50,7 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * You can set the title of the Accordion item using `header` property. 
      * It also supports to include the title as `HTML element`, `string`, or `query selector`. 
      * 
-     * @default null
+
      */
     @ContentChild('header')
     @Template()
@@ -60,7 +60,7 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * You can set the content of the Accordion item using `content` property. 
      * It also supports to include the title as `HTML element`, `string`, or `query selector`. 
      * 
-     * @default null
+
      */
     @ContentChild('content')
     @Template()

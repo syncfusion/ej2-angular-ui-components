@@ -29,7 +29,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * The width of the column as a string accepts input both as like '100px' or '100%'. 
      * If specified as '100%, column renders to the full width of its chart.
-     * @default '100%'
+
      */
     public width: any;
 

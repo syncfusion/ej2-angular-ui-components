@@ -31,7 +31,7 @@ export class PagerComponent extends Pager implements IComponentBase {
 
     /** 
      *  Defines the template as string or HTML element ID which renders customized elements in pager instead of default elements.
-     * @default null
+
      */
     @ContentChild('template')
     @Template()

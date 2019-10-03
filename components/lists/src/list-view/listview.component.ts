@@ -35,7 +35,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/template-api/index.ts" %}{% endcodeBlock %}     
-     * @default null
+
      */
     @ContentChild('template')
     @Template()
@@ -47,7 +47,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/grouptemplate-api/index.ts" %}{% endcodeBlock %}     
-     * @default null
+
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -59,7 +59,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="listview/headertemplate-api/index.ts" %}{% endcodeBlock %}     
-     * @default null
+
      */
     @ContentChild('headerTemplate')
     @Template()

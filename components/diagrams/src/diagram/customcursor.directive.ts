@@ -26,12 +26,12 @@ export class CustomCursorDirective extends ComplexBase<CustomCursorDirective> {
 
     /** 
      * Defines the property of a Data Map Items
-     * @blazordefaultvalueignore 
+
      */
     public action: any;
     /** 
      * Defines the Fields for the Data Map Items
-     * @default ''
+
      */
     public cursor: any;
 

@@ -533,6 +533,13 @@ exports.GanttComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
+        try {
+            var mod = _this.injector.get('GanttColumnMenu');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -702,6 +709,7 @@ var DayMarkersService = { provide: 'GanttDayMarkers', useValue: ej2Gantt.DayMark
 var ToolbarService = { provide: 'GanttToolbar', useValue: ej2Gantt.Toolbar };
 var ContextMenuService = { provide: 'GanttContextMenu', useValue: ej2Gantt.ContextMenu };
 var ExcelExportService = { provide: 'GanttExcelExport', useValue: ej2Gantt.ExcelExport };
+var ColumnMenuService = { provide: 'GanttColumnMenu', useValue: ej2Gantt.ColumnMenu };
 /**
  * NgModule definition for the Gantt component with providers.
  */
@@ -726,7 +734,8 @@ GanttAllModule.decorators = [
                     DayMarkersService,
                     ToolbarService,
                     ContextMenuService,
-                    ExcelExportService
+                    ExcelExportService,
+                    ColumnMenuService
                 ]
             },] },
 ];
@@ -759,6 +768,7 @@ exports.DayMarkersService = DayMarkersService;
 exports.ToolbarService = ToolbarService;
 exports.ContextMenuService = ContextMenuService;
 exports.ExcelExportService = ExcelExportService;
+exports.ColumnMenuService = ColumnMenuService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$6;
 exports.Gantt = ej2Gantt.Gantt;
@@ -785,6 +795,7 @@ exports.Toolbar = ej2Gantt.Toolbar;
 exports.DayMarkers = ej2Gantt.DayMarkers;
 exports.ContextMenu = ej2Gantt.ContextMenu;
 exports.ExcelExport = ej2Gantt.ExcelExport;
+exports.ColumnMenu = ej2Gantt.ColumnMenu;
 exports.Column = ej2Gantt.Column;
 exports.DayWorkingTime = ej2Gantt.DayWorkingTime;
 exports.AddDialogFieldSettings = ej2Gantt.AddDialogFieldSettings;

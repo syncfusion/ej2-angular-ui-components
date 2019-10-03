@@ -31,7 +31,7 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
 
     /** 
      * Specifies the angle of curve connecting different locations in map
-     * @default 0
+
      */
     public angle: any;
     /** 
@@ -44,7 +44,7 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
     public color: any;
     /** 
      * dashArray 
-     *  @default ''
+
      */
     public dashArray: any;
     /** 
@@ -53,12 +53,12 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
     public highlightSettings: any;
     /** 
      * NavigationSelectedLine latitude 
-     *  @default []
+
      */
     public latitude: any;
     /** 
      * NavigationSelectedLine longitude 
-     *  @default []
+
      */
     public longitude: any;
     /** 
@@ -67,12 +67,12 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
     public selectionSettings: any;
     /** 
      * NavigationSelectedLine visible 
-     *  @default false
+
      */
     public visible: any;
     /** 
      * Configures the label border
-     * @default 1
+
      */
     public width: any;
     @ContentChild('tooltipSettingsTemplate')

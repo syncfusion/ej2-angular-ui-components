@@ -32,32 +32,32 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     public color: any;
     /** 
      * End of the axis range.
-     * @default 0
+
      */
     public end: any;
     /** 
      * Ending width of axis range.
-     * @default 10
+
      */
     public endWidth: any;
     /** 
      * Specifies to move the axis range.
-     * @default 0
+
      */
     public offset: any;
     /** 
      * Specifies to position the axis range.
-     * @default Outside
+
      */
     public position: any;
     /** 
      * Start of the axis range.
-     * @default 0
+
      */
     public start: any;
     /** 
      * Starting width of axis range.
-     * @default 10
+
      */
     public startWidth: any;
 

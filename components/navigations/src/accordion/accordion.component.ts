@@ -31,14 +31,14 @@ export class AccordionComponent extends Accordion implements IComponentBase {
 
     /** 
      * Specifies the header title template option for accordion items.
-     * @default null
+
      */
     @ContentChild('headerTemplate')
     @Template()
     public headerTemplate: any;
     /** 
      * Specifies the template option for accordion items.
-     * @default null
+
      */
     @ContentChild('itemTemplate')
     @Template()

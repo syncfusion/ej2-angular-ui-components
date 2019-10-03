@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 17.3.14 (2019-10-03)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#248193` - Issue with "once autocomplete popup open is prevented by setting args.cancel as true in beforeOpen event then you can't remove the prevent a popup opening using beforeOpen event" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#248288` - Issue with "console error thrown when set the openOnClick property as false in checkbox mode" has been resolved.
+
+- `#247340` - Issue with "list items not loaded while change the data source dynamically in checkbox mode" has been resolved.
+- `#247922` - Issue with "group header is not changed as fixed element when reopening the popup" has been fixed.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#248511` - Issue with floating label misalignment in the outline mode has been resolved.
+- `#F147708` - Issue with "template data not populated in filtering dropdownlist when open the dropdown popup on second time" has been resolved.
+
 ## 17.2.49 (2019-09-04)
 
 ### MultiSelect

@@ -29,22 +29,22 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
 
     /** 
      * Sets the CSS classes to the Tab item to customize its styles.
-     * @default ''
+
      */
     public cssClass: any;
     /** 
      * Sets true to disable user interactions of the Tab item.
-     * @default false
+
      */
     public disabled: any;
     /** 
      * The object used for configuring the Tab item header properties.
-     * @default {}
+
      */
     public header: any;
     /** 
      * Specifies the content of Tab item, that is displayed when concern item header is selected.
-     * @default ''
+
      */
     @ContentChild('content')
     @Template()
@@ -54,7 +54,7 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
     public header_text: any;
     /** 
      * Specifies the header text of Tab item.
-     * @default null
+
      */
     @ContentChild('headerTemplate')
     @Template()

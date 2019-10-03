@@ -871,6 +871,14 @@ ejs-filemanager {
   transform: rotate(180deg);
 }
 
+.e-filemanager.e-rtl .e-grid.e-rtl .e-row.e-focused td:first-child {
+  box-shadow: inset -1px 1px 0 0 #9e9e9e, inset -1px -1px 0 0 #9e9e9e;
+}
+
+.e-filemanager.e-rtl .e-grid.e-rtl .e-row.e-focused td:last-child {
+  box-shadow: inset 1px 1px 0 0 #9e9e9e, inset 1px -1px 0 0 #9e9e9e;
+}
+
 .e-filemanager.e-rtl .e-grid.e-rtl .e-gridheader .e-fe-checkbox,
 .e-filemanager.e-rtl .e-grid.e-rtl .e-gridcontent .e-fe-checkbox {
   padding-left: 0;

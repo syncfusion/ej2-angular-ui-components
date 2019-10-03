@@ -85,7 +85,7 @@ CellsDirective.decorators = [
  * @nocollapse
  */
 CellsDirective.ctorParameters = function () { return []; };
-var input$1 = ['cells', 'height', 'index'];
+var input$1 = ['cells', 'customHeight', 'height', 'index'];
 var outputs$1 = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
@@ -155,7 +155,7 @@ RowsDirective.decorators = [
  * @nocollapse
  */
 RowsDirective.ctorParameters = function () { return []; };
-var input$2 = ['index', 'width'];
+var input$2 = ['customWidth', 'index', 'width'];
 var outputs$2 = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -436,8 +436,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetTab', 'allowCellFormatting', 'allowEditing', 'allowNumberFormatting', 'allowOpen', 'allowSave', 'allowScrolling', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$6 = ['beforeCellFormat', 'beforeCellRender', 'beforeDataBound', 'beforeOpen', 'beforeSave', 'beforeSelect', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileItemSelect', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'openFailure', 'saveComplete', 'select'];
+var inputs = ['activeSheetTab', 'allowCellFormatting', 'allowEditing', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var outputs$6 = ['beforeCellFormat', 'beforeCellRender', 'beforeDataBound', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileItemSelect', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'openFailure', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -807,6 +807,7 @@ exports.initSheet = ej2Spreadsheet.initSheet;
 exports.getSheetName = ej2Spreadsheet.getSheetName;
 exports.Row = ej2Spreadsheet.Row;
 exports.getRow = ej2Spreadsheet.getRow;
+exports.setRow = ej2Spreadsheet.setRow;
 exports.getRowHeight = ej2Spreadsheet.getRowHeight;
 exports.setRowHeight = ej2Spreadsheet.setRowHeight;
 exports.getRowsHeight = ej2Spreadsheet.getRowsHeight;
@@ -838,7 +839,6 @@ exports.WorkbookAllModule = ej2Spreadsheet.WorkbookAllModule;
 exports.getWorkbookRequiredModules = ej2Spreadsheet.getWorkbookRequiredModules;
 exports.CellStyle = ej2Spreadsheet.CellStyle;
 exports.DefineName = ej2Spreadsheet.DefineName;
-exports.NumberFormatType = ej2Spreadsheet.NumberFormatType;
 exports.workbookDestroyed = ej2Spreadsheet.workbookDestroyed;
 exports.workbookOpen = ej2Spreadsheet.workbookOpen;
 exports.beginSave = ej2Spreadsheet.beginSave;
@@ -859,7 +859,19 @@ exports.openSuccess = ej2Spreadsheet.openSuccess;
 exports.openFailure = ej2Spreadsheet.openFailure;
 exports.sheetCreated = ej2Spreadsheet.sheetCreated;
 exports.sheetsDestroyed = ej2Spreadsheet.sheetsDestroyed;
+exports.aggregateComputation = ej2Spreadsheet.aggregateComputation;
+exports.beforeSort = ej2Spreadsheet.beforeSort;
+exports.initiateSort = ej2Spreadsheet.initiateSort;
+exports.sortComplete = ej2Spreadsheet.sortComplete;
+exports.validateSortRange = ej2Spreadsheet.validateSortRange;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
+exports.toFraction = ej2Spreadsheet.toFraction;
+exports.getGcd = ej2Spreadsheet.getGcd;
+exports.intToDate = ej2Spreadsheet.intToDate;
+exports.dateToInt = ej2Spreadsheet.dateToInt;
+exports.isDateTime = ej2Spreadsheet.isDateTime;
+exports.isNumber = ej2Spreadsheet.isNumber;
+exports.toDate = ej2Spreadsheet.toDate;
 exports.DataBind = ej2Spreadsheet.DataBind;
 exports.WorkbookOpen = ej2Spreadsheet.WorkbookOpen;
 exports.WorkbookSave = ej2Spreadsheet.WorkbookSave;
@@ -867,6 +879,7 @@ exports.WorkbookFormula = ej2Spreadsheet.WorkbookFormula;
 exports.WorkbookNumberFormat = ej2Spreadsheet.WorkbookNumberFormat;
 exports.getFormatFromType = ej2Spreadsheet.getFormatFromType;
 exports.getTypeFromFormat = ej2Spreadsheet.getTypeFromFormat;
+exports.WorkbookSort = ej2Spreadsheet.WorkbookSort;
 exports.WorkbookCellFormat = ej2Spreadsheet.WorkbookCellFormat;
 exports.WorkbookEdit = ej2Spreadsheet.WorkbookEdit;
 exports.getRequiredModules = ej2Spreadsheet.getRequiredModules;
@@ -916,12 +929,14 @@ exports.removeContextMenuItems = ej2Spreadsheet.removeContextMenuItems;
 exports.enableContextMenuItems = ej2Spreadsheet.enableContextMenuItems;
 exports.beforeRibbonCreate = ej2Spreadsheet.beforeRibbonCreate;
 exports.rowHeightChanged = ej2Spreadsheet.rowHeightChanged;
+exports.colWidthChanged = ej2Spreadsheet.colWidthChanged;
 exports.beforeHeaderLoaded = ej2Spreadsheet.beforeHeaderLoaded;
 exports.onContentScroll = ej2Spreadsheet.onContentScroll;
 exports.deInitProperties = ej2Spreadsheet.deInitProperties;
 exports.activeSheetChanged = ej2Spreadsheet.activeSheetChanged;
 exports.renameSheet = ej2Spreadsheet.renameSheet;
 exports.enableToolbar = ej2Spreadsheet.enableToolbar;
+exports.initiateCustomSort = ej2Spreadsheet.initiateCustomSort;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
@@ -959,6 +974,7 @@ exports.VirtualScroll = ej2Spreadsheet.VirtualScroll;
 exports.KeyboardNavigation = ej2Spreadsheet.KeyboardNavigation;
 exports.KeyboardShortcut = ej2Spreadsheet.KeyboardShortcut;
 exports.CellFormat = ej2Spreadsheet.CellFormat;
+exports.Resize = ej2Spreadsheet.Resize;
 exports.Ribbon = ej2Spreadsheet.Ribbon;
 exports.FormulaBar = ej2Spreadsheet.FormulaBar;
 exports.Formula = ej2Spreadsheet.Formula;
@@ -967,6 +983,7 @@ exports.Open = ej2Spreadsheet.Open;
 exports.Save = ej2Spreadsheet.Save;
 exports.ContextMenu = ej2Spreadsheet.ContextMenu;
 exports.NumberFormat = ej2Spreadsheet.NumberFormat;
+exports.Sort = ej2Spreadsheet.Sort;
 exports.Render = ej2Spreadsheet.Render;
 exports.SheetRender = ej2Spreadsheet.SheetRender;
 exports.RowRenderer = ej2Spreadsheet.RowRenderer;

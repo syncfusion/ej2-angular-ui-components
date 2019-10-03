@@ -26,22 +26,22 @@ export class StockChartPeriodDirective extends ComplexBase<StockChartPeriodDirec
 
     /** 
      * Count value for the button
-     * @default 1
+
      */
     public interval: any;
     /** 
      * IntervalType of button
-     * @default 'Years'
+
      */
     public intervalType: any;
     /** 
      * To select the default period
-     * @default false
+
      */
     public selected: any;
     /** 
      * Text to be displayed on the button
-     * @default null
+
      */
     public text: any;
 

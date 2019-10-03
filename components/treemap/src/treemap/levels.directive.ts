@@ -26,7 +26,7 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
     public tags: string[] = ['colorMapping'];
     /** 
      * Items rendering with random colors.
-     * @default false
+
      */
     public autoFill: any;
     /** 
@@ -39,37 +39,37 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
     public colorMapping: any;
     /** 
      * Specifies the background of level.
-     * @default null
+
      */
     public fill: any;
     /** 
      * Specifies the padding.
-     * @default 0
+
      */
     public groupGap: any;
     /** 
      * Specifies the padding.
-     * @default 10
+
      */
     public groupPadding: any;
     /** 
      * Specifies the field name from the dataSource.
-     * @default null
+
      */
     public groupPath: any;
     /** 
      * Customize the text alignment
-     * @default 'Near'
+
      */
     public headerAlignment: any;
     /** 
      * Specifies the header format.
-     * @default null
+
      */
     public headerFormat: any;
     /** 
      * To specifies the height of header.
-     * @default 20
+
      */
     public headerHeight: any;
     /** 
@@ -78,22 +78,22 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
     public headerStyle: any;
     /** 
      * Specifies the opacity for color.
-     * @default 1
+
      */
     public opacity: any;
     /** 
      * To Show or hide the header in level.
-     * @default true
+
      */
     public showHeader: any;
     /** 
      * Specifies the label position in level.
-     * @default 'TopLeft'
+
      */
     public templatePosition: any;
     /** 
      * Specifies the template for header rendering.
-     * @default null
+
      */
     @ContentChild('headerTemplate')
     @Template()

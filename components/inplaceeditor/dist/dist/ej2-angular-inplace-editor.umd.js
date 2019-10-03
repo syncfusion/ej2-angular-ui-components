@@ -283,6 +283,7 @@ exports.destroy = ej2InplaceEditor.destroy;
 exports.setFocus = ej2InplaceEditor.setFocus;
 exports.accessValue = ej2InplaceEditor.accessValue;
 exports.destroyModules = ej2InplaceEditor.destroyModules;
+exports.showPopup = ej2InplaceEditor.showPopup;
 exports.PopupSettings = ej2InplaceEditor.PopupSettings;
 exports.modulesList = ej2InplaceEditor.modulesList;
 exports.localeConstant = ej2InplaceEditor.localeConstant;

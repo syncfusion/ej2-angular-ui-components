@@ -42,7 +42,7 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
     /** 
      * Specifies the initial view of the Calendar when it is opened. 
      * With the help of this property, initial view can be changed to year or decade view.
-     * @default Month
+
      */
     @ContentChild('start')
     @Template()

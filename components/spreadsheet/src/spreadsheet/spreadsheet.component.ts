@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetTab','allowCellFormatting','allowEditing','allowNumberFormatting','allowOpen','allowSave','allowScrolling','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','locale','openUrl','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
-export const outputs: string[] = ['beforeCellFormat','beforeCellRender','beforeDataBound','beforeOpen','beforeSave','beforeSelect','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','fileItemSelect','fileMenuBeforeClose','fileMenuBeforeOpen','openFailure','saveComplete','select'];
+export const inputs: string[] = ['activeSheetTab','allowCellFormatting','allowEditing','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','locale','openUrl','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const outputs: string[] = ['beforeCellFormat','beforeCellRender','beforeDataBound','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','fileItemSelect','fileMenuBeforeClose','fileMenuBeforeOpen','openFailure','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
 /**

@@ -33,15 +33,15 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * Sets the type of the annotation 
      *  * Shape - Sets the annotation type as Shape 
      *  * Path - Sets the annotation type as Path
-     * @default 'Shape'
+
      */
     public type: any;
     /** 
      * Allows the user to save custom information/data about an annotation 
      * 
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public addInfo: any;
     /** 
@@ -49,40 +49,40 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      *  * Center - Aligns the annotation at the center of a connector segment 
      *  * Before - Aligns the annotation before a connector segment 
      *  * After - Aligns the annotation after a connector segment
-     * @default Center
+
      */
     public alignment: any;
     /** 
      * Enables or disables the default behaviors of the label. 
      * * ReadOnly - Enables/Disables the ReadOnly Constraints 
      * * InheritReadOnly - Enables/Disables the InheritReadOnly Constraints
-     * @default 'InheritReadOnly'
-     * @aspnumberenum 
-     * @blazornumberenum 
+
+
+
      */
     public constraints: any;
     /** 
      * Sets the textual description of the node/connector
-     * @default ''
+
      */
     public content: any;
     /** 
      * Sets the displacement of an annotation from its actual position
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public displacement: any;
     /** 
      * Sets the space to be left between an annotation and its parent node/connector
-     * @default new Margin(20,20,20,20)
+
      */
     public dragLimit: any;
     /** 
      * Sets the height of the text
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public height: any;
     /** 
@@ -92,50 +92,50 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * * Right - Aligns the diagram element at the right of its immediate parent 
      * * Center - Aligns the diagram element at the center of its immediate parent 
      * * Auto - Aligns the diagram element based on the characteristics of its immediate parent
-     * @default 'Center'
+
      */
     public horizontalAlignment: any;
     /** 
      * Sets the hyperlink of the label 
      * 
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public hyperlink: any;
     /** 
      * Defines the unique id of the annotation
-     * @default ''
+
      */
     public id: any;
     /** 
      * Sets the space to be left between an annotation and its parent node/connector
-     * @default new Margin(0,0,0,0)
+
      */
     public margin: any;
     /** 
      * Sets the segment offset of annotation
-     * @default 0.5
+
      */
     public offset: any;
     /** 
      * Sets the rotate angle of the text
-     * @default 0
+
      */
     public rotateAngle: any;
     /** 
      * Enable/Disable the angle based on the connector segment
-     * @default false
+
      */
     public segmentAngle: any;
     /** 
      * Defines the appearance of the text
-     * @default new TextStyle()
+
      */
     public style: any;
     /** 
      * Sets the textual description of the node/connector
-     * @default 'undefined'
+
      */
     public template: any;
     /** 
@@ -145,19 +145,19 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * * Bottom - Aligns the diagram element at the bottom of its immediate parent 
      * * Center - Aligns the diagram element at the center of its immediate parent 
      * * Auto - Aligns the diagram element based on the characteristics of its immediate parent
-     * @default 'Center'
+
      */
     public verticalAlignment: any;
     /** 
      * Defines the visibility of the label
-     * @default true
+
      */
     public visibility: any;
     /** 
      * Sets the width of the text
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public width: any;
 

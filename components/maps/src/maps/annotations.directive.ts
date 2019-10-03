@@ -26,12 +26,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
     /** 
      * Specifies the horizontal alignment of annotation.
-     * @default None
+
      */
     public horizontalAlignment: any;
     /** 
      * Specifies the vertical alignment of annotation.
-     * @default None
+
      */
     public verticalAlignment: any;
     /** 
@@ -44,7 +44,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public y: any;
     /** 
      * Specifies the zIndex of the annotation.
-     * @default '-1'
+
      */
     public zIndex: any;
     /** 

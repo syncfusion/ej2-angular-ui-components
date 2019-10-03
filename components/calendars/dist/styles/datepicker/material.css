@@ -64,13 +64,41 @@
   font-size: 18px;
 }
 
+.e-date-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-date-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
+.e-bigger .e-date-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-date-wrapper.e-control-wrapper.e-bigger.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger .e-date-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon {
+  min-height: 0;
+  min-width: 24px;
+}
+
+.e-small .e-date-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-date-wrapper.e-control-wrapper.e-small.e-outline .e-input-group-icon.e-date-icon,
+.e-small .e-date-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon {
+  min-height: 0;
+  min-width: 18px;
+}
+
+.e-bigger.e-small .e-outline.e-date-wrapper .e-input-group-icon.e-date-icon,
+.e-bigger.e-small.e-outline.e-date-wrapper .e-input-group-icon.e-date-icon,
+.e-date-wrapper.e-control-wrapper.e-bigger.e-small.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger.e-small .e-date-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
 .e-input-group.e-control-wrapper.e-date-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
 .e-float-input.e-control-wrapper.e-input-group.e-date-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
   display: -ms-flexbox;
   display: flex;
 }
 
-.e-date-wrapper .e-date-icon.e-icons {
+.e-date-wrapper:not(.e-filled) .e-date-icon.e-icons {
   box-sizing: border-box;
 }
 

@@ -32,7 +32,7 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the title to be displayed on the Toast. 
      * Works only with string values.
-     * @default null
+
      */
     @ContentChild('title')
     @Template()
@@ -40,8 +40,8 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the content to be displayed on the Toast. 
      * Accepts selectors, string values and HTML elements.
-     * @default null
-     * @blazortype string
+
+
      */
     @ContentChild('content')
     @Template()
@@ -49,7 +49,7 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the HTML element/element ID as a string that can be displayed as a Toast. 
      * The given template is taken as preference to render the Toast, even if the built-in properties such as title and content are defined.
-     * @default null
+
      */
     @ContentChild('template')
     @Template()

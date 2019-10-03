@@ -298,7 +298,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['agendaDaysCount', 'allowDragAndDrop', 'allowKeyboardInteraction', 'allowResizing', 'calendarMode', 'cellHeaderTemplate', 'cellTemplate', 'cssClass', 'currentView', 'dateFormat', 'dateHeaderTemplate', 'editorTemplate', 'enablePersistence', 'enableRecurrenceValidation', 'enableRtl', 'endHour', 'eventDragArea', 'eventSettings', 'firstDayOfWeek', 'group', 'headerRows', 'height', 'hideEmptyAgendaDays', 'locale', 'quickInfoTemplates', 'readonly', 'resourceHeaderTemplate', 'resources', 'rowAutoHeight', 'selectedDate', 'showHeaderBar', 'showQuickInfo', 'showTimeIndicator', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'timezone', 'views', 'width', 'workDays', 'workHours'];
-var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'cellClick', 'cellDoubleClick', 'created', 'dataBinding', 'dataBound', 'destroyed', 'drag', 'dragStart', 'dragStop', 'eventClick', 'eventRendered', 'hover', 'navigating', 'popupClose', 'popupOpen', 'renderCell', 'resizeStart', 'resizeStop', 'resizing', 'select', 'currentViewChange', 'selectedDateChange'];
+var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'cellClick', 'cellDoubleClick', 'created', 'dataBinding', 'dataBound', 'destroyed', 'drag', 'dragStart', 'dragStop', 'eventClick', 'eventRendered', 'hover', 'moreEventsClick', 'navigating', 'popupClose', 'popupOpen', 'renderCell', 'resizeStart', 'resizeStop', 'resizing', 'select', 'currentViewChange', 'selectedDateChange'];
 var twoWays = ['currentView', 'selectedDate'];
 /**
  * `ej-schedule` represents the Angular Schedule Component.
@@ -808,6 +808,7 @@ exports.ɵb = outputs$3;
 exports.Schedule = ej2Schedule.Schedule;
 exports.cellClick = ej2Schedule.cellClick;
 exports.cellDoubleClick = ej2Schedule.cellDoubleClick;
+exports.moreEventsClick = ej2Schedule.moreEventsClick;
 exports.select = ej2Schedule.select;
 exports.hover = ej2Schedule.hover;
 exports.actionBegin = ej2Schedule.actionBegin;
@@ -884,6 +885,12 @@ exports.ICalendarImport = ej2Schedule.ICalendarImport;
 exports.ExcelExport = ej2Schedule.ExcelExport;
 exports.Print = ej2Schedule.Print;
 exports.RecurrenceEditor = ej2Schedule.RecurrenceEditor;
+exports.generateSummary = ej2Schedule.generateSummary;
+exports.generate = ej2Schedule.generate;
+exports.getDateFromRecurrenceDateString = ej2Schedule.getDateFromRecurrenceDateString;
+exports.extractObjectFromRule = ej2Schedule.extractObjectFromRule;
+exports.getCalendarUtil = ej2Schedule.getCalendarUtil;
+exports.getRecurrenceStringFromDate = ej2Schedule.getRecurrenceStringFromDate;
 exports.Gregorian = ej2Schedule.Gregorian;
 exports.Islamic = ej2Schedule.Islamic;
 

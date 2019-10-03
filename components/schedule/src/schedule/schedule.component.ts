@@ -7,7 +7,7 @@ import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
 export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowKeyboardInteraction','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','editorTemplate','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','group','headerRows','height','hideEmptyAgendaDays','locale','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeScale','timezone','views','width','workDays','workHours'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
 /**
@@ -40,7 +40,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
      *  the date header cells. The field that can be accessed via this template is `date`. 
      * {% codeBlock src="schedule/date-header-api/index.ts" %}{% endcodeBlock %}
-     * @default null
+
      */
     @ContentChild('dateHeaderTemplate')
     @Template()
@@ -54,7 +54,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *  * type 
      * {% codeBlock src="schedule/cell-template-api/index.html" %}{% endcodeBlock %} 
      * {% codeBlock src="schedule/cell-template-api/index.ts" %}{% endcodeBlock %}
-     * @default null
+
      */
     @ContentChild('cellTemplate')
     @Template()
@@ -62,7 +62,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
      *  the month date cells. This template is only applicable for month view day cells.
-     * @default null
+
      */
     @ContentChild('cellHeaderTemplate')
     @Template()
@@ -78,7 +78,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *  with `e-field` class, so as to fetch and process it from internally. 
      * {% codeBlock src="schedule/editor-api/index.html" %}{% endcodeBlock %} 
      * {% codeBlock src="schedule/editor-api/index.ts" %}{% endcodeBlock %}
-     * @default null
+
      */
     @ContentChild('editorTemplate')
     @Template()
@@ -97,7 +97,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * * resourceData - object collection of current resource. 
      * {% codeBlock src="schedule/resource-header-api/index.html" %}{% endcodeBlock %} 
      * {% codeBlock src="schedule/resource-header-api/index.ts" %}{% endcodeBlock %}
-     * @default null
+
      */
     @ContentChild('resourceHeaderTemplate')
     @Template()

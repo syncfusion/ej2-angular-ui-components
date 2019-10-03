@@ -34,7 +34,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * - Separator: Adds a horizontal line that separates the Toolbar commands. 
      * - Input: Creates an input element that is applicable to template rendering with Syncfusion controls like DropDownList, 
      * AutoComplete, etc.
-     * @default 'Button'
+
      */
     public type: any;
     /** 
@@ -44,23 +44,23 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * - Center: To align commands at the center of the Toolbar. 
      * - Right: To align commands to the right side of the Toolbar. 
      * 
-     * @default "Left"
+
      */
     public align: any;
     /** 
      * Defines single/multiple classes (separated by space) to be used for customization of commands.
-     * @default ""
+
      */
     public cssClass: any;
     /** 
      * Defines htmlAttributes used to add custom attributes to Toolbar command. 
      * Supports HTML attributes such as style, class, etc.
-     * @default null
+
      */
     public htmlAttributes: any;
     /** 
      * Specifies the unique ID to be used with button or input element of Toolbar items.
-     * @default ""
+
      */
     public id: any;
     /** 
@@ -69,19 +69,19 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * - Show:  Always shows the item as the primary priority on the *Toolbar*. 
      * - Hide: Always shows the item as the secondary priority on the *popup*. 
      * - None: No priority for display, and as per normal order moves to popup when content exceeds.
-     * @default 'None'
+
      */
     public overflow: any;
     /** 
      * Defines single/multiple classes separated by space used to specify an icon for the button. 
      * The icon will be positioned before the text content if text is available, otherwise the icon alone will be rendered.
-     * @default ""
+
      */
     public prefixIcon: any;
     /** 
      * Defines the priority of items to display it in popup always. 
      * It allows to maintain toolbar item on popup always but it does not work for toolbar priority items.
-     * @default false
+
      */
     public showAlwaysInPopup: any;
     /** 
@@ -90,34 +90,34 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * - Toolbar:  Text will be displayed on *Toolbar* only. 
      * - Overflow: Text will be displayed only when content overflows to *popup*. 
      * - Both: Text will be displayed on *popup* and *Toolbar*.
-     * @default 'Both'
+
      */
     public showTextOn: any;
     /** 
      * Defines single/multiple classes separated by space used to specify an icon for the button. 
      * The icon will be positioned after the text content if text is available.
-     * @default ""
+
      */
     public suffixIcon: any;
     /** 
      * Specifies the text to be displayed on the Toolbar button.
-     * @default ""
+
      */
     public text: any;
     /** 
      * Specifies the text to be displayed on the Toolbar button.
-     * @default ""
+
      */
     public tooltipText: any;
     /** 
      * Specifies the width of the Toolbar button commands.
-     * @default 'auto'
+
      */
     public width: any;
     /** 
      * Specifies the HTML element/element ID as a string that can be added as a Toolbar command. 
      * 
-     * @default ""
+
      */
     @ContentChild('template')
     @Template()

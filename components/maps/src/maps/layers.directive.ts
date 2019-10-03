@@ -32,17 +32,17 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public tags: string[] = ['markerSettings', 'bubbleSettings', 'navigationLineSettings'];
     /** 
      * Specifies the type for the layer.
-     * @default Layer
+
      */
     public type: any;
     /** 
      * Specifies the animation duration for the layer.
-     * @default 0
+
      */
     public animationDuration: any;
     /** 
      * Specifies the type for the bing map.
-     * @default Aerial
+
      */
     public bingMapType: any;
     /** 
@@ -55,14 +55,14 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public dataLabelSettings: any;
     /** 
      * Specifies the data source for the layer.
-     * @isdatamanager false
-     * @isobservable true
-     * @default []
+
+
+
      */
     public dataSource: any;
     /** 
      * Specifies the geometry type
-     * @default Geographic
+
      */
     public geometryType: any;
     /** 
@@ -71,12 +71,12 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public highlightSettings: any;
     /** 
      * Specifies the key for the layer.
-     * @default ''
+
      */
     public key: any;
     /** 
      * Specifies the layerType for the layer.
-     * @default Geometry
+
      */
     public layerType: any;
     /** 
@@ -94,7 +94,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * Specifies the query to select particular data from the shape data. 
      * This property is applicable only when the DataSource is `ej.DataManager`.
-     * @default null
+
      */
     public query: any;
     /** 
@@ -103,18 +103,18 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public selectionSettings: any;
     /** 
      * Specifies the shape data for the layer.
-     * @isdatamanager false
-     * @default null
+
+
      */
     public shapeData: any;
     /** 
      * Specifies the shapeDataPath for the layer.
-     * @default 'name'
+
      */
     public shapeDataPath: any;
     /** 
      * Specifies the shapePropertyPath for the layer.
-     * @default 'name'
+
      */
     public shapePropertyPath: any;
     /** 
@@ -131,12 +131,12 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public tooltipSettings: any;
     /** 
      * Specifies the urlTemplate for the layer.
-     * @default 'https://a.tile.openstreetmap.org/level/tileX/tileY.png'
+
      */
     public urlTemplate: any;
     /** 
      * Toggle the visibility of the layers.
-     * @default true
+
      */
     public visible: any;
 

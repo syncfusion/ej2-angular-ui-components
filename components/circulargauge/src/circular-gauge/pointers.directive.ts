@@ -27,7 +27,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * * needle -  Renders a needle. 
      * * marker - Renders a marker. 
      * * rangeBar - Renders a rangeBar.
-     * @default Needle
+
      */
     public type: any;
     /** 
@@ -48,18 +48,18 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
     public color: any;
     /** 
      * Information about pointer for assistive technology.
-     * @default null
+
      */
     public description: any;
     /** 
      * The URL for the Image that is to be displayed as pointer. 
      * It requires marker shape value to be Image.
-     * @default null
+
      */
     public imageUrl: any;
     /** 
      * The height of the marker in pixels.
-     * @default 5
+
      */
     public markerHeight: any;
     /** 
@@ -70,12 +70,12 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * * diamond - Renders a diamond. 
      * * invertedTriangle - Renders a invertedTriangle. 
      * * image - Renders a image.
-     * @default Circle
+
      */
     public markerShape: any;
     /** 
      * The width of the marker in pixels.
-     * @default 5
+
      */
     public markerWidth: any;
     /** 
@@ -84,23 +84,23 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
     public needleTail: any;
     /** 
      * Width of the pointer in pixels.
-     * @default 20
+
      */
     public pointerWidth: any;
     /** 
      * Length of the pointer in pixels or in percentage.
-     * @default null
+
      */
     public radius: any;
     /** 
      * Specifies the rounded corner radius for pointer.
-     * @default 0
+
      */
     public roundedCornerRadius: any;
     /** 
      * Specifies the value of the pointer.
-     * @aspdefaultvalueignore 
-     * @default null
+
+
      */
     public value: any;
 

@@ -29,7 +29,7 @@ export class StockChartRowDirective extends ComplexBase<StockChartRowDirective> 
     /** 
      * The height of the row as a string accept input both as '100px' and '100%'. 
      * If specified as '100%, row renders to the full height of its chart.
-     * @default '100%'
+
      */
     public height: any;
 

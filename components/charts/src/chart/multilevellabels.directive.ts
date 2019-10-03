@@ -31,7 +31,7 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
      * * Near: Places the multi level labels at Near. 
      * * Center: Places the multi level labels at Center. 
      * * Far: Places the multi level labels at Far.
-     * @default 'Center'
+
      */
     public alignment: any;
     /** 
@@ -47,7 +47,7 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
      * * Trim: Trim textOverflow for multi level labels. 
      * * Wrap: Wrap textOverflow for multi level labels. 
      * * none: None textOverflow for multi level labels.
-     * @default 'Wrap'
+
      */
     public overflow: any;
     /** 

@@ -24,34 +24,34 @@ export class PaletteDirective extends ComplexBase<PaletteDirective> {
 
     /** 
      * Sets whether the palette items to be expanded or not
-     * @default true
+
      */
     public expanded: any;
     /** 
      * Sets the height of the symbol group
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public height: any;
     /** 
      * Defines the content of the symbol group
-     * @default ''
+
      */
     public iconCss: any;
     /** 
      * Defines the unique id of a symbol group
-     * @default ''
+
      */
     public id: any;
     /** 
      * Defines the collection of predefined symbols
-     * @asptype object
+
      */
     public symbols: any;
     /** 
      * Defines the title of the symbol group
-     * @default ''
+
      */
     public title: any;
 

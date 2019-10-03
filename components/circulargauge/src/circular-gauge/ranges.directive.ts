@@ -24,50 +24,50 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
 
     /** 
      * Specifies the color of the ranges
-     * @aspdefaultvalueignore 
-     * @default null
+
+
      */
     public color: any;
     /** 
      * Specifies the maximum value of the range.
-     * @aspdefaultvalueignore 
-     * @default 0
+
+
      */
     public end: any;
     /** 
      * Specifies the end width of the ranges
-     * @default '10'
+
      */
     public endWidth: any;
     /** 
      * Specifies the text for legend.
-     * @default ''
+
      */
     public legendText: any;
     /** 
      * Specifies the opacity for ranges.
-     * @default 1
+
      */
     public opacity: any;
     /** 
      * The radius of the range in pixels or in percentage.
-     * @default null
+
      */
     public radius: any;
     /** 
      * Specifies the rounded corner radius for ranges.
-     * @default 0
+
      */
     public roundedCornerRadius: any;
     /** 
      * Specifies the minimum value of the range.
-     * @aspdefaultvalueignore 
-     * @default 0
+
+
      */
     public start: any;
     /** 
      * Specifies the start width of the ranges
-     * @default '10'
+
      */
     public startWidth: any;
 

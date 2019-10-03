@@ -30,77 +30,77 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
 
     /** 
      * Defines the column value where the panel to be placed.
-     * @default 0
-     * @asptype int
-     * @blazortype int
+
+
+
      */
     public col: any;
     /** 
      * Defines the CSS class name that can be appended with each panel element.
-     * @default ''
+
      */
     public cssClass: any;
     /** 
      * Defines whether to the panel should be enabled or not.
-     * @default true
+
      */
     public enabled: any;
     /** 
      * Defines the id of the panel.
-     * @default ''
+
      */
     public id: any;
     /** 
      * Specifies the maximum width of the panel in cells count. 
      * *
-     * @default null
-     * @asptype int
-     * @blazortype int
+
+
+
      */
     public maxSizeX: any;
     /** 
      * Specifies the maximum height of the panel in cells count. 
      * *
-     * @default null
-     * @asptype int
-     * @blazortype int
+
+
+
 
      */
     public maxSizeY: any;
     /** 
      * Specifies the minimum width of the panel in cells count. 
      * *
-     * @default 1
+
      */
     public minSizeX: any;
     /** 
      * Specifies the minimum height of the panel in cells count.
-     * @default 1
+
      */
     public minSizeY: any;
     /** 
      * Defines a row value where the panel should be placed.
-     * @default 0
-     * @asptype int
-     * @blazortype int
+
+
+
      */
     public row: any;
     /** 
      * Specifies the width of the panel in the layout in cells count.
-     * @default 1
+
      */
     public sizeX: any;
     /** 
      * Specifies the height of the panel in the layout in cells count.
-     * @default 1
+
      */
     public sizeY: any;
     /** 
      * Specifies the z-index of the panel 
      * *
-     * @default 1000
-     * @asptype double
-     * @blazortype double
+
+
+
      */
     public zIndex: any;
     /** 

@@ -31,12 +31,12 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public tags: string[] = ['colorMapping'];
     /** 
      * Animation duration
-     * @default 0
+
      */
     public animationDelay: any;
     /** 
      * To configure bubble animation duration
-     * @default 1000
+
      */
     public animationDuration: any;
     /** 
@@ -45,29 +45,29 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public border: any;
     /** 
      * To configure bubble shape type
-     * @default Circle
+
      */
     public bubbleType: any;
     /** 
      * To configure bubble colorMapping
-     * @default []
+
      */
     public colorMapping: any;
     /** 
      * To configure bubble colorValuePath
-     * @default null
+
      */
     public colorValuePath: any;
     /** 
      * Specifies the data source for bubble.
-     * @isdatamanager false
-     * @isobservable true
-     * @default []
+
+
+
      */
     public dataSource: any;
     /** 
      * To configure bubble fill color
-     * @default ''
+
      */
     public fill: any;
     /** 
@@ -76,17 +76,17 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public highlightSettings: any;
     /** 
      * To configure bubble maxRadius
-     * @default 20
+
      */
     public maxRadius: any;
     /** 
      * To configure bubble minRadius
-     * @default 10
+
      */
     public minRadius: any;
     /** 
      * To configure bubble opacity
-     * @default 1
+
      */
     public opacity: any;
     /** 
@@ -99,12 +99,12 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public tooltipSettings: any;
     /** 
      * To configure bubble valuePath
-     * @default null
+
      */
     public valuePath: any;
     /** 
      * Toggle the visibility of bubble
-     * @default false
+
      */
     public visible: any;
     @ContentChild('tooltipSettingsTemplate')

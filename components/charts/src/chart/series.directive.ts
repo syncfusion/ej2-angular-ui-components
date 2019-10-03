@@ -55,7 +55,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * * Radar 
      * * BoxAndWhisker 
      * * Pareto
-     * @default 'Line'
+
      */
     public type: any;
     /** 
@@ -65,13 +65,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     /** 
      * This property is used in financial charts to visualize the price movements in stock. 
      * It defines the color of the candle/point, when the opening price is less than the closing price.
-     * @default '#2ecd71'
+
      */
     public bearFillColor: any;
     /** 
      * The bin interval of each histogram points.
-     * @default null
-     * @aspdefaultvalueignore 
+
+
      */
     public binInterval: any;
     /** 
@@ -83,36 +83,36 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * Exclusive 
      * Inclusive 
      * Normal
-     * @default 'Normal'
+
      */
     public boxPlotMode: any;
     /** 
      * This property is used in financial charts to visualize the price movements in stock. 
      * It defines the color of the candle/point, when the opening price is higher than the closing price.
-     * @default '#e74c3d'
+
      */
     public bullFillColor: any;
     /** 
      * It defines tension of cardinal spline types
-     * @default 0.5
+
      */
     public cardinalSplineTension: any;
     /** 
      * The DataSource field that contains the close value of y 
      * It is applicable for series and technical indicators
-     * @default ''
+
      */
     public close: any;
     /** 
      * To render the column series points with particular column spacing. It takes value from 0 - 1.
-     * @default 0
+
      */
     public columnSpacing: any;
     /** 
      * To render the column series points with particular column width. If the series type is histogram the 
      * default value is 1 otherwise 0.7.
-     * @default null
-     * @aspdefaultvalueignore 
+
+
      */
     public columnWidth: any;
     /** 
@@ -125,13 +125,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public cornerRadius: any;
     /** 
      * Defines the pattern of dashes and gaps to stroke the lines in `Line` type series.
-     * @default '0'
+
      */
     public dashArray: any;
     /** 
      * Specifies the DataSource for the series. It can be an array of JSON objects or an instance of DataManager. 
      * 
-     * @default ''
+
      */
     public dataSource: any;
     /** 
@@ -149,7 +149,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      *  'StackingArea' 
      *  'RangeColumn' 
      *  'SplineArea'
-     * @default 'Line'
+
      */
     public drawType: any;
     /** 
@@ -158,18 +158,18 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public emptyPointSettings: any;
     /** 
      * This property used to improve chart performance via data mapping for series dataSource.
-     * @default false
+
      */
     public enableComplexProperty: any;
     /** 
      * This property is applicable for candle series. 
      * It enables/disables to visually compare the current values with the previous values in stock.
-     * @default false
+
      */
     public enableSolidCandles: any;
     /** 
      * If set true, the Tooltip for series will be visible.
-     * @default true
+
      */
     public enableTooltip: any;
     /** 
@@ -180,24 +180,24 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * The fill color for the series that accepts value in hex and rgba as a valid CSS color string. 
      * It also represents the color of the signal lines in technical indicators. 
      * For technical indicators, the default value is 'blue' and for series, it has null.
-     * @default null
+
      */
     public fill: any;
     /** 
      * The DataSource field that contains the high value of y 
      * It is applicable for series and technical indicators
-     * @default ''
+
      */
     public high: any;
     /** 
      * Defines the collection of indexes of the intermediate summary columns in waterfall charts.
-     * @default []
-     * @asptype int[]
+
+
      */
     public intermediateSumIndexes: any;
     /** 
      * Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
-     * @default true
+
      */
     public isClosed: any;
     /** 
@@ -212,13 +212,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * * Pentagon 
      * * InvertedTriangle 
      * * SeriesType
-     * @default 'SeriesType'
+
      */
     public legendShape: any;
     /** 
      * The DataSource field that contains the low value of y 
      * It is applicable for series and technical indicators
-     * @default ''
+
      */
     public low: any;
     /** 
@@ -227,44 +227,44 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public marker: any;
     /** 
      * Maximum radius
-     * @default 3
+
      */
     public maxRadius: any;
     /** 
      * Minimum radius
-     * @default 1
+
      */
     public minRadius: any;
     /** 
      * The name of the series visible in legend.
-     * @default ''
+
      */
     public name: any;
     /** 
      * Defines the visual representation of the negative changes in waterfall charts.
-     * @default '#C64E4A'
+
      */
     public negativeFillColor: any;
     /** 
      * The opacity of the series.
-     * @default 1
+
      */
     public opacity: any;
     /** 
      * The DataSource field that contains the open value of y 
      * It is applicable for series and technical indicators
-     * @default ''
+
      */
     public open: any;
     /** 
      * The DataSource field that contains the color value of point 
      * It is applicable for series
-     * @default ''
+
      */
     public pointColorMapping: any;
     /** 
      * Specifies query to select data from DataSource. This property is applicable only when the DataSource is `ej.DataManager`.
-     * @default ''
+
      */
     public query: any;
     /** 
@@ -277,55 +277,55 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public segments: any;
     /** 
      * Custom style for the selected series or points.
-     * @default null
+
      */
     public selectionStyle: any;
     /** 
      * If set true, the mean value for box and whisker will be visible.
-     * @default true
+
      */
     public showMean: any;
     /** 
      * The normal distribution of histogram series.
-     * @default false
+
      */
     public showNormalDistribution: any;
     /** 
      * The DataSource field that contains the size value of y
-     * @default ''
+
      */
     public size: any;
     /** 
      * Defines type of spline to be rendered.
-     * @default 'Natural'
+
      */
     public splineType: any;
     /** 
      * This property allows grouping series in `stacked column / bar` charts. 
      * Any string value can be provided to the stackingGroup property. 
      * If any two or above series have the same value, those series will be grouped together.
-     * @default ''
+
      */
     public stackingGroup: any;
     /** 
      * Defines the collection of indexes of the overall summary columns in waterfall charts.
-     * @default []
-     * @asptype int[]
+
+
      */
     public sumIndexes: any;
     /** 
      * Defines the visual representation of the summaries in waterfall charts.
-     * @default '#4E81BC'
+
      */
     public summaryFillColor: any;
     /** 
      * user can format now each series tooltip format separately.
-     * @default ''
+
      */
     public tooltipFormat: any;
     /** 
      * The provided value will be considered as a Tooltip name
-     * @default ''
+
      */
     public tooltipMappingName: any;
     /** 
@@ -334,49 +334,49 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public trendlines: any;
     /** 
      * Specifies the visibility of series.
-     * @default true
+
      */
     public visible: any;
     /** 
      * Defines the data source field that contains the volume value in candle charts 
      * It is applicable for financial series and technical indicators
-     * @default ''
+
      */
     public volume: any;
     /** 
      * The stroke width for the series that is applicable only for `Line` type series. 
      * It also represents the stroke width of the signal lines in technical indicators.
-     * @default 1
+
      */
     public width: any;
     /** 
      * The name of the horizontal axis associated with the series. It requires `axes` of the chart. 
      * It is applicable for series and technical indicators 
      * 
-     * @default null
+
      */
     public xAxisName: any;
     /** 
      * The DataSource field that contains the x value. 
      * It is applicable for series and technical indicators
-     * @default ''
+
      */
     public xName: any;
     /** 
      * The name of the vertical axis associated with the series. It requires `axes` of the chart. 
      * It is applicable for series and technical indicators 
      * 
-     * @default null
+
      */
     public yAxisName: any;
     /** 
      * The DataSource field that contains the y value.
-     * @default ''
+
      */
     public yName: any;
     /** 
      * The z order of the series.
-     * @default 0
+
      */
     public zOrder: any;
     @ContentChild('dataLabelTemplate')

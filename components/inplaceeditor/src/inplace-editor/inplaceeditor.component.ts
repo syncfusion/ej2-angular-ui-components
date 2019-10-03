@@ -39,8 +39,8 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
 
     /** 
      * Specifies the HTML element ID as a string that can be added as a editable field.
-     * @default ''
-     * @blazortype string
+
+
      */
     @ContentChild('template')
     @Template()

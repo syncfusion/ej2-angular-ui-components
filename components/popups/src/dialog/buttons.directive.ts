@@ -31,9 +31,9 @@ export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
     /** 
      * Specify the type of the button. 
      * Possible values are Button, Submit and Reset.
-     * @default 'Button'
-     * @asptype string
-     * @blazortype string
+
+
+
      */
     public type: any;
     /** 

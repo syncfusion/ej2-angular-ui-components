@@ -2312,7 +2312,7 @@ ejs-calendar {
   margin: 0;
 }
 
-.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 0;
 }
 
@@ -2374,8 +2374,8 @@ ejs-calendar {
   margin: 0;
 }
 
-.e-bigger.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon,
-.e-bigger .e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-bigger.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon,
+.e-bigger .e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 0;
 }
 

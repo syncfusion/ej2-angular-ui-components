@@ -279,6 +279,7 @@ exports.NavigationPane = ej2Pdfviewer.NavigationPane;
 exports.PdfViewerBase = ej2Pdfviewer.PdfViewerBase;
 exports.TextLayer = ej2Pdfviewer.TextLayer;
 exports.ContextMenu = ej2Pdfviewer.ContextMenu;
+exports.FontStyle = ej2Pdfviewer.FontStyle;
 exports.AjaxHandler = ej2Pdfviewer.AjaxHandler;
 exports.Magnification = ej2Pdfviewer.Magnification;
 exports.Navigation = ej2Pdfviewer.Navigation;

@@ -31,21 +31,21 @@ export class PortDirective extends ComplexBase<PortDirective> {
 
     /** 
      * Allows the user to save custom information/data about a port
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
+
+
+
      */
     public addInfo: any;
     /** 
      * Defines the constraints of port
-     * @default 'Default'
-     * @aspnumberenum 
-     * @blazornumberenum 
+
+
+
      */
     public constraints: any;
     /** 
      * Sets the height of the port
-     * @default 12
+
      */
     public height: any;
     /** 
@@ -55,27 +55,27 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * * Right - Aligns the diagram element at the right of its immediate parent 
      * * Center - Aligns the diagram element at the center of its immediate parent 
      * * Auto - Aligns the diagram element based on the characteristics of its immediate parent
-     * @default 'Center'
+
      */
     public horizontalAlignment: any;
     /** 
      * Defines the unique id of the port
-     * @default ''
+
      */
     public id: any;
     /** 
      * Defines the space that the port has to be moved from its actual position
-     * @default new Margin(0,0,0,0)
+
      */
     public margin: any;
     /** 
      * Defines the position of the port with respect to the boundaries of nodes/connector
-     * @default new Point(0.5,0.5)
+
      */
     public offset: any;
     /** 
      * Defines the geometry of the port
-     * @default ''
+
      */
     public pathData: any;
     /** 
@@ -84,13 +84,13 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * * Circle - Sets the decorator shape as Circle 
      * * Square - Sets the decorator shape as Square 
      * * Custom - Sets the decorator shape as Custom
-     * @default 'Square'
+
      */
     public shape: any;
     /** 
      * Defines the appearance of the port 
      * 
-     * @default {}
+
      */
     public style: any;
     /** 
@@ -100,7 +100,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * * Bottom - Aligns the diagram element at the bottom of its immediate parent 
      * * Center - Aligns the diagram element at the center of its immediate parent 
      * * Auto - Aligns the diagram element based on the characteristics of its immediate parent
-     * @default 'Center'
+
      */
     public verticalAlignment: any;
     /** 
@@ -109,14 +109,14 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * * Hidden - Always hides the port 
      * * Hover - Shows the port when the mouse hovers over a node 
      * * Connect - Shows the port when a connection end point is dragged over a node
-     * @default 'Connect'
-     * @aspnumberenum 
-     * @blazornumberenum 
+
+
+
      */
     public visibility: any;
     /** 
      * Sets the width of the port
-     * @default 12
+
      */
     public width: any;
 

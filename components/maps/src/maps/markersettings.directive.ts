@@ -31,12 +31,12 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
 
     /** 
      * Animation delay time
-     * @default 0
+
      */
     public animationDelay: any;
     /** 
      * Animation duration time
-     * @default 1000
+
      */
     public animationDuration: any;
     /** 
@@ -49,19 +49,19 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public dashArray: any;
     /** 
      * To configure the dataSource of the marker.
-     * @isdatamanager false
-     * @isobservable true
-     * @default []
+
+
+
      */
     public dataSource: any;
     /** 
      * To customize the fill color of the marker.
-     * @default '#FF471A'
+
      */
     public fill: any;
     /** 
      * To customize the height of the marker.
-     * @default 10
+
      */
     public height: any;
     /** 
@@ -74,7 +74,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public imageUrl: any;
     /** 
      * To provide the dataSource field to display legend text
-     * @default ''
+
      */
     public legendText: any;
     /** 
@@ -83,7 +83,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public offset: any;
     /** 
      * To customize the opacity of the marker.
-     * @default 1
+
      */
     public opacity: any;
     /** 
@@ -92,7 +92,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public selectionSettings: any;
     /** 
      * To customize the shape of the marker.
-     * @default Balloon
+
      */
     public shape: any;
     /** 
@@ -101,17 +101,17 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public tooltipSettings: any;
     /** 
      * Toggle the visibility of the marker.
-     * @default false
+
      */
     public visible: any;
     /** 
      * To customize the width of the marker.
-     * @default 10
+
      */
     public width: any;
     /** 
      * To customize the template of the marker.
-     * @default null
+
      */
     @ContentChild('template')
     @Template()

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['index', 'width'];
+let input: string[] = ['customWidth', 'index', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -31,6 +31,11 @@ let outputs: string[] = [];
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
 
 
+    /** 
+     * specifies custom width of the column.
+     * @default false
+     */
+    public customWidth: any;
     /** 
      * Specifies index of the column. Based on the index, column properties are applied.
      * @default 0

@@ -47,14 +47,14 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * * truecount 
      * * custom 
      * > Specify the `type` value as `custom` to use custom aggregation.
-     * @asptype string
-     * @default null
+
+
      */
     public type: any;
     /** 
      * Defines the column name to display the aggregate value. If `columnName` is not defined, 
      * then `field` name value will be assigned to the `columnName` property.
-     * @default null
+
      */
     public columnName: any;
     /** 
@@ -62,12 +62,12 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * To use custom aggregate value in the template, use the key as `${custom}`. 
      * **Total aggregation**: The custom function will be called with the whole data and the current `AggregateColumn` object. 
      * **Group aggregation**: This will be called with the current group details and the `AggregateColumn` object.
-     * @default null
+
      */
     public customAggregate: any;
     /** 
      * Defines the column name to perform aggregation.
-     * @default null
+
      */
     public field: any;
     /** 
@@ -75,9 +75,9 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * Gets the format from the user, which can be standard or custom 
      * [`number`](../../../common/internationalization/#supported-format-string) 
      * and [`date`](../../../common/internationalization/#supported-format-string-1) formats.
-     * @asptype string
-     * @blazortype string
-     * @default null
+
+
+
      */
     public format: any;
     /** 
@@ -85,7 +85,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * The `type` name should be used to access aggregate values inside the template.
      * 
      * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}     
-     * @default null
+
      */
     @ContentChild('footerTemplate')
     @Template()

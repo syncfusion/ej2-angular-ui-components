@@ -35,14 +35,14 @@ export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
      * * Week 
      * * Date 
      * * Hour
-     * @default null
+
      */
     public option: any;
     /** 
      * Template option to customize the individual header rows. It accepts either the string or HTMLElement as template design 
      *  content and parse it appropriately before displaying it onto the header cells. The field that 
      *  can be accessed via this template is `date`.
-     * @default null
+
      */
     @ContentChild('template')
     @Template()

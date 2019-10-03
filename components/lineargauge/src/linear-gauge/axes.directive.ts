@@ -43,12 +43,12 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public majorTicks: any;
     /** 
      * Specifies the maximum value of an axis.
-     * @default 100
+
      */
     public maximum: any;
     /** 
      * Specifies the minimum value of an axis.
-     * @default 0
+
      */
     public minimum: any;
     /** 

@@ -37,12 +37,12 @@ export class StockEventDirective extends ComplexBase<StockEventDirective> {
      * * ArrowDown 
      * * ArrowLeft 
      * * ArrowRight
-     * @default 'Circle'
+
      */
     public type: any;
     /** 
      * The background of the stock event that accepts value in hex and rgba as a valid CSS color string.
-     * @default 'transparent'
+
      */
     public background: any;
     /** 
@@ -63,12 +63,12 @@ export class StockEventDirective extends ComplexBase<StockEventDirective> {
      * * Open 
      * * High 
      * * Close
-     * @default 'close'
+
      */
     public placeAt: any;
     /** 
      * Enables the stock events to be render on series. If it disabled, stock event rendered on primaryXAxis.
-     * @default true
+
      */
     public showOnSeries: any;
     /** 

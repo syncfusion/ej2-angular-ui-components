@@ -8,7 +8,7 @@ import { HolidayDirective, HolidaysDirective } from './holidays.directive';
 import { EventMarkerDirective, EventMarkersDirective } from './eventmarkers.directive';
 import { GanttComponent } from './gantt.component';
 import { GanttModule } from './gantt.module';
-import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport} from '@syncfusion/ej2-gantt'
+import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport, ColumnMenu} from '@syncfusion/ej2-gantt'
 
 
 export const FilterService: ValueProvider = { provide: 'GanttFilter', useValue: Filter};
@@ -21,6 +21,7 @@ export const DayMarkersService: ValueProvider = { provide: 'GanttDayMarkers', us
 export const ToolbarService: ValueProvider = { provide: 'GanttToolbar', useValue: Toolbar};
 export const ContextMenuService: ValueProvider = { provide: 'GanttContextMenu', useValue: ContextMenu};
 export const ExcelExportService: ValueProvider = { provide: 'GanttExcelExport', useValue: ExcelExport};
+export const ColumnMenuService: ValueProvider = { provide: 'GanttColumnMenu', useValue: ColumnMenu};
 
 /**
  * NgModule definition for the Gantt component with providers.
@@ -40,7 +41,8 @@ export const ExcelExportService: ValueProvider = { provide: 'GanttExcelExport', 
         DayMarkersService,
         ToolbarService,
         ContextMenuService,
-        ExcelExportService
+        ExcelExportService,
+        ColumnMenuService
     ]
 })
 export class GanttAllModule { }

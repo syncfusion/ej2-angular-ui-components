@@ -34,24 +34,24 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public annotations: any;
     /** 
      * The background color of the axis, which accepts value in hex, rgba as a valid CSS color string.
-     * @default null
+
      */
     public background: any;
     /** 
      * Specifies the direction of an axis. They are 
      * * clockWise -  Renders the axis in clock wise direction. 
      * * antiClockWise - Renders the axis in anti-clock wise direction.
-     * @default ClockWise
+
      */
     public direction: any;
     /** 
      * The end angle of an axis
-     * @default 160
+
      */
     public endAngle: any;
     /** 
      * Specifies to hide the intersecting axis labels
-     * @default false
+
      */
     public hideIntersectingLabel: any;
     /** 
@@ -64,24 +64,24 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public lineStyle: any;
     /** 
      * Options for customizing the major tick lines.
-     * @default { width: 2, height: 10 }
+
      */
     public majorTicks: any;
     /** 
      * Specifies the maximum value of an axis.
-     * @aspdefaultvalueignore 
-     * @default null
+
+
      */
     public maximum: any;
     /** 
      * Specifies the minimum value of an axis.
-     * @aspdefaultvalueignore 
-     * @default null
+
+
      */
     public minimum: any;
     /** 
      * Options for customizing the minor tick lines.
-     * @default { width: 2, height: 5 }
+
      */
     public minorTicks: any;
     /** 
@@ -90,12 +90,12 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public pointers: any;
     /** 
      * Radius of an axis in pixels or in percentage.
-     * @default null
+
      */
     public radius: any;
     /** 
      * Specifies the range gap property by pixel value.
-     * @default null
+
      */
     public rangeGap: any;
     /** 
@@ -104,22 +104,22 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public ranges: any;
     /** 
      * Specifies the rounding Off value in the label
-     * @default null
+
      */
     public roundingPlaces: any;
     /** 
      * Specifies the last label to be shown
-     * @default false
+
      */
     public showLastLabel: any;
     /** 
      * Specifies the start and end range gap.
-     * @default false
+
      */
     public startAndEndRangeGap: any;
     /** 
      * The start angle of an axis
-     * @default 200
+
      */
     public startAngle: any;
 

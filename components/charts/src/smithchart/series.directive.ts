@@ -19,28 +19,28 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
 
     /** 
      * perform animation of series based on animation duration.
-     * @default '2000ms'
+
      */
     public animationDuration: any;
     /** 
      *  Specifies the dataSource
-     * @default null
-     * @isdatamanager false
+
+
      */
     public dataSource: any;
     /** 
      * enable or disable the animation of series.
-     * @default false
+
      */
     public enableAnimation: any;
     /** 
      * avoid the overlap of dataLabels.
-     * @default false
+
      */
     public enableSmartLabels: any;
     /** 
      * color for series.
-     * @default null
+
      */
     public fill: any;
     /** 
@@ -49,27 +49,27 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
     public marker: any;
     /** 
      * The name of the series visible in legend.
-     * @default ''
+
      */
     public name: any;
     /** 
      * opacity for series.
-     * @default 1
+
      */
     public opacity: any;
     /** 
      * points for series.
-     * @default []
+
      */
     public points: any;
     /** 
      * reactance name for dataSource
-     * @default ''
+
      */
     public reactance: any;
     /** 
      * resistance name for dataSource
-     * @default ''
+
      */
     public resistance: any;
     /** 
@@ -78,12 +78,12 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
     public tooltip: any;
     /** 
      * visibility for series.
-     * @default 'visible'
+
      */
     public visibility: any;
     /** 
      * width for series.
-     * @default 1
+
      */
     public width: any;
 

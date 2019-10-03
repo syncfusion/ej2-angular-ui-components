@@ -24,22 +24,22 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
     /** 
      * Angle for annotation with respect to axis.
-     * @default 90
+
      */
     public angle: any;
     /** 
      * Rotates the annotation along the axis.
-     * @default false
+
      */
     public autoAngle: any;
     /** 
      * Information about annotation for assistive technology.
-     * @default null
+
      */
     public description: any;
     /** 
      * Radius for annotation with respect to axis.
-     * @default '50%'
+
      */
     public radius: any;
     /** 
@@ -48,12 +48,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public textStyle: any;
     /** 
      * Order of an annotation in an axis.
-     * @default '-1'
+
      */
     public zIndex: any;
     /** 
      * Content of the annotation, which accepts the id of the custom element.
-     * @default null
+
      */
     @ContentChild('content')
     @Template()

@@ -24,13 +24,13 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
     /** 
      * Specifies the index of axis.
-     * @aspdefaultvalueignore 
+
      */
     public axisIndex: any;
     /** 
      * Specifies the value of axis.
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalue null
+
+
      */
     public axisValue: any;
     /** 
@@ -39,12 +39,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public font: any;
     /** 
      * Specifies the horizontal alignment of annotation.
-     * @default None
+
      */
     public horizontalAlignment: any;
     /** 
      * Specifies the vertical alignment of annotation.
-     * @default None
+
      */
     public verticalAlignment: any;
     /** 
@@ -57,7 +57,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public y: any;
     /** 
      * Specifies the zIndex of the annotation.
-     * @default '-1'
+
      */
     public zIndex: any;
     /** 

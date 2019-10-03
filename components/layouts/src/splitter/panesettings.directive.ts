@@ -30,39 +30,39 @@ export class PaneDirective extends ComplexBase<PaneDirective> {
 
     /** 
      * Specifies whether a pane is collapsed or not collapsed at the initial rendering of splitter.
-     * @default false
+
      */
     public collapsed: any;
     /** 
      * Specifies whether a pane is collapsible or not collapsible.
-     * @default false
+
      */
     public collapsible: any;
     /** 
      * Specifies the maximum size of a pane. The pane cannot be resized if it is more than the specified maximum limit.
-     * @default null
+
      */
     public max: any;
     /** 
      * Specifies the minimum size of a pane. The pane cannot be resized if it is less than the specified minimum size.
-     * @default null
+
      */
     public min: any;
     /** 
      * Specifies the value whether a pane is resizable. By default, the Splitter is resizable in all panes. 
      * You can disable this for any specific panes using this property.
-     * @default true
+
      */
     public resizable: any;
     /** 
      * Configures the properties for each pane.
-     * @default ''
+
      */
     public size: any;
     /** 
      * Specifies the content of split pane as plain text, HTML markup, or any other JavaScript controls.
-     * @default ''
-     * @blazortype string
+
+
      */
     @ContentChild('content')
     @Template()

@@ -33,44 +33,46 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
 
     /** 
      * To configure color
-     * @default null
+
      */
     public color: any;
     /** 
      * To configure from
-     * @aspdefaultvalueignore 
-     * @default null
+
+
+
      */
     public from: any;
     /** 
      * To configure labels
-     * @default null
+
      */
     public label: any;
     /** 
      * To configure max opacity
-     * @default null
+
      */
     public maxOpacity: any;
     /** 
      * To configure min opacity
-     * @default null
+
      */
     public minOpacity: any;
     /** 
      * To enable or disable the legend
-     * @default true
+
      */
     public showLegend: any;
     /** 
      * To configure to
-     * @aspdefaultvalueignore 
-     * @default null
+
+
+
      */
     public to: any;
     /** 
      * To configure value
-     * @default null
+
      */
     public value: any;
 

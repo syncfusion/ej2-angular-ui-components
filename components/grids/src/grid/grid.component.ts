@@ -57,14 +57,14 @@ export class GridComponent extends Grid implements IComponentBase {
     public detailTemplate: any;
     /** 
      * It used to render toolbar template
-     * @default null
+
      */
     @ContentChild('toolbarTemplate')
     @Template()
     public toolbarTemplate: any;
     /** 
      * It used to render pager template
-     * @default null
+
      */
     @ContentChild('pagerTemplate')
     @Template()

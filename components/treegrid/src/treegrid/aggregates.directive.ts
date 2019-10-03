@@ -37,7 +37,7 @@ export class AggregateDirective extends ComplexBase<AggregateDirective> {
     public tags: string[] = ['columns'];
     /** 
      * Configures the aggregate columns.
-     * @default []
+
      */
     public columns: any;
     /** 

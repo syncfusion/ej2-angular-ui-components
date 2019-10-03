@@ -393,6 +393,7 @@ exports.mouseMove = ej2Treemap.mouseMove;
 exports.legendItemRendering = ej2Treemap.legendItemRendering;
 exports.legendRendering = ej2Treemap.legendRendering;
 exports.resize = ej2Treemap.resize;
+exports.defaultFont = ej2Treemap.defaultFont;
 exports.Theme = ej2Treemap.Theme;
 exports.getThemeStyle = ej2Treemap.getThemeStyle;
 exports.Size = ej2Treemap.Size;

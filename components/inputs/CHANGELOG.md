@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.3.14 (2019-10-03)
+
+### TextBox
+
+#### New Features
+
+- `#246351` - Provided autocomplete property for setting the autocomplete attribute to the textbox.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#244526`, `#245738` - Issue with "spinner is shown after the file uploaded successfully" has been resolved.
+
 ## 17.3.9-beta (2019-09-20)
 
 ### Slider

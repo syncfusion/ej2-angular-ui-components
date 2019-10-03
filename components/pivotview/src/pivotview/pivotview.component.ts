@@ -32,7 +32,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
     /** 
      * The template option which is used to render the pivot cells on the pivotview. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the pivot cells.
-     * @default null
+
      */
     @ContentChild('cellTemplate')
     @Template()

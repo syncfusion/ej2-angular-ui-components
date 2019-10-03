@@ -30,57 +30,57 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
 
     /** 
      * Specifies the types in columns field
-     * @default null
+
      */
     public type: any;
     /** 
      * Specifies the category for columns.
-     * @default null
+
      */
     public category: any;
     /** 
      * Specifies the fields in columns.
-     * @default null
+
      */
     public field: any;
     /** 
      * Specifies the date format for columns.
-     * @default null
+
      */
     public format: any;
     /** 
      * Specifies the labels name in columns
-     * @default null
+
      */
     public label: any;
     /** 
      * Specifies the operators in columns.
-     * @default null
+
      */
     public operators: any;
     /** 
      * Specifies the step value(numeric textbox) for columns.
-     * @default null
+
      */
     public step: any;
     /** 
      * Specifies the template for value field such as slider or any other widgets.
-     * @default null
+
      */
     public template: any;
     /** 
      * Specifies the validation for columns (text, number and date).
-     * @default { isRequired: true , min: 0, max: Number.MAX_VALUE }
+
      */
     public validation: any;
     /** 
      * Specifies the default value for columns.
-     * @default null
+
      */
     public value: any;
     /** 
      * Specifies the values in columns or bind the values from sub controls.
-     * @default null
+
      */
     public values: any;
 

@@ -37,37 +37,37 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
      * * Without Border 
      * * Brace 
      * * CurlyBrace
-     * @default 'Rectangle'
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
+
+
+
      */
     public type: any;
     /** 
      * multi level labels custom data.
-     * @default null
+
      */
     public customAttributes: any;
     /** 
      * End value of the multi level labels
-     * @default null
-     * @aspdefaultvalueignore 
+
+
      */
     public end: any;
     /** 
      * Maximum width of the text for multi level labels.
-     * @default null
-     * @aspdefaultvalueignore 
+
+
      */
     public maximumTextWidth: any;
     /** 
      * Start value of the multi level labels
-     * @default null
-     * @aspdefaultvalueignore 
+
+
      */
     public start: any;
     /** 
      * multi level labels text.
-     * @default ''
+
      */
     public text: any;
 

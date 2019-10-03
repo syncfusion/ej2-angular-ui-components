@@ -74,6 +74,34 @@
   font-size: 18px;
 }
 
+.e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
+.e-bigger .e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-bigger.e-outline .e-input-group-icon.e-range-icon,
+.e-bigger .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 24px;
+}
+
+.e-small .e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-small.e-outline .e-input-group-icon.e-range-icon,
+.e-small .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 18px;
+}
+
+.e-bigger.e-small .e-outline.e-date-range-wrapper .e-input-group-icon.e-range-icon,
+.e-bigger.e-small.e-outline.e-date-range-wrapper .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-bigger.e-small.e-outline .e-input-group-icon.e-range-icon,
+.e-bigger.e-small .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
 /*! daterangepicker layout */
 .e-input-group.e-control-wrapper.e-date-range-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
 .e-float-input.e-control-wrapper.e-input-group.e-date-range-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
