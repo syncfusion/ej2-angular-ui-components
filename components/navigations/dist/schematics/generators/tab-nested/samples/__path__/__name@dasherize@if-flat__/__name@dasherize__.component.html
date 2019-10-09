@@ -1,0 +1,71 @@
+<ejs-tab heightAdjustMode='Content'>
+    <e-tabitems>
+        <e-tabitem content='#usa'>
+            <ng-template #headerText>
+                USA
+            </ng-template>
+        </e-tabitem>
+        <e-tabitem content='#australia'>
+            <ng-template #headerText>
+                Australia
+            </ng-template>
+        </e-tabitem>
+    </e-tabitems>
+</ejs-tab>
+
+<div id="usa" style="display: none">
+    <ejs-tab heightAdjustMode='Auto'>
+        <e-tabitems>
+            <e-tabitem>
+                <ng-template #headerText>
+                    New York
+                </ng-template>
+                <ng-template #content>
+                    <div>
+                        New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean.
+                    </div>
+                </ng-template>
+            </e-tabitem>
+            <e-tabitem>
+                <ng-template #headerText>
+                    Los Angeles
+                </ng-template>
+                <ng-template #content>
+                    <div>
+                        Los Angeles is a sprawling Southern California city and the center of the nation’s film and
+                        television
+                        industry.
+                    </div>
+                </ng-template>
+            </e-tabitem>
+        </e-tabitems>
+    </ejs-tab>
+</div>
+
+<div id="australia" style="display: none">
+    <ejs-tab heightAdjustMode='Auto'>
+        <e-tabitems>
+            <e-tabitem>
+                <ng-template #headerText>
+                    Sydney
+                </ng-template>
+                <ng-template #content>
+                    <div>
+                        Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its
+                        harbourfront Sydney Opera House, with a distinctive sail-like design.
+                    </div>
+                </ng-template>
+            </e-tabitem>
+            <e-tabitem>
+                <ng-template #headerText>
+                    Melbourne
+                </ng-template>
+                <ng-template #content>
+                    <div>
+                        Melbourne is the coastal capital of the southeastern Australian state of Victoria.
+                    </div>
+                </ng-template>
+            </e-tabitem>
+        </e-tabitems>
+    </ejs-tab>
+</div>

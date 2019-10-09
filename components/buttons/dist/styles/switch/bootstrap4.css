@@ -1,0 +1,1005 @@
+/*! switch layout */
+.e-switch-wrapper,
+.e-css.e-switch-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 38px;
+}
+
+.e-switch-wrapper .e-switch,
+.e-css.e-switch-wrapper .e-switch {
+  -moz-appearance: none;
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.e-switch-wrapper .e-switch-inner,
+.e-css.e-switch-wrapper .e-switch-inner {
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  border: 1px solid #adb5bd;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.e-switch-wrapper .e-switch-on,
+.e-switch-wrapper .e-switch-off,
+.e-css.e-switch-wrapper .e-switch-on,
+.e-css.e-switch-wrapper .e-switch-off {
+  -ms-transition: all 0.2s ease-in-out 0.1s;
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 12px;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0.1s;
+  width: 100%;
+}
+
+.e-switch-wrapper .e-switch-on,
+.e-css.e-switch-wrapper .e-switch-on {
+  left: -100%;
+  text-indent: -12px;
+}
+
+.e-switch-wrapper .e-switch-off,
+.e-css.e-switch-wrapper .e-switch-off {
+  left: 0;
+  opacity: 1;
+  text-indent: 14px;
+}
+
+.e-switch-wrapper .e-switch-handle,
+.e-css.e-switch-wrapper .e-switch-handle {
+  -ms-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  border-radius: 50%;
+  bottom: 2px;
+  height: 12px;
+  left: 1px;
+  margin: auto 2px;
+  position: absolute;
+  top: 2px;
+  transition: all 0.2s linear;
+  width: 12px;
+}
+
+.e-switch-wrapper .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+  opacity: 1;
+}
+
+.e-switch-wrapper .e-switch-inner.e-switch-active .e-switch-off,
+.e-css.e-switch-wrapper .e-switch-inner.e-switch-active .e-switch-off {
+  left: 100%;
+}
+
+.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-switch-wrapper.e-switch-disabled,
+.e-css.e-switch-wrapper.e-switch-disabled {
+  cursor: default;
+}
+
+.e-switch-wrapper .e-ripple-container,
+.e-css.e-switch-wrapper .e-ripple-container {
+  border-radius: 50%;
+  bottom: -9px;
+  height: 52px;
+  left: -17px;
+  pointer-events: none;
+  position: absolute;
+  top: -17px;
+  width: 52px;
+  z-index: 1;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl .e-switch-on {
+  left: 100%;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-off,
+.e-css.e-switch-wrapper.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active {
+  border-radius: 50%;
+  height: 12px;
+  left: 1px;
+  margin: auto 2px;
+  position: absolute;
+  top: 2px;
+  transition: all 0.2s linear;
+  width: 12px;
+}
+
+.e-switch-wrapper.e-small,
+.e-css.e-switch-wrapper.e-small {
+  height: 16px;
+  width: 38px;
+}
+
+.e-switch-wrapper.e-small .e-switch-handle,
+.e-css.e-switch-wrapper.e-small .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-switch-wrapper.e-small .e-ripple-container,
+.e-css.e-switch-wrapper.e-small .e-ripple-container {
+  border-radius: 50%;
+  height: 36px;
+  left: -10px;
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+  width: 36px;
+  z-index: 1;
+}
+
+.e-switch-wrapper.e-small .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-small .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-switch-wrapper.e-small .e-switch-on,
+.e-switch-wrapper.e-small .e-switch-off,
+.e-css.e-switch-wrapper.e-small .e-switch-on,
+.e-css.e-switch-wrapper.e-small .e-switch-off {
+  font-size: 12px;
+}
+
+.e-switch-wrapper.e-small .e-switch-on,
+.e-css.e-switch-wrapper.e-small .e-switch-on {
+  text-indent: -12px;
+}
+
+.e-switch-wrapper.e-small .e-switch-off,
+.e-css.e-switch-wrapper.e-small .e-switch-off {
+  text-indent: 14px;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-on,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-on {
+  left: 100%;
+  opacity: 1;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-off,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active {
+  left: 16px;
+}
+
+.e-small .e-switch-wrapper,
+.e-small.e-switch-wrapper,
+.e-small .e-css.e-switch-wrapper,
+.e-small.e-css.e-switch-wrapper {
+  height: 16px;
+  width: 38px;
+}
+
+.e-small .e-switch-wrapper .e-switch-handle,
+.e-small.e-switch-wrapper .e-switch-handle,
+.e-small .e-css.e-switch-wrapper .e-switch-handle,
+.e-small.e-css.e-switch-wrapper .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-small .e-switch-wrapper .e-ripple-container,
+.e-small.e-switch-wrapper .e-ripple-container,
+.e-small .e-css.e-switch-wrapper .e-ripple-container,
+.e-small.e-css.e-switch-wrapper .e-ripple-container {
+  border-radius: 50%;
+  height: 36px;
+  left: -10px;
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+  width: 36px;
+  z-index: 1;
+}
+
+.e-small .e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-small.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-small .e-css.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-small.e-css.e-switch-wrapper .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-small .e-switch-wrapper .e-switch-on,
+.e-small .e-switch-wrapper .e-switch-off,
+.e-small.e-switch-wrapper .e-switch-on,
+.e-small.e-switch-wrapper .e-switch-off,
+.e-small .e-css.e-switch-wrapper .e-switch-on,
+.e-small .e-css.e-switch-wrapper .e-switch-off,
+.e-small.e-css.e-switch-wrapper .e-switch-on,
+.e-small.e-css.e-switch-wrapper .e-switch-off {
+  font-size: 12px;
+}
+
+.e-small .e-switch-wrapper .e-switch-on,
+.e-small.e-switch-wrapper .e-switch-on,
+.e-small .e-css.e-switch-wrapper .e-switch-on,
+.e-small.e-css.e-switch-wrapper .e-switch-on {
+  text-indent: -12px;
+}
+
+.e-small .e-switch-wrapper .e-switch-off,
+.e-small.e-switch-wrapper .e-switch-off,
+.e-small .e-css.e-switch-wrapper .e-switch-off,
+.e-small.e-css.e-switch-wrapper .e-switch-off {
+  text-indent: 14px;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-on,
+.e-small.e-switch-wrapper.e-rtl .e-switch-on,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-on,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-on {
+  left: 100%;
+  opacity: 1;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-off,
+.e-small.e-switch-wrapper.e-rtl .e-switch-off,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-off,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-small.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-small.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-small .e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-small.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active {
+  left: 16px;
+}
+
+.e-bigger.e-small .e-switch-wrapper,
+.e-bigger.e-small.e-switch-wrapper,
+.e-bigger.e-small .e-css.e-switch-wrapper,
+.e-bigger.e-small.e-css.e-switch-wrapper {
+  height: 16px;
+  width: 38px;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-switch-handle,
+.e-bigger.e-small.e-switch-wrapper .e-switch-handle,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-handle,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-handle {
+  height: 12px;
+  left: 1px;
+  top: 2px;
+  width: 12px;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-ripple-container,
+.e-bigger.e-small.e-switch-wrapper .e-ripple-container,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-ripple-container,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-ripple-container {
+  border-radius: 50%;
+  height: 36px;
+  left: -10px;
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+  width: 36px;
+  z-index: 1;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger.e-small.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-switch-on,
+.e-bigger.e-small .e-switch-wrapper .e-switch-off,
+.e-bigger.e-small.e-switch-wrapper .e-switch-on,
+.e-bigger.e-small.e-switch-wrapper .e-switch-off,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-on,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-off,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-on,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-off {
+  font-size: 12px;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-switch-on,
+.e-bigger.e-small.e-switch-wrapper .e-switch-on,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-on,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-on {
+  text-indent: -12px;
+}
+
+.e-bigger.e-small .e-switch-wrapper .e-switch-off,
+.e-bigger.e-small.e-switch-wrapper .e-switch-off,
+.e-bigger.e-small .e-css.e-switch-wrapper .e-switch-off,
+.e-bigger.e-small.e-css.e-switch-wrapper .e-switch-off {
+  text-indent: 14px;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-on {
+  left: 100%;
+  opacity: 1;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-bigger.e-small .e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-small.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-small .e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-small.e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active {
+  left: 16px;
+}
+
+.e-bigger .e-switch-wrapper,
+.e-bigger.e-switch-wrapper,
+.e-bigger .e-css.e-switch-wrapper,
+.e-bigger.e-css.e-switch-wrapper {
+  height: 16px;
+  width: 38px;
+}
+
+.e-bigger .e-switch-wrapper .e-switch-handle,
+.e-bigger.e-switch-wrapper .e-switch-handle,
+.e-bigger .e-css.e-switch-wrapper .e-switch-handle,
+.e-bigger.e-css.e-switch-wrapper .e-switch-handle {
+  height: 12px;
+  left: 1px;
+  top: 2px;
+  width: 12px;
+}
+
+.e-bigger .e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger .e-css.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-bigger.e-css.e-switch-wrapper .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-bigger .e-switch-wrapper .e-switch-on,
+.e-bigger .e-switch-wrapper .e-switch-off,
+.e-bigger.e-switch-wrapper .e-switch-on,
+.e-bigger.e-switch-wrapper .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper .e-switch-off {
+  font-size: 12px;
+}
+
+.e-bigger .e-switch-wrapper .e-switch-on,
+.e-bigger.e-switch-wrapper .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper .e-switch-on {
+  text-indent: -12px;
+}
+
+.e-bigger .e-switch-wrapper .e-switch-off,
+.e-bigger.e-switch-wrapper .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper .e-switch-off {
+  text-indent: 14px;
+}
+
+.e-bigger .e-switch-wrapper .e-ripple-container,
+.e-bigger.e-switch-wrapper .e-ripple-container,
+.e-bigger .e-css.e-switch-wrapper .e-ripple-container,
+.e-bigger.e-css.e-switch-wrapper .e-ripple-container {
+  height: 52px;
+  left: -16px;
+  top: -16px;
+  width: 52px;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  height: 12px;
+  left: 100%;
+  margin-left: -14px;
+  top: 2px;
+  width: 12px;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-on {
+  left: 100%;
+  opacity: 1;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-bigger .e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger .e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active {
+  left: 16px;
+}
+
+.e-bigger .e-switch-wrapper.e-small,
+.e-bigger.e-switch-wrapper.e-small,
+.e-bigger .e-css.e-switch-wrapper.e-small,
+.e-bigger.e-css.e-switch-wrapper.e-small {
+  height: 16px;
+  width: 38px;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-switch-handle,
+.e-bigger.e-switch-wrapper.e-small .e-switch-handle,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-handle,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-handle {
+  height: 12px;
+  left: 1px;
+  top: 2px;
+  width: 12px;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-ripple-container,
+.e-bigger.e-switch-wrapper.e-small .e-ripple-container,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-ripple-container,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-ripple-container {
+  border-radius: 50%;
+  height: 36px;
+  left: -10px;
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+  width: 36px;
+  z-index: 1;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-switch-handle.e-switch-active,
+.e-bigger.e-switch-wrapper.e-small .e-switch-handle.e-switch-active,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-handle.e-switch-active,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-handle.e-switch-active {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-switch-on,
+.e-bigger .e-switch-wrapper.e-small .e-switch-off,
+.e-bigger.e-switch-wrapper.e-small .e-switch-on,
+.e-bigger.e-switch-wrapper.e-small .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-off {
+  font-size: 12px;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-switch-on,
+.e-bigger.e-switch-wrapper.e-small .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-on {
+  text-indent: -12px;
+}
+
+.e-bigger .e-switch-wrapper.e-small .e-switch-off,
+.e-bigger.e-switch-wrapper.e-small .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-small .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-small .e-switch-off {
+  text-indent: 14px;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle {
+  left: 100%;
+  margin-left: -14px;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle {
+  height: 12px;
+  width: 12px;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-on,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-on {
+  left: 100%;
+  opacity: 1;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-off,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-off {
+  left: 0;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-on {
+  left: 0;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  left: -100%;
+}
+
+.e-bigger .e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger .e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active,
+.e-bigger.e-css.e-switch-wrapper.e-small.e-rtl .e-switch-handle.e-switch-active {
+  left: 16px;
+}
+
+/*! switch theme */
+.e-switch-wrapper,
+.e-css.e-switch-wrapper {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.e-switch-wrapper .e-switch-off,
+.e-css.e-switch-wrapper .e-switch-off {
+  background-color: transparent;
+  color: #adb5bd;
+}
+
+.e-switch-wrapper .e-switch-handle,
+.e-css.e-switch-wrapper .e-switch-handle {
+  background-color: #adb5bd;
+  box-shadow: none;
+}
+
+.e-switch-wrapper .e-switch-on,
+.e-css.e-switch-wrapper .e-switch-on {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.e-switch-wrapper .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper .e-switch-inner.e-switch-active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.e-switch-wrapper .e-switch-inner,
+.e-css.e-switch-wrapper .e-switch-inner {
+  background-color: #fff;
+}
+
+.e-switch-wrapper .e-ripple-element,
+.e-css.e-switch-wrapper .e-ripple-element {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.e-switch-wrapper .e-ripple-check .e-ripple-element,
+.e-css.e-switch-wrapper .e-ripple-check .e-ripple-element {
+  background-color: rgba(255, 64, 129, 0.12);
+}
+
+.e-switch-wrapper.e-switch-disabled .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-switch-disabled .e-switch-handle.e-switch-active {
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.e-switch-wrapper.e-switch-disabled .e-switch-handle,
+.e-css.e-switch-wrapper.e-switch-disabled .e-switch-handle {
+  background-color: #adb5bd;
+  box-shadow: none;
+}
+
+.e-switch-wrapper.e-switch-disabled .e-switch-inner .e-switch-off,
+.e-css.e-switch-wrapper.e-switch-disabled .e-switch-inner .e-switch-off {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-switch-disabled .e-switch-inner .e-switch-on,
+.e-css.e-switch-wrapper.e-switch-disabled .e-switch-inner .e-switch-on {
+  background-color: #037cff;
+  color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-switch-disabled .e-switch-inner,
+.e-css.e-switch-wrapper.e-switch-disabled .e-switch-inner {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner.e-switch-active {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner,
+.e-css.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner {
+  border-color: #adb5bd;
+  color: #adb5bd;
+}
+
+.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper.e-switch-disabled:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #037cff;
+  color: #adb5bd;
+}
+
+.e-switch-wrapper.e-switch-disabled:hover .e-switch-handle,
+.e-css.e-switch-wrapper.e-switch-disabled:hover .e-switch-handle {
+  background-color: #adb5bd;
+}
+
+.e-switch-wrapper.e-switch-disabled:hover .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-switch-disabled:hover .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper:hover .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper:hover .e-switch-inner.e-switch-active {
+  background-color: #fff;
+  border-color: #007bff;
+}
+
+.e-switch-wrapper:hover .e-switch-inner,
+.e-css.e-switch-wrapper:hover .e-switch-inner {
+  background-color: #fff;
+  border-color: #adb5bd;
+}
+
+.e-switch-wrapper:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.e-switch-wrapper:hover .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper:hover .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper:not(.e-switch-disabled):hover .e-switch-handle:not(.e-switch-active),
+.e-css.e-switch-wrapper:not(.e-switch-disabled):hover .e-switch-handle:not(.e-switch-active) {
+  background-color: #adb5bd;
+}
+
+.e-switch-wrapper.e-focus .e-switch-inner,
+.e-css.e-switch-wrapper.e-focus .e-switch-inner {
+  background-color: #fff;
+  border-color: #017cff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+  outline-offset: initial;
+}
+
+.e-switch-wrapper.e-focus .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-focus .e-switch-inner.e-switch-active {
+  background-color: #adb5bd;
+  border-color: #80bdff;
+  outline: none;
+}
+
+.e-switch-wrapper.e-focus .e-ripple-container,
+.e-css.e-switch-wrapper.e-focus .e-ripple-container {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.e-switch-wrapper.e-focus .e-ripple-check.e-ripple-container,
+.e-css.e-switch-wrapper.e-focus .e-ripple-check.e-ripple-container {
+  background-color: rgba(255, 64, 129, 0.12);
+}
+
+.e-switch-wrapper.e-rtl.e-focus .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl.e-focus .e-switch-on {
+  background-color: #007bff;
+}
+
+.e-switch-wrapper.e-rtl.e-focus .e-switch-off,
+.e-css.e-switch-wrapper.e-rtl.e-focus .e-switch-off {
+  background-color: transparent;
+}
+
+.e-switch-wrapper.e-rtl.e-focus .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl.e-focus .e-switch-inner.e-switch-active {
+  background-color: #adb5bd;
+  border-color: #80bdff;
+  outline: none;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl .e-switch-on {
+  background-color: #007bff;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-handle,
+.e-css.e-switch-wrapper.e-rtl .e-switch-handle {
+  background-color: #adb5bd;
+  box-shadow: none;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off,
+.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active .e-switch-off {
+  background-color: transparent;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.e-switch-wrapper.e-rtl:hover .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl:hover .e-switch-inner.e-switch-active {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.e-switch-wrapper.e-rtl:hover .e-switch-inner,
+.e-css.e-switch-wrapper.e-rtl:hover .e-switch-inner {
+  border-color: #adb5bd;
+}
+
+.e-switch-wrapper.e-rtl:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #007bff;
+}
+
+.e-switch-wrapper.e-rtl:hover .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl:hover .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner .e-switch-on {
+  background-color: #037cff;
+  color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner .e-switch-off,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner .e-switch-off {
+  background-color: #e9ecef;
+  color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-handle,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-handle {
+  background-color: #adb5bd;
+  box-shadow: none;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-handle.e-switch-active {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled .e-switch-inner {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  opacity: 0.5;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active .e-switch-on,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #037cff;
+  color: #adb5bd;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-inner {
+  border-color: #adb5bd;
+  color: #adb5bd;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-handle.e-switch-active,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-handle.e-switch-active {
+  background-color: #fff;
+}
+
+.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-handle,
+.e-css.e-switch-wrapper.e-rtl.e-switch-disabled:hover .e-switch-handle {
+  background-color: #adb5bd;
+}
+
+.e-switch-wrapper .e-switch:focus,
+.e-css.e-switch-wrapper .e-switch:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.e-switch-wrapper.e-small.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active,
+.e-css.e-switch-wrapper.e-small.e-rtl.e-switch-disabled:hover .e-switch-inner.e-switch-active {
+  background-color: transparent;
+}

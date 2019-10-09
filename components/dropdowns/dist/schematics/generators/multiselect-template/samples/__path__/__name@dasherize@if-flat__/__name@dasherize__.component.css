@@ -1,0 +1,211 @@
+.e-bigger #multi-template_popup .e-dropdownbase .e-list-item {
+    line-height: 40px;
+    height: 64px;
+}
+
+.e-bigger #multi-template_popup.e-popup .multiempImage {
+    margin: 10px 16px;
+}
+
+#multi-template_popup .multihead {
+    font-weight: 600;
+    height: 48px;
+    padding: 15px 0 0 20px;
+    color: rgba(0, 0, 0, .54);
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.fabric #multi-template_popup .multihead {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    color: #0078d7;
+    font-weight: 400;
+}
+
+.bootstrap #multi-template_popup .multihead {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    color: #777;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 0 0 24px;
+}
+
+.highcontrast #multi-template_popup .multihead {
+    color: #fff;
+    background-color: #000;
+}
+
+.e-bigger.bootstrap #multi-template_popup .multihead {
+    line-height: 44px;
+    height: 44px;
+    font-size: 13px;
+}
+
+.e-bigger #multi-template_popup .e-dropdownbase .e-list-item {
+    line-height: 40px;
+    height: 80px;
+}
+
+#multi-template_popup .multiename {
+    display: block !important;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+#multi-template_popup .multijob {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 11px;
+}
+
+.e-bigger #multi-template_popup .multijob {
+    margin-top: -16px;
+}
+
+.bootstrap #multi-template_popup .multijob {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.e-bigger.bootstrap #multiTemplate_popup .multijob {
+    margin-top: -16px;
+}
+
+
+#multi-template_popup .multiempImage {
+    margin: 6px 16px;
+    size: 50px;
+    float: left;
+}
+
+#multi-template_popup .e-dropdownbase .e-list-item * {
+    display: block;
+    text-indent: 0;
+}
+.nameTemp {
+    padding: 0 0 0 28px;
+    line-height: 1.2em;
+}
+.valueTemp {
+    border-radius: 50%;
+    float: left;
+    margin-top: -6px;
+    position: relative;
+    left: 0px;
+    height: 26px;
+    width: 26px;
+}
+.material .valueTemp {
+    margin-top: 15px;
+}
+.fabric .valueTemp {
+    margin-top: 20px;
+}
+.e-bigger .valueTemp { 
+    margin-top: 19px;  
+    height: 30px;
+    width: 30px;
+}
+.highcontrast .e-bigger .valueTemp {
+    margin-top: -1px;
+}
+.highcontrast .valueTemp {
+    margin-top: -1px;
+}
+
+.e-bigger.highcontrast .nameTemp {
+    padding: 5px 0 0 28px;
+}
+.highcontrast .nameTemp {
+    padding: 3px 0 0 28px;
+}
+.e-bigger.material .valueTemp {
+    height: 32px;
+    width: 32px;
+    margin-top: 15px;
+}
+.fabric .nameTemp {
+    width: 123px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0 0 36px;
+    position: relative;
+    bottom: 24px;
+    margin-right: -24px;
+}
+
+.e-bigger.material .nameTemp {
+    bottom: 24px;
+}
+
+.material .nameTemp {
+    width: 114px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0 0 36px;
+    position: relative;
+    bottom: 20px;
+    margin-right: -24px;
+}
+.e-bigger.material .nameTemp {
+    bottom: 24px;
+}
+.bootstrap .nameTemp {
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 0 0 29px;
+    bottom: 23px;
+    position: relative;
+    margin-right: -24px;
+}
+
+.bootstrap .valueTemp {
+    height: 31px;
+    width: 30px;
+    left: -10px;
+    margin-top: 17px;
+}
+
+.e-bigger.bootstrap .valueTemp {
+    height: 31px;
+    width: 30px;
+    left: -10px;
+    margin-top: 0px;
+}
+
+.e-bigger.bootstrap .nameTemp {
+    bottom: 24px;
+    padding: 0 0 0 36px;
+}
+
+.control-section .control-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 185px;
+}
+
+.e-bigger .control-section .control-wrapper {
+    width: 100%;
+}
+
+#temp .e-multi-select-wrapper .e-chips {
+    padding: 0 4px 0 0px;
+}
+#temp .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
+    padding: 0 0 0 0px;
+    width: 75%;
+} 
+
+.bootstrap.e-bigger #temp .e-multi-select-wrapper .e-chips > .e-chipcontent {
+    height: 46px;
+}
+
+.bootstrap.e-bigger #temp .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .valueTemp{
+    left: 0px;
+}

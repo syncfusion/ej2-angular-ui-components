@@ -1,0 +1,12 @@
+.control_wrapper {
+    max-width: 500px;
+    min-height: 50px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+#loading {
+    display: inline-block;
+    margin: 10px 41%;
+    font-size: 20px;
+}

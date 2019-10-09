@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "schedule-agenda-views": {
+      "description": "Creates an Angular Scheduler component with agenda and month-agenda views.",
+      "factory": "./generators/schedule-agenda-views",
+      "schema": "./generators/schedule-agenda-views/schema.json"
+    },
+    "schedule-calendar-views": {
+      "description": "Creates an Angular Scheduler component with calendar views.",
+      "factory": "./generators/schedule-calendar-views",
+      "schema": "./generators/schedule-calendar-views/schema.json"
+    },
+    "schedule-horizontal-grouping": {
+      "description": "Creates an Angular Scheduler component with horizontal grouping of resources.",
+      "factory": "./generators/schedule-horizontal-grouping",
+      "schema": "./generators/schedule-horizontal-grouping/schema.json"
+    },
+    "schedule-time-scale": {
+      "description": "Creates an Angular Scheduler component with modified timescale options.",
+      "factory": "./generators/schedule-time-scale",
+      "schema": "./generators/schedule-time-scale/schema.json"
+    },
+    "schedule-timeline-grouping": {
+      "description": "Creates an Angular Scheduler component with grouping of resources in timeline views.",
+      "factory": "./generators/schedule-timeline-grouping",
+      "schema": "./generators/schedule-timeline-grouping/schema.json"
+    },
+    "schedule-timeline-views": {
+      "description": "Creates an Angular Scheduler component with timeline views",
+      "factory": "./generators/schedule-timeline-views",
+      "schema": "./generators/schedule-timeline-views/schema.json"
+    }
+  }
+}

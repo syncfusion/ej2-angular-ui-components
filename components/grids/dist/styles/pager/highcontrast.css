@@ -1,0 +1,752 @@
+/*! component icons */
+.e-pager .e-icon-last::before,
+.e-grid-menu .e-icon-last::before {
+  content: '\e938';
+}
+
+.e-pager .e-icon-first::before,
+.e-grid-menu .e-icon-first::before {
+  content: '\e999';
+}
+
+.e-pager .e-icon-prev::before,
+.e-grid-menu .e-icon-prev::before {
+  content: '\e829';
+}
+
+.e-pager .e-icon-next::before,
+.e-grid-menu .e-icon-next::before {
+  content: '\e830';
+}
+
+.e-pager.e-rtl .e-icon-last.e-lastpage::before,
+.e-pager.e-rtl .e-icon-last.e-lastpage:hover,
+.e-pager.e-rtl .e-icon-last.e-lastpagedisabled::before,
+.e-grid-menu.e-rtl .e-icon-last.e-lastpage::before,
+.e-grid-menu.e-rtl .e-icon-last.e-lastpage:hover,
+.e-grid-menu.e-rtl .e-icon-last.e-lastpagedisabled::before {
+  content: '\e999';
+}
+
+.e-pager.e-rtl .e-icon-first.e-firstpage::before,
+.e-pager.e-rtl .e-icon-first.e-firstpage:hover,
+.e-pager.e-rtl .e-icon-first.e-firstpagedisabled::before,
+.e-grid-menu.e-rtl .e-icon-first.e-firstpage::before,
+.e-grid-menu.e-rtl .e-icon-first.e-firstpage:hover,
+.e-grid-menu.e-rtl .e-icon-first.e-firstpagedisabled::before {
+  content: '\e938';
+}
+
+.e-pager.e-rtl .e-icon-prev.e-prevpage::before,
+.e-pager.e-rtl .e-icon-prev.e-prevpage:hover,
+.e-pager.e-rtl .e-icon-prev.e-prevpagedisabled::before,
+.e-grid-menu.e-rtl .e-icon-prev.e-prevpage::before,
+.e-grid-menu.e-rtl .e-icon-prev.e-prevpage:hover,
+.e-grid-menu.e-rtl .e-icon-prev.e-prevpagedisabled::before {
+  content: '\e830';
+}
+
+.e-pager.e-rtl .e-icon-next.e-nextpage::before,
+.e-pager.e-rtl .e-icon-next.e-nextpage:hover,
+.e-pager.e-rtl .e-icon-next.e-nextpagedisabled::before,
+.e-grid-menu.e-rtl .e-icon-next.e-nextpage::before,
+.e-grid-menu.e-rtl .e-icon-next.e-nextpage:hover,
+.e-grid-menu.e-rtl .e-icon-next.e-nextpagedisabled::before {
+  content: '\e829';
+}
+
+/*! Pager layout */
+.e-bigger .e-pager,
+.e-pager.e-bigger {
+  font-size: 14px;
+  padding: 14px 0 10px;
+}
+
+.e-bigger .e-pager div.e-icons,
+.e-pager.e-bigger div.e-icons {
+  font-size: 13px;
+  vertical-align: "";
+}
+
+.e-bigger .e-pager div.e-parentmsgbar,
+.e-pager.e-bigger div.e-parentmsgbar {
+  padding-bottom: 8px;
+  padding-right: 13px;
+  padding-top: 9px;
+}
+
+.e-bigger .e-pager .e-pagerdropdown,
+.e-pager.e-bigger .e-pagerdropdown {
+  height: 40px;
+  margin: -44px 0 0 15px;
+  margin-top: -20px;
+}
+
+.e-bigger .e-pager .e-pagerconstant,
+.e-pager.e-bigger .e-pagerconstant {
+  margin-bottom: 17px;
+  margin-left: 10px;
+}
+
+.e-bigger .e-pager .e-pagercontainer,
+.e-pager.e-bigger .e-pagercontainer {
+  margin: 5px 8px 5px 13px;
+}
+
+.e-bigger .e-pager.e-rtl .e-pagercontainer,
+.e-pager.e-bigger.e-rtl .e-pagercontainer {
+  margin: 0 0 -4px 0;
+  margin-top: 5px;
+}
+
+@media (max-width: 769px) {
+  .e-bigger .e-pager,
+  .e-pager.e-bigger {
+    padding: 19px 0;
+  }
+  .e-bigger .e-pager.e-rtl div.e-parentmsgbar,
+  .e-pager.e-bigger.e-rtl div.e-parentmsgbar {
+    margin-right: 0;
+  }
+  .e-bigger .e-pager div.e-parentmsgbar,
+  .e-pager.e-bigger div.e-parentmsgbar {
+    padding: 0;
+  }
+}
+
+.e-bigger .e-pager .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable,
+.e-bigger .e-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.e-bigger .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable,
+.e-pager.e-bigger .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default {
+  margin-left: 0;
+}
+
+.e-bigger .e-pager.e-rtl .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable,
+.e-bigger .e-pager.e-rtl e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.e-bigger.e-rtl .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable,
+.e-pager.e-bigger.e-rtl e-next.e-icons.e-icon-next.e-nextpage.e-pager-default {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.e-bigger .e-pager.e-rtl div.e-parentmsgbar,
+.e-pager.e-bigger.e-rtl div.e-parentmsgbar {
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.e-bigger .e-pager .e-numericitem,
+.e-pager.e-bigger .e-numericitem {
+  margin: 0;
+}
+
+.e-bigger .e-pager .e-pp.e-spacing,
+.e-bigger .e-pager .e-np.e-spacing,
+.e-bigger .e-pager .e-pp.e-spacing:hover,
+.e-bigger .e-pager .e-np.e-spacing:hover,
+.e-pager.e-bigger .e-pp.e-spacing,
+.e-pager.e-bigger .e-np.e-spacing,
+.e-pager.e-bigger .e-pp.e-spacing:hover,
+.e-pager.e-bigger .e-np.e-spacing:hover {
+  padding: 2px 10px 11px;
+}
+
+.e-bigger .e-pager .e-spacing,
+.e-bigger .e-pager .e-numericitem:hover,
+.e-bigger .e-pager .e-currentitem,
+.e-pager.e-bigger .e-spacing,
+.e-pager.e-bigger .e-numericitem:hover,
+.e-pager.e-bigger .e-currentitem {
+  border-radius: 0;
+  padding: 8px 11px;
+}
+
+.e-bigger .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active),
+.e-pager.e-bigger .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
+  padding: 6px 9px;
+}
+
+.e-bigger .e-pager.e-rtl .e-spacing,
+.e-bigger .e-pager.e-rtl .e-numericitem:hover,
+.e-bigger .e-pager.e-rtl .e-currentitem,
+.e-pager.e-bigger.e-rtl .e-spacing,
+.e-pager.e-bigger.e-rtl .e-numericitem:hover,
+.e-pager.e-bigger.e-rtl .e-currentitem {
+  margin: 0;
+  padding: 10px 14px;
+}
+
+.e-bigger .e-pager.e-rtl .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active),
+.e-pager.e-bigger.e-rtl .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
+  padding: 8px 12px;
+}
+
+.e-bigger .e-pager.e-rtl .e-pp,
+.e-bigger .e-pager.e-rtl .e-np,
+.e-bigger .e-pager.e-rtl .e-pp:hover,
+.e-bigger .e-pager.e-rtl .e-np:hover,
+.e-pager.e-bigger.e-rtl .e-pp,
+.e-pager.e-bigger.e-rtl .e-np,
+.e-pager.e-bigger.e-rtl .e-pp:hover,
+.e-pager.e-bigger.e-rtl .e-np:hover {
+  margin-top: -10px;
+}
+
+.e-bigger .e-pager.e-rtl .e-pagerdropdown,
+.e-pager.e-bigger.e-rtl .e-pagerdropdown {
+  margin: -22px 25px 0 0;
+}
+
+.e-bigger .e-pager.e-rtl .e-pagerconstant,
+.e-pager.e-bigger.e-rtl .e-pagerconstant {
+  margin: 5px 10px 8px 0;
+}
+
+.e-bigger .e-pager .e-pagercontainer .e-firstpage,
+.e-bigger .e-pager .e-pagercontainer .e-prevpage,
+.e-bigger .e-pager .e-pagercontainer .e-firstpagedisabled,
+.e-bigger .e-pager .e-pagercontainer .e-prevpagedisabled,
+.e-bigger .e-pager .e-pagercontainer .e-nextpage,
+.e-bigger .e-pager .e-pagercontainer .e-lastpage,
+.e-bigger .e-pager .e-pagercontainer .e-nextpagedisabled,
+.e-bigger .e-pager .e-pagercontainer .e-lastpagedisabled,
+.e-pager.e-bigger .e-pagercontainer .e-firstpage,
+.e-pager.e-bigger .e-pagercontainer .e-prevpage,
+.e-pager.e-bigger .e-pagercontainer .e-firstpagedisabled,
+.e-pager.e-bigger .e-pagercontainer .e-prevpagedisabled,
+.e-pager.e-bigger .e-pagercontainer .e-nextpage,
+.e-pager.e-bigger .e-pagercontainer .e-lastpage,
+.e-pager.e-bigger .e-pagercontainer .e-nextpagedisabled,
+.e-pager.e-bigger .e-pagercontainer .e-lastpagedisabled {
+  margin-right: 0;
+  padding: 10px;
+}
+
+.e-pager {
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  font-size: 13px;
+  padding: 13px 0 12px;
+  white-space: normal;
+  width: 100%;
+}
+
+.e-pager [class^='e-'] {
+  box-sizing: border-box;
+}
+
+.e-pager div.e-parentmsgbar {
+  float: right;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  padding-top: 9px;
+}
+
+.e-pager .e-pagesizes {
+  display: inline;
+}
+
+.e-pager .e-pagerdropdown {
+  display: inline-block;
+  height: 32px;
+  margin-left: 19px;
+  margin-right: 0;
+  margin-top: -20px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 90px;
+}
+
+.e-pager .e-pagerconstant {
+  display: inline-block;
+  margin: 0 0 4px 8px;
+  overflow: hidden;
+  width: auto;
+}
+
+.e-pager .e-icons {
+  font-size: 12px;
+}
+
+.e-pager .e-numericitem {
+  border-right-style: solid;
+  border-right-width: 0;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 0;
+  min-width: 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.e-pager div.e-pagermsgdiv {
+  padding-right: 6px;
+  padding-top: 4px;
+  text-align: right;
+}
+
+.e-pager .e-firstpagedisabled,
+.e-pager .e-prevpagedisabled,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled {
+  opacity: .3;
+}
+
+.e-pager .e-spacing,
+.e-pager .e-numericitem:hover,
+.e-pager .e-currentitem {
+  border-radius: 0;
+  cursor: pointer;
+  padding: 9px 3px 8px 2px;
+  text-decoration: none;
+}
+
+.e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
+  padding: 7px 1px 6px 0;
+}
+
+.e-pager .e-currentitem {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.e-pager div,
+.e-pager a {
+  display: inline;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-pager .e-icons::before {
+  display: inline-block;
+}
+
+.e-pager .e-pagercontainer .e-firstpage,
+.e-pager .e-pagercontainer .e-prevpage,
+.e-pager .e-pagercontainer .e-firstpagedisabled,
+.e-pager .e-pagercontainer .e-prevpagedisabled,
+.e-pager .e-pagercontainer .e-nextpage,
+.e-pager .e-pagercontainer .e-lastpage,
+.e-pager .e-pagercontainer .e-nextpagedisabled,
+.e-pager .e-pagercontainer .e-lastpagedisabled {
+  border-right-style: solid;
+  border-right-width: 0;
+  display: inline-block;
+  margin-right: 0;
+  margin-top: 0;
+  min-width: 26px;
+  padding: 12px 10px 8px;
+}
+
+.e-pager .e-pagercontainer .e-lastpage,
+.e-pager .e-pagercontainer .e-lastpagedisabled {
+  border-right: 0;
+}
+
+.e-pager .e-firstpage:hover,
+.e-pager .e-prevpage:hover,
+.e-pager .e-lastpage:hover,
+.e-pager .e-nextpage:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.e-pager a.e-nextprevitemdisabled {
+  display: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.e-pager .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable,
+.e-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default {
+  margin-left: 0;
+}
+
+.e-pager .e-pagercontainer {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0;
+  display: inline-block;
+  margin: 0 6px -3px;
+  overflow: hidden;
+}
+
+.e-pager .e-lastpage:Hover {
+  border-radius: 0;
+}
+
+.e-pager .e-firstpage:Hover {
+  border-radius: 0;
+}
+
+.e-pager .e-pagermessage,
+.e-pager .e-pagerexternalmsg {
+  display: block;
+  margin: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.e-pager .e-mfirst,
+.e-pager .e-mprev,
+.e-pager .e-mnext,
+.e-pager .e-mlast {
+  display: none;
+}
+
+.e-pager .e-mprev {
+  text-indent: -3px;
+}
+
+.e-pager .e-mnext {
+  text-indent: -2px;
+}
+
+.e-pager .e-mfirst,
+.e-pager .e-mprev,
+.e-pager .e-mnext,
+.e-pager .e-mlast {
+  -webkit-tap-highlight-color: #000;
+}
+
+.e-pager .e-pp,
+.e-pager .e-np,
+.e-pager .e-pp:hover,
+.e-pager .e-np:hover {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0;
+  padding: 0 6px 10px;
+}
+
+@media (max-width: 769px) {
+  .e-pager {
+    padding: 13px 0;
+  }
+  .e-pager div.e-parentmsgbar {
+    box-sizing: border-box;
+    display: inline-block;
+    float: initial;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+    vertical-align: top;
+    width: calc(60% - 48px);
+  }
+  .e-pager .e-pagesizes {
+    display: none;
+  }
+  .e-pager .e-pagecountmsg {
+    display: none;
+  }
+  .e-pager .e-pagercontainer {
+    display: none;
+  }
+  .e-pager .e-icons {
+    font-size: 11px;
+  }
+  .e-pager .e-mfirst,
+  .e-pager .e-mprev,
+  .e-pager .e-mnext,
+  .e-pager .e-mlast {
+    border: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1% 5%;
+  }
+  .e-pager .e-mfirst {
+    margin-right: 4px;
+    text-align: right;
+    width: calc(10% + 11px);
+  }
+  .e-pager .e-mprev {
+    margin: 0 4px;
+    text-align: right;
+    width: 10%;
+  }
+  .e-pager .e-mnext {
+    margin: 0 4px;
+    text-align: left;
+    width: 10%;
+  }
+  .e-pager .e-mlast {
+    margin-left: 4px;
+    text-align: left;
+    width: calc(10% + 11px);
+  }
+}
+
+.e-pager.e-rtl {
+  direction: rtl;
+}
+
+.e-pager.e-rtl .e-pagercontainer,
+.e-pager.e-rtl div,
+.e-pager.e-rtl a {
+  float: initial;
+}
+
+.e-pager.e-rtl .e-parentmsgbar {
+  float: left;
+  margin-left: 8px;
+}
+
+.e-pager.e-rtl .e-pagerdropdown {
+  margin: -20px 25px 0 0;
+}
+
+.e-pager.e-rtl .e-pagerconstant {
+  margin: 8px;
+}
+
+.e-pager.e-rtl .e-pagerexternalmsg {
+  float: none;
+}
+
+.e-pager.e-rtl .e-pagercontainer {
+  float: none;
+  margin: 0 6px -4px 0;
+  padding: 0;
+}
+
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-firstpagedisabled,
+.e-pager.e-rtl .e-prevpagedisabled,
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-lastpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-lastpagedisabled {
+  padding: 11px 9px 8px 2px;
+}
+
+.e-pager.e-rtl .e-firstpage::before,
+.e-pager.e-rtl .e-firstpage:hover,
+.e-pager.e-rtl .e-firstpagedisabled::before {
+  content: '\e701';
+}
+
+.e-pager.e-rtl .e-prevpage::before,
+.e-pager.e-rtl .e-prevpage:hover,
+.e-pager.e-rtl .e-prevpagedisabled::before {
+  content: '\e848';
+}
+
+.e-pager.e-rtl .e-nextpage::before,
+.e-pager.e-rtl .e-nextpage:hover,
+.e-pager.e-rtl .e-nextpagedisabled::before {
+  content: '\e84b';
+}
+
+.e-pager.e-rtl .e-lastpage::before,
+.e-pager.e-rtl .e-lastpage:hover,
+.e-pager.e-rtl .e-lastpagedisabled::before {
+  content: '\e716';
+}
+
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-prevpagedisabled,
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-firstpagedisabled {
+  border-left-style: solid;
+  border-left-width: 0;
+}
+
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-prevpagedisabled {
+  border-right-style: none;
+  border-right-width: 0;
+}
+
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-firstpagedisabled {
+  border-right: medium none;
+}
+
+.e-pager.e-rtl .e-firstpage:hover {
+  border-radius: 0 4px 4px 0;
+}
+
+.e-pager.e-rtl .e-lastpage:hover {
+  border-radius: 4px 0 0 4px;
+}
+
+.e-pager.e-rtl .e-numericcontainer {
+  float: none;
+}
+
+.e-pager.e-rtl .e-numericitem {
+  border-left-style: solid;
+  border-left-width: 0;
+  border-right-style: none;
+  border-right-width: 0;
+  min-width: 26px;
+}
+
+.e-pager.e-rtl .e-next.e-icons.e-icon-next.e-nextpagedisabled.e-disable, .e-pager.e-rtl.e-next.e-icons.e-icon-next.e-nextpage.e-pager-default {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.e-pager.e-rtl .e-spacing,
+.e-pager.e-rtl .e-numericitem:hover,
+.e-pager.e-rtl .e-currentitem {
+  margin: 0;
+  padding: 9px 3px 8px 2px;
+}
+
+.e-pager.e-rtl .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
+  padding: 7px 1px 6px 0;
+}
+
+.e-pager.e-rtl .e-pp,
+.e-pager.e-rtl .e-np,
+.e-pager.e-rtl .e-pp:hover,
+.e-pager.e-rtl .e-np:hover {
+  margin-top: 2px;
+  padding: 0 11px 9px;
+}
+
+@media (max-width: 769px) {
+  .e-pager.e-rtl .e-mfirst,
+  .e-pager.e-rtl .e-mprev,
+  .e-pager.e-rtl .e-mnext,
+  .e-pager.e-rtl .e-mlast {
+    border: 0;
+  }
+  .e-pager.e-rtl.e-rtl div.e-parentmsgbar {
+    float: initial;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+  .e-pager.e-rtl .e-parentmsgbar {
+    float: right;
+  }
+}
+
+/*! Pager theme */
+.e-pager {
+  background-color: #000;
+  border-color: #969696;
+  color: #fff;
+  opacity: 1;
+}
+
+.e-pager div.e-icons {
+  color: #fff;
+}
+
+.e-pager .e-pager-default:hover {
+  background: "";
+  color: #fff;
+  opacity: 1;
+}
+
+.e-pager .e-parentmsgbar {
+  font-weight: normal;
+}
+
+.e-pager .e-spacing {
+  color: #fff;
+  opacity: 1;
+}
+
+.e-pager .e-numericitem:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
+  border: 2px solid #fff;
+}
+
+.e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background-color: #685708;
+  opacity: 1;
+}
+
+.e-pager .e-numericitem {
+  background: #000;
+  border-right-color: #969696;
+  color: #fff;
+}
+
+.e-pager .e-prevpagedisabled,
+.e-pager .e-prevpage,
+.e-pager .e-nextpage,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled,
+.e-pager .e-lastpage,
+.e-pager .e-firstpage,
+.e-pager .e-firstpagedisabled {
+  background-color: #000;
+  color: #fff;
+}
+
+.e-pager .e-lastpage,
+.e-pager .e-firstpage {
+  background-color: transparent;
+}
+
+.e-pager .e-pagercontainer {
+  background-color: #000;
+  border-color: #969696;
+}
+
+.e-pager .e-firstpage,
+.e-pager .e-prevpage,
+.e-pager .e-firstpagedisabled,
+.e-pager .e-prevpagedisabled,
+.e-pager .e-nextpage,
+.e-pager .e-lastpage,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled {
+  border-right-color: #969696;
+}
+
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+  background: #ffd939;
+  color: #000;
+  opacity: 1;
+}
+
+@media (max-width: 590px) {
+  .e-pager .e-pager-default:hover {
+    background: #000;
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.e-pager.e-rtl .e-numericitem {
+  border-left-color: #969696;
+}
+
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-firstpagedisabled,
+.e-pager.e-rtl .e-prevpagedisabled,
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-lastpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-lastpagedisabled {
+  border-left-color: #969696;
+}
+
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-nextpagedisabled {
+  border-left-color: #969696;
+}

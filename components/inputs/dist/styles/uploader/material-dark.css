@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons::before {
+  content: '\e945';
+}
+
+.e-upload .e-upload-files .e-icons.e-file-pause-btn::before {
+  content: '\e326';
+}
+
+.e-upload .e-upload-files .e-icons.e-file-reload-btn::before {
+  content: '\e99d';
+}
+
+.e-upload .e-upload-files .e-icons.e-file-play-btn::before {
+  content: '\e324';
+}
+
+.e-upload .e-upload-files .e-file-delete-btn.e-icons::before {
+  content: '\e94a';
+}
+
+.e-upload .e-upload-files .e-file-abort-btn.e-icons::before {
+  content: '\e974';
+}
+
+.e-upload .e-upload-files .e-icons.e-msie::before {
+  position: relative;
+  right: 10px;
+}
+
+.e-upload .e-upload-files .e-icons.e-file-abort-icon.e-msie::before {
+  right: 12px;
+}
+
+.e-bigger .e-upload {
+  width: 100%;
+}
+
+.e-bigger .e-upload .e-file-select-wrap {
+  padding: 20px 0 20px 16px;
+}
+
+.e-bigger .e-upload .e-file-select-wrap .e-file-drop {
+  font-size: 15px;
+  margin-left: 16px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list {
+  font-size: 15px;
+  line-height: normal;
+  min-height: 100px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container {
+  margin-left: 16px;
+  top: 0;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
+  font-size: 15px;
+  padding-top: 16px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-size {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
+  font-size: 15px;
+  padding-top: 16px;
+  top: initial;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
+  font-size: 12px;
+  padding-bottom: 16px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap {
+  height: 10px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-inner-wrap {
+  height: 3px;
+  width: 98%;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-inner-wrap .e-upload-progress-bar {
+  height: 3px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
+  font-size: 11px;
+  right: 10px;
+  top: -33px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-abort-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-reload-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-play-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-pause-btn.e-icons {
+  font-size: 12px;
+  height: 18px;
+  margin: 16px;
+  margin-top: -24px;
+  padding: 20px;
+  top: 50%;
+  width: 18px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-msie.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-msie.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-abort-btn.e-msie.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-reload-btn.e-msie.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-play-btn.e-msie.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-pause-btn.e-msie.e-icons {
+  padding: 20px 17px 20px 26px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-file-play-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-reload-btn.e-icons,
+.e-bigger .e-upload .e-upload-files .e-file-pause-btn.e-icons {
+  right: 45px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-icons {
+  font-size: 13px;
+}
+
+.e-bigger .e-upload .e-upload-files .e-file-abort-btn.e-icons {
+  font-size: 18px;
+}
+
+.e-bigger .e-upload .e-upload-actions .e-btn {
+  margin-left: 16px;
+}
+
+.e-bigger .e-upload .e-upload-actions .e-file-upload-btn {
+  margin: 15px;
+}
+
+.e-bigger .e-upload .e-upload-actions .e-file-clear-btn {
+  margin: 15px;
+}
+
+.e-bigger .e-upload.e-rtl .e-file-select-wrap {
+  padding: 20px 16px 20px 0;
+}
+
+.e-bigger .e-upload.e-rtl .e-file-select-wrap .e-control.e-btn {
+  margin-right: 0;
+}
+
+.e-bigger .e-upload.e-rtl .e-file-select-wrap .e-file-drop {
+  margin-right: 16px;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container {
+  margin-left: 60px;
+  margin-right: 16px;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
+  top: 54px;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
+  left: 10px;
+  right: initial;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-remove-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-delete-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-abort-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-play-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-pause-btn.e-icons {
+  left: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px;
+  top: 50%;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-remove-btn.e-msie.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-delete-btn.e-msie.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-abort-btn.e-msie.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-msie.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-play-btn.e-msie.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-pause-btn.e-msie.e-icons {
+  padding: 20px 17px 20px 26px;
+}
+
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-play-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-icons,
+.e-bigger .e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-pause-btn.e-icons {
+  left: 41px;
+}
+
+.e-upload {
+  width: 100%;
+}
+
+.e-upload.e-control-wrapper {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+}
+
+.e-upload .e-file-select-wrap {
+  padding: 16px 0 16px 12px;
+}
+
+.e-upload .e-file-select-wrap .e-file-select,
+.e-upload .e-file-select-wrap .e-file-select .e-uploader {
+  display: inline-block;
+  width: 0;
+}
+
+.e-upload .e-file-select-wrap .e-file-select .e-uploader {
+  opacity: 0;
+}
+
+.e-upload .e-file-select-wrap .e-file-drop {
+  font-family: inherit;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.e-upload .e-upload-files {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.e-upload .e-upload-files .e-icons:focus {
+  outline: none;
+}
+
+.e-upload .e-upload-files .e-upload-file-list {
+  font-family: inherit;
+  font-size: 14px;
+  height: 100%;
+  line-height: normal;
+  min-height: 90px;
+  position: relative;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container {
+  display: block;
+  height: 100%;
+  margin-left: 12px;
+  margin-right: 90px;
+  min-height: 35px;
+  position: relative;
+  top: 3px;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  max-width: 75%;
+  overflow: hidden;
+  padding-top: 12px;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 0;
+  white-space: nowrap;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name::before {
+  content: attr(data-tail);
+  float: right;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding-top: 12px;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-size {
+  display: block;
+  font-size: 11px;
+  padding: 8px 0;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
+  display: block;
+  font-family: inherit;
+  font-size: 11px;
+  padding-bottom: 12px;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status.e-upload-progress {
+  display: none;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap {
+  display: block;
+  height: 8px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  position: absolute;
+  width: 98%;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-inner-wrap {
+  border-radius: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-inner-wrap .e-upload-progress-bar {
+  border-radius: 0;
+  display: inherit;
+  height: 2px;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
+  float: right;
+  font-family: inherit;
+  font-size: 11px;
+  position: relative;
+  right: 6px;
+  top: -27px;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons,
+.e-upload .e-upload-files .e-file-play-btn.e-icons,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons {
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 11px;
+  height: 18px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 12px;
+  margin-top: -18px;
+  padding: 18px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  vertical-align: middle;
+  width: 18px;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons.e-upload-progress,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons.e-upload-progress,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons.e-upload-progress,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons.e-upload-progress,
+.e-upload .e-upload-files .e-file-play-btn.e-icons.e-upload-progress,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons.e-upload-progress {
+  cursor: default;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-msie.e-icons,
+.e-upload .e-upload-files .e-file-delete-btn.e-msie.e-icons,
+.e-upload .e-upload-files .e-file-abort-btn.e-msie.e-icons,
+.e-upload .e-upload-files .e-file-pause-btn.e-msie.e-icons,
+.e-upload .e-upload-files .e-file-play-btn.e-msie.e-icons,
+.e-upload .e-upload-files .e-file-reload-btn.e-msie.e-icons {
+  padding: 18px 13px 18px 23px;
+}
+
+.e-upload .e-upload-files .e-file-pause-btn.e-icons,
+.e-upload .e-upload-files .e-file-play-btn.e-icons,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons {
+  right: 36px;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons:not(.e-upload-progress):hover,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons:not(.e-upload-progress):hover,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons:not(.e-upload-progress):hover,
+.e-upload .e-upload-files .e-file-play-btn.e-icons:not(.e-upload-progress):hover,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons:not(.e-disabled):hover,
+.e-upload .e-upload-files .e-clear-icon-focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 transparent;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-play-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons:focus,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons:not(.e-disabled):focus,
+.e-upload .e-upload-files .e-clear-icon-focus {
+  border-radius: 50%;
+}
+
+.e-upload .e-upload-files .e-file-delete-btn.e-icons {
+  font-size: 11px;
+  opacity: 1;
+}
+
+.e-upload .e-upload-files .e-file-abort-btn.e-icons {
+  font-size: 15px;
+  opacity: 1;
+}
+
+.e-upload .e-file-select-wrap .e-btn,
+.e-upload .e-upload-actions .e-btn {
+  font-family: inherit;
+}
+
+.e-upload .e-upload-actions {
+  position: relative;
+  text-align: right;
+}
+
+.e-upload .e-upload-actions .e-file-upload-btn {
+  margin: 12px;
+}
+
+.e-upload .e-upload-actions .e-file-clear-btn {
+  margin: 12px;
+}
+
+.e-upload.e-rtl .e-file-select-wrap {
+  padding: 16px 12px 16px 0;
+}
+
+.e-upload.e-rtl .e-file-select-wrap .e-control.e-btn {
+  margin-right: 10;
+}
+
+.e-upload.e-rtl .e-file-select-wrap .e-file-drop {
+  margin-left: 60px;
+  margin-right: 12px;
+  position: relative;
+}
+
+.e-upload.e-rtl .e-upload-actions {
+  text-align: left;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container {
+  height: 100%;
+  margin-left: 60px;
+  margin-right: 12px;
+  position: relative;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-rtl-container {
+  direction: ltr;
+  float: right;
+  width: 100%;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
+  float: right;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
+  float: right;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-file-size {
+  direction: ltr;
+  float: right;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap {
+  float: right;
+  position: initial;
+  top: 46px;
+  width: 89%;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-container .e-upload-progress-wrap .e-progress-bar-text {
+  float: left;
+  right: -8px;
+  top: -25px;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-remove-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-delete-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-abort-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-pause-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-play-btn.e-icons {
+  left: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+  right: auto;
+  top: 50%;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-icons {
+  left: 36px;
+  right: auto;
+}
+
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-play-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-reload-btn.e-icons,
+.e-upload.e-rtl .e-upload-files .e-upload-file-list .e-file-pause-btn.e-icons {
+  left: 36px;
+}
+
+.e-upload.e-disabled .e-file-drop {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-name,
+.e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-type,
+.e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-size,
+.e-upload.e-disabled .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.e-upload .e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 65px;
+  min-height: 65px;
+}
+
+.e-upload .e-bigger .e-content-placeholder.e-upload.e-placeholder-upload,
+.e-upload .e-bigger.e-content-placeholder.e-upload.e-placeholder-upload {
+  background-size: 400px 80px;
+  min-height: 80px;
+}
+
+.e-upload {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.e-upload .e-file-drop {
+  color: #fff;
+}
+
+.e-upload .e-upload-files {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.e-upload .e-upload-files .e-upload-file-list {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-name {
+  color: #fff;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-type {
+  color: #fff;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-size {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status {
+  color: #fff;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status.e-upload-success {
+  color: #22b24b;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status.e-upload-fails {
+  color: #ff6652;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status.e-validation-fails {
+  color: #ff6652;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap {
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap .e-upload-progress-bar.e-upload-progress {
+  background: #00b0ff;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap .e-upload-progress-bar.e-upload-success {
+  background: #22b24b;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap .e-upload-progress-bar.e-upload-failed {
+  background: #ff6652;
+}
+
+.e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-bar-text {
+  color: #fff;
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons,
+.e-upload .e-upload-files .e-file-play-btn.e-icons {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons:hover,
+.e-upload .e-upload-files .e-file-play-btn.e-icons:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.e-upload .e-upload-files .e-file-remove-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-delete-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-pause-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-play-btn.e-icons:not(.e-upload-progress):focus,
+.e-upload .e-upload-files .e-file-reload-btn.e-icons:focus,
+.e-upload .e-upload-files .e-file-abort-btn.e-icons:not(.e-disabled):focus,
+.e-upload .e-upload-files .e-clear-icon-focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+.e-upload-drag-hover {
+  outline: 2px dashed #9e9e9e;
+}

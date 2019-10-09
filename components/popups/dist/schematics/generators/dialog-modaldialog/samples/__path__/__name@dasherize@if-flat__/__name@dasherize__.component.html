@@ -1,0 +1,9 @@
+<div class="control-section">
+    <div id="modalTarget" #targetModal class="col-md-8 control-section">
+        <!-- Render Button to open the modal Dialog -->
+        <button  id='modalbtn' #modalButton (click)="modalBtnClick()">Open</button>
+        <!-- Render modal Dialog -->
+        <ejs-dialog id="modalDialog" #modalDialog (overlayClick)="overlayClick()" [isModal]='isModal' [header]='header' [target]='target' [width]='width' [buttons]='buttons' [animationSettings]='animationSettings' [content]='content' (open)="modalDlgOpen()" (close)="modalDlgClose()" >
+        </ejs-dialog>
+    </div>
+</div>

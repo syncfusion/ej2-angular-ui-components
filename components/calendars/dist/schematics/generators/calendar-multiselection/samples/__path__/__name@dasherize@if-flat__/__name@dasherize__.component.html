@@ -1,0 +1,14 @@
+<div class="control-section">
+    <div id="control_wrapper" class="col-lg-6 col-sm-8 col-md-8 multiselectWrapper">
+        <div id="container" style="overflow:auto">
+            <ejs-calendar #calendar [isMultiSelection]="multiSelection" [values]="dates" (change)="onValueChange()" (created)="onValueChange()"></ejs-calendar>
+        </div>
+    </div>
+    <div class="valuesWrapper col-lg-6 col-sm-8 col-md-8">
+        <h5>Selected values</h5>
+        <div class="contentValue">
+            <div id="multiSelect">
+            </div>
+        </div>
+    </div>
+</div>

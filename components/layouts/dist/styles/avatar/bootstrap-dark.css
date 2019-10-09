@@ -1,0 +1,48 @@
+.e-avatar {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #bcbcbc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: #fff;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 1em;
+  font-weight: 400;
+  height: 3em;
+  -ms-flex-pack: center;
+      justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 3em;
+}
+
+.e-avatar img {
+  height: 100%;
+  width: auto;
+}
+
+.e-avatar.e-avatar-circle {
+  border-radius: 50%;
+}
+
+.e-avatar.e-avatar-xsmall {
+  font-size: 0.6em;
+}
+
+.e-avatar.e-avatar-small {
+  font-size: 0.8em;
+}
+
+.e-avatar.e-avatar-large {
+  font-size: 1.2em;
+}
+
+.e-avatar.e-avatar-xlarge {
+  font-size: 1.4em;
+}

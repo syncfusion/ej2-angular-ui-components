@@ -1,0 +1,37 @@
+<div class="col-lg-8  control-section inline">
+  <!-- ListView element -->
+  <ejs-listview id='ui-list' #listviewInstance [dataSource]='dataSource.data1' [cssClass]='cssClass'
+    [enableVirtualization]=true headerTitle='Contacts' [fields]='fields' height=500 width=350 [template]='template'
+    (actionComplete)='onActionComplete()' (actionBegin)='onActionBegin()' [showHeader]='true'></ejs-listview>
+</div>
+<div class="col-lg-4 property-section ui-list inline">
+  <table id="property" title="Properties">
+    <tbody>
+      <tr>
+        <td style="width: 50%">
+          <div class="userselect">Load data</div>
+        </td>
+        <td style="width: 50%;padding-right: 10px">
+          <div>
+            <select (change)='onChange($event)'>
+              <option>1k</option>
+              <option>5k</option>
+              <option>10k</option>
+              <option>25k</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 50%;padding-top: 30px">
+          <div class="userselect">Time taken</div>
+        </td>
+        <td style="width: 50%;padding-right: 10px;padding-top: 30px;">
+          <div style="padding-left: 10px;padding-top: 0">
+            <span id="time">0 ms</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

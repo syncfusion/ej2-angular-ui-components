@@ -1,0 +1,20 @@
+<div class="control-section">
+    <div class="col-md-8">
+        <ejs-chart style='display:block' [legendSettings]='legend' #chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [tooltip]='tooltip'
+            [primaryYAxis]='primaryYAxis' [title]='title' (load)='load($event)'>
+            <e-series-collection>
+                <e-series [dataSource]='data2' name='Linear Interpolation' type='Line' fill='blue' xName='x' yName='y' width=2 enableTooltip=false>
+                </e-series>
+                <e-series [dataSource]='data3' name='Cubic Spline Interpolation' fill='green' type='Spline' xName='x' yName='y' width=2 enableTooltip=false>
+                </e-series>
+                <e-series [dataSource]='data1' name='Data Points' fill='red' type='Scatter' xName='x' yName='y' width=2 [marker]='marker'>
+                </e-series>                
+            </e-series-collection>
+        </ejs-chart>
+    </div>
+</div>   
+<style>
+    .control-section {
+        min-height: 450px;
+    }
+</style>

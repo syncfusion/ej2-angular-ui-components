@@ -1,0 +1,150 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "calendar-daterange": {
+      "description": "Create an Angular calendar component with date range feature",
+      "factory": "./generators/calendar-daterange",
+      "schema": "./generators/calendar-daterange/schema.json"
+    },
+    "calendar-disableddates": {
+      "description": "Create an Angular calendar component with disabled dates",
+      "factory": "./generators/calendar-disableddates",
+      "schema": "./generators/calendar-disableddates/schema.json"
+    },
+    "calendar-multiselection": {
+      "description": "Create an Angular calendar component with multi selection feature",
+      "factory": "./generators/calendar-multiselection",
+      "schema": "./generators/calendar-multiselection/schema.json"
+    },
+    "calendar-views": {
+      "description": "Create an Angular calendar component with year and month views",
+      "factory": "./generators/calendar-views",
+      "schema": "./generators/calendar-views/schema.json"
+    },
+    "calendar-weeknumber": {
+      "description": "Create an Angular calendar component with enable week number",
+      "factory": "./generators/calendar-weeknumber",
+      "schema": "./generators/calendar-weeknumber/schema.json"
+    },
+    "datepicker-daterange": {
+      "description": "Create an Angular datepicker component with date range feature",
+      "factory": "./generators/datepicker-daterange",
+      "schema": "./generators/datepicker-daterange/schema.json"
+    },
+    "datepicker-disableddates": {
+      "description": "Create an Angular datepicker component with disabled dates",
+      "factory": "./generators/datepicker-disableddates",
+      "schema": "./generators/datepicker-disableddates/schema.json"
+    },
+    "datepicker-format": {
+      "description": "Create an Angular datepicker component with format feature",
+      "factory": "./generators/datepicker-format",
+      "schema": "./generators/datepicker-format/schema.json"
+    },
+    "datepicker-multiselection": {
+      "description": "Create an Angular datepicker component with multi selection feature",
+      "factory": "./generators/datepicker-multiselection",
+      "schema": "./generators/datepicker-multiselection/schema.json"
+    },
+    "datepicker-strictmode": {
+      "description": "Create an Angular datepicker component with strict mode feature",
+      "factory": "./generators/datepicker-strictmode",
+      "schema": "./generators/datepicker-strictmode/schema.json"
+    },
+    "datepicker-views": {
+      "description": "Create an Angular datepicker component with month and year views",
+      "factory": "./generators/datepicker-views",
+      "schema": "./generators/datepicker-views/schema.json"
+    },
+    "daterangepicker-daterange": {
+      "description": "Create an Angular daterangepicker component with date range feature",
+      "factory": "./generators/daterangepicker-daterange",
+      "schema": "./generators/daterangepicker-daterange/schema.json"
+    },
+    "daterangepicker-dayspan": {
+      "description": "Create an Angular daterangepicker component with day span feature",
+      "factory": "./generators/daterangepicker-dayspan",
+      "schema": "./generators/daterangepicker-dayspan/schema.json"
+    },
+    "daterangepicker-disableddates": {
+      "description": "Create an Angular daterangepicker component with disabled date values",
+      "factory": "./generators/daterangepicker-disableddates",
+      "schema": "./generators/daterangepicker-disableddates/schema.json"
+    },
+    "daterangepicker-format": {
+      "description": "Create an Angular daterangepicker component with format feature",
+      "factory": "./generators/daterangepicker-format",
+      "schema": "./generators/daterangepicker-format/schema.json"
+    },
+    "daterangepicker-presets": {
+      "description": "Create an Angular daterangepicker component with presets feature",
+      "factory": "./generators/daterangepicker-presets",
+      "schema": "./generators/daterangepicker-presets/schema.json"
+    },
+    "daterangepicker-strictmode": {
+      "description": "Create an Angular daterangepicker component with strict mode feature",
+      "factory": "./generators/daterangepicker-strictmode",
+      "schema": "./generators/daterangepicker-strictmode/schema.json"
+    },
+    "datetimepicker-daterange": {
+      "description": "Create an Angular datetimepicker component with date range feature",
+      "factory": "./generators/datetimepicker-daterange",
+      "schema": "./generators/datetimepicker-daterange/schema.json"
+    },
+    "datetimepicker-disableddates": {
+      "description": "Create an Angular datetimepicker component with disabled dates",
+      "factory": "./generators/datetimepicker-disableddates",
+      "schema": "./generators/datetimepicker-disableddates/schema.json"
+    },
+    "datetimepicker-format": {
+      "description": "Create an Angular datetimepicker component with format feature",
+      "factory": "./generators/datetimepicker-format",
+      "schema": "./generators/datetimepicker-format/schema.json"
+    },
+    "datetimepicker-multiselection": {
+      "description": "Create an Angular datetimepicker component with multi selection feature",
+      "factory": "./generators/datetimepicker-multiselection",
+      "schema": "./generators/datetimepicker-multiselection/schema.json"
+    },
+    "datetimepicker-strictmode": {
+      "description": "Create an Angular datetimepicker component with strict mode feature",
+      "factory": "./generators/datetimepicker-strictmode",
+      "schema": "./generators/datetimepicker-strictmode/schema.json"
+    },
+    "datetimepicker-views": {
+      "description": "Create an Angular datetimepicker component with month and year views",
+      "factory": "./generators/datetimepicker-views",
+      "schema": "./generators/datetimepicker-views/schema.json"
+    },
+    "timepicker-format": {
+      "description": "Create an Angular timepicker component with format feature",
+      "factory": "./generators/timepicker-format",
+      "schema": "./generators/timepicker-format/schema.json"
+    },
+    "timepicker-scrollto": {
+      "description": "Create an Angular timepicker component with scrollto feature",
+      "factory": "./generators/timepicker-scrollto",
+      "schema": "./generators/timepicker-scrollto/schema.json"
+    },
+    "timepicker-step": {
+      "description": "Create an Angular timepicker component with step values representation",
+      "factory": "./generators/timepicker-step",
+      "schema": "./generators/timepicker-step/schema.json"
+    },
+    "timepicker-strictmode": {
+      "description": "Create an Angular timepicker component with strict mode feature",
+      "factory": "./generators/timepicker-strictmode",
+      "schema": "./generators/timepicker-strictmode/schema.json"
+    },
+    "timepicker-timerange": {
+      "description": "Create an Angular timepicker component with time range feature",
+      "factory": "./generators/timepicker-timerange",
+      "schema": "./generators/timepicker-timerange/schema.json"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="control-section" style="overflow:hidden;">
+    <div class="col-lg-12">
+        <div class="control_wrapper">
+            <ejs-treeview id="template" [fields]="field">
+                <!-- Template to render tree node -->
+                <ng-template #nodeTemplate="" let-data="">
+                    <div>
+                        <div class="treeviewdiv">
+                            <div style="float:left">
+                                <span class="treeName">{{data.name}}</span>
+                            </div>
+                            <div style="margin-right: 5px; float:right">
+                                <span class="treeCount e-badge e-badge-primary" *ngIf="data.count">{{ data.count }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ejs-treeview>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "lib": ["es2017", "dom"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitOnError": false,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "target": "es6",
+        "declaration": true,
+        "types": [
+            "jasmine",
+            "node"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "src",
+        "src/**/*.ts",
+        "spec",
+        "spec/**/*.ts",
+        "@typings"
+    ]
+}

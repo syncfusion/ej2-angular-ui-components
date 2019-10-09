@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Adds Essential JS 2 specific Angular package to an application",
+      "factory": "./ng-add",
+      "schema": "./ng-add/schema.json"
+    },
+    "listview-checklist": {
+      "description": "Create an Angular ListView component with checkbox feature",
+      "factory": "./generators/listview-checklist",
+      "schema": "./generators/listview-checklist/schema.json"
+    },
+    "listview-default": {
+      "description": "Create an Angular ListView component as simple flat list",
+      "factory": "./generators/listview-default",
+      "schema": "./generators/listview-default/schema.json"
+    },
+    "listview-nestedlist": {
+      "description": "Create an Angular ListView component with nested navigation feature",
+      "factory": "./generators/listview-nestedlist",
+      "schema": "./generators/listview-nestedlist/schema.json"
+    },
+    "listview-remotelist": {
+      "description": "Loading remote data into Angular ListView component",
+      "factory": "./generators/listview-remotelist",
+      "schema": "./generators/listview-remotelist/schema.json"
+    },
+    "listview-template": {
+      "description": "Create an Angular component with EJ2 listview with template",
+      "factory": "./generators/listview-template",
+      "schema": "./generators/listview-template/schema.json"
+    },
+    "listview-virtualization": {
+      "description": "Enabling virtualization feature in Angular ListView component",
+      "factory": "./generators/listview-virtualization",
+      "schema": "./generators/listview-virtualization/schema.json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+        <ejs-dropdownlist id='employees' [dataSource]='data' [fields]='fields' [popupHeight]='height' [placeholder]='watermark'>
+            <ng-template #headerTemplate>
+                <div class="head"> <span class="photo">Photo</span> <span style="margin-left:17px;">Employee Info</span></div>
+            </ng-template>
+            <ng-template #itemTemplate let-data>
+                <div><img class="empImage" src="assets/dropdownlist/template/{{data.Eimg}}.png" alt="employee" />
+                    <div class="ename"> {{data.Name}} </div>
+                    <div class="job"> {{data.Designation}} </div>
+                </div>
+            </ng-template>
+            <ng-template #valueTemplate let-data>
+                <div><img class="valueTemp" src="assets/dropdownlist/template/{{data.Eimg}}.png" height="26px" width="26px" alt="employee" />
+                    <div class="name"> {{data.Name}} </div>
+                </div>
+            </ng-template>
+        </ejs-dropdownlist>
+  
+

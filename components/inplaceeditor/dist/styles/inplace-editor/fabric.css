@@ -1,0 +1,611 @@
+/*! calendar fabric theme variables */
+.e-ddl.e-popup {
+  border: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  margin-top: 1px;
+}
+
+.e-ddl.e-popup .e-input-group input {
+  line-height: 15px;
+}
+
+.e-ddl.e-popup .e-input-group {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.e-ddl.e-popup .e-filter-parent {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.e-bigger .e-popup.e-ddl-device-filter {
+  margin-top: 0;
+}
+
+.e-bigger .e-ddl.e-popup .e-list-item,
+.e-bigger .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-ddl.e-popup .e-fixed-head {
+  font-size: 15px;
+  line-height: 45px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group input,
+.e-bigger .e-ddl.e-popup .e-input-group input.e-input {
+  height: 30px;
+}
+
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:hover,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:hover {
+  background: transparent;
+  color: #333;
+}
+
+.e-bigger .e-popup.e-ddl-device .e-input-group {
+  margin: 0 0 0 55px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-list-item,
+.e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger.e-small .e-ddl.e-popup .e-fixed-head {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group {
+  padding: 0;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input,
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input.e-input {
+  height: 34px;
+}
+
+.e-multi-select-wrapper.e-down-icon .e-input-group-icon.e-ddl-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips,
+.e-small.e-bigger .e-multi-select-wrapper .e-chips {
+  padding: 0;
+}
+
+.e-small .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small.e-bigger .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  padding: 0 8px;
+}
+
+.e-small .e-multi-select-wrapper .e-chips {
+  margin: 2px 2px 2px 0;
+}
+
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*! Fabric theme definitions and variables */
+/*! Value element styles */
+/*! Tooltip styles */
+/*! Tip Content styles */
+/*! Title styles */
+/*! Wrapper styles */
+/*! Component group styles */
+/*! Button styles */
+/*! inplaceeditor icons */
+.e-inplaceeditor .e-save-icon::before,
+.e-inplaceeditor-tip .e-save-icon::before {
+  content: '\e614';
+}
+
+.e-inplaceeditor .e-cancel-icon::before,
+.e-inplaceeditor-tip .e-cancel-icon::before {
+  content: '\ebe8';
+}
+
+.e-inplaceeditor .e-editable-overlay-icon::before,
+.e-inplaceeditor-tip .e-editable-overlay-icon::before {
+  content: '\e97c';
+}
+
+/*! inplaceeditor layout */
+.e-bigger .e-inplaceeditor .e-editable-value-wrapper,
+.e-inplaceeditor.e-bigger .e-editable-value-wrapper {
+  padding: 8px 12px;
+}
+
+.e-bigger .e-inplaceeditor .e-editable-value-wrapper .e-editable-value,
+.e-inplaceeditor.e-bigger .e-editable-value-wrapper .e-editable-value {
+  font-size: 15px;
+  margin: 0 32px 0 0;
+}
+
+.e-bigger .e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon,
+.e-inplaceeditor.e-bigger .e-editable-value-wrapper .e-editable-overlay-icon {
+  right: 12px;
+  width: 20px;
+}
+
+.e-bigger .e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon::before,
+.e-inplaceeditor.e-bigger .e-editable-value-wrapper .e-editable-overlay-icon::before {
+  font-size: 16px;
+}
+
+.e-bigger .e-inplaceeditor .e-editable-action-buttons .e-btn-save,
+.e-inplaceeditor.e-bigger .e-editable-action-buttons .e-btn-save {
+  margin: 0 4px 0 0;
+}
+
+.e-bigger .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel,
+.e-inplaceeditor.e-bigger .e-editable-action-buttons .e-btn-cancel {
+  margin: 0 0 0 4px;
+}
+
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-editable-value,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-value-wrapper .e-editable-value {
+  margin: 0 0 0 32px;
+}
+
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-editable-overlay-icon,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-value-wrapper .e-editable-overlay-icon {
+  left: 12px;
+  right: auto;
+}
+
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-save,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-action-buttons .e-btn-save {
+  margin: 0 0 0 4px;
+}
+
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-cancel,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-action-buttons .e-btn-cancel {
+  margin: 0 4px 0 0;
+}
+
+.e-inplaceeditor {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper {
+  display: inline-block;
+  padding: 6px 10px;
+  position: relative;
+  width: auto;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper .e-editable-value {
+  display: inline-block;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 14px;
+  margin: 0 30px 0 0;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon {
+  bottom: 0;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: inherit;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  visibility: hidden;
+  width: 18px;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon::before {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper.e-hide {
+  display: none;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper.e-editable-open {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper:hover .e-editable-overlay-icon {
+  visibility: visible;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper:hover.e-editable-open .e-editable-overlay-icon {
+  visibility: hidden;
+}
+
+.e-inplaceeditor .e-editable-action-buttons {
+  margin-top: 4px;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+
+.e-inplaceeditor.e-overlay {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-editable-value {
+  margin: 0 0 0 30px;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-editable-overlay-icon {
+  left: 10px;
+  right: auto;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-action-buttons {
+  left: 0;
+  right: auto;
+}
+
+.e-bigger .e-inplaceeditor,
+.e-inplaceeditor.e-bigger,
+.e-bigger .e-inplaceeditor-tip,
+.e-inplaceeditor-tip.e-bigger {
+  width: auto;
+}
+
+.e-inplaceeditor .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
+.e-inplaceeditor-tip .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
+  stroke-width: inherit;
+}
+
+.e-inplaceeditor .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
+.e-inplaceeditor-tip .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
+  stroke-width: inherit;
+}
+
+.e-inplaceeditor .e-editable-loading,
+.e-inplaceeditor-tip .e-editable-loading {
+  display: none;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.e-inplaceeditor .e-editable-loading.e-show,
+.e-inplaceeditor-tip .e-editable-loading.e-show {
+  display: block;
+}
+
+.e-inplaceeditor .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner,
+.e-inplaceeditor-tip .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner {
+  left: auto;
+  right: 5px;
+  transform: translateX(-30%) translateY(-50%);
+}
+
+.e-inplaceeditor .e-editable-form,
+.e-inplaceeditor-tip .e-editable-form {
+  width: 100%;
+}
+
+.e-inplaceeditor .e-editable-form.e-loading .e-input-group-icon,
+.e-inplaceeditor-tip .e-editable-form.e-loading .e-input-group-icon {
+  visibility: hidden;
+}
+
+.e-inplaceeditor .e-component-group,
+.e-inplaceeditor-tip .e-component-group {
+  margin-bottom: 4px;
+}
+
+.e-inplaceeditor .e-component-group .e-editable-component,
+.e-inplaceeditor-tip .e-component-group .e-editable-component {
+  min-width: 150px;
+  position: relative;
+}
+
+.e-inplaceeditor .e-control-overlay,
+.e-inplaceeditor-tip .e-control-overlay {
+  visibility: hidden;
+}
+
+.e-inplaceeditor .e-control-overlay.e-richtexteditor,
+.e-inplaceeditor-tip .e-control-overlay.e-richtexteditor {
+  opacity: .5;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  visibility: visible;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save {
+  margin: 0 4px 0 0;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save .e-btn-icon.e-icons {
+  font-size: 16px;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel {
+  margin: 0 0 0 4px;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel .e-btn-icon.e-icons {
+  font-size: 16px;
+}
+
+.e-inplaceeditor .e-editable-action-buttons.e-hide,
+.e-inplaceeditor-tip .e-editable-action-buttons.e-hide {
+  visibility: hidden;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-save,
+.e-inplaceeditor-tip.e-rtl .e-editable-action-buttons .e-btn-save {
+  margin: 0 0 0 4px;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-cancel,
+.e-inplaceeditor-tip.e-rtl .e-editable-action-buttons .e-btn-cancel {
+  margin: 0 4px 0 0;
+}
+
+.e-bigger .e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-wrapper,
+.e-inplaceeditor-tip.e-bigger.e-tooltip-wrap .e-tip-content .e-editable-wrapper {
+  padding: 12px;
+}
+
+.e-bigger .e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-title + .e-editable-wrapper,
+.e-inplaceeditor-tip.e-bigger.e-tooltip-wrap .e-tip-content .e-editable-title + .e-editable-wrapper {
+  padding: 10px 12px 12px 12px;
+}
+
+.e-bigger .e-inplaceeditor-tip .e-editable-title,
+.e-inplaceeditor-tip.e-bigger .e-editable-title {
+  font-size: 14px;
+  min-height: 36px;
+  padding: 0 0 0 12px;
+}
+
+.e-bigger .e-inplaceeditor-tip.e-rtl.e-tooltip-wrap .e-tip-content .e-editable-title,
+.e-inplaceeditor-tip.e-bigger.e-rtl.e-tooltip-wrap .e-tip-content .e-editable-title {
+  padding: 0 12px 0 0;
+}
+
+.e-inplaceeditor-tip {
+  opacity: 1;
+  width: auto;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap {
+  max-width: 100%;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content {
+  padding: 0;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-title {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 13px;
+  font-weight: 600;
+  height: 30px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 0 0 0 12px;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-wrapper .e-editable-action-buttons {
+  float: right;
+  margin-top: 4px;
+  position: relative;
+  right: auto;
+  top: auto;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-title + .e-editable-wrapper {
+  padding: 10px 12px 12px 12px;
+}
+
+.e-inplaceeditor-tip.e-hide {
+  visibility: hidden;
+}
+
+.e-inplaceeditor-tip.e-rtl.e-tooltip-wrap .e-tip-content .e-editable-title {
+  padding: 0 12px 0 0;
+}
+
+.e-inplaceeditor-tip.e-rtl.e-tooltip-wrap .e-tip-content .e-editable-wrapper .e-editable-action-buttons {
+  float: left;
+}
+
+.e-content-placeholder.e-inplaceeditor.e-placeholder-inplaceeditor {
+  background-size: 150px 60px;
+  min-height: 60px;
+}
+
+.e-bigger .e-content-placeholder.e-inplaceeditor.e-placeholder-inplaceeditor,
+.e-bigger.e-content-placeholder.e-inplaceeditor.e-placeholder-inplaceeditor {
+  background-size: 150px 70px;
+  min-height: 70px;
+}
+
+/*! inplaceeditor theme */
+.e-inplaceeditor .e-editable-value-wrapper .e-editable-value {
+  border-bottom: 1px dashed #333;
+  color: #333;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper .e-editable-overlay-icon {
+  color: #333;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper:hover {
+  background: #f4f4f4;
+  border-radius: 0;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper:hover .e-editable-value {
+  border-bottom-color: transparent;
+}
+
+.e-inplaceeditor[data-underline='false'] .e-editable-value-wrapper .e-editable-value {
+  border-bottom: 0;
+}
+
+.e-inplaceeditor.e-disable {
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.e-inplaceeditor.e-disable .e-editable-value-wrapper .e-editable-value {
+  border-bottom-color: transparent;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn {
+  background-color: "";
+  border: "";
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn .e-btn-icon.e-icons,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn .e-btn-icon.e-icons {
+  color: #333;
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover {
+  background-color: "";
+  border: "";
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus {
+  background-color: "";
+  border: "";
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active {
+  background-color: "";
+  border: "";
+}
+
+.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
+.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
+.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons {
+  color: "";
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap {
+  background: #fff;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.26);
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content {
+  border-radius: 0;
+  color: #333;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-arrow-tip-inner {
+  color: #fff;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+  border-bottom-color: #d0d0d0;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+  border-top-color: #d0d0d0;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap.e-popup {
+  border: 1px solid #d0d0d0;
+}
+
+.e-inplaceeditor-tip.e-tooltip-wrap .e-editable-title {
+  background: #eaeaea;
+  border-bottom: 0;
+  color: #333;
+}
+
+.e-inplaceeditor-tip.e-editable-tip-title.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+  border-bottom-color: #d0d0d0;
+}
+
+.e-inplaceeditor-tip.e-editable-tip-title.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
+  color: #eaeaea;
+}

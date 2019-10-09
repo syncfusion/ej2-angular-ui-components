@@ -1,0 +1,27 @@
+.e-sortable {
+  outline: none;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-sortable .e-disabled {
+  background-image: none;
+  cursor: default;
+  filter: alpha(Opacity=35);
+  opacity: .35;
+}
+
+.e-sortable .e-sortableclone {
+  position: fixed !important;
+}
+
+.e-sortable * {
+  box-sizing: border-box;
+}
+
+.e-sortable *:focus {
+  outline: none;
+}

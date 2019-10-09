@@ -1,0 +1,57 @@
+.e-def-avator {
+    margin: 8px;
+    border-radius: 50%;
+    width: 40px;
+    font-size: 20px;
+    border: 2px solid #666;
+}
+
+.e-def-avator span {
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
+
+.e-mail-header,
+.e-mail-subject,
+.e-mail-description,
+.e-mail-id {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.e-folder {
+    text-align: center;
+}
+
+.e-mail-header,
+.e-mail-subject,
+.e-folder {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.e-mail-item:last-child {
+    border-bottom: 0px;
+}
+
+.e-mail-item {
+    margin-top: 8px;
+    height: 60px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.e-mail-content {
+    padding-top: 14px;
+}
+
+.e-mail-header {
+    font-size: 14px;
+}
+
+.e-mail-image {
+    margin-right: 10px;
+    float: left;
+    height: 60px;
+}

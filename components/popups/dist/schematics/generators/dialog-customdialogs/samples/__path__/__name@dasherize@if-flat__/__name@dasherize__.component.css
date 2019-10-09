@@ -1,0 +1,19 @@
+.e-btn-hide {
+  display: none;
+}
+.dlgbtn {
+  margin-right: 5%;
+}
+.control-section {
+  height: 100%;
+  min-height: 350px;
+  padding:10px;
+  position:relative;
+}
+
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  width:100%;
+  padding: 0px 20px 20px;
+}

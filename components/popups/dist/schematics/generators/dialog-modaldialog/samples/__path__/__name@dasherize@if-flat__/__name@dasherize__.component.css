@@ -1,0 +1,6 @@
+.control-section {
+  height: 100%;
+  min-height: 350px;
+  padding:10px;
+  position:relative;
+}

@@ -1,0 +1,46 @@
+<table id="button">
+    <tbody>
+        <tr>
+            <td>
+                <button ejs-button [isPrimary]="true">Primary</button>
+            </td>
+            <td>
+                <button ejs-button>Normal</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-outline" [isPrimary]="true">Outline</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-flat" [isPrimary]="true">Flat</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button ejs-button cssClass="e-success">Success</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-warning">Warning</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-danger">Danger</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-info">Info</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button ejs-button cssClass="e-small e-round" iconCss="e-btn-sb-icons e-add-icon" [isPrimary]="true"></button>
+            </td>
+            <td>
+                <button #toggleBtn ejs-button cssClass="e-flat" [isToggle]="true" [isPrimary]="true" (click)="btnClick()" iconCss="e-btn-sb-icons e-play-icon">Play</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-flat" iconCss="e-btn-sb-icons e-open-icon" [isPrimary]="true" iconPosition="Right">Open</button>
+            </td>
+            <td>
+                <button ejs-button cssClass="e-small">Small</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
