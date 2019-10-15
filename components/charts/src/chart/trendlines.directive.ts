@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'backwardForecast', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'width'];
+let input: string[] = ['animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -42,6 +42,11 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      * @default 0
      */
     public backwardForecast: any;
+    /** 
+     * Defines the pattern of dashes and gaps to stroke.
+     * @default '0'
+     */
+    public dashArray: any;
     /** 
      * Enables/disables tooltip for trendlines
      * @default true
@@ -88,6 +93,11 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      * @default 2
      */
     public polynomialOrder: any;
+    /** 
+     * Specifies the visibility of trendline.
+     * @default true
+     */
+    public visible: any;
     /** 
      * Defines the width of the trendline
      * @default 1

@@ -2,7 +2,23 @@
 
 ## [Unreleased]
 
+## 17.3.17 (2019-10-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- Export not working issue fixed.
+
 ## 17.3.16 (2019-10-09)
+
+### Spreadsheet
+
+#### New Features
+
+- Provided `updateCell` method to update a cell properties.
+
+## 17.3.14 (2019-10-03)
 
 ### Spreadsheet
 

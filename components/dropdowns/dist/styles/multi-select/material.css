@@ -69,6 +69,10 @@
   width: 16px;
 }
 
+.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 52px;
+}
+
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
@@ -80,6 +84,13 @@
   width: 18px;
 }
 
+.e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 48px;
+}
+
 .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 54px;
@@ -87,6 +98,11 @@
   right: 16px;
   top: 50%;
   width: 20px;
+}
+
+.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 60px;
 }
 
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
@@ -98,9 +114,14 @@
   width: 14px;
 }
 
+.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 48px;
+}
+
 .e-rtl.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-rtl .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  left: 16px;
+  left: 52px;
   right: auto;
 }
 
@@ -116,7 +137,7 @@
 .e-rtl .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-rtl .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-rtl.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  left: 12px;
+  left: 48px;
   right: auto;
 }
 
@@ -126,7 +147,7 @@
 .e-rtl .e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger .e-rtl.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger .e-rtl .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  left: 16px;
+  left: 60px;
   right: auto;
 }
 
@@ -136,7 +157,7 @@
 .e-rtl .e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-rtl.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-rtl .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  left: 14px;
+  left: 48px;
   right: auto;
 }
 
@@ -198,6 +219,84 @@
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips .e-chips-close::before,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips .e-chips-close::before {
   font-size: 14px;
+}
+
+.e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-multiselect.e-outline.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 7px 12px 9px 0;
+}
+
+.e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 10px 16px 10px 0;
+}
+
+.e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 6px 10px 8px 0;
+}
+
+.e-multiselect.e-input-group.e-outline.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-small .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small.e-bigger .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 6px 12px 8px 0;
+}
+
+.e-rtl.e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-multiselect.e-outline.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-outline.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 7px 0 9px 12px;
+}
+
+.e-rtl.e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-rtl.e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-rtl .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-rtl .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 10px 0 10px 16px;
+}
+
+.e-rtl.e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-rtl.e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-small .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-small .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 6px 0 8px 10px;
+}
+
+.e-rtl.e-multiselect.e-input-group.e-outline.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-small .e-rtl.e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small.e-bigger .e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-rtl.e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-rtl.e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-rtl.e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-bigger.e-small .e-multiselect.e-input-group.e-outline .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-small.e-bigger .e-multiselect.e-input-group.e-outline.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-bigger .e-multiselect.e-input-group.e-outline.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-bigger .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-small .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-small .e-multiselect.e-input-group.e-outline.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-rtl.e-small .e-multiselect.e-input-group.e-outline.e-control-wrapper.e-bigger .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 6px 0 8px 12px;
 }
 
 .e-multi-select-wrapper {
@@ -692,11 +791,13 @@
   padding-left: 10px;
 }
 
-.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable .e-checkbox-wrapper .e-frame {
+.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable .e-checkbox-wrapper .e-frame,
+.e-popup.e-multi-select-list-wrapper .e-list-group-item.e-disable .e-checkbox-wrapper .e-frame {
   opacity: .3;
 }
 
-.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable {
+.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable,
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-checkbox .e-list-group-item.e-disable {
   opacity: .7;
 }
 
@@ -780,13 +881,24 @@ ejs-multiselect {
 
 .e-multiselect.e-outline .e-multi-select-wrapper input[type='text'] {
   font-size: inherit;
-  min-height: 36px;
+  min-height: 34px;
+  padding: 8px 12px 9px;
+}
+
+.e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'] {
+  padding: 8px 12px 9px;
 }
 
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper input[type='text'],
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper input[type='text'] {
   font-size: inherit;
-  min-height: 32px;
+  min-height: 30px;
+  padding: 7px 10px;
+}
+
+.e-small.e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'],
+.e-small .e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'] {
+  padding: 7px 10px;
 }
 
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper input[type='text'],
@@ -794,7 +906,15 @@ ejs-multiselect {
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper input[type='text'],
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper input[type='text'] {
   font-size: inherit;
-  min-height: 36px;
+  min-height: 34px;
+  padding: 8px 12px 9px;
+}
+
+.e-bigger.e-small.e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'],
+.e-bigger.e-small .e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'],
+.e-bigger .e-small.e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'],
+.e-small .e-bigger.e-multiselect.e-outline.e-input-focus .e-multi-select-wrapper input[type='text'] {
+  padding: 8px 12px 9px;
 }
 
 .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper input[type='text'],
@@ -810,35 +930,75 @@ ejs-multiselect {
 }
 
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 36px;
-  padding: 1px 38px 1px 0;
+  min-height: 34px;
+  padding: 3px 38px 1px 0;
 }
 
 .e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper,
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 36px;
-  padding: 1px 38px 1px 0;
+  min-height: 34px;
+  padding: 3px 38px 1px 0;
 }
 
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper,
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 32px;
-  padding: 1px 38px 1px 0;
+  min-height: 30px;
+  padding: 3px 38px 1px 0;
 }
 
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 36px;
-  padding: 1px 38px 1px 0;
+  min-height: 34px;
+  padding: 3px 38px 1px 0;
 }
 
 .e-small.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 36px;
-  padding: 1px 38px 1px 0;
+  min-height: 34px;
+  padding: 3px 38px 1px 0;
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper {
-  min-height: 36px;
-  padding: 1px 38px 1px 0;
+  min-height: 34px;
+  padding: 3px 38px 1px 0;
+}
+
+.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-bigger.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-bigger .e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon {
+  padding-right: 0;
+}
+
+.e-rtl.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl .e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-bigger.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-bigger .e-rtl.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-bigger .e-rtl.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl .e-bigger.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-small.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-small .e-rtl.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-small .e-rtl.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl .e-small.e-outline.e-multiselect.e-checkbox .e-multi-select-wrapper,
+.e-rtl .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-bigger .e-small.e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-small .e-bigger.e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl .e-bigger .e-small.e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl .e-small .e-bigger.e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-small.e-bigger .e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-small.e-bigger.e-multiselect.e-outline.e-checkbox .e-multi-select-wrapper,
+.e-rtl.e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-small.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon,
+.e-rtl.e-small.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon {
+  padding-left: 0;
 }
 
 .e-rtl .e-multiselect.e-outline .e-multi-select-wrapper,
@@ -852,7 +1012,7 @@ ejs-multiselect {
 .e-rtl .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper,
 .e-rtl.e-small.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper,
 .e-rtl.e-small.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper {
-  padding: 1px 0 1px 38px;
+  padding: 3px 0 1px 38px;
 }
 
 .e-rtl .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper,
@@ -891,7 +1051,7 @@ ejs-multiselect {
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher {
-  height: 36px;
+  height: 34px;
 }
 
 .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher,
@@ -901,19 +1061,19 @@ ejs-multiselect {
 
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher,
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher {
-  height: 32px;
+  height: 30px;
 }
 
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher,
 .e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher,
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-delimiter .e-searcher {
-  height: 36px;
+  height: 34px;
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values {
   font-size: 14px;
-  line-height: 36px;
+  line-height: 34px;
   padding: 0 0 0 12px;
 }
 
@@ -927,7 +1087,7 @@ ejs-multiselect {
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values,
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values {
   font-size: 13px;
-  line-height: 32px;
+  line-height: 30px;
   padding: 0 0 0 8px;
 }
 
@@ -936,7 +1096,7 @@ ejs-multiselect {
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values {
   font-size: 14px;
-  line-height: 36px;
+  line-height: 34px;
   padding: 0 0 0 12px;
 }
 
@@ -978,7 +1138,7 @@ ejs-multiselect {
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips {
-  height: 28px;
+  height: 26px;
   margin: 4px 0 4px 8px;
   padding: 0 8px;
 }
@@ -1004,7 +1164,7 @@ ejs-multiselect {
 .e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-chips,
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips {
-  height: 28px;
+  height: 26px;
   padding: 0 8px;
 }
 
@@ -1033,6 +1193,16 @@ ejs-multiselect {
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips > .e-chipcontent,
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-chips > .e-chipcontent {
   font-size: 12px;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  -ms-flex-align: normal;
+      align-items: normal;
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
@@ -1292,4 +1462,16 @@ ejs-multiselect {
 
 .e-multiselect.e-outline.e-disabled .e-multi-select-wrapper .e-chips {
   background-color: rgba(0, 0, 0, 0.06);
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
+  background-color: #3f51b5;
+  border-radius: 2px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chipcontent {
+  color: #fff;
 }

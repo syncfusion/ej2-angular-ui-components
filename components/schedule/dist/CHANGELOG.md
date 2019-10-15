@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 17.3.17 (2019-10-15)
+
+### Schedule
+
+#### Bug Fixes
+
+- An issue with displaying week number with different `firstDayOfWeek` has been fixed.
+- `#244512` - An issue with recurrence option in editor template has been fixed.
+- `#148187` - An issue with default flag missing in variable `$schedule-tbar-border-hover-color` from `bootstrap4` theme has been fixed.
+
 ## 17.3.16 (2019-10-09)
 
 ### Schedule
@@ -9,7 +19,10 @@
 #### Bug Fixes
 
 - `#147850`, `#249678` - An issue with event click action is not working in the latest version of iOS has been fixed.
-- An issue with recurrence editor in different day position in monthly type has been fixed.
+- `#246126` - An issue with toolbar is not working properly in all overflow modes in Scheduler has been fixed.
+- An issue with recurrence date is not generated properly in month option has been fixed.
+
+- `#246943` - An issue with editor window occurring script error in router mode has been fixed.
 
 ## 17.3.14 (2019-10-03)
 
@@ -25,8 +38,6 @@
 - `#244271` - An issue with editor window is not closed when edit the event has been fixed.
 - `#246788` - An issue with cell selection event does not provide the proper cell details has been fixed.
 - `#246565` - An issue with scroller position is not positioned at current date in timeline month view has been fixed.
-
-- `#246943` - An issue with editor window occurring script error in router mode has been fixed.
 
 ## 17.3.9-beta (2019-09-20)
 

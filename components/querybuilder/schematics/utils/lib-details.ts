@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-querybuilder';
-export const pkgVer = '^17.3.14';
+export const pkgVer = '^17.3.9';
 export const moduleName = 'QueryBuilderModule';
-export const themeVer = '~17.3.14';
+export const themeVer = '~17.3.9';

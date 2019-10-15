@@ -470,7 +470,9 @@ textarea.e-input.e-small,
 }
 
 .e-input-group.e-small .e-input-group-icon,
-.e-input-group.e-control-wrapper.e-small .e-input-group-icon {
+.e-input-group.e-control-wrapper.e-small .e-input-group-icon,
+.e-small .e-input-group .e-input-group-icon,
+.e-small .e-input-group.e-control-wrapper .e-input-group-icon {
   font-size: 10px;
   min-height: 24px;
   min-width: 24px;
@@ -758,6 +760,11 @@ label.e-float-text,
 .e-bigger .e-float-input.e-small input ~ label.e-label-top.e-float-text,
 .e-bigger .e-float-input.e-small input[readonly] ~ label.e-float-text,
 .e-bigger .e-float-input.e-small input[disabled] ~ label.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper input:focus ~ label.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper input:valid ~ label.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper input ~ label.e-label-top.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper input[readonly] ~ label.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper input[disabled] ~ label.e-float-text,
 .e-float-input.e-control-wrapper.e-small.e-bigger input:focus ~ label.e-float-text,
 .e-float-input.e-control-wrapper.e-small.e-bigger input:valid ~ label.e-float-text,
 .e-float-input.e-control-wrapper.e-small.e-bigger input ~ label.e-label-top.e-float-text,
@@ -3506,6 +3513,7 @@ textarea.e-input,
 .e-float-input.e-control-wrapper textarea[disabled],
 .e-float-input.e-disabled,
 .e-float-input.e-control-wrapper.e-disabled {
+  -webkit-text-fill-color: #a6a6a6;
   background: #f4f4f4;
   color: #a6a6a6;
   border-color: #f4f4f4;
@@ -3555,6 +3563,7 @@ textarea.e-input,
 .e-float-input.e-control-wrapper:not(.e-disabled) input[disabled],
 .e-float-input:not(.e-disabled) textarea[disabled],
 .e-float-input.e-control-wrapper:not(.e-disabled) textarea[disabled] {
+  -webkit-text-fill-color: #a6a6a6;
   color: #a6a6a6;
 }
 
@@ -4808,7 +4817,6 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-control-wrapper.e-slider-container .e-scale {
   box-sizing: content-box;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   height: 28px;
   line-height: normal;
   list-style: none outside none;
@@ -4837,7 +4845,6 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-control-wrapper.e-slider-container .e-scale .e-tick .e-tick-value {
   color: #333;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 9px;
   outline: none;
   position: absolute;

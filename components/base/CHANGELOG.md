@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 17.3.17 (2019-10-15)
+
+### Common
+
+#### Bug Fixes
+
+- `I251162` - Increased `peerDependencies` version from `8.2.6` to `8.2.10`.
+
+## 17.3.16 (2019-10-09)
+
+### Common
+
+#### Bug Fixes
+
+- `I243740` - Fixed When using container support, the controls inside the `Tab` rendering getting delayed.
+
 ## 17.3.9-beta (2019-09-20)
 
 ### Common
@@ -9,7 +25,6 @@
 #### Bug Fixes
 
 - `F147411,I248565` - Cleared `peerDependencies` warning.
-- `I243740` - Fixed When using container support, the controls inside the `Tab` rendering getting delayed.
 
 ## 17.2.49 (2019-09-04)
 

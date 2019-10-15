@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 17.3.17 (2019-10-15)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#250710` - Now, you can filter the data while render the component using `select` element.
+
+- `#246802` - Now, the change event fires on value selection and remove while disabled the `changeOnBlur` property.
+- `#F147650` - Now SelectAll method works properly when set `enableGroupCheckBox` as true.
+- `#251276`- Now, the change event fires on click the clear icon and updates the model value.
+
+## 17.3.16 (2019-10-09)
+
+### ListBox
+
+#### Bug Fixes
+
+- Adding common cssClass for wrapper.
+
+### MultiSelect
+
+#### New Features
+
+- Provided `Material2 outline layout` for multiselect.
+
+#### Bug Fixes
+
+- `#248395`, `#F148059` - Now SelectAll works properly when limit the selection using `maximumSelectionLength` property.
+
 ## 17.3.14 (2019-10-03)
 
 ### AutoComplete

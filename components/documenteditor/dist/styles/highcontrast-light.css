@@ -616,8 +616,8 @@
   border: 1px solid #808080;
   border-radius: 4px;
   font-size: 12px;
-  height: 181px;
-  margin-left: 23px;
+  height: 194px;
+  margin-left: 36px;
   overflow-y: scroll;
   width: 211px;
 }
@@ -631,8 +631,13 @@
 }
 
 .e-de-toc-dlg-style-label {
-  position: absolute;
-  top: 60px;
+  margin-left: 50px;
+  margin-top: 58px;
+}
+
+.e-de-toc-dlg-style-label.e-de-rtl {
+  margin-left: 0;
+  margin-right: 50px;
 }
 
 .e-de-pagesetup-dlg-container {
@@ -1854,19 +1859,14 @@ label[for='container_wholeWord'] {
   float: right;
 }
 
-.e-de-toc-dlg-right-sub-container {
-  margin-right: 2px;
-  margin-top: 103px;
-}
-
 .e-de-toc-dlg-styles {
   margin-bottom: 11px;
-  margin-left: 25px;
-  margin-top: 38px;
+  margin-left: 38px;
+  margin-top: 30px;
 }
 
 .e-de-toc-dlg-build-table {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .e-de-toc-table-div .e-de-toc-dlg-toc-level {
@@ -1886,11 +1886,6 @@ label[for='container_wholeWord'] {
   font-size: 12px;
 }
 
-.e-de-toc-dlg-show-level-div {
-  margin-left: 255px;
-  margin-top: 16px;
-}
-
 .e-de-toc-table-div {
   height: 163px;
   overflow-y: scroll;
@@ -1899,12 +1894,12 @@ label[for='container_wholeWord'] {
 
 .e-de-toc-dlg-style-input {
   margin-bottom: 3px;
-  margin-left: 23px;
+  margin-left: 36px;
   width: 210px;
 }
 
 .e-de-toc-dlg-outline-levels {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 150px;
 }
 
@@ -1920,10 +1915,6 @@ label[for='container_wholeWord'] {
 .e-styles-dlgfields {
   font-weight: 400;
   margin-bottom: 6px;
-}
-
-.e-de-toc-dlg-showlevel-div {
-  margin-left: 255px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {

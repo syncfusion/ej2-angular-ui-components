@@ -631,21 +631,21 @@
 }
 
 .e-de-toc-reset-button {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .e-de-toc-reset-button.e-de-rtl {
-  margin-right: 6px;
+  margin-right: 0;
 }
 
 .e-de-toc-modify-button {
-  margin-left: 121px;
+  margin-left: 162px;
   margin-top: 10px;
 }
 
 .e-de-toc-modify-button.e-de-rtl {
   margin-left: 0;
-  margin-right: 138px;
+  margin-right: 180px;
 }
 
 .e-de-toc-dlg-container {
@@ -661,15 +661,15 @@
   border: 1px solid #c3c3c3;
   border-radius: 3px;
   font-size: 12px;
-  height: 161px;
-  margin-left: -21px;
+  height: 174px;
+  margin-left: 38px;
   overflow-y: scroll;
   width: 209px;
 }
 
 .e-de-toc-list-view.e-de-rtl {
   margin-left: 0;
-  margin-right: -21px;
+  margin-right: 38px;
 }
 
 .e-de-toc-dlg-sub-heading {
@@ -681,8 +681,13 @@
 }
 
 .e-de-toc-dlg-style-label {
-  position: absolute;
-  top: 54px;
+  margin-left: 42px;
+  margin-top: 50px;
+}
+
+.e-de-toc-dlg-style-label .e-de-rtl {
+  margin-left: 0;
+  margin-right: 42px;
 }
 
 .e-de-pagesetup-dlg-container {
@@ -2110,33 +2115,29 @@ label[for*='_wholeWord_e-de-rtl'] {
   float: right;
 }
 
-.e-de-toc-dlg-right-sub-container {
-  margin-right: 2px;
-  margin-top: 122px;
-}
-
 .e-de-toc-dlg-right-sub-container.e-de-rtl {
   margin-left: 2px;
-  margin-right: 0;
-}
-
-.e-de-toc-dlg-right-sub-container.e-de-rtl {
   margin-right: 2px;
 }
 
 .e-de-toc-dlg-styles {
   margin-bottom: 11px;
-  margin-left: -22px;
-  margin-top: 20px;
+  margin-left: 38px;
+  margin-top: 15px;
 }
 
 .e-de-toc-dlg-styles.e-de-rtl {
   margin-left: 0;
-  margin-right: -22px;
+  margin-right: 38px;
+}
+
+.e-de-toc-dlg-style-input.e-de-rtl {
+  margin-left: 0;
+  margin-right: 38px;
 }
 
 .e-de-toc-dlg-build-table {
-  margin-top: 20px;
+  margin-top: 30;
 }
 
 .e-de-toc-table-div .e-de-toc-dlg-toc-level {
@@ -2156,30 +2157,20 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 12px;
 }
 
-.e-de-toc-dlg-show-level-div {
-  margin-left: 275px;
-  margin-top: 16px;
-}
-
-.e-de-toc-dlg-show-level-div.e-de-rtl {
-  margin-left: 0;
-  margin-right: 275px;
-}
-
 .e-de-toc-table-div {
-  height: 134px;
+  height: 143px;
   overflow-y: scroll;
   width: 211px;
 }
 
 .e-de-toc-dlg-style-input {
   margin-bottom: 3px;
-  margin-left: -22px;
+  margin-left: 38px;
   width: 210px;
 }
 
 .e-de-toc-dlg-outline-levels {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 150px;
 }
 
@@ -2190,10 +2181,6 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-styles-dlgfields {
   font-weight: 400;
   margin-bottom: 6px;
-}
-
-.e-de-toc-dlg-showlevel-div {
-  margin-left: 276px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {

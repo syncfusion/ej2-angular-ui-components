@@ -632,7 +632,7 @@
 }
 
 .e-de-toc-reset-button.e-de-rtl {
-  margin-right: 33px;
+  margin-right: 0;
 }
 
 .e-de-toc-modify-button {
@@ -658,15 +658,15 @@
   border: 1px solid #808080;
   border-radius: 4px;
   font-size: 12px;
-  height: 181px;
-  margin-left: 23px;
+  height: 194px;
+  margin-left: 36px;
   overflow-y: scroll;
   width: 211px;
 }
 
 .e-de-toc-list-view.e-de-rtl {
   margin-left: 0;
-  margin-right: 23px;
+  margin-right: 36px;
 }
 
 .e-de-toc-dlg-sub-heading {
@@ -678,8 +678,13 @@
 }
 
 .e-de-toc-dlg-style-label {
-  position: absolute;
-  top: 60px;
+  margin-left: 45px;
+  margin-top: 58px;
+}
+
+.e-de-toc-dlg-style-label .e-de-rtl {
+  margin-left: 0;
+  margin-right: 45px;
 }
 
 .e-de-pagesetup-dlg-container {
@@ -2107,33 +2112,29 @@ label[for*='_wholeWord_e-de-rtl'] {
   float: right;
 }
 
-.e-de-toc-dlg-right-sub-container {
-  margin-right: 2px;
-  margin-top: 119px;
-}
-
 .e-de-toc-dlg-right-sub-container.e-de-rtl {
   margin-left: 2px;
-  margin-right: 0;
-}
-
-.e-de-toc-dlg-right-sub-container.e-de-rtl {
   margin-right: 2px;
 }
 
 .e-de-toc-dlg-styles {
   margin-bottom: 11px;
-  margin-left: 25px;
-  margin-top: 38px;
+  margin-left: 38px;
+  margin-top: 30px;
 }
 
 .e-de-toc-dlg-styles.e-de-rtl {
   margin-left: 0;
-  margin-right: 25px;
+  margin-right: 38px;
+}
+
+.e-de-toc-dlg-style-input.e-de-rtl {
+  margin-left: 0;
+  margin-right: 36px;
 }
 
 .e-de-toc-dlg-build-table {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .e-de-toc-table-div .e-de-toc-dlg-toc-level {
@@ -2153,16 +2154,6 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 12px;
 }
 
-.e-de-toc-dlg-show-level-div {
-  margin-left: 255px;
-  margin-top: 16px;
-}
-
-.e-de-toc-dlg-show-level-div.e-de-rtl {
-  margin-left: 0;
-  margin-right: 255px;
-}
-
 .e-de-toc-table-div {
   height: 163px;
   overflow-y: scroll;
@@ -2171,12 +2162,12 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-toc-dlg-style-input {
   margin-bottom: 3px;
-  margin-left: 23px;
+  margin-left: 36px;
   width: 210px;
 }
 
 .e-de-toc-dlg-outline-levels {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 150px;
 }
 
@@ -2187,10 +2178,6 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-styles-dlgfields {
   font-weight: 400;
   margin-bottom: 6px;
-}
-
-.e-de-toc-dlg-showlevel-div {
-  margin-left: 255px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {

@@ -354,12 +354,17 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
     
     ComponentBase.prototype.ngAfterViewInit = function () {
         var _this = this;
+        var regExp = /ejs-tab|ejs-accordion/g;
+        if (regExp.test(this.ngEle.nativeElement.outerHTML)) {
+            this.ngEle.nativeElement.style.visibility = 'hidden';
+        }
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(function () {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined') {
                 _this.appendTo(_this.element);
+                _this.ngEle.nativeElement.style.visibility = '';
             }
         });
     };
