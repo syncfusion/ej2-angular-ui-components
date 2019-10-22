@@ -138,6 +138,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * Defines the shape of the connector
      * @default 'Bpmn'
      * @asptype object
+     * @blazortype object
      */
     public shape: any;
     /** 

@@ -590,6 +590,29 @@
   border-bottom: 2px solid;
 }
 
+.e-pdfviewer .e-pv-drop {
+  color: #3088ed;
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  z-index: 1000;
+}
+
+.e-pdfviewer .e-pv-droplet {
+  background-color: #3088ed;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-color: #3088ed;
+  border-style: solid;
+  border-top-left-radius: 50%;
+  border-width: 2px;
+  height: 20px;
+  margin: 0 0 0 9px;
+  position: absolute;
+  width: 20px;
+}
+
 .e-pv-viewer-container {
   background-color: #d0d0d0;
   border-color: #fff;
@@ -2433,4 +2456,24 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-tbar-btn.e-control.e-btn.e-lib.e-icon-btn.e-pv-justfiy-align.e-pv-tbar-btn.e-tooltip.textprop-option-active {
   background: #bdbdbd;
   border-color: #bdbdbd;
+}
+
+.e-pv-comment-panel-resizer {
+  background: #f4f4f4;
+  border: 0;
+  border-width: 0;
+  color: inherit;
+  cursor: ew-resize;
+  height: calc(100%);
+  position: absolute;
+  width: 8px;
+  z-index: 105;
+}
+
+.e-pv-comment-panel-resizer.e-left {
+  left: 300px;
+}
+
+.e-pv-comment-panel-resizer.e-right {
+  right: 300px;
 }

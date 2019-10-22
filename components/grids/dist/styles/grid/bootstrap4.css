@@ -1432,12 +1432,15 @@
   padding: 0 .6em;
 }
 
-.e-grid .e-columnheader {
-  cursor: pointer;
+.e-grid .e-headercell,
+.e-grid .e-headercell.e-stackedheadercell,
+.e-grid .e-headercell.e-defaultcursor {
+  cursor: default;
 }
 
-.e-grid .e-columnheader.e-defaultcursor {
-  cursor: default;
+.e-grid .e-headercell.e-mousepointer,
+.e-grid .e-headercell.e-stackedheadercell.e-mousepointer {
+  cursor: pointer;
 }
 
 .e-grid .e-gridheader .e-headercell,

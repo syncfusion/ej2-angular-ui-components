@@ -221,6 +221,10 @@
   vertical-align: middle;
 }
 
+.e-treegrid .e-treecolumn-container .e-hierarchycheckbox .e-frame {
+  height: 18px;
+}
+
 .e-treegrid .e-checkselection .e-frozenheader .e-rowcell,
 .e-treegrid .e-checkselection .e-movableheader .e-rowcell,
 .e-treegrid .e-checkselection .e-frozencontent .e-rowcell,

@@ -542,6 +542,7 @@
 .e-gantt .e-gantt-chart .e-indicator-span {
   display: inline-block;
   font-size: 13px;
+  font-weight: 400;
   overflow: hidden;
   position: absolute;
   text-overflow: ellipsis;
@@ -1440,7 +1441,7 @@
   border-top-color: #e0e0e0;
 }
 
-.e-gantt .e-gantt-chart .e-content {
+.e-gantt .e-gantt-chart .e-ganttpopup .e-content {
   background-color: #fff;
   border-color: #e0e0e0;
 }

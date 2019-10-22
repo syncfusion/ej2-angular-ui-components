@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-lists';
-exports.pkgVer = '^17.3.14';
+exports.pkgVer = '^17.3.16';
 exports.moduleName = 'ListViewModule';
-exports.themeVer = '~17.3.14';
+exports.themeVer = '~17.3.16';

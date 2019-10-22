@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 17.3.19 (2019-10-22)
+
+### ListBox
+
+- Drag Event returns null value issue is fixed
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#246853` - Now, popup will close when input element is hidden from viewport.
+
 ## 17.3.17 (2019-10-15)
 
 ### MultiSelect

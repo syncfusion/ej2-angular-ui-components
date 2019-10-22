@@ -271,6 +271,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Defines the shape of a node
      * @default Basic Shape
      * @asptype object
+     * @blazortype object
      */
     public shape: any;
     /** 

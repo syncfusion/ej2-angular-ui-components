@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 17.3.17 (2019-10-15)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- Export not working issue fixed.
-
 ## 17.3.16 (2019-10-09)
 
 ### Spreadsheet
@@ -48,4 +40,12 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 17.3.17 (2019-10-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- Export not working issue fixed.
 

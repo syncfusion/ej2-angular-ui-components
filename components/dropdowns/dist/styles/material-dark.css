@@ -908,6 +908,48 @@ ejs-dropdownlist {
   width: auto;
 }
 
+.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 32px);
+}
+
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 38px);
+}
+
+.e-small .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 30px);
+}
+
+.e-bigger.e-small .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger.e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger .e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small .e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 32px);
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 32px);
+}
+
+.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 38px);
+}
+
+.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 30px);
+}
+
+.e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 32px);
+}
+
 .e-multi-select-wrapper .e-delim-values {
   font-family: inherit;
   font-size: 14px;
@@ -981,6 +1023,7 @@ ejs-dropdownlist {
 
 .e-multiselect.e-rtl .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close {
   margin: 0;
+  margin-right: auto;
 }
 
 .e-multiselect.e-rtl .e-multi-select-wrapper .e-searcher {
@@ -1843,8 +1886,24 @@ ejs-multiselect {
   background-color: #ececec;
 }
 
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips:hover {
+  background-color: #ececec;
+}
+
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected {
-  background-color: #424242;
+  background-color: #dcdcdc;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected:hover {
+  background-color: #dcdcdc;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent {
+  color: #fff;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent:hover {
+  color: #fff;
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -1853,6 +1912,14 @@ ejs-multiselect {
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker:hover {
   color: #000;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close::before {
+  color: #fff;
 }
 
 .e-multiselect.e-outline:not(.e-disabled) .e-multi-select-wrapper .e-chips:not(.e-chip-selected) .e-chips-close:hover::before {
@@ -1877,10 +1944,18 @@ ejs-multiselect {
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
   background-color: #3f51b5;
-  border-radius: 2px;
+  border-radius: 4px;
+  box-sizing: border-box;
   color: #fff;
   height: 40px;
   line-height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close {
+  width: 33px;
 }
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chipcontent {
