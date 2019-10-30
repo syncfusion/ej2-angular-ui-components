@@ -7,7 +7,6 @@
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -122,7 +121,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: #fff;
@@ -169,7 +167,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -230,7 +227,6 @@ body.e-colorpicker-overflow {
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 10px;
@@ -342,7 +338,6 @@ body.e-colorpicker-overflow {
   display: inline-flex;
   padding: 0 15px 15px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

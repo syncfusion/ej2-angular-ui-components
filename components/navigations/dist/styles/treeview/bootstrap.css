@@ -193,7 +193,6 @@
 }
 
 .e-treeview .e-text-content {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -204,7 +203,6 @@
 }
 
 .e-treeview .e-fullrow {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -326,7 +324,6 @@
 }
 
 .e-treeview .e-popup {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;

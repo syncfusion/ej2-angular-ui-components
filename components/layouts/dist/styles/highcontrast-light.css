@@ -1227,7 +1227,6 @@
 
 .e-dashboardlayout.e-control.e-prevent {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1294,7 +1293,6 @@
   border: 1px #757575 solid;
   height: 100%;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

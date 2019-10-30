@@ -1405,7 +1405,6 @@
   height: 40px;
   min-height: 40px;
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -1513,7 +1512,6 @@
 
 .e-tab .e-tab-header .e-toolbar-item {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }

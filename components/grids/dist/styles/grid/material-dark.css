@@ -335,7 +335,6 @@
 /*! Grid layout */
 .e-disableuserselect {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -641,7 +640,6 @@
 .e-bigger .e-grid.e-device.e-noselect,
 .e-grid.e-bigger.e-device.e-noselect {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1099,7 +1097,6 @@
 
 .e-grid .e-gridheader {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1377,7 +1374,6 @@
   padding: 0 0.6em;
   text-align: left;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1408,7 +1404,6 @@
 .e-grid .e-gridheader .e-headercell,
 .e-grid .e-gridheader .e-detailheadercell {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -2076,7 +2071,6 @@
   font-weight: normal;
   position: absolute;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   z-index: 99999;
@@ -2146,7 +2140,6 @@
   padding: 4px 5px;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2275,7 +2268,6 @@
   text-align: left;
   text-indent: 1pt;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -2423,7 +2415,6 @@
   height: 8px;
   position: absolute;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 8px;
@@ -2433,7 +2424,6 @@
   border: 0 solid;
   position: absolute;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -2450,7 +2440,6 @@
 
 .e-grid .e-noselect {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

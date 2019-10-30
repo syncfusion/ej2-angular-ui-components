@@ -510,7 +510,6 @@ label.e-float-text,
   transform-origin: left top;
   transition: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -1039,7 +1038,6 @@ label.e-float-text,
 .e-float-input.e-input-focus input ~ label.e-float-text,
 .e-float-input.e-control-wrapper.e-input-focus input ~ label.e-float-text {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -1053,7 +1051,6 @@ label.e-float-text,
 .e-float-input.e-control-wrapper textarea:valid ~ label.e-float-text.e-label-top,
 .e-float-input.e-control-wrapper textarea ~ label.e-float-text.e-label-top {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -1610,74 +1607,62 @@ textarea.e-small.e-input::-moz-placeholder {
 
 input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 textarea.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group textarea.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group.e-control-wrapper input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group.e-control-wrapper textarea.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .e-input-group.e-control-wrapper input.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 textarea.e-input:-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 input.e-input::-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 textarea.e-input::-moz-placeholder {
   font-style: normal;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 input.e-input:-ms-input-placeholder {
@@ -3115,7 +3100,6 @@ textarea.e-input.e-bigger.e-small,
   transform-origin: left top;
   transition: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;

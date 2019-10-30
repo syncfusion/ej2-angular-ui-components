@@ -404,6 +404,11 @@
   font-family: 'e-icons';
 }
 
+.e-pv-handwritten-icon::before {
+  content: '\e737';
+  font-family: 'e-icons';
+}
+
 /*! component layout */
 .e-pdfviewer .e-pv-viewer-container {
   border-style: solid;
@@ -446,14 +451,12 @@
 }
 
 .e-pdfviewer .e-enable-text-selection {
-  -moz-user-select: text;
   -ms-user-select: text;
   -webkit-user-select: text;
   user-select: text;
 }
 
 .e-pdfviewer .e-disable-text-selection {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -1532,14 +1535,6 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-search-bar.e-rtl .e-pv-prev-search .e-pv-icon-search {
   padding-right: 5px;
-}
-
-.e-pv-search-text-highlight {
-  background-color: #fdd835;
-}
-
-.e-pv-search-text-highlightother {
-  background-color: #8b4c12;
 }
 
 .e-pv-notification-popup {

@@ -102,7 +102,6 @@
   overflow: hidden;
   padding: 3px 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;

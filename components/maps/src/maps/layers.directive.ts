@@ -104,7 +104,6 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * Specifies the shape data for the layer.
      * @isdatamanager false
-     * @isgenerictype true
      * @default null
      */
     public shapeData: any;

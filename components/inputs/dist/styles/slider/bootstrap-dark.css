@@ -417,7 +417,6 @@
   outline: none;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-position: center center;
@@ -429,7 +428,6 @@
   outline: none;
   position: absolute;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;

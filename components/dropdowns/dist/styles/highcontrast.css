@@ -843,7 +843,6 @@ ejs-dropdownlist {
   padding: 0 32px 0 2px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -1687,7 +1686,6 @@ e-ddl.e-popup.e-multi-select-list-wrapper.e-multiselct-group.e-checkbox .e-list-
   overflow: auto;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

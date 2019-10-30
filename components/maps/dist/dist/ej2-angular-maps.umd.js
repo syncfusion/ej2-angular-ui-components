@@ -507,8 +507,8 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'zoom', 'dataSourceChange'];
+var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'tooltipDisplayMode', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'tooltipRenderComplete', 'zoom', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Represents Maps Component
@@ -816,7 +816,9 @@ exports.Border = ej2Maps.Border;
 exports.CenterPosition = ej2Maps.CenterPosition;
 exports.TooltipSettings = ej2Maps.TooltipSettings;
 exports.Margin = ej2Maps.Margin;
+exports.ConnectorLineSettings = ej2Maps.ConnectorLineSettings;
 exports.MarkerClusterSettings = ej2Maps.MarkerClusterSettings;
+exports.SameMarkerClusterData = ej2Maps.SameMarkerClusterData;
 exports.ColorMappingSettings = ej2Maps.ColorMappingSettings;
 exports.SelectionSettings = ej2Maps.SelectionSettings;
 exports.HighlightSettings = ej2Maps.HighlightSettings;
@@ -872,6 +874,8 @@ exports.convertElement = ej2Maps.convertElement;
 exports.convertElementFromLabel = ej2Maps.convertElementFromLabel;
 exports.drawSymbols = ej2Maps.drawSymbols;
 exports.clusterTemplate = ej2Maps.clusterTemplate;
+exports.mergeSeparateCluster = ej2Maps.mergeSeparateCluster;
+exports.clusterSeparate = ej2Maps.clusterSeparate;
 exports.marker = ej2Maps.marker;
 exports.markerTemplate = ej2Maps.markerTemplate;
 exports.appendShape = ej2Maps.appendShape;

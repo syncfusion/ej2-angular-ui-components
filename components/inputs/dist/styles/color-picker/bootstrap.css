@@ -7,7 +7,6 @@
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -109,7 +108,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.175);
@@ -150,7 +148,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -211,7 +208,6 @@ body.e-colorpicker-overflow {
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 8px;
@@ -323,7 +319,6 @@ body.e-colorpicker-overflow {
   display: inline-flex;
   padding: 0 15px 15px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

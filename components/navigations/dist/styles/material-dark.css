@@ -1050,7 +1050,6 @@
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -2452,7 +2451,6 @@
   margin: 0;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 14px;
@@ -4071,7 +4069,6 @@
   height: 36px;
   min-height: 36px;
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -4172,7 +4169,6 @@
 
 .e-tab .e-tab-header .e-toolbar-item {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
@@ -6697,7 +6693,6 @@
 }
 
 .e-treeview .e-text-content {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -6708,7 +6703,6 @@
 }
 
 .e-treeview .e-fullrow {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -6827,7 +6821,6 @@
 }
 
 .e-treeview .e-popup {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -7308,7 +7301,6 @@ ejs-sidebar {
   box-sizing: border-box;
   overflow: auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -7442,7 +7434,6 @@ ejs-sidebar {
   margin: 0;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 13px;

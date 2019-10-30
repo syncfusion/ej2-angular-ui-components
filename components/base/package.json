@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "17.3.16",
+	"version": "17.3.19",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -16,12 +16,12 @@
 		"ng"
 	],
 	"peerDependencies": {
-		"@angular/common": "2.2.1 - 8.2.10",
-		"@angular/compiler": "2.2.1 - 8.2.10",
-		"@angular/core": "2.2.1 - 8.2.10",
-		"@angular/forms": "2.2.1 - 8.2.10",
-		"@angular/platform-browser": "2.2.1 - 8.2.10",
-		"@angular/platform-browser-dynamic": "2.2.1 - 8.2.10"
+		"@angular/common": "2.2.1 - 8.2.12",
+		"@angular/compiler": "2.2.1 - 8.2.12",
+		"@angular/core": "2.2.1 - 8.2.12",
+		"@angular/forms": "2.2.1 - 8.2.12",
+		"@angular/platform-browser": "2.2.1 - 8.2.12",
+		"@angular/platform-browser-dynamic": "2.2.1 - 8.2.12"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",

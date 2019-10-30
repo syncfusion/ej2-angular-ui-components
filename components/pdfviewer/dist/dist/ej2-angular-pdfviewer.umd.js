@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationSelectorSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'contextMenuOption', 'customStampItems', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableAnnotationToolbar', 'enableBookmark', 'enableCommentPanel', 'enableDownload', 'enableFormFields', 'enableFreeText', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableShapeLabel', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextMarkupResizer', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'freeTextSettings', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'measurementSettings', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'shapeLabelSettings', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
+var inputs = ['annotations', 'drawingObject', 'tool', 'ajaxRequestSettings', 'annotationSelectorSettings', 'annotationToolbarSettings', 'areaSettings', 'arrowSettings', 'circleSettings', 'contextMenuOption', 'customStampItems', 'customStampSettings', 'distanceSettings', 'documentPath', 'enableAnnotation', 'enableAnnotationToolbar', 'enableBookmark', 'enableCommentPanel', 'enableDownload', 'enableFormFields', 'enableFreeText', 'enableHandwrittenSignature', 'enableHyperlink', 'enableMagnification', 'enableMeasureAnnotation', 'enableNavigation', 'enableNavigationToolbar', 'enablePersistence', 'enablePinchZoom', 'enablePrint', 'enableRtl', 'enableShapeAnnotation', 'enableShapeLabel', 'enableStampAnnotations', 'enableStickyNotesAnnotation', 'enableTextMarkupAnnotation', 'enableTextMarkupResizer', 'enableTextSearch', 'enableTextSelection', 'enableThumbnail', 'enableToolbar', 'freeTextSettings', 'handWrittenSignatureSettings', 'height', 'highlightSettings', 'hyperlinkOpenState', 'interactionMode', 'lineSettings', 'locale', 'measurementSettings', 'perimeterSettings', 'polygonSettings', 'radiusSettings', 'rectangleSettings', 'selectedItems', 'serverActionSettings', 'serviceUrl', 'shapeLabelSettings', 'stampSettings', 'stickyNotesSettings', 'strikethroughSettings', 'textSearchColorSettings', 'toolbarSettings', 'underlineSettings', 'volumeSettings', 'width'];
 var outputs = ['ajaxRequestFailed', 'annotationAdd', 'annotationPropertiesChange', 'annotationRemove', 'annotationResize', 'annotationSelect', 'documentLoad', 'documentLoadFailed', 'documentUnload', 'exportFailed', 'exportStart', 'exportSuccess', 'hyperlinkClick', 'hyperlinkMouseOver', 'importFailed', 'importStart', 'importSuccess', 'pageChange', 'pageClick', 'textSelectionEnd', 'textSelectionStart', 'thumbnailClick', 'zoomChange'];
 var twoWays = [];
 /**
@@ -281,6 +281,7 @@ exports.TextLayer = ej2Pdfviewer.TextLayer;
 exports.ContextMenu = ej2Pdfviewer.ContextMenu;
 exports.FontStyle = ej2Pdfviewer.FontStyle;
 exports.AjaxHandler = ej2Pdfviewer.AjaxHandler;
+exports.Signature = ej2Pdfviewer.Signature;
 exports.Magnification = ej2Pdfviewer.Magnification;
 exports.Navigation = ej2Pdfviewer.Navigation;
 exports.ThumbnailView = ej2Pdfviewer.ThumbnailView;
@@ -311,6 +312,8 @@ exports.StickyNotesSettings = ej2Pdfviewer.StickyNotesSettings;
 exports.MeasurementSettings = ej2Pdfviewer.MeasurementSettings;
 exports.FreeTextSettings = ej2Pdfviewer.FreeTextSettings;
 exports.AnnotationSelectorSettings = ej2Pdfviewer.AnnotationSelectorSettings;
+exports.TextSearchColorSettings = ej2Pdfviewer.TextSearchColorSettings;
+exports.HandWrittenSignatureSettings = ej2Pdfviewer.HandWrittenSignatureSettings;
 exports.PdfViewer = ej2Pdfviewer.PdfViewer;
 exports.BookmarkView = ej2Pdfviewer.BookmarkView;
 exports.TextSelection = ej2Pdfviewer.TextSelection;

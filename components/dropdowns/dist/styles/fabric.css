@@ -709,7 +709,6 @@ ejs-dropdownlist {
   padding: 0 32px 0 2px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -1545,7 +1544,6 @@ ejs-multiselect {
   overflow: auto;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
