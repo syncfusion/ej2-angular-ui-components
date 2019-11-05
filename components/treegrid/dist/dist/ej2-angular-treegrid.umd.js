@@ -735,6 +735,7 @@ exports.AggregateColumn = ej2Treegrid.AggregateColumn;
 exports.AggregateRow = ej2Treegrid.AggregateRow;
 exports.SortDescriptor = ej2Treegrid.SortDescriptor;
 exports.SortSettings = ej2Treegrid.SortSettings;
+exports.RowDropSettings = ej2Treegrid.RowDropSettings;
 exports.Render = ej2Treegrid.Render;
 exports.TreeVirtualRowModelGenerator = ej2Treegrid.TreeVirtualRowModelGenerator;
 exports.isRemoteData = ej2Treegrid.isRemoteData;

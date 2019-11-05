@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-grids';
-exports.pkgVer = '^17.3.19';
+exports.pkgVer = '^17.3.21';
 exports.moduleName = 'GridModule, PagerModule';
-exports.themeVer = '~17.3.19';
+exports.themeVer = '~17.3.21';

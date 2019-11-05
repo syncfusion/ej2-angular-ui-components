@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.3.26 (2019-11-05)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#252717` - Excel export issue in Angular 8 has been fixed.
+
 ## 17.3.16 (2019-10-09)
 
 ### Spreadsheet

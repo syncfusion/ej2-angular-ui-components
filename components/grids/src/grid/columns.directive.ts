@@ -165,7 +165,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public defaultValue: any;
     /** 
      * If `disableHtmlEncode` is set to true, it encodes the HTML of the header and content cells.
-     * @default false
+     * @default true
      */
     public disableHtmlEncode: any;
     /** 
@@ -174,7 +174,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public displayAsCheckBox: any;
     /** 
-     * Defines the `IEditCell` object to customize default edit cell.
+     * Defines the `IEditCell`(../../grid/edit/#cell-edit-template) object to customize default edit cell.
      * @default {}
      */
     public edit: any;
@@ -371,7 +371,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public uid: any;
     /** 
-     * Defines rules to validate data before creating and updating.
+     * `editType`(../../grid/edit/#cell-edit-type-and-its-params) Defines rules to validate data before creating and updating.
      * @default null
      */
     public validationRules: any;

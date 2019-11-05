@@ -1343,7 +1343,6 @@
 
 .e-pivotview .e-rowcell .e-cellvalue {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   color: #212529;

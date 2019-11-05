@@ -348,6 +348,10 @@ body.e-colorpicker-overflow {
   text-align: center;
 }
 
+.e-container .e-selected-value .e-input-container .e-numeric-hidden {
+  display: none;
+}
+
 .e-container .e-selected-value .e-value-switch-btn {
   font-family: 'e-icons';
   font-size: 16px;

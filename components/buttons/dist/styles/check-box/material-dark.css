@@ -17,7 +17,6 @@
   line-height: 1;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -60,7 +59,6 @@
   font-weight: normal;
   line-height: 18px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;

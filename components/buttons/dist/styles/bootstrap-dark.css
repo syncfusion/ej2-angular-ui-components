@@ -19,7 +19,6 @@
   text-decoration: none;
   text-transform: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -1528,7 +1527,6 @@
   line-height: 1;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1571,7 +1569,6 @@
   font-weight: normal;
   line-height: 20px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2081,7 +2078,6 @@
   margin: 0;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2622,7 +2618,6 @@
   height: 20px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 46px;
@@ -3658,7 +3653,6 @@
   position: relative;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

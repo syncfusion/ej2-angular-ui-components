@@ -54,7 +54,6 @@
 
 .e-ribbon .e-tab .e-tab-header .e-toolbar-item {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

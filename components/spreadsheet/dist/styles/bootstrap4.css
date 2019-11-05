@@ -161,7 +161,6 @@
 .e-spreadsheet {
   display: block;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -312,7 +311,6 @@
   padding: 0 1px;
   position: absolute;
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
   vertical-align: bottom;
@@ -598,7 +596,6 @@
 
 .e-spreadsheet .e-tab .e-tab-header .e-toolbar-item {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1097,7 +1094,6 @@
 .e-spreadsheet-function-dlg {
   min-height: 510px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1871,7 +1867,6 @@
 
 .e-ribbon .e-tab .e-tab-header .e-toolbar-item {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

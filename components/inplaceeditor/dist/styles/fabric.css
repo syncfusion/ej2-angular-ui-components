@@ -242,7 +242,6 @@
 
 .e-inplaceeditor .e-editable-value-wrapper.e-editable-open {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -264,7 +263,6 @@
 
 .e-inplaceeditor.e-overlay {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -351,7 +349,6 @@
   opacity: .5;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   visibility: visible;

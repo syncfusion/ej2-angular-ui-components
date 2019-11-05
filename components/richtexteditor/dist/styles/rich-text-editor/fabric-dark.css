@@ -829,7 +829,6 @@
 .e-richtexteditor .e-source-content .e-content a {
   text-decoration: none;
   -webkit-user-select: auto;
-     -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
 }
@@ -2309,7 +2308,6 @@ span.e-rte-imageboxmark {
 
 .e-disabled {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

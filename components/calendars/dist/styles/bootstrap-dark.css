@@ -19,7 +19,6 @@ ejs-calendar {
   display: block;
   overflow: auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1478,7 +1477,6 @@ ejs-calendar {
   text-decoration: none;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -1501,7 +1499,6 @@ ejs-calendar {
   margin: 0 0 13px 0;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -1793,7 +1790,6 @@ ejs-calendar {
   -ms-flex-pack: center;
       justify-content: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

@@ -194,7 +194,6 @@
   outline: medium none;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -2672,7 +2671,6 @@
 
 .e-dialog.e-quick-dialog {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 320px;
@@ -3163,7 +3161,6 @@
   min-width: 320px;
   opacity: 1;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

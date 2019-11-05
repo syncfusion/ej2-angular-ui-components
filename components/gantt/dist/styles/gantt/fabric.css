@@ -402,7 +402,6 @@
   position: static;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -578,7 +577,6 @@
 .e-gantt .e-gantt-chart .e-chart-scroll-container,
 .e-gantt .e-gantt-chart .e-chart-rows-container {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
