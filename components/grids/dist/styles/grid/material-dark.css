@@ -2484,6 +2484,11 @@
   padding-top: 4px;
 }
 
+.e-grid .e-gridcontent .e-normaledit .e-rowcell.e-lastrowadded {
+  border-bottom: 1px solid #616161;
+  border-top: 0 none #616161;
+}
+
 .e-grid .e-normaledit {
   border-top: 0;
   padding: 0;
@@ -2666,12 +2671,15 @@
 
 .e-grid .e-frozenhdrcont .e-headercontent > .e-table,
 .e-grid .e-frozenhdrcont .e-frozenheader > .e-table,
-.e-grid .e-frozenhdrcont .e-movableheader > .e-table {
+.e-grid .e-frozenhdrcont .e-movableheader > .e-table,
+.e-grid .e-frozenhdrcont .e-headercontent .e-virtualtable > .e-table {
   border-bottom: 1px solid;
 }
 
 .e-grid .e-frozenheader > .e-table,
-.e-grid .e-frozencontent > .e-table {
+.e-grid .e-frozencontent > .e-table,
+.e-grid .e-frozenheader .e-virtualtable > .e-table,
+.e-grid .e-frozencontent .e-virtualtable > .e-table {
   border-left: 0;
   border-right: 1px solid;
 }
@@ -3481,7 +3489,8 @@
 
 .e-grid .e-frozenhdrcont .e-headercontent > .e-table,
 .e-grid .e-frozenhdrcont .e-frozenheader > .e-table,
-.e-grid .e-frozenhdrcont .e-movableheader > .e-table {
+.e-grid .e-frozenhdrcont .e-movableheader > .e-table,
+.e-grid .e-frozenhdrcont .e-headercontent .e-virtualtable > .e-table {
   border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -3490,7 +3499,9 @@
 }
 
 .e-grid .e-frozenheader > .e-table,
-.e-grid .e-frozencontent > .e-table {
+.e-grid .e-frozencontent > .e-table,
+.e-grid .e-frozencontent .e-virtualtable > .e-table,
+.e-grid .e-frozenheader .e-virtualtable > .e-table {
   border-right-color: rgba(255, 255, 255, 0.8);
 }
 

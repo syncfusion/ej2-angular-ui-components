@@ -74,7 +74,7 @@
 .e-bigger .e-popup.e-ddl .e-input-group input,
 .e-bigger .e-popup.e-ddl .e-input-group input.e-input {
   font-size: 16px;
-  height: 30px;
+  height: 36px;
 }
 
 .e-bigger .e-popup.e-ddl .e-dropdownbase {
@@ -119,10 +119,6 @@
 .e-ddl.e-popup .e-filter-parent .e-input-group,
 .e-ddl.e-popup .e-filter-parent {
   background: rgba(0, 0, 0, 0.03);
-}
-
-.e-bigger .e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
 }
 
 .e-input-group .e-control.e-dropdownlist ~ .e-ddl-icon {

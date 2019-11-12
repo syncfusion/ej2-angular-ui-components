@@ -6,7 +6,7 @@ import { DatePicker } from '@syncfusion/ej2-calendars';
 
 
 export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','htmlAttributes','isMultiSelection','keyConfigs','locale','max','min','placeholder','readonly','serverTimezoneOffset','showClearButton','showTodayButton','start','strictMode','value','values','weekNumber','width','zIndex'];
-export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
+export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**

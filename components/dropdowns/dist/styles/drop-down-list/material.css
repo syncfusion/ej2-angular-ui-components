@@ -153,7 +153,6 @@
 
 .e-ddl .e-back-icon::before {
   content: '\e977';
-  font-size: 20px;
 }
 
 .e-ddl.e-input-group.e-control-wrapper .e-ddl-icon::before {
@@ -191,14 +190,6 @@
 
 .e-ddl.e-control-wrapper .e-ddl-disable-icon::before {
   content: '';
-}
-
-.e-bigger .e-ddl-device .e-input-group {
-  margin-left: 52px;
-}
-
-.e-bigger .e-ddl-device .e-input-group .e-clear-icon {
-  margin-right: 66px;
 }
 
 .e-ddl-device-filter .e-filter-parent {
@@ -242,9 +233,7 @@
 }
 
 .e-ddl.e-popup .e-filter-parent .e-back-icon {
-  margin: 0 10px 0 -52px;
-  padding: 8px 16px;
-  position: absolute;
+  padding: 0 8px;
 }
 
 .e-ddl.e-popup.e-rtl .e-filter-parent .e-input-group.e-control-wrapper .e-input-filter,
@@ -260,10 +249,6 @@
 .e-ddl.e-popup .e-ddl-footer,
 .e-ddl.e-popup .e-ddl-header {
   cursor: default;
-}
-
-.e-bigger .e-popup .e-clear-icon {
-  display: none;
 }
 
 .e-ddl.e-input-group .e-ddl-hidden {

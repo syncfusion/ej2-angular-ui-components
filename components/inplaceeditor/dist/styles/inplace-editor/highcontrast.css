@@ -47,11 +47,7 @@
   border-color: #fff;
 }
 
-.e-bigger .e-ddl.e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
-}
-
-.e-bigger .e-ddl.e-popup.e-ddl-device-filter {
+.e-bigger .e-ddl.e-popup.e-ddl-device.e-ddl-device-filter {
   margin-top: 0;
 }
 
@@ -73,7 +69,7 @@
 }
 
 .e-bigger .e-ddl.e-popup .e-input-group input {
-  height: 30px;
+  height: 46px;
 }
 
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,

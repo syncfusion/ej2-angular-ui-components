@@ -5,7 +5,7 @@ import { TextBox } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['autocomplete','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','multiline','placeholder','readonly','showClearButton','type','value'];
+export const inputs: string[] = ['autocomplete','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','multiline','placeholder','readonly','showClearButton','type','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 

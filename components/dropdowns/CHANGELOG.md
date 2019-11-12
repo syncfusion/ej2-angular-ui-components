@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.3.27 (2019-11-12)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#227938` - Now, item template works properly when enable the filtering.
+
+### Multiselect
+
+#### Bug fixes
+
+- `#F148696` - Issue with "`return arrow button` doesn't appear at the top in mobile mode" has been resolved.
+
 ## 17.3.21 (2019-10-30)
 
 ### ComboBox

@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { PresetsDirective } from './presets.directive';
 
 export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','serverTimezoneOffset','showClearButton','start','startDate','strictMode','value','weekNumber','width','zIndex'];
-export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
+export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
 export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 
 /**
