@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-inputs';
-export const pkgVer = '^17.3.26';
+export const pkgVer = '^17.3.27';
 export const moduleName = 'TextBoxModule, NumericTextBoxModule, MaskedTextBoxModule, SliderModule, UploaderModule, ColorPickerModule';
-export const themeVer = '~17.3.26';
+export const themeVer = '~17.3.27';

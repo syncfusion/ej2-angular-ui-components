@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-inputs';
-exports.pkgVer = '^17.3.26';
+exports.pkgVer = '^17.3.27';
 exports.moduleName = 'TextBoxModule, NumericTextBoxModule, MaskedTextBoxModule, SliderModule, UploaderModule, ColorPickerModule';
-exports.themeVer = '~17.3.26';
+exports.themeVer = '~17.3.27';

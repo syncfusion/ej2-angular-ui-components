@@ -1055,6 +1055,11 @@
       flex-direction: column;
 }
 
+.e-splitter.e-ie .e-split-bar.e-split-bar-horizontal .e-resize-handler::before {
+  background: #303030;
+  padding: 2px 0;
+}
+
 .e-splitter.e-splitter-horizontal, .e-splitter.e-splitter-vertical {
   border: solid 1px #616161;
 }

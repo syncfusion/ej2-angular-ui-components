@@ -413,6 +413,11 @@
       flex-direction: column;
 }
 
+.e-splitter.e-ie .e-split-bar.e-split-bar-horizontal .e-resize-handler::before {
+  background: #fff;
+  padding: 2px 0;
+}
+
 .e-splitter.e-splitter-horizontal, .e-splitter.e-splitter-vertical {
   border: solid 1px #dee2e6;
 }

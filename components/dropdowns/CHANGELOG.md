@@ -2,19 +2,19 @@
 
 ## [Unreleased]
 
-## 17.3.27 (2019-11-12)
+## 17.3.28 (2019-11-19)
 
-### ComboBox
+### MultiSelect
 
 #### Bug Fixes
 
-- `#227938` - Now, item template works properly when enable the filtering.
+- `#F148867` , `#254713` - The issue with "rendering the `itemTemplate` when value is bound to the control" has been resolved.
 
 ### Multiselect
 
 #### Bug fixes
 
-- `#F148696` - Issue with "`return arrow button` doesn't appear at the top in mobile mode" has been resolved.
+- `#251564` - Issue with "new item is not added to respective group while adding items using addItem method" has been resolved.
 
 ## 17.3.21 (2019-10-30)
 
@@ -1213,4 +1213,18 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 17.3.27 (2019-11-12)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#227938` - Now, item template works properly when enable the filtering.
+
+### Multiselect
+
+#### Bug fixes
+
+- `#F148696` - Issue with "`return arrow button` doesn't appear at the top in mobile mode" has been resolved.
 
