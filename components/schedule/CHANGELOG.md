@@ -8,6 +8,15 @@
 
 #### Bug Fixes
 
+- `#148606, #148770, #253868, #253137 , #253534` - An issue with displaying wrong timeslot and time for DST time-zones has been fixed.
+- `#148560` - An issue with custom drag interval has been fixed.
+
+## 17.3.27 (2019-11-12)
+
+### Schedule
+
+#### Bug Fixes
+
 - `#253534` - An issue with displaying fractional value in Agenda view for DST time-zones has been fixed.
 - `#253652` - An issue with triggering the `popupClose` event on clicking outside the Scheduler has been fixed.
 - An issue with event height whose duration is less than 30 minutes has been fixed.

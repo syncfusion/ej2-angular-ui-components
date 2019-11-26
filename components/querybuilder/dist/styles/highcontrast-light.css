@@ -367,10 +367,37 @@
   margin-left: 12px;
 }
 
+.e-query-builder .e-group-header .e-checkbox-wrapper label {
+  margin-left: -7px;
+}
+
+.e-query-builder .e-group-header .e-checkbox-wrapper.e-btn.e-small {
+  border-bottom-right-radius: 0;
+  border-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .e-query-builder .e-group-header .e-btn-group {
   border: none;
   box-shadow: none;
   display: inline-block;
+}
+
+.e-query-builder .e-group-header .e-btn.e-btngroup-and-lbl.e-small.e-not {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-label {
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  top: -1px;
+}
+
+.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-icons {
+  position: relative;
+  top: -1px;
 }
 
 .e-query-builder .e-group-header .e-group-action {
@@ -665,6 +692,12 @@
   padding-bottom: 0;
 }
 
+.e-query-builder.e-device .e-small.e-checkbox-wrapper .e-label,
+.e-bigger.e-query-builder .e-small.e-checkbox-wrapper .e-label,
+.e-bigger .e-query-builder .e-small.e-checkbox-wrapper .e-label {
+  font-size: 14px;
+}
+
 .e-query-builder.e-device .e-rule-list .e-group-container,
 .e-bigger.e-query-builder .e-rule-list .e-group-container,
 .e-bigger .e-query-builder .e-rule-list .e-group-container {
@@ -816,6 +849,10 @@
   background: #400074;
   border-color: #400074;
   color: #fff;
+}
+
+.e-query-builder .e-group-header .e-btn-group .e-checkbox-wrapper:last-of-type {
+  border-left: 1px solid;
 }
 
 .e-query-builder .e-removerule.e-btn.e-round {

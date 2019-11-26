@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 17.3.28 (2019-11-19)
+## 17.3.29 (2019-11-26)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#252717` - Excel export issue in Angular 8 has been fixed.
+`#F149335` - Excel export issue has been fixed.
+
 
 ## 17.3.16 (2019-10-09)
 
@@ -48,6 +49,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 17.3.26 (2019-11-05)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#252717` - Excel export issue in Angular 8 has been fixed.
 
 ## 17.3.17 (2019-10-15)
 

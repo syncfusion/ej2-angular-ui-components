@@ -253,10 +253,37 @@
   margin-left: 12px;
 }
 
+.e-query-builder .e-group-header .e-checkbox-wrapper label {
+  margin-left: -3px;
+}
+
+.e-query-builder .e-group-header .e-checkbox-wrapper.e-btn.e-small {
+  border-bottom-right-radius: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+}
+
 .e-query-builder .e-group-header .e-btn-group {
   border: none;
   box-shadow: none;
   display: inline-block;
+}
+
+.e-query-builder .e-group-header .e-btn.e-btngroup-and-lbl.e-small.e-not {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-label {
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  top: -1px;
+}
+
+.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-icons {
+  position: relative;
+  top: -1px;
 }
 
 .e-query-builder .e-group-header .e-group-action {
@@ -549,6 +576,12 @@
 .e-bigger .e-query-builder .e-rule-list {
   padding: 15px 0 15px 0;
   padding-bottom: 0;
+}
+
+.e-query-builder.e-device .e-small.e-checkbox-wrapper .e-label,
+.e-bigger.e-query-builder .e-small.e-checkbox-wrapper .e-label,
+.e-bigger .e-query-builder .e-small.e-checkbox-wrapper .e-label {
+  font-size: 14px;
 }
 
 .e-query-builder.e-device .e-rule-list .e-group-container,

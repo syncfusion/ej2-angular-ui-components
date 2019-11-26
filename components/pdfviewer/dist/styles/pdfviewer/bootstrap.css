@@ -739,6 +739,7 @@
 
 .e-pv-gotopage-apply-btn.e-btn.e-flat.e-primary:disabled {
   background-color: transparent;
+  color: rgba(51, 51, 51, 0.6);
 }
 
 .e-pv-mobiletotalpage-container {

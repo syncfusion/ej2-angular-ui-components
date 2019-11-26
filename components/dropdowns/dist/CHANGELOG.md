@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 17.3.29 (2019-11-26)
+
+### AutoComplete
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### ComboBox
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### DropDownList
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### MultiSelect
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+#### Bug Fixes
+
+- `#F149046` - Issue with "popup not opened after clearing the all selected values" has been resolved.
+
 ## 17.3.28 (2019-11-19)
 
 ### MultiSelect
@@ -9,10 +39,6 @@
 #### Bug Fixes
 
 - `#F148867` , `#254713` - The issue with "rendering the `itemTemplate` when value is bound to the control" has been resolved.
-
-### Multiselect
-
-#### Bug fixes
 
 - `#251564` - Issue with "new item is not added to respective group while adding items using addItem method" has been resolved.
 
@@ -38,6 +64,8 @@
 
 - `#251466` - Now, you can set width property in `em` unit.
 
+- `#252117` , `#248511` - Issue with "floating label not positioned properly when set floatLabelType value as Always" has been resolved.
+
 ### ListBox
 
 #### Bug Fixes
@@ -46,12 +74,6 @@
 - `#F147087` - script error "contains of undefined in ListBox" while rendering the ListBox and multi select in the same router page has been fixed.
 - `#F147408` - Move To toolbar button not working when loading the list box using `remote data` has been resolved.
 - `#249771` - script error while performing the toolbar actions in dual ListBox with `data manager` in `EJ2 MVC` has been resolved
-
-### Multiselect
-
-#### Bug fixes
-
-- `#252117` , `#248511` - Issue with "floating label not positioned properly when set floatLabelType value as Always" has been resolved.
 
 ## 17.3.19 (2019-10-22)
 
@@ -1222,9 +1244,9 @@ DropDownList component contains a list of predefined values from which a single 
 
 - `#227938` - Now, item template works properly when enable the filtering.
 
-### Multiselect
+### MultiSelect
 
-#### Bug fixes
+#### Bug Fixes
 
 - `#F148696` - Issue with "`return arrow button` doesn't appear at the top in mobile mode" has been resolved.
 

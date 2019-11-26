@@ -1948,6 +1948,11 @@
   min-height: 190px;
 }
 
+.e-richtexteditor .e-rte-content .e-content table.e-rte-table-border {
+  border: 1px solid #bdbdbd;
+  border-collapse: separate;
+}
+
 /*! tab layout */
 .e-richtexteditor .e-rte-toolbar {
   border: 1px solid #fff;
