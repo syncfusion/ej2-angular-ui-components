@@ -1114,6 +1114,10 @@
   border-top-right-radius: 0px;
 }
 
+.e-gantt .e-active-container {
+  box-shadow: 0 0 0 1px #9e9e9e inset;
+}
+
 .e-gantt .e-gantt-dialog .e-dlg-header {
   color: #fff;
 }

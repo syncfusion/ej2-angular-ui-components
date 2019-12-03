@@ -284,15 +284,18 @@
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn {
-  border-color: transparent;
+  border-left-color: #ccc;
+  border-right-color: #ccc;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:focus {
-  border-color: transparent;
+  border-left-color: #8c8c8c;
+  border-right-color: #8c8c8c;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:active {
-  border-color: transparent;
+  border-left-color: #adadad;
+  border-right-color: #adadad;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:disabled {

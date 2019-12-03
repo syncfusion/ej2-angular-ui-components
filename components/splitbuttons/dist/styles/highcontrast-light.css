@@ -518,15 +518,18 @@
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn {
-  border-color: transparent;
+  border-left-color: #000;
+  border-right-color: #000;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:focus {
-  border-color: transparent;
+  border-left-color: #000;
+  border-right-color: #000;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:active {
-  border-color: transparent;
+  border-left-color: #400074;
+  border-right-color: #400074;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:disabled {

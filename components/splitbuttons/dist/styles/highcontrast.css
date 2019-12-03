@@ -518,15 +518,18 @@
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn {
-  border-color: transparent;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:focus {
-  border-color: transparent;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:active {
-  border-color: transparent;
+  border-left-color: #ffd939;
+  border-right-color: #ffd939;
 }
 
 .e-split-btn-wrapper.e-rtl .e-split-btn:disabled {
