@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 17.3.30 (2019-12-03)
+## 17.3.34 (2019-12-10)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#254282` - Web accessibility related issues have been resolved.
+
+## 17.3.29 (2019-11-26)
 
 ### Dialog
 
