@@ -1,7 +1,7 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var selectors = ['ejs-chart','ejs-accumulationchart','ejs-rangenavigator','ejs-sparkline','ejs-smithchart','ejs-stockchart'];
+var selectors = ['ejs-chart','ejs-accumulationchart','ejs-rangenavigator','ejs-sparkline','ejs-smithchart','ejs-stockchart','ejs-bulletchart'];
 
 if (process.env.tagName !== undefined) {
   var newTagPrefix = process.env.tagName.trim();

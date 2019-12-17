@@ -69,6 +69,7 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     /** 
      * Accepts the template design and assigns it to the group headers present in the popup list.
      * @default null
+     * @deprecated 
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -80,6 +81,7 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
+     * @deprecated 
      */
     @ContentChild('itemTemplate')
     @Template()

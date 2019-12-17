@@ -5,8 +5,8 @@ import { InPlaceEditor } from '@syncfusion/ej2-inplace-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','type','url','validationRules','value'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beginEdit','created','destroyed','validating'];
+export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enableHtmlSanitizer','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','type','url','validationRules','value'];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','created','destroyed','validating'];
 export const twoWays: string[] = [''];
 
 /**

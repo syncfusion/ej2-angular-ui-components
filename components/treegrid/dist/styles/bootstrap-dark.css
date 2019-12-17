@@ -201,6 +201,14 @@
   transform: rotate(90deg);
 }
 
+.e-treegrid .e-treerowexpanded {
+  display: table-row;
+}
+
+.e-treegrid .e-treerowcollapsed {
+  display: none;
+}
+
 .e-treegrid .e-treecolumn-container span {
   display: inline-block;
   vertical-align: middle;

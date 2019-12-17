@@ -4,7 +4,7 @@ import { Button } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['content','cssClass','disabled','enablePersistence','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale'];
+export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale'];
 export const outputs: string[] = ['created'];
 export const twoWays: string[] = [];
 

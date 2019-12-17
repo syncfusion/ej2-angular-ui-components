@@ -4,8 +4,8 @@ import { Toast } from '@syncfusion/ej2-notifications';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ButtonModelPropsDirective } from './buttons.directive';
 
-export const inputs: string[] = ['animation','buttons','content','cssClass','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
-export const outputs: string[] = ['beforeOpen','click','close','created','destroyed','open'];
+export const inputs: string[] = ['animation','buttons','content','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
+export const outputs: string[] = ['beforeOpen','beforeSanitizeHtml','click','close','created','destroyed','open'];
 export const twoWays: string[] = [''];
 
 /**

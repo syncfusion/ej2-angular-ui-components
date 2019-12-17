@@ -378,11 +378,11 @@
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:hover {
-  background: "";
+  background: transparent;
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:active {
-  background: "";
+  background: transparent;
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:focus {

@@ -125,7 +125,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public defaultValue: any;
     /** 
      * If `disableHtmlEncode` is set to true, it encodes the HTML of the header and content cells.
-     * @default false
+     * @default true
      */
     public disableHtmlEncode: any;
     /** 
@@ -151,6 +151,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * The `field` name must be a valid JavaScript identifier, 
      * the first character must be an alphabet and should not contain spaces and special characters.
      * @default 'undefined'
+     * @blazordefaultvalue ''
      */
     public field: any;
     /** 

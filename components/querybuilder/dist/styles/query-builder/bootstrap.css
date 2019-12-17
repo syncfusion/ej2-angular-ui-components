@@ -164,6 +164,17 @@
   right: 5px;
 }
 
+.e-query-builder.e-rtl .e-btn-group.e-rtl .e-btn.e-btngroup-and-lbl.e-small.e-not {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.e-query-builder.e-rtl .e-btn-group.e-rtl .e-qb-toggle.e-btn.e-small {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+}
+
 .e-query-builder.e-rtl .e-multiselect .e-qb-spinner .e-spinner-inner {
   left: 5px;
   right: auto;
@@ -287,11 +298,7 @@
   margin-left: 12px;
 }
 
-.e-query-builder .e-group-header .e-checkbox-wrapper label {
-  margin-left: -3px;
-}
-
-.e-query-builder .e-group-header .e-checkbox-wrapper.e-btn.e-small {
+.e-query-builder .e-group-header .e-qb-toggle.e-btn.e-small {
   border-bottom-right-radius: 0;
   border-radius: 4px;
   border-top-right-radius: 0;
@@ -306,18 +313,6 @@
 .e-query-builder .e-group-header .e-btn.e-btngroup-and-lbl.e-small.e-not {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-}
-
-.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-label {
-  font-size: 12px;
-  font-weight: 400;
-  position: relative;
-  top: 0;
-}
-
-.e-query-builder .e-group-header .e-small.e-checkbox-wrapper .e-icons {
-  position: relative;
-  top: 0;
 }
 
 .e-query-builder .e-group-header .e-group-action {
@@ -612,12 +607,6 @@
   padding-bottom: 0;
 }
 
-.e-query-builder.e-device .e-small.e-checkbox-wrapper .e-label,
-.e-bigger.e-query-builder .e-small.e-checkbox-wrapper .e-label,
-.e-bigger .e-query-builder .e-small.e-checkbox-wrapper .e-label {
-  font-size: 15px;
-}
-
 .e-query-builder.e-device .e-rule-list .e-group-container,
 .e-bigger.e-query-builder .e-rule-list .e-group-container,
 .e-bigger .e-query-builder .e-rule-list .e-group-container {
@@ -743,6 +732,10 @@
   border-color: #ddd;
 }
 
+.e-query-builder.e-rtl .e-btn-group.e-rtl .e-btn.e-btngroup-and-lbl.e-not {
+  border-right: transparent;
+}
+
 .e-query-builder .e-group-container {
   border-color: #ddd;
 }
@@ -765,10 +758,15 @@
   border-color: #ddd;
 }
 
-.e-query-builder .e-btn-group input:checked + label.e-btn {
+.e-query-builder .e-btn-group input:checked + label.e-btn,
+.e-query-builder .e-btn-group .e-btn.e-qb-toggle.e-active-toggle {
   background: #317ab9;
   border-color: #317ab9;
   color: #fff;
+}
+
+.e-query-builder .e-btn-group:not(.e-rtl) .e-qb-toggle.e-btn.e-small {
+  border-right: transparent;
 }
 
 .e-query-builder .e-removerule.e-btn.e-round {

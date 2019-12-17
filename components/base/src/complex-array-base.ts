@@ -138,16 +138,26 @@ export class ArrayBase<T> {
             return child;
           }
         );
-        /* istanbul ignore next */
+        /* istanbul ignore start */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
-              isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                if (this.list[i].propCollection.dataSource) {
+                    isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                } else {
+                    // tslint:disable-next-line
+                    let keys: any = Object.keys(this.list[i].propCollection);
+                    for (let j: number = 0; j < keys.length; j++) {
+                        if (this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
+                            isSourceChanged = true;
+                            break;
+                        }
+                    }
+                }
             }
         }
-        /* istanbul ignore next */
+
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
-        /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map((child: T & ComplexBase<T>) => {
                 child.index = index++;
@@ -155,6 +165,7 @@ export class ArrayBase<T> {
                 return child;
             });
         }
+        /* istanbul ignore end */
         for (let item of this.list) {
             result = result || (<{ hasChanges: boolean }>item).hasChanges;
         }

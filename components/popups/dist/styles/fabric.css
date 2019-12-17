@@ -643,6 +643,7 @@
 
 .e-tooltip-wrap .e-tip-content {
   color: #333;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 11px;
 }
 

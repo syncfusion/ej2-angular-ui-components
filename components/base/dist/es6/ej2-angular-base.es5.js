@@ -220,16 +220,26 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
         var childrenDataSource = this.children.map(function (child) {
             return child;
         });
-        /* istanbul ignore next */
+        /* istanbul ignore start */
         if (this.list.length === this.children.length) {
             for (var i = 0; i < this.list.length; i++) {
-                isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                    JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                if (this.list[i].propCollection.dataSource) {
+                    isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                }
+                else {
+                    // tslint:disable-next-line
+                    var keys = Object.keys(this.list[i].propCollection);
+                    for (var j = 0; j < keys.length; j++) {
+                        if (this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
+                            isSourceChanged = true;
+                            break;
+                        }
+                    }
+                }
             }
         }
-        /* istanbul ignore next */
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
-        /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map(function (child) {
                 child.index = index++;
@@ -237,6 +247,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
                 return child;
             });
         }
+        /* istanbul ignore end */
         for (var _i = 0, _a = this.list; _i < _a.length; _i++) {
             var item = _a[_i];
             result = result || item.hasChanges;

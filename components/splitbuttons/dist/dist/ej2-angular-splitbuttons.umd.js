@@ -14,6 +14,58 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var input = ['iconCss', 'id', 'separator', 'text', 'url'];
+var outputs = [];
+var DropDownButtonItemDirective = /** @class */ (function (_super) {
+    __extends(DropDownButtonItemDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function DropDownButtonItemDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        return _this;
+    }
+    return DropDownButtonItemDirective;
+}(ej2AngularBase.ComplexBase));
+DropDownButtonItemDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-dropdownbuttonitems>e-dropdownbuttonitem',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownButtonItemDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * DropDownButtonItem Array Directive
+ */
+var DropDownButtonItemsDirective = /** @class */ (function (_super) {
+    __extends(DropDownButtonItemsDirective, _super);
+    function DropDownButtonItemsDirective() {
+        return _super.call(this, 'items') || this;
+    }
+    return DropDownButtonItemsDirective;
+}(ej2AngularBase.ArrayBase));
+DropDownButtonItemsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'ejs-dropdownbutton>e-dropdownbuttonitems',
+                queries: {
+                    children: new core.ContentChildren(DropDownButtonItemDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownButtonItemsDirective.ctorParameters = function () { return []; };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -28,8 +80,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
-var outputs = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'close', 'created', 'open', 'select'];
+var inputs = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
+var outputs$1 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'close', 'created', 'open', 'select'];
 var twoWays = [];
 /**
  * Represents the Angular DropDownButton Component.
@@ -51,9 +103,10 @@ exports.DropDownButtonComponent = /** @class */ (function (_super) {
         _this.srenderer = srenderer;
         _this.viewContainerRef = viewContainerRef;
         _this.injector = injector;
+        _this.tags = ['items'];
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
-        _this.registerEvents(outputs);
+        _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -84,10 +137,12 @@ exports.DropDownButtonComponent.decorators = [
     { type: core.Component, args: [{
                 selector: '[ejs-dropdownbutton]',
                 inputs: inputs,
-                outputs: outputs,
+                outputs: outputs$1,
                 template: "<ng-content ></ng-content>",
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
-                queries: {}
+                queries: {
+                    childItems: new core.ContentChild(DropDownButtonItemsDirective)
+                }
             },] },
 ];
 /**
@@ -118,10 +173,14 @@ DropDownButtonModule.decorators = [
     { type: core.NgModule, args: [{
                 imports: [common.CommonModule],
                 declarations: [
-                    exports.DropDownButtonComponent
+                    exports.DropDownButtonComponent,
+                    DropDownButtonItemDirective,
+                    DropDownButtonItemsDirective
                 ],
                 exports: [
-                    exports.DropDownButtonComponent
+                    exports.DropDownButtonComponent,
+                    DropDownButtonItemDirective,
+                    DropDownButtonItemsDirective
                 ]
             },] },
 ];
@@ -150,6 +209,58 @@ DropDownButtonAllModule.decorators = [
  * @nocollapse
  */
 DropDownButtonAllModule.ctorParameters = function () { return []; };
+var input$1 = ['iconCss', 'id', 'separator', 'text', 'url'];
+var outputs$2 = [];
+var SplitButtonItemDirective = /** @class */ (function (_super) {
+    __extends(SplitButtonItemDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function SplitButtonItemDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$2);
+        return _this;
+    }
+    return SplitButtonItemDirective;
+}(ej2AngularBase.ComplexBase));
+SplitButtonItemDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-splitbuttonitems>e-splitbuttonitem',
+                inputs: input$1,
+                outputs: outputs$2,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SplitButtonItemDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * SplitButtonItem Array Directive
+ */
+var SplitButtonItemsDirective = /** @class */ (function (_super) {
+    __extends(SplitButtonItemsDirective, _super);
+    function SplitButtonItemsDirective() {
+        return _super.call(this, 'items') || this;
+    }
+    return SplitButtonItemsDirective;
+}(ej2AngularBase.ArrayBase));
+SplitButtonItemsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'ejs-splitbutton>e-splitbuttonitems',
+                queries: {
+                    children: new core.ContentChildren(SplitButtonItemDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SplitButtonItemsDirective.ctorParameters = function () { return []; };
 var __decorate$1 = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -164,8 +275,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
-var outputs$1 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'click', 'close', 'created', 'open', 'select'];
+var inputs$1 = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
+var outputs$3 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'click', 'close', 'created', 'open', 'select'];
 var twoWays$1 = [];
 /**
  * Represents the Angular SplitButton Component.
@@ -187,9 +298,10 @@ exports.SplitButtonComponent = /** @class */ (function (_super) {
         _this.srenderer = srenderer;
         _this.viewContainerRef = viewContainerRef;
         _this.injector = injector;
+        _this.tags = ['items'];
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
-        _this.registerEvents(outputs$1);
+        _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -220,10 +332,12 @@ exports.SplitButtonComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-splitbutton',
                 inputs: inputs$1,
-                outputs: outputs$1,
+                outputs: outputs$3,
                 template: "<ng-content ></ng-content>",
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
-                queries: {}
+                queries: {
+                    childItems: new core.ContentChild(SplitButtonItemsDirective)
+                }
             },] },
 ];
 /**
@@ -254,10 +368,14 @@ SplitButtonModule.decorators = [
     { type: core.NgModule, args: [{
                 imports: [common.CommonModule],
                 declarations: [
-                    exports.SplitButtonComponent
+                    exports.SplitButtonComponent,
+                    SplitButtonItemDirective,
+                    SplitButtonItemsDirective
                 ],
                 exports: [
-                    exports.SplitButtonComponent
+                    exports.SplitButtonComponent,
+                    SplitButtonItemDirective,
+                    SplitButtonItemsDirective
                 ]
             },] },
 ];
@@ -300,8 +418,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['animationSettings', 'content', 'cssClass', 'disabled', 'duration', 'enableProgress', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'spinSettings'];
-var outputs$2 = ['begin', 'created', 'end', 'fail', 'progress'];
+var inputs$2 = ['animationSettings', 'content', 'cssClass', 'disabled', 'duration', 'enableHtmlSanitizer', 'enableProgress', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'spinSettings'];
+var outputs$4 = ['begin', 'created', 'end', 'fail', 'progress'];
 var twoWays$2 = [];
 /**
  * Represents the Angular ProgressButton Component.
@@ -325,7 +443,7 @@ exports.ProgressButtonComponent = /** @class */ (function (_super) {
         _this.injector = injector;
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
-        _this.registerEvents(outputs$2);
+        _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         return _this;
@@ -356,7 +474,7 @@ exports.ProgressButtonComponent.decorators = [
     { type: core.Component, args: [{
                 selector: '[ejs-progressbutton]',
                 inputs: inputs$2,
-                outputs: outputs$2,
+                outputs: outputs$4,
                 template: "<ng-content ></ng-content>",
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {}
@@ -423,20 +541,25 @@ ProgressButtonAllModule.decorators = [
  */
 ProgressButtonAllModule.ctorParameters = function () { return []; };
 
+exports.DropDownButtonItemDirective = DropDownButtonItemDirective;
+exports.DropDownButtonItemsDirective = DropDownButtonItemsDirective;
 exports.DropDownButtonModule = DropDownButtonModule;
 exports.DropDownButtonAllModule = DropDownButtonAllModule;
+exports.SplitButtonItemDirective = SplitButtonItemDirective;
+exports.SplitButtonItemsDirective = SplitButtonItemsDirective;
 exports.SplitButtonModule = SplitButtonModule;
 exports.SplitButtonAllModule = SplitButtonAllModule;
 exports.ProgressButtonModule = ProgressButtonModule;
 exports.ProgressButtonAllModule = ProgressButtonAllModule;
 exports.ɵa = inputs;
-exports.ɵb = outputs;
+exports.ɵb = outputs$1;
 exports.ɵe = inputs$2;
-exports.ɵf = outputs$2;
+exports.ɵf = outputs$4;
 exports.ɵc = inputs$1;
-exports.ɵd = outputs$1;
+exports.ɵd = outputs$3;
 exports.getModel = ej2Splitbuttons.getModel;
 exports.Item = ej2Splitbuttons.Item;
+exports.dropDownButtonObserver = ej2Splitbuttons.dropDownButtonObserver;
 exports.DropDownButton = ej2Splitbuttons.DropDownButton;
 exports.SplitButton = ej2Splitbuttons.SplitButton;
 exports.Deferred = ej2Splitbuttons.Deferred;

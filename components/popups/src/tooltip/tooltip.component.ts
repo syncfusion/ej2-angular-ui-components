@@ -4,7 +4,7 @@ import { Tooltip } from '@syncfusion/ej2-popups';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['animation','closeDelay','content','cssClass','enablePersistence','enableRtl','height','isSticky','locale','mouseTrail','offsetX','offsetY','openDelay','opensOn','position','showTipPointer','target','tipPointerPosition','width'];
+export const inputs: string[] = ['animation','closeDelay','content','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','height','isSticky','locale','mouseTrail','offsetX','offsetY','openDelay','opensOn','position','showTipPointer','target','tipPointerPosition','width'];
 export const outputs: string[] = ['afterClose','afterOpen','beforeClose','beforeCollision','beforeOpen','beforeRender','created','destroyed'];
 export const twoWays: string[] = [''];
 
@@ -34,8 +34,8 @@ export class TooltipComponent extends Tooltip implements IComponentBase {
      * Refer the documentation [here](https://ej2.syncfusion.com/documentation/tooltip/content.html?lang=typescript) 
      *  to know more about this property with demo.
      * 
-     * {% codeBlock src="tooltip/content-api/index.ts" %}{% endcodeBlock %}
-     *     
+     * {% codeBlock src="tooltip/content-api/index.ts" %}{% endcodeBlock %}     
+     * @blazortype object
      */
     @ContentChild('content')
     @Template()

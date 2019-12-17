@@ -4,7 +4,7 @@ import { Toolbar } from '@syncfusion/ej2-navigations';
 
 import { ItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['enableCollision','enablePersistence','enableRtl','height','items','locale','overflowMode','scrollStep','width'];
+export const inputs: string[] = ['cssClass','enableCollision','enablePersistence','enableRtl','height','items','locale','overflowMode','scrollStep','width'];
 export const outputs: string[] = ['beforeCreate','clicked','created','destroyed'];
 export const twoWays: string[] = [''];
 

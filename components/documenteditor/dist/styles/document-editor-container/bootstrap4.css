@@ -307,6 +307,11 @@
   transform: scaleX(-1);
 }
 
+.e-de-cnt-cmt-add::before {
+  content: '\e814';
+  font-family: 'e-icons';
+}
+
 .e-de-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text .e-de-text-wrap {
   height: 0;
   line-height: 0;

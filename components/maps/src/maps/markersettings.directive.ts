@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'template', 'tooltipSettings', 'visible', 'width'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -44,6 +44,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public border: any;
     /** 
+     * To customize the color of marker from marker dataSource.
+     * @default null
+     */
+    public colorValuePath: any;
+    /** 
      * Options for customizing the dash array options
      */
     public dashArray: any;
@@ -73,6 +78,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public imageUrl: any;
     /** 
+     * To customize the shape image of marker from marker dataSource.
+     * @default null
+     */
+    public imageUrlValuePath: any;
+    /** 
      * To provide the dataSource field to display legend text
      * @default ''
      */
@@ -95,6 +105,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      * @default Balloon
      */
     public shape: any;
+    /** 
+     * To customize the shape of marker from marker dataSource.
+     * @default null
+     */
+    public shapeValuePath: any;
     /** 
      * To configure the tooltip settings of the maps marker.
      */

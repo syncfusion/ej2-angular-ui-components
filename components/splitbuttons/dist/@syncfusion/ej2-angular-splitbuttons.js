@@ -1,7 +1,55 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
-import { ComponentBase, ComponentMixins, setValue } from '@syncfusion/ej2-angular-base';
+import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
+import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from '@syncfusion/ej2-angular-base';
 import { DropDownButton, ProgressButton, SplitButton } from '@syncfusion/ej2-splitbuttons';
 import { CommonModule } from '@angular/common';
+
+let input = ['iconCss', 'id', 'separator', 'text', 'url'];
+let outputs = [];
+class DropDownButtonItemDirective extends ComplexBase {
+    /**
+     * @param {?} viewContainerRef
+     */
+    constructor(viewContainerRef) {
+        super();
+        this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', this, this.viewContainerRef);
+        this.registerEvents(outputs);
+    }
+}
+DropDownButtonItemDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-dropdownbuttonitems>e-dropdownbuttonitem',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownButtonItemDirective.ctorParameters = () => [
+    { type: ViewContainerRef, },
+];
+/**
+ * DropDownButtonItem Array Directive
+ */
+class DropDownButtonItemsDirective extends ArrayBase {
+    constructor() {
+        super('items');
+    }
+}
+DropDownButtonItemsDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'ejs-dropdownbutton>e-dropdownbuttonitems',
+                queries: {
+                    children: new ContentChildren(DropDownButtonItemDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownButtonItemsDirective.ctorParameters = () => [];
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12,8 +60,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
-const outputs = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'close', 'created', 'open', 'select'];
+const inputs = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
+const outputs$1 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'close', 'created', 'open', 'select'];
 const twoWays = [];
 /**
  * Represents the Angular DropDownButton Component.
@@ -34,9 +82,10 @@ let DropDownButtonComponent = class DropDownButtonComponent extends DropDownButt
         this.srenderer = srenderer;
         this.viewContainerRef = viewContainerRef;
         this.injector = injector;
+        this.tags = ['items'];
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        this.registerEvents(outputs);
+        this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
     }
@@ -65,10 +114,12 @@ DropDownButtonComponent.decorators = [
     { type: Component, args: [{
                 selector: '[ejs-dropdownbutton]',
                 inputs: inputs,
-                outputs: outputs,
+                outputs: outputs$1,
                 template: `<ng-content ></ng-content>`,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                queries: {}
+                queries: {
+                    childItems: new ContentChild(DropDownButtonItemsDirective)
+                }
             },] },
 ];
 /**
@@ -97,10 +148,14 @@ DropDownButtonModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
                 declarations: [
-                    DropDownButtonComponent
+                    DropDownButtonComponent,
+                    DropDownButtonItemDirective,
+                    DropDownButtonItemsDirective
                 ],
                 exports: [
-                    DropDownButtonComponent
+                    DropDownButtonComponent,
+                    DropDownButtonItemDirective,
+                    DropDownButtonItemsDirective
                 ]
             },] },
 ];
@@ -128,6 +183,54 @@ DropDownButtonAllModule.decorators = [
  */
 DropDownButtonAllModule.ctorParameters = () => [];
 
+let input$1 = ['iconCss', 'id', 'separator', 'text', 'url'];
+let outputs$2 = [];
+class SplitButtonItemDirective extends ComplexBase {
+    /**
+     * @param {?} viewContainerRef
+     */
+    constructor(viewContainerRef) {
+        super();
+        this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', this, this.viewContainerRef);
+        this.registerEvents(outputs$2);
+    }
+}
+SplitButtonItemDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-splitbuttonitems>e-splitbuttonitem',
+                inputs: input$1,
+                outputs: outputs$2,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SplitButtonItemDirective.ctorParameters = () => [
+    { type: ViewContainerRef, },
+];
+/**
+ * SplitButtonItem Array Directive
+ */
+class SplitButtonItemsDirective extends ArrayBase {
+    constructor() {
+        super('items');
+    }
+}
+SplitButtonItemsDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'ejs-splitbutton>e-splitbuttonitems',
+                queries: {
+                    children: new ContentChildren(SplitButtonItemDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SplitButtonItemsDirective.ctorParameters = () => [];
+
 var __decorate$1 = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,8 +240,8 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$1 = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
-const outputs$1 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'click', 'close', 'created', 'open', 'select'];
+const inputs$1 = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'items', 'locale', 'target'];
+const outputs$3 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'click', 'close', 'created', 'open', 'select'];
 const twoWays$1 = [];
 /**
  * Represents the Angular SplitButton Component.
@@ -159,9 +262,10 @@ let SplitButtonComponent = class SplitButtonComponent extends SplitButton {
         this.srenderer = srenderer;
         this.viewContainerRef = viewContainerRef;
         this.injector = injector;
+        this.tags = ['items'];
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        this.registerEvents(outputs$1);
+        this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
     }
@@ -190,10 +294,12 @@ SplitButtonComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-splitbutton',
                 inputs: inputs$1,
-                outputs: outputs$1,
+                outputs: outputs$3,
                 template: `<ng-content ></ng-content>`,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                queries: {}
+                queries: {
+                    childItems: new ContentChild(SplitButtonItemsDirective)
+                }
             },] },
 ];
 /**
@@ -222,10 +328,14 @@ SplitButtonModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
                 declarations: [
-                    SplitButtonComponent
+                    SplitButtonComponent,
+                    SplitButtonItemDirective,
+                    SplitButtonItemsDirective
                 ],
                 exports: [
-                    SplitButtonComponent
+                    SplitButtonComponent,
+                    SplitButtonItemDirective,
+                    SplitButtonItemsDirective
                 ]
             },] },
 ];
@@ -262,8 +372,8 @@ var __decorate$2 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$2 = ['animationSettings', 'content', 'cssClass', 'disabled', 'duration', 'enableProgress', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'spinSettings'];
-const outputs$2 = ['begin', 'created', 'end', 'fail', 'progress'];
+const inputs$2 = ['animationSettings', 'content', 'cssClass', 'disabled', 'duration', 'enableHtmlSanitizer', 'enableProgress', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'spinSettings'];
+const outputs$4 = ['begin', 'created', 'end', 'fail', 'progress'];
 const twoWays$2 = [];
 /**
  * Represents the Angular ProgressButton Component.
@@ -286,7 +396,7 @@ let ProgressButtonComponent = class ProgressButtonComponent extends ProgressButt
         this.injector = injector;
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        this.registerEvents(outputs$2);
+        this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
     }
@@ -315,7 +425,7 @@ ProgressButtonComponent.decorators = [
     { type: Component, args: [{
                 selector: '[ejs-progressbutton]',
                 inputs: inputs$2,
-                outputs: outputs$2,
+                outputs: outputs$4,
                 template: `<ng-content ></ng-content>`,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {}
@@ -382,6 +492,6 @@ ProgressButtonAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { DropDownButtonComponent, DropDownButtonModule, DropDownButtonAllModule, SplitButtonComponent, SplitButtonModule, SplitButtonAllModule, ProgressButtonComponent, ProgressButtonModule, ProgressButtonAllModule, inputs as ɵa, outputs as ɵb, inputs$2 as ɵe, outputs$2 as ɵf, inputs$1 as ɵc, outputs$1 as ɵd };
-export { getModel, Item, DropDownButton, SplitButton, Deferred, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
+export { DropDownButtonItemDirective, DropDownButtonItemsDirective, DropDownButtonComponent, DropDownButtonModule, DropDownButtonAllModule, SplitButtonItemDirective, SplitButtonItemsDirective, SplitButtonComponent, SplitButtonModule, SplitButtonAllModule, ProgressButtonComponent, ProgressButtonModule, ProgressButtonAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$2 as ɵe, outputs$4 as ɵf, inputs$1 as ɵc, outputs$3 as ɵd };
+export { getModel, Item, dropDownButtonObserver, DropDownButton, SplitButton, Deferred, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
 //# sourceMappingURL=ej2-angular-splitbuttons.js.map

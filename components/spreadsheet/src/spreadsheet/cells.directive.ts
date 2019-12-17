@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['format', 'formula', 'index', 'style', 'value'];
+let input: string[] = ['format', 'formula', 'hyperlink', 'index', 'style', 'value'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -46,6 +46,12 @@ export class CellDirective extends ComplexBase<CellDirective> {
      */
     public formula: any;
     /** 
+     * Specifies the hyperlink of the cell.
+     * @default ''
+     * @asptype SpreadsheetHyperlink
+     */
+    public hyperlink: any;
+    /** 
      * Specifies the index of the cell.
      * @default 0
      * @asptype int
@@ -58,7 +64,7 @@ export class CellDirective extends ComplexBase<CellDirective> {
      */
     public style: any;
     /** 
-     * Defines the value of the cell which can be text or number with formatting.
+     * Defines the value of the cell which can be text or number.
      * @default ''
      */
     public value: any;

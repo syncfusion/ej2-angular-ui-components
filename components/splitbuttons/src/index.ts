@@ -1,6 +1,8 @@
+export {DropDownButtonItemDirective,DropDownButtonItemsDirective} from './drop-down-button/items.directive';
 export { DropDownButtonComponent} from './drop-down-button/dropdownbutton.component';
 export { DropDownButtonModule } from './drop-down-button/dropdownbutton.module';
 export { DropDownButtonAllModule } from './drop-down-button/dropdownbutton-all.module';
+export {SplitButtonItemDirective,SplitButtonItemsDirective} from './split-button/items.directive';
 export { SplitButtonComponent} from './split-button/splitbutton.component';
 export { SplitButtonModule } from './split-button/splitbutton.module';
 export { SplitButtonAllModule } from './split-button/splitbutton-all.module';

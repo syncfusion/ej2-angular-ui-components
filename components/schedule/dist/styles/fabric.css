@@ -193,6 +193,7 @@
   display: block;
   outline: medium none;
   overflow: hidden;
+  position: relative;
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
@@ -856,6 +857,20 @@
   text-decoration: underline;
 }
 
+.e-schedule .e-vertical-view .e-header-cells.e-disable-dates .e-header-day {
+  cursor: default;
+  opacity: .35;
+}
+
+.e-schedule .e-vertical-view .e-header-cells.e-disable-dates .e-header-date {
+  cursor: default;
+  opacity: .35;
+}
+
+.e-schedule .e-vertical-view .e-header-cells.e-disable-dates .e-header-date:hover {
+  text-decoration: none;
+}
+
 .e-schedule .e-vertical-view .e-row-count-wrapper {
   display: block;
   height: 100%;
@@ -942,6 +957,14 @@
 
 .e-schedule .e-vertical-view .e-work-cells {
   width: 36px;
+}
+
+.e-schedule .e-vertical-view .e-work-cells.e-disable-dates {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.e-schedule .e-vertical-view .e-work-cells.e-disable-dates:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .e-schedule .e-vertical-view .e-current-time {
@@ -1289,6 +1312,23 @@
 
 .e-schedule .e-month-view .e-work-cells.e-disable-date .e-date-header {
   visibility: hidden;
+}
+
+.e-schedule .e-month-view .e-work-cells.e-disable-dates {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.e-schedule .e-month-view .e-work-cells.e-disable-dates .e-date-header {
+  cursor: default;
+  opacity: .35;
+}
+
+.e-schedule .e-month-view .e-work-cells.e-disable-dates .e-date-header:hover {
+  text-decoration: none;
+}
+
+.e-schedule .e-month-view .e-work-cells.e-disable-dates:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .e-schedule .e-month-view .e-date-header {
@@ -1763,6 +1803,16 @@
   height: 60px;
 }
 
+.e-schedule .e-timeline-view .e-work-cells.e-disable-dates,
+.e-schedule .e-timeline-month-view .e-work-cells.e-disable-dates {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.e-schedule .e-timeline-view .e-work-cells.e-disable-dates:hover,
+.e-schedule .e-timeline-month-view .e-work-cells.e-disable-dates:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .e-schedule .e-timeline-view .e-resource-text,
 .e-schedule .e-timeline-month-view .e-resource-text {
   color: #333;
@@ -2116,6 +2166,14 @@
   height: 40px;
   position: relative;
   vertical-align: top;
+}
+
+.e-schedule .e-month-agenda-view .e-work-cells.e-disable-dates {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.e-schedule .e-month-agenda-view .e-work-cells.e-disable-dates:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .e-schedule .e-month-agenda-view .e-date-header {
@@ -3375,7 +3433,7 @@
   border: none;
   margin-right: 8px;
   right: auto;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .e-quick-popup-wrapper.e-rtl {
@@ -3408,6 +3466,7 @@
   max-width: 100%;
   overflow: hidden;
   padding: 0;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;

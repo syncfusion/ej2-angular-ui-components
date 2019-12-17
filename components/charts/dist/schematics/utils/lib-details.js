@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-charts';
-exports.pkgVer = '^17.3.30';
-exports.moduleName = 'ChartModule, AccumulationChartModule, RangeNavigatorModule, SparklineModule, SmithchartModule, StockChartModule';
-exports.themeVer = '~17.3.30';
+exports.pkgVer = '^17.4.1';
+exports.moduleName = 'ChartModule, AccumulationChartModule, RangeNavigatorModule, SparklineModule, SmithchartModule, StockChartModule, BulletChartModule';
+exports.themeVer = '~17.4.1';

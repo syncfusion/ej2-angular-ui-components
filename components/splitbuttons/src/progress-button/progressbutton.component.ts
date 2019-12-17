@@ -4,7 +4,7 @@ import { ProgressButton } from '@syncfusion/ej2-splitbuttons';
 
 
 
-export const inputs: string[] = ['animationSettings','content','cssClass','disabled','duration','enableProgress','iconCss','iconPosition','isPrimary','isToggle','spinSettings'];
+export const inputs: string[] = ['animationSettings','content','cssClass','disabled','duration','enableHtmlSanitizer','enableProgress','iconCss','iconPosition','isPrimary','isToggle','spinSettings'];
 export const outputs: string[] = ['begin','created','end','fail','progress'];
 export const twoWays: string[] = [];
 

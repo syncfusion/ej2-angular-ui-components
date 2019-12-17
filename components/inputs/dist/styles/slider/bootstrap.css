@@ -397,6 +397,7 @@
 
 .e-control-wrapper.e-slider-container .e-scale {
   box-sizing: content-box;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
   height: 28px;
   line-height: normal;
   list-style: none outside none;
@@ -424,6 +425,7 @@
 
 .e-control-wrapper.e-slider-container .e-scale .e-tick .e-tick-value {
   color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 10px;
   outline: none;
   position: absolute;

@@ -3223,7 +3223,7 @@
 }
 
 .e-tab .e-tab-header .e-toolbar-pop .e-toolbar-item .e-tab-wrap:active {
-  background: grey-200;
+  background: #f5f5f5;
 }
 
 .e-tab .e-tab-header .e-scroll-nav,

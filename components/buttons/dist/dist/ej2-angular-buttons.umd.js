@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
+var inputs = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
 var outputs = ['created'];
 var twoWays = [];
 /**
@@ -164,7 +164,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
+var inputs$1 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
 var outputs$1 = ['focus', 'blur', 'change', 'created', 'checkedChange', 'indeterminateChange'];
 var twoWays$1 = ['checked', 'indeterminate'];
 /**
@@ -332,7 +332,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
+var inputs$2 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
 var outputs$2 = ['focus', 'blur', 'change', 'created', 'checkedChange'];
 var twoWays$2 = ['checked'];
 /**
@@ -890,6 +890,7 @@ exports.preRender = ej2Buttons.preRender;
 exports.createCheckBox = ej2Buttons.createCheckBox;
 exports.rippleMouseHandler = ej2Buttons.rippleMouseHandler;
 exports.setHiddenInput = ej2Buttons.setHiddenInput;
+exports.buttonObserver = ej2Buttons.buttonObserver;
 exports.Button = ej2Buttons.Button;
 exports.CheckBox = ej2Buttons.CheckBox;
 exports.RadioButton = ej2Buttons.RadioButton;

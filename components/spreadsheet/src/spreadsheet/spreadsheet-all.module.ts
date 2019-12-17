@@ -8,14 +8,14 @@ import { SheetDirective, SheetsDirective } from './sheets.directive';
 import { DefinedNameDirective, DefinedNamesDirective } from './definednames.directive';
 import { SpreadsheetComponent } from './spreadsheet.component';
 import { SpreadsheetModule } from './spreadsheet.module';
-import {Clipboard, Edit, KeyboardNavigation, KeyboardShortcut, Scroll, Selection, ContextMenu, FormulaBar, Ribbon, Save, Open, SheetTabs, DataBind, AllModule, BasicModule, CellFormat, NumberFormat, Formula} from '@syncfusion/ej2-spreadsheet'
+import {Clipboard, Edit, KeyboardNavigation, KeyboardShortcut, CollaborativeEditing, Selection, ContextMenu, FormulaBar, Ribbon, Save, Open, SheetTabs, DataBind, AllModule, BasicModule, CellFormat, NumberFormat, Formula} from '@syncfusion/ej2-spreadsheet'
 
 
 export const ClipboardService: ValueProvider = { provide: 'SpreadsheetClipboard', useValue: Clipboard};
 export const EditService: ValueProvider = { provide: 'SpreadsheetEdit', useValue: Edit};
 export const KeyboardNavigationService: ValueProvider = { provide: 'SpreadsheetKeyboardNavigation', useValue: KeyboardNavigation};
 export const KeyboardShortcutService: ValueProvider = { provide: 'SpreadsheetKeyboardShortcut', useValue: KeyboardShortcut};
-export const ScrollService: ValueProvider = { provide: 'SpreadsheetScroll', useValue: Scroll};
+export const CollaborativeEditingService: ValueProvider = { provide: 'SpreadsheetCollaborativeEditing', useValue: CollaborativeEditing};
 export const SelectionService: ValueProvider = { provide: 'SpreadsheetSelection', useValue: Selection};
 export const ContextMenuService: ValueProvider = { provide: 'SpreadsheetContextMenu', useValue: ContextMenu};
 export const FormulaBarService: ValueProvider = { provide: 'SpreadsheetFormulaBar', useValue: FormulaBar};
@@ -43,7 +43,7 @@ export const FormulaService: ValueProvider = { provide: 'SpreadsheetFormula', us
         EditService,
         KeyboardNavigationService,
         KeyboardShortcutService,
-        ScrollService,
+        CollaborativeEditingService,
         SelectionService,
         ContextMenuService,
         FormulaBarService,

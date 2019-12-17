@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetTab','allowCellFormatting','allowEditing','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','locale','openUrl','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
-export const outputs: string[] = ['beforeCellFormat','beforeCellRender','beforeDataBound','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','fileItemSelect','fileMenuBeforeClose','fileMenuBeforeOpen','openFailure','saveComplete','select','sortComplete'];
+export const inputs: string[] = ['activeSheetTab','allowCellFormatting','allowEditing','allowFiltering','allowHyperlink','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','locale','openUrl','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','fileItemSelect','fileMenuBeforeClose','fileMenuBeforeOpen','openComplete','openFailure','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
 /**
@@ -65,7 +65,7 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
                 }
             } catch { }
         try {
-                let mod = this.injector.get('SpreadsheetScroll');
+                let mod = this.injector.get('SpreadsheetCollaborativeEditing');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

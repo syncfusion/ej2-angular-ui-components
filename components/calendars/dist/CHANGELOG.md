@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 17.4.39 (2019-12-17)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#255630` - Issue with "change event argument `isInteracted` return as false while select the range from presets" has been resolved.
+
+- `#F149064` - Issue with "script error throws while navigate month in mobile mode" has been resolved.
+
 ## 17.3.27 (2019-11-12)
 
 ### DateTimePicker

@@ -5,7 +5,7 @@ import { RadioButton } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['checked','cssClass','disabled','enablePersistence','enableRtl','label','labelPosition','locale','name','value'];
+export const inputs: string[] = ['checked','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','label','labelPosition','locale','name','value'];
 export const outputs: string[] = ['focus', 'blur', 'change','created','checkedChange'];
 export const twoWays: string[] = ['checked'];
 

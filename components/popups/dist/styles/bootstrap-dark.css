@@ -622,6 +622,7 @@
 
 .e-tooltip-wrap .e-tip-content {
   color: #1a1a1a;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 12px;
 }
 

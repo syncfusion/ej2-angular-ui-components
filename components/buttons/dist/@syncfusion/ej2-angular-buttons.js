@@ -13,7 +13,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
+const inputs = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
 const outputs = ['created'];
 const twoWays = [];
 /**
@@ -138,7 +138,7 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$1 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
+const inputs$1 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
 const outputs$1 = ['focus', 'blur', 'change', 'created', 'checkedChange', 'indeterminateChange'];
 const twoWays$1 = ['checked', 'indeterminate'];
 /**
@@ -295,7 +295,7 @@ var __decorate$2 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$2 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
+const inputs$2 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
 const outputs$2 = ['focus', 'blur', 'change', 'created', 'checkedChange'];
 const twoWays$2 = ['checked'];
 /**
@@ -796,5 +796,5 @@ ChipListAllModule.ctorParameters = () => [];
  */
 
 export { ButtonComponent, ButtonModule, ButtonAllModule, CheckBoxComponent, CheckBoxModule, CheckBoxAllModule, RadioButtonComponent, RadioButtonModule, RadioButtonAllModule, SwitchComponent, SwitchModule, SwitchAllModule, ChipDirective, ChipsDirective, ChipListComponent, ChipListModule, ChipListAllModule, inputs as ɵa, outputs as ɵb, inputs$1 as ɵc, outputs$1 as ɵd, inputs$4 as ɵi, outputs$5 as ɵj, inputs$2 as ɵe, outputs$2 as ɵf, inputs$3 as ɵg, outputs$3 as ɵh };
-export { wrapperInitialize, getTextNode, destroy, preRender, createCheckBox, rippleMouseHandler, setHiddenInput, Button, CheckBox, RadioButton, Switch, classNames, ChipList, Chip } from '@syncfusion/ej2-buttons';
+export { wrapperInitialize, getTextNode, destroy, preRender, createCheckBox, rippleMouseHandler, setHiddenInput, buttonObserver, Button, CheckBox, RadioButton, Switch, classNames, ChipList, Chip } from '@syncfusion/ej2-buttons';
 //# sourceMappingURL=ej2-angular-buttons.js.map

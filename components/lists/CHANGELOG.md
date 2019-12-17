@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.39 (2019-12-17)
+
+### ListView
+
+#### Bug Fixes
+
+- #255485 - The crashing issue that occurred when rendering list view with virtualization and grouping has been fixed.
+
 ## 17.3.27 (2019-11-12)
 
 ### ListBox

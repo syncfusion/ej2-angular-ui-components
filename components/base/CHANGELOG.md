@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.39 (2019-12-17)
+
+### Common
+
+#### Bug Fixes
+
+- `I257439` - Increased `peerDependencies` version from `8.2.12` to `8.2.14`.
+
 ## 17.3.17 (2019-10-15)
 
 ### Common

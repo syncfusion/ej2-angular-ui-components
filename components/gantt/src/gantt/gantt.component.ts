@@ -9,8 +9,8 @@ import { DayWorkingTimeCollectionDirective } from './dayworkingtime.directive';
 import { HolidaysDirective } from './holidays.directive';
 import { EventMarkersDirective } from './eventmarkers.directive';
 
-export const inputs: string[] = ['addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowReordering','allowResizing','allowSelection','allowSorting','allowUnscheduledTasks','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','durationUnit','editDialogFields','editSettings','enableContextMenu','enablePersistence','enablePredecessorValidation','enableRtl','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','renderBaseline','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','sortSettings','splitterSettings','taskFields','taskbarHeight','taskbarTemplate','timelineSettings','toolbar','tooltipSettings','treeColumnIndex','width','workWeek'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeExcelExport','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','destroyed','endEdit','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','queryCellInfo','queryTaskbarInfo','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
+export const inputs: string[] = ['addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowUnscheduledTasks','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','enableContextMenu','enablePersistence','enablePredecessorValidation','enableRtl','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','renderBaseline','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','sortSettings','splitterSettings','taskFields','taskbarHeight','taskbarTemplate','timelineSettings','toolbar','tooltipSettings','treeColumnIndex','width','workWeek'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeExcelExport','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','destroyed','endEdit','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','onMouseMove','onTaskbarClick','queryCellInfo','queryTaskbarInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -147,6 +147,12 @@ export class GanttComponent extends Gantt implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('GanttExcelExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GanttRowDD');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

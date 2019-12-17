@@ -1,11 +1,12 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
+import { InitialShapeSelectionsDirective } from './initialshapeselection.directive';
 import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -20,16 +21,18 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
+        childInitialShapeSelection: new ContentChild(InitialShapeSelectionsDirective), 
         childMarkerSettings: new ContentChild(MarkersDirective), 
         childBubbleSettings: new ContentChild(BubblesDirective), 
         childNavigationLineSettings: new ContentChild(NavigationLinesDirective)
     }
 })
 export class LayerDirective extends ComplexBase<LayerDirective> {
+    public childInitialShapeSelection: any;
     public childMarkerSettings: any;
     public childBubbleSettings: any;
     public childNavigationLineSettings: any;
-    public tags: string[] = ['markerSettings', 'bubbleSettings', 'navigationLineSettings'];
+    public tags: string[] = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
     /** 
      * Specifies the type for the layer.
      * @default Layer
@@ -69,6 +72,10 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * To configure the highlight settings of the maps.
      */
     public highlightSettings: any;
+    /** 
+     * To select the shape at the rendering time.
+     */
+    public initialShapeSelection: any;
     /** 
      * Specifies the key for the layer.
      * @default ''
@@ -121,6 +128,11 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * Specifies the shape properties
      */
     public shapeSettings: any;
+    /** 
+     * Specifies the type for the static map.
+     * @default RoadMap
+     */
+    public staticMapType: any;
     /** 
      * To configure the legend toggle settings.
      */

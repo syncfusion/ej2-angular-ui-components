@@ -4,8 +4,8 @@ import { Dialog } from '@syncfusion/ej2-popups';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ButtonsDirective } from './buttons.directive';
 
-export const inputs: string[] = ['allowDragging','animationSettings','buttons','closeOnEscape','content','cssClass','enablePersistence','enableResize','enableRtl','footerTemplate','header','height','isModal','locale','minHeight','position','showCloseIcon','target','visible','width','zIndex'];
-export const outputs: string[] = ['beforeClose','beforeOpen','close','created','drag','dragStart','dragStop','open','overlayClick','resizeStart','resizeStop','resizing','visibleChange'];
+export const inputs: string[] = ['allowDragging','animationSettings','buttons','closeOnEscape','content','cssClass','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','footerTemplate','header','height','isModal','locale','minHeight','position','showCloseIcon','target','visible','width','zIndex'];
+export const outputs: string[] = ['beforeClose','beforeOpen','beforeSanitizeHtml','close','created','drag','dragStart','dragStop','open','overlayClick','resizeStart','resizeStop','resizing','visibleChange'];
 export const twoWays: string[] = ['visible'];
 
 /**

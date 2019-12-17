@@ -45,6 +45,8 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
     /** 
      * This enabled property helps to enable/disable ChipList component.
      * @default true
+     * @blazordefaultvalue null
+     * @blazortype bool?
      */
     public enabled: any;
     /** 

@@ -5,7 +5,7 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 export const inputs: string[] = ['enableCsp','enableLocalPaste','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','headers','locale','restrictEditing','serverActionSettings','serviceUrl','showPropertiesPane','zIndex'];
-export const outputs: string[] = ['contentChange','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange'];
+export const outputs: string[] = ['beforePaneSwitch','contentChange','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange'];
 export const twoWays: string[] = [];
 
 /**

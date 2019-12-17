@@ -204,16 +204,26 @@ class ArrayBase {
         let childrenDataSource = this.children.map((child) => {
             return child;
         });
-        /* istanbul ignore next */
+        /* istanbul ignore start */
         if (this.list.length === this.children.length) {
             for (let i = 0; i < this.list.length; i++) {
-                isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                    JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                if (this.list[i].propCollection.dataSource) {
+                    isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                }
+                else {
+                    // tslint:disable-next-line
+                    let keys = Object.keys(this.list[i].propCollection);
+                    for (let j = 0; j < keys.length; j++) {
+                        if (this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
+                            isSourceChanged = true;
+                            break;
+                        }
+                    }
+                }
             }
         }
-        /* istanbul ignore next */
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
-        /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map((child) => {
                 child.index = index++;
@@ -221,6 +231,7 @@ class ArrayBase {
                 return child;
             });
         }
+        /* istanbul ignore end */
         for (let item of this.list) {
             result = result || item.hasChanges;
         }

@@ -91,6 +91,7 @@ export class ResourceDirective extends ComplexBase<ResourceDirective> {
      * Defines the external [`query`](http://ej2.syncfusion.com/documentation/data/api-query.html) 
      * that will be executed along with the data processing.
      * @default null
+     * @blazortype Syncfusion.EJ2.Blazor.Data.Query
      */
     public query: any;
     /** 

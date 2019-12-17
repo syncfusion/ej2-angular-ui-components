@@ -1,5 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DropDownButtonItemDirective, DropDownButtonItemsDirective } from './items.directive';
 import { DropDownButtonComponent } from './dropdownbutton.component';
 import { DropDownButtonModule } from './dropdownbutton.module';
 

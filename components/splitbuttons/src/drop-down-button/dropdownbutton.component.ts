@@ -1,10 +1,10 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { DropDownButton } from '@syncfusion/ej2-splitbuttons';
 
+import { DropDownButtonItemsDirective } from './items.directive';
 
-
-export const inputs: string[] = ['content','cssClass','disabled','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
+export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','close','created','open','select'];
 export const twoWays: string[] = [];
 
@@ -21,13 +21,13 @@ export const twoWays: string[] = [];
     template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-
+        childItems: new ContentChild(DropDownButtonItemsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
 export class DropDownButtonComponent extends DropDownButton implements IComponentBase {
-
-
+    public childItems: any;
+    public tags: string[] = ['items'];
 
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {

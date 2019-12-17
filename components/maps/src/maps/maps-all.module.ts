@@ -1,5 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InitialShapeSelectionDirective, InitialShapeSelectionsDirective } from './initialshapeselection.directive';
 import { MarkerDirective, MarkersDirective } from './markersettings.directive';
 import { ColorMappingDirective, ColorMappingsDirective } from './colormapping.directive';
 import { BubbleDirective, BubblesDirective } from './bubblesettings.directive';

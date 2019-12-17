@@ -202,6 +202,7 @@ exports.Border = ej2Heatmap.Border;
 exports.TooltipBorder = ej2Heatmap.TooltipBorder;
 exports.BubbleData = ej2Heatmap.BubbleData;
 exports.Title = ej2Heatmap.Title;
+exports.FillColor = ej2Heatmap.FillColor;
 exports.PaletteCollection = ej2Heatmap.PaletteCollection;
 exports.AxisLabelBorder = ej2Heatmap.AxisLabelBorder;
 exports.BubbleSize = ej2Heatmap.BubbleSize;

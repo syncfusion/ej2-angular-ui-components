@@ -127,10 +127,7 @@
   line-height: 36px;
   margin-right: 10px;
   vertical-align: middle;
-}
-
-.e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 36px;
+  width: 1em;
 }
 
 .e-dropdown-popup ul .e-item.e-disabled {
@@ -146,10 +143,6 @@
   line-height: normal;
   margin: 0;
   pointer-events: none;
-}
-
-.e-rtl.e-dropdown-popup .e-item.e-blank-icon {
-  padding-right: 36px;
 }
 
 .e-rtl.e-dropdown-popup .e-item .e-menu-icon {
@@ -178,11 +171,6 @@
 .e-bigger.e-dropdown-popup ul .e-item .e-menu-icon {
   font-size: 18px;
   line-height: 48px;
-}
-
-.e-bigger .e-dropdown-popup ul .e-item.e-blank-icon,
-.e-bigger.e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 38px;
 }
 
 .e-bigger .e-dropdown-popup ul .e-item.e-separator,

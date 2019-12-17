@@ -43,4 +43,8 @@ export {StockChartIndicatorDirective,StockChartIndicatorsDirective} from './stoc
 export { StockChartComponent} from './stock-chart/stockchart.component';
 export { StockChartModule } from './stock-chart/stockchart.module';
 export { StockChartAllModule } from './stock-chart/stockchart-all.module';
+export {BulletRangeDirective,BulletRangeCollectionDirective} from './bullet-chart/ranges.directive';
+export { BulletChartComponent} from './bullet-chart/bulletchart.component';
+export { BulletChartModule } from './bullet-chart/bulletchart.module';
+export { BulletChartAllModule, BulletTooltipService } from './bullet-chart/bulletchart-all.module';
 export * from '@syncfusion/ej2-charts';

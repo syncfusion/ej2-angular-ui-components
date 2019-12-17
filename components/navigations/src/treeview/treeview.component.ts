@@ -4,8 +4,8 @@ import { TreeView } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','animation','autoCheck','checkedNodes','cssClass','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowSelect','loadOnDemand','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
-export const outputs: string[] = ['created','dataBound','dataSourceChanged','destroyed','drawNode','keyPress','nodeChecked','nodeChecking','nodeClicked','nodeCollapsed','nodeCollapsing','nodeDragStart','nodeDragStop','nodeDragging','nodeDropped','nodeEdited','nodeEditing','nodeExpanded','nodeExpanding','nodeSelected','nodeSelecting'];
+export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','animation','autoCheck','checkedNodes','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowSelect','loadOnDemand','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
+export const outputs: string[] = ['actionFailure','created','dataBound','dataSourceChanged','destroyed','drawNode','keyPress','nodeChecked','nodeChecking','nodeClicked','nodeCollapsed','nodeCollapsing','nodeDragStart','nodeDragStop','nodeDragging','nodeDropped','nodeEdited','nodeEditing','nodeExpanded','nodeExpanding','nodeSelected','nodeSelecting'];
 export const twoWays: string[] = [''];
 
 /**

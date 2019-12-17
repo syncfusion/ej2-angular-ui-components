@@ -4,7 +4,7 @@ import { Menu } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { MenuItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animationSettings','cssClass','enablePersistence','enableRtl','enableScrolling','fields','filter','hamburgerMode','items','locale','orientation','showItemOnClick','target','template','title'];
+export const inputs: string[] = ['animationSettings','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','enableScrolling','fields','filter','hamburgerMode','items','locale','orientation','showItemOnClick','target','template','title'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','created','onClose','onOpen','select'];
 export const twoWays: string[] = [''];
 

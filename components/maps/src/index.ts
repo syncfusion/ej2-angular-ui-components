@@ -1,3 +1,4 @@
+export {InitialShapeSelectionDirective,InitialShapeSelectionsDirective} from './maps/initialshapeselection.directive';
 export {MarkerDirective,MarkersDirective} from './maps/markersettings.directive';
 export {ColorMappingDirective,ColorMappingsDirective} from './maps/colormapping.directive';
 export {BubbleDirective,BubblesDirective} from './maps/bubblesettings.directive';

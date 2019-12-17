@@ -367,6 +367,11 @@
   float: left;
 }
 
+.e-pivot-formatting-dialog .e-split-colorpicker {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
 .e-pivot-formatting-dialog .e-format-delete-button {
   background-color: transparent;
   border-color: transparent;

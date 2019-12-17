@@ -1150,7 +1150,7 @@
   z-index: 5;
 }
 
-.e-grid .e-gridheader thead .e-icons {
+.e-grid .e-gridheader thead .e-icons:not(.e-check):not(.e-stop) {
   font-size: 10px;
 }
 
@@ -3335,6 +3335,10 @@
   color: #fff;
 }
 
+.e-grid .e-unboundcelldiv .e-icons {
+  color: #fff;
+}
+
 .e-grid .e-table {
   background-color: #303030;
 }
@@ -3343,7 +3347,7 @@
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
 }
 
-.e-grid .e-gridheader .e-icons:not(.e-icon-hide):not(.e-check) {
+.e-grid .e-gridheader .e-icons:not(.e-icon-hide):not(.e-check):not(.e-stop) {
   color: rgba(255, 255, 255, 0.7);
 }
 

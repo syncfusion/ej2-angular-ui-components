@@ -3592,6 +3592,219 @@ StockChartAllModule.decorators = [
  * @nocollapse
  */
 StockChartAllModule.ctorParameters = function () { return []; };
+var input$27 = ['color', 'end', 'opacity'];
+var outputs$33 = [];
+/**
+ * BulletRange Directive
+ * ```html
+ * <e-bullet-range-collection>
+ * <e-bullet-range></e-bullet-range>
+ * </e-bullet-range-collection>
+ * ```
+ */
+var BulletRangeDirective = /** @class */ (function (_super) {
+    __extends(BulletRangeDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function BulletRangeDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$33);
+        return _this;
+    }
+    return BulletRangeDirective;
+}(ej2AngularBase.ComplexBase));
+BulletRangeDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-bullet-range-collection>e-bullet-range',
+                inputs: input$27,
+                outputs: outputs$33,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletRangeDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * BulletRange Array Directive
+ */
+var BulletRangeCollectionDirective = /** @class */ (function (_super) {
+    __extends(BulletRangeCollectionDirective, _super);
+    function BulletRangeCollectionDirective() {
+        return _super.call(this, 'ranges') || this;
+    }
+    return BulletRangeCollectionDirective;
+}(ej2AngularBase.ArrayBase));
+BulletRangeCollectionDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'ej-bulletchart>e-bullet-range-collection',
+                queries: {
+                    children: new core.ContentChildren(BulletRangeDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletRangeCollectionDirective.ctorParameters = function () { return []; };
+var __decorate$11 = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+        r = Reflect.decorate(decorators, target, key, desc);
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$11 = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+        return Reflect.metadata(k, v);
+};
+var inputs$6 = ['animation', 'border', 'categoryField', 'categoryLabelStyle', 'dataLabel', 'dataSource', 'enableGroupSeparator', 'enablePersistence', 'enableRtl', 'height', 'interval', 'labelFormat', 'labelPosition', 'labelStyle', 'locale', 'majorTickLines', 'margin', 'maximum', 'minimum', 'minorTickLines', 'minorTicksPerInterval', 'opposedPosition', 'orientation', 'query', 'ranges', 'subtitle', 'subtitleStyle', 'tabIndex', 'targetColor', 'targetField', 'targetTypes', 'targetWidth', 'theme', 'tickPosition', 'title', 'titlePosition', 'titleStyle', 'tooltip', 'type', 'valueBorder', 'valueField', 'valueFill', 'valueHeight', 'width'];
+var outputs$34 = ['load', 'tooltipRender', 'dataSourceChange'];
+var twoWays$6 = ['dataSource'];
+/**
+ * BulletChart Component
+ * ```html
+ * <ejs-bulletchart></ejs-bulletchart>
+ * ```
+ */
+exports.BulletChartComponent = /** @class */ (function (_super) {
+    __extends(BulletChartComponent, _super);
+    /**
+     * @param {?} ngEle
+     * @param {?} srenderer
+     * @param {?} viewContainerRef
+     * @param {?} injector
+     */
+    function BulletChartComponent(ngEle, srenderer, viewContainerRef, injector) {
+        var _this = _super.call(this) || this;
+        _this.ngEle = ngEle;
+        _this.srenderer = srenderer;
+        _this.viewContainerRef = viewContainerRef;
+        _this.injector = injector;
+        _this.tags = ['ranges'];
+        _this.element = _this.ngEle.nativeElement;
+        _this.injectedModules = _this.injectedModules || [];
+        try {
+            var mod = _this.injector.get('ChartsBulletTooltip');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_a) { }
+        _this.registerEvents(outputs$34);
+        _this.addTwoWay.call(_this, twoWays$6);
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngOnInit = function () {
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngAfterViewInit = function () {
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngOnDestroy = function () {
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngAfterContentChecked = function () {
+    };
+    return BulletChartComponent;
+}(ej2Charts.BulletChart));
+exports.BulletChartComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'ejs-bulletchart',
+                inputs: inputs$6,
+                outputs: outputs$34,
+                template: '',
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                queries: {
+                    childRanges: new core.ContentChild(BulletRangeCollectionDirective)
+                }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+exports.BulletChartComponent.ctorParameters = function () { return [
+    { type: core.ElementRef, },
+    { type: core.Renderer2, },
+    { type: core.ViewContainerRef, },
+    { type: core.Injector, },
+]; };
+exports.BulletChartComponent = __decorate$11([
+    ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
+    __metadata$11("design:paramtypes", [core.ElementRef,
+        core.Renderer2,
+        core.ViewContainerRef,
+        core.Injector])
+], exports.BulletChartComponent);
+/**
+ * NgModule definition for the BulletChart component.
+ */
+var BulletChartModule = /** @class */ (function () {
+    function BulletChartModule() {
+    }
+    return BulletChartModule;
+}());
+BulletChartModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule],
+                declarations: [
+                    exports.BulletChartComponent,
+                    BulletRangeDirective,
+                    BulletRangeCollectionDirective
+                ],
+                exports: [
+                    exports.BulletChartComponent,
+                    BulletRangeDirective,
+                    BulletRangeCollectionDirective
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletChartModule.ctorParameters = function () { return []; };
+var BulletTooltipService = { provide: 'ChartsBulletTooltip', useValue: ej2Charts.BulletTooltip };
+/**
+ * NgModule definition for the BulletChart component with providers.
+ */
+var BulletChartAllModule = /** @class */ (function () {
+    function BulletChartAllModule() {
+    }
+    return BulletChartAllModule;
+}());
+BulletChartAllModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule, BulletChartModule],
+                exports: [
+                    BulletChartModule
+                ],
+                providers: [
+                    BulletTooltipService
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletChartAllModule.ctorParameters = function () { return []; };
 
 exports.TrendlineDirective = TrendlineDirective;
 exports.TrendlinesDirective = TrendlinesDirective;
@@ -3727,8 +3940,15 @@ exports.StockChartIndicatorDirective = StockChartIndicatorDirective;
 exports.StockChartIndicatorsDirective = StockChartIndicatorsDirective;
 exports.StockChartModule = StockChartModule;
 exports.StockChartAllModule = StockChartAllModule;
+exports.BulletRangeDirective = BulletRangeDirective;
+exports.BulletRangeCollectionDirective = BulletRangeCollectionDirective;
+exports.BulletChartModule = BulletChartModule;
+exports.BulletChartAllModule = BulletChartAllModule;
+exports.BulletTooltipService = BulletTooltipService;
 exports.ɵc = inputs$1;
 exports.ɵd = outputs$15;
+exports.ɵm = inputs$6;
+exports.ɵn = outputs$34;
 exports.ɵa = inputs;
 exports.ɵb = outputs$12;
 exports.ɵe = inputs$2;
@@ -4024,6 +4244,16 @@ exports.StyleSettings = ej2Charts.StyleSettings;
 exports.RangeTooltipSettings = ej2Charts.RangeTooltipSettings;
 exports.Double = ej2Charts.Double;
 exports.RangeTooltip = ej2Charts.RangeTooltip;
+exports.BulletChart = ej2Charts.BulletChart;
+exports.Range = ej2Charts.Range;
+exports.MajorTickLinesSettings = ej2Charts.MajorTickLinesSettings;
+exports.MinorTickLinesSettings = ej2Charts.MinorTickLinesSettings;
+exports.BulletLabelStyle = ej2Charts.BulletLabelStyle;
+exports.BulletTooltipSettings = ej2Charts.BulletTooltipSettings;
+exports.BulletDataLabel = ej2Charts.BulletDataLabel;
+exports.BulletChartTheme = ej2Charts.BulletChartTheme;
+exports.getBulletThemeColor = ej2Charts.getBulletThemeColor;
+exports.BulletTooltip = ej2Charts.BulletTooltip;
 exports.Smithchart = ej2Charts.Smithchart;
 exports.SmithchartMajorGridLines = ej2Charts.SmithchartMajorGridLines;
 exports.SmithchartMinorGridLines = ej2Charts.SmithchartMinorGridLines;

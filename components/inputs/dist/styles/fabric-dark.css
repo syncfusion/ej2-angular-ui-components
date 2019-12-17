@@ -4858,6 +4858,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-control-wrapper.e-slider-container .e-scale {
   box-sizing: content-box;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   height: 28px;
   line-height: normal;
   list-style: none outside none;
@@ -4885,6 +4886,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 
 .e-control-wrapper.e-slider-container .e-scale .e-tick .e-tick-value {
   color: green;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 9px;
   outline: none;
   position: absolute;

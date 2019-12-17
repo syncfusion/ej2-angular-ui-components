@@ -4,8 +4,8 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 
 
 
-export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enablePersistence','enableRtl','height','locale','navigationPaneSettings','path','searchSettings','selectedItems','showFileExtension','showHiddenItems','showThumbnail','toolbarSettings','uploadSettings','view','width'];
-export const outputs: string[] = ['beforePopupClose','beforePopupOpen','beforeSend','created','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','menuClick','menuOpen','popupClose','popupOpen','success','toolbarClick','toolbarCreate','uploadListCreate'];
+export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enablePersistence','enableRtl','height','locale','navigationPaneSettings','path','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showThumbnail','toolbarSettings','uploadSettings','view','width'];
+export const outputs: string[] = ['beforeDownload','beforeImageLoad','beforePopupClose','beforePopupOpen','beforeSend','created','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','menuClick','menuOpen','popupClose','popupOpen','success','toolbarClick','toolbarCreate','uploadListCreate'];
 export const twoWays: string[] = [''];
 
 /**

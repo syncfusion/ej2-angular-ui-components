@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 17.3.34 (2019-12-10)
+## 17.4.39 (2019-12-17)
 
 ### Pivot Table
 
@@ -18,6 +18,27 @@
 #### New Features
 
 - `#252636` - Provision provided to disable the scrollbars in pivot chart.
+- `#250072` - Provision provided to group and separate the grouped headers through UI.
+
+## 17.3.26 (2019-11-05)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#251642` – Now, the defer layout update option can be enabled or disabled dynamically through field list UI.
+- `#251558` – Now, the pivot chart draws with the percent of height value.
+
+- #251642 – Now, the defer layout update option can be enabled or disabled dynamically through field list UI.
+- #251558 – Now, the pivot chart draws with the percent of height value.
+
+#### New Features
+
+- `#248131` – Provided the conditional expression support to create calculated field.
+- `#251642` – The performance of virtual scrolling while adding or removing fields and moving fields to any axis is improved.
+
+- #248131 – Provided the conditional expression support to create calculated field.
+- #251642 – The performance of virtual scrolling while adding or removing fields and moving fields to any axis is improved.
 
 ## 17.3.9-beta (2019-09-20)
 
@@ -197,20 +218,6 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
-
-## 17.3.26 (2019-11-05)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- #251642 – Now, the defer layout update option can be enabled or disabled dynamically through field list UI.
-- #251558 – Now, the pivot chart draws with the percent of height value.
-
-#### New Features
-
-- #248131 – Provided the conditional expression support to create calculated field.
-- #251642 – The performance of virtual scrolling while adding or removing fields and moving fields to any axis is improved.
 
 ## 17.2.34 (2019-07-11)
 
