@@ -4318,6 +4318,11 @@
   color: #212529;
 }
 
+.e-grid.e-gridhover .e-frozenhover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #212529;
+}
+
 .e-grid .e-col-menu.e-filter-popup {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }

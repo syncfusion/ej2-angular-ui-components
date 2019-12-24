@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.40 (2019-12-24)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved `accordion` control rendering issue while using `Ajax`.
+
 ## 17.4.39 (2019-12-17)
 
 ### Common

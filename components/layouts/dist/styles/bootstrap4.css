@@ -1463,7 +1463,7 @@
 .e-dashboardlayout.e-control .e-panel.e-dragging,
 .e-dashboardlayout.e-control .e-panel.e-item-moving {
   cursor: move;
-  z-index: 1111;
+  z-index: 1111 !important;
 }
 
 .e-dashboardlayout.e-control .e-panel.e-rtl .e-panel-header .e-header-template {

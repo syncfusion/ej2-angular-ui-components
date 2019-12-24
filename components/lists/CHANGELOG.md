@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 17.4.39 (2019-12-17)
+## 17.4.40 (2019-12-24)
 
-### ListView
+### ListBox
 
 #### Bug Fixes
 
-- #255485 - The crashing issue that occurred when rendering list view with virtualization and grouping has been fixed.
+- Provided 'beforeDrop' event.
 
 ## 17.3.27 (2019-11-12)
 
@@ -323,6 +323,14 @@ ListView component represent data in interactive hierarchical structure interfac
 - **Customizing templates** - Allows you to customize the list item, header and category group header.
 - **Accessibility** - Provides built-in accessibility support which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 17.4.39 (2019-12-17)
+
+### ListView
+
+#### Bug Fixes
+
+- `#255485` - The crashing issue that occurred when rendering list view with virtualization and grouping has been fixed.
 
 ## 16.3.24 (2018-10-09)
 

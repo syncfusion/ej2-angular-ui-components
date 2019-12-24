@@ -1249,6 +1249,13 @@ label[for*='_wholeWord_e-de-rtl'] {
   padding: 4px 8px !important;
 }
 
+.e-de-rp-close-icon.e-btn {
+  background: #fafafa;
+  border: 0;
+  color: #495057;
+  opacity: 1;
+}
+
 .e-de-style-font-group-button .e-btn,
 .e-de-style-paragraph-group-button .e-btn,
 .e-de-style-paragraph-indent-group-button .e-btn {
@@ -2647,6 +2654,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 13px;
   height: 36px;
   opacity: .87;
+  border-color: #dee2e6;
+  box-shadow: none;
+  color: #495057;
+  opacity: 1;
 }
 
 .e-de-rp-nav-btn {
@@ -2662,6 +2673,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   height: 36px;
   margin: 0 46px;
   opacity: .87;
+  border-color: #dee2e6;
+  box-shadow: none;
+  color: #495057;
+  opacity: 1;
 }
 
 .e-de-rp-nav-lbl {
@@ -2694,6 +2709,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-rp-enforce {
   padding-top: 12px;
+  text-align: center;
 }
 
 .e-de-rp-enforce-nav {
@@ -3678,7 +3694,8 @@ textarea.e-de-cmt-textarea {
 }
 
 .e-de-font-clr-picker .e-colorpicker-wrapper .e-btn.e-icon-btn,
-.e-de-font-clr-picker .e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker.e-split-btn {
+.e-de-font-clr-picker .e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker.e-split-btn,
+.e-de-font-clr-picker .e-colorpicker-wrapper .e-btn.e-icon-btn.e-rtl {
   padding: 0;
 }
 
@@ -3711,7 +3728,6 @@ textarea.e-de-cmt-textarea {
 
 .e-de-ctnr-group-btn .e-btn:focus {
   background-color: #545b62;
-  border: 1px;
   border-color: #4e555b;
   box-shadow: 0 0 0 0 #6c757d;
   outline-color: #6c757d;
@@ -3720,14 +3736,16 @@ textarea.e-de-cmt-textarea {
 .e-de-ctnr-group-btn .e-btn:active,
 .e-de-ctnr-group-btn .e-btn .e-btn-toggle {
   background-color: #545b62;
-  border: 1px;
   border-color: #4e555b;
 }
 
 .e-de-ctnr-group-btn .e-btn:hover {
   background-color: #5a6268;
-  border: 1px;
   border-color: #545b62;
+}
+
+.e-de-ctnr-group-btn .e-split-btn-wrapper.e-rtl .e-split-btn {
+  border-color: #dee2e6;
 }
 
 .e-de-ctnr-group-btn .e-btn:disabled {
@@ -4127,7 +4145,6 @@ textarea.e-de-cmt-textarea {
 
 .e-de-ctnr-list {
   font-size: 12px;
-  vertical-align: top;
 }
 
 .e-de-image-property {

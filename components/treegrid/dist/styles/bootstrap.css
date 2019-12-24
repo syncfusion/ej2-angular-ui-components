@@ -210,6 +210,22 @@
   display: none;
 }
 
+.e-treegrid .e-treecheckbox-container {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.e-treegrid .e-treecheckbox-container :not(.e-treecheckbox) {
+  white-space: nowrap;
+}
+
+.e-treegrid .e-treecheckbox {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
 .e-treegrid .e-treecolumn-container span {
   display: inline-block;
   vertical-align: middle;
@@ -247,6 +263,16 @@
 }
 
 .e-treegrid .e-grid.e-wrap .e-rowcell .e-treecolumn-container .e-treecell {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.e-treegrid .e-grid.e-wrap .e-rowcell .e-treecheckbox-container {
+  white-space: nowrap;
+}
+
+.e-treegrid .e-grid.e-wrap .e-rowcell .e-treecheckbox-container .e-treecheckbox {
   display: inline-block;
   white-space: normal;
   word-wrap: break-word;

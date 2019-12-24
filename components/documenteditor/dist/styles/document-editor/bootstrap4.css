@@ -1249,6 +1249,13 @@ label[for*='_wholeWord_e-de-rtl'] {
   padding: 4px 8px !important;
 }
 
+.e-de-rp-close-icon.e-btn {
+  background: #fafafa;
+  border: 0;
+  color: #495057;
+  opacity: 1;
+}
+
 .e-de-style-font-group-button .e-btn,
 .e-de-style-paragraph-group-button .e-btn,
 .e-de-style-paragraph-indent-group-button .e-btn {
@@ -2647,6 +2654,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 13px;
   height: 36px;
   opacity: .87;
+  border-color: #dee2e6;
+  box-shadow: none;
+  color: #495057;
+  opacity: 1;
 }
 
 .e-de-rp-nav-btn {
@@ -2662,6 +2673,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   height: 36px;
   margin: 0 46px;
   opacity: .87;
+  border-color: #dee2e6;
+  box-shadow: none;
+  color: #495057;
+  opacity: 1;
 }
 
 .e-de-rp-nav-lbl {
@@ -2694,6 +2709,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-rp-enforce {
   padding-top: 12px;
+  text-align: center;
 }
 
 .e-de-rp-enforce-nav {

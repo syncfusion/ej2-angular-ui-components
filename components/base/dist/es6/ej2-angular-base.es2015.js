@@ -215,7 +215,8 @@ class ArrayBase {
                     // tslint:disable-next-line
                     let keys = Object.keys(this.list[i].propCollection);
                     for (let j = 0; j < keys.length; j++) {
-                        if (this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
+                        if (this.list[i].propCollection[keys[j]] &&
+                            this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
                             isSourceChanged = true;
                             break;
                         }

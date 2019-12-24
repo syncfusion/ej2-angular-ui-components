@@ -3502,6 +3502,11 @@
   color: #fff;
 }
 
+.e-grid.e-gridhover .e-frozenhover {
+  background-color: #414040;
+  color: #fff;
+}
+
 .e-grid .e-col-menu.e-filter-popup {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
