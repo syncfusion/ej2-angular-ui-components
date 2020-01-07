@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -52,6 +52,13 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * @default Center
      */
     public alignment: any;
+    /** 
+     *  Defines the type of annotation template 
+     * String -  Defines annotation template to be in string 
+     * Template - Defines annotation template to be in html content
+     * @default 'String'
+     */
+    public annotationType: any;
     /** 
      * Enables or disables the default behaviors of the label. 
      * * ReadOnly - Enables/Disables the ReadOnly Constraints 
@@ -131,6 +138,7 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
     /** 
      * Defines the appearance of the text
      * @default new TextStyle()
+     * @blazortype AnnotationStyle
      */
     public style: any;
     /** 

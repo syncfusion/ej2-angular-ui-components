@@ -324,17 +324,17 @@ ejs-filemanager {
 
 .e-filemanager .e-toolbar .e-toolbar-items .e-toolbar-item .e-dropdown-btn.e-btn.e-tbar-btn.e-active {
   border: 0;
-  padding: 1 2.5px;
+  padding: 1px 2.5px;
 }
 
 .e-filemanager .e-toolbar .e-toolbar-items .e-toolbar-item .e-dropdown-btn.e-btn.e-tbar-btn:hover {
   border: 0;
-  padding: 1 2.5px;
+  padding: 1px 2.5px;
 }
 
 .e-filemanager .e-toolbar .e-toolbar-items .e-toolbar-item .e-dropdown-btn.e-btn.e-tbar-btn:focus {
   border: 0;
-  padding: 1 2.5px;
+  padding: 1px 2.5px;
 }
 
 .e-filemanager .e-toolbar .e-toolbar-pop .e-toolbar-item .e-dropdown-btn .e-icons.e-caret {

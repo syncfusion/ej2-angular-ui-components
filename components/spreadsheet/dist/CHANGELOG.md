@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.4.41 (2020-01-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+`#F149335` - Excel export issue has been fixed.
+
+
 ## 17.4.39 (2019-12-17)
 
 ### Spreadsheet
@@ -12,15 +21,6 @@
 - **Undo Redo:** Provides the option to perform undo redo operations in spreadsheet.
 - **Collaborative Editing:** Provides the option for real time changes across multiple users in the Spreadsheet.
 - **Hyperlink:** Provides the option to navigate the web links or cell reference within the sheet or to other sheets in spreadsheet.
-
-## 17.3.29 (2019-11-26)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-`#F149335` - Excel export issue has been fixed.
-
 
 ## 17.3.16 (2019-10-09)
 
@@ -60,6 +60,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 17.4.40 (2019-12-24)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- Export not working issue fixed.
 
 ## 17.3.26 (2019-11-05)
 

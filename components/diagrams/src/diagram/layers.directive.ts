@@ -47,6 +47,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
+     * @isblazornullabletype true
      */
     public objects: any;
     /** 

@@ -1133,6 +1133,7 @@ exports.filterCboxValue = ej2Grids.filterCboxValue;
 exports.componentRendered = ej2Grids.componentRendered;
 exports.restoreFocus = ej2Grids.restoreFocus;
 exports.detailStateChange = ej2Grids.detailStateChange;
+exports.detailIndentCellInfo = ej2Grids.detailIndentCellInfo;
 exports.Data = ej2Grids.Data;
 exports.Sort = ej2Grids.Sort;
 exports.Page = ej2Grids.Page;

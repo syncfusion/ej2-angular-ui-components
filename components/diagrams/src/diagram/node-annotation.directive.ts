@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -44,6 +44,13 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
      * @default undefined
      */
     public addInfo: any;
+    /** 
+     *  Defines the type of annotation template 
+     * String -  Defines annotation template to be in string 
+     * Template - Defines annotation template to be in html content
+     * @default 'String'
+     */
+    public annotationType: any;
     /** 
      * Enables or disables the default behaviors of the label. 
      * * ReadOnly - Enables/Disables the ReadOnly Constraints 
@@ -101,6 +108,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
     /** 
      * Sets the position of the annotation with respect to its parent bounds
      * @default { x: 0.5, y: 0.5 }
+     * @blazortype NodeAnnotationOffset
      */
     public offset: any;
     /** 
@@ -111,6 +119,7 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
     /** 
      * Defines the appearance of the text
      * @default new TextStyle()
+     * @blazortype AnnotationStyle
      */
     public style: any;
     /** 

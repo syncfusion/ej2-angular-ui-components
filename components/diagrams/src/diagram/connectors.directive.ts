@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -44,6 +44,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     public addInfo: any;
     /** 
      * 
+     * @blazortype ObservableCollection<DiagramConnectorAnnotation>
      */
     public annotations: any;
     /** 
@@ -51,11 +52,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default 10
      */
     public bridgeSpace: any;
-    /** 
-     * Defines the collapsed state of a node
-     * @default {}
-     */
-    public collapseIcon: any;
     /** 
      * Defines the constraints of connector 
      * * None - Interaction of the connectors cannot be done. 
@@ -73,7 +69,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * InheritToolTip - Displays a tooltip for the connectors. 
      * * Interaction - Features of the connector used for interaction. 
      * * ReadOnly - Enables ReadOnly
-     * @default 'None'
+     * @default 'Default'
      * @aspnumberenum 
      * @blazornumberenum 
      */
@@ -89,14 +85,9 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public excludeFromLayout: any;
     /** 
-     * Defines the expanded state of a node
-     * @default {}
-     */
-    public expandIcon: any;
-    /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
+     * @blazordefaultvalue None
      * @default None
      */
     public flip: any;
@@ -111,39 +102,29 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public id: any;
     /** 
-     * Defines whether the node is expanded or not
-     * @default true
-     */
-    public isExpanded: any;
-    /** 
      * Defines the space to be left between the node and its immediate parent
      * @default {}
      */
     public margin: any;
     /** 
-     * Defines the collection of connection points of nodes/connectors
-     * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
-     * @default undefined
-     */
-    public ports: any;
-    /** 
      * Defines the segments
      * @default []
      * @asptype object
-     * @blazortype object
+     * @blazortype ObservableCollection<DiagramConnectorSegment>
      */
     public segments: any;
     /** 
      * Defines the shape of the connector
      * @default 'Bpmn'
      * @asptype object
-     * @blazortype object
+     * @blazortype DiagramConnectorShape
      */
     public shape: any;
     /** 
      * Defines the source decorator of the connector
      * @default new Decorator()
+     * @blazortype ConnectorSourceDecorator
+     * @blazordefaultvalue new ConnectorSourceDecorator()
      */
     public sourceDecorator: any;
     /** 
@@ -170,11 +151,15 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the appearance of the connection path
      * @default ''
+     * @blazortype ConnectorShapeStyle
+     * @blazordefaultvalue new ConnectorShapeStyle()
      */
     public style: any;
     /** 
      * Defines the target decorator of the connector
      * @default new Decorator()
+     * @blazortype ConnectorTargetDecorator
+     * @blazordefaultvalue new ConnectorTargetDecorator()
      */
     public targetDecorator: any;
     /** 
@@ -211,6 +196,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the UI of the connector
      * @default null
+     * @deprecated 
      */
     public wrapper: any;
     /** 

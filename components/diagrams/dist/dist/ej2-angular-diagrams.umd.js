@@ -134,7 +134,7 @@ CustomCursorsDirective.decorators = [
  * @nocollapse
  */
 CustomCursorsDirective.ctorParameters = function () { return []; };
-var input$2 = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$2 = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 var outputs$2 = [];
 /**
  * Connectors Directive
@@ -199,7 +199,7 @@ ConnectorAnnotationsDirective.decorators = [
  * @nocollapse
  */
 ConnectorAnnotationsDirective.ctorParameters = function () { return []; };
-var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 var outputs$3 = [];
 /**
  * Connectors Directive
@@ -262,7 +262,7 @@ ConnectorsDirective.decorators = [
  * @nocollapse
  */
 ConnectorsDirective.ctorParameters = function () { return []; };
-var input$4 = ['addInfo', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$4 = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 var outputs$4 = [];
 /**
  * Nodes Directive
@@ -327,7 +327,7 @@ NodeAnnotationsDirective.decorators = [
  * @nocollapse
  */
 NodeAnnotationsDirective.ctorParameters = function () { return []; };
-var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'margin', 'offset', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
 var outputs$5 = [];
 /**
  * Nodes Directive
@@ -392,7 +392,7 @@ PortsDirective.decorators = [
  * @nocollapse
  */
 PortsDirective.ctorParameters = function () { return []; };
-var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 var outputs$6 = [];
 /**
  * Nodes Directive
@@ -470,7 +470,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['addInfo', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'width'];
+var inputs = ['addInfo', 'annotationTemplate', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodeTemplate', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'width'];
 var outputs$7 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'historyStateChange', 'mouseEnter', 'mouseLeave', 'mouseOver', 'onImageLoad', 'onUserHandleMouseDown', 'onUserHandleMouseEnter', 'onUserHandleMouseLeave', 'onUserHandleMouseUp', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
 var twoWays = [''];
 /**
@@ -652,6 +652,18 @@ exports.DiagramComponent.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
     { type: core.Injector, },
 ]; };
+exports.DiagramComponent.propDecorators = {
+    'annotationTemplate': [{ type: core.ContentChild, args: ['annotationTemplate',] },],
+    'nodeTemplate': [{ type: core.ContentChild, args: ['nodeTemplate',] },],
+};
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], exports.DiagramComponent.prototype, "annotationTemplate", void 0);
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], exports.DiagramComponent.prototype, "nodeTemplate", void 0);
 exports.DiagramComponent = __decorate([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
     __metadata("design:paramtypes", [core.ElementRef,
@@ -1165,6 +1177,7 @@ exports.scaleMatrix = ej2Diagrams.scaleMatrix;
 exports.translateMatrix = ej2Diagrams.translateMatrix;
 exports.multiplyMatrix = ej2Diagrams.multiplyMatrix;
 exports.Point = ej2Diagrams.Point;
+exports.BlazorAction = ej2Diagrams.BlazorAction;
 exports.PortVisibility = ej2Diagrams.PortVisibility;
 exports.SnapConstraints = ej2Diagrams.SnapConstraints;
 exports.SelectorConstraints = ej2Diagrams.SelectorConstraints;
@@ -1193,11 +1206,13 @@ exports.Margin = ej2Diagrams.Margin;
 exports.Shadow = ej2Diagrams.Shadow;
 exports.Stop = ej2Diagrams.Stop;
 exports.Gradient = ej2Diagrams.Gradient;
+exports.DiagramGradient = ej2Diagrams.DiagramGradient;
 exports.LinearGradient = ej2Diagrams.LinearGradient;
 exports.RadialGradient = ej2Diagrams.RadialGradient;
 exports.ShapeStyle = ej2Diagrams.ShapeStyle;
 exports.StrokeStyle = ej2Diagrams.StrokeStyle;
 exports.TextStyle = ej2Diagrams.TextStyle;
+exports.DiagramShapeStyle = ej2Diagrams.DiagramShapeStyle;
 exports.DiagramElement = ej2Diagrams.DiagramElement;
 exports.PathElement = ej2Diagrams.PathElement;
 exports.ImageElement = ej2Diagrams.ImageElement;
@@ -1232,6 +1247,8 @@ exports.splitArrayCollection = ej2Diagrams.splitArrayCollection;
 exports.getPathString = ej2Diagrams.getPathString;
 exports.getString = ej2Diagrams.getString;
 exports.randomId = ej2Diagrams.randomId;
+exports.getIndex = ej2Diagrams.getIndex;
+exports.templateCompiler = ej2Diagrams.templateCompiler;
 exports.cornersPointsBeforeRotation = ej2Diagrams.cornersPointsBeforeRotation;
 exports.getBounds = ej2Diagrams.getBounds;
 exports.cloneObject = ej2Diagrams.cloneObject;
@@ -1313,6 +1330,7 @@ exports.findPath = ej2Diagrams.findPath;
 exports.findDistance = ej2Diagrams.findDistance;
 exports.cloneBlazorObject = ej2Diagrams.cloneBlazorObject;
 exports.checkBrowserInfo = ej2Diagrams.checkBrowserInfo;
+exports.canMeasureDecoratorPath = ej2Diagrams.canMeasureDecoratorPath;
 exports.CanvasRenderer = ej2Diagrams.CanvasRenderer;
 exports.DiagramRenderer = ej2Diagrams.DiagramRenderer;
 exports.DataBinding = ej2Diagrams.DataBinding;
@@ -1356,6 +1374,7 @@ exports.UmlInterface = ej2Diagrams.UmlInterface;
 exports.UmlEnumerationMember = ej2Diagrams.UmlEnumerationMember;
 exports.UmlEnumeration = ej2Diagrams.UmlEnumeration;
 exports.UmlClassifierShape = ej2Diagrams.UmlClassifierShape;
+exports.DiagramShape = ej2Diagrams.DiagramShape;
 exports.Node = ej2Diagrams.Node;
 exports.Header = ej2Diagrams.Header;
 exports.Lane = ej2Diagrams.Lane;
@@ -1378,6 +1397,7 @@ exports.ConnectorSegment = ej2Diagrams.ConnectorSegment;
 exports.StraightSegment = ej2Diagrams.StraightSegment;
 exports.BezierSegment = ej2Diagrams.BezierSegment;
 exports.OrthogonalSegment = ej2Diagrams.OrthogonalSegment;
+exports.DiagramConnectorSegment = ej2Diagrams.DiagramConnectorSegment;
 exports.getDirection = ej2Diagrams.getDirection;
 exports.isEmptyVector = ej2Diagrams.isEmptyVector;
 exports.getBezierPoints = ej2Diagrams.getBezierPoints;
@@ -1386,6 +1406,7 @@ exports.bezierPoints = ej2Diagrams.bezierPoints;
 exports.MultiplicityLabel = ej2Diagrams.MultiplicityLabel;
 exports.ClassifierMultiplicity = ej2Diagrams.ClassifierMultiplicity;
 exports.RelationShip = ej2Diagrams.RelationShip;
+exports.DiagramConnectorShape = ej2Diagrams.DiagramConnectorShape;
 exports.Connector = ej2Diagrams.Connector;
 exports.ConnectorBridging = ej2Diagrams.ConnectorBridging;
 exports.Snapping = ej2Diagrams.Snapping;

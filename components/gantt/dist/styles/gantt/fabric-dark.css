@@ -583,6 +583,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-label {
+  margin: 3px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -886,7 +887,8 @@
 }
 
 .e-gantt .e-gantt-chart .e-active-container {
-  border: 1px solid !important;
+  outline: 1px solid;
+  outline-offset: 2px;
 }
 
 .e-gantt .e-gantt-dialog {
@@ -1158,6 +1160,10 @@
   border-top-right-radius: 0px;
 }
 
+.e-gantt .e-grid .e-focused:not(.e-menu-item) {
+  box-shadow: 0 0 0 1px #dadada inset !important;
+}
+
 .e-gantt .e-gantt-dialog .e-dlg-header {
   color: #fff;
 }
@@ -1292,7 +1298,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-active-container {
-  border-color: #dadada !important;
+  outline-color: #dadada;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div {

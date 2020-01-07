@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.41 (2020-01-07)
+
+### Common
+
+#### Bug Fixes
+
+- `I258967` - Increased `core-js` version from `2.4.1` to `3.4.8` since `core-js@2.4.1` version is deprecated.
+
 ## 17.4.40 (2019-12-24)
 
 ### Common

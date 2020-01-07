@@ -614,6 +614,10 @@
   opacity: .4;
 }
 
+.e-schedule .e-appointment.e-allow-select {
+  pointer-events: none;
+}
+
 .e-schedule .e-read-only {
   opacity: .8;
 }
@@ -791,6 +795,10 @@
 .e-schedule .e-vertical-view.e-timescale-disable .e-appointment.e-appointment-border, .e-schedule .e-vertical-view.e-timescale-disable .e-appointment:focus {
   border: 0;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.e-schedule .e-vertical-view.e-timescale-disable .e-appointment.e-allow-select {
+  pointer-events: none;
 }
 
 .e-schedule .e-vertical-view.e-timescale-disable .e-appointment-wrapper {
@@ -1405,6 +1413,10 @@
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
+.e-schedule .e-month-view .e-appointment.e-allow-select {
+  pointer-events: none;
+}
+
 .e-schedule .e-month-view .e-appointment .e-subject {
   padding: 2px;
   width: 100%;
@@ -1729,6 +1741,10 @@
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
+.e-schedule .e-timeline-year-view .e-event-table .e-appointment.e-allow-select {
+  pointer-events: none;
+}
+
 .e-schedule .e-timeline-year-view .e-event-table .e-more-indicator {
   color: #969696;
   cursor: pointer;
@@ -1989,6 +2005,11 @@
 .e-schedule .e-timeline-month-view .e-appointment:focus {
   border: 0;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.e-schedule .e-timeline-view .e-appointment.e-allow-select,
+.e-schedule .e-timeline-month-view .e-appointment.e-allow-select {
+  pointer-events: none;
 }
 
 .e-schedule .e-timeline-view .e-more-indicator,
