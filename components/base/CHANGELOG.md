@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.43 (2020-01-14)
+
+### Common
+
+#### Bug Fixes
+
+- `I259559` - Resolve `boolean` type `formControl` value is not working for radio button control.
+
 ## 17.4.41 (2020-01-07)
 
 ### Common

@@ -1666,7 +1666,7 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs$1 = ['annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableBorderOnMouseMove', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$15 = ['animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$1 = ['dataSource'];
 /**
@@ -3747,6 +3747,13 @@ exports.BulletChartComponent.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
     { type: core.Injector, },
 ]; };
+exports.BulletChartComponent.propDecorators = {
+    'tooltip_template': [{ type: core.ContentChild, args: ['tooltipTemplate',] },],
+};
+__decorate$11([
+    ej2AngularBase.Template(),
+    __metadata$11("design:type", Object)
+], exports.BulletChartComponent.prototype, "tooltip_template", void 0);
 exports.BulletChartComponent = __decorate$11([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
     __metadata$11("design:paramtypes", [core.ElementRef,
@@ -4110,6 +4117,7 @@ exports.createSvg = ej2Charts.createSvg;
 exports.getTitle = ej2Charts.getTitle;
 exports.titlePositionX = ej2Charts.titlePositionX;
 exports.textWrap = ej2Charts.textWrap;
+exports.getUnicodeText = ej2Charts.getUnicodeText;
 exports.blazorTemplatesReset = ej2Charts.blazorTemplatesReset;
 exports.CustomizeOption = ej2Charts.CustomizeOption;
 exports.StackValues = ej2Charts.StackValues;
@@ -4221,6 +4229,8 @@ exports.multiLevelLabelClick = ej2Charts.multiLevelLabelClick;
 exports.dragStart = ej2Charts.dragStart;
 exports.drag = ej2Charts.drag;
 exports.dragEnd = ej2Charts.dragEnd;
+exports.regSub = ej2Charts.regSub;
+exports.regSup = ej2Charts.regSup;
 exports.Theme = ej2Charts.Theme;
 exports.getSeriesColor = ej2Charts.getSeriesColor;
 exports.getThemeColor = ej2Charts.getThemeColor;

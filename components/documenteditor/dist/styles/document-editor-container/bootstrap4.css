@@ -596,7 +596,6 @@
 }
 
 .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;
@@ -700,7 +699,7 @@
 .e-de-prop-font-colorpicker .e-split-btn-wrapper .e-btn:hover,
 .e-de-prop-font-colorpicker .e-split-btn-wrapper .e-btn:focus {
   background-color: #6c757d;
-  border-color: inset 0 3px 5px #4e555b;
+  box-shadow: inset 0 3px 5px #4e555b;
 }
 
 .e-de-border-size-button:focus .e-btn-icon,
@@ -708,14 +707,14 @@
 .e-de-prop-font-colorpicker .e-split-btn-wrapper .e-btn:hover .e-btn-icon,
 .e-de-prop-font-colorpicker .e-split-btn-wrapper .e-btn:focus .e-btn-icon {
   background-color: #6c757d;
-  border-color: inset 0 3px 5px #4e555b;
+  box-shadow: inset 0 3px 5px #4e555b;
   color: #fff;
 }
 
 .e-de-border-size-button .e-btn-icon:focus,
 .e-de-border-size-button .e-btn-icon:hover {
   background-color: #6c757d;
-  border-color: inset 0 3px 5px #4e555b;
+  box-shadow: inset 0 3px 5px #4e555b;
   color: #fff;
 }
 
@@ -1619,7 +1618,6 @@
 }
 
 .e-bigger .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;

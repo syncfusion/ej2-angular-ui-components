@@ -560,13 +560,21 @@ var FormBase = /** @__PURE__ @class */ (function () {
         this.disabled = disabled;
     };
     FormBase.prototype.writeValue = function (value) {
+        var regExp = /ejs-radiobutton/g;
         //update control value from angular
         if (this.checked === undefined) {
             this.value = value;
         }
         else {
+            // To resolve boolean type formControl value is not working for radio button control.
+            /* istanbul ignore next */
             if (typeof value === 'boolean') {
-                this.checked = value;
+                if (this.ngEle && regExp.test(this.ngEle.nativeElement.outerHTML)) {
+                    this.checked = value === this.value;
+                }
+                else {
+                    this.checked = value;
+                }
             }
             else {
                 this.checked = value === this.value;

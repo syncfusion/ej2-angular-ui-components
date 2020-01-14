@@ -1223,10 +1223,9 @@ label[for*='_wholeWord_e-de-rtl'] {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
   cursor: text;
+  display: table;
   max-width: 200px;
   padding: 5px;
-  width: -webkit-fit-content;
-  width: fit-content;
   word-wrap: break-word;
 }
 
@@ -2249,7 +2248,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-replace-tab-header {
-  padding-left: 0 25px 0 0;
+  padding-left: 1px;
   padding-right: 0 25px 0 0;
 }
 
@@ -3463,7 +3462,6 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;
@@ -4287,7 +4285,6 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-bigger .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;

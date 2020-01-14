@@ -2006,10 +2006,6 @@
   border-top: 0;
 }
 
-.e-grid.e-default .e-grouptopleftcell {
-  border-top: 2px solid;
-}
-
 .e-grid.e-default .e-gridheader .e-headercell.e-firstheader,
 .e-grid.e-default.e-horizontallines .e-headercell.e-firstheader {
   border-left: 1px solid;
@@ -2671,12 +2667,6 @@
   overflow: hidden;
   padding: 1px 2px;
   vertical-align: middle;
-}
-
-.e-grid .e-rowdragheader {
-  border-color: #ddd;
-  border-style: solid;
-  border-width: 2px 0 0;
 }
 
 .e-grid .e-filterbarcell input {
@@ -4371,8 +4361,14 @@
 }
 
 .e-grid.e-resize-lines .e-headercell .e-rhandler,
-.e-grid.e-resize-lines .e-headercell .e-rsuppress {
+.e-grid.e-resize-lines .e-headercell .e-rsuppress,
+.e-grid.e-resize-lines .e-rowdragheader {
   border-right: 1px solid #ddd;
+}
+
+.e-grid.e-rtl.e-resize-lines .e-rowdragheader {
+  border-left: 1px solid #ddd;
+  border-right-width: 0;
 }
 
 .e-grid.e-resize-lines .e-focused .e-rhandler {

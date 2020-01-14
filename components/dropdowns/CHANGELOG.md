@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.43 (2020-01-14)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F150435` - Script error occurs during disabled toolbar button click has been resolved.
+
 ## 17.4.41 (2020-01-07)
 
 ### ListBox
@@ -9,12 +17,6 @@
 #### Bug Fixes
 
 - `#255830` - filter and grouping are not working on drag and drop and toolbar button states not updated properly has been resolved.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#254061` - Issue with "empty group header displayed when groupBy field not specified items" has been resolved.
 
 ## 17.4.40 (2019-12-24)
 

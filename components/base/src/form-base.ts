@@ -83,13 +83,13 @@ export class FormBase<T> implements ControlValueAccessor {
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         // setTimeout(() => {
-            /* istanbul ignore else */
-            if (typeof window !== 'undefined') {
-                this.appendTo(this.element);
-                let ele: HTMLElement = this.inputElement || this.element;
-                ele.addEventListener('focus', this.ngOnFocus.bind(this));
-                ele.addEventListener('blur', this.ngOnBlur.bind(this));
-            }
+        /* istanbul ignore else */
+        if (typeof window !== 'undefined') {
+            this.appendTo(this.element);
+            let ele: HTMLElement = this.inputElement || this.element;
+            ele.addEventListener('focus', this.ngOnFocus.bind(this));
+            ele.addEventListener('blur', this.ngOnBlur.bind(this));
+        }
         // });
     }
     public setDisabledState(disabled: boolean): void {
@@ -98,12 +98,19 @@ export class FormBase<T> implements ControlValueAccessor {
     }
 
     public writeValue(value: T): void {
+        let regExp: RegExp = /ejs-radiobutton/g;
         //update control value from angular
         if (this.checked === undefined) {
             this.value = value;
         } else {
+            // To resolve boolean type formControl value is not working for radio button control.
+            /* istanbul ignore next */
             if (typeof value === 'boolean') {
-                this.checked = value;
+                if (this.ngEle && regExp.test(this.ngEle.nativeElement.outerHTML)) {
+                    this.checked = value === this.value;
+                } else {
+                    this.checked = value;
+                }
             } else {
                 this.checked = value === this.value;
             }

@@ -3105,7 +3105,6 @@ label[for='container_wholeWord'] {
 }
 
 .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;
@@ -3920,7 +3919,6 @@ label[for='container_wholeWord'] {
 }
 
 .e-bigger .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;

@@ -1215,10 +1215,6 @@
   border-top: 0;
 }
 
-.e-grid.e-default .e-grouptopleftcell {
-  border-top: 1px solid;
-}
-
 .e-grid.e-default .e-gridheader .e-headercell.e-firstheader,
 .e-grid.e-default.e-horizontallines .e-headercell.e-firstheader {
   border-left: 1px solid;
@@ -1880,12 +1876,6 @@
   overflow: hidden;
   padding: 0 8px;
   vertical-align: middle;
-}
-
-.e-grid .e-rowdragheader {
-  border-color: #eaeaea;
-  border-style: solid;
-  border-width: 1px 0 0;
 }
 
 .e-grid .e-filterbarcell input {
@@ -3580,8 +3570,14 @@
 }
 
 .e-grid.e-resize-lines .e-headercell .e-rhandler,
-.e-grid.e-resize-lines .e-headercell .e-rsuppress {
+.e-grid.e-resize-lines .e-headercell .e-rsuppress,
+.e-grid.e-resize-lines .e-rowdragheader {
   border-right: 1px solid #eaeaea;
+}
+
+.e-grid.e-rtl.e-resize-lines .e-rowdragheader {
+  border-left: 1px solid #eaeaea;
+  border-right-width: 0;
 }
 
 .e-grid.e-resize-lines .e-focused .e-rhandler {

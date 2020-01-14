@@ -3297,6 +3297,11 @@
   color: #fff;
 }
 
+.e-tab .e-tab-header .e-toolbar-pop .e-toolbar-item.e-disable.e-overlay .e-tab-text,
+.e-tab .e-tab-header .e-toolbar-pop .e-toolbar-item.e-disable.e-overlay .e-tab-icon {
+  color: #757575;
+}
+
 .e-tab .e-tab-header .e-scroll-nav,
 .e-tab .e-tab-header .e-hscroll:not(.e-scroll-device) .e-scroll-nav {
   background: inherit;

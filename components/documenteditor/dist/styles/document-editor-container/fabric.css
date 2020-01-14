@@ -543,7 +543,6 @@
 }
 
 .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;
@@ -1360,7 +1359,6 @@
 }
 
 .e-bigger .e-de-overlay {
-  filter: alpha(opacity=50);
   height: 100%;
   opacity: .5;
   pointer-events: none;

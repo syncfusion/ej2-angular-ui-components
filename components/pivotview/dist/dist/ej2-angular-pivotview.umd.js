@@ -514,6 +514,7 @@ exports.click = ej2Pivotview.click;
 exports.initToolbar = ej2Pivotview.initToolbar;
 exports.initFormatting = ej2Pivotview.initFormatting;
 exports.initGrouping = ej2Pivotview.initGrouping;
+exports.Theme = ej2Pivotview.Theme;
 exports.ErrorDialog = ej2Pivotview.ErrorDialog;
 exports.FilterDialog = ej2Pivotview.FilterDialog;
 exports.PivotContextMenu = ej2Pivotview.PivotContextMenu;
