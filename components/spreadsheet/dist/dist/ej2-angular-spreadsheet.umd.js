@@ -222,7 +222,7 @@ ColumnsDirective.decorators = [
  * @nocollapse
  */
 ColumnsDirective.ctorParameters = function () { return []; };
-var input$3 = ['dataSource', 'query', 'showFieldAsHeader', 'startCell'];
+var input$3 = ['dataSource', 'query', 'range', 'showFieldAsHeader', 'startCell', 'template'];
 var outputs$3 = [];
 /**
  * `e-rangesetting` directive represent a range setting of the Angular Spreadsheet.
@@ -289,7 +289,7 @@ RangeSettingsDirective.decorators = [
  * @nocollapse
  */
 RangeSettingsDirective.ctorParameters = function () { return []; };
-var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'topLeftCell', 'usedRange'];
+var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 var outputs$4 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -829,6 +829,7 @@ exports.processIdx = ej2Spreadsheet.processIdx;
 exports.clearRange = ej2Spreadsheet.clearRange;
 exports.getRangeIndexes = ej2Spreadsheet.getRangeIndexes;
 exports.getCellIndexes = ej2Spreadsheet.getCellIndexes;
+exports.getColIndex = ej2Spreadsheet.getColIndex;
 exports.getCellAddress = ej2Spreadsheet.getCellAddress;
 exports.getRangeAddress = ej2Spreadsheet.getRangeAddress;
 exports.getColumnHeaderText = ej2Spreadsheet.getColumnHeaderText;
@@ -882,6 +883,7 @@ exports.initiateFilter = ej2Spreadsheet.initiateFilter;
 exports.filterComplete = ej2Spreadsheet.filterComplete;
 exports.filterRangeAlert = ej2Spreadsheet.filterRangeAlert;
 exports.clearAllFilter = ej2Spreadsheet.clearAllFilter;
+exports.onSave = ej2Spreadsheet.onSave;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
@@ -949,6 +951,10 @@ exports.beforeDataBound = ej2Spreadsheet.beforeDataBound;
 exports.addContextMenuItems = ej2Spreadsheet.addContextMenuItems;
 exports.removeContextMenuItems = ej2Spreadsheet.removeContextMenuItems;
 exports.enableContextMenuItems = ej2Spreadsheet.enableContextMenuItems;
+exports.enableFileMenuItems = ej2Spreadsheet.enableFileMenuItems;
+exports.hideRibbonTabs = ej2Spreadsheet.hideRibbonTabs;
+exports.addRibbonTabs = ej2Spreadsheet.addRibbonTabs;
+exports.addToolbarItems = ej2Spreadsheet.addToolbarItems;
 exports.beforeRibbonCreate = ej2Spreadsheet.beforeRibbonCreate;
 exports.rowHeightChanged = ej2Spreadsheet.rowHeightChanged;
 exports.colWidthChanged = ej2Spreadsheet.colWidthChanged;
@@ -971,6 +977,7 @@ exports.openHyperlink = ej2Spreadsheet.openHyperlink;
 exports.removeHyperlink = ej2Spreadsheet.removeHyperlink;
 exports.createHyperlinkElement = ej2Spreadsheet.createHyperlinkElement;
 exports.sheetNameUpdate = ej2Spreadsheet.sheetNameUpdate;
+exports.hideSheet = ej2Spreadsheet.hideSheet;
 exports.performUndoRedo = ej2Spreadsheet.performUndoRedo;
 exports.updateUndoRedoCollection = ej2Spreadsheet.updateUndoRedoCollection;
 exports.setActionData = ej2Spreadsheet.setActionData;
@@ -986,6 +993,8 @@ exports.completeAction = ej2Spreadsheet.completeAction;
 exports.beginAction = ej2Spreadsheet.beginAction;
 exports.filterCellKeyDown = ej2Spreadsheet.filterCellKeyDown;
 exports.getFilterRange = ej2Spreadsheet.getFilterRange;
+exports.setAutoFit = ej2Spreadsheet.setAutoFit;
+exports.refreshFormulaDatasource = ej2Spreadsheet.refreshFormulaDatasource;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
@@ -1008,6 +1017,7 @@ exports.setResize = ej2Spreadsheet.setResize;
 exports.setWidthAndHeight = ej2Spreadsheet.setWidthAndHeight;
 exports.findMaxValue = ej2Spreadsheet.findMaxValue;
 exports.updateAction = ej2Spreadsheet.updateAction;
+exports.hasTemplate = ej2Spreadsheet.hasTemplate;
 exports.BasicModule = ej2Spreadsheet.BasicModule;
 exports.AllModule = ej2Spreadsheet.AllModule;
 exports.ScrollSettings = ej2Spreadsheet.ScrollSettings;

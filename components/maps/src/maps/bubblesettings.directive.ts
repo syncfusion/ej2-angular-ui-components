@@ -59,7 +59,10 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
      */
     public colorValuePath: any;
     /** 
-     * Specifies the data source for bubble.
+     * * Specifies dataSource for the bubble. 
+     * * The datasource must contain the size value of the bubble that can be bound to the bubble 
+     * of the Maps using the valuePath property in the bubbleSettings. 
+     * * The datasource can contain data such as color, and the other information that can be bound to the color, and tooltip of the bubble.
      * @isdatamanager false
      * @isobservable true
      * @default []

@@ -227,6 +227,10 @@
   transform: rotate(90deg);
 }
 
+.e-dlg-target.e-scroll-disabled {
+  overflow: hidden !important;
+}
+
 .e-dlg-overlay {
   height: 100%;
   left: 0;

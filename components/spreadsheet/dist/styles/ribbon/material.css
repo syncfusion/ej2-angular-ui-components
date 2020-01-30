@@ -90,6 +90,11 @@
   font-size: 10px;
 }
 
+.e-ribbon .e-drop-icon.e-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
 .e-ribbon.e-collapsed .e-content,
 .e-ribbon.e-collapsed .e-indicator,
 .e-ribbon.e-collapsed .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {

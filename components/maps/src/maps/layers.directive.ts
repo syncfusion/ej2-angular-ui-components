@@ -57,7 +57,8 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      */
     public dataLabelSettings: any;
     /** 
-     * Specifies the data source for the layer.
+     * * Specifies dataSource for the layer. 
+     * * The datasource can contain data that can be bound to the tooltip, marker, and bubble.
      * @isdatamanager false
      * @isobservable true
      * @default []

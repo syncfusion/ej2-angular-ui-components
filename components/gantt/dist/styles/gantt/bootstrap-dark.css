@@ -649,7 +649,8 @@
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar,
 .e-gantt .e-gantt-chart .e-gantt-child-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar,
-.e-gantt .e-gantt-chart .e-gantt-milestone {
+.e-gantt .e-gantt-chart .e-gantt-milestone,
+.e-gantt .e-gantt-chart .e-gantt-parent-milestone {
   display: inline-block;
   width: 100%;
 }
@@ -746,18 +747,22 @@
   z-index: 3;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-top {
+.e-gantt .e-gantt-chart .e-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-top {
   border-style: none solid solid;
   border-top: 0;
 }
 
 .e-gantt .e-gantt-chart .e-milestone-top,
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
   border-bottom: 0;
   border-style: solid solid none;
 }
@@ -1531,6 +1536,14 @@
 
 .e-gantt .e-gantt-chart .e-milestone-bottom {
   border-top-color: #dadada;
+}
+
+.e-gantt .e-gantt-chart .e-parent-milestone-top {
+  border-bottom-color: #4cc7ba;
+}
+
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+  border-top-color: #4cc7ba;
 }
 
 .e-gantt .e-gantt-chart .e-label {

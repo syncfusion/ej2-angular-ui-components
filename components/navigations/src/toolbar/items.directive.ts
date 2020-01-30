@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['align', 'cssClass', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'width'];
+let input: string[] = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'width'];
 let outputs: string[] = ['click'];
 /**
  * ItemDirective represent a item of the Essential JS 2 Angular Toolbar.
@@ -52,6 +52,11 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * @default ""
      */
     public cssClass: any;
+    /** 
+     * Specifies whether an item should be disabled or not.
+     * @default false
+     */
+    public disabled: any;
     /** 
      * Defines htmlAttributes used to add custom attributes to Toolbar command. 
      * Supports HTML attributes such as style, class, etc.

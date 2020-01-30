@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['dataSource', 'query', 'showFieldAsHeader', 'startCell'];
+let input: string[] = ['dataSource', 'query', 'range', 'showFieldAsHeader', 'startCell', 'template'];
 let outputs: string[] = [];
 /**
  * `e-rangesetting` directive represent a range setting of the Angular Spreadsheet.
@@ -43,6 +43,11 @@ export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
      */
     public query: any;
     /** 
+     * Specifies the range for updating the dataSource or template.
+     * @default 'A1'
+     */
+    public range: any;
+    /** 
      * Show/Hide the field of the datasource as header.
      * @default true
      */
@@ -52,6 +57,11 @@ export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
      * @default 'A1'
      */
     public startCell: any;
+    /** 
+     * Template helps to compiles the given HTML String (or HTML Element ID) into HtML Element and append to the Cell. 
+     *  @default ''
+     */
+    public template: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

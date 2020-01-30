@@ -53,7 +53,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public dashArray: any;
     /** 
-     * To configure the dataSource of the marker.
+     * * Specifies datasource for the marker. 
+     * * The datasource for the marker will contain latitude and longitude values to specify the location 
+     * of the marker. 
+     * * The datasource can contain data such as color, shape, and other details that can be bound to the color, shape, 
+     *  and tooltip of the marker.
      * @isdatamanager false
      * @isobservable true
      * @default []

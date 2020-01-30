@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 17.4.46 (2020-01-30)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#260927` - The issue "UmlClassDiagram is not updated properly in the layout" has been fixed.
+- `#227953` - The exception occurred while applying line routing for the complex diagram has been fixed.
+
 ## 17.4.44 (2021-01-21)
 
 ### Diagram

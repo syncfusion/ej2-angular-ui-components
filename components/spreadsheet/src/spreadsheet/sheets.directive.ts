@@ -5,7 +5,7 @@ import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
 import { RangeSettingsDirective } from './rangesettings.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -93,6 +93,11 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      * @default true
      */
     public showHeaders: any;
+    /** 
+     * Specifies the sheet visibility state. There must be at least one visible sheet in Spreadsheet.
+     * @default 'Visible'
+     */
+    public state: any;
     /** 
      * Specified cell will be positioned at the upper-left corner of the sheet.
      * @default 'A1'

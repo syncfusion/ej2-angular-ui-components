@@ -420,10 +420,6 @@
   position: relative;
 }
 
-.e-spreadsheet .e-main-panel .e-row.e-hide {
-  height: 0 !important;
-}
-
 .e-spreadsheet .e-table {
   border: 0 none;
   border-collapse: separate;
@@ -537,10 +533,6 @@
 
 .e-spreadsheet .e-sheet.e-hide-headers .e-main-panel {
   height: 100%;
-}
-
-.e-spreadsheet .e-sheet colgroup .e-hide {
-  width: 0 !important;
 }
 
 .e-spreadsheet .e-header-panel,
@@ -689,12 +681,12 @@
   padding: 0 12px;
 }
 
-.e-spreadsheet .e-sheet-tab.e-tab .e-tab-header .e-toolbar-item:nth-child(2) {
-  border-left: 1px solid #514f4f;
-}
-
 .e-spreadsheet .e-sheet-tab.e-tab .e-tab-header .e-indicator {
   z-index: 1;
+}
+
+.e-spreadsheet .e-sheet-tab.e-tab .e-tab-header .e-toolbar-items {
+  border-left: 1px solid #514f4f;
 }
 
 .e-spreadsheet .e-sheet-tab.e-tab .e-content {
@@ -720,7 +712,7 @@
 }
 
 .e-spreadsheet .e-hide {
-  display: none;
+  display: none !important;
 }
 
 .e-spreadsheet .e-selection {
@@ -2038,4 +2030,8 @@
 .e-sort-dialog .e-sort-error {
   background-color: #fce7e9;
   color: #333;
+}
+
+.e-dropdown-popup.e-sheets-list .e-item.e-hide {
+  opacity: .45;
 }

@@ -600,7 +600,7 @@ SwitchAllModule.decorators = [
  */
 SwitchAllModule.ctorParameters = () => [];
 
-let input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss'];
+let input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss', 'value'];
 let outputs$4 = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -669,7 +669,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs$4 = ['avatarIconCss', 'avatarText', 'chips', 'cssClass', 'enableDelete', 'enablePersistence', 'enableRtl', 'enabled', 'leadingIconCss', 'locale', 'selectedChips', 'selection', 'text', 'trailingIconCss'];
-const outputs$5 = ['click', 'created', 'delete'];
+const outputs$5 = ['beforeClick', 'click', 'created', 'delete'];
 const twoWays$4 = [''];
 /**
  * Represents the Essential JS 2 Angular ChipList Component.

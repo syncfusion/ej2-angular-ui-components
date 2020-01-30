@@ -1016,6 +1016,7 @@ exports.zoomAnimate = ej2Maps.zoomAnimate;
 exports.animate = ej2Maps.animate;
 exports.MapAjax = ej2Maps.MapAjax;
 exports.smoothTranslate = ej2Maps.smoothTranslate;
+exports.compareZoomFactor = ej2Maps.compareZoomFactor;
 exports.calculateZoomLevel = ej2Maps.calculateZoomLevel;
 exports.LayerPanel = ej2Maps.LayerPanel;
 exports.Bubble = ej2Maps.Bubble;

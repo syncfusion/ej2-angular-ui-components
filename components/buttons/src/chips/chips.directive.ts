@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss'];
+let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss', 'value'];
 let outputs: string[] = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -64,6 +64,11 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
      * @default ''
      */
     public trailingIconCss: any;
+    /** 
+     * This value property helps to store the ChipList component values.
+     * @default ''
+     */
+    public value: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();
