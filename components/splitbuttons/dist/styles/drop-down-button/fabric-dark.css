@@ -194,7 +194,7 @@
 }
 
 .e-dropdown-popup ul .e-item.e-focused {
-  background-color: none;
+  background-color: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 

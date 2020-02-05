@@ -150,7 +150,7 @@
 
 .e-accordion .e-acrdn-item {
   overflow: hidden;
-  padding-top: "";
+  padding-top: 0;
   position: relative;
 }
 

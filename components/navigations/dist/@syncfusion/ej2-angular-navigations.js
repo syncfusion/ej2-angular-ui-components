@@ -15,9 +15,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 let input = ['content', 'cssClass', 'expanded', 'header', 'iconCss'];
 let outputs = [];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Accordion.
+ * 'e-accordionitem' directive represent a item of the Angular Accordion.
+ * It must be contained in a Accordion component(`ejs-accordion`).
  * ```html
- * <ejs-accordion >
+ * <ejs-accordion>
  *   <e-accordionitems>
  *    <e-accordionitem header='Header1'></e-accordionitem>
  *    <e-accordionitem header='Header2' content='Content2'></e-accordionitem>
@@ -96,7 +97,7 @@ const inputs = ['animation', 'dataSource', 'enablePersistence', 'enableRtl', 'ex
 const outputs$1 = ['clicked', 'created', 'destroyed', 'expanded', 'expanding'];
 const twoWays = [''];
 /**
- * Represents the Essential JS 2 Angular Accordion Component.
+ * Represents the Angular Accordion Component.
  * ```html
  * <ejs-accordion></ejs-accordion>
  * ```
@@ -236,12 +237,13 @@ var __decorate$2 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input$1 = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'width'];
+let input$1 = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'visible', 'width'];
 let outputs$2 = ['click'];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Toolbar.
+ * 'e-item' directive represent a item of the Angular Toolbar.
+ * It must be contained in a Toolbar component(`ejs-toolbar`).
  * ```html
- * <ejs-toolbar >
+ * <ejs-toolbar>
  *   <e-items>
  *    <e-item text='Cut'></e-item>
  *    <e-item text='Copy'></e-item>
@@ -311,11 +313,11 @@ var __decorate$3 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$1 = ['cssClass', 'enableCollision', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
+const inputs$1 = ['cssClass', 'enableCollision', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
 const outputs$3 = ['beforeCreate', 'clicked', 'created', 'destroyed'];
 const twoWays$1 = [''];
 /**
- * Represents the Essential JS 2 Angular Toolbar Component.
+ * Represents the Angular Toolbar Component.
  * ```html
  * <ejs-toolbar></ejs-toolbar>
  * ```
@@ -569,10 +571,11 @@ var __decorate$5 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
+let input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate', 'visible'];
 let outputs$5 = [];
 /**
- * TabItemDirective represent a item of the EJ2 Angular Tab.
+ * 'e-tabitem' directive represent a item of the Angular Tab.
+ * It must be contained in a Tab component(`ejs-tab`).
  * ```html
  * <ejs-tab>
  *  <e-tabitems>
@@ -654,13 +657,13 @@ var __decorate$6 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
+const inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'loadOn', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
 const outputs$6 = ['added', 'adding', 'created', 'destroyed', 'removed', 'removing', 'selected', 'selecting'];
 const twoWays$3 = [''];
 /**
- * Represents the EJ2 Angular Tab Component.
+ * Represents the Angular Tab Component.
  * ```html
- * <ejs-tab overflowMode= 'Popup'></ejs-tab>
+ * <ejs-tab></ejs-tab>
  * ```
  */
 let TabComponent = class TabComponent extends Tab {

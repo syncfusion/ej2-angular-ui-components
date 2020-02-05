@@ -1094,7 +1094,7 @@
 .e-rte-image {
   border: 0;
   cursor: pointer;
-  display: '';
+  display: block;
   float: none;
   margin: auto;
   max-width: 100%;
@@ -2013,6 +2013,36 @@
   border-collapse: separate;
 }
 
+.e-rte-img-dialog.e-dialog.e-device.e-dlg-modal .e-img-uploadwrap.e-droparea {
+  line-height: 10;
+  min-height: 50px;
+  position: relative;
+}
+
+.e-rte-img-dialog.e-dialog.e-device.e-dlg-modal .e-img-uploadwrap.e-droparea .e-browsebtn {
+  display: block;
+  height: 36px;
+  margin: -50px auto;
+  padding: 0 18px;
+}
+
+.e-rte-img-dialog.e-dialog.e-device.e-dlg-modal .e-img-uploadwrap.e-droparea .e-upload {
+  border: 0 solid transparent;
+  float: none;
+}
+
+.e-rte-img-dialog.e-dialog.e-device.e-dlg-modal .e-img-uploadwrap.e-droparea .e-file-select-wrap {
+  display: none;
+}
+
+.e-rte-img-dialog.e-dialog.e-device.e-dlg-modal .e-linkheader {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-size: 15px;
+  opacity: .87;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 /*! tab layout */
 .e-richtexteditor .e-rte-toolbar {
   border: 1px solid #ddd;
@@ -2328,9 +2358,8 @@
 }
 
 .e-dialog.e-device.e-dlg-modal .e-img-uploadwrap .e-droptext {
-  height: 66px;
   margin: 0 auto;
-  width: 168px;
+  width: 250px;
 }
 
 .e-linkheader {

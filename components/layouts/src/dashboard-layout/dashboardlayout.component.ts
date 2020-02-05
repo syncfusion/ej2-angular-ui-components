@@ -4,7 +4,7 @@ import { DashboardLayout } from '@syncfusion/ej2-layouts';
 
 import { PanelsDirective } from './panels.directive';
 
-export const inputs: string[] = ['allowDragging','allowFloating','allowPushing','allowResizing','cellAspectRatio','cellSpacing','columns','draggableHandle','enablePersistence','enableRtl','locale','mediaQuery','panels','resizableHandles','showGridLines'];
+export const inputs: string[] = ['allowDragging','allowFloating','allowPushing','allowResizing','cellAspectRatio','cellSpacing','columns','draggableHandle','enableHtmlSanitizer','enablePersistence','enableRtl','locale','mediaQuery','panels','resizableHandles','showGridLines'];
 export const outputs: string[] = ['change','created','destroyed','drag','dragStart','dragStop','resize','resizeStart','resizeStop'];
 export const twoWays: string[] = [''];
 

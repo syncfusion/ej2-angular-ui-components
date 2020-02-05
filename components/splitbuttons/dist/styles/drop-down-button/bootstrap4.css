@@ -187,7 +187,7 @@
 }
 
 .e-dropdown-popup ul .e-item.e-focused {
-  background-color: none;
+  background-color: transparent;
   box-shadow: none;
 }
 

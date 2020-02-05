@@ -324,7 +324,7 @@
 
 .e-menu-wrapper.e-popup.e-menu-popup {
   border: 1px solid #414040;
-  box-shadow: 0 3 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
   overflow: hidden;
   position: absolute;
 }
@@ -547,7 +547,7 @@
 
 .e-bigger .e-menu-wrapper.e-menu-popup,
 .e-bigger.e-menu-wrapper.e-menu-popup {
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
 }
 
 .e-bigger .e-menu-wrapper .e-scroll-nav .e-icons,
@@ -846,7 +846,7 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: none;
+  color: transparent;
   outline: 0 solid #414040;
   outline-offset: 0;
   background-color: #414040;
@@ -868,11 +868,11 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

@@ -807,7 +807,7 @@ body.e-colorpicker-overflow {
   background-color: transparent;
   color: rgba(51, 51, 51, 0.65);
   outline: none;
-  outline-offset: none;
+  outline-offset: unset;
 }
 
 .e-colorpicker-wrapper.e-disabled .e-value-switch-btn:active,

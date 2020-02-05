@@ -9,7 +9,7 @@ export const outputs: string[] = ['clicked','created','destroyed','expanded','ex
 export const twoWays: string[] = [''];
 
 /**
- * Represents the Essential JS 2 Angular Accordion Component.
+ * Represents the Angular Accordion Component.
  * ```html
  * <ejs-accordion></ejs-accordion>
  * ```

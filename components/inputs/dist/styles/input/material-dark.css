@@ -606,7 +606,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text,
-.e-float-input:not:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-float-input.e-control-wrapper:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   top: -11px;
 }
@@ -8458,7 +8458,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-input-group,
 .e-filled.e-float-input.e-control-wrapper,
 .e-filled.e-float-input.e-input-group.e-control-wrapper {
-  background: none;
+  background: transparent;
   transition: opacity 15ms linear, background-color 15ms linear;
 }
 
@@ -8494,7 +8494,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),
 .e-filled.e-float-input:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled),
 .e-filled.e-float-input.e-control-wrapper:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),
@@ -8503,7 +8503,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),
 .e-filled.e-float-input.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled),
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),
@@ -8512,7 +8512,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left),
 .e-filled.e-float-input.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled),
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error),
@@ -8561,7 +8561,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error):not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-error label.e-float-text,
@@ -8616,7 +8616,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-filled.e-float-input.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-bigger .e-filled.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-error) input:focus ~ label.e-float-text,
@@ -8638,7 +8638,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-filled.e-float-input.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-bigger .e-filled.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper:not(.e-error) input:focus ~ label.e-float-text,
@@ -8660,7 +8660,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-filled.e-float-input.e-control-wrapper.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-small:not(.e-error) input:focus ~ label.e-float-text,
@@ -8687,7 +8687,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-small .e-filled.e-float-input:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-filled.e-float-input.e-small.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error).e-input-focus input ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) input:focus ~ label.e-float-text,
@@ -8714,7 +8714,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-small .e-filled.e-float-input.e-control-wrapper:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-filled.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error).e-input-focus input ~ label.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error).e-input-focus input ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-error) textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
@@ -8731,13 +8731,13 @@ textarea.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-small.e-bigger:not(.e-error) textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error) textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-input-focus):not(.e-disabled) textarea:not(:focus):not(:valid) ~ label.e-float-text:not(.e-label-top),
 .e-filled.e-float-input:not(.e-input-focus) textarea:not(:focus):not(:valid) ~ label.e-float-text:not(.e-label-top),
 .e-filled.e-float-input.e-control-wrapper:not(.e-input-focus):not(.e-disabled) textarea:not(:focus):not(:valid) ~ label.e-float-text:not(.e-label-top) {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-error) textarea:focus ~ label.e-float-text,
@@ -8756,7 +8756,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input:not(.e-error) textarea ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input:not(.e-error) textarea[readonly] ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input:not(.e-error) textarea[disabled] ~ label.e-label-top.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper:not(.e-error) textarea:focus ~ label.e-float-text,
@@ -8775,7 +8775,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input.e-control-wrapper:not(.e-error) textarea ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper:not(.e-error) textarea[readonly] ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper:not(.e-error) textarea[disabled] ~ label.e-label-top.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
@@ -8798,7 +8798,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error) textarea ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error) textarea[readonly] ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-small:not(.e-error) textarea[disabled] ~ label.e-label-top.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea:focus ~ label.e-float-text,
@@ -8821,7 +8821,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea[readonly] ~ label.e-label-top.e-float-text,
 .e-bigger .e-filled.e-float-input.e-control-wrapper.e-small:not(.e-error) textarea[disabled] ~ label.e-label-top.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-error) input:focus ~ label.e-float-text,
@@ -8941,7 +8941,7 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input.e-small.e-control-wrapper.e-autofill:not(.e-error):not(.e-input-focus) input:not(:focus):-webkit-autofill ~ label.e-float-text,
 .e-bigger.e-small .e-filled.e-float-input.e-control-wrapper.e-autofill:not(.e-error):not(.e-input-focus) input:not(:focus):-webkit-autofill ~ label.e-float-text,
 .e-filled.e-float-input.e-bigger.e-small.e-control-wrapper.e-autofill:not(.e-error):not(.e-input-focus) input:not(:focus):-webkit-autofill ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-error) textarea:not(:focus):-webkit-autofill ~ label.e-float-text,
@@ -8960,130 +8960,130 @@ textarea.e-input::-webkit-input-placeholder {
 .e-bigger .e-filled.e-float-input.e-small.e-control-wrapper.e-autofill:not(.e-error) textarea:not(:focus):-webkit-autofill ~ label.e-float-text,
 .e-bigger.e-small .e-filled.e-float-input.e-control-wrapper.e-autofill:not(.e-error) textarea:not(:focus):-webkit-autofill ~ label.e-float-text,
 .e-filled.e-bigger.e-small.e-control-wrapper.e-autofill:not(.e-error) textarea:not(:focus):-webkit-autofill ~ label.e-float-text {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input:-moz-placeholder,
 .e-input-group.e-filled.e-control-wrapper input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled textarea.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper input.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled textarea.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper input.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled textarea.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper input.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled input.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled textarea.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-control-wrapper textarea.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-disabled) .e-clear-icon:hover,
 .e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover,
 .e-filled.e-input-group:not(.e-disabled) .e-clear-icon:hover,
 .e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:hover {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-disabled) .e-clear-icon:active,
 .e-filled.e-float-input.e-control-wrapper:not(.e-disabled) .e-clear-icon:active,
 .e-filled.e-input-group:not(.e-disabled) .e-clear-icon:active,
 .e-filled.e-input-group.e-control-wrapper:not(.e-disabled) .e-clear-icon:active {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-disabled .e-clear-icon,
@@ -9092,7 +9092,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-input-group.e-filled.e-control-wrapper.e-disabled .e-clear-icon,
 .e-input-group.e-filled.e-disabled .e-input-group-icon,
 .e-input-group.e-filled.e-control-wrapper.e-disabled .e-input-group-icon {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-input[disabled],
@@ -9106,38 +9106,38 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper textarea[disabled],
 .e-filled.e-float-input.e-disabled,
 .e-filled.e-float-input.e-control-wrapper.e-disabled {
-  background: none;
+  background: transparent;
   background-image: none;
-  background-position: none;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: 0;
-  border-color: none;
-  color: none;
+  border-color: transparent;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-disabled:not(.e-success):not(.e-warning):not(.e-error),
 .e-filled.e-float-input.e-control-wrapper.e-disabled:not(.e-success):not(.e-warning):not(.e-error) {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left).e-disabled,
 .e-filled.e-input-group.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error).e-disabled .e-input-in-wrap,
 .e-filled.e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left).e-disabled,
 .e-filled.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error).e-disabled .e-input-in-wrap {
-  background: none;
+  background: transparent;
   background-image: none;
-  background-position: none;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: 0;
-  border-color: none;
-  color: none;
+  border-color: transparent;
+  color: transparent;
 }
 
 .e-filled.e-float-input:not(.e-disabled) input[disabled],
 .e-filled.e-float-input.e-control-wrapper:not(.e-disabled) input[disabled],
 .e-filled.e-float-input:not(.e-disabled) textarea[disabled],
 .e-filled.e-float-input.e-control-wrapper:not(.e-disabled) textarea[disabled] {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-input-group.e-disabled .e-float-text,
@@ -9154,7 +9154,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-small:not(.e-error) input[disabled] ~ label.e-float-text.e-label-top,
 .e-filled.e-float-input.e-small.e-bigger:not(.e-error) input[disabled] ~ label.e-float-text,
 .e-filled.e-float-input.e-small.e-bigger:not(.e-error) input[disabled] ~ label.e-float-text.e-label-top {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input textarea[disabled] ~ label.e-float-text,
@@ -9167,7 +9167,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-small:not(.e-error) textarea[disabled] ~ label.e-float-text.e-label-top,
 .e-filled.e-float-input.e-small.e-bigger:not(.e-error) textarea[disabled] ~ label.e-float-text,
 .e-filled.e-float-input.e-small.e-bigger:not(.e-error) textarea[disabled] ~ label.e-float-text.e-label-top {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper.e-input-group.e-disabled .e-float-text,
@@ -9194,7 +9194,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small:not(.e-error) input[disabled] ~ label.e-float-text.e-label-top,
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small.e-bigger:not(.e-error) input[disabled] ~ label.e-float-text,
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small.e-bigger:not(.e-error) input[disabled] ~ label.e-float-text.e-label-top {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-float-input.e-control-wrapper.e-disabled textarea[disabled] ~ label.e-float-text,
@@ -9217,116 +9217,116 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small:not(.e-error) textarea[disabled] ~ label.e-float-text.e-label-top,
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small.e-bigger:not(.e-error) textarea[disabled] ~ label.e-float-text,
 .e-filled.e-float-input.e-control-wrapper.e-disabled.e-small.e-bigger:not(.e-error) textarea[disabled] ~ label.e-float-text.e-label-top {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-disabled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input:-moz-placeholder,
 .e-input-group.e-filled.e-disabled.e-control-wrapper input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-disabled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper input.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-disabled.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled textarea.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper textarea.e-input:-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-disabled.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper input.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-disabled.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled textarea.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper textarea.e-input::-moz-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-disabled.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper input.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-disabled.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper textarea.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled textarea.e-input:-ms-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 input.e-filled.e-disabled.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper input.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled input.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled textarea.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-input-group.e-filled.e-disabled.e-control-wrapper textarea.e-input::-webkit-input-placeholder {
-  color: none;
+  color: transparent;
 }
 
 .e-filled.e-input-group.e-float-icon-left:not(.e-float-input)::before,
@@ -9386,21 +9386,21 @@ textarea.e-filled.e-disabled.e-input::-webkit-input-placeholder {
 .e-filled.e-input-group.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-input-group.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-input-group.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-input-group.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left,
 .e-filled.e-float-input.e-control-wrapper.e-input-focus:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled).e-float-icon-left {
-  border-color: none;
+  border-color: transparent;
 }
 
 .e-filled.e-float-input.e-success input:focus ~ label.e-float-text,

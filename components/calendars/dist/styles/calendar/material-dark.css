@@ -622,7 +622,7 @@ ejs-calendar {
 .e-bigger.e-small .e-calendar {
   background-color: #303030;
   border: 1px solid #616161;
-  box-shadow: #e0e0e0;
+  box-shadow: none;
 }
 
 .e-calendar .e-date-icon-prev,

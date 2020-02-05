@@ -1317,7 +1317,7 @@
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
   background: #6c757d;
   border: 3px solid #adb5bd;
-  border-left: 1px "" #6c757d;
+  border-left: 1px none #6c757d;
   box-shadow: none;
 }
 
@@ -1399,7 +1399,7 @@
   border-width: 0 1px 0 0;
 }
 
-.e-toolbar.e-rtl .e-hor-nav:not(.e-hor-nav.e-nav-active):hover {
+.e-toolbar.e-rtl .e-hor-nav:not(.e-nav-active):hover {
   background: #6c757d;
   color: #fff;
 }
@@ -1431,7 +1431,7 @@
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):hover {
   background: #6c757d;
-  border-left: "";
+  border-left: 0;
   color: #fff;
   background: #5a6268;
 }
@@ -1442,9 +1442,9 @@
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):focus {
   background: #6c757d;
-  border-color: "";
-  border-left: "";
+  border-left: 0;
   color: #fff;
+  border-color: transparent;
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):focus .e-icons {

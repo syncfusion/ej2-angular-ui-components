@@ -547,7 +547,7 @@ ejs-listbox {
 
 .e-listbox-wrapper .e-selectall-parent {
   background-color: #fff;
-  border-bottom: 1px solid #000 Opacity 15%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   color: #212529;
 }
 

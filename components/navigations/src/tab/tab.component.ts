@@ -4,14 +4,14 @@ import { Tab } from '@syncfusion/ej2-navigations';
 
 import { TabItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animation','cssClass','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','locale','overflowMode','scrollStep','selectedItem','showCloseButton','width'];
+export const inputs: string[] = ['animation','cssClass','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','loadOn','locale','overflowMode','scrollStep','selectedItem','showCloseButton','width'];
 export const outputs: string[] = ['added','adding','created','destroyed','removed','removing','selected','selecting'];
 export const twoWays: string[] = [''];
 
 /**
- * Represents the EJ2 Angular Tab Component.
+ * Represents the Angular Tab Component.
  * ```html
- * <ejs-tab overflowMode= 'Popup'></ejs-tab>
+ * <ejs-tab></ejs-tab>
  * ```
  */
 @Component({

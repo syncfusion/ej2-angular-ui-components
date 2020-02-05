@@ -6,9 +6,10 @@ import { Template } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['content', 'cssClass', 'expanded', 'header', 'iconCss'];
 let outputs: string[] = [];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Accordion.
+ * 'e-accordionitem' directive represent a item of the Angular Accordion.
+ * It must be contained in a Accordion component(`ejs-accordion`). 
  * ```html
- * <ejs-accordion > 
+ * <ejs-accordion> 
  *   <e-accordionitems>
  *    <e-accordionitem header='Header1'></e-accordionitem>
  *    <e-accordionitem header='Header2' content='Content2'></e-accordionitem>

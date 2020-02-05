@@ -91,7 +91,7 @@ AnnotationsDirective.decorators = [
  * @nocollapse
  */
 AnnotationsDirective.ctorParameters = function () { return []; };
-var input$1 = ['color', 'end', 'endWidth', 'legendText', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+var input$1 = ['color', 'end', 'endWidth', 'legendText', 'offset', 'opacity', 'position', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 var outputs$1 = [];
 /**
  * Ranges directive
@@ -149,7 +149,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'pointerWidth', 'radius', 'roundedCornerRadius', 'type', 'value'];
+var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'type', 'value'];
 var outputs$2 = [];
 /**
  * Pointers directive
@@ -285,7 +285,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
+var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
 var twoWays = [''];
 /**
  * Circular Gauge Component

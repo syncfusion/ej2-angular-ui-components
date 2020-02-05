@@ -224,7 +224,7 @@
 .e-hscroll.e-scroll-device .e-scroll-nav.e-scroll-right-nav {
   background-color: #333232;
   border-color: #201f1f;
-  border-width: none;
+  border-width: 0;
   box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -261,28 +261,26 @@
 
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #414040;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #414040;
-  border: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #414040;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #514f4f;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -508,28 +506,28 @@
 
 .e-vscroll.e-rtl .e-scroll-nav:hover {
   background: #333232;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #dadada;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #333232;
-  border: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #333232;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #dadada;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #c7e7ff;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -795,7 +793,7 @@
   height: inherit;
   margin: 0;
   min-height: 50px;
-  min-width: "";
+  min-width: 0;
   padding: 0;
 }
 
@@ -898,7 +896,7 @@
   height: inherit;
   margin: 0;
   min-height: 50px;
-  min-width: "";
+  min-width: 0;
   padding: 0;
 }
 
@@ -1766,22 +1764,22 @@
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:focus {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:hover {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:active {
   background: #514f4f;
   border-color: #514f4f;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -1810,9 +1808,9 @@
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active,
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
   background: #514f4f;
-  border: "";
+  border: 0;
   border-left: 1px solid #514f4f;
-  box-shadow: "";
+  box-shadow: none;
 }
 
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active .e-icons,
@@ -1829,14 +1827,14 @@
 .e-toolbar .e-tbar-btn:focus {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar .e-tbar-btn:hover {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
@@ -1872,7 +1870,7 @@
   border-width: 0 1px 0 0;
 }
 
-.e-toolbar.e-rtl .e-hor-nav:not(.e-hor-nav.e-nav-active):hover {
+.e-toolbar.e-rtl .e-hor-nav:not(.e-nav-active):hover {
   background: #414040;
   color: #dadada;
 }
@@ -1888,8 +1886,8 @@
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):active {
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #dadada;
 }
 
@@ -1899,22 +1897,22 @@
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):hover {
   background: #414040;
-  border-left: "";
+  border-left: 0;
   color: #dadada;
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):focus {
   background: #414040;
-  border-color: #414040;
-  border-left: "";
+  border-left: 0;
   color: #dadada;
+  border-color: #414040;
 }
 
 .e-toolbar .e-tbar-btn:active {
   background: #514f4f;
   border-color: #514f4f;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -2069,7 +2067,7 @@
 
 .e-accordion .e-acrdn-item {
   overflow: hidden;
-  padding-top: "";
+  padding-top: 0;
   position: relative;
 }
 
@@ -2369,7 +2367,7 @@
   padding: 0;
   border: 1px solid #414040;
   border-radius: 0;
-  box-shadow: 0 3 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
   display: none;
   min-width: 120px;
   position: absolute;
@@ -2386,7 +2384,7 @@
 }
 
 .e-contextmenu-wrapper ul.e-contextmenu {
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
 }
 
 .e-contextmenu-wrapper ul.e-ul {
@@ -2509,7 +2507,7 @@
   font-size: 15px;
   padding: 0;
   white-space: nowrap;
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
   max-width: 280px;
   min-width: 112px;
 }
@@ -4293,12 +4291,7 @@
 
 .e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
   top: 1px;
-}
-
-@media screen\0 {
-  .e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
-    top: 1px;
-  }
+  top: 1px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-icons.e-tab-icon {
@@ -7822,7 +7815,7 @@ ejs-sidebar {
 
 .e-menu-wrapper.e-popup.e-menu-popup {
   border: 1px solid #414040;
-  box-shadow: 0 3 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
   overflow: hidden;
   position: absolute;
 }
@@ -8045,7 +8038,7 @@ ejs-sidebar {
 
 .e-bigger .e-menu-wrapper.e-menu-popup,
 .e-bigger.e-menu-wrapper.e-menu-popup {
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
 }
 
 .e-bigger .e-menu-wrapper .e-scroll-nav .e-icons,
@@ -8344,7 +8337,7 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: none;
+  color: transparent;
   outline: 0 solid #414040;
   outline-offset: 0;
   background-color: #414040;
@@ -8366,11 +8359,11 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

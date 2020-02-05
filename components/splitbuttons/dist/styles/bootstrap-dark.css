@@ -194,7 +194,7 @@
 }
 
 .e-dropdown-popup ul .e-item.e-focused {
-  background-color: none;
+  background-color: transparent;
   box-shadow: inset 0 0 0 1px #585858;
 }
 
@@ -893,7 +893,7 @@
   outline-offset: 0;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-primary,
@@ -906,7 +906,7 @@
   outline: #393939 0 solid;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-success,
@@ -918,7 +918,7 @@
   color: #fff;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-info,
@@ -930,7 +930,7 @@
   color: #fff;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-warning,
@@ -942,7 +942,7 @@
   color: #000;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-danger,
@@ -954,7 +954,7 @@
   color: #fff;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-link,
@@ -1196,7 +1196,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn {
   background-color: rgba(57, 57, 57, 0.4);
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.3);
   border-color: #585858;
 }
@@ -1207,7 +1207,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-primary {
   background-color: rgba(0, 112, 240, 0.4);
   border-color: rgba(0, 112, 240, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.4);
   border-color: #248aff;
 }
@@ -1218,7 +1218,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-success {
   background-color: rgba(72, 177, 76, 0.4);
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #265e28;
 }
@@ -1229,7 +1229,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-info {
   background-color: rgba(42, 170, 192, 0.4);
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #2aaac0;
 }
@@ -1240,7 +1240,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-warning {
   background-color: rgba(250, 193, 104, 0.4);
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #f69807;
 }
@@ -1251,7 +1251,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-danger {
   background-color: rgba(212, 79, 79, 0.4);
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #982525;
 }
@@ -1262,7 +1262,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-link {
   color: rgba(240, 240, 240, 0.3);
   background-color: transparent;
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   border-color: transparent;
 }
@@ -1273,7 +1273,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline {
   background-color: transparent;
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #585858;
 }
@@ -1284,7 +1284,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline.e-primary {
   background-color: transparent;
   border-color: rgba(88, 88, 88, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(240, 240, 240, 0.4);
   border-color: #0070f0;
 }
@@ -1295,7 +1295,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline.e-success {
   background-color: transparent;
   border-color: rgba(53, 130, 56, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(53, 130, 56, 0.4);
   border-color: #358238;
 }
@@ -1306,7 +1306,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline.e-info {
   background-color: transparent;
   border-color: rgba(32, 128, 144, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(32, 128, 144, 0.4);
   border-color: #208090;
 }
@@ -1317,7 +1317,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline.e-warning {
   background-color: transparent;
   border-color: rgba(249, 173, 55, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(249, 173, 55, 0.4);
   border-color: #f9ad37;
 }
@@ -1328,7 +1328,7 @@
 .e-css.e-btn-group input:disabled + label.e-btn.e-outline.e-danger {
   background-color: transparent;
   border-color: rgba(193, 47, 47, 0.4);
-  box-shadow: transparent;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: rgba(193, 47, 47, 0.4);
   border-color: #c12f2f;
 }
@@ -1354,7 +1354,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline {
   border-color: #585858;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
@@ -1362,7 +1362,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
   border-color: #3e98ff;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
@@ -1370,7 +1370,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
@@ -1378,7 +1378,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
@@ -1386,7 +1386,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
@@ -1394,7 +1394,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-outline:not(:first-of-type):not(:last-of-type),
@@ -1418,7 +1418,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline {
   border-color: #585858;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
@@ -1426,7 +1426,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
   border-color: #3e98ff;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
@@ -1434,7 +1434,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
@@ -1442,7 +1442,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
@@ -1450,7 +1450,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
@@ -1458,7 +1458,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type),

@@ -858,7 +858,6 @@
 .e-toolbar-items:not(.e-toolbar-pop) .e-pv-zoom-out-icon,
 .e-toolbar-items:not(.e-toolbar-pop) .e-pv-zoom-in-icon {
   line-height: 18px;
-  size: 18px;
 }
 
 .e-pv-toolbar.e-toolbar.e-rtl .e-toolbar-items .e-pv-current-page-container {
@@ -1048,7 +1047,7 @@
 
 .e-pv-zoom-drop-down.e-ddl.e-control-wrapper.e-icon-anim .e-ddl-icon::before,
 .e-pv-prop-dropdown.e-ddl.e-control-wrapper.e-icon-anim .e-ddl-icon::before {
-  transform: 0deg;
+  transform: rotate(0deg);
 }
 
 .e-input-group.e-control-wrapper.e-pv-current-page-box:not(.e-float-icon-left):not(.e-float-input)::after,
@@ -1206,7 +1205,7 @@
 
 .e-pv-thumbnail-view-button.e-btn {
   background: transparent;
-  border: none;
+  border: 0;
   border-radius: 4px;
   box-shadow: none;
   font-weight: 400;
@@ -1366,7 +1365,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 }
 
 .e-pv-sidebar-bookmark-title {
-  color: #000 87%;
+  color: rgba(0, 0, 0, 0.87);
   font-family: Roboto-Regular;
   font-size: 14px;
 }
@@ -2178,7 +2177,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-pv-more-options-button.e-btn {
   background: transparent;
-  border: none;
+  border: 0;
   border-radius: 4px;
   box-shadow: none;
   float: right;

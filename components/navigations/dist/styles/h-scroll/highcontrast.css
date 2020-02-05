@@ -261,8 +261,7 @@
 
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #685708;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #fff;
 }
 
@@ -272,7 +271,7 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #685708;
-  border: "";
+  border: 0;
   color: #fff;
   border: 2px solid #fff;
 }
@@ -283,8 +282,7 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #685708;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #fff;
   background: inherit;
   border: 2px solid #fff;
@@ -292,8 +290,8 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #ffd939;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #fff;
 }
 

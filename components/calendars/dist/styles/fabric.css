@@ -155,7 +155,7 @@ ejs-calendar {
 .e-calendar .e-content td.e-other-year > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
-  display: "";
+  display: inline-block;
   font-weight: 500;
 }
 
@@ -1342,14 +1342,6 @@ ejs-calendar {
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: 1px solid #0078d6;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
 }
 
 /*! calendar fabric theme variables */

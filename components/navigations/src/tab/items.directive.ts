@@ -3,10 +3,11 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
+let input: string[] = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate', 'visible'];
 let outputs: string[] = [];
 /**
- * TabItemDirective represent a item of the EJ2 Angular Tab.
+ * 'e-tabitem' directive represent a item of the Angular Tab.
+ * It must be contained in a Tab component(`ejs-tab`). 
  * ```html
  * <ejs-tab>
  *  <e-tabitems>
@@ -42,6 +43,11 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
      * @default {}
      */
     public header: any;
+    /** 
+     * Sets false to hide the Tab item.
+     * @default true
+     */
+    public visible: any;
     /** 
      * Specifies the content of Tab item, that is displayed when concern item header is selected.
      * @default ''

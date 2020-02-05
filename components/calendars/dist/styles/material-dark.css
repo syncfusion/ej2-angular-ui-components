@@ -622,7 +622,7 @@ ejs-calendar {
 .e-bigger.e-small .e-calendar {
   background-color: #303030;
   border: 1px solid #616161;
-  box-shadow: #e0e0e0;
+  box-shadow: none;
 }
 
 .e-calendar .e-date-icon-prev,
@@ -2340,7 +2340,7 @@ ejs-calendar {
 
 .e-daterangepicker.e-popup .e-presets .e-list-item.e-active,
 .e-bigger.e-small .e-daterangepicker.e-popup .e-presets .e-list-item.e-active {
-  background-color: none;
+  background-color: transparent;
   color: #00b0ff;
 }
 

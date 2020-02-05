@@ -1665,12 +1665,7 @@
 
 .e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
   top: 1px;
-}
-
-@media screen\0 {
-  .e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
-    top: 1px;
-  }
+  top: 1px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-icons.e-tab-icon {

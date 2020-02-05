@@ -862,7 +862,6 @@
 .e-toolbar-items:not(.e-toolbar-pop) .e-pv-zoom-out-icon,
 .e-toolbar-items:not(.e-toolbar-pop) .e-pv-zoom-in-icon {
   line-height: 16px;
-  size: 16px;
 }
 
 .e-pv-toolbar.e-toolbar.e-rtl .e-toolbar-items .e-pv-current-page-container {
@@ -1210,8 +1209,8 @@
 
 .e-pv-thumbnail-view-button.e-btn {
   background: transparent;
-  border: none;
-  border-radius: none;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
   font-weight: 500;
   height: 32px;
@@ -1226,7 +1225,7 @@
 .e-pv-bookmark-button-selection.e-pv-bookmark-button.e-btn {
   background: transparent;
   border: none;
-  border-radius: none;
+  border-radius: 0;
   line-height: none;
   padding: 10px;
 }
@@ -1370,7 +1369,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 }
 
 .e-pv-sidebar-bookmark-title {
-  color: #000 87%;
+  color: rgba(0, 0, 0, 0.87);
   font-family: Roboto-Regular;
   font-size: 14px;
 }
@@ -2182,8 +2181,8 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-pv-more-options-button.e-btn {
   background: transparent;
-  border: none;
-  border-radius: none;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
   float: right;
   padding: 8px 7px 1px 1px;

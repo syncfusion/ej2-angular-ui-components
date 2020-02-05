@@ -48,7 +48,6 @@ export class CellDirective extends ComplexBase<CellDirective> {
     /** 
      * Specifies the hyperlink of the cell.
      * @default ''
-     * @asptype SpreadsheetHyperlink
      */
     public hyperlink: any;
     /** 

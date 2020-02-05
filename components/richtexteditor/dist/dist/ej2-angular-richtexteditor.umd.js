@@ -553,6 +553,7 @@ exports.updateTextNode = ej2Richtexteditor.updateTextNode;
 exports.isEditableValueEmpty = ej2Richtexteditor.isEditableValueEmpty;
 exports.decode = ej2Richtexteditor.decode;
 exports.sanitizeHelper = ej2Richtexteditor.sanitizeHelper;
+exports.convertToBlob = ej2Richtexteditor.convertToBlob;
 exports.ServiceLocator = ej2Richtexteditor.ServiceLocator;
 exports.RendererFactory = ej2Richtexteditor.RendererFactory;
 exports.EditorManager = ej2Richtexteditor.EditorManager;

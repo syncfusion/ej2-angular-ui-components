@@ -564,7 +564,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #6e6e6e;
   border: 1px solid #1a1a1a;
-  box-shadow: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
   color: #fff;
   outline: none;
 }
@@ -1478,7 +1478,7 @@
 .e-dashboardlayout.e-control .e-panel.e-bigger.e-panel-header {
   font-size: 14px;
   font-weight: 500;
-  height: 30;
+  height: 30px;
   padding: 0 12px;
 }
 

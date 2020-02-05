@@ -198,7 +198,7 @@
 .e-btn.e-small.e-rtl .e-icon-left,
 .e-css.e-btn.e-small.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.57143em;
 }
 
 .e-btn.e-block,
@@ -306,7 +306,7 @@
 .e-small .e-css.e-btn.e-rtl .e-icon-left,
 .e-small.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.57143em;
 }
 
 .e-bigger.e-small .e-btn,
@@ -1947,12 +1947,12 @@
 
 .e-checkbox-wrapper .e-ripple-check .e-ripple-element,
 .e-css.e-checkbox-wrapper .e-ripple-check .e-ripple-element {
-  background: transperant;
+  background: transparent;
 }
 
 .e-checkbox-wrapper:active .e-ripple-element,
 .e-css.e-checkbox-wrapper:active .e-ripple-element {
-  background: transperant;
+  background: transparent;
 }
 
 .e-checkbox-wrapper:active .e-ripple-check .e-ripple-element,

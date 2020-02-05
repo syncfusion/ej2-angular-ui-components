@@ -70,7 +70,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'roundedCornerRadius', 'type', 'value', 'width'];
+var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'position', 'roundedCornerRadius', 'type', 'value', 'width'];
 var outputs$1 = [];
 /**
  * Pointers directive
@@ -128,7 +128,7 @@ PointersDirective.decorators = [
  * @nocollapse
  */
 PointersDirective.ctorParameters = function () { return []; };
-var input$2 = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges'];
+var input$2 = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges', 'showLastLabel'];
 var outputs$2 = [];
 /**
  * Axes directive
@@ -284,7 +284,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
+var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
  * Linear Gauge Component

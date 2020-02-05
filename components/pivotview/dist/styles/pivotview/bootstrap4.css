@@ -2049,7 +2049,7 @@
 .e-mdx-query-content {
   background-color: #fff;
   color: #212529;
-  font-size: #212529;
+  font-size: 14px;
   font-weight: 500;
   height: 200px;
   margin-top: 5px;
@@ -4779,7 +4779,7 @@
   z-index: 1;
   font-weight: 400;
   line-height: .75em;
-  padding: 8 10px;
+  padding: 8px 10px;
 }
 
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-list-selected,
@@ -5048,7 +5048,7 @@
   width: 180px;
   font-weight: 400;
   line-height: .75em;
-  padding: 8 10px;
+  padding: 8px 10px;
 }
 
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover {

@@ -569,7 +569,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text,
-.e-float-input:not:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-float-input.e-control-wrapper:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   top: -11px;
 }
@@ -2987,7 +2987,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-control-wrapper.e-bigger textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   font-size: 15px;
-  top: 18 px;
+  top: 18px;
 }
 
 .e-float-input.e-small textarea ~ label.e-float-text,
@@ -6929,7 +6929,7 @@ body.e-colorpicker-overflow {
   background-color: transparent;
   color: rgba(51, 51, 51, 0.65);
   outline: none;
-  outline-offset: none;
+  outline-offset: unset;
 }
 
 .e-colorpicker-wrapper.e-disabled .e-value-switch-btn:active,

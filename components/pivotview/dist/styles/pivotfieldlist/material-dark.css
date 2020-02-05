@@ -571,7 +571,7 @@
 }
 
 .e-pivot-calc-dialog-div .e-dlg-content {
-  padding-bottom: auto;
+  padding-bottom: 18px;
 }
 
 .e-pivot-calc-dialog-div .e-pivot-all-field-title,
@@ -665,7 +665,7 @@
 
 .e-pivot-calc-dialog-div .e-contextmenu .e-menu-item {
   color: #000;
-  font-size: 14x;
+  font-size: 14px;
   height: 48px;
   opacity: .87;
 }
@@ -971,8 +971,8 @@
 .e-bigger .e-pivot-calc-dialog-div .e-footer-content,
 .e-bigger.e-pivot-calc-dialog-div .e-footer-content,
 .e-bigger .e-pivot-calc-dialog-div .e-footer-content {
-  padding-right: auto;
-  padding-top: auto;
+  padding-right: 8px;
+  padding-top: 8px;
 }
 
 .e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
@@ -1061,7 +1061,7 @@
   border-top: 1px solid #616161;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding-top: 10 px;
+  padding-top: 10px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-footer-content .e-clear-filter-button,

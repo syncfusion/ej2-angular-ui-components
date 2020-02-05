@@ -43,7 +43,7 @@
 }
 
 .e-datetime-wrapper .e-input-group-icon.e-time-icon {
-  border: 0 0 0 1px;
+  border: 0;
   border-style: solid;
   margin: 0;
 }

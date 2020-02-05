@@ -821,7 +821,7 @@
 
 .e-switch-wrapper:hover .e-switch-inner,
 .e-css.e-switch-wrapper:hover .e-switch-inner {
-  background-color: none;
+  background-color: transparent;
   border-color: inherit;
 }
 
@@ -886,7 +886,7 @@
 
 .e-switch-wrapper.e-rtl .e-switch-on,
 .e-css.e-switch-wrapper.e-rtl .e-switch-on {
-  background-color: none;
+  background-color: transparent;
 }
 
 .e-switch-wrapper.e-rtl .e-switch-handle,

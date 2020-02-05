@@ -64,6 +64,10 @@
   z-index: 1;
 }
 
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item.e-hide {
+  display: none;
+}
+
 .e-ribbon .e-tab .e-tab-header {
   margin-top: 10px;
 }

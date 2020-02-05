@@ -194,7 +194,7 @@
 }
 
 .e-dropdown-popup ul .e-item.e-focused {
-  background-color: none;
+  background-color: transparent;
   box-shadow: 0 0 0 1px #000 inset;
 }
 
@@ -893,7 +893,7 @@
   outline-offset: 2px;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-primary,
@@ -918,7 +918,7 @@
   color: #000;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-info,
@@ -930,7 +930,7 @@
   color: #000;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-warning,
@@ -942,7 +942,7 @@
   color: #000;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-danger,
@@ -954,7 +954,7 @@
   color: #000;
   box-shadow: none;
   box-shadow: none;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group .e-btn:focus.e-link,
@@ -1354,7 +1354,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline {
   border-color: #000;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
@@ -1370,7 +1370,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
@@ -1378,7 +1378,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
@@ -1386,7 +1386,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
@@ -1394,7 +1394,7 @@
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-outline:not(:first-of-type):not(:last-of-type),
@@ -1418,7 +1418,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline {
   border-color: #000;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
@@ -1434,7 +1434,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
@@ -1442,7 +1442,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
@@ -1450,7 +1450,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
@@ -1458,7 +1458,7 @@
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
   border-color: transparent;
-  outline-color: none;
+  outline-color: transparent;
 }
 
 .e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type),

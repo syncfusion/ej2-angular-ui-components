@@ -615,7 +615,7 @@
 
 .e-de-search-tab-content .e-input-group .e-de-op-search-close-icon:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-de-op-search-close-icon:hover {
@@ -624,7 +624,7 @@
 
 .e-spin-down:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-down:hover {
@@ -633,7 +633,7 @@
 
 .e-spin-up:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-up:hover {
@@ -803,7 +803,7 @@
 
 .e-de-page-setup-dlg-sub-label {
   font-size: 13px;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .e-de-page-setup-dlg-orientation-prop {

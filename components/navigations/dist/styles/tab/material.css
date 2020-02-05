@@ -1586,10 +1586,8 @@
   }
 }
 
-@media screen\0 {
-  .e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
-    top: 0;
-  }
+.e-tab .e-tab-header .e-toolbar-item .e-close-icon::before {
+  top: 0;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-icons.e-tab-icon {

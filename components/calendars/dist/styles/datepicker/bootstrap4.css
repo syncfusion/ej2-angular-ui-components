@@ -85,8 +85,8 @@
 }
 
 .e-datepicker .e-model-header {
-  background-color: none;
-  color: none;
+  background-color: transparent;
+  color: transparent;
   cursor: default;
   display: none;
   padding: 10px 10px 10px 15px;
@@ -171,7 +171,7 @@
 }
 
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
+  color: #fff;
 }
 
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {

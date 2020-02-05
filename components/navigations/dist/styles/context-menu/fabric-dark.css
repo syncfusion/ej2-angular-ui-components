@@ -26,7 +26,7 @@
   padding: 0;
   border: 1px solid #414040;
   border-radius: 0;
-  box-shadow: 0 3 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
   display: none;
   min-width: 120px;
   position: absolute;
@@ -43,7 +43,7 @@
 }
 
 .e-contextmenu-wrapper ul.e-contextmenu {
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
 }
 
 .e-contextmenu-wrapper ul.e-ul {
@@ -166,7 +166,7 @@
   font-size: 15px;
   padding: 0;
   white-space: nowrap;
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
   max-width: 280px;
   min-width: 112px;
 }

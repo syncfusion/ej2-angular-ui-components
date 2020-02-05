@@ -150,7 +150,7 @@
 .e-dropdownbase .e-list-item {
   background-color: #424242;
   border-bottom: 0;
-  border-color: none;
+  border-color: transparent;
   color: #fff;
   font-family: inherit;
   font-size: 13px;
@@ -163,7 +163,7 @@
 .e-dropdownbase .e-list-group-item,
 .e-fixed-head {
   background-color: #424242;
-  border-color: none;
+  border-color: transparent;
   color: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   font-size: 13px;
@@ -309,7 +309,7 @@
 .e-ddl.e-popup.e-multiselect-group .e-list-group-item {
   background-color: #424242;
   border-bottom: 0;
-  border-color: none;
+  border-color: transparent;
   color: #fff;
   font-family: inherit;
   font-size: 13px;
@@ -404,7 +404,7 @@
 .e-bigger .e-ddl-device .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   background: #f5f5f5;
   border-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   margin-bottom: 0;
 }
 

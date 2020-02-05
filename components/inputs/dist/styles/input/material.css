@@ -630,7 +630,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text,
-.e-float-input:not:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-float-input.e-control-wrapper:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   top: -11px;
 }
@@ -11206,7 +11206,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-float-input.e-control-wrapper.e-disabled {
   background: #fafafa;
   background-image: none;
-  background-position: none;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: 0;
   border-color: rgba(0, 0, 0, 0.06);
@@ -11224,7 +11224,7 @@ textarea.e-filled.e-input::-webkit-input-placeholder {
 .e-filled.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-success):not(.e-warning):not(.e-error).e-disabled .e-input-in-wrap {
   background: #fafafa;
   background-image: none;
-  background-position: none;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: 0;
   border-color: rgba(0, 0, 0, 0.06);

@@ -150,6 +150,10 @@
   font-size: 17px;
 }
 
+.e-emptyicon {
+  opacity: 0;
+}
+
 .e-xlfl-fieldset {
   font-size: 14px;
   padding-top: 15px;
@@ -439,11 +443,11 @@
   opacity: 1;
 }
 
+.e-excelfilter .e-filtered::before {
+  color: #00b0ff;
+}
+
 .e-xlsel {
   background-color: #00b0ff;
   border-color: #00b0ff;
-}
-
-.e-filtered ::before {
-  color: #00b0ff;
 }

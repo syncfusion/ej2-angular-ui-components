@@ -73,7 +73,7 @@ AnnotationsDirective.decorators = [
  */
 AnnotationsDirective.ctorParameters = () => [];
 
-let input$1 = ['color', 'end', 'endWidth', 'legendText', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input$1 = ['color', 'end', 'endWidth', 'legendText', 'offset', 'opacity', 'position', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs$1 = [];
 /**
  * Ranges directive
@@ -127,7 +127,7 @@ RangesDirective.decorators = [
  */
 RangesDirective.ctorParameters = () => [];
 
-let input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'pointerWidth', 'radius', 'roundedCornerRadius', 'type', 'value'];
+let input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'type', 'value'];
 let outputs$2 = [];
 /**
  * Pointers directive
@@ -250,7 +250,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-const outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
+const outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
 const twoWays = [''];
 /**
  * Circular Gauge Component

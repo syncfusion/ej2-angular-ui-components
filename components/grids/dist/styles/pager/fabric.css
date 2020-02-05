@@ -65,7 +65,6 @@
 .e-bigger .e-pager div.e-icons,
 .e-pager.e-bigger div.e-icons {
   font-size: 13px;
-  vertical-align: "";
 }
 
 .e-bigger .e-pager div.e-parentmsgbar,
@@ -95,8 +94,7 @@
 
 .e-bigger .e-pager.e-rtl .e-pagercontainer,
 .e-pager.e-bigger.e-rtl .e-pagercontainer {
-  margin: 0 0 -4px 0;
-  margin-top: 5px;
+  margin: 5px 0 -4px 0;
 }
 
 @media (max-width: 769px) {

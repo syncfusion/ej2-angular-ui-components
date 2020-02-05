@@ -124,7 +124,7 @@
 .e-bigger.e-dialog .e-dlg-content,
 .e-bigger .e-dialog .e-dlg-content {
   font-size: 14px;
-  padding: 35px 31.25px 25;
+  padding: 35px 31.25px 25px;
 }
 
 .e-bigger.e-dialog .e-footer-content,
@@ -387,6 +387,10 @@
     margin: 30px auto;
     width: auto;
   }
+}
+
+.e-dlg-ref-element {
+  display: none;
 }
 
 .e-dialog {

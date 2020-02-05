@@ -199,7 +199,7 @@
 .e-btn.e-small.e-rtl .e-icon-left,
 .e-css.e-btn.e-small.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-btn.e-block,
@@ -307,7 +307,7 @@
 .e-small .e-css.e-btn.e-rtl .e-icon-left,
 .e-small.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-bigger.e-small .e-btn,
@@ -3433,7 +3433,7 @@
 
 .e-switch-wrapper:hover .e-switch-inner,
 .e-css.e-switch-wrapper:hover .e-switch-inner {
-  background-color: none;
+  background-color: transparent;
   border-color: inherit;
 }
 
@@ -3498,7 +3498,7 @@
 
 .e-switch-wrapper.e-rtl .e-switch-on,
 .e-css.e-switch-wrapper.e-rtl .e-switch-on {
-  background-color: none;
+  background-color: transparent;
 }
 
 .e-switch-wrapper.e-rtl .e-switch-handle,

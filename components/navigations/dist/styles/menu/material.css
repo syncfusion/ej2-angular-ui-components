@@ -869,7 +869,7 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: none;
+  color: transparent;
   outline: 0 solid rgba(0, 0, 0, 0.12);
   outline-offset: 0;
   background-color: #eee;
@@ -891,11 +891,11 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: none;
+  color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

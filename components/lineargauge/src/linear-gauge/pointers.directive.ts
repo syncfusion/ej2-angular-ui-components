@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'roundedCornerRadius', 'type', 'value', 'width'];
+let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'position', 'roundedCornerRadius', 'type', 'value', 'width'];
 let outputs: string[] = [];
 /**
  * Pointers directive
@@ -67,7 +67,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
     public markerType: any;
     /** 
      * Specifies to move the pointer.
-     * @default 0
+     * @default '0'
      */
     public offset: any;
     /** 
@@ -80,6 +80,11 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default Far
      */
     public placement: any;
+    /** 
+     * Specifies to position the pointer.
+     * @default Auto
+     */
+    public position: any;
     /** 
      * Specifies the corner radius for rounded rectangle.
      * @default 10

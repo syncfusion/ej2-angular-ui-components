@@ -202,7 +202,7 @@
 .e-filter-parent {
   border: 1px solid #fff;
   border-top-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   display: block;
   padding: 5px;
 }

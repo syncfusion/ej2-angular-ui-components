@@ -626,7 +626,7 @@ button .e-badge.e-badge-circle.e-badge-ghost {
 
 .e-toast-container .e-toast {
   background-color: #313131;
-  box-shadow: 0 2px 5px 0 #1a1a1a, 0.26;
+  box-shadow: 0 2px 5px 0 rgba(26, 26, 26, 0.26);
   color: #f0f0f0;
 }
 

@@ -1,5 +1,5 @@
 .e-ribbon {
-  border: 1px solid initial;
+  border: 1px solid transparent;
 }
 
 .e-ribbon .e-tab .e-content .e-toolbar {
@@ -50,6 +50,10 @@
 
 .e-ribbon .e-tab .e-tab-header .e-indicator {
   z-index: 1;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item.e-hide {
+  display: none;
 }
 
 .e-ribbon .e-tab .e-tab-header .e-toolbar-item {

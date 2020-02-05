@@ -45,7 +45,7 @@
 .e-bigger .e-ddl-device .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   background: #f5f5f5;
   border-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   margin-bottom: 0;
 }
 
@@ -194,7 +194,7 @@
 }
 
 .e-query-builder.e-rtl .e-rule-list .e-group-container::before {
-  right: none;
+  right: -12px;
 }
 
 .e-query-builder.e-rtl .e-rule-list > .e-group-container {
@@ -253,7 +253,7 @@
 }
 
 .e-query-builder .e-rule-list .e-group-container::before {
-  left: none;
+  left: -12px;
 }
 
 .e-query-builder .e-rule-list .e-group-container::after {
@@ -375,7 +375,7 @@
 
 .e-query-builder .e-group-body .e-rule-container .e-rule-value .e-multiselect,
 .e-query-builder .e-group-body .e-rule-container .e-rule-value .e-multi-select-wrapper {
-  max-width: 200p;
+  max-width: 200px;
 }
 
 .e-query-builder .e-group-body .e-rule-container .e-operator,
@@ -442,7 +442,7 @@
 
 .e-query-builder.e-device .e-group-body .e-rule-container .e-rule-value .e-multiselect,
 .e-query-builder.e-device .e-group-body .e-rule-container .e-rule-value .e-multi-select-wrapper {
-  max-width: 100;
+  max-width: 100%;
 }
 
 .e-query-builder.e-device .e-group-body .e-rule-container .e-rule-value-delete,

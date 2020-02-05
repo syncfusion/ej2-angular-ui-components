@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { RangesDirective } from './ranges.directive';
 import { PointersDirective } from './pointers.directive';
 
-let input: string[] = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges'];
+let input: string[] = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges', 'showLastLabel'];
 let outputs: string[] = [];
 /**
  * Axes directive
@@ -67,6 +67,10 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * Options for customizing the ranges of an axis
      */
     public ranges: any;
+    /** 
+     * Specifies the last label to be shown
+     */
+    public showLastLabel: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

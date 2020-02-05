@@ -155,7 +155,7 @@ ejs-calendar {
 .e-calendar .e-content td.e-other-year > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
-  display: "";
+  display: inline-block;
   font-weight: 500;
 }
 

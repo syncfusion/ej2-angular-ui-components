@@ -618,7 +618,7 @@
 
 .e-de-search-tab-content .e-input-group .e-de-op-search-close-icon:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-de-op-search-close-icon:hover {
@@ -627,7 +627,7 @@
 
 .e-spin-down:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-down:hover {
@@ -636,7 +636,7 @@
 
 .e-spin-up:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-up:hover {
@@ -806,7 +806,7 @@
 
 .e-de-page-setup-dlg-sub-label {
   font-size: 13px;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .e-de-page-setup-dlg-orientation-prop {
@@ -1692,25 +1692,25 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-font-content-label span.e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-font-label span.e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-font-content-label:hover .e-label,
 .e-css.e-de-font-content-label:hover .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-font-label:hover .e-label,
 .e-css.e-de-font-label:hover .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-documenteditor .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
   font-size: 14px;
 }
 
@@ -1742,31 +1742,31 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-table-container-div .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-table-header-div .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-tbl-margin-sub-header .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
 }
 
 .e-de-list-format-info {
@@ -2244,12 +2244,12 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {
   padding-left: 1px;
-  padding-right: 0 25px 0 0;
+  padding-right: 25px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-replace-tab-header {
   padding-left: 1px;
-  padding-right: 0 25px 0 0;
+  padding-right: 25px;
 }
 
 .e-de-dlg-target .e-footer-content .e-list-dlg-font {
@@ -2486,7 +2486,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-restrict-pane .e-checkbox-wrapper .e-label {
-  color: "";
+  color: #c8c8c8;
   font-size: 12px;
 }
 

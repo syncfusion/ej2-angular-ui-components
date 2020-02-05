@@ -210,8 +210,8 @@
 }
 
 .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   border-radius: 50%;
   bottom: 0;
   float: right;
@@ -388,6 +388,10 @@
     margin: 30px auto;
     width: auto;
   }
+}
+
+.e-dlg-ref-element {
+  display: none;
 }
 
 .e-dialog {

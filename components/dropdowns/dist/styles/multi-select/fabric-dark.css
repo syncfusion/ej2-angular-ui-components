@@ -335,7 +335,7 @@
 .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
   -ms-flex-item-align: center;
       align-self: center;
-  box-shadow: 0 2 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0 10px;
@@ -747,7 +747,7 @@ ejs-multiselect {
 }
 
 .e-popup.e-multi-select-list-wrapper {
-  box-shadow: 0 2 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   box-sizing: content-box;
   overflow: initial;
 }

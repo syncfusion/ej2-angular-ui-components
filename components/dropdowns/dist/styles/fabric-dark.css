@@ -150,7 +150,7 @@
 .e-dropdownbase .e-list-item {
   background-color: #282727;
   border-bottom: 1px;
-  border-color: none;
+  border-color: transparent;
   color: #dadada;
   font-family: inherit;
   font-size: 14px;
@@ -163,7 +163,7 @@
 .e-dropdownbase .e-list-group-item,
 .e-fixed-head {
   background-color: #282727;
-  border-color: none;
+  border-color: transparent;
   color: #38a9ff;
   font-family: inherit;
   font-size: 14px;
@@ -309,7 +309,7 @@
 .e-ddl.e-popup.e-multiselect-group .e-list-group-item {
   background-color: #282727;
   border-bottom: 1px;
-  border-color: none;
+  border-color: transparent;
   color: #dadada;
   font-family: inherit;
   font-size: 14px;
@@ -951,7 +951,7 @@ ejs-dropdownlist {
 .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
   -ms-flex-item-align: center;
       align-self: center;
-  box-shadow: 0 2 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0 10px;
@@ -1363,7 +1363,7 @@ ejs-multiselect {
 }
 
 .e-popup.e-multi-select-list-wrapper {
-  box-shadow: 0 2 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   box-sizing: content-box;
   overflow: initial;
 }

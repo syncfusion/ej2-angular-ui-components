@@ -906,7 +906,7 @@
 
 .e-daterangepicker.e-popup .e-presets .e-list-item.e-active,
 .e-bigger.e-small .e-daterangepicker.e-popup .e-presets .e-list-item.e-active {
-  background-color: none;
+  background-color: transparent;
   color: #00b0ff;
 }
 

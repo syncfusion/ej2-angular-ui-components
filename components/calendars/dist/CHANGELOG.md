@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 17.4.47 (2020-02-05)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#260342` - Issue with "input not focus while already opened the another datepicker" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#261538` - Issue with script error throws while selecting value from popup in touch mode has been resolved.
+
 ## 17.4.46 (2020-01-30)
 
 ### DatePicker

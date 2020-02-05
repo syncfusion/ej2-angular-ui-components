@@ -150,7 +150,7 @@
 .e-dropdownbase .e-list-item {
   background-color: #fff;
   border-bottom: 1px;
-  border-color: none;
+  border-color: transparent;
   color: rgba(51, 51, 51, 0.87);
   font-family: inherit;
   font-size: 14px;
@@ -163,7 +163,7 @@
 .e-dropdownbase .e-list-group-item,
 .e-fixed-head {
   background-color: #fff;
-  border-color: none;
+  border-color: transparent;
   color: #0078d6;
   font-family: inherit;
   font-size: 14px;
@@ -309,7 +309,7 @@
 .e-ddl.e-popup.e-multiselect-group .e-list-group-item {
   background-color: #fff;
   border-bottom: 1px;
-  border-color: none;
+  border-color: transparent;
   color: rgba(51, 51, 51, 0.87);
   font-family: inherit;
   font-size: 14px;
@@ -489,7 +489,7 @@
 .e-filter-parent {
   border: 1px solid #c8c8c8;
   border-top-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   display: block;
   padding: 5px;
 }

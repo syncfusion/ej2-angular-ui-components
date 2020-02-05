@@ -155,7 +155,7 @@ ejs-calendar {
 .e-calendar .e-content td.e-other-year > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
-  display: "";
+  display: inline-block;
   font-weight: normal;
 }
 
@@ -1264,8 +1264,8 @@ ejs-calendar {
 }
 
 .e-datepicker .e-model-header {
-  background-color: none;
-  color: none;
+  background-color: transparent;
+  color: transparent;
   cursor: default;
   display: none;
   padding: 10px 10px 10px 15px;
@@ -1350,7 +1350,7 @@ ejs-calendar {
 }
 
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
+  color: #fff;
 }
 
 .e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {

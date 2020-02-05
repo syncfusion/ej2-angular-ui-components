@@ -154,7 +154,7 @@ ejs-calendar {
 .e-calendar .e-content td.e-other-year > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
-  display: "";
+  display: inline-block;
   font-weight: 500;
 }
 
@@ -845,11 +845,6 @@ ejs-calendar {
   background: none;
   border: 0;
   color: #6f6c6c;
-}
-
-.e-calendar .e-content .e-other-month:hover span.e-day,
-.e-bigger.e-small .e-calendar .e-content .e-other-month:hover span.e-day {
-  color: none;
 }
 
 .e-calendar .e-content .e-other-month span.e-day,

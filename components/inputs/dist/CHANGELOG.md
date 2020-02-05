@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.47 (2020-02-05)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#259967` - Issue with "script throws while rendering uploader inside toolbar with routing action" has been resolved.
+
 ## 17.4.46 (2020-01-30)
 
 ### Slider

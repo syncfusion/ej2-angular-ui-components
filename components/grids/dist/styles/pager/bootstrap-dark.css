@@ -65,7 +65,6 @@
 .e-bigger .e-pager div.e-icons,
 .e-pager.e-bigger div.e-icons {
   font-size: 12px;
-  vertical-align: middle;
 }
 
 .e-bigger .e-pager div.e-parentmsgbar,
@@ -95,8 +94,7 @@
 
 .e-bigger .e-pager.e-rtl .e-pagercontainer,
 .e-pager.e-bigger.e-rtl .e-pagercontainer {
-  margin: 0 0 -4px 0;
-  margin-top: 5px;
+  margin: 5px 0 -4px 0;
 }
 
 @media (max-width: 769px) {
@@ -668,7 +666,7 @@
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  border: 0 1px 0 0 solid #505050;
+  border: 0 solid #505050;
 }
 
 .e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {

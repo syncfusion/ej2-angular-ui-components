@@ -1258,8 +1258,8 @@ ejs-calendar {
 }
 
 .e-datepicker .e-model-header {
-  background-color: none;
-  color: none;
+  background-color: transparent;
+  color: transparent;
   cursor: default;
   display: none;
   padding: 10px 10px 10px 15px;
@@ -1341,14 +1341,6 @@ ejs-calendar {
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
 }
 
 /*! calendar bootstrap theme variables */

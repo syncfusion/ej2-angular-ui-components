@@ -169,7 +169,7 @@
 .e-dropdownbase .e-list-item {
   background-color: #fff;
   border-bottom: 2px;
-  border-color: none;
+  border-color: transparent;
   color: #000;
   font-family: inherit;
   font-size: 14px;
@@ -182,7 +182,7 @@
 .e-dropdownbase .e-list-group-item,
 .e-fixed-head {
   background-color: #fff;
-  border-color: none;
+  border-color: transparent;
   color: #23726c;
   font-family: inherit;
   font-size: 14px;
@@ -328,7 +328,7 @@
 .e-ddl.e-popup.e-multiselect-group .e-list-group-item {
   background-color: #fff;
   border-bottom: 2px;
-  border-color: none;
+  border-color: transparent;
   color: #000;
   font-family: inherit;
   font-size: 14px;

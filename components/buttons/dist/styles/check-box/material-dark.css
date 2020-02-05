@@ -412,7 +412,7 @@
 
 .e-checkbox-wrapper .e-frame,
 .e-css.e-checkbox-wrapper .e-frame {
-  background-color: none;
+  background-color: transparent;
   border-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -478,7 +478,7 @@
 
 .e-checkbox-wrapper:hover .e-frame,
 .e-css.e-checkbox-wrapper:hover .e-frame {
-  background-color: none;
+  background-color: transparent;
   border-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -537,12 +537,12 @@
 
 .e-checkbox-wrapper.e-focus .e-frame,
 .e-css.e-checkbox-wrapper.e-focus .e-frame {
-  outline: none 0 solid;
+  outline: transparent 0 solid;
   outline-offset: 0;
 }
 
 .e-checkbox-wrapper.e-focus .e-frame.e-check,
 .e-css.e-checkbox-wrapper.e-focus .e-frame.e-check {
-  outline: none 0 solid;
+  outline: transparent 0 solid;
   outline-offset: 0;
 }

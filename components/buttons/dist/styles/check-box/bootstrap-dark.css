@@ -436,12 +436,12 @@
 
 .e-checkbox-wrapper .e-ripple-check .e-ripple-element,
 .e-css.e-checkbox-wrapper .e-ripple-check .e-ripple-element {
-  background: transperant;
+  background: transparent;
 }
 
 .e-checkbox-wrapper:active .e-ripple-element,
 .e-css.e-checkbox-wrapper:active .e-ripple-element {
-  background: transperant;
+  background: transparent;
 }
 
 .e-checkbox-wrapper:active .e-ripple-check .e-ripple-element,

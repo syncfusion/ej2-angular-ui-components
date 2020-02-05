@@ -1342,7 +1342,7 @@
 
 .e-spreadsheet-function-dlg .e-dlg-header-content .e-dlg-header {
   font-size: 16px;
-  font-weight: 450;
+  font-weight: 400;
 }
 
 .e-spreadsheet-function-dlg .e-dlg-content {
@@ -1353,7 +1353,7 @@
 
 .e-spreadsheet-function-dlg .e-dlg-content .e-category-content {
   font-size: 12px;
-  font-weight: 550;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -1365,7 +1365,7 @@
 
 .e-spreadsheet-function-dlg .e-dlg-content .e-description-content {
   font-size: 14px;
-  font-weight: 550;
+  font-weight: 500;
   padding-top: 10px;
 }
 
@@ -2126,6 +2126,10 @@
 
 .e-ribbon .e-tab .e-tab-header .e-indicator {
   z-index: 1;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item.e-hide {
+  display: none;
 }
 
 .e-ribbon .e-tab .e-tab-header .e-toolbar-item {

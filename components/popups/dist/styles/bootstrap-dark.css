@@ -113,7 +113,7 @@
 
 .e-bigger.e-dialog .e-dlg-header-content,
 .e-bigger .e-dialog .e-dlg-header-content {
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-dlg-header,
@@ -124,12 +124,12 @@
 .e-bigger.e-dialog .e-dlg-content,
 .e-bigger .e-dialog .e-dlg-content {
   font-size: 14px;
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-footer-content,
 .e-bigger .e-dialog .e-footer-content {
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-footer-content .e-btn,
@@ -158,7 +158,7 @@
 }
 
 .e-bigger .e-dlg-header-content + .e-dlg-content {
-  padding-top: 18.75;
+  padding-top: 18.75px;
 }
 
 .e-dialog .e-dlg-header-content {
@@ -387,6 +387,10 @@
     margin: 30px auto;
     width: auto;
   }
+}
+
+.e-dlg-ref-element {
+  display: none;
 }
 
 .e-dialog {

@@ -540,7 +540,7 @@
 
 .e-de-search-tab-content .e-input-group .e-de-op-search-close-icon:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-de-op-search-close-icon:hover {
@@ -549,7 +549,7 @@
 
 .e-spin-down:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-down:hover {
@@ -558,7 +558,7 @@
 
 .e-spin-up:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-up:hover {
@@ -688,7 +688,7 @@
 
 .e-de-page-setup-dlg-sub-label {
   font-size: 13px;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .e-de-page-setup-dlg-orientation-prop {
@@ -1038,25 +1038,25 @@ label[for='container_wholeWord'] {
 }
 
 .e-btn.e-de-op-icon-btn {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .e-btn.e-de-op-close-button:hover {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .e-btn.e-de-op-close-button:focus {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .e-btn.e-de-op-close-button:active {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
@@ -1919,12 +1919,12 @@ label[for='container_wholeWord'] {
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {
   padding-left: 1px;
-  padding-right: 0 24px;
+  padding-right: 24px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-replace-tab-header {
-  padding-left: 0 24px;
-  padding-right: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .e-de-dlg-target .e-footer-content .e-list-dlg-font {

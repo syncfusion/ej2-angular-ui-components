@@ -815,7 +815,7 @@
 
 /*! menu theme */
 .e-menu-wrapper {
-  background-color: none;
+  background-color: transparent;
 }
 
 .e-menu-wrapper ul {
@@ -847,7 +847,7 @@
   color: #0056b3;
   outline: 0 solid #f8f9fa;
   outline-offset: 0;
-  background-color: none;
+  background-color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused .e-caret {
@@ -862,7 +862,7 @@
   color: #0056b3;
   outline: 0 solid #f2f4f6;
   outline-offset: 0;
-  background-color: none;
+  background-color: transparent;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
@@ -950,7 +950,7 @@
 }
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav {
-  background: none;
+  background: transparent;
 }
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav .e-nav-arrow.e-icons {
@@ -959,7 +959,7 @@
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav:hover {
   background-color: #5a6268;
-  border: 1px inside #545b62;
+  border: 1px inset #545b62;
 }
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav:hover .e-icons {
@@ -977,7 +977,7 @@
 
 .e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav:active {
   background-color: #5a6268;
-  border: 1px inside #545b62;
+  border: 1px inset #545b62;
 }
 
 .e-menu-wrapper.e-menu-popup .e-menu-vscroll.e-vscroll .e-scroll-nav {

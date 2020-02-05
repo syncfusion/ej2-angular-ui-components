@@ -204,7 +204,7 @@
 .e-filter-parent {
   border: none;
   border-top-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   display: block;
   padding: 5px 8px;
 }

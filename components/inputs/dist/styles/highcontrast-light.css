@@ -112,12 +112,12 @@ input.e-input,
 }
 
 .e-input:focus {
-  border-width: px;
+  border-width: 1px;
   padding-bottom: 0;
 }
 
 .e-input.e-small:focus {
-  border-width: px;
+  border-width: 1px;
   padding-bottom: 0;
 }
 
@@ -559,9 +559,9 @@ textarea.e-input.e-small,
   box-sizing: border-box;
 }
 
-.e-input-group.e-small:not(.e-disabled):not(.e-float-input):not(.e-bigger.e-float-icon-left) .e-input-group-icon:not(:last-child):hover,
+.e-input-group.e-small:not(.e-disabled):not(.e-float-input):not(.e-bigger):not(.e-float-icon-left) .e-input-group-icon:not(:last-child):hover,
 .e-input-group.e-float-icon-left .e-input-group-icon:not(:last-child):hover,
-.e-input-group.e-control-wrapper.e-small:not(.e-disabled):not(.e-float-input):not(.e-bigger.e-float-icon-left) .e-input-group-icon:not(:last-child):hover,
+.e-input-group.e-control-wrapper.e-small:not(.e-disabled):not(.e-float-input):not(.e-bigger):not(.e-float-icon-left) .e-input-group-icon:not(:last-child):hover,
 .e-input-group.e-control-wrapper.e-float-icon-left .e-input-group-icon:not(:last-child):hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -635,7 +635,7 @@ label.e-float-text,
 label.e-float-text,
 .e-float-input label.e-float-text,
 .e-float-input.e-control-wrapper label.e-float-text,
-.e-float-input:not:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
+.e-float-input:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-float-input.e-control-wrapper:not(.e-input-focus) input:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   top: -11px;
 }
@@ -2955,8 +2955,8 @@ textarea.e-input.e-bigger.e-small,
   position: relative;
 }
 
-.e-float-input.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group.e-disabled) .e-input-group-icon:last-child:hover,
-.e-float-input.e-control-wrapper.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group.e-disabled) .e-input-group-icon:last-child:hover {
+.e-float-input.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group):not(.e-disabled) .e-input-group-icon:last-child:hover,
+.e-float-input.e-control-wrapper.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group):not(.e-disabled) .e-input-group-icon:last-child:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border-width: 0px 1px 0px 1px;
@@ -3088,7 +3088,7 @@ textarea.e-input.e-bigger.e-small,
 .e-float-input.e-control-wrapper.e-bigger textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom,
 .e-bigger .e-float-input.e-control-wrapper textarea:not(:focus):valid ~ label.e-float-text.e-label-bottom {
   font-size: 15px;
-  top: 18 px;
+  top: 18px;
 }
 
 .e-float-input.e-small textarea ~ label.e-float-text,
@@ -3774,7 +3774,7 @@ textarea.e-input,
   border-color: #ff7d1a;
 }
 
-.e-input + .e-input-group-icon:not(.e-input-group.e-float-icon-left):last-child:hover,
+.e-input + .e-input-group-icon:not(.e-input-group):not(.e-float-icon-left):last-child:hover,
 .e-input-group.e-success .e-input + .e-input-group-icon:last-child:hover,
 .e-input-group.e-success.e-control-wrapper .e-input + .e-input-group-icon:last-child:hover {
   border-color: #2bc700;
@@ -3937,8 +3937,8 @@ label.e-float-text,
   border-left-color: transparent;
 }
 
-.e-float-input.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group.e-disabled) .e-input-group-icon:last-child:hover,
-.e-float-input.e-control-wrapper.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group.e-disabled) .e-input-group-icon:last-child:hover {
+.e-float-input.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group):not(.e-disabled) .e-input-group-icon:last-child:hover,
+.e-float-input.e-control-wrapper.e-input-group.e-small:not(.e-float-icon-left):not(.e-input-group):not(.e-disabled) .e-input-group-icon:last-child:hover {
   border-right-color: transparent;
 }
 
@@ -6057,7 +6057,7 @@ textarea.e-input::-webkit-input-placeholder {
 
 .e-upload.e-rtl .e-file-select-wrap .e-control.e-btn,
 .e-bigger.e-small .e-upload.e-rtl .e-file-select-wrap .e-control.e-btn {
-  margin-right: 10;
+  margin-right: 10px;
 }
 
 .e-upload.e-rtl .e-file-select-wrap .e-file-drop,
@@ -7206,7 +7206,7 @@ body.e-colorpicker-overflow {
   background-color: transparent;
   color: #757575;
   outline: none;
-  outline-offset: none;
+  outline-offset: unset;
 }
 
 .e-colorpicker-wrapper.e-disabled .e-value-switch-btn:active,

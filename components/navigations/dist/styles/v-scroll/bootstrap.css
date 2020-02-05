@@ -201,27 +201,27 @@
 
 .e-vscroll.e-rtl .e-scroll-nav:hover {
   background: #e6e6e6;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #333;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #e6e6e6;
-  border: "";
+  border: 0;
   color: #333;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #e6e6e6;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #333;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #e6e6e6;
-  border: "";
+  border: 0;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   color: #333;
 }

@@ -663,8 +663,8 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn {
-  background-color: "";
-  border: "";
+  background-color: transparent;
+  border: none;
   box-shadow: none;
 }
 
@@ -679,24 +679,24 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover {
-  background-color: "";
-  border: "";
+  background-color: transparent;
+  border: none;
 }
 
 .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus {
-  background-color: "";
-  border: "";
+  background-color: transparent;
+  border: none;
 }
 
 .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active {
-  background-color: "";
-  border: "";
+  background-color: transparent;
+  border: none;
 }
 
 .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
@@ -709,7 +709,7 @@
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons {
-  color: "";
+  color: transparent;
 }
 
 .e-inplaceeditor-tip.e-tooltip-wrap {

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'pointerWidth', 'radius', 'roundedCornerRadius', 'type', 'value'];
+let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'type', 'value'];
 let outputs: string[] = [];
 /**
  * Pointers directive
@@ -83,10 +83,24 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public needleTail: any;
     /** 
+     * The offset value of pointer from scale.
+     * @default '0'
+     */
+    public offset: any;
+    /** 
      * Width of the pointer in pixels.
      * @default 20
      */
     public pointerWidth: any;
+    /** 
+     * Specifies the position of pointer for an axis. 
+     * * inside -  Renders a Inside. 
+     * * outside - Renders a Outside. 
+     * * cross - Renders a Cross. 
+     * * Auto - Renders a based on radius
+     * @default Auto
+     */
+    public position: any;
     /** 
      * Length of the pointer in pixels or in percentage.
      * @default null

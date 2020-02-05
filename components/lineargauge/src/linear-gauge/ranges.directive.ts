@@ -42,7 +42,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
     public endWidth: any;
     /** 
      * Specifies to move the axis range.
-     * @default 0
+     * @default '0'
      */
     public offset: any;
     /** 

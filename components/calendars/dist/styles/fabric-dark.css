@@ -154,7 +154,7 @@ ejs-calendar {
 .e-calendar .e-content td.e-other-year > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
 .e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
-  display: "";
+  display: inline-block;
   font-weight: 500;
 }
 
@@ -847,11 +847,6 @@ ejs-calendar {
   color: #6f6c6c;
 }
 
-.e-calendar .e-content .e-other-month:hover span.e-day,
-.e-bigger.e-small .e-calendar .e-content .e-other-month:hover span.e-day {
-  color: none;
-}
-
 .e-calendar .e-content .e-other-month span.e-day,
 .e-calendar .e-content .e-other-month.e-today span.e-day,
 .e-bigger.e-small .e-calendar .e-content .e-other-month span.e-day,
@@ -1340,14 +1335,6 @@ ejs-calendar {
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: 1px solid #0074cc;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
 }
 
 /*! component icons */
