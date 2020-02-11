@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'headers', 'isReadOnly', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'useCtrlClickToFollowHyperlink', 'userColor', 'zIndex', 'zoomFactor'];
+var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentEditorSettings', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'headers', 'isReadOnly', 'layoutType', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'useCtrlClickToFollowHyperlink', 'userColor', 'zIndex', 'zoomFactor'];
 var outputs = ['beforePaneSwitch', 'commentBegin', 'commentEnd', 'contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'viewChange', 'zoomFactorChange'];
 var twoWays = [];
 /**
@@ -417,7 +417,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['enableComment', 'enableCsp', 'enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'headers', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane', 'zIndex'];
+var inputs$1 = ['documentEditorSettings', 'enableComment', 'enableCsp', 'enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'headers', 'layoutType', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane', 'zIndex'];
 var outputs$1 = ['beforePaneSwitch', 'contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'selectionChange'];
 var twoWays$1 = [];
 /**
@@ -591,9 +591,6 @@ exports.Dictionary = ej2Documenteditor.Dictionary;
 exports.WUniqueFormat = ej2Documenteditor.WUniqueFormat;
 exports.WUniqueFormats = ej2Documenteditor.WUniqueFormats;
 exports.XmlHttpRequestHandler = ej2Documenteditor.XmlHttpRequestHandler;
-exports.DocumentEditor = ej2Documenteditor.DocumentEditor;
-exports.ServerActionSettings = ej2Documenteditor.ServerActionSettings;
-exports.ContainerServerActionSettings = ej2Documenteditor.ContainerServerActionSettings;
 exports.Print = ej2Documenteditor.Print;
 exports.ContextMenu = ej2Documenteditor.ContextMenu;
 exports.WSectionFormat = ej2Documenteditor.WSectionFormat;
@@ -615,10 +612,12 @@ exports.WList = ej2Documenteditor.WList;
 exports.WAbstractList = ej2Documenteditor.WAbstractList;
 exports.WListLevel = ej2Documenteditor.WListLevel;
 exports.WLevelOverride = ej2Documenteditor.WLevelOverride;
+exports.DocumentHelper = ej2Documenteditor.DocumentHelper;
 exports.LayoutViewer = ej2Documenteditor.LayoutViewer;
 exports.PageLayoutViewer = ej2Documenteditor.PageLayoutViewer;
-exports.Layout = ej2Documenteditor.Layout;
+exports.WebLayoutViewer = ej2Documenteditor.WebLayoutViewer;
 exports.Rect = ej2Documenteditor.Rect;
+exports.Padding = ej2Documenteditor.Padding;
 exports.Margin = ej2Documenteditor.Margin;
 exports.Widget = ej2Documenteditor.Widget;
 exports.BlockContainer = ej2Documenteditor.BlockContainer;
@@ -663,6 +662,7 @@ exports.Page = ej2Documenteditor.Page;
 exports.WTableHolder = ej2Documenteditor.WTableHolder;
 exports.WColumn = ej2Documenteditor.WColumn;
 exports.ColumnSizeInfo = ej2Documenteditor.ColumnSizeInfo;
+exports.Layout = ej2Documenteditor.Layout;
 exports.Renderer = ej2Documenteditor.Renderer;
 exports.SfdtReader = ej2Documenteditor.SfdtReader;
 exports.TextHelper = ej2Documenteditor.TextHelper;
@@ -732,6 +732,10 @@ exports.RestrictEditing = ej2Documenteditor.RestrictEditing;
 exports.CommentReviewPane = ej2Documenteditor.CommentReviewPane;
 exports.CommentPane = ej2Documenteditor.CommentPane;
 exports.CommentView = ej2Documenteditor.CommentView;
+exports.DocumentEditorSettings = ej2Documenteditor.DocumentEditorSettings;
+exports.DocumentEditor = ej2Documenteditor.DocumentEditor;
+exports.ServerActionSettings = ej2Documenteditor.ServerActionSettings;
+exports.ContainerServerActionSettings = ej2Documenteditor.ContainerServerActionSettings;
 exports.Toolbar = ej2Documenteditor.Toolbar;
 exports.DocumentEditorContainer = ej2Documenteditor.DocumentEditorContainer;
 

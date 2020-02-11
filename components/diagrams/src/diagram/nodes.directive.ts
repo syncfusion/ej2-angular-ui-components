@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortsDirective } from './ports.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -148,6 +148,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public data: any;
     /** 
+     * Defines the size of a drop symbol
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public dragSize: any;
+    /** 
      * Defines whether the node should be automatically positioned or not. Applicable, if layout option is enabled.
      * @default false
      */
@@ -250,6 +257,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @blazortype ObservableCollection<DiagramPort>
      */
     public ports: any;
+    /** 
+     * Defines the size of the symbol preview
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public previewSize: any;
     /** 
      * Sets the rotate angle of the node
      * @default 0

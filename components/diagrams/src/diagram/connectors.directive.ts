@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -80,6 +80,13 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public cornerRadius: any;
     /** 
+     * Defines the size of a drop symbol
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public dragSize: any;
+    /** 
      * Defines whether the node should be automatically positioned or not. Applicable, if layout option is enabled.
      * @default false
      */
@@ -106,6 +113,13 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default {}
      */
     public margin: any;
+    /** 
+     * Defines the size of the symbol preview
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public previewSize: any;
     /** 
      * Defines the segments
      * @default []

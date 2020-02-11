@@ -646,7 +646,7 @@
 }
 
 .e-pager .e-pager-default:hover {
-  background: "";
+  background: #f4f4f4;
   color: #333;
   opacity: 1;
 }

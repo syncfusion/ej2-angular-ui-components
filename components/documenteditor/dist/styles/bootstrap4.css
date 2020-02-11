@@ -3399,6 +3399,16 @@ textarea.e-de-cmt-textarea {
   font-family: 'e-icons';
 }
 
+.e-de-printlayout::before {
+  content: '\e494';
+  font-family: 'e-icons';
+}
+
+.e-de-weblayout::before {
+  content: '\e898';
+  font-family: 'e-icons';
+}
+
 .e-de-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text .e-de-text-wrap {
   height: 0;
   line-height: 0;
@@ -3443,6 +3453,32 @@ textarea.e-de-cmt-textarea {
   padding-top: 11px;
   position: absolute;
   top: 100px;
+}
+
+.e-de-statusbar-pageweb {
+  background-color: #f8f9fa;
+  border: 0;
+  box-shadow: none;
+  float: right;
+  height: 33px;
+  width: 33px;
+  color: #495057;
+}
+
+.e-de-statusbar-pageweb:hover {
+  box-shadow: none;
+}
+
+.e-btn-pageweb-toggle {
+  background-color: #6c757d;
+  box-shadow: none;
+  outline: #fafafa 0 solid;
+  outline-offset: 0;
+  color: #fff;
+}
+
+.e-bigger .e-de-statusbar-pageweb {
+  height: 35px;
 }
 
 .e-de-ctn-title {
@@ -3944,6 +3980,7 @@ textarea.e-de-cmt-textarea {
 .e-de-ctnr-dropdown-ftr {
   border-top: 1px solid #dee2e6;
   color: #212529;
+  cursor: pointer;
   display: block;
   font-size: 12px;
   line-height: 40px;
@@ -4299,7 +4336,7 @@ textarea.e-de-cmt-textarea {
   display: inline-flex;
   font-size: 13px;
   height: 100%;
-  width: calc(100% - 75px);
+  width: calc(100% - 140px);
 }
 
 .e-bigger .e-de-ctnr-pg-no-spellout {
@@ -4308,7 +4345,7 @@ textarea.e-de-cmt-textarea {
   display: inline-flex;
   font-size: 13px;
   height: 100%;
-  width: calc(100% - 90px);
+  width: calc(100% - 160px);
 }
 
 .e-de-statusbar-zoom-spell {
@@ -4807,6 +4844,7 @@ textarea.e-de-cmt-textarea {
 .e-bigger .e-de-ctnr-dropdown-ftr {
   border-top: 1px solid #dee2e6;
   color: #212529;
+  cursor: pointer;
   display: block;
   font-size: 12px;
   line-height: 40px;

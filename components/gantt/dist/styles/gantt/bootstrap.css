@@ -553,7 +553,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-zero-spacing {
-  border-spacing: none;
+  border-spacing: 0;
 }
 
 .e-gantt .e-gantt-chart .e-chart-row:first-child .e-chart-row-border {
@@ -757,7 +757,7 @@
   border-right: 6px solid transparent;
   cursor: col-resize;
   height: 0;
-  left: -1;
+  left: -1px;
   position: absolute;
   top: -6px;
   width: 0;
@@ -1128,7 +1128,7 @@
 }
 
 .e-gantt.e-device .e-gantt-dialog {
-  max-height: auto;
+  max-height: none;
 }
 
 .e-gantt.e-device .e-gantt-dialog .e-dlg-closeicon-btn {

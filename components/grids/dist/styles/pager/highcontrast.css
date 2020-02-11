@@ -410,7 +410,7 @@
 .e-pager .e-mprev,
 .e-pager .e-mnext,
 .e-pager .e-mlast {
-  -webkit-tap-highlight-color: #000;
+  -webkit-tap-highlight-color: #ffd939;
 }
 
 .e-pager .e-pp,
@@ -635,7 +635,7 @@
 
 /*! Pager theme */
 .e-pager {
-  background-color: #000;
+  background-color: #ffd939;
   border-color: #969696;
   color: #fff;
   opacity: 1;
@@ -646,7 +646,7 @@
 }
 
 .e-pager .e-pager-default:hover {
-  background: "";
+  background: #685708;
   color: #fff;
   opacity: 1;
 }
@@ -675,7 +675,7 @@
 }
 
 .e-pager .e-numericitem {
-  background: #000;
+  background: #ffd939;
   border-right-color: #969696;
   color: #fff;
 }
@@ -688,7 +688,7 @@
 .e-pager .e-lastpage,
 .e-pager .e-firstpage,
 .e-pager .e-firstpagedisabled {
-  background-color: #000;
+  background-color: #ffd939;
   color: #fff;
 }
 
@@ -698,7 +698,7 @@
 }
 
 .e-pager .e-pagercontainer {
-  background-color: #000;
+  background-color: #ffd939;
   border-color: #969696;
 }
 
@@ -722,7 +722,7 @@
 
 @media (max-width: 590px) {
   .e-pager .e-pager-default:hover {
-    background: #000;
+    background: #ffd939;
     color: #fff;
     opacity: 1;
   }

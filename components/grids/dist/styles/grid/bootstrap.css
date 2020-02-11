@@ -1814,6 +1814,13 @@
   top: 10px;
 }
 
+.e-grid .e-checkboxlist {
+  height: 200px;
+  margin-top: 5px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
 .e-grid .e-chk-hidden {
   -moz-appearance: none;
   height: 1px;

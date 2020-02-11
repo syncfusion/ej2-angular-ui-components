@@ -1364,7 +1364,7 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1372,7 +1372,7 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1380,7 +1380,7 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1388,7 +1388,7 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1396,7 +1396,7 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1428,7 +1428,7 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1436,7 +1436,7 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1444,7 +1444,7 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1452,7 +1452,7 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 
@@ -1460,7 +1460,7 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
-  border-color: transparent;
+  border-color: inherit;
   outline-color: #fff;
 }
 

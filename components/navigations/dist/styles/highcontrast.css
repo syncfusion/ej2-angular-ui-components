@@ -7935,6 +7935,10 @@ ejs-sidebar {
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -8712,7 +8716,7 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: transparent;
+  color: inherit;
   outline: 0 solid #fff;
   outline-offset: 0;
   background-color: #685708;
@@ -8734,11 +8738,11 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: transparent;
+  color: #fff;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: transparent;
+  color: #fff;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

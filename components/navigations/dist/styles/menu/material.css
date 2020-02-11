@@ -92,6 +92,10 @@
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -869,7 +873,7 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: transparent;
+  color: initial;
   outline: 0 solid rgba(0, 0, 0, 0.12);
   outline-offset: 0;
   background-color: #eee;
@@ -891,11 +895,11 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: transparent;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: transparent;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

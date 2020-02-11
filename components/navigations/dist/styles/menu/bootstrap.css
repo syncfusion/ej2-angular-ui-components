@@ -71,6 +71,10 @@
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -848,7 +852,7 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: transparent;
+  color: initial;
   outline: 0 solid #ccc;
   outline-offset: 0;
   background-color: #e6e6e6;
@@ -870,11 +874,11 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: transparent;
+  color: #333;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: transparent;
+  color: #333;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

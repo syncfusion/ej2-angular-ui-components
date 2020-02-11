@@ -7570,6 +7570,10 @@ ejs-sidebar {
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -8347,7 +8351,7 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: transparent;
+  color: inherit;
   outline: 0 solid #eaeaea;
   outline-offset: 0;
   background-color: #eaeaea;
@@ -8369,11 +8373,11 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: transparent;
+  color: #333;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: transparent;
+  color: #333;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

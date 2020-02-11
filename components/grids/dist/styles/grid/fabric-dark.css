@@ -1782,6 +1782,13 @@
   top: 10px;
 }
 
+.e-grid .e-checkboxlist {
+  height: 200px;
+  margin-top: 5px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
 .e-grid .e-chk-hidden {
   -moz-appearance: none;
   height: 1px;
@@ -3395,7 +3402,7 @@
 }
 
 .e-grid .e-cloneproperties.e-draganddrop {
-  box-shadow: 0 3 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
   opacity: .95;
   overflow: visible;
 }

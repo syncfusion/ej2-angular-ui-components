@@ -199,7 +199,7 @@ ConnectorAnnotationsDirective.decorators = [
  * @nocollapse
  */
 ConnectorAnnotationsDirective.ctorParameters = function () { return []; };
-var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 var outputs$3 = [];
 /**
  * Connectors Directive
@@ -392,7 +392,7 @@ PortsDirective.decorators = [
  * @nocollapse
  */
 PortsDirective.ctorParameters = function () { return []; };
-var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 var outputs$6 = [];
 /**
  * Nodes Directive
@@ -846,7 +846,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
+var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolDragSize', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
 var outputs$9 = ['paletteSelectionChange'];
 var twoWays$1 = [''];
 /**
@@ -1270,6 +1270,8 @@ exports.completeRegion = ej2Diagrams.completeRegion;
 exports.findNodeByName = ej2Diagrams.findNodeByName;
 exports.findObjectType = ej2Diagrams.findObjectType;
 exports.setSwimLaneDefaults = ej2Diagrams.setSwimLaneDefaults;
+exports.getSpaceValue = ej2Diagrams.getSpaceValue;
+exports.getInterval = ej2Diagrams.getInterval;
 exports.setUMLActivityDefaults = ej2Diagrams.setUMLActivityDefaults;
 exports.setConnectorDefaults = ej2Diagrams.setConnectorDefaults;
 exports.findNearestPoint = ej2Diagrams.findNearestPoint;
@@ -1415,6 +1417,7 @@ exports.DiagramTooltip = ej2Diagrams.DiagramTooltip;
 exports.initTooltip = ej2Diagrams.initTooltip;
 exports.updateTooltip = ej2Diagrams.updateTooltip;
 exports.LayoutAnimation = ej2Diagrams.LayoutAnimation;
+exports.SymbolSize = ej2Diagrams.SymbolSize;
 exports.UserHandle = ej2Diagrams.UserHandle;
 exports.ToolBase = ej2Diagrams.ToolBase;
 exports.SelectTool = ej2Diagrams.SelectTool;
@@ -1475,6 +1478,7 @@ exports.SymmetricLayout = ej2Diagrams.SymmetricLayout;
 exports.GraphLayoutManager = ej2Diagrams.GraphLayoutManager;
 exports.ComplexHierarchicalTree = ej2Diagrams.ComplexHierarchicalTree;
 exports.Palette = ej2Diagrams.Palette;
+exports.SymbolDragSize = ej2Diagrams.SymbolDragSize;
 exports.SymbolPreview = ej2Diagrams.SymbolPreview;
 exports.SymbolPalette = ej2Diagrams.SymbolPalette;
 exports.Ruler = ej2Diagrams.Ruler;

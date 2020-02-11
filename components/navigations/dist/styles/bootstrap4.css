@@ -7854,6 +7854,10 @@ ejs-sidebar {
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -8653,7 +8657,7 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: #0056b3;
+  color: #007bff;
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {

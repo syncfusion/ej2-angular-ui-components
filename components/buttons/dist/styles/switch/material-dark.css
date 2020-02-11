@@ -886,7 +886,7 @@
 
 .e-switch-wrapper.e-rtl .e-switch-on,
 .e-css.e-switch-wrapper.e-rtl .e-switch-on {
-  background-color: transparent;
+  background-color: #00b0ff;
 }
 
 .e-switch-wrapper.e-rtl .e-switch-handle,

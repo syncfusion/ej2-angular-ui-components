@@ -646,7 +646,7 @@
 }
 
 .e-pager .e-pager-default:hover {
-  background: "";
+  background: #f4f4f4;
   color: #333;
   opacity: 1;
 }
@@ -823,6 +823,356 @@
 .e-bigger.e-small .e-ddl.e-popup .e-input-group input,
 .e-bigger.e-small .e-ddl.e-popup .e-input-group input.e-input {
   height: 34px;
+}
+
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*!component icons*/
+.e-icon-check::before {
+  content: '\e7ff';
+}
+
+.e-excelfilter .e-icon-filter::before {
+  content: '\e21c';
+}
+
+.e-excelfilter .e-excl-filter-icon::before {
+  content: '\e250';
+}
+
+.e-excelfilter .e-excl-filter-icon.e-filtered::before {
+  content: '\e247';
+}
+
+.e-excelfilter .e-search-icon::before {
+  content: '\e97d';
+}
+
+.e-excelfilter .e-chkcancel-icon::before {
+  content: '\e7a7';
+}
+
+/*! Excel-Filter layout */
+.e-xlfl-dlgfields {
+  font-size: 15px;
+}
+
+.e-emptyicon {
+  opacity: 0;
+}
+
+.e-xlfl-fieldset {
+  font-size: 13px;
+  padding-top: 9px;
+}
+
+.e-xlfl-optr,
+.e-xlfl-value {
+  padding-top: 12px;
+}
+
+.e-xlfl-radio,
+.e-xlfl-mtcase {
+  padding-top: 12px;
+}
+
+.e-xlfl-optr :first-child {
+  padding-right: 12px;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
+  padding-left: 12px;
+}
+
+.e-xlflmenu {
+  min-height: 314px;
+}
+
+.e-xlflmenu .e-xlfl-table {
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.e-xlflmenu .e-radio + label .e-label {
+  padding-left: 25px;
+  padding-right: 8px;
+}
+
+.e-xlflmenu.e-rtl .e-radio + label .e-label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
+  margin-left: 6px;
+}
+
+.e-xlflmenu .e-dlg-content {
+  padding-bottom: 5px;
+}
+
+.e-xlfl-radiodiv {
+  width: 118px;
+}
+
+.e-xlfl-radio-or,
+.e-xlfl-matchcasediv {
+  margin-left: 2px;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-radio-or,
+.e-xlfl-matchcasediv {
+  margin-left: 0;
+  margin-right: 13px;
+}
+
+.e-checkboxfiltertext {
+  width: 135px;
+  word-break: normal;
+}
+
+.e-bigger .e-ftrchk {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.e-bigger .e-xlflmenu .e-xlfl-table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.e-bigger .e-xlflmenu .e-dlg-content {
+  padding-bottom: 10px;
+}
+
+.e-bigger .e-xlflmenu .e-radio + label .e-label {
+  padding-left: 28px;
+  padding-right: 5px;
+}
+
+.e-bigger .e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
+  margin-left: 8px;
+}
+
+.e-bigger .e-xlfl-radiodiv {
+  width: 138px;
+}
+
+.e-bigger .e-xlfl-radio-or,
+.e-bigger .e-xlfl-matchcasediv {
+  margin-left: 18px;
+}
+
+.e-bigger .e-xlflmenu {
+  min-height: 372px;
+}
+
+.e-bigger .e-xlfl-optr:first-child {
+  padding-right: 16px;
+}
+
+.e-bigger .e-xlfl-dlgfields {
+  font-size: 16px;
+}
+
+.e-bigger .e-xlfl-fieldset {
+  font-size: 14px;
+  padding-top: 12px;
+}
+
+.e-bigger .e-xlfl-optr,
+.e-bigger .e-xlfl-value {
+  padding-top: 16px;
+}
+
+.e-bigger .e-xlfl-radio,
+.e-bigger .e-xlfl-mtcase {
+  padding-top: 6px;
+}
+
+.e-bigger .e-excelfilter .e-xlflmenu,
+.e-excelfilter.e-bigger .e-xlflmenu {
+  min-height: 372px;
+}
+
+.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li,
+.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li {
+  height: 48px;
+  line-height: 48px;
+}
+
+.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+  height: 48px;
+  line-height: 48px;
+  margin-right: 10px;
+}
+
+.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  height: 48px;
+  line-height: 48px;
+}
+
+.e-excelfilter .e-checkboxlist {
+  height: 200px;
+  margin-top: 5px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
+.e-excelfilter .e-chk-hidden {
+  -moz-appearance: none;
+  height: 1px;
+  opacity: 0;
+  width: 1px;
+}
+
+.e-excelfilter .e-contextmenu-wrapper,
+.e-excelfilter .e-contextmenu-wrapper ul {
+  display: block;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul {
+  padding-bottom: 4px;
+  position: static;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul li {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+  height: 36px;
+  line-height: 36px;
+  margin-right: 10px;
+}
+
+.e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
+  margin-right: 0;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul {
+  border: 0;
+  box-shadow: none;
+  max-width: 300px;
+  padding-bottom: 4px;
+  position: static;
+}
+
+.e-excelfilter .e-footer-content {
+  border-style: solid;
+  border-width: 0;
+}
+
+.e-excelfilter .e-excel-menu {
+  z-index: 1000;
+}
+
+.e-excelfilter .e-dlg-content {
+  padding-top: 0;
+}
+
+.e-excelfilter .e-contextmenu-wrapper,
+.e-excelfilter .e-contextmenu-wrapper ul {
+  display: block;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul {
+  padding-bottom: 4px;
+  position: static;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul li {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+  height: 36px;
+  line-height: 36px;
+  margin-right: 10px;
+}
+
+.e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
+  margin-right: 0;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-excelfilter .e-contextmenu-wrapper ul {
+  border: 0;
+  box-shadow: none;
+  max-width: 300px;
+  padding-bottom: 4px;
+  position: static;
+}
+
+.e-excelfilter .e-footer-content {
+  border-style: solid;
+  border-width: 0;
+}
+
+.e-excelfilter .e-excel-menu {
+  z-index: 1000;
+}
+
+.e-excelfilter .e-dlg-content {
+  padding-top: 0;
+}
+
+.e-excelfilter .e-xlsel {
+  border: 0 solid;
+  position: absolute;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-ftrchk {
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+/*! Excel-Filter theme */
+.e-excelfilter .e-footer-content {
+  border-color: rgba(0, 0, 0, 0.12);
+  opacity: 1;
+}
+
+.e-excelfilter .e-filtered::before {
+  color: #0078d6;
+}
+
+.e-xlsel {
+  background-color: #0078d6;
+  border-color: #0078d6;
 }
 
 @keyframes material-spinner-rotate {
@@ -2523,6 +2873,13 @@
   float: left;
   position: relative;
   top: 10px;
+}
+
+.e-grid .e-checkboxlist {
+  height: 200px;
+  margin-top: 5px;
+  min-height: 160px;
+  overflow-y: auto;
 }
 
 .e-grid .e-chk-hidden {
@@ -4293,354 +4650,4 @@
 .e-dropitemscount {
   background-color: #0078d6;
   color: #fff;
-}
-
-@keyframes material-spinner-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fabric-spinner-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*!component icons*/
-.e-icon-check::before {
-  content: '\e7ff';
-}
-
-.e-excelfilter .e-icon-filter::before {
-  content: '\e21c';
-}
-
-.e-excelfilter .e-excl-filter-icon::before {
-  content: '\e250';
-}
-
-.e-excelfilter .e-excl-filter-icon.e-filtered::before {
-  content: '\e247';
-}
-
-.e-excelfilter .e-search-icon::before {
-  content: '\e97d';
-}
-
-.e-excelfilter .e-chkcancel-icon::before {
-  content: '\e7a7';
-}
-
-/*! Excel-Filter layout */
-.e-xlfl-dlgfields {
-  font-size: 15px;
-}
-
-.e-emptyicon {
-  opacity: 0;
-}
-
-.e-xlfl-fieldset {
-  font-size: 13px;
-  padding-top: 9px;
-}
-
-.e-xlfl-optr,
-.e-xlfl-value {
-  padding-top: 12px;
-}
-
-.e-xlfl-radio,
-.e-xlfl-mtcase {
-  padding-top: 12px;
-}
-
-.e-xlfl-optr :first-child {
-  padding-right: 12px;
-}
-
-.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
-  padding-left: 12px;
-}
-
-.e-xlflmenu {
-  min-height: 314px;
-}
-
-.e-xlflmenu .e-xlfl-table {
-  border-spacing: 0;
-  table-layout: fixed;
-  width: 100%;
-}
-
-.e-xlflmenu .e-radio + label .e-label {
-  padding-left: 25px;
-  padding-right: 8px;
-}
-
-.e-xlflmenu.e-rtl .e-radio + label .e-label {
-  padding-left: 0;
-  padding-right: 25px;
-}
-
-.e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
-  margin-left: 6px;
-}
-
-.e-xlflmenu .e-dlg-content {
-  padding-bottom: 5px;
-}
-
-.e-xlfl-radiodiv {
-  width: 118px;
-}
-
-.e-xlfl-radio-or,
-.e-xlfl-matchcasediv {
-  margin-left: 2px;
-}
-
-.e-xlflmenu.e-rtl .e-xlfl-radio-or,
-.e-xlfl-matchcasediv {
-  margin-left: 0;
-  margin-right: 13px;
-}
-
-.e-checkboxfiltertext {
-  width: 135px;
-  word-break: normal;
-}
-
-.e-bigger .e-ftrchk {
-  padding-bottom: 12px;
-  padding-top: 12px;
-}
-
-.e-bigger .e-xlflmenu .e-xlfl-table {
-  border-spacing: 0;
-  width: 100%;
-}
-
-.e-bigger .e-xlflmenu .e-dlg-content {
-  padding-bottom: 10px;
-}
-
-.e-bigger .e-xlflmenu .e-radio + label .e-label {
-  padding-left: 28px;
-  padding-right: 5px;
-}
-
-.e-bigger .e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
-  margin-left: 8px;
-}
-
-.e-bigger .e-xlfl-radiodiv {
-  width: 138px;
-}
-
-.e-bigger .e-xlfl-radio-or,
-.e-bigger .e-xlfl-matchcasediv {
-  margin-left: 18px;
-}
-
-.e-bigger .e-xlflmenu {
-  min-height: 372px;
-}
-
-.e-bigger .e-xlfl-optr:first-child {
-  padding-right: 16px;
-}
-
-.e-bigger .e-xlfl-dlgfields {
-  font-size: 16px;
-}
-
-.e-bigger .e-xlfl-fieldset {
-  font-size: 14px;
-  padding-top: 12px;
-}
-
-.e-bigger .e-xlfl-optr,
-.e-bigger .e-xlfl-value {
-  padding-top: 16px;
-}
-
-.e-bigger .e-xlfl-radio,
-.e-bigger .e-xlfl-mtcase {
-  padding-top: 6px;
-}
-
-.e-bigger .e-excelfilter .e-xlflmenu,
-.e-excelfilter.e-bigger .e-xlflmenu {
-  min-height: 372px;
-}
-
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li {
-  height: 48px;
-  line-height: 48px;
-}
-
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
-  height: 48px;
-  line-height: 48px;
-  margin-right: 10px;
-}
-
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
-  height: 48px;
-  line-height: 48px;
-}
-
-.e-excelfilter .e-checkboxlist {
-  height: 200px;
-  margin-top: 5px;
-  min-height: 160px;
-  overflow-y: auto;
-}
-
-.e-excelfilter .e-chk-hidden {
-  -moz-appearance: none;
-  height: 1px;
-  opacity: 0;
-  width: 1px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper,
-.e-excelfilter .e-contextmenu-wrapper ul {
-  display: block;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul {
-  padding-bottom: 4px;
-  position: static;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul li {
-  height: 36px;
-  line-height: 36px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
-  height: 36px;
-  line-height: 36px;
-  margin-right: 10px;
-}
-
-.e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
-  margin-right: 0;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
-  height: 36px;
-  line-height: 36px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul {
-  border: 0;
-  box-shadow: none;
-  max-width: 300px;
-  padding-bottom: 4px;
-  position: static;
-}
-
-.e-excelfilter .e-footer-content {
-  border-style: solid;
-  border-width: 0;
-}
-
-.e-excelfilter .e-excel-menu {
-  z-index: 1000;
-}
-
-.e-excelfilter .e-dlg-content {
-  padding-top: 0;
-}
-
-.e-excelfilter .e-contextmenu-wrapper,
-.e-excelfilter .e-contextmenu-wrapper ul {
-  display: block;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul {
-  padding-bottom: 4px;
-  position: static;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul li {
-  height: 36px;
-  line-height: 36px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
-  height: 36px;
-  line-height: 36px;
-  margin-right: 10px;
-}
-
-.e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
-  margin-right: 0;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
-  height: 36px;
-  line-height: 36px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul {
-  border: 0;
-  box-shadow: none;
-  max-width: 300px;
-  padding-bottom: 4px;
-  position: static;
-}
-
-.e-excelfilter .e-footer-content {
-  border-style: solid;
-  border-width: 0;
-}
-
-.e-excelfilter .e-excel-menu {
-  z-index: 1000;
-}
-
-.e-excelfilter .e-dlg-content {
-  padding-top: 0;
-}
-
-.e-excelfilter .e-xlsel {
-  border: 0 solid;
-  position: absolute;
-  -webkit-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.e-ftrchk {
-  padding-bottom: 7px;
-  padding-top: 7px;
-}
-
-/*! Excel-Filter theme */
-.e-excelfilter .e-footer-content {
-  border-color: rgba(0, 0, 0, 0.12);
-  opacity: 1;
-}
-
-.e-excelfilter .e-filtered::before {
-  color: #0078d6;
-}
-
-.e-xlsel {
-  background-color: #0078d6;
-  border-color: #0078d6;
 }
