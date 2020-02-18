@@ -45,6 +45,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public field: any;
     /** 
      * Specifies the date format for columns.
+     * @asptype string
+     * @blazortype string
      * @default null
      */
     public format: any;

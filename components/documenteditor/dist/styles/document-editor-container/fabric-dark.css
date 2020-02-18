@@ -392,6 +392,19 @@
   outline-offset: 0;
 }
 
+.e-btn-pageweb-spellcheck {
+  border: 0;
+  box-shadow: none;
+  float: right;
+  height: 33px;
+  margin-left: calc(100% - 393px);
+  width: 33px;
+}
+
+.e-bigger .e-btn-pageweb-spellcheck {
+  height: 35px;
+}
+
 .e-bigger .e-de-statusbar-pageweb {
   height: 35px;
 }
@@ -1033,7 +1046,7 @@
   color: #dadada;
   float: right;
   height: 34px;
-  margin-left: calc(100% - 323px);
+  margin-left: calc(100% - 393px);
 }
 
 .e-bigger .e-de-statusbar-zoom-spell {
@@ -1042,7 +1055,7 @@
   color: #dadada;
   float: right;
   height: 34px;
-  margin-left: calc(100% - 355px);
+  margin-left: calc(100% - 425px);
 }
 
 .e-de-btn-cancel {

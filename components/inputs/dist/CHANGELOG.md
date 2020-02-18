@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 17.4.49 (2020-02-11)
+## 1.0 (2020-02-18)
 
-### Uploader
+### MaskedTextBox
 
 #### Bug Fixes
 
-- `#259967` - Issue with "script throws while rendering uploader inside toolbar with routing action" has been resolved.
+- `#262338` - Now, the masked textbox does not get `automatic focus` when rendered with mask in the `IOS device`.
 
 ## 17.4.46 (2020-01-30)
 
@@ -1014,6 +1014,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 17.4.47 (2020-02-05)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#259967` - Issue with "script throws while rendering uploader inside toolbar with routing action" has been resolved.
 
 ## 17.1.42 (2019-04-23)
 

@@ -901,29 +901,6 @@
   margin: 4px 0;
 }
 
-.e-spreadsheet .e-filter-popup {
-  position: absolute;
-}
-
-.e-spreadsheet .e-filter-popup .e-contextmenu-wrapper ul {
-  border: 0;
-  box-shadow: none;
-  display: block;
-  max-width: 300px;
-  padding-bottom: 4px;
-  position: static;
-}
-
-.e-spreadsheet .e-filter-popup .e-contextmenu-wrapper ul li,
-.e-spreadsheet .e-filter-popup .e-contextmenu-wrapper ul .e-caret {
-  height: 36px;
-  line-height: 36px;
-}
-
-.e-spreadsheet .e-filter-popup .e-dlg-content {
-  padding-top: 0;
-}
-
 .e-spreadsheet .e-filter-icon {
   margin-bottom: 10px;
 }

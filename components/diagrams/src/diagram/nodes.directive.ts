@@ -148,7 +148,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public data: any;
     /** 
-     * Defines the size of a drop symbol
+     * Defines the node's width and height when dragging a shape into the diagram from the palette.
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -258,7 +258,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public ports: any;
     /** 
-     * Defines the size of the symbol preview
+     * Defines the node's preview size when dragging over from the palette.
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined

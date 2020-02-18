@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { BulletRangeCollectionDirective } from './ranges.directive';
 
 export const inputs: string[] = ['animation','border','categoryField','categoryLabelStyle','dataLabel','dataSource','enableGroupSeparator','enablePersistence','enableRtl','height','interval','labelFormat','labelPosition','labelStyle','locale','majorTickLines','margin','maximum','minimum','minorTickLines','minorTicksPerInterval','opposedPosition','orientation','query','ranges','subtitle','subtitleStyle','tabIndex','targetColor','targetField','targetTypes','targetWidth','theme','tickPosition','title','titlePosition','titleStyle','tooltip','type','valueBorder','valueField','valueFill','valueHeight','width'];
-export const outputs: string[] = ['beforePrint','load','loaded','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['barRender','beforePrint','load','loaded','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**

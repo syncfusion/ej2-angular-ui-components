@@ -3317,6 +3317,19 @@ label[for*='_wholeWord_e-de-rtl'] {
   outline-offset: 0;
 }
 
+.e-btn-pageweb-spellcheck {
+  border: 0;
+  box-shadow: none;
+  float: right;
+  height: 33px;
+  margin-left: calc(100% - 362px);
+  width: 33px;
+}
+
+.e-bigger .e-btn-pageweb-spellcheck {
+  height: 35px;
+}
+
 .e-bigger .e-de-statusbar-pageweb {
   height: 35px;
 }
@@ -3969,7 +3982,7 @@ label[for*='_wholeWord_e-de-rtl'] {
   color: #fff;
   float: right;
   height: 34px;
-  margin-left: calc(100% - 292px);
+  margin-left: calc(100% - 362px);
 }
 
 .e-bigger .e-de-statusbar-zoom-spell {
@@ -3978,7 +3991,7 @@ label[for*='_wholeWord_e-de-rtl'] {
   color: #fff;
   float: right;
   height: 34px;
-  margin-left: calc(100% - 325px);
+  margin-left: calc(100% - 395px);
 }
 
 .e-de-btn-cancel {

@@ -80,7 +80,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public cornerRadius: any;
     /** 
-     * Defines the size of a drop symbol
+     * Defines the connector's width and height when dragging a shape into the diagram from the palette.
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -114,7 +114,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public margin: any;
     /** 
-     * Defines the size of the symbol preview
+     * Defines the connector's preview size when dragging over from the palette.
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined

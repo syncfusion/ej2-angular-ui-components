@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 1.0 (2020-02-18)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#261827` - Issue when ListBox and menu component in a same page has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
+
 ## 17.4.49 (2020-02-11)
 
 ### DropDownList
@@ -15,6 +29,12 @@
 #### Bug Fixes
 
 - `#261005` - Now, `isInteracted` argument is updated properly after manually deleting all characters followed by focus out the control.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#263399` - Issue with "change event is not triggered while enabling `checkbox` selection in IE11 browser" has been resolved.
 
 ## 17.4.47 (2020-02-05)
 

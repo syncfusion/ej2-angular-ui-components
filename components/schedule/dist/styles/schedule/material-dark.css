@@ -312,7 +312,7 @@
   border-right: 1px solid #616161;
 }
 
-.e-schedule .e-schedule-toolbar.e-rtl .e-hor-nav:not(.e-hor-nav.e-nav-active):hover {
+.e-schedule .e-schedule-toolbar.e-rtl .e-hor-nav:not(.e-nav-active):hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
