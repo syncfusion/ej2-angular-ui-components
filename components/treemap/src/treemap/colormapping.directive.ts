@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -64,6 +65,7 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

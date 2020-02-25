@@ -1659,7 +1659,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-table-cell-margin-dlg {
   height: 210px;
-  width: 342px;
+  width: 380px;
 }
 
 .e-de-table-options-dlg {
@@ -1873,6 +1873,13 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-style-paragraph-group-button .e-btn,
 .e-de-style-font-group-button .e-btn {
   box-shadow: none;
+}
+
+.e-de-table-options-dlg-div {
+  height: auto;
+  position: relative;
+  margin-bottom: 14px;
+  width: 504px;
 }
 
 .e-de-style-paragraph-indent-group-button .e-btn.e-active,

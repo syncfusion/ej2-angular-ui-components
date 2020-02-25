@@ -24,6 +24,7 @@ var ColorMappingDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColorMappingDirective;
@@ -99,6 +100,7 @@ var LevelDirective = /** @class */ (function (_super) {
         _this.tags = ['colorMapping'];
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return LevelDirective;
@@ -219,27 +221,33 @@ var TreeMapComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLevels;
+        this.context.ngAfterContentChecked(this);
     };
     return TreeMapComponent;
 }(TreeMap));

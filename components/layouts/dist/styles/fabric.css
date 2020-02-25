@@ -1462,7 +1462,7 @@
   position: absolute;
 }
 
-.e-dashboardlayout.e-control .e-panel.e-draggable:hover {
+.e-dashboardlayout.e-control .e-drag:hover {
   cursor: move;
 }
 

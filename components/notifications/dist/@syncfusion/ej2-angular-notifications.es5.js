@@ -36,6 +36,7 @@ var ButtonModelPropDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ButtonModelPropDirective;
@@ -119,27 +120,33 @@ var ToastComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ToastComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ToastComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ToastComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ToastComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childButtons;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ToastComponent;
 }(Toast));

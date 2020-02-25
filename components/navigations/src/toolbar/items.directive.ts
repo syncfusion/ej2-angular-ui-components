@@ -26,6 +26,7 @@ let outputs: string[] = ['click'];
     }
 })
 export class ItemDirective extends ComplexBase<ItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -138,6 +139,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

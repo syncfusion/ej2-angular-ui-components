@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlineDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -109,6 +110,7 @@ export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlin
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

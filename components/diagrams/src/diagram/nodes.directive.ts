@@ -24,6 +24,7 @@ let outputs: string[] = [];
     }
 })
 export class NodeDirective extends ComplexBase<NodeDirective> {
+    public directivePropList: any;
     public childAnnotations: any;
     public childPorts: any;
     public tags: string[] = ['annotations', 'ports'];
@@ -148,7 +149,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public data: any;
     /** 
-     * Defines the node's width and height when dragging a shape into the diagram from the palette.
+     * Defines the size of a drop symbol
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -258,7 +259,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public ports: any;
     /** 
-     * Defines the node's preview size when dragging over from the palette.
+     * Defines the size of the symbol preview
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -347,6 +348,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

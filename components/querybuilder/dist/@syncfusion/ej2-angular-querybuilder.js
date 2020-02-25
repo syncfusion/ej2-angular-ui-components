@@ -26,6 +26,7 @@ class ColumnDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 ColumnDirective.decorators = [
@@ -100,26 +101,32 @@ let QueryBuilderComponent = class QueryBuilderComponent extends QueryBuilder {
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childColumns;
+        this.context.ngAfterContentChecked(this);
     }
 };
 QueryBuilderComponent.decorators = [

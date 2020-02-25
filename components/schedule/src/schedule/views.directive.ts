@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class ViewDirective extends ComplexBase<ViewDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -205,6 +206,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

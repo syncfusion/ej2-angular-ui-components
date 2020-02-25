@@ -111,6 +111,8 @@ let RichTextEditorComponent = RichTextEditorComponent_1 = class RichTextEditorCo
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -140,21 +142,25 @@ let RichTextEditorComponent = RichTextEditorComponent_1 = class RichTextEditorCo
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 RichTextEditorComponent.decorators = [

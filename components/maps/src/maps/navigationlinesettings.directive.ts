@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class NavigationLineDirective extends ComplexBase<NavigationLineDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -83,6 +84,7 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

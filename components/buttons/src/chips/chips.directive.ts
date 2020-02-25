@@ -25,6 +25,7 @@ let outputs: string[] = [];
     }
 })
 export class ChipDirective extends ComplexBase<ChipDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -74,6 +75,7 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

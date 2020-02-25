@@ -76,27 +76,32 @@ var HeatMapComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return HeatMapComponent;
 }(HeatMap));

@@ -2026,6 +2026,13 @@ label[for*='_wholeWord_e-de-rtl'] {
   box-shadow: none;
 }
 
+.e-de-table-options-dlg-div {
+  height: auto;
+  position: relative;
+  margin-bottom: 14px;
+  width: 504px;
+}
+
 .e-de-style-properties {
   margin-bottom: 14px;
 }

@@ -34,6 +34,9 @@ export const twoWays: string[] = ['checked'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class RadioButtonComponent extends RadioButton implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public checkedChange: any;
@@ -48,6 +51,8 @@ export class RadioButtonComponent extends RadioButton implements IComponentBase 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -63,15 +68,20 @@ export class RadioButtonComponent extends RadioButton implements IComponentBase 
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

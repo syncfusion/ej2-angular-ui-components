@@ -32,6 +32,7 @@ var RangeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return RangeDirective;
@@ -90,6 +91,7 @@ var PointerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return PointerDirective;
@@ -149,6 +151,7 @@ var AxisDirective = /** @class */ (function (_super) {
         _this.tags = ['ranges', 'pointers'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return AxisDirective;
@@ -224,6 +227,7 @@ var AnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return AnnotationDirective;
@@ -328,27 +332,41 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childAxes;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childAxes;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childAxes.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return LinearGaugeComponent;
 }(ej2Lineargauge.LinearGauge));

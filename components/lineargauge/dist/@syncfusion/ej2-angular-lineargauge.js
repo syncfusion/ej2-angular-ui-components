@@ -20,6 +20,7 @@ class RangeDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 RangeDirective.decorators = [
@@ -74,6 +75,7 @@ class PointerDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 PointerDirective.decorators = [
@@ -129,6 +131,7 @@ class AxisDirective extends ComplexBase {
         this.tags = ['ranges', 'pointers'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 AxisDirective.decorators = [
@@ -195,6 +198,7 @@ class AnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input$3;
     }
 }
 AnnotationDirective.decorators = [
@@ -290,26 +294,40 @@ let LinearGaugeComponent = class LinearGaugeComponent extends LinearGauge {
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childAxes;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childAxes;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childAxes.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 LinearGaugeComponent.decorators = [

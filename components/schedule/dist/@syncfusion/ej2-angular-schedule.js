@@ -35,6 +35,7 @@ class ViewDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 ViewDirective.decorators = [
@@ -137,6 +138,7 @@ class ResourceDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 ResourceDirective.decorators = [
@@ -206,6 +208,7 @@ class HeaderRowDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 HeaderRowDirective.decorators = [
@@ -392,26 +395,41 @@ let ScheduleComponent = class ScheduleComponent extends Schedule {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childViews;
+        var /** @type {?} */ isTempNo;
+        if (this.childResources) {
+            this.tagObjects[1].instance = this.childResources;
+            isTempNo = true;
+        }
+        if (this.childHeaderRows) {
+            var /** @type {?} */ n = isTempNo ? 2 : 1;
+            this.tagObjects[n].instance = this.childHeaderRows;
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 ScheduleComponent.decorators = [
@@ -631,26 +649,31 @@ let RecurrenceEditorComponent = class RecurrenceEditorComponent extends Recurren
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.context.ngAfterContentChecked(this);
     }
 };
 RecurrenceEditorComponent.decorators = [

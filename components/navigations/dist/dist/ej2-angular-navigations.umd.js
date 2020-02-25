@@ -52,6 +52,7 @@ var AccordionItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return AccordionItemDirective;
@@ -147,27 +148,33 @@ exports.AccordionComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return AccordionComponent;
 }(ej2Navigations.Accordion));
@@ -297,6 +304,7 @@ var ItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$1;
         return _this;
     }
     return ItemDirective;
@@ -387,27 +395,33 @@ exports.ToolbarComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ToolbarComponent;
 }(ej2Navigations.Toolbar));
@@ -530,27 +544,32 @@ exports.ContextMenuComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return ContextMenuComponent;
 }(ej2Navigations.ContextMenu));
@@ -662,6 +681,7 @@ var TabItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$2;
         return _this;
     }
     return TabItemDirective;
@@ -762,27 +782,33 @@ exports.TabComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TabComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return TabComponent;
 }(ej2Navigations.Tab));
@@ -904,27 +930,32 @@ exports.TreeViewComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return TreeViewComponent;
 }(ej2Navigations.TreeView));
@@ -1047,27 +1078,32 @@ exports.SidebarComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$8);
         _this.addTwoWay.call(_this, twoWays$5);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngAfterContentChecked = function () {
+        this.containerContext.ngAfterContentChecked(this);
     };
     return SidebarComponent;
 }(ej2Navigations.Sidebar));
@@ -1153,6 +1189,7 @@ var MenuItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$9);
+        _this.directivePropList = input$3;
         return _this;
     }
     return MenuItemDirective;
@@ -1236,27 +1273,33 @@ exports.MenuComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$10);
         _this.addTwoWay.call(_this, twoWays$6);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.context.ngAfterContentChecked(this);
     };
     return MenuComponent;
 }(ej2Navigations.Menu));

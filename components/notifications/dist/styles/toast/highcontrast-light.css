@@ -357,6 +357,10 @@
   min-height: 100px;
 }
 
+.e-toast-ref-element {
+  display: none;
+}
+
 .e-toast-container .e-toast {
   background-color: #ccc;
   box-shadow: none;

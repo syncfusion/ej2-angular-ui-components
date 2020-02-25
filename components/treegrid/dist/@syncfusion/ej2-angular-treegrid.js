@@ -35,6 +35,7 @@ class ColumnDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 ColumnDirective.decorators = [
@@ -142,6 +143,7 @@ class AggregateColumnDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 AggregateColumnDirective.decorators = [
@@ -217,6 +219,7 @@ class AggregateDirective extends ComplexBase {
         this.tags = ['columns'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 AggregateDirective.decorators = [
@@ -419,26 +422,40 @@ let TreeGridComponent = class TreeGridComponent extends TreeGrid {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAggregates) {
+            this.tagObjects[1].instance = ((this.childAggregates)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childAggregates)).list.length; d++) {
+                if (((this.childAggregates)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAggregates)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 TreeGridComponent.decorators = [
@@ -592,5 +609,5 @@ TreeGridAllModule.ctorParameters = () => [];
  */
 
 export { ColumnDirective, ColumnsDirective, AggregateColumnDirective, AggregateColumnsDirective, AggregateDirective, AggregatesDirective, TreeGridComponent, TreeGridModule, TreeGridAllModule, FilterService, PageService, SortService, ReorderService, ToolbarService, AggregateService, ResizeService, ColumnMenuService, ExcelExportService, PdfExportService, CommandColumnService, ContextMenuService, EditService, SelectionService, VirtualScrollService, DetailRowService, RowDDService, FreezeService, inputs as ɵa, outputs$3 as ɵb };
-export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, dataStateChange, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, rowDrag, rowDragStartHelper, rowDrop, rowDragStart, rowsAdd, rowsRemove, rowdraging, rowDropped, DataManipulation, Reorder, Resize, RowDD, Column, EditSettings, Predicate, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, RowDropSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, isCountRequired, isFilterChildHierarchy, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual, Freeze } from '@syncfusion/ej2-treegrid';
+export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, dataStateChange, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, rowDrag, rowDragStartHelper, rowDrop, rowDragStart, rowsAdd, rowsRemove, rowdraging, rowDropped, DataManipulation, Column, EditSettings, Predicate, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, RowDropSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, isCountRequired, isFilterChildHierarchy, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, Reorder, Resize, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual, Freeze, RowDD } from '@syncfusion/ej2-treegrid';
 //# sourceMappingURL=ej2-angular-treegrid.js.map

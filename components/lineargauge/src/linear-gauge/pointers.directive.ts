@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class PointerDirective extends ComplexBase<PointerDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -106,6 +107,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

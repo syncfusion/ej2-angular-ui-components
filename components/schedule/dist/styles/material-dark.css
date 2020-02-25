@@ -216,6 +216,7 @@
 
 .e-schedule .e-schedule-toolbar .e-toolbar-pop {
   background: #212121;
+  overflow: auto;
 }
 
 .e-schedule .e-schedule-toolbar .e-tbar-btn {

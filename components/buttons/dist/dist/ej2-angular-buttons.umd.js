@@ -56,27 +56,32 @@ exports.ButtonComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ButtonComponent;
 }(ej2Buttons.Button));
@@ -192,6 +197,8 @@ exports.CheckBoxComponent = CheckBoxComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -222,21 +229,25 @@ exports.CheckBoxComponent = CheckBoxComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     CheckBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return CheckBoxComponent;
 }(ej2Buttons.CheckBox));
@@ -360,6 +371,8 @@ exports.RadioButtonComponent = RadioButtonComponent_1 = /** @class */ (function 
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -390,21 +403,25 @@ exports.RadioButtonComponent = RadioButtonComponent_1 = /** @class */ (function 
      * @return {?}
      */
     RadioButtonComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return RadioButtonComponent;
 }(ej2Buttons.RadioButton));
@@ -528,6 +545,8 @@ exports.SwitchComponent = SwitchComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -558,21 +577,25 @@ exports.SwitchComponent = SwitchComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     SwitchComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return SwitchComponent;
 }(ej2Buttons.Switch));
@@ -677,6 +700,7 @@ var ChipDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input;
         return _this;
     }
     return ChipDirective;
@@ -760,27 +784,33 @@ exports.ChipListComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$5);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childChips;
+        this.context.ngAfterContentChecked(this);
     };
     return ChipListComponent;
 }(ej2Buttons.ChipList));

@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { TreeGrid } from '@syncfusion/ej2-treegrid';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -28,8 +28,10 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class TreeGridComponent extends TreeGrid implements IComponentBase {
-    public childColumns: any;
-    public childAggregates: any;
+    public context : any;
+    public tagObjects: any;
+    public childColumns: QueryList<ColumnsDirective>;
+    public childAggregates: QueryList<AggregatesDirective>;
     public tags: string[] = ['columns', 'aggregates'];
     public dataSourceChange: any;
     @ContentChild('toolbarTemplate')
@@ -180,18 +182,32 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAggregates) {
+                    this.tagObjects[1].instance = (this.childAggregates as any).list[0].childColumns;
+                    for (var d = 0; d < (this.childAggregates as any).list.length; d++) {
+                        if ((this.childAggregates as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childAggregates as any).list[d+1].childColumns.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

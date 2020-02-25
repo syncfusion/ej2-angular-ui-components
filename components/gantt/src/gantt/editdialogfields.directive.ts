@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class EditDialogFieldDirective extends ComplexBase<EditDialogFieldDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,7 @@ export class EditDialogFieldDirective extends ComplexBase<EditDialogFieldDirecti
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

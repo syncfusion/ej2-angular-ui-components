@@ -4495,6 +4495,19 @@
   font-weight: bold;
 }
 
+.e-pivotview .e-pivot-conditional-empty-format {
+  margin: 10px;
+}
+
+.e-pivotview .e-member-editor-dialog,
+.e-pivotview .e-olap-editor-dialog {
+  visibility: hidden;
+}
+
+.e-pivotview .e-pivot-format-dialog .e-pivot-format-table {
+  width: 100%;
+}
+
 .e-pivotview .e-grid .e-rowsheader.e-active,
 .e-pivotview .e-grid .e-rowsheader.e-cellselectionbackground,
 .e-pivotview .e-grid .e-columnsheader.e-active,
@@ -5329,6 +5342,10 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+}
+
+.e-drillthrough-dialog {
+  visibility: hidden;
 }
 
 .e-pivottooltip p.e-tooltipcontent {
@@ -7901,6 +7918,11 @@
 }
 
 /*! field-list theme */
+.e-pivotfieldlist .e-member-editor-dialog,
+.e-pivotfieldlist .e-olap-editor-dialog {
+  visibility: hidden;
+}
+
 .e-pivotfieldlist .e-select-table {
   background-color: #f5f5f5;
   border: 0.5px solid #ccc;

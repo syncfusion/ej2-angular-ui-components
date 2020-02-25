@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotationDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -173,6 +174,7 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

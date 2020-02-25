@@ -35,6 +35,7 @@ class PaneDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 PaneDirective.decorators = [
@@ -116,26 +117,32 @@ let SplitterComponent = class SplitterComponent extends Splitter {
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childPaneSettings;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 SplitterComponent.decorators = [
@@ -243,6 +250,7 @@ class PanelDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$1;
     }
 }
 PanelDirective.decorators = [
@@ -329,26 +337,32 @@ let DashboardLayoutComponent = class DashboardLayoutComponent extends DashboardL
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childPanels;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 DashboardLayoutComponent.decorators = [

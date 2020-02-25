@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class SplitButtonItemDirective extends ComplexBase<SplitButtonItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -48,6 +49,7 @@ export class SplitButtonItemDirective extends ComplexBase<SplitButtonItemDirecti
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

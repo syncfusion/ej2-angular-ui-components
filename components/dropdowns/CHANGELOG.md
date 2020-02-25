@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 17.4.51 (2020-02-25)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#263579` - Issue with "the performance issue while clear the selected items using clear button" issue has been resolved.
+
 ## 17.4.50 (2020-02-18)
 
 ### ListBox
@@ -9,12 +17,6 @@
 #### Bug Fixes
 
 - `#261827` - Issue when ListBox and menu component in a same page has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
 
 ## 17.4.49 (2020-02-11)
 
@@ -1372,6 +1374,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 1.0 (2020-02-18)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
 
 ## 17.3.27 (2019-11-12)
 

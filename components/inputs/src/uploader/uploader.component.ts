@@ -34,6 +34,9 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class UploaderComponent extends Uploader implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
     public childFiles: any;
     public tags: string[] = ['files'];
 
@@ -58,6 +61,8 @@ export class UploaderComponent extends Uploader implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -73,15 +78,20 @@ export class UploaderComponent extends Uploader implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childFiles;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

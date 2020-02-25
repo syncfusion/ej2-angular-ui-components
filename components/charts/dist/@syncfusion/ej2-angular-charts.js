@@ -26,6 +26,7 @@ class TrendlineDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 TrendlineDirective.decorators = [
@@ -86,6 +87,7 @@ class SegmentDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 SegmentDirective.decorators = [
@@ -152,6 +154,7 @@ class SeriesDirective extends ComplexBase {
         this.tags = ['trendlines', 'segments'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 SeriesDirective.decorators = [
@@ -220,6 +223,7 @@ class StripLineDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input$3;
     }
 }
 StripLineDirective.decorators = [
@@ -281,6 +285,7 @@ class CategoryDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$4);
+        this.directivePropList = input$4;
     }
 }
 CategoryDirective.decorators = [
@@ -340,6 +345,7 @@ class MultiLevelLabelDirective extends ComplexBase {
         this.tags = ['categories'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$5);
+        this.directivePropList = input$5;
     }
 }
 MultiLevelLabelDirective.decorators = [
@@ -397,6 +403,7 @@ class AxisDirective extends ComplexBase {
         this.tags = ['stripLines', 'multiLevelLabels'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$6);
+        this.directivePropList = input$6;
     }
 }
 AxisDirective.decorators = [
@@ -454,6 +461,7 @@ class RowDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$7);
+        this.directivePropList = input$7;
     }
 }
 RowDirective.decorators = [
@@ -508,6 +516,7 @@ class ColumnDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$8);
+        this.directivePropList = input$8;
     }
 }
 ColumnDirective.decorators = [
@@ -571,6 +580,7 @@ class AnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$9);
+        this.directivePropList = input$9;
     }
 }
 AnnotationDirective.decorators = [
@@ -632,6 +642,7 @@ class SelectedDataIndexDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$10);
+        this.directivePropList = input$10;
     }
 }
 SelectedDataIndexDirective.decorators = [
@@ -688,6 +699,7 @@ class IndicatorDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$11);
+        this.directivePropList = input$11;
     }
 }
 IndicatorDirective.decorators = [
@@ -1147,26 +1159,80 @@ let ChartComponent = class ChartComponent extends Chart {
         this.registerEvents(outputs$12);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAxes) {
+            this.tagObjects[1].instance = ((this.childAxes)).list[0].childSeries;
+            for (var /** @type {?} */ d = 0; d < ((this.childAxes)).list.length; d++) {
+                if (((this.childAxes)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAxes)).list[d + 1].childSeries.list[0]);
+                }
+            }
+        }
+        if (this.childRows) {
+            this.tagObjects[2].instance = ((this.childRows)).list[0].childAxes;
+            for (var /** @type {?} */ d = 0; d < ((this.childRows)).list.length; d++) {
+                if (((this.childRows)).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push(((this.childRows)).list[d + 1].childAxes.list[0]);
+                }
+            }
+        }
+        if (this.childColumns) {
+            this.tagObjects[3].instance = ((this.childColumns)).list[0].childRows;
+            for (var /** @type {?} */ d = 0; d < ((this.childColumns)).list.length; d++) {
+                if (((this.childColumns)).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push(((this.childColumns)).list[d + 1].childRows.list[0]);
+                }
+            }
+        }
+        if (this.childAnnotations) {
+            this.tagObjects[4].instance = ((this.childAnnotations)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[4].instance.list.push(((this.childAnnotations)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        if (this.childSelectedDataIndexes) {
+            this.tagObjects[5].instance = ((this.childSelectedDataIndexes)).list[0].childAnnotations;
+            for (var /** @type {?} */ d = 0; d < ((this.childSelectedDataIndexes)).list.length; d++) {
+                if (((this.childSelectedDataIndexes)).list[d + 1]) {
+                    this.tagObjects[5].instance.list.push(((this.childSelectedDataIndexes)).list[d + 1].childAnnotations.list[0]);
+                }
+            }
+        }
+        if (this.childIndicators) {
+            this.tagObjects[6].instance = ((this.childIndicators)).list[0].childSelectedDataIndexes;
+            for (var /** @type {?} */ d = 0; d < ((this.childIndicators)).list.length; d++) {
+                if (((this.childIndicators)).list[d + 1]) {
+                    this.tagObjects[6].instance.list.push(((this.childIndicators)).list[d + 1].childSelectedDataIndexes.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 ChartComponent.decorators = [
@@ -1438,6 +1504,7 @@ class AccumulationSeriesDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$13);
+        this.directivePropList = input$12;
     }
 }
 AccumulationSeriesDirective.decorators = [
@@ -1510,6 +1577,7 @@ class AccumulationAnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$14);
+        this.directivePropList = input$13;
     }
 }
 AccumulationAnnotationDirective.decorators = [
@@ -1654,26 +1722,40 @@ let AccumulationChartComponent = class AccumulationChartComponent extends Accumu
         this.registerEvents(outputs$15);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childSeries;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childSeries.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 AccumulationChartComponent.decorators = [
@@ -1797,6 +1879,7 @@ class RangenavigatorSeriesDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$16);
+        this.directivePropList = input$14;
     }
 }
 RangenavigatorSeriesDirective.decorators = [
@@ -1920,26 +2003,32 @@ let RangeNavigatorComponent = class RangeNavigatorComponent extends RangeNavigat
         this.registerEvents(outputs$17);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     }
 };
 RangeNavigatorComponent.decorators = [
@@ -2038,6 +2127,7 @@ class RangeBandSettingDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$18);
+        this.directivePropList = input$15;
     }
 }
 RangeBandSettingDirective.decorators = [
@@ -2084,7 +2174,7 @@ var __decorate$7 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$7 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs$3 = ['axisSettings', 'border', 'containerArea', 'dataLabelSettings', 'dataSource', 'enablePersistence', 'enableRtl', 'endPointColor', 'fill', 'format', 'height', 'highPointColor', 'lineWidth', 'locale', 'lowPointColor', 'markerSettings', 'negativePointColor', 'opacity', 'padding', 'palette', 'query', 'rangeBandSettings', 'startPointColor', 'theme', 'tiePointColor', 'tooltipSettings', 'type', 'useGroupingSeparator', 'valueType', 'width', 'xName', 'yName'];
+const inputs$3 = ['axisSettings', 'border', 'containerArea', 'dataLabelSettings', 'dataSource', 'enablePersistence', 'enableRtl', 'endPointColor', 'fill', 'format', 'height', 'highPointColor', 'lineWidth', 'locale', 'lowPointColor', 'markerSettings', 'negativePointColor', 'opacity', 'padding', 'palette', 'query', 'rangeBandSettings', 'rangePadding', 'startPointColor', 'theme', 'tiePointColor', 'tooltipSettings', 'type', 'useGroupingSeparator', 'valueType', 'width', 'xName', 'yName'];
 const outputs$19 = ['axisRendering', 'dataLabelRendering', 'load', 'loaded', 'markerRendering', 'pointRegionMouseClick', 'pointRegionMouseMove', 'pointRendering', 'resize', 'seriesRendering', 'sparklineMouseClick', 'sparklineMouseMove', 'tooltipInitialize'];
 const twoWays$3 = [''];
 /**
@@ -2119,26 +2209,32 @@ let SparklineComponent = class SparklineComponent extends Sparkline {
         this.registerEvents(outputs$19);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childRangeBandSettings;
+        this.context.ngAfterContentChecked(this);
     }
 };
 SparklineComponent.decorators = [
@@ -2228,6 +2324,7 @@ class SmithchartSeriesDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$20);
+        this.directivePropList = input$16;
     }
 }
 SmithchartSeriesDirective.decorators = [
@@ -2316,26 +2413,32 @@ let SmithchartComponent = class SmithchartComponent extends Smithchart {
         this.registerEvents(outputs$21);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     }
 };
 SmithchartComponent.decorators = [
@@ -2440,6 +2543,7 @@ class StockChartTrendlineDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$22);
+        this.directivePropList = input$17;
     }
 }
 StockChartTrendlineDirective.decorators = [
@@ -2497,6 +2601,7 @@ class StockChartSeriesDirective extends ComplexBase {
         this.tags = ['trendlines'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$23);
+        this.directivePropList = input$18;
     }
 }
 StockChartSeriesDirective.decorators = [
@@ -2536,66 +2641,8 @@ StockChartSeriesCollectionDirective.decorators = [
  */
 StockChartSeriesCollectionDirective.ctorParameters = () => [];
 
-let input$19 = ['border', 'color', 'dashArray', 'delay', 'duration', 'enable', 'end', 'horizontalAlignment', 'isRepeat', 'isSegmented', 'opacity', 'repeatEvery', 'repeatUntil', 'rotation', 'segmentAxisName', 'segmentEnd', 'segmentStart', 'size', 'sizeType', 'start', 'startFromAxis', 'text', 'textStyle', 'verticalAlignment', 'visible', 'zIndex'];
+let input$19 = ['coefficient', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 let outputs$24 = [];
-/**
- * StripLine Directive
- * ```html
- * <e-stockchart-axis>
- * <e-striplines>
- * <e-stripline></e-stripline>
- * </e-striplines>
- * </e-stock-chart-axis>
- * ```
- */
-class StockChartStripLineDirective extends ComplexBase {
-    /**
-     * @param {?} viewContainerRef
-     */
-    constructor(viewContainerRef) {
-        super();
-        this.viewContainerRef = viewContainerRef;
-        setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$24);
-    }
-}
-StockChartStripLineDirective.decorators = [
-    { type: Directive, args: [{
-                selector: 'e-stockchart-axis>e-stockchart-striplines>e-stockchart-stripline',
-                inputs: input$19,
-                outputs: outputs$24,
-                queries: {}
-            },] },
-];
-/**
- * @nocollapse
- */
-StockChartStripLineDirective.ctorParameters = () => [
-    { type: ViewContainerRef, },
-];
-/**
- * StockChartStripLine Array Directive
- */
-class StockChartStripLinesDirective extends ArrayBase {
-    constructor() {
-        super('striplines');
-    }
-}
-StockChartStripLinesDirective.decorators = [
-    { type: Directive, args: [{
-                selector: 'e-stockchart-axis>e-stockchart-striplines',
-                queries: {
-                    children: new ContentChildren(StockChartStripLineDirective)
-                },
-            },] },
-];
-/**
- * @nocollapse
- */
-StockChartStripLinesDirective.ctorParameters = () => [];
-
-let input$20 = ['coefficient', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
-let outputs$25 = [];
 /**
  * Axis Directive
  * ```html
@@ -2609,19 +2656,17 @@ class StockChartAxisDirective extends ComplexBase {
     constructor(viewContainerRef) {
         super();
         this.viewContainerRef = viewContainerRef;
-        this.tags = ['stripLines'];
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$25);
+        this.registerEvents(outputs$24);
+        this.directivePropList = input$19;
     }
 }
 StockChartAxisDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-stockchart-axes>e-stockchart-axis',
-                inputs: input$20,
-                outputs: outputs$25,
-                queries: {
-                    childStripLines: new ContentChild(StockChartStripLinesDirective)
-                }
+                inputs: input$19,
+                outputs: outputs$24,
+                queries: {}
             },] },
 ];
 /**
@@ -2651,8 +2696,8 @@ StockChartAxesDirective.decorators = [
  */
 StockChartAxesDirective.ctorParameters = () => [];
 
-let input$21 = ['border', 'height'];
-let outputs$26 = [];
+let input$20 = ['border', 'height'];
+let outputs$25 = [];
 /**
  * Row Directive
  * ```html
@@ -2667,14 +2712,15 @@ class StockChartRowDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$26);
+        this.registerEvents(outputs$25);
+        this.directivePropList = input$20;
     }
 }
 StockChartRowDirective.decorators = [
     { type: Directive, args: [{
-                selector: 'e-stockchart-rows>e-striplines>e-stockchart-row',
-                inputs: input$21,
-                outputs: outputs$26,
+                selector: 'e-stockchart-rows>e-stockchart-row',
+                inputs: input$20,
+                outputs: outputs$25,
                 queries: {}
             },] },
 ];
@@ -2714,8 +2760,8 @@ var __decorate$9 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$9 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-let input$22 = ['content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
-let outputs$27 = [];
+let input$21 = ['content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
+let outputs$26 = [];
 /**
  * Annotation Directive
  * ```html
@@ -2730,14 +2776,15 @@ class StockChartAnnotationDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$27);
+        this.registerEvents(outputs$26);
+        this.directivePropList = input$21;
     }
 }
 StockChartAnnotationDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'ejs-stockchart-annotations>e-stockchart-annotation',
-                inputs: input$22,
-                outputs: outputs$27,
+                inputs: input$21,
+                outputs: outputs$26,
                 queries: {}
             },] },
 ];
@@ -2775,8 +2822,8 @@ StockChartAnnotationsDirective.decorators = [
  */
 StockChartAnnotationsDirective.ctorParameters = () => [];
 
-let input$23 = ['point', 'series'];
-let outputs$28 = [];
+let input$22 = ['point', 'series'];
+let outputs$27 = [];
 /**
  * Selected Data Directive
  * ```html
@@ -2791,14 +2838,15 @@ class StockChartSelectedDataIndexDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$28);
+        this.registerEvents(outputs$27);
+        this.directivePropList = input$22;
     }
 }
 StockChartSelectedDataIndexDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'ejs-stockchart-selectedDataIndexes>e-stockchart-selectedDataIndex',
-                inputs: input$23,
-                outputs: outputs$28,
+                inputs: input$22,
+                outputs: outputs$27,
                 queries: {}
             },] },
 ];
@@ -2829,8 +2877,8 @@ StockChartSelectedDataIndexesDirective.decorators = [
  */
 StockChartSelectedDataIndexesDirective.ctorParameters = () => [];
 
-let input$24 = ['interval', 'intervalType', 'selected', 'text'];
-let outputs$29 = [];
+let input$23 = ['interval', 'intervalType', 'selected', 'text'];
+let outputs$28 = [];
 /**
  * Indicator Directive
  * ```html
@@ -2847,14 +2895,15 @@ class StockChartPeriodDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$29);
+        this.registerEvents(outputs$28);
+        this.directivePropList = input$23;
     }
 }
 StockChartPeriodDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-period',
-                inputs: input$24,
-                outputs: outputs$29,
+                inputs: input$23,
+                outputs: outputs$28,
                 queries: {}
             },] },
 ];
@@ -2885,8 +2934,8 @@ StockChartPeriodsDirective.decorators = [
  */
 StockChartPeriodsDirective.ctorParameters = () => [];
 
-let input$25 = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
-let outputs$30 = [];
+let input$24 = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
+let outputs$29 = [];
 /**
  * StockEvents
  * ```html
@@ -2903,14 +2952,15 @@ class StockEventDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$30);
+        this.registerEvents(outputs$29);
+        this.directivePropList = input$24;
     }
 }
 StockEventDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-stockevent',
-                inputs: input$25,
-                outputs: outputs$30,
+                inputs: input$24,
+                outputs: outputs$29,
                 queries: {}
             },] },
 ];
@@ -2941,8 +2991,8 @@ StockEventsDirective.decorators = [
  */
 StockEventsDirective.ctorParameters = () => [];
 
-let input$26 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
-let outputs$31 = [];
+let input$25 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+let outputs$30 = [];
 /**
  * Indicator Directive
  * ```html
@@ -2959,14 +3009,15 @@ class StockChartIndicatorDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$31);
+        this.registerEvents(outputs$30);
+        this.directivePropList = input$25;
     }
 }
 StockChartIndicatorDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-indicator',
-                inputs: input$26,
-                outputs: outputs$31,
+                inputs: input$25,
+                outputs: outputs$30,
                 queries: {}
             },] },
 ];
@@ -3007,7 +3058,7 @@ var __metadata$10 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs$5 = ['annotations', 'axes', 'background', 'border', 'chartArea', 'crosshair', 'dataSource', 'enableCustomRange', 'enablePeriodSelector', 'enablePersistence', 'enableRtl', 'enableSelector', 'exportType', 'height', 'indicatorType', 'indicators', 'isMultiSelect', 'isSelect', 'isTransposed', 'locale', 'margin', 'periods', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'seriesType', 'stockEvents', 'theme', 'title', 'titleStyle', 'tooltip', 'trendlineType', 'width', 'zoomSettings'];
-const outputs$32 = ['axisLabelRender', 'load', 'loaded', 'onZooming', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
+const outputs$31 = ['axisLabelRender', 'load', 'loaded', 'onZooming', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
 const twoWays$5 = ['dataSource'];
 /**
  * Stock Chart Component
@@ -3234,36 +3285,98 @@ let StockChartComponent = class StockChartComponent extends StockChart {
             }
         }
         catch (_4) { }
-        this.registerEvents(outputs$32);
+        this.registerEvents(outputs$31);
         this.addTwoWay.call(this, twoWays$5);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAxes) {
+            this.tagObjects[1].instance = ((this.childAxes)).list[0].childSeries;
+            for (var /** @type {?} */ d = 0; d < ((this.childAxes)).list.length; d++) {
+                if (((this.childAxes)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAxes)).list[d + 1].childSeries.list[0]);
+                }
+            }
+        }
+        if (this.childRows) {
+            this.tagObjects[2].instance = ((this.childRows)).list[0].childAxes;
+            for (var /** @type {?} */ d = 0; d < ((this.childRows)).list.length; d++) {
+                if (((this.childRows)).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push(((this.childRows)).list[d + 1].childAxes.list[0]);
+                }
+            }
+        }
+        if (this.childAnnotations) {
+            this.tagObjects[3].instance = ((this.childAnnotations)).list[0].childRows;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push(((this.childAnnotations)).list[d + 1].childRows.list[0]);
+                }
+            }
+        }
+        if (this.childSelectedDataIndexes) {
+            this.tagObjects[4].instance = ((this.childSelectedDataIndexes)).list[0].childAnnotations;
+            for (var /** @type {?} */ d = 0; d < ((this.childSelectedDataIndexes)).list.length; d++) {
+                if (((this.childSelectedDataIndexes)).list[d + 1]) {
+                    this.tagObjects[4].instance.list.push(((this.childSelectedDataIndexes)).list[d + 1].childAnnotations.list[0]);
+                }
+            }
+        }
+        if (this.childPeriods) {
+            this.tagObjects[5].instance = ((this.childPeriods)).list[0].childSelectedDataIndexes;
+            for (var /** @type {?} */ d = 0; d < ((this.childPeriods)).list.length; d++) {
+                if (((this.childPeriods)).list[d + 1]) {
+                    this.tagObjects[5].instance.list.push(((this.childPeriods)).list[d + 1].childSelectedDataIndexes.list[0]);
+                }
+            }
+        }
+        if (this.childStockEvents) {
+            this.tagObjects[6].instance = ((this.childStockEvents)).list[0].childPeriods;
+            for (var /** @type {?} */ d = 0; d < ((this.childStockEvents)).list.length; d++) {
+                if (((this.childStockEvents)).list[d + 1]) {
+                    this.tagObjects[6].instance.list.push(((this.childStockEvents)).list[d + 1].childPeriods.list[0]);
+                }
+            }
+        }
+        if (this.childIndicators) {
+            this.tagObjects[7].instance = ((this.childIndicators)).list[0].childStockEvents;
+            for (var /** @type {?} */ d = 0; d < ((this.childIndicators)).list.length; d++) {
+                if (((this.childIndicators)).list[d + 1]) {
+                    this.tagObjects[7].instance.list.push(((this.childIndicators)).list[d + 1].childStockEvents.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 StockChartComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-stockchart',
                 inputs: inputs$5,
-                outputs: outputs$32,
+                outputs: outputs$31,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -3316,8 +3429,6 @@ StockChartModule.decorators = [
                     StockChartTrendlinesDirective,
                     StockChartSeriesDirective,
                     StockChartSeriesCollectionDirective,
-                    StockChartStripLineDirective,
-                    StockChartStripLinesDirective,
                     StockChartAxisDirective,
                     StockChartAxesDirective,
                     StockChartRowDirective,
@@ -3339,8 +3450,6 @@ StockChartModule.decorators = [
                     StockChartTrendlinesDirective,
                     StockChartSeriesDirective,
                     StockChartSeriesCollectionDirective,
-                    StockChartStripLineDirective,
-                    StockChartStripLinesDirective,
                     StockChartAxisDirective,
                     StockChartAxesDirective,
                     StockChartRowDirective,
@@ -3382,8 +3491,8 @@ StockChartAllModule.decorators = [
  */
 StockChartAllModule.ctorParameters = () => [];
 
-let input$27 = ['color', 'end', 'opacity'];
-let outputs$33 = [];
+let input$26 = ['color', 'end', 'opacity'];
+let outputs$32 = [];
 /**
  * BulletRange Directive
  * ```html
@@ -3400,14 +3509,15 @@ class BulletRangeDirective extends ComplexBase {
         super();
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
-        this.registerEvents(outputs$33);
+        this.registerEvents(outputs$32);
+        this.directivePropList = input$26;
     }
 }
 BulletRangeDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-bullet-range-collection>e-bullet-range',
-                inputs: input$27,
-                outputs: outputs$33,
+                inputs: input$26,
+                outputs: outputs$32,
                 queries: {}
             },] },
 ];
@@ -3448,7 +3558,7 @@ var __metadata$11 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs$6 = ['animation', 'border', 'categoryField', 'categoryLabelStyle', 'dataLabel', 'dataSource', 'enableGroupSeparator', 'enablePersistence', 'enableRtl', 'height', 'interval', 'labelFormat', 'labelPosition', 'labelStyle', 'locale', 'majorTickLines', 'margin', 'maximum', 'minimum', 'minorTickLines', 'minorTicksPerInterval', 'opposedPosition', 'orientation', 'query', 'ranges', 'subtitle', 'subtitleStyle', 'tabIndex', 'targetColor', 'targetField', 'targetTypes', 'targetWidth', 'theme', 'tickPosition', 'title', 'titlePosition', 'titleStyle', 'tooltip', 'type', 'valueBorder', 'valueField', 'valueFill', 'valueHeight', 'width'];
-const outputs$34 = ['barRender', 'beforePrint', 'load', 'loaded', 'tooltipRender', 'dataSourceChange'];
+const outputs$33 = ['barRender', 'beforePrint', 'load', 'loaded', 'tooltipRender', 'dataSourceChange'];
 const twoWays$6 = ['dataSource'];
 /**
  * BulletChart Component
@@ -3479,36 +3589,42 @@ let BulletChartComponent = class BulletChartComponent extends BulletChart {
             }
         }
         catch (_a) { }
-        this.registerEvents(outputs$34);
+        this.registerEvents(outputs$33);
         this.addTwoWay.call(this, twoWays$6);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childRanges;
+        this.context.ngAfterContentChecked(this);
     }
 };
 BulletChartComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-bulletchart',
                 inputs: inputs$6,
-                outputs: outputs$34,
+                outputs: outputs$33,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -3591,6 +3707,6 @@ BulletChartAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, DataEditingService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartStripLineDirective, StockChartStripLinesDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent, BulletChartModule, BulletChartAllModule, BulletTooltipService, inputs$1 as ɵc, outputs$15 as ɵd, inputs$6 as ɵm, outputs$34 as ɵn, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$32 as ɵl };
+export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, DataEditingService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent, BulletChartModule, BulletChartAllModule, BulletTooltipService, inputs$1 as ɵc, outputs$15 as ɵd, inputs$6 as ɵm, outputs$33 as ɵn, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$31 as ɵl };
 export { CrosshairSettings, ZoomSettings, Chart, Row, Column, MajorGridLines, MinorGridLines, AxisLine, MajorTickLines, MinorTickLines, CrosshairTooltip, Axis, VisibleLabels, DateTime, Category, Logarithmic, DateTimeCategory, NiceInterval, StripLine, Connector, Font, Border, Offset, ChartArea, Margin, Animation, Indexes, CornerRadius, Index, EmptyPointSettings, DragSettings, TooltipSettings, Periods, PeriodSelectorSettings, LineSeries, ColumnSeries, AreaSeries, BarSeries, PolarSeries, RadarSeries, StackingBarSeries, CandleSeries, StackingColumnSeries, StepLineSeries, StepAreaSeries, StackingAreaSeries, StackingLineSeries, ScatterSeries, RangeColumnSeries, WaterfallSeries, HiloSeries, HiloOpenCloseSeries, RangeAreaSeries, BubbleSeries, SplineSeries, HistogramSeries, SplineAreaSeries, TechnicalIndicator, SmaIndicator, EmaIndicator, TmaIndicator, AccumulationDistributionIndicator, AtrIndicator, MomentumIndicator, RsiIndicator, StochasticIndicator, BollingerBands, MacdIndicator, Trendlines, sort, isBreakLabel, rotateTextSize, removeElement, logBase, showTooltip, inside, withIn, logWithIn, withInRange, sum, subArraySum, subtractThickness, subtractRect, degreeToLocation, degreeToRadian, getRotatedRectangleCoordinates, isRotatedRectIntersect, getAngle, subArray, valueToCoefficient, TransformToVisible, indexFinder, CoefficientToVector, valueToPolarCoefficient, Mean, PolarArc, createTooltip, createZoomingLabels, withInBounds, getValueXByPoint, getValueYByPoint, findClipRect, firstToLowerCase, getTransform, getMinPointsDelta, getAnimationFunction, linear, markerAnimate, animateRectElement, pathAnimation, appendClipElement, triggerLabelRender, setRange, getActualDesiredIntervalsCount, templateAnimate, drawSymbol, calculateShapes, getRectLocation, minMax, getElement, getTemplateFunction, createTemplate, getFontStyle, measureElementRect, findlElement, getPoint, appendElement, appendChildElement, getDraggedRectLocation, checkBounds, getLabelText, stopTimer, isCollide, isOverlap, containsRect, calculateRect, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, getSaturationColor, getMedian, calculateLegendShapes, textTrim, lineBreakLabelTrim, stringToNumber, redrawElement, animateRedrawElement, textElement, calculateSize, createSvg, getTitle, titlePositionX, textWrap, getUnicodeText, blazorTemplatesReset, CustomizeOption, StackValues, RectOption, ImageOption, CircleOption, PolygonOption, ChartLocation, Thickness, ColorValue, PointData, AccPointData, ControlPoints, Crosshair, Tooltip, Zoom, Selection, DataEditing, DataLabel, ErrorBar, DataLabelSettings, MarkerSettings, Points, Trendline, ErrorBarCapSettings, ChartSegment, ErrorBarSettings, SeriesBase, Series, Legend, ChartAnnotation, ChartAnnotationSettings, LabelBorder, MultiLevelCategories, StripLineSettings, MultiLevelLabels, ScrollbarSettingsRange, ScrollbarSettings, BoxAndWhiskerSeries, MultiColoredAreaSeries, MultiColoredLineSeries, MultiColoredSeries, MultiLevelLabel, ScrollBar, ParetoSeries, Export, AccumulationChart, AccumulationAnnotationSettings, AccumulationDataLabelSettings, PieCenter, AccPoints, AccumulationSeries, getSeriesFromIndex, pointByIndex, PieSeries, FunnelSeries, PyramidSeries, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, AccumulationSelection, AccumulationAnnotation, StockChart, StockChartFont, StockChartBorder, StockChartArea, StockMargin, StockChartStripLineSettings, StockEmptyPointSettings, StockChartConnector, StockSeries, StockChartIndicator, StockChartAxis, StockChartRow, StockChartTrendline, StockChartAnnotationSettings, StockChartIndexes, StockEventsSettings, loaded, legendClick, load, animationComplete, legendRender, textRender, pointRender, seriesRender, axisLabelRender, axisRangeCalculated, axisMultiLabelRender, tooltipRender, chartMouseMove, chartMouseClick, pointClick, pointMove, chartMouseLeave, chartMouseDown, chartMouseUp, zoomComplete, onZooming, dragComplete, selectionComplete, resized, beforePrint, annotationRender, scrollStart, scrollEnd, scrollChanged, stockEventRender, multiLevelLabelClick, dragStart, drag, dragEnd, regSub, regSup, beforeExport, afterExport, barRender, Theme, getSeriesColor, getThemeColor, getScrollbarThemeColor, PeriodSelector, RangeNavigator, rangeValueToCoefficient, getXLocation, getRangeValueXByPoint, getExactData, getNearestValue, DataPoint, RangeNavigatorTheme, getRangeThemeColor, RangeNavigatorAxis, RangeSeries, RangeSlider, RangeNavigatorSeries, ThumbSettings, StyleSettings, RangeTooltipSettings, Double, RangeTooltip, BulletChart, Range, MajorTickLinesSettings, MinorTickLinesSettings, BulletLabelStyle, BulletTooltipSettings, BulletDataLabel, BulletChartTheme, getBulletThemeColor, BulletTooltip, Smithchart, SmithchartMajorGridLines, SmithchartMinorGridLines, SmithchartAxisLine, SmithchartAxis, LegendTitle, LegendLocation, LegendItemStyleBorder, LegendItemStyle, LegendBorder, SmithchartLegendSettings, SeriesTooltipBorder, SeriesTooltip, SeriesMarkerBorder, SeriesMarkerDataLabelBorder, SeriesMarkerDataLabelConnectorLine, SeriesMarkerDataLabel, SeriesMarker, SmithchartSeries, TooltipRender, Subtitle, Title, SmithchartFont, SmithchartMargin, SmithchartBorder, SmithchartRect, LabelCollection, LegendSeries, LabelRegion, HorizontalLabelCollection, RadialLabelCollections, LineSegment, PointRegion, Point, ClosestPoint, MarkerOptions, SmithchartLabelPosition, Direction, DataLabelTextOptions, LabelOption, SmithchartSize, GridArcPoints, smithchartBeforePrint, SmithchartLegend, Sparkline, SparklineTooltip, SparklineBorder, SparklineFont, TrackLineSettings, SparklineTooltipSettings, ContainerArea, LineSettings, RangeBandSettings, AxisSettings, Padding, SparklineMarkerSettings, LabelOffset, SparklineDataLabelSettings } from '@syncfusion/ej2-charts';
 //# sourceMappingURL=ej2-angular-charts.js.map

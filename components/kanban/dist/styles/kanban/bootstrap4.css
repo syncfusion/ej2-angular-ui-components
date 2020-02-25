@@ -49,6 +49,10 @@
   content: '\e654';
 }
 
+.e-mobile-popup-wrapper .e-close-icon::before {
+  content: '\e745';
+}
+
 /*! kanban component layout */
 .e-kanban {
   display: block;
@@ -57,6 +61,11 @@
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.e-kanban .e-icons:focus {
+  background: #e0e0e0;
+  border-radius: 100%;
 }
 
 .e-kanban .e-kanban-table {
@@ -104,13 +113,13 @@
 
 .e-kanban .e-kanban-header .e-header-cells.e-toggle-header .e-column-expand {
   cursor: pointer;
-  padding: 4px 0 4px 4px;
+  padding: 6px;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-toggle-header .e-column-collapse {
   cursor: pointer;
   font-size: 12px;
-  padding: 13px;
+  padding: 11px;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-min-color {
@@ -143,7 +152,7 @@
 .e-kanban .e-kanban-header .e-header-cells .e-header-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   overflow: hidden;
   padding-right: 5px;
   text-overflow: ellipsis;
@@ -254,7 +263,7 @@
   padding-bottom: 0;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.duplicate {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-cloned-card {
   position: absolute;
   z-index: 1;
 }
@@ -322,6 +331,14 @@
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
   color: #6c757d;
   cursor: pointer;
+  margin-left: 8px;
+  padding: 6px;
+}
+
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:focus {
+  background: #e0e0e0;
+  border-radius: 100%;
   margin-left: 8px;
   padding: 6px;
 }
@@ -477,6 +494,52 @@
 .e-bigger.e-kanban .e-kanban-table .e-header-cells .e-header-text {
   font-size: 18px;
   line-height: 18px;
+}
+
+.e-mobile-popup-wrapper.e-device {
+  background-color: #fff;
+  border-radius: 2px;
+  bottom: 0;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  left: 0;
+  margin: 0;
+  max-width: 100%;
+  min-width: 100%;
+  opacity: 1;
+  overflow: hidden;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  z-index: 1004;
+}
+
+.e-mobile-popup-wrapper.e-device .e-popup-header {
+  padding: 5px;
+}
+
+.e-mobile-popup-wrapper.e-device .e-popup-header .e-close {
+  border: 0;
+  height: auto;
+  padding: 4px;
+  width: auto;
+}
+
+.e-mobile-popup-wrapper.e-device .e-popup-content {
+  font-size: 15px;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 /*! kanban component theme */

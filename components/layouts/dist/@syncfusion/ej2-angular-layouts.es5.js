@@ -50,6 +50,7 @@ var PaneDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return PaneDirective;
@@ -140,27 +141,33 @@ var SplitterComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SplitterComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SplitterComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SplitterComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SplitterComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childPaneSettings;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return SplitterComponent;
 }(Splitter));
@@ -278,6 +285,7 @@ var PanelDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$1;
         return _this;
     }
     return PanelDirective;
@@ -373,27 +381,33 @@ var DashboardLayoutComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DashboardLayoutComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DashboardLayoutComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DashboardLayoutComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DashboardLayoutComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childPanels;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return DashboardLayoutComponent;
 }(DashboardLayout));

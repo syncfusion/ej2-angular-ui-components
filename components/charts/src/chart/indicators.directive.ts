@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -233,6 +234,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

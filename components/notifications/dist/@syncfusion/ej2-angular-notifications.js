@@ -26,6 +26,7 @@ class ButtonModelPropDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 ButtonModelPropDirective.decorators = [
@@ -100,26 +101,32 @@ let ToastComponent = class ToastComponent extends Toast {
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childButtons;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 ToastComponent.decorators = [

@@ -57,6 +57,8 @@ exports.TextBoxComponent = TextBoxComponent_1 = /** @class */ (function (_super)
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -87,21 +89,25 @@ exports.TextBoxComponent = TextBoxComponent_1 = /** @class */ (function (_super)
      * @return {?}
      */
     TextBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TextBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TextBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TextBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return TextBoxComponent;
 }(ej2Inputs.TextBox));
@@ -226,6 +232,8 @@ exports.NumericTextBoxComponent = NumericTextBoxComponent_1 = /** @class */ (fun
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -256,21 +264,25 @@ exports.NumericTextBoxComponent = NumericTextBoxComponent_1 = /** @class */ (fun
      * @return {?}
      */
     NumericTextBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     NumericTextBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     NumericTextBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     NumericTextBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return NumericTextBoxComponent;
 }(ej2Inputs.NumericTextBox));
@@ -395,6 +407,8 @@ exports.MaskedTextBoxComponent = MaskedTextBoxComponent_1 = /** @class */ (funct
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -425,21 +439,25 @@ exports.MaskedTextBoxComponent = MaskedTextBoxComponent_1 = /** @class */ (funct
      * @return {?}
      */
     MaskedTextBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MaskedTextBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MaskedTextBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MaskedTextBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return MaskedTextBoxComponent;
 }(ej2Inputs.MaskedTextBox));
@@ -563,6 +581,8 @@ exports.SliderComponent = SliderComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -593,21 +613,25 @@ exports.SliderComponent = SliderComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     SliderComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SliderComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SliderComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SliderComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return SliderComponent;
 }(ej2Inputs.Slider));
@@ -713,6 +737,7 @@ var UploadedFilesDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input;
         return _this;
     }
     return UploadedFilesDirective;
@@ -796,6 +821,8 @@ exports.UploaderComponent = UploaderComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$5);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -826,21 +853,26 @@ exports.UploaderComponent = UploaderComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     UploaderComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     UploaderComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     UploaderComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     UploaderComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childFiles;
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return UploaderComponent;
 }(ej2Inputs.Uploader));
@@ -977,6 +1009,8 @@ exports.ColorPickerComponent = ColorPickerComponent_1 = /** @class */ (function 
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays$5);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -1007,21 +1041,25 @@ exports.ColorPickerComponent = ColorPickerComponent_1 = /** @class */ (function 
      * @return {?}
      */
     ColorPickerComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ColorPickerComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ColorPickerComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ColorPickerComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return ColorPickerComponent;
 }(ej2Inputs.ColorPicker));

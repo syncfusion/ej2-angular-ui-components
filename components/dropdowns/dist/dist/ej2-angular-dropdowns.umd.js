@@ -57,6 +57,8 @@ exports.DropDownListComponent = DropDownListComponent_1 = /** @class */ (functio
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -87,21 +89,25 @@ exports.DropDownListComponent = DropDownListComponent_1 = /** @class */ (functio
      * @return {?}
      */
     DropDownListComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return DropDownListComponent;
 }(ej2Dropdowns.DropDownList));
@@ -263,6 +269,8 @@ exports.ComboBoxComponent = ComboBoxComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -293,21 +301,25 @@ exports.ComboBoxComponent = ComboBoxComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     ComboBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return ComboBoxComponent;
 }(ej2Dropdowns.ComboBox));
@@ -464,6 +476,8 @@ exports.AutoCompleteComponent = AutoCompleteComponent_1 = /** @class */ (functio
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -494,21 +508,25 @@ exports.AutoCompleteComponent = AutoCompleteComponent_1 = /** @class */ (functio
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return AutoCompleteComponent;
 }(ej2Dropdowns.AutoComplete));
@@ -672,6 +690,8 @@ exports.MultiSelectComponent = MultiSelectComponent_1 = /** @class */ (function 
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -702,21 +722,25 @@ exports.MultiSelectComponent = MultiSelectComponent_1 = /** @class */ (function 
      * @return {?}
      */
     MultiSelectComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return MultiSelectComponent;
 }(ej2Dropdowns.MultiSelect));
@@ -882,6 +906,8 @@ exports.ListBoxComponent = ListBoxComponent_1 = /** @class */ (function (_super)
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -912,21 +938,25 @@ exports.ListBoxComponent = ListBoxComponent_1 = /** @class */ (function (_super)
      * @return {?}
      */
     ListBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return ListBoxComponent;
 }(ej2Dropdowns.ListBox));

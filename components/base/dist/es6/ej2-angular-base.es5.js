@@ -45,6 +45,7 @@ function registerEvents(eventList, obj, direct) {
 function clearTemplate(_this, templateNames, index) {
     var regTemplates = Object.keys(_this.registeredTemplate);
     if (regTemplates.length) {
+        /* istanbul ignore next */
         var regProperties = templateNames && templateNames.filter(function (val) {
             return (/\./g.test(val) ? false : true);
         });
@@ -66,9 +67,11 @@ function clearTemplate(_this, templateNames, index) {
                 for (var _b = 0, _c = _this.registeredTemplate[registeredTemplate]; _b < _c.length; _b++) {
                     var rt = _c[_b];
                     if (!rt.destroyed) {
-                        var pNode = rt._view.renderer.parentNode(rt.rootNodes[0]);
-                        for (var m = 0; m < rt.rootNodes.length; m++) {
-                            pNode.appendChild(rt.rootNodes[m]);
+                        if (rt._view) {
+                            var pNode = rt._view.renderer.parentNode(rt.rootNodes[0]);
+                            for (var m = 0; m < rt.rootNodes.length; m++) {
+                                pNode.appendChild(rt.rootNodes[m]);
+                            }
                         }
                         rt.destroy();
                     }
@@ -79,6 +82,7 @@ function clearTemplate(_this, templateNames, index) {
     }
     var _loop_1 = function (tagObject) {
         if (tagObject.instance) {
+            /* istanbul ignore next */
             tagObject.instance.clearTemplate((templateNames && templateNames.filter(function (val) {
                 return (new RegExp(tagObject.name).test(val) ? true : false);
             })));
@@ -99,6 +103,7 @@ function clearTemplate(_this, templateNames, index) {
  */
 function setValue$1(nameSpace, value, object) {
     var keys = nameSpace.replace(/\[/g, '.').replace(/\]/g, '').split('.');
+    /* istanbul ignore next */
     var fromObj = object || {};
     for (var i = 0; i < keys.length; i++) {
         var key = keys[i];
@@ -138,6 +143,16 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
             var propName = tempName.replace('Ref', '');
             setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
         }
+        // Angular 9 compatibility to overcome ngOnchange not get triggered issue
+        // To Update properties to "this.propCollection"
+        var propList = Object.keys(this);
+        /* istanbul ignore next */
+        for (var k = 0; k < this.directivePropList.length; k++) {
+            var dirPropName = this.directivePropList[k];
+            if (propList.indexOf(dirPropName) !== -1) {
+                setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+            }
+        }
     };
     ComplexBase.prototype.registerEvents = function (eventList) {
         registerEvents(eventList, this, true);
@@ -151,10 +166,12 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
         this.isUpdated = false;
         this.hasChanges = true;
     };
+    /* istanbul ignore next */
     ComplexBase.prototype.clearTemplate = function (templateNames) {
         clearTemplate(this, templateNames);
     };
     ComplexBase.prototype.getProperties = function () {
+        /* istanbul ignore next */
         for (var _i = 0, _a = this.tagObjects; _i < _a.length; _i++) {
             var tagObject = _a[_i];
             this.propCollection[tagObject.name] = tagObject.instance.getProperties();
@@ -163,6 +180,7 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
     };
     ComplexBase.prototype.isChanged = function () {
         var result = this.hasChanges;
+        /* istanbul ignore next */
         for (var _i = 0, _a = this.tagObjects; _i < _a.length; _i++) {
             var item = _a[_i];
             result = result || item.instance.hasChanges;
@@ -175,6 +193,14 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
         templateProperties = templateProperties.filter(function (val) {
             return /Ref$/i.test(val);
         });
+        // For angular 9 compatibility
+        // ngOnchange hook not get triggered for copmplex directive
+        // Due to this, we have manually set template properties v alues once we get template property reference
+        for (var _i = 0, templateProperties_2 = templateProperties; _i < templateProperties_2.length; _i++) {
+            var tempName = templateProperties_2[_i];
+            var propName = tempName.replace('Ref', '');
+            setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
+        }
     };
     ComplexBase.prototype.ngAfterViewChecked = function () {
         /* istanbul ignore next */
@@ -196,6 +222,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
     ArrayBase.prototype.ngAfterContentInit = function () {
         var _this = this;
         var index = 0;
+        /* istanbul ignore next */
         this.list = this.children.map(function (child) {
             child.index = index++;
             child.property = _this.propertyName;
@@ -220,7 +247,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
         var childrenDataSource = this.children.map(function (child) {
             return child;
         });
-        /* istanbul ignore start */
+        /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (var i = 0; i < this.list.length; i++) {
                 if (this.list[i].propCollection.dataSource) {
@@ -257,6 +284,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
     };
     ArrayBase.prototype.clearTemplate = function (templateNames) {
         var _this = this;
+        /* istanbul ignore next */
         for (var _i = 0, _a = this.list; _i < _a.length; _i++) {
             var item = _a[_i];
             item.clearTemplate(templateNames && templateNames.map(function (val) {
@@ -298,19 +326,25 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         this.finalUpdate = clearUpdate;
     };
     
-    ComponentBase.prototype.ngOnInit = function () {
-        var _this = this;
-        this.registeredTemplate = {};
-        this.ngBoundedEvents = {};
-        this.isAngular = true;
-        this.tags = this.tags || [];
-        this.complexTemplate = this.complexTemplate || [];
-        this.tagObjects = [];
-        this.ngAttr = this.getAngularAttr(this.element);
+    // tslint:disable-next-line:no-any
+    ComponentBase.prototype.ngOnInit = function (isTempRef) {
+        // tslint:disable-next-line:no-any
+        var tempOnThis = isTempRef || this;
+        tempOnThis.registeredTemplate = {};
+        tempOnThis.ngBoundedEvents = {};
+        tempOnThis.isAngular = true;
         /* istanbul ignore next */
-        this.createElement = function (tagName, prop) {
+        if (isTempRef) {
+            this.tags = isTempRef.tags;
+        }
+        tempOnThis.tags = this.tags || [];
+        tempOnThis.complexTemplate = this.complexTemplate || [];
+        tempOnThis.tagObjects = [];
+        tempOnThis.ngAttr = this.getAngularAttr(tempOnThis.element);
+        /* istanbul ignore next */
+        tempOnThis.createElement = function (tagName, prop) {
             //tslint:disable-next-line
-            var ele = _this.srenderer ? _this.srenderer.createElement(tagName) : createElement(tagName);
+            var ele = tempOnThis.srenderer ? tempOnThis.srenderer.createElement(tagName) : createElement(tagName);
             if (typeof (prop) === 'undefined') {
                 return ele;
             }
@@ -324,23 +358,23 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
             if (prop.styles !== undefined) {
                 ele.setAttribute('style', prop.styles);
             }
-            if (_this.ngAttr !== undefined) {
-                ele.setAttribute(_this.ngAttr, '');
+            if (tempOnThis.ngAttr !== undefined) {
+                ele.setAttribute(tempOnThis.ngAttr, '');
             }
             if (prop.attrs !== undefined) {
                 attributes(ele, prop.attrs);
             }
             return ele;
         };
-        for (var _i = 0, _a = this.tags; _i < _a.length; _i++) {
+        for (var _i = 0, _a = tempOnThis.tags; _i < _a.length; _i++) {
             var tag = _a[_i];
             var tagObject = {
-                instance: getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), this),
+                instance: getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tempOnThis),
                 name: tag
             };
-            this.tagObjects.push(tagObject);
+            tempOnThis.tagObjects.push(tagObject);
         }
-        var complexTemplates = Object.keys(this);
+        var complexTemplates = Object.keys(tempOnThis);
         complexTemplates = complexTemplates.filter(function (val) {
             return /Ref$/i.test(val) && /\_/i.test(val);
         });
@@ -348,8 +382,8 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
             var tempName = complexTemplates_1[_b];
             var propName = tempName.replace('Ref', '');
             var val = {};
-            setValue(propName.replace('_', '.'), getValue(propName, this), val);
-            this.setProperties(val, true);
+            setValue(propName.replace('_', '.'), getValue(propName, tempOnThis), val);
+            tempOnThis.setProperties(val, true);
         }
     };
     ComponentBase.prototype.getAngularAttr = function (ele) {
@@ -357,6 +391,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         var length = attributes$$1.length;
         var ngAr;
         for (var i = 0; i < length; i++) {
+            /* istanbul ignore next */
             if (/_ngcontent/g.test(attributes$$1[i].name)) {
                 ngAr = attributes$$1[i].name;
             }
@@ -364,27 +399,33 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         return ngAr;
     };
     
-    ComponentBase.prototype.ngAfterViewInit = function () {
-        var _this = this;
+    // tslint:disable-next-line:no-any
+    ComponentBase.prototype.ngAfterViewInit = function (isTempRef) {
+        // tslint:disable-next-line:no-any
+        var tempAfterViewThis = isTempRef || this;
         var regExp = /ejs-tab|ejs-accordion/g;
-        if (regExp.test(this.ngEle.nativeElement.outerHTML)) {
-            this.ngEle.nativeElement.style.visibility = 'hidden';
+        /* istanbul ignore next */
+        if (regExp.test(tempAfterViewThis.ngEle.nativeElement.outerHTML)) {
+            tempAfterViewThis.ngEle.nativeElement.style.visibility = 'hidden';
         }
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(function () {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined') {
-                _this.appendTo(_this.element);
-                _this.ngEle.nativeElement.style.visibility = '';
+                tempAfterViewThis.appendTo(tempAfterViewThis.element);
+                tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
         });
     };
-    ComponentBase.prototype.ngOnDestroy = function () {
+    // tslint:disable-next-line:no-any
+    ComponentBase.prototype.ngOnDestroy = function (isTempRef) {
+        // tslint:disable-next-line:no-any
+        var tempOnDestroyThis = isTempRef || this;
         /* istanbul ignore else  */
-        if (typeof window !== 'undefined' && this.element.classList.contains('e-control')) {
-            this.destroy();
-            this.clearTemplate(null);
+        if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
+            tempOnDestroyThis.destroy();
+            tempOnDestroyThis.clearTemplate(null);
         }
     };
     //tslint:disable-next-line
@@ -392,22 +433,43 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         clearTemplate(this, templateNames, index);
     };
     
-    ComponentBase.prototype.ngAfterContentChecked = function () {
-        for (var _i = 0, _a = this.tagObjects; _i < _a.length; _i++) {
+    // tslint:disable-next-line:no-any
+    ComponentBase.prototype.ngAfterContentChecked = function (isTempRef) {
+        // tslint:disable-next-line:no-any
+        var tempAfterContentThis = isTempRef || this;
+        for (var _i = 0, _a = tempAfterContentThis.tagObjects; _i < _a.length; _i++) {
             var tagObject = _a[_i];
             if (!isUndefined(tagObject.instance) &&
                 (tagObject.instance.isInitChanges || tagObject.instance.hasChanges || tagObject.instance.hasNewChildren)) {
                 if (tagObject.instance.isInitChanges) {
                     var propObj = {};
+                    // For angular 9 compatibility
+                    // Not able to get complex directive properties reference ni Onint hook
+                    // So we have constructed property here and used
+                    var complexDirProps = tagObject.instance.list[0].directivePropList;
+                    if (complexDirProps && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
+                        var compDirPropList = Object.keys(tagObject.instance.list[0].propCollection);
+                        for (var h = 0; h < tagObject.instance.list.length; h++) {
+                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName] = [];
+                            var obj = {};
+                            for (var k = 0; k < compDirPropList.length; k++) {
+                                var complexPropName = compDirPropList[k];
+                                obj[complexPropName] = tagObject.instance.list[h].propCollection[complexPropName];
+                            }
+                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName].push(obj);
+                        }
+                    }
+                    // End angular 9 compatibility
                     propObj[tagObject.name] = tagObject.instance.getProperties();
-                    this.setProperties(propObj, tagObject.instance.isInitChanges);
+                    tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 }
                 else {
+                    /* istanbul ignore next */
                     for (var _b = 0, _c = tagObject.instance.list; _b < _c.length; _b++) {
                         var list = _c[_b];
                         if (list.hasChanges) {
                             var curIndex = tagObject.instance.list.indexOf(list);
-                            var curChild = getValue(tagObject.name, this)[curIndex];
+                            var curChild = getValue(tagObject.name, tempAfterContentThis)[curIndex];
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }
@@ -541,17 +603,20 @@ var FormBase = /** @__PURE__ @class */ (function () {
         setValue(prop, (isNullOrUndefined(newVal) ? null : newVal), this.properties);
         getValue(prop + 'Change', this).emit(newVal);
     };
-    FormBase.prototype.ngAfterViewInit = function () {
+    // tslint:disable-next-line:no-any
+    FormBase.prototype.ngAfterViewInit = function (isTempRef) {
+        // tslint:disable-next-line:no-any
+        var tempFormAfterViewThis = isTempRef || this;
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         // setTimeout(() => {
         /* istanbul ignore else */
         if (typeof window !== 'undefined') {
-            this.appendTo(this.element);
-            var ele = this.inputElement || this.element;
-            ele.addEventListener('focus', this.ngOnFocus.bind(this));
-            ele.addEventListener('blur', this.ngOnBlur.bind(this));
+            tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
+            var ele = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
+            ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
+            ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
         // });
     };
@@ -618,9 +683,11 @@ function compile(templateEle, helper) {
         //tslint:disable-next-line        
         return function (data, component, propName) {
             var context = { $implicit: data };
+            /* istanbul ignore next */
             var conRef = contRef_1 ? contRef_1 : component.viewContainerRef;
             var viewRef = conRef.createEmbeddedView(templateEle, context);
             viewRef.markForCheck();
+            /* istanbul ignore next */
             var viewCollection = component ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
             propName = propName ? propName : pName_1;
@@ -666,6 +733,7 @@ function setter(key) {
 }
 function getter(key, defaultValue) {
     return function () {
+        /* istanbul ignore next */
         return getValue(key + 'Ref', this) || defaultValue;
     };
 }

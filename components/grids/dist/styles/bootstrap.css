@@ -1237,6 +1237,16 @@
   content: '\e7ff';
 }
 
+.e-grid .e-group-animate .e-drag.e-icon-drag::before,
+.e-grid-menu .e-group-animate .e-drag.e-icon-drag::before {
+  content: '\e330';
+}
+
+.e-grid .e-group-animate .e-nextgroup.e-icon-next::before,
+.e-grid-menu .e-group-animate .e-nextgroup.e-icon-next::before {
+  content: '\e219';
+}
+
 .e-grid .e-icon-ascending::before,
 .e-grid-menu .e-icon-ascending::before {
   content: '\e234';
@@ -2175,6 +2185,97 @@
 
 .e-grid .e-toolbar-items .e-toolbar-item.e-search-wrapper .e-search .e-search-icon {
   min-width: 32px;
+}
+
+.e-bigger .e-grid .e-group-animator .e-groupheadercell,
+.e-bigger .e-grid .e-group-animator .e-groupheadercell:hover {
+  margin: 15px 0 15px 0;
+  border-bottom-width: 1px;
+}
+
+.e-grid .e-groupdroparea.e-group-animate.e-grouped {
+  height: 72px;
+}
+
+.e-bigger .e-grid .e-group-animate.e-groupdroparea .e-nextgroup {
+  margin-top: 22px;
+}
+
+.e-grid .e-group-animator .e-groupheadercell,
+.e-grid .e-group-animator .e-groupheadercell:hover {
+  margin: 13px 0 13px 0;
+  border-bottom-width: 1px;
+}
+
+.e-grid .e-group-animator:last-child .e-nextgroup.e-icons.e-icon-next {
+  display: none;
+}
+
+.e-grid .e-groupdroparea.e-group-animate.e-grouped {
+  overflow: hidden;
+  padding: 0;
+  height: 64px;
+  border-bottom-width: 0;
+}
+
+.e-grid.e-rtl .e-group-animator {
+  float: right;
+}
+
+.e-grid.e-rtl .e-group-animate .e-groupheadercell, .e-grid.e-rtl .e-group-animate .e-groupheadercell:hover {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.e-grid.e-rtl .e-group-animate.e-groupdroparea .e-nextgroup {
+  transform: rotate(180deg);
+  margin-top: 22px;
+}
+
+.e-grid.e-rtl .e-group-animator:first-child .e-groupheadercell {
+  margin: 13px 13px 13px 0;
+}
+
+.e-grid .e-group-animator:first-child .e-groupheadercell {
+  margin: 13px 0 13px 13px;
+}
+
+.e-grid .e-group-animate.e-groupdroparea .e-nextgroup {
+  margin-top: 18px;
+}
+
+.e-grid .e-groupdroparea.e-group-animate .e-drag.e-icon-drag {
+  display: inline-block;
+  height: 24px;
+  font-size: 11px;
+  line-height: 25px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.e-grid .e-group-animator .e-icon-drag.e-icons {
+  margin-left: 8px;
+}
+
+.e-grid .e-groupdroparea.e-group-animate span.e-drag.e-icons.e-icon-drag {
+  cursor: move;
+}
+
+.e-grid .e-group-animate .e-drag.e-icon-drag::before {
+  opacity: 0.7;
+}
+
+.e-grid .e-group-animate span.e-nextgroup.e-icons.e-icon-next {
+  display: inline-block;
+  float: left;
+  height: 24px;
+  line-height: 32px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.e-grid .e-groupdroparea.e-grouped {
+  padding: 0 0 6px;
 }
 
 .e-grid .e-groupdroparea.e-grouped {

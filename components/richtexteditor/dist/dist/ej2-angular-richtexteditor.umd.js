@@ -127,6 +127,8 @@ exports.RichTextEditorComponent = RichTextEditorComponent_1 = /** @class */ (fun
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -157,21 +159,25 @@ exports.RichTextEditorComponent = RichTextEditorComponent_1 = /** @class */ (fun
      * @return {?}
      */
     RichTextEditorComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RichTextEditorComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RichTextEditorComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RichTextEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return RichTextEditorComponent;
 }(ej2Richtexteditor.RichTextEditor));

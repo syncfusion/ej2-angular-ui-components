@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class PanelDirective extends ComplexBase<PanelDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -126,6 +127,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

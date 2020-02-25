@@ -38,6 +38,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -121,27 +122,33 @@ exports.QueryBuilderComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     QueryBuilderComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     QueryBuilderComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     QueryBuilderComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     QueryBuilderComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        this.context.ngAfterContentChecked(this);
     };
     return QueryBuilderComponent;
 }(ej2Querybuilder.QueryBuilder));

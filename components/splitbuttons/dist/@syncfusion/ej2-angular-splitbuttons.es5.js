@@ -24,6 +24,7 @@ var DropDownButtonItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return DropDownButtonItemDirective;
@@ -107,27 +108,33 @@ var DropDownButtonComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DropDownButtonComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DropDownButtonComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DropDownButtonComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DropDownButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return DropDownButtonComponent;
 }(DropDownButton));
@@ -219,6 +226,7 @@ var SplitButtonItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$1;
         return _this;
     }
     return SplitButtonItemDirective;
@@ -302,27 +310,33 @@ var SplitButtonComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SplitButtonComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SplitButtonComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SplitButtonComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SplitButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return SplitButtonComponent;
 }(SplitButton));
@@ -444,27 +458,32 @@ var ProgressButtonComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ProgressButtonComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ProgressButtonComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ProgressButtonComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ProgressButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ProgressButtonComponent;
 }(ProgressButton));

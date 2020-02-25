@@ -52,6 +52,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -168,6 +169,7 @@ var AggregateColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return AggregateColumnDirective;
@@ -247,6 +249,7 @@ var AggregateDirective = /** @class */ (function (_super) {
         _this.tags = ['columns'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return AggregateDirective;
@@ -458,27 +461,41 @@ exports.TreeGridComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TreeGridComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TreeGridComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TreeGridComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TreeGridComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAggregates) {
+            this.tagObjects[1].instance = ((this.childAggregates)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childAggregates)).list.length; d++) {
+                if (((this.childAggregates)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAggregates)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return TreeGridComponent;
 }(ej2Treegrid.TreeGrid));
@@ -721,9 +738,6 @@ exports.rowsRemove = ej2Treegrid.rowsRemove;
 exports.rowdraging = ej2Treegrid.rowdraging;
 exports.rowDropped = ej2Treegrid.rowDropped;
 exports.DataManipulation = ej2Treegrid.DataManipulation;
-exports.Reorder = ej2Treegrid.Reorder;
-exports.Resize = ej2Treegrid.Resize;
-exports.RowDD = ej2Treegrid.RowDD;
 exports.Column = ej2Treegrid.Column;
 exports.EditSettings = ej2Treegrid.EditSettings;
 exports.Predicate = ej2Treegrid.Predicate;
@@ -757,6 +771,8 @@ exports.Page = ej2Treegrid.Page;
 exports.Toolbar = ej2Treegrid.Toolbar;
 exports.Aggregate = ej2Treegrid.Aggregate;
 exports.Sort = ej2Treegrid.Sort;
+exports.Reorder = ej2Treegrid.Reorder;
+exports.Resize = ej2Treegrid.Resize;
 exports.ColumnMenu = ej2Treegrid.ColumnMenu;
 exports.ContextMenu = ej2Treegrid.ContextMenu;
 exports.Edit = ej2Treegrid.Edit;
@@ -766,6 +782,7 @@ exports.DetailRow = ej2Treegrid.DetailRow;
 exports.VirtualScroll = ej2Treegrid.VirtualScroll;
 exports.TreeVirtual = ej2Treegrid.TreeVirtual;
 exports.Freeze = ej2Treegrid.Freeze;
+exports.RowDD = ej2Treegrid.RowDD;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

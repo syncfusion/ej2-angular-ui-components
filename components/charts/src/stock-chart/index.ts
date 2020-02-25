@@ -1,6 +1,5 @@
 export {StockChartTrendlineDirective,StockChartTrendlinesDirective} from './trendlines.directive';
 export {StockChartSeriesDirective,StockChartSeriesCollectionDirective} from './series.directive';
-export {StockChartStripLineDirective,StockChartStripLinesDirective} from './striplines.directive';
 export {StockChartAxisDirective,StockChartAxesDirective} from './axes.directive';
 export {StockChartRowDirective,StockChartRowsDirective} from './rows.directive';
 export {StockChartAnnotationDirective,StockChartAnnotationsDirective} from './annotations.directive';

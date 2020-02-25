@@ -22,6 +22,7 @@ class LayerDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 LayerDirective.decorators = [
@@ -78,6 +79,7 @@ class CustomCursorDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 CustomCursorDirective.decorators = [
@@ -139,6 +141,7 @@ class ConnectorAnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 ConnectorAnnotationDirective.decorators = [
@@ -196,6 +199,7 @@ class ConnectorDirective extends ComplexBase {
         this.tags = ['annotations'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input$3;
     }
 }
 ConnectorDirective.decorators = [
@@ -259,6 +263,7 @@ class NodeAnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$4);
+        this.directivePropList = input$4;
     }
 }
 NodeAnnotationDirective.decorators = [
@@ -320,6 +325,7 @@ class PortDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$5);
+        this.directivePropList = input$5;
     }
 }
 PortDirective.decorators = [
@@ -377,6 +383,7 @@ class NodeDirective extends ComplexBase {
         this.tags = ['annotations', 'ports'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$6);
+        this.directivePropList = input$6;
     }
 }
 NodeDirective.decorators = [
@@ -559,26 +566,56 @@ let DiagramComponent = class DiagramComponent extends Diagram {
         this.registerEvents(outputs$7);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childCustomCursor) {
+            this.tagObjects[1].instance = ((this.childCustomCursor)).list[0].childLayers;
+            for (var /** @type {?} */ d = 0; d < ((this.childCustomCursor)).list.length; d++) {
+                if (((this.childCustomCursor)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childCustomCursor)).list[d + 1].childLayers.list[0]);
+                }
+            }
+        }
+        if (this.childConnectors) {
+            this.tagObjects[2].instance = ((this.childConnectors)).list[0].childCustomCursor;
+            for (var /** @type {?} */ d = 0; d < ((this.childConnectors)).list.length; d++) {
+                if (((this.childConnectors)).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push(((this.childConnectors)).list[d + 1].childCustomCursor.list[0]);
+                }
+            }
+        }
+        if (this.childNodes) {
+            this.tagObjects[3].instance = ((this.childNodes)).list[0].childConnectors;
+            for (var /** @type {?} */ d = 0; d < ((this.childNodes)).list.length; d++) {
+                if (((this.childNodes)).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push(((this.childNodes)).list[d + 1].childConnectors.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 DiagramComponent.decorators = [
@@ -741,6 +778,7 @@ class PaletteDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$8);
+        this.directivePropList = input$7;
     }
 }
 PaletteDirective.decorators = [
@@ -822,26 +860,32 @@ let SymbolPaletteComponent = class SymbolPaletteComponent extends SymbolPalette 
         this.registerEvents(outputs$9);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childPalettes;
+        this.context.ngAfterContentChecked(this);
     }
 };
 SymbolPaletteComponent.decorators = [
@@ -954,26 +998,31 @@ let OverviewComponent = class OverviewComponent extends Overview {
         this.registerEvents(outputs$10);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.context.ngAfterContentChecked(this);
     }
 };
 OverviewComponent.decorators = [

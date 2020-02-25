@@ -24,6 +24,7 @@ let outputs: string[] = [];
     }
 })
 export class SeriesDirective extends ComplexBase<SeriesDirective> {
+    public directivePropList: any;
     public childTrendlines: any;
     public childSegments: any;
     public tags: string[] = ['trendlines', 'segments'];
@@ -387,6 +388,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -25,6 +25,7 @@ let outputs: string[] = [];
     }
 })
 export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -47,6 +48,7 @@ export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

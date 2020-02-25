@@ -41,6 +41,8 @@ let DropDownListComponent = DropDownListComponent_1 = class DropDownListComponen
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -70,21 +72,25 @@ let DropDownListComponent = DropDownListComponent_1 = class DropDownListComponen
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 DropDownListComponent.decorators = [
@@ -236,6 +242,8 @@ let ComboBoxComponent = ComboBoxComponent_1 = class ComboBoxComponent extends Co
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -265,21 +273,25 @@ let ComboBoxComponent = ComboBoxComponent_1 = class ComboBoxComponent extends Co
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 ComboBoxComponent.decorators = [
@@ -426,6 +438,8 @@ let AutoCompleteComponent = AutoCompleteComponent_1 = class AutoCompleteComponen
         this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -455,21 +469,25 @@ let AutoCompleteComponent = AutoCompleteComponent_1 = class AutoCompleteComponen
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 AutoCompleteComponent.decorators = [
@@ -623,6 +641,8 @@ let MultiSelectComponent = MultiSelectComponent_1 = class MultiSelectComponent e
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -652,21 +672,25 @@ let MultiSelectComponent = MultiSelectComponent_1 = class MultiSelectComponent e
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 MultiSelectComponent.decorators = [
@@ -822,6 +846,8 @@ let ListBoxComponent = ListBoxComponent_1 = class ListBoxComponent extends ListB
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -851,21 +877,25 @@ let ListBoxComponent = ListBoxComponent_1 = class ListBoxComponent extends ListB
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 ListBoxComponent.decorators = [

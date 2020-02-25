@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class PortDirective extends ComplexBase<PortDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -135,6 +136,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

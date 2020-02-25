@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { LinearGauge } from '@syncfusion/ej2-lineargauge';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -28,8 +28,10 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class LinearGaugeComponent extends LinearGauge implements IComponentBase {
-    public childAxes: any;
-    public childAnnotations: any;
+    public context : any;
+    public tagObjects: any;
+    public childAxes: QueryList<AxesDirective>;
+    public childAnnotations: QueryList<AnnotationsDirective>;
     public tags: string[] = ['axes', 'annotations'];
 
     @ContentChild('tooltipTemplate')
@@ -56,18 +58,32 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childAxes;
+        if (this.childAnnotations) {
+                    this.tagObjects[1].instance = (this.childAnnotations as any).list[0].childAxes;
+                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
+                        if ((this.childAnnotations as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childAnnotations as any).list[d+1].childAxes.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

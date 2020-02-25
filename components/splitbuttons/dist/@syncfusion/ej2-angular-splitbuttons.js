@@ -14,6 +14,7 @@ class DropDownButtonItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 DropDownButtonItemDirective.decorators = [
@@ -88,26 +89,32 @@ let DropDownButtonComponent = class DropDownButtonComponent extends DropDownButt
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 DropDownButtonComponent.decorators = [
@@ -194,6 +201,7 @@ class SplitButtonItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$1;
     }
 }
 SplitButtonItemDirective.decorators = [
@@ -268,26 +276,32 @@ let SplitButtonComponent = class SplitButtonComponent extends SplitButton {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 SplitButtonComponent.decorators = [
@@ -399,26 +413,31 @@ let ProgressButtonComponent = class ProgressButtonComponent extends ProgressButt
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 ProgressButtonComponent.decorators = [

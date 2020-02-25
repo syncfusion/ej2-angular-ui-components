@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class TabItemDirective extends ComplexBase<TabItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -70,6 +71,7 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

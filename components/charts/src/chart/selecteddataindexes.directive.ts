@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class SelectedDataIndexDirective extends ComplexBase<SelectedDataIndexDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -39,6 +40,7 @@ export class SelectedDataIndexDirective extends ComplexBase<SelectedDataIndexDir
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

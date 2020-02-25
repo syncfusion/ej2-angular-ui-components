@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -108,6 +109,7 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

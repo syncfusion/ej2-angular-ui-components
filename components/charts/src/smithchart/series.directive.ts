@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -91,6 +92,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

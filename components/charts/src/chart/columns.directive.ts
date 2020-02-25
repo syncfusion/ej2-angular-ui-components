@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -37,6 +38,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

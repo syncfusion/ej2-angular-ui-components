@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { TreeMap } from '@syncfusion/ej2-treemap';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -26,7 +26,9 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class TreeMapComponent extends TreeMap implements IComponentBase {
-    public childLevels: any;
+    public context : any;
+    public tagObjects: any;
+    public childLevels: QueryList<LevelsDirective>;
     public tags: string[] = ['levels'];
 
     @ContentChild('tooltipSettingsTemplate')
@@ -68,18 +70,24 @@ export class TreeMapComponent extends TreeMap implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childLevels;
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

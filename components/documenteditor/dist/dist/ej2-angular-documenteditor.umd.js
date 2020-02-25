@@ -252,27 +252,32 @@ exports.DocumentEditorComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DocumentEditorComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return DocumentEditorComponent;
 }(ej2Documenteditor.DocumentEditor));
@@ -452,27 +457,32 @@ exports.DocumentEditorContainerComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DocumentEditorContainerComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorContainerComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorContainerComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DocumentEditorContainerComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return DocumentEditorContainerComponent;
 }(ej2Documenteditor.DocumentEditorContainer));

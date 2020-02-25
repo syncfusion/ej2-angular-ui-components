@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotationDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -93,6 +94,7 @@ export class StockChartAnnotationDirective extends ComplexBase<StockChartAnnotat
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

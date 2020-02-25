@@ -41,6 +41,8 @@ let TextBoxComponent = TextBoxComponent_1 = class TextBoxComponent extends TextB
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -70,21 +72,25 @@ let TextBoxComponent = TextBoxComponent_1 = class TextBoxComponent extends TextB
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 TextBoxComponent.decorators = [
@@ -199,6 +205,8 @@ let NumericTextBoxComponent = NumericTextBoxComponent_1 = class NumericTextBoxCo
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -228,21 +236,25 @@ let NumericTextBoxComponent = NumericTextBoxComponent_1 = class NumericTextBoxCo
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 NumericTextBoxComponent.decorators = [
@@ -357,6 +369,8 @@ let MaskedTextBoxComponent = MaskedTextBoxComponent_1 = class MaskedTextBoxCompo
         this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -386,21 +400,25 @@ let MaskedTextBoxComponent = MaskedTextBoxComponent_1 = class MaskedTextBoxCompo
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 MaskedTextBoxComponent.decorators = [
@@ -514,6 +532,8 @@ let SliderComponent = SliderComponent_1 = class SliderComponent extends Slider {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -543,21 +563,25 @@ let SliderComponent = SliderComponent_1 = class SliderComponent extends Slider {
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 SliderComponent.decorators = [
@@ -658,6 +682,7 @@ class UploadedFilesDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$4);
+        this.directivePropList = input;
     }
 }
 UploadedFilesDirective.decorators = [
@@ -732,6 +757,8 @@ let UploaderComponent = UploaderComponent_1 = class UploaderComponent extends Up
         this.registerEvents(outputs$5);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -761,21 +788,26 @@ let UploaderComponent = UploaderComponent_1 = class UploaderComponent extends Up
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childFiles;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 UploaderComponent.decorators = [
@@ -902,6 +934,8 @@ let ColorPickerComponent = ColorPickerComponent_1 = class ColorPickerComponent e
         this.registerEvents(outputs$6);
         this.addTwoWay.call(this, twoWays$5);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -931,21 +965,25 @@ let ColorPickerComponent = ColorPickerComponent_1 = class ColorPickerComponent e
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 ColorPickerComponent.decorators = [

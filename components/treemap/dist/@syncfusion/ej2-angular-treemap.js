@@ -14,6 +14,7 @@ class ColorMappingDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 ColorMappingDirective.decorators = [
@@ -80,6 +81,7 @@ class LevelDirective extends ComplexBase {
         this.tags = ['colorMapping'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 LevelDirective.decorators = [
@@ -191,26 +193,32 @@ let TreeMapComponent = class TreeMapComponent extends TreeMap {
         this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childLevels;
+        this.context.ngAfterContentChecked(this);
     }
 };
 TreeMapComponent.decorators = [

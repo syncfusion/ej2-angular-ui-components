@@ -40,26 +40,31 @@ let ButtonComponent = class ButtonComponent extends Button {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 ButtonComponent.decorators = [
@@ -165,6 +170,8 @@ let CheckBoxComponent = CheckBoxComponent_1 = class CheckBoxComponent extends Ch
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -194,21 +201,25 @@ let CheckBoxComponent = CheckBoxComponent_1 = class CheckBoxComponent extends Ch
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 CheckBoxComponent.decorators = [
@@ -322,6 +333,8 @@ let RadioButtonComponent = RadioButtonComponent_1 = class RadioButtonComponent e
         this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -351,21 +364,25 @@ let RadioButtonComponent = RadioButtonComponent_1 = class RadioButtonComponent e
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 RadioButtonComponent.decorators = [
@@ -479,6 +496,8 @@ let SwitchComponent = SwitchComponent_1 = class SwitchComponent extends Switch {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -508,21 +527,25 @@ let SwitchComponent = SwitchComponent_1 = class SwitchComponent extends Switch {
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 SwitchComponent.decorators = [
@@ -622,6 +645,7 @@ class ChipDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$4);
+        this.directivePropList = input;
     }
 }
 ChipDirective.decorators = [
@@ -696,26 +720,32 @@ let ChipListComponent = class ChipListComponent extends ChipList {
         this.registerEvents(outputs$5);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childChips;
+        this.context.ngAfterContentChecked(this);
     }
 };
 ChipListComponent.decorators = [

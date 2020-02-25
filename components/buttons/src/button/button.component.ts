@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Button } from '@syncfusion/ej2-buttons';
 
@@ -26,6 +26,8 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase])
 export class ButtonComponent extends Button implements IComponentBase {
+    public containerContext : any;
+    public tagObjects: any;
 
 
 
@@ -38,18 +40,24 @@ export class ButtonComponent extends Button implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

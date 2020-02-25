@@ -180,7 +180,7 @@
   transform: rotate(90deg);
 }
 
-.e-treegrid .e-treerowexpanded {
+.e-treegrid .e-treerowexpanded:not(.e-hiddenrow) {
   display: table-row;
 }
 

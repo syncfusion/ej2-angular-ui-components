@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { StockChart } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -40,14 +40,16 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class StockChartComponent extends StockChart implements IComponentBase {
-    public childSeries: any;
-    public childAxes: any;
-    public childRows: any;
-    public childAnnotations: any;
-    public childSelectedDataIndexes: any;
-    public childPeriods: any;
-    public childStockEvents: any;
-    public childIndicators: any;
+    public context : any;
+    public tagObjects: any;
+    public childSeries: QueryList<StockChartSeriesCollectionDirective>;
+    public childAxes: QueryList<StockChartAxesDirective>;
+    public childRows: QueryList<StockChartRowsDirective>;
+    public childAnnotations: QueryList<StockChartAnnotationsDirective>;
+    public childSelectedDataIndexes: QueryList<StockChartSelectedDataIndexesDirective>;
+    public childPeriods: QueryList<StockChartPeriodsDirective>;
+    public childStockEvents: QueryList<StockEventsDirective>;
+    public childIndicators: QueryList<StockChartIndicatorsDirective>;
     public tags: string[] = ['series', 'axes', 'rows', 'annotations', 'selectedDataIndexes', 'periods', 'stockEvents', 'indicators'];
     public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
@@ -236,18 +238,80 @@ export class StockChartComponent extends StockChart implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAxes) {
+                    this.tagObjects[1].instance = (this.childAxes as any).list[0].childSeries;
+                    for (var d = 0; d < (this.childAxes as any).list.length; d++) {
+                        if ((this.childAxes as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childAxes as any).list[d+1].childSeries.list[0]);
+                        }
+                    }
+                }
+        if (this.childRows) {
+                    this.tagObjects[2].instance = (this.childRows as any).list[0].childAxes;
+                    for (var d = 0; d < (this.childRows as any).list.length; d++) {
+                        if ((this.childRows as any).list[d + 1]) {
+                            this.tagObjects[2].instance.list.push((this.childRows as any).list[d+1].childAxes.list[0]);
+                        }
+                    }
+                }
+        if (this.childAnnotations) {
+                    this.tagObjects[3].instance = (this.childAnnotations as any).list[0].childRows;
+                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
+                        if ((this.childAnnotations as any).list[d + 1]) {
+                            this.tagObjects[3].instance.list.push((this.childAnnotations as any).list[d+1].childRows.list[0]);
+                        }
+                    }
+                }
+        if (this.childSelectedDataIndexes) {
+                    this.tagObjects[4].instance = (this.childSelectedDataIndexes as any).list[0].childAnnotations;
+                    for (var d = 0; d < (this.childSelectedDataIndexes as any).list.length; d++) {
+                        if ((this.childSelectedDataIndexes as any).list[d + 1]) {
+                            this.tagObjects[4].instance.list.push((this.childSelectedDataIndexes as any).list[d+1].childAnnotations.list[0]);
+                        }
+                    }
+                }
+        if (this.childPeriods) {
+                    this.tagObjects[5].instance = (this.childPeriods as any).list[0].childSelectedDataIndexes;
+                    for (var d = 0; d < (this.childPeriods as any).list.length; d++) {
+                        if ((this.childPeriods as any).list[d + 1]) {
+                            this.tagObjects[5].instance.list.push((this.childPeriods as any).list[d+1].childSelectedDataIndexes.list[0]);
+                        }
+                    }
+                }
+        if (this.childStockEvents) {
+                    this.tagObjects[6].instance = (this.childStockEvents as any).list[0].childPeriods;
+                    for (var d = 0; d < (this.childStockEvents as any).list.length; d++) {
+                        if ((this.childStockEvents as any).list[d + 1]) {
+                            this.tagObjects[6].instance.list.push((this.childStockEvents as any).list[d+1].childPeriods.list[0]);
+                        }
+                    }
+                }
+        if (this.childIndicators) {
+                    this.tagObjects[7].instance = (this.childIndicators as any).list[0].childStockEvents;
+                    for (var d = 0; d < (this.childIndicators as any).list.length; d++) {
+                        if ((this.childIndicators as any).list[d + 1]) {
+                            this.tagObjects[7].instance.list.push((this.childIndicators as any).list[d+1].childStockEvents.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

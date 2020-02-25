@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnnotationDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -83,6 +84,7 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

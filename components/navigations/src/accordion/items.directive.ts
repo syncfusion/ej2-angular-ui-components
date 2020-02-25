@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -71,6 +72,7 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

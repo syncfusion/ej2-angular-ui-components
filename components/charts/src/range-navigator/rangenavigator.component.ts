@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { RangeNavigator } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -26,7 +26,9 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class RangeNavigatorComponent extends RangeNavigator implements IComponentBase {
-    public childSeries: any;
+    public context : any;
+    public tagObjects: any;
+    public childSeries: QueryList<RangenavigatorSeriesCollectionDirective>;
     public tags: string[] = ['series'];
     public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
@@ -83,18 +85,24 @@ export class RangeNavigatorComponent extends RangeNavigator implements IComponen
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

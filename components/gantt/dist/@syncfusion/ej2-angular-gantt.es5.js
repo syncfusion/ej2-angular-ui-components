@@ -50,6 +50,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -126,6 +127,7 @@ var AddDialogFieldDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return AddDialogFieldDirective;
@@ -190,6 +192,7 @@ var EditDialogFieldDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return EditDialogFieldDirective;
@@ -254,6 +257,7 @@ var DayWorkingTimeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return DayWorkingTimeDirective;
@@ -318,6 +322,7 @@ var HolidayDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return HolidayDirective;
@@ -381,6 +386,7 @@ var EventMarkerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return EventMarkerDirective;
@@ -548,27 +554,73 @@ var GanttComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAddDialogFields) {
+            this.tagObjects[1].instance = ((this.childAddDialogFields)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childAddDialogFields)).list.length; d++) {
+                if (((this.childAddDialogFields)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAddDialogFields)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        if (this.childEditDialogFields) {
+            this.tagObjects[2].instance = ((this.childEditDialogFields)).list[0].childAddDialogFields;
+            for (var /** @type {?} */ d = 0; d < ((this.childEditDialogFields)).list.length; d++) {
+                if (((this.childEditDialogFields)).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push(((this.childEditDialogFields)).list[d + 1].childAddDialogFields.list[0]);
+                }
+            }
+        }
+        if (this.childDayWorkingTime) {
+            this.tagObjects[3].instance = ((this.childDayWorkingTime)).list[0].childEditDialogFields;
+            for (var /** @type {?} */ d = 0; d < ((this.childDayWorkingTime)).list.length; d++) {
+                if (((this.childDayWorkingTime)).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push(((this.childDayWorkingTime)).list[d + 1].childEditDialogFields.list[0]);
+                }
+            }
+        }
+        if (this.childHolidays) {
+            this.tagObjects[4].instance = ((this.childHolidays)).list[0].childDayWorkingTime;
+            for (var /** @type {?} */ d = 0; d < ((this.childHolidays)).list.length; d++) {
+                if (((this.childHolidays)).list[d + 1]) {
+                    this.tagObjects[4].instance.list.push(((this.childHolidays)).list[d + 1].childDayWorkingTime.list[0]);
+                }
+            }
+        }
+        if (this.childEventMarkers) {
+            this.tagObjects[5].instance = ((this.childEventMarkers)).list[0].childHolidays;
+            for (var /** @type {?} */ d = 0; d < ((this.childEventMarkers)).list.length; d++) {
+                if (((this.childEventMarkers)).list[d + 1]) {
+                    this.tagObjects[5].instance.list.push(((this.childEventMarkers)).list[d + 1].childHolidays.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return GanttComponent;
 }(Gantt));

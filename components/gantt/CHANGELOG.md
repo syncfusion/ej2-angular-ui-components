@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 17.4.50 (2020-02-18)
+## 17.4.51 (2020-02-25)
 
 ### Gantt
 
@@ -17,7 +17,6 @@
 #### Bug Fixes
 
 - `#263236` - Issue on multi-level dragged parent dropped into last index has been fixed.
-- `#264099` - Issue in tab key action in edited state is fixed.
 
 ## 17.4.46 (2020-01-30)
 

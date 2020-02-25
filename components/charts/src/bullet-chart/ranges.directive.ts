@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -44,6 +45,7 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

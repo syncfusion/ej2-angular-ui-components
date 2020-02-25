@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class DropDownButtonItemDirective extends ComplexBase<DropDownButtonItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -48,6 +49,7 @@ export class DropDownButtonItemDirective extends ComplexBase<DropDownButtonItemD
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

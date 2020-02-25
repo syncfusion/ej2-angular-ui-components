@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -36,12 +36,14 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class GanttComponent extends Gantt implements IComponentBase {
-    public childColumns: any;
-    public childAddDialogFields: any;
-    public childEditDialogFields: any;
-    public childDayWorkingTime: any;
-    public childHolidays: any;
-    public childEventMarkers: any;
+    public context : any;
+    public tagObjects: any;
+    public childColumns: QueryList<ColumnsDirective>;
+    public childAddDialogFields: QueryList<AddDialogFieldsDirective>;
+    public childEditDialogFields: QueryList<EditDialogFieldsDirective>;
+    public childDayWorkingTime: QueryList<DayWorkingTimeCollectionDirective>;
+    public childHolidays: QueryList<HolidaysDirective>;
+    public childEventMarkers: QueryList<EventMarkersDirective>;
     public tags: string[] = ['columns', 'addDialogFields', 'editDialogFields', 'dayWorkingTime', 'holidays', 'eventMarkers'];
     public dataSourceChange: any;
     /** 
@@ -167,18 +169,64 @@ export class GanttComponent extends Gantt implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAddDialogFields) {
+                    this.tagObjects[1].instance = (this.childAddDialogFields as any).list[0].childColumns;
+                    for (var d = 0; d < (this.childAddDialogFields as any).list.length; d++) {
+                        if ((this.childAddDialogFields as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childAddDialogFields as any).list[d+1].childColumns.list[0]);
+                        }
+                    }
+                }
+        if (this.childEditDialogFields) {
+                    this.tagObjects[2].instance = (this.childEditDialogFields as any).list[0].childAddDialogFields;
+                    for (var d = 0; d < (this.childEditDialogFields as any).list.length; d++) {
+                        if ((this.childEditDialogFields as any).list[d + 1]) {
+                            this.tagObjects[2].instance.list.push((this.childEditDialogFields as any).list[d+1].childAddDialogFields.list[0]);
+                        }
+                    }
+                }
+        if (this.childDayWorkingTime) {
+                    this.tagObjects[3].instance = (this.childDayWorkingTime as any).list[0].childEditDialogFields;
+                    for (var d = 0; d < (this.childDayWorkingTime as any).list.length; d++) {
+                        if ((this.childDayWorkingTime as any).list[d + 1]) {
+                            this.tagObjects[3].instance.list.push((this.childDayWorkingTime as any).list[d+1].childEditDialogFields.list[0]);
+                        }
+                    }
+                }
+        if (this.childHolidays) {
+                    this.tagObjects[4].instance = (this.childHolidays as any).list[0].childDayWorkingTime;
+                    for (var d = 0; d < (this.childHolidays as any).list.length; d++) {
+                        if ((this.childHolidays as any).list[d + 1]) {
+                            this.tagObjects[4].instance.list.push((this.childHolidays as any).list[d+1].childDayWorkingTime.list[0]);
+                        }
+                    }
+                }
+        if (this.childEventMarkers) {
+                    this.tagObjects[5].instance = (this.childEventMarkers as any).list[0].childHolidays;
+                    for (var d = 0; d < (this.childEventMarkers as any).list.length; d++) {
+                        if ((this.childEventMarkers as any).list[d + 1]) {
+                            this.tagObjects[5].instance.list.push((this.childEventMarkers as any).list[d+1].childHolidays.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

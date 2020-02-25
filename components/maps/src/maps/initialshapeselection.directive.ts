@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSelectionDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -44,6 +45,7 @@ export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSele
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -47,6 +47,8 @@ let CalendarComponent = CalendarComponent_1 = class CalendarComponent extends Ca
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -76,21 +78,25 @@ let CalendarComponent = CalendarComponent_1 = class CalendarComponent extends Ca
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 CalendarComponent.decorators = [
@@ -215,6 +221,8 @@ let DatePickerComponent = DatePickerComponent_1 = class DatePickerComponent exte
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -244,21 +252,25 @@ let DatePickerComponent = DatePickerComponent_1 = class DatePickerComponent exte
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 DatePickerComponent.decorators = [
@@ -373,6 +385,8 @@ let TimePickerComponent = TimePickerComponent_1 = class TimePickerComponent exte
         this.registerEvents(outputs$2);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -402,21 +416,25 @@ let TimePickerComponent = TimePickerComponent_1 = class TimePickerComponent exte
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 TimePickerComponent.decorators = [
@@ -517,6 +535,7 @@ class PresetDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input;
     }
 }
 PresetDirective.decorators = [
@@ -592,6 +611,8 @@ let DateRangePickerComponent = DateRangePickerComponent_1 = class DateRangePicke
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -621,21 +642,26 @@ let DateRangePickerComponent = DateRangePickerComponent_1 = class DateRangePicke
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childPresets;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 DateRangePickerComponent.decorators = [
@@ -775,6 +801,8 @@ let DateTimePickerComponent = DateTimePickerComponent_1 = class DateTimePickerCo
         this.registerEvents(outputs$5);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext = new FormBase();
+        this.formCompContext = new ComponentBase();
     }
     /**
      * @param {?} registerFunction
@@ -804,21 +832,25 @@ let DateTimePickerComponent = DateTimePickerComponent_1 = class DateTimePickerCo
      * @return {?}
      */
     ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.formContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.formCompContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.formCompContext.ngAfterContentChecked(this);
     }
 };
 DateTimePickerComponent.decorators = [

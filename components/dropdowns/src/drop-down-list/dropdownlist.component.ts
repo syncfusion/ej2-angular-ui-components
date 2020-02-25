@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class DropDownListComponent extends DropDownList implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -102,6 +105,8 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -117,15 +122,20 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

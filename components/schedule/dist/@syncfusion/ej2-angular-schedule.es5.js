@@ -50,6 +50,7 @@ var ViewDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ViewDirective;
@@ -156,6 +157,7 @@ var ResourceDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return ResourceDirective;
@@ -234,6 +236,7 @@ var HeaderRowDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return HeaderRowDirective;
@@ -429,27 +432,42 @@ var ScheduleComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childViews;
+        var /** @type {?} */ isTempNo;
+        if (this.childResources) {
+            this.tagObjects[1].instance = this.childResources;
+            isTempNo = true;
+        }
+        if (this.childHeaderRows) {
+            var /** @type {?} */ n = isTempNo ? 2 : 1;
+            this.tagObjects[n].instance = this.childHeaderRows;
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return ScheduleComponent;
 }(Schedule));
@@ -679,27 +697,32 @@ var RecurrenceEditorComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return RecurrenceEditorComponent;
 }(RecurrenceEditor));

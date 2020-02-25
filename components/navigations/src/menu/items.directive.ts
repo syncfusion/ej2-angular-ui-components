@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class MenuItemDirective extends ComplexBase<MenuItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,7 @@ export class MenuItemDirective extends ComplexBase<MenuItemDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

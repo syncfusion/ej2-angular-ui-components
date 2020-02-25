@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class RichTextEditorComponent extends RichTextEditor implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -116,6 +119,8 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -131,15 +136,20 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

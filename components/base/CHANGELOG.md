@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 17.4.50 (2020-02-18)
+## 17.4.51 (2020-02-25)
+
+### Common
+
+#### Bug Fixes
+
+- `I261475` - Provided Angular 9 compatibility support.
+- Updated `peerDependencies` versions.
+
+## 17.4.43 (2020-01-14)
 
 ### Common
 

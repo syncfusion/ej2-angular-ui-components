@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
+    public directivePropList: any;
     public childAnnotations: any;
     public tags: string[] = ['annotations'];
     /** 
@@ -80,7 +81,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public cornerRadius: any;
     /** 
-     * Defines the connector's width and height when dragging a shape into the diagram from the palette.
+     * Defines the size of a drop symbol
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -114,7 +115,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public margin: any;
     /** 
-     * Defines the connector's preview size when dragging over from the palette.
+     * Defines the size of the symbol preview
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
@@ -223,6 +224,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

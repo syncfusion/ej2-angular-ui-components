@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class LevelDirective extends ComplexBase<LevelDirective> {
+    public directivePropList: any;
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 
@@ -103,6 +104,7 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

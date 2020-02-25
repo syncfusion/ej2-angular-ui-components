@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -26,6 +26,8 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class TooltipComponent extends Tooltip implements IComponentBase {
+    public containerContext : any;
+    public tagObjects: any;
 
 
 
@@ -49,18 +51,24 @@ export class TooltipComponent extends Tooltip implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

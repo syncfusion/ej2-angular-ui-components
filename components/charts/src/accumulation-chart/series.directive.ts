@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -211,6 +212,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

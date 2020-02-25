@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
+    public directivePropList: any;
     public childStripLines: any;
     public childMultiLevelLabels: any;
     public tags: string[] = ['stripLines', 'multiLevelLabels'];
@@ -343,6 +344,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

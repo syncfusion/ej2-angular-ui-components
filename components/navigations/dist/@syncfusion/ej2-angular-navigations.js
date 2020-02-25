@@ -35,6 +35,7 @@ class AccordionItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 AccordionItemDirective.decorators = [
@@ -121,26 +122,32 @@ let AccordionComponent = class AccordionComponent extends Accordion {
         this.registerEvents(outputs$1);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 AccordionComponent.decorators = [
@@ -260,6 +267,7 @@ class ItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$1;
     }
 }
 ItemDirective.decorators = [
@@ -341,26 +349,32 @@ let ToolbarComponent = class ToolbarComponent extends Toolbar {
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays$1);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 ToolbarComponent.decorators = [
@@ -473,26 +487,31 @@ let ContextMenuComponent = class ContextMenuComponent extends ContextMenu {
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays$2);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.context.ngAfterContentChecked(this);
     }
 };
 ContextMenuComponent.decorators = [
@@ -594,6 +613,7 @@ class TabItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$5);
+        this.directivePropList = input$2;
     }
 }
 TabItemDirective.decorators = [
@@ -685,26 +705,32 @@ let TabComponent = class TabComponent extends Tab {
         this.registerEvents(outputs$6);
         this.addTwoWay.call(this, twoWays$3);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 TabComponent.decorators = [
@@ -816,26 +842,31 @@ let TreeViewComponent = class TreeViewComponent extends TreeView {
         this.registerEvents(outputs$7);
         this.addTwoWay.call(this, twoWays$4);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.context.ngAfterContentChecked(this);
     }
 };
 TreeViewComponent.decorators = [
@@ -948,26 +979,31 @@ let SidebarComponent = class SidebarComponent extends Sidebar {
         this.registerEvents(outputs$8);
         this.addTwoWay.call(this, twoWays$5);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.containerContext.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.containerContext.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.containerContext.ngAfterContentChecked(this);
     }
 };
 SidebarComponent.decorators = [
@@ -1048,6 +1084,7 @@ class MenuItemDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$9);
+        this.directivePropList = input$3;
     }
 }
 MenuItemDirective.decorators = [
@@ -1122,26 +1159,32 @@ let MenuComponent = class MenuComponent extends Menu {
         this.registerEvents(outputs$10);
         this.addTwoWay.call(this, twoWays$6);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childItems;
+        this.context.ngAfterContentChecked(this);
     }
 };
 MenuComponent.decorators = [

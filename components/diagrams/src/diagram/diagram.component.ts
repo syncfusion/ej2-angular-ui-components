@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Diagram } from '@syncfusion/ej2-diagrams';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -32,10 +32,12 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class DiagramComponent extends Diagram implements IComponentBase {
-    public childLayers: any;
-    public childCustomCursor: any;
-    public childConnectors: any;
-    public childNodes: any;
+    public context : any;
+    public tagObjects: any;
+    public childLayers: QueryList<LayersDirective>;
+    public childCustomCursor: QueryList<CustomCursorsDirective>;
+    public childConnectors: QueryList<ConnectorsDirective>;
+    public childNodes: QueryList<NodesDirective>;
     public tags: string[] = ['layers', 'customCursor', 'connectors', 'nodes'];
 
     /** 
@@ -151,18 +153,48 @@ export class DiagramComponent extends Diagram implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childCustomCursor) {
+            this.tagObjects[1].instance = (this.childCustomCursor as any).list[0].childLayers;
+            for (var d = 0; d < (this.childCustomCursor as any).list.length; d++) {
+                if ((this.childCustomCursor as any).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push((this.childCustomCursor as any).list[d+1].childLayers.list[0]);
+                }
+            }
+        }
+        if (this.childConnectors) {
+            this.tagObjects[2].instance = (this.childConnectors as any).list[0].childCustomCursor;
+            for (var d = 0; d < (this.childConnectors as any).list.length; d++) {
+                if ((this.childConnectors as any).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push((this.childConnectors as any).list[d+1].childCustomCursor.list[0]);
+                }
+            }
+        }
+        if (this.childNodes) {
+            this.tagObjects[3].instance = (this.childNodes as any).list[0].childConnectors;
+            for (var d = 0; d < (this.childNodes as any).list.length; d++) {
+                if ((this.childNodes as any).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push((this.childNodes as any).list[d+1].childConnectors.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
+    public directivePropList: any;
     public childRanges: any;
     public childPointers: any;
     public tags: string[] = ['ranges', 'pointers'];
@@ -76,6 +77,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

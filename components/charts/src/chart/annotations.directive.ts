@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -93,6 +94,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

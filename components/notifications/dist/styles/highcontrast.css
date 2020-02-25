@@ -624,6 +624,10 @@ button .e-badge.e-badge-circle.e-badge-ghost {
   min-height: 100px;
 }
 
+.e-toast-ref-element {
+  display: none;
+}
+
 .e-toast-container .e-toast {
   background-color: #333;
   box-shadow: none;

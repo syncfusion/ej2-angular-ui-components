@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class StockEventDirective extends ComplexBase<StockEventDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -84,6 +85,7 @@ export class StockEventDirective extends ComplexBase<StockEventDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

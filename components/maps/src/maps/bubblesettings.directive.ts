@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class BubbleDirective extends ComplexBase<BubbleDirective> {
+    public directivePropList: any;
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 
@@ -118,6 +119,7 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

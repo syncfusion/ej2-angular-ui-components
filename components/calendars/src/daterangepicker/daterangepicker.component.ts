@@ -34,6 +34,9 @@ export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class DateRangePickerComponent extends DateRangePicker implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
     public childPresets: any;
     public tags: string[] = ['presets'];
     public startDateChange: any;
@@ -60,6 +63,8 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -75,15 +80,20 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childPresets;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

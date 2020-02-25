@@ -2262,6 +2262,11 @@
 }
 
 /*! field-list theme */
+.e-pivotfieldlist .e-member-editor-dialog,
+.e-pivotfieldlist .e-olap-editor-dialog {
+  visibility: hidden;
+}
+
 .e-pivotfieldlist .e-select-table {
   background-color: #f5f5f5;
   border: 0.5px solid #ccc;

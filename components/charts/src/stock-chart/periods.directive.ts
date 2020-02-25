@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class StockChartPeriodDirective extends ComplexBase<StockChartPeriodDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -49,6 +50,7 @@ export class StockChartPeriodDirective extends ComplexBase<StockChartPeriodDirec
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

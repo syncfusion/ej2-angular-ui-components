@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Smithchart } from '@syncfusion/ej2-charts';
 
@@ -26,7 +26,9 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class SmithchartComponent extends Smithchart implements IComponentBase {
-    public childSeries: any;
+    public context : any;
+    public tagObjects: any;
+    public childSeries: QueryList<SmithchartSeriesCollectionDirective>;
     public tags: string[] = ['series'];
 
 
@@ -50,18 +52,24 @@ export class SmithchartComponent extends Smithchart implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

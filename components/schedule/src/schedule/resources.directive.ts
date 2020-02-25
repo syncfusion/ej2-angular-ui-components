@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class ResourceDirective extends ComplexBase<ResourceDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -119,6 +120,7 @@ export class ResourceDirective extends ComplexBase<ResourceDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -32,7 +32,6 @@ export { SmithchartModule } from './smithchart/smithchart.module';
 export { SmithchartAllModule, SmithchartLegendService, TooltipRenderService } from './smithchart/smithchart-all.module';
 export {StockChartTrendlineDirective,StockChartTrendlinesDirective} from './stock-chart/trendlines.directive';
 export {StockChartSeriesDirective,StockChartSeriesCollectionDirective} from './stock-chart/series.directive';
-export {StockChartStripLineDirective,StockChartStripLinesDirective} from './stock-chart/striplines.directive';
 export {StockChartAxisDirective,StockChartAxesDirective} from './stock-chart/axes.directive';
 export {StockChartRowDirective,StockChartRowsDirective} from './stock-chart/rows.directive';
 export {StockChartAnnotationDirective,StockChartAnnotationsDirective} from './stock-chart/annotations.directive';

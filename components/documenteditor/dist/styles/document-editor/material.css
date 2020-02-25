@@ -1657,12 +1657,12 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-table-cell-margin-dlg {
   height: 222px;
-  width: 342px;
+  width: 382px;
 }
 
 .e-de-table-options-dlg {
   height: 242px;
-  width: 380px;
+  width: 382px;
 }
 
 .e-de-table-border-none {
@@ -1871,6 +1871,13 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-style-paragraph-group-button .e-btn,
 .e-de-style-font-group-button .e-btn {
   box-shadow: none;
+}
+
+.e-de-table-options-dlg-div {
+  height: auto;
+  position: relative;
+  margin-bottom: 14px;
+  width: 504px;
 }
 
 .e-de-style-paragraph-indent-group-button .e-btn.e-active,

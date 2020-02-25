@@ -1,7 +1,7 @@
 /**
  * Angular Component Base Module
  */
-import { getValue, isUndefined, setValue, isNullOrUndefined, attributes, createElement  } from '@syncfusion/ej2-base';
+import { getValue, isUndefined, setValue, isNullOrUndefined, attributes, createElement } from '@syncfusion/ej2-base';
 import { EventEmitter, EmbeddedViewRef, Renderer2, ElementRef } from '@angular/core';
 import { clearTemplate, registerEvents } from './util';
 
@@ -24,7 +24,7 @@ interface Tag {
 interface TagList {
     getProperties: Function;
     hasChanges: boolean;
-    isUpdated : boolean;
+    isUpdated: boolean;
 }
 
 export class ComponentBase<T> {
@@ -65,20 +65,26 @@ export class ComponentBase<T> {
     private complexTemplate: string[];
 
     private ngBoundedEvents: { [key: string]: Map<object, object> };
-
-    public ngOnInit(): void {
-        this.registeredTemplate = {};
-        this.ngBoundedEvents = {};
-        this.isAngular = true;
-        this.tags = this.tags || [];
-        this.complexTemplate = this.complexTemplate || [];
-        this.tagObjects = [];
-        this.ngAttr = this.getAngularAttr(this.element);
+    // tslint:disable-next-line:no-any
+    public ngOnInit(isTempRef?: any): void {
+        // tslint:disable-next-line:no-any
+        let tempOnThis: any = isTempRef || this;
+        tempOnThis.registeredTemplate = {};
+        tempOnThis.ngBoundedEvents = {};
+        tempOnThis.isAngular = true;
         /* istanbul ignore next */
-        this.createElement = (tagName: string, prop?:
+        if (isTempRef) {
+            this.tags = isTempRef.tags;
+        }
+        tempOnThis.tags = this.tags || [];
+        tempOnThis.complexTemplate = this.complexTemplate || [];
+        tempOnThis.tagObjects = [];
+        tempOnThis.ngAttr = this.getAngularAttr(tempOnThis.element);
+        /* istanbul ignore next */
+        tempOnThis.createElement = (tagName: string, prop?:
             { id?: string, className?: string, innerHTML?: string, styles?: string, attrs?: { [key: string]: string } }) => {
             //tslint:disable-next-line
-            let ele: Element = this.srenderer ? this.srenderer.createElement(tagName) : createElement(tagName);
+            let ele: Element = tempOnThis.srenderer ? tempOnThis.srenderer.createElement(tagName) : createElement(tagName);
             if (typeof (prop) === 'undefined') {
                 return <HTMLElement>ele;
             }
@@ -93,31 +99,31 @@ export class ComponentBase<T> {
             if (prop.styles !== undefined) {
                 ele.setAttribute('style', prop.styles);
             }
-            if (this.ngAttr !== undefined) {
-                ele.setAttribute(this.ngAttr, '');
+            if (tempOnThis.ngAttr !== undefined) {
+                ele.setAttribute(tempOnThis.ngAttr, '');
             }
             if (prop.attrs !== undefined) {
                 attributes(ele, prop.attrs);
             }
             return <HTMLElement>ele;
         };
-        for (let tag of this.tags) {
+        for (let tag of tempOnThis.tags) {
             let tagObject: { name: string, instance: Tag } = {
-                instance: getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), this),
+                instance: getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tempOnThis),
                 name: tag
             };
-            this.tagObjects.push(tagObject);
+            tempOnThis.tagObjects.push(tagObject);
         }
 
-        let complexTemplates: string[] = Object.keys(this);
+        let complexTemplates: string[] = Object.keys(tempOnThis);
         complexTemplates = complexTemplates.filter((val: string): boolean => {
             return /Ref$/i.test(val) && /\_/i.test(val);
         });
         for (let tempName of complexTemplates) {
             let propName: string = tempName.replace('Ref', '');
             let val: Object = {};
-            setValue(propName.replace('_', '.'), getValue(propName, this), val);
-            this.setProperties(val, true);
+            setValue(propName.replace('_', '.'), getValue(propName, tempOnThis), val);
+            tempOnThis.setProperties(val, true);
         }
     }
 
@@ -126,54 +132,81 @@ export class ComponentBase<T> {
         let length: number = attributes.length;
         let ngAr: string;
         for (let i: number = 0; i < length; i++) {
+            /* istanbul ignore next */
             if (/_ngcontent/g.test(attributes[i].name)) {
                 ngAr = attributes[i].name;
             }
         }
         return ngAr;
     };
-
-    public ngAfterViewInit(): void {
+    // tslint:disable-next-line:no-any
+    public ngAfterViewInit(isTempRef?: any): void {
+        // tslint:disable-next-line:no-any
+        let tempAfterViewThis: any = isTempRef || this;
         let regExp: RegExp = /ejs-tab|ejs-accordion/g;
-        if (regExp.test(this.ngEle.nativeElement.outerHTML)) {
-            this.ngEle.nativeElement.style.visibility = 'hidden';
+        /* istanbul ignore next */
+        if (regExp.test(tempAfterViewThis.ngEle.nativeElement.outerHTML)) {
+            tempAfterViewThis.ngEle.nativeElement.style.visibility = 'hidden';
         }
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(() => {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined') {
-                this.appendTo(this.element);
-                this.ngEle.nativeElement.style.visibility = '';
+                tempAfterViewThis.appendTo(tempAfterViewThis.element);
+                tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
         });
     }
-
-    public ngOnDestroy(): void {
+    // tslint:disable-next-line:no-any
+    public ngOnDestroy(isTempRef?: any): void {
+        // tslint:disable-next-line:no-any
+        let tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
-        if (typeof window !== 'undefined' && this.element.classList.contains('e-control')) {
-            this.destroy();
-            this.clearTemplate(null);
+        if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
+            tempOnDestroyThis.destroy();
+            tempOnDestroyThis.clearTemplate(null);
         }
     }
     //tslint:disable-next-line
     public clearTemplate(templateNames?: string[], index?: any): void {
         clearTemplate(this, templateNames, index);
     };
-
-    public ngAfterContentChecked(): void {
-        for (let tagObject of this.tagObjects) {
+    // tslint:disable-next-line:no-any
+    public ngAfterContentChecked(isTempRef?: any): void {
+        
+        // tslint:disable-next-line:no-any
+        let tempAfterContentThis: any = isTempRef || this;
+        for (let tagObject of tempAfterContentThis.tagObjects) {
             if (!isUndefined(tagObject.instance) &&
                 (tagObject.instance.isInitChanges || tagObject.instance.hasChanges || tagObject.instance.hasNewChildren)) {
                 if (tagObject.instance.isInitChanges) {
                     let propObj: { [key: string]: Object } = {};
+                    // For angular 9 compatibility
+                    // Not able to get complex directive properties reference ni Onint hook
+                    // So we have constructed property here and used
+                    let complexDirProps = tagObject.instance.list[0].directivePropList;
+                    if (complexDirProps && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
+                        let compDirPropList = Object.keys(tagObject.instance.list[0].propCollection);
+                        for (let h = 0; h < tagObject.instance.list.length; h++) {
+                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName] = [];
+                            let obj: any = {};
+                            for (let k = 0; k < compDirPropList.length; k++) {
+                                let complexPropName = compDirPropList[k];
+                                obj[complexPropName] = tagObject.instance.list[h].propCollection[complexPropName];
+                            }
+                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName].push(obj);
+                        }
+                    }
+                    // End angular 9 compatibility
                     propObj[tagObject.name] = tagObject.instance.getProperties();
-                    this.setProperties(propObj, tagObject.instance.isInitChanges);
+                    tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
+                    /* istanbul ignore next */
                     for (let list of tagObject.instance.list) {
                         if (list.hasChanges) {
                             let curIndex: number = tagObject.instance.list.indexOf(list);
-                            let curChild: { setProperties: Function } = getValue(tagObject.name, this)[curIndex];
+                            let curChild: { setProperties: Function } = getValue(tagObject.name, tempAfterContentThis)[curIndex];
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
                                 curChild.setProperties(list.getProperties());
                             }

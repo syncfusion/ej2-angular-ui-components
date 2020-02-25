@@ -29,6 +29,7 @@ class AnnotationDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 AnnotationDirective.decorators = [
@@ -90,6 +91,7 @@ class RangeDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 RangeDirective.decorators = [
@@ -144,6 +146,7 @@ class PointerDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 PointerDirective.decorators = [
@@ -199,6 +202,7 @@ class AxisDirective extends ComplexBase {
         this.tags = ['annotations', 'ranges', 'pointers'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input$3;
     }
 }
 AxisDirective.decorators = [
@@ -298,26 +302,32 @@ let CircularGaugeComponent = class CircularGaugeComponent extends CircularGauge 
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childAxes;
+        this.context.ngAfterContentChecked(this);
     }
 };
 CircularGaugeComponent.decorators = [

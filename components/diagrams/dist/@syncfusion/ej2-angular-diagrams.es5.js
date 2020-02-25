@@ -32,6 +32,7 @@ var LayerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return LayerDirective;
@@ -92,6 +93,7 @@ var CustomCursorDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return CustomCursorDirective;
@@ -157,6 +159,7 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ConnectorAnnotationDirective;
@@ -218,6 +221,7 @@ var ConnectorDirective = /** @class */ (function (_super) {
         _this.tags = ['annotations'];
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return ConnectorDirective;
@@ -285,6 +289,7 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return NodeAnnotationDirective;
@@ -350,6 +355,7 @@ var PortDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return PortDirective;
@@ -411,6 +417,7 @@ var NodeDirective = /** @class */ (function (_super) {
         _this.tags = ['annotations', 'ports'];
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return NodeDirective;
@@ -602,27 +609,57 @@ var DiagramComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childCustomCursor) {
+            this.tagObjects[1].instance = ((this.childCustomCursor)).list[0].childLayers;
+            for (var /** @type {?} */ d = 0; d < ((this.childCustomCursor)).list.length; d++) {
+                if (((this.childCustomCursor)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childCustomCursor)).list[d + 1].childLayers.list[0]);
+                }
+            }
+        }
+        if (this.childConnectors) {
+            this.tagObjects[2].instance = ((this.childConnectors)).list[0].childCustomCursor;
+            for (var /** @type {?} */ d = 0; d < ((this.childConnectors)).list.length; d++) {
+                if (((this.childConnectors)).list[d + 1]) {
+                    this.tagObjects[2].instance.list.push(((this.childConnectors)).list[d + 1].childCustomCursor.list[0]);
+                }
+            }
+        }
+        if (this.childNodes) {
+            this.tagObjects[3].instance = ((this.childNodes)).list[0].childConnectors;
+            for (var /** @type {?} */ d = 0; d < ((this.childNodes)).list.length; d++) {
+                if (((this.childNodes)).list[d + 1]) {
+                    this.tagObjects[3].instance.list.push(((this.childNodes)).list[d + 1].childConnectors.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return DiagramComponent;
 }(Diagram));
@@ -790,6 +827,7 @@ var PaletteDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$8);
+        _this.directivePropList = input$7;
         return _this;
     }
     return PaletteDirective;
@@ -880,27 +918,33 @@ var SymbolPaletteComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$9);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childPalettes;
+        this.context.ngAfterContentChecked(this);
     };
     return SymbolPaletteComponent;
 }(SymbolPalette));
@@ -1023,27 +1067,32 @@ var OverviewComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$10);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return OverviewComponent;
 }(Overview));

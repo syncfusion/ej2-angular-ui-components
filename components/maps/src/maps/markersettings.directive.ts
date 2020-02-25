@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class MarkerDirective extends ComplexBase<MarkerDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -143,6 +144,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

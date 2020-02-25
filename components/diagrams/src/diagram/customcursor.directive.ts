@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class CustomCursorDirective extends ComplexBase<CustomCursorDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -39,6 +40,7 @@ export class CustomCursorDirective extends ComplexBase<CustomCursorDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

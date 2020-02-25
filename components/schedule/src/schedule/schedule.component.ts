@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Schedule } from '@syncfusion/ej2-schedule';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -30,9 +30,11 @@ export const twoWays: string[] = ['currentView', 'selectedDate'];
 })
 @ComponentMixins([ComponentBase])
 export class ScheduleComponent extends Schedule implements IComponentBase {
-    public childViews: any;
-    public childResources: any;
-    public childHeaderRows: any;
+    public context : any;
+    public tagObjects: any;
+    public childViews: QueryList<ViewsDirective>;
+    public childResources: QueryList<ResourcesDirective>;
+    public childHeaderRows: QueryList<HeaderRowsDirective>;
     public tags: string[] = ['views', 'resources', 'headerRows'];
     public currentViewChange: any;
     public selectedDateChange: any;
@@ -213,18 +215,33 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childViews;
+        var isTempNo
+	    if (this.childResources) {
+            this.tagObjects[1].instance = this.childResources;
+            isTempNo = true;
+        }
+        if (this.childHeaderRows) {
+            var n = isTempNo ? 2 : 1;
+            this.tagObjects[n].instance = this.childHeaderRows;
+        }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

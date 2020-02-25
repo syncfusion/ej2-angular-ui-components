@@ -56,6 +56,8 @@ var DropDownListComponent = DropDownListComponent_1 = /** @class */ (function (_
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -86,21 +88,25 @@ var DropDownListComponent = DropDownListComponent_1 = /** @class */ (function (_
      * @return {?}
      */
     DropDownListComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DropDownListComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return DropDownListComponent;
 }(DropDownList));
@@ -262,6 +268,8 @@ var ComboBoxComponent = ComboBoxComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -292,21 +300,25 @@ var ComboBoxComponent = ComboBoxComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     ComboBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ComboBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return ComboBoxComponent;
 }(ComboBox));
@@ -463,6 +475,8 @@ var AutoCompleteComponent = AutoCompleteComponent_1 = /** @class */ (function (_
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -493,21 +507,25 @@ var AutoCompleteComponent = AutoCompleteComponent_1 = /** @class */ (function (_
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     AutoCompleteComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return AutoCompleteComponent;
 }(AutoComplete));
@@ -671,6 +689,8 @@ var MultiSelectComponent = MultiSelectComponent_1 = /** @class */ (function (_su
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$3);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -701,21 +721,25 @@ var MultiSelectComponent = MultiSelectComponent_1 = /** @class */ (function (_su
      * @return {?}
      */
     MultiSelectComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MultiSelectComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return MultiSelectComponent;
 }(MultiSelect));
@@ -881,6 +905,8 @@ var ListBoxComponent = ListBoxComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$4);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -911,21 +937,25 @@ var ListBoxComponent = ListBoxComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     ListBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ListBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return ListBoxComponent;
 }(ListBox));

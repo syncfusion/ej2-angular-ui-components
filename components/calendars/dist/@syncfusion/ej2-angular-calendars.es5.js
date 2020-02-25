@@ -62,6 +62,8 @@ var CalendarComponent = CalendarComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -92,21 +94,25 @@ var CalendarComponent = CalendarComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     CalendarComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     CalendarComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     CalendarComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     CalendarComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return CalendarComponent;
 }(Calendar));
@@ -241,6 +247,8 @@ var DatePickerComponent = DatePickerComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -271,21 +279,25 @@ var DatePickerComponent = DatePickerComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     DatePickerComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DatePickerComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DatePickerComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DatePickerComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return DatePickerComponent;
 }(DatePicker));
@@ -410,6 +422,8 @@ var TimePickerComponent = TimePickerComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -440,21 +454,25 @@ var TimePickerComponent = TimePickerComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     TimePickerComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TimePickerComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TimePickerComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TimePickerComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return TimePickerComponent;
 }(TimePicker));
@@ -560,6 +578,7 @@ var PresetDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input;
         return _this;
     }
     return PresetDirective;
@@ -644,6 +663,8 @@ var DateRangePickerComponent = DateRangePickerComponent_1 = /** @class */ (funct
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$3);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -674,21 +695,26 @@ var DateRangePickerComponent = DateRangePickerComponent_1 = /** @class */ (funct
      * @return {?}
      */
     DateRangePickerComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DateRangePickerComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DateRangePickerComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DateRangePickerComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childPresets;
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return DateRangePickerComponent;
 }(DateRangePicker));
@@ -838,6 +864,8 @@ var DateTimePickerComponent = DateTimePickerComponent_1 = /** @class */ (functio
         _this.registerEvents(outputs$5);
         _this.addTwoWay.call(_this, twoWays$4);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -868,21 +896,25 @@ var DateTimePickerComponent = DateTimePickerComponent_1 = /** @class */ (functio
      * @return {?}
      */
     DateTimePickerComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DateTimePickerComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DateTimePickerComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DateTimePickerComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return DateTimePickerComponent;
 }(DateTimePicker));

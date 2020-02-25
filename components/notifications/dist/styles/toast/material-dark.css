@@ -358,6 +358,10 @@
   min-height: 100px;
 }
 
+.e-toast-ref-element {
+  display: none;
+}
+
 .e-toast-container .e-toast {
   background-color: #424242;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);

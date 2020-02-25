@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Maps } from '@syncfusion/ej2-maps';
 
@@ -28,8 +28,10 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class MapsComponent extends Maps implements IComponentBase {
-    public childLayers: any;
-    public childAnnotations: any;
+    public context : any;
+    public tagObjects: any;
+    public childLayers: QueryList<LayersDirective>;
+    public childAnnotations: QueryList<AnnotationsDirective>;
     public tags: string[] = ['layers', 'annotations'];
     public dataSourceChange: any;
 
@@ -101,18 +103,32 @@ export class MapsComponent extends Maps implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childAnnotations) {
+                    this.tagObjects[1].instance = (this.childAnnotations as any).list[0].childLayers;
+                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
+                        if ((this.childAnnotations as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childAnnotations as any).list[d+1].childLayers.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

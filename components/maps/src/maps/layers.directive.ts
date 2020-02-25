@@ -28,6 +28,7 @@ let outputs: string[] = [];
     }
 })
 export class LayerDirective extends ComplexBase<LayerDirective> {
+    public directivePropList: any;
     public childInitialShapeSelection: any;
     public childMarkerSettings: any;
     public childBubbleSettings: any;
@@ -157,6 +158,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

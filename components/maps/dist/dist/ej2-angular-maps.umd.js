@@ -39,6 +39,7 @@ var InitialShapeSelectionDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return InitialShapeSelectionDirective;
@@ -118,6 +119,7 @@ var MarkerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return MarkerDirective;
@@ -197,6 +199,7 @@ var ColorMappingDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ColorMappingDirective;
@@ -277,6 +280,7 @@ var BubbleDirective = /** @class */ (function (_super) {
         _this.tags = ['colorMapping'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return BubbleDirective;
@@ -365,6 +369,7 @@ var NavigationLineDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return NavigationLineDirective;
@@ -433,6 +438,7 @@ var LayerDirective = /** @class */ (function (_super) {
         _this.tags = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return LayerDirective;
@@ -512,6 +518,7 @@ var AnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return AnnotationDirective;
@@ -672,27 +679,41 @@ exports.MapsComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childLayers;
+            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
+                if (((this.childAnnotations)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childLayers.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return MapsComponent;
 }(ej2Maps.Maps));
@@ -981,6 +1002,7 @@ exports.isCustomPath = ej2Maps.isCustomPath;
 exports.textTrim = ej2Maps.textTrim;
 exports.findPosition = ej2Maps.findPosition;
 exports.removeElement = ej2Maps.removeElement;
+exports.calculateCenterFromPixel = ej2Maps.calculateCenterFromPixel;
 exports.getTranslate = ej2Maps.getTranslate;
 exports.getZoomTranslate = ej2Maps.getZoomTranslate;
 exports.getElementByID = ej2Maps.getElementByID;

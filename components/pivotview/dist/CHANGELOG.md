@@ -10,8 +10,6 @@
 
 - `#262932` - Now the pivot table is rendering properly while the filter settings contains unavailable member(s).
 
-- `#258374` - The PDF export is now working for the RTL languages.
-
 ## 17.4.47 (2020-02-05)
 
 ### Pivot Table
@@ -237,6 +235,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 1.0 (2020-02-18)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#258374` - The PDF export is now working for the RTL languages.
 
 ## 17.2.34 (2019-07-11)
 

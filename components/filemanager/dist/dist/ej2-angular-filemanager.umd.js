@@ -98,27 +98,32 @@ exports.FileManagerComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return FileManagerComponent;
 }(ej2Filemanager.FileManager));
@@ -353,6 +358,7 @@ exports.pathChanged = ej2Filemanager.pathChanged;
 exports.destroy = ej2Filemanager.destroy;
 exports.beforeRequest = ej2Filemanager.beforeRequest;
 exports.upload = ej2Filemanager.upload;
+exports.skipUpload = ej2Filemanager.skipUpload;
 exports.afterRequest = ej2Filemanager.afterRequest;
 exports.download = ej2Filemanager.download;
 exports.layoutRefresh = ej2Filemanager.layoutRefresh;
