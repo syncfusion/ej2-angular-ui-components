@@ -251,7 +251,7 @@
   margin-left: 10px;
   margin-right: 8px;
   margin-top: -20px;
-  overflow: hidden;
+  overflow: unset;
   vertical-align: middle;
   width: 90px;
 }
@@ -296,12 +296,12 @@
 .e-pager .e-currentitem {
   border-radius: 0;
   cursor: pointer;
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
   text-decoration: none;
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
 }
 
 .e-pager .e-currentitem {
@@ -645,6 +645,10 @@
   color: #007bff;
 }
 
+.e-pager div.e-icons.e-disable {
+  color: #6c757d;
+}
+
 .e-pager .e-pager-default:hover {
   background: #eee;
   color: #1f496e;
@@ -658,6 +662,10 @@
 .e-pager .e-spacing {
   color: #007bff;
   opacity: 1;
+}
+
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: #e9ecef;
 }
 
 .e-pager .e-numericitem:hover {

@@ -171,29 +171,29 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childLayers;
         if (this.childCustomCursor) {
-            this.tagObjects[1].instance = (this.childCustomCursor as any).list[0].childLayers;
-            for (var d = 0; d < (this.childCustomCursor as any).list.length; d++) {
-                if ((this.childCustomCursor as any).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push((this.childCustomCursor as any).list[d+1].childLayers.list[0]);
+                    this.tagObjects[1].instance = (this.childCustomCursor as any).list[0].childLayers;
+                    for (var d = 0; d < (this.childCustomCursor as any).list.length; d++) {
+                        if ((this.childCustomCursor as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childCustomCursor as any).list[d+1].childLayers.list[0]);
+                        }
+                    }
                 }
-            }
-        }
         if (this.childConnectors) {
-            this.tagObjects[2].instance = (this.childConnectors as any).list[0].childCustomCursor;
-            for (var d = 0; d < (this.childConnectors as any).list.length; d++) {
-                if ((this.childConnectors as any).list[d + 1]) {
-                    this.tagObjects[2].instance.list.push((this.childConnectors as any).list[d+1].childCustomCursor.list[0]);
+                    this.tagObjects[2].instance = (this.childConnectors as any).list[0].childCustomCursor;
+                    for (var d = 0; d < (this.childConnectors as any).list.length; d++) {
+                        if ((this.childConnectors as any).list[d + 1]) {
+                            this.tagObjects[2].instance.list.push((this.childConnectors as any).list[d+1].childCustomCursor.list[0]);
+                        }
+                    }
                 }
-            }
-        }
         if (this.childNodes) {
-            this.tagObjects[3].instance = (this.childNodes as any).list[0].childConnectors;
-            for (var d = 0; d < (this.childNodes as any).list.length; d++) {
-                if ((this.childNodes as any).list[d + 1]) {
-                    this.tagObjects[3].instance.list.push((this.childNodes as any).list[d+1].childConnectors.list[0]);
+                    this.tagObjects[3].instance = (this.childNodes as any).list[0].childConnectors;
+                    for (var d = 0; d < (this.childNodes as any).list.length; d++) {
+                        if ((this.childNodes as any).list[d + 1]) {
+                            this.tagObjects[3].instance.list.push((this.childNodes as any).list[d+1].childConnectors.list[0]);
+                        }
+                    }
                 }
-            }
-        }
         this.context.ngAfterContentChecked(this);
     }
 

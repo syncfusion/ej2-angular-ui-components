@@ -296,12 +296,12 @@
 .e-pager .e-currentitem {
   border-radius: 4px;
   cursor: pointer;
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
   text-decoration: none;
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
 }
 
 .e-pager .e-currentitem {
@@ -645,6 +645,10 @@
   color: #317ab9;
 }
 
+.e-pager div.e-icons.e-disable {
+  color: unset;
+}
+
 .e-pager .e-pager-default:hover {
   background: #eee;
   color: #1f496e;
@@ -658,6 +662,10 @@
 .e-pager .e-spacing {
   color: #317ab9;
   opacity: 1;
+}
+
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: unset;
 }
 
 .e-pager .e-numericitem:hover {
@@ -907,39 +915,31 @@
 }
 
 /*! Excel-Filter layout */
-.e-xlfl-dlgfields {
+.e-xlflmenu {
+  min-height: 318px;
+}
+
+.e-xlflmenu .e-xlfl-dlgfields {
   font-size: 15px;
 }
 
-.e-emptyicon {
-  opacity: 0;
-}
-
-.e-xlfl-fieldset {
+.e-xlflmenu .e-xlfl-fieldset {
   font-size: 13px;
   padding-top: 9px;
 }
 
-.e-xlfl-optr,
-.e-xlfl-value {
+.e-xlflmenu .e-xlfl-optr,
+.e-xlflmenu .e-xlfl-value {
   padding-top: 11.25px;
 }
 
-.e-xlfl-radio,
-.e-xlfl-mtcase {
+.e-xlflmenu .e-xlfl-radio,
+.e-xlflmenu .e-xlfl-mtcase {
   padding-top: 12px;
 }
 
-.e-xlfl-optr :first-child {
+.e-xlflmenu .e-xlfl-optr:first-child {
   padding-right: 11.25px;
-}
-
-.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
-  padding-left: 11.25px;
-}
-
-.e-xlflmenu {
-  min-height: 318px;
 }
 
 .e-xlflmenu .e-xlfl-table {
@@ -953,11 +953,6 @@
   padding-right: 9px;
 }
 
-.e-xlflmenu.e-rtl .e-radio + label .e-label {
-  padding-left: 0;
-  padding-right: 25px;
-}
-
 .e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
   margin-left: 6px;
 }
@@ -966,8 +961,13 @@
   padding-bottom: 5px;
 }
 
-.e-xlfl-radiodiv {
+.e-xlflmenu .e-xlfl-radiodiv {
   width: 120px;
+}
+
+.e-xlflmenu .e-xlfl-matchcasediv {
+  margin-left: 0;
+  margin-right: 13px;
 }
 
 .e-xlfl-radio-or,
@@ -975,20 +975,26 @@
   margin-left: 2px;
 }
 
-.e-xlflmenu.e-rtl .e-xlfl-radio-or,
-.e-xlfl-matchcasediv {
+.e-emptyicon {
+  opacity: 0;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
+  padding-left: 11.25px;
+}
+
+.e-xlflmenu.e-rtl .e-radio + label .e-label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-radio-or {
   margin-left: 0;
   margin-right: 13px;
 }
 
-.e-checkboxfiltertext {
-  width: 150px;
-  word-break: normal;
-}
-
-.e-bigger .e-ftrchk {
-  padding-bottom: 9px;
-  padding-top: 9px;
+.e-bigger .e-xlflmenu {
+  min-height: 362px;
 }
 
 .e-bigger .e-xlflmenu .e-xlfl-table {
@@ -1009,39 +1015,35 @@
   margin-left: 8px;
 }
 
-.e-bigger .e-xlfl-radiodiv {
+.e-bigger .e-xlflmenu .e-xlfl-radiodiv {
   width: 141px;
 }
 
-.e-bigger .e-xlfl-radio-or,
-.e-bigger .e-xlfl-matchcasediv {
+.e-bigger .e-xlflmenu .e-xlfl-radio-or,
+.e-bigger .e-xlflmenu .e-xlfl-matchcasediv {
   margin-left: 18px;
 }
 
-.e-bigger .e-xlflmenu {
-  min-height: 362px;
-}
-
-.e-bigger .e-xlfl-optr:first-child {
+.e-bigger .e-xlflmenu .e-xlfl-optr:first-child {
   padding-right: 15px;
 }
 
-.e-bigger .e-xlfl-dlgfields {
+.e-bigger .e-xlflmenu .e-xlfl-dlgfields {
   font-size: 16px;
 }
 
-.e-bigger .e-xlfl-fieldset {
+.e-bigger .e-xlflmenu .e-xlfl-fieldset {
   font-size: 14px;
   padding-top: 12px;
 }
 
-.e-bigger .e-xlfl-optr,
-.e-bigger .e-xlfl-value {
+.e-bigger .e-xlflmenu .e-xlfl-optr,
+.e-bigger .e-xlflmenu .e-xlfl-value {
   padding-top: 15px;
 }
 
-.e-bigger .e-xlfl-radio,
-.e-bigger .e-xlfl-mtcase {
+.e-bigger .e-xlflmenu .e-xlfl-radio,
+.e-bigger .e-xlflmenu .e-xlfl-mtcase {
   padding-top: 5px;
 }
 
@@ -1050,21 +1052,27 @@
   min-height: 362px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li {
+.e-bigger .e-excelfilter .e-ftrchk,
+.e-excelfilter.e-bigger .e-ftrchk {
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li {
   height: 40px;
   line-height: 40px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li .e-menu-icon {
   height: 40px;
   line-height: 40px;
   margin-right: 13px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 40px;
   line-height: 40px;
 }
@@ -1074,6 +1082,11 @@
   margin-top: 5px;
   min-height: 160px;
   overflow-y: auto;
+}
+
+.e-excelfilter .e-checkboxfiltertext {
+  width: 150px;
+  word-break: normal;
 }
 
 .e-excelfilter .e-chk-hidden {

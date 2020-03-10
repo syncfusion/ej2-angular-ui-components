@@ -29,6 +29,7 @@ let outputs: string[] = [];
     }
 })
 export class RowDirective extends ComplexBase<RowDirective> {
+    public directivePropList: any;
     public childCells: any;
     public tags: string[] = ['cells'];
     /** 
@@ -58,6 +59,7 @@ export class RowDirective extends ComplexBase<RowDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

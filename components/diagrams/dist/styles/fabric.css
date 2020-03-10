@@ -240,15 +240,15 @@
   stroke: #fff;
 }
 
+.e-diagram-endpoint-handle.e-connected {
+  fill: #fff;
+  stroke: #0078d6;
+}
+
 .e-diagram-endpoint-handle.e-disabled {
   fill: #a6a6a6;
   opacity: 1;
   stroke: #fff;
-}
-
-.e-diagram-endpoint-handle.e-connected {
-  fill: #fff;
-  stroke: #0078d6;
 }
 
 .e-diagram-bezier-handle {
@@ -310,10 +310,12 @@
 
 .e-symbolpalette .e-symbol-hover:hover {
   background: #eaeaea;
+  border-radius: 0px;
 }
 
 .e-symbolpalette .e-symbol-selected {
   background: #b7e0ff;
+  border-radius: 0px;
 }
 
 .e-diagram-tooltip {

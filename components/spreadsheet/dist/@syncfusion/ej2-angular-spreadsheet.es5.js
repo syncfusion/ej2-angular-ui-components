@@ -43,6 +43,7 @@ var CellDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return CellDirective;
@@ -111,6 +112,7 @@ var RowDirective = /** @class */ (function (_super) {
         _this.tags = ['cells'];
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return RowDirective;
@@ -180,6 +182,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ColumnDirective;
@@ -247,6 +250,7 @@ var RangeSettingDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return RangeSettingDirective;
@@ -312,6 +316,7 @@ var SheetDirective = /** @class */ (function (_super) {
         _this.tags = ['rows', 'columns', 'rangeSettings'];
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return SheetDirective;
@@ -380,6 +385,7 @@ var DefinedNameDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return DefinedNameDirective;
@@ -589,27 +595,41 @@ var SpreadsheetComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SpreadsheetComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SpreadsheetComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SpreadsheetComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SpreadsheetComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSheets;
+        if (this.childDefinedNames) {
+            this.tagObjects[1].instance = ((this.childDefinedNames)).list[0].childSheets;
+            for (var /** @type {?} */ d = 0; d < ((this.childDefinedNames)).list.length; d++) {
+                if (((this.childDefinedNames)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childDefinedNames)).list[d + 1].childSheets.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return SpreadsheetComponent;
 }(Spreadsheet));

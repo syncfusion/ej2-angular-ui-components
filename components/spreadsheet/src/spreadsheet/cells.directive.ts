@@ -33,6 +33,7 @@ let outputs: string[] = [];
     }
 })
 export class CellDirective extends ComplexBase<CellDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -72,6 +73,7 @@ export class CellDirective extends ComplexBase<CellDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

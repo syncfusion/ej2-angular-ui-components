@@ -117,8 +117,13 @@
   padding: 0 16px;
 }
 
+.e-dropdown-popup ul .e-item.e-url {
+  padding: 0;
+}
+
 .e-dropdown-popup ul .e-item .e-menu-url {
   display: inline-block;
+  padding: 0 16px;
   text-decoration: none;
 }
 
@@ -166,6 +171,11 @@
   height: 48px;
   line-height: 48px;
   padding: 0 16px;
+}
+
+.e-bigger .e-dropdown-popup ul .e-item.e-url,
+.e-bigger.e-dropdown-popup ul .e-item.e-url {
+  padding: 0;
 }
 
 .e-bigger .e-dropdown-popup ul .e-item .e-menu-icon,

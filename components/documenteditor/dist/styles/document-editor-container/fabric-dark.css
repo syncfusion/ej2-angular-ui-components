@@ -385,6 +385,45 @@
   box-shadow: none;
 }
 
+.e-de-statusbar-pageweb .e-de-printlayout,
+.e-de-statusbar-pageweb .e-de-weblayout {
+  font-size: 14px;
+}
+
+.e-bigger .e-btn.e-de-statusbar-pageweb {
+  padding: 0;
+}
+
+.e-bigger .e-de-statusbar-pageweb .e-de-printlayout,
+.e-bigger .e-de-statusbar-pageweb .e-de-weblayout {
+  font-size: 14px;
+}
+
+.e-de-statusbar-zoom {
+  background-color: #282727;
+  border: 0;
+  color: #dadada;
+  float: right;
+  height: 33px;
+}
+
+.e-de-pagenumber-text {
+  border: none !important;
+  height: 22px !important;
+  margin-top: -1px !important;
+}
+
+.e-de-pagenumber-input {
+  background: #201f1f;
+  border: 1px solid #4a4848;
+  border-radius: 0;
+  color: #dadada;
+  height: 22px;
+  padding: 2px;
+  text-align: center;
+  width: 22px;
+}
+
 .e-btn-pageweb-toggle {
   background-color: #514f4f;
   box-shadow: none;
@@ -401,14 +440,6 @@
   width: 33px;
 }
 
-.e-bigger .e-btn-pageweb-spellcheck {
-  height: 35px;
-}
-
-.e-bigger .e-de-statusbar-pageweb {
-  height: 35px;
-}
-
 .e-de-ctn-title {
   background-color: #0074cc;
   color: #201f1f;
@@ -417,7 +448,7 @@
 .e-de-tool-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 113px);
+  height: calc(100% - 120px);
   width: 100%;
 }
 
@@ -428,7 +459,7 @@
   width: 100%;
 }
 
-.e-de-statusbar-seperator {
+.e-de-statusbar-separator {
   border: 1px solid #dadada;
   height: 16px;
   margin-left: 15.5px;
@@ -527,6 +558,46 @@
   border-radius: 0;
 }
 
+.e-de-ctnr-toolbar .e-toolbar-item.e-de-toolbar-btn-first {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.e-de-ctnr-toolbar.e-de-ctnr-rtl .e-toolbar-item.e-de-toolbar-btn-first {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.e-bigger .e-de-ctnr-toolbar .e-toolbar-item.e-de-toolbar-btn-first {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.e-bigger .e-de-ctnr-toolbar.e-de-ctnr-rtl .e-toolbar-item.e-de-toolbar-btn-first {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.e-de-ctnr-toolbar .e-toolbar-item.e-de-toolbar-btn-last {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.e-de-ctnr-toolbar.e-de-ctnr-rtl .e-toolbar-item.e-de-toolbar-btn-last {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.e-bigger .e-de-ctnr-toolbar .e-toolbar-item.e-de-toolbar-btn-last {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.e-bigger .e-de-ctnr-toolbar.e-de-ctnr-rtl .e-toolbar-item.e-de-toolbar-btn-last {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
 .e-de-toolbar.e-toolbar .e-toolbar-items {
   height: 82px;
 }
@@ -541,17 +612,9 @@
   margin-right: 6px;
 }
 
-.e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-first {
-  margin-right: 6px;
-}
-
 .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-middle {
   margin-left: 6px;
   margin-right: 6px;
-}
-
-.e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-last {
-  margin-left: 6px;
 }
 
 .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-end {
@@ -1006,7 +1069,6 @@
 
 .e-de-status-bar {
   background-color: #282727;
-  border-bottom: 1px solid #4a4848;
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 36px;
@@ -1028,6 +1090,7 @@
   display: inline-flex;
   font-size: 13px;
   height: 100%;
+  padding-top: 7px;
   width: calc(100% - 160px);
 }
 
@@ -1037,6 +1100,7 @@
   display: inline-flex;
   font-size: 13px;
   height: 100%;
+  padding-top: 7px;
   width: calc(100% - 180px);
 }
 
@@ -1262,7 +1326,7 @@
 .e-bigger .e-de-tool-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 122px);
   min-height: 200px;
   width: 100%;
 }
@@ -1356,17 +1420,9 @@
   margin-right: 8px;
 }
 
-.e-bigger .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-first {
-  margin-right: 8px;
-}
-
 .e-bigger .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-middle {
   margin-left: 8px;
   margin-right: 8px;
-}
-
-.e-bigger .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-last {
-  margin-left: 8px;
 }
 
 .e-bigger .e-de-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item.e-de-toolbar-btn-end {
@@ -1618,7 +1674,6 @@
 
 .e-bigger .e-de-status-bar {
   background-color: #282727;
-  border-bottom: 1px solid #4a4848;
   display: -ms-inline-flexbox;
   display: inline-flex;
   height: 36px;
@@ -1628,6 +1683,7 @@
 .e-bigger .e-de-statusbar-zoom {
   background-color: #282727;
   border: 0;
+  color: #dadada;
   float: right;
   height: 34px;
 }

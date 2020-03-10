@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Spreadsheet } from '@syncfusion/ej2-spreadsheet';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -28,8 +28,10 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class SpreadsheetComponent extends Spreadsheet implements IComponentBase {
-    public childSheets: any;
-    public childDefinedNames: any;
+    public context : any;
+    public tagObjects: any;
+    public childSheets: QueryList<SheetsDirective>;
+    public childDefinedNames: QueryList<DefinedNamesDirective>;
     public tags: string[] = ['sheets', 'definedNames'];
 
     @ContentChild('template')
@@ -152,18 +154,32 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSheets;
+        if (this.childDefinedNames) {
+                    this.tagObjects[1].instance = (this.childDefinedNames as any).list[0].childSheets;
+                    for (var d = 0; d < (this.childDefinedNames as any).list.length; d++) {
+                        if ((this.childDefinedNames as any).list[d + 1]) {
+                            this.tagObjects[1].instance.list.push((this.childDefinedNames as any).list[d+1].childSheets.list[0]);
+                        }
+                    }
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

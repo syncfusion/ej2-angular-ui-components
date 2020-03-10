@@ -24,11 +24,7 @@
 }
 
 .e-documenteditor .e-de-op-close-icon {
-  font-size: 12px;
   height: 20px;
-  margin-left: -4px;
-  margin-top: -3px;
-  width: auto;
 }
 
 .e-documenteditor .e-de-op-close-icon::before {
@@ -492,11 +488,9 @@
 }
 
 .e-documenteditor .e-de-op-close-button {
-  height: 20px;
   left: 267px;
   position: absolute;
   top: 18px;
-  width: 20px;
 }
 
 .e-de-background {
@@ -1349,7 +1343,7 @@ label[for='container_wholeWord'] {
   margin-top: 20px;
 }
 
-.e-de-tbl-btn-seperator {
+.e-de-tbl-btn-separator {
   width: 57%;
 }
 
@@ -1522,7 +1516,7 @@ label[for='container_wholeWord'] {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label {
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -1757,7 +1751,7 @@ label[for='container_wholeWord'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-frame,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-frame,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-frame,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-frame,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-frame,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-frame,
 .e-de-tbl-margin-sub-header .e-frame {
   height: 15px;
@@ -1770,7 +1764,7 @@ label[for='container_wholeWord'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-label,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-label,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-label,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-label,
 .e-de-tbl-margin-sub-header .e-label {
   font-size: 14px;
@@ -2074,11 +2068,7 @@ label[for='container_wholeWord'] {
 }
 
 .e-documenteditor .e-de-op .e-de-op-close-icon {
-  font-size: 12px;
   height: 20px;
-  margin-left: -4px;
-  margin-top: -3px;
-  width: auto;
 }
 
 .e-documenteditor .e-de-op-close-icon::before {

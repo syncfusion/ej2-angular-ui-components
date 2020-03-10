@@ -40,10 +40,12 @@
 
 .e-pdfviewer .e-pv-zoom-out-icon::before {
   content: '\ebe2';
+  line-height: 26px;
 }
 
 .e-pdfviewer .e-pv-zoom-in-icon::before {
   content: '\ebe3';
+  line-height: 26px;
 }
 
 .e-pdfviewer .e-pv-thumbnail-view-icon::before {
@@ -2013,6 +2015,11 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-bigger .e-toolbar .e-toolbar-items .e-toolbar-item.e-pv-zoom-drop-down-container {
   width: 91px;
+}
+
+.e-pv-toolbar.e-toolbar .e-tbar-btn > :first-child {
+  line-height: 26px;
+  min-height: 26px;
 }
 
 .e-bigger .e-pv-current-page-box.e-input-group.e-control-wrapper input.e-input:focus {

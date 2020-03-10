@@ -111,6 +111,8 @@ var InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (function 
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new FormBase();
+        _this.formCompContext = new ComponentBase();
         return _this;
     }
     /**
@@ -141,21 +143,25 @@ var InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (function 
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return InPlaceEditorComponent;
 }(InPlaceEditor));

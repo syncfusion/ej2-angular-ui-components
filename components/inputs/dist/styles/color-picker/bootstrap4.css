@@ -865,6 +865,11 @@ body.e-colorpicker-overflow {
 
 .e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker.e-split-btn {
   background-color: #fff;
+  border-color: #ced4da;
+}
+
+.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker + .e-dropdown-btn {
+  border-color: #ced4da;
 }
 
 .e-colorpicker-wrapper .e-btn.e-icon-btn {

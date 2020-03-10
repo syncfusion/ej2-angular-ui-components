@@ -138,11 +138,14 @@ class ComplexBase {
         // To Update properties to "this.propCollection"
         let propList = Object.keys(this);
         /* istanbul ignore next */
-        for (let k = 0; k < this.directivePropList.length; k++) {
-            let dirPropName = this.directivePropList[k];
-            if (propList.indexOf(dirPropName) !== -1) {
-                setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+        if (this.directivePropList) {
+            for (let k = 0; k < this.directivePropList.length; k++) {
+                let dirPropName = this.directivePropList[k];
+                if (propList.indexOf(dirPropName) !== -1) {
+                    setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+                }
             }
+            this.hasChanges = true;
         }
     }
     registerEvents(eventList) {
@@ -422,8 +425,16 @@ class ComponentBase {
                     // For angular 9 compatibility
                     // Not able to get complex directive properties reference ni Onint hook
                     // So we have constructed property here and used
-                    let complexDirProps = tagObject.instance.list[0].directivePropList;
-                    if (complexDirProps && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
+                    let complexDirProps;
+                    let list = getValue('instance.list', tagObject);
+                    if (list && list.length) {
+                        complexDirProps = list[0].directivePropList;
+                    }
+                    let skip = true;
+                    if (tempAfterContentThis.getModuleName && tempAfterContentThis.getModuleName() === 'gantt') {
+                        skip = false;
+                    }
+                    if (complexDirProps && skip && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
                         let compDirPropList = Object.keys(tagObject.instance.list[0].propCollection);
                         for (let h = 0; h < tagObject.instance.list.length; h++) {
                             tagObject.instance.list[h].propCollection[tagObject.instance.propertyName] = [];

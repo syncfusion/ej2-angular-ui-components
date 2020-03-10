@@ -296,12 +296,12 @@
 .e-pager .e-currentitem {
   border-radius: 4px;
   cursor: pointer;
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
   text-decoration: none;
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  padding: 11px 12px 10px 11px;
+  padding: 11px 11px 11px 11px;
 }
 
 .e-pager .e-currentitem {
@@ -645,6 +645,10 @@
   color: #317ab9;
 }
 
+.e-pager div.e-icons.e-disable {
+  color: unset;
+}
+
 .e-pager .e-pager-default:hover {
   background: #eee;
   color: #1f496e;
@@ -658,6 +662,10 @@
 .e-pager .e-spacing {
   color: #317ab9;
   opacity: 1;
+}
+
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: unset;
 }
 
 .e-pager .e-numericitem:hover {

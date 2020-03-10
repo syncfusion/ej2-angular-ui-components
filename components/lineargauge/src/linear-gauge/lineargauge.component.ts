@@ -6,7 +6,7 @@ import { AxesDirective } from './axes.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','container','description','enablePersistence','enableRtl','format','height','locale','margin','orientation','rangePalettes','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','beforePrint','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender','valueChange'];
+export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','beforePrint','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender','valueChange'];
 export const twoWays: string[] = [''];
 
 /**

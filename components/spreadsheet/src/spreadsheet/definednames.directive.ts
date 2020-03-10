@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class DefinedNameDirective extends ComplexBase<DefinedNameDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,7 @@ export class DefinedNameDirective extends ComplexBase<DefinedNameDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

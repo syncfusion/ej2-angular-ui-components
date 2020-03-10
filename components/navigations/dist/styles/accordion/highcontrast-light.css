@@ -150,6 +150,10 @@
   font-weight: 600;
 }
 
+.e-accordion .e-acrdn-item.e-overlay {
+  height: auto;
+}
+
 .e-accordion .e-acrdn-item {
   overflow: hidden;
   padding-top: 0;

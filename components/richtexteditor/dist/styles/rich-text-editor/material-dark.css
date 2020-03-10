@@ -1405,10 +1405,6 @@
   border-bottom: 0;
 }
 
-.e-richtexteditor.e-rte-readonly .e-rte-toolbar {
-  pointer-events: none;
-}
-
 .e-rte-backgroundcolor-colorpicker .e-color-palette.e-container .e-custom-palette .e-palette,
 .e-rte-fontcolor-colorpicker .e-color-palette.e-container .e-custom-palette .e-palette {
   padding: 0;

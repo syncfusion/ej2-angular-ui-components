@@ -29,6 +29,7 @@ let outputs: string[] = [];
     }
 })
 export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -67,6 +68,7 @@ export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

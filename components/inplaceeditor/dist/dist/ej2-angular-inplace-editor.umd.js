@@ -112,6 +112,8 @@ exports.InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (funct
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -142,21 +144,25 @@ exports.InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (funct
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return InPlaceEditorComponent;
 }(ej2InplaceEditor.InPlaceEditor));

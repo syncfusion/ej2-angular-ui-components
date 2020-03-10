@@ -1880,6 +1880,13 @@
   height: auto;
 }
 
+.e-schedule .e-timeline-view .e-ignore-whitespace .e-work-cells,
+.e-schedule .e-timeline-view .e-ignore-whitespace .e-resource-cells,
+.e-schedule .e-timeline-month-view .e-ignore-whitespace .e-work-cells,
+.e-schedule .e-timeline-month-view .e-ignore-whitespace .e-resource-cells {
+  height: 42px;
+}
+
 .e-schedule .e-timeline-view .e-resource-tree-icon,
 .e-schedule .e-timeline-month-view .e-resource-tree-icon {
   color: #333;

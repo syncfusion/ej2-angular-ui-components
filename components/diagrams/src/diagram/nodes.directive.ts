@@ -182,6 +182,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the horizontalAlignment of the node
      * @default 'Stretch'
+     * @blazordefaultvalue 'Left'
      */
     public horizontalAlignment: any;
     /** 
@@ -318,6 +319,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the verticalAlignment of the node
      * @default 'Stretch'
+     * @blazordefaultvalue 'Top'
      */
     public verticalAlignment: any;
     /** 

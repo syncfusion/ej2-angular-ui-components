@@ -30,6 +30,7 @@ let outputs: string[] = [];
     }
 })
 export class SheetDirective extends ComplexBase<SheetDirective> {
+    public directivePropList: any;
     public childRows: any;
     public childColumns: any;
     public childRangeSettings: any;
@@ -113,6 +114,7 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

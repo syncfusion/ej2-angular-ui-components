@@ -1868,10 +1868,6 @@
   color: inherit;
 }
 
-.e-toolbar .e-toolbar-pop .e-toolbar-item .e-tbar-btn {
-  background: #fff;
-}
-
 .e-toolbar .e-toolbar-pop .e-toolbar-item .e-tbar-btn-text {
   color: #495057;
 }
@@ -2186,6 +2182,10 @@
 
 .e-accordion .e-acrdn-item.e-selected > .e-acrdn-header .e-acrdn-header-content {
   font-weight: normal;
+}
+
+.e-accordion .e-acrdn-item.e-overlay {
+  height: auto;
 }
 
 .e-accordion .e-acrdn-item {

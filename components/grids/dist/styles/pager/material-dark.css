@@ -646,6 +646,10 @@
   color: #fff;
 }
 
+.e-pager div.e-icons.e-disable {
+  color: unset;
+}
+
 .e-pager .e-pager-default:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -659,6 +663,10 @@
 .e-pager .e-spacing {
   color: #fff;
   opacity: 0.87;
+}
+
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: unset;
 }
 
 .e-pager .e-numericitem:hover {

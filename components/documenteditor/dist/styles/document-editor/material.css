@@ -23,14 +23,6 @@
   font-size: 10px;
 }
 
-.e-documenteditor .e-de-op .e-de-op-close-icon {
-  font-size: 12px;
-  height: 20px;
-  margin-left: -4px;
-  margin-top: -3px;
-  width: auto;
-}
-
 .e-documenteditor .e-de-op-close-icon::before {
   content: '\e7fc';
 }
@@ -563,11 +555,9 @@
 }
 
 .e-documenteditor .e-de-op-close-button {
-  height: 20px;
   left: 267px;
   position: absolute;
   top: 18px;
-  width: 20px;
 }
 
 .e-documenteditor .e-de-op-close-button.e-de-rtl {
@@ -971,7 +961,7 @@
 }
 
 .e-de-op-close-icon {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-de-op-nav-btn {
@@ -1233,11 +1223,9 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-documenteditor .e-de-op-close-button {
-  height: 20px;
-  left: 267px;
+  left: 260px;
   position: absolute;
   top: 18px;
-  width: 20px;
 }
 
 .e-documenteditor .e-de-op-close-button.e-de-rtl {
@@ -1546,7 +1534,7 @@ label[for*='_wholeWord_e-de-rtl'] {
   margin-top: 20px;
 }
 
-.e-de-tbl-btn-seperator {
+.e-de-tbl-btn-separator {
   width: 57%;
 }
 
@@ -1763,7 +1751,7 @@ label[for*='_wholeWord_e-de-rtl'] {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label {
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -2045,7 +2033,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-frame,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-frame,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-frame,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-frame,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-frame,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-frame,
 .e-de-tbl-margin-sub-header .e-frame {
   height: 18px;
@@ -2058,7 +2046,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-label,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-label,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-label,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-label,
 .e-de-tbl-margin-sub-header .e-label {
   font-size: 14px;
@@ -2516,6 +2504,14 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 13px;
   height: 36px;
   opacity: .87;
+  margin: 0 0;
+}
+
+.e-bigger .e-de-rp-btn-enforce {
+  margin: 0;
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .e-de-rp-nav-btn {
@@ -2764,7 +2760,12 @@ label[for*='_wholeWord_e-de-rtl'] {
   line-height: normal;
   min-height: 30px;
   overflow: hidden;
+  padding-top: 7px;
   resize: none;
+}
+
+.e-bigger .e-de-cmt-textarea.e-input {
+  padding-top: 5px;
 }
 
 .e-de-cmt-action-button {
@@ -2773,7 +2774,6 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-cmt-post-btn.e-btn.e-flat, .e-de-cmt-cancel-btn.e-btn.e-flat {
-  color: rgba(0, 0, 0, 0.54);
   height: 28px;
   margin-left: 8px;
   width: 28px;
@@ -2922,4 +2922,30 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-bigger .e-rtl .e-de-cmt-post-btn.e-btn.e-flat, .e-bigger .e-rtl .e-de-cmt-cancel-btn.e-btn.e-flat {
   margin-right: 12px;
+}
+
+.e-de-close-icon.e-btn {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+}
+
+.e-de-close-icon.e-btn:active {
+  background-color: #e0e0e0;
+  box-shadow: none;
+}
+
+.e-de-close-icon.e-btn:hover {
+  background-color: #e0e0e0;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  border: none;
+}
+
+.e-btn.e-de-close-icon:hover span {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
 }

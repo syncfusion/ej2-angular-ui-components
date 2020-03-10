@@ -321,26 +321,9 @@
   width: auto;
 }
 
-.e-bigger .e-inplaceeditor .e-input-group + .e-editable-loading .e-spinner-inner,
-.e-inplaceeditor.e-bigger .e-input-group + .e-editable-loading .e-spinner-inner,
-.e-bigger .e-inplaceeditor-tip .e-input-group + .e-editable-loading .e-spinner-inner,
-.e-inplaceeditor-tip.e-bigger .e-input-group + .e-editable-loading .e-spinner-inner {
-  top: 45%;
-}
-
-.e-inplaceeditor .e-input-group + .e-editable-loading .e-spinner-inner,
-.e-inplaceeditor-tip .e-input-group + .e-editable-loading .e-spinner-inner {
-  top: 35%;
-}
-
 .e-inplaceeditor .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
 .e-inplaceeditor-tip .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
   stroke-width: inherit;
-}
-
-.e-inplaceeditor .e-input-group + .e-editable-loading .e-spinner-inner,
-.e-inplaceeditor-tip .e-input-group + .e-editable-loading .e-spinner-inner {
-  top: 35%;
 }
 
 .e-inplaceeditor .e-editable-elements:not(.e-richtexteditor) + .e-editable-loading .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
@@ -568,57 +551,11 @@
   border-bottom-color: transparent;
 }
 
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
 .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn .e-btn-icon.e-icons,
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn .e-btn-icon.e-icons,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn .e-btn-icon.e-icons,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn .e-btn-icon.e-icons {
   color: #fff;
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover {
-  background-color: transparent;
-  border: none;
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus {
-  background-color: transparent;
-  border: none;
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active {
-  background-color: transparent;
-  border: none;
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons {
-  color: transparent;
 }
 
 .e-inplaceeditor-tip.e-tooltip-wrap {

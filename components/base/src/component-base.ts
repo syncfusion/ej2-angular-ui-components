@@ -185,8 +185,16 @@ export class ComponentBase<T> {
                     // For angular 9 compatibility
                     // Not able to get complex directive properties reference ni Onint hook
                     // So we have constructed property here and used
-                    let complexDirProps = tagObject.instance.list[0].directivePropList;
-                    if (complexDirProps && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
+                    let complexDirProps;
+                    let list = getValue('instance.list', tagObject);
+                    if(list && list.length){
+                        complexDirProps =  list[0].directivePropList;
+                    }
+                    let skip: any = true;
+                    if((tempAfterContentThis as any).getModuleName && (tempAfterContentThis as any).getModuleName() === 'gantt'){
+                        skip = false
+                    }
+                    if (complexDirProps && skip && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
                         let compDirPropList = Object.keys(tagObject.instance.list[0].propCollection);
                         for (let h = 0; h < tagObject.instance.list.length; h++) {
                             tagObject.instance.list[h].propCollection[tagObject.instance.propertyName] = [];

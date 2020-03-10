@@ -40,10 +40,12 @@
 
 .e-pdfviewer .e-pv-zoom-out-icon::before {
   content: '\e74a';
+  line-height: 26px;
 }
 
 .e-pdfviewer .e-pv-zoom-in-icon::before {
   content: '\e70a';
+  line-height: 26px;
 }
 
 .e-pdfviewer .e-pv-thumbnail-view-icon::before {
@@ -144,6 +146,7 @@
 }
 
 .e-pdfviewer .e-pv-more-icon::before {
+  color: rgba(33, 37, 41, 0.9);
   content: '\e71b';
 }
 
@@ -199,7 +202,6 @@
 }
 
 .e-pv-stamp-icon::before {
-  color: #495057;
   content: '\e74c';
 }
 
@@ -293,7 +295,7 @@
 
 .e-pv-completed-icon::before {
   color: #fff;
-  content: '\e614';
+  content: '\e718';
   font-family: 'e-icons';
   font-size: 14px;
   padding: 2px 1px 1px 3.5px;
@@ -302,7 +304,7 @@
 
 .e-pv-cancelled-icon::before {
   color: #fff;
-  content: '\e60a';
+  content: '\e745';
   font-family: 'e-icons';
   font-size: 14px;
   padding: 2px 1px 1px 3.5px;
@@ -340,7 +342,6 @@
 }
 
 .e-pv-annotation-stamp-container .e-menu-wrapper ul .e-menu-item .e-caret::before {
-  color: #495057;
   font-size: 8px;
 }
 
@@ -2148,9 +2149,9 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-properties-line-start.e-btn .e-caret,
 .e-pv-properties-line-end.e-btn .e-caret {
-  display: inline;
+  display: block;
   line-height: 16px;
-  margin-left: 80px;
+  margin-left: 143px;
 }
 
 .e-pv-line-styles-content-container {
@@ -2215,6 +2216,11 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 .e-bigger .e-toolbar.e-pv-annotation-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator) {
   padding-left: 4px;
   padding-right: 4px;
+}
+
+.e-pv-toolbar.e-toolbar .e-tbar-btn > :first-child {
+  line-height: 26px;
+  min-height: 26px;
 }
 
 .e-bigger .e-pv-current-page-box.e-input-group.e-control-wrapper input.e-input:focus {
@@ -2369,10 +2375,6 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pdfviewer .e-treeview.e-fullrow-wrap .e-list-url {
   margin-top: 3px;
   position: absolute;
-}
-
-.e-pdfviewer .e-treeview .e-list-item:not(.e-active) .e-list-text {
-  color: #495057;
 }
 
 .e-pdfviewer .e-treeview .e-list-item.e-hover:not(.e-active) > .e-fullrow {
@@ -2552,7 +2554,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-pv-comments-border {
   border: 2px;
-  border-color: #007bff;
+  border-color: #f8f9fa;
   border-radius: 4px;
   border-style: groove;
 }
@@ -2580,11 +2582,11 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 }
 
 .e-pv-comments-select {
-  background-color: #007bff;
+  background-color: #f8f9fa;
 }
 
 .e-pv-comments-select .e-pv-comment-textbox .e-editable-value-wrapper {
-  color: #fff;
+  color: rgba(33, 37, 41, 0.9);
 }
 
 .e-pv-comments-leave {

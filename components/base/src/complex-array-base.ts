@@ -50,11 +50,14 @@ export class ComplexBase<T> {
         // To Update properties to "this.propCollection"
         let propList: string[] = Object.keys(this);
         /* istanbul ignore next */
+        if (this.directivePropList) {
         for (let k: number = 0; k < this.directivePropList.length; k++) {
             let dirPropName: string = this.directivePropList[k];
             if (propList.indexOf(dirPropName) !== -1) {
                 setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
             }
+        }
+        this.hasChanges = true;
         }
     }
 

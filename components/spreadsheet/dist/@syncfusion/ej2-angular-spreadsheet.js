@@ -33,6 +33,7 @@ class CellDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 CellDirective.decorators = [
@@ -97,6 +98,7 @@ class RowDirective extends ComplexBase {
         this.tags = ['cells'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$1);
+        this.directivePropList = input$1;
     }
 }
 RowDirective.decorators = [
@@ -162,6 +164,7 @@ class ColumnDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$2);
+        this.directivePropList = input$2;
     }
 }
 ColumnDirective.decorators = [
@@ -225,6 +228,7 @@ class RangeSettingDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$3);
+        this.directivePropList = input$3;
     }
 }
 RangeSettingDirective.decorators = [
@@ -286,6 +290,7 @@ class SheetDirective extends ComplexBase {
         this.tags = ['rows', 'columns', 'rangeSettings'];
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$4);
+        this.directivePropList = input$4;
     }
 }
 SheetDirective.decorators = [
@@ -350,6 +355,7 @@ class DefinedNameDirective extends ComplexBase {
         this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs$5);
+        this.directivePropList = input$5;
     }
 }
 DefinedNameDirective.decorators = [
@@ -550,26 +556,40 @@ let SpreadsheetComponent = class SpreadsheetComponent extends Spreadsheet {
         this.registerEvents(outputs$6);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context = new ComponentBase();
     }
     /**
      * @return {?}
      */
     ngOnInit() {
+        this.context.ngOnInit(this);
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
+        this.context.ngAfterViewInit(this);
     }
     /**
      * @return {?}
      */
     ngOnDestroy() {
+        this.context.ngOnDestroy(this);
     }
     /**
      * @return {?}
      */
     ngAfterContentChecked() {
+        this.tagObjects[0].instance = this.childSheets;
+        if (this.childDefinedNames) {
+            this.tagObjects[1].instance = ((this.childDefinedNames)).list[0].childSheets;
+            for (var /** @type {?} */ d = 0; d < ((this.childDefinedNames)).list.length; d++) {
+                if (((this.childDefinedNames)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childDefinedNames)).list[d + 1].childSheets.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     }
 };
 SpreadsheetComponent.decorators = [

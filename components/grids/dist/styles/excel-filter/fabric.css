@@ -119,39 +119,31 @@
 }
 
 /*! Excel-Filter layout */
-.e-xlfl-dlgfields {
+.e-xlflmenu {
+  min-height: 314px;
+}
+
+.e-xlflmenu .e-xlfl-dlgfields {
   font-size: 15px;
 }
 
-.e-emptyicon {
-  opacity: 0;
-}
-
-.e-xlfl-fieldset {
+.e-xlflmenu .e-xlfl-fieldset {
   font-size: 13px;
   padding-top: 9px;
 }
 
-.e-xlfl-optr,
-.e-xlfl-value {
+.e-xlflmenu .e-xlfl-optr,
+.e-xlflmenu .e-xlfl-value {
   padding-top: 12px;
 }
 
-.e-xlfl-radio,
-.e-xlfl-mtcase {
+.e-xlflmenu .e-xlfl-radio,
+.e-xlflmenu .e-xlfl-mtcase {
   padding-top: 12px;
 }
 
-.e-xlfl-optr :first-child {
+.e-xlflmenu .e-xlfl-optr:first-child {
   padding-right: 12px;
-}
-
-.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
-  padding-left: 12px;
-}
-
-.e-xlflmenu {
-  min-height: 314px;
 }
 
 .e-xlflmenu .e-xlfl-table {
@@ -165,11 +157,6 @@
   padding-right: 8px;
 }
 
-.e-xlflmenu.e-rtl .e-radio + label .e-label {
-  padding-left: 0;
-  padding-right: 25px;
-}
-
 .e-xlflmenu .e-checkbox-wrapper .e-frame + .e-label {
   margin-left: 6px;
 }
@@ -178,8 +165,13 @@
   padding-bottom: 5px;
 }
 
-.e-xlfl-radiodiv {
+.e-xlflmenu .e-xlfl-radiodiv {
   width: 118px;
+}
+
+.e-xlflmenu .e-xlfl-matchcasediv {
+  margin-left: 0;
+  margin-right: 13px;
 }
 
 .e-xlfl-radio-or,
@@ -187,20 +179,26 @@
   margin-left: 2px;
 }
 
-.e-xlflmenu.e-rtl .e-xlfl-radio-or,
-.e-xlfl-matchcasediv {
+.e-emptyicon {
+  opacity: 0;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-optr :first-child {
+  padding-left: 12px;
+}
+
+.e-xlflmenu.e-rtl .e-radio + label .e-label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.e-xlflmenu.e-rtl .e-xlfl-radio-or {
   margin-left: 0;
   margin-right: 13px;
 }
 
-.e-checkboxfiltertext {
-  width: 135px;
-  word-break: normal;
-}
-
-.e-bigger .e-ftrchk {
-  padding-bottom: 12px;
-  padding-top: 12px;
+.e-bigger .e-xlflmenu {
+  min-height: 372px;
 }
 
 .e-bigger .e-xlflmenu .e-xlfl-table {
@@ -221,39 +219,35 @@
   margin-left: 8px;
 }
 
-.e-bigger .e-xlfl-radiodiv {
+.e-bigger .e-xlflmenu .e-xlfl-radiodiv {
   width: 138px;
 }
 
-.e-bigger .e-xlfl-radio-or,
-.e-bigger .e-xlfl-matchcasediv {
+.e-bigger .e-xlflmenu .e-xlfl-radio-or,
+.e-bigger .e-xlflmenu .e-xlfl-matchcasediv {
   margin-left: 18px;
 }
 
-.e-bigger .e-xlflmenu {
-  min-height: 372px;
-}
-
-.e-bigger .e-xlfl-optr:first-child {
+.e-bigger .e-xlflmenu .e-xlfl-optr:first-child {
   padding-right: 16px;
 }
 
-.e-bigger .e-xlfl-dlgfields {
+.e-bigger .e-xlflmenu .e-xlfl-dlgfields {
   font-size: 16px;
 }
 
-.e-bigger .e-xlfl-fieldset {
+.e-bigger .e-xlflmenu .e-xlfl-fieldset {
   font-size: 14px;
   padding-top: 12px;
 }
 
-.e-bigger .e-xlfl-optr,
-.e-bigger .e-xlfl-value {
+.e-bigger .e-xlflmenu .e-xlfl-optr,
+.e-bigger .e-xlflmenu .e-xlfl-value {
   padding-top: 16px;
 }
 
-.e-bigger .e-xlfl-radio,
-.e-bigger .e-xlfl-mtcase {
+.e-bigger .e-xlflmenu .e-xlfl-radio,
+.e-bigger .e-xlflmenu .e-xlfl-mtcase {
   padding-top: 6px;
 }
 
@@ -262,21 +256,27 @@
   min-height: 372px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li {
+.e-bigger .e-excelfilter .e-ftrchk,
+.e-excelfilter.e-bigger .e-ftrchk {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li {
   height: 48px;
   line-height: 48px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li .e-menu-icon {
   height: 48px;
   line-height: 48px;
   margin-right: 10px;
 }
 
-.e-bigger .e-excelfilter .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
-.e-excelfilter.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
+.e-bigger .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 48px;
   line-height: 48px;
 }
@@ -286,6 +286,11 @@
   margin-top: 5px;
   min-height: 160px;
   overflow-y: auto;
+}
+
+.e-excelfilter .e-checkboxfiltertext {
+  width: 135px;
+  word-break: normal;
 }
 
 .e-excelfilter .e-chk-hidden {

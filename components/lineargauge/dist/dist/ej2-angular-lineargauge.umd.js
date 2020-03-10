@@ -290,7 +290,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
+var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
  * Linear Gauge Component
@@ -492,6 +492,7 @@ exports.Margin = ej2Lineargauge.Margin;
 exports.Border = ej2Lineargauge.Border;
 exports.Annotation = ej2Lineargauge.Annotation;
 exports.Container = ej2Lineargauge.Container;
+exports.RangeTooltip = ej2Lineargauge.RangeTooltip;
 exports.TooltipSettings = ej2Lineargauge.TooltipSettings;
 exports.Line = ej2Lineargauge.Line;
 exports.Label = ej2Lineargauge.Label;
@@ -529,6 +530,7 @@ exports.calculateNiceInterval = ej2Lineargauge.calculateNiceInterval;
 exports.getActualDesiredIntervalsCount = ej2Lineargauge.getActualDesiredIntervalsCount;
 exports.getPointer = ej2Lineargauge.getPointer;
 exports.getRangeColor = ej2Lineargauge.getRangeColor;
+exports.getMousePosition = ej2Lineargauge.getMousePosition;
 exports.getRangePalette = ej2Lineargauge.getRangePalette;
 exports.calculateShapes = ej2Lineargauge.calculateShapes;
 exports.getBox = ej2Lineargauge.getBox;

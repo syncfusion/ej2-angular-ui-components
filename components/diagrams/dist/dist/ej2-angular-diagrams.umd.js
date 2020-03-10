@@ -1375,6 +1375,7 @@ exports.getObjectType = ej2Diagrams.getObjectType;
 exports.flipConnector = ej2Diagrams.flipConnector;
 exports.updatePortEdges = ej2Diagrams.updatePortEdges;
 exports.alignElement = ej2Diagrams.alignElement;
+exports.cloneSelectedObjects = ej2Diagrams.cloneSelectedObjects;
 exports.updatePathElement = ej2Diagrams.updatePathElement;
 exports.checkPort = ej2Diagrams.checkPort;
 exports.findPath = ej2Diagrams.findPath;
