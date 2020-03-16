@@ -68,7 +68,9 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
                         if(rt._view){
                             let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
                             for (let m: number = 0; m < rt.rootNodes.length; m++) {
-                                pNode.appendChild(rt.rootNodes[m]);
+                                if (pNode) {
+                                    pNode.appendChild(rt.rootNodes[m]);
+                                }
                             }
                         }
                         rt.destroy();
