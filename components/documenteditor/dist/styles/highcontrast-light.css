@@ -1023,6 +1023,7 @@ label[for='container_wholeWord'] {
 .e-de-tooltip {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  color: #000;
   cursor: text;
   max-width: 200px;
   padding: 5px;
@@ -3000,8 +3001,8 @@ label[for='container_wholeWord'] {
 }
 
 .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 113px);
   width: 100%;
 }
@@ -3043,8 +3044,8 @@ label[for='container_wholeWord'] {
 }
 
 .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -3623,9 +3624,9 @@ label[for='container_wholeWord'] {
 
 .e-de-status-bar {
   background-color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5px;
   width: 100%;
 }
 
@@ -3878,8 +3879,8 @@ label[for='container_wholeWord'] {
 }
 
 .e-bigger .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 118px);
   min-height: 200px;
   width: 100%;
@@ -3901,8 +3902,8 @@ label[for='container_wholeWord'] {
 }
 
 .e-bigger .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -4228,9 +4229,9 @@ label[for='container_wholeWord'] {
 
 .e-bigger .e-de-status-bar {
   background-color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5px;
   width: 100%;
 }
 

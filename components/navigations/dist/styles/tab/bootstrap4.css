@@ -1446,6 +1446,7 @@
 @media screen and (max-width: 480px) {
   .e-tab .e-tab-header .e-toolbar-items {
     min-height: 42px;
+    height: 42px;
   }
 }
 

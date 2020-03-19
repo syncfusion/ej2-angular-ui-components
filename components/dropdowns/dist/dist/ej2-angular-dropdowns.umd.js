@@ -1045,6 +1045,208 @@ ListBoxAllModule.decorators = [
  * @nocollapse
  */
 ListBoxAllModule.ctorParameters = function () { return []; };
+var __decorate$5 = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+        r = Reflect.decorate(decorators, target, key, desc);
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+        return Reflect.metadata(k, v);
+};
+var inputs$5 = ['actionFailureTemplate', 'allowMultiSelection', 'changeOnBlur', 'cssClass', 'delimiterChar', 'enablePersistence', 'enableRtl', 'enabled', 'fields', 'floatLabelType', 'footerTemplate', 'headerTemplate', 'htmlAttributes', 'itemTemplate', 'locale', 'mode', 'noRecordsTemplate', 'placeholder', 'popupHeight', 'popupWidth', 'readonly', 'selectAllText', 'showCheckBox', 'showClearButton', 'showDropDownIcon', 'showSelectAll', 'sortOrder', 'text', 'treeSettings', 'unSelectAllText', 'value', 'width', 'zIndex'];
+var outputs$5 = ['actionFailure', 'beforeOpen', 'blur', 'change', 'close', 'created', 'dataBound', 'destroyed', 'focus', 'open', 'select', 'valueChange'];
+var twoWays$5 = ['value'];
+/**
+ * The DropDownTree component contains a list of predefined values from which you can choose a single or multiple values.
+ * ```html
+ * <ejs-dropdowntree></ejs-dropdowntree>
+ * ```
+ */
+exports.DropDownTreeComponent = DropDownTreeComponent_1 = /** @class */ (function (_super) {
+    __extends(DropDownTreeComponent, _super);
+    /**
+     * @param {?} ngEle
+     * @param {?} srenderer
+     * @param {?} viewContainerRef
+     * @param {?} injector
+     */
+    function DropDownTreeComponent(ngEle, srenderer, viewContainerRef, injector) {
+        var _this = _super.call(this) || this;
+        _this.ngEle = ngEle;
+        _this.srenderer = srenderer;
+        _this.viewContainerRef = viewContainerRef;
+        _this.injector = injector;
+        _this.skipFromEvent = true;
+        _this.element = _this.ngEle.nativeElement;
+        _this.injectedModules = _this.injectedModules || [];
+        _this.registerEvents(outputs$5);
+        _this.addTwoWay.call(_this, twoWays$5);
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
+        return _this;
+    }
+    /**
+     * @param {?} registerFunction
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.registerOnChange = function (registerFunction) {
+    };
+    /**
+     * @param {?} registerFunction
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.registerOnTouched = function (registerFunction) {
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.writeValue = function (value) {
+    };
+    /**
+     * @param {?} disabled
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.setDisabledState = function (disabled) {
+    };
+    /**
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
+    };
+    /**
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
+    };
+    /**
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
+    };
+    /**
+     * @return {?}
+     */
+    DropDownTreeComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
+    };
+    return DropDownTreeComponent;
+}(ej2Dropdowns.DropDownTree));
+exports.DropDownTreeComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'ejs-dropdowntree',
+                inputs: inputs$5,
+                outputs: outputs$5,
+                template: '',
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                providers: [
+                    {
+                        provide: forms.NG_VALUE_ACCESSOR,
+                        useExisting: core.forwardRef(function () { return DropDownTreeComponent_1; }),
+                        multi: true
+                    }
+                ],
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+exports.DropDownTreeComponent.ctorParameters = function () { return [
+    { type: core.ElementRef, },
+    { type: core.Renderer2, },
+    { type: core.ViewContainerRef, },
+    { type: core.Injector, },
+]; };
+exports.DropDownTreeComponent.propDecorators = {
+    'footerTemplate': [{ type: core.ContentChild, args: ['footerTemplate',] },],
+    'headerTemplate': [{ type: core.ContentChild, args: ['headerTemplate',] },],
+    'itemTemplate': [{ type: core.ContentChild, args: ['itemTemplate',] },],
+    'noRecordsTemplate': [{ type: core.ContentChild, args: ['noRecordsTemplate',] },],
+    'actionFailureTemplate': [{ type: core.ContentChild, args: ['actionFailureTemplate',] },],
+};
+__decorate$5([
+    ej2AngularBase.Template(),
+    __metadata$5("design:type", Object)
+], exports.DropDownTreeComponent.prototype, "footerTemplate", void 0);
+__decorate$5([
+    ej2AngularBase.Template(),
+    __metadata$5("design:type", Object)
+], exports.DropDownTreeComponent.prototype, "headerTemplate", void 0);
+__decorate$5([
+    ej2AngularBase.Template(),
+    __metadata$5("design:type", Object)
+], exports.DropDownTreeComponent.prototype, "itemTemplate", void 0);
+__decorate$5([
+    ej2AngularBase.Template('No Records Found'),
+    __metadata$5("design:type", Object)
+], exports.DropDownTreeComponent.prototype, "noRecordsTemplate", void 0);
+__decorate$5([
+    ej2AngularBase.Template('The Request Failed'),
+    __metadata$5("design:type", Object)
+], exports.DropDownTreeComponent.prototype, "actionFailureTemplate", void 0);
+exports.DropDownTreeComponent = DropDownTreeComponent_1 = __decorate$5([
+    ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase, ej2AngularBase.FormBase]),
+    __metadata$5("design:paramtypes", [core.ElementRef,
+        core.Renderer2,
+        core.ViewContainerRef,
+        core.Injector])
+], exports.DropDownTreeComponent);
+var DropDownTreeComponent_1;
+/**
+ * NgModule definition for the DropDownTree component.
+ */
+var DropDownTreeModule = /** @class */ (function () {
+    function DropDownTreeModule() {
+    }
+    return DropDownTreeModule;
+}());
+DropDownTreeModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule],
+                declarations: [
+                    exports.DropDownTreeComponent
+                ],
+                exports: [
+                    exports.DropDownTreeComponent
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownTreeModule.ctorParameters = function () { return []; };
+/**
+ * NgModule definition for the DropDownTree component with providers.
+ */
+var DropDownTreeAllModule = /** @class */ (function () {
+    function DropDownTreeAllModule() {
+    }
+    return DropDownTreeAllModule;
+}());
+DropDownTreeAllModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule, DropDownTreeModule],
+                exports: [
+                    DropDownTreeModule
+                ],
+                providers: []
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DropDownTreeAllModule.ctorParameters = function () { return []; };
 
 exports.DropDownListModule = DropDownListModule;
 exports.DropDownListAllModule = DropDownListAllModule;
@@ -1057,12 +1259,16 @@ exports.MultiSelectAllModule = MultiSelectAllModule;
 exports.CheckBoxSelectionService = CheckBoxSelectionService;
 exports.ListBoxModule = ListBoxModule;
 exports.ListBoxAllModule = ListBoxAllModule;
+exports.DropDownTreeModule = DropDownTreeModule;
+exports.DropDownTreeAllModule = DropDownTreeAllModule;
 exports.ɵe = inputs$2;
 exports.ɵf = outputs$2;
 exports.ɵc = inputs$1;
 exports.ɵd = outputs$1;
 exports.ɵa = inputs;
 exports.ɵb = outputs;
+exports.ɵk = inputs$5;
+exports.ɵl = outputs$5;
 exports.ɵi = inputs$4;
 exports.ɵj = outputs$4;
 exports.ɵg = inputs$3;
@@ -1076,6 +1282,9 @@ exports.dropDownBaseClasses = ej2Dropdowns.dropDownBaseClasses;
 exports.DropDownBase = ej2Dropdowns.DropDownBase;
 exports.dropDownListClasses = ej2Dropdowns.dropDownListClasses;
 exports.DropDownList = ej2Dropdowns.DropDownList;
+exports.Fields = ej2Dropdowns.Fields;
+exports.TreeSettings = ej2Dropdowns.TreeSettings;
+exports.DropDownTree = ej2Dropdowns.DropDownTree;
 exports.ComboBox = ej2Dropdowns.ComboBox;
 exports.AutoComplete = ej2Dropdowns.AutoComplete;
 exports.MultiSelect = ej2Dropdowns.MultiSelect;

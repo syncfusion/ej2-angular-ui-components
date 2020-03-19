@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 17.4.55 (2020-03-10)
-
-### ColorPicker
-
-#### Bug Fixes
-
-- Issue with bootstrap theme is fixed.
-
-## 17.4.51 (2020-02-25)
+## 18.1.36-beta (2020-03-19)
 
 ### Slider
 
@@ -1023,7 +1015,7 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
 
-## 1.0 (2020-02-18)
+## 17.4.50 (2020-02-18)
 
 ### MaskedTextBox
 

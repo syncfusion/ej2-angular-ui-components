@@ -1,4 +1,154 @@
+.e-popup.e-ddl {
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  margin-top: 3px;
+  overflow: auto;
+}
+
+.e-popup.e-ddl .e-input-group {
+  width: auto;
+}
+
+.e-popup.e-ddl .e-input-group input {
+  line-height: 15px;
+}
+
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
+.e-popup.e-ddl .e-filter-parent .e-input-group {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.e-popup.e-ddl .e-filter-parent .e-input-group .e-back-icon {
+  border: 0;
+}
+
+.e-bigger .e-popup.e-ddl-device-filter {
+  margin-top: 0;
+}
+
+.e-bigger .e-popup.e-ddl .e-list-item,
+.e-bigger .e-popup.e-ddl .e-list-group-item,
+.e-bigger .e-popup.e-ddl .e-fixed-head {
+  font-size: 15px;
+  line-height: 40px;
+  padding-left: 0;
+  text-indent: 24px;
+}
+
+.e-bigger .e-popup.e-ddl .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger .e-popup.e-ddl .e-input-group {
+  padding: 4px 0;
+}
+
+.e-bigger .e-popup.e-ddl .e-input-group input,
+.e-bigger .e-popup.e-ddl .e-input-group input.e-input {
+  height: 38px;
+}
+
+.e-bigger .e-popup.e-ddl .e-dropdownbase {
+  min-height: 40px;
+}
+
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:hover,
+.e-control.e-dropdownlist .e-input-group:not(.e-disabled) .e-ddl-icon:active,
+.e-control.e-dropdownlist .e-input-group:not(.e-disabled) .e-ddl-icon:hover,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:active,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:hover,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-back-icon:active,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-back-icon:hover {
+  background: transparent;
+  color: #333;
+}
+
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon,
+.e-input-group.e-disabled.e-ddl .e-control.e-dropdownlist ~ .e-input-group-icon,
+.e-control.e-dropdownlist .e-input-group.e-disabled.e-ddl .e-input-group-icon,
+.e-control.e-dropdownlist .e-input-group.e-ddl .e-input-group-icon {
+  border: 0;
+}
+
+.e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-input-group-icon:active,
+.e-control.e-dropdownlist .e-input-group:not(.e-disabled) .e-input-group-icon:active,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-back-icon:active,
+.e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:active {
+  box-shadow: none;
+}
+
+.e-ddl.e-popup .e-filter-parent {
+  border-bottom: 1px solid #ccc;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-list-item,
+.e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger.e-small .e-ddl.e-popup .e-fixed-head {
+  font-size: 14px;
+  line-height: 34px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input,
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input.e-input {
+  height: 30px;
+}
+
+.e-bigger.e-small .e-popup.e-ddl .e-dropdownbase {
+  min-height: 34px;
+}
+
+.e-multi-select-wrapper .e-chips-collection .e-chips .e-chips-close.e-icon::before {
+  line-height: 30px;
+  top: 0;
+}
+
+.e-multiselect .e-input-group-icon.e-ddl-icon {
+  border-radius: 0 4px 4px 0;
+  border-right-width: 0;
+}
+
+.e-multiselect.e-rtl .e-input-group-icon.e-ddl-icon {
+  border-left-width: 0;
+  border-radius: 4px 0 0 4px;
+  border-right-width: 1px;
+}
+
 /*! component's theme wise override material-definitions and variables */
+/*! TreeView's bootstrap theme wise override definitions and variables */
+.e-treeview .e-list-item div.e-icons.interaction {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  border-radius: 15px;
+  transition: transform .3s ease-in-out;
+}
+
+.e-treeview .e-list-item .e-icons.e-icon-collapsible {
+  transform: rotate(90deg);
+}
+
+.e-treeview.e-drag-item.e-rtl .e-icons.e-drop-next {
+  transform: rotate(180deg);
+}
+
+.e-treeview.e-rtl div.e-icons {
+  transform: rotate(180deg);
+}
+
 @keyframes material-spinner-rotate {
   0% {
     transform: rotate(0);
@@ -39,11 +189,11 @@
 }
 
 .e-kanban.e-rtl .e-column-collapse::before {
-  content: '\e937';
+  content: '\e654';
 }
 
 .e-kanban.e-rtl .e-column-expand::before {
-  content: '\e956';
+  content: '\e653';
 }
 
 .e-kanban.e-rtl .e-swimlane-row-collapse::before {
@@ -65,8 +215,9 @@
 }
 
 .e-kanban .e-icons:focus {
-  background: #e0e0e0;
+  background: #e6e6e6;
   border-radius: 100%;
+  color: #333;
 }
 
 .e-kanban .e-kanban-table {
@@ -124,11 +275,11 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-min-color {
-  background: #ffe0b2;
+  background: #ffe082;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-max-color {
-  background: #fcdbe4;
+  background: #ffcdd2;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed {
@@ -138,11 +289,11 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed.e-min-color {
-  background: #ffe0b2;
+  background: #ffe082;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed.e-max-color {
-  background: #fcdbe4;
+  background: #ffcdd2;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed .e-limits,
@@ -162,7 +313,7 @@
 .e-kanban .e-kanban-header .e-header-cells .e-item-count {
   font-size: 12px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   opacity: .57;
 }
 
@@ -190,6 +341,7 @@
 
 .e-kanban .e-kanban-content {
   overflow: auto;
+  padding-bottom: 10px;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-limits {
@@ -213,11 +365,11 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-min-color {
-  background: #ffe0b2;
+  background: #ffe082;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-max-color {
-  background: #fcdbe4;
+  background: #ffcdd2;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed {
@@ -226,7 +378,8 @@
   width: 50px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-limits {
   display: none;
 }
 
@@ -332,14 +485,16 @@
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
   color: #777;
   cursor: pointer;
+  height: 24px;
   margin-left: 8px;
   padding: 6px;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:focus {
-  background: #e0e0e0;
+  background: #e6e6e6;
   border-radius: 100%;
+  color: #333;
   margin-left: 8px;
   padding: 6px;
 }
@@ -347,13 +502,15 @@
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   padding: 2px;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-item-count {
   font-size: 12px;
+  line-height: 20px;
   opacity: .57;
-  padding: 3px;
+  padding: 2px;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells {
@@ -362,11 +519,11 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-min-color {
-  background: #ffe0b2;
+  background: #ffe082;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-max-color {
-  background: #fcdbe4;
+  background: #ffcdd2;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells {
@@ -375,6 +532,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells > .e-collapse-header-text,
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-limits,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
   display: none;
 }
@@ -393,10 +551,6 @@
   text-align: left;
 }
 
-.e-kanban.e-rtl .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand {
-  padding: 4px 4px 4px 0;
-}
-
 .e-kanban.e-rtl .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
   text-align: center;
 }
@@ -412,6 +566,7 @@
 
 .e-kanban.e-rtl .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand,
 .e-kanban.e-rtl .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
+  height: 24px;
   margin-left: 0;
   margin-right: 8px;
 }
@@ -441,6 +596,10 @@
   font-size: 14px;
   padding: 7px;
   padding-left: 4px;
+}
+
+.e-kanban.e-device .e-kanban-header .e-swimlane .e-header-cells {
+  border-bottom: 0;
 }
 
 .e-kanban.e-device .e-swimlane-content {
@@ -494,7 +653,7 @@
 .e-bigger .e-kanban .e-kanban-table .e-header-cells .e-header-text,
 .e-bigger.e-kanban .e-kanban-table .e-header-cells .e-header-text {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 .e-mobile-popup-wrapper.e-device {
@@ -544,6 +703,32 @@
   width: 100%;
 }
 
+.e-kanban-dialog .e-kanban-form-wrapper table {
+  width: 100%;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table td {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  opacity: .87;
+  padding: 5px 0;
+  text-align: left;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table .e-label {
+  padding-right: 10px;
+  width: 35px;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table .e-field {
+  width: 100%;
+}
+
+.e-kanban-dialog .e-dialog-delete {
+  float: left;
+}
+
 /*! kanban component theme */
 .e-kanban .e-kanban-table .e-header-cells .e-header-text {
   color: #333;
@@ -552,6 +737,11 @@
 .e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand,
 .e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
   color: #777;
+}
+
+.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand:focus,
+.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse:focus {
+  color: #333;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
@@ -574,4 +764,8 @@
 
 .e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-bottom-border {
   border-bottom-color: #317ab9;
+}
+
+.e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-active:first-child {
+  border-color: #317ab9;
 }

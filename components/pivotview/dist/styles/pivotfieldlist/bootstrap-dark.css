@@ -40,7 +40,7 @@
 }
 
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-edit.e-icons::before {
-  content: '\e944';
+  content: '\e338';
 }
 
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-format.e-icons::before {
@@ -148,7 +148,7 @@
 }
 
 .e-pivotfieldlist-wrapper .e-field-list-back-icon::before {
-  content: '\e977';
+  content: '\e610';
 }
 
 .e-pivotfieldlist-wrapper .e-sort::before {
@@ -304,6 +304,26 @@
   content: '\e665' !important;
 }
 
+.e-pivotfieldlist-wrapper .e-pivot-calc-outer-div .e-pivot-accord .e-edited.e-icons::before {
+  content: '\e7a3';
+}
+
+.e-pivotfieldlist-wrapper .e-pivot-calc-outer-div .e-pivot-accord .e-edit.e-icons::before {
+  content: '\e338';
+}
+
+.e-pivotfieldlist-wrapper .e-pivot-button .e-edit::before {
+  content: '\e338';
+}
+
+.e-pivotfieldlist-wrapper .e-sort-ascend-icon::before {
+  content: '\e734';
+}
+
+.e-pivotfieldlist-wrapper .e-sort-descend-icon::before {
+  content: '\e733';
+}
+
 /*! field-list theme */
 .e-pivotfieldlist .e-disable {
   display: none;
@@ -346,7 +366,8 @@
   margin-right: 10px;
 }
 
-.e-pivot-formatting-dialog .e-format-color-picker {
+.e-pivot-formatting-dialog .e-format-font-color-picker {
+  margin-left: 0;
   margin-right: 18px;
 }
 
@@ -450,6 +471,11 @@
   white-space: nowrap;
 }
 
+.e-pivot-formatting-dialog.e-rtl .e-format-font-color-picker {
+  margin-left: 18px;
+  margin-right: 0;
+}
+
 .e-pivot-formatting-dialog.e-rtl .e-format-condition-button {
   float: right;
 }
@@ -527,10 +553,11 @@
   padding-right: 20px;
 }
 
-.e-bigger.e-pivot-formatting-dialog .e-format-color-picker,
-.e-bigger .e-pivot-formatting-dialog .e-format-color-picker,
-.e-bigger.e-pivot-formatting-dialog .e-format-color-picker,
-.e-bigger .e-pivot-formatting-dialog .e-format-color-picker {
+.e-bigger.e-pivot-formatting-dialog .e-format-font-color-picker,
+.e-bigger .e-pivot-formatting-dialog .e-format-font-color-picker,
+.e-bigger.e-pivot-formatting-dialog .e-format-font-color-picker,
+.e-bigger .e-pivot-formatting-dialog .e-format-font-color-picker {
+  margin-left: 0;
   margin-right: 20px;
 }
 
@@ -558,12 +585,17 @@
   padding-top: 16px;
 }
 
-.e-pivot-calc-dialog-div {
-  min-width: 290px;
+.e-bigger.e-pivot-formatting-dialog.e-rtl .e-format-font-color-picker,
+.e-bigger .e-pivot-formatting-dialog.e-rtl .e-format-font-color-picker,
+.e-bigger.e-pivot-formatting-dialog.e-rtl .e-format-font-color-picker,
+.e-bigger .e-pivot-formatting-dialog.e-rtl .e-format-font-color-picker {
+  margin-left: 20px;
+  margin-right: 0;
 }
 
-.e-pivot-calc-dialog-div.e-dialog {
-  max-height: 500px !important;
+.e-pivot-calc-dialog-div {
+  max-height: 550px !important;
+  min-width: 290px;
 }
 
 .e-pivot-calc-dialog-div .e-dlg-header-content,
@@ -585,7 +617,7 @@
   font-size: 13px;
   margin-top: 15px;
   overflow: hidden;
-  padding: 4px;
+  padding: 4px 0;
   padding-bottom: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -915,6 +947,7 @@
 .e-bigger .e-pivot-calc-dialog-div,
 .e-bigger.e-pivot-calc-dialog-div,
 .e-bigger .e-pivot-calc-dialog-div {
+  max-height: 580px !important;
   min-width: 310px;
 }
 
@@ -943,7 +976,7 @@
 .e-bigger .e-pivot-calc-dialog-div .e-olap-format-title,
 .e-bigger .e-pivot-calc-dialog-div .e-olap-member-title {
   font-size: 14px;
-  padding: 6px;
+  padding: 6px 0;
   padding-bottom: 0;
 }
 
@@ -980,6 +1013,7 @@
 .e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
 .e-bigger.e-pivot-calc-dialog-div.e-olap-calc-dialog-div,
 .e-bigger .e-pivot-calc-dialog-div.e-olap-calc-dialog-div {
+  max-height: 700px !important;
   min-width: 580px;
 }
 
@@ -1089,7 +1123,8 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-editor-label-wrapper,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-editor-label-wrapper {
   background-color: #858585;
-  padding: 15px 10px 16px 20px;
+  opacity: 100%;
+  padding: 16px 10px 16px 20px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-editor-label-wrapper .e-editor-label,
@@ -1215,7 +1250,34 @@
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper,
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper {
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 20px 10px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort {
+  box-shadow: none;
+  margin-left: 10px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon {
+  font-size: 16px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active,
+.e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active {
+  background-color: #2a2a2a;
+  border-color: #585858;
+  color: #fff;
+  outline: none;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-prompt,
@@ -1394,7 +1456,7 @@
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
-  height: 134px;
+  height: 140px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-label-filter,
@@ -1486,16 +1548,18 @@
   font-weight: 600 !important;
 }
 
-.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-excel-filter,
-.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-excel-filter,
-.e-pivotfieldlist-wrapper .e-value-field-settings.e-excel-filter {
-  min-width: 280px;
-}
-
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotfieldlist-wrapper .e-value-field-settings.e-excel-filter .e-editor-label-wrapper {
-  padding: 15px 10px 12px 20px;
+  opacity: 100%;
+  padding: 18px 10px 12px 20px;
+}
+
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort {
+  margin-left: 0;
+  margin-right: 10px;
 }
 
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-rtl .e-member-editor-wrapper ul,
@@ -1553,6 +1617,13 @@
   pointer-events: none;
 }
 
+.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
 .e-pivotfieldlist-wrapper .e-member-editor-dialog.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul,
 .e-pivotfieldlist-wrapper .e-value-field-settings.e-olap-editor-dialog.e-rtl .e-member-editor-wrapper ul {
@@ -1597,6 +1668,7 @@
 }
 
 .e-pivotfieldlist-wrapper .e-member-editor-dialog {
+  min-width: 320px;
   max-width: 400px;
 }
 
@@ -1780,6 +1852,17 @@
 .e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
 .e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
   height: 125px;
+}
+
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon {
+  font-size: 18px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-member-editor-wrapper ul li .e-calc-measure-icon,
@@ -2105,7 +2188,7 @@
 .e-bigger.e-pivotfieldlist-wrapper .e-adaptive-field-list-dialog.e-excel-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-member-editor-dialog.e-excel-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-value-field-settings.e-excel-filter {
-  min-width: 280px;
+  min-width: 350px;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-value-field-settings .e-value-field-div-content,
@@ -2231,15 +2314,15 @@
   border: 0.5px solid #585858;
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.12);
   color: #f0f0f0;
-  font-size: 20px;
-  height: 38px;
-  max-height: 38px;
-  max-width: 38px;
-  min-height: 38px;
-  min-width: 38px;
-  padding: 10px;
+  font-size: 17px;
+  height: 31px;
+  max-height: 31px;
+  max-width: 31px;
+  min-height: 31px;
+  min-width: 31px;
+  padding: 8px;
   position: relative;
-  width: 38px;
+  width: 31px;
   z-index: 1000;
 }
 
@@ -2255,16 +2338,20 @@
   background-color: #585858;
 }
 
+.e-pivotfieldlist .e-select-table.e-rtl .e-select-table {
+  padding: 8px 5px;
+}
+
 .e-bigger .e-pivotfieldlist .e-select-table,
 .e-bigger.e-pivotfieldlist .e-select-table,
 .e-bigger .e-pivotfieldlist .e-select-table,
 .e-bigger.e-pivotfieldlist .e-select-table {
   font-size: 20px;
-  height: 40px;
-  max-height: 40px;
-  max-width: 40px;
-  min-height: 40px;
-  min-width: 40px;
+  height: 36px;
+  max-height: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  min-width: 36px;
 }
 
 .e-pivotfieldlist-wrapper {
@@ -2286,9 +2373,13 @@
 .e-pivotfieldlist-wrapper .e-layout-footer .e-cancel-btn,
 .e-pivotfieldlist-wrapper .e-layout-footer .e-defer-apply-button,
 .e-pivotfieldlist-wrapper .e-layout-footer .e-checkbox-layout {
-  max-width: 20%;
+  max-width: 25%;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.e-pivotfieldlist-wrapper .e-layout-footer .e-checkbox-layout .e-label {
   white-space: nowrap;
 }
 
@@ -2307,6 +2398,10 @@
 
 .e-pivotfieldlist-wrapper.e-rtl .e-layout-footer .e-defer-apply-button {
   margin-left: 10px;
+}
+
+.e-pivotfieldlist-wrapper.e-rtl .e-checkbox-layout {
+  float: right;
 }
 
 .e-pivotfieldlist-wrapper.e-dialog {
@@ -2476,6 +2571,12 @@
   width: 20px;
 }
 
+.e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-drag.e-disable-drag {
+  cursor: not-allowed;
+  opacity: .4;
+  visibility: hidden;
+}
+
 .e-pivotfieldlist-wrapper .e-field-list-container .e-field-table .e-field-list ul li .e-list-icon {
   color: #f0f0f0;
   margin: 0;
@@ -2609,7 +2710,9 @@
   font-size: 13px;
   line-height: 1.5em;
   margin-top: 2px;
+  overflow: hidden;
   padding: 0 8px;
+  text-overflow: ellipsis;
   width: 100%;
 }
 
@@ -2728,34 +2831,42 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon, .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-sort,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-edit, .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button:active .e-edit {
   color: #fff;
 }
 
@@ -2795,22 +2906,35 @@
   width: 20px;
 }
 
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-drag.e-disable-drag,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-drag.e-disable-drag,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-drag.e-disable-drag,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-drag.e-disable-drag {
+  cursor: not-allowed;
+  opacity: .4;
+  visibility: hidden;
+}
+
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit {
   color: #f0f0f0;
   cursor: pointer;
   display: inline-block;
@@ -2824,18 +2948,22 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit:hover {
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -2843,18 +2971,22 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit.e-disable {
   display: none;
 }
 
@@ -2884,21 +3016,25 @@
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
-.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon {
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper .e-field-list-container .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit {
   padding-left: 0;
   padding-right: 4px;
 }
@@ -3129,7 +3265,8 @@
   padding-top: 9px;
 }
 
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-field-list-dialog .e-dlg-header-content {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-field-list-dialog .e-dlg-header-content,
+.e-pivotfieldlist-wrapper.e-device .e-member-editor-dialog .e-dlg-header-content {
   background-color: transparent;
   color: #fff;
 }
@@ -3265,21 +3402,25 @@
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-remove,
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-edit {
   color: #f0f0f0;
   cursor: pointer;
   display: inline-block;
@@ -3294,22 +3435,53 @@
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-remove:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-remove:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-remove:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-remove:hover,
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-edit:hover {
   color: rgba(255, 255, 255, 0.87);
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button .e-edit.e-disable {
+  display: none;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button .e-sort,
@@ -3348,21 +3520,25 @@
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-filters .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-rows .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-columns .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-sort,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filter,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-pv-filtered,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-remove,
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-dropdown-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-field-list-values .e-pvt-btn-div .e-pivot-button.e-rtl .e-edit {
   padding-left: 0;
   padding-right: 10px;
 }
@@ -3409,6 +3585,7 @@
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-calc-input-div,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-member-options,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-calc-custom-format-div,
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-olap-calc-custom-format-div {
   margin-left: 20px;
   margin-right: 20px;
@@ -3421,8 +3598,36 @@
   overflow: auto;
 }
 
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion .e-acrdn-header-icon {
+  display: table;
+  font-size: 12px;
+  height: 36px;
+  min-height: 36px;
+  min-width: 24px;
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion .e-acrdn-header-icon .e-list-icon {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion .e-icons.e-frame {
   margin-right: 12px;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion.e-rtl .e-acrdn-header-icon {
+  left: 16px;
+  right: auto;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion.e-rtl .e-icons.e-frame {
+  margin-left: 12px !important;
+  margin-right: 0 !important;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-radio-wrapper {
@@ -3454,6 +3659,34 @@
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord {
   max-height: 290px;
   overflow: auto;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-icon {
+  color: #f0f0f0;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon {
+  display: table;
+  height: 30px;
+  min-height: 30px;
+  min-width: 24px;
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-list-edit-icon {
+  color: #f0f0f0;
+  display: table-cell;
+  pointer-events: all;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord.e-rtl ul .e-list-header-icon {
+  left: 16px;
+  right: auto;
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord.e-rtl ul .e-list-icon {
@@ -3581,11 +3814,6 @@
 .e-pivotfieldlist-wrapper.e-device.e-rtl .e-pivot-calc-outer-div .e-pivot-cancel-button {
   float: left !important;
   margin-left: 20px;
-}
-
-.e-pivotfieldlist-wrapper.e-device.e-rtl .e-pivot-calc-outer-div .e-accordion .e-icons.e-frame {
-  margin-left: 12px !important;
-  margin-right: 0 !important;
 }
 
 .e-bigger .e-pivotfieldlist-wrapper .e-field-table .e-left-axis-fields,
@@ -3923,66 +4151,82 @@
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-filters .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-left-axis-fields .e-field-list-rows .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-columns .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon {
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper .e-axis-table .e-right-axis-fields .e-field-list-values .e-axis-content .e-pvt-btn-div .e-pivot-button .e-edit {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -4212,81 +4456,97 @@
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-edit,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-sort,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-remove,
 .e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-dropdown-icon,
+.e-bigger .e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-filters .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-left-axis-fields .e-field-list-rows .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-remove,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-columns .e-pivot-button .e-edit,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-sort,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-remove,
-.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-dropdown-icon {
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-dropdown-icon,
+.e-bigger.e-pivotfieldlist-wrapper.e-rtl .e-axis-table .e-right-axis-fields .e-field-list-values .e-pivot-button .e-edit {
   padding-left: 0;
   padding-right: 4px;
 }

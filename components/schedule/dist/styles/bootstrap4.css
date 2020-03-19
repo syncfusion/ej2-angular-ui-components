@@ -305,6 +305,10 @@
   text-transform: initial;
 }
 
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn.e-tbtn-txt .e-icons.e-btn-icon {
+  padding-left: 0;
+}
+
 .e-schedule .e-schedule-toolbar.e-rtl .e-hor-nav {
   background: #f8f9fa;
   border-left: 0;
@@ -582,7 +586,7 @@
 .e-schedule .e-block-indicator {
   color: #212529;
   float: right;
-  padding: 0 6px;
+  padding: 0 5px;
   z-index: 1;
 }
 
@@ -845,7 +849,7 @@
 .e-schedule .e-vertical-view .e-header-cells {
   font-size: 12px;
   height: 60px;
-  padding: 8px 0 8px 8px;
+  padding: 8px;
 }
 
 .e-schedule .e-vertical-view .e-header-cells .e-header-day {
@@ -1062,7 +1066,7 @@
 .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment .e-appointment-details .e-recurrence-edit-icon,
 .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment .e-appointment-details .e-left-icon,
 .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment .e-appointment-details .e-right-icon {
-  line-height: 21px;
+  line-height: 20px;
   padding: 0 2px;
 }
 
@@ -1093,7 +1097,7 @@
       flex: auto;
   padding: 4px 8px 0;
   text-align: left;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 .e-schedule .e-vertical-view .e-day-wrapper .e-appointment .e-subject {
@@ -1213,10 +1217,6 @@
   text-align: right;
 }
 
-.e-schedule.e-rtl .e-vertical-view .e-header-cells {
-  padding: 8px 8px 8px 0;
-}
-
 .e-schedule.e-rtl .e-vertical-view .e-all-day-appointment-wrapper .e-appointment .e-appointment-details {
   padding: 1px 4px 1px 0;
 }
@@ -1313,7 +1313,7 @@
   font-weight: 400;
   height: 30px;
   padding: 3px;
-  padding: 8px 0 8px 8px;
+  padding: 8px;
 }
 
 .e-schedule .e-month-view .e-content-table {
@@ -1636,17 +1636,17 @@
   height: 30px;
   padding: 3px;
   text-align: center;
-  padding: 8px 0 8px 8px;
+  padding: 8px;
 }
 
 .e-schedule .e-timeline-year-view .e-month-header,
 .e-schedule .e-timeline-year-view .e-work-cells {
-  height: 70px;
+  height: 75px;
 }
 
 .e-schedule .e-timeline-year-view .e-header-cells,
 .e-schedule .e-timeline-year-view .e-work-cells {
-  width: 60px;
+  width: 65px;
 }
 
 .e-schedule .e-timeline-year-view .e-work-cells {
@@ -2728,7 +2728,7 @@
 .e-bigger .e-schedule .e-month-view .e-header-cells,
 .e-bigger.e-schedule .e-month-view .e-header-cells {
   line-height: 24px;
-  padding: 10px 0 10px 8px;
+  padding: 10px 8px;
   height: 35px;
 }
 
@@ -3292,8 +3292,7 @@
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-edit,
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-delete,
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-close {
-  color: #212529;
-  opacity: .5;
+  color: rgba(33, 37, 41, 0.5);
 }
 
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-edit:focus, .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-edit:hover,
@@ -3301,9 +3300,8 @@
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-delete:hover,
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-close:focus,
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-close:hover {
-  color: #000;
-  color: #212529;
-  opacity: .75;
+  background: transparent;
+  color: rgba(33, 37, 41, 0.75);
 }
 
 .e-quick-popup-wrapper .e-cell-popup .e-popup-header .e-header-icon-wrapper .e-edit .e-close-icon,
@@ -3348,8 +3346,7 @@
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-edit,
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-delete,
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-close {
-  color: #212529;
-  opacity: .5;
+  color: rgba(33, 37, 41, 0.5);
 }
 
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-edit:focus, .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-edit:hover,
@@ -3357,9 +3354,8 @@
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-delete:hover,
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-close:focus,
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-close:hover {
-  color: #333;
-  color: #212529;
-  opacity: .75;
+  background: transparent;
+  color: rgba(33, 37, 41, 0.75);
 }
 
 .e-quick-popup-wrapper .e-event-popup .e-popup-header .e-header-icon-wrapper .e-edit-icon,
@@ -3610,11 +3606,12 @@
 .e-quick-popup-wrapper.e-device .e-multiple-event-popup .e-popup-header .e-close,
 .e-quick-popup-wrapper.e-device .e-multiple-event-popup .e-popup-header .e-edit,
 .e-quick-popup-wrapper.e-device .e-multiple-event-popup .e-popup-header .e-delete {
+  background-color: transparent;
   border: 0;
   height: 40px;
   width: 40px;
   background-color: #fff;
-  color: #212529;
+  color: rgba(33, 37, 41, 0.5);
 }
 
 .e-quick-popup-wrapper.e-device .e-multiple-event-popup .e-popup-header .e-close:focus, .e-quick-popup-wrapper.e-device .e-multiple-event-popup .e-popup-header .e-close:hover,
@@ -3894,7 +3891,7 @@
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #212529;
+  color: rgba(33, 37, 41, 0.5);
   cursor: pointer;
   height: 25px;
   position: absolute;
@@ -3905,7 +3902,6 @@
 .e-more-popup-wrapper .e-more-event-close .e-close-icon {
   font-size: 9px;
   font-size: 14px;
-  opacity: .5;
 }
 
 .e-more-popup-wrapper .e-more-event-close .e-btn-icon {
@@ -3913,10 +3909,9 @@
 }
 
 .e-more-popup-wrapper .e-more-event-close:focus, .e-more-popup-wrapper .e-more-event-close:hover {
+  background-color: transparent;
   border-radius: 50%;
-  color: #000;
-  color: #212529;
-  opacity: .75;
+  color: rgba(33, 37, 41, 0.75);
 }
 
 .e-more-popup-wrapper .e-appointment {
@@ -3926,7 +3921,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 22px;
-  line-height: 21px;
+  line-height: 20px;
   margin-bottom: 4px;
   padding: 2px 0;
   width: 100%;
@@ -3950,8 +3945,9 @@
   padding: 0 2px;
 }
 
-.e-more-popup-wrapper .e-appointment:focus {
-  border: 1px solid #333;
+.e-more-popup-wrapper .e-appointment.e-appointment-border, .e-more-popup-wrapper .e-appointment:focus {
+  border: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
 .e-more-popup-wrapper.e-device {

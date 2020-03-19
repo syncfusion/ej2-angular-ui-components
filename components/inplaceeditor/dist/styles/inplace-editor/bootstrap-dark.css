@@ -250,6 +250,7 @@
   padding: 6px 10px;
   position: relative;
   width: auto;
+  word-break: break-word;
 }
 
 .e-inplaceeditor .e-editable-value-wrapper .e-editable-value {
@@ -449,6 +450,13 @@
 .e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-cancel,
 .e-inplaceeditor-tip.e-rtl .e-editable-action-buttons .e-btn-cancel {
   margin: 0 4px 0 0;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner,
+.e-inplaceeditor-tip.e-rtl .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner {
+  left: 5px;
+  right: auto;
+  transform: translateX(30%) translateY(-50%);
 }
 
 .e-bigger .e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-wrapper,

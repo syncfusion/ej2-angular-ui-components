@@ -32,7 +32,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the data type of the column.
      * @default null
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.ColumnType
+     * @blazortype Syncfusion.Blazor.Grids.ColumnType
      * @blazordefaultvalueignore 
      */
     public type: any;
@@ -74,7 +74,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.ClipMode.Ellipsis
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode
+     * @blazortype Syncfusion.Blazor.Grids.ClipMode
      */
     public clipMode: any;
     /** 
@@ -142,8 +142,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the type of component for editing.
      * @default 'stringedit'
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.EditType
-     * @blazordefaultvalue Syncfusion.EJ2.Blazor.Grids.EditType.DefaultEdit
+     * @blazortype Syncfusion.Blazor.Grids.EditType
+     * @blazordefaultvalue Syncfusion.Blazor.Grids.EditType.DefaultEdit
      */
     public editType: any;
     /** 
@@ -227,7 +227,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @blazordefaultvalueignore 
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
+     * @blazortype Syncfusion.Blazor.Grids.TextAlign
      */
     public headerTextAlign: any;
     /** 
@@ -288,7 +288,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
+     * @blazortype Syncfusion.Blazor.Grids.TextAlign
      */
     public textAlign: any;
     /** 

@@ -1355,10 +1355,6 @@
   color: #000;
 }
 
-.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-  color: #000;
-}
-
 .e-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
   border: solid #000;
   border-width: 0 1px 0 0;

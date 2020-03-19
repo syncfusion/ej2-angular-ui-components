@@ -674,7 +674,7 @@
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  border: 0 solid #ddd;
+  border-left: 0 solid #ddd;
 }
 
 .e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
@@ -863,6 +863,9 @@
 
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon {
   background: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .e-ddl.e-popup .e-filter-parent .e-input-group,

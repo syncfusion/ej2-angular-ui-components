@@ -41,6 +41,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      * * Far - Align the annotation element as right side. 
      * * Center - Align the annotation element as mid point.
      * @default 'Center'
+     * @deprecated 
      */
     public horizontalAlignment: any;
     /** 
@@ -56,6 +57,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      * * Bottom - Align the annotation element as bottom side. 
      * * Middle - Align the annotation element as mid point.
      * @default 'Middle'
+     * @deprecated 
      */
     public verticalAlignment: any;
     /** 

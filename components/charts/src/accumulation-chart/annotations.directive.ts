@@ -43,6 +43,7 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      * * Far - Align the annotation element as bottom side. 
      * * Center - Align the annotation element as mid point.
      * @default 'Center'
+     * @deprecated 
      */
     public horizontalAlignment: any;
     /** 
@@ -58,6 +59,7 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      * * Bottom - Align the annotation element as bottom side. 
      * * Middle - Align the annotation element as mid point.
      * @default 'Middle'
+     * @deprecated 
      */
     public verticalAlignment: any;
     /** 

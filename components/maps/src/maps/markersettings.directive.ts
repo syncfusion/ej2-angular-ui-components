@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -88,10 +88,18 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public imageUrlValuePath: any;
     /** 
+     * Options for customizing the enable Complex property
+     */
+    public latitudeValuePath: any;
+    /** 
      * To provide the dataSource field to display legend text
      * @default ''
      */
     public legendText: any;
+    /** 
+     * Options for customizing the enable Complex property
+     */
+    public longitudeValuePath: any;
     /** 
      * To move the marker by setting offset values
      */

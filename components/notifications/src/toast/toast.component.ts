@@ -51,6 +51,9 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the HTML element/element ID as a string that can be displayed as a Toast. 
      * The given template is taken as preference to render the Toast, even if the built-in properties such as title and content are defined.
+     * 
+     * {% codeBlock src='toast/template/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('template')

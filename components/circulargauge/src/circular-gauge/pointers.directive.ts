@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'type', 'value'];
+let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 let outputs: string[] = [];
 /**
  * Pointers directive
@@ -70,7 +70,8 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * * triangle - Renders a triangle. 
      * * diamond - Renders a diamond. 
      * * invertedTriangle - Renders a invertedTriangle. 
-     * * image - Renders a image.
+     * * image - Renders a image. 
+     * * Text - Renders a Text.
      * @default Circle
      */
     public markerShape: any;
@@ -79,6 +80,16 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default 5
      */
     public markerWidth: any;
+    /** 
+     * Sets or gets the end width of the needle pointer
+     * @default null
+     */
+    public needleEndWidth: any;
+    /** 
+     * Sets or gets the start width of the needle pointer
+     * @default null
+     */
+    public needleStartWidth: any;
     /** 
      * Options for customizing the back needle.
      */
@@ -112,6 +123,15 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default 0
      */
     public roundedCornerRadius: any;
+    /** 
+     * text of the pointer.
+     * @default ''
+     */
+    public text: any;
+    /** 
+     * Options for customizing the font
+     */
+    public textStyle: any;
     /** 
      * Specifies the value of the pointer.
      * @aspdefaultvalueignore 

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { CellsDirective } from './cells.directive';
 
-let input: string[] = ['cells', 'customHeight', 'height', 'index'];
+let input: string[] = ['cells', 'customHeight', 'height', 'hidden', 'index'];
 let outputs: string[] = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
@@ -48,6 +48,11 @@ export class RowDirective extends ComplexBase<RowDirective> {
      * @asptype int
      */
     public height: any;
+    /** 
+     * To hide/show the row in spreadsheet.
+     * @default false
+     */
+    public hidden: any;
     /** 
      * Specifies the index to the row. Based on the index, row properties are applied.
      * @default 0

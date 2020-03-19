@@ -50,6 +50,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -121,6 +122,7 @@ var StackedHeaderDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return StackedHeaderDirective;
@@ -175,8 +177,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowDragAndDrop', 'allowKeyboard', 'cardSettings', 'columns', 'constraintType', 'cssClass', 'dataSource', 'enablePersistence', 'enableRtl', 'enableTooltip', 'height', 'keyField', 'locale', 'query', 'stackedHeaders', 'swimlaneSettings', 'tooltipTemplate', 'width'];
-var outputs$2 = ['actionBegin', 'actionComplete', 'actionFailure', 'cardClick', 'cardDoubleClick', 'cardRendered', 'columnRendered', 'created', 'dataBinding', 'dataBound', 'drag', 'dragStart', 'dragStop'];
+var inputs = ['allowDragAndDrop', 'allowKeyboard', 'cardSettings', 'columns', 'constraintType', 'cssClass', 'dataSource', 'dialogSettings', 'enablePersistence', 'enableRtl', 'enableTooltip', 'height', 'keyField', 'locale', 'query', 'stackedHeaders', 'swimlaneSettings', 'tooltipTemplate', 'width'];
+var outputs$2 = ['actionBegin', 'actionComplete', 'actionFailure', 'cardClick', 'cardDoubleClick', 'cardRendered', 'created', 'dataBinding', 'dataBound', 'dialogClose', 'dialogOpen', 'drag', 'dragStart', 'dragStop', 'queryCellInfo'];
 var twoWays = [''];
 /**
  * `ej-kanban` represents the Angular Kanban Component.
@@ -204,27 +206,41 @@ var KanbanComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childStackedHeaders) {
+            this.tagObjects[1].instance = ((this.childStackedHeaders)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childStackedHeaders)).list.length; d++) {
+                if (((this.childStackedHeaders)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childStackedHeaders)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return KanbanComponent;
 }(Kanban));
@@ -255,6 +271,7 @@ KanbanComponent.propDecorators = {
     'columns_template': [{ type: ContentChild, args: ['columnsTemplate',] },],
     'swimlaneSettings_template': [{ type: ContentChild, args: ['swimlaneSettingsTemplate',] },],
     'cardSettings_template': [{ type: ContentChild, args: ['cardSettingsTemplate',] },],
+    'dialogSettings_template': [{ type: ContentChild, args: ['dialogSettingsTemplate',] },],
 };
 __decorate$1([
     Template(),
@@ -272,6 +289,10 @@ __decorate$1([
     Template(),
     __metadata$1("design:type", Object)
 ], KanbanComponent.prototype, "cardSettings_template", void 0);
+__decorate$1([
+    Template(),
+    __metadata$1("design:type", Object)
+], KanbanComponent.prototype, "dialogSettings_template", void 0);
 KanbanComponent = __decorate$1([
     ComponentMixins([ComponentBase]),
     __metadata$1("design:paramtypes", [ElementRef,
@@ -335,5 +356,5 @@ KanbanAllModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 export { ColumnDirective, ColumnsDirective, StackedHeaderDirective, StackedHeadersDirective, KanbanComponent, KanbanModule, KanbanAllModule, inputs as ɵa, outputs$2 as ɵb };
-export { Kanban, actionBegin, actionComplete, actionFailure, cardClick, cardDoubleClick, cardRendered, columnRendered, dataBinding, dataBound, dragStart, drag, dragStop, documentClick, contentReady, dataReady, bottomSpace, cardSpace, toggleWidth } from '@syncfusion/ej2-kanban';
+export { Kanban, actionBegin, actionComplete, actionFailure, cardClick, cardDoubleClick, cardRendered, queryCellInfo, dataBinding, dataBound, dragStart, drag, dragStop, documentClick, dialogOpen, dialogClose, contentReady, dataReady, bottomSpace, cardSpace, toggleWidth } from '@syncfusion/ej2-kanban';
 //# sourceMappingURL=ej2-angular-kanban.es5.js.map

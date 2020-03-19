@@ -4,8 +4,8 @@ import { BulletChart } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { BulletRangeCollectionDirective } from './ranges.directive';
 
-export const inputs: string[] = ['animation','border','categoryField','categoryLabelStyle','dataLabel','dataSource','enableGroupSeparator','enablePersistence','enableRtl','height','interval','labelFormat','labelPosition','labelStyle','locale','majorTickLines','margin','maximum','minimum','minorTickLines','minorTicksPerInterval','opposedPosition','orientation','query','ranges','subtitle','subtitleStyle','tabIndex','targetColor','targetField','targetTypes','targetWidth','theme','tickPosition','title','titlePosition','titleStyle','tooltip','type','valueBorder','valueField','valueFill','valueHeight','width'];
-export const outputs: string[] = ['barRender','beforePrint','load','loaded','tooltipRender','dataSourceChange'];
+export const inputs: string[] = ['animation','border','categoryField','categoryLabelStyle','dataLabel','dataSource','enableGroupSeparator','enablePersistence','enableRtl','height','interval','labelFormat','labelPosition','labelStyle','legendSettings','locale','majorTickLines','margin','maximum','minimum','minorTickLines','minorTicksPerInterval','opposedPosition','orientation','query','ranges','subtitle','subtitleStyle','tabIndex','targetColor','targetField','targetTypes','targetWidth','theme','tickPosition','title','titlePosition','titleStyle','tooltip','type','valueBorder','valueField','valueFill','valueHeight','width'];
+export const outputs: string[] = ['beforePrint','bulletChartMouseClick','legendRender','load','loaded','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -41,6 +41,12 @@ export class BulletChartComponent extends BulletChart implements IComponentBase 
         this.injectedModules = this.injectedModules || [];
         try {
                 let mod = this.injector.get('ChartsBulletTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsBulletChartLegend');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

@@ -450,8 +450,8 @@
 }
 
 .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 115px);
   width: 100%;
 }
@@ -493,8 +493,8 @@
 }
 
 .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 77px;
   width: 100%;
 }
@@ -1084,9 +1084,9 @@
 
 .e-de-status-bar {
   background-color: #1a1a1a;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5px;
   width: 100%;
 }
 
@@ -1339,8 +1339,8 @@
 }
 
 .e-bigger .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 121px);
   min-height: 200px;
   width: 100%;
@@ -1362,8 +1362,8 @@
 }
 
 .e-bigger .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -1700,9 +1700,9 @@
 
 .e-bigger .e-de-status-bar {
   background-color: #1a1a1a;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5px;
   width: 100%;
 }
 

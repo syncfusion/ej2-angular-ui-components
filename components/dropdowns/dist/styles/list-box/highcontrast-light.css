@@ -474,7 +474,7 @@ ejs-listbox {
   color: #000;
 }
 
-.e-listbox-wrapper .e-list-item:hover:not(.e-disabled),
+.e-listbox-wrapper .e-list-item:hover:not(.e-selected):not(.e-disabled),
 .e-listbox-wrapper .e-list-item:hover.e-selected.e-checklist:not(.e-disabled) {
   background-color: #ecf;
   border-color: #000;

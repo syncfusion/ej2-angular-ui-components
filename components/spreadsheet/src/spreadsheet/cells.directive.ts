@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['format', 'formula', 'hyperlink', 'index', 'style', 'value'];
+let input: string[] = ['format', 'formula', 'hyperlink', 'index', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -64,10 +64,20 @@ export class CellDirective extends ComplexBase<CellDirective> {
      */
     public style: any;
     /** 
+     * Specifies the validation of the cell.
+     * @default ''
+     */
+    public validation: any;
+    /** 
      * Defines the value of the cell which can be text or number.
      * @default ''
      */
     public value: any;
+    /** 
+     * Wraps the cell text to the next line, if the text width exceeds the column width.
+     * @default false
+     */
+    public wrap: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

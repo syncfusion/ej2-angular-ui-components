@@ -158,7 +158,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 var outputs$2 = [];
 /**
  * Series Directive
@@ -425,7 +425,7 @@ MultiLevelLabelsDirective.decorators = [
  * @nocollapse
  */
 MultiLevelLabelsDirective.ctorParameters = function () { return []; };
-var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
+var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 var outputs$6 = [];
 /**
  * Axis Directive
@@ -820,8 +820,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var inputs = ['allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -1231,6 +1231,13 @@ exports.ChartComponent = /** @class */ (function (_super) {
             }
         }
         catch (_30) { }
+        try {
+            var mod = _this.injector.get('ChartsHighlight');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_31) { }
         _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -1479,6 +1486,7 @@ var MultiLevelLabelService = { provide: 'ChartsMultiLevelLabel', useValue: ej2Ch
 var ParetoSeriesService = { provide: 'ChartsParetoSeries', useValue: ej2Charts.ParetoSeries };
 var ExportService = { provide: 'ChartsExport', useValue: ej2Charts.Export };
 var DataEditingService = { provide: 'ChartsDataEditing', useValue: ej2Charts.DataEditing };
+var HighlightService = { provide: 'ChartsHighlight', useValue: ej2Charts.Highlight };
 /**
  * NgModule definition for the Chart component with providers.
  */
@@ -1548,7 +1556,8 @@ ChartAllModule.decorators = [
                     MultiLevelLabelService,
                     ParetoSeriesService,
                     ExportService,
-                    DataEditingService
+                    DataEditingService,
+                    HighlightService
                 ]
             },] },
 ];
@@ -1734,7 +1743,7 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableBorderOnMouseMove', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs$1 = ['annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableBorderOnMouseMove', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'highLightMode', 'highlightPattern', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$15 = ['animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$1 = ['dataSource'];
 /**
@@ -2044,7 +2053,7 @@ var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['allowSnapping', 'animationDuration', 'dataSource', 'disableRangeSelector', 'enableDeferredUpdate', 'enableGrouping', 'enablePersistence', 'enableRtl', 'groupBy', 'height', 'interval', 'intervalType', 'labelFormat', 'labelIntersectAction', 'labelPosition', 'labelStyle', 'locale', 'logBase', 'majorGridLines', 'majorTickLines', 'margin', 'maximum', 'minimum', 'navigatorBorder', 'navigatorStyleSettings', 'periodSelectorSettings', 'query', 'secondaryLabelAlignment', 'series', 'skeleton', 'skeletonType', 'theme', 'tickPosition', 'tooltip', 'useGroupingSeparator', 'value', 'valueType', 'width', 'xName', 'yName'];
+var inputs$2 = ['allowIntervalData', 'allowSnapping', 'animationDuration', 'dataSource', 'disableRangeSelector', 'enableDeferredUpdate', 'enableGrouping', 'enablePersistence', 'enableRtl', 'groupBy', 'height', 'interval', 'intervalType', 'labelFormat', 'labelIntersectAction', 'labelPosition', 'labelStyle', 'locale', 'logBase', 'majorGridLines', 'majorTickLines', 'margin', 'maximum', 'minimum', 'navigatorBorder', 'navigatorStyleSettings', 'periodSelectorSettings', 'query', 'secondaryLabelAlignment', 'series', 'skeleton', 'skeletonType', 'theme', 'tickPosition', 'tooltip', 'useGroupingSeparator', 'value', 'valueType', 'width', 'xName', 'yName'];
 var outputs$17 = ['beforePrint', 'changed', 'labelRender', 'load', 'loaded', 'resized', 'selectorRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$2 = ['dataSource'];
 /**
@@ -2887,7 +2896,7 @@ var StockChartRowDirective = /** @class */ (function (_super) {
 }(ej2AngularBase.ComplexBase));
 StockChartRowDirective.decorators = [
     { type: core.Directive, args: [{
-                selector: 'e-stockchart-rows>e-stockchart-row',
+                selector: 'e-stockchart-rows>e-striplines>e-stockchart-row',
                 inputs: input$20,
                 outputs: outputs$25,
                 queries: {}
@@ -3258,7 +3267,7 @@ var __metadata$10 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$5 = ['annotations', 'axes', 'background', 'border', 'chartArea', 'crosshair', 'dataSource', 'enableCustomRange', 'enablePeriodSelector', 'enablePersistence', 'enableRtl', 'enableSelector', 'exportType', 'height', 'indicatorType', 'indicators', 'isMultiSelect', 'isSelect', 'isTransposed', 'locale', 'margin', 'periods', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'seriesType', 'stockEvents', 'theme', 'title', 'titleStyle', 'tooltip', 'trendlineType', 'width', 'zoomSettings'];
-var outputs$31 = ['axisLabelRender', 'load', 'loaded', 'onZooming', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
+var outputs$31 = ['axisLabelRender', 'load', 'loaded', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$5 = ['dataSource'];
 /**
  * Stock Chart Component
@@ -3697,7 +3706,7 @@ StockChartAllModule.decorators = [
  * @nocollapse
  */
 StockChartAllModule.ctorParameters = function () { return []; };
-var input$26 = ['color', 'end', 'opacity'];
+var input$26 = ['color', 'end', 'index', 'name', 'opacity', 'shape'];
 var outputs$32 = [];
 /**
  * BulletRange Directive
@@ -3772,8 +3781,8 @@ var __metadata$11 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$6 = ['animation', 'border', 'categoryField', 'categoryLabelStyle', 'dataLabel', 'dataSource', 'enableGroupSeparator', 'enablePersistence', 'enableRtl', 'height', 'interval', 'labelFormat', 'labelPosition', 'labelStyle', 'locale', 'majorTickLines', 'margin', 'maximum', 'minimum', 'minorTickLines', 'minorTicksPerInterval', 'opposedPosition', 'orientation', 'query', 'ranges', 'subtitle', 'subtitleStyle', 'tabIndex', 'targetColor', 'targetField', 'targetTypes', 'targetWidth', 'theme', 'tickPosition', 'title', 'titlePosition', 'titleStyle', 'tooltip', 'type', 'valueBorder', 'valueField', 'valueFill', 'valueHeight', 'width'];
-var outputs$33 = ['barRender', 'beforePrint', 'load', 'loaded', 'tooltipRender', 'dataSourceChange'];
+var inputs$6 = ['animation', 'border', 'categoryField', 'categoryLabelStyle', 'dataLabel', 'dataSource', 'enableGroupSeparator', 'enablePersistence', 'enableRtl', 'height', 'interval', 'labelFormat', 'labelPosition', 'labelStyle', 'legendSettings', 'locale', 'majorTickLines', 'margin', 'maximum', 'minimum', 'minorTickLines', 'minorTicksPerInterval', 'opposedPosition', 'orientation', 'query', 'ranges', 'subtitle', 'subtitleStyle', 'tabIndex', 'targetColor', 'targetField', 'targetTypes', 'targetWidth', 'theme', 'tickPosition', 'title', 'titlePosition', 'titleStyle', 'tooltip', 'type', 'valueBorder', 'valueField', 'valueFill', 'valueHeight', 'width'];
+var outputs$33 = ['beforePrint', 'bulletChartMouseClick', 'legendRender', 'load', 'loaded', 'tooltipRender', 'dataSourceChange'];
 var twoWays$6 = ['dataSource'];
 /**
  * BulletChart Component
@@ -3805,6 +3814,13 @@ exports.BulletChartComponent = /** @class */ (function (_super) {
             }
         }
         catch (_a) { }
+        try {
+            var mod = _this.injector.get('ChartsBulletChartLegend');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_b) { }
         _this.registerEvents(outputs$33);
         _this.addTwoWay.call(_this, twoWays$6);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -3901,6 +3917,7 @@ BulletChartModule.decorators = [
  */
 BulletChartModule.ctorParameters = function () { return []; };
 var BulletTooltipService = { provide: 'ChartsBulletTooltip', useValue: ej2Charts.BulletTooltip };
+var BulletChartLegendService = { provide: 'ChartsBulletChartLegend', useValue: ej2Charts.BulletChartLegend };
 /**
  * NgModule definition for the BulletChart component with providers.
  */
@@ -3916,7 +3933,8 @@ BulletChartAllModule.decorators = [
                     BulletChartModule
                 ],
                 providers: [
-                    BulletTooltipService
+                    BulletTooltipService,
+                    BulletChartLegendService
                 ]
             },] },
 ];
@@ -4006,6 +4024,7 @@ exports.MultiLevelLabelService = MultiLevelLabelService;
 exports.ParetoSeriesService = ParetoSeriesService;
 exports.ExportService = ExportService;
 exports.DataEditingService = DataEditingService;
+exports.HighlightService = HighlightService;
 exports.AccumulationSeriesDirective = AccumulationSeriesDirective;
 exports.AccumulationSeriesCollectionDirective = AccumulationSeriesCollectionDirective;
 exports.AccumulationAnnotationDirective = AccumulationAnnotationDirective;
@@ -4062,6 +4081,7 @@ exports.BulletRangeCollectionDirective = BulletRangeCollectionDirective;
 exports.BulletChartModule = BulletChartModule;
 exports.BulletChartAllModule = BulletChartAllModule;
 exports.BulletTooltipService = BulletTooltipService;
+exports.BulletChartLegendService = BulletChartLegendService;
 exports.ɵc = inputs$1;
 exports.ɵd = outputs$15;
 exports.ɵm = inputs$6;
@@ -4249,6 +4269,7 @@ exports.Tooltip = ej2Charts.Tooltip;
 exports.Zoom = ej2Charts.Zoom;
 exports.Selection = ej2Charts.Selection;
 exports.DataEditing = ej2Charts.DataEditing;
+exports.Highlight = ej2Charts.Highlight;
 exports.DataLabel = ej2Charts.DataLabel;
 exports.ErrorBar = ej2Charts.ErrorBar;
 exports.DataLabelSettings = ej2Charts.DataLabelSettings;
@@ -4329,7 +4350,6 @@ exports.chartMouseLeave = ej2Charts.chartMouseLeave;
 exports.chartMouseDown = ej2Charts.chartMouseDown;
 exports.chartMouseUp = ej2Charts.chartMouseUp;
 exports.zoomComplete = ej2Charts.zoomComplete;
-exports.onZooming = ej2Charts.onZooming;
 exports.dragComplete = ej2Charts.dragComplete;
 exports.selectionComplete = ej2Charts.selectionComplete;
 exports.resized = ej2Charts.resized;
@@ -4347,7 +4367,7 @@ exports.regSub = ej2Charts.regSub;
 exports.regSup = ej2Charts.regSup;
 exports.beforeExport = ej2Charts.beforeExport;
 exports.afterExport = ej2Charts.afterExport;
-exports.barRender = ej2Charts.barRender;
+exports.bulletChartMouseClick = ej2Charts.bulletChartMouseClick;
 exports.Theme = ej2Charts.Theme;
 exports.getSeriesColor = ej2Charts.getSeriesColor;
 exports.getThemeColor = ej2Charts.getThemeColor;
@@ -4378,9 +4398,11 @@ exports.MinorTickLinesSettings = ej2Charts.MinorTickLinesSettings;
 exports.BulletLabelStyle = ej2Charts.BulletLabelStyle;
 exports.BulletTooltipSettings = ej2Charts.BulletTooltipSettings;
 exports.BulletDataLabel = ej2Charts.BulletDataLabel;
+exports.BulletChartLegendSettings = ej2Charts.BulletChartLegendSettings;
 exports.BulletChartTheme = ej2Charts.BulletChartTheme;
 exports.getBulletThemeColor = ej2Charts.getBulletThemeColor;
 exports.BulletTooltip = ej2Charts.BulletTooltip;
+exports.BulletChartLegend = ej2Charts.BulletChartLegend;
 exports.Smithchart = ej2Charts.Smithchart;
 exports.SmithchartMajorGridLines = ej2Charts.SmithchartMajorGridLines;
 exports.SmithchartMinorGridLines = ej2Charts.SmithchartMinorGridLines;

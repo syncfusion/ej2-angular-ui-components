@@ -452,6 +452,11 @@ class ComponentBase {
                 }
                 else {
                     /* istanbul ignore next */
+                    let oldProbLength = tempAfterContentThis[tagObject.name].length;
+                    let newPropLendgth = tagObject.instance.list.length;
+                    if (oldProbLength !== newPropLendgth && tagObject.instance.list[0].hasChanges) {
+                        tempAfterContentThis[tagObject.name] = tagObject.instance.list;
+                    }
                     for (let list of tagObject.instance.list) {
                         if (list.hasChanges) {
                             let curIndex = tagObject.instance.list.indexOf(list);

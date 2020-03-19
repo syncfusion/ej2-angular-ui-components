@@ -42,6 +42,9 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
 
     /** 
      * Specifies the HTML element ID as a string that can be added as a editable field.
+     * 
+     * {% codeBlock src='inplace-editor/template/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @blazortype string
      */

@@ -106,6 +106,9 @@
 
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon {
   background: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .e-ddl.e-popup .e-filter-parent .e-input-group,

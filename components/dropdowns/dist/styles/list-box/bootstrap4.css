@@ -23,7 +23,8 @@
   padding: 0 8px 0 0;
 }
 
-.e-input-group.e-ddl .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
+.e-input-group.e-ddl .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
+.e-ddl.e-popup .e-filter-parent .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
   stroke-width: 1px;
 }
 
@@ -508,7 +509,7 @@ ejs-listbox {
   color: #212529;
 }
 
-.e-listbox-wrapper .e-list-item:hover:not(.e-disabled),
+.e-listbox-wrapper .e-list-item:hover:not(.e-selected):not(.e-disabled),
 .e-listbox-wrapper .e-list-item:hover.e-selected.e-checklist:not(.e-disabled) {
   background-color: #e9ecef;
   border-color: transparent;

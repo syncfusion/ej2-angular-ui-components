@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class StackedHeaderDirective extends ComplexBase<StackedHeaderDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -43,6 +44,7 @@ export class StackedHeaderDirective extends ComplexBase<StackedHeaderDirective> 
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

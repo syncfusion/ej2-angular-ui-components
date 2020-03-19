@@ -446,8 +446,8 @@
 }
 
 .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 121px);
   width: 100%;
 }
@@ -489,8 +489,8 @@
 }
 
 .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -1073,9 +1073,9 @@
 
 .e-de-status-bar {
   background-color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.8px;
   width: 100%;
 }
 
@@ -1094,7 +1094,7 @@
   display: inline-flex;
   font-size: 13px;
   height: 100%;
-  padding-top: 7px;
+  padding-top: 6px;
   width: calc(100% - 160px);
 }
 
@@ -1104,7 +1104,7 @@
   display: inline-flex;
   font-size: 13px;
   height: 100%;
-  padding-top: 7px;
+  padding-top: 6px;
   width: calc(100% - 180px);
 }
 
@@ -1328,8 +1328,8 @@
 }
 
 .e-bigger .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 122px);
   min-height: 200px;
   width: 100%;
@@ -1351,8 +1351,8 @@
 }
 
 .e-bigger .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -1680,9 +1680,9 @@
 
 .e-bigger .e-de-status-bar {
   background-color: #fff;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3px;
   width: 100%;
 }
 

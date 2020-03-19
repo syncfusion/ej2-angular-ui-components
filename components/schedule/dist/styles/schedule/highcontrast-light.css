@@ -308,6 +308,10 @@
   text-transform: uppercase;
 }
 
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn.e-tbtn-txt .e-icons.e-btn-icon {
+  padding-left: 0;
+}
+
 .e-schedule .e-schedule-toolbar.e-rtl .e-hor-nav {
   background: #fff;
   border-left: 0;
@@ -474,7 +478,7 @@
 
 .e-schedule .e-new-event {
   background-color: #1c8000;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 5px;
   height: 100%;
   opacity: .9;
@@ -484,7 +488,7 @@
 }
 
 .e-schedule .e-new-event .e-title {
-  color: #000;
+  color: #fff;
   font-size: 12px;
   line-height: 1.2;
   margin: 0;
@@ -588,7 +592,7 @@
 .e-schedule .e-block-indicator {
   color: #3d3d3d;
   float: right;
-  padding: 0 6px;
+  padding: 0 5px;
   z-index: 1;
 }
 
@@ -732,7 +736,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   height: 54px;
@@ -1027,7 +1031,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   height: 22px;
@@ -1085,7 +1089,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   overflow: hidden;
   position: absolute;
 }
@@ -1364,7 +1368,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   cursor: default;
   display: -ms-flexbox;
   display: flex;
@@ -1676,7 +1680,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   cursor: default;
   display: -ms-flexbox;
   display: flex;
@@ -1923,7 +1927,7 @@
   background: #1c8000;
   border: 1px solid #e4e4e4;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   cursor: default;
   display: -ms-flexbox;
   display: flex;
@@ -2370,7 +2374,7 @@
 }
 
 .e-schedule .e-agenda-view .e-month-header .e-date-header {
-  color: #000;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -3368,7 +3372,7 @@
   font-weight: 500;
   line-height: 1.5;
   max-height: 87px;
-  color: #000;
+  color: #fff;
   background-color: rgba(28, 128, 0, 0.3);
   border-left: 6px solid #1c8000;
   padding: 8px 0 8px 10px;
@@ -3626,7 +3630,7 @@
   background: #1c8000;
   border-radius: 2px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   height: 38px;
@@ -3802,7 +3806,7 @@
 .e-more-popup-wrapper .e-appointment {
   background: #1c8000;
   border-radius: 2px;
-  color: #000;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   height: 22px;
@@ -3813,7 +3817,7 @@
 }
 
 .e-more-popup-wrapper .e-appointment .e-subject {
-  color: #000;
+  color: #fff;
   -ms-flex: auto;
       flex: auto;
   font-size: 13px;
@@ -3830,8 +3834,9 @@
   padding: 0 2px;
 }
 
-.e-more-popup-wrapper .e-appointment:focus {
-  border: 1px solid #400074;
+.e-more-popup-wrapper .e-appointment.e-appointment-border, .e-more-popup-wrapper .e-appointment:focus {
+  border: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
 .e-more-popup-wrapper.e-device {

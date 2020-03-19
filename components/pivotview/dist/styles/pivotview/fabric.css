@@ -91,6 +91,18 @@
   content: '\e729';
 }
 
+.e-pivotview .e-pivot-button .e-edit::before {
+  content: '\e97c';
+}
+
+.e-pivotview .e-sort-ascend-icon::before {
+  content: '\e734';
+}
+
+.e-pivotview .e-sort-descend-icon::before {
+  content: '\e733';
+}
+
 .e-pivotview-pdf-export::before {
   content: '\e70d';
 }
@@ -217,6 +229,7 @@
 .e-pivotview .e-pivot-format-dialog .e-footer-content .e-clear-filter-button,
 .e-pivotview .e-group-field-settings .e-footer-content .e-clear-filter-button {
   float: left;
+  margin: 0;
 }
 
 .e-pivotview .e-value-field-settings .e-footer-content .e-clear-filter-button.e-disable,
@@ -238,7 +251,8 @@
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-editor-label-wrapper,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-editor-label-wrapper {
   background-color: #f8f8f8;
-  padding: 8px 10px 16px 20px;
+  opacity: 100%;
+  padding: 15px 10px 16px 20px;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-editor-label-wrapper .e-editor-label,
@@ -1604,7 +1618,38 @@
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper {
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 20px 10px;
+}
+
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-group-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort {
+  box-shadow: none;
+  margin-left: 10px;
+}
+
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-pivotview .e-group-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-pivotview .e-group-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon {
+  font-size: 16px;
+}
+
+.e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active,
+.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active,
+.e-pivotview .e-pivot-format-dialog .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active,
+.e-pivotview .e-group-field-settings .e-dlg-content .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort .e-member-sort:focus.e-active {
+  background-color: #c8c8c8;
+  border-color: #c8c8c8;
+  color: #000;
+  outline: none;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-member-editor-wrapper .e-member-prompt,
@@ -1732,7 +1777,7 @@
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-excelfilter .e-member-editor-container-outer-div {
-  height: 118px;
+  height: 125px;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-label-filter,
@@ -1842,18 +1887,20 @@
   font-weight: 600 !important;
 }
 
-.e-pivotview .e-value-field-settings.e-excel-filter,
-.e-pivotview .e-member-editor-dialog.e-excel-filter,
-.e-pivotview .e-pivot-format-dialog.e-excel-filter,
-.e-pivotview .e-group-field-settings.e-excel-filter {
-  min-width: 280px;
-}
-
 .e-pivotview .e-value-field-settings.e-excel-filter .e-editor-label-wrapper,
 .e-pivotview .e-member-editor-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotview .e-pivot-format-dialog.e-excel-filter .e-editor-label-wrapper,
 .e-pivotview .e-group-field-settings.e-excel-filter .e-editor-label-wrapper {
-  padding: 8px 10px 8px 20px;
+  opacity: 100%;
+  padding: 15px 10px 8px 20px;
+}
+
+.e-pivotview .e-value-field-settings.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-member-editor-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-pivot-format-dialog.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort,
+.e-pivotview .e-group-field-settings.e-rtl .e-member-editor-wrapper .e-editor-search-wrapper .e-filter-sort {
+  margin-left: 0;
+  margin-right: 10px;
 }
 
 .e-pivotview .e-value-field-settings.e-rtl .e-member-editor-wrapper ul,
@@ -1890,14 +1937,6 @@
   padding-right: 10px;
 }
 
-.e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
-.e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
-.e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper,
-.e-pivotview .e-group-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
 .e-pivotview .e-member-editor-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
 .e-pivotview .e-pivot-format-dialog.e-olap-editor-dialog .e-member-editor-wrapper .e-editor-search-wrapper .e-level-drop,
@@ -1927,6 +1966,10 @@
   margin-right: 0;
 }
 
+.e-pivotview .e-member-editor-dialog {
+  min-width: 320px;
+}
+
 .e-pivotview .e-member-editor-dialog .e-dlg-content,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content {
   padding: 0;
@@ -1945,6 +1988,30 @@
 .e-pivotview .e-value-field-settings .e-dlg-content,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content {
   overflow: auto;
+}
+
+.e-pivotview .e-pivotchart-type-dialog {
+  max-width: 350px;
+}
+
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-wrapper,
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-text {
+  padding-bottom: 20px;
+}
+
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-wrapper .e-chart-type-option-text,
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-text .e-chart-type-option-text {
+  padding-bottom: 5px;
+}
+
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-wrapper .e-input-group.e-control-wrapper,
+.e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-text .e-input-group.e-control-wrapper {
+  padding: 1px;
+}
+
+.e-pivotview .e-pivotchart-type-dialog .e-icons.e-frame {
+  height: 18px;
+  width: 18px;
 }
 
 .e-pivotview .e-pivot-format-dialog {
@@ -2052,9 +2119,14 @@
   max-width: 500px;
 }
 
+.e-report-outer {
+  display: inline-block;
+  width: 100%;
+}
+
 .e-pivotview-report-label {
   float: left;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 40%;
 }
 
@@ -2073,7 +2145,10 @@
 
 .e-pivotview-pdf-export,
 .e-pivotview-excel-export,
-.e-pivotview-csv-export {
+.e-pivotview-csv-export,
+.e-pivotview-png-export,
+.e-pivotview-jpeg-export,
+.e-pivotview-svg-export {
   font-size: 18px !important;
 }
 
@@ -2113,6 +2188,17 @@
 .e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div,
 .e-bigger.e-pivotview .e-member-editor-dialog .e-dlg-content .e-member-editor-wrapper .e-member-editor-container-outer-div {
   height: 135px;
+}
+
+.e-bigger .e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger .e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-ascend-icon,
+.e-bigger.e-pivotview .e-member-editor-dialog .e-editor-search-wrapper .e-filter-sort .e-member-sort .e-sort-descend-icon {
+  font-size: 18px;
 }
 
 .e-bigger .e-pivotview .e-member-editor-dialog .e-dlg-header-content .e-clear-filter-button.e-small,
@@ -2344,7 +2430,7 @@
 .e-bigger.e-pivotview .e-member-editor-dialog.e-excel-filter,
 .e-bigger.e-pivotview .e-value-field-settings.e-excel-filter,
 .e-bigger.e-pivotview .e-pivot-format-dialog.e-excel-filter {
-  min-width: 380px;
+  min-width: 350px;
 }
 
 .e-bigger .e-pivotview .e-pivot-format-dialog .e-pivot-format-dialog-outer,
@@ -4441,14 +4527,22 @@
   font-size: 14px;
 }
 
+.e-bigger .e-pivotview-report-dialog .e-pivotview-report-label,
+.e-bigger.e-pivotview-report-dialog .e-pivotview-report-label,
+.e-bigger .e-pivotview-report-dialog .e-pivotview-report-label,
+.e-bigger.e-pivotview-report-dialog .e-pivotview-report-label {
+  margin-top: 5px;
+}
+
 /*! PivotView theme */
 .e-pivotview .e-nextspan {
   display: inline-block;
-  width: 24px;
+  width: 18px;
 }
 
 .e-pivotview .e-lastspan {
   display: inline-block;
+  padding-top: 10px;
   width: 12px;
 }
 
@@ -4461,12 +4555,46 @@
 }
 
 .e-pivotview .e-valuescontent {
+  padding-right: 8px;
   text-align: right;
 }
 
-.e-pivotview .e-summary,
-.e-pivotview .e-summary.e-active {
+.e-pivotview .e-grid
+.e-rowcell {
+  font-size: 13px;
+  padding-left: 8px;
+}
+
+.e-pivotview .e-gtot,
+.e-pivotview .e-gtot.e-rowsheader,
+.e-pivotview .e-gtot.e-columnsheader,
+.e-pivotview .e-grid .e-content,
+.e-pivotview .e-grid .e-gridheader,
+.e-pivotview .e-headercell {
+  background-color: #f4f4f4;
+}
+
+.e-pivotview .e-grid .e-gridheader {
+  border-bottom-width: 1px;
+}
+
+.e-pivotview .e-gtot {
   font-weight: 600;
+}
+
+.e-pivotview .e-gtot
+.e-cellvalue {
+  color: #333 87%;
+}
+
+.e-pivotview .e-rowsheader,
+.e-pivotview .e-columnsheader {
+  background-color: #f8f8f8;
+}
+
+.e-pivotview .e-rowsheader .e-cellvalue {
+  margin-left: 8px;
+  margin-top: 5px;
 }
 
 .e-pivotview .e-pivot-conditional-empty-format {
@@ -4529,14 +4657,14 @@
 }
 
 .e-pivotview div.e-cellvalue {
-  margin-top: -2px;
+  margin-top: 5px;
 }
 
 .e-pivotview .e-sortfilterdiv {
   margin: -21px 0 !important;
 }
 
-.e-pivotview .e-pivotchart > svg {
+.e-pivotview .e-pivotchart > svg, .e-pivotview .e-pivotchart-inner > svg {
   border: 1px solid #dadada;
 }
 
@@ -4569,8 +4697,9 @@
   color: #666 !important;
 }
 
+.e-pivotview .e-grid .e-headercelldiv,
 .e-pivotview .e-grid .e-columnsheader {
-  padding-left: 12px !important;
+  padding-left: 8px !important;
 }
 
 .e-pivotview .e-frozenheader > .e-table,
@@ -4580,7 +4709,8 @@
 }
 
 .e-pivotview .e-stackedheadercelldiv.e-cellvalue {
-  padding-left: 6px !important;
+  padding-left: 8px !important;
+  margin-top: 5px;
 }
 
 .e-pivotview .e-stackedheadercelldiv {
@@ -4590,9 +4720,9 @@
 .e-pivotview .e-stackedheadercelldiv,
 .e-pivotview .e-headertext,
 .e-pivotview .e-rowsheader .e-cellvalue {
-  color: #333333 !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .e-pivotview .e-stackedheadercelldiv .e-hyperlinkcell,
@@ -4682,7 +4812,9 @@
 .e-pivotview .e-group-filters .e-draggable-prompt,
 .e-pivotview .e-group-rows .e-draggable-prompt {
   color: #333;
-  line-height: 50px;
+  display: inline-block;
+  line-height: 22px;
+  margin-top: 4px;
   padding-left: 8px;
   pointer-events: none;
   position: relative;
@@ -4697,10 +4829,10 @@
   display: inline-table;
   -ms-flex: auto;
       flex: auto;
-  height: 36px;
-  min-height: 36px;
+  height: 30px;
+  min-height: 30px;
   overflow: hidden;
-  padding-left: 12px;
+  padding-left: 8px;
   scroll-behavior: smooth;
 }
 
@@ -4710,7 +4842,8 @@
 .e-pivotview .e-group-rows .e-pvt-btn-div {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 6px;
+  height: 24px;
+  padding: 3px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 8px;
@@ -4751,9 +4884,9 @@
   display: -ms-flexbox;
   display: flex;
   font-weight: normal;
-  height: 26px;
+  height: 24px;
   line-height: .9em;
-  padding: 5px 10px;
+  padding: 4px 8px;
   text-transform: none;
   vertical-align: bottom;
   z-index: 1;
@@ -4771,6 +4904,7 @@
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover {
   background-color: #d0d0d0;
+  border-color: #d0d0d0;
 }
 
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:hover .e-sort,
@@ -4778,21 +4912,25 @@
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:hover .e-pv-filter,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:hover .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:hover .e-edit,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-sort,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-dropdown-icon,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-pv-filter,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:hover .e-edit,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-sort,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-dropdown-icon,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-pv-filter,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:hover .e-edit,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-sort,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-dropdown-icon,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filter,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
-.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove {
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-edit {
   color: #666 !important;
 }
 
@@ -4811,41 +4949,49 @@
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
-.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-remove, .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-sort,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus .e-edit, .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button:active .e-edit,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-sort,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-edit,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
-.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-remove {
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-edit {
   color: #666 !important;
 }
 
@@ -4890,28 +5036,32 @@
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove {
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit {
   color: #666 !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  height: 20px;
-  padding-left: 4px;
-  width: 20px;
+  font-size: 12px;
+  height: 18px;
+  margin-left: 4px;
+  width: 18px;
 }
 
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-sort:hover,
@@ -4919,21 +5069,25 @@
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-remove:hover,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-remove:hover,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-remove:hover,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-edit:hover,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
-.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove:hover {
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove:hover,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit:hover {
   color: #666 !important;
 }
 
@@ -4942,21 +5096,25 @@
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-edit.e-disable,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort.e-disable,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
-.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove.e-disable {
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit.e-disable {
   display: none;
 }
 
@@ -4964,7 +5122,7 @@
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort {
-  height: 14px;
+  height: 12px;
   transform: rotateX(0deg);
   transition: transform 200ms ease-in-out;
 }
@@ -5013,7 +5171,7 @@
 }
 
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button {
-  padding: 5px 10px;
+  padding: 4px 8px;
   width: 180px;
 }
 
@@ -5025,7 +5183,8 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-dropdown-icon,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filter,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove {
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-edit {
   color: #666 !important;
 }
 
@@ -5038,11 +5197,13 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-dropdown-icon,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-pv-filter,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-pv-filtered,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-remove, .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-sort,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:focus .e-edit, .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-sort,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-dropdown-icon,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-pv-filter,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-pv-filtered,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-remove {
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:active .e-edit {
   color: #666 !important;
 }
 
@@ -5050,19 +5211,21 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove {
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit {
   color: #666 !important;
-  font-size: 14px;
-  height: 20px;
-  padding-left: 4px;
-  width: 20px;
+  font-size: 12px;
+  height: 18px;
+  margin-left: 4px;
+  width: 18px;
 }
 
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort:hover,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon:hover,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter:hover,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered:hover,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove:hover {
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove:hover,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit:hover {
   color: #666;
 }
 
@@ -5070,13 +5233,14 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon.e-disable,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter.e-disable,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered.e-disable,
-.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove.e-disable {
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove.e-disable,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit.e-disable {
   display: none;
 }
 
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort {
-  height: 14px;
-  width: 20px;
+  height: 12px;
+  width: 18px;
 }
 
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort.e-descend {
@@ -5097,6 +5261,16 @@
   padding-bottom: 0;
 }
 
+.e-pivotview .e-axis-value .e-group-chart-values {
+  display: inline-block;
+  height: 28px;
+}
+
+.e-pivotview .e-axis-value .e-group-chart-values-drodown {
+  font-size: 13px;
+  height: 25px;
+}
+
 .e-pivotview .e-chart-grouping-bar .e-axis-row {
   height: 50% !important;
 }
@@ -5111,34 +5285,47 @@
   padding-left: 2px;
 }
 
+.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown {
+  margin: 3px;
+}
+
+.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown .e-input-group-icon {
+  min-height: initial;
+}
+
+.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input {
+  padding-bottom: 7px;
+}
+
 .e-pivotview .e-icons {
   height: auto;
   width: auto;
 }
 
 .e-pivotview .e-collapse::before {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .e-pivotview .e-expand,
 .e-pivotview .e-collapse {
   cursor: pointer;
   display: inline-block;
-  height: 16px;
+  height: 18px;
+  margin-top: 5px;
   text-align: center;
-  width: 24px;
+  width: 18px;
 }
 
 .e-pivotview th .e-expand,
 .e-pivotview th .e-collapse {
   float: left;
-  font-size: 13px !important;
-  margin-left: -6px;
-  margin-top: 2px;
+  font-size: 12px !important;
+  margin-left: 0px;
+  margin-top: 7px;
 }
 
 .e-pivotview .e-expand::before {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .e-pivotview.e-rtl .e-expand::before,
@@ -5157,7 +5344,13 @@
 }
 
 .e-pivotview.e-rtl .e-grid .e-columnsheader {
-  padding-right: 12px !important;
+  padding-right: 8px !important;
+}
+
+.e-pivotview.e-rtl .e-grid .e-headercelldiv,
+.e-pivotview.e-rtl .e-grid .e-columnsheader {
+  padding-left: 0.8em !important;
+  padding-right: 8px !important;
 }
 
 .e-pivotview.e-rtl .e-rowsheader .e-cellvalue {
@@ -5183,7 +5376,7 @@
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters {
   padding-left: 0;
-  padding-right: 12px;
+  padding-right: 8px;
 }
 
 .e-pivotview.e-rtl .e-grouping-bar .e-group-rows .e-pvt-btn-div,
@@ -5198,6 +5391,7 @@
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-content,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-content,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-content {
+  margin-left: 4px;
   text-align: right;
 }
 
@@ -5206,28 +5400,32 @@
 .e-pivotview.e-rtl .e-grouping-bar .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview.e-rtl .e-grouping-bar .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview.e-rtl .e-grouping-bar .e-group-columns .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview.e-rtl .e-grouping-bar .e-group-values .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-remove {
+.e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview.e-rtl .e-grouping-bar .e-group-filters .e-pvt-btn-div .e-pivot-button .e-edit {
   padding-left: 0;
   padding-right: 4px;
 }
 
 .e-pivotview.e-rtl .e-group-row .e-group-rows {
   padding-left: 0;
-  padding-right: 12px;
+  padding-right: 8px;
 }
 
 .e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div {
@@ -5236,6 +5434,8 @@
 }
 
 .e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-content {
+  margin-left: 4px;
+  margin-right: 0;
   text-align: right;
 }
 
@@ -5243,13 +5443,14 @@
 .e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove {
+.e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-pivotview.e-rtl .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit {
   padding-left: 0;
   padding-right: 7px;
 }
 
 .e-pivotview.e-rtl .e-stackedheadercelldiv.e-cellvalue {
-  padding-right: 13px !important;
+  padding-right: 8px !important;
 }
 
 .e-pivotview.e-device .e-grouping-bar .e-pivot-button {
@@ -5277,6 +5478,10 @@
   opacity: 1;
 }
 
+.e-drillthrough-dialog {
+  visibility: hidden;
+}
+
 .e-pivottooltip {
   border-radius: 2px;
   padding: 3px 3px;
@@ -5291,12 +5496,21 @@
   margin: 0;
 }
 
-.e-drillthrough-dialog {
-  visibility: hidden;
-}
-
 .e-pivottooltip p.e-tooltipcontent {
   margin-left: 5px;
+}
+
+.e-pivottooltiptemplate.e-tooltip-wrap {
+  border: medium none transparent;
+  max-width: none;
+  min-width: 0;
+  opacity: 1;
+}
+
+.e-pivottooltiptemplate .e-tip-content {
+  overflow-x: visible;
+  padding: unset;
+  word-break: normal;
 }
 
 .e-rtl .e-pivottooltip p.e-tooltipcontent {
@@ -5304,18 +5518,69 @@
   margin-right: 5px;
 }
 
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown {
+  margin: 5px;
+}
+
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown .e-input-group-icon,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown .e-input-group-icon,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown .e-input-group-icon,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown .e-input-group-icon {
+  min-height: initial;
+}
+
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input {
+  padding-bottom: 10px;
+  padding-top: 0;
+}
+
 .e-bigger .e-pivotview .e-grid .e-rowsheader,
 .e-bigger.e-pivotview .e-grid .e-rowsheader,
 .e-bigger .e-pivotview .e-grid .e-rowsheader,
 .e-bigger.e-pivotview .e-grid .e-rowsheader {
-  padding-left: 10px !important;
+  padding-left: 8px !important;
+}
+
+.e-bigger .e-pivotview .e-grid .e-headercelldiv,
+.e-bigger.e-pivotview .e-grid .e-headercelldiv,
+.e-bigger .e-pivotview .e-grid .e-headercelldiv,
+.e-bigger.e-pivotview .e-grid .e-headercelldiv {
+  padding-left: 8px !important;
 }
 
 .e-bigger .e-pivotview .e-grid .e-columnsheader,
 .e-bigger.e-pivotview .e-grid .e-columnsheader,
 .e-bigger .e-pivotview .e-grid .e-columnsheader,
 .e-bigger.e-pivotview .e-grid .e-columnsheader {
-  padding-left: 16px !important;
+  padding-left: 8px !important;
+}
+
+.e-bigger .e-pivotview .e-stackedheadercelldiv,
+.e-bigger .e-pivotview .e-headertext,
+.e-bigger .e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger.e-pivotview .e-stackedheadercelldiv,
+.e-bigger.e-pivotview .e-headertext,
+.e-bigger.e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger .e-pivotview .e-stackedheadercelldiv,
+.e-bigger .e-pivotview .e-headertext,
+.e-bigger .e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger.e-pivotview .e-stackedheadercelldiv,
+.e-bigger.e-pivotview .e-headertext,
+.e-bigger.e-pivotview .e-rowsheader .e-cellvalue {
+  font-size: 13px !important;
+}
+
+.e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div,
+.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div,
+.e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div,
+.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div {
+  height: 30px;
 }
 
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button,
@@ -5331,7 +5596,7 @@
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-content,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-content,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-content {
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 8px;
 }
 
@@ -5340,31 +5605,35 @@
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-remove {
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
+.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-edit {
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
 }
 
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-sort {
-  height: 16px;
+  height: 14px;
 }
 
 .e-bigger .e-pivotview .e-grouping-bar .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
@@ -5390,8 +5659,8 @@
 .e-bigger.e-pivotview .e-grouping-bar .e-group-values,
 .e-bigger.e-pivotview .e-grouping-bar .e-group-columns,
 .e-bigger.e-pivotview .e-grouping-bar .e-group-rows {
-  height: 40px;
-  min-height: 40px;
+  height: 36px;
+  min-height: 36px;
   padding-left: 16px;
 }
 
@@ -5428,6 +5697,13 @@
   padding-left: 16px;
 }
 
+.e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div,
+.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div,
+.e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div,
+.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div {
+  height: 30px;
+}
+
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button,
@@ -5441,7 +5717,7 @@
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-content,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-content,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-content {
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 8px;
 }
 
@@ -5450,31 +5726,35 @@
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filter,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-pv-filtered,
-.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove {
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
+.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-remove,
+.e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-edit {
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
 }
 
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort,
 .e-bigger.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-sort {
-  height: 16px;
+  height: 14px;
 }
 
 .e-bigger .e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button .e-dropdown-icon,
@@ -5509,6 +5789,37 @@
   height: 135px;
 }
 
+.e-bigger .e-pivotview .e-stackedheadercelldiv,
+.e-bigger .e-pivotview .e-headertext,
+.e-bigger .e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger.e-pivotview .e-stackedheadercelldiv,
+.e-bigger.e-pivotview .e-headertext,
+.e-bigger.e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger .e-pivotview .e-stackedheadercelldiv,
+.e-bigger .e-pivotview .e-headertext,
+.e-bigger .e-pivotview .e-rowsheader .e-cellvalue,
+.e-bigger.e-pivotview .e-stackedheadercelldiv,
+.e-bigger.e-pivotview .e-headertext,
+.e-bigger.e-pivotview .e-rowsheader .e-cellvalue {
+  color: #333333 !important;
+  font-size: 13px;
+  font-weight: 600 !important;
+}
+
+.e-bigger .e-pivotview .e-grid .e-columnsheader,
+.e-bigger.e-pivotview .e-grid .e-columnsheader,
+.e-bigger .e-pivotview .e-grid .e-columnsheader,
+.e-bigger.e-pivotview .e-grid .e-columnsheader {
+  padding-right: 16px !important;
+}
+
+.e-bigger .e-pivotview .e-rowcell,
+.e-bigger.e-pivotview .e-rowcell,
+.e-bigger .e-pivotview .e-rowcell,
+.e-bigger.e-pivotview .e-rowcell {
+  font-size: 13px;
+}
+
 .e-bigger .e-pivotview.e-rtl .e-grid .e-rowsheader,
 .e-bigger.e-pivotview.e-rtl .e-grid .e-rowsheader,
 .e-bigger .e-pivotview.e-rtl .e-grid .e-rowsheader,
@@ -5521,6 +5832,18 @@
 .e-bigger .e-pivotview.e-rtl .e-grid .e-columnsheader,
 .e-bigger.e-pivotview.e-rtl .e-grid .e-columnsheader {
   padding-right: 16px !important;
+}
+
+.e-bigger .e-pivotview.e-rtl .e-grid .e-headercelldiv,
+.e-bigger .e-pivotview.e-rtl .e-grid .e-columnsheader,
+.e-bigger.e-pivotview.e-rtl .e-grid .e-headercelldiv,
+.e-bigger.e-pivotview.e-rtl .e-grid .e-columnsheader,
+.e-bigger .e-pivotview.e-rtl .e-grid .e-headercelldiv,
+.e-bigger .e-pivotview.e-rtl .e-grid .e-columnsheader,
+.e-bigger.e-pivotview.e-rtl .e-grid .e-headercelldiv,
+.e-bigger.e-pivotview.e-rtl .e-grid .e-columnsheader {
+  padding-left: 0.8em !important;
+  padding-right: 8px !important;
 }
 
 .e-bigger .e-pivotview.e-rtl .e-grouping-bar .e-group-rows,
@@ -5555,7 +5878,7 @@
 .e-bigger.e-pivotview.e-rtl .e-stackedheadercelldiv.e-cellvalue,
 .e-bigger .e-pivotview.e-rtl .e-stackedheadercelldiv.e-cellvalue,
 .e-bigger.e-pivotview.e-rtl .e-stackedheadercelldiv.e-cellvalue {
-  padding-right: 13px !important;
+  padding-right: 8px !important;
 }
 
 .e-content-placeholder.e-pivotview.e-placeholder-pivotview {

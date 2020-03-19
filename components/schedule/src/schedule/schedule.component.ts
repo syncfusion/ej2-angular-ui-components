@@ -40,8 +40,8 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public selectedDateChange: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     *  the date header cells. The field that can be accessed via this template is `date`. 
-     * {% codeBlock src="schedule/date-header-api/index.ts" %}{% endcodeBlock %}
+     * the date header cells. The field that can be accessed via this template is `date`. 
+     * {% codeBlock src='schedule/dateHeaderTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      */
     @ContentChild('dateHeaderTemplate')
@@ -54,8 +54,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *  * date 
      *  * groupIndex 
      *  * type 
-     * {% codeBlock src="schedule/cell-template-api/index.html" %}{% endcodeBlock %} 
-     * {% codeBlock src="schedule/cell-template-api/index.ts" %}{% endcodeBlock %}
+     * {% codeBlock src='schedule/cellTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      */
     @ContentChild('cellTemplate')
@@ -63,7 +62,8 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public cellTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     *  the month date cells. This template is only applicable for month view day cells.
+     * the month date cells. This template is only applicable for month view day cells. 
+     * {% codeBlock src='schedule/cellHeaderTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      */
     @ContentChild('cellHeaderTemplate')
@@ -78,8 +78,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     /** 
      * The template option to render the customized editor window. The form elements defined within this template should be accompanied 
      *  with `e-field` class, so as to fetch and process it from internally. 
-     * {% codeBlock src="schedule/editor-api/index.html" %}{% endcodeBlock %} 
-     * {% codeBlock src="schedule/editor-api/index.ts" %}{% endcodeBlock %}
+     * {% codeBlock src='schedule/editorTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      */
     @ContentChild('editorTemplate')
@@ -97,8 +96,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * The following can be accessible via template. 
      * * resource - All the resource fields. 
      * * resourceData - object collection of current resource. 
-     * {% codeBlock src="schedule/resource-header-api/index.html" %}{% endcodeBlock %} 
-     * {% codeBlock src="schedule/resource-header-api/index.ts" %}{% endcodeBlock %}
+     * {% codeBlock src='schedule/resourceHeaderTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      */
     @ContentChild('resourceHeaderTemplate')

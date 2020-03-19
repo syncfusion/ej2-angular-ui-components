@@ -5327,6 +5327,14 @@ textarea.e-input::-webkit-input-placeholder {
   width: 36px;
 }
 
+.e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-icons.e-disabled,
+.e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-icons.e-disabled {
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: .4;
+  pointer-events: none;
+}
+
 .e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-msie.e-icons,
 .e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-msie.e-icons,
 .e-bigger .e-upload .e-upload-files .e-file-abort-btn.e-msie.e-icons,

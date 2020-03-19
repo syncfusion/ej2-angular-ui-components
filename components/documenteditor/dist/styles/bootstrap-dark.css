@@ -508,7 +508,7 @@
 }
 
 .e-de-blink-cursor {
-  border-left: 1px solid;
+  border-left: 1px solid #000;
   pointer-events: none;
   position: absolute;
   z-index: 3;
@@ -1216,6 +1216,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-tooltip {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  color: #000;
   cursor: text;
   display: table;
   max-width: 200px;
@@ -3408,8 +3409,8 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 115px);
   width: 100%;
 }
@@ -3451,8 +3452,8 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 77px;
   width: 100%;
 }
@@ -4042,9 +4043,9 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-de-status-bar {
   background-color: #1a1a1a;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5px;
   width: 100%;
 }
 
@@ -4297,8 +4298,8 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-bigger .e-de-tool-ctnr-properties-pane {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100% - 121px);
   min-height: 200px;
   width: 100%;
@@ -4320,8 +4321,8 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-bigger .e-de-ctnr-toolbar {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 82px;
   width: 100%;
 }
@@ -4658,9 +4659,9 @@ label[for*='_wholeWord_e-de-rtl'] {
 
 .e-bigger .e-de-status-bar {
   background-color: #1a1a1a;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5px;
   width: 100%;
 }
 

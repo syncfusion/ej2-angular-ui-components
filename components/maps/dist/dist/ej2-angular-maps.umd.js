@@ -94,7 +94,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 var outputs$1 = [];
 /**
  * Layer Directive
@@ -965,8 +965,11 @@ exports.Rect = ej2Maps.Rect;
 exports.PatternOptions = ej2Maps.PatternOptions;
 exports.renderTextElement = ej2Maps.renderTextElement;
 exports.convertElement = ej2Maps.convertElement;
+exports.formatValue = ej2Maps.formatValue;
+exports.convertStringToValue = ej2Maps.convertStringToValue;
 exports.convertElementFromLabel = ej2Maps.convertElementFromLabel;
 exports.drawSymbols = ej2Maps.drawSymbols;
+exports.getValueFromObject = ej2Maps.getValueFromObject;
 exports.markerColorChoose = ej2Maps.markerColorChoose;
 exports.markerShapeChoose = ej2Maps.markerShapeChoose;
 exports.clusterTemplate = ej2Maps.clusterTemplate;
@@ -1005,6 +1008,7 @@ exports.removeElement = ej2Maps.removeElement;
 exports.calculateCenterFromPixel = ej2Maps.calculateCenterFromPixel;
 exports.getTranslate = ej2Maps.getTranslate;
 exports.getZoomTranslate = ej2Maps.getZoomTranslate;
+exports.fixInitialScaleForTile = ej2Maps.fixInitialScaleForTile;
 exports.getElementByID = ej2Maps.getElementByID;
 exports.Internalize = ej2Maps.Internalize;
 exports.getTemplateFunction = ej2Maps.getTemplateFunction;

@@ -308,6 +308,10 @@
   text-transform: uppercase;
 }
 
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn.e-tbtn-txt .e-icons.e-btn-icon {
+  padding-left: 0;
+}
+
 .e-schedule .e-schedule-toolbar.e-rtl .e-hor-nav {
   background: #000;
   border-left: 0;
@@ -588,7 +592,7 @@
 .e-schedule .e-block-indicator {
   color: #bfbfbf;
   float: right;
-  padding: 0 6px;
+  padding: 0 5px;
   z-index: 1;
 }
 
@@ -3830,8 +3834,9 @@
   padding: 0 2px;
 }
 
-.e-more-popup-wrapper .e-appointment:focus {
-  border: 1px solid #ffd939;
+.e-more-popup-wrapper .e-appointment.e-appointment-border, .e-more-popup-wrapper .e-appointment:focus {
+  border: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
 .e-more-popup-wrapper.e-device {

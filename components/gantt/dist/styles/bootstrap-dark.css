@@ -234,6 +234,10 @@
   content: '\e242';
 }
 
+.e-gantt .e-pdfexport::before {
+  content: '\e240';
+}
+
 .e-gantt.e-device .e-backarrowspan::before,
 .e-gantt.e-device .e-icon-dlg-close::before {
   content: '\e85b';
@@ -650,9 +654,21 @@
 .e-gantt .e-gantt-chart .e-gantt-child-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-milestone,
-.e-gantt .e-gantt-chart .e-gantt-parent-milestone {
+.e-gantt .e-gantt-chart .e-gantt-parent-milestone,
+.e-gantt .e-gantt-chart .e-gantt-manualparent-milestone {
   display: inline-block;
   width: 100%;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-main-container {
+  background-color: transparent;
+  cursor: move;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparent-taskbar {
+  margin-top: 3px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div,
@@ -748,7 +764,8 @@
 }
 
 .e-gantt .e-gantt-chart .e-milestone-top,
-.e-gantt .e-gantt-chart .e-parent-milestone-top {
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
   border-style: none solid solid;
   border-top: 0;
 }
@@ -756,13 +773,16 @@
 .e-gantt .e-gantt-chart .e-milestone-top,
 .e-gantt .e-gantt-chart .e-milestone-bottom,
 .e-gantt .e-gantt-chart .e-parent-milestone-top,
-.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
 .e-gantt .e-gantt-chart .e-milestone-bottom,
-.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-bottom: 0;
   border-style: solid solid none;
 }
@@ -908,6 +928,38 @@
 
 .e-gantt .e-gantt-chart .e-connectorpoint-allow-block {
   cursor: no-drop;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left,
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  background-color: #989A9C;
+  border-color: #989A9C;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: -1px;
+  position: absolute;
+  width: 10px;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  cursor: e-resize;
+  margin-left: -8px;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left {
+  margin-left: 0;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar {
+  background: #989A9C;
+  margin-top: 3px;
+  position: absolute;
 }
 
 .e-gantt .e-gantt-chart .e-icon {
@@ -1358,6 +1410,20 @@
   border: 1px solid #0070f0;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-child-manualtaskbar {
+  background-color: #8dd1c4;
+  border: #4fb29f;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar.e-gantt-child-manualtaskbar {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #8dd1c4 30%, #8dd1c4 70%, #8dd1c4 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
+.e-gantt .e-gantt-chart .e-gantt-child-manualprogressbar {
+  background-color: #67c1b2;
+  border: #4fb29f;
+}
+
 .e-gantt .e-gantt-chart .e-holiday {
   background: #393939;
 }
@@ -1546,6 +1612,18 @@
   border-top-color: #4cc7ba;
 }
 
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-top-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-manualtask {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #989A9C 30%, #989A9C 70%, #989A9C 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
 .e-gantt .e-gantt-chart .e-label {
   color: #f0f0f0;
   font-size: 14px;
@@ -1696,7 +1774,11 @@
   border-right-color: #0070f0 !important;
 }
 
-.e-gantt .e-grid .e-icons {
+.e-gantt .e-icons {
+  color: #fff;
+}
+
+.e-gantt .e-grid .e-icons:not(.e-stop):not(.e-check):not(.e-icon-left):not(.e-date-icon) {
   color: #f0f0f0 !important;
 }
 

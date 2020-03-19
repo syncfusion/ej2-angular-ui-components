@@ -44,6 +44,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * Accepts the template design and assigns it to the footer container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
+     * @deprecated 
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -52,6 +53,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * Accepts the template design and assigns it to the header container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
+     * @deprecated 
      */
     @ContentChild('headerTemplate')
     @Template()
@@ -59,6 +61,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
     /** 
      * Accepts the template design and assigns it to the group headers present in the popup list.
      * @default null
+     * @deprecated 
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -70,6 +73,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
+     * @deprecated 
      */
     @ContentChild('itemTemplate')
     @Template()

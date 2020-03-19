@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'cssClass', 'expanded', 'header', 'iconCss'];
+let input: string[] = ['content', 'cssClass', 'disabled', 'expanded', 'header', 'iconCss', 'visible'];
 let outputs: string[] = [];
 /**
  * 'e-accordionitem' directive represent a item of the Angular Accordion.
@@ -35,6 +35,11 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      */
     public cssClass: any;
     /** 
+     * Sets true to disable an accordion item.
+     * @default false
+     */
+    public disabled: any;
+    /** 
      * Sets the expand (true) or collapse (false) state of the Accordion item. By default, all the items are in a collapsed state.
      * @default false
      */
@@ -47,6 +52,11 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * @default null
      */
     public iconCss: any;
+    /** 
+     * Sets false to hide an accordion item.
+     * @default true
+     */
+    public visible: any;
     /** 
      * Sets the header text to be displayed for the Accordion item. 
      * You can set the title of the Accordion item using `header` property. 

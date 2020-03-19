@@ -14,7 +14,7 @@ import { SelectedDataIndexDirective, SelectedDataIndexesDirective } from './sele
 import { IndicatorDirective, IndicatorsDirective } from './indicators.directive';
 import { ChartComponent } from './chart.component';
 import { ChartModule } from './chart.module';
-import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing} from '@syncfusion/ej2-charts'
+import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing, Highlight} from '@syncfusion/ej2-charts'
 
 
 export const LineSeriesService: ValueProvider = { provide: 'ChartsLineSeries', useValue: LineSeries};
@@ -72,6 +72,7 @@ export const MultiLevelLabelService: ValueProvider = { provide: 'ChartsMultiLeve
 export const ParetoSeriesService: ValueProvider = { provide: 'ChartsParetoSeries', useValue: ParetoSeries};
 export const ExportService: ValueProvider = { provide: 'ChartsExport', useValue: Export};
 export const DataEditingService: ValueProvider = { provide: 'ChartsDataEditing', useValue: DataEditing};
+export const HighlightService: ValueProvider = { provide: 'ChartsHighlight', useValue: Highlight};
 
 /**
  * NgModule definition for the Chart component with providers.
@@ -136,7 +137,8 @@ export const DataEditingService: ValueProvider = { provide: 'ChartsDataEditing',
         MultiLevelLabelService,
         ParetoSeriesService,
         ExportService,
-        DataEditingService
+        DataEditingService,
+        HighlightService
     ]
 })
 export class ChartAllModule { }

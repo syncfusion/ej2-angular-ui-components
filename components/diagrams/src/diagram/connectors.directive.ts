@@ -33,7 +33,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default 'Straight'
      * @asptype Syncfusion.EJ2.Diagrams.Segments
      * @blazordefaultvalueignore 
-     * @blazordefaultvalue Syncfusion.EJ2.Blazor.Diagrams.Segments.Straight
+     * @blazordefaultvalue Syncfusion.Blazor.Diagrams.Segments.Straight
      */
     public type: any;
     /** 

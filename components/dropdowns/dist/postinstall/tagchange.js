@@ -1,7 +1,7 @@
 var fs = require("fs");
 var glob = require("glob");
 
-var selectors = ['ejs-dropdownlist','ejs-combobox','ejs-autocomplete','ejs-multiselect','ejs-listbox'];
+var selectors = ['ejs-dropdownlist','ejs-combobox','ejs-autocomplete','ejs-multiselect','ejs-listbox','ejs-dropdowntree'];
 
 if (process.env.tagName !== undefined) {
   var newTagPrefix = process.env.tagName.trim();

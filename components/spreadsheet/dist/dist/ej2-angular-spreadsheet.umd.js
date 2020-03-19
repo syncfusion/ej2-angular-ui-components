@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['format', 'formula', 'hyperlink', 'index', 'style', 'value'];
+var input = ['format', 'formula', 'hyperlink', 'index', 'style', 'validation', 'value', 'wrap'];
 var outputs = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -86,7 +86,7 @@ CellsDirective.decorators = [
  * @nocollapse
  */
 CellsDirective.ctorParameters = function () { return []; };
-var input$1 = ['cells', 'customHeight', 'height', 'index'];
+var input$1 = ['cells', 'customHeight', 'height', 'hidden', 'index'];
 var outputs$1 = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
@@ -157,7 +157,7 @@ RowsDirective.decorators = [
  * @nocollapse
  */
 RowsDirective.ctorParameters = function () { return []; };
-var input$2 = ['customWidth', 'index', 'width'];
+var input$2 = ['customWidth', 'hidden', 'index', 'width'];
 var outputs$2 = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -293,7 +293,7 @@ RangeSettingsDirective.decorators = [
  * @nocollapse
  */
 RangeSettingsDirective.ctorParameters = function () { return []; };
-var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 var outputs$4 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -442,8 +442,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetTab', 'allowCellFormatting', 'allowEditing', 'allowFiltering', 'allowHyperlink', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$6 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileItemSelect', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'openComplete', 'openFailure', 'saveComplete', 'select', 'sortComplete'];
+var inputs = ['activeSheetTab', 'allowCellFormatting', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var outputs$6 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -835,6 +835,7 @@ exports.setRowHeight = ej2Spreadsheet.setRowHeight;
 exports.getRowsHeight = ej2Spreadsheet.getRowsHeight;
 exports.Column = ej2Spreadsheet.Column;
 exports.getColumn = ej2Spreadsheet.getColumn;
+exports.setColumn = ej2Spreadsheet.setColumn;
 exports.getColumnWidth = ej2Spreadsheet.getColumnWidth;
 exports.getColumnsWidth = ej2Spreadsheet.getColumnsWidth;
 exports.isHiddenCol = ej2Spreadsheet.isHiddenCol;
@@ -843,6 +844,7 @@ exports.getCell = ej2Spreadsheet.getCell;
 exports.setCell = ej2Spreadsheet.setCell;
 exports.getCellPosition = ej2Spreadsheet.getCellPosition;
 exports.skipDefaultValue = ej2Spreadsheet.skipDefaultValue;
+exports.wrap = ej2Spreadsheet.wrap;
 exports.getData = ej2Spreadsheet.getData;
 exports.getModel = ej2Spreadsheet.getModel;
 exports.processIdx = ej2Spreadsheet.processIdx;
@@ -855,6 +857,8 @@ exports.getRangeAddress = ej2Spreadsheet.getRangeAddress;
 exports.getColumnHeaderText = ej2Spreadsheet.getColumnHeaderText;
 exports.getIndexesFromAddress = ej2Spreadsheet.getIndexesFromAddress;
 exports.getRangeFromAddress = ej2Spreadsheet.getRangeFromAddress;
+exports.getAddressFromSelectedRange = ej2Spreadsheet.getAddressFromSelectedRange;
+exports.getAddressInfo = ej2Spreadsheet.getAddressInfo;
 exports.getSwapRange = ej2Spreadsheet.getSwapRange;
 exports.isSingleCell = ej2Spreadsheet.isSingleCell;
 exports.executeTaskAsync = ej2Spreadsheet.executeTaskAsync;
@@ -863,7 +867,9 @@ exports.WorkbookAllModule = ej2Spreadsheet.WorkbookAllModule;
 exports.getWorkbookRequiredModules = ej2Spreadsheet.getWorkbookRequiredModules;
 exports.CellStyle = ej2Spreadsheet.CellStyle;
 exports.DefineName = ej2Spreadsheet.DefineName;
+exports.ProtectSettings = ej2Spreadsheet.ProtectSettings;
 exports.Hyperlink = ej2Spreadsheet.Hyperlink;
+exports.Validation = ej2Spreadsheet.Validation;
 exports.workbookDestroyed = ej2Spreadsheet.workbookDestroyed;
 exports.updateSheetFromDataSource = ej2Spreadsheet.updateSheetFromDataSource;
 exports.dataSourceChanged = ej2Spreadsheet.dataSourceChanged;
@@ -903,7 +909,35 @@ exports.initiateFilter = ej2Spreadsheet.initiateFilter;
 exports.filterComplete = ej2Spreadsheet.filterComplete;
 exports.filterRangeAlert = ej2Spreadsheet.filterRangeAlert;
 exports.clearAllFilter = ej2Spreadsheet.clearAllFilter;
+exports.wrapEvent = ej2Spreadsheet.wrapEvent;
 exports.onSave = ej2Spreadsheet.onSave;
+exports.insert = ej2Spreadsheet.insert;
+exports.deleteAction = ej2Spreadsheet.deleteAction;
+exports.insertModel = ej2Spreadsheet.insertModel;
+exports.deleteModel = ej2Spreadsheet.deleteModel;
+exports.isValidation = ej2Spreadsheet.isValidation;
+exports.setValidation = ej2Spreadsheet.setValidation;
+exports.addHighlight = ej2Spreadsheet.addHighlight;
+exports.dataValidate = ej2Spreadsheet.dataValidate;
+exports.findNext = ej2Spreadsheet.findNext;
+exports.findPrevious = ej2Spreadsheet.findPrevious;
+exports.goto = ej2Spreadsheet.goto;
+exports.findWorkbookHandler = ej2Spreadsheet.findWorkbookHandler;
+exports.replaceHandler = ej2Spreadsheet.replaceHandler;
+exports.replaceAllHandler = ej2Spreadsheet.replaceAllHandler;
+exports.showDialog = ej2Spreadsheet.showDialog;
+exports.findUndoRedo = ej2Spreadsheet.findUndoRedo;
+exports.findKeyUp = ej2Spreadsheet.findKeyUp;
+exports.removeValidation = ej2Spreadsheet.removeValidation;
+exports.removeHighlight = ej2Spreadsheet.removeHighlight;
+exports.queryCellInfo = ej2Spreadsheet.queryCellInfo;
+exports.count = ej2Spreadsheet.count;
+exports.findCount = ej2Spreadsheet.findCount;
+exports.protectSheetWorkBook = ej2Spreadsheet.protectSheetWorkBook;
+exports.updateToggle = ej2Spreadsheet.updateToggle;
+exports.protectsheetHandler = ej2Spreadsheet.protectsheetHandler;
+exports.replaceAllDialog = ej2Spreadsheet.replaceAllDialog;
+exports.workBookeditAlert = ej2Spreadsheet.workBookeditAlert;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
@@ -926,6 +960,11 @@ exports.WorkbookFilter = ej2Spreadsheet.WorkbookFilter;
 exports.WorkbookCellFormat = ej2Spreadsheet.WorkbookCellFormat;
 exports.WorkbookEdit = ej2Spreadsheet.WorkbookEdit;
 exports.WorkbookHyperlink = ej2Spreadsheet.WorkbookHyperlink;
+exports.WorkbookInsert = ej2Spreadsheet.WorkbookInsert;
+exports.WorkbookDelete = ej2Spreadsheet.WorkbookDelete;
+exports.WorkbookDataValidation = ej2Spreadsheet.WorkbookDataValidation;
+exports.WorkbookFindAndReplace = ej2Spreadsheet.WorkbookFindAndReplace;
+exports.WorkbookProtectSheet = ej2Spreadsheet.WorkbookProtectSheet;
 exports.getRequiredModules = ej2Spreadsheet.getRequiredModules;
 exports.ribbon = ej2Spreadsheet.ribbon;
 exports.formulaBar = ej2Spreadsheet.formulaBar;
@@ -954,7 +993,7 @@ exports.cellNavigate = ej2Spreadsheet.cellNavigate;
 exports.mouseUpAfterSelection = ej2Spreadsheet.mouseUpAfterSelection;
 exports.selectionComplete = ej2Spreadsheet.selectionComplete;
 exports.cMenuBeforeOpen = ej2Spreadsheet.cMenuBeforeOpen;
-exports.addSheetTab = ej2Spreadsheet.addSheetTab;
+exports.insertSheetTab = ej2Spreadsheet.insertSheetTab;
 exports.removeSheetTab = ej2Spreadsheet.removeSheetTab;
 exports.renameSheetTab = ej2Spreadsheet.renameSheetTab;
 exports.ribbonClick = ej2Spreadsheet.ribbonClick;
@@ -990,8 +1029,7 @@ exports.renameSheet = ej2Spreadsheet.renameSheet;
 exports.initiateCustomSort = ej2Spreadsheet.initiateCustomSort;
 exports.applySort = ej2Spreadsheet.applySort;
 exports.collaborativeUpdate = ej2Spreadsheet.collaborativeUpdate;
-exports.hideShowRow = ej2Spreadsheet.hideShowRow;
-exports.hideShowCol = ej2Spreadsheet.hideShowCol;
+exports.hideShow = ej2Spreadsheet.hideShow;
 exports.autoFit = ej2Spreadsheet.autoFit;
 exports.updateToggleItem = ej2Spreadsheet.updateToggleItem;
 exports.initiateHyperlink = ej2Spreadsheet.initiateHyperlink;
@@ -1018,6 +1056,24 @@ exports.filterCellKeyDown = ej2Spreadsheet.filterCellKeyDown;
 exports.getFilterRange = ej2Spreadsheet.getFilterRange;
 exports.setAutoFit = ej2Spreadsheet.setAutoFit;
 exports.refreshFormulaDatasource = ej2Spreadsheet.refreshFormulaDatasource;
+exports.setScrollEvent = ej2Spreadsheet.setScrollEvent;
+exports.initiateDataValidation = ej2Spreadsheet.initiateDataValidation;
+exports.validationError = ej2Spreadsheet.validationError;
+exports.startEdit = ej2Spreadsheet.startEdit;
+exports.invalidData = ej2Spreadsheet.invalidData;
+exports.clearInvalid = ej2Spreadsheet.clearInvalid;
+exports.protectSheet = ej2Spreadsheet.protectSheet;
+exports.applyProtect = ej2Spreadsheet.applyProtect;
+exports.protectCellFormat = ej2Spreadsheet.protectCellFormat;
+exports.gotoDlg = ej2Spreadsheet.gotoDlg;
+exports.findDlg = ej2Spreadsheet.findDlg;
+exports.findHandler = ej2Spreadsheet.findHandler;
+exports.replace = ej2Spreadsheet.replace;
+exports.created = ej2Spreadsheet.created;
+exports.editAlert = ej2Spreadsheet.editAlert;
+exports.setUndoRedo = ej2Spreadsheet.setUndoRedo;
+exports.enableFormulaInput = ej2Spreadsheet.enableFormulaInput;
+exports.protectSelection = ej2Spreadsheet.protectSelection;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
@@ -1041,11 +1097,19 @@ exports.setWidthAndHeight = ej2Spreadsheet.setWidthAndHeight;
 exports.findMaxValue = ej2Spreadsheet.findMaxValue;
 exports.updateAction = ej2Spreadsheet.updateAction;
 exports.hasTemplate = ej2Spreadsheet.hasTemplate;
+exports.setRowEleHeight = ej2Spreadsheet.setRowEleHeight;
+exports.getTextHeight = ej2Spreadsheet.getTextHeight;
+exports.getTextWidth = ej2Spreadsheet.getTextWidth;
+exports.getLines = ej2Spreadsheet.getLines;
+exports.setMaxHgt = ej2Spreadsheet.setMaxHgt;
+exports.getMaxHgt = ej2Spreadsheet.getMaxHgt;
+exports.skipHiddenIdx = ej2Spreadsheet.skipHiddenIdx;
 exports.BasicModule = ej2Spreadsheet.BasicModule;
 exports.AllModule = ej2Spreadsheet.AllModule;
 exports.ScrollSettings = ej2Spreadsheet.ScrollSettings;
 exports.SelectionSettings = ej2Spreadsheet.SelectionSettings;
 exports.DISABLED = ej2Spreadsheet.DISABLED;
+exports.WRAPTEXT = ej2Spreadsheet.WRAPTEXT;
 exports.locale = ej2Spreadsheet.locale;
 exports.dialog = ej2Spreadsheet.dialog;
 exports.actionEvents = ej2Spreadsheet.actionEvents;
@@ -1066,6 +1130,12 @@ exports.CollaborativeEditing = ej2Spreadsheet.CollaborativeEditing;
 exports.ShowHide = ej2Spreadsheet.ShowHide;
 exports.SpreadsheetHyperlink = ej2Spreadsheet.SpreadsheetHyperlink;
 exports.UndoRedo = ej2Spreadsheet.UndoRedo;
+exports.WrapText = ej2Spreadsheet.WrapText;
+exports.Insert = ej2Spreadsheet.Insert;
+exports.Delete = ej2Spreadsheet.Delete;
+exports.DataValidation = ej2Spreadsheet.DataValidation;
+exports.ProtectSheet = ej2Spreadsheet.ProtectSheet;
+exports.FindAndReplace = ej2Spreadsheet.FindAndReplace;
 exports.Ribbon = ej2Spreadsheet.Ribbon;
 exports.FormulaBar = ej2Spreadsheet.FormulaBar;
 exports.Formula = ej2Spreadsheet.Formula;

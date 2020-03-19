@@ -12,7 +12,7 @@ let outputs: string[] = [];
  * ```
  */
 @Directive({
-    selector: 'e-stockchart-rows>e-stockchart-row',
+    selector: 'e-stockchart-rows>e-striplines>e-stockchart-row',
     inputs: input,
     outputs: outputs,    
     queries: {

@@ -13,4 +13,7 @@ export { MultiSelectAllModule, CheckBoxSelectionService } from './multi-select/m
 export { ListBoxComponent} from './list-box/listbox.component';
 export { ListBoxModule } from './list-box/listbox.module';
 export { ListBoxAllModule } from './list-box/listbox-all.module';
+export { DropDownTreeComponent} from './drop-down-tree/dropdowntree.component';
+export { DropDownTreeModule } from './drop-down-tree/dropdowntree.module';
+export { DropDownTreeAllModule } from './drop-down-tree/dropdowntree-all.module';
 export * from '@syncfusion/ej2-dropdowns';

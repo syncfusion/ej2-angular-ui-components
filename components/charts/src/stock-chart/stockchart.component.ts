@@ -12,7 +12,7 @@ import { StockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','stockEvents','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
-export const outputs: string[] = ['axisLabelRender','load','loaded','onZooming','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['axisLabelRender','load','loaded','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**

@@ -2,40 +2,13 @@
 
 ## [Unreleased]
 
-## 17.4.51 (2020-02-25)
+## 18.1.36-beta (2020-03-19)
 
 ### Common
 
 #### Bug Fixes
 
-- `I261475` - Provided Angular 9 compatibility support.
-- Updated `peerDependencies` versions.
-
-## 17.4.43 (2020-01-14)
-
-### Common
-
-#### Bug Fixes
-
-- `I259559` - Resolve `boolean` type `formControl` value is not working for radio button control.
-
-## 17.4.41 (2020-01-07)
-
-### Common
-
-#### Bug Fixes
-
-- `I258967` - Increased `core-js` version from `2.4.1` to `3.4.8` since `core-js@2.4.1` version is deprecated.
-
-## 17.4.40 (2019-12-24)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved `accordion` control rendering issue while using `Ajax`.
-
-## 17.4.39 (2019-12-17)
+- `I261475` - Angular 9 compatibility support.
 
 ### Common
 

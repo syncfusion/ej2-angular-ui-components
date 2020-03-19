@@ -5,7 +5,7 @@ import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
 import { RangeSettingsDirective } from './rangesettings.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'name', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -58,10 +58,20 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      */
     public index: any;
     /** 
+     * Specifies to  protect the cells in the sheet.
+     * @default false
+     */
+    public isProtected: any;
+    /** 
      * Specifies the name of the sheet, the name will show in the sheet tabs.
      * @default ''
      */
     public name: any;
+    /** 
+     * Configures protect and its options.
+     * @default { selectCells: false, formatCells: false, formatRows: false, formatColumns: false, insertLink: false  }
+     */
+    public protectSettings: any;
     /** 
      * Specifies the range settings for the sheet.
      * @default []

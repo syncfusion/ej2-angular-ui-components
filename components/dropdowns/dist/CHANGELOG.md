@@ -2,7 +2,35 @@
 
 ## [Unreleased]
 
-## 17.4.55 (2020-03-10)
+## 18.1.36-beta (2020-03-19)
+
+### Common
+
+#### Breaking Changes
+
+The newly added `Dropdown Tree` component in dropdowns package requires `Navigations` dependency, so now it is mandatory to include the `ej2-navigations.umd.min.js` in `system.js` configuration if you are using the system.js module loader.
+Update the system.js configuration while going with this version and above.
+
+
+### Dropdown Tree
+
+The Dropdown Tree control allows you to select single or multiple values from hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and preselected values. The available key features are
+
+
+- **Data binding** - Bind and access a hierarchical list of items from a local or server-side data source.
+- **Check boxes** - Select more than one item in the Dropdown Tree control without affecting the UI appearance.
+- **Multiple selection** - Select more than one item in the control.
+- **Sorting** - Display the Dropdown Tree items in ascending or descending order.
+- **Template** - Customize the Dropdown Tree items, header, footer, action failure content, and no records content.
+- **Accessibility** - Provide access to all the Dropdown Tree control features through keyboard interaction, on-screen readers, and other assistive technology devices.
+
+### ListBox
+
+#### Bug Fixes
+
+- Dynamic show checkBox not working in grouping has been fixed.
+
+## 17.4.51 (2020-02-25)
 
 ### MultiSelect
 
@@ -17,6 +45,12 @@
 #### Bug Fixes
 
 - `#261827` - Issue when ListBox and menu component in a same page has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
 
 ## 17.4.49 (2020-02-11)
 
@@ -1374,14 +1408,6 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 1.0 (2020-02-18)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
 
 ## 17.3.27 (2019-11-12)
 

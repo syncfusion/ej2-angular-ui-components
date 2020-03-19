@@ -323,6 +323,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      *```
      *     
      * @default null
+     * @deprecated 
      */
     public headerValueAccessor: any;
     /** 

@@ -1489,7 +1489,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
   position: absolute;
   top: 50px;
   width: 348px;
-  z-index: 100;
+  z-index: 105;
 }
 
 .e-pv-search-input {
@@ -2230,6 +2230,10 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 .e-pdfviewer .e-accordion .e-acrdn-item .e-acrdn-header {
   line-height: 32px;
   min-height: 32px;
+}
+
+.e-contextmenu-wrapper .e-pv-context-menu .e-menu-item {
+  height: 38px;
 }
 
 .e-pv-comment-panel {

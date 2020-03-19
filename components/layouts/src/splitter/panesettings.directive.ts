@@ -31,11 +31,17 @@ export class PaneDirective extends ComplexBase<PaneDirective> {
 
     /** 
      * Specifies whether a pane is collapsed or not collapsed at the initial rendering of splitter.
+     * 
+     * {% codeBlock src='splitter/collapsed/index.md' %}{% endcodeBlock %}
+     *     
      * @default false
      */
     public collapsed: any;
     /** 
      * Specifies whether a pane is collapsible or not collapsible.
+     * 
+     * {% codeBlock src='splitter/collapsible/index.md' %}{% endcodeBlock %}
+     *     
      * @default false
      */
     public collapsible: any;

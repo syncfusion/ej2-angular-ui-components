@@ -476,6 +476,11 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                 }
                 else {
                     /* istanbul ignore next */
+                    var oldProbLength = tempAfterContentThis[tagObject.name].length;
+                    var newPropLendgth = tagObject.instance.list.length;
+                    if (oldProbLength !== newPropLendgth && tagObject.instance.list[0].hasChanges) {
+                        tempAfterContentThis[tagObject.name] = tagObject.instance.list;
+                    }
                     for (var _b = 0, _c = tagObject.instance.list; _b < _c.length; _b++) {
                         var list = _c[_b];
                         if (list.hasChanges) {

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-querybuilder';
-exports.pkgVer = '^17.4.49';
+exports.pkgVer = '^17.2.48';
 exports.moduleName = 'QueryBuilderModule';
-exports.themeVer = '~17.4.49';
+exports.themeVer = '~17.2.48';

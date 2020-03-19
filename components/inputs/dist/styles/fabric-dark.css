@@ -5192,6 +5192,14 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
   width: 26px;
 }
 
+.e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-icons.e-disabled,
+.e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-icons.e-disabled {
+  color: #6f6c6c;
+  cursor: not-allowed;
+  opacity: .4;
+  pointer-events: none;
+}
+
 .e-bigger .e-upload .e-upload-files .e-file-remove-btn.e-msie.e-icons,
 .e-bigger .e-upload .e-upload-files .e-file-delete-btn.e-msie.e-icons,
 .e-bigger .e-upload .e-upload-files .e-file-abort-btn.e-msie.e-icons,

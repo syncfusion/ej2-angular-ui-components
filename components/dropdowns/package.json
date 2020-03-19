@@ -50,6 +50,7 @@
 		"multiselect",
 		"combobox",
 		"select",
+		"dropdwontree",
 		"angular",
 		"ng",
 		"ng-dropdown",
@@ -57,7 +58,8 @@
 		"ng-dropdownlist",
 		"ng-autocomplete",
 		"ng-multiselect",
-		"ng-combobox"
+		"ng-combobox",
+		"ng-dropdowntree"
 	],
 	"repository": {
 		"type": "git",

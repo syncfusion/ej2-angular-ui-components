@@ -248,6 +248,10 @@
   content: '\e242';
 }
 
+.e-gantt .e-pdfexport::before {
+  content: '\e240';
+}
+
 .e-gantt .e-add-above::before {
   content: '\e658';
 }
@@ -672,9 +676,21 @@
 .e-gantt .e-gantt-chart .e-gantt-child-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-milestone,
-.e-gantt .e-gantt-chart .e-gantt-parent-milestone {
+.e-gantt .e-gantt-chart .e-gantt-parent-milestone,
+.e-gantt .e-gantt-chart .e-gantt-manualparent-milestone {
   display: inline-block;
   width: 100%;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-main-container {
+  background-color: transparent;
+  cursor: move;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparent-taskbar {
+  margin-top: 3px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div,
@@ -770,7 +786,8 @@
 }
 
 .e-gantt .e-gantt-chart .e-milestone-top,
-.e-gantt .e-gantt-chart .e-parent-milestone-top {
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
   border-style: none solid solid;
   border-top: 0;
 }
@@ -778,13 +795,16 @@
 .e-gantt .e-gantt-chart .e-milestone-top,
 .e-gantt .e-gantt-chart .e-milestone-bottom,
 .e-gantt .e-gantt-chart .e-parent-milestone-top,
-.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
 .e-gantt .e-gantt-chart .e-milestone-bottom,
-.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-bottom: 0;
   border-style: solid solid none;
 }
@@ -930,6 +950,38 @@
 
 .e-gantt .e-gantt-chart .e-connectorpoint-allow-block {
   cursor: no-drop;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left,
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  background-color: #989A9C;
+  border-color: #989A9C;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: -1px;
+  position: absolute;
+  width: 10px;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  cursor: e-resize;
+  margin-left: -8px;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left {
+  margin-left: 0;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar {
+  background: #989A9C;
+  margin-top: 3px;
+  position: absolute;
 }
 
 .e-gantt .e-gantt-chart .e-icon {
@@ -1380,6 +1432,20 @@
   border: 1px solid #21527d;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-child-manualtaskbar {
+  background-color: #7538C9;
+  border: 1px solid #572A96;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar.e-gantt-child-manualtaskbar {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #7538C9 30%, #7538C9 70%, #7538C9 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
+.e-gantt .e-gantt-chart .e-gantt-child-manualprogressbar {
+  background-color: #572A96;
+  border: 0px;
+}
+
 .e-gantt .e-gantt-chart .e-holiday {
   background: #eee;
 }
@@ -1568,6 +1634,18 @@
   border-top-color: #555;
 }
 
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-top-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-manualtask {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #989A9C 30%, #989A9C 70%, #989A9C 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
 .e-gantt .e-gantt-chart .e-label {
   color: #333;
   font-size: 14px;
@@ -1718,7 +1796,11 @@
   border-right-color: #21527d !important;
 }
 
-.e-gantt .e-grid .e-icons {
+.e-gantt .e-icons {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.e-gantt .e-grid .e-icons:not(.e-stop):not(.e-check):not(.e-icon-left):not(.e-date-icon) {
   color: #333 !important;
 }
 

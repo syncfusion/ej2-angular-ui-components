@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'end', 'opacity'];
+let input: string[] = ['color', 'end', 'index', 'name', 'opacity', 'shape'];
 let outputs: string[] = [];
 /**
  * BulletRange Directive
@@ -36,10 +36,35 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
      */
     public end: any;
     /** 
+     * Default value for qualitative range Color
+     * @default null
+     */
+    public index: any;
+    /** 
+     * Default value for qualitative range name
+     * @default null
+     */
+    public name: any;
+    /** 
      * Range opacity
      * @default 1
      */
     public opacity: any;
+    /** 
+     * The shape of the legend. Each ranges has its own legend shape. They are, 
+     * * Circle 
+     * * Rectangle 
+     * * Triangle 
+     * * Diamond 
+     * * Cross 
+     * * HorizontalLine 
+     * * VerticalLine 
+     * * Pentagon 
+     * * InvertedTriangle 
+     * * SeriesType
+     * @default 'Rectangle'
+     */
+    public shape: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

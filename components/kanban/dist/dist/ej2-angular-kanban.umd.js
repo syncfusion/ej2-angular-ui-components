@@ -52,6 +52,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -123,6 +124,7 @@ var StackedHeaderDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return StackedHeaderDirective;
@@ -177,8 +179,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowDragAndDrop', 'allowKeyboard', 'cardSettings', 'columns', 'constraintType', 'cssClass', 'dataSource', 'enablePersistence', 'enableRtl', 'enableTooltip', 'height', 'keyField', 'locale', 'query', 'stackedHeaders', 'swimlaneSettings', 'tooltipTemplate', 'width'];
-var outputs$2 = ['actionBegin', 'actionComplete', 'actionFailure', 'cardClick', 'cardDoubleClick', 'cardRendered', 'columnRendered', 'created', 'dataBinding', 'dataBound', 'drag', 'dragStart', 'dragStop'];
+var inputs = ['allowDragAndDrop', 'allowKeyboard', 'cardSettings', 'columns', 'constraintType', 'cssClass', 'dataSource', 'dialogSettings', 'enablePersistence', 'enableRtl', 'enableTooltip', 'height', 'keyField', 'locale', 'query', 'stackedHeaders', 'swimlaneSettings', 'tooltipTemplate', 'width'];
+var outputs$2 = ['actionBegin', 'actionComplete', 'actionFailure', 'cardClick', 'cardDoubleClick', 'cardRendered', 'created', 'dataBinding', 'dataBound', 'dialogClose', 'dialogOpen', 'drag', 'dragStart', 'dragStop', 'queryCellInfo'];
 var twoWays = [''];
 /**
  * `ej-kanban` represents the Angular Kanban Component.
@@ -206,27 +208,41 @@ exports.KanbanComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     KanbanComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childStackedHeaders) {
+            this.tagObjects[1].instance = ((this.childStackedHeaders)).list[0].childColumns;
+            for (var /** @type {?} */ d = 0; d < ((this.childStackedHeaders)).list.length; d++) {
+                if (((this.childStackedHeaders)).list[d + 1]) {
+                    this.tagObjects[1].instance.list.push(((this.childStackedHeaders)).list[d + 1].childColumns.list[0]);
+                }
+            }
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return KanbanComponent;
 }(ej2Kanban.Kanban));
@@ -257,6 +273,7 @@ exports.KanbanComponent.propDecorators = {
     'columns_template': [{ type: core.ContentChild, args: ['columnsTemplate',] },],
     'swimlaneSettings_template': [{ type: core.ContentChild, args: ['swimlaneSettingsTemplate',] },],
     'cardSettings_template': [{ type: core.ContentChild, args: ['cardSettingsTemplate',] },],
+    'dialogSettings_template': [{ type: core.ContentChild, args: ['dialogSettingsTemplate',] },],
 };
 __decorate$1([
     ej2AngularBase.Template(),
@@ -274,6 +291,10 @@ __decorate$1([
     ej2AngularBase.Template(),
     __metadata$1("design:type", Object)
 ], exports.KanbanComponent.prototype, "cardSettings_template", void 0);
+__decorate$1([
+    ej2AngularBase.Template(),
+    __metadata$1("design:type", Object)
+], exports.KanbanComponent.prototype, "dialogSettings_template", void 0);
 exports.KanbanComponent = __decorate$1([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
     __metadata$1("design:paramtypes", [core.ElementRef,
@@ -349,13 +370,15 @@ exports.actionFailure = ej2Kanban.actionFailure;
 exports.cardClick = ej2Kanban.cardClick;
 exports.cardDoubleClick = ej2Kanban.cardDoubleClick;
 exports.cardRendered = ej2Kanban.cardRendered;
-exports.columnRendered = ej2Kanban.columnRendered;
+exports.queryCellInfo = ej2Kanban.queryCellInfo;
 exports.dataBinding = ej2Kanban.dataBinding;
 exports.dataBound = ej2Kanban.dataBound;
 exports.dragStart = ej2Kanban.dragStart;
 exports.drag = ej2Kanban.drag;
 exports.dragStop = ej2Kanban.dragStop;
 exports.documentClick = ej2Kanban.documentClick;
+exports.dialogOpen = ej2Kanban.dialogOpen;
+exports.dialogClose = ej2Kanban.dialogClose;
 exports.contentReady = ej2Kanban.contentReady;
 exports.dataReady = ej2Kanban.dataReady;
 exports.bottomSpace = ej2Kanban.bottomSpace;

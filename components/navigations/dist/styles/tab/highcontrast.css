@@ -55,11 +55,11 @@
 }
 
 .e-tab.e-vertical-tab .e-tab-header .e-scroll-nav .e-nav-up-arrow::before {
-  content: '\e84f';
+  content: '\e85e';
 }
 
 .e-tab.e-vertical-tab .e-tab-header .e-scroll-nav .e-nav-down-arrow::before {
-  content: '\e85e';
+  content: '\e84f';
 }
 
 .e-tab.e-vertical-tab .e-tab-header .e-popup-up-icon::before {

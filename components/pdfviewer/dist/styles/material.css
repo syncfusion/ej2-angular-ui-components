@@ -1494,7 +1494,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
   position: absolute;
   top: 50px;
   width: 348px;
-  z-index: 100;
+  z-index: 105;
 }
 
 .e-pv-search-input {
@@ -2237,6 +2237,10 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   min-height: 32px;
 }
 
+.e-contextmenu-wrapper .e-pv-context-menu .e-menu-item {
+  height: 38px;
+}
+
 .e-pv-comment-panel {
   background-color: #fafafa;
   border: 1px solid #e0e0e0;
@@ -2333,7 +2337,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 }
 
 .e-pv-comments-select {
-  background-color: #e0e0e0;
+  background-color: #fafafa;
 }
 
 .e-pv-comments-select .e-pv-comment-textbox .e-editable-value-wrapper {

@@ -674,7 +674,7 @@
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  border: 0 solid #fff;
+  border-left: 0 solid #fff;
 }
 
 .e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
@@ -3437,7 +3437,7 @@
 }
 
 .e-grid .e-toolbar-item.e-cc.e-ccdiv.e-cc-toolbar {
-  margin-top: -3px;
+  margin-top: -2px;
   padding: 2px 0 0;
 }
 

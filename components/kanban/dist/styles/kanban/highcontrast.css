@@ -1,4 +1,234 @@
+.e-bigger .e-ddl.e-popup .e-input-group .e-clear-icon {
+  height: 36px;
+}
+
+.e-ddl.e-popup {
+  border: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  margin-top: 1px;
+}
+
+.e-ddl.e-popup .e-content.e-nodata {
+  background-color: #000;
+}
+
+.e-ddl.e-popup .e-dropdownbase .e-list-item .e-highlight {
+  color: #ffd939;
+}
+
+.e-ddl.e-popup .e-input-group {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.e-ddl.e-popup .e-input-group input {
+  line-height: 15px;
+}
+
+.e-ddl.e-popup .e-input-group .e-clear-icon {
+  border-radius: 20px;
+  height: 20px;
+  margin: 5px;
+  min-width: 20px;
+}
+
+.e-ddl.e-popup .e-input-group .e-clear-icon::before {
+  font-size: 10px;
+}
+
+.e-ddl.e-popup .e-filter-parent {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.e-ddl.e-popup .e-filter-parent .e-input-group.e-control-wrapper:hover:active {
+  border-color: #fff;
+}
+
+.e-bigger .e-ddl.e-popup.e-ddl-device.e-ddl-device-filter {
+  margin-top: 0;
+}
+
+.e-bigger .e-ddl.e-popup .e-list-item,
+.e-bigger .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-ddl.e-popup .e-fixed-head {
+  font-size: 15px;
+  line-height: 45px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group input {
+  height: 46px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-list-item,
+.e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger.e-small .e-ddl.e-popup .e-fixed-head {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group {
+  padding: 0;
+}
+
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input {
+  height: 34px;
+}
+
+.e-multi-select-wrapper .e-chips-close.e-close-hooker::before {
+  color: #fff;
+  top: 12px;
+}
+
+.e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
+  color: #969696;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
+  color: #969696;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
+  color: #969696;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
+  color: #969696;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.e-multi-select-wrapper .e-chips-collection .e-chips:hover .e-chipcontent {
+  color: #fff;
+}
+
+.e-multi-select-wrapper .e-chips-collection .e-chips:hover .e-chips-close.e-icon::before {
+  color: #fff;
+}
+
+.e-multi-select-wrapper .e-chips-collection .e-chips .e-chips-close.e-icon::before {
+  line-height: 26px;
+  top: 0;
+}
+
+.e-multi-select-wrapper .e-delim-values.e-delim-view {
+  color: #fff;
+}
+
+.e-multi-select-wrapper.e-delimiter .e-delim-values {
+  color: #fff;
+}
+
+.e-multi-select-wrapper .e-searcher input[type='text'] {
+  color: #fff;
+  height: 100%;
+  min-height: 28px;
+}
+
+.e-multi-select-wrapper .e-searcher input[type='text']::selection {
+  background-color: #ffd939;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-ddl.e-checkbox .e-filter-parent .e-clear-icon,
+.e-bigger .e-popup.e-multi-select-list-wrapper.e-ddl.e-checkbox .e-filter-parent .e-clear-icon {
+  padding-left: 0;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-checkbox .e-selectall-parent {
+  border-bottom: 1px solid #fff;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-checkbox .e-list-parent .e-list-item.e-item-focus.e-active.e-hover {
+  background-color: #ffd939;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-checkbox .e-list-parent .e-list-item.e-item-focus.e-active {
+  border: 2px solid #ffd939;
+}
+
+.e-popup.e-multi-select-list-wrapper.e-checkbox .e-list-parent .e-list-item.e-active.e-hover:not(.e-item-focus) {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+
+.e-popup.e-multi-select-list-wrapper .e-list-parent .e-list-item.e-item-focus {
+  border: 2px solid #685708;
+}
+
+.e-popup.e-multi-select-list-wrapper .e-list-parent .e-list-item.e-active.e-hover {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.e-popup.e-multi-select-list-wrapper .e-list-parent .e-list-item.e-hover:not(.e-active) {
+  border: 2px solid #fff;
+}
+
+.e-popup.e-multi-select-list-wrapper .e-list-parent .e-list-item:not(.e-hover):not(.e-item-focus) {
+  border: 2px solid #000;
+}
+
+.e-popup.e-multi-select-list-wrapper .e-list-parent .e-list-item.e-active {
+  border: 2px solid #ffd939;
+}
+
+.e-multi-select-wrapper.e-down-icon .e-input-group-icon.e-ddl-icon {
+  height: 30px;
+  width: 30px;
+}
+
 /*! component's theme wise override material-definitions and variables */
+/*! TreeView's high contrast theme wise override definitions and variables */
+.e-treeview .e-list-item div.e-icons.interaction {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  border-radius: 15px;
+  transition: transform .3s ease-in-out;
+}
+
+.e-treeview .e-list-item .e-icons.e-icon-collapsible {
+  transform: rotate(90deg);
+}
+
+.e-treeview.e-drag-item.e-rtl .e-icons.e-drop-next {
+  transform: rotate(180deg);
+}
+
+.e-treeview.e-rtl div.e-icons {
+  transform: rotate(180deg);
+}
+
 @keyframes material-spinner-rotate {
   0% {
     transform: rotate(0);
@@ -39,11 +269,11 @@
 }
 
 .e-kanban.e-rtl .e-column-collapse::before {
-  content: '\e937';
+  content: '\e98f';
 }
 
 .e-kanban.e-rtl .e-column-expand::before {
-  content: '\e956';
+  content: '\e219';
 }
 
 .e-kanban.e-rtl .e-swimlane-row-collapse::before {
@@ -65,8 +295,9 @@
 }
 
 .e-kanban .e-icons:focus {
-  background: #e0e0e0;
+  background: #685708;
   border-radius: 100%;
+  color: #fff;
 }
 
 .e-kanban .e-kanban-table {
@@ -124,11 +355,11 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-min-color {
-  background: #ffe0b2;
+  background: #8d5225;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-max-color {
-  background: #fcdbe4;
+  background: #811d17;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed {
@@ -138,11 +369,11 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed.e-min-color {
-  background: #ffe0b2;
+  background: #8d5225;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed.e-max-color {
-  background: #fcdbe4;
+  background: #811d17;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed .e-limits,
@@ -162,7 +393,7 @@
 .e-kanban .e-kanban-header .e-header-cells .e-item-count {
   font-size: 12px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   opacity: .57;
 }
 
@@ -190,6 +421,7 @@
 
 .e-kanban .e-kanban-content {
   overflow: auto;
+  padding-bottom: 10px;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-limits {
@@ -213,11 +445,11 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-min-color {
-  background: #ffe0b2;
+  background: #8d5225;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-max-color {
-  background: #fcdbe4;
+  background: #811d17;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed {
@@ -226,7 +458,8 @@
   width: 50px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-limits {
   display: none;
 }
 
@@ -287,6 +520,7 @@
   display: table-cell;
   padding-left: 8px;
   text-align: center;
+  background: none;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dragged-clone,
@@ -337,14 +571,16 @@
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
   color: rgba(255, 255, 255, 0.54);
   cursor: pointer;
+  height: 24px;
   margin-left: 8px;
   padding: 6px;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:focus {
-  background: #e0e0e0;
+  background: #685708;
   border-radius: 100%;
+  color: #fff;
   margin-left: 8px;
   padding: 6px;
 }
@@ -352,13 +588,15 @@
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   padding: 2px;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-item-count {
   font-size: 12px;
+  line-height: 20px;
   opacity: .57;
-  padding: 3px;
+  padding: 2px;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells {
@@ -367,11 +605,11 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-min-color {
-  background: #ffe0b2;
+  background: #8d5225;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-max-color {
-  background: #fcdbe4;
+  background: #811d17;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells {
@@ -380,6 +618,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells > .e-collapse-header-text,
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-limits,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
   display: none;
 }
@@ -398,10 +637,6 @@
   text-align: left;
 }
 
-.e-kanban.e-rtl .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand {
-  padding: 4px 4px 4px 0;
-}
-
 .e-kanban.e-rtl .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
   text-align: center;
 }
@@ -417,6 +652,7 @@
 
 .e-kanban.e-rtl .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand,
 .e-kanban.e-rtl .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
+  height: 24px;
   margin-left: 0;
   margin-right: 8px;
 }
@@ -446,6 +682,10 @@
   font-size: 14px;
   padding: 7px;
   padding-left: 4px;
+}
+
+.e-kanban.e-device .e-kanban-header .e-swimlane .e-header-cells {
+  border-bottom: 0;
 }
 
 .e-kanban.e-device .e-swimlane-content {
@@ -499,7 +739,7 @@
 .e-bigger .e-kanban .e-kanban-table .e-header-cells .e-header-text,
 .e-bigger.e-kanban .e-kanban-table .e-header-cells .e-header-text {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 .e-mobile-popup-wrapper.e-device {
@@ -549,6 +789,32 @@
   width: 100%;
 }
 
+.e-kanban-dialog .e-kanban-form-wrapper table {
+  width: 100%;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table td {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  opacity: .87;
+  padding: 5px 0;
+  text-align: left;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table .e-label {
+  padding-right: 10px;
+  width: 35px;
+}
+
+.e-kanban-dialog .e-kanban-form-wrapper table .e-field {
+  width: 100%;
+}
+
+.e-kanban-dialog .e-dialog-delete {
+  float: left;
+}
+
 /*! kanban component theme */
 .e-kanban .e-kanban-table .e-header-cells .e-header-text {
   color: #fff;
@@ -557,6 +823,11 @@
 .e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand,
 .e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
   color: rgba(255, 255, 255, 0.54);
+}
+
+.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand:focus,
+.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse:focus {
+  color: #fff;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
@@ -579,4 +850,8 @@
 
 .e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-bottom-border {
   border-bottom-color: #ffd939;
+}
+
+.e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-active:first-child {
+  border-color: #ffd939;
 }

@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowCalculatedField', 'allowConditionalFormatting', 'allowDataCompression', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowGrouping', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'loadOnDemandInMemberEditor', 'locale', 'maxNodeLimitInMemberEditor', 'maxRowsInDrillThrough', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'spinnerTemplate', 'toolbar', 'width'];
-var outputs = ['aggregateCellInfo', 'beforeExport', 'beginDrillThrough', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'conditionalFormatting', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldDrop', 'fieldListRefreshed', 'hyperlinkCellClick', 'load', 'loadReport', 'memberFiltering', 'newReport', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
+var inputs = ['aggregateTypes', 'allowCalculatedField', 'allowConditionalFormatting', 'allowDataCompression', 'allowDeferLayoutUpdate', 'allowDrillThrough', 'allowExcelExport', 'allowGrouping', 'allowNumberFormatting', 'allowPdfExport', 'cellTemplate', 'chartSettings', 'chartTypes', 'currencyCode', 'dataSourceSettings', 'displayOption', 'editSettings', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'enableValueSorting', 'enableVirtualization', 'exportAllPages', 'gridSettings', 'groupingBarSettings', 'height', 'hyperlinkSettings', 'loadOnDemandInMemberEditor', 'locale', 'maxNodeLimitInMemberEditor', 'maxRowsInDrillThrough', 'pivotValues', 'showFieldList', 'showGroupingBar', 'showToolbar', 'showTooltip', 'showValuesButton', 'spinnerTemplate', 'toolbar', 'tooltipTemplate', 'width'];
+var outputs = ['aggregateCellInfo', 'aggregateMenuOpen', 'beforeExport', 'beginDrillThrough', 'calculatedFieldCreate', 'cellClick', 'cellSelected', 'cellSelecting', 'chartSeriesCreated', 'conditionalFormatting', 'created', 'dataBound', 'destroyed', 'drill', 'drillThrough', 'enginePopulated', 'enginePopulating', 'fetchReport', 'fieldDragStart', 'fieldDrop', 'fieldListRefreshed', 'fieldRemove', 'hyperlinkCellClick', 'load', 'loadReport', 'memberEditorOpen', 'memberFiltering', 'newReport', 'numberFormatting', 'onFieldDropped', 'onPdfCellRender', 'removeReport', 'renameReport', 'saveReport', 'toolbarClick', 'toolbarRender'];
 var twoWays = [];
 /**
  * `ej-pivotview` represents the Angular PivotView Component.
@@ -285,8 +285,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['allowCalculatedField', 'allowDeferLayoutUpdate', 'cssClass', 'dataSourceSettings', 'enablePersistence', 'enableRtl', 'loadOnDemandInMemberEditor', 'locale', 'maxNodeLimitInMemberEditor', 'renderMode', 'showValuesButton', 'spinnerTemplate', 'target'];
-var outputs$1 = ['aggregateCellInfo', 'created', 'dataBound', 'destroyed', 'enginePopulated', 'enginePopulating', 'fieldDrop', 'load', 'memberFiltering', 'onFieldDropped'];
+var inputs$1 = ['aggregateTypes', 'allowCalculatedField', 'allowDeferLayoutUpdate', 'cssClass', 'dataSourceSettings', 'enablePersistence', 'enableRtl', 'loadOnDemandInMemberEditor', 'locale', 'maxNodeLimitInMemberEditor', 'renderMode', 'showValuesButton', 'spinnerTemplate', 'target'];
+var outputs$1 = ['aggregateCellInfo', 'aggregateMenuOpen', 'calculatedFieldCreate', 'created', 'dataBound', 'destroyed', 'enginePopulated', 'enginePopulating', 'fieldDragStart', 'fieldDrop', 'fieldRemove', 'load', 'memberEditorOpen', 'memberFiltering', 'onFieldDropped'];
 var twoWays$1 = [];
 /**
  * `ej-pivotfieldlist` represents the Angular PivotFieldList Component.
@@ -456,6 +456,7 @@ exports.NodeStateModified = ej2Pivotview.NodeStateModified;
 exports.DataSourceUpdate = ej2Pivotview.DataSourceUpdate;
 exports.FieldList = ej2Pivotview.FieldList;
 exports.CommonKeyboardInteraction = ej2Pivotview.CommonKeyboardInteraction;
+exports.Common = ej2Pivotview.Common;
 exports.GroupingBar = ej2Pivotview.GroupingBar;
 exports.CalculatedField = ej2Pivotview.CalculatedField;
 exports.ConditionalFormatting = ej2Pivotview.ConditionalFormatting;
@@ -512,6 +513,13 @@ exports.conditionalFormatting = ej2Pivotview.conditionalFormatting;
 exports.beforePdfExport = ej2Pivotview.beforePdfExport;
 exports.beforeExcelExport = ej2Pivotview.beforeExcelExport;
 exports.memberFiltering = ej2Pivotview.memberFiltering;
+exports.calculatedFieldCreate = ej2Pivotview.calculatedFieldCreate;
+exports.memberEditorOpen = ej2Pivotview.memberEditorOpen;
+exports.fieldRemove = ej2Pivotview.fieldRemove;
+exports.numberFormatting = ej2Pivotview.numberFormatting;
+exports.aggregateMenuOpen = ej2Pivotview.aggregateMenuOpen;
+exports.fieldDragStart = ej2Pivotview.fieldDragStart;
+exports.chartPointClick = ej2Pivotview.chartPointClick;
 exports.initialLoad = ej2Pivotview.initialLoad;
 exports.uiUpdate = ej2Pivotview.uiUpdate;
 exports.scroll = ej2Pivotview.scroll;
