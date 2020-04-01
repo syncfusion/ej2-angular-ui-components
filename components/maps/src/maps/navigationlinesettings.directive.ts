@@ -31,48 +31,48 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
 
 
     /** 
-     * Specifies the angle of curve connecting different locations in map
+     * Sets and gets the angle of curve connecting different locations in maps.
      * @default 0
      */
     public angle: any;
     /** 
-     * arrow
+     * Sets and gets the options to customize the arrow for the navigation line in maps.
      */
     public arrowSettings: any;
     /** 
-     * NavigationSelectedLine color
+     * Sets and gets the color for the navigation lines in maps.
      */
     public color: any;
     /** 
-     * dashArray 
-     *  @default ''
+     * Sets and gets the dash-array for the navigation lines drawn in maps.
+     * @default ''
      */
     public dashArray: any;
     /** 
-     * To configure the highlight settings of the maps.
+     * Sets and gets the highlight settings of the navigation line in maps.
      */
     public highlightSettings: any;
     /** 
-     * NavigationSelectedLine latitude 
-     *  @default []
+     * Sets and gets the latitude value for the navigation lines drawn in maps.
+     * @default []
      */
     public latitude: any;
     /** 
-     * NavigationSelectedLine longitude 
-     *  @default []
+     * Sets and gets the longitude for the navigation lines drawn in maps.
+     * @default []
      */
     public longitude: any;
     /** 
-     * To configure the selection settings of the maps.
+     * Sets and gets the selection settings of the navigation line in maps.
      */
     public selectionSettings: any;
     /** 
-     * NavigationSelectedLine visible 
-     *  @default false
+     * Enables or disables the navigation lines to be drawn in maps.
+     * @default false
      */
     public visible: any;
     /** 
-     * Configures the label border
+     * Sets and gets the width of the navigation lines in maps.
      * @default 1
      */
     public width: any;

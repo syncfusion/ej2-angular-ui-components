@@ -539,6 +539,7 @@ exports.CLS_RTE_RES_CNT = ej2Richtexteditor.CLS_RTE_RES_CNT;
 exports.CLS_CUSTOM_TILE = ej2Richtexteditor.CLS_CUSTOM_TILE;
 exports.CLS_NOCOLOR_ITEM = ej2Richtexteditor.CLS_NOCOLOR_ITEM;
 exports.CLS_TABLE_BORDER = ej2Richtexteditor.CLS_TABLE_BORDER;
+exports.CLS_RTE_TABLE_RESIZE = ej2Richtexteditor.CLS_RTE_TABLE_RESIZE;
 exports.getIndex = ej2Richtexteditor.getIndex;
 exports.hasClass = ej2Richtexteditor.hasClass;
 exports.getDropDownValue = ej2Richtexteditor.getDropDownValue;

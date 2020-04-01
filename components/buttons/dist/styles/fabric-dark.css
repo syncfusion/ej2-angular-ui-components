@@ -2061,6 +2061,7 @@
 .e-radio-wrapper {
   display: inline-block;
   line-height: 1;
+  position: relative;
 }
 
 .e-radio {

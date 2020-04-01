@@ -110,8 +110,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isIndeterminate', 'label', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackThickness', 'type', 'value', 'width'];
-var outputs$1 = ['animationComplete', 'load', 'loaded', 'progressCompleted', 'textRender', 'valueChanged'];
+var inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enablePieProgress', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isIndeterminate', 'label', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackThickness', 'type', 'value', 'width'];
+var outputs$1 = ['animationComplete', 'load', 'loaded', 'mouseClick', 'mouseDown', 'mouseLeave', 'mouseMove', 'mouseUp', 'progressCompleted', 'textRender', 'valueChanged'];
 var twoWays = [''];
 /**
  * ProgressBar Component
@@ -280,10 +280,7 @@ exports.annotationRender = ej2Progressbar.annotationRender;
 exports.getElement = ej2Progressbar.getElement;
 exports.removeElement = ej2Progressbar.removeElement;
 exports.ProgressLocation = ej2Progressbar.ProgressLocation;
-exports.doLinearAnimation = ej2Progressbar.doLinearAnimation;
-exports.doCircularIndeterminate = ej2Progressbar.doCircularIndeterminate;
-exports.doAnnotationAnimation = ej2Progressbar.doAnnotationAnimation;
-exports.doCircularAnimation = ej2Progressbar.doCircularAnimation;
+exports.ProgressAnimation = ej2Progressbar.ProgressAnimation;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

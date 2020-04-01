@@ -1788,6 +1788,7 @@
   height: 14px;
   min-width: 14px;
   width: 14px;
+  height: auto;
 }
 
 .e-pivotview .e-value-field-settings .e-dlg-content .e-filter-tab-wrapper .e-tab-header .e-text-wrap .e-tab-icon::before,
@@ -5008,6 +5009,44 @@
   color: #fff !important;
 }
 
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused {
+  background-color: #adb5bd;
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit {
+  color: #fff !important;
+}
+
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus, .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active,
@@ -5268,6 +5307,23 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-edit {
+  color: #fff !important;
+}
+
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused {
+  background-color: #adb5bd;
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit {
   color: #fff !important;
 }
 

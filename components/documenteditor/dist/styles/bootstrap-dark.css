@@ -3418,7 +3418,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 113px);
+  height: calc(100% - 38px);
   width: 100%;
 }
 
@@ -3471,7 +3471,8 @@ label[for*='_wholeWord_e-de-rtl'] {
   border-right: 1px solid #505050;
 }
 
-.e-de-tool-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane,
+.e-de-ctnr-properties-pane {
   background-color: #1a1a1a;
   border-bottom: 1px solid #505050;
   border-top: 1px solid #505050;
@@ -4308,7 +4309,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 38px);
   width: 100%;
 }
 

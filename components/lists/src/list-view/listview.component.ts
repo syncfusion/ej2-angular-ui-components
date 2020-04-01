@@ -4,7 +4,7 @@ import { ListView } from '@syncfusion/ej2-lists';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['animation','checkBoxPosition','cssClass','dataSource','enable','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','fields','groupTemplate','headerTemplate','headerTitle','height','htmlAttributes','locale','query','showCheckBox','showHeader','showIcon','sortOrder','template','width'];
+export const inputs: string[] = ['animation','checkBoxPosition','cssClass','dataSource','enable','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','fields','groupTemplate','headerTemplate','headerTitle','height','htmlAttributes','locale','query','showCheckBox','showHeader','showIcon','sortOrder','template','virtualCheckBox','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','select'];
 export const twoWays: string[] = [''];
 
@@ -32,11 +32,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
 
 
     /** 
-     * The ListView supports to customize the content of each list items with the help of template property. 
-     * Refer the documentation [here](../../listview/customizing-templates) 
-     *  to know more about this property with demo.
-     * 
-     * {% codeBlock src="listview/template-api/index.ts" %}{% endcodeBlock %}     
+     * The ListView component supports to customize the content of each list items with the help of `template` property.
      * @default null
      * @deprecated 
      */
@@ -44,12 +40,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
     @Template()
     public template: any;
     /** 
-     * The ListView has an option to custom design the group header title with the help of groupTemplate property. 
-     * Refer the documentation [here] 
-     * (./listview/customizing-templates#group-template) 
-     *  to know more about this property with demo.
-     * 
-     * {% codeBlock src="listview/grouptemplate-api/index.ts" %}{% endcodeBlock %}     
+     * The ListView has an option to custom design the group header title with the help of `groupTemplate` property.
      * @default null
      * @deprecated 
      */
@@ -57,12 +48,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
     @Template()
     public groupTemplate: any;
     /** 
-     * The ListView has an option to custom design the ListView header title with the help of headerTemplate property. 
-     * Refer the documentation [here] 
-     * (./listview/customizing-templates#header-template) 
-     *  to know more about this property with demo.
-     * 
-     * {% codeBlock src="listview/headertemplate-api/index.ts" %}{% endcodeBlock %}     
+     * The ListView has an option to custom design the ListView header title with the help of `headerTemplate` property.
      * @default null
      * @deprecated 
      */

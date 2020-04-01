@@ -3,9 +3,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
-import { RangeSettingsDirective } from './rangesettings.directive';
+import { RangesDirective } from './range.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'range', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -26,15 +26,15 @@ let outputs: string[] = [];
     queries: {
         childRows: new ContentChild(RowsDirective), 
         childColumns: new ContentChild(ColumnsDirective), 
-        childRangeSettings: new ContentChild(RangeSettingsDirective)
+        childRange: new ContentChild(RangesDirective)
     }
 })
 export class SheetDirective extends ComplexBase<SheetDirective> {
     public directivePropList: any;
     public childRows: any;
     public childColumns: any;
-    public childRangeSettings: any;
-    public tags: string[] = ['rows', 'columns', 'rangeSettings'];
+    public childRange: any;
+    public tags: string[] = ['rows', 'columns', 'range'];
     /** 
      * Specifies active cell within `selectedRange` in the sheet.
      * @default 'A1'
@@ -73,10 +73,10 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      */
     public protectSettings: any;
     /** 
-     * Specifies the range settings for the sheet.
+     * Specifies the range for the sheet.
      * @default []
      */
-    public rangeSettings: any;
+    public range: any;
     /** 
      * Defines the number of rows to be rendered in the sheet.
      * @default 100

@@ -3416,7 +3416,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 113px);
+  height: calc(100% - 39px);
   width: 100%;
 }
 
@@ -3469,7 +3469,8 @@ label[for*='_wholeWord_e-de-rtl'] {
   border-right: 1px solid #ccc;
 }
 
-.e-de-tool-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane,
+.e-de-ctnr-properties-pane {
   background-color: #f8f8f8;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -4352,7 +4353,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 39px);
   width: 100%;
 }
 

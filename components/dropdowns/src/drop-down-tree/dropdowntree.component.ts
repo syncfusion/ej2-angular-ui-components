@@ -5,8 +5,8 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowMultiSelection','changeOnBlur','cssClass','delimiterChar','enablePersistence','enableRtl','enabled','fields','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','width','zIndex'];
-export const outputs: string[] = ['actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','focus','open','select','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','delimiterChar','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','width','zIndex'];
+export const outputs: string[] = ['actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','keyPress','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -41,23 +41,25 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
 
     public valueChange: any;
     /** 
-     * Accepts the template design and assigns it to the footer container of the popup list.
+     * Specifies the template that renders a customized footer container at the bottom of the pop-up list. 
+     * By default the footerTemplate will be null and there will no footer container for the pop-up list.
      * @default null
      */
     @ContentChild('footerTemplate')
     @Template()
     public footerTemplate: any;
     /** 
-     * Accepts the template design and assigns it to the header container of the popup list.
+     * Specifies the template that renders a customized header container in the top of the pop-up list. 
+     * By default the headerTemplate will be null and there will no header container for the pop-up list.
      * @default null
      */
     @ContentChild('headerTemplate')
     @Template()
     public headerTemplate: any;
     /** 
-     * Specifies a template to render customized content for all the nodes. If the `itemTemplate` property 
-     * is set, the template content overrides the displayed node text. The property accepts template string 
-     * [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
+     * Specifies a template to render customized content for all the items. 
+     * If the itemTemplate property is set, the template content overrides the displayed item text. 
+     * The property accepts [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
      * or HTML element ID holding the content.
      * @default null
      */

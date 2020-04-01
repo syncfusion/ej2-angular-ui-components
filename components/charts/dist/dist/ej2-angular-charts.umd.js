@@ -821,7 +821,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -1268,52 +1268,22 @@ exports.ChartComponent = /** @class */ (function (_super) {
     ChartComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childSeries;
         if (this.childAxes) {
-            this.tagObjects[1].instance = ((this.childAxes)).list[0].childSeries;
-            for (var /** @type {?} */ d = 0; d < ((this.childAxes)).list.length; d++) {
-                if (((this.childAxes)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAxes)).list[d + 1].childSeries.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = this.childAxes;
         }
         if (this.childRows) {
-            this.tagObjects[2].instance = ((this.childRows)).list[0].childAxes;
-            for (var /** @type {?} */ d = 0; d < ((this.childRows)).list.length; d++) {
-                if (((this.childRows)).list[d + 1]) {
-                    this.tagObjects[2].instance.list.push(((this.childRows)).list[d + 1].childAxes.list[0]);
-                }
-            }
+            this.tagObjects[2].instance = this.childRows;
         }
         if (this.childColumns) {
-            this.tagObjects[3].instance = ((this.childColumns)).list[0].childRows;
-            for (var /** @type {?} */ d = 0; d < ((this.childColumns)).list.length; d++) {
-                if (((this.childColumns)).list[d + 1]) {
-                    this.tagObjects[3].instance.list.push(((this.childColumns)).list[d + 1].childRows.list[0]);
-                }
-            }
+            this.tagObjects[3].instance = this.childColumns;
         }
         if (this.childAnnotations) {
-            this.tagObjects[4].instance = ((this.childAnnotations)).list[0].childColumns;
-            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
-                if (((this.childAnnotations)).list[d + 1]) {
-                    this.tagObjects[4].instance.list.push(((this.childAnnotations)).list[d + 1].childColumns.list[0]);
-                }
-            }
+            this.tagObjects[4].instance = this.childAnnotations;
         }
         if (this.childSelectedDataIndexes) {
-            this.tagObjects[5].instance = ((this.childSelectedDataIndexes)).list[0].childAnnotations;
-            for (var /** @type {?} */ d = 0; d < ((this.childSelectedDataIndexes)).list.length; d++) {
-                if (((this.childSelectedDataIndexes)).list[d + 1]) {
-                    this.tagObjects[5].instance.list.push(((this.childSelectedDataIndexes)).list[d + 1].childAnnotations.list[0]);
-                }
-            }
+            this.tagObjects[5].instance = this.childSelectedDataIndexes;
         }
         if (this.childIndicators) {
-            this.tagObjects[6].instance = ((this.childIndicators)).list[0].childSelectedDataIndexes;
-            for (var /** @type {?} */ d = 0; d < ((this.childIndicators)).list.length; d++) {
-                if (((this.childIndicators)).list[d + 1]) {
-                    this.tagObjects[6].instance.list.push(((this.childIndicators)).list[d + 1].childSelectedDataIndexes.list[0]);
-                }
-            }
+            this.tagObjects[6].instance = this.childIndicators;
         }
         this.context.ngAfterContentChecked(this);
     };
@@ -3267,7 +3237,7 @@ var __metadata$10 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$5 = ['annotations', 'axes', 'background', 'border', 'chartArea', 'crosshair', 'dataSource', 'enableCustomRange', 'enablePeriodSelector', 'enablePersistence', 'enableRtl', 'enableSelector', 'exportType', 'height', 'indicatorType', 'indicators', 'isMultiSelect', 'isSelect', 'isTransposed', 'locale', 'margin', 'periods', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'seriesType', 'stockEvents', 'theme', 'title', 'titleStyle', 'tooltip', 'trendlineType', 'width', 'zoomSettings'];
-var outputs$31 = ['axisLabelRender', 'load', 'loaded', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
+var outputs$31 = ['axisLabelRender', 'load', 'loaded', 'onZooming', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$5 = ['dataSource'];
 /**
  * Stock Chart Component
@@ -4167,6 +4137,7 @@ exports.MacdIndicator = ej2Charts.MacdIndicator;
 exports.Trendlines = ej2Charts.Trendlines;
 exports.sort = ej2Charts.sort;
 exports.isBreakLabel = ej2Charts.isBreakLabel;
+exports.getVisiblePoints = ej2Charts.getVisiblePoints;
 exports.rotateTextSize = ej2Charts.rotateTextSize;
 exports.removeElement = ej2Charts.removeElement;
 exports.logBase = ej2Charts.logBase;
@@ -4345,6 +4316,7 @@ exports.tooltipRender = ej2Charts.tooltipRender;
 exports.chartMouseMove = ej2Charts.chartMouseMove;
 exports.chartMouseClick = ej2Charts.chartMouseClick;
 exports.pointClick = ej2Charts.pointClick;
+exports.pointDoubleClick = ej2Charts.pointDoubleClick;
 exports.pointMove = ej2Charts.pointMove;
 exports.chartMouseLeave = ej2Charts.chartMouseLeave;
 exports.chartMouseDown = ej2Charts.chartMouseDown;
@@ -4368,6 +4340,7 @@ exports.regSup = ej2Charts.regSup;
 exports.beforeExport = ej2Charts.beforeExport;
 exports.afterExport = ej2Charts.afterExport;
 exports.bulletChartMouseClick = ej2Charts.bulletChartMouseClick;
+exports.onZooming = ej2Charts.onZooming;
 exports.Theme = ej2Charts.Theme;
 exports.getSeriesColor = ej2Charts.getSeriesColor;
 exports.getThemeColor = ej2Charts.getThemeColor;

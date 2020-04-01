@@ -24,116 +24,102 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
 
 
     /** 
-     * Specifies the type of pointer for an axis. 
-     * * needle -  Renders a needle. 
-     * * marker - Renders a marker. 
-     * * rangeBar - Renders a rangeBar.
+     * Sets and gets the type of pointer for an axis in Circular gauge component.
      * @default Needle
      */
     public type: any;
     /** 
-     * Configures the animation of pointers.
+     * Sets and gets the animation of pointers while rendering the axis in circular gauge.
      */
     public animation: any;
     /** 
-     * Options for customizing the border of the needle.
+     * Sets and gets the options to customize the color and width of the border for the needle pointer in an axis.
      */
     public border: any;
     /** 
-     * Options for customizing the cap
+     * Sets and gets the cap of pointer in an axis.
      */
     public cap: any;
     /** 
-     * The color of the pointer.
+     * Sets and gets the color of the pointer in an axis.
      */
     public color: any;
     /** 
-     * Information about pointer for assistive technology.
+     * Sets and gets the information about pointer for assistive technology.
      * @default null
      */
     public description: any;
     /** 
-     * The URL for the Image that is to be displayed as pointer. 
+     * Sets and gets the url for the image that is to be displayed as pointer. 
      * It requires marker shape value to be Image.
      * @default null
      */
     public imageUrl: any;
     /** 
-     * The height of the marker in pixels.
+     * Sets and gets the height of the marker pointer in an axis.
      * @default 5
      */
     public markerHeight: any;
     /** 
-     * Specifies the shape of the marker. They are 
-     * * circle - Renders a circle. 
-     * * rectangle - Renders a rectangle. 
-     * * triangle - Renders a triangle. 
-     * * diamond - Renders a diamond. 
-     * * invertedTriangle - Renders a invertedTriangle. 
-     * * image - Renders a image. 
-     * * Text - Renders a Text.
+     * Sets and gets the shape of the marker type pointer in an axis.
      * @default Circle
      */
     public markerShape: any;
     /** 
-     * The width of the marker in pixels.
+     * Sets and gets the width of the marker pointer in an axis.
      * @default 5
      */
     public markerWidth: any;
     /** 
-     * Sets or gets the end width of the needle pointer
+     * Sets or gets the end width of the needle pointer in an axis.
      * @default null
      */
     public needleEndWidth: any;
     /** 
-     * Sets or gets the start width of the needle pointer
+     * Sets or gets the start width of the needle pointer in an axis.
      * @default null
      */
     public needleStartWidth: any;
     /** 
-     * Options for customizing the back needle.
+     * Sets and gets the tail of needle pointer in an axis.
      */
     public needleTail: any;
     /** 
-     * The offset value of pointer from scale.
+     * Sets and gets the offset value of pointer from scale.
      * @default '0'
      */
     public offset: any;
     /** 
-     * Width of the pointer in pixels.
+     * Sets and gets the width of the pointer in axis.
      * @default 20
      */
     public pointerWidth: any;
     /** 
-     * Specifies the position of pointer for an axis. 
-     * * inside -  Renders a Inside. 
-     * * outside - Renders a Outside. 
-     * * cross - Renders a Cross. 
-     * * Auto - Renders a based on radius
+     * Sets and gets the position of pointer for an axis.
      * @default Auto
      */
     public position: any;
     /** 
-     * Length of the pointer in pixels or in percentage.
+     * Sets and gets the radius of pointer for marker and range type pointer and fix length of pointer for needle pointer.
      * @default null
      */
     public radius: any;
     /** 
-     * Specifies the rounded corner radius for pointer.
+     * Sets and gets the corner radius for pointer in axis.
      * @default 0
      */
     public roundedCornerRadius: any;
     /** 
-     * text of the pointer.
+     * Sets and gets the text in pointer.
      * @default ''
      */
     public text: any;
     /** 
-     * Options for customizing the font
+     * Sets and gets the style of text in pointer of an axis.
      */
     public textStyle: any;
     /** 
-     * Specifies the value of the pointer.
+     * Sets and gets the value of the pointer in circular gauge component.
      * @aspdefaultvalueignore 
      * @default null
      */

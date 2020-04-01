@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CellDirective, CellsDirective } from './cells.directive';
 import { RowDirective, RowsDirective } from './rows.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
-import { RangeSettingDirective, RangeSettingsDirective } from './rangesettings.directive';
+import { RangeDirective, RangesDirective } from './range.directive';
 import { SheetDirective, SheetsDirective } from './sheets.directive';
 import { DefinedNameDirective, DefinedNamesDirective } from './definednames.directive';
 import { SpreadsheetComponent } from './spreadsheet.component';
@@ -21,8 +21,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
         RowsDirective,
         ColumnDirective,
         ColumnsDirective,
-        RangeSettingDirective,
-        RangeSettingsDirective,
+        RangeDirective,
+        RangesDirective,
         SheetDirective,
         SheetsDirective,
         DefinedNameDirective,
@@ -36,8 +36,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
         RowsDirective,
         ColumnDirective,
         ColumnsDirective,
-        RangeSettingDirective,
-        RangeSettingsDirective,
+        RangeDirective,
+        RangesDirective,
         SheetDirective,
         SheetsDirective,
         DefinedNameDirective,

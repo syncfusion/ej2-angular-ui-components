@@ -24,45 +24,45 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Specifies the index of axis.
+     * Sets and gets the axis index of the linear gauge
      * @aspdefaultvalueignore 
      */
     public axisIndex: any;
     /** 
-     * Specifies the value of axis.
+     * Sets and gets the value of axis in linear gauge.
      * @aspdefaultvalueignore 
      * @blazordefaultvalue null
      */
     public axisValue: any;
     /** 
-     * The font of the axis labels.
+     * Sets and gets the options to customize the font of the annotation in linear gauge.
      */
     public font: any;
     /** 
-     * Specifies the horizontal alignment of annotation.
+     * Sets and gets the horizontal alignment of annotation.
      * @default None
      */
     public horizontalAlignment: any;
     /** 
-     * Specifies the vertical alignment of annotation.
+     * Sets and gets the vertical alignment of annotation.
      * @default None
      */
     public verticalAlignment: any;
     /** 
-     * Specifies the position of x.
+     * Sets and gets the x position for the annotation in linear gauge.
      */
     public x: any;
     /** 
-     * Specifies the position of y.
+     * Sets and gets the y position for the annotation in linear gauge.
      */
     public y: any;
     /** 
-     * Specifies the zIndex of the annotation.
+     * Sets and gets the z-index of the annotation.
      * @default '-1'
      */
     public zIndex: any;
     /** 
-     * Specifies the id of html element.
+     * Sets and gets the content for the annotations.
      */
     @ContentChild('content')
     @Template()

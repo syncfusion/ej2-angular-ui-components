@@ -8,7 +8,9 @@ import { EventEmitter } from '@angular/core';
 function applyMixins(derivedClass, baseClass) {
     baseClass.forEach(function (baseClass) {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(function (name) {
+            // if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
             derivedClass.prototype[name] = baseClass.prototype[name];
+            //  }
         });
     });
 }

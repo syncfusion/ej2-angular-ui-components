@@ -3,35 +3,40 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['dataSource', 'query', 'range', 'showFieldAsHeader', 'startCell', 'template'];
+let input: string[] = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
 let outputs: string[] = [];
 /**
- * `e-rangesetting` directive represent a range setting of the Angular Spreadsheet.
+ * `e-range` directive represent a range of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
  * ```html
  * <ejs-spreadsheet>
  *   <e-sheets>
  *    <e-sheet>
- *    <e-rangesettings>
- *    <e-rangesetting [dataSource]='data'></e-rangesetting>
- *    </e-rangesettings>
+ *    <e-ranges>
+ *    <e-range [dataSource]='data'></e-range>
+ *    </e-ranges>
  *    </e-sheet>
  *   </e-sheets>
  * </ejs-spreadsheet>
  * ```
  */
 @Directive({
-    selector: 'e-rangesettings>e-rangesetting',
+    selector: 'e-ranges>e-range',
     inputs: input,
     outputs: outputs,    
     queries: {
 
     }
 })
-export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
+export class RangeDirective extends ComplexBase<RangeDirective> {
     public directivePropList: any;
 
 
+    /** 
+     * Specifies the address for updating the dataSource or template.
+     * @default 'A1'
+     */
+    public address: any;
     /** 
      * Specifies the data as JSON / Data manager to the sheet.
      * @default null
@@ -43,11 +48,6 @@ export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
      * @default null
      */
     public query: any;
-    /** 
-     * Specifies the range for updating the dataSource or template.
-     * @default 'A1'
-     */
-    public range: any;
     /** 
      * Show/Hide the field of the datasource as header.
      * @default true
@@ -73,17 +73,17 @@ export class RangeSettingDirective extends ComplexBase<RangeSettingDirective> {
 }
 
 /**
- * RangeSetting Array Directive
+ * Range Array Directive
  * @private
  */
 @Directive({
-    selector: 'e-sheet>e-rangesettings',
+    selector: 'e-sheet>e-ranges',
     queries: {
-        children: new ContentChildren(RangeSettingDirective)
+        children: new ContentChildren(RangeDirective)
     },
 })
-export class RangeSettingsDirective extends ArrayBase<RangeSettingsDirective> {
+export class RangesDirective extends ArrayBase<RangesDirective> {
     constructor() {
-        super('rangesettings');
+        super('range');
     }
 }

@@ -2043,14 +2043,14 @@
 .e-checkbox-wrapper.e-checkbox-disabled .e-frame.e-check,
 .e-css.e-checkbox-wrapper.e-checkbox-disabled .e-frame.e-check {
   background-color: rgba(0, 123, 255, 0.5);
-  border-color: #fff;
+  border-color: transparent;
   color: #fff;
 }
 
 .e-checkbox-wrapper.e-checkbox-disabled .e-frame.e-stop,
 .e-css.e-checkbox-wrapper.e-checkbox-disabled .e-frame.e-stop {
   background-color: rgba(0, 123, 255, 0.55);
-  border-color: #fff;
+  border-color: transparent;
   color: #fff;
 }
 
@@ -2085,6 +2085,7 @@
 .e-radio-wrapper {
   display: inline-block;
   line-height: 1;
+  position: relative;
 }
 
 .e-radio {

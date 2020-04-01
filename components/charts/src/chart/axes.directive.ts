@@ -276,6 +276,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     /** 
      * It specifies the type of format to be used in dateTime format process.
      * @default 'DateTime'
+     * @deprecated 
      */
     public skeletonType: any;
     /** 

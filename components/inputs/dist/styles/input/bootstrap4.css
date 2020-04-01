@@ -3539,7 +3539,7 @@ textarea.e-input,
 
 .e-input-group .e-input-group-icon,
 .e-input-group.e-control-wrapper .e-input-group-icon {
-  background: #fff;
+  background: transparent;
   border-color: #ced4da;
   color: #495057;
 }

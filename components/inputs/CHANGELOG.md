@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.42 (2020-04-01)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#263811`- Now, multiline textbox expand and collapse icon aligned properly.
+
 ## 18.1.36-beta (2020-03-19)
 
 ### Slider

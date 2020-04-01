@@ -212,6 +212,10 @@
   word-wrap: initial;
 }
 
+.e-multiselect.e-input-group .e-searcher .e-label-top {
+  top: 15px;
+}
+
 .e-bigger .e-multi-select-wrapper {
   min-height: 36px;
 }

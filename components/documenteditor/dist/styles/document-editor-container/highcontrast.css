@@ -455,7 +455,7 @@
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 40px);
   width: 100%;
 }
 
@@ -508,7 +508,8 @@
   border-right: 1px solid #fff;
 }
 
-.e-de-tool-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane,
+.e-de-ctnr-properties-pane {
   background-color: #000;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
@@ -1343,7 +1344,7 @@
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 40px);
   width: 100%;
 }
 

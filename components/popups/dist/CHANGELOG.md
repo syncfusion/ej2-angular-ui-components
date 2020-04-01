@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.42 (2020-04-01)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#F152391` - The issue with Tooltip content component reference is not destroyed has been resolved.
+
 ## 18.1.36-beta (2020-03-19)
 
 ### Tooltip

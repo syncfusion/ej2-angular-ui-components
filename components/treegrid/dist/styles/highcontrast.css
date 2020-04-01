@@ -385,7 +385,30 @@
 .e-treegrid .e-gridcontent .e-lastrow-border {
   background-color: #ffd939;
   bottom: 0;
+  display: none;
   height: 1px;
   position: absolute;
   z-index: 1;
+}
+
+.e-treegrid .e-grid .e-gridcontent tr.e-row:first-child td.e-rowcell.e-childborder,
+.e-treegrid .e-grid .e-gridcontent tr.e-row:first-child td.e-rowdragdrop.e-childborder {
+  border-bottom: 1px solid #ffd939;
+  border-top: 1px solid #ffd939;
+  box-shadow: 0 0 0 0 #ffd939;
+}
+
+.e-treegrid .e-grid .e-gridcontent tr.e-row:first-child td.e-rowcell.e-droptop,
+.e-treegrid .e-grid .e-gridcontent tr.e-row:first-child td.e-rowdragdrop.e-droptop {
+  border-top: 1px solid #ffd939;
+}
+
+.e-treegrid .e-grid .e-gridcontent td.e-rowcell.e-childborder, .e-treegrid .e-grid .e-gridcontent td.e-rowcell.e-dropbottom {
+  border-bottom: 1px solid #ffd939;
+  box-shadow: 0 0 0 0 #ffd939;
+}
+
+.e-treegrid .e-grid .e-gridcontent td.e-rowdragdrop.e-childborder, .e-treegrid .e-grid .e-gridcontent td.e-rowdragdrop.e-dropbottom {
+  border-bottom: 1px solid #ffd939;
+  box-shadow: 0 0 0 0 #ffd939;
 }

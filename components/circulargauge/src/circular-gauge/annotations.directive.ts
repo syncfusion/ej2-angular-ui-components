@@ -24,36 +24,36 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Angle for annotation with respect to axis.
+     * Sets and gets the angle for annotation with respect to axis in circular gauge component.
      * @default 90
      */
     public angle: any;
     /** 
-     * Rotates the annotation along the axis.
+     * Enables and disables the annotation rotation along the axis.
      * @default false
      */
     public autoAngle: any;
     /** 
-     * Information about annotation for assistive technology.
+     * Sets and gets the information about annotation for assistive technology.
      * @default null
      */
     public description: any;
     /** 
-     * Radius for annotation with respect to axis.
+     * Sets and gets the radius for annotation with respect to axis in circular gauge component.
      * @default '50%'
      */
     public radius: any;
     /** 
-     * Options for customizing the annotation text.
+     * Sets and gets the style of the text in annotation.
      */
     public textStyle: any;
     /** 
-     * Order of an annotation in an axis.
+     * Sets and gets the z-index of an annotation in an axis in the circular gauge component.
      * @default '-1'
      */
     public zIndex: any;
     /** 
-     * Content of the annotation, which accepts the id of the custom element.
+     * Sets and gets the content of the annotation. This property accepts the id of the custom element.
      * @default null
      */
     @ContentChild('content')

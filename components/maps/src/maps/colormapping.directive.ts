@@ -33,46 +33,46 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
 
 
     /** 
-     * To configure color
+     * Sets and gets the color for the color-mapping in maps.
      * @default null
      */
     public color: any;
     /** 
-     * To configure from
+     * Sets and gets the value from where the range color-mapping starts.
      * @aspdefaultvalueignore 
      * @default null
      * @isblazornullabletype true
      */
     public from: any;
     /** 
-     * To configure labels
+     * Sets and gets the label for the color-mapping from the data source in maps.
      * @default null
      */
     public label: any;
     /** 
-     * To configure max opacity
+     * Sets and gets the maximum opacity for the color-mapping in maps.
      * @default null
      */
     public maxOpacity: any;
     /** 
-     * To configure min opacity
+     * Sets and gets the minimum opacity for the color-mapping in maps.
      * @default null
      */
     public minOpacity: any;
     /** 
-     * To enable or disable the legend
+     * Enables or disables the visibility state of legend for the color-mapping shapes in maps.
      * @default true
      */
     public showLegend: any;
     /** 
-     * To configure to
+     * Sets and gets the value to where the range color-mapping ends.
      * @aspdefaultvalueignore 
      * @default null
      * @isblazornullabletype true
      */
     public to: any;
     /** 
-     * To configure value
+     * Sets and gets the value for the color-mapping from the data source.
      * @default null
      */
     public value: any;

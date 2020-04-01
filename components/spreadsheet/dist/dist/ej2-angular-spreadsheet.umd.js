@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['format', 'formula', 'hyperlink', 'index', 'style', 'validation', 'value', 'wrap'];
+var input = ['colSpan', 'format', 'formula', 'hyperlink', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 var outputs = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -225,29 +225,29 @@ ColumnsDirective.decorators = [
  * @nocollapse
  */
 ColumnsDirective.ctorParameters = function () { return []; };
-var input$3 = ['dataSource', 'query', 'range', 'showFieldAsHeader', 'startCell', 'template'];
+var input$3 = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
 var outputs$3 = [];
 /**
- * `e-rangesetting` directive represent a range setting of the Angular Spreadsheet.
+ * `e-range` directive represent a range of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
  * ```html
  * <ejs-spreadsheet>
  *   <e-sheets>
  *    <e-sheet>
- *    <e-rangesettings>
- *    <e-rangesetting [dataSource]='data'></e-rangesetting>
- *    </e-rangesettings>
+ *    <e-ranges>
+ *    <e-range [dataSource]='data'></e-range>
+ *    </e-ranges>
  *    </e-sheet>
  *   </e-sheets>
  * </ejs-spreadsheet>
  * ```
  */
-var RangeSettingDirective = /** @class */ (function (_super) {
-    __extends(RangeSettingDirective, _super);
+var RangeDirective = /** @class */ (function (_super) {
+    __extends(RangeDirective, _super);
     /**
      * @param {?} viewContainerRef
      */
-    function RangeSettingDirective(viewContainerRef) {
+    function RangeDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -255,11 +255,11 @@ var RangeSettingDirective = /** @class */ (function (_super) {
         _this.directivePropList = input$3;
         return _this;
     }
-    return RangeSettingDirective;
+    return RangeDirective;
 }(ej2AngularBase.ComplexBase));
-RangeSettingDirective.decorators = [
+RangeDirective.decorators = [
     { type: core.Directive, args: [{
-                selector: 'e-rangesettings>e-rangesetting',
+                selector: 'e-ranges>e-range',
                 inputs: input$3,
                 outputs: outputs$3,
                 queries: {}
@@ -268,32 +268,32 @@ RangeSettingDirective.decorators = [
 /**
  * @nocollapse
  */
-RangeSettingDirective.ctorParameters = function () { return [
+RangeDirective.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
 ]; };
 /**
- * RangeSetting Array Directive
+ * Range Array Directive
  */
-var RangeSettingsDirective = /** @class */ (function (_super) {
-    __extends(RangeSettingsDirective, _super);
-    function RangeSettingsDirective() {
-        return _super.call(this, 'rangesettings') || this;
+var RangesDirective = /** @class */ (function (_super) {
+    __extends(RangesDirective, _super);
+    function RangesDirective() {
+        return _super.call(this, 'range') || this;
     }
-    return RangeSettingsDirective;
+    return RangesDirective;
 }(ej2AngularBase.ArrayBase));
-RangeSettingsDirective.decorators = [
+RangesDirective.decorators = [
     { type: core.Directive, args: [{
-                selector: 'e-sheet>e-rangesettings',
+                selector: 'e-sheet>e-ranges',
                 queries: {
-                    children: new core.ContentChildren(RangeSettingDirective)
+                    children: new core.ContentChildren(RangeDirective)
                 },
             },] },
 ];
 /**
  * @nocollapse
  */
-RangeSettingsDirective.ctorParameters = function () { return []; };
-var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'rangeSettings', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+RangesDirective.ctorParameters = function () { return []; };
+var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'range', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 var outputs$4 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -315,7 +315,7 @@ var SheetDirective = /** @class */ (function (_super) {
     function SheetDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['rows', 'columns', 'rangeSettings'];
+        _this.tags = ['rows', 'columns', 'range'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
         _this.directivePropList = input$4;
@@ -331,7 +331,7 @@ SheetDirective.decorators = [
                 queries: {
                     childRows: new core.ContentChild(RowsDirective),
                     childColumns: new core.ContentChild(ColumnsDirective),
-                    childRangeSettings: new core.ContentChild(RangeSettingsDirective)
+                    childRange: new core.ContentChild(RangesDirective)
                 }
             },] },
 ];
@@ -442,7 +442,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetTab', 'allowCellFormatting', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
 var outputs$6 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
@@ -690,8 +690,8 @@ SpreadsheetModule.decorators = [
                     RowsDirective,
                     ColumnDirective,
                     ColumnsDirective,
-                    RangeSettingDirective,
-                    RangeSettingsDirective,
+                    RangeDirective,
+                    RangesDirective,
                     SheetDirective,
                     SheetsDirective,
                     DefinedNameDirective,
@@ -705,8 +705,8 @@ SpreadsheetModule.decorators = [
                     RowsDirective,
                     ColumnDirective,
                     ColumnsDirective,
-                    RangeSettingDirective,
-                    RangeSettingsDirective,
+                    RangeDirective,
+                    RangesDirective,
                     SheetDirective,
                     SheetsDirective,
                     DefinedNameDirective,
@@ -783,8 +783,8 @@ exports.RowDirective = RowDirective;
 exports.RowsDirective = RowsDirective;
 exports.ColumnDirective = ColumnDirective;
 exports.ColumnsDirective = ColumnsDirective;
-exports.RangeSettingDirective = RangeSettingDirective;
-exports.RangeSettingsDirective = RangeSettingsDirective;
+exports.RangeDirective = RangeDirective;
+exports.RangesDirective = RangesDirective;
 exports.SheetDirective = SheetDirective;
 exports.SheetsDirective = SheetsDirective;
 exports.DefinedNameDirective = DefinedNameDirective;
@@ -812,7 +812,7 @@ exports.FormulaService = FormulaService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$6;
 exports.Workbook = ej2Spreadsheet.Workbook;
-exports.RangeSetting = ej2Spreadsheet.RangeSetting;
+exports.Range = ej2Spreadsheet.Range;
 exports.UsedRange = ej2Spreadsheet.UsedRange;
 exports.Sheet = ej2Spreadsheet.Sheet;
 exports.getSheetIndex = ej2Spreadsheet.getSheetIndex;
@@ -842,7 +842,6 @@ exports.isHiddenCol = ej2Spreadsheet.isHiddenCol;
 exports.Cell = ej2Spreadsheet.Cell;
 exports.getCell = ej2Spreadsheet.getCell;
 exports.setCell = ej2Spreadsheet.setCell;
-exports.getCellPosition = ej2Spreadsheet.getCellPosition;
 exports.skipDefaultValue = ej2Spreadsheet.skipDefaultValue;
 exports.wrap = ej2Spreadsheet.wrap;
 exports.getData = ej2Spreadsheet.getData;
@@ -880,6 +879,7 @@ exports.applyNumberFormatting = ej2Spreadsheet.applyNumberFormatting;
 exports.getFormattedCellObject = ej2Spreadsheet.getFormattedCellObject;
 exports.refreshCellElement = ej2Spreadsheet.refreshCellElement;
 exports.setCellFormat = ej2Spreadsheet.setCellFormat;
+exports.findAllValues = ej2Spreadsheet.findAllValues;
 exports.textDecorationUpdate = ej2Spreadsheet.textDecorationUpdate;
 exports.applyCellFormat = ej2Spreadsheet.applyCellFormat;
 exports.updateUsedRange = ej2Spreadsheet.updateUsedRange;
@@ -938,6 +938,14 @@ exports.updateToggle = ej2Spreadsheet.updateToggle;
 exports.protectsheetHandler = ej2Spreadsheet.protectsheetHandler;
 exports.replaceAllDialog = ej2Spreadsheet.replaceAllDialog;
 exports.workBookeditAlert = ej2Spreadsheet.workBookeditAlert;
+exports.setLockCells = ej2Spreadsheet.setLockCells;
+exports.applyLockCells = ej2Spreadsheet.applyLockCells;
+exports.setMerge = ej2Spreadsheet.setMerge;
+exports.applyMerge = ej2Spreadsheet.applyMerge;
+exports.mergedRange = ej2Spreadsheet.mergedRange;
+exports.activeCellMergedRange = ej2Spreadsheet.activeCellMergedRange;
+exports.insertMerge = ej2Spreadsheet.insertMerge;
+exports.pasteMerge = ej2Spreadsheet.pasteMerge;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
@@ -965,6 +973,7 @@ exports.WorkbookDelete = ej2Spreadsheet.WorkbookDelete;
 exports.WorkbookDataValidation = ej2Spreadsheet.WorkbookDataValidation;
 exports.WorkbookFindAndReplace = ej2Spreadsheet.WorkbookFindAndReplace;
 exports.WorkbookProtectSheet = ej2Spreadsheet.WorkbookProtectSheet;
+exports.WorkbookMerge = ej2Spreadsheet.WorkbookMerge;
 exports.getRequiredModules = ej2Spreadsheet.getRequiredModules;
 exports.ribbon = ej2Spreadsheet.ribbon;
 exports.formulaBar = ej2Spreadsheet.formulaBar;
@@ -1074,12 +1083,16 @@ exports.editAlert = ej2Spreadsheet.editAlert;
 exports.setUndoRedo = ej2Spreadsheet.setUndoRedo;
 exports.enableFormulaInput = ej2Spreadsheet.enableFormulaInput;
 exports.protectSelection = ej2Spreadsheet.protectSelection;
+exports.hiddenMerge = ej2Spreadsheet.hiddenMerge;
+exports.checkPrevMerge = ej2Spreadsheet.checkPrevMerge;
+exports.removeDataValidation = ej2Spreadsheet.removeDataValidation;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
 exports.getScrollBarWidth = ej2Spreadsheet.getScrollBarWidth;
 exports.getSiblingsHeight = ej2Spreadsheet.getSiblingsHeight;
 exports.inView = ej2Spreadsheet.inView;
+exports.getCellPosition = ej2Spreadsheet.getCellPosition;
 exports.locateElem = ej2Spreadsheet.locateElem;
 exports.setStyleAttribute = ej2Spreadsheet.setStyleAttribute;
 exports.getStartEvent = ej2Spreadsheet.getStartEvent;
@@ -1136,6 +1149,7 @@ exports.Delete = ej2Spreadsheet.Delete;
 exports.DataValidation = ej2Spreadsheet.DataValidation;
 exports.ProtectSheet = ej2Spreadsheet.ProtectSheet;
 exports.FindAndReplace = ej2Spreadsheet.FindAndReplace;
+exports.Merge = ej2Spreadsheet.Merge;
 exports.Ribbon = ej2Spreadsheet.Ribbon;
 exports.FormulaBar = ej2Spreadsheet.FormulaBar;
 exports.Formula = ej2Spreadsheet.Formula;

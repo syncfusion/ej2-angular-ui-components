@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-barcode-generator';
-exports.pkgVer = '^17.4.51';
+exports.pkgVer = '^18.1.36';
 exports.moduleName = 'BarcodeGeneratorModule, QRCodeGeneratorModule, DataMatrixGeneratorModule';
-exports.themeVer = '~17.4.51';
+exports.themeVer = '~18.1.36';

@@ -26,30 +26,30 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Specifies the horizontal alignment of annotation.
+     * Sets and gets the annotation element to be aligned horizontally.
      * @default None
      */
     public horizontalAlignment: any;
     /** 
-     * Specifies the vertical alignment of annotation.
+     * Sets and gets the annotation element to be aligned vertically.
      * @default None
      */
     public verticalAlignment: any;
     /** 
-     * Specifies the position of x.
+     * Sets and gets the x position of the annotation in maps component.
      */
     public x: any;
     /** 
-     * Specifies the position of y.
+     * Sets and gets the y position of the annotation in maps component.
      */
     public y: any;
     /** 
-     * Specifies the zIndex of the annotation.
+     * Sets and gets the z-index of the annotation in maps component.
      * @default '-1'
      */
     public zIndex: any;
     /** 
-     * Specifies the id of html element.
+     * Sets and gets the content for the annotation in maps component.
      */
     @ContentChild('content')
     @Template()

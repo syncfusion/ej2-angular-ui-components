@@ -54,7 +54,6 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      * * Middle: Places the strip line text in the middle. 
      * * End: Places the strip line text at the end.
      * @default 'Middle'
-     * @deprecated 
      */
     public horizontalAlignment: any;
     /** 
@@ -147,7 +146,6 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      * * Middle: Places the strip line text in the middle. 
      * * End: Places the strip line text at the end.
      * @default 'Middle'
-     * @deprecated 
      */
     public verticalAlignment: any;
     /** 

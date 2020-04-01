@@ -636,28 +636,13 @@ var DiagramComponent = /** @class */ (function (_super) {
     DiagramComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childLayers;
         if (this.childCustomCursor) {
-            this.tagObjects[1].instance = ((this.childCustomCursor)).list[0].childLayers;
-            for (var /** @type {?} */ d = 0; d < ((this.childCustomCursor)).list.length; d++) {
-                if (((this.childCustomCursor)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childCustomCursor)).list[d + 1].childLayers.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = this.childCustomCursor;
         }
         if (this.childConnectors) {
-            this.tagObjects[2].instance = ((this.childConnectors)).list[0].childCustomCursor;
-            for (var /** @type {?} */ d = 0; d < ((this.childConnectors)).list.length; d++) {
-                if (((this.childConnectors)).list[d + 1]) {
-                    this.tagObjects[2].instance.list.push(((this.childConnectors)).list[d + 1].childCustomCursor.list[0]);
-                }
-            }
+            this.tagObjects[2].instance = this.childConnectors;
         }
         if (this.childNodes) {
-            this.tagObjects[3].instance = ((this.childNodes)).list[0].childConnectors;
-            for (var /** @type {?} */ d = 0; d < ((this.childNodes)).list.length; d++) {
-                if (((this.childNodes)).list[d + 1]) {
-                    this.tagObjects[3].instance.list.push(((this.childNodes)).list[d + 1].childConnectors.list[0]);
-                }
-            }
+            this.tagObjects[3].instance = this.childNodes;
         }
         this.context.ngAfterContentChecked(this);
     };

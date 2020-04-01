@@ -3560,7 +3560,7 @@ textarea.e-input,
 
 .e-input-group .e-input-group-icon,
 .e-input-group.e-control-wrapper .e-input-group-icon {
-  background: #fff;
+  background: transparent;
   border-color: #ccc;
   color: #333;
 }
@@ -4547,7 +4547,7 @@ textarea.e-input:hover:not(.e-success):not(.e-warning):not(.e-error):not([disabl
 .e-slider-horizantal-color {
   height: 100%;
   position: absolute;
-  top: -1px;
+  top: 0;
 }
 
 .e-slider-vertical-color {

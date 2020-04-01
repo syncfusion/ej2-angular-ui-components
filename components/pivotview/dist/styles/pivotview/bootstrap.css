@@ -4934,6 +4934,41 @@
   color: #333 !important;
 }
 
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused {
+  background-color: #ccc;
+  color: #333;
+}
+
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-columns .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit {
+  color: #333 !important;
+}
+
 .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:focus, .e-pivotview .e-group-filters .e-pvt-btn-div .e-pivot-button:active,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:focus,
 .e-pivotview .e-group-values .e-pvt-btn-div .e-pivot-button:active,
@@ -5185,6 +5220,20 @@
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-pv-filtered,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-remove,
 .e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button:hover .e-edit {
+  color: #333 !important;
+}
+
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused {
+  background-color: #ccc;
+  color: #333;
+}
+
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-sort,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-dropdown-icon,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filter,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-pv-filtered,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-remove,
+.e-pivotview .e-group-row .e-group-rows .e-pvt-btn-div .e-pivot-button.e-btn-focused .e-edit {
   color: #333 !important;
 }
 

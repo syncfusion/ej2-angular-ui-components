@@ -3568,7 +3568,7 @@ textarea.e-de-cmt-textarea {
 .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 113px);
+  height: calc(100% - 38px);
   width: 100%;
 }
 
@@ -3621,7 +3621,8 @@ textarea.e-de-cmt-textarea {
   border-right: 1px solid #dee2e6;
 }
 
-.e-de-tool-ctnr-properties-pane {
+.e-de-tool-ctnr-properties-pane,
+.e-de-ctnr-properties-pane {
   background-color: #f8f9fa;
   border-bottom: 1px solid #dee2e6;
   border-top: 1px solid #dee2e6;
@@ -4679,7 +4680,7 @@ textarea.e-de-cmt-textarea {
 .e-bigger .e-de-ctnr-properties-pane {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: calc(100% - 118px);
+  height: calc(100% - 38px);
   width: 100%;
 }
 

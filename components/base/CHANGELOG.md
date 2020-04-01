@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.42 (2020-04-01)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved components not get rendered when we disable IVY in angular 9.
+
 ## 18.1.36-beta (2020-03-19)
 
 ### Common

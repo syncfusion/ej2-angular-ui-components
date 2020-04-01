@@ -112,7 +112,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      */
     public text: any;
     /** 
-     * Specifies the text to be displayed on the Toolbar button.
+     * Specifies the text to be displayed on hovering the Toolbar button.
      * @default ""
      */
     public tooltipText: any;

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowToggle', 'headerText', 'isExpanded', 'keyField', 'maxCount', 'minCount', 'showItemCount', 'template'];
+let input: string[] = ['allowToggle', 'headerText', 'isExpanded', 'keyField', 'maxCount', 'minCount', 'showAddButton', 'showItemCount', 'template'];
 let outputs: string[] = [];
 /**
  * `e-columns` directive represent a columns of the Kanban board. 
@@ -65,6 +65,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @isblazornullabletype true
      */
     public minCount: any;
+    /** 
+     * Enable or disable cell add button
+     * @default false
+     */
+    public showAddButton: any;
     /** 
      * Enable or disable card count in column
      * @default true

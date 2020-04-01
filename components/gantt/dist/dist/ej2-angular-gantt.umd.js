@@ -590,44 +590,19 @@ exports.GanttComponent = /** @class */ (function (_super) {
     GanttComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childAddDialogFields) {
-            this.tagObjects[1].instance = ((this.childAddDialogFields)).list[0].childColumns;
-            for (var /** @type {?} */ d = 0; d < ((this.childAddDialogFields)).list.length; d++) {
-                if (((this.childAddDialogFields)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAddDialogFields)).list[d + 1].childColumns.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = this.childAddDialogFields;
         }
         if (this.childEditDialogFields) {
-            this.tagObjects[2].instance = ((this.childEditDialogFields)).list[0].childAddDialogFields;
-            for (var /** @type {?} */ d = 0; d < ((this.childEditDialogFields)).list.length; d++) {
-                if (((this.childEditDialogFields)).list[d + 1]) {
-                    this.tagObjects[2].instance.list.push(((this.childEditDialogFields)).list[d + 1].childAddDialogFields.list[0]);
-                }
-            }
+            this.tagObjects[2].instance = this.childEditDialogFields;
         }
         if (this.childDayWorkingTime) {
-            this.tagObjects[3].instance = ((this.childDayWorkingTime)).list[0].childEditDialogFields;
-            for (var /** @type {?} */ d = 0; d < ((this.childDayWorkingTime)).list.length; d++) {
-                if (((this.childDayWorkingTime)).list[d + 1]) {
-                    this.tagObjects[3].instance.list.push(((this.childDayWorkingTime)).list[d + 1].childEditDialogFields.list[0]);
-                }
-            }
+            this.tagObjects[3].instance = this.childDayWorkingTime;
         }
         if (this.childHolidays) {
-            this.tagObjects[4].instance = ((this.childHolidays)).list[0].childDayWorkingTime;
-            for (var /** @type {?} */ d = 0; d < ((this.childHolidays)).list.length; d++) {
-                if (((this.childHolidays)).list[d + 1]) {
-                    this.tagObjects[4].instance.list.push(((this.childHolidays)).list[d + 1].childDayWorkingTime.list[0]);
-                }
-            }
+            this.tagObjects[4].instance = this.childHolidays;
         }
         if (this.childEventMarkers) {
-            this.tagObjects[5].instance = ((this.childEventMarkers)).list[0].childHolidays;
-            for (var /** @type {?} */ d = 0; d < ((this.childEventMarkers)).list.length; d++) {
-                if (((this.childEventMarkers)).list[d + 1]) {
-                    this.tagObjects[5].instance.list.push(((this.childEventMarkers)).list[d + 1].childHolidays.list[0]);
-                }
-            }
+            this.tagObjects[5].instance = this.childEventMarkers;
         }
         this.context.ngAfterContentChecked(this);
     };

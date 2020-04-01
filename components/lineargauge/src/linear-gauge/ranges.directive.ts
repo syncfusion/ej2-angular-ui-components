@@ -24,40 +24,40 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
 
 
     /** 
-     * Specifies the border of axis range.
+     * Sets and gets the options to customize the color and width of the border for the axis range.
      */
     public border: any;
     /** 
-     * Color of the axis range.
+     * Sets and gets the color of the axis range.
      */
     public color: any;
     /** 
-     * End of the axis range.
+     * Sets and gets the end value for the range in axis.
      * @default 0
      */
     public end: any;
     /** 
-     * Ending width of axis range.
+     * Sets and gets the width of the end of the range in axis.
      * @default 10
      */
     public endWidth: any;
     /** 
-     * Specifies to move the axis range.
+     * Sets and gets the value to position the range in the axis.
      * @default '0'
      */
     public offset: any;
     /** 
-     * Specifies to position the axis range.
+     * Sets and gets the position to place the ranges in the axis.
      * @default Outside
      */
     public position: any;
     /** 
-     * Start of the axis range.
+     * Sets and gets the start value for the range in axis.
      * @default 0
      */
     public start: any;
     /** 
-     * Starting width of axis range.
+     * Sets and gets the width of the start of the range in axis.
      * @default 10
      */
     public startWidth: any;

@@ -24,64 +24,60 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
 
 
     /** 
-     * Specifies the color of the ranges
+     * Sets and gets the color of the ranges in circular gauge component.
      * @aspdefaultvalueignore 
      * @default null
      */
     public color: any;
     /** 
-     * Specifies the maximum value of the range.
+     * Sets and gets the end value of the range in circular gauge component.
      * @aspdefaultvalueignore 
      * @default 0
      */
     public end: any;
     /** 
-     * Specifies the end width of the ranges
+     *   Sets and gets the width for the end of the range in the circular gauge component.
      * @default '10'
      */
     public endWidth: any;
     /** 
-     * Specifies the text for legend.
+     * Sets and gets the text for the legend in the circular gauge component.
      * @default ''
      */
     public legendText: any;
     /** 
-     * Specifies the offset value of range.
+     * Sets and gets the offset value of range in circular gauge component.
      * @default '0'
      */
     public offset: any;
     /** 
-     * Specifies the opacity for ranges.
+     * Sets and gets the opacity for the ranges in circular gauge component.
      * @default 1
      */
     public opacity: any;
     /** 
-     * Specifies the position of range for an axis. 
-     * * inside -  Renders inside axis. 
-     * * outside - Renders outside axis. 
-     * * cross - Renders on the axis. 
-     * * auto - Renders based on radius.
+     * Sets and gets the position of the range and pointer for an axis in circular gauge component.
      * @default Auto
      */
     public position: any;
     /** 
-     * The radius of the range in pixels or in percentage.
+     * Sets and gets the radius of the range for circular gauge component.
      * @default null
      */
     public radius: any;
     /** 
-     * Specifies the rounded corner radius for ranges.
+     * Sets and gets the corner radius for ranges in circular gauge component.
      * @default 0
      */
     public roundedCornerRadius: any;
     /** 
-     * Specifies the minimum value of the range.
+     * Sets and gets the start value of the range in circular gauge component.
      * @aspdefaultvalueignore 
      * @default 0
      */
     public start: any;
     /** 
-     * Specifies the start width of the ranges
+     *  Sets and gets the width for the start of the range in the circular gauge component.
      * @default '10'
      */
     public startWidth: any;

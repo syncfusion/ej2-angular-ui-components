@@ -24,81 +24,81 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
 
 
     /** 
-     * Specifies the type of pointer.
+     * Sets and gets the type of pointer in axis.
      * @default Marker
      */
     public type: any;
     /** 
-     * Specifies the animating duration of pointer in milliseconds.
+     * Sets and gets the duration of animation in pointer.
      * @default 0
      */
     public animationDuration: any;
     /** 
-     * Specifies the border of pointer.
+     * Sets and gets the options to optimize the color and width of the border for pointers.
      */
     public border: any;
     /** 
-     * Specifies the color of the pointer.
+     * Sets and gets the color of the pointer.
      */
     public color: any;
     /** 
-     * Description of the pointer.
+     * Sets and gets the description for the pointer.
      * @default null
      */
     public description: any;
     /** 
-     * Specifies the enable or disable the pointer drag.
+     * Enables or disables the drag movement of pointer.
      * @default false
      */
     public enableDrag: any;
     /** 
-     * Specifies the height of pointer.
+     * Sets and gets the height of the pointer.
      * @default 20
      */
     public height: any;
     /** 
-     * Specifies the path of image.
+     * Sets and gets the URL path for the image in marker when the marker type is chosen as image.
      * @default null
      */
     public imageUrl: any;
     /** 
-     * Specifies the marker shape in pointer.
+     * Sets and gets the type of the marker for pointers in axis.
      * @default InvertedTriangle
      */
     public markerType: any;
     /** 
-     * Specifies to move the pointer.
+     * Sets and gets the value to position the pointer from the axis.
      * @default '0'
      */
     public offset: any;
     /** 
-     * Specifies the opacity for pointer.
+     * Sets and gets the opacity of pointer in linear gauge.
      * @default 1
      */
     public opacity: any;
     /** 
-     * Specifies the place of the pointer.
+     * Sets and gets the place of the pointer.
      * @default Far
      */
     public placement: any;
     /** 
-     * Specifies to position the pointer.
+     * Sets and gets the position of the pointer.
      * @default Auto
      */
     public position: any;
     /** 
-     * Specifies the corner radius for rounded rectangle.
+     * Sets and gets the corner radius for pointer.
      * @default 10
      */
     public roundedCornerRadius: any;
     /** 
-     * Specifies value of the pointer.
+     * Sets and gets the value of the pointer in axis.
      * @blazordefaultvalue 0
      * @default null
      */
     public value: any;
     /** 
-     * Specifies the width of pointer.
+     * Sets and gets the width of the pointer.
      * @default 20
      */
     public width: any;

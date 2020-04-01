@@ -31,12 +31,12 @@ export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSele
 
 
     /** 
-     * To customize the fill color of the highlight.
+     * Sets and gets the property name from the data source in maps.
      * @default null
      */
     public shapePath: any;
     /** 
-     * Toggle the highlight settings.
+     * Sets and gets the value for the shape from data source in maps.
      * @default null
      */
     public shapeValue: any;

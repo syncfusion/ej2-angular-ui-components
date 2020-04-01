@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['format', 'formula', 'hyperlink', 'index', 'style', 'validation', 'value', 'wrap'];
+let input: string[] = ['colSpan', 'format', 'formula', 'hyperlink', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -37,6 +37,12 @@ export class CellDirective extends ComplexBase<CellDirective> {
 
 
     /** 
+     * Specifies the column-wise cell merge count.
+     * @default 1
+     * @asptype int
+     */
+    public colSpan: any;
+    /** 
      * Specifies the number format code to display value in specified number format.
      * @default 'General'
      */
@@ -57,6 +63,17 @@ export class CellDirective extends ComplexBase<CellDirective> {
      * @asptype int
      */
     public index: any;
+    /** 
+     * Specifies the cell is locked or not, for allow edit range in spreadsheet protect option.
+     * @default true
+     */
+    public isLocked: any;
+    /** 
+     * Specifies the row-wise cell merge count.
+     * @default 1
+     * @asptype int
+     */
+    public rowSpan: any;
     /** 
      * Specifies the cell style options. 
      *  

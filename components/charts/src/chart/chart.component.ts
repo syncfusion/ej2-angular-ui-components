@@ -11,7 +11,7 @@ import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','pointClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -414,54 +414,30 @@ export class ChartComponent extends Chart implements IComponentBase {
 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childSeries;
-        if (this.childAxes) {
-                    this.tagObjects[1].instance = (this.childAxes as any).list[0].childSeries;
-                    for (var d = 0; d < (this.childAxes as any).list.length; d++) {
-                        if ((this.childAxes as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childAxes as any).list[d+1].childSeries.list[0]);
-                        }
-                    }
-                }
-        if (this.childRows) {
-                    this.tagObjects[2].instance = (this.childRows as any).list[0].childAxes;
-                    for (var d = 0; d < (this.childRows as any).list.length; d++) {
-                        if ((this.childRows as any).list[d + 1]) {
-                            this.tagObjects[2].instance.list.push((this.childRows as any).list[d+1].childAxes.list[0]);
-                        }
-                    }
-                }
-        if (this.childColumns) {
-                    this.tagObjects[3].instance = (this.childColumns as any).list[0].childRows;
-                    for (var d = 0; d < (this.childColumns as any).list.length; d++) {
-                        if ((this.childColumns as any).list[d + 1]) {
-                            this.tagObjects[3].instance.list.push((this.childColumns as any).list[d+1].childRows.list[0]);
-                        }
-                    }
-                }
-        if (this.childAnnotations) {
-                    this.tagObjects[4].instance = (this.childAnnotations as any).list[0].childColumns;
-                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
-                        if ((this.childAnnotations as any).list[d + 1]) {
-                            this.tagObjects[4].instance.list.push((this.childAnnotations as any).list[d+1].childColumns.list[0]);
-                        }
-                    }
-                }
-        if (this.childSelectedDataIndexes) {
-                    this.tagObjects[5].instance = (this.childSelectedDataIndexes as any).list[0].childAnnotations;
-                    for (var d = 0; d < (this.childSelectedDataIndexes as any).list.length; d++) {
-                        if ((this.childSelectedDataIndexes as any).list[d + 1]) {
-                            this.tagObjects[5].instance.list.push((this.childSelectedDataIndexes as any).list[d+1].childAnnotations.list[0]);
-                        }
-                    }
-                }
-        if (this.childIndicators) {
-                    this.tagObjects[6].instance = (this.childIndicators as any).list[0].childSelectedDataIndexes;
-                    for (var d = 0; d < (this.childIndicators as any).list.length; d++) {
-                        if ((this.childIndicators as any).list[d + 1]) {
-                            this.tagObjects[6].instance.list.push((this.childIndicators as any).list[d+1].childSelectedDataIndexes.list[0]);
-                        }
-                    }
-                }
+        
+	    if (this.childAxes) {
+            this.tagObjects[1].instance = this.childAxes;
+        }
+        
+	    if (this.childRows) {
+            this.tagObjects[2].instance = this.childRows;
+        }
+        
+	    if (this.childColumns) {
+            this.tagObjects[3].instance = this.childColumns;
+        }
+        
+	    if (this.childAnnotations) {
+            this.tagObjects[4].instance = this.childAnnotations;
+        }
+        
+	    if (this.childSelectedDataIndexes) {
+            this.tagObjects[5].instance = this.childSelectedDataIndexes;
+        }
+        
+	    if (this.childIndicators) {
+            this.tagObjects[6].instance = this.childIndicators;
+        }
         this.context.ngAfterContentChecked(this);
     }
 

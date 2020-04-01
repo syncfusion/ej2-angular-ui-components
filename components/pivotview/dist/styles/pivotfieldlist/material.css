@@ -42,6 +42,10 @@
   content: '\e891';
 }
 
+.e-pivot-calc-dialog-div .e-list-item .e-text-content .e-remove-report.e-icons::before {
+  content: '\e706';
+}
+
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-format.e-icons::before {
   content: '\e22f';
 }
@@ -311,6 +315,10 @@
   content: '\e891';
 }
 
+.e-pivotfieldlist-wrapper .e-pivot-calc-outer-div .e-pivot-accord .e-remove-report.e-icons::before {
+  content: '\e706';
+}
+
 .e-pivotfieldlist-wrapper .e-pivot-button .e-edit::before {
   content: '\e891';
 }
@@ -400,6 +408,12 @@
   background-color: transparent;
   border-color: transparent;
   box-shadow: 0 0 0 transparent;
+}
+
+.e-pivot-formatting-dialog .e-format-delete-button:hover .e-format-delete-icon,
+.e-pivot-formatting-dialog .e-format-delete-button:focus .e-format-delete-icon,
+.e-pivot-formatting-dialog .e-format-delete-button:active .e-format-delete-icon {
+  font-weight: 600;
 }
 
 .e-pivot-formatting-dialog .e-format-delete-icon {
@@ -667,6 +681,17 @@
   width: 24px;
 }
 
+.e-pivot-calc-dialog-div .e-treeview .e-list-item div.e-iconspace {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  height: 24px;
+  opacity: 0.87;
+  padding: 2px 4px 4px;
+  pointer-events: auto;
+  width: 24px;
+}
+
 .e-pivot-calc-dialog-div .e-treeview .e-list-item span.e-icons {
   color: #bdbdbd;
   cursor: move;
@@ -705,8 +730,16 @@
 .e-pivot-calc-dialog-div.e-rtl .e-treeview .e-list-item div.e-icons {
   font-size: 14px;
   height: 24px;
+  margin-bottom: 10px;
   padding: 5px;
   width: 24px;
+}
+
+.e-pivot-calc-dialog-div.e-rtl .e-treeview .e-list-item div.e-edit.e-icons,
+.e-pivot-calc-dialog-div.e-rtl .e-treeview .e-list-item div.e-edited.e-icons,
+.e-pivot-calc-dialog-div.e-rtl .e-treeview .e-list-item div.e-remove-report.e-icons {
+  margin-right: 0;
+  transform: rotate(0deg);
 }
 
 .e-pivot-calc-dialog-div.e-rtl .e-treeview ul {
@@ -765,7 +798,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 75%;
+  width: 65%;
 }
 
 .e-pivot-calc-dialog-div .e-pivot-treeview-outer {
@@ -2337,7 +2370,7 @@
   background-color: #e0e0e0;
 }
 
-.e-pivotfieldlist .e-select-table.e-rtl .e-select-table {
+.e-rtl .e-select-table {
   padding: 8px 5px;
 }
 
@@ -3602,7 +3635,7 @@
   font-size: 12px;
   height: 36px;
   min-height: 36px;
-  min-width: 24px;
+  min-width: 28px;
   padding: 0;
   position: absolute;
   right: 16px;
@@ -3610,7 +3643,9 @@
 }
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-accordion .e-acrdn-header-icon .e-list-icon {
+  cursor: pointer;
   display: table-cell;
+  padding-right: 6px;
   text-align: center;
   vertical-align: middle;
 }
