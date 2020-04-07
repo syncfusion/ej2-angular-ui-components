@@ -2137,6 +2137,16 @@ label[for='container_wholeWord'] {
   content: '\e904';
 }
 
+.e-documenteditor .e-de-save-icon::before {
+  content: '\e614';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cancel-icon::before {
+  content: '\ebe8';
+  font-family: 'e-icons';
+}
+
 .e-de-table-properties-alignment:hover {
   border-color: #f17eb8;
 }

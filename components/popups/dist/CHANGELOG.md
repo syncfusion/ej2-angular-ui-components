@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 18.1.42 (2020-04-01)
+## 18.1.43 (2020-04-07)
 
-### Tooltip
+### Dialog
 
 #### Bug Fixes
 
-- `#F152391` - The issue with Tooltip content component reference is not destroyed has been resolved.
+- `#269536` -  The issue with the resize icon not positioned properly when dialog rendered without `min-height` was resolved.
+- `#269654` -  The issue with the `resizing` event not working properly when more than two dialogs are rendered on the same page was resolved.
 
 ## 18.1.36-beta (2020-03-19)
 
@@ -355,6 +356,14 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 18.1.42 (2020-04-01)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#F152391` - The issue with Tooltip content component reference is not destroyed has been resolved.
 
 ## 16.2.47 (2018-08-07)
 

@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 18.1.42 (2020-04-01)
+## 18.1.43 (2020-04-07)
 
 ### Common
 
 #### Bug Fixes
 
 - Resolved components not get rendered when we disable IVY in angular 9.
+- `I269775,I151936` - Resolved Grid aggregates directive is not rendering properly issue.
 
 ## 18.1.36-beta (2020-03-19)
 

@@ -272,6 +272,7 @@ exports.ProgressAnnotation = ej2Progressbar.ProgressAnnotation;
 exports.Rect = ej2Progressbar.Rect;
 exports.Size = ej2Progressbar.Size;
 exports.RectOption = ej2Progressbar.RectOption;
+exports.TextOption = ej2Progressbar.TextOption;
 exports.degreeToLocation = ej2Progressbar.degreeToLocation;
 exports.getPathArc = ej2Progressbar.getPathArc;
 exports.stringToNumber = ej2Progressbar.stringToNumber;

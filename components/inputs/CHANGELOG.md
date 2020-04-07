@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 18.1.42 (2020-04-01)
+## 18.1.43 (2020-04-07)
 
 ### TextBox
 
 #### Bug Fixes
+
+- `#268311` - Issue with "typed value is not reset in the multiline textbox while destroying the control" has been resolved.
 
 - `#263811`- Now, multiline textbox expand and collapse icon aligned properly.
 

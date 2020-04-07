@@ -73,7 +73,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
+const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'readonly', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
 const outputs$1 = ['beforeChange', 'change', 'created', 'ruleChange'];
 const twoWays = [''];
 /**

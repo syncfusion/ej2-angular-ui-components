@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentEditorSettings', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'headers', 'isReadOnly', 'layoutType', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'useCtrlClickToFollowHyperlink', 'userColor', 'zIndex', 'zoomFactor'];
-var outputs = ['beforePaneSwitch', 'commentBegin', 'commentEnd', 'contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'viewChange', 'zoomFactorChange'];
+var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentEditorSettings', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableFormField', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableWordExport', 'headers', 'isReadOnly', 'layoutType', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'useCtrlClickToFollowHyperlink', 'userColor', 'zIndex', 'zoomFactor'];
+var outputs = ['afterFormFieldFill', 'beforeFormFieldFill', 'beforePaneSwitch', 'commentBegin', 'commentEnd', 'contentChange', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'viewChange', 'zoomFactorChange'];
 var twoWays = [];
 /**
  * `ejs-documenteditor` represents the Angular Document Editor Component.
@@ -641,6 +641,10 @@ exports.TableCellWidget = ej2Documenteditor.TableCellWidget;
 exports.LineWidget = ej2Documenteditor.LineWidget;
 exports.ElementBox = ej2Documenteditor.ElementBox;
 exports.FieldElementBox = ej2Documenteditor.FieldElementBox;
+exports.FormField = ej2Documenteditor.FormField;
+exports.TextFormField = ej2Documenteditor.TextFormField;
+exports.CheckBoxFormField = ej2Documenteditor.CheckBoxFormField;
+exports.DropDownFormField = ej2Documenteditor.DropDownFormField;
 exports.TextElementBox = ej2Documenteditor.TextElementBox;
 exports.ErrorTextElementBox = ej2Documenteditor.ErrorTextElementBox;
 exports.FieldTextElementBox = ej2Documenteditor.FieldTextElementBox;
@@ -734,6 +738,10 @@ exports.TableOptionsDialog = ej2Documenteditor.TableOptionsDialog;
 exports.CellOptionsDialog = ej2Documenteditor.CellOptionsDialog;
 exports.StylesDialog = ej2Documenteditor.StylesDialog;
 exports.SpellCheckDialog = ej2Documenteditor.SpellCheckDialog;
+exports.CheckBoxFormFieldDialog = ej2Documenteditor.CheckBoxFormFieldDialog;
+exports.TextFormFieldDialog = ej2Documenteditor.TextFormFieldDialog;
+exports.DropDownFormFieldDialog = ej2Documenteditor.DropDownFormFieldDialog;
+exports.FormFieldPopUp = ej2Documenteditor.FormFieldPopUp;
 exports.SpellChecker = ej2Documenteditor.SpellChecker;
 exports.AddUserDialog = ej2Documenteditor.AddUserDialog;
 exports.EnforceProtectionDialog = ej2Documenteditor.EnforceProtectionDialog;
@@ -745,6 +753,7 @@ exports.CommentView = ej2Documenteditor.CommentView;
 exports.DocumentEditorSettings = ej2Documenteditor.DocumentEditorSettings;
 exports.DocumentEditor = ej2Documenteditor.DocumentEditor;
 exports.ServerActionSettings = ej2Documenteditor.ServerActionSettings;
+exports.FormFieldSettings = ej2Documenteditor.FormFieldSettings;
 exports.ContainerServerActionSettings = ej2Documenteditor.ContainerServerActionSettings;
 exports.Toolbar = ej2Documenteditor.Toolbar;
 exports.DocumentEditorContainer = ej2Documenteditor.DocumentEditorContainer;

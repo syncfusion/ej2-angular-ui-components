@@ -257,5 +257,5 @@ ProgressBarAllModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 export { ProgressBarAnnotationDirective, ProgressBarAnnotationsDirective, ProgressBarComponent, ProgressBarModule, ProgressBarAllModule, ProgressAnnotationService, inputs as ɵa, outputs$1 as ɵb };
-export { ProgressBar, Margin, Font, Animation, ProgressAnnotationSettings, ProgressAnnotation, Rect, Size, RectOption, degreeToLocation, getPathArc, stringToNumber, effect, annotationRender, getElement, removeElement, ProgressLocation, ProgressAnimation } from '@syncfusion/ej2-progressbar';
+export { ProgressBar, Margin, Font, Animation, ProgressAnnotationSettings, ProgressAnnotation, Rect, Size, RectOption, TextOption, degreeToLocation, getPathArc, stringToNumber, effect, annotationRender, getElement, removeElement, ProgressLocation, ProgressAnimation } from '@syncfusion/ej2-progressbar';
 //# sourceMappingURL=ej2-angular-progressbar.es5.js.map

@@ -248,12 +248,7 @@ export class GridComponent extends Grid implements IComponentBase {
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childAggregates) {
-                    this.tagObjects[1].instance = (this.childAggregates as any).list[0].childColumns;
-                    for (var d = 0; d < (this.childAggregates as any).list.length; d++) {
-                        if ((this.childAggregates as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childAggregates as any).list[d+1].childColumns.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childAggregates as any;
                 }
         this.context.ngAfterContentChecked(this);
     }

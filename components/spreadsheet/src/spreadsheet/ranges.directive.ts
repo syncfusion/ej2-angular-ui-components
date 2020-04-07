@@ -84,6 +84,6 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
 })
 export class RangesDirective extends ArrayBase<RangesDirective> {
     constructor() {
-        super('range');
+        super('ranges');
     }
 }

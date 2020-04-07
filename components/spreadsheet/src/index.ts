@@ -1,7 +1,7 @@
 export {CellDirective,CellsDirective} from './spreadsheet/cells.directive';
 export {RowDirective,RowsDirective} from './spreadsheet/rows.directive';
 export {ColumnDirective,ColumnsDirective} from './spreadsheet/columns.directive';
-export {RangeDirective,RangesDirective} from './spreadsheet/range.directive';
+export {RangeDirective,RangesDirective} from './spreadsheet/ranges.directive';
 export {SheetDirective,SheetsDirective} from './spreadsheet/sheets.directive';
 export {DefinedNameDirective,DefinedNamesDirective} from './spreadsheet/definednames.directive';
 export { SpreadsheetComponent} from './spreadsheet/spreadsheet.component';

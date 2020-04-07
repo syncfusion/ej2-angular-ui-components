@@ -540,12 +540,7 @@ exports.GridComponent = /** @class */ (function (_super) {
     GridComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childAggregates) {
-            this.tagObjects[1].instance = ((this.childAggregates)).list[0].childColumns;
-            for (var /** @type {?} */ d = 0; d < ((this.childAggregates)).list.length; d++) {
-                if (((this.childAggregates)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAggregates)).list[d + 1].childColumns.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAggregates);
         }
         this.context.ngAfterContentChecked(this);
     };
@@ -1192,6 +1187,7 @@ exports.appendInfiniteContent = ej2Grids.appendInfiniteContent;
 exports.removeInfiniteRows = ej2Grids.removeInfiniteRows;
 exports.setInfiniteCache = ej2Grids.setInfiniteCache;
 exports.initialCollapse = ej2Grids.initialCollapse;
+exports.getAggregateQuery = ej2Grids.getAggregateQuery;
 exports.Data = ej2Grids.Data;
 exports.Sort = ej2Grids.Sort;
 exports.Page = ej2Grids.Page;

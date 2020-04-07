@@ -2137,6 +2137,16 @@ label[for='container_wholeWord'] {
   content: '\e904';
 }
 
+.e-documenteditor .e-de-save-icon::before {
+  content: '\e614';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cancel-icon::before {
+  content: '\ebe8';
+  font-family: 'e-icons';
+}
+
 .e-de-table-properties-alignment:hover {
   border-color: #f17eb8;
 }
@@ -2878,6 +2888,46 @@ label[for='container_wholeWord'] {
 
 .e-de-weblayout::before {
   content: '\e629';
+  font-family: 'e-icons';
+}
+
+.e-de-textform::before {
+  content: '\e198';
+  font-family: 'e-icons';
+}
+
+.e-de-formproperties::before {
+  content: '\e199';
+  font-family: 'e-icons';
+}
+
+.e-de-clearform::before {
+  content: '\e19a';
+  font-family: 'e-icons';
+}
+
+.e-de-dropdownform::before {
+  content: '\e19b';
+  font-family: 'e-icons';
+}
+
+.e-de-formfield::before {
+  content: '\e19c';
+  font-family: 'e-icons';
+}
+
+.e-de-checkbox-form::before {
+  content: '\e19d';
+  font-family: 'e-icons';
+}
+
+.e-de-arrow-up::before {
+  content: '\e834';
+  font-family: 'e-icons';
+}
+
+.e-de-arrow-down::before {
+  content: '\e83d';
   font-family: 'e-icons';
 }
 

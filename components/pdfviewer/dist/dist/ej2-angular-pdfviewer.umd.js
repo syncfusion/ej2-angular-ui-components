@@ -286,6 +286,7 @@ exports.TextLayer = ej2Pdfviewer.TextLayer;
 exports.ContextMenu = ej2Pdfviewer.ContextMenu;
 exports.FontStyle = ej2Pdfviewer.FontStyle;
 exports.AnnotationResizerLocation = ej2Pdfviewer.AnnotationResizerLocation;
+exports.CursorType = ej2Pdfviewer.CursorType;
 exports.AjaxHandler = ej2Pdfviewer.AjaxHandler;
 exports.Signature = ej2Pdfviewer.Signature;
 exports.Magnification = ej2Pdfviewer.Magnification;

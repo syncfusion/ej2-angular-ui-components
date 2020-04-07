@@ -470,6 +470,13 @@ var ComponentBase = /** @class */ (function () {
                                 var complexPropName = compDirPropList[k];
                                 obj[complexPropName] = tagObject.instance.list[h].propCollection[complexPropName];
                             }
+                            for (var i = 0; i < tagObject.instance.list[h].tags.length; i++) {
+                                var tag = tagObject.instance.list[h].tags[i];
+                                var childObj = sf.base.getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[h]);
+                                if (childObj) {
+                                    tagObject.instance.list[h].tagObjects.push({ instance: childObj, name: tag });
+                                }
+                            }
                             tagObject.instance.list[h].propCollection[tagObject.instance.propertyName].push(obj);
                         }
                     }

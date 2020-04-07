@@ -277,7 +277,7 @@ RangeDirective.ctorParameters = function () { return [
 var RangesDirective = /** @class */ (function (_super) {
     __extends(RangesDirective, _super);
     function RangesDirective() {
-        return _super.call(this, 'range') || this;
+        return _super.call(this, 'ranges') || this;
     }
     return RangesDirective;
 }(ej2AngularBase.ArrayBase));
@@ -293,7 +293,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'range', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 var outputs$4 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -315,7 +315,7 @@ var SheetDirective = /** @class */ (function (_super) {
     function SheetDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['rows', 'columns', 'range'];
+        _this.tags = ['rows', 'columns', 'ranges'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
         _this.directivePropList = input$4;
@@ -331,7 +331,7 @@ SheetDirective.decorators = [
                 queries: {
                     childRows: new core.ContentChild(RowsDirective),
                     childColumns: new core.ContentChild(ColumnsDirective),
-                    childRange: new core.ContentChild(RangesDirective)
+                    childRanges: new core.ContentChild(RangesDirective)
                 }
             },] },
 ];
@@ -936,6 +936,7 @@ exports.findCount = ej2Spreadsheet.findCount;
 exports.protectSheetWorkBook = ej2Spreadsheet.protectSheetWorkBook;
 exports.updateToggle = ej2Spreadsheet.updateToggle;
 exports.protectsheetHandler = ej2Spreadsheet.protectsheetHandler;
+exports.unprotectsheetHandler = ej2Spreadsheet.unprotectsheetHandler;
 exports.replaceAllDialog = ej2Spreadsheet.replaceAllDialog;
 exports.workBookeditAlert = ej2Spreadsheet.workBookeditAlert;
 exports.setLockCells = ej2Spreadsheet.setLockCells;
@@ -1072,6 +1073,7 @@ exports.startEdit = ej2Spreadsheet.startEdit;
 exports.invalidData = ej2Spreadsheet.invalidData;
 exports.clearInvalid = ej2Spreadsheet.clearInvalid;
 exports.protectSheet = ej2Spreadsheet.protectSheet;
+exports.unprotectSheet = ej2Spreadsheet.unprotectSheet;
 exports.applyProtect = ej2Spreadsheet.applyProtect;
 exports.protectCellFormat = ej2Spreadsheet.protectCellFormat;
 exports.gotoDlg = ej2Spreadsheet.gotoDlg;
@@ -1085,6 +1087,7 @@ exports.enableFormulaInput = ej2Spreadsheet.enableFormulaInput;
 exports.protectSelection = ej2Spreadsheet.protectSelection;
 exports.hiddenMerge = ej2Spreadsheet.hiddenMerge;
 exports.checkPrevMerge = ej2Spreadsheet.checkPrevMerge;
+exports.checkMerge = ej2Spreadsheet.checkMerge;
 exports.removeDataValidation = ej2Spreadsheet.removeDataValidation;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;

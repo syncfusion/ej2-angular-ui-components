@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.1.43 (2020-04-07)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#266088`- Now, you can use focusOut method inside close event.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#263008`- Issue with "script error throws while navigating month using previous and next icon in the mobile mode" has been resolved.
+
 ## 17.4.50 (2020-02-18)
 
 ### DateRangePicker
