@@ -98,6 +98,9 @@
 
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon {
   background: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .e-ddl.e-popup .e-filter-parent .e-input-group,
@@ -183,6 +186,25 @@
 
 .e-small.e-bigger .e-multi-select-wrapper .e-chips {
   margin: 2px 4px 2px 0;
+}
+
+.e-multiselect.e-float-input input[readonly],
+.e-multiselect.e-float-input.e-control-wrapper input[readonly] {
+  background: transparent;
+}
+
+.e-small .e-multi-select-wrapper .e-close-hooker::before {
+  top: 7px;
+}
+
+.e-bigger .e-multiselect .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 36px;
+  margin-top: -3em;
+  right: 34px;
+}
+
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 34px;
 }
 
 @keyframes material-spinner-rotate {

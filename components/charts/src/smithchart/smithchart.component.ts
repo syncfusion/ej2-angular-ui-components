@@ -5,7 +5,7 @@ import { Smithchart } from '@syncfusion/ej2-charts';
 import { SmithchartSeriesCollectionDirective } from './series.directive';
 
 export const inputs: string[] = ['background','border','elementSpacing','enablePersistence','enableRtl','font','height','horizontalAxis','legendSettings','locale','margin','radialAxis','radius','renderType','series','theme','title','width'];
-export const outputs: string[] = ['animationComplete','axisLabelRender','beforePrint','legendRender','load','loaded','seriesRender','subtitleRender','textRender','titleRender'];
+export const outputs: string[] = ['animationComplete','axisLabelRender','beforePrint','legendRender','load','loaded','seriesRender','subtitleRender','textRender','titleRender','tooltipRender'];
 export const twoWays: string[] = [''];
 
 /**

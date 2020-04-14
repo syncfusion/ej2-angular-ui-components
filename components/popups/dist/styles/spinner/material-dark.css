@@ -102,6 +102,7 @@
 
 .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 {
   animation: material-spinner-rotate .75s linear infinite;
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
 }

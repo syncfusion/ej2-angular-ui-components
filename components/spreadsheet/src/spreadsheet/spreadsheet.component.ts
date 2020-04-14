@@ -172,12 +172,7 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childSheets;
         if (this.childDefinedNames) {
-                    this.tagObjects[1].instance = (this.childDefinedNames as any).list[0].childSheets;
-                    for (var d = 0; d < (this.childDefinedNames as any).list.length; d++) {
-                        if ((this.childDefinedNames as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childDefinedNames as any).list[d+1].childSheets.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childDefinedNames as any;
                 }
         this.context.ngAfterContentChecked(this);
     }

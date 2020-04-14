@@ -1292,6 +1292,7 @@
 }
 
 .e-grid.e-rcursor,
+.e-grid .e-gridheader .e-stackedheadercell.e-rcursor,
 .e-grid .e-gridheader .e-rcursor {
   cursor: col-resize;
 }

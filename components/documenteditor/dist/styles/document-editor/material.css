@@ -516,7 +516,7 @@
 }
 
 .e-de-blink-cursor {
-  border-left: 1px solid #000;
+  border-left: 1px solid rgba(0, 0, 0, 0.87);
   pointer-events: none;
   position: absolute;
   z-index: 3;
@@ -1414,7 +1414,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-tooltip {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
-  color: #000;
+  color: rgba(0, 0, 0, 0.87);
   cursor: text;
   display: table;
   max-width: 200px;
@@ -1425,7 +1425,7 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-form-popup {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
-  color: #000;
+  color: rgba(0, 0, 0, 0.87);
   cursor: text;
   max-width: 350px;
   min-width: 300px;

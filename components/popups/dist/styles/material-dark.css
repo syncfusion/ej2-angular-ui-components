@@ -439,6 +439,13 @@
   color: #fff;
 }
 
+.e-dialog .e-btn.e-dlg-closeicon-btn:active span,
+.e-dialog .e-btn.e-dlg-closeicon-btn:focus span {
+  border-radius: 50%;
+  color: #fff;
+  opacity: 1;
+}
+
 .e-icon-dlg-close:active {
   border-radius: 50%;
   color: #fff;
@@ -745,6 +752,7 @@
 
 .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 {
   animation: material-spinner-rotate .75s linear infinite;
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
 }

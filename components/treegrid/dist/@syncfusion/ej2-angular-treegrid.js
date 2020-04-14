@@ -448,12 +448,7 @@ let TreeGridComponent = class TreeGridComponent extends TreeGrid {
     ngAfterContentChecked() {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childAggregates) {
-            this.tagObjects[1].instance = ((this.childAggregates)).list[0].childColumns;
-            for (var /** @type {?} */ d = 0; d < ((this.childAggregates)).list.length; d++) {
-                if (((this.childAggregates)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAggregates)).list[d + 1].childColumns.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAggregates);
         }
         this.context.ngAfterContentChecked(this);
     }

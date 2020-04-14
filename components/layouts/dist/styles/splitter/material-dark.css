@@ -436,14 +436,14 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow {
+.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden) {
   background-color: transparent;
   border-color: transparent;
   color: transparent;
   transition: background-color 500ms ease-out;
 }
 
-.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow::before, .e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow::after {
+.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden)::before, .e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden)::after {
   background-color: #ff80ab;
   opacity: 0;
   transition-duration: .3s;

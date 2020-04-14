@@ -1830,12 +1830,7 @@ var AccumulationChartComponent = /** @class */ (function (_super) {
     AccumulationChartComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childSeries;
         if (this.childAnnotations) {
-            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childSeries;
-            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
-                if (((this.childAnnotations)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childSeries.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
         }
         this.context.ngAfterContentChecked(this);
     };
@@ -2429,7 +2424,7 @@ SparklineAllModule.decorators = [
  * @nocollapse
  */
 SparklineAllModule.ctorParameters = function () { return []; };
-var input$16 = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'visibility', 'width'];
+var input$16 = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'tooltipMappingName', 'visibility', 'width'];
 var outputs$20 = [];
 var SmithchartSeriesDirective = /** @class */ (function (_super) {
     __extends(SmithchartSeriesDirective, _super);
@@ -2497,7 +2492,7 @@ var __metadata$8 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$4 = ['background', 'border', 'elementSpacing', 'enablePersistence', 'enableRtl', 'font', 'height', 'horizontalAxis', 'legendSettings', 'locale', 'margin', 'radialAxis', 'radius', 'renderType', 'series', 'theme', 'title', 'width'];
-var outputs$21 = ['animationComplete', 'axisLabelRender', 'beforePrint', 'legendRender', 'load', 'loaded', 'seriesRender', 'subtitleRender', 'textRender', 'titleRender'];
+var outputs$21 = ['animationComplete', 'axisLabelRender', 'beforePrint', 'legendRender', 'load', 'loaded', 'seriesRender', 'subtitleRender', 'textRender', 'titleRender', 'tooltipRender'];
 var twoWays$4 = [''];
 /**
  * Smithchart Component
@@ -3493,60 +3488,25 @@ var StockChartComponent = /** @class */ (function (_super) {
     StockChartComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childSeries;
         if (this.childAxes) {
-            this.tagObjects[1].instance = ((this.childAxes)).list[0].childSeries;
-            for (var /** @type {?} */ d = 0; d < ((this.childAxes)).list.length; d++) {
-                if (((this.childAxes)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAxes)).list[d + 1].childSeries.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAxes);
         }
         if (this.childRows) {
-            this.tagObjects[2].instance = ((this.childRows)).list[0].childAxes;
-            for (var /** @type {?} */ d = 0; d < ((this.childRows)).list.length; d++) {
-                if (((this.childRows)).list[d + 1]) {
-                    this.tagObjects[2].instance.list.push(((this.childRows)).list[d + 1].childAxes.list[0]);
-                }
-            }
+            this.tagObjects[2].instance = /** @type {?} */ (this.childRows);
         }
         if (this.childAnnotations) {
-            this.tagObjects[3].instance = ((this.childAnnotations)).list[0].childRows;
-            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
-                if (((this.childAnnotations)).list[d + 1]) {
-                    this.tagObjects[3].instance.list.push(((this.childAnnotations)).list[d + 1].childRows.list[0]);
-                }
-            }
+            this.tagObjects[3].instance = /** @type {?} */ (this.childAnnotations);
         }
         if (this.childSelectedDataIndexes) {
-            this.tagObjects[4].instance = ((this.childSelectedDataIndexes)).list[0].childAnnotations;
-            for (var /** @type {?} */ d = 0; d < ((this.childSelectedDataIndexes)).list.length; d++) {
-                if (((this.childSelectedDataIndexes)).list[d + 1]) {
-                    this.tagObjects[4].instance.list.push(((this.childSelectedDataIndexes)).list[d + 1].childAnnotations.list[0]);
-                }
-            }
+            this.tagObjects[4].instance = /** @type {?} */ (this.childSelectedDataIndexes);
         }
         if (this.childPeriods) {
-            this.tagObjects[5].instance = ((this.childPeriods)).list[0].childSelectedDataIndexes;
-            for (var /** @type {?} */ d = 0; d < ((this.childPeriods)).list.length; d++) {
-                if (((this.childPeriods)).list[d + 1]) {
-                    this.tagObjects[5].instance.list.push(((this.childPeriods)).list[d + 1].childSelectedDataIndexes.list[0]);
-                }
-            }
+            this.tagObjects[5].instance = /** @type {?} */ (this.childPeriods);
         }
         if (this.childStockEvents) {
-            this.tagObjects[6].instance = ((this.childStockEvents)).list[0].childPeriods;
-            for (var /** @type {?} */ d = 0; d < ((this.childStockEvents)).list.length; d++) {
-                if (((this.childStockEvents)).list[d + 1]) {
-                    this.tagObjects[6].instance.list.push(((this.childStockEvents)).list[d + 1].childPeriods.list[0]);
-                }
-            }
+            this.tagObjects[6].instance = /** @type {?} */ (this.childStockEvents);
         }
         if (this.childIndicators) {
-            this.tagObjects[7].instance = ((this.childIndicators)).list[0].childStockEvents;
-            for (var /** @type {?} */ d = 0; d < ((this.childIndicators)).list.length; d++) {
-                if (((this.childIndicators)).list[d + 1]) {
-                    this.tagObjects[7].instance.list.push(((this.childIndicators)).list[d + 1].childStockEvents.list[0]);
-                }
-            }
+            this.tagObjects[7].instance = /** @type {?} */ (this.childIndicators);
         }
         this.context.ngAfterContentChecked(this);
     };

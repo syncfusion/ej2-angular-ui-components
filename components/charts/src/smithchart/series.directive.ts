@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'visibility', 'width'];
+let input: string[] = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'tooltipMappingName', 'visibility', 'width'];
 let outputs: string[] = [];
 
 @Directive({
@@ -77,6 +77,11 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      *  options for customizing tooltip
      */
     public tooltip: any;
+    /** 
+     * tooltip mapping name for the series
+     * @default ''
+     */
+    public tooltipMappingName: any;
     /** 
      * visibility for series.
      * @default 'visible'

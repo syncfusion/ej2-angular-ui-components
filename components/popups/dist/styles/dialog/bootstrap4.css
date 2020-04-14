@@ -438,6 +438,13 @@
   color: #000;
 }
 
+.e-dialog .e-btn.e-dlg-closeicon-btn:active span,
+.e-dialog .e-btn.e-dlg-closeicon-btn:focus span {
+  border-radius: 50%;
+  color: #000;
+  opacity: 1;
+}
+
 .e-icon-dlg-close:active {
   border-radius: 50%;
   color: #000;

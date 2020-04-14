@@ -1077,14 +1077,14 @@
   color: #000;
 }
 
-.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow {
+.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden) {
   background-color: transparent;
   border-color: transparent;
   color: transparent;
   transition: background-color 500ms ease-out;
 }
 
-.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow::before, .e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow::after {
+.e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden)::before, .e-splitter .e-split-bar.e-split-bar-horizontal .e-navigate-arrow:not(.e-icon-hidden)::after {
   background-color: #ffd939;
   opacity: 0;
   transition-duration: .3s;
@@ -1248,7 +1248,7 @@
   border: 1px #000 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize.e-dl-icon {
   display: block;
 }
 
@@ -1256,7 +1256,7 @@
   border: 1px #400074 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-dl-icon {
   display: none;
 }
 

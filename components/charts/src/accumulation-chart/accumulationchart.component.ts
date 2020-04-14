@@ -118,12 +118,7 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childSeries;
         if (this.childAnnotations) {
-                    this.tagObjects[1].instance = (this.childAnnotations as any).list[0].childSeries;
-                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
-                        if ((this.childAnnotations as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childAnnotations as any).list[d+1].childSeries.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childAnnotations as any;
                 }
         this.context.ngAfterContentChecked(this);
     }

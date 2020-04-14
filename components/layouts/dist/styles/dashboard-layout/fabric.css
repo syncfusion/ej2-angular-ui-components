@@ -110,7 +110,7 @@
   border: 1px #d0d0d0 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize.e-dl-icon {
   display: block;
 }
 
@@ -118,7 +118,7 @@
   border: 1px #0078d6 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-dl-icon {
   display: none;
 }
 

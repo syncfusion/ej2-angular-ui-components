@@ -624,12 +624,7 @@ exports.SpreadsheetComponent = /** @class */ (function (_super) {
     SpreadsheetComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childSheets;
         if (this.childDefinedNames) {
-            this.tagObjects[1].instance = ((this.childDefinedNames)).list[0].childSheets;
-            for (var /** @type {?} */ d = 0; d < ((this.childDefinedNames)).list.length; d++) {
-                if (((this.childDefinedNames)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childDefinedNames)).list[d + 1].childSheets.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childDefinedNames);
         }
         this.context.ngAfterContentChecked(this);
     };

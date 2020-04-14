@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.44 (2020-04-14)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- Now, getDataByValue method return the valid items in the change event.
+
 ## 18.1.43 (2020-04-07)
 
 ### ListBox

@@ -174,12 +174,14 @@
 }
 
 .e-ddt input[readonly],
-.e-ddt .e-dropdowntree {
+.e-ddt .e-dropdowntree,
+.e-ddt input[readonly].e-input {
   pointer-events: none;
 }
 
 .e-ddt input[readonly].e-chip-input,
-.e-ddt .e-dropdowntree.e-chip-input {
+.e-ddt .e-dropdowntree.e-chip-input,
+.e-ddt input[readonly].e-input.e-chip-input {
   width: 0;
 }
 
