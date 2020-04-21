@@ -829,6 +829,7 @@ exports.formatString = ej2Gantt.formatString;
 exports.getIndex = ej2Gantt.getIndex;
 exports.pixelToPoint = ej2Gantt.pixelToPoint;
 exports.pointToPixel = ej2Gantt.pointToPixel;
+exports.getUid = ej2Gantt.getUid;
 exports.load = ej2Gantt.load;
 exports.rowDataBound = ej2Gantt.rowDataBound;
 exports.queryCellInfo = ej2Gantt.queryCellInfo;

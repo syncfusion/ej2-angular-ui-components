@@ -114,6 +114,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * default value is 1 otherwise 0.7.
      * @default null
      * @aspdefaultvalueignore 
+     * @blazordefaultvalue Double.NaN
      */
     public columnWidth: any;
     /** 

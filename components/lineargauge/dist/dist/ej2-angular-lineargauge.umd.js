@@ -359,12 +359,7 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
     LinearGaugeComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childAxes;
         if (this.childAnnotations) {
-            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childAxes;
-            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
-                if (((this.childAnnotations)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childAxes.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
         }
         this.context.ngAfterContentChecked(this);
     };

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.45 (2020-04-21)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- Issue with "character missing in the masked textbox while pasting the value" has been resolved.
+
 ## 18.1.44 (2020-04-14)
 
 ### TextBox

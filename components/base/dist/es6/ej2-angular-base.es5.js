@@ -8,9 +8,9 @@ import { EventEmitter } from '@angular/core';
 function applyMixins(derivedClass, baseClass) {
     baseClass.forEach(function (baseClass) {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(function (name) {
-            // if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
-            derivedClass.prototype[name] = baseClass.prototype[name];
-            //  }
+            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
+                derivedClass.prototype[name] = baseClass.prototype[name];
+            }
         });
     });
 }
@@ -473,6 +473,16 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                                 var tag = tagObject.instance.list[h].tags[i];
                                 var childObj = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[h]);
                                 if (childObj) {
+                                    var innerchildObj = tagObject.instance.list[h]['child' + tag.substring(0, 1).toUpperCase() + tag.substring(1)];
+                                    if (innerchildObj) {
+                                        for (var j = 0; j < innerchildObj.list.length; j++) {
+                                            var innerTag = innerchildObj.list[0].tags[0];
+                                            if (innerTag) {
+                                                var innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchildObj.list[j]);
+                                                innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                            }
+                                        }
+                                    }
                                     tagObject.instance.list[h].tagObjects.push({ instance: childObj, name: tag });
                                 }
                             }

@@ -121,12 +121,7 @@ export class MapsComponent extends Maps implements IComponentBase {
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childLayers;
         if (this.childAnnotations) {
-                    this.tagObjects[1].instance = (this.childAnnotations as any).list[0].childLayers;
-                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
-                        if ((this.childAnnotations as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childAnnotations as any).list[d+1].childLayers.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childAnnotations as any;
                 }
         this.context.ngAfterContentChecked(this);
     }

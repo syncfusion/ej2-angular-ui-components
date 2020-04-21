@@ -8,9 +8,9 @@ import { EventEmitter } from '@angular/core';
 function applyMixins(derivedClass, baseClass) {
     baseClass.forEach(baseClass => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-            // if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
-            derivedClass.prototype[name] = baseClass.prototype[name];
-            //  }
+            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
+                derivedClass.prototype[name] = baseClass.prototype[name];
+            }
         });
     });
 }
@@ -449,6 +449,16 @@ class ComponentBase {
                                 let tag = tagObject.instance.list[h].tags[i];
                                 let childObj = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[h]);
                                 if (childObj) {
+                                    let innerchildObj = tagObject.instance.list[h]['child' + tag.substring(0, 1).toUpperCase() + tag.substring(1)];
+                                    if (innerchildObj) {
+                                        for (let j = 0; j < innerchildObj.list.length; j++) {
+                                            let innerTag = innerchildObj.list[0].tags[0];
+                                            if (innerTag) {
+                                                let innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchildObj.list[j]);
+                                                innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                            }
+                                        }
+                                    }
                                     tagObject.instance.list[h].tagObjects.push({ instance: childObj, name: tag });
                                 }
                             }

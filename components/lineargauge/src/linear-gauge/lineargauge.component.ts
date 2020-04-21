@@ -76,12 +76,7 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childAxes;
         if (this.childAnnotations) {
-                    this.tagObjects[1].instance = (this.childAnnotations as any).list[0].childAxes;
-                    for (var d = 0; d < (this.childAnnotations as any).list.length; d++) {
-                        if ((this.childAnnotations as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childAnnotations as any).list[d+1].childAxes.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childAnnotations as any;
                 }
         this.context.ngAfterContentChecked(this);
     }

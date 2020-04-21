@@ -1545,6 +1545,12 @@
   position: relative;
 }
 
+.e-schedule .e-timeline-year-view .e-date-header-wrap table col,
+.e-schedule .e-timeline-year-view .e-content-wrap table col {
+  width: 60px;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-left-td,
 .e-schedule .e-timeline-year-view .e-date-header-wrap table td {
   background-color: #fff;
   border-color: #dee2e6;
@@ -1554,8 +1560,70 @@
   text-align: center;
 }
 
+.e-schedule .e-timeline-year-view .e-resource-left-td.e-current-day,
 .e-schedule .e-timeline-year-view .e-date-header-wrap table td.e-current-day {
   color: #007bff;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-text {
+  color: #212529;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 0 15px;
+  text-overflow: ellipsis;
+  padding: 0 12px;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-left-td {
+  vertical-align: middle;
+  width: 224px;
+}
+
+.e-schedule .e-timeline-year-view .e-left-indent-wrap .e-resource-cells,
+.e-schedule .e-timeline-year-view .e-date-header-wrap .e-resource-cells {
+  height: 40px;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-column-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-column-wrap .e-resource-cells {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  color: #212529;
+  height: 70px;
+  padding-left: 15px;
+  padding-right: 0;
+  vertical-align: middle;
+  padding-left: 12px;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-column-wrap .e-resource-cells.e-child-node {
+  background-color: #fff;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-column-table {
+  height: 100%;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-column-table.e-auto-height {
+  height: auto;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-tree-icon {
+  color: #212529;
+  cursor: pointer;
+  float: left;
+  font-family: 'e-icons';
+  font-size: 12px;
+}
+
+.e-schedule .e-timeline-year-view .e-resource-collapse {
+  transform: rotate(90deg);
 }
 
 .e-schedule .e-timeline-year-view .e-work-cells {
@@ -1604,18 +1672,28 @@
   height: 100%;
 }
 
-.e-schedule .e-timeline-year-view .e-left-indent {
+.e-schedule .e-timeline-year-view .e-content-table.e-auto-height {
+  height: auto;
+}
+
+.e-schedule .e-timeline-year-view .e-left-indent td {
   border-color: #dee2e6;
   border-style: solid;
-  border-width: 0 1px 1px 0;
+  border-width: 0 1px 0 0;
   vertical-align: middle;
 }
 
+.e-schedule .e-timeline-year-view .e-left-indent tr:last-child td {
+  border-width: 0 1px 1px 0;
+}
+
 .e-schedule .e-timeline-year-view.e-horizontal .e-left-indent {
+  padding: 0;
   width: 100px;
 }
 
-.e-schedule .e-timeline-year-view.e-vertical .e-left-indent {
+.e-schedule .e-timeline-year-view.e-vertical .e-left-indent,
+.e-schedule .e-timeline-year-view.e-vertical .e-left-indent .e-header-cells {
   width: 50px;
 }
 
@@ -1634,7 +1712,7 @@
   cursor: default;
   font-weight: 400;
   height: 30px;
-  padding: 3px;
+  padding: 0;
   text-align: center;
   padding: 8px;
 }

@@ -421,12 +421,14 @@
   padding: 6px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
   min-height: 16px;
   min-width: 16px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
   padding: 8px 16px 8px 0;
 }
 
@@ -443,14 +445,18 @@
 
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus.e-small .e-clear-icon,
-.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
+.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
   margin: 0;
 }
 
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small.e-input-focus .e-input-filter {
   padding: 5px 5px 5px 12px;
 }
@@ -479,6 +485,15 @@
 }
 
 .e-bigger .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
+.e-bigger.e-ddl.e-popup .e-list-item,
+.e-bigger.e-ddl.e-popup .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-bigger.e-ddl.e-popup .e-input-group {
   padding: 4px 0;
 }
 
@@ -612,8 +627,22 @@ ejs-dropdownlist {
   font-size: 12px;
 }
 
+.e-small.e-ddl.e-popup .e-list-item,
+.e-small.e-ddl.e-popup .e-list-group-item,
+.e-input-group.e-ddl.e-small .e-list-item,
+.e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 12px;
+}
+
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
 .e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 13px;
+}
+
+.e-bigger.e-small.e-ddl.e-popup .e-list-item,
+.e-bigger.e-small.e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
   font-size: 13px;

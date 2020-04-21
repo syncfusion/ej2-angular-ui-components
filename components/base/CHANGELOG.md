@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 18.1.44 (2020-04-14)
+## 18.1.45 (2020-04-21)
 
 ### Common
 
 #### Bug Fixes
 
+- `I269260` - Resolved Spreadsheet cells directive is not rendering properly issue.
 - Resolved components not get rendered when we disable IVY in angular 9.
+
+## 18.1.43 (2020-04-07)
+
+### Common
+
+#### Bug Fixes
+
 - `I269775,I151936` - Resolved Grid aggregates directive is not rendering properly issue.
 
 ## 18.1.36-beta (2020-03-19)

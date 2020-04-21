@@ -706,12 +706,7 @@ exports.MapsComponent = /** @class */ (function (_super) {
     MapsComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childLayers;
         if (this.childAnnotations) {
-            this.tagObjects[1].instance = ((this.childAnnotations)).list[0].childLayers;
-            for (var /** @type {?} */ d = 0; d < ((this.childAnnotations)).list.length; d++) {
-                if (((this.childAnnotations)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childAnnotations)).list[d + 1].childLayers.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
         }
         this.context.ngAfterContentChecked(this);
     };

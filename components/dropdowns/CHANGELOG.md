@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.1.44 (2020-04-14)
+## 18.1.45 (2020-04-21)
 
-### MultiSelect
+### AutoComplete
 
 #### Bug Fixes
 
-- Now, getDataByValue method return the valid items in the change event.
+- `#269229` - Now, you can use highlight API along with ng-template.
 
 ## 18.1.43 (2020-04-07)
 
@@ -1424,6 +1424,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.44 (2020-04-14)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- Now, getDataByValue method return the valid items in the change event.
 
 ## 17.3.27 (2019-11-12)
 

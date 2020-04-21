@@ -171,6 +171,15 @@
   padding: 4px 0;
 }
 
+.e-bigger.e-ddl.e-popup .e-list-item,
+.e-bigger.e-ddl.e-popup .e-list-group-item {
+  font-size: 15px;
+}
+
+.e-bigger.e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
 .e-popup-full-page {
   bottom: 0;
   left: 0;
@@ -302,8 +311,22 @@ ejs-dropdownlist {
   font-size: 13px;
 }
 
+.e-small.e-ddl.e-popup .e-list-item,
+.e-small.e-ddl.e-popup .e-list-group-item,
+.e-input-group.e-ddl.e-small .e-list-item,
+.e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 13px;
+}
+
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
 .e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-bigger.e-small.e-ddl.e-popup .e-list-item,
+.e-bigger.e-small.e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
   font-size: 14px;

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.45 (2020-04-21)
+
+### Grid
+
+#### Bug Fixes
+
+- `#269217` -  numeric edit precision issue has been resolved.
+
 ## 18.1.44 (2020-04-14)
 
 ### Grid
