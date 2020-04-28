@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-kanban';
-export const pkgVer = '^0.21.1';
+export const pkgVer = '^18.1.42';
 export const moduleName = 'KanbanModule';
-export const themeVer = '~0.21.1';
+export const themeVer = '~18.1.42';

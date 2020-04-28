@@ -2,13 +2,20 @@
 
 ## [Unreleased]
 
-## 18.1.45 (2020-04-21)
+## 18.1.46 (2020-04-28)
 
-### AutoComplete
+### Dropdown Tree
 
 #### Bug Fixes
 
-- `#269229` - Now, you can use highlight API along with ng-template.
+- The issue with `The Dropdown Tree placeholder hides while opening the popup, when enabling the checkbox support` has been fixed.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'enabled' properly when listbox have toolbar option has been fixed.
+- Issue with Filter element when the scrolling has enabled in listbox.
 
 ## 18.1.43 (2020-04-07)
 
@@ -1424,6 +1431,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.45 (2020-04-21)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#269229` - Now, you can use highlight API along with ng-template.
 
 ## 18.1.44 (2020-04-14)
 

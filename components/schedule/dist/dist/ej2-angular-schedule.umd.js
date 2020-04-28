@@ -887,6 +887,7 @@ exports.getScrollBarWidth = ej2Schedule.getScrollBarWidth;
 exports.findIndexInData = ej2Schedule.findIndexInData;
 exports.getOuterHeight = ej2Schedule.getOuterHeight;
 exports.removeChildren = ej2Schedule.removeChildren;
+exports.isDaylightSavingTime = ej2Schedule.isDaylightSavingTime;
 exports.addLocalOffset = ej2Schedule.addLocalOffset;
 exports.addLocalOffsetToEvent = ej2Schedule.addLocalOffsetToEvent;
 exports.capitalizeFirstWord = ej2Schedule.capitalizeFirstWord;

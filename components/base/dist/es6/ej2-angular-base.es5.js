@@ -8,7 +8,7 @@ import { EventEmitter } from '@angular/core';
 function applyMixins(derivedClass, baseClass) {
     baseClass.forEach(function (baseClass) {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(function (name) {
-            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
+            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.isFormBase) {
                 derivedClass.prototype[name] = baseClass.prototype[name];
             }
         });
@@ -124,6 +124,7 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
     function ComplexBase() {
         this.hasChanges = false;
         this.propCollection = {};
+        this.dataSource = {};
         this.tags = [];
         this.tagObjects = [];
     }
@@ -256,6 +257,10 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
         if (this.list.length === this.children.length) {
             for (var i = 0; i < this.list.length; i++) {
                 if (this.list[i].propCollection.dataSource) {
+                    if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
+                        this.list[i].propCollection.dataSource = this.list[i].dataSource;
+                        this.list[i].hasChanges = true;
+                    }
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
                 }
@@ -701,6 +706,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
             this.blur.emit(e);
         }
     };
+    FormBase.isFormBase = true;
     return FormBase;
 }());
 

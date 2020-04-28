@@ -2145,8 +2145,17 @@ e-ddl.e-popup.e-multi-select-list-wrapper.e-multiselct-group.e-checkbox .e-list-
   position: relative;
 }
 
+.e-listbox-wrapper.e-filter-list {
+  overflow: inherit;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  overflow: auto;
+}
+
 .e-listbox-wrapper .e-list-parent {
   height: 100%;
+  min-height: 36px;
 }
 
 .e-listbox-wrapper .e-list-item {
@@ -2469,6 +2478,11 @@ ejs-listbox {
   position: relative;
 }
 
+.e-bigger .e-listbox-wrapper .e-list-parent,
+.e-listbox-wrapper.e-bigger .e-list-parent {
+  min-height: 45px;
+}
+
 .e-bigger .e-listbox-wrapper .e-text-content,
 .e-listbox-wrapper.e-bigger .e-text-content {
   font-size: 15px;
@@ -2505,6 +2519,18 @@ ejs-listbox {
   font-size: 15px;
 }
 
+.e-small .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 45px);
+}
+
+.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 59px);
+}
+
+.e-small.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 55px);
+}
+
 .e-listbox-wrapper {
   border: 1px solid #969696;
   font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
@@ -2516,6 +2542,10 @@ ejs-listbox {
   border-color: #969696;
   color: #ffd939;
   font-size: 14px;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 51px);
 }
 
 .e-listbox-wrapper .e-icons {

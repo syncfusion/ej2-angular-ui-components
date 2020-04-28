@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.1.46 (2020-04-28)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved value binding not working for form base components inside reactive form.
+- `I274487` - Increased `peerDependencies` version from `9.0.2` to `9.1.3`.
+- Included `ej2-icons` as dependency.
+- Resolved `OnPropertyChange` method is not triggered for complex and collection properties in angular 9. 
+
 ## 18.1.45 (2020-04-21)
 
 ### Common

@@ -8,7 +8,7 @@ import { EventEmitter } from '@angular/core';
 function applyMixins(derivedClass, baseClass) {
     baseClass.forEach(baseClass => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.prototype.constructor.name === 'FormBase') {
+            if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.isFormBase) {
                 derivedClass.prototype[name] = baseClass.prototype[name];
             }
         });
@@ -117,6 +117,7 @@ class ComplexBase {
     constructor() {
         this.hasChanges = false;
         this.propCollection = {};
+        this.dataSource = {};
         this.tags = [];
         this.tagObjects = [];
     }
@@ -239,6 +240,10 @@ class ArrayBase {
         if (this.list.length === this.children.length) {
             for (let i = 0; i < this.list.length; i++) {
                 if (this.list[i].propCollection.dataSource) {
+                    if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
+                        this.list[i].propCollection.dataSource = this.list[i].dataSource;
+                        this.list[i].hasChanges = true;
+                    }
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
                 }
@@ -668,6 +673,7 @@ class FormBase {
         }
     }
 }
+FormBase.isFormBase = true;
 
 let stringCompiler = getTemplateEngine();
 /**

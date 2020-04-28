@@ -8,6 +8,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public value: T;
     public checked: boolean;
     private skipFromEvent: boolean;
+    static readonly isFormBase = true;
 
     public propagateChange(_: T): void { return; }
     public propagateTouch(): void { return; }

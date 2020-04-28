@@ -204,12 +204,7 @@ let KanbanComponent = class KanbanComponent extends Kanban {
     ngAfterContentChecked() {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childStackedHeaders) {
-            this.tagObjects[1].instance = ((this.childStackedHeaders)).list[0].childColumns;
-            for (var /** @type {?} */ d = 0; d < ((this.childStackedHeaders)).list.length; d++) {
-                if (((this.childStackedHeaders)).list[d + 1]) {
-                    this.tagObjects[1].instance.list.push(((this.childStackedHeaders)).list[d + 1].childColumns.list[0]);
-                }
-            }
+            this.tagObjects[1].instance = /** @type {?} */ (this.childStackedHeaders);
         }
         this.context.ngAfterContentChecked(this);
     }

@@ -443,6 +443,7 @@ exports.textWrap = ej2Treemap.textWrap;
 exports.hide = ej2Treemap.hide;
 exports.orderByArea = ej2Treemap.orderByArea;
 exports.maintainSelection = ej2Treemap.maintainSelection;
+exports.legendMaintain = ej2Treemap.legendMaintain;
 exports.removeClassNames = ej2Treemap.removeClassNames;
 exports.applyOptions = ej2Treemap.applyOptions;
 exports.textFormatter = ej2Treemap.textFormatter;

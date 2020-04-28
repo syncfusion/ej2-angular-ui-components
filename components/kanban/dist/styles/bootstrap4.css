@@ -293,12 +293,6 @@
           user-select: none;
 }
 
-.e-kanban .e-icons:focus {
-  background: #5a6268;
-  border-radius: 100%;
-  color: #fff;
-}
-
 .e-kanban .e-kanban-table {
   border: 0;
   border-collapse: separate;
@@ -573,6 +567,7 @@
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
+  border: 1px solid transparent;
   color: #6c757d;
   cursor: pointer;
   height: 24px;
@@ -580,13 +575,15 @@
   padding: 6px;
 }
 
-.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:hover, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:hover,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:focus {
   background: #5a6268;
-  border-radius: 100%;
-  color: #fff;
+  border-radius: 4px;
   margin-left: 8px;
   padding: 6px;
+  border: 1px solid #4e555b;
+  color: #fff;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-text {
@@ -623,6 +620,7 @@
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells > .e-collapse-header-text,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-limits,
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-show-add-button,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
   display: none;
 }
@@ -819,17 +817,27 @@
 }
 
 /*! kanban component theme */
-.e-kanban .e-kanban-table .e-header-cells .e-header-text {
+.e-kanban {
+  background: #fff;
+}
+
+.e-kanban .e-kanban-table .e-header-cells .e-header-text,
+.e-kanban .e-kanban-table .e-header-cells .e-item-count {
   color: #212529;
 }
 
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand,
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
+.e-kanban .e-kanban-table .e-header-cells .e-column-expand,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse {
+  border: 1px solid transparent;
   color: #6c757d;
 }
 
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand:focus,
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse:focus {
+.e-kanban .e-kanban-table .e-header-cells .e-column-expand:hover, .e-kanban .e-kanban-table .e-header-cells .e-column-expand:focus,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse:hover,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse:focus {
+  background: #5a6268;
+  border-radius: 4px;
+  border: 1px solid #4e555b;
   color: #fff;
 }
 
@@ -837,7 +845,8 @@
   background-color: #f8f9fa;
 }
 
-.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text {
+.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text,
+.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
   color: #212529;
 }
 

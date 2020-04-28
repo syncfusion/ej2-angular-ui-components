@@ -61,12 +61,14 @@
   padding: 6px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
   min-height: 16px;
   min-width: 16px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
   padding: 8px 16px 8px 0;
 }
 
@@ -83,29 +85,39 @@
 
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus.e-small .e-clear-icon,
-.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
+.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
   margin: 0;
 }
 
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small.e-input-focus .e-input-filter {
   padding: 5px 5px 5px 12px;
 }
 
 .e-bigger.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger.e-small .e-clear-icon {
   min-height: 18px;
   min-width: 18px;
 }
 
 .e-bigger.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-bigger.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger.e-small .e-input-filter {
   padding: 8px 16px;
 }
@@ -204,12 +216,6 @@
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-.e-kanban .e-icons:focus {
-  background: #e0e0e0;
-  border-radius: 100%;
-  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-kanban .e-kanban-table {
@@ -486,6 +492,7 @@
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse {
+  border: 1px solid transparent;
   color: rgba(0, 0, 0, 0.54);
   cursor: pointer;
   height: 24px;
@@ -493,11 +500,11 @@
   padding: 6px;
 }
 
-.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:hover, .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-expand:focus,
+.e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:hover,
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells .e-swimlane-header .e-swimlane-row-collapse:focus {
   background: #e0e0e0;
   border-radius: 100%;
-  color: rgba(0, 0, 0, 0.87);
   margin-left: 8px;
   padding: 6px;
 }
@@ -536,6 +543,7 @@
 
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells > .e-collapse-header-text,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-limits,
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-show-add-button,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
   display: none;
 }
@@ -733,25 +741,34 @@
 }
 
 /*! kanban component theme */
-.e-kanban .e-kanban-table .e-header-cells .e-header-text {
+.e-kanban {
+  background: #fff;
+}
+
+.e-kanban .e-kanban-table .e-header-cells .e-header-text,
+.e-kanban .e-kanban-table .e-header-cells .e-item-count {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand,
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse {
+.e-kanban .e-kanban-table .e-header-cells .e-column-expand,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse {
+  border: 1px solid transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-expand:focus,
-.e-kanban .e-kanban-table .e-header-cells.e-toggle-header .e-column-collapse:focus {
-  color: rgba(0, 0, 0, 0.87);
+.e-kanban .e-kanban-table .e-header-cells .e-column-expand:hover, .e-kanban .e-kanban-table .e-header-cells .e-column-expand:focus,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse:hover,
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse:focus {
+  background: #e0e0e0;
+  border-radius: 100%;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
   background-color: #f5f5f5;
 }
 
-.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text {
+.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text,
+.e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
   color: rgba(0, 0, 0, 0.87);
 }
 

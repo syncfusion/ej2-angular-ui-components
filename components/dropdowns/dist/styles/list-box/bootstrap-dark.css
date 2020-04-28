@@ -69,8 +69,17 @@
   position: relative;
 }
 
+.e-listbox-wrapper.e-filter-list {
+  overflow: inherit;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  overflow: auto;
+}
+
 .e-listbox-wrapper .e-list-parent {
   height: 100%;
+  min-height: 40px;
 }
 
 .e-listbox-wrapper .e-list-item {
@@ -393,6 +402,11 @@ ejs-listbox {
   position: relative;
 }
 
+.e-bigger .e-listbox-wrapper .e-list-parent,
+.e-listbox-wrapper.e-bigger .e-list-parent {
+  min-height: 48px;
+}
+
 .e-bigger .e-listbox-wrapper .e-text-content,
 .e-listbox-wrapper.e-bigger .e-text-content {
   font-size: 15px;
@@ -429,6 +443,18 @@ ejs-listbox {
   font-size: 15px;
 }
 
+.e-small .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 46px);
+}
+
+.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 58px);
+}
+
+.e-small.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 54px);
+}
+
 .e-listbox-wrapper {
   border: 1px solid #484848;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
@@ -440,6 +466,10 @@ ejs-listbox {
   border-color: #414141;
   color: rgba(255, 255, 255, 0.95);
   font-size: 14px;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 52px);
 }
 
 .e-listbox-wrapper .e-icons {

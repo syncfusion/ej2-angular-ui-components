@@ -23,6 +23,7 @@ export class ComplexBase<T> {
     public hasChanges?: boolean = false;
     public index?: number;
     public propCollection?: { [key: string]: Object } = {};
+    public dataSource?: { [key: string]: Object } = {};
     public property?: string;
     public tags?: string[] = [];
     private tagObjects?: { name: string, instance: Tag }[] = [];
@@ -169,6 +170,10 @@ export class ArrayBase<T> {
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
                 if (this.list[i].propCollection.dataSource) {
+                    if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
+                        this.list[i].propCollection.dataSource = this.list[i].dataSource;
+                        this.list[i].hasChanges = true;
+                    }
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
                 } else {

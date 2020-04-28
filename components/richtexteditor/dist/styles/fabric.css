@@ -2207,6 +2207,10 @@
   border-top: 1px solid #dadada;
 }
 
+.e-richtexteditor.e-rte-tb-expand .e-toolbar-extended.e-popup-open {
+  border-bottom: 1px solid #dadada;
+}
+
 .e-richtexteditor.e-rte-tb-expand.e-rte-resize .e-rte-content,
 .e-richtexteditor.e-rte-tb-expand.e-rte-resize .e-source-content {
   border-bottom: 0;

@@ -81,12 +81,7 @@ export class KanbanComponent extends Kanban implements IComponentBase {
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childColumns;
         if (this.childStackedHeaders) {
-                    this.tagObjects[1].instance = (this.childStackedHeaders as any).list[0].childColumns;
-                    for (var d = 0; d < (this.childStackedHeaders as any).list.length; d++) {
-                        if ((this.childStackedHeaders as any).list[d + 1]) {
-                            this.tagObjects[1].instance.list.push((this.childStackedHeaders as any).list[d+1].childColumns.list[0]);
-                        }
-                    }
+                    this.tagObjects[1].instance = this.childStackedHeaders as any;
                 }
         this.context.ngAfterContentChecked(this);
     }
