@@ -45,6 +45,10 @@
   width: auto;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-popup .e-filter-parent {
   border-left-width: 0;
   border-right-width: 0;

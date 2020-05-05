@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -53,6 +53,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default 10
      */
     public bridgeSpace: any;
+    /** 
+     * Sets the connector padding value
+     * @default 0
+     */
+    public connectPadding: any;
     /** 
      * Defines the constraints of connector 
      * * None - Interaction of the connectors cannot be done. 

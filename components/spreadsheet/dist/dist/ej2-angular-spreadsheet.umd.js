@@ -1084,6 +1084,7 @@ exports.hiddenMerge = ej2Spreadsheet.hiddenMerge;
 exports.checkPrevMerge = ej2Spreadsheet.checkPrevMerge;
 exports.checkMerge = ej2Spreadsheet.checkMerge;
 exports.removeDataValidation = ej2Spreadsheet.removeDataValidation;
+exports.blankWorkbook = ej2Spreadsheet.blankWorkbook;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;

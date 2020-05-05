@@ -797,6 +797,10 @@
   margin-top: 2px;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-bigger .e-popup.e-ddl-device-filter .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   border-color: #e0e0e0;
 }

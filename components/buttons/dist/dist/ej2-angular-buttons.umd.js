@@ -677,7 +677,7 @@ SwitchAllModule.decorators = [
  * @nocollapse
  */
 SwitchAllModule.ctorParameters = function () { return []; };
-var input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss', 'value'];
+var input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'leadingIconUrl', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
 var outputs$4 = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -755,7 +755,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$4 = ['avatarIconCss', 'avatarText', 'chips', 'cssClass', 'enableDelete', 'enablePersistence', 'enableRtl', 'enabled', 'leadingIconCss', 'locale', 'selectedChips', 'selection', 'text', 'trailingIconCss'];
+var inputs$4 = ['avatarIconCss', 'avatarText', 'chips', 'cssClass', 'enableDelete', 'enablePersistence', 'enableRtl', 'enabled', 'leadingIconCss', 'leadingIconUrl', 'locale', 'selectedChips', 'selection', 'text', 'trailingIconCss', 'trailingIconUrl'];
 var outputs$5 = ['beforeClick', 'click', 'created', 'delete'];
 var twoWays$4 = [''];
 /**

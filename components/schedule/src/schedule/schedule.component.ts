@@ -230,14 +230,13 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childViews;
-        var isTempNo
+        
 	    if (this.childResources) {
             this.tagObjects[1].instance = this.childResources;
-            isTempNo = true;
         }
-        if (this.childHeaderRows) {
-            var n = isTempNo ? 2 : 1;
-            this.tagObjects[n].instance = this.childHeaderRows;
+        
+	    if (this.childHeaderRows) {
+            this.tagObjects[2].instance = this.childHeaderRows;
         }
         this.context.ngAfterContentChecked(this);
     }

@@ -392,6 +392,10 @@
   margin-top: 2px;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-bigger .e-popup.e-ddl-device-filter .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   border-color: #e0e0e0;
 }
@@ -1201,9 +1205,9 @@ ejs-dropdownlist {
 
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 38px;
-  margin-top: -19px;
+  margin-top: -38px;
   right: 18px;
-  top: 50%;
+  top: 100%;
   width: 16px;
 }
 
@@ -1216,9 +1220,9 @@ ejs-dropdownlist {
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 38px;
-  margin-top: -19px;
+  margin-top: -55px;
   right: 12px;
-  top: 50%;
+  top: 100%;
   width: 18px;
 }
 
@@ -1232,9 +1236,9 @@ ejs-dropdownlist {
 .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 54px;
-  margin-top: -27px;
+  margin-top: -55px;
   right: 16px;
-  top: 50%;
+  top: 100%;
   width: 20px;
 }
 
@@ -1246,9 +1250,9 @@ ejs-dropdownlist {
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 34px;
-  margin-top: -17px;
+  margin-top: -35px;
   right: 16px;
-  top: 50%;
+  top: 100%;
   width: 14px;
 }
 

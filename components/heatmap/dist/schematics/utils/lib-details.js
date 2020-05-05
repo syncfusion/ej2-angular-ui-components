@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-heatmap';
-exports.pkgVer = '^18.1.42';
+exports.pkgVer = '^18.1.45';
 exports.moduleName = 'HeatMapModule';
-exports.themeVer = '~18.1.42';
+exports.themeVer = '~18.1.45';

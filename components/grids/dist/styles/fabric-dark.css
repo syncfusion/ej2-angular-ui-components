@@ -781,6 +781,10 @@
   margin-top: 0;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-bigger .e-ddl.e-popup .e-list-item,
 .e-bigger .e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-ddl.e-popup .e-fixed-head {

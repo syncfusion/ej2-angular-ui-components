@@ -460,14 +460,11 @@ exports.ScheduleComponent = /** @class */ (function (_super) {
      */
     ScheduleComponent.prototype.ngAfterContentChecked = function () {
         this.tagObjects[0].instance = this.childViews;
-        var /** @type {?} */ isTempNo;
         if (this.childResources) {
             this.tagObjects[1].instance = this.childResources;
-            isTempNo = true;
         }
         if (this.childHeaderRows) {
-            var /** @type {?} */ n = isTempNo ? 2 : 1;
-            this.tagObjects[n].instance = this.childHeaderRows;
+            this.tagObjects[2].instance = this.childHeaderRows;
         }
         this.context.ngAfterContentChecked(this);
     };
