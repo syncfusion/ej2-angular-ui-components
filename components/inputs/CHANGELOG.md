@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 18.1.48 (2020-05-05)
+## 18.1.52 (2020-05-13)
 
-### MaskedTextBox
+### Uploader
 
 #### Bug Fixes
 
-- Issue with "character missing in the masked textbox while pasting the value" has been resolved.
+- Now, selected files persist properly when enabling enablePersistence property.
+
+#### New Features
+
+- `#F150695` - Now, you can customize the drag operation effect using dropEffect property.
 
 ## 18.1.44 (2020-04-14)
 
@@ -1040,6 +1044,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.1.45 (2020-04-21)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- Issue with "character missing in the masked textbox while pasting the value" has been resolved.
 
 ## 17.4.50 (2020-02-18)
 

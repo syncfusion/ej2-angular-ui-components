@@ -23,6 +23,10 @@
   margin-top: 0;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-bigger .e-ddl.e-popup .e-list-item,
 .e-bigger .e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-ddl.e-popup .e-fixed-head {
@@ -198,6 +202,14 @@
 
 .e-gantt .e-pdfexport::before {
   content: '\e240';
+}
+
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
 }
 
 .e-gantt .e-add-above::before {

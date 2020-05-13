@@ -4,7 +4,7 @@ import { CircularGauge } from '@syncfusion/ej2-circulargauge';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { AxesDirective } from './axes.directive';
 
-export const inputs: string[] = ['axes','background','border','centerX','centerY','description','enablePersistence','enablePointerDrag','enableRangeDrag','enableRtl','height','legendSettings','locale','margin','moveToCenter','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','axes','background','border','centerX','centerY','description','enablePersistence','enablePointerDrag','enableRangeDrag','enableRtl','height','legendSettings','locale','margin','moveToCenter','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
 export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','beforePrint','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','legendRender','load','loaded','radiusCalculate','resized','tooltipRender'];
 export const twoWays: string[] = [''];
 
@@ -53,6 +53,24 @@ export class CircularGaugeComponent extends CircularGauge implements IComponentB
             } catch { }
         try {
                 let mod = this.injector.get('CircularGaugeLegend');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CircularGaugePrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CircularGaugePdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CircularGaugeImageExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

@@ -5,7 +5,7 @@ import { Uploader } from '@syncfusion/ej2-inputs';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { FilesDirective } from './files.directive';
 
-export const inputs: string[] = ['allowedExtensions','asyncSettings','autoUpload','buttons','cssClass','directoryUpload','dropArea','enablePersistence','enableRtl','enabled','files','htmlAttributes','locale','maxFileSize','minFileSize','multiple','sequentialUpload','showFileList','template'];
+export const inputs: string[] = ['allowedExtensions','asyncSettings','autoUpload','buttons','cssClass','directoryUpload','dropArea','dropEffect','enablePersistence','enableRtl','enabled','files','htmlAttributes','locale','maxFileSize','minFileSize','multiple','sequentialUpload','showFileList','template'];
 export const outputs: string[] = ['focus', 'blur', 'actionComplete','beforeRemove','beforeUpload','canceling','change','chunkFailure','chunkSuccess','chunkUploading','clearing','created','failure','fileListRendering','pausing','progress','removing','rendering','resuming','selected','success','uploading'];
 export const twoWays: string[] = [];
 

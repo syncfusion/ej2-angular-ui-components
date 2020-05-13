@@ -2486,6 +2486,7 @@ ejs-multiselect {
 }
 
 .e-listbox-wrapper:not(.e-list-template) .e-list-item,
+.e-listbox-wrapper .e-list-nrt,
 .e-listbox-wrapper .e-selectall-parent {
   height: 36px;
   line-height: 36px;

@@ -410,7 +410,7 @@
 .e-pager .e-mprev,
 .e-pager .e-mnext,
 .e-pager .e-mlast {
-  -webkit-tap-highlight-color: #ffd939;
+  -webkit-tap-highlight-color: #000;
 }
 
 .e-pager .e-pp,
@@ -635,7 +635,7 @@
 
 /*! Pager theme */
 .e-pager {
-  background-color: #ffd939;
+  background-color: #000;
   border-color: #969696;
   color: #fff;
   opacity: 1;
@@ -683,7 +683,7 @@
 }
 
 .e-pager .e-numericitem {
-  background: #ffd939;
+  background: #000;
   border-right-color: #969696;
   color: #fff;
 }
@@ -696,7 +696,7 @@
 .e-pager .e-lastpage,
 .e-pager .e-firstpage,
 .e-pager .e-firstpagedisabled {
-  background-color: #ffd939;
+  background-color: #000;
   color: #fff;
 }
 
@@ -706,7 +706,7 @@
 }
 
 .e-pager .e-pagercontainer {
-  background-color: #ffd939;
+  background-color: #000;
   border-color: #969696;
 }
 
@@ -730,7 +730,7 @@
 
 @media (max-width: 590px) {
   .e-pager .e-pager-default:hover {
-    background: #ffd939;
+    background: #000;
     color: #fff;
     opacity: 1;
   }
@@ -3683,7 +3683,9 @@
 }
 
 .e-grid.e-rtl .e-frozenheader > .e-table,
-.e-grid.e-rtl .e-frozencontent > .e-table {
+.e-grid.e-rtl .e-frozencontent > .e-table,
+.e-grid.e-rtl .e-frozenheader .e-virtualtable > .e-table,
+.e-grid.e-rtl .e-frozencontent .e-virtualtable > .e-table {
   border-left: 1px solid;
   border-right: 0;
 }
@@ -4498,7 +4500,9 @@
 }
 
 .e-grid.e-rtl .e-frozenheader > .e-table,
-.e-grid.e-rtl .e-frozencontent > .e-table {
+.e-grid.e-rtl .e-frozencontent > .e-table,
+.e-grid.e-rtl .e-frozenheader .e-virtualtable > .e-table,
+.e-grid.e-rtl .e-frozencontent .e-virtualtable > .e-table {
   border-left-color: #ffd939;
 }
 

@@ -289,7 +289,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
@@ -329,6 +329,27 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_b) { }
+        try {
+            var mod = _this.injector.get('LinearGaugePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_c) { }
+        try {
+            var mod = _this.injector.get('LinearGaugePdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_d) { }
+        try {
+            var mod = _this.injector.get('LinearGaugeImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_e) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -442,6 +463,9 @@ LinearGaugeModule.decorators = [
 LinearGaugeModule.ctorParameters = function () { return []; };
 var GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: ej2Lineargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: ej2Lineargauge.Annotations };
+var PrintService = { provide: 'LinearGaugePrint', useValue: ej2Lineargauge.Print };
+var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: ej2Lineargauge.PdfExport };
+var ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ej2Lineargauge.ImageExport };
 /**
  * NgModule definition for the LinearGauge component with providers.
  */
@@ -458,7 +482,10 @@ LinearGaugeAllModule.decorators = [
                 ],
                 providers: [
                     GaugeTooltipService,
-                    AnnotationsService
+                    AnnotationsService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -479,6 +506,9 @@ exports.LinearGaugeModule = LinearGaugeModule;
 exports.LinearGaugeAllModule = LinearGaugeAllModule;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.LinearGauge = ej2Lineargauge.LinearGauge;
@@ -510,6 +540,7 @@ exports.formatValue = ej2Lineargauge.formatValue;
 exports.getLabelFormat = ej2Lineargauge.getLabelFormat;
 exports.getTemplateFunction = ej2Lineargauge.getTemplateFunction;
 exports.getElementOffset = ej2Lineargauge.getElementOffset;
+exports.triggerDownload = ej2Lineargauge.triggerDownload;
 exports.VisibleRange = ej2Lineargauge.VisibleRange;
 exports.GaugeLocation = ej2Lineargauge.GaugeLocation;
 exports.Size = ej2Lineargauge.Size;
@@ -531,6 +562,9 @@ exports.calculateShapes = ej2Lineargauge.calculateShapes;
 exports.getBox = ej2Lineargauge.getBox;
 exports.Annotations = ej2Lineargauge.Annotations;
 exports.GaugeTooltip = ej2Lineargauge.GaugeTooltip;
+exports.Print = ej2Lineargauge.Print;
+exports.ImageExport = ej2Lineargauge.ImageExport;
+exports.PdfExport = ej2Lineargauge.PdfExport;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

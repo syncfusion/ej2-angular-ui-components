@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { AxesDirective } from './axes.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','container','description','enablePersistence','enableRtl','format','height','locale','margin','orientation','rangePalettes','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','annotations','axes','background','border','container','description','enablePersistence','enableRtl','format','height','locale','margin','orientation','rangePalettes','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
 export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','beforePrint','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender','valueChange'];
 export const twoWays: string[] = [''];
 
@@ -50,6 +50,24 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
             } catch { }
         try {
                 let mod = this.injector.get('LinearGaugeAnnotations');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugePrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugePdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeImageExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

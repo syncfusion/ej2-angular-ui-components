@@ -226,6 +226,14 @@
   content: '\e659';
 }
 
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
+}
+
 .e-gantt .e-csvexport::before {
   content: '\e241';
 }

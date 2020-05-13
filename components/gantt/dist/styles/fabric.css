@@ -14,6 +14,10 @@
   width: auto;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-popup .e-filter-parent {
   border-left-width: 0;
   border-right-width: 0;
@@ -200,6 +204,14 @@
 
 .e-gantt .e-pdfexport::before {
   content: '\e240';
+}
+
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
 }
 
 .e-gantt .e-add-below::before {

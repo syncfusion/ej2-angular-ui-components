@@ -2553,7 +2553,9 @@
 }
 
 .e-grid.e-rtl .e-frozenheader > .e-table,
-.e-grid.e-rtl .e-frozencontent > .e-table {
+.e-grid.e-rtl .e-frozencontent > .e-table,
+.e-grid.e-rtl .e-frozenheader .e-virtualtable > .e-table,
+.e-grid.e-rtl .e-frozencontent .e-virtualtable > .e-table {
   border-left: 1px solid;
   border-right: 0;
 }
@@ -3368,7 +3370,9 @@
 }
 
 .e-grid.e-rtl .e-frozenheader > .e-table,
-.e-grid.e-rtl .e-frozencontent > .e-table {
+.e-grid.e-rtl .e-frozencontent > .e-table,
+.e-grid.e-rtl .e-frozenheader .e-virtualtable > .e-table,
+.e-grid.e-rtl .e-frozencontent .e-virtualtable > .e-table {
   border-left-color: #0078d6;
 }
 

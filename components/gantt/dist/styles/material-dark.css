@@ -4,6 +4,10 @@
   transition: transform 300ms ease;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-control-wrapper.e-icon-anim .e-ddl-icon::before {
   transform: rotate(180deg);
   transition: transform 300ms ease;
@@ -235,6 +239,14 @@
 
 .e-gantt .e-pdfexport::before {
   content: '\e240';
+}
+
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
 }
 
 .e-gantt .e-add-above::before {

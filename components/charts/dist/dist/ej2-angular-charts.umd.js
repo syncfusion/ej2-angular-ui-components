@@ -425,7 +425,7 @@ MultiLevelLabelsDirective.decorators = [
  * @nocollapse
  */
 MultiLevelLabelsDirective.ctorParameters = function () { return []; };
-var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
+var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableScrollbarOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 var outputs$6 = [];
 /**
  * Axis Directive
@@ -4039,6 +4039,7 @@ exports.MinorTickLines = ej2Charts.MinorTickLines;
 exports.CrosshairTooltip = ej2Charts.CrosshairTooltip;
 exports.Axis = ej2Charts.Axis;
 exports.VisibleLabels = ej2Charts.VisibleLabels;
+exports.Double = ej2Charts.Double;
 exports.DateTime = ej2Charts.DateTime;
 exports.Category = ej2Charts.Category;
 exports.Logarithmic = ej2Charts.Logarithmic;
@@ -4322,7 +4323,6 @@ exports.RangeNavigatorSeries = ej2Charts.RangeNavigatorSeries;
 exports.ThumbSettings = ej2Charts.ThumbSettings;
 exports.StyleSettings = ej2Charts.StyleSettings;
 exports.RangeTooltipSettings = ej2Charts.RangeTooltipSettings;
-exports.Double = ej2Charts.Double;
 exports.RangeTooltip = ej2Charts.RangeTooltip;
 exports.BulletChart = ej2Charts.BulletChart;
 exports.Range = ej2Charts.Range;

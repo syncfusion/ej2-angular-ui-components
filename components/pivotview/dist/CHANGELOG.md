@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.1.52 (2020-05-13)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#272044` - Now the localization string of the `null` value isn’t cleared on component refresh.
+- `#273266` - The custom number format `#,###;(#,###)` now works in negative numbers.
+
 ## 18.1.44 (2020-04-14)
 
 ### Pivot Table

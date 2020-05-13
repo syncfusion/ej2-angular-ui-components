@@ -148,6 +148,27 @@ export class ComponentBase<T> {
         if (regExp.test(tempAfterViewThis.ngEle.nativeElement.outerHTML)) {
             tempAfterViewThis.ngEle.nativeElement.style.visibility = 'hidden';
         }
+
+        /**
+         * Root level template properties are not getting rendered,
+         * Due to ngonchanges not get triggered.
+         * so that we have set template value for root level template properties,
+         * for example: refer below syntax
+         * ```html
+         * <ejs-grid> 
+         * <e-column></e-column> 
+         * <ng-template #editSettingsTemplate></ng-template>
+         * </ejs-grid>
+         * ```
+         */
+        let templateProperties: string[] = Object.keys(tempAfterViewThis);
+        templateProperties = templateProperties.filter((val: string): boolean => {
+            return /Ref$/i.test(val);
+        });
+        for (let tempName of templateProperties) {
+            let propName: string = tempName.replace('Ref', '');
+            setValue(propName.replace('_', '.'), getValue(propName + 'Ref', tempAfterViewThis), tempAfterViewThis);
+        }
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(() => {

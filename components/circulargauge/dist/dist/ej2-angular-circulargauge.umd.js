@@ -290,7 +290,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRangeDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRangeDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
 var twoWays = [''];
 /**
@@ -337,6 +337,27 @@ exports.CircularGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_c) { }
+        try {
+            var mod = _this.injector.get('CircularGaugePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_d) { }
+        try {
+            var mod = _this.injector.get('CircularGaugePdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_e) { }
+        try {
+            var mod = _this.injector.get('CircularGaugeImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -447,6 +468,9 @@ CircularGaugeModule.ctorParameters = function () { return []; };
 var GaugeTooltipService = { provide: 'CircularGaugeGaugeTooltip', useValue: ej2Circulargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'CircularGaugeAnnotations', useValue: ej2Circulargauge.Annotations };
 var LegendService = { provide: 'CircularGaugeLegend', useValue: ej2Circulargauge.Legend };
+var PrintService = { provide: 'CircularGaugePrint', useValue: ej2Circulargauge.Print };
+var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: ej2Circulargauge.PdfExport };
+var ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ej2Circulargauge.ImageExport };
 /**
  * NgModule definition for the CircularGauge component with providers.
  */
@@ -464,7 +488,10 @@ CircularGaugeAllModule.decorators = [
                 providers: [
                     GaugeTooltipService,
                     AnnotationsService,
-                    LegendService
+                    LegendService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -486,6 +513,9 @@ exports.CircularGaugeAllModule = CircularGaugeAllModule;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
 exports.LegendService = LegendService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.CircularGauge = ej2Circulargauge.CircularGauge;
@@ -550,11 +580,15 @@ exports.textTrim = ej2Circulargauge.textTrim;
 exports.showTooltip = ej2Circulargauge.showTooltip;
 exports.TextOption = ej2Circulargauge.TextOption;
 exports.VisibleLabels = ej2Circulargauge.VisibleLabels;
+exports.triggerDownload = ej2Circulargauge.triggerDownload;
 exports.Location = ej2Circulargauge.Location;
 exports.LegendSettings = ej2Circulargauge.LegendSettings;
 exports.Legend = ej2Circulargauge.Legend;
 exports.Index = ej2Circulargauge.Index;
 exports.LegendOptions = ej2Circulargauge.LegendOptions;
+exports.ImageExport = ej2Circulargauge.ImageExport;
+exports.PdfExport = ej2Circulargauge.PdfExport;
+exports.Print = ej2Circulargauge.Print;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

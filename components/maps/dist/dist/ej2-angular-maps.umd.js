@@ -580,7 +580,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'tooltipDisplayMode', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'tooltipDisplayMode', 'useGroupingSeparator', 'width', 'zoomSettings'];
 var outputs$7 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'legendRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'tooltipRenderComplete', 'zoom', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
@@ -676,6 +676,27 @@ exports.MapsComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
+        try {
+            var mod = _this.injector.get('MapsPrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
+        try {
+            var mod = _this.injector.get('MapsPdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_m) { }
+        try {
+            var mod = _this.injector.get('MapsImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_o) { }
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -802,6 +823,9 @@ var ZoomService = { provide: 'MapsZoom', useValue: ej2Maps.Zoom };
 var DataLabelService = { provide: 'MapsDataLabel', useValue: ej2Maps.DataLabel };
 var NavigationLineService = { provide: 'MapsNavigationLine', useValue: ej2Maps.NavigationLine };
 var AnnotationsService = { provide: 'MapsAnnotations', useValue: ej2Maps.Annotations };
+var PrintService = { provide: 'MapsPrint', useValue: ej2Maps.Print };
+var PdfExportService = { provide: 'MapsPdfExport', useValue: ej2Maps.PdfExport };
+var ImageExportService = { provide: 'MapsImageExport', useValue: ej2Maps.ImageExport };
 /**
  * NgModule definition for the Maps component with providers.
  */
@@ -826,7 +850,10 @@ MapsAllModule.decorators = [
                     ZoomService,
                     DataLabelService,
                     NavigationLineService,
-                    AnnotationsService
+                    AnnotationsService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -861,6 +888,9 @@ exports.ZoomService = ZoomService;
 exports.DataLabelService = DataLabelService;
 exports.NavigationLineService = NavigationLineService;
 exports.AnnotationsService = AnnotationsService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$7;
 exports.Maps = ej2Maps.Maps;
@@ -942,6 +972,7 @@ exports.roundTo = ej2Maps.roundTo;
 exports.sinci = ej2Maps.sinci;
 exports.acos = ej2Maps.acos;
 exports.calculateBound = ej2Maps.calculateBound;
+exports.triggerDownload = ej2Maps.triggerDownload;
 exports.Point = ej2Maps.Point;
 exports.MinMax = ej2Maps.MinMax;
 exports.GeoLocation = ej2Maps.GeoLocation;
@@ -1052,6 +1083,9 @@ exports.Selection = ej2Maps.Selection;
 exports.MapsTooltip = ej2Maps.MapsTooltip;
 exports.Zoom = ej2Maps.Zoom;
 exports.Annotations = ej2Maps.Annotations;
+exports.Print = ej2Maps.Print;
+exports.ImageExport = ej2Maps.ImageExport;
+exports.PdfExport = ej2Maps.PdfExport;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

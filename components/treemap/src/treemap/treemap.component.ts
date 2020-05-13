@@ -4,7 +4,7 @@ import { TreeMap } from '@syncfusion/ej2-treemap';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { LevelsDirective } from './levels.directive';
 
-export const inputs: string[] = ['background','border','breadcrumbConnector','colorValuePath','dataSource','description','drillDownView','enableBreadcrumb','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','renderDirection','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
+export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','background','border','breadcrumbConnector','colorValuePath','dataSource','description','drillDownView','enableBreadcrumb','enableDrillDown','enablePersistence','enableRtl','equalColorValuePath','format','height','highlightSettings','initialDrillDown','layoutType','leafItemSettings','legendSettings','levels','locale','margin','palette','query','rangeColorValuePath','renderDirection','selectionSettings','tabIndex','theme','titleSettings','tooltipSettings','useGroupingSeparator','weightValuePath','width'];
 export const outputs: string[] = ['beforePrint','click','doubleClick','drillEnd','drillStart','itemClick','itemHighlight','itemMove','itemRendering','itemSelected','legendItemRendering','legendRendering','load','loaded','mouseMove','resize','rightClick','tooltipRendering'];
 export const twoWays: string[] = [''];
 
@@ -62,6 +62,24 @@ export class TreeMapComponent extends TreeMap implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('TreeMapTreeMapSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapPrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapPdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapImageExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

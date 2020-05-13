@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 18.1.52 (2020-05-13)
+
+### Common
+
+#### Bug Fixes
+
+- `I274826` - Resolved `RxJS` is loaded twice from the `ej2-angular-base` issue.
+
+## 18.1.48 (2020-05-05)
+
+### Common
+
+#### Bug Fixes
+
+- `F152141,I269788,F152451` - Resolved root level template properties are not working issue.
+
 ## 18.1.46 (2020-04-28)
 
 ### Common

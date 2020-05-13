@@ -42,15 +42,15 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     public valueChange: any;
     /** 
      * Specifies the template that renders a customized footer container at the bottom of the pop-up list. 
-     * By default the footerTemplate will be null and there will no footer container for the pop-up list.
+     * By default, the footerTemplate will be null and there will be no footer container for the pop-up list.
      * @default null
      */
     @ContentChild('footerTemplate')
     @Template()
     public footerTemplate: any;
     /** 
-     * Specifies the template that renders a customized header container in the top of the pop-up list. 
-     * By default the headerTemplate will be null and there will no header container for the pop-up list.
+     * Specifies the template that renders a customized header container at the top of the pop-up list. 
+     * By default, the headerTemplate will be null and there will be no header container for the pop-up list.
      * @default null
      */
     @ContentChild('headerTemplate')
@@ -58,7 +58,7 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     public headerTemplate: any;
     /** 
      * Specifies a template to render customized content for all the items. 
-     * If the itemTemplate property is set, the template content overrides the displayed item text. 
+     * If the **itemTemplate** property is set, the template content overrides the displayed item text. 
      * The property accepts [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
      * or HTML element ID holding the content.
      * @default null

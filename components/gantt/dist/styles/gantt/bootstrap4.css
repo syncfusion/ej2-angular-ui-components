@@ -455,6 +455,14 @@
   content: '\e727';
 }
 
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
+}
+
 .e-gantt .e-add-above::before {
   content: '\e658';
 }

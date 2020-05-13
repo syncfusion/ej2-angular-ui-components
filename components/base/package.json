@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "18.1.46",
+	"version": "18.1.48",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -26,10 +26,11 @@
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-icons": "*",
-		"zone.js": "^0.7.2",
+		"zone.js": "^0.10.2",
 		"core-js": "^3.4.8",
 		"reflect-metadata": "^0.1.9",
-		"rxjs": "^5.0.0"
+		"rxjs": "^6.5.4",
+		"rxjs-compat": "^6.5.4"
 	},
 	"devDependencies": {
 		"@angular/common": "2.2.1 - 4.10.0",

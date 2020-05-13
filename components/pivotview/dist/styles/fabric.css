@@ -9621,7 +9621,6 @@
 
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-ok-button {
   bottom: 0;
-  position: -webkit-sticky;
   position: sticky;
 }
 
