@@ -445,15 +445,15 @@ ejs-listbox {
 }
 
 .e-small .e-listbox-wrapper.e-filter-list .e-list-parent {
-  height: calc(100% - 39px);
+  height: calc(100% - 45px);
 }
 
 .e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
-  height: calc(100% - 50px);
+  height: calc(100% - 55px);
 }
 
 .e-small.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
-  height: calc(100% - 41px);
+  height: calc(100% - 45px);
 }
 
 .e-listbox-wrapper {
@@ -470,7 +470,7 @@ ejs-listbox {
 }
 
 .e-listbox-wrapper.e-filter-list .e-list-parent {
-  height: calc(100% - 43px);
+  height: calc(100% - 47px);
 }
 
 .e-listbox-wrapper .e-icons {

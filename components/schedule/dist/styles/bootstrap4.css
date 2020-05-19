@@ -1311,7 +1311,7 @@
 .e-schedule .e-month-view .e-header-cells {
   cursor: default;
   font-weight: 400;
-  height: 30px;
+  height: 35px;
   padding: 3px;
   padding: 8px;
 }
@@ -1711,7 +1711,7 @@
 .e-schedule .e-timeline-year-view .e-header-cells {
   cursor: default;
   font-weight: 400;
-  height: 30px;
+  height: 35px;
   padding: 0;
   text-align: center;
   padding: 8px;
@@ -2279,7 +2279,7 @@
 .e-schedule .e-month-agenda-view .e-header-cells {
   cursor: default;
   font-weight: 400;
-  height: 30px;
+  height: 35px;
   padding: 5px;
   text-align: center;
 }

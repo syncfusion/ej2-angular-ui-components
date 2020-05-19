@@ -5,7 +5,7 @@ import { Slider } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['colorRange','cssClass','customValues','enableAnimation','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','limits','locale','max','min','orientation','readonly','showButtons','step','ticks','tooltip','type','value'];
+export const inputs: string[] = ['colorRange','cssClass','customValues','enableAnimation','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','limits','locale','max','min','orientation','readonly','showButtons','step','ticks','tooltip','type','value','width'];
 export const outputs: string[] = ['focus', 'blur', 'change','changed','created','renderedTicks','renderingTicks','tooltipChange','valueChange'];
 export const twoWays: string[] = ['value'];
 

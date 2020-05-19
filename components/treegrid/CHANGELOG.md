@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.53 (2020-05-19)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#275113` - Destroying the Tree Grid component in **ngOnDestroy** method works fine.
+
 ## 18.1.52 (2020-05-13)
 
 ### TreeGrid

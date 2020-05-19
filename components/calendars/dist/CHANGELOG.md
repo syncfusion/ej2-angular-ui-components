@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.1.53 (2020-05-19)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#275716`- Issue with "script error occurs when disable the clear icon dynamically" has been resolved.
+
 ## 18.1.43 (2020-04-07)
 
 ### TimePicker

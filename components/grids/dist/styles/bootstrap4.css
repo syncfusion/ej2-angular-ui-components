@@ -2603,13 +2603,12 @@
   width: auto;
 }
 
-.e-grid .e-frozenheader table tr td.e-rowcell {
+.e-grid .e-frozenheader table .e-insertedrow td.e-rowcell,
+.e-grid .e-frozencontent table .e-insertedrow td.e-rowcell,
+.e-grid .e-row.e-emptyrow {
   height: 35px;
 }
 
-.e-grid .e-frozencontent table tr td:first-child:empty,
-.e-grid .e-movablecontent table tr td:first-child:empty,
-.e-grid .e-frozenhdrcont table tr td:first-child:empty,
 .e-grid:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty,
 .e-grid:not(.e-grid-min-height) .e-gridcontent tr.e-row .e-rowcell:empty {
   height: 35px;
@@ -2798,14 +2797,14 @@
 .e-grid .e-sortfilterdiv {
   float: right;
   height: 16px;
-  margin: -27px -4px;
+  margin: -28px -10px;
   padding: 15px 0;
   width: 16px;
 }
 
 .e-grid .e-gridheader .e-rightalign .e-sortfilterdiv {
   float: left;
-  margin: -27px -2px;
+  margin: -28px -9px;
 }
 
 .e-grid .e-gridheader .e-sortfilter .e-rightalign .e-headercelldiv,
@@ -2882,22 +2881,22 @@
   font-size: 9px;
   height: 15px;
   line-height: 16px;
-  margin: 2px 17px 0 2px;
+  margin: 2px 8px 0 8px;
   text-align: center;
   width: 15px;
 }
 
 .e-grid .e-gridheader .e-rightalign .e-sortnumber {
   float: left;
-  margin: 2px 0 0 18px;
+  margin: 2px 8px 0 8px;
 }
 
 .e-grid .e-gridheader .e-fltr-icon .e-sortfilterdiv {
-  margin: -28px 16px -29px 0;
+  margin: -28px 10px -29px 0;
 }
 
 .e-grid .e-gridheader .e-rightalign.e-fltr-icon .e-sortfilterdiv {
-  margin: -28px -11px -5px 3px;
+  margin: -28px -11px -5px -5px;
 }
 
 .e-grid.e-wrap .e-gridheader .e-rightalign .e-sortnumber {

@@ -2525,13 +2525,12 @@
   width: auto;
 }
 
-.e-grid .e-frozenheader table tr td.e-rowcell {
+.e-grid .e-frozenheader table .e-insertedrow td.e-rowcell,
+.e-grid .e-frozencontent table .e-insertedrow td.e-rowcell,
+.e-grid .e-row.e-emptyrow {
   height: 35px;
 }
 
-.e-grid .e-frozencontent table tr td:first-child:empty,
-.e-grid .e-movablecontent table tr td:first-child:empty,
-.e-grid .e-frozenhdrcont table tr td:first-child:empty,
 .e-grid:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty,
 .e-grid:not(.e-grid-min-height) .e-gridcontent tr.e-row .e-rowcell:empty {
   height: 35px;
