@@ -67,6 +67,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
     /** 
      * Defines the collection of the objects that are connected to a particular port
      * @default undefined
+     * @blazordefaultvalue new string[] { }
      */
     public inEdges: any;
     /** 
@@ -83,6 +84,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
     /** 
      * Defines the collection of the objects that are connected to a particular port
      * @default undefined
+     * @blazordefaultvalue new string[] { }
      */
     public outEdges: any;
     /** 

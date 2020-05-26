@@ -36,6 +36,7 @@ export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
     /** 
      * Defines day of event marker.
      * @default null
+     * @blazortype Date
      */
     public day: any;
     /** 

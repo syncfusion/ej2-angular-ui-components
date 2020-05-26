@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 18.1.53 (2020-05-19)
+## 18.1.54 (2020-05-26)
 
 ### TreeGrid
 
+#### New Features
+
+- `#152599` - Provided support for toggling selection by adding `enableToggle` API in selection Settings
+
 #### Bug Fixes
 
-- `#275113` - Destroying the Tree Grid component in **ngOnDestroy** method works fine.
+- `#277361` - Auto generated columns work fine when two treegrids are rendered on the same page.
 
 ## 18.1.52 (2020-05-13)
 
@@ -139,4 +143,12 @@
 - `actionBegin`, `actionComplete` and `actionFailure` events are triggered properly.
 - Additional parameters that are added using the `query` property of TreeGrid are passed to the server side when a parent record is expanded.
 
+
+## 18.1.53 (2020-05-19)
+
+### TreeGrid
+
+#### Bug Fixes
+
+- `#275113` - Destroying the Tree Grid component in **ngOnDestroy** method works fine.
 

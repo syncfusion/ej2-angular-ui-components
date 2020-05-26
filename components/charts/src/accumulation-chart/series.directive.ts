@@ -76,6 +76,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * Index of the point, to be exploded on load.
      * @default null
      * @aspdefaultvalueignore 
+     * @blazordefaultvalue Double.NaN
      */
     public explodeIndex: any;
     /** 

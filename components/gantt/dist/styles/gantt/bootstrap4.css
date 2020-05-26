@@ -456,11 +456,11 @@
 }
 
 .e-gantt .e-indent::before {
-  content: '\e33f';
+  content: '\e702';
 }
 
 .e-gantt .e-outdent::before {
-  content: '\e35d';
+  content: '\e722';
 }
 
 .e-gantt .e-add-above::before {

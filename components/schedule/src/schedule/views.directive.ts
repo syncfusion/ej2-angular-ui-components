@@ -86,7 +86,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     public isSelected: any;
     /** 
      * It accepts the schedule view name, based on which we can define with its related properties in a single object. 
-     *  The applicable view names are, 
+     * The applicable view names are, 
      * * Day 
      * * Week 
      * * WorkWeek 
@@ -102,7 +102,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public option: any;
     /** 
-     * It is used to specify the year view rendering orientation on the schedule.
+     * It is used to specify the year view rendering orientation on the schedule. 
+     * The applicable orientation values are, 
+     * * Horizontal 
+     * * Vertical
      * @default 'Horizontal'
      */
     public orientation: any;

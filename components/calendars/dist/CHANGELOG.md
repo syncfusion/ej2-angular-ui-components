@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.1.53 (2020-05-19)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#275716`- Issue with "script error occurs when disable the clear icon dynamically" has been resolved.
-
 ## 18.1.43 (2020-04-07)
 
 ### TimePicker
@@ -1072,4 +1064,12 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.53 (2020-05-19)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#275716`- Issue with "script error occurs when disable the clear icon dynamically" has been resolved.
 

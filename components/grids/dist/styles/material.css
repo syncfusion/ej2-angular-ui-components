@@ -2599,8 +2599,18 @@
 
 .e-grid .e-frozenheader table .e-insertedrow td.e-rowcell,
 .e-grid .e-frozencontent table .e-insertedrow td.e-rowcell,
+.e-grid .e-movableheader table .e-insertedrow td.e-rowcell,
+.e-grid .e-movablecontent table .e-insertedrow td.e-rowcell,
+.e-grid:not(.e-grid-min-height) .e-gridcontent .e-content tr.e-insertedrow .e-rowcell:empty,
 .e-grid .e-row.e-emptyrow {
-  height: 36px;
+  height: 37px;
+}
+
+.e-grid .e-editedrow .e-input-group input.e-input,
+.e-grid .e-editedrow .e-input-group.e-control-wrapper input.e-input,
+.e-grid .e-addedrow .e-input-group input.e-input,
+.e-grid .e-addedrow .e-input-group.e-control-wrapper input.e-input {
+  min-height: unset;
 }
 
 .e-grid:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty,

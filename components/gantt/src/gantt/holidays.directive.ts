@@ -37,6 +37,7 @@ export class HolidayDirective extends ComplexBase<HolidayDirective> {
     /** 
      * Defines start date of holiday.
      * @default null
+     * @blazortype Date
      */
     public from: any;
     /** 
@@ -47,6 +48,7 @@ export class HolidayDirective extends ComplexBase<HolidayDirective> {
     /** 
      * Defines end date of holiday.
      * @default null
+     * @blazortype Date
      */
     public to: any;
 
