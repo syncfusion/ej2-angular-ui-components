@@ -2553,6 +2553,18 @@
   height: 35px;
 }
 
+.e-grid.e-afenabled .e-movablecontent,
+.e-grid.e-afenabled .e-frozencontent,
+.e-grid.e-afenabled .e-movableheader,
+.e-grid.e-afenabled .e-frozenheader,
+.e-grid.e-afenabled .e-headercontent {
+  position: relative;
+}
+
+.e-grid.e-afenabled {
+  overflow: hidden;
+}
+
 .e-grid .e-rowcell:first-child,
 .e-grid .e-summarycell:first-child {
   padding-left: 10px;
@@ -4352,10 +4364,27 @@
   border-right-color: #414040;
 }
 
+.e-grid .e-autofill {
+  background-color: #0074cc;
+}
+
 .e-grid .e-autofill,
 .e-grid .e-xlsel {
+  border-color: #0074cc;
+  z-index: 1;
+}
+
+.e-grid .e-xlsel {
+  background-color: transparent;
+  border-style: solid;
+  pointer-events: none;
+  position: absolute;
+}
+
+.e-grid .e-xlselaf {
   background-color: #0074cc;
   border-color: #0074cc;
+  position: absolute;
 }
 
 .e-grid .e-gridcontent tr.e-row:first-child .e-rowcell.e-dragborder,

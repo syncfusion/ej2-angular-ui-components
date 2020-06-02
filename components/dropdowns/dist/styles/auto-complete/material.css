@@ -125,3 +125,7 @@
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger.e-small .e-input-filter {
   padding: 8px 16px;
 }
+
+.e-ddl.e-popup.e-outline .e-filter-parent {
+  padding: 4px 8px;
+}

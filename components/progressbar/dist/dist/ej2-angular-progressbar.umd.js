@@ -110,7 +110,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enablePieProgress', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isIndeterminate', 'label', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackThickness', 'type', 'value', 'width'];
+var inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enablePieProgress', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isActive', 'isGradient', 'isIndeterminate', 'isStriped', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'rangeColors', 'role', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackSegmentDisable', 'trackThickness', 'type', 'value', 'width'];
 var outputs$1 = ['animationComplete', 'load', 'loaded', 'mouseClick', 'mouseDown', 'mouseLeave', 'mouseMove', 'mouseUp', 'progressCompleted', 'textRender', 'valueChanged'];
 var twoWays = [''];
 /**
@@ -268,14 +268,22 @@ exports.Margin = ej2Progressbar.Margin;
 exports.Font = ej2Progressbar.Font;
 exports.Animation = ej2Progressbar.Animation;
 exports.ProgressAnnotationSettings = ej2Progressbar.ProgressAnnotationSettings;
+exports.RangeColor = ej2Progressbar.RangeColor;
 exports.ProgressAnnotation = ej2Progressbar.ProgressAnnotation;
 exports.Rect = ej2Progressbar.Rect;
 exports.Size = ej2Progressbar.Size;
+exports.Pos = ej2Progressbar.Pos;
 exports.RectOption = ej2Progressbar.RectOption;
+exports.ColorValue = ej2Progressbar.ColorValue;
+exports.convertToHexCode = ej2Progressbar.convertToHexCode;
+exports.componentToHex = ej2Progressbar.componentToHex;
+exports.convertHexToColor = ej2Progressbar.convertHexToColor;
+exports.colorNameToHex = ej2Progressbar.colorNameToHex;
 exports.TextOption = ej2Progressbar.TextOption;
 exports.degreeToLocation = ej2Progressbar.degreeToLocation;
 exports.getPathArc = ej2Progressbar.getPathArc;
 exports.stringToNumber = ej2Progressbar.stringToNumber;
+exports.setAttributes = ej2Progressbar.setAttributes;
 exports.effect = ej2Progressbar.effect;
 exports.annotationRender = ej2Progressbar.annotationRender;
 exports.getElement = ej2Progressbar.getElement;

@@ -85,7 +85,7 @@ var __decorate$1 = (this && this.__decorate) || function (decorators, target, ke
 var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enablePieProgress', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isIndeterminate', 'label', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackThickness', 'type', 'value', 'width'];
+const inputs = ['animation', 'annotations', 'cornerRadius', 'enablePersistence', 'enablePieProgress', 'enableRtl', 'endAngle', 'gapWidth', 'height', 'innerRadius', 'isActive', 'isGradient', 'isIndeterminate', 'isStriped', 'labelStyle', 'locale', 'margin', 'maximum', 'minimum', 'progressColor', 'progressThickness', 'radius', 'rangeColors', 'role', 'secondaryProgress', 'segmentColor', 'segmentCount', 'showProgressValue', 'startAngle', 'theme', 'trackColor', 'trackSegmentDisable', 'trackThickness', 'type', 'value', 'width'];
 const outputs$1 = ['animationComplete', 'load', 'loaded', 'mouseClick', 'mouseDown', 'mouseLeave', 'mouseMove', 'mouseUp', 'progressCompleted', 'textRender', 'valueChanged'];
 const twoWays = [''];
 /**
@@ -229,5 +229,5 @@ ProgressBarAllModule.ctorParameters = () => [];
  */
 
 export { ProgressBarAnnotationDirective, ProgressBarAnnotationsDirective, ProgressBarComponent, ProgressBarModule, ProgressBarAllModule, ProgressAnnotationService, inputs as ɵa, outputs$1 as ɵb };
-export { ProgressBar, Margin, Font, Animation, ProgressAnnotationSettings, ProgressAnnotation, Rect, Size, RectOption, TextOption, degreeToLocation, getPathArc, stringToNumber, effect, annotationRender, getElement, removeElement, ProgressLocation, ProgressAnimation } from '@syncfusion/ej2-progressbar';
+export { ProgressBar, Margin, Font, Animation, ProgressAnnotationSettings, RangeColor, ProgressAnnotation, Rect, Size, Pos, RectOption, ColorValue, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, TextOption, degreeToLocation, getPathArc, stringToNumber, setAttributes, effect, annotationRender, getElement, removeElement, ProgressLocation, ProgressAnimation } from '@syncfusion/ej2-progressbar';
 //# sourceMappingURL=ej2-angular-progressbar.js.map

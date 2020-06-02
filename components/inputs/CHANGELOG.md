@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.1.54 (2020-05-26)
+## 18.1.55 (2020-06-02)
 
-### Uploader
+### Slider
 
-#### New Features
+#### Bug Fixes
 
-- `#248615`, `#F147072` - Now, you can disable the drag and drop upload using `dropArea` property.
+- `#278460` Issue with slider refresh method has been resolved.
 
 ## 18.1.53 (2020-05-19)
 
@@ -1060,6 +1060,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.1.54 (2020-05-26)
+
+### Uploader
+
+#### New Features
+
+- `#248615`, `#F147072` - Now, you can disable the drag and drop upload using `dropArea` property.
 
 ## 18.1.45 (2020-04-21)
 

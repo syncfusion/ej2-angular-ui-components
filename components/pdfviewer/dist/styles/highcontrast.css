@@ -412,6 +412,11 @@
   font-family: 'e-icons';
 }
 
+.e-pv-inkannotation-icon::before {
+  content: '\ebec';
+  font-family: 'e-icons';
+}
+
 /*! component layout */
 .e-pdfviewer .e-pv-viewer-container {
   border-style: solid;

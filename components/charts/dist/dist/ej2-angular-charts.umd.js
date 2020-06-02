@@ -1714,7 +1714,7 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$1 = ['annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableBorderOnMouseMove', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'highLightMode', 'highlightPattern', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$15 = ['animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
+var outputs$15 = ['afterExport', 'animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$1 = ['dataSource'];
 /**
  * AccumulationChart Component
@@ -4191,6 +4191,7 @@ exports.ImageOption = ej2Charts.ImageOption;
 exports.CircleOption = ej2Charts.CircleOption;
 exports.PolygonOption = ej2Charts.PolygonOption;
 exports.ChartLocation = ej2Charts.ChartLocation;
+exports.LabelLocation = ej2Charts.LabelLocation;
 exports.Thickness = ej2Charts.Thickness;
 exports.ColorValue = ej2Charts.ColorValue;
 exports.PointData = ej2Charts.PointData;

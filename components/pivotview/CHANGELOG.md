@@ -254,6 +254,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
 
+## 18.1.54 (2020-05-26)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#F154078` - The Error dialog is now clearly visible.
+
 ## 18.1.52 (2020-05-13)
 
 ### Pivot Table

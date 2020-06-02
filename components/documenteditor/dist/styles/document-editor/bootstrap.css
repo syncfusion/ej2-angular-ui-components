@@ -3026,6 +3026,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   text-align: right;
 }
 
+.e-de-cmt-pane.e-de-cmt-protection .e-de-cmt-rply-view, .e-de-cmt-pane.e-de-cmt-protection .e-de-cmt-resolve-btn, .e-de-cmt-pane.e-de-cmt-protection .e-de-cp-option {
+  display: none;
+}
+
 .e-de-cmt-sub-container.e-de-cmt-resolved.e-de-cmt-selection {
   border-left: 3px solid rgba(49, 122, 185, 0.5);
 }

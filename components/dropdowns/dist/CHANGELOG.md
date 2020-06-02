@@ -2,13 +2,33 @@
 
 ## [Unreleased]
 
-## 18.1.54 (2020-05-26)
+## 18.1.55 (2020-06-02)
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#274970` - Issue with "popup values are not updated when change the query dynamically" has been resolved.
+-`#273796` - Now, e-outline class is added to the filter input
+
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#276800` - The issue with “The selected item is maintained in DOM after clearing the item using clear icon in the Dropdown Tree component” has been resolved.
+- `#278072` - The issue with “The Dropdown Tree selected values are not received in the form post back” has been resolved.
+- `#274468` - The issue with “The Dropdown Tree popup element is incorrectly positioned when it is rendered inside the Bootstrap dialog” has been fixed.
+
+#### New Features
+
+- `#277378` - Provided the support to reset the values in the Dropdown Tree component when the form reset method is called.
+
+### DropDownList
+
+#### Bug Fixes
+
+-`#277821` - Now, changed the no record template hint message.
+
 
 ## 18.1.53 (2020-05-19)
 
@@ -1485,6 +1505,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.54 (2020-05-26)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#274970` - Issue with "popup values are not updated when change the query dynamically" has been resolved.
 
 ## 18.1.45 (2020-04-21)
 

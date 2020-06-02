@@ -420,6 +420,11 @@
   font-family: 'e-icons';
 }
 
+.e-pv-inkannotation-icon::before {
+  content: '\e71a';
+  font-family: 'e-icons';
+}
+
 /*! component layout */
 .e-pdfviewer .e-pv-viewer-container {
   border-style: solid;
@@ -1425,7 +1430,7 @@
 }
 
 .e-pv-thumbnail-focus {
-  border: 1px solid #f8f9fa;
+  border: 2px solid #007bff;
   border-radius: 2px;
   box-shadow: 0 0 4px 0 rgba(248, 249, 250, 0.25);
   cursor: pointer;
