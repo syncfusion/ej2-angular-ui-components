@@ -149,11 +149,11 @@ __decorate([
     __metadata("design:type", Object)
 ], DropDownListComponent.prototype, "itemTemplate", void 0);
 __decorate([
-    Template('No Records Found'),
+    Template('No records found'),
     __metadata("design:type", Object)
 ], DropDownListComponent.prototype, "noRecordsTemplate", void 0);
 __decorate([
-    Template('The Request Failed'),
+    Template('Request failed'),
     __metadata("design:type", Object)
 ], DropDownListComponent.prototype, "actionFailureTemplate", void 0);
 DropDownListComponent = DropDownListComponent_1 = __decorate([
@@ -345,11 +345,11 @@ __decorate$1([
     __metadata$1("design:type", Object)
 ], ComboBoxComponent.prototype, "itemTemplate", void 0);
 __decorate$1([
-    Template('No Records Found'),
+    Template('No records found'),
     __metadata$1("design:type", Object)
 ], ComboBoxComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$1([
-    Template('The Request Failed'),
+    Template('Request failed'),
     __metadata$1("design:type", Object)
 ], ComboBoxComponent.prototype, "actionFailureTemplate", void 0);
 ComboBoxComponent = ComboBoxComponent_1 = __decorate$1([
@@ -541,11 +541,11 @@ __decorate$2([
     __metadata$2("design:type", Object)
 ], AutoCompleteComponent.prototype, "itemTemplate", void 0);
 __decorate$2([
-    Template('No Records Found'),
+    Template('No records found'),
     __metadata$2("design:type", Object)
 ], AutoCompleteComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$2([
-    Template('The Request Failed'),
+    Template('Request failed'),
     __metadata$2("design:type", Object)
 ], AutoCompleteComponent.prototype, "actionFailureTemplate", void 0);
 AutoCompleteComponent = AutoCompleteComponent_1 = __decorate$2([
@@ -744,11 +744,11 @@ __decorate$3([
     __metadata$3("design:type", Object)
 ], MultiSelectComponent.prototype, "itemTemplate", void 0);
 __decorate$3([
-    Template('No Records Found'),
+    Template('No records found'),
     __metadata$3("design:type", Object)
 ], MultiSelectComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$3([
-    Template('The Request Failed'),
+    Template('Request failed'),
     __metadata$3("design:type", Object)
 ], MultiSelectComponent.prototype, "actionFailureTemplate", void 0);
 MultiSelectComponent = MultiSelectComponent_1 = __decorate$3([
@@ -1115,11 +1115,11 @@ __decorate$5([
     __metadata$5("design:type", Object)
 ], DropDownTreeComponent.prototype, "itemTemplate", void 0);
 __decorate$5([
-    Template('No Records Found'),
+    Template('No records found'),
     __metadata$5("design:type", Object)
 ], DropDownTreeComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$5([
-    Template('The Request Failed'),
+    Template('Request failed'),
     __metadata$5("design:type", Object)
 ], DropDownTreeComponent.prototype, "actionFailureTemplate", void 0);
 DropDownTreeComponent = DropDownTreeComponent_1 = __decorate$5([

@@ -1149,6 +1149,7 @@ exports.hierarchyPrint = ej2Grids.hierarchyPrint;
 exports.expandChildGrid = ej2Grids.expandChildGrid;
 exports.printGridInit = ej2Grids.printGridInit;
 exports.exportRowDataBound = ej2Grids.exportRowDataBound;
+exports.exportDataBound = ej2Grids.exportDataBound;
 exports.rowPositionChanged = ej2Grids.rowPositionChanged;
 exports.columnChooserOpened = ej2Grids.columnChooserOpened;
 exports.batchForm = ej2Grids.batchForm;

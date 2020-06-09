@@ -1532,7 +1532,7 @@
   bottom: 0;
   float: right;
   height: 18px;
-  margin-right: 1px;
+  margin-right: -1px;
   padding: 0;
   position: relative;
   right: 0;

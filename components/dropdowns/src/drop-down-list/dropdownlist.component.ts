@@ -90,10 +90,10 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     @Template()
     public itemTemplate: any;
     @ContentChild('noRecordsTemplate')
-    @Template('No Records Found')
+    @Template('No records found')
     public noRecordsTemplate: any;
     @ContentChild('actionFailureTemplate')
-    @Template('The Request Failed')
+    @Template('Request failed')
     public actionFailureTemplate: any;
 
     private skipFromEvent:boolean = true;

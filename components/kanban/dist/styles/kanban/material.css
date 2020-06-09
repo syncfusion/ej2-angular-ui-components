@@ -126,11 +126,8 @@
   padding: 8px 16px;
 }
 
-@keyframes e-input-ripple {
-  100% {
-    opacity: 0;
-    transform: scale(4);
-  }
+.e-ddl.e-popup.e-outline .e-filter-parent {
+  padding: 4px 8px;
 }
 
 /*! component's theme wise override material-definitions and variables */

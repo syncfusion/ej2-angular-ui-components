@@ -167,11 +167,11 @@ __decorate([
     __metadata("design:type", Object)
 ], exports.DropDownListComponent.prototype, "itemTemplate", void 0);
 __decorate([
-    ej2AngularBase.Template('No Records Found'),
+    ej2AngularBase.Template('No records found'),
     __metadata("design:type", Object)
 ], exports.DropDownListComponent.prototype, "noRecordsTemplate", void 0);
 __decorate([
-    ej2AngularBase.Template('The Request Failed'),
+    ej2AngularBase.Template('Request failed'),
     __metadata("design:type", Object)
 ], exports.DropDownListComponent.prototype, "actionFailureTemplate", void 0);
 exports.DropDownListComponent = DropDownListComponent_1 = __decorate([
@@ -374,11 +374,11 @@ __decorate$1([
     __metadata$1("design:type", Object)
 ], exports.ComboBoxComponent.prototype, "itemTemplate", void 0);
 __decorate$1([
-    ej2AngularBase.Template('No Records Found'),
+    ej2AngularBase.Template('No records found'),
     __metadata$1("design:type", Object)
 ], exports.ComboBoxComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$1([
-    ej2AngularBase.Template('The Request Failed'),
+    ej2AngularBase.Template('Request failed'),
     __metadata$1("design:type", Object)
 ], exports.ComboBoxComponent.prototype, "actionFailureTemplate", void 0);
 exports.ComboBoxComponent = ComboBoxComponent_1 = __decorate$1([
@@ -581,11 +581,11 @@ __decorate$2([
     __metadata$2("design:type", Object)
 ], exports.AutoCompleteComponent.prototype, "itemTemplate", void 0);
 __decorate$2([
-    ej2AngularBase.Template('No Records Found'),
+    ej2AngularBase.Template('No records found'),
     __metadata$2("design:type", Object)
 ], exports.AutoCompleteComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$2([
-    ej2AngularBase.Template('The Request Failed'),
+    ej2AngularBase.Template('Request failed'),
     __metadata$2("design:type", Object)
 ], exports.AutoCompleteComponent.prototype, "actionFailureTemplate", void 0);
 exports.AutoCompleteComponent = AutoCompleteComponent_1 = __decorate$2([
@@ -795,11 +795,11 @@ __decorate$3([
     __metadata$3("design:type", Object)
 ], exports.MultiSelectComponent.prototype, "itemTemplate", void 0);
 __decorate$3([
-    ej2AngularBase.Template('No Records Found'),
+    ej2AngularBase.Template('No records found'),
     __metadata$3("design:type", Object)
 ], exports.MultiSelectComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$3([
-    ej2AngularBase.Template('The Request Failed'),
+    ej2AngularBase.Template('Request failed'),
     __metadata$3("design:type", Object)
 ], exports.MultiSelectComponent.prototype, "actionFailureTemplate", void 0);
 exports.MultiSelectComponent = MultiSelectComponent_1 = __decorate$3([
@@ -1188,11 +1188,11 @@ __decorate$5([
     __metadata$5("design:type", Object)
 ], exports.DropDownTreeComponent.prototype, "itemTemplate", void 0);
 __decorate$5([
-    ej2AngularBase.Template('No Records Found'),
+    ej2AngularBase.Template('No records found'),
     __metadata$5("design:type", Object)
 ], exports.DropDownTreeComponent.prototype, "noRecordsTemplate", void 0);
 __decorate$5([
-    ej2AngularBase.Template('The Request Failed'),
+    ej2AngularBase.Template('Request failed'),
     __metadata$5("design:type", Object)
 ], exports.DropDownTreeComponent.prototype, "actionFailureTemplate", void 0);
 exports.DropDownTreeComponent = DropDownTreeComponent_1 = __decorate$5([

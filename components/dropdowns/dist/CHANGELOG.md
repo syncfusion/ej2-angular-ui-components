@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 18.1.56 (2020-06-09)
+
+### ComboBox
+
+#### Bug Fixes
+
+- Issue with "select event is not triggered while doing first selection with autofill" has been resolved.
+
+-`#278135`- Issue with "Item data is not loaded with asynchronous data when allowCustom is set to false" has been resolved.
+
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#280052`- Issue with "localization is not working for dropdown components" has been resolved.
+
 ## 18.1.55 (2020-06-02)
 
 ### MultiSelect
