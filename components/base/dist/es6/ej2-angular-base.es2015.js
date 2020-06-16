@@ -498,18 +498,16 @@ class ComponentBase {
                     /* istanbul ignore next */
                     let oldProbLength = tempAfterContentThis[tagObject.name].length;
                     let newPropLendgth = tagObject.instance.list.length;
-                    if (oldProbLength !== newPropLendgth && tagObject.instance.list[0].hasChanges) {
+                    if (oldProbLength !== newPropLendgth) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {
-                        if (list.hasChanges) {
-                            let curIndex = tagObject.instance.list.indexOf(list);
-                            let curChild = getValue(tagObject.name, tempAfterContentThis)[curIndex];
-                            if (curChild !== undefined && curChild.setProperties !== undefined) {
-                                curChild.setProperties(list.getProperties());
-                            }
-                            list.isUpdated = true;
+                        let curIndex = tagObject.instance.list.indexOf(list);
+                        let curChild = getValue(tagObject.name, tempAfterContentThis)[curIndex];
+                        if (curChild !== undefined && curChild.setProperties !== undefined) {
+                            curChild.setProperties(list.getProperties());
                         }
+                        list.isUpdated = true;
                     }
                 }
             }

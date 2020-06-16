@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.1.56 (2020-06-09)
+## 18.1.57 (2020-06-16)
+
+### Common
+
+#### Bug Fixes
+
+- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items.
+
+## 18.1.52 (2020-05-13)
 
 ### Common
 

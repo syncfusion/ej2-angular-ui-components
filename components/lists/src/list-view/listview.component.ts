@@ -33,6 +33,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
 
     /** 
      * The ListView component supports to customize the content of each list items with the help of `template` property.
+     * 
+     * {% codeBlock src='listview/template/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      * @deprecated 
      */
@@ -41,6 +44,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
     public template: any;
     /** 
      * The ListView has an option to custom design the group header title with the help of `groupTemplate` property.
+     * 
+     * {% codeBlock src="listview/groupTemplate/index.md" %}{% endcodeBlock %}
+     *     
      * @default null
      * @deprecated 
      */
@@ -49,6 +55,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
     public groupTemplate: any;
     /** 
      * The ListView has an option to custom design the ListView header title with the help of `headerTemplate` property.
+     * 
+     * {% codeBlock src="listview/headerTemplate/index.md" %}{% endcodeBlock %}
+     *     
      * @default null
      * @deprecated 
      */

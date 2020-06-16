@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.1.57 (2020-06-16)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#279216` - Now, you can set empty data source dynamically.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#278201`- Issue with "multiSelect component in mobile mode with initial value page not scrolled" has been resolved.
+
 ## 18.1.56 (2020-06-09)
 
 ### ComboBox

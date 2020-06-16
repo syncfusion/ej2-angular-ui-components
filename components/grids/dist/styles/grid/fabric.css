@@ -1528,6 +1528,15 @@
   border-bottom-width: 1px;
 }
 
+.e-grid.e-default .e-detailrowcollapse.e-lastrowcell {
+  border-bottom-width: 1px;
+}
+
+.e-grid.e-default .e-detailrow .e-lastrowcell {
+  border-bottom: 1px solid;
+  border-bottom-color: #eaeaea;
+}
+
 .e-grid.e-bothlines .e-rowcell.e-lastrowcell {
   border-bottom-width: 1px;
 }
