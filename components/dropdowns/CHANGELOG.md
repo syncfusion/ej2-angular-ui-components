@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 18.1.59 (2020-06-23)
+
+### MultiSelect
+
+#### Bug Fixes
+
+-`#F154635` - Issue with "floating label is not floated properly while rendering with filter and outline theme appearance" has been resolved.
+
+
+- `#278902` - Issue with "incorrect count displayed in the multiselect input field when selecting the  multiple items" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+-`#278736` -Now, search action is performed properly while rendering multiple dropdown and selecting the value using keyboard.
+
+
 ## 18.1.57 (2020-06-16)
 
 ### ComboBox
@@ -14,6 +32,7 @@
 
 #### Bug Fixes
 
+- `#277467`- Issue with "some items in the dropdown hides when using the header template in the mobile mode" has been resolved.
 - `#278201`- Issue with "multiSelect component in mobile mode with initial value page not scrolled" has been resolved.
 
 ## 18.1.56 (2020-06-09)
