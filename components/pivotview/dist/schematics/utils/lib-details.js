@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-pivotview';
-exports.pkgVer = '^18.1.54';
+exports.pkgVer = '^18.1.42';
 exports.moduleName = 'PivotViewModule, PivotFieldListModule';
-exports.themeVer = '~18.1.54';
+exports.themeVer = '~18.1.42';

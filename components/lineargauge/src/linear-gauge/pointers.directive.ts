@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'position', 'roundedCornerRadius', 'type', 'value', 'width'];
+let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
 let outputs: string[] = [];
 /**
  * Pointers directive
@@ -62,6 +62,12 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public imageUrl: any;
     /** 
+     * Sets and gets the properties to render a linear gradient for the pointer. 
+     * If both linear and radial gradient is set, then the linear gradient will be rendered in the pointer.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * Sets and gets the type of the marker for pointers in axis.
      * @default InvertedTriangle
      */
@@ -86,6 +92,11 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default Auto
      */
     public position: any;
+    /** 
+     * Sets and gets the properties to render a radial gradient for the pointer.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Sets and gets the corner radius for pointer.
      * @default 10

@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['border', 'color', 'end', 'endWidth', 'offset', 'position', 'start', 'startWidth'];
+var input = ['border', 'color', 'end', 'endWidth', 'linearGradient', 'offset', 'position', 'radialGradient', 'start', 'startWidth'];
 var outputs = [];
 /**
  * Ranges directive
@@ -73,7 +73,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'position', 'roundedCornerRadius', 'type', 'value', 'width'];
+var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
 var outputs$1 = [];
 /**
  * Pointers directive
@@ -350,6 +350,13 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_e) { }
+        try {
+            var mod = _this.injector.get('LinearGaugeGradient');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -466,6 +473,7 @@ var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: ej2Linea
 var PrintService = { provide: 'LinearGaugePrint', useValue: ej2Lineargauge.Print };
 var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: ej2Lineargauge.PdfExport };
 var ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ej2Lineargauge.ImageExport };
+var GradientService = { provide: 'LinearGaugeGradient', useValue: ej2Lineargauge.Gradient };
 /**
  * NgModule definition for the LinearGauge component with providers.
  */
@@ -485,7 +493,8 @@ LinearGaugeAllModule.decorators = [
                     AnnotationsService,
                     PrintService,
                     PdfExportService,
-                    ImageExportService
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -509,6 +518,7 @@ exports.AnnotationsService = AnnotationsService;
 exports.PrintService = PrintService;
 exports.PdfExportService = PdfExportService;
 exports.ImageExportService = ImageExportService;
+exports.GradientService = GradientService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.LinearGauge = ej2Lineargauge.LinearGauge;
@@ -565,6 +575,11 @@ exports.GaugeTooltip = ej2Lineargauge.GaugeTooltip;
 exports.Print = ej2Lineargauge.Print;
 exports.ImageExport = ej2Lineargauge.ImageExport;
 exports.PdfExport = ej2Lineargauge.PdfExport;
+exports.ColorStop = ej2Lineargauge.ColorStop;
+exports.GradientPosition = ej2Lineargauge.GradientPosition;
+exports.LinearGradient = ej2Lineargauge.LinearGradient;
+exports.RadialGradient = ej2Lineargauge.RadialGradient;
+exports.Gradient = ej2Lineargauge.Gradient;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

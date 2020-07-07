@@ -420,7 +420,7 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
-  padding: 8px 11px 9px;
+  padding: 10px 11px 10px;
 }
 
 @media (max-width: 769px) {
@@ -631,6 +631,15 @@
   .e-pager.e-rtl .e-parentmsgbar {
     float: right;
   }
+}
+
+.e-pager.sf-pager .e-link,
+.e-pager.sf-pager .e-prev,
+.e-pager.sf-pager .e-last,
+.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.sf-pager .e-mnext,
+.e-pager.sf-pager .e-mlast {
+  margin-left: -4px;
 }
 
 /*! Pager theme */

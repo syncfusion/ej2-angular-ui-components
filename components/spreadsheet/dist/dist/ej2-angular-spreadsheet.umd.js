@@ -293,8 +293,76 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$4 = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var input$4 = ['cFColor', 'format', 'range', 'type', 'value'];
 var outputs$4 = [];
+/**
+ * `e-conditionalformat` directive represent a conditionalformat of the Angular Spreadsheet.
+ * It must be contained in a `e-sheet` directive.
+ * ```html
+ * <ejs-spreadsheet>
+ *   <e-sheets>
+ *    <e-sheet>
+ *    <e-conditionalformats>
+ *    <e-conditionalformat></e-conditionalformat>
+ *    </e-conditionalformats>
+ *    </e-sheet>
+ *   </e-sheets>
+ * </ejs-spreadsheet>
+ * ```
+ */
+var ConditionalFormatDirective = /** @class */ (function (_super) {
+    __extends(ConditionalFormatDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function ConditionalFormatDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
+        return _this;
+    }
+    return ConditionalFormatDirective;
+}(ej2AngularBase.ComplexBase));
+ConditionalFormatDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-conditionalformats>e-conditionalformat',
+                inputs: input$4,
+                outputs: outputs$4,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ConditionalFormatDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * ConditionalFormat Array Directive
+ */
+var ConditionalFormatsDirective = /** @class */ (function (_super) {
+    __extends(ConditionalFormatsDirective, _super);
+    function ConditionalFormatsDirective() {
+        return _super.call(this, 'conditionalformats') || this;
+    }
+    return ConditionalFormatsDirective;
+}(ej2AngularBase.ArrayBase));
+ConditionalFormatsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-sheet>e-conditionalformats',
+                queries: {
+                    children: new core.ContentChildren(ConditionalFormatDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ConditionalFormatsDirective.ctorParameters = function () { return []; };
+var input$5 = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var outputs$5 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -315,10 +383,10 @@ var SheetDirective = /** @class */ (function (_super) {
     function SheetDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['rows', 'columns', 'ranges'];
+        _this.tags = ['rows', 'columns', 'ranges', 'conditionalFormats'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
-        _this.directivePropList = input$4;
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return SheetDirective;
@@ -326,12 +394,13 @@ var SheetDirective = /** @class */ (function (_super) {
 SheetDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-sheets>e-sheet',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {
                     childRows: new core.ContentChild(RowsDirective),
                     childColumns: new core.ContentChild(ColumnsDirective),
-                    childRanges: new core.ContentChild(RangesDirective)
+                    childRanges: new core.ContentChild(RangesDirective),
+                    childConditionalFormats: new core.ContentChild(ConditionalFormatsDirective)
                 }
             },] },
 ];
@@ -363,8 +432,8 @@ SheetsDirective.decorators = [
  * @nocollapse
  */
 SheetsDirective.ctorParameters = function () { return []; };
-var input$5 = ['comment', 'name', 'refersTo', 'scope'];
-var outputs$5 = [];
+var input$6 = ['comment', 'name', 'refersTo', 'scope'];
+var outputs$6 = [];
 /**
  * `e-definedname` directive represent a defined name of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -386,8 +455,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
-        _this.directivePropList = input$5;
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return DefinedNameDirective;
@@ -395,8 +464,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
 DefinedNameDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-definednames>e-definedname',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {}
             },] },
 ];
@@ -442,8 +511,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$6 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
+var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var outputs$7 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -594,7 +663,7 @@ exports.SpreadsheetComponent = /** @class */ (function (_super) {
             }
         }
         catch (_t) { }
-        _this.registerEvents(outputs$6);
+        _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ej2AngularBase.ComponentBase();
@@ -634,7 +703,7 @@ exports.SpreadsheetComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-spreadsheet',
                 inputs: inputs,
-                outputs: outputs$6,
+                outputs: outputs$7,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -687,6 +756,8 @@ SpreadsheetModule.decorators = [
                     ColumnsDirective,
                     RangeDirective,
                     RangesDirective,
+                    ConditionalFormatDirective,
+                    ConditionalFormatsDirective,
                     SheetDirective,
                     SheetsDirective,
                     DefinedNameDirective,
@@ -702,6 +773,8 @@ SpreadsheetModule.decorators = [
                     ColumnsDirective,
                     RangeDirective,
                     RangesDirective,
+                    ConditionalFormatDirective,
+                    ConditionalFormatsDirective,
                     SheetDirective,
                     SheetsDirective,
                     DefinedNameDirective,
@@ -780,6 +853,8 @@ exports.ColumnDirective = ColumnDirective;
 exports.ColumnsDirective = ColumnsDirective;
 exports.RangeDirective = RangeDirective;
 exports.RangesDirective = RangesDirective;
+exports.ConditionalFormatDirective = ConditionalFormatDirective;
+exports.ConditionalFormatsDirective = ConditionalFormatsDirective;
 exports.SheetDirective = SheetDirective;
 exports.SheetsDirective = SheetsDirective;
 exports.DefinedNameDirective = DefinedNameDirective;
@@ -805,7 +880,7 @@ exports.CellFormatService = CellFormatService;
 exports.NumberFormatService = NumberFormatService;
 exports.FormulaService = FormulaService;
 exports.ɵa = inputs;
-exports.ɵb = outputs$6;
+exports.ɵb = outputs$7;
 exports.Workbook = ej2Spreadsheet.Workbook;
 exports.Range = ej2Spreadsheet.Range;
 exports.UsedRange = ej2Spreadsheet.UsedRange;
@@ -834,6 +909,7 @@ exports.setColumn = ej2Spreadsheet.setColumn;
 exports.getColumnWidth = ej2Spreadsheet.getColumnWidth;
 exports.getColumnsWidth = ej2Spreadsheet.getColumnsWidth;
 exports.isHiddenCol = ej2Spreadsheet.isHiddenCol;
+exports.Format = ej2Spreadsheet.Format;
 exports.Cell = ej2Spreadsheet.Cell;
 exports.getCell = ej2Spreadsheet.getCell;
 exports.setCell = ej2Spreadsheet.setCell;
@@ -864,6 +940,7 @@ exports.DefineName = ej2Spreadsheet.DefineName;
 exports.ProtectSettings = ej2Spreadsheet.ProtectSettings;
 exports.Hyperlink = ej2Spreadsheet.Hyperlink;
 exports.Validation = ej2Spreadsheet.Validation;
+exports.ConditionalFormat = ej2Spreadsheet.ConditionalFormat;
 exports.workbookDestroyed = ej2Spreadsheet.workbookDestroyed;
 exports.updateSheetFromDataSource = ej2Spreadsheet.updateSheetFromDataSource;
 exports.dataSourceChanged = ej2Spreadsheet.dataSourceChanged;
@@ -931,7 +1008,6 @@ exports.findCount = ej2Spreadsheet.findCount;
 exports.protectSheetWorkBook = ej2Spreadsheet.protectSheetWorkBook;
 exports.updateToggle = ej2Spreadsheet.updateToggle;
 exports.protectsheetHandler = ej2Spreadsheet.protectsheetHandler;
-exports.unprotectsheetHandler = ej2Spreadsheet.unprotectsheetHandler;
 exports.replaceAllDialog = ej2Spreadsheet.replaceAllDialog;
 exports.workBookeditAlert = ej2Spreadsheet.workBookeditAlert;
 exports.setLockCells = ej2Spreadsheet.setLockCells;
@@ -942,6 +1018,15 @@ exports.mergedRange = ej2Spreadsheet.mergedRange;
 exports.activeCellMergedRange = ej2Spreadsheet.activeCellMergedRange;
 exports.insertMerge = ej2Spreadsheet.insertMerge;
 exports.pasteMerge = ej2Spreadsheet.pasteMerge;
+exports.setCFRule = ej2Spreadsheet.setCFRule;
+exports.cFInitialCheck = ej2Spreadsheet.cFInitialCheck;
+exports.clearCFRule = ej2Spreadsheet.clearCFRule;
+exports.initiateClearCFRule = ej2Spreadsheet.initiateClearCFRule;
+exports.cFRender = ej2Spreadsheet.cFRender;
+exports.cFDelete = ej2Spreadsheet.cFDelete;
+exports.clear = ej2Spreadsheet.clear;
+exports.clearCF = ej2Spreadsheet.clearCF;
+exports.clearCells = ej2Spreadsheet.clearCells;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
@@ -970,6 +1055,7 @@ exports.WorkbookDataValidation = ej2Spreadsheet.WorkbookDataValidation;
 exports.WorkbookFindAndReplace = ej2Spreadsheet.WorkbookFindAndReplace;
 exports.WorkbookProtectSheet = ej2Spreadsheet.WorkbookProtectSheet;
 exports.WorkbookMerge = ej2Spreadsheet.WorkbookMerge;
+exports.WorkbookConditionalFormat = ej2Spreadsheet.WorkbookConditionalFormat;
 exports.getRequiredModules = ej2Spreadsheet.getRequiredModules;
 exports.ribbon = ej2Spreadsheet.ribbon;
 exports.formulaBar = ej2Spreadsheet.formulaBar;
@@ -1068,7 +1154,6 @@ exports.startEdit = ej2Spreadsheet.startEdit;
 exports.invalidData = ej2Spreadsheet.invalidData;
 exports.clearInvalid = ej2Spreadsheet.clearInvalid;
 exports.protectSheet = ej2Spreadsheet.protectSheet;
-exports.unprotectSheet = ej2Spreadsheet.unprotectSheet;
 exports.applyProtect = ej2Spreadsheet.applyProtect;
 exports.protectCellFormat = ej2Spreadsheet.protectCellFormat;
 exports.gotoDlg = ej2Spreadsheet.gotoDlg;
@@ -1084,12 +1169,15 @@ exports.hiddenMerge = ej2Spreadsheet.hiddenMerge;
 exports.checkPrevMerge = ej2Spreadsheet.checkPrevMerge;
 exports.checkMerge = ej2Spreadsheet.checkMerge;
 exports.removeDataValidation = ej2Spreadsheet.removeDataValidation;
-exports.blankWorkbook = ej2Spreadsheet.blankWorkbook;
+exports.showAggregate = ej2Spreadsheet.showAggregate;
+exports.initiateConditionalFormat = ej2Spreadsheet.initiateConditionalFormat;
+exports.checkConditionalFormat = ej2Spreadsheet.checkConditionalFormat;
+exports.setCF = ej2Spreadsheet.setCF;
+exports.clearViewer = ej2Spreadsheet.clearViewer;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
 exports.getScrollBarWidth = ej2Spreadsheet.getScrollBarWidth;
-exports.getSiblingsHeight = ej2Spreadsheet.getSiblingsHeight;
 exports.inView = ej2Spreadsheet.inView;
 exports.getCellPosition = ej2Spreadsheet.getCellPosition;
 exports.locateElem = ej2Spreadsheet.locateElem;
@@ -1125,6 +1213,7 @@ exports.WRAPTEXT = ej2Spreadsheet.WRAPTEXT;
 exports.locale = ej2Spreadsheet.locale;
 exports.dialog = ej2Spreadsheet.dialog;
 exports.actionEvents = ej2Spreadsheet.actionEvents;
+exports.overlay = ej2Spreadsheet.overlay;
 exports.fontColor = ej2Spreadsheet.fontColor;
 exports.fillColor = ej2Spreadsheet.fillColor;
 exports.defaultLocale = ej2Spreadsheet.defaultLocale;
@@ -1149,6 +1238,7 @@ exports.DataValidation = ej2Spreadsheet.DataValidation;
 exports.ProtectSheet = ej2Spreadsheet.ProtectSheet;
 exports.FindAndReplace = ej2Spreadsheet.FindAndReplace;
 exports.Merge = ej2Spreadsheet.Merge;
+exports.ConditionalFormatting = ej2Spreadsheet.ConditionalFormatting;
 exports.Ribbon = ej2Spreadsheet.Ribbon;
 exports.FormulaBar = ej2Spreadsheet.FormulaBar;
 exports.Formula = ej2Spreadsheet.Formula;

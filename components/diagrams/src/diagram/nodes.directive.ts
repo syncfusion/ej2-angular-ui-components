@@ -99,7 +99,6 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Used to define the column for the grid container
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
-     * @deprecated 
      * @default undefined
      */
     public columns: any;
@@ -338,7 +337,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets or gets the UI of a node
      * @default null
-     * @@deprecated 
+     * @deprecated 
      */
     public wrapper: any;
     /** 

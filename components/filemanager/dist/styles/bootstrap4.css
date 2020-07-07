@@ -692,54 +692,6 @@ ejs-filemanager {
   width: 18px;
 }
 
-.e-filemanager .e-dialog td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 14px;
-  max-width: 211px;
-  min-width: 51px;
-  padding: 8px 24px 8px 0;
-}
-
-.e-filemanager .e-dialog td.e-fe-value {
-  white-space: unset;
-  word-break: break-word;
-}
-
-.e-filemanager .e-dialog .e-fe-errorcontent {
-  white-space: normal;
-  word-break: break-word;
-}
-
-.e-filemanager .e-dialog .e-fe-icon {
-  display: inline-block;
-  height: 18px;
-  margin: 0 8px -2px 0;
-  width: 18px;
-}
-
-.e-filemanager .e-dialog .e-fe-access-header {
-  display: inline-block;
-}
-
-.e-filemanager .e-dialog .e-fe-retrycontent {
-  padding: 16px 0;
-}
-
-.e-filemanager .e-dialog .e-image {
-  height: 100%;
-  width: 100%;
-}
-
-.e-filemanager .e-dialog.e-rtl td {
-  padding: 8px 0 8px 24px;
-}
-
-.e-filemanager .e-dialog.e-rtl .e-fe-icon {
-  margin: 0 0 -2px 8px;
-}
-
 .e-filemanager .e-large-icons {
   float: left;
   overflow: auto;
@@ -839,11 +791,6 @@ ejs-filemanager {
   height: 40px;
   margin: 10px auto;
   width: 40px;
-}
-
-.e-filemanager .e-fe-error {
-  font-size: 12px;
-  line-height: 1.5;
 }
 
 .e-filemanager .e-fe-clone {
@@ -974,23 +921,6 @@ ejs-filemanager {
   margin-right: -12px;
 }
 
-.e-filemanager .e-upload {
-  border-bottom-width: 0;
-  border-top-width: 0;
-}
-
-.e-filemanager .e-upload .e-file-select-wrap {
-  display: none;
-}
-
-.e-filemanager .e-upload .e-icons.e-file-delete-btn {
-  display: none;
-}
-
-.e-filemanager .e-upload .e-upload-actions {
-  border-bottom: 1px solid;
-}
-
 .e-filemanager .e-layout-content {
   position: relative;
 }
@@ -1014,10 +944,6 @@ ejs-filemanager {
   visibility: visible;
 }
 
-.e-filemanager .e-dialog.e-popup.e-dlg-resizable {
-  min-height: 200px;
-}
-
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-dot,
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-tick,
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-dot,
@@ -1036,6 +962,80 @@ ejs-filemanager {
 .e-fe-popup.e-rtl .e-fe-grid {
   display: inline-table;
   transform: rotate(180deg);
+}
+
+.e-fe-popup.e-dialog td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  max-width: 211px;
+  min-width: 51px;
+  padding: 8px 24px 8px 0;
+}
+
+.e-fe-popup.e-dialog td.e-fe-value {
+  white-space: unset;
+  word-break: break-word;
+}
+
+.e-fe-popup.e-dialog .e-fe-errorcontent {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.e-fe-popup.e-dialog .e-fe-icon {
+  display: inline-block;
+  height: 18px;
+  margin: 0 8px -2px 0;
+  width: 18px;
+}
+
+.e-fe-popup.e-dialog .e-fe-access-header {
+  display: inline-block;
+}
+
+.e-fe-popup.e-dialog .e-fe-retrycontent {
+  padding: 16px 0;
+}
+
+.e-fe-popup.e-dialog .e-image {
+  height: 100%;
+  width: 100%;
+}
+
+.e-fe-popup.e-dialog.e-rtl td {
+  padding: 8px 0 8px 24px;
+}
+
+.e-fe-popup.e-dialog.e-rtl .e-fe-icon {
+  margin: 0 0 -2px 8px;
+}
+
+.e-fe-popup.e-dialog.e-popup.e-dlg-resizable {
+  min-height: 200px;
+}
+
+.e-fe-popup .e-fe-error {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.e-fe-popup .e-upload {
+  border-bottom-width: 0;
+  border-top-width: 0;
+}
+
+.e-fe-popup .e-upload .e-file-select-wrap {
+  display: none;
+}
+
+.e-fe-popup .e-upload .e-icons.e-file-delete-btn {
+  display: none;
+}
+
+.e-fe-popup .e-upload .e-upload-actions {
+  border-bottom: 1px solid;
 }
 
 .e-filemanager.e-fe-mobile .e-toolbar-items .e-toolbar-item .e-btn-icon.e-icons,
@@ -1218,13 +1218,6 @@ ejs-filemanager {
   right: 13px;
 }
 
-.e-filemanager.e-fe-mobile .e-dialog td.e-fe-value,
-.e-bigger .e-filemanager.e-fe-mobile .e-dialog td.e-fe-value,
-.e-filemanager.e-bigger.e-fe-mobile .e-dialog td.e-fe-value {
-  white-space: unset;
-  word-break: break-word;
-}
-
 .e-filemanager.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon,
 .e-bigger .e-filemanager.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon,
 .e-filemanager.e-bigger.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon {
@@ -1391,6 +1384,22 @@ ejs-filemanager {
 .e-filemanager.e-bigger.e-rtl .e-grid .e-gridheader .e-fe-grid-icon,
 .e-filemanager.e-bigger.e-rtl .e-grid .e-gridcontent .e-fe-grid-icon {
   padding-right: 10px;
+}
+
+.e-fe-popup.e-bigger.e-dialog .e-dlg-header-content,
+.e-bigger .e-fe-popup.e-dialog .e-dlg-header-content {
+  padding: 21px;
+}
+
+.e-fe-popup.e-bigger.e-dialog td,
+.e-bigger .e-fe-popup.e-dialog td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  max-width: 205px;
+  min-width: 45px;
+  padding: 8px 30px 8px 0;
 }
 
 .e-bigger .e-filemanager .e-toolbar .e-toolbar-items .e-toolbar-item .e-btn-icon.e-icons,
@@ -1580,22 +1589,6 @@ ejs-filemanager {
   opacity: 0.5;
   padding: 6px;
   text-align: center;
-}
-
-.e-bigger .e-filemanager .e-dialog .e-dlg-header-content,
-.e-filemanager.e-bigger .e-dialog .e-dlg-header-content {
-  padding: 21px;
-}
-
-.e-bigger .e-filemanager .e-dialog td,
-.e-filemanager.e-bigger .e-dialog td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 15px;
-  max-width: 205px;
-  min-width: 45px;
-  padding: 8px 30px 8px 0;
 }
 
 .e-bigger .e-filemanager .e-large-icons .e-checkbox-wrapper .e-frame,
@@ -1837,14 +1830,6 @@ ejs-filemanager {
   background-color: transparent;
 }
 
-.e-filemanager .e-dialog td {
-  color: #212529;
-}
-
-.e-filemanager .e-dialog td:first-child {
-  color: #6c757d;
-}
-
 .e-filemanager .e-large-icons .e-list-img {
   border-color: #dee2e6;
 }
@@ -1885,14 +1870,6 @@ ejs-filemanager {
   color: #212529;
 }
 
-.e-filemanager .e-fe-error {
-  color: #dc3545;
-}
-
-.e-filemanager .e-upload .e-upload-actions {
-  border-bottom-color: #dee2e6;
-}
-
 .e-filemanager .e-fe-clone .e-fe-content {
   background-color: #fff;
   color: #6c757d;
@@ -1928,4 +1905,20 @@ ejs-filemanager {
 .e-fe-popup.e-dropdown-popup ul .e-item.e-separator,
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item.e-separator {
   border-bottom-color: #e9ecef;
+}
+
+.e-fe-popup.e-dialog td {
+  color: #212529;
+}
+
+.e-fe-popup.e-dialog td:first-child {
+  color: #6c757d;
+}
+
+.e-fe-popup .e-fe-error {
+  color: #dc3545;
+}
+
+.e-fe-popup .e-upload .e-upload-actions {
+  border-bottom-color: #dee2e6;
 }

@@ -883,6 +883,18 @@
   z-index: 0;
 }
 
+.e-gantt .e-gantt-chart .e-rangecontainer .e-leftarc {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rightarc {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: absolute;
+}
+
 .e-gantt .e-gantt-chart .e-event-markers {
   border-left: 1px dashed;
   position: absolute;
@@ -1445,6 +1457,28 @@
   border-radius: 4px;
 }
 
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-taskbar-inner-div {
+  border: 1px solid #fff;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-progressbar {
+  width: 0px !important;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-collapsed-taskbar-drag {
+  background-color: #3f51b5;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-left-connectorpoint-outer-div {
+  display: none;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-right-connectorpoint-outer-div {
+  display: none;
+}
+
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar-inner-div {
   background-color: rgba(97, 97, 97, 0.87);
   border: 1px solid #616161;
@@ -1490,6 +1524,12 @@
 
 .e-gantt .e-gantt-chart .e-weekend-header-cell {
   background: #fafafa;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rg-rangdiv {
+  border: 2px solid #FC7A05;
+  width: 5px;
+  z-index: 6;
 }
 
 .e-gantt .e-gantt-chart .e-event-markers {

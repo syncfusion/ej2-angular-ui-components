@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
+let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 let outputs: string[] = [];
 /**
  * Pointers directive
@@ -56,6 +56,12 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public imageUrl: any;
     /** 
+     * Sets and gets the properties to render a linear gradient for the pointer. 
+     * If both linear and radial gradient is set, then the linear gradient will be rendered in the pointer.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * Sets and gets the height of the marker pointer in an axis.
      * @default 5
      */
@@ -99,6 +105,11 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default Auto
      */
     public position: any;
+    /** 
+     * Sets and gets the properties to render a radial gradient for pointer.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Sets and gets the radius of pointer for marker and range type pointer and fix length of pointer for needle pointer.
      * @default null

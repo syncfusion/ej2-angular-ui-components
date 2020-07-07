@@ -1373,6 +1373,11 @@
   cursor: move;
 }
 
+.e-dashboardlayout.e-control .e-drag-restrict.e-drag:hover,
+.e-dashboardlayout.e-control .e-drag-restrict .e-drag:hover {
+  cursor: default;
+}
+
 .e-dashboardlayout.e-control .e-panel.e-dragging,
 .e-dashboardlayout.e-control .e-panel.e-item-moving {
   cursor: move;

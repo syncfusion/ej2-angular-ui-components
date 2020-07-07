@@ -1,9 +1,9 @@
-import { Directive, ViewContainerRef, ContentChildren } from '@angular/core';
+import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
-
-let input: string[] = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+let input: string[] = ['category', 'field', 'format', 'label', 'operators', 'ruleTemplate', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder. 
@@ -86,6 +86,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default null
      */
     public values: any;
+    /** 
+     * Specifies the rule template for the field with any other widgets.
+     */
+    @ContentChild('ruleTemplate')
+    @Template()
+    public ruleTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

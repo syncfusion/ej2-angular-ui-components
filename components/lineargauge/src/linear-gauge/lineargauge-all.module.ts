@@ -6,7 +6,7 @@ import { AxisDirective, AxesDirective } from './axes.directive';
 import { AnnotationDirective, AnnotationsDirective } from './annotations.directive';
 import { LinearGaugeComponent } from './lineargauge.component';
 import { LinearGaugeModule } from './lineargauge.module';
-import {GaugeTooltip, Annotations, Print, PdfExport, ImageExport} from '@syncfusion/ej2-lineargauge'
+import {GaugeTooltip, Annotations, Print, PdfExport, ImageExport, Gradient} from '@syncfusion/ej2-lineargauge'
 
 
 export const GaugeTooltipService: ValueProvider = { provide: 'LinearGaugeGaugeTooltip', useValue: GaugeTooltip};
@@ -14,6 +14,7 @@ export const AnnotationsService: ValueProvider = { provide: 'LinearGaugeAnnotati
 export const PrintService: ValueProvider = { provide: 'LinearGaugePrint', useValue: Print};
 export const PdfExportService: ValueProvider = { provide: 'LinearGaugePdfExport', useValue: PdfExport};
 export const ImageExportService: ValueProvider = { provide: 'LinearGaugeImageExport', useValue: ImageExport};
+export const GradientService: ValueProvider = { provide: 'LinearGaugeGradient', useValue: Gradient};
 
 /**
  * NgModule definition for the LinearGauge component with providers.
@@ -28,7 +29,8 @@ export const ImageExportService: ValueProvider = { provide: 'LinearGaugeImageExp
         AnnotationsService,
         PrintService,
         PdfExportService,
-        ImageExportService
+        ImageExportService,
+        GradientService
     ]
 })
 export class LinearGaugeAllModule { }

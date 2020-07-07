@@ -9,6 +9,7 @@
 
 .e-ribbon {
   border: 1px solid #e0e0e0;
+  position: relative;
 }
 
 .e-ribbon .e-tab .e-content .e-toolbar {
@@ -84,10 +85,12 @@
 
 .e-ribbon .e-drop-icon {
   cursor: pointer;
-  float: right;
   font-family: 'e-icons';
   margin: 12.5px 4px;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
   transform: rotate(180deg);
   transition: transform 300ms ease;
   width: 18px;
@@ -199,16 +202,16 @@
   background-color: inherit;
 }
 
-.e-ribbon .e-tab .e-tab-header .e-drop-icon {
-  color: #5f6368;
-}
-
 .e-ribbon .e-tab .e-content .e-toolbar .e-toolbar-items .e-toolbar-item.e-separator {
   border-color: #dcdcdc;
 }
 
 .e-ribbon .e-tab .e-tab-header:not(.e-vertical) .e-toolbar-item.e-active {
   border: 0;
+}
+
+.e-ribbon .e-drop-icon {
+  color: #5f6368;
 }
 
 .e-ribbon .e-tab .e-content .e-toolbar {

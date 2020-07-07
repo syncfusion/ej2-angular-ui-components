@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['border', 'color', 'end', 'endWidth', 'offset', 'position', 'start', 'startWidth'];
+let input: string[] = ['border', 'color', 'end', 'endWidth', 'linearGradient', 'offset', 'position', 'radialGradient', 'start', 'startWidth'];
 let outputs: string[] = [];
 /**
  * Ranges directive
@@ -42,6 +42,12 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public endWidth: any;
     /** 
+     * Sets and gets the properties to render a linear gradient for the range. 
+     * If both linear and radial gradient is set, then the linear gradient will be rendered in the range.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * Sets and gets the value to position the range in the axis.
      * @default '0'
      */
@@ -51,6 +57,11 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * @default Outside
      */
     public position: any;
+    /** 
+     * Sets and gets the properties to render a radial gradient for the range.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Sets and gets the start value for the range in axis.
      * @default 0

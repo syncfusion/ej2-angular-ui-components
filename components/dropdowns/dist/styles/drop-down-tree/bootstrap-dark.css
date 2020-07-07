@@ -60,13 +60,13 @@
   outline: none;
 }
 
-.e-ddt.e-icon-anim .e-ddt-icon::before {
-  transform: rotate(180deg);
+.e-ddt .e-ddt-icon::before {
+  transform: rotate(0deg);
   transition: transform 300ms ease;
 }
 
-.e-ddt .e-ddt-icon::before {
-  transform: rotate(0deg);
+.e-ddt.e-icon-anim .e-ddt-icon::before {
+  transform: rotate(180deg);
   transition: transform 300ms ease;
 }
 
@@ -87,10 +87,6 @@
 
 .e-ddt.e-input-group.e-control-wrapper .e-icon-hide, .e-ddt.e-float-input.e-control-wrapper .e-icon-hide {
   display: none;
-}
-
-.e-ddt.e-input-group.e-control-wrapper.e-input-focus input ~ label.e-float-text, .e-ddt.e-float-input.e-control-wrapper.e-input-focus input ~ label.e-float-text {
-  top: 16px;
 }
 
 .e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon {
@@ -129,19 +125,22 @@
 
 .e-ddt .e-chips-wrapper .e-chips-close::before {
   font-size: 10px;
+  vertical-align: middle;
 }
 
 .e-ddt .e-chips-wrapper .e-chips {
   -ms-flex-align: center;
       align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   float: left;
   height: 28px;
   margin: 2px 1px;
-  max-width: 100%;
+  max-width: calc(100% - 2px);
   overflow: hidden;
-  padding: 0 0 0 10px;
+  padding: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -149,22 +148,25 @@
 .e-ddt .e-chips-wrapper .e-chips > .e-chipcontent {
   max-width: 100%;
   overflow: hidden;
-  padding: 0 10px 0 0;
+  padding: 0 10px 0 10px;
   text-indent: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.e-ddt.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
+.e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
+  margin-right: 32px;
+  max-width: calc(100% - 33px);
+}
+
+.e-ddt.e-show-clear .e-chips-wrapper .e-chips:last-child {
+  margin-right: 32px;
+  max-width: calc(100% - 33px);
+}
+
+.e-ddt.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
   margin-right: 64px;
-}
-
-.e-ddt.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-right: 32px;
-}
-
-.e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-right: 32px;
+  max-width: calc(100% - 65px);
 }
 
 .e-ddt input[readonly],
@@ -180,9 +182,8 @@
 }
 
 .e-ddt.e-popup {
-  border: 1px solid;
+  border: 1px solid #414141;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 0px rgba(0, 0, 0, 0.14), 0 3px 14px 0px rgba(0, 0, 0, 0.12);
-  margin-top: 2px;
   position: absolute;
 }
 
@@ -193,7 +194,7 @@
   line-height: 36px;
   overflow: hidden;
   position: relative;
-  text-indent: 39px;
+  text-indent: 38px;
   white-space: nowrap;
   width: 100%;
 }
@@ -203,7 +204,6 @@
 }
 
 .e-ddt.e-popup .e-selectall-parent .e-checkbox-wrapper {
-  margin-right: 10px;
   position: relative;
   text-indent: 0;
 }
@@ -211,10 +211,27 @@
 .e-ddt.e-popup .e-selectall-parent .e-all-text {
   font-family: inherit;
   font-size: 14px;
+  margin: 10px;
+}
+
+.e-ddt.e-popup .e-filter-wrap .e-input,
+.e-ddt.e-popup .e-filter-wrap .e-input:focus {
+  padding: 0 12px;
+}
+
+.e-ddt.e-popup .e-filter-wrap {
+  border: #414141;
+  border-top-width: 0;
+  display: block;
+  padding: 5px 8px;
+}
+
+.e-ddt.e-popup .e-filter-wrap {
+  border-bottom: 1px solid #484848;
 }
 
 .e-ddt.e-popup .e-filter-wrap .e-input-group {
-  padding: 0 10px;
+  margin-bottom: 0;
 }
 
 .e-ddt.e-popup .e-popup-content {
@@ -277,45 +294,32 @@
 
 .e-ddt.e-rtl .e-chips-wrapper .e-chips {
   float: right;
-  padding: 0 10px 0 0;
 }
 
-.e-ddt.e-rtl .e-chips-wrapper .e-chips > .e-chipcontent {
-  padding: 0 0 0 10px;
+.e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
+  margin-left: 32px;
+  margin-right: 1px;
 }
 
-.e-ddt.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
+.e-ddt.e-rtl.e-show-clear .e-chips-wrapper .e-chips:last-child {
+  margin-left: 32px;
+  margin-right: 1px;
+}
+
+.e-ddt.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
   margin-left: 64px;
   margin-right: 1px;
 }
 
-.e-ddt.e-rtl.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-left: 32px;
-  margin-right: 1px;
-}
-
-.e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-left: 32px;
-  margin-right: 1px;
-}
-
-.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon {
+.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon,
+.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon,
+.e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon {
   left: 0;
   right: auto;
 }
 
 .e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon {
   left: 32px;
-}
-
-.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon {
-  left: 0;
-  right: auto;
-}
-
-.e-ddt.e-rtl.e-popup .e-selectall-parent .e-checkbox-wrapper {
-  margin-left: 10px;
-  margin-right: 0;
 }
 
 .e-ddt.e-rtl.e-popup .e-treeview .e-list-item .e-ul {
@@ -345,24 +349,27 @@
   min-height: 38px;
 }
 
-.e-bigger .e-ddt.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
+.e-bigger .e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
+  margin-right: 38px;
+  max-width: calc(100% - 39px);
+}
+
+.e-bigger .e-ddt.e-show-clear .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-show-clear .e-chips-wrapper .e-chips:last-child {
+  margin-right: 38px;
+  max-width: calc(100% - 39px);
+}
+
+.e-bigger .e-ddt.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
   margin-right: 76px;
-}
-
-.e-bigger .e-ddt.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-right: 38px;
-}
-
-.e-bigger .e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-right: 38px;
+  max-width: calc(100% - 77px);
 }
 
 .e-bigger .e-ddt.e-popup .e-selectall-parent,
 .e-ddt.e-bigger.e-popup .e-selectall-parent {
-  text-indent: 44px;
+  text-indent: 43px;
 }
 
 .e-bigger .e-ddt.e-popup .e-treeview .e-fullrow,
@@ -370,21 +377,21 @@
   height: 44px;
 }
 
-.e-bigger .e-ddt.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
+.e-bigger .e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
+  margin-left: 38px;
+  margin-right: 1px;
+}
+
+.e-bigger .e-ddt.e-rtl.e-show-clear .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-rtl.e-show-clear .e-chips-wrapper .e-chips:last-child {
+  margin-left: 38px;
+  margin-right: 1px;
+}
+
+.e-bigger .e-ddt.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child,
+.e-ddt.e-bigger.e-rtl.e-show-clear.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
   margin-left: 76px;
-  margin-right: 1px;
-}
-
-.e-bigger .e-ddt.e-rtl.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-rtl.e-show-clear .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-left: 38px;
-  margin-right: 1px;
-}
-
-.e-bigger .e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child,
-.e-ddt.e-bigger.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips-collection .e-chips:last-child {
-  margin-left: 38px;
   margin-right: 1px;
 }
 
@@ -396,7 +403,6 @@
 
 .e-ddt .e-chips {
   background-color: #414141;
-  border-radius: 4px;
 }
 
 .e-ddt .e-chips .e-chips-close::before {
@@ -429,7 +435,7 @@
 }
 
 .e-ddt.e-popup .e-selectall-parent {
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom-color: #484848;
 }
 
 .e-ddt.e-popup .e-selectall-parent .e-all-text {

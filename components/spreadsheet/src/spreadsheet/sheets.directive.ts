@@ -4,8 +4,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
 import { RangesDirective } from './ranges.directive';
+import { ConditionalFormatsDirective } from './conditionalformats.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -26,7 +27,8 @@ let outputs: string[] = [];
     queries: {
         childRows: new ContentChild(RowsDirective), 
         childColumns: new ContentChild(ColumnsDirective), 
-        childRanges: new ContentChild(RangesDirective)
+        childRanges: new ContentChild(RangesDirective), 
+        childConditionalFormats: new ContentChild(ConditionalFormatsDirective)
     }
 })
 export class SheetDirective extends ComplexBase<SheetDirective> {
@@ -34,7 +36,8 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
     public childRows: any;
     public childColumns: any;
     public childRanges: any;
-    public tags: string[] = ['rows', 'columns', 'ranges'];
+    public childConditionalFormats: any;
+    public tags: string[] = ['rows', 'columns', 'ranges', 'conditionalFormats'];
     /** 
      * Specifies active cell within `selectedRange` in the sheet.
      * @default 'A1'
@@ -51,6 +54,11 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      * @default []
      */
     public columns: any;
+    /** 
+     * Specifies the conditional formatting for the sheet.
+     * @default []
+     */
+    public conditionalFormats: any;
     /** 
      * Specifies index of the sheet. Based on the index, sheet properties are applied.
      * @default 0

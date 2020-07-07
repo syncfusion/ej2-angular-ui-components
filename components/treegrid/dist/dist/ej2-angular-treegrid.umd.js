@@ -458,6 +458,13 @@ exports.TreeGridComponent = /** @class */ (function (_super) {
             }
         }
         catch (_t) { }
+        try {
+            var mod = _this.injector.get('TreeGridColumnChooser');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_u) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -603,6 +610,7 @@ var VirtualScrollService = { provide: 'TreeGridVirtualScroll', useValue: ej2Tree
 var DetailRowService = { provide: 'TreeGridDetailRow', useValue: ej2Treegrid.DetailRow };
 var RowDDService = { provide: 'TreeGridRowDD', useValue: ej2Treegrid.RowDD };
 var FreezeService = { provide: 'TreeGridFreeze', useValue: ej2Treegrid.Freeze };
+var ColumnChooserService = { provide: 'TreeGridColumnChooser', useValue: ej2Treegrid.ColumnChooser };
 /**
  * NgModule definition for the TreeGrid component with providers.
  */
@@ -635,7 +643,8 @@ TreeGridAllModule.decorators = [
                     VirtualScrollService,
                     DetailRowService,
                     RowDDService,
-                    FreezeService
+                    FreezeService,
+                    ColumnChooserService
                 ]
             },] },
 ];
@@ -670,6 +679,7 @@ exports.VirtualScrollService = VirtualScrollService;
 exports.DetailRowService = DetailRowService;
 exports.RowDDService = RowDDService;
 exports.FreezeService = FreezeService;
+exports.ColumnChooserService = ColumnChooserService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$3;
 exports.TreeGrid = ej2Treegrid.TreeGrid;
@@ -684,7 +694,6 @@ exports.actionComplete = ej2Treegrid.actionComplete;
 exports.rowSelecting = ej2Treegrid.rowSelecting;
 exports.rowSelected = ej2Treegrid.rowSelected;
 exports.checkboxChange = ej2Treegrid.checkboxChange;
-exports.rowDeselecting = ej2Treegrid.rowDeselecting;
 exports.rowDeselected = ej2Treegrid.rowDeselected;
 exports.toolbarClick = ej2Treegrid.toolbarClick;
 exports.beforeExcelExport = ej2Treegrid.beforeExcelExport;

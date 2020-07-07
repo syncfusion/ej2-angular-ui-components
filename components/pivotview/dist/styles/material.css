@@ -230,6 +230,7 @@
 .e-pivotview .e-pivot-format-dialog .e-footer-content .e-clear-filter-button,
 .e-pivotview .e-group-field-settings .e-footer-content .e-clear-filter-button {
   float: left;
+  margin-left: -10px;
   margin: 0;
 }
 
@@ -1917,6 +1918,8 @@
 .e-pivotview .e-pivot-format-dialog.e-rtl .e-footer-content .e-clear-filter-button,
 .e-pivotview .e-group-field-settings.e-rtl .e-footer-content .e-clear-filter-button {
   float: right;
+  margin-right: -10px;
+  margin: 0;
 }
 
 .e-pivotview .e-value-field-settings.e-olap-editor-dialog .e-member-editor-wrapper .e-select-all-wrapper ul,
@@ -1995,6 +1998,10 @@
   max-width: 350px;
 }
 
+.e-pivotview .e-pivotchart-type-dialog .e-dlg-content {
+  overflow: visible;
+}
+
 .e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-wrapper,
 .e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-text {
   padding-bottom: 20px;
@@ -2008,6 +2015,11 @@
 .e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-wrapper .e-input-group.e-control-wrapper,
 .e-pivotview .e-pivotchart-type-dialog .e-chart-type-option-text .e-input-group.e-control-wrapper {
   padding: 1px;
+}
+
+.e-pivotview .e-pivotchart-type-dialog .e-dialog-multiple-axis,
+.e-pivotview .e-pivotchart-type-dialog .e-dialog-show-legend {
+  width: 50%;
 }
 
 .e-pivotview .e-pivotchart-type-dialog .e-icons.e-frame {
@@ -4607,6 +4619,15 @@
   visibility: hidden;
 }
 
+.e-pivotview .e-toolbar .e-toolbar-items {
+  margin-left: 20px;
+}
+
+.e-pivotview .e-rtl.e-toolbar .e-toolbar-items {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
 .e-pivotview .e-pivot-format-dialog .e-pivot-format-table {
   width: 100%;
 }
@@ -4623,20 +4644,27 @@
   color: #000 !important;
 }
 
-.e-pivotview .e-grid .e-rowsheader.e-active .e-cellvalue,
+.e-pivotview .e-grid .e-rowsheader.e-active .e-stackedheadercelldiv, .e-pivotview .e-grid .e-rowsheader.e-active .e-cellvalue,
 .e-pivotview .e-grid .e-rowsheader.e-active .e-icons,
+.e-pivotview .e-grid .e-rowsheader.e-cellselectionbackground .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-rowsheader.e-cellselectionbackground .e-cellvalue,
 .e-pivotview .e-grid .e-rowsheader.e-cellselectionbackground .e-icons,
+.e-pivotview .e-grid .e-columnsheader.e-active .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-columnsheader.e-active .e-cellvalue,
 .e-pivotview .e-grid .e-columnsheader.e-active .e-icons,
+.e-pivotview .e-grid .e-columnsheader.e-cellselectionbackground .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-columnsheader.e-cellselectionbackground .e-cellvalue,
 .e-pivotview .e-grid .e-columnsheader.e-cellselectionbackground .e-icons,
+.e-pivotview .e-grid .e-rowsheader.e-active .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-rowsheader.e-active .e-cellvalue,
 .e-pivotview .e-grid .e-rowsheader.e-active .e-icons,
+.e-pivotview .e-grid .e-rowsheader.e-selectionbackground .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-rowsheader.e-selectionbackground .e-cellvalue,
 .e-pivotview .e-grid .e-rowsheader.e-selectionbackground .e-icons,
+.e-pivotview .e-grid .e-columnsheader.e-active .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-columnsheader.e-active .e-cellvalue,
 .e-pivotview .e-grid .e-columnsheader.e-active .e-icons,
+.e-pivotview .e-grid .e-columnsheader.e-selectionbackground .e-stackedheadercelldiv,
 .e-pivotview .e-grid .e-columnsheader.e-selectionbackground .e-cellvalue,
 .e-pivotview .e-grid .e-columnsheader.e-selectionbackground .e-icons {
   color: #000 !important;
@@ -5321,6 +5349,20 @@
   height: 25px;
 }
 
+.e-pivotview .e-axis-column .e-group-chart-columns-dropdown {
+  font-size: 13px;
+  height: 25px;
+  margin: 0;
+}
+
+.e-pivotview .e-axis-column .e-group-chart-columns-dropdown .e-input-group-icon {
+  min-height: initial;
+}
+
+.e-pivotview .e-axis-column .e-group-chart-columns-dropdown input.e-input {
+  padding-bottom: 7px;
+}
+
 .e-pivotview .e-chart-grouping-bar .e-axis-row {
   height: 50% !important;
 }
@@ -5586,6 +5628,28 @@
 .e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input,
 .e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input,
 .e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-value .e-group-chart-values-drodown input.e-input {
+  padding-bottom: 10px;
+  padding-top: 0;
+}
+
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown {
+  margin: 0;
+}
+
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown .e-input-group-icon,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown .e-input-group-icon,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown .e-input-group-icon,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown .e-input-group-icon {
+  min-height: initial;
+}
+
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown input.e-input,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown input.e-input,
+.e-bigger .e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown input.e-input,
+.e-bigger.e-pivotview .e-chart-grouping-bar .e-axis-column .e-group-chart-columns-dropdown input.e-input {
   padding-bottom: 10px;
   padding-top: 0;
 }
@@ -5979,6 +6043,10 @@
 }
 
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-remove-report.e-icons::before {
+  content: '\e706';
+}
+
+.e-pivot-calc-dialog-div .e-remove-report.e-icons::before {
   content: '\e706';
 }
 
@@ -6747,7 +6815,7 @@
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div {
-  min-width: 550px;
+  min-width: 575px;
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div {
@@ -6789,10 +6857,22 @@
   width: 100%;
 }
 
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-calcfieldmember .e-list-text {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-item .e-text-content {
   height: 30px;
   margin: 0;
   padding: 0 0 0 24px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-remove-report.e-list-icon {
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 0;
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon {
@@ -9634,6 +9714,12 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-calcfieldmember .e-list-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 53%;
+}
+
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon {
   display: table;
   height: 30px;
@@ -9645,9 +9731,11 @@
   top: 0;
 }
 
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-list-edit-icon {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-list-edit-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-remove-report.e-icons {
   color: rgba(0, 0, 0, 0.54);
   display: table-cell;
+  padding: 5px;
   pointer-events: all;
   text-align: center;
   vertical-align: middle;

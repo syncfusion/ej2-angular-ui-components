@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Annotations, GaugeTooltip, ImageExport, LinearGauge, PdfExport, Print } from '@syncfusion/ej2-lineargauge';
+import { Annotations, GaugeTooltip, Gradient, ImageExport, LinearGauge, PdfExport, Print } from '@syncfusion/ej2-lineargauge';
 import { CommonModule } from '@angular/common';
 
-let input = ['border', 'color', 'end', 'endWidth', 'offset', 'position', 'start', 'startWidth'];
+let input = ['border', 'color', 'end', 'endWidth', 'linearGradient', 'offset', 'position', 'radialGradient', 'start', 'startWidth'];
 let outputs = [];
 /**
  * Ranges directive
@@ -58,7 +58,7 @@ RangesDirective.decorators = [
  */
 RangesDirective.ctorParameters = () => [];
 
-let input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'position', 'roundedCornerRadius', 'type', 'value', 'width'];
+let input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
 let outputs$1 = [];
 /**
  * Pointers directive
@@ -312,6 +312,13 @@ let LinearGaugeComponent = class LinearGaugeComponent extends LinearGauge {
             }
         }
         catch (_e) { }
+        try {
+            let mod = this.injector.get('LinearGaugeGradient');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
@@ -425,6 +432,7 @@ const AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: Annota
 const PrintService = { provide: 'LinearGaugePrint', useValue: Print };
 const PdfExportService = { provide: 'LinearGaugePdfExport', useValue: PdfExport };
 const ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ImageExport };
+const GradientService = { provide: 'LinearGaugeGradient', useValue: Gradient };
 /**
  * NgModule definition for the LinearGauge component with providers.
  */
@@ -441,7 +449,8 @@ LinearGaugeAllModule.decorators = [
                     AnnotationsService,
                     PrintService,
                     PdfExportService,
-                    ImageExportService
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -454,6 +463,6 @@ LinearGaugeAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, GaugeTooltipService, AnnotationsService, PrintService, PdfExportService, ImageExportService, inputs as ɵa, outputs$4 as ɵb };
-export { LinearGauge, Font, Margin, Border, Annotation, Container, RangeTooltip, TooltipSettings, Line, Label, Range, Tick, Pointer, Axis, stringToNumber, measureText, withInRange, convertPixelToValue, getPathToRect, getElement, removeElement, isPointerDrag, valueToCoefficient, getFontStyle, textFormatter, formatValue, getLabelFormat, getTemplateFunction, getElementOffset, triggerDownload, VisibleRange, GaugeLocation, Size, Rect, CustomizeOption, PathOption, RectOption, TextOption, VisibleLabels, Align, textElement, calculateNiceInterval, getActualDesiredIntervalsCount, getPointer, getRangeColor, getMousePosition, getRangePalette, calculateShapes, getBox, Annotations, GaugeTooltip, Print, ImageExport, PdfExport } from '@syncfusion/ej2-lineargauge';
+export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, GaugeTooltipService, AnnotationsService, PrintService, PdfExportService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
+export { LinearGauge, Font, Margin, Border, Annotation, Container, RangeTooltip, TooltipSettings, Line, Label, Range, Tick, Pointer, Axis, stringToNumber, measureText, withInRange, convertPixelToValue, getPathToRect, getElement, removeElement, isPointerDrag, valueToCoefficient, getFontStyle, textFormatter, formatValue, getLabelFormat, getTemplateFunction, getElementOffset, triggerDownload, VisibleRange, GaugeLocation, Size, Rect, CustomizeOption, PathOption, RectOption, TextOption, VisibleLabels, Align, textElement, calculateNiceInterval, getActualDesiredIntervalsCount, getPointer, getRangeColor, getMousePosition, getRangePalette, calculateShapes, getBox, Annotations, GaugeTooltip, Print, ImageExport, PdfExport, ColorStop, GradientPosition, LinearGradient, RadialGradient, Gradient } from '@syncfusion/ej2-lineargauge';
 //# sourceMappingURL=ej2-angular-lineargauge.js.map

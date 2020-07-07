@@ -316,6 +316,11 @@
   font-family: 'e-icons';
 }
 
+.e-de-cnt-track::before {
+  content: '\e20a';
+  font-family: 'e-icons';
+}
+
 .e-de-printlayout::before {
   content: '\e257';
   font-family: 'e-icons';
@@ -770,6 +775,14 @@
   min-height: 200px;
   overflow: auto;
   width: 260px;
+}
+
+.e-de-review-pane {
+  border-left: 1px solid #4a4848;
+  height: 100%;
+  min-height: 200px;
+  overflow: auto;
+  width: 400px;
 }
 
 .e-bigger .e-de-cntr-pane-padding {

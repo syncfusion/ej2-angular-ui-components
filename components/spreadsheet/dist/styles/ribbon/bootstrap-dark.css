@@ -8,6 +8,7 @@
 
 .e-ribbon {
   border: 1px solid #484848;
+  position: relative;
 }
 
 .e-ribbon .e-tab .e-content .e-toolbar {
@@ -80,10 +81,12 @@
 
 .e-ribbon .e-drop-icon {
   cursor: pointer;
-  float: right;
   font-family: 'e-icons';
-  margin: 6.5px 4px 17.5px;
+  margin: 16.5px 4px 17.5px;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
   transform: rotate(180deg);
   transition: transform 300ms ease;
   width: 18px;
@@ -145,7 +148,7 @@
 .e-bigger .e-ribbon .e-drop-icon,
 .e-bigger.e-ribbon .e-drop-icon {
   font-size: 12px;
-  margin: 8.5px 5px 19.5px;
+  margin: 18.5px 5px 19.5px;
 }
 
 .e-bigger .e-ribbon .e-tab .e-tab-header,
@@ -190,7 +193,7 @@
   background-color: inherit;
 }
 
-.e-ribbon .e-tab .e-tab-header .e-drop-icon {
+.e-ribbon .e-drop-icon {
   color: #f0f0f0;
 }
 

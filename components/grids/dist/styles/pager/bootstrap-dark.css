@@ -633,6 +633,15 @@
   }
 }
 
+.e-pager.sf-pager .e-link,
+.e-pager.sf-pager .e-prev,
+.e-pager.sf-pager .e-last,
+.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.sf-pager .e-mnext,
+.e-pager.sf-pager .e-mlast {
+  margin-left: -4px;
+}
+
 /*! Pager theme */
 .e-pager {
   background-color: #1a1a1a;

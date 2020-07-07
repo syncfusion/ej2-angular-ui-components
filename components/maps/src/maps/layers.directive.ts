@@ -61,7 +61,6 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * * Sets and gets the data source for the layer. 
      * * The data source can contain data that can be bound to the tooltip, marker, and bubble.
-     * @isdatamanager false
      * @isobservable true
      * @default []
      */
@@ -114,7 +113,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public selectionSettings: any;
     /** 
      * Sets and gets the shape data for the maps to render.
-     * @isdatamanager false
+     * @isobservable true
      * @default null
      */
     public shapeData: any;

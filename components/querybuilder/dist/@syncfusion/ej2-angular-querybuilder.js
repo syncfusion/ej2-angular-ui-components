@@ -1,9 +1,18 @@
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
-import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from '@syncfusion/ej2-angular-base';
+import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
 import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { CommonModule } from '@angular/common';
 
-let input = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+let input = ['category', 'field', 'format', 'label', 'operators', 'ruleTemplate', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder.
@@ -43,6 +52,13 @@ ColumnDirective.decorators = [
 ColumnDirective.ctorParameters = () => [
     { type: ViewContainerRef, },
 ];
+ColumnDirective.propDecorators = {
+    'ruleTemplate': [{ type: ContentChild, args: ['ruleTemplate',] },],
+};
+__decorate([
+    Template(),
+    __metadata("design:type", Object)
+], ColumnDirective.prototype, "ruleTemplate", void 0);
 /**
  * Column Array Directive
  */
@@ -64,17 +80,17 @@ ColumnsDirective.decorators = [
  */
 ColumnsDirective.ctorParameters = () => [];
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+var __decorate$1 = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
+var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'readonly', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
-const outputs$1 = ['beforeChange', 'change', 'created', 'ruleChange'];
+const outputs$1 = ['actionBegin', 'beforeChange', 'change', 'created', 'ruleChange'];
 const twoWays = [''];
 /**
  * Represents the EJ2 Angular QueryBuilder Component.
@@ -150,9 +166,9 @@ QueryBuilderComponent.ctorParameters = () => [
     { type: ViewContainerRef, },
     { type: Injector, },
 ];
-QueryBuilderComponent = __decorate([
+QueryBuilderComponent = __decorate$1([
     ComponentMixins([ComponentBase]),
-    __metadata("design:paramtypes", [ElementRef,
+    __metadata$1("design:paramtypes", [ElementRef,
         Renderer2,
         ViewContainerRef,
         Injector])

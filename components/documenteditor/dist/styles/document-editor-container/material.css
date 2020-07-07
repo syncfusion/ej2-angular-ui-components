@@ -330,6 +330,11 @@
   font-family: 'e-icons';
 }
 
+.e-de-cnt-track::before {
+  content: '\e20a';
+  font-family: 'e-icons';
+}
+
 .e-de-weblayout::before {
   content: '\e193';
   font-family: 'e-icons';
@@ -381,7 +386,7 @@
 }
 
 .e-de-update-field::before {
-  content: '\e191';
+  content: '\e19e';
   font-family: 'e-icons';
 }
 
@@ -789,6 +794,14 @@
   min-height: 200px;
   overflow: auto;
   width: 262px;
+}
+
+.e-de-review-pane {
+  border-left: 1px solid #e0e0e0;
+  height: 100%;
+  min-height: 200px;
+  overflow: auto;
+  width: 400px;
 }
 
 .e-bigger .e-de-cntr-pane-padding {

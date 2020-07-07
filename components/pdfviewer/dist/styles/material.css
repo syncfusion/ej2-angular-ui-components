@@ -421,6 +421,11 @@
   font-family: 'e-icons';
 }
 
+.e-pv-delete::before {
+  content: '\e94a';
+  font-family: 'e-icons';
+}
+
 /*! component layout */
 .e-pdfviewer .e-pv-viewer-container {
   border-style: solid;
@@ -631,6 +636,10 @@
       touch-action: pan-x pan-y;
 }
 
+.e-pv-signaturehover {
+  background-color: #e0e0e0;
+}
+
 .e-pv-mobilespanscroll-container {
   color: rgba(0, 0, 0, 0.87);
   font-family: Roboto-Regular;
@@ -646,6 +655,7 @@
 .e-pv-annotation-textcolor-container.e-dropdown-btn.e-btn .e-btn-icon:not(.e-caret),
 .e-pv-annotation-textalign-container.e-dropdown-btn.e-btn .e-btn-icon:not(.e-caret),
 .e-pv-annotation-textprop-container.e-dropdown-btn.e-btn .e-btn-icon:not(.e-caret),
+.e-pv-annotation-handwritten-container.e-dropdown-btn.e-btn .e-btn-icon:not(.e-caret),
 .e-pv-annotation-stamp-container .e-menu-wrapper ul .e-menu-item .e-menu-icon,
 .e-bigger .e-pv-icon-search,
 .e-pv-icon {
@@ -1721,6 +1731,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 .e-pv-annotation-textcolor-container.e-btn,
 .e-pv-annotation-textalign-container.e-btn,
 .e-pv-annotation-textprop-container.e-btn,
+.e-pv-annotation-handwritten-container.e-btn,
 .e-pv-stamp.e-menu-wrapper ul .e-menu-item.e-focused:not(.e-selected) {
   background-color: #fafafa;
   border-color: transparent;
@@ -1735,6 +1746,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 .e-pv-annotation-textcolor-container.e-btn:hover,
 .e-pv-annotation-textalign-container.e-btn:hover,
 .e-pv-annotation-textprop-container.e-btn:hover,
+.e-pv-annotation-handwritten-container.e-btn:hover,
 .e-pv-stamp.e-menu-wrapper ul .e-menu-item.e-focused:hover {
   background-color: rgba(0, 0, 0, 0.12);
   border-color: transparent;
@@ -1748,7 +1760,8 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 .e-pv-annotation-calibrate-container.e-btn:active,
 .e-pv-annotation-textcolor-container.e-btn:active,
 .e-pv-annotation-textalign-container.e-btn:active,
-.e-pv-annotation-textprop-container.e-btn:active {
+.e-pv-annotation-textprop-container.e-btn:active,
+.e-pv-annotation-handwritten-container.e-btn:active {
   background-color: #e0e0e0;
   border-color: transparent;
   box-shadow: none;
@@ -1756,7 +1769,8 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 }
 
 .e-pv-annotation-shapes-container.e-btn.e-dropdown-btn.e-active:not(:hover),
-.e-pv-annotation-calibrate-container.e-btn.e-dropdown-btn.e-active:not(:hover) {
+.e-pv-annotation-calibrate-container.e-btn.e-dropdown-btn.e-active:not(:hover),
+.e-pv-annotation-handwritten-container.e-dropdown-btn.e-btn.e-active:not(:hover) {
   background-color: #e0e0e0;
 }
 
@@ -1978,18 +1992,21 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-annotation-shapes-container.e-btn.e-icon-btn,
 .e-pv-annotation-calibrate-container.e-btn.e-icon-btn,
+.e-pv-annotation-handwritten-container.e-btn.e-icon-btn,
 .e-menu-wrapper.e-custom-scroll.e-lib.e-keyboard.e-pv-stamp ul {
   height: 32px;
   width: 69px;
 }
 
 .e-pv-annotation-shapes-container.e-btn.e-icon-btn,
-.e-pv-annotation-calibrate-container.e-btn.e-icon-btn {
+.e-pv-annotation-calibrate-container.e-btn.e-icon-btn,
+.e-pv-annotation-handwritten-container.e-btn.e-icon-btn {
   padding-top: 1px;
 }
 
 .e-pv-annotation-shape-icon,
-.e-pv-annotation-calibrate-icon {
+.e-pv-annotation-calibrate-icon,
+.e-pv-handwritten-icon {
   margin-right: 10px;
 }
 
@@ -2003,6 +2020,7 @@ div > .e-pv-bookmark-icon.e-pv-icon {
 
 .e-pv-annotation-shapes-container.e-btn.e-icon-btn,
 .e-pv-annotation-calibrate-container.e-btn.e-icon-btn,
+.e-pv-annotation-handwritten-container.e-btn.e-icon-btn,
 .e-pv-annotation-stamp-container .e-menu-parent.e-menu .e-menu-item,
 .e-pv-annotation-stamp-container .e-menu-parent.e-menu .e-menu-item .e-pv-stamp-icon,
 .e-pv-annotation-stamp-container .e-menu-parent.e-menu .e-menu-item .e-caret {
@@ -2363,6 +2381,11 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   display: block;
 }
 
+.e-dropdown-popup.e-lib.e-popup.e-control.e-pv-handwritten-popup.e-popup-open ul {
+  padding-bottom: 8px;
+  padding-top: 17px;
+}
+
 .e-menu-icon.e-pv-stamp-icon.e-pv-icon {
   padding-left: 7px;
 }
@@ -2468,4 +2491,32 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
 
 .e-pv-comment-panel-resizer.e-right {
   right: 300px;
+}
+
+.e-pv-align {
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 15px;
+  position: absolute;
+  right: 15px;
+}
+
+.e-pv-align-border {
+  border: 1px dotted #bdbdbd;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 20%;
+}
+
+.e-pv-align-sign {
+  border: 1px solid #e3165b;
+  border-radius: 4px;
+  color: #e3165b;
+  left: 41px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
 }

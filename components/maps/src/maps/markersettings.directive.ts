@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -59,7 +59,6 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      * of the marker. 
      * The data source can contain data such as color, shape, and other details that can be bound to the color, shape, 
      * and tooltip of the marker.
-     * @isdatamanager false
      * @isobservable true
      * @default []
      */
@@ -88,6 +87,10 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public imageUrlValuePath: any;
     /** 
+     * To select the shape at the rendering time.
+     */
+    public initialMarkerSelection: any;
+    /** 
      * Defines the value path from the marker data source for setting latitude for a set of markers.
      */
     public latitudeValuePath: any;
@@ -109,6 +112,12 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      * @default 1
      */
     public opacity: any;
+    /** 
+     * Sets and gets the query to select particular data from the marker data. 
+     * This property is applicable only when the data source is created by data manager.
+     * @default null
+     */
+    public query: any;
     /** 
      * Sets and gets the options to customize the marker while selecting the marker in maps.
      */

@@ -4,9 +4,9 @@ import { Accordion } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { AccordionItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animation','dataSource','enableHtmlSanitizer','enablePersistence','enableRtl','expandMode','headerTemplate','height','itemTemplate','items','locale','width'];
-export const outputs: string[] = ['clicked','created','destroyed','expanded','expanding'];
-export const twoWays: string[] = [''];
+export const inputs: string[] = ['animation','dataSource','enableHtmlSanitizer','enablePersistence','enableRtl','expandMode','expandedIndices','headerTemplate','height','itemTemplate','items','locale','width'];
+export const outputs: string[] = ['clicked','created','destroyed','expanded','expanding','expandedIndicesChange'];
+export const twoWays: string[] = ['expandedIndices'];
 
 /**
  * Represents the Angular Accordion Component.
@@ -30,7 +30,7 @@ export class AccordionComponent extends Accordion implements IComponentBase {
     public tagObjects: any;
     public childItems: QueryList<AccordionItemsDirective>;
     public tags: string[] = ['items'];
-
+    public expandedIndicesChange: any;
     /** 
      * Specifies the header title template option for accordion items.
      * @default null

@@ -4,7 +4,7 @@ import { ProgressBar } from '@syncfusion/ej2-progressbar';
 
 import { ProgressBarAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['animation','annotations','cornerRadius','enablePersistence','enablePieProgress','enableRtl','endAngle','gapWidth','height','innerRadius','isActive','isGradient','isIndeterminate','isStriped','labelStyle','locale','margin','maximum','minimum','progressColor','progressThickness','radius','rangeColors','role','secondaryProgress','segmentColor','segmentCount','showProgressValue','startAngle','theme','trackColor','trackSegmentDisable','trackThickness','type','value','width'];
+export const inputs: string[] = ['animation','annotations','cornerRadius','enablePersistence','enablePieProgress','enableProgressSegments','enableRtl','endAngle','gapWidth','height','innerRadius','isActive','isGradient','isIndeterminate','isStriped','labelStyle','locale','margin','maximum','minimum','progressColor','progressThickness','radius','rangeColors','role','secondaryProgress','segmentColor','segmentCount','showProgressValue','startAngle','theme','trackColor','trackThickness','type','value','width'];
 export const outputs: string[] = ['animationComplete','load','loaded','mouseClick','mouseDown','mouseLeave','mouseMove','mouseUp','progressCompleted','textRender','valueChanged'];
 export const twoWays: string[] = [''];
 

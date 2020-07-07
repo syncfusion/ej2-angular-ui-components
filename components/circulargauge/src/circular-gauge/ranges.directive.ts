@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'end', 'endWidth', 'legendText', 'offset', 'opacity', 'position', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input: string[] = ['color', 'end', 'endWidth', 'legendText', 'linearGradient', 'offset', 'opacity', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs: string[] = [];
 /**
  * Ranges directive
@@ -46,6 +46,12 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public legendText: any;
     /** 
+     * Sets and gets the properties to render a linear gradient for the range. 
+     * If both linear and radial gradient is set, then the linear gradient will be rendered in the range.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * Sets and gets the offset value of range in circular gauge component.
      * @default '0'
      */
@@ -60,6 +66,11 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * @default Auto
      */
     public position: any;
+    /** 
+     * Sets and gets the properties to render a radial gradient for the range.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Sets and gets the radius of the range for circular gauge component.
      * @default null

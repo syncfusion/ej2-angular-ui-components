@@ -4,6 +4,7 @@
 
 .e-ribbon {
   border: 1px solid #eaeaea;
+  position: relative;
 }
 
 .e-ribbon .e-tab .e-content .e-toolbar {
@@ -81,10 +82,12 @@
 
 .e-ribbon .e-drop-icon {
   cursor: pointer;
-  float: right;
   font-family: 'e-icons';
   margin: 12.5px 4px;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
   transform: rotate(180deg);
   transition: transform 300ms ease;
   width: 18px;
@@ -202,7 +205,7 @@
   background-color: inherit;
 }
 
-.e-ribbon .e-tab .e-tab-header .e-drop-icon {
+.e-ribbon .e-drop-icon {
   color: #666;
 }
 

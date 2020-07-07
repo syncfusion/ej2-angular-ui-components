@@ -2068,6 +2068,16 @@ label[for='container_wholeWord'] {
   font-size: 10px;
 }
 
+.e-documenteditor .e-menu-item .e-de-acceptchange::before {
+  content: '\e19f';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-menu-item .e-de-rejectchange::before {
+  content: '\e204';
+  font-family: 'e-icons';
+}
+
 .e-documenteditor .e-de-op .e-de-op-close-icon {
   height: 20px;
 }
@@ -2149,6 +2159,16 @@ label[for='container_wholeWord'] {
 
 .e-de-ctn-title-print::before {
   content: '\ebf9';
+  font-family: 'e-icons';
+}
+
+.e-de-acceptchange::before {
+  content: '\e19f';
+  font-family: 'e-icons';
+}
+
+.e-de-rejectchange::before {
+  content: '\e204';
   font-family: 'e-icons';
 }
 

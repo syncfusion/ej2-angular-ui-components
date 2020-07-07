@@ -94,7 +94,7 @@ AnnotationsDirective.decorators = [
  * @nocollapse
  */
 AnnotationsDirective.ctorParameters = function () { return []; };
-var input$1 = ['color', 'end', 'endWidth', 'legendText', 'offset', 'opacity', 'position', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+var input$1 = ['color', 'end', 'endWidth', 'legendText', 'linearGradient', 'offset', 'opacity', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 var outputs$1 = [];
 /**
  * Ranges directive
@@ -153,7 +153,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
+var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 var outputs$2 = [];
 /**
  * Pointers directive
@@ -358,6 +358,13 @@ exports.CircularGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_f) { }
+        try {
+            var mod = _this.injector.get('CircularGaugeGradient');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_g) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -471,6 +478,7 @@ var LegendService = { provide: 'CircularGaugeLegend', useValue: ej2Circulargauge
 var PrintService = { provide: 'CircularGaugePrint', useValue: ej2Circulargauge.Print };
 var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: ej2Circulargauge.PdfExport };
 var ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ej2Circulargauge.ImageExport };
+var GradientService = { provide: 'CircularGaugeGradient', useValue: ej2Circulargauge.Gradient };
 /**
  * NgModule definition for the CircularGauge component with providers.
  */
@@ -491,7 +499,8 @@ CircularGaugeAllModule.decorators = [
                     LegendService,
                     PrintService,
                     PdfExportService,
-                    ImageExportService
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -516,6 +525,7 @@ exports.LegendService = LegendService;
 exports.PrintService = PrintService;
 exports.PdfExportService = PdfExportService;
 exports.ImageExportService = ImageExportService;
+exports.GradientService = GradientService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.CircularGauge = ej2Circulargauge.CircularGauge;
@@ -589,6 +599,11 @@ exports.LegendOptions = ej2Circulargauge.LegendOptions;
 exports.ImageExport = ej2Circulargauge.ImageExport;
 exports.PdfExport = ej2Circulargauge.PdfExport;
 exports.Print = ej2Circulargauge.Print;
+exports.ColorStop = ej2Circulargauge.ColorStop;
+exports.GradientPosition = ej2Circulargauge.GradientPosition;
+exports.LinearGradient = ej2Circulargauge.LinearGradient;
+exports.RadialGradient = ej2Circulargauge.RadialGradient;
+exports.Gradient = ej2Circulargauge.Gradient;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

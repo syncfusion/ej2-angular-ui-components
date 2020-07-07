@@ -47,6 +47,10 @@
   content: '\e70c';
 }
 
+.e-pivot-calc-dialog-div .e-remove-report.e-icons::before {
+  content: '\e70c';
+}
+
 .e-pivot-calc-dialog-div .e-list-item .e-text-content .e-format.e-icons::before {
   content: '\e22f';
 }
@@ -812,7 +816,7 @@
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div {
-  min-width: 550px;
+  min-width: 575px;
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div {
@@ -854,10 +858,22 @@
   width: 100%;
 }
 
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-calcfieldmember .e-list-text {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-item .e-text-content {
   height: 30px;
   margin: 0;
   padding: 0 0 0 24px;
+}
+
+.e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-remove-report.e-list-icon {
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 0;
 }
 
 .e-pivot-calc-dialog-div.e-olap-calc-dialog-div .e-pivot-calc-outer-div .e-olap-field-tree-div .e-pivot-treeview-outer .e-treeview ul .e-list-icon {
@@ -3699,6 +3715,12 @@
   color: #f0f0f0;
 }
 
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-calcfieldmember .e-list-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 53%;
+}
+
 .e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon {
   display: table;
   height: 30px;
@@ -3710,9 +3732,11 @@
   top: 0;
 }
 
-.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-list-edit-icon {
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-list-edit-icon,
+.e-pivotfieldlist-wrapper.e-device .e-adaptive-container .e-content .e-pivot-calc-outer-div .e-pivot-accord ul .e-list-header-icon .e-remove-report.e-icons {
   color: #f0f0f0;
   display: table-cell;
+  padding: 5px;
   pointer-events: all;
   text-align: center;
   vertical-align: middle;

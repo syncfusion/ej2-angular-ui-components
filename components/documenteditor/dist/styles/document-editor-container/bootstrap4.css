@@ -18,6 +18,11 @@
   content: '\e735';
 }
 
+.e-de-cnt-track::before {
+  content: '\e20a';
+  font-family: 'e-icons';
+}
+
 .e-de-selected-spellcheck-item::before {
   content: '\e718';
   font-family: 'e-icons';
@@ -947,6 +952,14 @@
   min-height: 200px;
   overflow: auto;
   width: 264px;
+}
+
+.e-de-review-pane {
+  border-left: 1px solid #dee2e6;
+  height: 100%;
+  min-height: 200px;
+  overflow: auto;
+  width: 440px;
 }
 
 .e-bigger .e-de-cntr-pane-padding {

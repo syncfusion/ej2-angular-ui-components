@@ -94,7 +94,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 var outputs$1 = [];
 /**
  * Layer Directive
@@ -254,7 +254,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$3 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
+var input$3 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'query', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
 var outputs$3 = [];
 /**
  * Layer Directive
@@ -938,6 +938,7 @@ exports.ConnectorLineSettings = ej2Maps.ConnectorLineSettings;
 exports.MarkerClusterSettings = ej2Maps.MarkerClusterSettings;
 exports.MarkerClusterData = ej2Maps.MarkerClusterData;
 exports.ColorMappingSettings = ej2Maps.ColorMappingSettings;
+exports.InitialMarkerSelectionSettings = ej2Maps.InitialMarkerSelectionSettings;
 exports.InitialShapeSelectionSettings = ej2Maps.InitialShapeSelectionSettings;
 exports.SelectionSettings = ej2Maps.SelectionSettings;
 exports.HighlightSettings = ej2Maps.HighlightSettings;
@@ -1070,6 +1071,7 @@ exports.MapAjax = ej2Maps.MapAjax;
 exports.smoothTranslate = ej2Maps.smoothTranslate;
 exports.compareZoomFactor = ej2Maps.compareZoomFactor;
 exports.calculateZoomLevel = ej2Maps.calculateZoomLevel;
+exports.processResult = ej2Maps.processResult;
 exports.LayerPanel = ej2Maps.LayerPanel;
 exports.Bubble = ej2Maps.Bubble;
 exports.BingMap = ej2Maps.BingMap;

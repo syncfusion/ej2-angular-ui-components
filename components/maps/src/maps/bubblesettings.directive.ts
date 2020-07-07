@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ColorMappingsDirective } from './colormapping.directive';
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'query', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -64,7 +64,6 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
      * The data source must contain the size value of the bubble that can be bound to the bubble 
      * of the Maps using the valuePath property in the bubbleSettings. 
      * The data source can contain data such as color, and the other information that can be bound to the bubble, and tooltip of the bubble.
-     * @isdatamanager false
      * @isobservable true
      * @default []
      */
@@ -93,6 +92,12 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
      * @default 1
      */
     public opacity: any;
+    /** 
+     * Sets and gets the query to select particular data from the bubble data. 
+     * This property is applicable only when the data source is created by data manager.
+     * @default null
+     */
+    public query: any;
     /** 
      * Sets and gets the selection settings for the bubble in maps.
      */

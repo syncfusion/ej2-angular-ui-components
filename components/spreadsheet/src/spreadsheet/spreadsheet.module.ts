@@ -4,6 +4,7 @@ import { CellDirective, CellsDirective } from './cells.directive';
 import { RowDirective, RowsDirective } from './rows.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { RangeDirective, RangesDirective } from './ranges.directive';
+import { ConditionalFormatDirective, ConditionalFormatsDirective } from './conditionalformats.directive';
 import { SheetDirective, SheetsDirective } from './sheets.directive';
 import { DefinedNameDirective, DefinedNamesDirective } from './definednames.directive';
 import { SpreadsheetComponent } from './spreadsheet.component';
@@ -23,6 +24,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
         ColumnsDirective,
         RangeDirective,
         RangesDirective,
+        ConditionalFormatDirective,
+        ConditionalFormatsDirective,
         SheetDirective,
         SheetsDirective,
         DefinedNameDirective,
@@ -38,6 +41,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
         ColumnsDirective,
         RangeDirective,
         RangesDirective,
+        ConditionalFormatDirective,
+        ConditionalFormatsDirective,
         SheetDirective,
         SheetsDirective,
         DefinedNameDirective,

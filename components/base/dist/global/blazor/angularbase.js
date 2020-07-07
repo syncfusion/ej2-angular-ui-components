@@ -820,6 +820,7 @@ exports.Template = Template;
 return exports;
 
 });
+sfBlazor.libs.push("angularbase")
 sfBlazor.loadDependencies(["base","core"], () => {
     sf.angularbase = sf.angularbase({});
 });

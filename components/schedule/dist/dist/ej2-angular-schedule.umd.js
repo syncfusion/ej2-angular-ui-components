@@ -300,7 +300,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['agendaDaysCount', 'allowDragAndDrop', 'allowKeyboardInteraction', 'allowMultiCellSelection', 'allowMultiRowSelection', 'allowResizing', 'calendarMode', 'cellHeaderTemplate', 'cellTemplate', 'cssClass', 'currentView', 'dateFormat', 'dateHeaderTemplate', 'editorTemplate', 'enablePersistence', 'enableRecurrenceValidation', 'enableRtl', 'endHour', 'eventDragArea', 'eventSettings', 'firstDayOfWeek', 'group', 'headerRows', 'height', 'hideEmptyAgendaDays', 'locale', 'maxDate', 'minDate', 'quickInfoOnSelectionEnd', 'quickInfoTemplates', 'readonly', 'resourceHeaderTemplate', 'resources', 'rowAutoHeight', 'selectedDate', 'showHeaderBar', 'showQuickInfo', 'showTimeIndicator', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'timezone', 'views', 'width', 'workDays', 'workHours'];
+var inputs = ['agendaDaysCount', 'allowDragAndDrop', 'allowInline', 'allowKeyboardInteraction', 'allowMultiCellSelection', 'allowMultiRowSelection', 'allowResizing', 'calendarMode', 'cellHeaderTemplate', 'cellTemplate', 'cssClass', 'currentView', 'dateFormat', 'dateHeaderTemplate', 'editorTemplate', 'enablePersistence', 'enableRecurrenceValidation', 'enableRtl', 'endHour', 'eventDragArea', 'eventSettings', 'firstDayOfWeek', 'group', 'headerRows', 'height', 'hideEmptyAgendaDays', 'locale', 'maxDate', 'minDate', 'quickInfoOnSelectionEnd', 'quickInfoTemplates', 'readonly', 'resourceHeaderTemplate', 'resources', 'rowAutoHeight', 'selectedDate', 'showHeaderBar', 'showQuickInfo', 'showTimeIndicator', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'timezone', 'views', 'width', 'workDays', 'workHours'];
 var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'cellClick', 'cellDoubleClick', 'created', 'dataBinding', 'dataBound', 'destroyed', 'drag', 'dragStart', 'dragStop', 'eventClick', 'eventRendered', 'hover', 'moreEventsClick', 'navigating', 'popupClose', 'popupOpen', 'renderCell', 'resizeStart', 'resizeStop', 'resizing', 'select', 'currentViewChange', 'selectedDateChange'];
 var twoWays = ['currentView', 'selectedDate'];
 /**
@@ -355,82 +355,89 @@ exports.ScheduleComponent = /** @class */ (function (_super) {
         }
         catch (_d) { }
         try {
-            var mod = _this.injector.get('ScheduleAgenda');
+            var mod = _this.injector.get('ScheduleYear');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_e) { }
         try {
-            var mod = _this.injector.get('ScheduleMonthAgenda');
+            var mod = _this.injector.get('ScheduleAgenda');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_f) { }
         try {
-            var mod = _this.injector.get('ScheduleTimelineViews');
+            var mod = _this.injector.get('ScheduleMonthAgenda');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_g) { }
         try {
-            var mod = _this.injector.get('ScheduleTimelineMonth');
+            var mod = _this.injector.get('ScheduleTimelineViews');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_h) { }
         try {
-            var mod = _this.injector.get('ScheduleTimelineYear');
+            var mod = _this.injector.get('ScheduleTimelineMonth');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_j) { }
         try {
-            var mod = _this.injector.get('ScheduleResize');
+            var mod = _this.injector.get('ScheduleTimelineYear');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_k) { }
         try {
-            var mod = _this.injector.get('ScheduleDragAndDrop');
+            var mod = _this.injector.get('ScheduleResize');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_l) { }
         try {
-            var mod = _this.injector.get('ScheduleExcelExport');
+            var mod = _this.injector.get('ScheduleDragAndDrop');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_m) { }
         try {
-            var mod = _this.injector.get('ScheduleICalendarExport');
+            var mod = _this.injector.get('ScheduleExcelExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_o) { }
         try {
-            var mod = _this.injector.get('ScheduleICalendarImport');
+            var mod = _this.injector.get('ScheduleICalendarExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_p) { }
         try {
-            var mod = _this.injector.get('SchedulePrint');
+            var mod = _this.injector.get('ScheduleICalendarImport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_q) { }
+        try {
+            var mod = _this.injector.get('SchedulePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_r) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -606,6 +613,7 @@ var DayService = { provide: 'ScheduleDay', useValue: ej2Schedule.Day };
 var WeekService = { provide: 'ScheduleWeek', useValue: ej2Schedule.Week };
 var WorkWeekService = { provide: 'ScheduleWorkWeek', useValue: ej2Schedule.WorkWeek };
 var MonthService = { provide: 'ScheduleMonth', useValue: ej2Schedule.Month };
+var YearService = { provide: 'ScheduleYear', useValue: ej2Schedule.Year };
 var AgendaService = { provide: 'ScheduleAgenda', useValue: ej2Schedule.Agenda };
 var MonthAgendaService = { provide: 'ScheduleMonthAgenda', useValue: ej2Schedule.MonthAgenda };
 var TimelineViewsService = { provide: 'ScheduleTimelineViews', useValue: ej2Schedule.TimelineViews };
@@ -636,6 +644,7 @@ ScheduleAllModule.decorators = [
                     WeekService,
                     WorkWeekService,
                     MonthService,
+                    YearService,
                     AgendaService,
                     MonthAgendaService,
                     TimelineViewsService,
@@ -808,6 +817,7 @@ exports.DayService = DayService;
 exports.WeekService = WeekService;
 exports.WorkWeekService = WorkWeekService;
 exports.MonthService = MonthService;
+exports.YearService = YearService;
 exports.AgendaService = AgendaService;
 exports.MonthAgendaService = MonthAgendaService;
 exports.TimelineViewsService = TimelineViewsService;
@@ -848,6 +858,7 @@ exports.dragStop = ej2Schedule.dragStop;
 exports.resizeStart = ej2Schedule.resizeStart;
 exports.resizing = ej2Schedule.resizing;
 exports.resizeStop = ej2Schedule.resizeStop;
+exports.inlineClick = ej2Schedule.inlineClick;
 exports.initialLoad = ej2Schedule.initialLoad;
 exports.initialEnd = ej2Schedule.initialEnd;
 exports.dataReady = ej2Schedule.dataReady;
@@ -897,6 +908,7 @@ exports.Day = ej2Schedule.Day;
 exports.Week = ej2Schedule.Week;
 exports.WorkWeek = ej2Schedule.WorkWeek;
 exports.Month = ej2Schedule.Month;
+exports.Year = ej2Schedule.Year;
 exports.Agenda = ej2Schedule.Agenda;
 exports.MonthAgenda = ej2Schedule.MonthAgenda;
 exports.TimelineViews = ej2Schedule.TimelineViews;

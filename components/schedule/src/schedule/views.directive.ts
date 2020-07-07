@@ -59,7 +59,6 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  this property. It usually accepts the integer values, whereby 0 is always denoted as Sunday, 1 as Monday and so on.
      * @default 0
      * @blazortype double?
-     * @aspdefaultvalue null
      */
     public firstDayOfWeek: any;
     /** 
@@ -91,6 +90,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * * Week 
      * * WorkWeek 
      * * Month 
+     * * Year 
      * * Agenda 
      * * MonthAgenda 
      * * TimelineDay 

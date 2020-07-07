@@ -7,7 +7,7 @@ import { CustomCursorsDirective } from './customcursor.directive';
 import { ConnectorsDirective } from './connectors.directive';
 import { NodesDirective } from './nodes.directive';
 
-export const inputs: string[] = ['addInfo','annotationTemplate','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','diagramSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodeDefaults','nodeTemplate','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','width'];
+export const inputs: string[] = ['addInfo','annotationTemplate','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','diagramSettings','drawingObject','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodeDefaults','nodeTemplate','nodes','pageSettings','rulerSettings','scrollSettings','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','userHandleTemplate','width'];
 export const outputs: string[] = ['animationComplete','click','collectionChange','commandExecute','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','expandStateChange','historyChange','historyStateChange','keyDown','keyUp','mouseEnter','mouseLeave','mouseOver','onImageLoad','onUserHandleMouseDown','onUserHandleMouseEnter','onUserHandleMouseLeave','onUserHandleMouseUp','positionChange','propertyChange','rotateChange','scrollChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
 export const twoWays: string[] = [''];
 
@@ -54,6 +54,13 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     @ContentChild('nodeTemplate')
     @Template()
     public nodeTemplate: any;
+    /** 
+     * This property represents the template content of a user handle. The user can define any HTML element as a template.
+     * @default undefined
+     */
+    @ContentChild('userHandleTemplate')
+    @Template()
+    public userHandleTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

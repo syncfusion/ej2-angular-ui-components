@@ -2,57 +2,21 @@
 
 ## [Unreleased]
 
-## 18.1.59 (2020-06-23)
+## 18.2.44 (2020-07-07)
 
 ### Common
 
 #### Bug Fixes
 
-- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items.
+- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items. 
 
-## 18.1.52 (2020-05-13)
-
-### Common
-
-#### Bug Fixes
-
-- `I274826` - Resolved `RxJS` is loaded twice from the `ej2-angular-base` issue.
-
-## 18.1.48 (2020-05-05)
+## 18.1.42 (2020-04-01)
 
 ### Common
 
 #### Bug Fixes
 
-- `F152141,I269788,F152451` - Resolved root level template properties are not working issue.
-
-## 18.1.46 (2020-04-28)
-
-### Common
-
-#### Bug Fixes
-
-- Resolved value binding not working for form base components inside reactive form.
-- `I274487` - Increased `peerDependencies` version from `9.0.2` to `9.1.3`.
-- Included `ej2-icons` as dependency.
-- Resolved `OnPropertyChange` method is not triggered for complex and collection properties in angular 9. 
-
-## 18.1.45 (2020-04-21)
-
-### Common
-
-#### Bug Fixes
-
-- `I269260` - Resolved Spreadsheet cells directive is not rendering properly issue.
 - Resolved components not get rendered when we disable IVY in angular 9.
-
-## 18.1.43 (2020-04-07)
-
-### Common
-
-#### Bug Fixes
-
-- `I269775,I151936` - Resolved Grid aggregates directive is not rendering properly issue.
 
 ## 18.1.36-beta (2020-03-19)
 

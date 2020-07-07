@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Annotations, CircularGauge, GaugeTooltip, ImageExport, Legend, PdfExport, Print } from '@syncfusion/ej2-circulargauge';
+import { Annotations, CircularGauge, GaugeTooltip, Gradient, ImageExport, Legend, PdfExport, Print } from '@syncfusion/ej2-circulargauge';
 import { CommonModule } from '@angular/common';
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -74,7 +74,7 @@ AnnotationsDirective.decorators = [
  */
 AnnotationsDirective.ctorParameters = () => [];
 
-let input$1 = ['color', 'end', 'endWidth', 'legendText', 'offset', 'opacity', 'position', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input$1 = ['color', 'end', 'endWidth', 'legendText', 'linearGradient', 'offset', 'opacity', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs$1 = [];
 /**
  * Ranges directive
@@ -129,7 +129,7 @@ RangesDirective.decorators = [
  */
 RangesDirective.ctorParameters = () => [];
 
-let input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
+let input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 let outputs$2 = [];
 /**
  * Pointers directive
@@ -320,6 +320,13 @@ let CircularGaugeComponent = class CircularGaugeComponent extends CircularGauge 
             }
         }
         catch (_f) { }
+        try {
+            let mod = this.injector.get('CircularGaugeGradient');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_g) { }
         this.registerEvents(outputs$4);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
@@ -430,6 +437,7 @@ const LegendService = { provide: 'CircularGaugeLegend', useValue: Legend };
 const PrintService = { provide: 'CircularGaugePrint', useValue: Print };
 const PdfExportService = { provide: 'CircularGaugePdfExport', useValue: PdfExport };
 const ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ImageExport };
+const GradientService = { provide: 'CircularGaugeGradient', useValue: Gradient };
 /**
  * NgModule definition for the CircularGauge component with providers.
  */
@@ -447,7 +455,8 @@ CircularGaugeAllModule.decorators = [
                     LegendService,
                     PrintService,
                     PdfExportService,
-                    ImageExportService
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -460,6 +469,6 @@ CircularGaugeAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, GaugeTooltipService, AnnotationsService, LegendService, PrintService, PdfExportService, ImageExportService, inputs as ɵa, outputs$4 as ɵb };
-export { CircularGauge, Annotations, Line, Label, Range, Tick, Cap, NeedleTail, Animation, Annotation, Pointer, Axis, Border, Font, RangeTooltip, AnnotationTooltip, Margin, TooltipSettings, GaugeTooltip, measureText, toPixel, getFontStyle, setStyles, measureElementRect, stringToNumber, textElement, appendPath, calculateSum, linear, getAngleFromValue, getDegree, getValueFromAngle, isCompleteAngle, getAngleFromLocation, getLocationFromAngle, getPathArc, getRangePath, getRoundedPathArc, getRoundedPath, getCompleteArc, getCirclePath, getCompletePath, getElement, getTemplateFunction, removeElement, getPointer, getRange, getElementSize, getMousePosition, getLabelFormat, calculateShapes, getRangeColor, CustomizeOption, PathOption, RectOption, Size, GaugeLocation, Rect, textTrim, showTooltip, TextOption, VisibleLabels, triggerDownload, Location, LegendSettings, Legend, Index, LegendOptions, ImageExport, PdfExport, Print } from '@syncfusion/ej2-circulargauge';
+export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, GaugeTooltipService, AnnotationsService, LegendService, PrintService, PdfExportService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
+export { CircularGauge, Annotations, Line, Label, Range, Tick, Cap, NeedleTail, Animation, Annotation, Pointer, Axis, Border, Font, RangeTooltip, AnnotationTooltip, Margin, TooltipSettings, GaugeTooltip, measureText, toPixel, getFontStyle, setStyles, measureElementRect, stringToNumber, textElement, appendPath, calculateSum, linear, getAngleFromValue, getDegree, getValueFromAngle, isCompleteAngle, getAngleFromLocation, getLocationFromAngle, getPathArc, getRangePath, getRoundedPathArc, getRoundedPath, getCompleteArc, getCirclePath, getCompletePath, getElement, getTemplateFunction, removeElement, getPointer, getRange, getElementSize, getMousePosition, getLabelFormat, calculateShapes, getRangeColor, CustomizeOption, PathOption, RectOption, Size, GaugeLocation, Rect, textTrim, showTooltip, TextOption, VisibleLabels, triggerDownload, Location, LegendSettings, Legend, Index, LegendOptions, ImageExport, PdfExport, Print, ColorStop, GradientPosition, LinearGradient, RadialGradient, Gradient } from '@syncfusion/ej2-circulargauge';
 //# sourceMappingURL=ej2-angular-circulargauge.js.map

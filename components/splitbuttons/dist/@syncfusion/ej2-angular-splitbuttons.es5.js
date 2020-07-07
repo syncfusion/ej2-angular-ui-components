@@ -561,5 +561,5 @@ ProgressButtonAllModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 export { DropDownButtonItemDirective, DropDownButtonItemsDirective, DropDownButtonComponent, DropDownButtonModule, DropDownButtonAllModule, SplitButtonItemDirective, SplitButtonItemsDirective, SplitButtonComponent, SplitButtonModule, SplitButtonAllModule, ProgressButtonComponent, ProgressButtonModule, ProgressButtonAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$2 as ɵe, outputs$4 as ɵf, inputs$1 as ɵc, outputs$3 as ɵd };
-export { getModel, Item, dropDownButtonObserver, DropDownButton, SplitButton, Deferred, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
+export { getModel, upDownKeyHandler, Item, DropDownButton, SplitButton, Deferred, createButtonGroup, SpinSettings, AnimationSettings, ProgressButton } from '@syncfusion/ej2-splitbuttons';
 //# sourceMappingURL=ej2-angular-splitbuttons.es5.js.map

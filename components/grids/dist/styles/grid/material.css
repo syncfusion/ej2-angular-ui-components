@@ -385,6 +385,11 @@
           user-select: none;
 }
 
+/*! Blazor column menu custom css */
+.e-contextmenu-wrapper.e-sfcontextmenu.e-hide-menu {
+  visibility: hidden;
+}
+
 .e-emptyicon {
   opacity: 0;
 }
@@ -1563,7 +1568,7 @@
 }
 
 .e-grid .e-summarycontent .e-indentcell {
-  border-width: 0;
+  border-width: 1px 0 0;
 }
 
 .e-grid .e-summarycontent .e-detailindentcelltop {
@@ -3219,6 +3224,21 @@
   border-right: 0;
 }
 
+.e-grid.sf-grid .e-gridcontent .e-content,
+.e-grid.sf-grid .e-gridcontent .e-content .e-movablecontent {
+  overflow-y: auto;
+}
+
+.e-grid.sf-grid .e-gridcontent .e-content.e-yscroll,
+.e-grid.sf-grid .e-gridcontent .e-content .e-movablecontent.e-yscroll {
+  overflow-y: scroll;
+}
+
+.e-grid.sf-grid .e-gridcontent .e-content.e-noscroll,
+.e-grid.sf-grid .e-gridcontent .e-content .e-movablecontent.e-noscroll {
+  overflow-y: hidden;
+}
+
 .e-grid-min-height .e-rowcell {
   line-height: 0;
   padding-bottom: 0;
@@ -3748,6 +3768,10 @@
 
 .e-grid.e-rtl .e-tableborder {
   border-left-color: #e0e0e0;
+}
+
+.e-grid.sf-grid .e-gridfooter .e-summarycontent {
+  border-right: 0 #e0e0e0 solid;
 }
 
 .e-tooltip-wrap.e-griderror,

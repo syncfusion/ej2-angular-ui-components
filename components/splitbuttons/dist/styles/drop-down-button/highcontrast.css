@@ -7,6 +7,7 @@
 .e-dropdown-btn,
 .e-dropdown-btn.e-btn {
   box-shadow: none;
+  position: relative;
   text-transform: none;
   white-space: normal;
 }
@@ -148,6 +149,19 @@
   line-height: normal;
   margin: 0;
   pointer-events: none;
+}
+
+.e-dropdown-popup.e-transparent {
+  background: transparent;
+  box-shadow: none;
+}
+
+.e-dropdown-popup.e-transparent .e-dropdown-menu {
+  border: 0;
+  height: 1px;
+  min-width: 0;
+  padding: 0;
+  width: 1px;
 }
 
 .e-rtl.e-dropdown-popup .e-item .e-menu-icon {

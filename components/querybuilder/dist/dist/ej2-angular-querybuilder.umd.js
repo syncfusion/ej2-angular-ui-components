@@ -14,7 +14,21 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['category', 'field', 'format', 'label', 'operators', 'step', 'template', 'type', 'validation', 'value', 'values'];
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+        r = Reflect.decorate(decorators, target, key, desc);
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+        return Reflect.metadata(k, v);
+};
+var input = ['category', 'field', 'format', 'label', 'operators', 'ruleTemplate', 'step', 'template', 'type', 'validation', 'value', 'values'];
 var outputs = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder.
@@ -57,6 +71,13 @@ ColumnDirective.decorators = [
 ColumnDirective.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
 ]; };
+ColumnDirective.propDecorators = {
+    'ruleTemplate': [{ type: core.ContentChild, args: ['ruleTemplate',] },],
+};
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], ColumnDirective.prototype, "ruleTemplate", void 0);
 /**
  * Column Array Directive
  */
@@ -79,7 +100,7 @@ ColumnsDirective.decorators = [
  * @nocollapse
  */
 ColumnsDirective.ctorParameters = function () { return []; };
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+var __decorate$1 = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
         r = Reflect.decorate(decorators, target, key, desc);
@@ -89,12 +110,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
                 r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
+var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
 var inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'readonly', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
-var outputs$1 = ['beforeChange', 'change', 'created', 'ruleChange'];
+var outputs$1 = ['actionBegin', 'beforeChange', 'change', 'created', 'ruleChange'];
 var twoWays = [''];
 /**
  * Represents the EJ2 Angular QueryBuilder Component.
@@ -173,9 +194,9 @@ exports.QueryBuilderComponent.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
     { type: core.Injector, },
 ]; };
-exports.QueryBuilderComponent = __decorate([
+exports.QueryBuilderComponent = __decorate$1([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
-    __metadata("design:paramtypes", [core.ElementRef,
+    __metadata$1("design:paramtypes", [core.ElementRef,
         core.Renderer2,
         core.ViewContainerRef,
         core.Injector])
