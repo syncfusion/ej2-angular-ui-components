@@ -5,7 +5,7 @@ import { Slider } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['cssClass','customValues','enableAnimation','enablePersistence','enableRtl','enabled','limits','locale','max','min','orientation','readonly','showButtons','step','ticks','tooltip','type','value'];
+export const inputs: string[] = ['colorRange','cssClass','customValues','enableAnimation','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','limits','locale','max','min','orientation','readonly','showButtons','step','ticks','tooltip','type','value','width'];
 export const outputs: string[] = ['focus', 'blur', 'change','changed','created','renderedTicks','renderingTicks','tooltipChange','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class SliderComponent extends Slider implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -48,6 +51,8 @@ export class SliderComponent extends Slider implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -63,15 +68,20 @@ export class SliderComponent extends Slider implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

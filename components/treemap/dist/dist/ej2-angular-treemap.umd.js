@@ -26,6 +26,7 @@ var ColorMappingDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColorMappingDirective;
@@ -101,6 +102,7 @@ var LevelDirective = /** @class */ (function (_super) {
         _this.tags = ['colorMapping'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return LevelDirective;
@@ -164,7 +166,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['background', 'border', 'breadcrumbConnector', 'colorValuePath', 'dataSource', 'description', 'drillDownView', 'enableBreadcrumb', 'enableDrillDown', 'enablePersistence', 'enableRtl', 'equalColorValuePath', 'format', 'height', 'highlightSettings', 'initialDrillDown', 'layoutType', 'leafItemSettings', 'legendSettings', 'levels', 'locale', 'margin', 'palette', 'query', 'rangeColorValuePath', 'renderDirection', 'selectionSettings', 'tabIndex', 'theme', 'titleSettings', 'tooltipSettings', 'useGroupingSeparator', 'weightValuePath', 'width'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'background', 'border', 'breadcrumbConnector', 'colorValuePath', 'dataSource', 'description', 'drillDownView', 'enableBreadcrumb', 'enableDrillDown', 'enablePersistence', 'enableRtl', 'equalColorValuePath', 'format', 'height', 'highlightSettings', 'initialDrillDown', 'layoutType', 'leafItemSettings', 'legendSettings', 'levels', 'locale', 'margin', 'palette', 'query', 'rangeColorValuePath', 'renderDirection', 'selectionSettings', 'tabIndex', 'theme', 'titleSettings', 'tooltipSettings', 'useGroupingSeparator', 'weightValuePath', 'width'];
 var outputs$2 = ['beforePrint', 'click', 'doubleClick', 'drillEnd', 'drillStart', 'itemClick', 'itemHighlight', 'itemMove', 'itemRendering', 'itemSelected', 'legendItemRendering', 'legendRendering', 'load', 'loaded', 'mouseMove', 'resize', 'rightClick', 'tooltipRendering'];
 var twoWays = [''];
 /**
@@ -218,30 +220,57 @@ exports.TreeMapComponent = /** @class */ (function (_super) {
             }
         }
         catch (_d) { }
+        try {
+            var mod = _this.injector.get('TreeMapPrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_e) { }
+        try {
+            var mod = _this.injector.get('TreeMapPdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
+        try {
+            var mod = _this.injector.get('TreeMapImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_g) { }
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TreeMapComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLevels;
+        this.context.ngAfterContentChecked(this);
     };
     return TreeMapComponent;
 }(ej2Treemap.TreeMap));
@@ -320,6 +349,9 @@ var TreeMapTooltipService = { provide: 'TreeMapTreeMapTooltip', useValue: ej2Tre
 var TreeMapLegendService = { provide: 'TreeMapTreeMapLegend', useValue: ej2Treemap.TreeMapLegend };
 var TreeMapHighlightService = { provide: 'TreeMapTreeMapHighlight', useValue: ej2Treemap.TreeMapHighlight };
 var TreeMapSelectionService = { provide: 'TreeMapTreeMapSelection', useValue: ej2Treemap.TreeMapSelection };
+var PrintService = { provide: 'TreeMapPrint', useValue: ej2Treemap.Print };
+var PdfExportService = { provide: 'TreeMapPdfExport', useValue: ej2Treemap.PdfExport };
+var ImageExportService = { provide: 'TreeMapImageExport', useValue: ej2Treemap.ImageExport };
 /**
  * NgModule definition for the TreeMap component with providers.
  */
@@ -338,7 +370,10 @@ TreeMapAllModule.decorators = [
                     TreeMapTooltipService,
                     TreeMapLegendService,
                     TreeMapHighlightService,
-                    TreeMapSelectionService
+                    TreeMapSelectionService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -357,9 +392,13 @@ exports.TreeMapTooltipService = TreeMapTooltipService;
 exports.TreeMapLegendService = TreeMapLegendService;
 exports.TreeMapHighlightService = TreeMapHighlightService;
 exports.TreeMapSelectionService = TreeMapSelectionService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$2;
 exports.TreeMap = ej2Treemap.TreeMap;
+exports.LevelsData = ej2Treemap.LevelsData;
 exports.Border = ej2Treemap.Border;
 exports.Margin = ej2Treemap.Margin;
 exports.Font = ej2Treemap.Font;
@@ -433,6 +472,8 @@ exports.wordWrap = ej2Treemap.wordWrap;
 exports.textWrap = ej2Treemap.textWrap;
 exports.hide = ej2Treemap.hide;
 exports.orderByArea = ej2Treemap.orderByArea;
+exports.maintainSelection = ej2Treemap.maintainSelection;
+exports.legendMaintain = ej2Treemap.legendMaintain;
 exports.removeClassNames = ej2Treemap.removeClassNames;
 exports.applyOptions = ej2Treemap.applyOptions;
 exports.textFormatter = ej2Treemap.textFormatter;
@@ -452,12 +493,16 @@ exports.setColor = ej2Treemap.setColor;
 exports.removeSelectionWithHighlight = ej2Treemap.removeSelectionWithHighlight;
 exports.getLegendIndex = ej2Treemap.getLegendIndex;
 exports.pushCollection = ej2Treemap.pushCollection;
-exports.ExportUtils = ej2Treemap.ExportUtils;
+exports.triggerDownload = ej2Treemap.triggerDownload;
+exports.removeElement = ej2Treemap.removeElement;
 exports.TreeMapLegend = ej2Treemap.TreeMapLegend;
 exports.LayoutPanel = ej2Treemap.LayoutPanel;
 exports.TreeMapHighlight = ej2Treemap.TreeMapHighlight;
 exports.TreeMapSelection = ej2Treemap.TreeMapSelection;
 exports.TreeMapTooltip = ej2Treemap.TreeMapTooltip;
+exports.ImageExport = ej2Treemap.ImageExport;
+exports.PdfExport = ej2Treemap.PdfExport;
+exports.Print = ej2Treemap.Print;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

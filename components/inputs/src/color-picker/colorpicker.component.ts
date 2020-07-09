@@ -6,7 +6,7 @@ import { ColorPicker } from '@syncfusion/ej2-inputs';
 
 
 export const inputs: string[] = ['columns','cssClass','disabled','enableOpacity','enablePersistence','enableRtl','inline','locale','mode','modeSwitcher','noColor','presetColors','showButtons','value'];
-export const outputs: string[] = ['focus', 'blur', 'beforeClose','beforeModeSwitch','beforeOpen','beforeTileRender','change','created','open','select','valueChange'];
+export const outputs: string[] = ['focus', 'blur', 'beforeClose','beforeModeSwitch','beforeOpen','beforeTileRender','change','created','onModeSwitch','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class ColorPickerComponent extends ColorPicker implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -48,6 +51,8 @@ export class ColorPickerComponent extends ColorPicker implements IComponentBase 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -63,15 +68,20 @@ export class ColorPickerComponent extends ColorPicker implements IComponentBase 
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

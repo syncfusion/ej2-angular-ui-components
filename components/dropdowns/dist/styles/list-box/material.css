@@ -43,7 +43,6 @@
   overflow: auto;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -63,6 +62,7 @@
 }
 
 .e-listbox-wrapper:not(.e-list-template) .e-list-item,
+.e-listbox-wrapper .e-list-nrt,
 .e-listbox-wrapper .e-selectall-parent {
   height: 36px;
   line-height: 36px;
@@ -70,8 +70,17 @@
   position: relative;
 }
 
+.e-listbox-wrapper.e-filter-list {
+  overflow: inherit;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  overflow: auto;
+}
+
 .e-listbox-wrapper .e-list-parent {
   height: 100%;
+  min-height: 36px;
 }
 
 .e-listbox-wrapper .e-list-item {
@@ -394,6 +403,11 @@ ejs-listbox {
   position: relative;
 }
 
+.e-bigger .e-listbox-wrapper .e-list-parent,
+.e-listbox-wrapper.e-bigger .e-list-parent {
+  min-height: 48px;
+}
+
 .e-bigger .e-listbox-wrapper .e-text-content,
 .e-listbox-wrapper.e-bigger .e-text-content {
   font-size: 15px;
@@ -430,6 +444,18 @@ ejs-listbox {
   font-size: 20px;
 }
 
+.e-small .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 39px);
+}
+
+.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 50px);
+}
+
+.e-small.e-bigger .e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 41px);
+}
+
 .e-listbox-wrapper {
   border: 1px solid #e0e0e0;
   font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
@@ -441,6 +467,10 @@ ejs-listbox {
   border-color: rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.87);
   font-size: 20px;
+}
+
+.e-listbox-wrapper.e-filter-list .e-list-parent {
+  height: calc(100% - 43px);
 }
 
 .e-listbox-wrapper .e-icons {
@@ -456,7 +486,7 @@ ejs-listbox {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-listbox-wrapper .e-list-item:hover:not(.e-disabled),
+.e-listbox-wrapper .e-list-item:hover:not(.e-selected):not(.e-disabled),
 .e-listbox-wrapper .e-list-item:hover.e-selected.e-checklist:not(.e-disabled) {
   background-color: #eee;
   border-color: transparent;

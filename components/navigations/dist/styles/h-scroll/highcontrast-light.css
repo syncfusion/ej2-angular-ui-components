@@ -224,7 +224,7 @@
 .e-hscroll.e-scroll-device .e-scroll-nav.e-scroll-right-nav {
   background-color: #fff;
   border-color: #757575;
-  border-width: none;
+  border-width: 0;
   box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -261,8 +261,7 @@
 
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #ecf;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #000;
 }
 
@@ -272,7 +271,7 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #ecf;
-  border: "";
+  border: 0;
   color: #000;
   border: 2px solid #000;
 }
@@ -283,8 +282,7 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #ecf;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #000;
   background: inherit;
   border: 2px solid #fff;
@@ -292,8 +290,8 @@
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #400074;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 

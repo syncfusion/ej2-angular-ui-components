@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -40,6 +41,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      * * Far - Align the annotation element as right side. 
      * * Center - Align the annotation element as mid point.
      * @default 'Center'
+     * @deprecated 
      */
     public horizontalAlignment: any;
     /** 
@@ -55,6 +57,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      * * Bottom - Align the annotation element as bottom side. 
      * * Middle - Align the annotation element as mid point.
      * @default 'Middle'
+     * @deprecated 
      */
     public verticalAlignment: any;
     /** 
@@ -93,6 +96,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Agenda, Day, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Month, MonthAgenda, Print, RecurrenceEditor, Resize, Schedule, TimelineMonth, TimelineViews, Week, WorkWeek } from '@syncfusion/ej2-schedule';
+import { Agenda, Day, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Month, MonthAgenda, Print, RecurrenceEditor, Resize, Schedule, TimelineMonth, TimelineViews, TimelineYear, Week, WorkWeek, Year } from '@syncfusion/ej2-schedule';
 import { CommonModule } from '@angular/common';
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -26,7 +26,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['allowVirtualScrolling', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'workDays'];
+var input = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'workDays'];
 var outputs = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule.
@@ -50,6 +50,7 @@ var ViewDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ViewDirective;
@@ -70,6 +71,7 @@ ViewDirective.ctorParameters = function () { return [
 ]; };
 ViewDirective.propDecorators = {
     'dateHeaderTemplate': [{ type: ContentChild, args: ['dateHeaderTemplate',] },],
+    'cellHeaderTemplate': [{ type: ContentChild, args: ['cellHeaderTemplate',] },],
     'cellTemplate': [{ type: ContentChild, args: ['cellTemplate',] },],
     'eventTemplate': [{ type: ContentChild, args: ['eventTemplate',] },],
     'resourceHeaderTemplate': [{ type: ContentChild, args: ['resourceHeaderTemplate',] },],
@@ -81,6 +83,10 @@ __decorate([
     Template(),
     __metadata("design:type", Object)
 ], ViewDirective.prototype, "dateHeaderTemplate", void 0);
+__decorate([
+    Template(),
+    __metadata("design:type", Object)
+], ViewDirective.prototype, "cellHeaderTemplate", void 0);
 __decorate([
     Template(),
     __metadata("design:type", Object)
@@ -151,6 +157,7 @@ var ResourceDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return ResourceDirective;
@@ -229,6 +236,7 @@ var HeaderRowDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return HeaderRowDirective;
@@ -290,8 +298,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['agendaDaysCount', 'allowDragAndDrop', 'allowKeyboardInteraction', 'allowResizing', 'calendarMode', 'cellTemplate', 'cssClass', 'currentView', 'dateFormat', 'dateHeaderTemplate', 'editorTemplate', 'enablePersistence', 'enableRtl', 'endHour', 'eventDragArea', 'eventSettings', 'firstDayOfWeek', 'group', 'headerRows', 'height', 'hideEmptyAgendaDays', 'locale', 'quickInfoTemplates', 'readonly', 'resourceHeaderTemplate', 'resources', 'rowAutoHeight', 'selectedDate', 'showHeaderBar', 'showQuickInfo', 'showTimeIndicator', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'timezone', 'views', 'width', 'workDays', 'workHours'];
-var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'cellClick', 'cellDoubleClick', 'created', 'dataBinding', 'dataBound', 'destroyed', 'drag', 'dragStart', 'dragStop', 'eventClick', 'eventRendered', 'navigating', 'popupOpen', 'renderCell', 'resizeStart', 'resizeStop', 'resizing', 'select', 'currentViewChange', 'selectedDateChange'];
+var inputs = ['agendaDaysCount', 'allowDragAndDrop', 'allowInline', 'allowKeyboardInteraction', 'allowMultiCellSelection', 'allowMultiRowSelection', 'allowResizing', 'calendarMode', 'cellHeaderTemplate', 'cellTemplate', 'cssClass', 'currentView', 'dateFormat', 'dateHeaderTemplate', 'editorTemplate', 'enablePersistence', 'enableRecurrenceValidation', 'enableRtl', 'endHour', 'eventDragArea', 'eventSettings', 'firstDayOfWeek', 'group', 'headerRows', 'height', 'hideEmptyAgendaDays', 'locale', 'maxDate', 'minDate', 'quickInfoOnSelectionEnd', 'quickInfoTemplates', 'readonly', 'resourceHeaderTemplate', 'resources', 'rowAutoHeight', 'selectedDate', 'showHeaderBar', 'showQuickInfo', 'showTimeIndicator', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'timezone', 'views', 'width', 'workDays', 'workHours'];
+var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'cellClick', 'cellDoubleClick', 'created', 'dataBinding', 'dataBound', 'destroyed', 'drag', 'dragStart', 'dragStop', 'eventClick', 'eventRendered', 'hover', 'moreEventsClick', 'navigating', 'popupClose', 'popupOpen', 'renderCell', 'resizeStart', 'resizeStop', 'resizing', 'select', 'currentViewChange', 'selectedDateChange'];
 var twoWays = ['currentView', 'selectedDate'];
 /**
  * `ej-schedule` represents the Angular Schedule Component.
@@ -345,99 +353,125 @@ var ScheduleComponent = /** @class */ (function (_super) {
         }
         catch (_d) { }
         try {
-            var mod = _this.injector.get('ScheduleAgenda');
+            var mod = _this.injector.get('ScheduleYear');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_e) { }
         try {
-            var mod = _this.injector.get('ScheduleMonthAgenda');
+            var mod = _this.injector.get('ScheduleAgenda');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_f) { }
         try {
-            var mod = _this.injector.get('ScheduleTimelineViews');
+            var mod = _this.injector.get('ScheduleMonthAgenda');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_g) { }
         try {
-            var mod = _this.injector.get('ScheduleTimelineMonth');
+            var mod = _this.injector.get('ScheduleTimelineViews');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_h) { }
         try {
-            var mod = _this.injector.get('ScheduleResize');
+            var mod = _this.injector.get('ScheduleTimelineMonth');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_j) { }
         try {
-            var mod = _this.injector.get('ScheduleDragAndDrop');
+            var mod = _this.injector.get('ScheduleTimelineYear');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_k) { }
         try {
-            var mod = _this.injector.get('ScheduleExcelExport');
+            var mod = _this.injector.get('ScheduleResize');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_l) { }
         try {
-            var mod = _this.injector.get('ScheduleICalendarExport');
+            var mod = _this.injector.get('ScheduleDragAndDrop');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_m) { }
         try {
-            var mod = _this.injector.get('ScheduleICalendarImport');
+            var mod = _this.injector.get('ScheduleExcelExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_o) { }
         try {
-            var mod = _this.injector.get('SchedulePrint');
+            var mod = _this.injector.get('ScheduleICalendarExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_p) { }
+        try {
+            var mod = _this.injector.get('ScheduleICalendarImport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_q) { }
+        try {
+            var mod = _this.injector.get('SchedulePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_r) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ScheduleComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childViews;
+        if (this.childResources) {
+            this.tagObjects[1].instance = this.childResources;
+        }
+        if (this.childHeaderRows) {
+            this.tagObjects[2].instance = this.childHeaderRows;
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return ScheduleComponent;
 }(Schedule));
@@ -467,6 +501,7 @@ ScheduleComponent.ctorParameters = function () { return [
 ScheduleComponent.propDecorators = {
     'dateHeaderTemplate': [{ type: ContentChild, args: ['dateHeaderTemplate',] },],
     'cellTemplate': [{ type: ContentChild, args: ['cellTemplate',] },],
+    'cellHeaderTemplate': [{ type: ContentChild, args: ['cellHeaderTemplate',] },],
     'eventSettings_tooltipTemplate': [{ type: ContentChild, args: ['eventSettingsTooltipTemplate',] },],
     'eventSettings_template': [{ type: ContentChild, args: ['eventSettingsTemplate',] },],
     'editorTemplate': [{ type: ContentChild, args: ['editorTemplate',] },],
@@ -486,6 +521,10 @@ __decorate$2([
     Template(),
     __metadata$2("design:type", Object)
 ], ScheduleComponent.prototype, "cellTemplate", void 0);
+__decorate$2([
+    Template(),
+    __metadata$2("design:type", Object)
+], ScheduleComponent.prototype, "cellHeaderTemplate", void 0);
 __decorate$2([
     Template(),
     __metadata$2("design:type", Object)
@@ -572,10 +611,12 @@ var DayService = { provide: 'ScheduleDay', useValue: Day };
 var WeekService = { provide: 'ScheduleWeek', useValue: Week };
 var WorkWeekService = { provide: 'ScheduleWorkWeek', useValue: WorkWeek };
 var MonthService = { provide: 'ScheduleMonth', useValue: Month };
+var YearService = { provide: 'ScheduleYear', useValue: Year };
 var AgendaService = { provide: 'ScheduleAgenda', useValue: Agenda };
 var MonthAgendaService = { provide: 'ScheduleMonthAgenda', useValue: MonthAgenda };
 var TimelineViewsService = { provide: 'ScheduleTimelineViews', useValue: TimelineViews };
 var TimelineMonthService = { provide: 'ScheduleTimelineMonth', useValue: TimelineMonth };
+var TimelineYearService = { provide: 'ScheduleTimelineYear', useValue: TimelineYear };
 var ResizeService = { provide: 'ScheduleResize', useValue: Resize };
 var DragAndDropService = { provide: 'ScheduleDragAndDrop', useValue: DragAndDrop };
 var ExcelExportService = { provide: 'ScheduleExcelExport', useValue: ExcelExport };
@@ -601,10 +642,12 @@ ScheduleAllModule.decorators = [
                     WeekService,
                     WorkWeekService,
                     MonthService,
+                    YearService,
                     AgendaService,
                     MonthAgendaService,
                     TimelineViewsService,
                     TimelineMonthService,
+                    TimelineYearService,
                     ResizeService,
                     DragAndDropService,
                     ExcelExportService,
@@ -660,27 +703,32 @@ var RecurrenceEditorComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RecurrenceEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return RecurrenceEditorComponent;
 }(RecurrenceEditor));
@@ -757,6 +805,6 @@ RecurrenceEditorAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { ViewDirective, ViewsDirective, ResourceDirective, ResourcesDirective, HeaderRowDirective, HeaderRowsDirective, ScheduleComponent, ScheduleModule, ScheduleAllModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService, ExcelExportService, ICalendarExportService, ICalendarImportService, PrintService, RecurrenceEditorComponent, RecurrenceEditorModule, RecurrenceEditorAllModule, inputs$1 as ɵc, outputs$4 as ɵd, inputs as ɵa, outputs$3 as ɵb };
-export { Schedule, cellClick, cellDoubleClick, select, actionBegin, actionComplete, actionFailure, navigating, renderCell, eventClick, eventRendered, dataBinding, dataBound, popupOpen, dragStart, drag, dragStop, resizeStart, resizing, resizeStop, initialLoad, initialEnd, dataReady, contentReady, scroll, virtualScroll, scrollUiUpdate, uiUpdate, documentClick, cellMouseDown, WEEK_LENGTH, MS_PER_DAY, MS_PER_MINUTE, getElementHeightFromClass, getTranslateY, getWeekFirstDate, firstDateOfMonth, lastDateOfMonth, getWeekNumber, setTime, resetTime, getDateInMs, getDateCount, addDays, addMonths, addYears, getStartEndHours, getMaxDays, getDaysCount, getDateFromString, getScrollBarWidth, findIndexInData, getOuterHeight, removeChildren, Resize, DragAndDrop, HeaderRenderer, ViewHelper, ViewBase, Day, Week, WorkWeek, Month, Agenda, MonthAgenda, TimelineViews, TimelineMonth, Timezone, timezoneData, ICalendarExport, ICalendarImport, ExcelExport, Print, RecurrenceEditor, Gregorian, Islamic } from '@syncfusion/ej2-schedule';
+export { ViewDirective, ViewsDirective, ResourceDirective, ResourcesDirective, HeaderRowDirective, HeaderRowsDirective, ScheduleComponent, ScheduleModule, ScheduleAllModule, DayService, WeekService, WorkWeekService, MonthService, YearService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, TimelineYearService, ResizeService, DragAndDropService, ExcelExportService, ICalendarExportService, ICalendarImportService, PrintService, RecurrenceEditorComponent, RecurrenceEditorModule, RecurrenceEditorAllModule, inputs$1 as ɵc, outputs$4 as ɵd, inputs as ɵa, outputs$3 as ɵb };
+export { Schedule, cellClick, cellDoubleClick, moreEventsClick, select, hover, actionBegin, actionComplete, actionFailure, navigating, renderCell, eventClick, eventRendered, dataBinding, dataBound, popupOpen, popupClose, dragStart, drag, dragStop, resizeStart, resizing, resizeStop, inlineClick, initialLoad, initialEnd, dataReady, eventsLoaded, contentReady, scroll, virtualScroll, scrollUiUpdate, uiUpdate, documentClick, cellMouseDown, WEEK_LENGTH, MS_PER_DAY, MS_PER_MINUTE, getElementHeightFromClass, getTranslateY, getWeekFirstDate, getWeekLastDate, firstDateOfMonth, lastDateOfMonth, getWeekNumber, setTime, resetTime, getDateInMs, getDateCount, addDays, addMonths, addYears, getStartEndHours, getMaxDays, getDaysCount, getDateFromString, getScrollBarWidth, findIndexInData, getOuterHeight, removeChildren, isDaylightSavingTime, addLocalOffset, addLocalOffsetToEvent, capitalizeFirstWord, Resize, DragAndDrop, HeaderRenderer, ViewHelper, ViewBase, Day, Week, WorkWeek, Month, Year, Agenda, MonthAgenda, TimelineViews, TimelineMonth, TimelineYear, Timezone, timezoneData, ICalendarExport, ICalendarImport, ExcelExport, Print, RecurrenceEditor, generateSummary, generate, getDateFromRecurrenceDateString, extractObjectFromRule, getCalendarUtil, getRecurrenceStringFromDate, Gregorian, Islamic } from '@syncfusion/ej2-schedule';
 //# sourceMappingURL=ej2-angular-schedule.es5.js.map

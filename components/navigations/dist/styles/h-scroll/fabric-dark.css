@@ -224,7 +224,7 @@
 .e-hscroll.e-scroll-device .e-scroll-nav.e-scroll-right-nav {
   background-color: #333232;
   border-color: #201f1f;
-  border-width: none;
+  border-width: 0;
   box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -261,28 +261,26 @@
 
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #414040;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #414040;
-  border: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #414040;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #dadada;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #514f4f;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 

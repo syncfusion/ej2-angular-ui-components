@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['actionOnBlur', 'adaptor', 'cancelButton', 'cssClass', 'disabled', 'editableOn', 'emptyText', 'enableEditMode', 'enablePersistence', 'enableRtl', 'locale', 'mode', 'model', 'name', 'popupSettings', 'primaryKey', 'saveButton', 'showButtons', 'submitOnEnter', 'template', 'type', 'url', 'validationRules', 'value'];
-var outputs = ['focus', 'blur', 'actionBegin', 'actionFailure', 'actionSuccess', 'beginEdit', 'created', 'destroyed', 'validating'];
+var inputs = ['actionOnBlur', 'adaptor', 'cancelButton', 'cssClass', 'disabled', 'editableOn', 'emptyText', 'enableEditMode', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'locale', 'mode', 'model', 'name', 'popupSettings', 'primaryKey', 'saveButton', 'showButtons', 'submitOnEnter', 'template', 'textOption', 'type', 'url', 'validationRules', 'value'];
+var outputs = ['focus', 'blur', 'actionBegin', 'actionFailure', 'actionSuccess', 'beforeSanitizeHtml', 'beginEdit', 'created', 'destroyed', 'validating'];
 var twoWays = [''];
 /**
  * `ejs-inplaceeditor` represents the Angular InPlaceEditor Component.
@@ -112,6 +112,8 @@ exports.InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (funct
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -142,21 +144,25 @@ exports.InPlaceEditorComponent = InPlaceEditorComponent_1 = /** @class */ (funct
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     InPlaceEditorComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return InPlaceEditorComponent;
 }(ej2InplaceEditor.InPlaceEditor));
@@ -283,6 +289,7 @@ exports.destroy = ej2InplaceEditor.destroy;
 exports.setFocus = ej2InplaceEditor.setFocus;
 exports.accessValue = ej2InplaceEditor.accessValue;
 exports.destroyModules = ej2InplaceEditor.destroyModules;
+exports.showPopup = ej2InplaceEditor.showPopup;
 exports.PopupSettings = ej2InplaceEditor.PopupSettings;
 exports.modulesList = ej2InplaceEditor.modulesList;
 exports.localeConstant = ej2InplaceEditor.localeConstant;

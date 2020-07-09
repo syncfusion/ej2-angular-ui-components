@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class SegmentDirective extends ComplexBase<SegmentDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -48,6 +49,7 @@ export class SegmentDirective extends ComplexBase<SegmentDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

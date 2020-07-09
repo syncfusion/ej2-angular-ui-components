@@ -26,12 +26,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['content', 'cssClass', 'expanded', 'header', 'iconCss'];
+var input = ['content', 'cssClass', 'disabled', 'expanded', 'header', 'iconCss', 'visible'];
 var outputs = [];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Accordion.
+ * 'e-accordionitem' directive represent a item of the Angular Accordion.
+ * It must be contained in a Accordion component(`ejs-accordion`).
  * ```html
- * <ejs-accordion >
+ * <ejs-accordion>
  *   <e-accordionitems>
  *    <e-accordionitem header='Header1'></e-accordionitem>
  *    <e-accordionitem header='Header2' content='Content2'></e-accordionitem>
@@ -49,6 +50,7 @@ var AccordionItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return AccordionItemDirective;
@@ -115,11 +117,11 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['animation', 'enablePersistence', 'enableRtl', 'expandMode', 'height', 'items', 'locale', 'width'];
-var outputs$1 = ['clicked', 'created', 'destroyed', 'expanded', 'expanding'];
-var twoWays = [''];
+var inputs = ['animation', 'dataSource', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'expandMode', 'expandedIndices', 'headerTemplate', 'height', 'itemTemplate', 'items', 'locale', 'width'];
+var outputs$1 = ['clicked', 'created', 'destroyed', 'expanded', 'expanding', 'expandedIndicesChange'];
+var twoWays = ['expandedIndices'];
 /**
- * Represents the Essential JS 2 Angular Accordion Component.
+ * Represents the Angular Accordion Component.
  * ```html
  * <ejs-accordion></ejs-accordion>
  * ```
@@ -144,27 +146,33 @@ var AccordionComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     AccordionComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return AccordionComponent;
 }(Accordion));
@@ -189,6 +197,18 @@ AccordionComponent.ctorParameters = function () { return [
     { type: ViewContainerRef, },
     { type: Injector, },
 ]; };
+AccordionComponent.propDecorators = {
+    'headerTemplate': [{ type: ContentChild, args: ['headerTemplate',] },],
+    'itemTemplate': [{ type: ContentChild, args: ['itemTemplate',] },],
+};
+__decorate$1([
+    Template(),
+    __metadata$1("design:type", Object)
+], AccordionComponent.prototype, "headerTemplate", void 0);
+__decorate$1([
+    Template(),
+    __metadata$1("design:type", Object)
+], AccordionComponent.prototype, "itemTemplate", void 0);
 AccordionComponent = __decorate$1([
     ComponentMixins([ComponentBase]),
     __metadata$1("design:paramtypes", [ElementRef,
@@ -258,12 +278,13 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$1 = ['align', 'cssClass', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'width'];
+var input$1 = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'visible', 'width'];
 var outputs$2 = ['click'];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Toolbar.
+ * 'e-item' directive represent a item of the Angular Toolbar.
+ * It must be contained in a Toolbar component(`ejs-toolbar`).
  * ```html
- * <ejs-toolbar >
+ * <ejs-toolbar>
  *   <e-items>
  *    <e-item text='Cut'></e-item>
  *    <e-item text='Copy'></e-item>
@@ -281,6 +302,7 @@ var ItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$1;
         return _this;
     }
     return ItemDirective;
@@ -342,11 +364,11 @@ var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['enableCollision', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
+var inputs$1 = ['allowKeyboard', 'cssClass', 'enableCollision', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'height', 'items', 'locale', 'overflowMode', 'scrollStep', 'width'];
 var outputs$3 = ['beforeCreate', 'clicked', 'created', 'destroyed'];
 var twoWays$1 = [''];
 /**
- * Represents the Essential JS 2 Angular Toolbar Component.
+ * Represents the Angular Toolbar Component.
  * ```html
  * <ejs-toolbar></ejs-toolbar>
  * ```
@@ -371,27 +393,33 @@ var ToolbarComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ToolbarComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ToolbarComponent;
 }(Toolbar));
@@ -485,7 +513,7 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['animationSettings', 'cssClass', 'enablePersistence', 'enableRtl', 'enableScrolling', 'fields', 'filter', 'items', 'locale', 'showItemOnClick', 'target', 'template'];
+var inputs$2 = ['animationSettings', 'cssClass', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'enableScrolling', 'fields', 'filter', 'items', 'locale', 'showItemOnClick', 'target', 'template'];
 var outputs$4 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'created', 'onClose', 'onOpen', 'select'];
 var twoWays$2 = [''];
 /**
@@ -514,27 +542,32 @@ var ContextMenuComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ContextMenuComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return ContextMenuComponent;
 }(ContextMenu));
@@ -622,10 +655,11 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate'];
+var input$2 = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate', 'visible'];
 var outputs$5 = [];
 /**
- * TabItemDirective represent a item of the EJ2 Angular Tab.
+ * 'e-tabitem' directive represent a item of the Angular Tab.
+ * It must be contained in a Tab component(`ejs-tab`).
  * ```html
  * <ejs-tab>
  *  <e-tabitems>
@@ -645,6 +679,7 @@ var TabItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$2;
         return _this;
     }
     return TabItemDirective;
@@ -716,13 +751,13 @@ var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$3 = ['animation', 'cssClass', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
+var inputs$3 = ['animation', 'cssClass', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'headerPlacement', 'height', 'heightAdjustMode', 'items', 'loadOn', 'locale', 'overflowMode', 'scrollStep', 'selectedItem', 'showCloseButton', 'width'];
 var outputs$6 = ['added', 'adding', 'created', 'destroyed', 'removed', 'removing', 'selected', 'selecting'];
 var twoWays$3 = [''];
 /**
- * Represents the EJ2 Angular Tab Component.
+ * Represents the Angular Tab Component.
  * ```html
- * <ejs-tab overflowMode= 'Popup'></ejs-tab>
+ * <ejs-tab></ejs-tab>
  * ```
  */
 var TabComponent = /** @class */ (function (_super) {
@@ -745,27 +780,33 @@ var TabComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays$3);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TabComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TabComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     };
     return TabComponent;
 }(Tab));
@@ -859,8 +900,8 @@ var __metadata$7 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$4 = ['allowDragAndDrop', 'allowEditing', 'allowMultiSelection', 'animation', 'autoCheck', 'checkedNodes', 'cssClass', 'enablePersistence', 'enableRtl', 'expandOn', 'expandedNodes', 'fields', 'fullRowSelect', 'loadOnDemand', 'locale', 'nodeTemplate', 'selectedNodes', 'showCheckBox', 'sortOrder'];
-var outputs$7 = ['created', 'dataBound', 'dataSourceChanged', 'destroyed', 'drawNode', 'keyPress', 'nodeChecked', 'nodeChecking', 'nodeClicked', 'nodeCollapsed', 'nodeCollapsing', 'nodeDragStart', 'nodeDragStop', 'nodeDragging', 'nodeDropped', 'nodeEdited', 'nodeEditing', 'nodeExpanded', 'nodeExpanding', 'nodeSelected', 'nodeSelecting'];
+var inputs$4 = ['allowDragAndDrop', 'allowEditing', 'allowMultiSelection', 'animation', 'autoCheck', 'checkedNodes', 'cssClass', 'disabled', 'dragArea', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'expandOn', 'expandedNodes', 'fields', 'fullRowNavigable', 'fullRowSelect', 'loadOnDemand', 'locale', 'nodeTemplate', 'selectedNodes', 'showCheckBox', 'sortOrder'];
+var outputs$7 = ['actionFailure', 'created', 'dataBound', 'dataSourceChanged', 'destroyed', 'drawNode', 'keyPress', 'nodeChecked', 'nodeChecking', 'nodeClicked', 'nodeCollapsed', 'nodeCollapsing', 'nodeDragStart', 'nodeDragStop', 'nodeDragging', 'nodeDropped', 'nodeEdited', 'nodeEditing', 'nodeExpanded', 'nodeExpanding', 'nodeSelected', 'nodeSelecting'];
 var twoWays$4 = [''];
 /**
  * TreeView component is used to represent the hierarchical data in tree like structure with advanced functions to perform edit, drag and drop, selection with check-box and more.
@@ -887,27 +928,32 @@ var TreeViewComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays$4);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     TreeViewComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return TreeViewComponent;
 }(TreeView));
@@ -1030,27 +1076,32 @@ var SidebarComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$8);
         _this.addTwoWay.call(_this, twoWays$5);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SidebarComponent.prototype.ngAfterContentChecked = function () {
+        this.containerContext.ngAfterContentChecked(this);
     };
     return SidebarComponent;
 }(Sidebar));
@@ -1136,6 +1187,7 @@ var MenuItemDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$9);
+        _this.directivePropList = input$3;
         return _this;
     }
     return MenuItemDirective;
@@ -1190,7 +1242,7 @@ var __metadata$9 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$6 = ['animationSettings', 'cssClass', 'enablePersistence', 'enableRtl', 'enableScrolling', 'fields', 'filter', 'hamburgerMode', 'items', 'locale', 'orientation', 'showItemOnClick', 'target', 'template', 'title'];
+var inputs$6 = ['animationSettings', 'cssClass', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'enableScrolling', 'fields', 'filter', 'hamburgerMode', 'items', 'locale', 'orientation', 'showItemOnClick', 'target', 'template', 'title'];
 var outputs$10 = ['beforeClose', 'beforeItemRender', 'beforeOpen', 'created', 'onClose', 'onOpen', 'select'];
 var twoWays$6 = [''];
 /**
@@ -1219,27 +1271,33 @@ var MenuComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$10);
         _this.addTwoWay.call(_this, twoWays$6);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MenuComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childItems;
+        this.context.ngAfterContentChecked(this);
     };
     return MenuComponent;
 }(Menu));
@@ -1330,5 +1388,5 @@ MenuAllModule.ctorParameters = function () { return []; };
  * Generated bundle index. Do not edit.
  */
 export { AccordionItemDirective, AccordionItemsDirective, AccordionComponent, AccordionModule, AccordionAllModule, ItemDirective, ItemsDirective, ToolbarComponent, ToolbarModule, ToolbarAllModule, ContextMenuComponent, ContextMenuModule, ContextMenuAllModule, TabItemDirective, TabItemsDirective, TabComponent, TabModule, TabAllModule, TreeViewComponent, TreeViewModule, TreeViewAllModule, SidebarComponent, SidebarModule, SidebarAllModule, MenuItemDirective, MenuItemsDirective, MenuComponent, MenuModule, MenuAllModule, inputs as ɵa, outputs$1 as ɵb, inputs$2 as ɵe, outputs$4 as ɵf, inputs$6 as ɵm, outputs$10 as ɵn, inputs$5 as ɵk, outputs$8 as ɵl, inputs$3 as ɵg, outputs$6 as ɵh, inputs$1 as ɵc, outputs$3 as ɵd, inputs$4 as ɵi, outputs$7 as ɵj };
-export { MenuAnimationSettings, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
+export { MenuAnimationSettings, MenuItem, HScroll, VScroll, Item, Toolbar, AccordionActionSettings, AccordionAnimationSettings, AccordionItem, Accordion, ContextMenu, Menu, TabActionSettings, TabAnimationSettings, Header, TabItem, Tab, FieldsSettings, ActionSettings, NodeAnimationSettings, TreeView, Sidebar } from '@syncfusion/ej2-navigations';
 //# sourceMappingURL=ej2-angular-navigations.es5.js.map

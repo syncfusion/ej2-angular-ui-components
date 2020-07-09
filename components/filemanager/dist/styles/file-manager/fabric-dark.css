@@ -1,7 +1,47 @@
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.e-treeview .e-list-item div.e-icons.interaction {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  border-radius: 15px;
+  transition: transform .3s ease-in-out;
+}
+
+.e-treeview .e-list-item .e-icons.e-icon-collapsible {
+  transform: rotate(90deg);
+}
+
+.e-treeview.e-drag-item.e-rtl .e-icons.e-drop-next {
+  transform: rotate(180deg);
+}
+
+.e-treeview.e-rtl div.e-icons {
+  transform: rotate(180deg);
+}
+
 /*! FileManager's fabric theme wise override definitions and variables */
 .e-filemanager .e-fe-icon,
 .e-filemanager .e-list-icon {
   background-repeat: no-repeat;
+}
+
+.e-filemanager .e-fe-access-error {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGQkUzRjtzdHJva2U6I0FDODkzODtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LnN0MXtmaWxsOiMwNjAyMDA7fTwvc3R5bGU+PGcgaWQ9ImNmdUt3Ri50aWYiPjxpbWFnZSBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTQwIiBpZD0iTGF5ZXJfMF8xXyIgeGxpbms6aHJlZj0iQTQ5RUUwRjNGODFBNjdDMS5wbmciICB0cmFuc2Zvcm09Im1hdHJpeCgwLjI2NTYgMCAwIDAuMjY1NiAtODMuNTc3OSAtMi4yNzgyKSI+PC9pbWFnZT48L2c+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE1LDMuMUwxLjYsMjcuOWMtMC40LDAuNywwLjEsMS42LDAuOSwxLjZoMjYuOGMwLjgsMCwxLjMtMC45LDAuOS0xLjZMMTYuOSwzLjFDMTYuNSwyLjMsMTUuNCwyLjMsMTUsMy4xeiIvPjxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iMTcsMjIgMTUsMjIgMTQuNSwxMCAxNy4zLDEwICIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xNiwyNi41TDE2LDI2LjVjLTAuOCwwLTEuNS0wLjctMS41LTEuNXYwYzAtMC44LDAuNy0xLjUsMS41LTEuNWgwYzAuOCwwLDEuNSwwLjcsMS41LDEuNXYwQzE3LjUsMjUuOCwxNi44LDI2LjUsMTYsMjYuNXoiLz48L3N2Zz4=");
 }
 
 .e-filemanager .e-fe-docx,
@@ -223,7 +263,6 @@ ejs-filemanager {
 }
 
 .e-filemanager {
-  -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -583,6 +622,11 @@ ejs-filemanager {
   padding: 0 0 0 12px;
 }
 
+.e-filemanager .e-grid .e-gridheader .e-fe-grid-icon .e-headercelldiv,
+.e-filemanager .e-grid .e-gridcontent .e-fe-grid-icon .e-headercelldiv {
+  text-overflow: unset;
+}
+
 .e-filemanager .e-grid .e-gridheader .e-fe-grid-icon + .e-rowcell,
 .e-filemanager .e-grid .e-gridheader .e-fe-grid-icon + .e-headercell,
 .e-filemanager .e-grid .e-gridcontent .e-fe-grid-icon + .e-rowcell,
@@ -640,39 +684,6 @@ ejs-filemanager {
   margin: 0 8px 0 0;
   vertical-align: middle;
   width: 18px;
-}
-
-.e-filemanager .e-dialog td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 14px;
-  max-width: 211px;
-  min-width: 51px;
-  padding: 8px 24px 8px 0;
-}
-
-.e-filemanager .e-dialog td.e-fe-value {
-  white-space: unset;
-  word-break: break-word;
-}
-
-.e-filemanager .e-dialog .e-fe-errorcontent {
-  white-space: normal;
-  word-break: break-all;
-}
-
-.e-filemanager .e-dialog .e-fe-retrycontent {
-  padding: 16px 0;
-}
-
-.e-filemanager .e-dialog .e-image {
-  height: 100%;
-  width: 100%;
-}
-
-.e-filemanager .e-dialog.e-rtl td {
-  padding: 8px 0 8px 24px;
 }
 
 .e-filemanager .e-large-icons {
@@ -775,11 +786,6 @@ ejs-filemanager {
   width: 40px;
 }
 
-.e-filemanager .e-fe-error {
-  font-size: 12px;
-  line-height: 1.5;
-}
-
 .e-filemanager .e-fe-clone {
   pointer-events: none;
   z-index: 20;
@@ -859,6 +865,14 @@ ejs-filemanager {
   transform: rotate(180deg);
 }
 
+.e-filemanager.e-rtl .e-grid.e-rtl .e-row.e-focused td:first-child {
+  box-shadow: inset -1px 1px 0 0 #dadada, inset -1px -1px 0 0 #dadada;
+}
+
+.e-filemanager.e-rtl .e-grid.e-rtl .e-row.e-focused td:last-child {
+  box-shadow: inset 1px 1px 0 0 #dadada, inset 1px -1px 0 0 #dadada;
+}
+
 .e-filemanager.e-rtl .e-grid.e-rtl .e-gridheader .e-fe-checkbox,
 .e-filemanager.e-rtl .e-grid.e-rtl .e-gridcontent .e-fe-checkbox {
   padding-left: 0;
@@ -899,29 +913,13 @@ ejs-filemanager {
   margin-right: -12px;
 }
 
-.e-filemanager .e-upload {
-  border-bottom-width: 0;
-  border-top-width: 0;
-}
-
-.e-filemanager .e-upload .e-file-select-wrap {
-  display: none;
-}
-
-.e-filemanager .e-upload .e-icons.e-file-delete-btn {
-  display: none;
-}
-
-.e-filemanager .e-upload .e-upload-actions {
-  border-bottom: 1px solid;
-}
-
 .e-filemanager .e-layout-content {
   position: relative;
 }
 
 .e-filemanager .e-fe-overlay {
   border: 3px dashed #000;
+  bottom: 0;
   display: block;
   height: calc(100% - 34px);
   pointer-events: none;
@@ -936,10 +934,6 @@ ejs-filemanager {
 
 .e-filemanager .e-upload-drag-hover .e-fe-overlay {
   visibility: visible;
-}
-
-.e-filemanager .e-dialog.e-popup.e-dlg-resizable {
-  min-height: 200px;
 }
 
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-dot,
@@ -960,6 +954,80 @@ ejs-filemanager {
 .e-fe-popup.e-rtl .e-fe-grid {
   display: inline-table;
   transform: rotate(180deg);
+}
+
+.e-fe-popup.e-dialog td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  max-width: 211px;
+  min-width: 51px;
+  padding: 8px 24px 8px 0;
+}
+
+.e-fe-popup.e-dialog td.e-fe-value {
+  white-space: unset;
+  word-break: break-word;
+}
+
+.e-fe-popup.e-dialog .e-fe-errorcontent {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.e-fe-popup.e-dialog .e-fe-icon {
+  display: inline-block;
+  height: 18px;
+  margin: 0 8px -2px 0;
+  width: 18px;
+}
+
+.e-fe-popup.e-dialog .e-fe-access-header {
+  display: inline-block;
+}
+
+.e-fe-popup.e-dialog .e-fe-retrycontent {
+  padding: 16px 0;
+}
+
+.e-fe-popup.e-dialog .e-image {
+  height: 100%;
+  width: 100%;
+}
+
+.e-fe-popup.e-dialog.e-rtl td {
+  padding: 8px 0 8px 24px;
+}
+
+.e-fe-popup.e-dialog.e-rtl .e-fe-icon {
+  margin: 0 0 -2px 8px;
+}
+
+.e-fe-popup.e-dialog.e-popup.e-dlg-resizable {
+  min-height: 200px;
+}
+
+.e-fe-popup .e-fe-error {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.e-fe-popup .e-upload {
+  border-bottom-width: 0;
+  border-top-width: 0;
+}
+
+.e-fe-popup .e-upload .e-file-select-wrap {
+  display: none;
+}
+
+.e-fe-popup .e-upload .e-icons.e-file-delete-btn {
+  display: none;
+}
+
+.e-fe-popup .e-upload .e-upload-actions {
+  border-bottom: 1px solid;
 }
 
 .e-filemanager.e-fe-mobile .e-toolbar-items .e-toolbar-item .e-btn-icon.e-icons,
@@ -1142,13 +1210,6 @@ ejs-filemanager {
   right: 13px;
 }
 
-.e-filemanager.e-fe-mobile .e-dialog td.e-fe-value,
-.e-bigger .e-filemanager.e-fe-mobile .e-dialog td.e-fe-value,
-.e-filemanager.e-bigger.e-fe-mobile .e-dialog td.e-fe-value {
-  white-space: unset;
-  word-break: break-word;
-}
-
 .e-filemanager.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon,
 .e-bigger .e-filemanager.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon,
 .e-filemanager.e-bigger.e-fe-mobile .e-grid .e-fe-grid-icon .e-fe-icon {
@@ -1315,6 +1376,22 @@ ejs-filemanager {
 .e-filemanager.e-bigger.e-rtl .e-grid .e-gridheader .e-fe-grid-icon,
 .e-filemanager.e-bigger.e-rtl .e-grid .e-gridcontent .e-fe-grid-icon {
   padding-right: 10px;
+}
+
+.e-fe-popup.e-bigger.e-dialog .e-dlg-header-content,
+.e-bigger .e-fe-popup.e-dialog .e-dlg-header-content {
+  padding: 21px;
+}
+
+.e-fe-popup.e-bigger.e-dialog td,
+.e-bigger .e-fe-popup.e-dialog td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  max-width: 205px;
+  min-width: 45px;
+  padding: 8px 30px 8px 0;
 }
 
 .e-bigger .e-filemanager .e-toolbar .e-toolbar-items .e-toolbar-item .e-btn-icon.e-icons,
@@ -1504,22 +1581,6 @@ ejs-filemanager {
   opacity: 0.7;
   padding: 6px;
   text-align: center;
-}
-
-.e-bigger .e-filemanager .e-dialog .e-dlg-header-content,
-.e-filemanager.e-bigger .e-dialog .e-dlg-header-content {
-  padding: 21px;
-}
-
-.e-bigger .e-filemanager .e-dialog td,
-.e-filemanager.e-bigger .e-dialog td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 15px;
-  max-width: 205px;
-  min-width: 45px;
-  padding: 8px 30px 8px 0;
 }
 
 .e-bigger .e-filemanager .e-large-icons .e-checkbox-wrapper .e-frame,
@@ -1734,14 +1795,6 @@ ejs-filemanager {
   background-color: transparent;
 }
 
-.e-filemanager .e-dialog td {
-  color: #dadada;
-}
-
-.e-filemanager .e-dialog td:first-child {
-  color: #dadada;
-}
-
 .e-filemanager .e-large-icons .e-list-img {
   border-color: #9a9a9a;
 }
@@ -1782,14 +1835,6 @@ ejs-filemanager {
   color: #fff;
 }
 
-.e-filemanager .e-fe-error {
-  color: #ff5f5f;
-}
-
-.e-filemanager .e-upload .e-upload-actions {
-  border-bottom-color: #414040;
-}
-
 .e-filemanager .e-fe-clone .e-fe-content {
   background-color: #514f4f;
   border-color: #414040;
@@ -1821,4 +1866,20 @@ ejs-filemanager {
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-dot,
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick {
   color: #38a9ff;
+}
+
+.e-fe-popup.e-dialog td {
+  color: #dadada;
+}
+
+.e-fe-popup.e-dialog td:first-child {
+  color: #dadada;
+}
+
+.e-fe-popup .e-fe-error {
+  color: #ff5f5f;
+}
+
+.e-fe-popup .e-upload .e-upload-actions {
+  border-bottom-color: #414040;
 }

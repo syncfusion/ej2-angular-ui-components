@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class HolidayDirective extends ComplexBase<HolidayDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,7 @@ export class HolidayDirective extends ComplexBase<HolidayDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

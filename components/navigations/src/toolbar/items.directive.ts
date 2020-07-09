@@ -3,12 +3,13 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['align', 'cssClass', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'width'];
+let input: string[] = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'visible', 'width'];
 let outputs: string[] = ['click'];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Toolbar.
+ * 'e-item' directive represent a item of the Angular Toolbar.
+ * It must be contained in a Toolbar component(`ejs-toolbar`). 
  * ```html
- * <ejs-toolbar > 
+ * <ejs-toolbar> 
  *   <e-items>
  *    <e-item text='Cut'></e-item>
  *    <e-item text='Copy'></e-item>
@@ -25,6 +26,7 @@ let outputs: string[] = ['click'];
     }
 })
 export class ItemDirective extends ComplexBase<ItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -52,6 +54,11 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * @default ""
      */
     public cssClass: any;
+    /** 
+     * Specifies whether an item should be disabled or not.
+     * @default false
+     */
+    public disabled: any;
     /** 
      * Defines htmlAttributes used to add custom attributes to Toolbar command. 
      * Supports HTML attributes such as style, class, etc.
@@ -105,10 +112,15 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      */
     public text: any;
     /** 
-     * Specifies the text to be displayed on the Toolbar button.
+     * Specifies the text to be displayed on hovering the Toolbar button.
      * @default ""
      */
     public tooltipText: any;
+    /** 
+     * Specifies whether an item should be hidden or not.
+     * @default true
+     */
+    public visible: any;
     /** 
      * Specifies the width of the Toolbar button commands.
      * @default 'auto'
@@ -127,6 +139,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

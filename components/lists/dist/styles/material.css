@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 .e-icon-collapsible::before {
-  content: '\e844';
+  content: '\e913';
 }
 
 .e-icon-back::before {
   content: '\e85b';
-  font-size: auto;
 }
 
 .e-bigger .e-listview .e-list-item,
@@ -62,7 +61,6 @@
 .e-listview {
   -webkit-overflow-scrolling: touch;
   border: 0 solid;
-  border-color: none;
   border-radius: 0;
   display: block;
   overflow: auto;
@@ -181,7 +179,7 @@
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  vertical-align: top;
+  vertical-align: middle;
   white-space: nowrap;
   width: 100%;
 }
@@ -478,7 +476,6 @@
   outline: none;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }

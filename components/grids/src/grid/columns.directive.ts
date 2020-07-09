@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowGrouping', 'allowReordering', 'allowResizing', 'allowSearching', 'allowSorting', 'autoFit', 'clipMode', 'columns', 'commands', 'customAttributes', 'dataSource', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableGroupByFormat', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'foreignKeyField', 'foreignKeyValue', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'index', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowGrouping', 'allowReordering', 'allowResizing', 'allowSearching', 'allowSorting', 'autoFit', 'clipMode', 'columns', 'commands', 'customAttributes', 'dataSource', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableGroupByFormat', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'foreignKeyField', 'foreignKeyValue', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'headerValueAccessor', 'hideAtMedia', 'index', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Grid. 
@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -165,7 +166,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public defaultValue: any;
     /** 
      * If `disableHtmlEncode` is set to true, it encodes the HTML of the header and content cells.
-     * @default false
+     * @default true
      */
     public disableHtmlEncode: any;
     /** 
@@ -174,7 +175,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public displayAsCheckBox: any;
     /** 
-     * Defines the `IEditCell` object to customize default edit cell.
+     * Defines the `IEditCell`(../../grid/edit/#cell-edit-template) object to customize default edit cell.
      * @default {}
      */
     public edit: any;
@@ -257,8 +258,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * It is used to change display value with the given format and does not affect the original data. 
      * Gets the format from the user which can be standard or custom 
-     * [`number`](../../common/internationalization/#number-formatting/) 
-     * and [`date`](../common/internationalization/#number-formatting/) formats.
+     * [`number`](../../common/internationalization/#manipulating-numbers) 
+     * and [`date`](../../common/internationalization/#manipulating-datetime) formats.
      * @default null
      * @asptype string
      * @blazortype string
@@ -302,6 +303,29 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default null
      */
     public headerTextAlign: any;
+    /** 
+     * Defines the method used to apply custom header cell values from external function and display this on each cell rendered.
+     * 
+     * ```html
+     *<div id="Grid"></div>
+     *```
+     *```typescript
+     *let gridObj: Grid = new Grid({
+     *dataSource: [{ EmployeeID: 1, EmployeeName: ['John', 'M'] }, { EmployeeID: 2, EmployeeName: ['Peter', 'A'] }],
+     *columns: [
+     *    { field: 'EmployeeID', headerText: 'Employee ID' },
+     *    { field: 'EmployeeName', headerText: 'Employee First Name',
+     *      headerValueAccessor: (field: string,column: Column) => {
+     *            return "newheadername";
+     *        },
+     *    }]
+     *});
+     *```
+     *     
+     * @default null
+     * @deprecated 
+     */
+    public headerValueAccessor: any;
     /** 
      * column visibility can change based on its [`Media Queries`](http://cssmediaqueries.com/what-are-css-media-queries.html). 
      * `hideAtMedia` accepts only valid Media Queries.
@@ -371,7 +395,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public uid: any;
     /** 
-     * Defines rules to validate data before creating and updating.
+     * `editType`(../../grid/edit/#cell-edit-type-and-its-params) Defines rules to validate data before creating and updating.
      * @default null
      */
     public validationRules: any;
@@ -449,6 +473,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

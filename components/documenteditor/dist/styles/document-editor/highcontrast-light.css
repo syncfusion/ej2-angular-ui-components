@@ -24,11 +24,7 @@
 }
 
 .e-documenteditor .e-de-op-close-icon {
-  font-size: 12px;
   height: 20px;
-  margin-left: -4px;
-  margin-top: -3px;
-  width: auto;
 }
 
 .e-documenteditor .e-de-op-close-icon::before {
@@ -492,11 +488,9 @@
 }
 
 .e-documenteditor .e-de-op-close-button {
-  height: 20px;
   left: 267px;
   position: absolute;
   top: 18px;
-  width: 20px;
 }
 
 .e-de-background {
@@ -540,7 +534,7 @@
 
 .e-de-search-tab-content .e-input-group .e-de-op-search-close-icon:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-de-op-search-close-icon:hover {
@@ -549,7 +543,7 @@
 
 .e-spin-down:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-down:hover {
@@ -558,7 +552,7 @@
 
 .e-spin-up:focus {
   border: 1px solid #ddd;
-  border-right-width: none;
+  border-right-width: 0;
 }
 
 .e-spin-up:hover {
@@ -616,8 +610,8 @@
   border: 1px solid #808080;
   border-radius: 4px;
   font-size: 12px;
-  height: 181px;
-  margin-left: 23px;
+  height: 194px;
+  margin-left: 36px;
   overflow-y: scroll;
   width: 211px;
 }
@@ -631,8 +625,13 @@
 }
 
 .e-de-toc-dlg-style-label {
-  position: absolute;
-  top: 60px;
+  margin-left: 50px;
+  margin-top: 58px;
+}
+
+.e-de-toc-dlg-style-label.e-de-rtl {
+  margin-left: 0;
+  margin-right: 50px;
 }
 
 .e-de-pagesetup-dlg-container {
@@ -683,7 +682,7 @@
 
 .e-de-page-setup-dlg-sub-label {
   font-size: 13px;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .e-de-page-setup-dlg-orientation-prop {
@@ -1024,6 +1023,7 @@ label[for='container_wholeWord'] {
 .e-de-tooltip {
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  color: #000;
   cursor: text;
   max-width: 200px;
   padding: 5px;
@@ -1033,25 +1033,25 @@ label[for='container_wholeWord'] {
 }
 
 .e-btn.e-de-op-icon-btn {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .e-btn.e-de-op-close-button:hover {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .e-btn.e-de-op-close-button:focus {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .e-btn.e-de-op-close-button:active {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   color: rgba(0, 0, 0, 0.54);
 }
 
@@ -1344,7 +1344,7 @@ label[for='container_wholeWord'] {
   margin-top: 20px;
 }
 
-.e-de-tbl-btn-seperator {
+.e-de-tbl-btn-separator {
   width: 57%;
 }
 
@@ -1406,7 +1406,7 @@ label[for='container_wholeWord'] {
 
 .e-de-table-cell-margin-dlg {
   height: 222px;
-  width: 342px;
+  width: 380px;
 }
 
 .e-de-table-options-dlg {
@@ -1517,7 +1517,7 @@ label[for='container_wholeWord'] {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label {
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -1752,7 +1752,7 @@ label[for='container_wholeWord'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-frame,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-frame,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-frame,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-frame,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-frame,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-frame,
 .e-de-tbl-margin-sub-header .e-frame {
   height: 15px;
@@ -1765,7 +1765,7 @@ label[for='container_wholeWord'] {
 .e-de-table-ppty-options-break .e-checkbox-wrapper .e-label,
 .e-de-table-ppty-options-header-row .e-checkbox-wrapper .e-label,
 .e-de-table-cell-header-div .e-checkbox-wrapper .e-label,
-.e-de-tbl-btn-seperator .e-checkbox-wrapper .e-label,
+.e-de-tbl-btn-separator .e-checkbox-wrapper .e-label,
 .e-de-hyperlink-bookmark-check .e-checkbox-wrapper .e-label,
 .e-de-tbl-margin-sub-header .e-label {
   font-size: 14px;
@@ -1854,19 +1854,14 @@ label[for='container_wholeWord'] {
   float: right;
 }
 
-.e-de-toc-dlg-right-sub-container {
-  margin-right: 2px;
-  margin-top: 103px;
-}
-
 .e-de-toc-dlg-styles {
   margin-bottom: 11px;
-  margin-left: 25px;
-  margin-top: 38px;
+  margin-left: 38px;
+  margin-top: 30px;
 }
 
 .e-de-toc-dlg-build-table {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .e-de-toc-table-div .e-de-toc-dlg-toc-level {
@@ -1886,11 +1881,6 @@ label[for='container_wholeWord'] {
   font-size: 12px;
 }
 
-.e-de-toc-dlg-show-level-div {
-  margin-left: 255px;
-  margin-top: 16px;
-}
-
 .e-de-toc-table-div {
   height: 163px;
   overflow-y: scroll;
@@ -1899,12 +1889,12 @@ label[for='container_wholeWord'] {
 
 .e-de-toc-dlg-style-input {
   margin-bottom: 3px;
-  margin-left: 23px;
+  margin-left: 36px;
   width: 210px;
 }
 
 .e-de-toc-dlg-outline-levels {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 150px;
 }
 
@@ -1922,18 +1912,14 @@ label[for='container_wholeWord'] {
   margin-bottom: 6px;
 }
 
-.e-de-toc-dlg-showlevel-div {
-  margin-left: 255px;
-}
-
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-find-tab-header {
   padding-left: 1px;
-  padding-right: 0 24px;
+  padding-right: 24px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item .e-de-op-replace-tab-header {
-  padding-left: 0 24px;
-  padding-right: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .e-de-dlg-target .e-footer-content .e-list-dlg-font {
@@ -2082,22 +2068,113 @@ label[for='container_wholeWord'] {
   font-size: 10px;
 }
 
+.e-documenteditor .e-menu-item .e-de-acceptchange::before {
+  content: '\e19f';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-menu-item .e-de-rejectchange::before {
+  content: '\e204';
+  font-family: 'e-icons';
+}
+
 .e-documenteditor .e-de-op .e-de-op-close-icon {
-  font-size: 12px;
   height: 20px;
-  margin-left: -4px;
-  margin-top: -3px;
-  width: auto;
 }
 
 .e-documenteditor .e-de-op-close-icon::before {
-  content: '\e7fc';
+  content: '\e7a7';
 }
 
 .e-documenteditor .e-de-op-search-close-icon::before {
-  content: '\e7fc';
+  content: '\e7a7';
   font-family: 'e-icons';
   font-size: 10px;
+}
+
+.e-documenteditor .e-de-new-cmt::before {
+  content: '\e7d5';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-menu-icon::before {
+  content: '\e976';
+  font-family: 'e-icons';
+  font-size: 10px;
+}
+
+.e-documenteditor .e-de-cmt-mark-icon::before {
+  content: '\e817';
+  font-family: 'e-icons';
+  font-size: 13px;
+}
+
+.e-documenteditor .e-de-cmt-post::before {
+  content: '\e816';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cmt-rply-icon::before {
+  content: '\e7a7';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cmt-cancel::before {
+  content: '\e7fc';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cmt-delete::before {
+  content: '\e602';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cmt-reopen::before {
+  content: '\e818';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-nav-up::before {
+  content: '\e651';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-nav-right-arrow::before {
+  content: '\e913';
+}
+
+.e-documenteditor .e-de-nav-left-arrow::before {
+  content: '\e904';
+}
+
+.e-documenteditor .e-de-save-icon::before {
+  content: '\e614';
+  font-family: 'e-icons';
+}
+
+.e-documenteditor .e-de-cancel-icon::before {
+  content: '\ebe8';
+  font-family: 'e-icons';
+}
+
+.e-de-ctn-title-print::before {
+  content: '\ebf9';
+  font-family: 'e-icons';
+}
+
+.e-de-acceptchange::before {
+  content: '\e19f';
+  font-family: 'e-icons';
+}
+
+.e-de-rejectchange::before {
+  content: '\e204';
+  font-family: 'e-icons';
+}
+
+.e-de-ctn-title-download::before {
+  content: '\e603';
+  font-family: 'e-icons';
 }
 
 .e-de-table-properties-alignment:hover {
@@ -2282,6 +2359,11 @@ label[for='container_wholeWord'] {
   left: 4px;
   position: absolute;
   top: 4px;
+}
+
+.e-menu-item .e-de-cmt-add::before {
+  content: '\e814';
+  font-family: 'e-icons';
 }
 
 .e-menu-item .e-de-cut::before {
@@ -2508,5 +2590,5 @@ label[for='container_wholeWord'] {
 }
 
 .e-icon-btn.e-de-paste::before {
-  content: '\e684';
+  content: '\e68a';
 }

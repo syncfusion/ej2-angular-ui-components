@@ -1,15 +1,67 @@
-<!-- markdownlint-disable MD010 -->
-
-
-<!-- markdownlint-disable MD030 -->
-
-
-<!-- markdownlint-disable MD004 -->
-
-
 # Changelog
 
 ## [Unreleased]
+
+## 18.1.54 (2020-05-26)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `#277945` - Legend label cropping issue has been fixed.
+
+## 18.1.52 (2020-05-13)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `#270398` - Heatmap tooltip alignment issue has been fixed.
+
+## 18.1.45 (2020-04-21)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `#271846` - Legend label cropping issue has been fixed.
+
+## 18.1.36-beta (2020-03-19)
+
+### HeatMap
+
+#### New Features
+
+- `#259129` - Provided the support to display the exceeding X-Axis label using the `labelIntersectAction` property value as `MultipleRows`.
+- Now the lengthier Y-Axis label can trimmed with ellipses using the `maxLabelLength` property.
+
+## 17.4.39 (2019-12-17)
+
+### HeatMap
+
+#### New Features
+
+- `#234060`, `#246529` - Provided the cell color customization support for heatmap by using the `cellRender` event.
+- Provided the legend title support to customize the legend title in heatmap.
+- Provided the support for a cell color range to customize a cell color based on the range value.
+
+- `#234060`, `#246529` - Provided the cell color customization support for heatmap by using the `cellRender` event .
+- Provided the legend title support to customize the legend title in heatmap.
+- Provided the support for a cell color range to customize a cell color based on the range value.
+
+## 17.3.9-beta (2019-09-20)
+
+### HeatMap
+
+#### New Features
+
+- Provided a minimum and maximum color display based on row and column wise
+
+#### Breaking Changes
+
+The `dataSource` property has been split into `dataSource` and `dataSourceSettings` properties.
+The `dataSource` property is used to bind data to HeatMap and the `dataSourceSettings` property is used to configure the data source using adaptor settings.
+
 
 ## 17.2.28-beta (2019-06-27)
 

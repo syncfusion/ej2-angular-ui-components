@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PivotView } from '@syncfusion/ej2-pivotview';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowCalculatedField','allowConditionalFormatting','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','currencyCode','dataSourceSettings','displayOption','editSettings','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','gridSettings','groupingBarSettings','height','hyperlinkSettings','locale','maxNodeLimitInMemberEditor','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','toolbar','width'];
-export const outputs: string[] = ['aggregateCellInfo','beforeExport','beginDrillThrough','cellClick','cellSelected','cellSelecting','chartSeriesCreated','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','fieldListRefreshed','hyperlinkCellClick','load','loadReport','newReport','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
+export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowConditionalFormatting','allowDataCompression','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowGrouping','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','chartTypes','currencyCode','dataSourceSettings','displayOption','editSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','exportAllPages','gridSettings','groupingBarSettings','height','hyperlinkSettings','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','maxRowsInDrillThrough','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','spinnerTemplate','toolbar','tooltipTemplate','width'];
+export const outputs: string[] = ['aggregateCellInfo','aggregateMenuOpen','beforeExport','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','enginePopulated','enginePopulating','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
 export const twoWays: string[] = [];
 
 /**
@@ -26,12 +26,14 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase])
 export class PivotViewComponent extends PivotView implements IComponentBase {
+    public context : any;
+    public tagObjects: any;
 
 
 
     /** 
-     * The template option which is used to render the pivot cells on the pivotview. Here, the template accepts either 
-     *  the string or HTMLElement as template design and then the parsed design is displayed onto the pivot cells.
+     * Allows the table cell elements to be customized with either an HTML string or the element’s ID, 
+     * that can be used to add additional HTML elements with custom formats to the cell elements that are displayed in the pivot table.
      * @default null
      */
     @ContentChild('cellTemplate')
@@ -108,22 +110,34 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('PivotViewGrouping');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

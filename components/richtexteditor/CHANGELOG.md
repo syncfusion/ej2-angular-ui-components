@@ -2,7 +2,230 @@
 
 ## [Unreleased]
 
-## 17.2.49 (2019-09-04)
+## 18.2.44 (2020-07-07)
+
+### RichTextEditor
+
+#### New Features
+
+- `#271295` - Provided public methods `showInlineToolbar` and `hideInlineToolbar` to show and hide the inline toolbars in the Rich Text Editor.
+
+#### Bug Fixes
+
+- The issue with "Rich Text Editor data binding not working in Source Code view" has been resolved.
+
+## 18.1.57 (2020-06-16)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#275859` -  The issue with "throwing script error while pasting the content with table" in the Rich Text Editor has been resolved.
+- `#279019` -  The issue with "pasting the content inside the nested table that breaks the HTML content in the Rich Text Editor" has been resolved.
+- `#276473` -  The issue `afterImageDelete` event is not triggered when the image is removed along with text content in the Rich Text Editor" has been resolved.
+
+## 18.1.54 (2020-05-26)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#275859` -  The issue with unable to edit the Rich Text Editor content after pasting the content with table has been resolved.
+
+## 18.1.53 (2020-05-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F150037` -  The issue with "throwing script error while dynamically enable/disable the toolbar" has been resolved.
+
+## 18.1.52 (2020-05-13)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F152908` - The issue sub list remains after deleting the parent list element in the Rich Text Editor has been resolved.
+
+## 18.1.48 (2020-05-05)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#272406` - The issue background color format not applied properly on changing the font size in the Rich Text Editor has been resolved.
+
+## 18.1.45 (2020-04-21)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#271937` - The issue table border not applied when pasting the content from the Excel in the Rich Text Editor has been resolved.
+- `#271289` - The issue with using keyboard short cut `ctrl+k` to insert link not working in the Rich Text Editor has been resolved.
+
+## 18.1.44 (2020-04-14)
+
+### RichTextEditor
+
+#### New Features
+
+- `#F152228`, `#266987` - Provided an event `afterImageDelete` to be triggered after the image is removed from the Rich Text Editor content.
+
+#### Bug Fixes
+
+- `#F152859` - The issue `executeCommand` using `insertHTML` not inserting the Iframe element in the Rich Text Editor has been resolved.
+- `#267874`, `#269214`, `#271199` - Resolved the compilation error with typescript version 3.8.3
+- `#F152908` - The issue with empty sub-list not removed from Rich Text Editor has been resolved.
+
+## 18.1.42 (2020-04-01)
+
+### RichTextEditor
+
+#### New Features
+
+- `#266522` - Provided scrollable option support to the toolbar by setting toolbar type as `Scrollable` in Rich Text Editor.
+
+## 17.4.51 (2020-02-25)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `F151491` - Resolved the issue with RichTextEditor height that is not set properly when the toolbar is disabled.
+- `F151491` - Resolved the script errors thrown when opening an insert image dialog several times.
+
+## 17.4.49 (2020-02-11)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#261548`, `#262909` - The issue with a new line added after pasting the content and focusing out in the Rich Text Editor has been resolved.
+- `#F150940` - The issue with cursor not maintained when using the `executeCommand` method with `insertHTML` in the Rich Text Editor has been resolved.
+- `#F150991` - Fixed issue with script error when RichTextEditor is dynamically rendered using setState.
+- `#F150991` - Resolved the issue with the fontName requestType is getting as fontSize after the `change` event has been triggered.
+- `#F150742` - Resolved the issue with `dialogOpen` event does not return the content element in insert image dialog.
+- `#262805` - Fixed issue `change` event triggers first time when `readonly` property is enabled.
+
+## 17.4.47 (2020-02-05)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#150737` - Resolved the issue with inserting an image dialog that was not properly rendered on mobile devices.
+- `#F150655` - The issue 'Images not uploaded into the server when pasting only an image from the MS Word in the Rich Text Editor' has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### RichTextEditor
+
+#### New Features
+
+- `#F149481` - Provided the support to get the selected HTML content using the `getSelectedHtml` public method.
+
+## 17.4.44 (2021-01-21)
+
+### RichTextEditor
+
+#### New Features
+
+- `#256724`, `#F149821` - Provided the support to insert a table using the `executeCommand` public method in the RichTextEditor.
+
+## 17.4.43 (2020-01-14)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#258971` - Resolved the issue with an image element that is appended on insert image dialog drop area when drag and drop an image.
+- `#254879` - The issue with copying and pasting MS Word content along with the image of type `v:shape` to the Rich Text Editor has been fixed.
+- `#F149899` - The issue with 'image alignment styles are not loaded when displaying the editor content on another page' in the Rich Text Editor has been fixed.
+
+## 17.4.40 (2019-12-24)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#254606` - Web accessibility related issues have been resolved.
+
+## 17.4.39 (2019-12-17)
+
+### RichTextEditor
+
+#### New Features
+
+- **Callback event to custom toolbar**: The feature allows to bind click event handler to the custom toolbar items in the Rich Text Editor.
+- **Code format as toolbar button**: Provided an option to add the code format as toolbar button with toggle state in the Rich Text Editor.
+- **XHTML validation**: Provided support to validate the content of Rich Text Editor with XHTML standard.
+
+## 17.3.29 (2019-11-26)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#F149001` - The issue with customization of table cell padding and cell spacing in the Rich Text Editor has been resolved.
+
+## 17.3.28 (2019-11-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#254865` - Resolved the issue with an image that is not removed when pressing the delete key by enabling the `showOnRightClick` property.
+
+## 17.3.19 (2019-10-22)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#251855` - Resolved the issue with appearance of transparent color tile in Rich Text Editor's color picker.
+- `#251699` - The issue with pasting content from Word document displays unnecessary HTML content in the Rich Text Editor has been fixed.
+- `#251640` - The issue "placeholder not hidden after inserting a table or an image in the Rich Text Editor" has been fixed.
+- `#250650` - The issue with image rename in the imageUploadSuccess event not working when drag and drop an image into RichTextEditor has been fixed.
+- `#250587` - The issue with null field shown on form data headers response when drag and drop an image into RichTextEditor has been fixed.
+- `#251855` - The issue "console error is thrown, when the image upload dialog is opened in IE browser" has been fixed.
+
+## 17.3.16 (2019-10-09)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#249291` - The issue "extra empty tags are added while toggling bold or Italic style when typing the text randomly" in the Rich Text Editor has been fixed.
+
+## 17.3.14 (2019-10-03)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#249182` - The issue with localizing static texts of paste prompt dialog in the Rich Text Editor has been fixed.
+- `#249613` - The issue with pasting content from Microsoft Excel sheet that throws console error in the Rich Text Editor has been fixed.
+
+## 17.3.9-beta (2019-09-20)
+
+### RichTextEditor
+
+#### New Features
+
+- **Drag and drop images from local system**: The feature allows to insert the images to the editor by drag and drop from local path. The images can uploaded to the server before insert into the editor.
+- **Resizable Editor**: `#236064` - This feature allows the editor to be resized. Users can enable or disable this feature using the `enableResize` property. If `enableResize` is true, the RichTextEditor component creates grip at the bottom right corner to resize it in diagonal direction.
+- **Pasting images from Microsoft Word and Microsoft Outlook**: This feature allows you to paste the images in the editor by copying and pasting from Microsoft Word and Outlook. The images can be uploaded to the server before inserting into the editor.
+
+#### Bug Fixes
+
+- `#F146927` - The issue with copy and pasting image from MS Word to the RichTextEditor has been fixed.
+- `#246340` - The issue with pasting the content as plain-text in Rich Text Editor has been fixed.
+
+- `#246340` - The issue with select all and delete the content in Rich Text Editor has been fixed.
+
+## 17.2.47 (2019-08-27)
 
 ### RichTextEditor
 
@@ -10,6 +233,8 @@
 
 - `#242999` - Now, Reactive form validates properly on `shift + tab` key action.
 - `#244796` - Floating toolbar now renders properly without alignment issue, when render the Rich Text Editor within Tab.
+- `#243448` - Performance with page scroll has been improved when multiple Rich Text Editor components are rendered in the page.
+- `#241388` - The issue with right-click option while rendering RichTextEditor inside the table has been fixed.
 
 ## 17.2.46 (2019-08-22)
 
@@ -20,12 +245,13 @@
 - **Image upload events**
 - `#240002`, `#236690`, `#241238`, `#244320` - This feature allows images to be customized on uploading and inserting them into the editor by using the upload events image selected, image uploading, image upload success, and image upload failed. Users can rename the images before inserting them into the editor using these events.
 
+- **Image upload events**: `#240002`, `#236690`, `#241238`, `#244320` - This feature allows images to be customized on uploading and inserting them into the editor by using the upload events image selected, image uploading, image upload success, and image upload failed. Users can rename the images before inserting them into the editor using these events.
+
 #### Bug Fixes
 
 - `#243475` - Now, you can validate max-length even showCharCount property as false.
 - `#243475` - Resolved the issue with max-length validation on pasting the content.
 - `#242999` - The key action for `tab` key and `shift + tab` key are similar now.
-- `#241388` - The issue with right-click option while rendering RichTextEditor inside the table has been fixed.
 
 ## 17.2.41 (2019-08-14)
 
@@ -33,10 +259,7 @@
 
 #### New Features
 
-- **Support for saving images in base64**
-- `#240002`, `#242405` - This feature allows users to save the images in the RichTextEditor in base64 format along with the existing blob format.
-
-
+- **Support for saving images in base64**: `#240002`, `#242405` - This feature allows users to save the images in the RichTextEditor in base64 format along with the existing blob format.
 - `#242771` - Provided the support to handle both absolute and relative path links.
 
 #### Bug Fixes
@@ -82,8 +305,7 @@
 
 #### New Features
 
-- **Paste from Microsoft Word**
-- This feature allows users to paste clean-formatted HTML markup by removing all unnecessary elements, styles, and attributes from text while copying and pasting it from Microsoft Word.
+- **Paste from Microsoft Word**: This feature allows users to paste clean-formatted HTML markup by removing all unnecessary elements, styles, and attributes from text while copying and pasting it from Microsoft Word.
 
 #### Breaking Changes
 
@@ -151,8 +373,7 @@
 
 #### New Features
 
-- **Paste cleanup**
-- This feature allows users to clean up HTML content when copying and pasting any other content from external sources.
+- **Paste cleanup**: This feature allows users to clean up HTML content when copying and pasting any other content from external sources.
 
 ## 16.4.55 (2019-02-27)
 

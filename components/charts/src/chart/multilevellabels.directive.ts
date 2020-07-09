@@ -24,6 +24,7 @@ let outputs: string[] = [];
     }
 })
 export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirective> {
+    public directivePropList: any;
     public childCategories: any;
     public tags: string[] = ['categories'];
     /** 
@@ -59,6 +60,7 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

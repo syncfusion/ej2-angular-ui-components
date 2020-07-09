@@ -5,8 +5,8 @@ import { DateTimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','htmlAttributes','isMultiSelection','keyConfigs','locale','max','min','placeholder','readonly','scrollTo','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','width','zIndex'];
-export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','htmlAttributes','isMultiSelection','keyConfigs','locale','max','min','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','width','zIndex'];
+export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class DateTimePickerComponent extends DateTimePicker implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -53,6 +56,8 @@ export class DateTimePickerComponent extends DateTimePicker implements IComponen
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -68,15 +73,20 @@ export class DateTimePickerComponent extends DateTimePicker implements IComponen
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

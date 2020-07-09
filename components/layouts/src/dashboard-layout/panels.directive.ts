@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class PanelDirective extends ComplexBase<PanelDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -55,7 +56,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * *
      * @default null
      * @asptype int
-     * @blazortype int
+     * @blazortype int?
      */
     public maxSizeX: any;
     /** 
@@ -63,7 +64,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * *
      * @default null
      * @asptype int
-     * @blazortype int
+     * @blazortype int?
 
      */
     public maxSizeY: any;
@@ -71,11 +72,13 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * Specifies the minimum width of the panel in cells count. 
      * *
      * @default 1
+     * @blazortype int
      */
     public minSizeX: any;
     /** 
      * Specifies the minimum height of the panel in cells count.
      * @default 1
+     * @blazortype int
      */
     public minSizeY: any;
     /** 
@@ -88,11 +91,13 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
     /** 
      * Specifies the width of the panel in the layout in cells count.
      * @default 1
+     * @blazortype int
      */
     public sizeX: any;
     /** 
      * Specifies the height of the panel in the layout in cells count.
      * @default 1
+     * @blazortype int
      */
     public sizeY: any;
     /** 
@@ -105,12 +110,14 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
     public zIndex: any;
     /** 
      * Defines the template value that should be displayed as the panel's header.
+     * @blazortype RenderFragment
      */
     @ContentChild('header')
     @Template()
     public header: any;
     /** 
      * Defines the template value that should be displayed as the panel's content.
+     * @blazortype RenderFragment
      */
     @ContentChild('content')
     @Template()
@@ -120,6 +127,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

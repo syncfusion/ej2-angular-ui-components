@@ -7,7 +7,9 @@ import { EventEmitter } from '@angular/core';
 export function applyMixins(derivedClass: any, baseClass: any[]): void {
     baseClass.forEach(baseClass => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-            derivedClass.prototype[name] = baseClass.prototype[name];
+             if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.isFormBase) {
+                derivedClass.prototype[name] = baseClass.prototype[name];
+              }
         });
     });
 }
@@ -45,6 +47,7 @@ export function registerEvents(eventList: string[], obj: any, direct?: boolean):
 export function clearTemplate(_this: any, templateNames?: string[], index?: any): void {
     let regTemplates: string[] = Object.keys(_this.registeredTemplate);
     if (regTemplates.length) {
+        /* istanbul ignore next */
         let regProperties: string[] = templateNames && templateNames.filter(
             (val: string) => {
                 return (/\./g.test(val) ? false : true);
@@ -64,9 +67,11 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
             } else {
                 for (let rt of _this.registeredTemplate[registeredTemplate]) {
                     if (!rt.destroyed) {
-                        let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
-                        for (let m: number = 0; m < rt.rootNodes.length; m++) {
-                            pNode.appendChild(rt.rootNodes[m]);
+                        if(rt._view){
+                            let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
+                            for (let m: number = 0; m < rt.rootNodes.length; m++) {
+                                pNode.appendChild(rt.rootNodes[m]);
+                            }
                         }
                         rt.destroy();
                     }
@@ -77,6 +82,7 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
     }
     for (let tagObject of _this.tagObjects) {
         if (tagObject.instance) {
+            /* istanbul ignore next */
             tagObject.instance.clearTemplate((templateNames && templateNames.filter(
                 (val: string) => {
                     return (new RegExp(tagObject.name).test(val) ? true : false);
@@ -95,6 +101,7 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
  */
 export function setValue(nameSpace: string, value: any, object: any): any {
     let keys: string[] = nameSpace.replace(/\[/g, '.').replace(/\]/g, '').split('.');
+    /* istanbul ignore next */
     let fromObj: any = object || {};
     for (let i: number = 0; i < keys.length; i++) {
         let key: string = keys[i];

@@ -5,8 +5,8 @@ import { ListBox } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowDragAndDrop','allowFiltering','cssClass','dataSource','enablePersistence','enableRtl','enabled','fields','filterType','groupTemplate','height','ignoreAccent','ignoreCase','itemTemplate','locale','maximumSelectionLength','noRecordsTemplate','query','scope','selectionSettings','sortOrder','toolbarSettings','value','zIndex'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionComplete','actionFailure','beforeItemRender','change','created','dataBound','destroyed','drag','dragStart','drop','filtering','select','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','allowDragAndDrop','allowFiltering','cssClass','dataSource','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','groupTemplate','height','ignoreAccent','ignoreCase','itemTemplate','locale','maximumSelectionLength','noRecordsTemplate','query','scope','selectionSettings','sortOrder','toolbarSettings','value','zIndex'];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionComplete','actionFailure','beforeDrop','beforeItemRender','change','created','dataBound','destroyed','drag','dragStart','drop','filtering','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class ListBoxComponent extends ListBox implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -44,6 +47,7 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
+     * @deprecated 
      */
     @ContentChild('itemTemplate')
     @Template()
@@ -65,6 +69,8 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -80,15 +86,20 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

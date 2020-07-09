@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortsDirective } from './ports.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -24,6 +24,7 @@ let outputs: string[] = [];
     }
 })
 export class NodeDirective extends ComplexBase<NodeDirective> {
+    public directivePropList: any;
     public childAnnotations: any;
     public childPorts: any;
     public tags: string[] = ['annotations', 'ports'];
@@ -39,6 +40,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
+     * @blazortype ObservableCollection<DiagramNodeAnnotation>
      */
     public annotations: any;
     /** 
@@ -48,11 +50,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     public backgroundColor: any;
     /** 
      * Sets the border color of the node
+     * @deprecated 
      * @default 'none'
      */
     public borderColor: any;
     /** 
      * Sets the border width of the node
+     * @deprecated 
      * @default 0
      * @isblazornullabletype true
      */
@@ -60,7 +64,8 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Set the branch for the mind map
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
+     * @blazordefaultvalue null
+     * @isblazornullabletype true
      * @default ''
      */
     public branch: any;
@@ -136,12 +141,20 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default null
+     * @deprecated 
      */
     public container: any;
     /** 
      * Sets the data source of the node
      */
     public data: any;
+    /** 
+     * Defines the size of a drop symbol
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public dragSize: any;
     /** 
      * Defines whether the node should be automatically positioned or not. Applicable, if layout option is enabled.
      * @default false
@@ -155,7 +168,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
+     * @blazordefaultvalue None
      * @default None
      */
     public flip: any;
@@ -169,6 +182,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the horizontalAlignment of the node
      * @default 'Stretch'
+     * @blazordefaultvalue 'Left'
      */
     public horizontalAlignment: any;
     /** 
@@ -181,6 +195,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @default true
      */
     public isExpanded: any;
+    /** 
+     * Sets the layout properties using node property
+     * @default new NodeLayoutInfo()
+     * @asptype object
+     * @blazortype DiagramNodeLayoutInfo
+     */
+    public layoutInfo: any;
     /** 
      * Defines the space to be left between the node and its immediate parent
      * @default {}
@@ -227,6 +248,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the reference point, that will act as the offset values(offsetX, offsetY) of a node
      * @default new Point(0.5,0.5)
+     * @blazortype NodePivotPoint
      */
     public pivot: any;
     /** 
@@ -234,8 +256,16 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
+     * @blazortype ObservableCollection<DiagramPort>
      */
     public ports: any;
+    /** 
+     * Defines the size of the symbol preview
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public previewSize: any;
     /** 
      * Sets the rotate angle of the node
      * @default 0
@@ -258,7 +288,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Used to define the rows for the grid container
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
+     * @deprecated 
      * @default undefined
      */
     public rows: any;
@@ -271,12 +301,14 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Defines the shape of a node
      * @default Basic Shape
      * @asptype object
+     * @blazortype DiagramShape
      */
     public shape: any;
     /** 
      * Sets the shape style of the node
      * @default new ShapeStyle()
      * @asptype object
+     * @blazortype NodeShapeStyle
      */
     public style: any;
     /** 
@@ -287,6 +319,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the verticalAlignment of the node
      * @default 'Stretch'
+     * @blazordefaultvalue 'Top'
      */
     public verticalAlignment: any;
     /** 
@@ -304,6 +337,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets or gets the UI of a node
      * @default null
+     * @deprecated 
      */
     public wrapper: any;
     /** 
@@ -316,6 +350,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

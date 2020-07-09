@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Toast } from '@syncfusion/ej2-notifications';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ButtonModelPropsDirective } from './buttons.directive';
 
-export const inputs: string[] = ['animation','buttons','content','cssClass','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
-export const outputs: string[] = ['beforeOpen','click','close','created','destroyed','open'];
+export const inputs: string[] = ['animation','buttons','content','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
+export const outputs: string[] = ['beforeOpen','beforeSanitizeHtml','click','close','created','destroyed','open'];
 export const twoWays: string[] = [''];
 
 /**
@@ -26,7 +26,9 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class ToastComponent extends Toast implements IComponentBase {
-    public childButtons: any;
+    public containerContext : any;
+    public tagObjects: any;
+    public childButtons: QueryList<ButtonModelPropsDirective>;
     public tags: string[] = ['buttons'];
 
     /** 
@@ -49,6 +51,9 @@ export class ToastComponent extends Toast implements IComponentBase {
     /** 
      * Specifies the HTML element/element ID as a string that can be displayed as a Toast. 
      * The given template is taken as preference to render the Toast, even if the built-in properties such as title and content are defined.
+     * 
+     * {% codeBlock src='toast/template/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('template')
@@ -63,18 +68,24 @@ export class ToastComponent extends Toast implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childButtons;
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

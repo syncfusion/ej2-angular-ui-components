@@ -2,6 +2,441 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Diagram
+
+#### New Features
+
+- `#259358` - Support for user handle templates has been provided.
+- `#263337` - Undo and redo support has been enabled for order commands.
+- `#264082` - Support provided to find nearby elements when dragging the end point of the connectors.
+
+#### Bug Fixes
+
+- `F153539` - The issue with "Properties are not updated in server side" has been fixed.
+- `275634`  - The issue with "Exception occurs when double click on read only annotation" has been fixed.
+- `273482`  - The issue with "History change event args source are mismatch for nudge commands and mouse movements" has been fixed.
+- `274308`  - The issue with "Tooltip does not render when diagram placed in side bar component" has been fixed.
+- `276796`  - The issue with "Exception throws when zoom in or zoom out the diagram with virtualization" has been fixed.
+- `276998`  - The issue with "Provide support to cancel the drawing object when press escape key" has been fixed.
+- `273484`  - Issue with state of event while the connector is being dragged is now resolved.
+- `274485`  - Issue with dynamically added swimlane addInfo has been fixed.
+- `264654`  - Console exception with cloning phase of swimlane is now resolved.
+- `275032`  - Console exception while editing the annotation of node is resolved.
+- `271060`  - The issue with "Margin does not apply for the exported image" has been fixed.
+- `272898`  - The issue with "When drag some nodes in palette it does not show preview and drop in diagram" has been fixed.
+- `F153185` - The issue with "Line routing does not consider for Group nodes" has been fixed.
+- `#272405` - The issue with "The Double click event does not get triggered when double clicking on an annotation" has been fixed.
+- `274242`  - The issue with "Strange behaviour when changing Connector source or target decorator width or height" has been fixed.
+- `272497`  - The issue with "Need to consider boundary constraints when resizing the node" has been fixed.
+- `272186`  - The issue on symbol description is fixed.
+- `F12953` - The issue "Diagram FitToPage method not working properly by calling several times" has been fixed.
+- `F13028` - The issue "Connector padding is not working for Path Node" has been fixed.
+- `#275092` - The line routing for the organizational chart works now.
+- `278119`  - The issue with "Exception occurs when try to export the diagram with mode data" has been fixed.
+- `279145`  - The issue with "Exception occurs when try to save diagram with prevent defaults set as true" has been fixed.
+- `278617`  - The issue with "Exception occurs when define two swim lanes in the diagram" has been fixed.
+- `F154840` - The issue with "Exception occurs when try to load the diagram with group nodes" has been fixed.
+- `279486`  - The issue with "Exception occurs when try to load the diagram with prevent defaults set as true" has been fixed.
+- `F154304` - The issue with "Annotation Horizontal and vertical alignments are aligned wrongly" has been fixed.
+
+## 18.1.55 (2020-06-02)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#275092` - The line routing for the organizational chart works now
+
+## 18.1.54 (2020-05-26)
+
+### Diagram
+
+#### Bug Fixes
+
+- `F153539` - The issue with "Properties are not updated in server side" has been fixed.
+- `275634`  - The issue with "Exception occurs when double click on read only annotation" has been fixed.
+- `273482`  - The issue with "History change event args source are mismatch for nudge commands and mouse movements" has been fixed.
+- `274308`  - The issue with "Tooltip does not render when diagram placed in side bar component" has been fixed.
+- `276796`  - The issue with "Exception throws when zoom in or zoom out the diagram with virtualization" has been fixed.
+- `276998`  - The issue with "Provide support to cancel the drawing object when press escape key" has been fixed.
+
+## 18.1.52 (2020-05-13)
+
+### Diagram
+
+#### Bug Fixes
+
+- `273484`  - Issue with state of event while the connector is being dragged is now resolved.
+- `274485`  - Issue with dynamically added swimlane addInfo has been fixed.
+- `264654`  - Console exception with cloning phase of swimlane is now resolved.
+- `275032`  - Console exception while editing the annotation of node is resolved.
+
+## 18.1.48 (2020-05-05)
+
+### Diagram
+
+#### Bug Fixes
+
+- `271060`  - The issue with "Margin does not apply for the exported image" has been fixed.
+- `272898`  - The issue with "When drag some nodes in palette it does not show preview and drop in diagram" has been fixed.
+
+## 18.1.46 (2020-04-28)
+
+### Diagram
+
+#### Bug Fixes
+
+- `F153185` - The issue with "Line routing does not consider for Group nodes" has been fixed.
+- `#272405` - The issue with "The Double click event does not get triggered when double clicking on an annotation" has been fixed.
+- `274242`  - The issue with "Strange behaviour when changing Connector source or target decorator width or height" has been fixed.
+- `272497`  - The issue with "Need to consider boundary constraints when resizing the node" has been fixed.
+- `272186`  - The issue on symbol description is fixed.
+
+## 18.1.45 (2020-04-21)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#270667` - The issue with "Prevent line routing for straight connector" has been fixed.
+
+## 18.1.43 (2020-04-07)
+
+### Diagram
+
+#### Bug Fixes
+
+- `F12953` - The issue "Diagram FitToPage method not working properly by calling several times" has been fixed.
+- `F13028` - The issue "Connector padding is not working for Path Node" has been fixed.
+
+## 18.1.42 (2020-04-01)
+
+### Diagram
+
+#### New Features
+
+- `#267720`, `F152484` - Support to add annotation object in the text Edit event arguments
+
+#### Bug Fixes
+
+- `#266107` - The issue "Some nodes are not properly arranged in ComplexHierarchicalTree layout" has been fixed.
+- `#267299` - The issue "Performance issues with scroll the layout with overview" has been fixed.
+- `F152154` - The issue "Tooltip is not stay in fixed position" has been fixed.
+- `F152224`, `#267708` - The issue "Some nodes dragged from the palette are not dropped properly in the diagram" has been fixed.
+- `F152314`, `F152315` - The issue "Exception raised while loading a JSON data in load Diagram method" has been fixed.
+- `#268272` - The issue "Not able to disable the Lane header" has been fixed.
+- `#267836` - The issue "Port to Port connector docking is not proper in the Line routing" has been fixed.
+- `F152279` - The issue "Swim-lane header is not proper while swapping the lane when the swimlane Node Constraints are set to None" has been fixed.
+- `#269114` - The issue "Node dragging in swimlane is not working properly when line routing is enabled" has been fixed.
+
+## 18.1.36-beta (2020-03-19)
+
+### Diagram
+
+#### New Features
+
+- `#232055` - Support added to change appearance of grid pattern.
+
+#### Bug Fixes
+
+- `F151275` - The issue "Connector has selected wrongly when clicking the user handles of other node" has been fixed.
+- `F151027` - The issue "Cannot get the TextAnnotation node margin values dropped in the swimlane" has been fixed.
+- `F151264` - The issue  "Need to change evt.args node/connector type as DiagramNode/DiagramConnector in Blazor Validated" has been fixed.
+- `266664` - The issue "Ruler disappears after the diagram moves beyond viewport" has been fixed.
+- `F149624` - The issue "Diagram Component Export renders with black background on safari browser" has been fixed.
+- `F151341` - The issue "Specifying a layout results in exception when state of nodes changes" has been fixed.
+- `F151232` - The issue "Cannot read the property '0' of undefined" has been fixed.
+- `#263839` - The issue "Fit To Page leaving too much space around content" has been fixed.
+- `F151197` - The issue with the Zoom-Pan option that disables the connectors has been fixed.
+- `#264576` - The issue "Snapping support on zooming the diagram" has been fixed.
+- `#227953` - The issue "Line routing does not consider for some nodes" has been fixed.
+- `F151098` - The issue "Port constraints is not working while draw connector through port" has been fixed.
+- `F152070` - The exception occurs when you try to resize a node outside the boundary constraints has been fixed.
+- `266374` - The issue "Tool tip does not hide while mouse move on diagram" has been fixed.
+- `264862` - The Performance issue with overview sample has been fixed.
+- `F151374` - The issue "Connector stroke style does not update properly" has been fixed.
+
+## 17.4.55 (2020-03-10)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#227953` - The issue "Line routing does not consider for some nodes" has been fixed.
+- `266374` - The issue "Tool tip does not hide while mouse move on diagram" has been fixed.
+- `264862` - The Performance issue with overview sample has been fixed.
+- `F151374` - The issue "Connector stroke style does not update properly" has been fixed.
+
+## 17.4.51 (2020-02-25)
+
+### Diagram
+
+#### Bug Fixes
+
+- `F151275` - The issue "Connector has selected wrongly when clicking the user handles of other node" has been fixed.
+- `F151027` - The issue "Cannot get the TextAnnotation node margin values dropped in the swimlane" has been fixed.
+- `F151264` - The issue  "Need to change evt.args node/connector type as DiagramNode/DiagramConnector in Blazor Validated" has been fixed.
+- `266664` - The issue "Ruler disappears after the diagram moves beyond viewport" has been fixed
+
+## 17.4.50 (2020-02-18)
+
+### Diagram
+
+#### Bug Fixes
+
+- `F149624` - The issue "Diagram Component Export renders with black background on safari browser" has been fixed.
+- `F151341` - The issue "Specifying a layout results in exception when state of nodes changes" has been fixed.
+- `F151232` - The issue "Cannot read the property '0' of undefined" has been fixed.
+- `#263839` - The issue "Fit To Page leaving too much space around content" has been fixed.
+- `F151197` - The issue with the Zoom-Pan option that disables the connectors has been fixed.
+- `#264576` - The issue "Snapping support on zooming the diagram" has been fixed.
+
+## 17.4.46 (2020-01-30)
+
+### Diagram
+
+#### New Features
+
+- `#232055` - Support has been provided to Clip/Ellipsis the annotation when textWrapping as WrapWithOverflow in the diagram.
+- `#253884` - Template support for HTML node has been provided.
+- `#236612`, `#242275` - The support has been provided to get the In and Out edges from ports.
+- `#239063`, `#239214` - The support has been provided to notify key actions in command manager
+
+#### Bug Fixes
+
+- `#260927` - The issue "UmlClassDiagram is not updated properly in the layout" has been fixed.
+- `#227953` - The exception occurred while applying line routing for the complex diagram has been fixed.
+- `#259627` - The issue "Performance improvement with HTML node" has been fixed.
+- `#259329` - The issue "Polyline target decorator is not aligned properly at runtime" has been fixed.
+- `F149983` - The exception occurred while changing the z-index for group node at run time has been fixed.
+- `259000` - The issue "ConnectionChange Event does not triggered in mouse up" has been fixed.
+- `#259960` - The issue "Expand and collapse not working on the Mindmap Layout" has been fixed.
+- `#260287` - The issue "left most node unable to be selected in the layout sample" has been fixed.
+- `#256458` - The diagram html content is cutoff, while exporting the diagram issue has been fixed.
+- `#259774` - The issue with connector and node opacity that is decreased while expanding and collapsing a ComplexHierarchicalTree layout has been fixed.
+- `#259981` - Provides support to add group node children at runtime.
+
+## 17.4.44 (2021-01-21)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#259960` - The issue "Expand and collapse not working on the Mindmap Layout" has been fixed.
+- `#260287` - The issue "left most node unable to be selected in the layout sample" has been fixed.
+- `#256458` - The diagram html content is cutoff, while exporting the diagram issue has been fixed.
+- `#259774` - The issue with connector and node opacity that is decreased while expanding and collapsing a ComplexHierarchicalTree layout has been fixed.
+- `#259981` - Provides support to add group node children at runtime.
+
+## 17.4.43 (2020-01-14)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#259627` - The issue "Performance improvement with HTML node" has been fixed.
+- `#259329` - The issue "Polyline target decorator is not aligned properly at runtime" has been fixed.
+- `F149983` - The exception occurred while changing the z-index for group node at run time has been fixed.
+- `259000` - The issue "ConnectionChange Event does not triggered in mouse up" has been fixed.
+
+## 17.4.41 (2020-01-07)
+
+### Diagram
+
+#### New Features
+
+- `#232055` - Support has been provided to Clip/Ellipsis the annotation when textWrapping as WrapWithOverflow in the diagram.
+- `#253884` - Template support for HTML node has been provided.
+- `#236612`, `#242275` - The support has been provided to get the In and Out edges from ports.
+
+#### Bug Fixes
+
+- `#258539` - The issue "Unable to move the connector together with the group when editing an Orthogonal connector segment in a group" has been fixed.
+
+## 17.4.40 (2019-12-24)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#258522` - The issue with the connector that is not attached to the node when we draw a connector at the edge of the port has been fixed.
+
+## 17.4.39 (2019-12-17)
+
+### Diagram
+
+#### New Features
+
+- `#248460`,`#253930` - The support has been provided to restrict the movement of lane children beyond their boundaries.
+- `#254732` - The support has been provided to rearrange lanes within the swimlane.
+
+#### Bug Fixes
+
+- `F149060` - The issue "unable to remove the connector drawn at the run time" has been fixed.
+- `F148889` - The issue with the collectionChange event arguments that do not have parentId information in the element property has been fixed.
+- `F148889` - The issue with the TextAnnotation element size that grows on every move has been fixed.
+- `F148889` - Exception raises when we clear and change the text of TextAnnotation node and click to focus on other element has been fixed.
+- `F148889` - The issue with the Position change event that is not raised properly has been fixed.
+- `#227953` - The issue with updating line routing dynamically has been fixed.
+- `#254993` - The issue "Text Wrapping is not working for lane headers" has been fixed.
+- `#255299` - Visibility issue while using image as content for user handle is now fixed.
+- `#249873` - The issue with an exception that thrown while dragging an element from the pale if we have several diagrams and destroy one diagram has been resolved.
+- `#F147762` - The issue "Template annotation drawn numerous times during runtime changes" has been fixed.
+- `#249484` - The issue "Multi-selected node rotation not rotating based on center" has been resolved.
+- `#242645` - The issue "Unable to select a node in swimlane" has been fixed.
+- `#249697` - The selection after drag and drop the nodes out side of the diagram region is now working fine.
+- `#250965` - The performance issue occurs while dragging the diagram elements in flowchart samples has been resolved.
+- `#F148052` - The issue "CollectionChange event support while adding lanes at runtime" has been fixed.
+- `#250191` - The issue "Exception raised while deleting a node/connector when you set a diagram node/connector Id as a number" has been fixed.
+- The issue "Unable to hide a layer at runtime" has been fixed.
+- `#249091` - The issue with the grid lines that are black in Safari browser for Angular sample has been fixed.
+- Now, the image size will be set as image node size when the size is not given.
+- `#246889` - The issue "Context menu event will be triggered in ubuntu before the mouse up event, while context menu event will be fired in windows after mouse up" has been fixed.
+- `#253855` - The exception that thrown in addNodeToLane method because Undo/Redo Module is not injected has been fixed.
+- `#253804` - The issue with the Swimlane Header annotation styles that are unable to change has been fixed.
+- `#254194` - The issue "when resizing the text node, text content does not wraps with respect to node size" has been fixed.
+- `#253742` - The issue "children in the swimlane cannot be selected when resizing the lane, which is outside the view ports" has been fixed.
+- `F148797`,`F148792` - The issue with the Swimlane Header annotation styles that are unable to change has been fixed.
+- `#249143` - The issue "Horizontal and vertical alignment not working for the complex hierarchical layout" has been fixed.
+- `#256080` - The issue with the shapes in the overview component that cannot be dragged, if the diagram ScrollLimit is Limited has been fixed.
+- `#256513` - The issue "Not able to determine undo/redo action in the historyChange event" has been fixed.
+- `F149553` - The issue with the position of nodes in the layout that is not retained when we interact and serialize the diagram with the layout at runtime has been fixed.
+
+## 17.3.30 (2019-12-03)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#256513` - The issue "Not able to determine undo/redo action in the historyChange event" has been fixed.
+- `F148889` - The issue with the collectionChange event arguments that do not have parentId information in the element property has been fixed.
+- `F148889` - The issue with the TextAnnotation element size that grows on every move has been fixed.
+- `F148889` - Exception raises when we clear and change the text of TextAnnotation node and click to focus on other element has been fixed.
+- `F148889` - The issue with the Position change event that is not raised properly has been fixed.
+
+## 17.3.29 (2019-11-26)
+
+### Diagram
+
+#### New Features
+
+- `#248460`,`#253930` - The support has been provided to restrict the movement of lane children beyond their boundaries.
+- `#254732` - The support has been provided to rearrange lanes within the swimlane.
+
+#### Bug Fixes
+
+- `F149060` - The issue "unable to remove the connector drawn at the run time" has been fixed.
+- `#227953` - The issue with updating line routing dynamically has been fixed.
+- `#254993` - The issue "Text Wrapping is not working for lane headers" has been fixed.
+- `#255299` - Visibility issue while using image as content for user handle is now fixed.
+
+## 17.3.28 (2019-11-19)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#254194` - The issue "when resizing the text node, text content does not wraps with respect to node size" has been fixed.
+- `#253742` - The issue "children in the swimlane cannot be selected when resizing the lane, which is outside the view ports" has been fixed.
+- `F148797`,`F148792` - The issue with the Swimlane Header annotation styles that are unable to change has been fixed.
+
+## 17.3.27 (2019-11-12)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#246889` - The issue "Context menu event will be triggered in ubuntu before the mouse up event, while context menu event will be fired in windows after mouse up" has been fixed.
+- `#253855` - The exception that thrown in addNodeToLane method because Undo/Redo Module is not injected has been fixed.
+- `#253804` - The issue with the Swimlane Header annotation styles that are unable to change has been fixed.
+
+## 17.3.21 (2019-10-30)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#249091` - The issue with the grid lines that are black in Safari browser for Angular sample has been fixed.
+
+## 17.3.19 (2019-10-22)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#250965` - The performance issue occurs while dragging the diagram elements in flowchart samples has been resolved.
+- `#F148052` - The issue "CollectionChange event support while adding lanes at runtime" has been fixed.
+- `#250191` - The issue "Exception raised while deleting a node/connector when you set a diagram node/connector Id as a number" has been fixed.
+- The issue "Unable to hide a layer at runtime" has been fixed.
+
+## 17.3.17 (2019-10-15)
+
+### Diagram
+
+#### New Features
+
+- `#249143` - The issue "Horizontal and vertical alignment not working for the complex hierarchical layout" has been fixed.
+
+#### Bug Fixes
+
+- `#249873` - The issue with an exception that thrown while dragging an element from the pale if we have several diagrams and destroy one diagram has been resolved.
+- `#F147762` - The issue "Template annotation drawn numerous times during runtime changes" has been fixed.
+- `#249484` - The issue "Multi-selected node rotation not rotating based on center" has been resolved.
+- `#242645` - The issue "Unable to select a node in swimlane" has been fixed.
+- `#249697` - The selection after drag and drop the nodes out side of the diagram region is now working fine.
+
+## 17.3.14 (2019-10-03)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#F147622` - The issue "Annotation content is not properly aligned for Bezier connector when Segments has control points" has been resolved.
+- `#247074` - The issue "Overview size reset to zero while resizing the browser window" has been resolved.
+- `#248460` - The node ports of all diagram nodes are visible when we move a single node in the diagram has been fixed.
+- `F147492` - The issue "dragging one node and dropping it to another node, the node highlighter not removed" has been fixed.
+- `#F147578`- Exception raised on swim lane rendering has been fixed.
+- `#247967` - Exception raised while moving overview rectangle when HTML node contains SVG tag has been fixed.
+- `#249149` - Console errors occur when try to edit the orthogonal segments using Ctrl+Shift+click is now resolved.
+
+## 17.3.9-beta (2019-09-20)
+
+### Diagram
+
+#### New Features
+
+- `211256`,`227953`,`243284` - Automatic line routing support have been added.
+- `#242645` - The issue "Support to add node in lanes collection at runtime" is now resolved.
+
+#### Bug Fixes
+
+- `#243153` - Annotation wrapping is now working with textWrapping as WrapWithOverflow when there is a space in the annotation content.
+- `#242713` - The diagram connectors is now exported properly with WebKit.
+- `#247140` - The improper position of HTML node's in the overview has been fixed.
+- `#F147015` - The issue on printing the diagram content alone in multiple page when margin is set as zero has been fixed.
+- `#246626` - The issue "Hidden layered objects visible while changing the properties" is now resolved.
+- `#245915` - Now, the z-index of the HTML nodes works properly.
+- `#245696`,`#245047`,`#244836` - Now, the Angular diagram will be rendered properly when we set the target as es6/es2015 in ts.config file.
+- `#244623` - The issue "Flip not working for HTML node" is now resolved.
+- `#242968` - Now, the sequence connector updated properly while changing port to port connection at runtime.
+- `#244365` - Now, the user handle events firing after zoom in the diagram is validated.
+- `#245231` - The issue "When we draw multiple nodes horizontally and update layout at runtime, connectors are not updated in straight" is now resolved.
+- `#244804` - The fill color for target Decorator is now applied properly for sequence connector.
+- `#245061` - The issue "Nodes beyond the diagram view port also rendered dynamically, when enable the virtualization" is now resolved.
+- `#146327` - The issue "Layout not working for Group Node" is now resolved.
+- `#243648` - The issue "Exception raised while adding UML class shapes at runtime" is now resolved.
+- `#146017` - The issue "Decorator is not aligned properly in palette when we set large stroke Width for it" is now resolved.
+- `#242713` - The issue "Diagram Connectors not exported properly using web kit" is now resolved.
+- `#244589`, `#244046` - The issue "Context menu properties are generated in MVC" is now resolved.
+- `#243734` - The issue "Symbol Palette - first palette element gets removed while refresh the palette" is now resolved.
+- `#244519` - The issue "Support to delete a lane from swimlane" is now resolved.
+- The issue "Ports are not rendered when we enable virtualization" is now resolved.
+- `#243785` - The issue "Symbol palette first row expands twice on click" is now resolved.
+- `#243648` - The issue "Exception raised while adding UML class shapes at runtime" is now resolved.
+- `#146017` - The issue "Decorator is not aligned properly in palette when we set large stroke width for it" is now resolved.
+
 ## 17.2.49 (2019-09-04)
 
 ### Diagram

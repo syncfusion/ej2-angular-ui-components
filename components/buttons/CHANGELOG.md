@@ -2,13 +2,90 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Chips
+
+#### Bug Fixes
+
+- `#278394` - Issue with delete event has been fixed.
+
+## 18.1.48 (2020-05-05)
+
+### Chips
+
+#### New Features
+
+- `#152050` - Support for adding images to a chip using the `trailingIconUrl` and `leadingIconUrl` property has been included.
+
+## 18.1.43 (2020-04-07)
+
+### Radio Button
+
+#### Bug Fixes
+
+- Radio button not working properly when clicked inside splitter control has been resolved.
+
+## 17.4.49 (2020-02-11)
+
+### Button
+
+#### Bug Fixes
+
+- CSS validation issues has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### Chips
+
+#### New Features
+
+- `#256381` - Now, the `beforeClick` event triggers while clicking the chips.
+- `#256381` - Now, the `selectedChips` property maintains the value field that is provided to the chip.
+
+## 17.4.43 (2020-01-14)
+
+### Button
+
+#### Bug Fixes
+
+- Disabled button not working properly has been resolved.
+
+## 17.4.41 (2020-01-07)
+
+### Chips
+
+#### Bug Fixes
+
+- `#256994` - The issue with aria-selected value maintenance in a single selection has been fixed.
+
+## 17.4.39 (2019-12-17)
+
+### Chips
+
+#### Bug Fixes
+
+- `#250583` - Now, the selected chips values are maintained after selecting and deselecting the chips.
+
+## 17.3.16 (2019-10-09)
+
+### CheckBox
+
+### RadioButton
+
+### Switch
+
+#### Bug Fixes
+
+- Adding common cssClass for wrapper.
+
 ## 17.2.35 (2019-07-17)
 
 ### Chips
 
 #### Bug Fixes
 
-- I239111 - Issue with getting selected chip using `getSelectedChips` method in Edge browser has been fixed.
+- `#239111` - Issue with getting selected chip using `getSelectedChips` method in Edge browser has been fixed.
 
 ## 17.2.28-beta (2019-06-27)
 
@@ -238,14 +315,6 @@ RadioButton is a graphical user interface element that allows to select one opti
 - **Label** - Supports label and its positioning.
 - **Sizes** - Provided with different sizes of RadioButton.
 
-
-## 17.2.47 (2019-08-27)
-
-### Switch
-
-#### Bug Fixes
-
-- Change event triggers twice while clicking the space bar issue fixed.
 
 ## 17.1.38 (2019-03-29)
 

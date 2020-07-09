@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Chart } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -10,8 +10,8 @@ import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','pointClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
+export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -38,13 +38,15 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class ChartComponent extends Chart implements IComponentBase {
-    public childSeries: any;
-    public childAxes: any;
-    public childRows: any;
-    public childColumns: any;
-    public childAnnotations: any;
-    public childSelectedDataIndexes: any;
-    public childIndicators: any;
+    public context : any;
+    public tagObjects: any;
+    public childSeries: QueryList<SeriesCollectionDirective>;
+    public childAxes: QueryList<AxesDirective>;
+    public childRows: QueryList<RowsDirective>;
+    public childColumns: QueryList<ColumnsDirective>;
+    public childAnnotations: QueryList<AnnotationsDirective>;
+    public childSelectedDataIndexes: QueryList<SelectedDataIndexesDirective>;
+    public childIndicators: QueryList<IndicatorsDirective>;
     public tags: string[] = ['series', 'axes', 'rows', 'columns', 'annotations', 'selectedDataIndexes', 'indicators'];
     public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
@@ -385,22 +387,58 @@ export class ChartComponent extends Chart implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('ChartsHighlight');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSeries;
+        
+	    if (this.childAxes) {
+            this.tagObjects[1].instance = this.childAxes;
+        }
+        
+	    if (this.childRows) {
+            this.tagObjects[2].instance = this.childRows;
+        }
+        
+	    if (this.childColumns) {
+            this.tagObjects[3].instance = this.childColumns;
+        }
+        
+	    if (this.childAnnotations) {
+            this.tagObjects[4].instance = this.childAnnotations;
+        }
+        
+	    if (this.childSelectedDataIndexes) {
+            this.tagObjects[5].instance = this.childSelectedDataIndexes;
+        }
+        
+	    if (this.childIndicators) {
+            this.tagObjects[6].instance = this.childIndicators;
+        }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

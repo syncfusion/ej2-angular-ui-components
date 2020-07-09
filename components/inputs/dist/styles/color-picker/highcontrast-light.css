@@ -7,7 +7,6 @@
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -109,7 +108,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.175);
@@ -150,7 +148,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -211,7 +208,6 @@ body.e-colorpicker-overflow {
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 8px;
@@ -323,7 +319,6 @@ body.e-colorpicker-overflow {
   display: inline-flex;
   padding: 0 12px 12px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -332,6 +327,10 @@ body.e-colorpicker-overflow {
 .e-container .e-selected-value .e-input-container .e-float-input input {
   padding-left: 0;
   text-align: center;
+}
+
+.e-container .e-selected-value .e-input-container .e-numeric-hidden {
+  display: none;
 }
 
 .e-container .e-selected-value .e-value-switch-btn {
@@ -808,7 +807,7 @@ body.e-colorpicker-overflow {
   background-color: transparent;
   color: #757575;
   outline: none;
-  outline-offset: none;
+  outline-offset: unset;
 }
 
 .e-colorpicker-wrapper.e-disabled .e-value-switch-btn:active,

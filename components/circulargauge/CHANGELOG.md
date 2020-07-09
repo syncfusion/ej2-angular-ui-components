@@ -5,6 +5,33 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### CircularGauge
+
+#### New Features
+
+- The gradient color support for the ranges and the pointers is now available in the circular gauge.
+
+## 18.1.36-beta (2020-03-19)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#256184` - The unwanted div element appended in the DOM is removed now.
+
+## 17.3.9-beta (2019-09-20)
+
+### CircularGauge
+
+#### New Features
+
+- `#I218689` - An option has been provided to hide a label when it intersects with other labels.
+- `#I229216` - Tooltip support has been provided for circular gauge annotation.
+- `#I238868` - Tooltip support has been provided for circular gauge ranges.
+- `#I210142` - Legend support has been provided for circular gauge ranges.
+
 ## 17.2.36 (2019-07-24)
 
 ### CircularGauge

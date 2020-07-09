@@ -2,6 +2,218 @@
 
 ## [Unreleased]
 
+## 18.1.56 (2020-06-09)
+
+### Uploader
+
+#### Bug Fixes
+
+- Issue with "form name is not updated based on name attribute in chunk upload" has been resolved.
+
+## 18.1.55 (2020-06-02)
+
+### Slider
+
+#### Bug Fixes
+
+- `#278460` Issue with slider refresh method has been resolved.
+
+## 18.1.53 (2020-05-19)
+
+### Slider
+
+#### New Features
+
+- Now, you can set the width of the slider component using `width` property.
+
+## 18.1.52 (2020-05-13)
+
+### Uploader
+
+#### Bug Fixes
+
+- Now, selected files persist properly when enabling enablePersistence property.
+
+#### New Features
+
+- `#F150695` - Now, you can customize the drag operation effect using dropEffect property.
+
+## 18.1.44 (2020-04-14)
+
+### TextBox
+
+#### Bug Fixes
+
+- Issue with "destroy throws error in IE" has been resolved.
+
+## 18.1.43 (2020-04-07)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#268311` - Issue with "typed value is not reset in the multiline textbox while destroying the control" has been resolved.
+
+- `#263811`- Now, multiline textbox expand and collapse icon aligned properly.
+
+## 18.1.36-beta (2020-03-19)
+
+### Slider
+
+#### Bug Fixes
+
+- `#259186` The issue with the Vertical Slider tooltip content that rotate `225` degrees has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### Slider
+
+#### Bug Fixes
+
+- The issue "z-index value get's updated on each value change" has been resolved.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- Issue with "validation message not removed while clear the value using clear button" has been resolved.
+
+### ColorPicker
+
+- Provided `onModeSwitch` event after switching mode.
+
+### FormValidator
+
+#### Bug Fixes
+
+- `#F150308` - Now, email validation accepts more than five characters in the domain name.
+
+### TextBox
+
+#### Bug Fixes
+
+- `#261143` - Issue with "console error thrown in the IE browser while navigating the page" has been resolved.
+
+## 17.4.41 (2020-01-07)
+
+### Slider
+
+#### Bug Fixes
+
+- `#259186` - Now, the tooltip is displayed correctly for the slider component while rendering it inside the dialog component.
+
+## 17.3.29 (2019-11-26)
+
+### Form Validator
+
+#### Bug Fixes
+
+- Now, validation works for newly added elements by calling the `refresh` method.
+
+## 17.3.28 (2019-11-19)
+
+### TextBox
+
+#### New Features
+
+- `#226069`, `#247330` - Now, you can add icons to textbox component using `addIcon` method.
+
+#### Bug Fixes
+
+- `#254393` - Issue with "while calling the `focusIn` method, focus is not removed in the textbox even press the tab key or mouse action" has been resolved.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#254252` - Issue with "value not updated properly when set decimal value more than 7" has been resolved.
+
+## 17.3.27 (2019-11-12)
+
+### TextBox
+
+#### New Features
+
+- `#233835`, `#236707` - Now, you can adjust the width of textbox component using `width` property.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#252841` - Now, you can `drag and drop` the folders in `directory upload`.
+
+### ColorPicker
+
+#### Breaking Changes
+
+- Opacity value is removed from `value` when `enableOpacity` property is set as false.
+
+## 17.3.26 (2019-11-05)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `F147566` - In Palette mode, Empty string color value shows the default color(green) instead of no color has been fixed.
+
+### Uploader
+
+#### New Features
+
+- `#226384`, `#F147065` - Now, the file upload UI get changed for `synchronous upload`.
+
+## 17.3.21 (2019-10-30)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#251466` - Now, you can set width property in `em` unit.
+
+## 17.3.16 (2019-10-09)
+
+### TextBox
+
+#### Bug Fixes
+
+- Issue with `Material2 outline layout` has been resolved.
+
+## 17.3.14 (2019-10-03)
+
+### TextBox
+
+#### New Features
+
+- `#246351` - Provided autocomplete property for setting the autocomplete attribute to the textbox.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#244526`, `#245738` - Issue with "spinner is shown after the file uploaded successfully" has been resolved.
+
+## 17.3.9-beta (2019-09-20)
+
+### Slider
+
+#### New Features
+
+- `#234797` - Provided the color customization for each range of the slider track.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- Now, e-disabled class is removed from wrapper when dynamically enable the masked textbox from disabled state.
+
+## 17.2.49 (2019-09-04)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#243637` - Opacity value is not working Edge browser.
+
 ## 17.2.47 (2019-08-27)
 
 ### NumericTextBox
@@ -856,6 +1068,38 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.1.54 (2020-05-26)
+
+### Uploader
+
+#### New Features
+
+- `#248615`, `#F147072` - Now, you can disable the drag and drop upload using `dropArea` property.
+
+## 18.1.45 (2020-04-21)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- Issue with "character missing in the masked textbox while pasting the value" has been resolved.
+
+## 17.4.50 (2020-02-18)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#262338` - Now, the masked textbox does not get `automatic focus` when rendered with mask in the `IOS device`.
+
+## 17.4.47 (2020-02-05)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#259967` - Issue with "script throws while rendering uploader inside toolbar with routing action" has been resolved.
 
 ## 17.1.42 (2019-04-23)
 

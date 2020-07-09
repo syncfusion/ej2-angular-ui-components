@@ -80,8 +80,8 @@
 }
 
 .e-datepicker .e-model-header {
-  background-color: none;
-  color: none;
+  background-color: transparent;
+  color: transparent;
   cursor: default;
   display: none;
   padding: 10px 10px 10px 15px;
@@ -141,8 +141,8 @@
   min-height: 40px;
 }
 
-@media screen and (orientation: landscape) and (max-device-height: 360px) {
-  .e-datepicker .e-calendar .e-month table tbody {
+@media screen and (orientation: landscape) and (max-height: 360px) {
+  .e-datepicker .e-calendar.e-device .e-month table tbody {
     display: inline-block;
     height: 150px;
     overflow: auto;
@@ -163,12 +163,4 @@
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
 }

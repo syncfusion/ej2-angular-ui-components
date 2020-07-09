@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,7 @@ export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'end', 'endWidth', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+let input: string[] = ['color', 'end', 'endWidth', 'legendText', 'linearGradient', 'offset', 'opacity', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 let outputs: string[] = [];
 /**
  * Ranges directive
@@ -20,48 +20,75 @@ let outputs: string[] = [];
     }
 })
 export class RangeDirective extends ComplexBase<RangeDirective> {
+    public directivePropList: any;
 
 
     /** 
-     * Specifies the color of the ranges
+     * Sets and gets the color of the ranges in circular gauge component.
      * @aspdefaultvalueignore 
      * @default null
      */
     public color: any;
     /** 
-     * Specifies the maximum value of the range.
+     * Sets and gets the end value of the range in circular gauge component.
      * @aspdefaultvalueignore 
      * @default 0
      */
     public end: any;
     /** 
-     * Specifies the end width of the ranges
+     *   Sets and gets the width for the end of the range in the circular gauge component.
      * @default '10'
      */
     public endWidth: any;
     /** 
-     * Specifies the opacity for ranges.
+     * Sets and gets the text for the legend in the circular gauge component.
+     * @default ''
+     */
+    public legendText: any;
+    /** 
+     * Sets and gets the properties to render a linear gradient for the range. 
+     * If both linear and radial gradient is set, then the linear gradient will be rendered in the range.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
+     * Sets and gets the offset value of range in circular gauge component.
+     * @default '0'
+     */
+    public offset: any;
+    /** 
+     * Sets and gets the opacity for the ranges in circular gauge component.
      * @default 1
      */
     public opacity: any;
     /** 
-     * The radius of the range in pixels or in percentage.
+     * Sets and gets the position of the range and pointer for an axis in circular gauge component.
+     * @default Auto
+     */
+    public position: any;
+    /** 
+     * Sets and gets the properties to render a radial gradient for the range.
+     * @default null
+     */
+    public radialGradient: any;
+    /** 
+     * Sets and gets the radius of the range for circular gauge component.
      * @default null
      */
     public radius: any;
     /** 
-     * Specifies the rounded corner radius for ranges.
+     * Sets and gets the corner radius for ranges in circular gauge component.
      * @default 0
      */
     public roundedCornerRadius: any;
     /** 
-     * Specifies the minimum value of the range.
+     * Sets and gets the start value of the range in circular gauge component.
      * @aspdefaultvalueignore 
      * @default 0
      */
     public start: any;
     /** 
-     * Specifies the start width of the ranges
+     *  Sets and gets the width for the start of the range in the circular gauge component.
      * @default '10'
      */
     public startWidth: any;
@@ -70,6 +97,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

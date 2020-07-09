@@ -34,6 +34,7 @@ var LayerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return LayerDirective;
@@ -94,6 +95,7 @@ var CustomCursorDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return CustomCursorDirective;
@@ -134,7 +136,7 @@ CustomCursorsDirective.decorators = [
  * @nocollapse
  */
 CustomCursorsDirective.ctorParameters = function () { return []; };
-var input$2 = ['addInfo', 'alignment', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$2 = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 var outputs$2 = [];
 /**
  * Connectors Directive
@@ -159,6 +161,7 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ConnectorAnnotationDirective;
@@ -199,7 +202,7 @@ ConnectorAnnotationsDirective.decorators = [
  * @nocollapse
  */
 ConnectorAnnotationsDirective.ctorParameters = function () { return []; };
-var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'collapseIcon', 'constraints', 'cornerRadius', 'excludeFromLayout', 'expandIcon', 'flip', 'hitPadding', 'id', 'isExpanded', 'margin', 'ports', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 var outputs$3 = [];
 /**
  * Connectors Directive
@@ -220,6 +223,7 @@ var ConnectorDirective = /** @class */ (function (_super) {
         _this.tags = ['annotations'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return ConnectorDirective;
@@ -262,7 +266,7 @@ ConnectorsDirective.decorators = [
  * @nocollapse
  */
 ConnectorsDirective.ctorParameters = function () { return []; };
-var input$4 = ['addInfo', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$4 = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 var outputs$4 = [];
 /**
  * Nodes Directive
@@ -287,6 +291,7 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return NodeAnnotationDirective;
@@ -327,7 +332,7 @@ NodeAnnotationsDirective.decorators = [
  * @nocollapse
  */
 NodeAnnotationsDirective.ctorParameters = function () { return []; };
-var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'margin', 'offset', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
 var outputs$5 = [];
 /**
  * Nodes Directive
@@ -352,6 +357,7 @@ var PortDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return PortDirective;
@@ -392,7 +398,7 @@ PortsDirective.decorators = [
  * @nocollapse
  */
 PortsDirective.ctorParameters = function () { return []; };
-var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 var outputs$6 = [];
 /**
  * Nodes Directive
@@ -413,6 +419,7 @@ var NodeDirective = /** @class */ (function (_super) {
         _this.tags = ['annotations', 'ports'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return NodeDirective;
@@ -470,8 +477,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['addInfo', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'width'];
-var outputs$7 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'historyStateChange', 'mouseEnter', 'mouseLeave', 'mouseOver', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
+var inputs = ['addInfo', 'annotationTemplate', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'diagramSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodeTemplate', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'userHandleTemplate', 'width'];
+var outputs$7 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'historyStateChange', 'keyDown', 'keyUp', 'mouseEnter', 'mouseLeave', 'mouseOver', 'onImageLoad', 'onUserHandleMouseDown', 'onUserHandleMouseEnter', 'onUserHandleMouseLeave', 'onUserHandleMouseUp', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
 var twoWays = [''];
 /**
  * Diagram Component
@@ -604,27 +611,42 @@ exports.DiagramComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     DiagramComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childCustomCursor) {
+            this.tagObjects[1].instance = this.childCustomCursor;
+        }
+        if (this.childConnectors) {
+            this.tagObjects[2].instance = this.childConnectors;
+        }
+        if (this.childNodes) {
+            this.tagObjects[3].instance = this.childNodes;
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return DiagramComponent;
 }(ej2Diagrams.Diagram));
@@ -652,6 +674,23 @@ exports.DiagramComponent.ctorParameters = function () { return [
     { type: core.ViewContainerRef, },
     { type: core.Injector, },
 ]; };
+exports.DiagramComponent.propDecorators = {
+    'annotationTemplate': [{ type: core.ContentChild, args: ['annotationTemplate',] },],
+    'nodeTemplate': [{ type: core.ContentChild, args: ['nodeTemplate',] },],
+    'userHandleTemplate': [{ type: core.ContentChild, args: ['userHandleTemplate',] },],
+};
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], exports.DiagramComponent.prototype, "annotationTemplate", void 0);
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], exports.DiagramComponent.prototype, "nodeTemplate", void 0);
+__decorate([
+    ej2AngularBase.Template(),
+    __metadata("design:type", Object)
+], exports.DiagramComponent.prototype, "userHandleTemplate", void 0);
 exports.DiagramComponent = __decorate([
     ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
     __metadata("design:paramtypes", [core.ElementRef,
@@ -780,6 +819,7 @@ var PaletteDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$8);
+        _this.directivePropList = input$7;
         return _this;
     }
     return PaletteDirective;
@@ -834,7 +874,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
+var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolDragSize', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
 var outputs$9 = ['paletteSelectionChange'];
 var twoWays$1 = [''];
 /**
@@ -870,27 +910,33 @@ exports.SymbolPaletteComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$9);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SymbolPaletteComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childPalettes;
+        this.context.ngAfterContentChecked(this);
     };
     return SymbolPaletteComponent;
 }(ej2Diagrams.SymbolPalette));
@@ -1013,27 +1059,32 @@ exports.OverviewComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$10);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     OverviewComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return OverviewComponent;
 }(ej2Diagrams.Overview));
@@ -1165,6 +1216,7 @@ exports.scaleMatrix = ej2Diagrams.scaleMatrix;
 exports.translateMatrix = ej2Diagrams.translateMatrix;
 exports.multiplyMatrix = ej2Diagrams.multiplyMatrix;
 exports.Point = ej2Diagrams.Point;
+exports.BlazorAction = ej2Diagrams.BlazorAction;
 exports.PortVisibility = ej2Diagrams.PortVisibility;
 exports.SnapConstraints = ej2Diagrams.SnapConstraints;
 exports.SelectorConstraints = ej2Diagrams.SelectorConstraints;
@@ -1193,11 +1245,13 @@ exports.Margin = ej2Diagrams.Margin;
 exports.Shadow = ej2Diagrams.Shadow;
 exports.Stop = ej2Diagrams.Stop;
 exports.Gradient = ej2Diagrams.Gradient;
+exports.DiagramGradient = ej2Diagrams.DiagramGradient;
 exports.LinearGradient = ej2Diagrams.LinearGradient;
 exports.RadialGradient = ej2Diagrams.RadialGradient;
 exports.ShapeStyle = ej2Diagrams.ShapeStyle;
 exports.StrokeStyle = ej2Diagrams.StrokeStyle;
 exports.TextStyle = ej2Diagrams.TextStyle;
+exports.DiagramShapeStyle = ej2Diagrams.DiagramShapeStyle;
 exports.DiagramElement = ej2Diagrams.DiagramElement;
 exports.PathElement = ej2Diagrams.PathElement;
 exports.ImageElement = ej2Diagrams.ImageElement;
@@ -1232,6 +1286,8 @@ exports.splitArrayCollection = ej2Diagrams.splitArrayCollection;
 exports.getPathString = ej2Diagrams.getPathString;
 exports.getString = ej2Diagrams.getString;
 exports.randomId = ej2Diagrams.randomId;
+exports.getIndex = ej2Diagrams.getIndex;
+exports.templateCompiler = ej2Diagrams.templateCompiler;
 exports.cornersPointsBeforeRotation = ej2Diagrams.cornersPointsBeforeRotation;
 exports.getBounds = ej2Diagrams.getBounds;
 exports.cloneObject = ej2Diagrams.cloneObject;
@@ -1253,6 +1309,8 @@ exports.completeRegion = ej2Diagrams.completeRegion;
 exports.findNodeByName = ej2Diagrams.findNodeByName;
 exports.findObjectType = ej2Diagrams.findObjectType;
 exports.setSwimLaneDefaults = ej2Diagrams.setSwimLaneDefaults;
+exports.getSpaceValue = ej2Diagrams.getSpaceValue;
+exports.getInterval = ej2Diagrams.getInterval;
 exports.setUMLActivityDefaults = ej2Diagrams.setUMLActivityDefaults;
 exports.setConnectorDefaults = ej2Diagrams.setConnectorDefaults;
 exports.findNearestPoint = ej2Diagrams.findNearestPoint;
@@ -1307,10 +1365,14 @@ exports.getObjectType = ej2Diagrams.getObjectType;
 exports.flipConnector = ej2Diagrams.flipConnector;
 exports.updatePortEdges = ej2Diagrams.updatePortEdges;
 exports.alignElement = ej2Diagrams.alignElement;
+exports.cloneSelectedObjects = ej2Diagrams.cloneSelectedObjects;
 exports.updatePathElement = ej2Diagrams.updatePathElement;
+exports.checkPort = ej2Diagrams.checkPort;
 exports.findPath = ej2Diagrams.findPath;
 exports.findDistance = ej2Diagrams.findDistance;
 exports.cloneBlazorObject = ej2Diagrams.cloneBlazorObject;
+exports.checkBrowserInfo = ej2Diagrams.checkBrowserInfo;
+exports.canMeasureDecoratorPath = ej2Diagrams.canMeasureDecoratorPath;
 exports.CanvasRenderer = ej2Diagrams.CanvasRenderer;
 exports.DiagramRenderer = ej2Diagrams.DiagramRenderer;
 exports.DataBinding = ej2Diagrams.DataBinding;
@@ -1354,6 +1416,7 @@ exports.UmlInterface = ej2Diagrams.UmlInterface;
 exports.UmlEnumerationMember = ej2Diagrams.UmlEnumerationMember;
 exports.UmlEnumeration = ej2Diagrams.UmlEnumeration;
 exports.UmlClassifierShape = ej2Diagrams.UmlClassifierShape;
+exports.DiagramShape = ej2Diagrams.DiagramShape;
 exports.Node = ej2Diagrams.Node;
 exports.Header = ej2Diagrams.Header;
 exports.Lane = ej2Diagrams.Lane;
@@ -1376,6 +1439,7 @@ exports.ConnectorSegment = ej2Diagrams.ConnectorSegment;
 exports.StraightSegment = ej2Diagrams.StraightSegment;
 exports.BezierSegment = ej2Diagrams.BezierSegment;
 exports.OrthogonalSegment = ej2Diagrams.OrthogonalSegment;
+exports.DiagramConnectorSegment = ej2Diagrams.DiagramConnectorSegment;
 exports.getDirection = ej2Diagrams.getDirection;
 exports.isEmptyVector = ej2Diagrams.isEmptyVector;
 exports.getBezierPoints = ej2Diagrams.getBezierPoints;
@@ -1384,6 +1448,7 @@ exports.bezierPoints = ej2Diagrams.bezierPoints;
 exports.MultiplicityLabel = ej2Diagrams.MultiplicityLabel;
 exports.ClassifierMultiplicity = ej2Diagrams.ClassifierMultiplicity;
 exports.RelationShip = ej2Diagrams.RelationShip;
+exports.DiagramConnectorShape = ej2Diagrams.DiagramConnectorShape;
 exports.Connector = ej2Diagrams.Connector;
 exports.ConnectorBridging = ej2Diagrams.ConnectorBridging;
 exports.Snapping = ej2Diagrams.Snapping;
@@ -1392,6 +1457,7 @@ exports.DiagramTooltip = ej2Diagrams.DiagramTooltip;
 exports.initTooltip = ej2Diagrams.initTooltip;
 exports.updateTooltip = ej2Diagrams.updateTooltip;
 exports.LayoutAnimation = ej2Diagrams.LayoutAnimation;
+exports.SymbolSize = ej2Diagrams.SymbolSize;
 exports.UserHandle = ej2Diagrams.UserHandle;
 exports.ToolBase = ej2Diagrams.ToolBase;
 exports.SelectTool = ej2Diagrams.SelectTool;
@@ -1452,6 +1518,7 @@ exports.SymmetricLayout = ej2Diagrams.SymmetricLayout;
 exports.GraphLayoutManager = ej2Diagrams.GraphLayoutManager;
 exports.ComplexHierarchicalTree = ej2Diagrams.ComplexHierarchicalTree;
 exports.Palette = ej2Diagrams.Palette;
+exports.SymbolDragSize = ej2Diagrams.SymbolDragSize;
 exports.SymbolPreview = ej2Diagrams.SymbolPreview;
 exports.SymbolPalette = ej2Diagrams.SymbolPalette;
 exports.Ruler = ej2Diagrams.Ruler;

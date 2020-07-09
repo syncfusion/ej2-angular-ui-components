@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class UploadedFilesDirective extends ComplexBase<UploadedFilesDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -48,6 +49,7 @@ export class UploadedFilesDirective extends ComplexBase<UploadedFilesDirective> 
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

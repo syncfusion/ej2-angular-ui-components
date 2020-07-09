@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class ViewDirective extends ComplexBase<ViewDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -53,6 +54,14 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public endHour: any;
     /** 
+     * This option allows the user to set the first day of a week on Schedule. It should be based on the locale set to it and each culture 
+     *  defines its own first day of week values. If needed, the user can set it manually on his own by defining the value through 
+     *  this property. It usually accepts the integer values, whereby 0 is always denoted as Sunday, 1 as Monday and so on.
+     * @default 0
+     * @blazortype double?
+     */
+    public firstDayOfWeek: any;
+    /** 
      * Allows to set different resource grouping options on all available schedule view modes.
      * @default { byDate: false, byGroupID: true, allowGroupEdit: false, resources:[]}
      */
@@ -76,20 +85,30 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     public isSelected: any;
     /** 
      * It accepts the schedule view name, based on which we can define with its related properties in a single object. 
-     *  The applicable view names are, 
+     * The applicable view names are, 
      * * Day 
      * * Week 
      * * WorkWeek 
      * * Month 
+     * * Year 
      * * Agenda 
      * * MonthAgenda 
      * * TimelineDay 
      * * TimelineWeek 
      * * TimelineWorkWeek 
-     * * TimelineMonth
+     * * TimelineMonth 
+     * * TimelineYear
      * @default null
      */
     public option: any;
+    /** 
+     * It is used to specify the year view rendering orientation on the schedule. 
+     * The applicable orientation values are, 
+     * * Horizontal 
+     * * Vertical
+     * @default 'Horizontal'
+     */
+    public orientation: any;
     /** 
      * When set to `true`, displays a quick popup with cell or event details on single clicking over the cells or on events. 
      *  By default, it is set to `true`. It gets applied only to the view objects on which it is defined.
@@ -140,6 +159,15 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     @Template()
     public dateHeaderTemplate: any;
     /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
+     *  month date cells. 
+     *  This template is only applicable for month view day cells.
+     * @default null
+     */
+    @ContentChild('cellHeaderTemplate')
+    @Template()
+    public cellHeaderTemplate: any;
+    /** 
      * The template option which is used to render the customized work cells on the Schedule. Here, the 
      *  template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the work cells. 
      *  The field accessible via template is `date`. It gets applied only to the view objects on which it is defined.
@@ -182,6 +210,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

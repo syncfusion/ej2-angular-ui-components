@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'margin', 'offset', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class PortDirective extends ComplexBase<PortDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -64,6 +65,12 @@ export class PortDirective extends ComplexBase<PortDirective> {
      */
     public id: any;
     /** 
+     * Defines the collection of the objects that are connected to a particular port
+     * @default undefined
+     * @blazordefaultvalue new string[] { }
+     */
+    public inEdges: any;
+    /** 
      * Defines the space that the port has to be moved from its actual position
      * @default new Margin(0,0,0,0)
      */
@@ -71,8 +78,15 @@ export class PortDirective extends ComplexBase<PortDirective> {
     /** 
      * Defines the position of the port with respect to the boundaries of nodes/connector
      * @default new Point(0.5,0.5)
+     * @blazortype NodePortOffset
      */
     public offset: any;
+    /** 
+     * Defines the collection of the objects that are connected to a particular port
+     * @default undefined
+     * @blazordefaultvalue new string[] { }
+     */
+    public outEdges: any;
     /** 
      * Defines the geometry of the port
      * @default ''
@@ -124,6 +138,7 @@ export class PortDirective extends ComplexBase<PortDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

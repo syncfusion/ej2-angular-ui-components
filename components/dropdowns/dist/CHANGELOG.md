@@ -2,6 +2,465 @@
 
 ## [Unreleased]
 
+## 18.1.59 (2020-06-23)
+
+### MultiSelect
+
+#### Bug Fixes
+
+-`#F154635` - Issue with "floating label is not floated properly while rendering with filter and outline theme appearance" has been resolved.
+
+
+- `#278902` - Issue with "incorrect count displayed in the multiselect input field when selecting the  multiple items" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+-`#278736` -Now, search action is performed properly while rendering multiple dropdown and selecting the value using keyboard.
+
+
+## 18.1.57 (2020-06-16)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#279216` - Now, you can set empty data source dynamically.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#277467`- Issue with "some items in the dropdown hides when using the header template in the mobile mode" has been resolved.
+- `#278201`- Issue with "multiSelect component in mobile mode with initial value page not scrolled" has been resolved.
+
+## 18.1.56 (2020-06-09)
+
+### ComboBox
+
+#### Bug Fixes
+
+- Issue with "select event is not triggered while doing first selection with autofill" has been resolved.
+
+-`#278135`- Issue with "Item data is not loaded with asynchronous data when allowCustom is set to false" has been resolved.
+
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#280052`- Issue with "localization is not working for dropdown components" has been resolved.
+
+## 18.1.55 (2020-06-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+-`#273796` - Now, e-outline class is added to the filter input
+
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#276800` - The issue with “The selected item is maintained in DOM after clearing the item using clear icon in the Dropdown Tree component” has been resolved.
+- `#278072` - The issue with “The Dropdown Tree selected values are not received in the form post back” has been resolved.
+- `#274468` - The issue with “The Dropdown Tree popup element is incorrectly positioned when it is rendered inside the Bootstrap dialog” has been fixed.
+
+#### New Features
+
+- `#277378` - Provided the support to reset the values in the Dropdown Tree component when the form reset method is called.
+
+### DropDownList
+
+#### Bug Fixes
+
+-`#277821` - Now, changed the no record template hint message.
+
+
+## 18.1.53 (2020-05-19)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#273796` - Now, filtering works properly when paste the value in the input element.
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#274351` - The issue with "The Dropdown Tree initialized value which is not getting it in the form post" has been resolved.
+
+### ListBox
+
+#### New Features
+
+- Provided Placeholder support to filterbar in listbox.
+
+#### Bug Fixes
+
+- Move to and move from throws script error when listbox rendered with item template issue fixed.
+
+## 18.1.52 (2020-05-13)
+
+### ListBox
+
+#### Bug Fixes
+
+- Move to and move from throws script error when listbox rendered with item template issue fixed.
+
+## 18.1.48 (2020-05-05)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#273796` - Issue with clear icon misalignment in the material outline has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with drag and drop in empty listbox has been fixed.
+
+## 18.1.46 (2020-04-28)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- The issue with `The Dropdown Tree placeholder hides while opening the popup, when enabling the checkbox support` has been fixed.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'enabled' properly when listbox have toolbar option has been fixed.
+- Issue with Filter element when the scrolling has enabled in listbox.
+
+## 18.1.43 (2020-04-07)
+
+### ListBox
+
+#### Bug Fixes
+
+- `moveTo` method is not working properly when listbox have disabled items has been fixed.
+
+## 18.1.36-beta (2020-03-19)
+
+### Common
+
+#### Breaking Changes
+
+The newly added `Dropdown Tree` component in dropdowns package requires `Navigations` dependency, so now it is mandatory to include the `ej2-navigations.umd.min.js` in `system.js` configuration if you are using the system.js module loader.
+Update the system.js configuration while going with this version and above.
+
+
+### Dropdown Tree
+
+The Dropdown Tree control allows you to select single or multiple values from hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and preselected values. The available key features are
+
+
+- **Data binding** - Bind and access a hierarchical list of items from a local or server-side data source.
+- **Check boxes** - Select more than one item in the Dropdown Tree control without affecting the UI appearance.
+- **Multiple selection** - Select more than one item in the control.
+- **Sorting** - Display the Dropdown Tree items in ascending or descending order.
+- **Template** - Customize the Dropdown Tree items, header, footer, action failure content, and no records content.
+- **Accessibility** - Provide access to all the Dropdown Tree control features through keyboard interaction, on-screen readers, and other assistive technology devices.
+
+### ListBox
+
+#### Bug Fixes
+
+- Dynamic show checkBox not working in grouping has been fixed.
+
+## 17.4.51 (2020-02-25)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#263579` - Issue with "the performance issue while clear the selected items using clear button" issue has been resolved.
+
+## 17.4.50 (2020-02-18)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#261827` - Issue when ListBox and menu component in a same page has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the `autofill` value.
+
+## 17.4.49 (2020-02-11)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#261901` - Issue with "cascade dropdown previous value maintained while enabled the filtering" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument is updated properly after manually deleting all characters followed by focus out the control.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#263399` - Issue with "change event is not triggered while enabling `checkbox` selection in IE11 browser" has been resolved.
+
+## 17.4.47 (2020-02-05)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F151029` - Checkbox selection not updated on initial load, while rendering the ListBox with `iconCss` issue fixed.
+- Provided 'actionBegin' and 'actionComplete' event when moving items.
+
+## 17.4.46 (2020-01-30)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#261574` - Now, `isInteracted` argument updated properly in the change event while focusout.
+
+- `#258514` - Issue with "addItem method is not working while binding empty data source" has been resolved.
+- `#259861` - Issue with "filtering not working after selecting the item in the popup" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#261005` - Now, `isInteracted` argument updated properly in the change event while entering the custom value.
+
+## 17.4.44 (2021-01-21)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#260635` - Sorted datasource not updated properly in ListBox has been fixed.
+
+## 17.4.43 (2020-01-14)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F150435` - Script error occurs during disabled toolbar button click has been resolved.
+
+## 17.4.41 (2020-01-07)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#255830` - filter and grouping are not working on drag and drop and toolbar button states not updated properly has been resolved.
+
+## 17.4.40 (2019-12-24)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#255255` - Issue with "JAWS screen reader does not read the pre-selected value" has been resolved.
+
+- `#257336` - Issue with "fixed header shown twice while scrolling the items in the popup and reopen the popup again" has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with Drag and Drop is fixed.
+
+## 17.4.39 (2019-12-17)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#256098` - The mobile device ENTER key selection issue in the focused item issue has resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#255765` - Issue with "dynamically added item not displayed initially in box mode when control in focus state" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#256908` - Issue with "script error throws while pressing the escape key after filter the items in the popup" has been resolved.
+
+### ListBox
+
+#### New Features
+
+- Provided public methods for `toolbar` actions.
+- Provided `getDataByValues` method for getting array of data objects.
+
+#### Bug Fixes
+
+- `#252496` - Checkbox selection not maintained after removing filter has been fixed.
+- `#F147087` - script error "contains of undefined in ListBox" while rendering the ListBox and multi select in the same router page has been fixed.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#236361` - Now, filtering works properly in mobile Firefox.
+
+## 17.3.29 (2019-11-26)
+
+### AutoComplete
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### ComboBox
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### DropDownList
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+### MultiSelect
+
+#### New Features
+
+- `#254473` - Now, you can clear the selected values using `clear` method.
+
+#### Bug Fixes
+
+- `#F149046` - Issue with "popup not opened after clearing the all selected values" has been resolved.
+
+## 17.3.28 (2019-11-19)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F148867` , `#254713` - The issue with "rendering the `itemTemplate` when value is bound to the control" has been resolved.
+
+- `#251564` - Issue with "new item is not added to respective group while adding items using addItem method" has been resolved.
+
+## 17.3.21 (2019-10-30)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#251466` - Now, you can set width property in `em` unit.
+- `#251650` - Issue with 'filtered list item is not getting focused when set filter type as contains' has been resolved.
+- `#251325` - Issue with "once combobox popup open is prevented by setting args.cancel as true in open event then you can't remove the prevent a popup opening using open event" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#251466` - Now, you can set width property in `em` unit.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#251466` - Now, you can set width property in `em` unit.
+
+- `#252117` , `#248511` - Issue with "floating label not positioned properly when set floatLabelType value as Always" has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F147087` - script error "class List of undefined" while grouping has been fixed.
+- `#F147408` - Move To toolbar button not working when loading the list box using `remote data` has been resolved.
+- `#249771` - script error while performing the toolbar actions in dual ListBox with `data manager` in `EJ2 MVC` has been resolved
+
+## 17.3.19 (2019-10-22)
+
+### ListBox
+
+- Drag Event returns null value issue is fixed
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#246853` - Now, popup will close when input element is hidden from viewport.
+
+## 17.3.17 (2019-10-15)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#250710` - Now, you can filter the data while render the component using `select` element.
+
+- `#246802` - Now, the change event fires on value selection and remove while disabled the `changeOnBlur` property.
+- `#F147650` - Now SelectAll method works properly when set `enableGroupCheckBox` as true.
+- `#251276`- Now, the change event fires on click the clear icon and updates the model value.
+
+## 17.3.16 (2019-10-09)
+
+### ListBox
+
+#### Bug Fixes
+
+- Adding common cssClass for wrapper.
+
+### MultiSelect
+
+#### New Features
+
+- Provided `Material2 outline layout` for multiselect.
+
+#### Bug Fixes
+
+- `#248395`, `#F148059` - Now SelectAll works properly when limit the selection using `maximumSelectionLength` property.
+
+## 17.3.14 (2019-10-03)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#248193` - Issue with "once autocomplete popup open is prevented by setting args.cancel as true in beforeOpen event then you can't remove the prevent a popup opening using beforeOpen event" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#248288` - Issue with "console error thrown when set the openOnClick property as false in checkbox mode" has been resolved.
+
+- `#247340` - Issue with "list items not loaded while change the data source dynamically in checkbox mode" has been resolved.
+- `#247922` - Issue with "group header is not changed as fixed element when reopening the popup" has been fixed.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#248511` - Issue with floating label misalignment in the outline mode has been resolved.
+- `#F147708` - Issue with "template data not populated in filtering dropdownlist when open the dropdown popup on second time" has been resolved.
+
 ## 17.2.49 (2019-09-04)
 
 ### MultiSelect
@@ -1096,4 +1555,42 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.54 (2020-05-26)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#274970` - Issue with "popup values are not updated when change the query dynamically" has been resolved.
+
+## 18.1.45 (2020-04-21)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#269229` - Now, you can use highlight API along with ng-template.
+
+## 18.1.44 (2020-04-14)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- Now, getDataByValue method return the valid items in the change event.
+
+## 17.3.27 (2019-11-12)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#227938` - Now, item template works properly when enable the filtering.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F148696` - Issue with "`return arrow button` doesn't appear at the top in mobile mode" has been resolved.
 

@@ -80,7 +80,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #777;
   cursor: default;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -122,6 +122,27 @@
   padding-right: 30px;
 }
 
+.e-rtl .e-dropdownbase .e-list-item {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.e-small.e-rtl .e-dropdownbase .e-list-item,
+.e-small .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small .e-dropdownbase .e-list-item {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.e-small.e-bigger.e-rtl .e-dropdownbase .e-list-item,
+.e-small.e-bigger .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small.e-bigger .e-dropdownbase .e-list-item,
+.e-small .e-rtl.e-bigger .e-dropdownbase .e-list-item,
+.e-bigger .e-rtl.e-small .e-dropdownbase .e-list-item {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
 .e-dropdownbase {
   border-color: rgba(119, 119, 119, 0.25);
 }
@@ -131,7 +152,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 26px;
   min-height: 26px;
@@ -144,7 +165,7 @@
   background-color: #fff;
   border-color: #fff;
   color: #777;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   line-height: 26px;
@@ -205,7 +226,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #777;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   text-indent: 10px;
@@ -290,7 +311,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 20px;
   text-indent: 20px;

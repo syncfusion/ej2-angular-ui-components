@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirective> {
+    public directivePropList: any;
     public childTrendlines: any;
     public tags: string[] = ['trendlines'];
     /** 
@@ -217,6 +218,7 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

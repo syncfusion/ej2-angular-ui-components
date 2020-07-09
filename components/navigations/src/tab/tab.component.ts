@@ -1,17 +1,17 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Tab } from '@syncfusion/ej2-navigations';
 
 import { TabItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animation','cssClass','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','locale','overflowMode','scrollStep','selectedItem','showCloseButton','width'];
+export const inputs: string[] = ['animation','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','loadOn','locale','overflowMode','scrollStep','selectedItem','showCloseButton','width'];
 export const outputs: string[] = ['added','adding','created','destroyed','removed','removing','selected','selecting'];
 export const twoWays: string[] = [''];
 
 /**
- * Represents the EJ2 Angular Tab Component.
+ * Represents the Angular Tab Component.
  * ```html
- * <ejs-tab overflowMode= 'Popup'></ejs-tab>
+ * <ejs-tab></ejs-tab>
  * ```
  */
 @Component({
@@ -26,7 +26,9 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class TabComponent extends Tab implements IComponentBase {
-    public childItems: any;
+    public containerContext : any;
+    public tagObjects: any;
+    public childItems: QueryList<TabItemsDirective>;
     public tags: string[] = ['items'];
 
 
@@ -38,18 +40,24 @@ export class TabComponent extends Tab implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

@@ -1,12 +1,12 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { AccumulationChart } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['annotations','background','border','center','currencyCode','dataSource','enableAnimation','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
+export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highLightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -28,8 +28,10 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class AccumulationChartComponent extends AccumulationChart implements IComponentBase {
-    public childSeries: any;
-    public childAnnotations: any;
+    public context : any;
+    public tagObjects: any;
+    public childSeries: QueryList<AccumulationSeriesCollectionDirective>;
+    public childAnnotations: QueryList<AccumulationAnnotationsDirective>;
     public tags: string[] = ['series', 'annotations'];
     public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
@@ -98,18 +100,27 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAnnotations) {
+                    this.tagObjects[1].instance = this.childAnnotations as any;
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

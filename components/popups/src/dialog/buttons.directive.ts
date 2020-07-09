@@ -26,6 +26,7 @@ let outputs: string[] = ['click'];
     }
 })
 export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -45,6 +46,7 @@ export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

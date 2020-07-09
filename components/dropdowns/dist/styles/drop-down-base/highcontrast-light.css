@@ -99,7 +99,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #000;
   cursor: default;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -141,6 +141,27 @@
   padding-right: 20px;
 }
 
+.e-rtl .e-dropdownbase .e-list-item {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.e-small.e-rtl .e-dropdownbase .e-list-item,
+.e-small .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small .e-dropdownbase .e-list-item {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.e-small.e-bigger.e-rtl .e-dropdownbase .e-list-item,
+.e-small.e-bigger .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small.e-bigger .e-dropdownbase .e-list-item,
+.e-small .e-rtl.e-bigger .e-dropdownbase .e-list-item,
+.e-bigger .e-rtl.e-small .e-dropdownbase .e-list-item {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 .e-dropdownbase {
   border-color: #757575;
 }
@@ -148,9 +169,9 @@
 .e-dropdownbase .e-list-item {
   background-color: #fff;
   border-bottom: 2px;
-  border-color: none;
+  border-color: transparent;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   line-height: 36px;
   min-height: 36px;
@@ -161,9 +182,9 @@
 .e-dropdownbase .e-list-group-item,
 .e-fixed-head {
   background-color: #fff;
-  border-color: none;
+  border-color: transparent;
   color: #23726c;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: 36px;
@@ -224,7 +245,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #23726c;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   text-indent: 10px;
@@ -307,9 +328,9 @@
 .e-ddl.e-popup.e-multiselect-group .e-list-group-item {
   background-color: #fff;
   border-bottom: 2px;
-  border-color: none;
+  border-color: transparent;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 16px;
   text-indent: 10px;

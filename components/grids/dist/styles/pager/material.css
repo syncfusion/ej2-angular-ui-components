@@ -66,7 +66,6 @@
 .e-bigger .e-pager div.e-icons,
 .e-pager.e-bigger div.e-icons {
   font-size: 13px;
-  vertical-align: "";
 }
 
 .e-bigger .e-pager div.e-parentmsgbar,
@@ -96,8 +95,7 @@
 
 .e-bigger .e-pager.e-rtl .e-pagercontainer,
 .e-pager.e-bigger.e-rtl .e-pagercontainer {
-  margin: 5 0 -4px 0;
-  margin-top: 5px;
+  margin: 5px 0 -4px 0;
 }
 
 @media (max-width: 769px) {
@@ -317,7 +315,6 @@
 .e-pager a {
   display: inline;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -637,6 +634,15 @@
   }
 }
 
+.e-pager.sf-pager .e-link,
+.e-pager.sf-pager .e-prev,
+.e-pager.sf-pager .e-last,
+.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.sf-pager .e-mnext,
+.e-pager.sf-pager .e-mlast {
+  margin-left: -4px;
+}
+
 /*! Pager theme */
 .e-pager {
   background-color: #fff;
@@ -647,6 +653,10 @@
 
 .e-pager div.e-icons {
   color: #000;
+}
+
+.e-pager div.e-icons.e-disable {
+  color: unset;
 }
 
 .e-pager .e-pager-default:hover {
@@ -664,13 +674,17 @@
   opacity: 0.87;
 }
 
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: unset;
+}
+
 .e-pager .e-numericitem:hover {
   color: #000;
   opacity: 0.87;
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  border: 0 solid #e0e0e0;
+  border-left: 0 solid #e0e0e0;
 }
 
 .e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {

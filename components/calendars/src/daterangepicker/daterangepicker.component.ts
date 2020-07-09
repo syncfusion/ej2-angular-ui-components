@@ -5,8 +5,8 @@ import { DateRangePicker } from '@syncfusion/ej2-calendars';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { PresetsDirective } from './presets.directive';
 
-export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','maxDays','min','minDays','placeholder','presets','readonly','separator','showClearButton','start','startDate','strictMode','value','weekNumber','width','zIndex'];
-export const outputs: string[] = ['blur','change','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','endDate','firstDayOfWeek','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','maxDays','min','minDays','openOnFocus','placeholder','presets','readonly','separator','serverTimezoneOffset','showClearButton','start','startDate','strictMode','value','weekNumber','width','zIndex'];
+export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','select','startDateChange','endDateChange','valueChange'];
 export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['startDate', 'endDate', 'value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class DateRangePickerComponent extends DateRangePicker implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
     public childPresets: any;
     public tags: string[] = ['presets'];
     public startDateChange: any;
@@ -60,6 +63,8 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -75,15 +80,20 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childPresets;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

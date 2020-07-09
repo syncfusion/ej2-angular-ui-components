@@ -59,7 +59,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: top;
@@ -114,7 +113,7 @@
 
 .e-bigger.e-dialog .e-dlg-header-content,
 .e-bigger .e-dialog .e-dlg-header-content {
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-dlg-header,
@@ -125,12 +124,12 @@
 .e-bigger.e-dialog .e-dlg-content,
 .e-bigger .e-dialog .e-dlg-content {
   font-size: 14px;
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-footer-content,
 .e-bigger .e-dialog .e-footer-content {
-  padding: 18.75;
+  padding: 18.75px;
 }
 
 .e-bigger.e-dialog .e-footer-content .e-btn,
@@ -159,7 +158,7 @@
 }
 
 .e-bigger .e-dlg-header-content + .e-dlg-content {
-  padding-top: 18.75;
+  padding-top: 18.75px;
 }
 
 .e-dialog .e-dlg-header-content {
@@ -226,6 +225,10 @@
   cursor: sw-resize;
   left: 2px;
   transform: rotate(90deg);
+}
+
+.e-dlg-target.e-scroll-disabled {
+  overflow: hidden !important;
 }
 
 .e-dlg-overlay {
@@ -386,6 +389,10 @@
   }
 }
 
+.e-dlg-ref-element {
+  display: none;
+}
+
 .e-dialog {
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -429,6 +436,13 @@
 
 .e-dialog .e-btn.e-dlg-closeicon-btn:hover span {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.e-dialog .e-btn.e-dlg-closeicon-btn:active span,
+.e-dialog .e-btn.e-dlg-closeicon-btn:focus span {
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
 
 .e-icon-dlg-close:active {

@@ -7,16 +7,16 @@
 }
 
 /*! maskedtextbox layout */
-.e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+.e-control-wrapper.e-mask .e-maskedtextbox {
   font-family: Arial, "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
   font-size: 12.5px;
 }
 
-.e-bigger .e-widget.e-control-wrapper.e-mask .e-maskedtextbox {
+.e-bigger .e-control-wrapper.e-mask .e-maskedtextbox {
   font-size: 13px;
 }
 
-.e-widget.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
+.e-control-wrapper.e-mask.e-bigger .e-maskedtextbox {
   font-size: 13px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 /*! maskedtextbox theme */
-.e-widget.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
+.e-control-wrapper.e-mask.e-error .e-maskedtextbox {
   color: #ff6652;
 }
 

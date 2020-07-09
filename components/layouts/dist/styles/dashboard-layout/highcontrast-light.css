@@ -17,7 +17,6 @@
 
 .e-dashboardlayout.e-control.e-prevent {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -30,7 +29,7 @@
   border: 1px #000 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel:hover .e-panel-container .e-resize.e-dl-icon {
   display: block;
 }
 
@@ -38,7 +37,7 @@
   border: 1px #400074 solid;
 }
 
-.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize {
+.e-dashboardlayout.e-control .e-panel .e-panel-container .e-resize.e-dl-icon {
   display: none;
 }
 
@@ -84,7 +83,6 @@
   border: 1px #757575 solid;
   height: 100%;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -151,14 +149,19 @@
   position: absolute;
 }
 
-.e-dashboardlayout.e-control .e-panel.e-draggable:hover {
+.e-dashboardlayout.e-control .e-drag:hover {
   cursor: move;
+}
+
+.e-dashboardlayout.e-control .e-drag-restrict.e-drag:hover,
+.e-dashboardlayout.e-control .e-drag-restrict .e-drag:hover {
+  cursor: default;
 }
 
 .e-dashboardlayout.e-control .e-panel.e-dragging,
 .e-dashboardlayout.e-control .e-panel.e-item-moving {
   cursor: move;
-  z-index: 1111;
+  z-index: 1111 !important;
 }
 
 .e-dashboardlayout.e-control .e-panel.e-rtl .e-panel-header .e-header-template {
@@ -180,7 +183,7 @@
 .e-dashboardlayout.e-control .e-panel.e-bigger.e-panel-header {
   font-size: 14px;
   font-weight: 500;
-  height: 30;
+  height: 30px;
   padding: 0 12px;
 }
 

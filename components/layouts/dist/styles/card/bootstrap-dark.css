@@ -515,7 +515,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #6e6e6e;
   border: 1px solid #1a1a1a;
-  box-shadow: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
   color: #fff;
   outline: none;
 }

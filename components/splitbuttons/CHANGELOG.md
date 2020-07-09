@@ -2,6 +2,34 @@
 
 ## [Unreleased]
 
+## 18.1.43 (2020-04-07)
+
+### SplitButton
+
+#### Bug Fixes
+
+- Keyboard navigation not working in `bootstrap4` has been resolved.
+
+## 17.4.49 (2020-02-11)
+
+### Button Group
+
+#### Bug Fixes
+
+- CSS validation issues has been resolved.
+
+## 17.4.39 (2019-12-17)
+
+### DropDownButton
+
+#### New Features
+
+- #253123 - Provided `addItems` `removeItems` methods and update items dynamically.
+
+#### Bug Fixes
+
+- #254048 - UI misalignment while changing the font-size issue fixed.
+
 ## 17.2.40 (2019-08-06)
 
 ### ProgressButton

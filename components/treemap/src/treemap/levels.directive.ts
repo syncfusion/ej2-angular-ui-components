@@ -22,77 +22,79 @@ let outputs: string[] = [];
     }
 })
 export class LevelDirective extends ComplexBase<LevelDirective> {
+    public directivePropList: any;
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 
-     * Items rendering with random colors.
+     * Enables or disables the automatic filling of the colors in the items in the treemap component.
      * @default false
      */
     public autoFill: any;
     /** 
-     * Specifies the border
+     * Sets and gets the options for customizing the color and width of the border of 
+     * the levels of the treemap component.
      */
     public border: any;
     /** 
-     * Specifies the colorMapping
+     * Sets and gets the options for customizing the color-mapping in the treemap component.
      */
     public colorMapping: any;
     /** 
-     * Specifies the background of level.
+     * Sets and gets the fill color of the level in the treemap component.
      * @default null
      */
     public fill: any;
     /** 
-     * Specifies the padding.
+     * Sets and gets the gap between the levels in the treemap component.
      * @default 0
      */
     public groupGap: any;
     /** 
-     * Specifies the padding.
+     * Sets and gets the padding of levels in the treemap component.
      * @default 10
      */
     public groupPadding: any;
     /** 
-     * Specifies the field name from the dataSource.
+     * Sets and gets the value path from the data source in the treemap component to render the item.
      * @default null
      */
     public groupPath: any;
     /** 
-     * Customize the text alignment
+     * Sets and gets the alignment of the header of the treemap component.
      * @default 'Near'
      */
     public headerAlignment: any;
     /** 
-     * Specifies the header format.
+     * Sets and gets the format of header of the levels in the treemap component.
      * @default null
      */
     public headerFormat: any;
     /** 
-     * To specifies the height of header.
+     * Sets and gets the height of header in the treemap component.
      * @default 20
      */
     public headerHeight: any;
     /** 
-     * Customize the header style.
+     * Sets and gets the options for customizing the style of header of the treemap component.
      */
     public headerStyle: any;
     /** 
-     * Specifies the opacity for color.
+     * Sets and gets the opacity in the treemap component.
      * @default 1
      */
     public opacity: any;
     /** 
-     * To Show or hide the header in level.
+     * Shows or hides the header in level of the treemap component.
      * @default true
      */
     public showHeader: any;
     /** 
-     * Specifies the label position in level.
+     * Sets and gets the options for customizing the template position of the treemap component.
      * @default 'TopLeft'
      */
     public templatePosition: any;
     /** 
-     * Specifies the template for header rendering.
+     * Sets and gets the template for header in the treemap component.
      * @default null
      */
     @ContentChild('headerTemplate')
@@ -103,6 +105,7 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

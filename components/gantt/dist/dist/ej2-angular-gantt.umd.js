@@ -52,6 +52,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return ColumnDirective;
@@ -128,6 +129,7 @@ var AddDialogFieldDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return AddDialogFieldDirective;
@@ -192,6 +194,7 @@ var EditDialogFieldDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return EditDialogFieldDirective;
@@ -256,6 +259,7 @@ var DayWorkingTimeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return DayWorkingTimeDirective;
@@ -320,6 +324,7 @@ var HolidayDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return HolidayDirective;
@@ -383,6 +388,7 @@ var EventMarkerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return EventMarkerDirective;
@@ -437,8 +443,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['addDialogFields', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSelection', 'allowSorting', 'allowUnscheduledTasks', 'autoFocusTasks', 'baselineColor', 'collapseAllParentTasks', 'columnMenuItems', 'columns', 'connectorLineBackground', 'connectorLineWidth', 'contextMenuItems', 'dataSource', 'dateFormat', 'dayWorkingTime', 'durationUnit', 'editDialogFields', 'editSettings', 'enableContextMenu', 'enablePersistence', 'enablePredecessorValidation', 'enableRtl', 'eventMarkers', 'filterSettings', 'gridLines', 'height', 'highlightWeekends', 'holidays', 'includeWeekend', 'labelSettings', 'locale', 'milestoneTemplate', 'parentTaskbarTemplate', 'projectEndDate', 'projectStartDate', 'query', 'renderBaseline', 'resourceIDMapping', 'resourceNameMapping', 'resources', 'rowHeight', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'showInlineNotes', 'sortSettings', 'splitterSettings', 'taskFields', 'taskbarHeight', 'taskbarTemplate', 'timelineSettings', 'toolbar', 'tooltipSettings', 'treeColumnIndex', 'width', 'workWeek'];
-var outputs$6 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeTooltipRender', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSelected', 'cellSelecting', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'dataBound', 'endEdit', 'expanded', 'expanding', 'headerCellInfo', 'load', 'queryCellInfo', 'queryTaskbarInfo', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowSelected', 'rowSelecting', 'splitterResizeStart', 'splitterResized', 'splitterResizing', 'taskbarEdited', 'taskbarEditing', 'toolbarClick', 'dataSourceChange'];
+var inputs = ['addDialogFields', 'allowExcelExport', 'allowFiltering', 'allowKeyboard', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowRowDragAndDrop', 'allowSelection', 'allowSorting', 'allowUnscheduledTasks', 'autoFocusTasks', 'baselineColor', 'collapseAllParentTasks', 'columnMenuItems', 'columns', 'connectorLineBackground', 'connectorLineWidth', 'contextMenuItems', 'dataSource', 'dateFormat', 'dayWorkingTime', 'disableHtmlEncode', 'durationUnit', 'editDialogFields', 'editSettings', 'enableContextMenu', 'enableMultiTaskbar', 'enablePersistence', 'enablePredecessorValidation', 'enableRtl', 'eventMarkers', 'filterSettings', 'gridLines', 'height', 'highlightWeekends', 'holidays', 'includeWeekend', 'labelSettings', 'locale', 'milestoneTemplate', 'parentTaskbarTemplate', 'projectEndDate', 'projectStartDate', 'query', 'readOnly', 'renderBaseline', 'resourceFields', 'resourceIDMapping', 'resourceNameMapping', 'resources', 'rowHeight', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnMenu', 'showInlineNotes', 'showOverAllocation', 'sortSettings', 'splitterSettings', 'taskFields', 'taskMode', 'taskType', 'taskbarHeight', 'taskbarTemplate', 'timelineSettings', 'timezone', 'toolbar', 'tooltipSettings', 'treeColumnIndex', 'validateManualTasksOnLinking', 'viewType', 'width', 'workUnit', 'workWeek'];
+var outputs$6 = ['actionBegin', 'actionComplete', 'actionFailure', 'beforeExcelExport', 'beforePdfExport', 'beforeTooltipRender', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSelected', 'cellSelecting', 'collapsed', 'collapsing', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'destroyed', 'endEdit', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'expanded', 'expanding', 'headerCellInfo', 'load', 'onMouseMove', 'onTaskbarClick', 'pdfColumnHeaderQueryCellInfo', 'pdfExportComplete', 'pdfQueryCellInfo', 'pdfQueryTaskbarInfo', 'pdfQueryTimelineCellInfo', 'queryCellInfo', 'queryTaskbarInfo', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowDrag', 'rowDragStart', 'rowDragStartHelper', 'rowDrop', 'rowSelected', 'rowSelecting', 'splitterResizeStart', 'splitterResized', 'splitterResizing', 'taskbarEdited', 'taskbarEditing', 'toolbarClick', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * `ejs-gantt` represents the Angular Gantt Component.
@@ -526,30 +532,79 @@ exports.GanttComponent = /** @class */ (function (_super) {
             }
         }
         catch (_j) { }
+        try {
+            var mod = _this.injector.get('GanttExcelExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_k) { }
+        try {
+            var mod = _this.injector.get('GanttRowDD');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
+        try {
+            var mod = _this.injector.get('GanttColumnMenu');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_m) { }
+        try {
+            var mod = _this.injector.get('GanttPdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_o) { }
         _this.registerEvents(outputs$6);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     GanttComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childColumns;
+        if (this.childAddDialogFields) {
+            this.tagObjects[1].instance = this.childAddDialogFields;
+        }
+        if (this.childEditDialogFields) {
+            this.tagObjects[2].instance = this.childEditDialogFields;
+        }
+        if (this.childDayWorkingTime) {
+            this.tagObjects[3].instance = this.childDayWorkingTime;
+        }
+        if (this.childHolidays) {
+            this.tagObjects[4].instance = this.childHolidays;
+        }
+        if (this.childEventMarkers) {
+            this.tagObjects[5].instance = this.childEventMarkers;
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return GanttComponent;
 }(ej2Gantt.Gantt));
@@ -694,6 +749,10 @@ var EditService = { provide: 'GanttEdit', useValue: ej2Gantt.Edit };
 var DayMarkersService = { provide: 'GanttDayMarkers', useValue: ej2Gantt.DayMarkers };
 var ToolbarService = { provide: 'GanttToolbar', useValue: ej2Gantt.Toolbar };
 var ContextMenuService = { provide: 'GanttContextMenu', useValue: ej2Gantt.ContextMenu };
+var ExcelExportService = { provide: 'GanttExcelExport', useValue: ej2Gantt.ExcelExport };
+var RowDDService = { provide: 'GanttRowDD', useValue: ej2Gantt.RowDD };
+var ColumnMenuService = { provide: 'GanttColumnMenu', useValue: ej2Gantt.ColumnMenu };
+var PdfExportService = { provide: 'GanttPdfExport', useValue: ej2Gantt.PdfExport };
 /**
  * NgModule definition for the Gantt component with providers.
  */
@@ -717,7 +776,11 @@ GanttAllModule.decorators = [
                     EditService,
                     DayMarkersService,
                     ToolbarService,
-                    ContextMenuService
+                    ContextMenuService,
+                    ExcelExportService,
+                    RowDDService,
+                    ColumnMenuService,
+                    PdfExportService
                 ]
             },] },
 ];
@@ -749,9 +812,14 @@ exports.EditService = EditService;
 exports.DayMarkersService = DayMarkersService;
 exports.ToolbarService = ToolbarService;
 exports.ContextMenuService = ContextMenuService;
+exports.ExcelExportService = ExcelExportService;
+exports.RowDDService = RowDDService;
+exports.ColumnMenuService = ColumnMenuService;
+exports.PdfExportService = PdfExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$6;
 exports.Gantt = ej2Gantt.Gantt;
+exports.PdfHorizontalOverflowType = ej2Gantt.PdfHorizontalOverflowType;
 exports.parentsUntil = ej2Gantt.parentsUntil;
 exports.isScheduledTask = ej2Gantt.isScheduledTask;
 exports.getSwapKey = ej2Gantt.getSwapKey;
@@ -759,6 +827,9 @@ exports.isRemoteData = ej2Gantt.isRemoteData;
 exports.getTaskData = ej2Gantt.getTaskData;
 exports.formatString = ej2Gantt.formatString;
 exports.getIndex = ej2Gantt.getIndex;
+exports.pixelToPoint = ej2Gantt.pixelToPoint;
+exports.pointToPixel = ej2Gantt.pointToPixel;
+exports.getUid = ej2Gantt.getUid;
 exports.load = ej2Gantt.load;
 exports.rowDataBound = ej2Gantt.rowDataBound;
 exports.queryCellInfo = ej2Gantt.queryCellInfo;
@@ -774,6 +845,10 @@ exports.Selection = ej2Gantt.Selection;
 exports.Toolbar = ej2Gantt.Toolbar;
 exports.DayMarkers = ej2Gantt.DayMarkers;
 exports.ContextMenu = ej2Gantt.ContextMenu;
+exports.ExcelExport = ej2Gantt.ExcelExport;
+exports.ColumnMenu = ej2Gantt.ColumnMenu;
+exports.RowDD = ej2Gantt.RowDD;
+exports.PdfExport = ej2Gantt.PdfExport;
 exports.Column = ej2Gantt.Column;
 exports.DayWorkingTime = ej2Gantt.DayWorkingTime;
 exports.AddDialogFieldSettings = ej2Gantt.AddDialogFieldSettings;
@@ -792,6 +867,7 @@ exports.TimelineSettings = ej2Gantt.TimelineSettings;
 exports.TooltipSettings = ej2Gantt.TooltipSettings;
 exports.SortDescriptor = ej2Gantt.SortDescriptor;
 exports.SortSettings = ej2Gantt.SortSettings;
+exports.ResourceFields = ej2Gantt.ResourceFields;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

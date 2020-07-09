@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSeriesDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -85,6 +86,7 @@ export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSer
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

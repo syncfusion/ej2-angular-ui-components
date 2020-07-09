@@ -1,3 +1,4 @@
+export {InitialShapeSelectionDirective,InitialShapeSelectionsDirective} from './maps/initialshapeselection.directive';
 export {MarkerDirective,MarkersDirective} from './maps/markersettings.directive';
 export {ColorMappingDirective,ColorMappingsDirective} from './maps/colormapping.directive';
 export {BubbleDirective,BubblesDirective} from './maps/bubblesettings.directive';
@@ -6,5 +7,5 @@ export {LayerDirective,LayersDirective} from './maps/layers.directive';
 export {AnnotationDirective,AnnotationsDirective} from './maps/annotations.directive';
 export { MapsComponent} from './maps/maps.component';
 export { MapsModule } from './maps/maps.module';
-export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService } from './maps/maps-all.module';
+export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService } from './maps/maps-all.module';
 export * from '@syncfusion/ej2-maps';

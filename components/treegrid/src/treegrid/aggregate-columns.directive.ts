@@ -32,6 +32,7 @@ let outputs: string[] = [];
     }
 })
 export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -95,6 +96,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

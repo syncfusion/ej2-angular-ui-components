@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DropDownButtonItemDirective, DropDownButtonItemsDirective } from './items.directive';
 import { DropDownButtonComponent } from './dropdownbutton.component';
 
 /**
@@ -8,10 +9,14 @@ import { DropDownButtonComponent } from './dropdownbutton.component';
 @NgModule({
     imports: [CommonModule],
     declarations: [
-        DropDownButtonComponent
+        DropDownButtonComponent,
+        DropDownButtonItemDirective,
+        DropDownButtonItemsDirective
     ],
     exports: [
-        DropDownButtonComponent
+        DropDownButtonComponent,
+        DropDownButtonItemDirective,
+        DropDownButtonItemsDirective
     ]
 })
 export class DropDownButtonModule { }

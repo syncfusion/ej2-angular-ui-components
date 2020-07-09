@@ -53,7 +53,6 @@
 .e-listview {
   -webkit-overflow-scrolling: touch;
   border: 0 solid;
-  border-color: none;
   border-radius: 0;
   display: block;
   overflow: auto;
@@ -172,7 +171,7 @@
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  vertical-align: top;
+  vertical-align: middle;
   white-space: nowrap;
   width: 100%;
 }

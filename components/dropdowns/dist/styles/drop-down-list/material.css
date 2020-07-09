@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@keyframes e-input-ripple {
+  100% {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .e-dropdownbase .e-list-item .e-list-icon {
   padding: 0 16px 0 0;
 }
@@ -44,6 +69,10 @@
   margin-top: 2px;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-bigger .e-popup.e-ddl-device-filter .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   border-color: #e0e0e0;
 }
@@ -56,7 +85,7 @@
 .e-bigger .e-ddl-device .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   background: #f5f5f5;
   border-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   margin-bottom: 0;
 }
 
@@ -73,12 +102,14 @@
   padding: 6px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
   min-height: 16px;
   min-width: 16px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
   padding: 8px 16px 8px 0;
 }
 
@@ -95,31 +126,45 @@
 
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus.e-small .e-clear-icon,
-.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
+.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
   margin: 0;
 }
 
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small.e-input-focus .e-input-filter {
   padding: 5px 5px 5px 12px;
 }
 
 .e-bigger.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-bigger.e-small .e-clear-icon {
   min-height: 18px;
   min-width: 18px;
 }
 
 .e-bigger.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-bigger.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-bigger.e-small .e-input-filter {
   padding: 8px 16px;
+}
+
+.e-ddl.e-popup.e-outline .e-filter-parent {
+  padding: 4px 8px;
 }
 
 .e-ddl .e-search-icon::before {
@@ -128,7 +173,6 @@
 
 .e-ddl .e-back-icon::before {
   content: '\e977';
-  font-size: 20px;
 }
 
 .e-ddl.e-input-group.e-control-wrapper .e-ddl-icon::before {
@@ -150,6 +194,15 @@
   padding: 4px 0;
 }
 
+.e-bigger.e-ddl.e-popup .e-list-item,
+.e-bigger.e-ddl.e-popup .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-bigger.e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
 .e-popup-full-page {
   bottom: 0;
   left: 0;
@@ -166,14 +219,6 @@
 
 .e-ddl.e-control-wrapper .e-ddl-disable-icon::before {
   content: '';
-}
-
-.e-bigger .e-ddl-device .e-input-group {
-  margin-left: 52px;
-}
-
-.e-bigger .e-ddl-device .e-input-group .e-clear-icon {
-  margin-right: 66px;
 }
 
 .e-ddl-device-filter .e-filter-parent {
@@ -217,9 +262,7 @@
 }
 
 .e-ddl.e-popup .e-filter-parent .e-back-icon {
-  margin: 0 10px 0 -52px;
-  padding: 8px 16px;
-  position: absolute;
+  padding: 0 8px;
 }
 
 .e-ddl.e-popup.e-rtl .e-filter-parent .e-input-group.e-control-wrapper .e-input-filter,
@@ -235,10 +278,6 @@
 .e-ddl.e-popup .e-ddl-footer,
 .e-ddl.e-popup .e-ddl-header {
   cursor: default;
-}
-
-.e-bigger .e-popup .e-clear-icon {
-  display: none;
 }
 
 .e-ddl.e-input-group .e-ddl-hidden {
@@ -267,7 +306,7 @@
 
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: auto;
   margin: 0;
@@ -294,8 +333,22 @@ ejs-dropdownlist {
   font-size: 12px;
 }
 
+.e-small.e-ddl.e-popup .e-list-item,
+.e-small.e-ddl.e-popup .e-list-group-item,
+.e-input-group.e-ddl.e-small .e-list-item,
+.e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 12px;
+}
+
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
 .e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 13px;
+}
+
+.e-bigger.e-small.e-ddl.e-popup .e-list-item,
+.e-bigger.e-small.e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
   font-size: 13px;

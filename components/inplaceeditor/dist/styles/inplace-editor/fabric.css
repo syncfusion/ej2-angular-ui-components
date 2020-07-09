@@ -15,6 +15,10 @@
   width: auto;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-popup .e-filter-parent {
   border-left-width: 0;
   border-right-width: 0;
@@ -43,7 +47,7 @@
 
 .e-bigger .e-ddl.e-popup .e-input-group input,
 .e-bigger .e-ddl.e-popup .e-input-group input.e-input {
-  height: 30px;
+  height: 38px;
 }
 
 .e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
@@ -52,10 +56,6 @@
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:hover {
   background: transparent;
   color: #333;
-}
-
-.e-bigger .e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
 }
 
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
@@ -164,6 +164,11 @@
   font-size: 16px;
 }
 
+.e-bigger .e-inplaceeditor .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner,
+.e-inplaceeditor.e-bigger .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner {
+  right: 12px;
+}
+
 .e-bigger .e-inplaceeditor .e-editable-action-buttons .e-btn-save,
 .e-inplaceeditor.e-bigger .e-editable-action-buttons .e-btn-save {
   margin: 0 4px 0 0;
@@ -183,6 +188,13 @@
 .e-inplaceeditor.e-bigger.e-rtl .e-editable-value-wrapper .e-editable-overlay-icon {
   left: 12px;
   right: auto;
+}
+
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-spinner-pane,
+.e-bigger .e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-value-wrapper .e-spinner-pane,
+.e-inplaceeditor.e-bigger.e-rtl .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner {
+  left: 12px;
 }
 
 .e-bigger .e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-save,
@@ -206,6 +218,7 @@
   padding: 6px 10px;
   position: relative;
   width: auto;
+  word-break: break-word;
 }
 
 .e-inplaceeditor .e-editable-value-wrapper .e-editable-value {
@@ -242,9 +255,17 @@
 
 .e-inplaceeditor .e-editable-value-wrapper.e-editable-open {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper.e-loading {
+  pointer-events: none;
+}
+
+.e-inplaceeditor .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner {
+  left: unset;
+  right: 10px;
 }
 
 .e-inplaceeditor .e-editable-value-wrapper:hover .e-editable-overlay-icon {
@@ -264,7 +285,6 @@
 
 .e-inplaceeditor.e-overlay {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -276,6 +296,15 @@
 .e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-editable-overlay-icon {
   left: 10px;
   right: auto;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-spinner-pane {
+  right: unset;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-spinner-pane,
+.e-inplaceeditor.e-rtl .e-editable-value-wrapper .e-spinner-pane .e-spinner-inner {
+  left: 10px;
 }
 
 .e-inplaceeditor.e-rtl .e-editable-action-buttons {
@@ -351,7 +380,6 @@
   opacity: .5;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   visibility: visible;
@@ -390,6 +418,13 @@
 .e-inplaceeditor.e-rtl .e-editable-action-buttons .e-btn-cancel,
 .e-inplaceeditor-tip.e-rtl .e-editable-action-buttons .e-btn-cancel {
   margin: 0 4px 0 0;
+}
+
+.e-inplaceeditor.e-rtl .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner,
+.e-inplaceeditor-tip.e-rtl .e-editable-loading.e-show:not(.e-rte-spin-wrap) .e-spinner-inner {
+  left: 5px;
+  right: auto;
+  transform: translateX(30%) translateY(-50%);
 }
 
 .e-bigger .e-inplaceeditor-tip.e-tooltip-wrap .e-tip-content .e-editable-wrapper,
@@ -494,6 +529,10 @@
   color: #333;
 }
 
+.e-inplaceeditor .e-editable-value-wrapper.e-loading .e-editable-value {
+  border-bottom: 0;
+}
+
 .e-inplaceeditor .e-editable-value-wrapper:hover {
   background: #f4f4f4;
   border-radius: 0;
@@ -521,8 +560,6 @@
 .e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn {
-  background-color: "";
-  border: "";
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -531,43 +568,6 @@
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn .e-btn-icon.e-icons,
 .e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn .e-btn-icon.e-icons {
   color: #333;
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover {
-  background-color: "";
-  border: "";
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus {
-  background-color: "";
-  border: "";
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active {
-  background-color: "";
-  border: "";
-}
-
-.e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons, .e-inplaceeditor .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-save.e-icon-btn:active .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:hover .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:focus .e-btn-icon.e-icons,
-.e-inplaceeditor-tip .e-editable-action-buttons .e-btn-cancel.e-icon-btn:active .e-btn-icon.e-icons {
-  color: "";
 }
 
 .e-inplaceeditor-tip.e-tooltip-wrap {

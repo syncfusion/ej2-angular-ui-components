@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ColorMappingsDirective } from './colormapping.directive';
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'query', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -27,82 +27,92 @@ let outputs: string[] = [];
     }
 })
 export class BubbleDirective extends ComplexBase<BubbleDirective> {
+    public directivePropList: any;
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 
-     * Animation duration
+     * Sets and gets the delay in animation for bubble in maps.
      * @default 0
      */
     public animationDelay: any;
     /** 
-     * To configure bubble animation duration
+     * Sets and gets the duration for the animation for bubble in maps.
      * @default 1000
      */
     public animationDuration: any;
     /** 
-     * Configures the bubble border
+     * Sets and gets the options to customize the color and width of the border for the bubble in maps.
      */
     public border: any;
     /** 
-     * To configure bubble shape type
+     * Sets and gets the type of the bubble in maps.
      * @default Circle
      */
     public bubbleType: any;
     /** 
-     * To configure bubble colorMapping
+     * Sets and gets the color-mapping for the bubble in maps.
      * @default []
      */
     public colorMapping: any;
     /** 
-     * To configure bubble colorValuePath
+     * Sets and gets the value from the data source of bubble settings for the color of the bubble in maps.
      * @default null
      */
     public colorValuePath: any;
     /** 
-     * Specifies the data source for bubble.
-     * @isdatamanager false
+     * Sets and gets the data source for the bubble. 
+     * The data source must contain the size value of the bubble that can be bound to the bubble 
+     * of the Maps using the valuePath property in the bubbleSettings. 
+     * The data source can contain data such as color, and the other information that can be bound to the bubble, and tooltip of the bubble.
+     * @isobservable true
      * @default []
      */
     public dataSource: any;
     /** 
-     * To configure bubble fill color
+     * Sets and gets the color for the bubble in maps.
      * @default ''
      */
     public fill: any;
     /** 
-     * To configure the highlight settings of the maps.
+     * Sets and gets the highlight settings for the bubble in maps.
      */
     public highlightSettings: any;
     /** 
-     * To configure bubble maxRadius
+     * Sets and gets the maximum radius for the bubble in maps.
      * @default 20
      */
     public maxRadius: any;
     /** 
-     * To configure bubble minRadius
+     * Sets and gets the minimum radius for the bubble in maps.
      * @default 10
      */
     public minRadius: any;
     /** 
-     * To configure bubble opacity
+     * Sets and gets the opacity of the bubble in maps.
      * @default 1
      */
     public opacity: any;
     /** 
-     * To configure the selection settings of the maps.
+     * Sets and gets the query to select particular data from the bubble data. 
+     * This property is applicable only when the data source is created by data manager.
+     * @default null
+     */
+    public query: any;
+    /** 
+     * Sets and gets the selection settings for the bubble in maps.
      */
     public selectionSettings: any;
     /** 
-     * To configure the tooltip settings of the bubble .
+     * Sets and gets the options to customize the tooltip for the bubbles in maps.
      */
     public tooltipSettings: any;
     /** 
-     * To configure bubble valuePath
+     * Sets and gets the value from the data source of bubble settings for the bubble to be rendered in maps.
      * @default null
      */
     public valuePath: any;
     /** 
-     * Toggle the visibility of bubble
+     * Enables or disables the visibility state of the bubbles in maps.
      * @default false
      */
     public visible: any;
@@ -114,6 +124,7 @@ export class BubbleDirective extends ComplexBase<BubbleDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

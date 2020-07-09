@@ -7,7 +7,6 @@
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -122,7 +121,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: #fff;
@@ -169,7 +167,6 @@ body.e-colorpicker-overflow {
   line-height: 0;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -230,7 +227,6 @@ body.e-colorpicker-overflow {
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 10px;
@@ -342,7 +338,6 @@ body.e-colorpicker-overflow {
   display: inline-flex;
   padding: 0 15px 15px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -351,6 +346,10 @@ body.e-colorpicker-overflow {
 .e-container .e-selected-value .e-input-container .e-float-input input {
   padding-left: 0;
   text-align: center;
+}
+
+.e-container .e-selected-value .e-input-container .e-numeric-hidden {
+  display: none;
 }
 
 .e-container .e-selected-value .e-value-switch-btn {
@@ -815,7 +814,7 @@ body.e-colorpicker-overflow {
 }
 
 .e-container .e-palette .e-tile.e-selected {
-  border-color: none;
+  border-color: transparent;
   border-color: #fff;
 }
 
@@ -855,7 +854,7 @@ body.e-colorpicker-overflow {
   background-color: transparent;
   color: #fff;
   outline: none;
-  outline-offset: none;
+  outline-offset: unset;
 }
 
 .e-colorpicker-wrapper.e-disabled .e-value-switch-btn:active,
@@ -866,6 +865,11 @@ body.e-colorpicker-overflow {
 
 .e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker.e-split-btn {
   background-color: #fff;
+  border-color: #ced4da;
+}
+
+.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-colorpicker + .e-dropdown-btn {
+  border-color: #ced4da;
 }
 
 .e-colorpicker-wrapper .e-btn.e-icon-btn {

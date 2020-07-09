@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SplitButtonItemDirective, SplitButtonItemsDirective } from './items.directive';
 import { SplitButtonComponent } from './splitbutton.component';
 
 /**
@@ -8,10 +9,14 @@ import { SplitButtonComponent } from './splitbutton.component';
 @NgModule({
     imports: [CommonModule],
     declarations: [
-        SplitButtonComponent
+        SplitButtonComponent,
+        SplitButtonItemDirective,
+        SplitButtonItemsDirective
     ],
     exports: [
-        SplitButtonComponent
+        SplitButtonComponent,
+        SplitButtonItemDirective,
+        SplitButtonItemsDirective
     ]
 })
 export class SplitButtonModule { }

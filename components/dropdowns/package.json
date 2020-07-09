@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-dropdowns",
-	"version": "17.2.47",
+	"version": "17.4.50",
 	"description": "Essential JS 2 DropDown Components for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -50,6 +50,7 @@
 		"multiselect",
 		"combobox",
 		"select",
+		"dropdwontree",
 		"angular",
 		"ng",
 		"ng-dropdown",
@@ -57,7 +58,8 @@
 		"ng-dropdownlist",
 		"ng-autocomplete",
 		"ng-multiselect",
-		"ng-combobox"
+		"ng-combobox",
+		"ng-dropdowntree"
 	],
 	"repository": {
 		"type": "git",

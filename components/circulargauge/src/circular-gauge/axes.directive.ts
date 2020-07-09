@@ -5,7 +5,7 @@ import { AnnotationsDirective } from './annotations.directive';
 import { RangesDirective } from './ranges.directive';
 import { PointersDirective } from './pointers.directive';
 
-let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
+let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'hideIntersectingLabel', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
 let outputs: string[] = [];
 /**
  * Axes directive
@@ -24,96 +24,100 @@ let outputs: string[] = [];
     }
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
+    public directivePropList: any;
     public childAnnotations: any;
     public childRanges: any;
     public childPointers: any;
     public tags: string[] = ['annotations', 'ranges', 'pointers'];
     /** 
-     * ‘Annotation’ module is used to handle annotation action for an axis.
+     * Sets and gets the annotation element for an axis in circular gauge component.
      */
     public annotations: any;
     /** 
-     * The background color of the axis, which accepts value in hex, rgba as a valid CSS color string.
+     * Sets and gets the background color of an axis. This property accepts value in hex code, rgba string as a valid CSS color string.
      * @default null
      */
     public background: any;
     /** 
-     * Specifies the direction of an axis. They are 
-     * * clockWise -  Renders the axis in clock wise direction. 
-     * * antiClockWise - Renders the axis in anti-clock wise direction.
+     * Sets and gets the direction of an axis.
      * @default ClockWise
      */
     public direction: any;
     /** 
-     * The end angle of an axis
+     * Sets and gets the end angle of an axis in circular gauge component.
      * @default 160
      */
     public endAngle: any;
     /** 
-     * Options to customize the axis label.
+     * Enables and disables the intersecting labels to be hidden in axis.
+     * @default false
+     */
+    public hideIntersectingLabel: any;
+    /** 
+     * Sets and gets the style of the axis label in circular gauge component.
      */
     public labelStyle: any;
     /** 
-     * Options for customizing the axis lines.
+     * Sets and gets the style of the line in axis of circular gauge component.
      */
     public lineStyle: any;
     /** 
-     * Options for customizing the major tick lines.
+     * Sets and gets the major tick lines of an axis in circular gauge component.
      * @default { width: 2, height: 10 }
      */
     public majorTicks: any;
     /** 
-     * Specifies the maximum value of an axis.
+     * Sets and gets the maximum value of an axis in the circular gauge component.
      * @aspdefaultvalueignore 
      * @default null
      */
     public maximum: any;
     /** 
-     * Specifies the minimum value of an axis.
+     * Sets and gets the minimum value of an axis in the circular gauge component.
      * @aspdefaultvalueignore 
      * @default null
      */
     public minimum: any;
     /** 
-     * Options for customizing the minor tick lines.
+     * Sets and gets the minor tick lines of an axis in circular gauge component.
      * @default { width: 2, height: 5 }
      */
     public minorTicks: any;
     /** 
-     * Options for customizing the pointers of an axis
+     * Sets and gets the pointers of an axis in circular gauge component.
      */
     public pointers: any;
     /** 
-     * Radius of an axis in pixels or in percentage.
+     * Sets and gets the radius of an axis in circular gauge.
      * @default null
      */
     public radius: any;
     /** 
-     * Specifies the range gap property by pixel value.
+     * Sets and gets the gap between the ranges by specified value in circular gauge component.
      * @default null
      */
     public rangeGap: any;
     /** 
-     * Options for customizing the ranges of an axis
+     * Sets and gets the ranges of an axis in circular gauge component.
      */
     public ranges: any;
     /** 
-     * Specifies the rounding Off value in the label
+     * Sets and gets the rounding Off value in the label in an axis.
      * @default null
      */
     public roundingPlaces: any;
     /** 
-     * Specifies the last label to be shown
+     * Enables and disables the last label of axis when it is hidden in circular gauge component.
      * @default false
      */
     public showLastLabel: any;
     /** 
-     * Specifies the start and end range gap.
+     * Enables and disables the start and end gap between the ranges and axis in circular gauge.
      * @default false
      */
     public startAndEndRangeGap: any;
     /** 
-     * The start angle of an axis
+     * Sets and gets the start angle of an axis in circular gauge component.
      * @default 200
      */
     public startAngle: any;
@@ -122,6 +126,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

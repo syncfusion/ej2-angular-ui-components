@@ -211,28 +211,28 @@
 
 .e-vscroll.e-rtl .e-scroll-nav:hover {
   background: rgba(0, 0, 0, 0.12);
-  border: "";
+  border: 0;
   border-color: rgba(0, 0, 0, 0.12);
   color: #000;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: rgba(0, 0, 0, 0.12);
-  border: "";
+  border: 0;
   color: #000;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: rgba(0, 0, 0, 0.12);
-  border: "";
+  border: 0;
   border-color: rgba(0, 0, 0, 0.12);
   color: #000;
 }
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #bdbdbd;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 

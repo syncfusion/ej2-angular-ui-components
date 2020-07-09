@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InitialShapeSelectionDirective, InitialShapeSelectionsDirective } from './initialshapeselection.directive';
 import { MarkerDirective, MarkersDirective } from './markersettings.directive';
 import { ColorMappingDirective, ColorMappingsDirective } from './colormapping.directive';
 import { BubbleDirective, BubblesDirective } from './bubblesettings.directive';
@@ -15,6 +16,8 @@ import { MapsComponent } from './maps.component';
     imports: [CommonModule],
     declarations: [
         MapsComponent,
+        InitialShapeSelectionDirective,
+        InitialShapeSelectionsDirective,
         MarkerDirective,
         MarkersDirective,
         ColorMappingDirective,
@@ -30,6 +33,8 @@ import { MapsComponent } from './maps.component';
     ],
     exports: [
         MapsComponent,
+        InitialShapeSelectionDirective,
+        InitialShapeSelectionsDirective,
         MarkerDirective,
         MarkersDirective,
         ColorMappingDirective,

@@ -23,10 +23,13 @@ export class ComplexBase<T> {
     public hasChanges?: boolean = false;
     public index?: number;
     public propCollection?: { [key: string]: Object } = {};
+    public dataSource?: { [key: string]: Object } = {};
     public property?: string;
     public tags?: string[] = [];
     private tagObjects?: { name: string, instance: Tag }[] = [];
     private registeredTemplate: { [key: string]: EmbeddedViewRef<Object>[] };
+    // tslint:disable-next-line:no-any
+    protected directivePropList: any;
     public ngOnInit(): void {
         this.registeredTemplate = {};
         for (let tag of this.tags) {
@@ -43,6 +46,20 @@ export class ComplexBase<T> {
             let propName: string = tempName.replace('Ref', '');
             setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
         }
+
+        // Angular 9 compatibility to overcome ngOnchange not get triggered issue
+        // To Update properties to "this.propCollection"
+        let propList: string[] = Object.keys(this);
+        /* istanbul ignore next */
+        if (this.directivePropList) {
+        for (let k: number = 0; k < this.directivePropList.length; k++) {
+            let dirPropName: string = this.directivePropList[k];
+            if (propList.indexOf(dirPropName) !== -1) {
+                setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+            }
+        }
+        this.hasChanges = true;
+        }
     }
 
     protected registerEvents(eventList: string[]): void {
@@ -57,12 +74,13 @@ export class ComplexBase<T> {
         this.isUpdated = false;
         this.hasChanges = true;
     }
-
+    /* istanbul ignore next */
     public clearTemplate(templateNames: string[]): void {
         clearTemplate(this, templateNames);
     }
 
     public getProperties(): { [key: string]: Object } {
+        /* istanbul ignore next */
         for (let tagObject of this.tagObjects) {
             this.propCollection[tagObject.name] = tagObject.instance.getProperties();
         }
@@ -71,6 +89,7 @@ export class ComplexBase<T> {
 
     public isChanged(): boolean {
         let result: boolean = this.hasChanges;
+        /* istanbul ignore next */
         for (let item of this.tagObjects) {
             result = result || item.instance.hasChanges;
         }
@@ -83,6 +102,14 @@ export class ComplexBase<T> {
         templateProperties = templateProperties.filter((val: string) => {
             return /Ref$/i.test(val);
         });
+        // For angular 9 compatibility
+        // ngOnchange hook not get triggered for copmplex directive
+        // Due to this, we have manually set template properties v alues once we get template property reference
+        for (let tempName of templateProperties) {
+            let propName: string = tempName.replace('Ref', '');
+            let val: Object = {};
+            setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
+        }
     }
 
     public ngAfterViewChecked(): void {
@@ -112,6 +139,7 @@ export class ArrayBase<T> {
 
     public ngAfterContentInit(): void {
         let index: number = 0;
+        /* istanbul ignore next */
         this.list = this.children.map((child: T & ComplexBase<T>) => {
             child.index = index++;
             child.property = this.propertyName;
@@ -141,13 +169,28 @@ export class ArrayBase<T> {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
-              isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                if (this.list[i].propCollection.dataSource) {
+                    if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
+                        this.list[i].propCollection.dataSource = this.list[i].dataSource;
+                        this.list[i].hasChanges = true;
+                    }
+                    isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
+                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                } else {
+                    // tslint:disable-next-line
+                    let keys: any = Object.keys(this.list[i].propCollection);
+                    for (let j: number = 0; j < keys.length; j++) {
+                        if (this.list[i].propCollection[keys[j]] &&
+                        this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
+                            isSourceChanged = true;
+                            break;
+                        }
+                    }
+                }
             }
         }
-        /* istanbul ignore next */
+
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
-        /* istanbul ignore next */
         if (this.hasNewChildren) {
             this.list = this.children.map((child: T & ComplexBase<T>) => {
                 child.index = index++;
@@ -155,6 +198,7 @@ export class ArrayBase<T> {
                 return child;
             });
         }
+        /* istanbul ignore end */
         for (let item of this.list) {
             result = result || (<{ hasChanges: boolean }>item).hasChanges;
         }
@@ -162,6 +206,7 @@ export class ArrayBase<T> {
     }
 
     public clearTemplate(templateNames: string[]): void {
+        /* istanbul ignore next */
         for (let item of this.list) {
             (<{ clearTemplate: Function }>item).clearTemplate(templateNames && templateNames.map((val: string): string => {
                 return new RegExp(this.propertyName).test(val) ? val.replace(this.propertyName + '.', '') : val;

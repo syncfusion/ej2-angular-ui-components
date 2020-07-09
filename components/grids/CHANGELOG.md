@@ -2,6 +2,488 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Grid
+
+#### New Features
+
+- `#221401, #247125, #152063` - Provided support to select the operator for `filterbar` in UI.
+- `#147816` - Provided support for `Frozen` rows and columns with `AutoFill`.
+- Provided the `Frozen` support in Grid continuous scroll feature.
+- Provide the Editing support in Grid continuous scroll feature.
+
+## 18.1.56 (2020-06-09)
+
+### Grid
+
+#### Bug Fixes
+
+- `#278390` - Internal event for access the excel export rows has been added.
+- `#277728` - Search box focus issue in IE has been fixed.
+- `#12629` - Prevented the `dataStateChange` event after re-ordering a column.
+- `#154111` - Issue in updating `aggregate` format with culture change has been fixed.
+- `#14010` - Grid row selection event arguments type issue has been fixed.
+- `#278858` - `rowDeselected` event with `persistence` and `ResetOnRowClick` issue has been fixed.
+- `#154619` - Number formatting with empty string issue has been fixed.
+- `#279065` - `Groupcaption` aggregate in `pdf` export issue has been fixed.
+
+#### Breaking Changes
+
+- Now `data`, `row`, `foreignKeyData` these Grid selection event arguments are get array values only when we perform multi selection. Please find modified event arguments and it types from the below table,
+
+| `Properties` | `Type` | 
+|---|---|
+| `data` | `Object or Object[]` | 
+| `rowIndex` | `number` | 
+| `rowIndexes` | `number[]` | 
+| `row` | `Element or Element[]` | 
+| `foreignKeyData` | `Object or Object[]` | 
+
+## 18.1.55 (2020-06-02)
+
+### Grid
+
+#### Bug Fixes
+
+- `#269310` - Throws scripts error while using the `persist` selection issue has been fixed.
+- `#277025` - Maintain the edit form while cancelling the edit action inside the `actionBegin` event has been fixed.
+- `#278295` - Cell did not save the empty value for complex field has been fixed.
+- `#278209` - Additional Lines with `AutoFill` selection issue has been fixed.
+- `#275723` - Data skipping issue has been fixed in `virtualScroll` feature.
+
+## 18.1.54 (2020-05-26)
+
+### Grid
+
+#### Bug Fixes
+
+- `#277115` - Issue with custom datasource while exporting has been fixed.
+- `#275804` - `aria-label` of the column for summary rows in both footer aggregates and group footer aggregates has been fixed.
+- `#154185` - Script error, cannot read property `getBoundingClientRect` has been fixed.
+- `#154127` - Missing of first row `foreignKey` data in the `rowSelected` event argument has been fixed.
+- `#276812` - Grid stacked header with frozen misalignment issue has been fixed.
+
+## 18.1.53 (2020-05-19)
+
+### Grid
+
+#### Bug Fixes
+
+- `#275858` - Border misalignment issue with `frozen` columns in batch editing has been fixed.
+- `#275150` - Grid with `frozen` columns and row height is not set properly issue has been fixed.
+- `#275631` - Grid with `frozen` columns and cell editing is not working properly issue has been fixed.
+- `#152895, #271656, #273560` - Grouped Headers are not rendered properly in pdf document issue has been resolved.
+- `#270479` - Script error while using `isFrozen` property in batch editing has been fixed.
+- `#275867` - Misalignment while editing the cell with frozen columns has been fixed.
+
+## 18.1.52 (2020-05-13)
+
+### Grid
+
+#### Bug Fixes
+
+- `#273572` - script error after pressing enter key in batch edit mode issue has been resolved.
+- `#153383` - grid lines mismatched while scrolling with frozen column in `firefox` issue has been resolved.
+- `#273838` - Unnecessary to include an Empty row when inserting a `frozenColumn` Grid row issue has been resolved.
+- `#274520` - `cellSeletected` and `cellDeSelected` events triggers many time while selecting cells via mouse issue has been resolved.
+- `#275010` - Need internal events for column chooser buttons issue has been fixed.
+- `#274227` - cancel icon not rendered in the filter bar with movable header has been fixed.
+
+#### New Features
+
+- `#261103, #267581` - Provided the column `Reordering` support for Grid with `virtualization` and frozen columns feature.
+
+## 18.1.48 (2020-05-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `#269945, #271023` - `editTemplate` element events are not triggered for movable content.
+- `#273042` - grouping after restoring the persist data issue has been resolved.
+- `#273483, #275002, #275153` -  `actionfailure` event error message issue has been fixed.
+- `#273238` - Missing of `headerText` property in the template data has been fixed.
+- `#266631` - Hidden column headers in Grid did not reflect in pdf export while using `includeHiddenColumn` issue has been fixed.
+- `#271911` - column template in angular after print issue has been resolved.
+- `#273134` - Header template in angular after print issue has been fixed.
+- `#269502` - Mismatch of reordering column issue has been fixed.
+- `#273854, #274776` - Foreign Key search query for `UrlAdaptor` has been fixed.
+
+## 18.1.46 (2020-04-28)
+
+### Grid
+
+#### Bug Fixes
+
+- `#272718` - `cellsaved` event while pressing escape key issue has been resolved.
+- `#153144` - `RowDeselected` event `isInteracted` and `rowIndex` property issue has been resolved.
+- `#274186` - Script error with incorrect sorting column has been fixed.
+- `#272426` - Hierarchy exporting with remote/local data issue has been resolved.
+- `#153397` - Persist selection issue with grouping has been fixed.
+- `#272957` - Script error while hovering on new row form element with frozen columns has been resolved.
+- `#272107` - `setCellValue` method issue with row Drag and Drop has been fixed.
+
+## 18.1.45 (2020-04-21)
+
+### Grid
+
+#### Bug Fixes
+
+- `#269217` - numeric edit precision issue has been resolved.
+- `#272015, #152919` - React `editTemplate` auto save issue has been resolved.
+- `#271853` - Missing additional parameters in the `foreignKey` column filtering and editing server request issue has been fixed.
+- `#152879` - Filter bar focusing is not working properly, while using `checkboxmode` as `ResetOnRowClick` issue has been fixed.
+- `#151211` - Provided `exportGroupCaption` event support for Excel exporting.
+- `#270519` - Script error while setting `undefined` value for column type/format property with Angular Grid has been fixed.
+- `#258482` - Improper target element in `rowSelecting` event issue has been fixed.
+- `#271748` - Autofit min and max width issue has been resolved.
+- `#223835, #272592` - script error while navigating from movable to frozen header issue has been resolved.
+- `#272340`- Mismatch of `requestType` while clear filtering in excel and Checkbox filter issue has been fixed.
+
+## 18.1.44 (2020-04-14)
+
+### Grid
+
+#### Bug Fixes
+
+- `#271625, #272096` -  Frozen Grid cell selection issue has been fixed.
+- `#271625` - Grid resize cursor issue with stacked header has been fixed.
+- `#271240` - Batch editing `cellSaved` event after escape key issue has been fixed.
+- `#260390` - Header misalignment in auto wrap enabled Grid with frozen columns has been fixed.
+
+#### New Features
+
+- `#256907` - Provided support to filter array values.
+
+## 18.1.43 (2020-04-07)
+
+### Grid
+
+#### Bug Fixes
+
+- `#268095` - Undefined value is saved as [Object Object] in batch editing has been fixed.
+- `#266864` - Error in Angular Production build with toolbar search is enabled in Grid has been fixed.
+- `#268842` - Empty summary value issue when collapse the record has been fixed.
+- `#270597, #271625` - Validation message position issue has been fixed.
+- `#268807` - ResetOnRowClick now works properly with persist selection.
+- `#270585` - recordClick event issue after grouping has been resolved.
+- `#258489, #268908` - Saving the cell through tab key issue in batch edit has been fixed.
+- `#270170` - Script error with Esc key while in cell edit state and filter enabled has been fixed.
+- `#151902`- Script error When auto fit the Grid having Aggregate, Resize and Freeze enabled has been fixed.
+- `#269226,#152345`- Focusing is not working properly when filtering the column by tab key with immediate mode issue has been fixed.
+- `#152164` - CheckBox column value overriding the boolean type column while editing issue has been resolved.
+
+## 18.1.42 (2020-04-01)
+
+### Grid
+
+#### Bug Fixes
+
+- `#151795` - Provided the row information when clicking the row drag and drop icon.
+- `#266184`, `#269384`, `#270479` - Last row cell is not saved properly in batch edit mode issue has been fixed.
+- `#267889` - Saving Null value as NaN in numeric edit columns issue has been fixed.
+- `#268588` - Script error while destroying the grouping enabled hierarchy Grid has been fixed.
+- `#269161` - Column chooser issue in IE11 has been resolved.
+
+## 18.1.36-beta (2020-03-19)
+
+### Grid
+
+#### Bug Fixes
+
+- `#261856` - Initial sorting with initial grouping issue has been fixed.
+- `#264895` - Provided support to add aggregates for auto generated columns dynamically.
+- `#263303` - Grid UI has been refreshed while changing `allowRowDragAndDrop` property.
+- `#264370` - Empty tooltip for checkbox column with `ellipsisWithTooltip` property issue has been resolved.
+- `#252918` - Provided a feature to change the UI and datasource value without enabling edit property.
+- `#261903`, `#263836` - Incorrect `datetime` predicate issue has been resolved.
+
+## 17.4.55 (2020-03-10)
+
+### Grid
+
+#### Bug Fixes
+
+- `#261856` - Initial sorting with initial grouping issue has been fixed.
+- `#264895` - Provided support to add aggregates for auto generated columns dynamically.
+- `#263303` - Grid UI has been refreshed while changing `allowRowDragAndDrop` property.
+- `#264370` - Empty tooltip for checkbox column with `ellipsisWithTooltip` property issue has been resolved.
+- `#252918` - Provided a feature to change the UI and datasource value without enabling edit property.
+- `#261903`, `#263836` - Incorrect `datetime` predicate issue has been resolved.
+- `#151850` - Case sensitivity issue with Excel filter has been resolved.
+- `#267120` - Unwanted new record while pressing tab key with batch mode has been resolved.
+- `#267938` - Improper column rendering issue with column chooser has been resolved.
+- `#264582` - Grid filter dialog styles issue in compatibility theme has been resolved.
+- `#267397` - Misalignment issue has been resolved while hiding columns with Grid edit state.
+- `#264165, #266190` - validation message issue has been fixed when we set `newRowPosition` as bottom in batch mode.
+
+## 17.4.51 (2020-02-25)
+
+### Grid
+
+#### Bug Fixes
+
+- `#150980` - script error while using item template issue has been fixed .
+- `#263885` - script error in IE11 while enabling persistence has been resolved.
+
+## 17.4.50 (2020-02-18)
+
+### Grid
+
+#### Bug Fixes
+
+- `#262976` - Numeric text box min max validation issue has been resolved.
+- `#149695` - Checkbox search value is added to the filter search begin event.
+- `#261796` - Script error while navigating batch added record with tab has been fixed.
+- `#263530` - `beforeOpenColumnChooser` event has been triggered while calling `openColumnChooser`.
+- `#262469` - Issue in hiding custom column menu has been fixed.
+- `#151010` - Scroll position issue while filtering has been fixed.
+
+## 17.4.49 (2020-02-11)
+
+### Grid
+
+#### Bug Fixes
+
+- `#262309` - Incorrect selected records after batch delete issue has been fixed.
+- `#261796` - Script error while adding row at bottom after batch delete has been resolved.
+- `#261544` - Incorrect column resizing with row drag and drop issue has been resolved.
+- `#150858` - Media Query issue has been resolved.
+- `#263233` - Data type in row drop event argument issue has been resolved.
+- `#262898` - Filtering text box in movable columns focus issue has been fixed.�
+
+## 17.4.47 (2020-02-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `#261008` - Aggregate issue while batch adding in empty Grid has been resolved.
+- `#150685` - Persist selection behaviour issue has been fixed
+- `#260966` - Excel Filter locale text issue has been resolved.
+- `#261623` - Script error while removing foreign key column filter issue has been resolved.
+- `#260182` - Multiple request while setting query issue has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### Grid
+
+#### Bug Fixes
+
+- `#260390` - Misalignment while editing with frozen column issue has been fixed.
+- `#260090` - `isInteracted` property is added to the row selecting events.
+- `#150452` - Misalignment while hiding columns with row drag and drop has been fixed.
+
+## 17.4.44 (2021-01-21)
+
+### Grid
+
+#### Bug Fixes
+
+- `#259865` - Grid focus persistence while checkbox filtering has been fixed.
+- `#258341` - `action` parameter has been added for filter events.
+- `#150314` - Footer template issue with Pdf export has been fixed.
+- `#260453` - `rowDragStartHelper's`action can be cancelled using the `args.cancel` parameter.
+- `#255626` - Grid data not properly loaded on dynamically changing culture issue has been fixed.
+- `#251481` - Provided the pdf export support for Grid stacked header feature.
+
+## 17.4.43 (2020-01-14)
+
+### Grid
+
+#### Bug Fixes
+
+- `#259844` - Excel filter with null operator issue has been fixed.
+- `#248887, #245140, #249856` - Selection issue while Virtualization enabled has been fixed.
+
+## 17.4.41 (2020-01-07)
+
+### Grid
+
+#### Bug Fixes
+
+- `#257854` - Multiple requests while pager dropdown change has been fixed.
+- `#258463` - CheckBox filter search list query issue has been fixed.
+- `#258467` - Command button duplicate id issue has been fixed.
+- `#258196` - command column with frozen content issue has been fixed.
+- `#258555` - Unnecessary row selected event while paging issue has been fixed.
+- `#258341` - Incorrect arguments of clear filtering events has been fixed.
+
+## 17.4.40 (2019-12-24)
+
+### Grid
+
+#### Bug Fixes
+
+- `#257521` - Styling issue on Aggregate columns has been fixed.
+- `#257192` - Provided cancel support for Sorting action.
+- `#253400` - Enabled hovering for whole row in frozen columns.
+- `#F136797, #259020` - Script error throws in `IE11` while using `autoGenerated` columns has been resolved.
+- `#250970` - Check box as field with header checkbox selection is not working properly has been fixed.
+- `#256174` - Select all does not work properly when Grid have empty records with virtual rows in Batch edit has been fixed.
+- `#F146375` - Aggregate is not shown in Exported file for Child Grid issue has been fixed.
+
+## 17.4.39 (2019-12-17)
+
+### Grid
+
+#### Bug Fixes
+
+- `#256411` - While programmatically filter the Grid, `filterBar` does not get updated issue has been fixed.
+- Filter item template arguments from single object to nested object structure has been reverted.
+- `#253073`, `#255255` - Aria labels added for grid dialog with feature name for accessibility improvement.
+- `#253073`, `#255255` - When pressing tab key focus moving to next row support added.
+
+#### New Features
+
+- Provided `virtualization` support in Frozen Grid.
+
+## 17.3.28 (2019-11-19)
+
+### Grid
+
+#### Bug Fixes
+
+- `#242503` - Aggregation not working with the Frozen and Batch Editing issue has been fixed.
+- `#254164` - Support for `FilterItemTemplate` function like as `ValueAccessor` is given.
+- `#253705` - `Ctrl+A` in Grid does not select the last record in Batch mode issue has been fixed.
+- `#253106` - Error thrown on using `setCellValue` method when row drag and drop is enabled issue has been fixed.
+- `#253398` - Frozen header height discrepancy when setting `rowHeight` and `allowTextWrap`  property issue has been fixed.
+- `#252923` - Grid footer element is invisible while dynamically bind the Grid dataSource issue has been fixed.
+- `#253614` - Changed the scope of the `filterOperator` variable as public.
+
+## 17.3.27 (2019-11-12)
+
+### Grid
+
+#### Bug Fixes
+
+- `#249911` - Border style is not set on last row when performing edit operations issue has been fixed.
+- `#253795` - Script error thrown when having header template in stacked header cell issue has been fixed.
+- `#252476` - Script errors throws while navigating empty grid with tab issue has been fixed.
+- `#251960` - Performance issue occurs when selecting large amount of records in Checkbox in Grid.
+- `#251934` - Custom Date format issue has been fixed.
+- `#252405` - Provided operator support for Custom Excel filter.
+- `#252987`,`#252201` - Refreshing the grid with edited child grid throws script error has been fixed.
+- `#148096` - Error thrown when `hidemedia` is enabled issue has been fixed.
+
+## 17.3.26 (2019-11-05)
+
+### Grid
+
+#### Bug Fixes
+
+- `#250198` - Unable to cancel row and cell selecting when multi selection is enabled issue has been fixed.
+- `#250198` - `CellSelected` event returning same data for both current and previous cell has been fixed.
+- `#251226`,`#252997` - Complex field primary key column is not working while the column type is string issue has been fixed.
+- `#252052` - Filtering throws console error when complex data with null values are bound to Grid has been fixed.
+- `#251292` - Duplicate records is sent in Remote Save Adaptor batch deleting issue has been fixed.
+- `#252476` - Script error throws while navigating empty grid with tab issue has been fixed.
+
+#### Breaking Changes
+
+- Now `disableHtmlEncode` default value  is set to true, so the HTML tags can be displayed in the Grid header and content by default, so to display it as html content `disableHtmlEncode` need to be set as false.
+
+## 17.3.21 (2019-10-30)
+
+### Grid
+
+#### Bug Fixes
+
+- `#251660` - Grouping with Virtualization throws script error has been fixed.
+
+## 17.3.19 (2019-10-22)
+
+### Grid
+
+#### Bug Fixes
+
+- `#247618` - `DataGrid` shows hand icon instead of standard mouse on non sortable and non clickable column headers.
+- `#249163` - Grid header lines are not properly rendered while resizing the window with text wrap feature.
+
+## 17.3.17 (2019-10-15)
+
+### Grid
+
+#### Bug Fixes
+
+- `#244767` - Validation error message not shown for Batch and Dialog editing has been fixed.
+- `#249835` - Need to show confirmation dialog while in batch mode with drag and drop has been fixed.
+- `#250135` - Column resizing feature is not working properly when row drag and drop is enabled.
+- `#147538` - `recordDoubleClick` event does not remove when destroy grid element is fixed.
+- `#244693` - Script error throws while using aggregates with set Row method is fixed.
+- `#249990` - Script error throws while using detail template with auto generated columns is fixed.
+- `#145834` - Need to access complex columns while using auto generated columns is fixed.
+- `#249176` - Exclamation sign was not supported by Filter column is fixed.
+
+## 17.3.16 (2019-10-09)
+
+### Grid
+
+#### Bug Fixes
+
+- `#249323` - Case-sensitive is not working when filter the records by `filterByColum` issue has been fixed.
+- `#244767` - `childElement` count undefined issue has been fixed.
+- `#244767` - Added the `columnuid` and `customAttributes` in summary column.
+- `#244767` - Misalignment issue has been fixed while using frozen with aggregate.
+- `#244767` - Validation error message position issue has been fixed.
+
+## 17.3.14 (2019-10-03)
+
+### Grid
+
+#### Bug Fixes
+
+- `#247870`,`#248097` - Print issue while having grouped columns has been fixed.
+- `#244767` - Script error thrown when having custom aggregates and dynamically show/hide columns has been fixed.
+- `#247790`,`#147427` - True type font issue when having header in Pdf Export has been fixed.
+- `#147146` - Check box filter is not showing results while typing in the search box for boolean type column.
+- `#242503` - Summary not updated for newly added records in the Grid with batch edit mode with freeze columns issue has been fixed.
+- `#147270` - Maximum call stack issue occurs when Grid has no records and set visible property as false for first column has been fixed.
+- `#147513` - AutoComplete does not show records properly in filter menu while using complex data binding has been fixed.
+
+## 17.3.9-beta (2019-09-20)
+
+### Grid
+
+#### Bug Fixes
+
+- `#146977` - Script error thrown when enable frozen column with auto generated columns in Grid.
+- `#246309` - `AllowResize` must be disabled when we are in edit state.
+- `#246947`,`#246460`- Script error is thrown while routing with persistence.
+- `#245859` - Can't access selected records properly in `rowSelected` event while selecting the header checkbox.
+- `#244916` - Virtual scroll displays empty block while directly scroll to the bottom.
+
+## 17.2.49 (2019-09-04)
+
+### Grid
+
+#### Bug Fixes
+
+- `#244574` - Grid scroller jumps on browser delay while using `virtualization` has been fixed.
+- `#245739` - Filter dialog does not close properly when render grid inside the dialog has been fixed.
+- `#244047` - Focus module destroyed completely from the content ready.
+- `#223749`, `#241000` Provided the support to use `selectRow` method in `virtualized` Grid.
+- `#241241` - Filtering not working with `ColumnVirtualization`.
+- `#244927` - `CurrrentPage` was not refreshed after changing the dropdown with its highest value.
+- Select multi rows with checkbox wrong while set frozen column in grid component has been fixed.
+
+## 17.2.48-beta (2019-08-28)
+
+### Grid
+
+#### Bug Fixes
+
+- `#244231` - On key pressing of column chooser Search bar, empty Grid renders if all columns are unchecked, issue has been fixed.
+- `#146166` - CheckBox column disappears after hiding other columns through `columnChooser` issue has been fixed.
+- `#146777` - While locking the column dynamically, the Locked column is not moving to the first column position issue has been fixed.
+- `#245747` - Validation message position is wrong for rows added in the bottom issue has been fixed.
+- `#242519`,`#244186` - Misalignment issue in Frozen Column while editing Grid with edit template.
+- `#243593` - Script error thrown when perform row drag and drop with expand child.
+- `#242503` - On Saving the cell Footer Content `scrollLeft` is set to zero issue has been fixed.
+- `#146553` - Command column was not working when dynamically added in `columnModel` is resolved.
+
 ## 17.2.47 (2019-08-27)
 
 ### Grid
@@ -39,6 +521,8 @@
 - `#242201` - Script error thrown while navigating to other page and come back to grid with filter settings.
 - `#237984` - Need to show warning message if provided dataSource in incorrect format.
 - `#242484` - Default value is not set for the stacked columns.
+- `#146156` - Drag area created while selecting the input area (row drag and drop and multiple selection enabled).
+- `#242673` - Change return type for `getCurrentEditCellData`.
 
 ## 17.2.39 (2019-07-30)
 

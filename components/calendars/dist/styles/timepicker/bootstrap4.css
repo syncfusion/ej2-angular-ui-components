@@ -135,6 +135,34 @@
   min-height: 40px;
 }
 
+.e-time-overflow {
+  overflow: hidden;
+}
+
+.e-timepicker-mob-popup-wrap {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+.e-timepicker-mob-popup-wrap .e-timepicker.e-popup.e-lib.e-control.e-popup-open {
+  left: 0 !important;
+  position: relative;
+  top: 0 !important;
+}
+
 /*! timepicker theme */
 .e-time-wrapper .e-input-group-icon.e-icons.e-active {
   background: #545b62;

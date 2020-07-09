@@ -46,6 +46,7 @@ var AnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return AnnotationDirective;
@@ -93,7 +94,7 @@ AnnotationsDirective.decorators = [
  * @nocollapse
  */
 AnnotationsDirective.ctorParameters = function () { return []; };
-var input$1 = ['color', 'end', 'endWidth', 'opacity', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
+var input$1 = ['color', 'end', 'endWidth', 'legendText', 'linearGradient', 'offset', 'opacity', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'start', 'startWidth'];
 var outputs$1 = [];
 /**
  * Ranges directive
@@ -111,6 +112,7 @@ var RangeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return RangeDirective;
@@ -151,7 +153,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'markerHeight', 'markerShape', 'markerWidth', 'needleTail', 'pointerWidth', 'radius', 'roundedCornerRadius', 'type', 'value'];
+var input$2 = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 var outputs$2 = [];
 /**
  * Pointers directive
@@ -169,6 +171,7 @@ var PointerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return PointerDirective;
@@ -209,7 +212,7 @@ PointersDirective.decorators = [
  * @nocollapse
  */
 PointersDirective.ctorParameters = function () { return []; };
-var input$3 = ['annotations', 'background', 'direction', 'endAngle', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
+var input$3 = ['annotations', 'background', 'direction', 'endAngle', 'hideIntersectingLabel', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
 var outputs$3 = [];
 /**
  * Axes directive
@@ -228,6 +231,7 @@ var AxisDirective = /** @class */ (function (_super) {
         _this.tags = ['annotations', 'ranges', 'pointers'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return AxisDirective;
@@ -286,8 +290,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRtl', 'height', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'axes', 'background', 'border', 'centerX', 'centerY', 'description', 'enablePersistence', 'enablePointerDrag', 'enableRangeDrag', 'enableRtl', 'height', 'legendSettings', 'locale', 'margin', 'moveToCenter', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'legendRender', 'load', 'loaded', 'radiusCalculate', 'resized', 'tooltipRender'];
 var twoWays = [''];
 /**
  * Circular Gauge Component
@@ -326,30 +330,71 @@ exports.CircularGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_b) { }
+        try {
+            var mod = _this.injector.get('CircularGaugeLegend');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_c) { }
+        try {
+            var mod = _this.injector.get('CircularGaugePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_d) { }
+        try {
+            var mod = _this.injector.get('CircularGaugePdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_e) { }
+        try {
+            var mod = _this.injector.get('CircularGaugeImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
+        try {
+            var mod = _this.injector.get('CircularGaugeGradient');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_g) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     CircularGaugeComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     CircularGaugeComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     CircularGaugeComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     CircularGaugeComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childAxes;
+        this.context.ngAfterContentChecked(this);
     };
     return CircularGaugeComponent;
 }(ej2Circulargauge.CircularGauge));
@@ -429,6 +474,11 @@ CircularGaugeModule.decorators = [
 CircularGaugeModule.ctorParameters = function () { return []; };
 var GaugeTooltipService = { provide: 'CircularGaugeGaugeTooltip', useValue: ej2Circulargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'CircularGaugeAnnotations', useValue: ej2Circulargauge.Annotations };
+var LegendService = { provide: 'CircularGaugeLegend', useValue: ej2Circulargauge.Legend };
+var PrintService = { provide: 'CircularGaugePrint', useValue: ej2Circulargauge.Print };
+var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: ej2Circulargauge.PdfExport };
+var ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ej2Circulargauge.ImageExport };
+var GradientService = { provide: 'CircularGaugeGradient', useValue: ej2Circulargauge.Gradient };
 /**
  * NgModule definition for the CircularGauge component with providers.
  */
@@ -445,7 +495,12 @@ CircularGaugeAllModule.decorators = [
                 ],
                 providers: [
                     GaugeTooltipService,
-                    AnnotationsService
+                    AnnotationsService,
+                    LegendService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -466,6 +521,11 @@ exports.CircularGaugeModule = CircularGaugeModule;
 exports.CircularGaugeAllModule = CircularGaugeAllModule;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
+exports.LegendService = LegendService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
+exports.GradientService = GradientService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.CircularGauge = ej2Circulargauge.CircularGauge;
@@ -482,6 +542,8 @@ exports.Pointer = ej2Circulargauge.Pointer;
 exports.Axis = ej2Circulargauge.Axis;
 exports.Border = ej2Circulargauge.Border;
 exports.Font = ej2Circulargauge.Font;
+exports.RangeTooltip = ej2Circulargauge.RangeTooltip;
+exports.AnnotationTooltip = ej2Circulargauge.AnnotationTooltip;
 exports.Margin = ej2Circulargauge.Margin;
 exports.TooltipSettings = ej2Circulargauge.TooltipSettings;
 exports.GaugeTooltip = ej2Circulargauge.GaugeTooltip;
@@ -512,6 +574,7 @@ exports.getElement = ej2Circulargauge.getElement;
 exports.getTemplateFunction = ej2Circulargauge.getTemplateFunction;
 exports.removeElement = ej2Circulargauge.removeElement;
 exports.getPointer = ej2Circulargauge.getPointer;
+exports.getRange = ej2Circulargauge.getRange;
 exports.getElementSize = ej2Circulargauge.getElementSize;
 exports.getMousePosition = ej2Circulargauge.getMousePosition;
 exports.getLabelFormat = ej2Circulargauge.getLabelFormat;
@@ -523,8 +586,24 @@ exports.RectOption = ej2Circulargauge.RectOption;
 exports.Size = ej2Circulargauge.Size;
 exports.GaugeLocation = ej2Circulargauge.GaugeLocation;
 exports.Rect = ej2Circulargauge.Rect;
+exports.textTrim = ej2Circulargauge.textTrim;
+exports.showTooltip = ej2Circulargauge.showTooltip;
 exports.TextOption = ej2Circulargauge.TextOption;
 exports.VisibleLabels = ej2Circulargauge.VisibleLabels;
+exports.triggerDownload = ej2Circulargauge.triggerDownload;
+exports.Location = ej2Circulargauge.Location;
+exports.LegendSettings = ej2Circulargauge.LegendSettings;
+exports.Legend = ej2Circulargauge.Legend;
+exports.Index = ej2Circulargauge.Index;
+exports.LegendOptions = ej2Circulargauge.LegendOptions;
+exports.ImageExport = ej2Circulargauge.ImageExport;
+exports.PdfExport = ej2Circulargauge.PdfExport;
+exports.Print = ej2Circulargauge.Print;
+exports.ColorStop = ej2Circulargauge.ColorStop;
+exports.GradientPosition = ej2Circulargauge.GradientPosition;
+exports.LinearGradient = ej2Circulargauge.LinearGradient;
+exports.RadialGradient = ej2Circulargauge.RadialGradient;
+exports.Gradient = ej2Circulargauge.Gradient;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

@@ -1,12 +1,12 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { LinearGauge } from '@syncfusion/ej2-lineargauge';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { AxesDirective } from './axes.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['annotations','axes','background','border','container','description','enablePersistence','enableRtl','format','height','locale','margin','orientation','rangePalettes','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender','valueChange'];
+export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','annotations','axes','background','border','container','description','enablePersistence','enableRtl','format','height','locale','margin','orientation','rangePalettes','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const outputs: string[] = ['animationComplete','annotationRender','axisLabelRender','beforePrint','dragEnd','dragMove','dragStart','gaugeMouseDown','gaugeMouseLeave','gaugeMouseMove','gaugeMouseUp','load','loaded','resized','tooltipRender','valueChange'];
 export const twoWays: string[] = [''];
 
 /**
@@ -28,8 +28,10 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class LinearGaugeComponent extends LinearGauge implements IComponentBase {
-    public childAxes: any;
-    public childAnnotations: any;
+    public context : any;
+    public tagObjects: any;
+    public childAxes: QueryList<AxesDirective>;
+    public childAnnotations: QueryList<AnnotationsDirective>;
     public tags: string[] = ['axes', 'annotations'];
 
     @ContentChild('tooltipTemplate')
@@ -52,22 +54,55 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugePrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugePdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeImageExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeGradient');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childAxes;
+        if (this.childAnnotations) {
+                    this.tagObjects[1].instance = this.childAnnotations as any;
+                }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

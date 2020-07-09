@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['border', 'color', 'end', 'endWidth', 'offset', 'position', 'start', 'startWidth'];
+var input = ['border', 'color', 'end', 'endWidth', 'linearGradient', 'offset', 'position', 'radialGradient', 'start', 'startWidth'];
 var outputs = [];
 /**
  * Ranges directive
@@ -32,6 +32,7 @@ var RangeDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return RangeDirective;
@@ -72,7 +73,7 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'markerType', 'offset', 'opacity', 'placement', 'roundedCornerRadius', 'type', 'value', 'width'];
+var input$1 = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
 var outputs$1 = [];
 /**
  * Pointers directive
@@ -90,6 +91,7 @@ var PointerDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return PointerDirective;
@@ -130,7 +132,7 @@ PointersDirective.decorators = [
  * @nocollapse
  */
 PointersDirective.ctorParameters = function () { return []; };
-var input$2 = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges'];
+var input$2 = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges', 'showLastLabel'];
 var outputs$2 = [];
 /**
  * Axes directive
@@ -149,6 +151,7 @@ var AxisDirective = /** @class */ (function (_super) {
         _this.tags = ['ranges', 'pointers'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return AxisDirective;
@@ -224,6 +227,7 @@ var AnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return AnnotationDirective;
@@ -285,8 +289,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
  * Linear Gauge Component
@@ -325,30 +329,67 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
             }
         }
         catch (_b) { }
+        try {
+            var mod = _this.injector.get('LinearGaugePrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_c) { }
+        try {
+            var mod = _this.injector.get('LinearGaugePdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_d) { }
+        try {
+            var mod = _this.injector.get('LinearGaugeImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_e) { }
+        try {
+            var mod = _this.injector.get('LinearGaugeGradient');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_f) { }
         _this.registerEvents(outputs$4);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     LinearGaugeComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childAxes;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return LinearGaugeComponent;
 }(ej2Lineargauge.LinearGauge));
@@ -429,6 +470,10 @@ LinearGaugeModule.decorators = [
 LinearGaugeModule.ctorParameters = function () { return []; };
 var GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: ej2Lineargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: ej2Lineargauge.Annotations };
+var PrintService = { provide: 'LinearGaugePrint', useValue: ej2Lineargauge.Print };
+var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: ej2Lineargauge.PdfExport };
+var ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ej2Lineargauge.ImageExport };
+var GradientService = { provide: 'LinearGaugeGradient', useValue: ej2Lineargauge.Gradient };
 /**
  * NgModule definition for the LinearGauge component with providers.
  */
@@ -445,7 +490,11 @@ LinearGaugeAllModule.decorators = [
                 ],
                 providers: [
                     GaugeTooltipService,
-                    AnnotationsService
+                    AnnotationsService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService,
+                    GradientService
                 ]
             },] },
 ];
@@ -466,6 +515,10 @@ exports.LinearGaugeModule = LinearGaugeModule;
 exports.LinearGaugeAllModule = LinearGaugeAllModule;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
+exports.GradientService = GradientService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$4;
 exports.LinearGauge = ej2Lineargauge.LinearGauge;
@@ -474,6 +527,7 @@ exports.Margin = ej2Lineargauge.Margin;
 exports.Border = ej2Lineargauge.Border;
 exports.Annotation = ej2Lineargauge.Annotation;
 exports.Container = ej2Lineargauge.Container;
+exports.RangeTooltip = ej2Lineargauge.RangeTooltip;
 exports.TooltipSettings = ej2Lineargauge.TooltipSettings;
 exports.Line = ej2Lineargauge.Line;
 exports.Label = ej2Lineargauge.Label;
@@ -496,6 +550,7 @@ exports.formatValue = ej2Lineargauge.formatValue;
 exports.getLabelFormat = ej2Lineargauge.getLabelFormat;
 exports.getTemplateFunction = ej2Lineargauge.getTemplateFunction;
 exports.getElementOffset = ej2Lineargauge.getElementOffset;
+exports.triggerDownload = ej2Lineargauge.triggerDownload;
 exports.VisibleRange = ej2Lineargauge.VisibleRange;
 exports.GaugeLocation = ej2Lineargauge.GaugeLocation;
 exports.Size = ej2Lineargauge.Size;
@@ -511,11 +566,20 @@ exports.calculateNiceInterval = ej2Lineargauge.calculateNiceInterval;
 exports.getActualDesiredIntervalsCount = ej2Lineargauge.getActualDesiredIntervalsCount;
 exports.getPointer = ej2Lineargauge.getPointer;
 exports.getRangeColor = ej2Lineargauge.getRangeColor;
+exports.getMousePosition = ej2Lineargauge.getMousePosition;
 exports.getRangePalette = ej2Lineargauge.getRangePalette;
 exports.calculateShapes = ej2Lineargauge.calculateShapes;
 exports.getBox = ej2Lineargauge.getBox;
 exports.Annotations = ej2Lineargauge.Annotations;
 exports.GaugeTooltip = ej2Lineargauge.GaugeTooltip;
+exports.Print = ej2Lineargauge.Print;
+exports.ImageExport = ej2Lineargauge.ImageExport;
+exports.PdfExport = ej2Lineargauge.PdfExport;
+exports.ColorStop = ej2Lineargauge.ColorStop;
+exports.GradientPosition = ej2Lineargauge.GradientPosition;
+exports.LinearGradient = ej2Lineargauge.LinearGradient;
+exports.RadialGradient = ej2Lineargauge.RadialGradient;
+exports.Gradient = ej2Lineargauge.Gradient;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

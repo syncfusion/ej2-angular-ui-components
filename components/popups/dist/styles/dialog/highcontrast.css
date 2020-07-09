@@ -59,7 +59,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: top;
@@ -228,6 +227,10 @@
   transform: rotate(90deg);
 }
 
+.e-dlg-target.e-scroll-disabled {
+  overflow: hidden !important;
+}
+
 .e-dlg-overlay {
   height: 100%;
   left: 0;
@@ -386,6 +389,10 @@
   }
 }
 
+.e-dlg-ref-element {
+  display: none;
+}
+
 .e-dialog {
   background-color: #000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -429,6 +436,13 @@
 
 .e-dialog .e-btn.e-dlg-closeicon-btn:hover span {
   color: #000;
+}
+
+.e-dialog .e-btn.e-dlg-closeicon-btn:active span,
+.e-dialog .e-btn.e-dlg-closeicon-btn:focus span {
+  border-radius: 50%;
+  color: #000;
+  opacity: 1;
 }
 
 .e-icon-dlg-close:active {

@@ -5,8 +5,8 @@ import { Uploader } from '@syncfusion/ej2-inputs';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { FilesDirective } from './files.directive';
 
-export const inputs: string[] = ['allowedExtensions','asyncSettings','autoUpload','buttons','cssClass','directoryUpload','dropArea','enablePersistence','enableRtl','enabled','files','htmlAttributes','locale','maxFileSize','minFileSize','multiple','sequentialUpload','showFileList','template'];
-export const outputs: string[] = ['focus', 'blur', 'actionComplete','canceling','change','chunkFailure','chunkSuccess','chunkUploading','clearing','created','failure','fileListRendering','pausing','progress','removing','rendering','resuming','selected','success','uploading'];
+export const inputs: string[] = ['allowedExtensions','asyncSettings','autoUpload','buttons','cssClass','directoryUpload','dropArea','dropEffect','enablePersistence','enableRtl','enabled','files','htmlAttributes','locale','maxFileSize','minFileSize','multiple','sequentialUpload','showFileList','template'];
+export const outputs: string[] = ['focus', 'blur', 'actionComplete','beforeRemove','beforeUpload','canceling','change','chunkFailure','chunkSuccess','chunkUploading','clearing','created','failure','fileListRendering','pausing','progress','removing','rendering','resuming','selected','success','uploading'];
 export const twoWays: string[] = [];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class UploaderComponent extends Uploader implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
     public childFiles: any;
     public tags: string[] = ['files'];
 
@@ -58,6 +61,8 @@ export class UploaderComponent extends Uploader implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -73,15 +78,20 @@ export class UploaderComponent extends Uploader implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childFiles;
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

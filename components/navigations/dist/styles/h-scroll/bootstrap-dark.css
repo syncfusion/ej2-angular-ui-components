@@ -224,7 +224,7 @@
 .e-hscroll.e-scroll-device .e-scroll-nav.e-scroll-right-nav {
   background-color: #131313;
   border-color: #1a1a1a;
-  border-width: none;
+  border-width: 0;
   box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -261,27 +261,25 @@
 
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #393939;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #fff;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #393939;
-  border: "";
+  border: 0;
   color: #fff;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #393939;
-  border: "";
-  border-color: "";
+  border: 0;
   color: #fff;
 }
 
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #2a2a2a;
-  border: "";
+  border: 0;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   color: #fff;
 }

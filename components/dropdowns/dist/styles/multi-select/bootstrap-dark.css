@@ -1,3 +1,21 @@
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .e-dropdownbase .e-list-item .e-list-icon {
   padding: 0 10px 0 0;
 }
@@ -62,7 +80,6 @@
   padding: 0 32px 0 2px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -118,6 +135,10 @@
 .e-multiselect.e-input-group,
 .e-multiselect.e-float-input {
   word-wrap: initial;
+}
+
+.e-multiselect.e-input-group .e-searcher .e-label-top {
+  top: 17px;
 }
 
 .e-bigger .e-multi-select-wrapper {
@@ -221,7 +242,7 @@
 .e-multi-select-wrapper input[type='text'] {
   background: none;
   border: 0;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 15px;
   font-weight: 400;
   height: 32px;
@@ -252,8 +273,29 @@
   width: auto;
 }
 
+.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 43px);
+}
+
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 49px);
+}
+
+.e-small .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 37px);
+}
+
+.e-bigger.e-small .e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger.e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-bigger .e-small.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width,
+.e-small .e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-searcher.e-search-custom-width {
+  width: calc(100% - 45px);
+}
+
 .e-multi-select-wrapper .e-delim-values {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 35px;
   max-width: 100%;
@@ -325,6 +367,7 @@
 
 .e-multiselect.e-rtl .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close {
   margin: 0;
+  margin-right: auto;
 }
 
 .e-multiselect.e-rtl .e-multi-select-wrapper .e-searcher {
@@ -440,7 +483,7 @@
 }
 
 .e-popup.e-multi-select-list-wrapper.e-rtl .e-dropdownbase.e-rtl.e-dd-group .e-list-item {
-  padding-right: 15px;
+  padding-right: 0;
 }
 
 .e-bigger .e-popup.e-multi-select-list-wrapper.e-multiselect-group .e-dropdownbase.e-dd-group .e-list-group-item {
@@ -464,7 +507,7 @@
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {
   color: #f0f0f0;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
 }
 
@@ -522,9 +565,7 @@
 }
 
 .e-ddl.e-popup.e-multi-select-list-wrapper .e-filter-parent .e-back-icon {
-  margin: -2px 10px 0 -54px;
   padding: 0;
-  position: absolute;
 }
 
 .e-bigger .e-checkbox .e-multi-select-wrapper .e-delim-values {
@@ -536,11 +577,13 @@
   padding-left: 10px;
 }
 
-.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable .e-checkbox-wrapper .e-frame {
+.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable .e-checkbox-wrapper .e-frame,
+.e-popup.e-multi-select-list-wrapper .e-list-group-item.e-disable .e-checkbox-wrapper .e-frame {
   opacity: .3;
 }
 
-.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable {
+.e-popup.e-multi-select-list-wrapper .e-list-item.e-disable,
+.e-popup.e-multi-select-list-wrapper.e-multiselect-group.e-checkbox .e-list-group-item.e-disable {
   opacity: .7;
 }
 
@@ -622,6 +665,16 @@ ejs-multiselect {
   min-height: 40px;
 }
 
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  -ms-flex-align: normal;
+      align-items: normal;
+}
+
 .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
   color: #f0f0f0;
 }
@@ -640,7 +693,7 @@ ejs-multiselect {
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
   color: #f0f0f0;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 15px;
 }
 

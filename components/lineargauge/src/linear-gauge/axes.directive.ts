@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { RangesDirective } from './ranges.directive';
 import { PointersDirective } from './pointers.directive';
 
-let input: string[] = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges'];
+let input: string[] = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges', 'showLastLabel'];
 let outputs: string[] = [];
 /**
  * Axes directive
@@ -22,56 +22,62 @@ let outputs: string[] = [];
     }
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
+    public directivePropList: any;
     public childRanges: any;
     public childPointers: any;
     public tags: string[] = ['ranges', 'pointers'];
     /** 
-     * Specifies the axis rendering direction.
+     * Enables or disables the inversed axis.
      */
     public isInversed: any;
     /** 
-     * Options for customizing the axis label appearance.
+     * Sets and gets the options for customizing the appearance of the label in axis.
      */
     public labelStyle: any;
     /** 
-     * Options for customizing the axis line.
+     * Sets and gets the options for customizing the axis line.
      */
     public line: any;
     /** 
-     * Options for customizing the major tick lines.
+     * Sets and gets the options for customizing the major tick lines.
      */
     public majorTicks: any;
     /** 
-     * Specifies the maximum value of an axis.
+     * Sets and gets the maximum value for the axis.
      * @default 100
      */
     public maximum: any;
     /** 
-     * Specifies the minimum value of an axis.
+     * Sets and gets the minimum value for the axis.
      * @default 0
      */
     public minimum: any;
     /** 
-     * Options for customizing the minor tick lines.
+     * Sets and gets the options for customizing the minor tick lines.
      */
     public minorTicks: any;
     /** 
-     * Specifies the axis rendering position.
+     * Enables or disables the opposed position of the axis in the linear gauge.
      */
     public opposedPosition: any;
     /** 
-     * Options for customizing the pointers of an axis
+     * Sets and gets the options for customizing the pointers of an axis.
      */
     public pointers: any;
     /** 
-     * Options for customizing the ranges of an axis
+     * Sets and gets the options for customizing the ranges of an axis.
      */
     public ranges: any;
+    /** 
+     * Shows or hides the last label in the axis of the linear gauge.
+     */
+    public showLastLabel: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

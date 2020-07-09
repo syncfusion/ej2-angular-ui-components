@@ -14,6 +14,72 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var input = ['shapePath', 'shapeValue'];
+var outputs = [];
+/**
+ * Layer Directive
+ * ```html
+ * <e-layers>
+ * <e-layer>
+ * <e-initialShapeSelections>
+ * <e-initialShapeSelection>
+ * </e-initialShapeSelection>
+ * </e-initialShapeSelections>
+ * </e-layer>
+ * </e-layers>
+ * ```
+ */
+var InitialShapeSelectionDirective = /** @class */ (function (_super) {
+    __extends(InitialShapeSelectionDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function InitialShapeSelectionDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        _this.directivePropList = input;
+        return _this;
+    }
+    return InitialShapeSelectionDirective;
+}(ej2AngularBase.ComplexBase));
+InitialShapeSelectionDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-layer>e-initialShapeSelections>e-initialShapeSelection',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+InitialShapeSelectionDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * InitialShapeSelection Array Directive
+ */
+var InitialShapeSelectionsDirective = /** @class */ (function (_super) {
+    __extends(InitialShapeSelectionsDirective, _super);
+    function InitialShapeSelectionsDirective() {
+        return _super.call(this, 'initialshapeselection') || this;
+    }
+    return InitialShapeSelectionsDirective;
+}(ej2AngularBase.ArrayBase));
+InitialShapeSelectionsDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-layer>e-initialShapeSelections',
+                queries: {
+                    children: new core.ContentChildren(InitialShapeSelectionDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+InitialShapeSelectionsDirective.ctorParameters = function () { return []; };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -28,8 +94,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['animationDelay', 'animationDuration', 'border', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'template', 'tooltipSettings', 'visible', 'width'];
-var outputs = [];
+var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+var outputs$1 = [];
 /**
  * Layer Directive
  * ```html
@@ -52,7 +118,8 @@ var MarkerDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs);
+        _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return MarkerDirective;
@@ -60,8 +127,8 @@ var MarkerDirective = /** @class */ (function (_super) {
 MarkerDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-layer>e-markerSettings>e-markerSetting',
-                inputs: input,
-                outputs: outputs,
+                inputs: input$1,
+                outputs: outputs$1,
                 queries: {}
             },] },
 ];
@@ -105,8 +172,8 @@ MarkersDirective.decorators = [
  * @nocollapse
  */
 MarkersDirective.ctorParameters = function () { return []; };
-var input$1 = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
-var outputs$1 = [];
+var input$2 = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
+var outputs$2 = [];
 /**
  * ColorMapping Directive
  * ```html
@@ -131,7 +198,8 @@ var ColorMappingDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$1);
+        _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ColorMappingDirective;
@@ -139,8 +207,8 @@ var ColorMappingDirective = /** @class */ (function (_super) {
 ColorMappingDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-bubbleSettings>e-colorMappings>e-colorMapping',
-                inputs: input$1,
-                outputs: outputs$1,
+                inputs: input$2,
+                outputs: outputs$2,
                 queries: {}
             },] },
 ];
@@ -186,8 +254,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
-var outputs$2 = [];
+var input$3 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'query', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
+var outputs$3 = [];
 /**
  * Layer Directive
  * ```html
@@ -211,7 +279,8 @@ var BubbleDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['colorMapping'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
+        _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return BubbleDirective;
@@ -219,8 +288,8 @@ var BubbleDirective = /** @class */ (function (_super) {
 BubbleDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-layer>e-bubbleSettings>e-bubbleSetting',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {
                     childColorMapping: new core.ContentChild(ColorMappingsDirective)
                 }
@@ -275,8 +344,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$3 = ['angle', 'arrowSettings', 'color', 'dashArray', 'highlightSettings', 'latitude', 'longitude', 'selectionSettings', 'visible', 'width'];
-var outputs$3 = [];
+var input$4 = ['angle', 'arrowSettings', 'color', 'dashArray', 'highlightSettings', 'latitude', 'longitude', 'selectionSettings', 'visible', 'width'];
+var outputs$4 = [];
 /**
  * Layer Directive
  * ```html
@@ -299,7 +368,8 @@ var NavigationLineDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return NavigationLineDirective;
@@ -307,8 +377,8 @@ var NavigationLineDirective = /** @class */ (function (_super) {
 NavigationLineDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-layer>e-navigationLineSettings>e-navigationLineSetting',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {}
             },] },
 ];
@@ -347,8 +417,8 @@ NavigationLinesDirective.decorators = [
  * @nocollapse
  */
 NavigationLinesDirective.ctorParameters = function () { return []; };
-var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
-var outputs$4 = [];
+var input$5 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+var outputs$5 = [];
 /**
  * Layer Directive
  * ```html
@@ -365,9 +435,10 @@ var LayerDirective = /** @class */ (function (_super) {
     function LayerDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['markerSettings', 'bubbleSettings', 'navigationLineSettings'];
+        _this.tags = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return LayerDirective;
@@ -375,9 +446,10 @@ var LayerDirective = /** @class */ (function (_super) {
 LayerDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-layers>e-layer',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {
+                    childInitialShapeSelection: new core.ContentChild(InitialShapeSelectionsDirective),
                     childMarkerSettings: new core.ContentChild(MarkersDirective),
                     childBubbleSettings: new core.ContentChild(BubblesDirective),
                     childNavigationLineSettings: new core.ContentChild(NavigationLinesDirective)
@@ -426,8 +498,8 @@ var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$5 = ['content', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
-var outputs$5 = [];
+var input$6 = ['content', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
+var outputs$6 = [];
 /**
  * Annotation Directive
  * ```html
@@ -445,7 +517,8 @@ var AnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return AnnotationDirective;
@@ -453,8 +526,8 @@ var AnnotationDirective = /** @class */ (function (_super) {
 AnnotationDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-maps-annotations>e-maps-annotation',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {}
             },] },
 ];
@@ -507,8 +580,8 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'zoom', 'dataSourceChange'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'tooltipDisplayMode', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$7 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'legendRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'tooltipRenderComplete', 'zoom', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Represents Maps Component
@@ -603,30 +676,60 @@ exports.MapsComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
-        _this.registerEvents(outputs$6);
+        try {
+            var mod = _this.injector.get('MapsPrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
+        try {
+            var mod = _this.injector.get('MapsPdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_m) { }
+        try {
+            var mod = _this.injector.get('MapsImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_o) { }
+        _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return MapsComponent;
 }(ej2Maps.Maps));
@@ -634,7 +737,7 @@ exports.MapsComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-maps',
                 inputs: inputs,
-                outputs: outputs$6,
+                outputs: outputs$7,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -672,6 +775,8 @@ MapsModule.decorators = [
                 imports: [common.CommonModule],
                 declarations: [
                     exports.MapsComponent,
+                    InitialShapeSelectionDirective,
+                    InitialShapeSelectionsDirective,
                     MarkerDirective,
                     MarkersDirective,
                     ColorMappingDirective,
@@ -687,6 +792,8 @@ MapsModule.decorators = [
                 ],
                 exports: [
                     exports.MapsComponent,
+                    InitialShapeSelectionDirective,
+                    InitialShapeSelectionsDirective,
                     MarkerDirective,
                     MarkersDirective,
                     ColorMappingDirective,
@@ -716,6 +823,9 @@ var ZoomService = { provide: 'MapsZoom', useValue: ej2Maps.Zoom };
 var DataLabelService = { provide: 'MapsDataLabel', useValue: ej2Maps.DataLabel };
 var NavigationLineService = { provide: 'MapsNavigationLine', useValue: ej2Maps.NavigationLine };
 var AnnotationsService = { provide: 'MapsAnnotations', useValue: ej2Maps.Annotations };
+var PrintService = { provide: 'MapsPrint', useValue: ej2Maps.Print };
+var PdfExportService = { provide: 'MapsPdfExport', useValue: ej2Maps.PdfExport };
+var ImageExportService = { provide: 'MapsImageExport', useValue: ej2Maps.ImageExport };
 /**
  * NgModule definition for the Maps component with providers.
  */
@@ -740,7 +850,10 @@ MapsAllModule.decorators = [
                     ZoomService,
                     DataLabelService,
                     NavigationLineService,
-                    AnnotationsService
+                    AnnotationsService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -749,6 +862,8 @@ MapsAllModule.decorators = [
  */
 MapsAllModule.ctorParameters = function () { return []; };
 
+exports.InitialShapeSelectionDirective = InitialShapeSelectionDirective;
+exports.InitialShapeSelectionsDirective = InitialShapeSelectionsDirective;
 exports.MarkerDirective = MarkerDirective;
 exports.MarkersDirective = MarkersDirective;
 exports.ColorMappingDirective = ColorMappingDirective;
@@ -773,8 +888,11 @@ exports.ZoomService = ZoomService;
 exports.DataLabelService = DataLabelService;
 exports.NavigationLineService = NavigationLineService;
 exports.AnnotationsService = AnnotationsService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
-exports.ɵb = outputs$6;
+exports.ɵb = outputs$7;
 exports.Maps = ej2Maps.Maps;
 exports.load = ej2Maps.load;
 exports.loaded = ej2Maps.loaded;
@@ -816,8 +934,12 @@ exports.Border = ej2Maps.Border;
 exports.CenterPosition = ej2Maps.CenterPosition;
 exports.TooltipSettings = ej2Maps.TooltipSettings;
 exports.Margin = ej2Maps.Margin;
+exports.ConnectorLineSettings = ej2Maps.ConnectorLineSettings;
 exports.MarkerClusterSettings = ej2Maps.MarkerClusterSettings;
+exports.MarkerClusterData = ej2Maps.MarkerClusterData;
 exports.ColorMappingSettings = ej2Maps.ColorMappingSettings;
+exports.InitialMarkerSelectionSettings = ej2Maps.InitialMarkerSelectionSettings;
+exports.InitialShapeSelectionSettings = ej2Maps.InitialShapeSelectionSettings;
 exports.SelectionSettings = ej2Maps.SelectionSettings;
 exports.HighlightSettings = ej2Maps.HighlightSettings;
 exports.NavigationLineSettings = ej2Maps.NavigationLineSettings;
@@ -826,6 +948,7 @@ exports.CommonTitleSettings = ej2Maps.CommonTitleSettings;
 exports.SubTitleSettings = ej2Maps.SubTitleSettings;
 exports.TitleSettings = ej2Maps.TitleSettings;
 exports.ZoomSettings = ej2Maps.ZoomSettings;
+exports.ToggleLegendSettings = ej2Maps.ToggleLegendSettings;
 exports.LegendSettings = ej2Maps.LegendSettings;
 exports.DataLabelSettings = ej2Maps.DataLabelSettings;
 exports.ShapeSettings = ej2Maps.ShapeSettings;
@@ -850,6 +973,7 @@ exports.roundTo = ej2Maps.roundTo;
 exports.sinci = ej2Maps.sinci;
 exports.acos = ej2Maps.acos;
 exports.calculateBound = ej2Maps.calculateBound;
+exports.triggerDownload = ej2Maps.triggerDownload;
 exports.Point = ej2Maps.Point;
 exports.MinMax = ej2Maps.MinMax;
 exports.GeoLocation = ej2Maps.GeoLocation;
@@ -868,11 +992,20 @@ exports.Rect = ej2Maps.Rect;
 exports.PatternOptions = ej2Maps.PatternOptions;
 exports.renderTextElement = ej2Maps.renderTextElement;
 exports.convertElement = ej2Maps.convertElement;
+exports.formatValue = ej2Maps.formatValue;
+exports.convertStringToValue = ej2Maps.convertStringToValue;
 exports.convertElementFromLabel = ej2Maps.convertElementFromLabel;
 exports.drawSymbols = ej2Maps.drawSymbols;
+exports.getValueFromObject = ej2Maps.getValueFromObject;
+exports.markerColorChoose = ej2Maps.markerColorChoose;
+exports.markerShapeChoose = ej2Maps.markerShapeChoose;
 exports.clusterTemplate = ej2Maps.clusterTemplate;
+exports.mergeSeparateCluster = ej2Maps.mergeSeparateCluster;
+exports.clusterSeparate = ej2Maps.clusterSeparate;
 exports.marker = ej2Maps.marker;
 exports.markerTemplate = ej2Maps.markerTemplate;
+exports.maintainSelection = ej2Maps.maintainSelection;
+exports.maintainStyleClass = ej2Maps.maintainStyleClass;
 exports.appendShape = ej2Maps.appendShape;
 exports.drawCircle = ej2Maps.drawCircle;
 exports.drawRectangle = ej2Maps.drawRectangle;
@@ -899,8 +1032,10 @@ exports.isCustomPath = ej2Maps.isCustomPath;
 exports.textTrim = ej2Maps.textTrim;
 exports.findPosition = ej2Maps.findPosition;
 exports.removeElement = ej2Maps.removeElement;
+exports.calculateCenterFromPixel = ej2Maps.calculateCenterFromPixel;
 exports.getTranslate = ej2Maps.getTranslate;
 exports.getZoomTranslate = ej2Maps.getZoomTranslate;
+exports.fixInitialScaleForTile = ej2Maps.fixInitialScaleForTile;
 exports.getElementByID = ej2Maps.getElementByID;
 exports.Internalize = ej2Maps.Internalize;
 exports.getTemplateFunction = ej2Maps.getTemplateFunction;
@@ -912,6 +1047,7 @@ exports.querySelector = ej2Maps.querySelector;
 exports.getTargetElement = ej2Maps.getTargetElement;
 exports.createStyle = ej2Maps.createStyle;
 exports.customizeStyle = ej2Maps.customizeStyle;
+exports.triggerItemSelectionEvent = ej2Maps.triggerItemSelectionEvent;
 exports.removeClass = ej2Maps.removeClass;
 exports.elementAnimate = ej2Maps.elementAnimate;
 exports.timeout = ej2Maps.timeout;
@@ -933,6 +1069,9 @@ exports.zoomAnimate = ej2Maps.zoomAnimate;
 exports.animate = ej2Maps.animate;
 exports.MapAjax = ej2Maps.MapAjax;
 exports.smoothTranslate = ej2Maps.smoothTranslate;
+exports.compareZoomFactor = ej2Maps.compareZoomFactor;
+exports.calculateZoomLevel = ej2Maps.calculateZoomLevel;
+exports.processResult = ej2Maps.processResult;
 exports.LayerPanel = ej2Maps.LayerPanel;
 exports.Bubble = ej2Maps.Bubble;
 exports.BingMap = ej2Maps.BingMap;
@@ -946,6 +1085,9 @@ exports.Selection = ej2Maps.Selection;
 exports.MapsTooltip = ej2Maps.MapsTooltip;
 exports.Zoom = ej2Maps.Zoom;
 exports.Annotations = ej2Maps.Annotations;
+exports.Print = ej2Maps.Print;
+exports.ImageExport = ej2Maps.ImageExport;
+exports.PdfExport = ej2Maps.PdfExport;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

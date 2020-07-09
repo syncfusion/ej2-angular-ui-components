@@ -358,9 +358,13 @@
   min-height: 100px;
 }
 
+.e-blazor-toast-hidden {
+  visibility: hidden;
+}
+
 .e-toast-container .e-toast {
   background-color: #424242;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
 }
 
@@ -383,7 +387,7 @@
 
 .e-toast-container .e-toast.e-toast-success:hover {
   background-color: #49a84d;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
 }
 
@@ -406,7 +410,7 @@
 
 .e-toast-container .e-toast.e-toast-info:hover {
   background-color: #03a2ea;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
 }
 
@@ -429,7 +433,7 @@
 
 .e-toast-container .e-toast.e-toast-warning:hover {
   background-color: #f59200;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
 }
 
@@ -452,13 +456,13 @@
 
 .e-toast-container .e-toast.e-toast-danger:hover {
   background-color: #ff5d48;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
 }
 
 .e-toast-container .e-toast:hover {
   background-color: #3d3d3d;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 
 .e-toast-container .e-toast .e-toast-icon {

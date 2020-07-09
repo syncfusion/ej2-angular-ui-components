@@ -21,7 +21,6 @@ ejs-calendar {
   display: block;
   overflow: auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -129,8 +128,8 @@ ejs-calendar {
 .e-calendar .e-content td.e-week-number,
 .e-bigger.e-small .e-calendar .e-content td.e-week-number {
   color: rgba(0, 0, 0, 0.87);
-  font-family: italic;
   font-size: 12px;
+  font-style: italic;
   font-weight: 500;
 }
 
@@ -624,7 +623,7 @@ ejs-calendar {
 .e-bigger.e-small .e-calendar {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: #e0e0e0;
+  box-shadow: none;
 }
 
 .e-calendar .e-date-icon-prev,

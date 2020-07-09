@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['content', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
+var inputs = ['content', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'iconCss', 'iconPosition', 'isPrimary', 'isToggle', 'locale'];
 var outputs = ['created'];
 var twoWays = [];
 /**
@@ -56,27 +56,32 @@ exports.ButtonComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.containerContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngOnInit = function () {
+        this.containerContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngAfterViewInit = function () {
+        this.containerContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngOnDestroy = function () {
+        this.containerContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.containerContext.ngAfterContentChecked(this);
     };
     return ButtonComponent;
 }(ej2Buttons.Button));
@@ -164,7 +169,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
+var inputs$1 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'indeterminate', 'label', 'labelPosition', 'locale', 'name', 'value'];
 var outputs$1 = ['focus', 'blur', 'change', 'created', 'checkedChange', 'indeterminateChange'];
 var twoWays$1 = ['checked', 'indeterminate'];
 /**
@@ -192,6 +197,8 @@ exports.CheckBoxComponent = CheckBoxComponent_1 = /** @class */ (function (_supe
         _this.registerEvents(outputs$1);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -222,21 +229,25 @@ exports.CheckBoxComponent = CheckBoxComponent_1 = /** @class */ (function (_supe
      * @return {?}
      */
     CheckBoxComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     CheckBoxComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return CheckBoxComponent;
 }(ej2Buttons.CheckBox));
@@ -332,7 +343,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['checked', 'cssClass', 'disabled', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
+var inputs$2 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
 var outputs$2 = ['focus', 'blur', 'change', 'created', 'checkedChange'];
 var twoWays$2 = ['checked'];
 /**
@@ -360,6 +371,8 @@ exports.RadioButtonComponent = RadioButtonComponent_1 = /** @class */ (function 
         _this.registerEvents(outputs$2);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -390,21 +403,25 @@ exports.RadioButtonComponent = RadioButtonComponent_1 = /** @class */ (function 
      * @return {?}
      */
     RadioButtonComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RadioButtonComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return RadioButtonComponent;
 }(ej2Buttons.RadioButton));
@@ -528,6 +545,8 @@ exports.SwitchComponent = SwitchComponent_1 = /** @class */ (function (_super) {
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.formContext = new ej2AngularBase.FormBase();
+        _this.formCompContext = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
@@ -558,21 +577,25 @@ exports.SwitchComponent = SwitchComponent_1 = /** @class */ (function (_super) {
      * @return {?}
      */
     SwitchComponent.prototype.ngOnInit = function () {
+        this.formCompContext.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngAfterViewInit = function () {
+        this.formContext.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngOnDestroy = function () {
+        this.formCompContext.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SwitchComponent.prototype.ngAfterContentChecked = function () {
+        this.formCompContext.ngAfterContentChecked(this);
     };
     return SwitchComponent;
 }(ej2Buttons.Switch));
@@ -654,7 +677,7 @@ SwitchAllModule.decorators = [
  * @nocollapse
  */
 SwitchAllModule.ctorParameters = function () { return []; };
-var input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'text', 'trailingIconCss'];
+var input = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'leadingIconUrl', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
 var outputs$4 = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -677,6 +700,7 @@ var ChipDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input;
         return _this;
     }
     return ChipDirective;
@@ -731,8 +755,8 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$4 = ['avatarIconCss', 'avatarText', 'chips', 'cssClass', 'enableDelete', 'enablePersistence', 'enableRtl', 'enabled', 'leadingIconCss', 'locale', 'selectedChips', 'selection', 'text', 'trailingIconCss'];
-var outputs$5 = ['click', 'created', 'delete'];
+var inputs$4 = ['avatarIconCss', 'avatarText', 'chips', 'cssClass', 'enableDelete', 'enablePersistence', 'enableRtl', 'enabled', 'leadingIconCss', 'leadingIconUrl', 'locale', 'selectedChips', 'selection', 'text', 'trailingIconCss', 'trailingIconUrl'];
+var outputs$5 = ['beforeClick', 'click', 'created', 'delete'];
 var twoWays$4 = [''];
 /**
  * Represents the Essential JS 2 Angular ChipList Component.
@@ -760,27 +784,33 @@ exports.ChipListComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$5);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ChipListComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childChips;
+        this.context.ngAfterContentChecked(this);
     };
     return ChipListComponent;
 }(ej2Buttons.ChipList));
@@ -890,6 +920,7 @@ exports.preRender = ej2Buttons.preRender;
 exports.createCheckBox = ej2Buttons.createCheckBox;
 exports.rippleMouseHandler = ej2Buttons.rippleMouseHandler;
 exports.setHiddenInput = ej2Buttons.setHiddenInput;
+exports.buttonObserver = ej2Buttons.buttonObserver;
 exports.Button = ej2Buttons.Button;
 exports.CheckBox = ej2Buttons.CheckBox;
 exports.RadioButton = ej2Buttons.RadioButton;

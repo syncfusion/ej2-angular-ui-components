@@ -2,6 +2,10 @@
   height: 36px;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-popup {
   border: 0;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
@@ -46,11 +50,7 @@
   border-color: #fff;
 }
 
-.e-bigger .e-ddl.e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
-}
-
-.e-bigger .e-ddl.e-popup.e-ddl-device-filter {
+.e-bigger .e-ddl.e-popup.e-ddl-device.e-ddl-device-filter {
   margin-top: 0;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .e-bigger .e-ddl.e-popup .e-input-group input {
-  height: 30px;
+  height: 46px;
 }
 
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
@@ -103,28 +103,28 @@
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
 
 .e-multiselect .e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
   color: #969696;
-  font-family: 'Segoe UI';
+  font-family: inherit;
   font-size: 14px;
   font-style: italic;
 }
@@ -309,6 +309,26 @@
   content: '\e658';
 }
 
+.e-gantt .e-csvexport::before {
+  content: '\e241';
+}
+
+.e-gantt .e-excelexport::before {
+  content: '\e242';
+}
+
+.e-gantt .e-pdfexport::before {
+  content: '\e240';
+}
+
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
+}
+
 .e-gantt .e-add-below::before {
   content: '\e659';
 }
@@ -326,6 +346,77 @@
 .e-gantt {
   display: block;
   width: 100%;
+}
+
+.e-gantt .e-cloneproperties {
+  padding: 4px 5px;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop .e-row .e-icon-rowdragicon::before {
+  left: -5px;
+  position: relative;
+}
+
+.e-gantt .e-cloneproperties {
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 1;
+  overflow: hidden;
+  padding: 4px 5px;
+  text-align: center;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop {
+  border-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: visible;
+}
+
+.e-gantt .e-cloneproperties .e-bothganttlines {
+  border-width: 1px 0 0 1px;
+}
+
+.e-gantt .e-draganddrop {
+  border-width: 0 1px 1px;
+  font-weight: normal;
+  padding: 0;
+}
+
+.e-gantt .e-draganddrop .e-rowcell {
+  opacity: .95;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop table {
+  border-spacing: 0;
+}
+
+.e-gantt .e-icons.e-errorelem {
+  display: inline-block;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.e-gantt .e-errorelem::before {
+  color: #e3165b;
+  content: '\e22a';
+  transform: rotate(180deg);
+}
+
+.e-gantt .e-verticallines .e-cloneproperties.e-draganddrop .e-rowdragdrop,
+.e-gantt .e-bothlines .e-cloneproperties.e-draganddrop .e-rowdragdrop {
+  border-bottom: 0;
+  border-right: 1px solid #969696;
+  border-top: 1px solid #969696;
 }
 
 .e-gantt .e-gantt-toolbar {
@@ -509,7 +600,6 @@
   position: static;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -540,7 +630,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-zero-spacing {
-  border-spacing: none;
+  border-spacing: 0;
 }
 
 .e-gantt .e-gantt-chart .e-chart-row:first-child .e-chart-row-border {
@@ -622,6 +712,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-label {
+  margin: 3px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -647,6 +738,7 @@
 .e-gantt .e-gantt-chart .e-indicator-span {
   display: inline-block;
   font-size: 13px;
+  font-weight: 400;
   overflow: hidden;
   position: absolute;
   text-overflow: ellipsis;
@@ -656,9 +748,22 @@
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar,
 .e-gantt .e-gantt-chart .e-gantt-child-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar,
-.e-gantt .e-gantt-chart .e-gantt-milestone {
+.e-gantt .e-gantt-chart .e-gantt-milestone,
+.e-gantt .e-gantt-chart .e-gantt-parent-milestone,
+.e-gantt .e-gantt-chart .e-gantt-manualparent-milestone {
   display: inline-block;
   width: 100%;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-main-container {
+  background-color: transparent;
+  cursor: move;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparent-taskbar {
+  margin-top: 3px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div,
@@ -684,7 +789,6 @@
 .e-gantt .e-gantt-chart .e-chart-scroll-container,
 .e-gantt .e-gantt-chart .e-chart-rows-container {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -742,7 +846,7 @@
   border-right: 6px solid transparent;
   cursor: col-resize;
   height: 0;
-  left: -1;
+  left: -1px;
   position: absolute;
   top: -6px;
   width: 0;
@@ -754,18 +858,26 @@
   z-index: 3;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-top {
+.e-gantt .e-gantt-chart .e-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
   border-style: none solid solid;
   border-top: 0;
 }
 
 .e-gantt .e-gantt-chart .e-milestone-top,
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-bottom: 0;
   border-style: solid solid none;
 }
@@ -813,6 +925,18 @@
   display: inline-block;
   position: absolute;
   z-index: 0;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-leftarc {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rightarc {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  position: absolute;
 }
 
 .e-gantt .e-gantt-chart .e-event-markers {
@@ -913,6 +1037,38 @@
   cursor: no-drop;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left,
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  background-color: #989A9C;
+  border-color: #989A9C;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: -1px;
+  position: absolute;
+  width: 10px;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  cursor: e-resize;
+  margin-left: -8px;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left {
+  margin-left: 0;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar {
+  background: #989A9C;
+  margin-top: 3px;
+  position: absolute;
+}
+
 .e-gantt .e-gantt-chart .e-icon {
   font-family: 'e-icons';
   font-size: 13px;
@@ -922,6 +1078,11 @@
   line-height: 1;
   text-transform: none;
   vertical-align: middle;
+}
+
+.e-gantt .e-gantt-chart .e-active-container {
+  outline: 1px solid;
+  outline-offset: 2px;
 }
 
 .e-gantt .e-gantt-dialog {
@@ -1104,7 +1265,7 @@
 }
 
 .e-gantt.e-device .e-gantt-dialog {
-  max-height: auto;
+  max-height: none;
 }
 
 .e-gantt.e-device .e-gantt-dialog .e-dlg-closeicon-btn {
@@ -1166,9 +1327,35 @@
   border-radius: 0px;
 }
 
+.e-gantt .e-cloneproperties.e-draganddrop {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: .95;
+  overflow: visible;
+}
+
+.e-gantt .e-cloneproperties {
+  background-color: #ffd939;
+  border-color: #969696;
+  color: #000;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop .e-rowcell {
+  color: #fff;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop table,
+.e-gantt .e-cloneproperties.e-draganddrop table .e-selectionbackground {
+  background-color: #000;
+  height: 30px;
+}
+
 .e-gantt .e-gantt-toolbar + .e-gantt-splitter {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+.e-gantt .e-grid .e-focused:not(.e-menu-item) {
+  box-shadow: 0 0 0 1px #ffff inset !important;
 }
 
 .e-gantt .e-gantt-dialog .e-dlg-header {
@@ -1248,7 +1435,7 @@
 }
 
 .e-gantt .e-gantt-tree-grid-pane .e-grid td.e-active {
-  background: #ffd939;
+  background: rgba(255, 217, 57, 0.7);
 }
 
 .e-gantt .e-gantt-chart .e-timeline-header-container {
@@ -1264,7 +1451,6 @@
 .e-gantt .e-gantt-chart .e-timeline-single-header-cell {
   border-color: #969696;
   color: #fff;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
 }
 
 .e-gantt .e-gantt-chart .e-timeline-single-header-cell {
@@ -1305,10 +1491,36 @@
   border-color: #969696;
 }
 
+.e-gantt .e-gantt-chart .e-active-container {
+  outline-color: #969696;
+}
+
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div {
   background-color: #6e06f1;
   border: 1px solid #fff;
   border-radius: 0px;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-taskbar-inner-div {
+  border: 1px solid #fff;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-progressbar {
+  width: 0px !important;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-collapsed-taskbar-drag {
+  background-color: #3e047d;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-left-connectorpoint-outer-div {
+  display: none;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-right-connectorpoint-outer-div {
+  display: none;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar-inner-div {
@@ -1327,6 +1539,20 @@
   border: 0px;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-child-manualtaskbar {
+  background-color: #4731FE;
+  border: 1px solid #FFFFFF;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar.e-gantt-child-manualtaskbar {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #6e06f1 30%, #6e06f1 70%, #6e06f1 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
+.e-gantt .e-gantt-chart .e-gantt-child-manualprogressbar {
+  background-color: #1B00F7;
+  border: 0px;
+}
+
 .e-gantt .e-gantt-chart .e-holiday {
   background: #333;
 }
@@ -1342,6 +1568,12 @@
 
 .e-gantt .e-gantt-chart .e-weekend-header-cell {
   background: #1a1a1a;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rg-rangdiv {
+  border: 2px solid #FC7A05;
+  width: 5px;
+  z-index: 6;
 }
 
 .e-gantt .e-gantt-chart .e-event-markers {
@@ -1435,22 +1667,19 @@
 .e-gantt .e-gantt-chart .e-left-label-inner-div,
 .e-gantt .e-gantt-chart .e-right-label-inner-div {
   color: rgba(255, 255, 255, 0.87);
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 13px;
 }
 
 .e-gantt .e-gantt-chart .e-left-label-temp-container {
-  padding-right: 25px;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
+  padding-right: 25px;
 }
 
 .e-gantt .e-gantt-chart .e-right-label-temp-container {
-  margin-left: 25px;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
+  margin-left: 25px;
 }
 
 .e-gantt .e-gantt-chart .e-right-label-container {
@@ -1467,8 +1696,8 @@
 
 .e-gantt .e-gantt-chart .e-right-connectorpoint-outer-div,
 .e-gantt .e-gantt-chart .e-left-connectorpoint-outer-div {
-  width: 12px;
   height: 8px;
+  width: 12px;
 }
 
 .e-gantt .e-gantt-chart .e-left-connectorpoint-outer-div {
@@ -1482,10 +1711,10 @@
 }
 
 .e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar-right {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 2px;
   border-top-left-radius: 0px;
+  border-top-right-radius: 2px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar-left {
@@ -1510,13 +1739,33 @@
   border-top-color: #fff;
 }
 
+.e-gantt .e-gantt-chart .e-parent-milestone-top {
+  border-bottom-color: #005201;
+}
+
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+  border-top-color: #005201;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-top-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-manualtask {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #989A9C 30%, #989A9C 70%, #989A9C 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
 .e-gantt .e-gantt-chart .e-label {
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
 }
 
 .e-gantt .e-gantt-chart .e-active {
-  background: #ffd939;
+  background: rgba(255, 217, 57, 0.7);
   color: #000;
   opacity: 1;
 }
@@ -1549,7 +1798,7 @@
   border-top-color: #e0e0e0;
 }
 
-.e-gantt .e-gantt-chart .e-content {
+.e-gantt .e-gantt-chart .e-ganttpopup .e-content {
   background-color: #fff;
   border-color: #e0e0e0;
 }
@@ -1560,8 +1809,8 @@
 }
 
 .e-gantt .e-gantt-chart .e-active-parent-task {
-  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+  box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .e-gantt .e-gantt-chart .e-active-parent-task .e-gantt-parent-taskbar-inner-div {
@@ -1579,88 +1828,92 @@
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-task-label {
-  color: transparent;
+  color: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-line {
-  border-color: #8A8A8A;
+  border-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-connector-line-right-arrow {
-  border-left-color: #8A8A8A;
+  border-left-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-connector-line-left-arrow {
-  border-right-color: #8A8A8A;
+  border-right-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-child-taskbar-inner-div {
-  background: #D5D5D5;
-  border: #D5D5D5;
+  background: #D5D5D5 !important;
+  border: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-child-progressbar-inner-div {
-  background-color: transparent;
-  border: transparent;
+  background-color: transparent !important;
+  border: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-milestone-top {
-  border-bottom-color: #D5D5D5;
+  border-bottom-color: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-milestone-bottom {
-  border-top-color: #D5D5D5;
+  border-top-color: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-parent-taskbar-inner-div {
-  background-color: #8A8A8A;
-  border: #8A8A8A;
+  background-color: #8A8A8A !important;
+  border: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-parent-progressbar-inner-div {
-  background-color: transparent;
-  border: transparent;
+  background-color: transparent !important;
+  border: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-gantt-child-taskbar-inner-div {
-  background: #3e047d;
-  border: #3e047d;
+  background: #3e047d !important;
+  border: #3e047d !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-milestone-top {
-  border-bottom-color: #3e047d;
+  border-bottom-color: #3e047d !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-milestone-bottom {
-  border-top-color: #3e047d;
+  border-top-color: #3e047d !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-gantt-child-taskbar-inner-div {
-  background: #a662fb;
-  border: #a662fb;
+  background: #a662fb !important;
+  border: #a662fb !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-milestone-top {
-  border-bottom-color: #a662fb;
+  border-bottom-color: #a662fb !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-milestone-bottom {
-  border-top-color: #a662fb;
+  border-top-color: #a662fb !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-line {
-  border-color: #3e047d;
+  border-color: #3e047d !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-connector-line-right-arrow {
-  border-left-color: #3e047d;
+  border-left-color: #3e047d !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-connector-line-left-arrow {
-  border-right-color: #3e047d;
+  border-right-color: #3e047d !important;
 }
 
-.e-gantt .e-grid .e-icons {
+.e-gantt .e-icons {
+  color: #fff;
+}
+
+.e-gantt .e-grid .e-icons:not(.e-stop):not(.e-check):not(.e-icon-left):not(.e-date-icon) {
   color: #fff !important;
 }
 

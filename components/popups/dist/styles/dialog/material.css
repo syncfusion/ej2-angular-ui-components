@@ -60,7 +60,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: top;
@@ -211,8 +210,8 @@
 }
 
 .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
   border-radius: 50%;
   bottom: 0;
   float: right;
@@ -227,6 +226,10 @@
   cursor: sw-resize;
   left: 2px;
   transform: rotate(90deg);
+}
+
+.e-dlg-target.e-scroll-disabled {
+  overflow: hidden !important;
 }
 
 .e-dlg-overlay {
@@ -387,9 +390,13 @@
   }
 }
 
+.e-dlg-ref-element {
+  display: none;
+}
+
 .e-dialog {
   background-color: #fff;
-  box-shadow: 0 12px 40px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 
 .e-dlg-overlay {
@@ -430,6 +437,13 @@
 
 .e-dialog .e-btn.e-dlg-closeicon-btn:hover span {
   color: #000;
+}
+
+.e-dialog .e-btn.e-dlg-closeicon-btn:active span,
+.e-dialog .e-btn.e-dlg-closeicon-btn:focus span {
+  border-radius: 50%;
+  color: #000;
+  opacity: 1;
 }
 
 .e-icon-dlg-close:active {

@@ -27,6 +27,7 @@ let outputs: string[] = [];
     }
 })
 export class CategoryDirective extends ComplexBase<CategoryDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -75,6 +76,7 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

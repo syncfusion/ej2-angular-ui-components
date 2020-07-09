@@ -3,12 +3,13 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'cssClass', 'expanded', 'header', 'iconCss'];
+let input: string[] = ['content', 'cssClass', 'disabled', 'expanded', 'header', 'iconCss', 'visible'];
 let outputs: string[] = [];
 /**
- * ItemDirective represent a item of the Essential JS 2 Angular Accordion.
+ * 'e-accordionitem' directive represent a item of the Angular Accordion.
+ * It must be contained in a Accordion component(`ejs-accordion`). 
  * ```html
- * <ejs-accordion > 
+ * <ejs-accordion> 
  *   <e-accordionitems>
  *    <e-accordionitem header='Header1'></e-accordionitem>
  *    <e-accordionitem header='Header2' content='Content2'></e-accordionitem>
@@ -25,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -32,6 +34,11 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * @default null
      */
     public cssClass: any;
+    /** 
+     * Sets true to disable an accordion item.
+     * @default false
+     */
+    public disabled: any;
     /** 
      * Sets the expand (true) or collapse (false) state of the Accordion item. By default, all the items are in a collapsed state.
      * @default false
@@ -45,6 +52,11 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
      * @default null
      */
     public iconCss: any;
+    /** 
+     * Sets false to hide an accordion item.
+     * @default true
+     */
+    public visible: any;
     /** 
      * Sets the header text to be displayed for the Accordion item. 
      * You can set the title of the Accordion item using `header` property. 
@@ -70,6 +82,7 @@ export class AccordionItemDirective extends ComplexBase<AccordionItemDirective> 
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -357,6 +357,10 @@
   min-height: 100px;
 }
 
+.e-blazor-toast-hidden {
+  visibility: hidden;
+}
+
 .e-toast-container .e-toast {
   background-color: #333;
   box-shadow: none;

@@ -2,16 +2,427 @@
 
 ## [Unreleased]
 
-## 17.2.49 (2019-09-04)
+## 18.2.44 (2020-07-07)
+
+### Chart
+
+#### Bug Fixes
+
+- `#280448` - After changing page layout from LTR to RTL label overlapping issue fixed.
+- `#280364` - Stacking area while assigning empty data source console error issue fixed.
+- `#281323` - Console error while using DateTime as `primaryYAxis` issue fixed.
+- `#281651` - Other zooming actions prevented while scrollbar zooming enabled issue is fixed.
+
+### Accumulation Chart
+
+#### New Features
+
+- Provided smart label placement support that places data labels smartly without overlapping one another in Pie and Doughnut charts.
+
+## 18.1.56 (2020-06-09)
+
+### Chart
+
+#### Bug Fixes
+
+- `#278688` - Shared Tooltip not visible while using tooltip render event issue fixed.
+- `#278311` - Y axis labels get overlapped when using single negative point issue fixed.
+- `#154576` - Range Selector doesn't match chart data range for one day issue fixed.
+- `#279008` - Cluster selection with 0 values for logarithmic type issue fixed.
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#279297` - Height in percentage not working properly is fixed now.
+
+## 18.1.55 (2020-06-02)
+
+### Chart
+
+#### Bug Fixes
+
+- `#277354` - Data labels are getting cropped within the Chart issue fixed.
+- `#278138` - Track ball hides in `stacking area` chart issue has been fixed.
+- `#278485` - DateTime do not work properly if date time values are on the same day issue fixed.
+- `#154240` - Point click not working on some scenarios issue has been fixed.
+
+## 18.1.54 (2020-05-26)
+
+### Stock Chart
+
+#### Bug Fixes
+
+- `#262890` - Label position is not working in stock chart primary y axis issue fixed.
+
+### Chart
+
+#### Bug Fixes
+
+- `#273192` - Trendline slopes are not proper as per the datasource issue fixed.
+- `#277748` - Chart rendered twice in blazor is now resolved.
+- `#273410` - Chart resize issue in blazor has been fixed.
+
+## 18.1.53 (2020-05-19)
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#153764` - The size of the doughnuts graphs does not display correctly in the Edge browser issue fixed.
+- `#277504` - Explode Index 0 is not working in accumulation chart issue fixed.
+
+### Chart
+
+#### Bug Fixes
+
+- `#273192` - Trendlines are placed behind the series issue has been fixed.
+- `#274960` - `pageX` and `pageY` has been added in `pointClick event`.
+
+## 18.1.52 (2020-05-13)
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#I273694` - Legend paging issue when legend position in Right side fixed.
+
+## 18.1.48 (2020-05-05)
+
+### Chart
+
+#### Bug Fixes
+
+- `#273192` - Trendlines are short and have the wrong slope direction issue fixed.
+- `#267962` - when using react parcel, chart throws console error issue fixed.
+
+## 18.1.45 (2020-04-21)
+
+### Chart
+
+#### Bug Fixes
+
+- `#271540` - Chart zooming maintained while switch chart type from column to polar issue fixed.
+- `#270524` - chart is broken when use `dir="rtl"` to the body tag issue fixed.
+- `#270548` - While enabling scrollbar half of marker gets hidden issue fixed.
+- `#271515` - Column chart is now working fine with column width is zero.
+
+## 18.1.44 (2020-04-14)
+
+### Chart
+
+#### Bug Fixes
+
+- `#255275` - While disabling some series console error occurs issue has been fixed.
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#271120` - Data labels are displayed even when its y value is zero issue has been fixed.
+- `#152613` - Accumulation chart data label position is not proper when using template issue is fixed.
+
+### Smith Chart
+
+#### Bug Fixes
+
+- `#152336` - Tooltip template issue fixed.
+- `#269225` - Provided event support for before rendering of tooltip
+
+## 18.1.43 (2020-04-07)
+
+### Chart
+
+#### Bug Fixes
+
+- `#269627` - Logarithmic scale does not work with small values issue has been fixed.
+- `#151645` - Error bar value is not updated dynamically issue has fixed.
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `#267438` - Export chart in canvas mode issue has been fixed
+
+## 18.1.36-beta (2020-03-19)
+
+### Chart
+
+#### New Features
+
+- Provided support to highlight the data points in chart.
+- Provided support for patterns to the selected and highlighted data.
+
+#### Bug Fixes
+
+- `#268306` - Console error thrown while hiding tooltip issue has been fixed.
+
+### Bullet Chart
+
+#### New Features
+
+- Provided support to legend for targets, actual value and ranges in bullet chart.
+
+## 17.4.51 (2020-02-25)
+
+### Chart
+
+#### Bug Fixes
+
+- `#264474` - X axis labels are not rendered in center of tick marks when angle is 270 issue has fixed.
+- `#264474` - Console error when angle is provided for x axis and data is assigned on vue mounted method issue has fixed.
+- `#264230` - Tooltip doesn't appears after zooming and hovering on same point has fixed.
+- `#151604` - Console error throwing when toggle the chart enableCanvas mode has fixed.
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- `263828` - Accumulation chart safari browser animation issue has fixed.
 
 ### RangeNavigator
 
 #### Bug Fixes
 
-`#246533` - Misposition of range navigator tooltip while resizing fixed
+- `266063` - Changed Event not triggered while releasing the click outside of the control has fixed.
+
+### Sparkline
+
+#### Bug Fixes
+
+- `#264262` - `rangePadding` property is exposed to render the columns in the sparkline charts with proper axis padding.
+
+## 17.4.50 (2020-02-18)
+
+### Chart
+
+#### Bug Fixes
+
+- `#262128` - Legend gets cropped while adding series dynamically issue has fixed.
+- `#261471` - Pie annotation template is not center in `blazor` issue fixed.
+- `#255275` - Trendline throws console error when legend click issue fixed.
+- `#262734` - Stripline date time is not support in asp core issue fixed.
+
+## 17.4.47 (2020-02-05)
+
+### Chart
+
+#### Bug Fixes
+
+- `262642` - Accumulation Chart data manager result getting previous data while using query issue has fixed.
+- `147090` - 'clearSeries' Method is added to the Chart for clearing the all series.
+- `#149030` - Label Intersect Action does not work for datalabel template issue fixed.
+- `#262400` - Tooltip y value is not working when enable the group separator issue fixed.
+
+## 17.4.46 (2020-01-30)
+
+### Chart
+
+#### New Features
+
+- `#260004` - Provided support for polar and radar column spacing.
+- `#257784` - Provided support for smart rendering of X-axis rotated labels.
+- `#254646` - Provided Before export event support for export in chart.
+
+#### Bug Fixes
+
+- `#260205` - While using animate() method one series is not removed issue is fixed now.
+- `#255275` - Console error thrown when changing the trendline type from linear to exponential trendline or                 other types is fixed now.
+
+## 17.4.41 (2020-01-07)
+
+### Stock Chart
+
+#### New Features
+
+- `#257199` - Provided support to enable/disable the Date Range Picker in Stock Chart's period selector.
+
+#### Bug Fixes
+
+- `#257199` - Tooltip stops showing after resizing window issue has fixed.
+
+## 17.4.40 (2019-12-24)
+
+### Chart
+
+#### Bug Fixes
+
+- `#149930` - Chart with DataManager in offline mode makes a request to the server for multiple times issue got fixed.
+- Issue in Stacking line series with multiple axes is fixed now.
+- `#257935` - Alignment issue in axis labels when rotated at 90 degree is fixed now.
+
+## 17.4.39 (2019-12-17)
+
+### RangeNavigator
+
+#### Bug Fixes
+
+- `#255451` - Label alignment issue in range navigator has been fixed.
+
+### Chart
+
+#### Bug Fixes
+
+- `#256664` - Polar and radar axis labels overlapping with legend issue got fixed.
+- `#149497` - Axis labels are invalid when using label format as percentage in stacking 100 percent series types issue got fixed.
+
+- `#256664` - Polar and radar axis labels overlapping with legend issue fixed.
+- `#149497` - Axis labels are invalid when using label format as percentage in stacking 100 percent series types issue fixed.
+
+### Bullet Chart
+
+Bullet Chart is the variation of bar chart, which displays one or more measures, and compares it to a target value. You can also display the measures in a qualitative range of performance such as poor, satisfactory, or good. All stock elements are rendered by using Scalable Vector Graphics (SVG).
 
 
-## 17.2.47 (2019-08-27)
+- **Data Binding** - Binds the data with local and remote data source.
+- **Animation** - Feature and target bar will be animated when rendering.
+- **Tooltip** - Supports tooltip for the feature and target bar.
+- **Orientation** - Supports vertical and horizontal rendering.
+- **Flow Direction** - Supports to render from right to left.
+- **Multiple Target** - Supports multiple targets.
+- **Data Labels** - Supports data label to enhance the data.
+
+## 17.3.30 (2019-12-03)
+
+### Chart
+
+#### Bug Fixes
+
+- `#256664` - Polar and radar axis labels overlapping with legend issue fixed.
+
+## 17.3.28 (2019-11-19)
+
+### Chart
+
+#### Bug Fixes
+
+- #252450 - In Polar series, selection did not work while clicking center of the marker which is plotted in the axis line is fixed
+- #254803 - While clicking legend corresponding axis of the series will hide now.
+- #252450 - Selection applied for marker shadow element is prevented now.
+- #255392 - Axis label tooltip not disappeared when the mouse is moved away from chart issue fixed.
+- #254710 - Border customization is not applied for legend in scatter chart is fixed.
+
+## 17.3.27 (2019-11-12)
+
+### Chart
+
+#### Bug Fixes
+
+- #250481 - Radar and Polar Chart isClosed not connecting to the first point when the minimum value set for the y axis issue has been fixed.
+
+## 17.3.26 (2019-11-05)
+
+### Chart
+
+#### New Features
+
+- #250563 - Provided support to render background image for chart.
+
+#### Bug Fixes
+
+- #253297 - Cross shape is now working fine in scatter chart.
+
+## 17.3.21 (2019-10-30)
+
+### Chart
+
+#### New Features
+
+- #249556 - Provided smart data label for polar radar chart.
+- #249971 - Provided support to trim polar radar axis labels based on available size.
+
+#### Bug Fixes
+
+- #250412 - The axis missing in polar and radar issue is fixed.
+- #148064 - Legend color is not working when using point color mapping issue is fixed.
+- #252450 - Selection while clicking on marker border issue is fixed.
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- #252357 - 'remove' method is not support in IE 11 issue fixed.
+
+## 17.3.19 (2019-10-22)
+
+### Accumulation chart
+
+#### Bug Fixes
+
+- #148287 - Series DataSource change accumulation chart refresh issue fixed.
+
+### Chart
+
+#### Bug Fixes
+
+- #250074 - Label placement between ticks is not working for radar chart issue fixed.
+- #251346 - Radar and polar chart of draw type column and stacked column the values are plotted differently issue fixed
+
+## 17.3.17 (2019-10-15)
+
+### Chart
+
+#### New Features
+
+- #249554 - Provided smart axis label for polar radar chart.
+- #239599 - Provided event support for tooltip template.
+
+## 17.3.16 (2019-10-09)
+
+### Accumulation Chart
+
+#### New Features
+
+- #249611 - Provided duration support for hiding the tooltip.
+
+### Chart
+
+#### New Features
+
+- #249611 - Provided duration support for hiding the tooltip.
+
+#### Bug Fixes
+
+- #249730 - Polar chart column series with inversed axis with OnTicks rendering issue fixed.
+- #250074 - Radar chart values are wrongly plotted in outside the axis issue fixed.
+- #250064 - Radar and Polar Chart of Scatter Type is not rendering when the Value label is enabled issue fixed.
+- #250336 - es2015 script error issue has fixed.
+- #250081 - Radar and Polar chart when only one data is passed it is appearing as single dot issue fixed.
+
+### Stock Chart
+
+#### Bug Fixes
+
+- `#249956` - Annotation rendering issue has fixed.
+
+## 17.3.14 (2019-10-03)
+
+### Chart
+
+#### New Features
+
+- Trim support have been provided for axis title in chart.
+- Axis padding at desired position has been provided.
+
+## 17.3.9-beta (2019-09-20)
+
+### Accumulation Chart
+
+#### New Features
+
+- Border support have been provided for doughnut and pie while hovering.
+- Options have been provided to rotate data labels.
+
+### Chart
+
+#### New Features
+
+- Options provided to customize the series tooltip format separately.
+- Multi-select options have been provided to allow users to select multiple regions in a chart.
+- Lasso select options have been provided to allow users to select a region by drawing freehand shapes.
+- Options have been provided to rotate data labels.
+
+## 17.2.48-beta (2019-08-28)
 
 ### Chart
 

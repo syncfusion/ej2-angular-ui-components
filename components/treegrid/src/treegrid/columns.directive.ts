@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular TreeGrid. 
@@ -26,11 +26,14 @@ let outputs: string[] = [];
     }
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
+    public directivePropList: any;
 
 
     /** 
      * Defines the data type of the column.
      * @default null
+     * @blazortype Syncfusion.Blazor.Grids.ColumnType
+     * @blazordefaultvalueignore 
      */
     public type: any;
     /** 
@@ -71,7 +74,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.ClipMode.Ellipsis
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode
+     * @blazortype Syncfusion.Blazor.Grids.ClipMode
      */
     public clipMode: any;
     /** 
@@ -118,11 +121,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines default values for the component when adding a new record to the TreeGrid.
      * @default null
+     * @blazortype object
      */
     public defaultValue: any;
     /** 
      * If `disableHtmlEncode` is set to true, it encodes the HTML of the header and content cells.
-     * @default false
+     * @default true
      */
     public disableHtmlEncode: any;
     /** 
@@ -138,6 +142,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the type of component for editing.
      * @default 'stringedit'
+     * @blazortype Syncfusion.Blazor.Grids.EditType
+     * @blazordefaultvalue Syncfusion.Blazor.Grids.EditType.DefaultEdit
      */
     public editType: any;
     /** 
@@ -146,6 +152,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * The `field` name must be a valid JavaScript identifier, 
      * the first character must be an alphabet and should not contain spaces and special characters.
      * @default 'undefined'
+     * @blazordefaultvalue ''
      */
     public field: any;
     /** 
@@ -220,7 +227,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @blazordefaultvalueignore 
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
+     * @blazortype Syncfusion.Blazor.Grids.TextAlign
      */
     public headerTextAlign: any;
     /** 
@@ -229,6 +236,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default 'undefined'
      */
     public hideAtMedia: any;
+    /** 
+     * You can use this property to freeze selected columns in grid.
+     * @default false
+     */
+    public isFrozen: any;
     /** 
      * If `isIdentity` is set to true, then this column is considered as identity column.
      * @default false
@@ -267,6 +279,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public showColumnMenu: any;
     /** 
+     * If `showInColumnChooser` set to false, then hide the particular column in column chooser. 
+     *  By default all columns are displayed in column Chooser.
+     * @default true
+     */
+    public showInColumnChooser: any;
+    /** 
      * Defines the sort comparer property.
      * @default 'undefined'
      */
@@ -276,7 +294,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
+     * @blazortype Syncfusion.Blazor.Grids.TextAlign
      */
     public textAlign: any;
     /** 
@@ -346,6 +364,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

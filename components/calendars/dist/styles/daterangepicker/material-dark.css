@@ -74,11 +74,54 @@
   font-size: 18px;
 }
 
+.e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
+.e-bigger .e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-bigger.e-outline .e-input-group-icon.e-range-icon,
+.e-bigger .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 24px;
+}
+
+.e-small .e-date-range-wrapper.e-outline .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-small.e-outline .e-input-group-icon.e-range-icon,
+.e-small .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 18px;
+}
+
+.e-bigger.e-small .e-outline.e-date-range-wrapper .e-input-group-icon.e-range-icon,
+.e-bigger.e-small.e-outline.e-date-range-wrapper .e-input-group-icon.e-range-icon,
+.e-date-range-wrapper.e-control-wrapper.e-bigger.e-small.e-outline .e-input-group-icon.e-range-icon,
+.e-bigger.e-small .e-date-range-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-range-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
 /*! daterangepicker layout */
 .e-input-group.e-control-wrapper.e-date-range-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
 .e-float-input.e-control-wrapper.e-input-group.e-date-range-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
   display: -ms-flexbox;
   display: flex;
+}
+
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  visibility: hidden;
+  width: 0;
 }
 
 .e-daterangepicker.e-popup,
@@ -123,7 +166,6 @@
   text-decoration: none;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -146,7 +188,6 @@
   margin: 0 0 15px 0;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -438,7 +479,6 @@
   -ms-flex-pack: center;
       justify-content: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -866,7 +906,7 @@
 
 .e-daterangepicker.e-popup .e-presets .e-list-item.e-active,
 .e-bigger.e-small .e-daterangepicker.e-popup .e-presets .e-list-item.e-active {
-  background-color: none;
+  background-color: transparent;
   color: #00b0ff;
 }
 

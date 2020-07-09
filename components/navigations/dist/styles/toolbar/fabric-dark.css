@@ -240,7 +240,7 @@
   height: inherit;
   margin: 0;
   min-height: 50px;
-  min-width: "";
+  min-width: 0;
   padding: 0;
 }
 
@@ -343,7 +343,7 @@
   height: inherit;
   margin: 0;
   min-height: 50px;
-  min-width: "";
+  min-width: 0;
   padding: 0;
 }
 
@@ -420,7 +420,6 @@
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -1212,22 +1211,22 @@
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:focus {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:hover {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:active {
   background: #514f4f;
   border-color: #514f4f;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -1256,9 +1255,9 @@
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active,
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
   background: #514f4f;
-  border: "";
+  border: 0;
   border-left: 1px solid #514f4f;
-  box-shadow: "";
+  box-shadow: none;
 }
 
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active .e-icons,
@@ -1275,14 +1274,14 @@
 .e-toolbar .e-tbar-btn:focus {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
 .e-toolbar .e-tbar-btn:hover {
   background: #414040;
   border-color: #414040;
-  border-radius: "";
+  border-radius: 0;
   color: #dadada;
 }
 
@@ -1318,7 +1317,7 @@
   border-width: 0 1px 0 0;
 }
 
-.e-toolbar.e-rtl .e-hor-nav:not(.e-hor-nav.e-nav-active):hover {
+.e-toolbar.e-rtl .e-hor-nav:not(.e-nav-active):hover {
   background: #414040;
   color: #dadada;
 }
@@ -1334,8 +1333,8 @@
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):active {
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #dadada;
 }
 
@@ -1345,21 +1344,21 @@
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):hover {
   background: #414040;
-  border-left: "";
+  border-left: 0;
   color: #dadada;
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):focus {
   background: #414040;
-  border-color: #414040;
-  border-left: "";
+  border-left: 0;
   color: #dadada;
+  border-color: #414040;
 }
 
 .e-toolbar .e-tbar-btn:active {
   background: #514f4f;
   border-color: #514f4f;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }

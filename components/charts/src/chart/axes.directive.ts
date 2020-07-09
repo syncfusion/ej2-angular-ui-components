@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { StripLinesDirective } from './striplines.directive';
 import { MultiLevelLabelsDirective } from './multilevellabels.directive';
 
-let input: string[] = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
+let input: string[] = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableScrollbarOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 let outputs: string[] = [];
 /**
  * Axis Directive
@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
+    public directivePropList: any;
     public childStripLines: any;
     public childMultiLevelLabels: any;
     public tags: string[] = ['stripLines', 'multiLevelLabels'];
@@ -80,6 +81,11 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public enableAutoIntervalOnZooming: any;
     /** 
+     * Enables the scrollbar for zooming.
+     * @default true
+     */
+    public enableScrollbarOnZooming: any;
+    /** 
      * Specifies the Trim property for an axis.
      * @default false
      */
@@ -130,6 +136,11 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * @default Trim
      */
     public labelIntersectAction: any;
+    /** 
+     * Specifies the labelPadding from axis
+     * @default 5
+     */
+    public labelPadding: any;
     /** 
      * Specifies the placement of a label for category axis. They are, 
      * * betweenTicks: Renders the label between the ticks. 
@@ -229,6 +240,26 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public plotOffset: any;
     /** 
+     * Bottom padding for the plot area in pixels.
+     * @default null
+     */
+    public plotOffsetBottom: any;
+    /** 
+     * Left padding for the plot area in pixels.
+     * @default null
+     */
+    public plotOffsetLeft: any;
+    /** 
+     * Right padding for the plot area in pixels.
+     * @default null
+     */
+    public plotOffsetRight: any;
+    /** 
+     * Top padding for the plot area in pixels.
+     * @default null
+     */
+    public plotOffsetTop: any;
+    /** 
      * Specifies the padding for the axis range in terms of interval.They are, 
      * * none: Padding cannot be applied to the axis. 
      * * normal: Padding is applied to the axis based on the range calculation. 
@@ -255,6 +286,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     /** 
      * It specifies the type of format to be used in dateTime format process.
      * @default 'DateTime'
+     * @deprecated 
      */
     public skeletonType: any;
     /** 
@@ -267,6 +299,11 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * @default 0
      */
     public startAngle: any;
+    /** 
+     * It specifies whether the axis to be start from zero.
+     * @default true
+     */
+    public startFromZero: any;
     /** 
      * Specifies the stripLine collection for the axis
      */
@@ -323,6 +360,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

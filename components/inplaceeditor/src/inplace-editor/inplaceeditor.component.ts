@@ -5,8 +5,8 @@ import { InPlaceEditor } from '@syncfusion/ej2-inplace-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','type','url','validationRules','value'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beginEdit','created','destroyed','validating'];
+export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enableHtmlSanitizer','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','textOption','type','url','validationRules','value'];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','created','destroyed','validating'];
 export const twoWays: string[] = [''];
 
 /**
@@ -34,11 +34,17 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class InPlaceEditorComponent extends InPlaceEditor implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
 
     /** 
      * Specifies the HTML element ID as a string that can be added as a editable field.
+     * 
+     * {% codeBlock src='inplace-editor/template/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @blazortype string
      */
@@ -104,6 +110,8 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -119,15 +127,20 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-## 17.2.40 (2019-08-06)
+## 17.4.40 (2019-12-24)
+
+### Toast
+
+#### Bug Fixes
+
+- `#254606` - Web accessibility related issues have been resolved.
+
+## 17.4.39 (2019-12-17)
+
+### Toast
+
+#### Bug Fixes
+
+`#F149339`, `#256583` - The issue with passing empty string value to cssClass API has been fixed.
+
+## 17.3.27 (2019-11-12)
+
+### Toast
+
+#### New Features
+
+- `252807` - Provided the support to access the 'dynamic toast model properties passed in the show method', as arguments in the `beforeOpen`, `open` and `close` events.
+
+## 17.2.48-beta (2019-08-28)
 
 ### Toast
 

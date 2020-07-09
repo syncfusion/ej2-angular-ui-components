@@ -156,9 +156,13 @@
   font-weight: normal;
 }
 
+.e-accordion .e-acrdn-item.e-overlay {
+  height: auto;
+}
+
 .e-accordion .e-acrdn-item {
   overflow: hidden;
-  padding-top: "";
+  padding-top: 0;
   position: relative;
 }
 
@@ -309,7 +313,7 @@
 /*! accordion theme */
 .e-accordion {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #fff;
+  background: #303030;
   border: 1px solid #616161;
 }
 
@@ -331,7 +335,7 @@
 }
 
 .e-accordion .e-acrdn-item.e-overlay {
-  background: #fff;
+  background: #303030;
 }
 
 .e-accordion .e-acrdn-item.e-selected.e-select.e-expand-state > .e-acrdn-header:focus {

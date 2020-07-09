@@ -178,9 +178,13 @@
   font-weight: normal;
 }
 
+.e-accordion .e-acrdn-item.e-overlay {
+  height: auto;
+}
+
 .e-accordion .e-acrdn-item {
   overflow: hidden;
-  padding-top: "";
+  padding-top: 0;
   position: relative;
 }
 
@@ -378,11 +382,11 @@
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:hover {
-  background: "";
+  background: transparent;
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:active {
-  background: "";
+  background: transparent;
 }
 
 .e-accordion .e-acrdn-item .e-acrdn-header:focus {

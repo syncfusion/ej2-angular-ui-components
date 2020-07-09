@@ -1,5 +1,3 @@
-[![coverage](http://ej2.syncfusion.com/badges/ej2-angular-base/coverage.svg)](http://ej2.syncfusion.com/badges/ej2-angular-base)
-
 # ej2-angular-base
 
 A common package of Syncfusion Angular UI Components which contains base libraries, methods and class definitions.

@@ -200,8 +200,8 @@
 
 .e-vscroll.e-rtl .e-scroll-nav:hover {
   background: #ecf;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #000;
 }
 
@@ -211,7 +211,7 @@
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:hover {
   background: #ecf;
-  border: "";
+  border: 0;
   color: #000;
   border: 1px solid #000;
 }
@@ -222,8 +222,8 @@
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #ecf;
-  border: "";
-  border-color: "";
+  border: 0;
+  border-color: transparent;
   color: #000;
   background: inherit;
   border: 2px solid #fff;
@@ -231,8 +231,8 @@
 
 .e-vscroll:not(.e-scroll-device) .e-scroll-nav:active {
   background: #400074;
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 

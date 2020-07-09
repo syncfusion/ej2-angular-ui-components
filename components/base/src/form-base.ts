@@ -8,6 +8,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public value: T;
     public checked: boolean;
     private skipFromEvent: boolean;
+    static readonly isFormBase = true;
 
     public propagateChange(_: T): void { return; }
     public propagateTouch(): void { return; }
@@ -78,18 +79,21 @@ export class FormBase<T> implements ControlValueAccessor {
         setValue(prop, (isNullOrUndefined(newVal) ? null : newVal), this.properties);
         getValue(prop + 'Change', this).emit(newVal);
     }
-    public ngAfterViewInit(): void {
+    // tslint:disable-next-line:no-any
+    public ngAfterViewInit(isTempRef?: any): void {
+        // tslint:disable-next-line:no-any
+        let tempFormAfterViewThis: any = isTempRef || this;
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         // setTimeout(() => {
-            /* istanbul ignore else */
-            if (typeof window !== 'undefined') {
-                this.appendTo(this.element);
-                let ele: HTMLElement = this.inputElement || this.element;
-                ele.addEventListener('focus', this.ngOnFocus.bind(this));
-                ele.addEventListener('blur', this.ngOnBlur.bind(this));
-            }
+        /* istanbul ignore else */
+        if (typeof window !== 'undefined') {
+            tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
+            let ele: HTMLElement = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
+            ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
+            ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
+        }
         // });
     }
     public setDisabledState(disabled: boolean): void {
@@ -98,12 +102,19 @@ export class FormBase<T> implements ControlValueAccessor {
     }
 
     public writeValue(value: T): void {
+        let regExp: RegExp = /ejs-radiobutton/g;
         //update control value from angular
         if (this.checked === undefined) {
             this.value = value;
         } else {
+            // To resolve boolean type formControl value is not working for radio button control.
+            /* istanbul ignore next */
             if (typeof value === 'boolean') {
-                this.checked = value;
+                if (this.ngEle && regExp.test(this.ngEle.nativeElement.outerHTML)) {
+                    this.checked = value === this.value;
+                } else {
+                    this.checked = value;
+                }
             } else {
                 this.checked = value === this.value;
             }

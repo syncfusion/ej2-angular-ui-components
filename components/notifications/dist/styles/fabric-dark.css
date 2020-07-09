@@ -624,6 +624,10 @@ button .e-badge.e-badge-circle.e-badge-ghost {
   min-height: 100px;
 }
 
+.e-blazor-toast-hidden {
+  visibility: hidden;
+}
+
 .e-toast-container .e-toast {
   background-color: #282727;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -694,7 +698,7 @@ button .e-badge.e-badge-circle.e-badge-ghost {
 }
 
 .e-toast-container .e-toast.e-toast-warning:hover {
-  background-color: b56f00;
+  background-color: #b56f00;
   box-shadow: 0 3px 6px 0 rgba(248, 248, 248, 0.26);
   color: #fff;
 }

@@ -20,7 +20,6 @@
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -200,7 +199,7 @@
 .e-btn.e-small.e-rtl .e-icon-left,
 .e-css.e-btn.e-small.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-btn.e-block,
@@ -308,7 +307,7 @@
 .e-small .e-css.e-btn.e-rtl .e-icon-left,
 .e-small.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-bigger.e-small .e-btn,
@@ -1529,7 +1528,6 @@
   line-height: 1;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1572,7 +1570,6 @@
   font-weight: normal;
   line-height: 18px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -1926,7 +1923,7 @@
 
 .e-checkbox-wrapper .e-frame,
 .e-css.e-checkbox-wrapper .e-frame {
-  background-color: none;
+  background-color: transparent;
   border-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1992,7 +1989,7 @@
 
 .e-checkbox-wrapper:hover .e-frame,
 .e-css.e-checkbox-wrapper:hover .e-frame {
-  background-color: none;
+  background-color: transparent;
   border-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -2051,13 +2048,13 @@
 
 .e-checkbox-wrapper.e-focus .e-frame,
 .e-css.e-checkbox-wrapper.e-focus .e-frame {
-  outline: none 0 solid;
+  outline: transparent 0 solid;
   outline-offset: 0;
 }
 
 .e-checkbox-wrapper.e-focus .e-frame.e-check,
 .e-css.e-checkbox-wrapper.e-focus .e-frame.e-check {
-  outline: none 0 solid;
+  outline: transparent 0 solid;
   outline-offset: 0;
 }
 
@@ -2065,6 +2062,7 @@
 .e-radio-wrapper {
   display: inline-block;
   line-height: 1;
+  position: relative;
 }
 
 .e-radio {
@@ -2082,7 +2080,6 @@
   margin: 0;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2623,7 +2620,6 @@
   height: 12px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 34px;
@@ -3350,7 +3346,7 @@
 
 .e-switch-wrapper .e-switch-inner.e-switch-active,
 .e-css.e-switch-wrapper .e-switch-inner.e-switch-active {
-  background-color: none;
+  background-color: transparent;
   border-color: transparent;
 }
 
@@ -3438,7 +3434,7 @@
 
 .e-switch-wrapper:hover .e-switch-inner,
 .e-css.e-switch-wrapper:hover .e-switch-inner {
-  background-color: none;
+  background-color: transparent;
   border-color: inherit;
 }
 
@@ -3503,7 +3499,7 @@
 
 .e-switch-wrapper.e-rtl .e-switch-on,
 .e-css.e-switch-wrapper.e-rtl .e-switch-on {
-  background-color: none;
+  background-color: #00b0ff;
 }
 
 .e-switch-wrapper.e-rtl .e-switch-handle,
@@ -3524,7 +3520,7 @@
 
 .e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active,
 .e-css.e-switch-wrapper.e-rtl .e-switch-inner.e-switch-active {
-  background-color: none;
+  background-color: transparent;
   border-color: transparent;
 }
 
@@ -3646,7 +3642,6 @@
   cursor: pointer;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
   font-size: 13px;
   font-weight: 400;
   height: 28px;
@@ -3660,7 +3655,6 @@
   position: relative;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -3737,6 +3731,43 @@
   font-family: 'e-icons';
 }
 
+.e-chip-list.e-chip .image-url,
+.e-chip-list .e-chip .image-url {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  height: 20px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 8px 0 -6px;
+  overflow: hidden;
+  width: 20px;
+}
+
+.e-chip-list.e-chip .trailing-icon-url,
+.e-chip-list .e-chip .trailing-icon-url {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'e-icons';
+  font-size: 14px;
+  height: 14px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 -2px 0 8px;
+  overflow: hidden;
+  width: 14px;
+}
+
 .e-chip-list:not(.e-chip) {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -3809,6 +3840,11 @@
   border-radius: 14px;
 }
 
+.e-chip-list.e-rtl.e-chip .trailing-icon-url,
+.e-chip-list.e-rtl .e-chip .trailing-icon-url {
+  margin: 0 8px 0 -2px;
+}
+
 .e-chip-list.e-rtl.e-multi-selection .e-chip::before {
   margin: 0 -6px 0 8px;
   margin-top: 0;
@@ -3853,6 +3889,14 @@
 
 .e-bigger .e-chip-list .e-chip-delete,
 .e-bigger.e-chip-list .e-chip-delete {
+  font-size: 16px;
+  height: 18px;
+  margin: 0 -4px 0 8px;
+  width: 18px;
+}
+
+.e-bigger .e-chip-list .trailing-icon-url,
+.e-bigger.e-chip-list .trailing-icon-url {
   font-size: 16px;
   height: 18px;
   margin: 0 -4px 0 8px;
@@ -3921,6 +3965,11 @@
 .e-bigger.e-chip-list.e-rtl.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
   margin: 0 -12px 0 8px;
   margin-top: 0;
+}
+
+.e-bigger .e-chip-list.e-rtl .trailing-icon-url,
+.e-bigger.e-chip-list.e-rtl .trailing-icon-url {
+  margin: 0 8px 0 -4px;
 }
 
 .e-chip-list.e-chip,

@@ -276,7 +276,7 @@
   height: calc(100% - 11px);
   margin: 5.5px 0;
   min-height: 0;
-  min-width: "";
+  min-width: 0;
   padding: 0 6px;
 }
 
@@ -377,7 +377,7 @@
   height: calc(100% - 11px);
   margin: 5.5px 0;
   min-height: 0;
-  min-width: "";
+  min-width: 0;
   padding: 0 6px;
 }
 
@@ -453,7 +453,6 @@
   -ms-touch-action: none;
       touch-action: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -1244,22 +1243,22 @@
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:focus {
   background: rgba(255, 255, 255, 0.1);
   border-color: #000;
-  border-radius: "";
+  border-radius: 0;
   color: #000;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: #000;
-  border-radius: "";
+  border-radius: 0;
   color: #000;
 }
 
 .e-toolbar.e-extended-toolbar .e-toolbar-extended .e-toolbar-item .e-tbar-btn:active {
   background: #616161;
   border-color: #616161;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -1284,9 +1283,9 @@
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active,
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active:not(.e-expended-nav) {
   background: rgba(255, 255, 255, 0.1);
-  border: "";
-  border-left: 1px "" rgba(255, 255, 255, 0.1);
-  box-shadow: "";
+  border: 0;
+  border-left: 1px none rgba(255, 255, 255, 0.1);
+  box-shadow: none;
 }
 
 .e-toolbar.e-toolpop .e-hor-nav.e-nav-active .e-icons,
@@ -1303,14 +1302,14 @@
 .e-toolbar .e-tbar-btn:focus {
   background: rgba(255, 255, 255, 0.1);
   border-color: #000;
-  border-radius: "";
+  border-radius: 0;
   color: #000;
 }
 
 .e-toolbar .e-tbar-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: #000;
-  border-radius: "";
+  border-radius: 0;
   color: #000;
 }
 
@@ -1346,7 +1345,7 @@
   border-width: 0 1px 0 0;
 }
 
-.e-toolbar.e-rtl .e-hor-nav:not(.e-hor-nav.e-nav-active):hover {
+.e-toolbar.e-rtl .e-hor-nav:not(.e-nav-active):hover {
   background: rgba(255, 255, 255, 0.1);
   color: #000;
 }
@@ -1372,8 +1371,8 @@
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):active {
-  border: "";
-  box-shadow: "";
+  border: 0;
+  box-shadow: none;
   color: #000;
 }
 
@@ -1384,21 +1383,21 @@
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):hover {
   background: rgba(255, 255, 255, 0.1);
-  border-left: "";
+  border-left: 0;
   color: #000;
 }
 
 .e-toolbar .e-hor-nav:not(.e-expended-nav):focus {
   background: rgba(255, 255, 255, 0.1);
-  border-color: #000;
-  border-left: "";
+  border-left: 0;
   color: #000;
+  border-color: #000;
 }
 
 .e-toolbar .e-tbar-btn:active {
   background: #616161;
   border-color: #616161;
-  border-radius: "";
-  box-shadow: "";
+  border-radius: 0;
+  box-shadow: none;
   color: #000;
 }

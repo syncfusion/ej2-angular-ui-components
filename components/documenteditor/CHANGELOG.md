@@ -2,6 +2,859 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Document Editor
+
+#### Breaking Changes
+
+- The property `dropDownItems` in DropDownFormFieldInfo is changed to `dropdownItems`.
+
+#### New Features
+
+- `#268210` - Added support to customize user color in comment.
+- `#268211` - Added support for restricting the user from delete comment.
+- `#125563`,`#167098`,`#200655`,`#210401`,`#227193`,`#225881`,`#227250`,`#238531`,`#238529`,`#249506`,`#251329`,`#251816`,`#252988`,`#254094`, `#125563`,`#255850`, `#258472`, `#264794`, `#264634`, `#266286`, `#278191` - Added support for track changes.
+- `#272634` - Added API to get hidden bookmark.
+- `#267067`,`#267934` - Added API to customize font family dropdown.
+- Added `height` and `width` API to define height and width of document editor.
+- Added support for Legacy Form Fields.
+- Added support for updating bookmark cross reference fields.
+
+#### Bug Fixes
+
+- `#279874` - Resolved paragraph spacing issue in the exported docx when opening it in libre office.
+- `#278039` - Character formatting now preserved properly for dropdown field.
+- `#278038` - Handle restrict editing inside dropdown field.
+- `#278695` - Paste text only in editable region now working properly.
+- `#267924` - Circular reference exception resolved when export the document contains chart.
+- `#152124` - Resolved script error when modify style for locale changed text.
+- `#266059` - Skipped adding bookmark when pasting content with bookmark.
+- `#267949` - Table is now revert properly when insert table below another table.
+- `#268472` - Selection format is now retrieved properly when paragraph contains more than two paragraph.
+- `#269467` - List character format is now update properly when paragraph contains style.
+- `#264813` - Tab width in list paragraph is now layout properly.
+- `#264779` - Text clipping issue is resolved when text inside table.
+- `#269397` - Context menu position is now update properly.
+- `#269546` - Resolved key navigation issue when paragraph contains page break.
+- `#269778` - $ symbol is now search properly when text contains $ symbol.
+- `#269893` - Focus is in document editor after dialog gets closed.
+- `#268907` - Selection character format is retrieved properly when selection is in list text.
+- `#270424` - Footer content is now update properly when document contains more than one section.
+- `#269743` , `#266534` - Focus is now update properly in Firefox when navigate to bookmark or search result.
+- `#271039` - When paste content in RTL paragraph, formatting is now update properly.
+- `#271928` - Resolved script when trying to create a new document and document have broken comments.
+- `#271886` - Right tab width issue when paragraph contains right indent.
+- `#271986` - Resolved error when updating Table of Contents with comments.
+- `#271967` , `#271968` , `#271971` - Paste text only in empty paragraph is now working properly.
+- `#271985` - Resolved script error when remove page break after bookmark.
+- `#272009` , `#273868` - Modify style using numbering and paragraph dialog is now working properly.
+- `#271977` - Pasting text in heading style is now maintain heading style in paragraph.
+- `#271863` - Paragraph element splitting issue is now resolved when alignment is left and line combined with field.
+- `#272290` - Resolved selection issue when paragraph contains line break character.
+- `#272600` - Copy text with specific symbol (< , >) is now working properly.
+- `#266059` - When pasting content with bookmark, bookmark is now preserved.
+- `#269743` - Resolved focus issue in Firefox when navigate to bookmark or search result.
+- `#269546` - Selection issue is now resolved when paragraph contains page break.
+- `#274395` - Resolved script error when clicking on canvas in mobile view mode.
+- `#273345` - Resolved table export issue when table contains vertical merge cell.
+- `#271450` - Restricted user editing, when spinner is visible.
+- `#271375` - Resolved table layout issue when table contain vertical merged cells.
+- `#252868` - Resolved script error when minimize row height.
+- `#275993` ,`#277160` - Button actions in comments and restrict editing pane will not trigger the form submit events now.
+- `#276810` - Table alignment property is now export properly.
+- `#277452` - Contents in table is now print properly.
+- `#273870` - Bookmarks API will not retrieve bookmark when selection is at end of bookmark.
+- `#273913` - Enable/Disable item by index in toolbar is now working properly.
+- `#276399` - After copy and paste table, table is now exported properly.
+- Comments pane locale string is now returns proper time.
+- `#275137` - Apply vertical alignment for cell is now working properly when it inside table.
+- `#275184` - Select bookmark API is now select bookmark element properly.
+- `#275452` - Select current word using keys is now working properly when line contains comments.
+- `#274525` - List font is now update properly on enter in list paragraph.
+- `#273905` - Insert row below is now proper when cells have different borders.
+- `#272762` - Modify list level using tab key is now proper.
+- `#277823` - Resolved script error when deleting edit range element inside table.
+- `#247077` - Selection is now updated properly while clicking before merge field.
+- `#277357` - Table borders are now rendered properly.
+- `#275686` - `contentChange` event will not trigger while switching the layout type.
+- `#276616` - Paragraph format now preservers properly while inserting text.
+- `#276039` - Adding new comment and replying to old comment is now disable in read only mode.
+- `#277959` - Document with shape now imported properly.
+- `#153583` - Selection is now updated properly for image inside the bookmark.
+- `#278685` - Resolved script error on backspace inside the edit range.
+- `#247077` - Selection is now updated properly while clicking before merge field.
+- `#277357` - Table borders are now rendered properly.
+- `#275686` - `contentChange` event will not trigger while switching the layout type.
+- `#276616` - Paragraph format now preservers properly while inserting text.
+- `#276039` - Adding new comment and replying to old comment is now disable in read only mode.
+- `#277959` - Document with shape now imported properly.
+- `#153583` - Selection is now updated properly for image inside the bookmark.
+
+## 18.1.56 (2020-06-09)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#278685` - Resolved script error on backspace inside the edit range.
+- `#247077` - Selection is now updated properly while clicking before merge field.
+- `#277357` - Table borders are now rendered properly.
+- `#275686` - `contentChange` event will not trigger while switching the layout type.
+- `#276616` - Paragraph format now preservers properly while inserting text.
+- `#276039` - Adding new comment and replying to old comment is now disable in read only mode.
+- `#277959` - Document with shape now imported properly.
+- `#153583` - Selection is now updated properly for image inside the bookmark.
+
+## 18.1.55 (2020-06-02)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#247077` - Selection is now updated properly while clicking before merge field.
+- `#277357` - Table borders are now rendered properly.
+- `#275686` - `contentChange` event will not trigger while switching the layout type.
+- `#276616` - Paragraph format now preservers properly while inserting text.
+- `#276039` - Adding new comment and replying to old comment is now disable in read only mode.
+- `#277959` - Document with shape now imported properly.
+- `#153583` - Selection is now updated properly for image inside the bookmark.
+
+## 18.1.54 (2020-05-26)
+
+### Document Editor
+
+#### Bug Fixes
+
+- Comments pane locale string is now returns proper time.
+- `#275137` - Apply vertical alignment for cell is now working properly when it inside table.
+- `#275184` - Select bookmark API is now select bookmark element properly.
+- `#275452` - Select current word using keys is now working properly when line contains comments.
+- `#274525` - List font is now update properly on enter in list paragraph.
+- `#273905` - Insert row below is now proper when cells have different borders.
+- `#272762` - Modify list level using tab key is now proper.
+- `#277823` - Resolved script error when deleting edit range element inside table.
+
+## 18.1.53 (2020-05-19)
+
+### Document Editor
+
+#### New Features
+
+- `#272634` - Added API to get hidden bookmark.
+
+#### Bug Fixes
+
+- `#275993` ,`#277160` - Button actions in comments and restrict editing pane will not trigger the form submit events now.
+- `#276810` - Table alignment property is now export properly.
+- `#277452` - Contents in table is now print properly.
+- `#273870` - Bookmarks API will not retrieve bookmark when selection is at end of bookmark.
+- `#273913` - Enable/Disable item by index in toolbar is now working properly.
+- `#276399` - After copy and paste table, table is now exported properly.
+
+## 18.1.52 (2020-05-13)
+
+### Document Editor
+
+#### New Features
+
+- `#267067`,`#267934` - Added API to customize font family dropdown.
+
+#### Bug Fixes
+
+- `#271375` - Resolved table layout issue when table contain vertical merged cells.
+- `#252868` - Resolved script error when minimize row height.
+
+## 18.1.48 (2020-05-05)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#272290` - Resolved selection issue when paragraph contains line break character.
+- `#272600` - Copy text with specific symbol (< , >) is now working properly.
+- `#266059` - When pasting content with bookmark, bookmark is now preserved.
+- `#269743` - Resolved focus issue in Firefox when navigate to bookmark or search result.
+- `#269546` - Selection issue is now resolved when paragraph contains page break.
+- `#274395` - Resolved script error when clicking on canvas in mobile view mode.
+- `#273345` - Resolved table export issue when table contains vertical merge cell.
+- `#271450` - Restricted user editing, when spinner is visible.
+
+## 18.1.46 (2020-04-28)
+
+### Document Editor
+
+#### New Features
+
+- Added `height` and `width` API to define height and width of document editor.
+
+#### Bug Fixes
+
+- `#271928` - Resolved script when trying to create a new document and document have broken comments.
+- `#271886` - Right tab width issue when paragraph contains right indent.
+- `#271986` - Resolved error when updating Table of Contents with comments.
+- `#271967` , `#271968` , `#271971` - Paste text only in empty paragraph is now working properly.
+- `#271985` - Resolved script error when remove page break after bookmark.
+- `#272009` , `#273868` - Modify style using numbering and paragraph dialog is now working properly.
+- `#271977` - Pasting text in heading style is now maintain heading style in paragraph.
+- `#271863` - Paragraph element splitting issue is now resolved when alignment is left and line combined with field.
+
+## 18.1.45 (2020-04-21)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#268907` - Selection character format is retrieved properly when selection is in list text.
+- `#270424` - Footer content is now update properly when document contains more than one section.
+- `#269743` , `#266534` - Focus is now update properly in Firefox when navigate to bookmark or search result.
+- `#271039` - When paste content in RTL paragraph, formatting is now update properly.
+
+## 18.1.44 (2020-04-14)
+
+### Document Editor
+
+#### New Features
+
+- Added support for Legacy Form Fields.
+- Added support for updating bookmark cross reference fields.
+
+#### Bug Fixes
+
+- `#269397` - Context menu position is now update properly.
+- `#269546` - Resolved key navigation issue when paragraph contains page break.
+- `#269778` - $ symbol is now search properly when text contains $ symbol.
+- `#269893` - Focus is in document editor after dialog gets closed.
+
+## 18.1.43 (2020-04-07)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#267924` - Circular reference exception resolved when export the document contains chart.
+- `#152124` - Resolved script error when modify style for locale changed text.
+- `#266059` - Skipped adding bookmark when pasting content with bookmark.
+- `#267949` - Table is now revert properly when insert table below another table.
+- `#268472` - Selection format is now retrieved properly when paragraph contains more than two paragraph.
+- `#269467` - List character format is now update properly when paragraph contains style.
+- `#264813` - Tab width in list paragraph is now layout properly.
+- `#264779` - Text clipping issue is resolved when text inside table.
+
+## 18.1.42 (2020-04-01)
+
+### Document Editor
+
+#### Breaking Changes
+
+- Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
+- Some locale properties are renamed as below
+
+|Previous|Now|
+|----|----|
+|Linked(Paragraph and Character)|Linked Style|
+|Don't add space between the paragraphs of the same styles|Contextual Spacing|
+|The password don't match|Password Mismatch|
+|Exceptions (optional)|Exceptions Optional|
+|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
+|Yes, Start Enforcing Protection|Enforcing Protection|
+|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
+|You may format text only with certain styles.|You may format text only with certain styles|
+|Type your comment hear|Type your comment here|
+|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
+|Header & Footer|Header And Footer|
+|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
+|Different Odd & Even Pages|Different Odd And Even Pages|
+|Different header and footer for first page.|Different header and footer for first page|
+|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
+|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
+|Insert / Delete|Insert Or Delete|
+|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
+|Show page numbers in table of contents.|Show page numbers in table of contents|
+|Right align page numbers in table of contents.|Right align page numbers in table of contents|
+|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
+|Bold (Ctrl+B)|Bold Tooltip|
+|Italic (Ctrl+I)|Italic Tooltip|
+|Underline (Ctrl+U)|Underline Tooltip|
+|Superscript (Ctrl+Shift++)|Superscript Tooltip|
+|Subscript (Ctrl+=)|Subscript Tooltip|
+|Align left (Ctrl+L)|Align left Tooltip|
+|Center (Ctrl+E)|Center Tooltip|
+|Align right (Ctrl+R)|Align right Tooltip|
+|Justify (Ctrl+J)|Justify Tooltip|
+|Create a new document.|Create a new document|
+|Open a document.|Open a document|
+|Undo the last operation (Ctrl+Z).|Undo Tooltip|
+|Redo the last operation (Ctrl+Y).|Redo Tooltip|
+|Insert inline picture from a file.|Insert inline picture from a file|
+|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
+|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
+|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
+|Add or edit the header.|Add or edit the header|
+|Add or edit the footer.|Add or edit the footer|
+|Open the page setup dialog.|Open the page setup dialog|
+|Add page numbers.|Add page numbers|
+|Find text in the document (Ctrl+F).|Find Text|
+|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+
+#### New Features
+
+- `249782`, `254484`, `149278`,`258415`,`260463` - Added support for toolbar customization.
+- `253670` - Enhancements for copy and paste operation.
+- `#262665`, `#151012` - Added API to customize search highlight colour.
+- `#249197` - Added API to enable/disable spell check action.
+- `#237725`, `#253671` - Added support for web layout.
+- `#260639` - Added `enableComment` property to enable and disable comment.
+- `#259970` - Handled paste list behaviour using start at value of list.
+- `#256487` - Enhancements for mouse and keyboard selection.
+
+#### Bug Fixes
+
+- `#263861` - Table cells are now resized properly.
+- `#260600` , `#266651` - RTL characters are now remove properly on backspace and delete.
+- `#260600` - When direction is RTL, elements now rearranged properly after change character formatting.
+- `#250770` , `#263443` - RTL text layout properly with special characters.
+- `#264351` - Justify paragraph is layout properly when paragraph contains field.
+- `#264631` - Stop protection is now working if password is empty.
+- `#263171` - Cell options dialog content is now aligned properly.
+- `#150960` - Hidden separator in context menu when hyperlink is disabled.
+- `#150995` - Resolved error when importing the document with editable region restrictions.
+- `#260600`, `#150466` , `#266311` - Properties pane is now enabled properly based on the context type in header footer region.
+- `#260133` - Resolved navigation issue on Ctrl + click in MAC machine.
+- `150960` - Enable/disable comment now working properly.
+- `#263608` , `#150960` - Resolved script error when disable toolbar.
+- `#261241` - Resolved script error when remove hyperlink in splitted widget.
+- `#259011` - Paragraph before spacing layout issue is now resolved.
+- `#260206` - Resolved numbering list issue when list contains start at value.
+- `#260206` - Restart numbering is now working properly for different number format.
+- `#260637` - Resolved script error when removing comment in header.
+- `#249197` - Resolved exception when export Sfdt to other type in server side.
+- `#252868` - Resolved script error when resize row to next page.
+- `#259972` - Formatting is now applied properly for keep text only option in paste.
+- `#258191` - Table cell width are now updated properly.
+- `#260133`, `#261809` - Page scrolling issue is resolved when right click in MAC machine.
+- `#258087`, `#255070` - Grid columns are now preserved properly on export.
+- `#255070` - Page headers is now export properly when section break in table.
+- `#259583` - List level number for style paragraph is now export properly.
+- `#259153` - Table cell width and height is now copy properly.
+- `#258121` - Resolved warnings in bootstrap4 styles when run the application in Firefox.
+- `#249197` - Highlight colours are now exported properly.
+- `#260048`, `#256276` - Image files are now pasted properly.
+- `#256903` - Resolved bookmarks API issue when bookmark is in table.
+- `#256758` - Resolved selection issue after correcting the spelling mistake.
+- `#258938` - Resolved typo error in place holder of comments text area.
+- `#257481` - Font family in font dialog is now update properly based on current selection.
+- `#257171` - Bookmarks is now update properly after paste with formatting.
+- `#257161` - List number is now update properly when hidden field contains list paragraph.
+- `#246365` - Borders are now render properly when copy and paste from excel.
+- `#257455` - Font colour is now update properly in modify style dialog.
+- `#250770` - Line is now arranged properly when insert field.
+- `#255913`, `#257879` - Bookmark is now insert properly in splitted paragraph.
+- `#255736` , `#256106` , `#257011` - Context menu is now open in Firefox, Edge and Safari.
+- `#254998` - Character format is now apply properly for selected bookmark.
+- `#254997`, `#256764`, `#257106` , `#256764` - Paragraph format is now export properly if document contains selection.
+- `#255272` - Resolved script error when navigate to bookmark in header.
+- `#255188` - Bookmark is now preserved properly in header and footer.
+- `#255601` - Bookmark is now select properly after insert text.
+- `#256385` - Copy is now working properly in Firefox.
+- `#256321` - Auto fit table is now lay-out properly if maximum word width exceeds container width.
+- `#256509` - Resolved script error throws on backspace when selection is in bookmark end.
+- `#256053` - TOC outline level is now serialized properly on Word export.
+- `#256449` - Bullet list is now render properly in IOS chrome and safari.
+- `#256099` - List is now apply properly in multilevel list.
+- `#256384` - Tab width is now update properly when paragraph contains hanging indent.
+- `#264048` , `#267560` - Header style formatting is now preserved properly in local copy and paste.
+- `#266571` - Table with auto fit is now layout properly.
+- `#266534` - Resolved text navigation issue when spell check is enabled.
+- `#151718` - Dynamic toolbar injection is now working properly.
+- `#266060` - Fixed paste match destination formatting issue.
+- `#267089` , `#255993` - Fixed exception when pasting html content.
+- `#267793`, `#152022` - Resolved page scrolling issue when copy is triggered.
+- `#267769` - Table width is not update properly when insert table inside table cell.
+
+## 18.1.36-beta (2020-03-19)
+
+### Document Editor
+
+#### Breaking Changes
+
+- Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
+- Some locale properties are renamed as below
+
+|Previous|Now|
+|----|----|
+|Linked(Paragraph and Character)|Linked Style|
+|Don't add space between the paragraphs of the same styles|Contextual Spacing|
+|The password don't match|Password Mismatch|
+|Exceptions (optional)|Exceptions Optional|
+|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
+|Yes, Start Enforcing Protection|Enforcing Protection|
+|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
+|You may format text only with certain styles.|You may format text only with certain styles|
+|Type your comment hear|Type your comment here|
+|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
+|Header & Footer|Header And Footer|
+|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
+|Different Odd & Even Pages|Different Odd And Even Pages|
+|Different header and footer for first page.|Different header and footer for first page|
+|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
+|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
+|Insert / Delete|Insert Or Delete|
+|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
+|Show page numbers in table of contents.|Show page numbers in table of contents|
+|Right align page numbers in table of contents.|Right align page numbers in table of contents|
+|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
+|Bold (Ctrl+B)|Bold Tooltip|
+|Italic (Ctrl+I)|Italic Tooltip|
+|Underline (Ctrl+U)|Underline Tooltip|
+|Superscript (Ctrl+Shift++)|Superscript Tooltip|
+|Subscript (Ctrl+=)|Subscript Tooltip|
+|Align left (Ctrl+L)|Align left Tooltip|
+|Center (Ctrl+E)|Center Tooltip|
+|Align right (Ctrl+R)|Align right Tooltip|
+|Justify (Ctrl+J)|Justify Tooltip|
+|Create a new document.|Create a new document|
+|Open a document.|Open a document|
+|Undo the last operation (Ctrl+Z).|Undo Tooltip|
+|Redo the last operation (Ctrl+Y).|Redo Tooltip|
+|Insert inline picture from a file.|Insert inline picture from a file|
+|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
+|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
+|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
+|Add or edit the header.|Add or edit the header|
+|Add or edit the footer.|Add or edit the footer|
+|Open the page setup dialog.|Open the page setup dialog|
+|Add page numbers.|Add page numbers|
+|Find text in the document (Ctrl+F).|Find Text|
+|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+
+#### New Features
+
+- `249782`, `254484`, `149278`,`258415`,`260463` - Added support for toolbar customization.
+- `253670` - Enhancements for copy and paste operation.
+- `#262665`, `#151012` - Added API to customize search highlight colour.
+- `#249197` - Added API to enable/disable spell check action.
+- `#237725`, `#253671` - Added support for web layout.
+- `#260639` - Added `enableComment` property to enable and disable comment.
+- `#259970` - Handled paste list behaviour using start at value of list.
+- `#256487` - Enhancements for mouse and keyboard selection.
+
+#### Bug Fixes
+
+- `#263861` - Table cells are now resized properly.
+- `#260600` , `#266651` - RTL characters are now remove properly on backspace and delete.
+- `#260600` - When direction is RTL, elements now rearranged properly after change character formatting.
+- `#250770` , `#263443` - RTL text layout properly with special characters.
+- `#264351` - Justify paragraph is layout properly when paragraph contains field.
+- `#264631` - Stop protection is now working if password is empty.
+- `#263171` - Cell options dialog content is now aligned properly.
+- `#150960` - Hidden separator in context menu when hyperlink is disabled.
+- `#150995` - Resolved error when importing the document with editable region restrictions.
+- `#260600`, `#150466` , `#266311` - Properties pane is now enabled properly based on the context type in header footer region.
+- `#260133` - Resolved navigation issue on Ctrl + click in MAC machine.
+- `150960` - Enable/disable comment now working properly.
+- `#263608` , `#150960` - Resolved script error when disable toolbar.
+- `#261241` - Resolved script error when remove hyperlink in splitted widget.
+- `#259011` - Paragraph before spacing layout issue is now resolved.
+- `#260206` - Resolved numbering list issue when list contains start at value.
+- `#260206` - Restart numbering is now working properly for different number format.
+- `#260637` - Resolved script error when removing comment in header.
+- `#249197` - Resolved exception when export Sfdt to other type in server side.
+- `#252868` - Resolved script error when resize row to next page.
+- `#259972` - Formatting is now applied properly for keep text only option in paste.
+- `#258191` - Table cell width are now updated properly.
+- `#260133`, `#261809` - Page scrolling issue is resolved when right click in MAC machine.
+- `#258087`, `#255070` - Grid columns are now preserved properly on export.
+- `#255070` - Page headers is now export properly when section break in table.
+- `#259583` - List level number for style paragraph is now export properly.
+- `#259153` - Table cell width and height is now copy properly.
+- `#258121` - Resolved warnings in bootstrap4 styles when run the application in Firefox.
+- `#249197` - Highlight colours are now exported properly.
+- `#260048`, `#256276` - Image files are now pasted properly.
+- `#256903` - Resolved bookmarks API issue when bookmark is in table.
+- `#256758` - Resolved selection issue after correcting the spelling mistake.
+- `#258938` - Resolved typo error in place holder of comments text area.
+- `#257481` - Font family in font dialog is now update properly based on current selection.
+- `#257171` - Bookmarks is now update properly after paste with formatting.
+- `#257161` - List number is now update properly when hidden field contains list paragraph.
+- `#246365` - Borders are now render properly when copy and paste from excel.
+- `#257455` - Font colour is now update properly in modify style dialog.
+- `#250770` - Line is now arranged properly when insert field.
+- `#255913`, `#257879` - Bookmark is now insert properly in splitted paragraph.
+- `#255736` , `#256106` , `#257011` - Context menu is now open in Firefox, Edge and Safari.
+- `#254998` - Character format is now apply properly for selected bookmark.
+- `#254997`, `#256764`, `#257106` , `#256764` - Paragraph format is now export properly if document contains selection.
+- `#255272` - Resolved script error when navigate to bookmark in header.
+- `#255188` - Bookmark is now preserved properly in header and footer.
+- `#255601` - Bookmark is now select properly after insert text.
+- `#256385` - Copy is now working properly in Firefox.
+- `#256321` - Auto fit table is now lay-out properly if maximum word width exceeds container width.
+- `#256509` - Resolved script error throws on backspace when selection is in bookmark end.
+- `#256053` - TOC outline level is now serialized properly on Word export.
+- `#256449` - Bullet list is now render properly in IOS chrome and safari.
+- `#256099` - List is now apply properly in multilevel list.
+- `#256384` - Tab width is now update properly when paragraph contains hanging indent.
+
+## 17.4.55 (2020-03-10)
+
+### Document Editor
+
+#### New Features
+
+- `249782`, `254484`, `149278`,`258415`,`260463` - Added support for toolbar customization.
+
+#### Bug Fixes
+
+- `#263861` - Table cells are now resized properly.
+- `#260600` , `#266651` - RTL characters are now remove properly on backspace and delete.
+- `#260600` - When direction is RTL, elements now rearranged properly after change character formatting.
+- `#250770` , `#263443` - RTL text layout properly with special characters.
+- `#264351` - Justify paragraph is layout properly when paragraph contains field.
+- `#264631` - Stop protection is now working if password is empty.
+
+## 17.4.51 (2020-02-25)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#263171` - Cell options dialog content is now aligned properly.
+- `#150960` - Hidden separator in context menu when hyperlink is disabled.
+- `#150995` - Resolved error when importing the document with editable region restrictions.
+- `#260600`, `#150466` , `#266311` - Properties pane is now enabled properly based on the context type in header footer region.
+- `#260133` - Resolved navigation issue on Ctrl + click in MAC machine.
+
+## 17.4.50 (2020-02-18)
+
+### Document Editor
+
+#### New Features
+
+- `253670` - Enhancements for copy and paste operation.
+
+#### Bug Fixes
+
+- `150960` - Enable/disable comment now working properly.
+
+## 17.4.49 (2020-02-11)
+
+### Document Editor
+
+#### New Features
+
+- `#262665`, `#151012` - Added API to customize search highlight colour.
+- `#249197` - Added API to enable/disable spell check action.
+- `#237725`, `#253671` - Added support for web layout.
+
+#### Bug Fixes
+
+- `#263608` , `#150960` - Resolved script error when disable toolbar.
+- `#261241` - Resolved script error when remove hyperlink in splitted widget.
+- `#259011` - Paragraph before spacing layout issue is now resolved.
+
+## 17.4.47 (2020-02-05)
+
+### Document Editor
+
+#### New Features
+
+- `#260639` - Added `enableComment` property to enable and disable comment.
+- `#259970` - Handled paste list behaviour using start at value of list.
+
+#### Bug Fixes
+
+- `#260206` - Resolved numbering list issue when list contains start at value.
+- `#260206` - Restart numbering is now working properly for different number format.
+- `#260637` - Resolved script error when removing comment in header.
+- `#249197` - Resolved exception when export Sfdt to other type in server side.
+
+## 17.4.46 (2020-01-30)
+
+### Document Editor
+
+#### Breaking Changes
+
+- Default value of `enableLocalPaste` is set to false. So, by default, the content will be pasted from the system clipboard.
+
+#### Bug Fixes
+
+- `#252868` - Resolved script error when resize row to next page.
+- `#259972` - Formatting is now applied properly for keep text only option in paste.
+- `#258191` - Table cell width are now updated properly.
+- `#260133`, `#261809` - Page scrolling issue is resolved when right click in MAC machine.
+
+## 17.4.43 (2020-01-14)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#258087`, `#255070` - Grid columns are now preserved properly on export.
+- `#255070` - Page headers is now export properly when section break in table.
+- `#259583` - List level number for style paragraph is now export properly.
+- `#259153` - Table cell width and height is now copy properly.
+- `#258121` - Resolved warnings in bootstrap4 styles when run the application in Firefox.
+- `#249197` - Highlight colours are now exported properly.
+- `#260048`, `#256276` - Image files are now pasted properly.
+
+## 17.4.41 (2020-01-07)
+
+### Document Editor
+
+#### New Features
+
+- `#256487` - Enhancements for mouse and keyboard selection.
+
+#### Bug Fixes
+
+- `#256903` - Resolved bookmarks API issue when bookmark is in table.
+- `#256758` - Resolved selection issue after correcting the spelling mistake.
+- `#258938` - Resolved typo error in place holder of comments text area.
+- `#257481` - Font family in font dialog is now update properly based on current selection.
+- `#257171` - Bookmarks is now update properly after paste with formatting.
+- `#257161` - List number is now update properly when hidden field contains list paragraph.
+- `#246365` - Borders are now render properly when copy and paste from excel.
+- `#257455` - Font colour is now update properly in modify style dialog.
+- `#250770` - Line is now arranged properly when insert field.
+
+## 17.4.40 (2019-12-24)
+
+### Document Editor
+
+#### Breaking Changes
+
+- Some locale properties are renamed as below
+
+|Previous|Now|
+|----|----|
+|Linked(Paragraph and Character)|Linked Style|
+|Don't add space between the paragraphs of the same styles|Contextual Spacing|
+|The password don't match|Password Mismatch|
+|Exceptions (optional)|Exceptions Optional|
+|Select parts of the document and choose users who are allowed to freely edit them.|Select Part Of Document And User|
+|Yes, Start Enforcing Protection|Enforcing Protection|
+|This document is protected from unintentional editing. You may edit in this region.|Protected Document|
+|You may format text only with certain styles.|You may format text only with certain styles|
+|Type your comment hear|Type your comment here|
+|Added comments not posted. If you continue, that comment will be discarded.|Discard Comment|
+|Header & Footer|Header And Footer|
+|Different header and footer for odd and even pages.|Different header and footer for odd and even pages|
+|Different Odd & Even Pages|Different Odd And Even Pages|
+|Different header and footer for first page.|Different header and footer for first page|
+|Distance from top of the page to top of the header|Distance from top of the page to top of the header|
+|Distance from bottom of the page to bottom of the footer.|Distance from bottom of the page to bottom of the footer|
+|Insert / Delete|Insert Or Delete|
+|Number of heading or outline levels to be shown in table of contents.|Number of heading or outline levels to be shown in table of contents|
+|Show page numbers in table of contents.|Show page numbers in table of contents|
+|Right align page numbers in table of contents.|Right align page numbers in table of contents|
+|Use hyperlinks instead of page numbers.|Use hyperlinks instead of page numbers|
+|Bold (Ctrl+B)|Bold Tooltip|
+|Italic (Ctrl+I)|Italic Tooltip|
+|Underline (Ctrl+U)|Underline Tooltip|
+|Superscript (Ctrl+Shift++)|Superscript Tooltip|
+|Subscript (Ctrl+=)|Subscript Tooltip|
+|Align left (Ctrl+L)|Align left Tooltip|
+|Center (Ctrl+E)|Center Tooltip|
+|Align right (Ctrl+R)|Align right Tooltip|
+|Justify (Ctrl+J)|Justify Tooltip|
+|Create a new document.|Create a new document|
+|Open a document.|Open a document|
+|Undo the last operation (Ctrl+Z).|Undo Tooltip|
+|Redo the last operation (Ctrl+Y).|Redo Tooltip|
+|Insert inline picture from a file.|Insert inline picture from a file|
+|Create a link in your document for quick access to web pages and files (Ctrl+K).|Create Hyperlink|
+|Insert a bookmark in a specific place in this document.|Insert a bookmark in a specific place in this document|
+|Provide an overview of your document by adding a table of contents.|Provide an overview of your document by adding a table of contents|
+|Add or edit the header.|Add or edit the header|
+|Add or edit the footer.|Add or edit the footer|
+|Open the page setup dialog.|Open the page setup dialog|
+|Add page numbers.|Add page numbers|
+|Find text in the document (Ctrl+F).|Find Text|
+|The current page number in the document. Click or tap to navigate specific page.|Current Page Number|
+
+#### Bug Fixes
+
+- `#255913`, `#257879` - Bookmark is now insert properly in splitted paragraph.
+- `#255736` , `#256106` , `#257011` - Context menu is now open in Firefox, Edge and Safari.
+- `#254998` - Character format is now apply properly for selected bookmark.
+- `#254997`, `#256764`, `#257106` , `#256764` - Paragraph format is now export properly if document contains selection.
+- `#255272` - Resolved script error when navigate to bookmark in header.
+- `#255188` - Bookmark is now preserved properly in header and footer.
+- `#255601` - Bookmark is now select properly after insert text.
+- `#256385` - Copy is now working properly in Firefox.
+- `#256321` - Auto fit table is now lay-out properly if maximum word width exceeds container width.
+- `#256509` - Resolved script error throws on backspace when selection is in bookmark end.
+- `#256053` - TOC outline level is now serialized properly on Word export.
+- `#256449` - Bullet list is now render properly in IOS chrome and safari.
+- `#256099` - List is now apply properly in multilevel list.
+- `#256384` - Tab width is now update properly when paragraph contains hanging indent.
+
+## 17.4.39 (2019-12-17)
+
+### Document Editor
+
+#### New Features
+
+- `#249197`, `#249364`, `#148274`, `#253325` Added support for converting SFDT to Word document in server side.
+- `#125563`, `#158324`, `#210401`, `#231575`, `#239871`, `#238529`, `#240405`, `#252988`, `#255850` - Added support for insert and edit comments.
+- `#245203` - Added support for section pages field.
+- `#255626`,`#254750` - RTL and locale is now updated properly on property change.
+- `#251866` - Enhancement for Auto list feature.
+
+## 17.3.29 (2019-11-26)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#252868`, `#254873` - Resolved script error when resizing table row.
+- `#251882` - Line spacing for paragraph is now apply properly when line spacing type is atleast.
+- `#143383` - Paper size drop down is now update properly based on page width and page height.
+- `#255741` - Fixed the focus issue when key pressed on input element.
+- `#250770` - RTL text with special characters are now layout properly.
+- `10269` - Line spacing is now exported properly.
+
+## 17.3.28 (2019-11-19)
+
+### Document Editor
+
+#### New Features
+
+- `#246305` - Added API to check whether selection is in field.
+- `#246305` - Added API to select the current field if selection is in field.
+- `#246305` - Added API to perform delete.
+
+#### Bug Fixes
+
+- `#253511` - Line spacing is now applying properly after set locale to document editor.
+- `#254998` , `#251884` - Updated bookmark collection when bookmark gets added.
+- `#246264` - Table with vertical merged split cells is now layout properly.
+- `#246884` - List is now copied properly.
+
+## 17.3.27 (2019-11-12)
+
+### Document Editor
+
+#### New Features
+
+- `#253104` - Added API to set custom header in XmlHttpRequest.
+
+#### Bug Fixes
+
+- `#251603` - When apply numbering list, continue numbering is now updated properly.
+- `#251689` - Resolved script error after cut and undo operation.
+- `#250599` - Script error now resolved when deleting page break.
+- `#250914` - Updated bookmark collection when bookmark gets removed.
+- `#251606` - Scrolling is now proper when mouse move out of document editor.
+
+## 17.3.26 (2019-11-05)
+
+### Document Editor
+
+#### New Features
+
+- `#250061`, `#246305` - Added property to retrieve bookmarks on selection.
+- `#251247` - Added API for restrict editing.
+- `#251247`, `#238969`, `#252954`,`#253149` - Added API for selection.
+
+#### Bug Fixes
+
+- `251355` - Script error while importing the document is now resolved.
+- `251910` - Status bar disappear on mouse hover is now resolved.
+- `251219` - Script errors due to Content security policy are now resolved.
+
+## 17.3.21 (2019-10-30)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#251576` - Enable repeat row header is now enabled properly in table properties dialog.
+- `#250638` - Scroll position is now maintained after inserting columns.
+- `#253260` - Script error now resolved when double click on header footer.
+- `#252506` - Spell checker performance has been improved.
+
+## 17.3.19 (2019-10-22)
+
+### Document Editor
+
+#### New Features
+
+- `#249783` - Added API to set default section format properties.
+
+#### Bug Fixes
+
+- `#249729` - List now updated when copy and paste from outside editor.
+- `#249574` - Table now layout properly when resizing table middle column.
+- `#249767` - Control elements are now destroyed properly.
+- `#250041` - Paragraph formatting is now preserved properly when copy and paste contents.
+
+## 17.3.17 (2019-10-15)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#246264` - Page now becomes responsive, when document contains table with split cell widget.
+- `#249138` - Table of contents dialog now rendered properly.
+- `#245757` - Page now becomes responsive when we edit in header footer region.
+- `#249049` - List continue numbering issues are resolved now.
+- `#248304`, `#250801` - TOC is now updated properly, when paragraph contains page break with heading style.
+- `#249736` - Focus is now set to text search result, when search icon is clicked in options pane.
+- `#249542` - Draw image error is resolved now, when document contains invalid image source.
+- `#249329` - Added localization for missed text in document editor.
+- `#248710` - Character format is now applied, when selection start is in field.
+
+## 17.3.16 (2019-10-09)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#246365`, `#250077` - Table Width for auto type table format is now updated properly.
+- `#249283` - Command + A key triggers properly in MAC machine's Safari browser.
+- `#248301` - Text clipping issues are fixed when text inside table cell.
+- `#246587` - backward selection issues and backspace issues for restrict editing are resolved now.
+- `#244786` , `#248882` - Text now rendered properly in RTL paragraph, when copy and paste locally.
+- `#248304` - Tab leader is now preserved properly, when updating table of contents.
+
+## 17.3.14 (2019-10-03)
+
+### Document Editor
+
+#### New Features
+
+- `#245203` - Added support to preserve and layout start page number for sections
+
+#### Bug Fixes
+
+- `#243771` - Clipboard data is now pasted as plain text, If XHTML validation fails.
+- `#246264`, `#246143`, `#247143` - Styles now updated properly for the selected paragraph.
+- `#246003` - Default character and paragraph format is now set on initial control rendering.
+- `#245766` - Table of contents is now copied properly.
+- `#245891` - Merge field is now copied as a plain text.
+- `#245860`, `#246440` - Script error is fixed after paste switch to different formatting.
+- `#245461` - Left border width is now updated properly.
+- `#246168` - List tab width is now calculated properly when hanging indent is specified.
+- `#245890` - Script error is fixed when pasting content copied from word.
+- `#247896`, `#147336` - Text is now visible when its container contains flex style property.
+- `#246884` - Copy and paste single paragraph containing list is now resolved.
+- `#247831` - Script error is fixed while importing document.
+- `#246168` - List font style is now rendered properly.
+- `#246751` - Script error is now resolved when editing inside nested table.
+- `#245453` - Paragraph is now lay-outed properly when it has based on style.
+- `#244786`, `#248882` - RTL text exporting issues are fixed.
+- `#244786` - Cursor now updated properly after inserting merge field when paragraph is set as RTL.
+
+## 17.3.9-beta (2019-09-20)
+
+### Document Editor
+
+#### Bug Fixes
+
+- `#245457`, `#245459` - Table is now layout properly.
+- `#246127`, `#246597`, `#247364` - Page number field is now exported properly in Sfdt export.
+
 ## 17.2.49 (2019-09-04)
 
 ### Document Editor

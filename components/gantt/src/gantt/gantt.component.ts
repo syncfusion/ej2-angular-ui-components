@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { Template } from '@syncfusion/ej2-angular-base';
@@ -9,8 +9,8 @@ import { DayWorkingTimeCollectionDirective } from './dayworkingtime.directive';
 import { HolidaysDirective } from './holidays.directive';
 import { EventMarkersDirective } from './eventmarkers.directive';
 
-export const inputs: string[] = ['addDialogFields','allowFiltering','allowReordering','allowResizing','allowSelection','allowSorting','allowUnscheduledTasks','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','durationUnit','editDialogFields','editSettings','enableContextMenu','enablePersistence','enablePredecessorValidation','enableRtl','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','renderBaseline','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','sortSettings','splitterSettings','taskFields','taskbarHeight','taskbarTemplate','timelineSettings','toolbar','tooltipSettings','treeColumnIndex','width','workWeek'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','dataBound','endEdit','expanded','expanding','headerCellInfo','load','queryCellInfo','queryTaskbarInfo','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
+export const inputs: string[] = ['addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowUnscheduledTasks','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','enableContextMenu','enableMultiTaskbar','enablePersistence','enablePredecessorValidation','enableRtl','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','readOnly','renderBaseline','resourceFields','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','showOverAllocation','sortSettings','splitterSettings','taskFields','taskMode','taskType','taskbarHeight','taskbarTemplate','timelineSettings','timezone','toolbar','tooltipSettings','treeColumnIndex','validateManualTasksOnLinking','viewType','width','workUnit','workWeek'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeExcelExport','beforePdfExport','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','destroyed','endEdit','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','onMouseMove','onTaskbarClick','pdfColumnHeaderQueryCellInfo','pdfExportComplete','pdfQueryCellInfo','pdfQueryTaskbarInfo','pdfQueryTimelineCellInfo','queryCellInfo','queryTaskbarInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -36,12 +36,14 @@ export const twoWays: string[] = ['dataSource'];
 })
 @ComponentMixins([ComponentBase])
 export class GanttComponent extends Gantt implements IComponentBase {
-    public childColumns: any;
-    public childAddDialogFields: any;
-    public childEditDialogFields: any;
-    public childDayWorkingTime: any;
-    public childHolidays: any;
-    public childEventMarkers: any;
+    public context : any;
+    public tagObjects: any;
+    public childColumns: QueryList<ColumnsDirective>;
+    public childAddDialogFields: QueryList<AddDialogFieldsDirective>;
+    public childEditDialogFields: QueryList<EditDialogFieldsDirective>;
+    public childDayWorkingTime: QueryList<DayWorkingTimeCollectionDirective>;
+    public childHolidays: QueryList<HolidaysDirective>;
+    public childEventMarkers: QueryList<EventMarkersDirective>;
     public tags: string[] = ['columns', 'addDialogFields', 'editDialogFields', 'dayWorkingTime', 'holidays', 'eventMarkers'];
     public dataSourceChange: any;
     /** 
@@ -145,22 +147,72 @@ export class GanttComponent extends Gantt implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('GanttExcelExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GanttRowDD');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GanttColumnMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GanttPdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childColumns;
+        
+	    if (this.childAddDialogFields) {
+            this.tagObjects[1].instance = this.childAddDialogFields;
+        }
+        
+	    if (this.childEditDialogFields) {
+            this.tagObjects[2].instance = this.childEditDialogFields;
+        }
+        
+	    if (this.childDayWorkingTime) {
+            this.tagObjects[3].instance = this.childDayWorkingTime;
+        }
+        
+	    if (this.childHolidays) {
+            this.tagObjects[4].instance = this.childHolidays;
+        }
+        
+	    if (this.childEventMarkers) {
+            this.tagObjects[5].instance = this.childEventMarkers;
+        }
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

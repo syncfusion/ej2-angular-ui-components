@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['animation', 'backwardForecast', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'width'];
+var input = ['animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
 var outputs = [];
 /**
  * Series Directive
@@ -38,6 +38,7 @@ var TrendlineDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs);
+        _this.directivePropList = input;
         return _this;
     }
     return TrendlineDirective;
@@ -102,6 +103,7 @@ var SegmentDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return SegmentDirective;
@@ -156,7 +158,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+var input$2 = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 var outputs$2 = [];
 /**
  * Series Directive
@@ -177,6 +179,7 @@ var SeriesDirective = /** @class */ (function (_super) {
         _this.tags = ['trendlines', 'segments'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return SeriesDirective;
@@ -249,6 +252,7 @@ var StripLineDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return StripLineDirective;
@@ -314,6 +318,7 @@ var CategoryDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return CategoryDirective;
@@ -377,6 +382,7 @@ var MultiLevelLabelDirective = /** @class */ (function (_super) {
         _this.tags = ['categories'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return MultiLevelLabelDirective;
@@ -419,7 +425,7 @@ MultiLevelLabelsDirective.decorators = [
  * @nocollapse
  */
 MultiLevelLabelsDirective.ctorParameters = function () { return []; };
-var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
+var input$6 = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableScrollbarOnZooming', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 var outputs$6 = [];
 /**
  * Axis Directive
@@ -438,6 +444,7 @@ var AxisDirective = /** @class */ (function (_super) {
         _this.tags = ['stripLines', 'multiLevelLabels'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return AxisDirective;
@@ -499,6 +506,7 @@ var RowDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$7);
+        _this.directivePropList = input$7;
         return _this;
     }
     return RowDirective;
@@ -557,6 +565,7 @@ var ColumnDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$8);
+        _this.directivePropList = input$8;
         return _this;
     }
     return ColumnDirective;
@@ -629,6 +638,7 @@ var AnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$9);
+        _this.directivePropList = input$9;
         return _this;
     }
     return AnnotationDirective;
@@ -694,6 +704,7 @@ var SelectedDataIndexDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$10);
+        _this.directivePropList = input$10;
         return _this;
     }
     return SelectedDataIndexDirective;
@@ -734,7 +745,7 @@ SelectedDataIndexesDirective.decorators = [
  * @nocollapse
  */
 SelectedDataIndexesDirective.ctorParameters = function () { return []; };
-var input$11 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+var input$11 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 var outputs$11 = [];
 /**
  * Indicator Directive
@@ -754,6 +765,7 @@ var IndicatorDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$11);
+        _this.directivePropList = input$11;
         return _this;
     }
     return IndicatorDirective;
@@ -808,8 +820,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'axes', 'background', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'pointClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -1219,30 +1231,61 @@ exports.ChartComponent = /** @class */ (function (_super) {
             }
         }
         catch (_30) { }
+        try {
+            var mod = _this.injector.get('ChartsHighlight');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_31) { }
         _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     ChartComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     ChartComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     ChartComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     ChartComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAxes) {
+            this.tagObjects[1].instance = this.childAxes;
+        }
+        if (this.childRows) {
+            this.tagObjects[2].instance = this.childRows;
+        }
+        if (this.childColumns) {
+            this.tagObjects[3].instance = this.childColumns;
+        }
+        if (this.childAnnotations) {
+            this.tagObjects[4].instance = this.childAnnotations;
+        }
+        if (this.childSelectedDataIndexes) {
+            this.tagObjects[5].instance = this.childSelectedDataIndexes;
+        }
+        if (this.childIndicators) {
+            this.tagObjects[6].instance = this.childIndicators;
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return ChartComponent;
 }(ej2Charts.Chart));
@@ -1413,6 +1456,7 @@ var MultiLevelLabelService = { provide: 'ChartsMultiLevelLabel', useValue: ej2Ch
 var ParetoSeriesService = { provide: 'ChartsParetoSeries', useValue: ej2Charts.ParetoSeries };
 var ExportService = { provide: 'ChartsExport', useValue: ej2Charts.Export };
 var DataEditingService = { provide: 'ChartsDataEditing', useValue: ej2Charts.DataEditing };
+var HighlightService = { provide: 'ChartsHighlight', useValue: ej2Charts.Highlight };
 /**
  * NgModule definition for the Chart component with providers.
  */
@@ -1482,7 +1526,8 @@ ChartAllModule.decorators = [
                     MultiLevelLabelService,
                     ParetoSeriesService,
                     ExportService,
-                    DataEditingService
+                    DataEditingService,
+                    HighlightService
                 ]
             },] },
 ];
@@ -1524,6 +1569,7 @@ var AccumulationSeriesDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$13);
+        _this.directivePropList = input$12;
         return _this;
     }
     return AccumulationSeriesDirective;
@@ -1605,6 +1651,7 @@ var AccumulationAnnotationDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$14);
+        _this.directivePropList = input$13;
         return _this;
     }
     return AccumulationAnnotationDirective;
@@ -1666,8 +1713,8 @@ var __metadata$5 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['annotations', 'background', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
-var outputs$15 = ['animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
+var inputs$1 = ['allowExport', 'annotations', 'background', 'backgroundImage', 'border', 'center', 'currencyCode', 'dataSource', 'enableAnimation', 'enableBorderOnMouseMove', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSmartLabels', 'height', 'highLightMode', 'highlightPattern', 'isMultiSelect', 'legendSettings', 'locale', 'margin', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var outputs$15 = ['afterExport', 'animationComplete', 'annotationRender', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'legendRender', 'load', 'loaded', 'pointClick', 'pointMove', 'pointRender', 'resized', 'seriesRender', 'textRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$1 = ['dataSource'];
 /**
  * AccumulationChart Component
@@ -1758,27 +1805,36 @@ exports.AccumulationChartComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$15);
         _this.addTwoWay.call(_this, twoWays$1);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     AccumulationChartComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     AccumulationChartComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     AccumulationChartComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     AccumulationChartComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return AccumulationChartComponent;
 }(ej2Charts.AccumulationChart));
@@ -1907,6 +1963,7 @@ var RangenavigatorSeriesDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$16);
+        _this.directivePropList = input$14;
         return _this;
     }
     return RangenavigatorSeriesDirective;
@@ -1961,7 +2018,7 @@ var __metadata$6 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['allowSnapping', 'animationDuration', 'dataSource', 'disableRangeSelector', 'enableDeferredUpdate', 'enableGrouping', 'enablePersistence', 'enableRtl', 'groupBy', 'height', 'interval', 'intervalType', 'labelFormat', 'labelIntersectAction', 'labelPosition', 'labelStyle', 'locale', 'logBase', 'majorGridLines', 'majorTickLines', 'margin', 'maximum', 'minimum', 'navigatorBorder', 'navigatorStyleSettings', 'periodSelectorSettings', 'query', 'secondaryLabelAlignment', 'series', 'skeleton', 'skeletonType', 'theme', 'tickPosition', 'tooltip', 'useGroupingSeparator', 'value', 'valueType', 'width', 'xName', 'yName'];
+var inputs$2 = ['allowIntervalData', 'allowSnapping', 'animationDuration', 'dataSource', 'disableRangeSelector', 'enableDeferredUpdate', 'enableGrouping', 'enablePersistence', 'enableRtl', 'groupBy', 'height', 'interval', 'intervalType', 'labelFormat', 'labelIntersectAction', 'labelPosition', 'labelStyle', 'locale', 'logBase', 'majorGridLines', 'majorTickLines', 'margin', 'maximum', 'minimum', 'navigatorBorder', 'navigatorStyleSettings', 'periodSelectorSettings', 'query', 'secondaryLabelAlignment', 'series', 'skeleton', 'skeletonType', 'theme', 'tickPosition', 'tooltip', 'useGroupingSeparator', 'value', 'valueType', 'width', 'xName', 'yName'];
 var outputs$17 = ['beforePrint', 'changed', 'labelRender', 'load', 'loaded', 'resized', 'selectorRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$2 = ['dataSource'];
 /**
@@ -2039,27 +2096,33 @@ exports.RangeNavigatorComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$17);
         _this.addTwoWay.call(_this, twoWays$2);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     RangeNavigatorComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     RangeNavigatorComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     RangeNavigatorComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     RangeNavigatorComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     };
     return RangeNavigatorComponent;
 }(ej2Charts.RangeNavigator));
@@ -2163,6 +2226,7 @@ var RangeBandSettingDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$18);
+        _this.directivePropList = input$15;
         return _this;
     }
     return RangeBandSettingDirective;
@@ -2217,7 +2281,7 @@ var __metadata$7 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$3 = ['axisSettings', 'border', 'containerArea', 'dataLabelSettings', 'dataSource', 'enablePersistence', 'enableRtl', 'endPointColor', 'fill', 'format', 'height', 'highPointColor', 'lineWidth', 'locale', 'lowPointColor', 'markerSettings', 'negativePointColor', 'opacity', 'padding', 'palette', 'query', 'rangeBandSettings', 'startPointColor', 'theme', 'tiePointColor', 'tooltipSettings', 'type', 'useGroupingSeparator', 'valueType', 'width', 'xName', 'yName'];
+var inputs$3 = ['axisSettings', 'border', 'containerArea', 'dataLabelSettings', 'dataSource', 'enablePersistence', 'enableRtl', 'endPointColor', 'fill', 'format', 'height', 'highPointColor', 'lineWidth', 'locale', 'lowPointColor', 'markerSettings', 'negativePointColor', 'opacity', 'padding', 'palette', 'query', 'rangeBandSettings', 'rangePadding', 'startPointColor', 'theme', 'tiePointColor', 'tooltipSettings', 'type', 'useGroupingSeparator', 'valueType', 'width', 'xName', 'yName'];
 var outputs$19 = ['axisRendering', 'dataLabelRendering', 'load', 'loaded', 'markerRendering', 'pointRegionMouseClick', 'pointRegionMouseMove', 'pointRendering', 'resize', 'seriesRendering', 'sparklineMouseClick', 'sparklineMouseMove', 'tooltipInitialize'];
 var twoWays$3 = [''];
 /**
@@ -2253,27 +2317,33 @@ exports.SparklineComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$19);
         _this.addTwoWay.call(_this, twoWays$3);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SparklineComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SparklineComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SparklineComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SparklineComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childRangeBandSettings;
+        this.context.ngAfterContentChecked(this);
     };
     return SparklineComponent;
 }(ej2Charts.Sparkline));
@@ -2356,7 +2426,7 @@ SparklineAllModule.decorators = [
  * @nocollapse
  */
 SparklineAllModule.ctorParameters = function () { return []; };
-var input$16 = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'visibility', 'width'];
+var input$16 = ['animationDuration', 'dataSource', 'enableAnimation', 'enableSmartLabels', 'fill', 'marker', 'name', 'opacity', 'points', 'reactance', 'resistance', 'tooltip', 'tooltipMappingName', 'visibility', 'width'];
 var outputs$20 = [];
 var SmithchartSeriesDirective = /** @class */ (function (_super) {
     __extends(SmithchartSeriesDirective, _super);
@@ -2368,6 +2438,7 @@ var SmithchartSeriesDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$20);
+        _this.directivePropList = input$16;
         return _this;
     }
     return SmithchartSeriesDirective;
@@ -2423,7 +2494,7 @@ var __metadata$8 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$4 = ['background', 'border', 'elementSpacing', 'enablePersistence', 'enableRtl', 'font', 'height', 'horizontalAxis', 'legendSettings', 'locale', 'margin', 'radialAxis', 'radius', 'renderType', 'series', 'theme', 'title', 'width'];
-var outputs$21 = ['animationComplete', 'axisLabelRender', 'beforePrint', 'legendRender', 'load', 'loaded', 'seriesRender', 'subtitleRender', 'textRender', 'titleRender'];
+var outputs$21 = ['animationComplete', 'axisLabelRender', 'beforePrint', 'legendRender', 'load', 'loaded', 'seriesRender', 'subtitleRender', 'textRender', 'titleRender', 'tooltipRender'];
 var twoWays$4 = [''];
 /**
  * Smithchart Component
@@ -2465,27 +2536,33 @@ exports.SmithchartComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs$21);
         _this.addTwoWay.call(_this, twoWays$4);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     SmithchartComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     SmithchartComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     SmithchartComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     SmithchartComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSeries;
+        this.context.ngAfterContentChecked(this);
     };
     return SmithchartComponent;
 }(ej2Charts.Smithchart));
@@ -2570,7 +2647,7 @@ SmithchartAllModule.decorators = [
  * @nocollapse
  */
 SmithchartAllModule.ctorParameters = function () { return []; };
-var input$17 = ['animation', 'backwardForecast', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'width'];
+var input$17 = ['animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
 var outputs$22 = [];
 /**
  * Series Directive
@@ -2595,6 +2672,7 @@ var StockChartTrendlineDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$22);
+        _this.directivePropList = input$17;
         return _this;
     }
     return StockChartTrendlineDirective;
@@ -2656,6 +2734,7 @@ var StockChartSeriesDirective = /** @class */ (function (_super) {
         _this.tags = ['trendlines'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.registerEvents(outputs$23);
+        _this.directivePropList = input$18;
         return _this;
     }
     return StockChartSeriesDirective;
@@ -2698,70 +2777,8 @@ StockChartSeriesCollectionDirective.decorators = [
  * @nocollapse
  */
 StockChartSeriesCollectionDirective.ctorParameters = function () { return []; };
-var input$19 = ['border', 'color', 'dashArray', 'delay', 'duration', 'enable', 'end', 'horizontalAlignment', 'isRepeat', 'isSegmented', 'opacity', 'repeatEvery', 'repeatUntil', 'rotation', 'segmentAxisName', 'segmentEnd', 'segmentStart', 'size', 'sizeType', 'start', 'startFromAxis', 'text', 'textStyle', 'verticalAlignment', 'visible', 'zIndex'];
+var input$19 = ['coefficient', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 var outputs$24 = [];
-/**
- * StripLine Directive
- * ```html
- * <e-stockchart-axis>
- * <e-striplines>
- * <e-stripline></e-stripline>
- * </e-striplines>
- * </e-stock-chart-axis>
- * ```
- */
-var StockChartStripLineDirective = /** @class */ (function (_super) {
-    __extends(StockChartStripLineDirective, _super);
-    /**
-     * @param {?} viewContainerRef
-     */
-    function StockChartStripLineDirective(viewContainerRef) {
-        var _this = _super.call(this) || this;
-        _this.viewContainerRef = viewContainerRef;
-        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$24);
-        return _this;
-    }
-    return StockChartStripLineDirective;
-}(ej2AngularBase.ComplexBase));
-StockChartStripLineDirective.decorators = [
-    { type: core.Directive, args: [{
-                selector: 'e-stockchart-axis>e-stockchart-striplines>e-stockchart-stripline',
-                inputs: input$19,
-                outputs: outputs$24,
-                queries: {}
-            },] },
-];
-/**
- * @nocollapse
- */
-StockChartStripLineDirective.ctorParameters = function () { return [
-    { type: core.ViewContainerRef, },
-]; };
-/**
- * StockChartStripLine Array Directive
- */
-var StockChartStripLinesDirective = /** @class */ (function (_super) {
-    __extends(StockChartStripLinesDirective, _super);
-    function StockChartStripLinesDirective() {
-        return _super.call(this, 'striplines') || this;
-    }
-    return StockChartStripLinesDirective;
-}(ej2AngularBase.ArrayBase));
-StockChartStripLinesDirective.decorators = [
-    { type: core.Directive, args: [{
-                selector: 'e-stockchart-axis>e-stockchart-striplines',
-                queries: {
-                    children: new core.ContentChildren(StockChartStripLineDirective)
-                },
-            },] },
-];
-/**
- * @nocollapse
- */
-StockChartStripLinesDirective.ctorParameters = function () { return []; };
-var input$20 = ['coefficient', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
-var outputs$25 = [];
 /**
  * Axis Directive
  * ```html
@@ -2776,9 +2793,9 @@ var StockChartAxisDirective = /** @class */ (function (_super) {
     function StockChartAxisDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['stripLines'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$25);
+        _this.registerEvents(outputs$24);
+        _this.directivePropList = input$19;
         return _this;
     }
     return StockChartAxisDirective;
@@ -2786,11 +2803,9 @@ var StockChartAxisDirective = /** @class */ (function (_super) {
 StockChartAxisDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-stockchart-axes>e-stockchart-axis',
-                inputs: input$20,
-                outputs: outputs$25,
-                queries: {
-                    childStripLines: new core.ContentChild(StockChartStripLinesDirective)
-                }
+                inputs: input$19,
+                outputs: outputs$24,
+                queries: {}
             },] },
 ];
 /**
@@ -2821,8 +2836,8 @@ StockChartAxesDirective.decorators = [
  * @nocollapse
  */
 StockChartAxesDirective.ctorParameters = function () { return []; };
-var input$21 = ['border', 'height'];
-var outputs$26 = [];
+var input$20 = ['border', 'height'];
+var outputs$25 = [];
 /**
  * Row Directive
  * ```html
@@ -2838,7 +2853,8 @@ var StockChartRowDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$26);
+        _this.registerEvents(outputs$25);
+        _this.directivePropList = input$20;
         return _this;
     }
     return StockChartRowDirective;
@@ -2846,8 +2862,8 @@ var StockChartRowDirective = /** @class */ (function (_super) {
 StockChartRowDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-stockchart-rows>e-striplines>e-stockchart-row',
-                inputs: input$21,
-                outputs: outputs$26,
+                inputs: input$20,
+                outputs: outputs$25,
                 queries: {}
             },] },
 ];
@@ -2893,8 +2909,8 @@ var __metadata$9 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$22 = ['content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
-var outputs$27 = [];
+var input$21 = ['content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
+var outputs$26 = [];
 /**
  * Annotation Directive
  * ```html
@@ -2910,7 +2926,8 @@ var StockChartAnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$27);
+        _this.registerEvents(outputs$26);
+        _this.directivePropList = input$21;
         return _this;
     }
     return StockChartAnnotationDirective;
@@ -2918,8 +2935,8 @@ var StockChartAnnotationDirective = /** @class */ (function (_super) {
 StockChartAnnotationDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'ejs-stockchart-annotations>e-stockchart-annotation',
-                inputs: input$22,
-                outputs: outputs$27,
+                inputs: input$21,
+                outputs: outputs$26,
                 queries: {}
             },] },
 ];
@@ -2958,8 +2975,8 @@ StockChartAnnotationsDirective.decorators = [
  * @nocollapse
  */
 StockChartAnnotationsDirective.ctorParameters = function () { return []; };
-var input$23 = ['point', 'series'];
-var outputs$28 = [];
+var input$22 = ['point', 'series'];
+var outputs$27 = [];
 /**
  * Selected Data Directive
  * ```html
@@ -2975,7 +2992,8 @@ var StockChartSelectedDataIndexDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$28);
+        _this.registerEvents(outputs$27);
+        _this.directivePropList = input$22;
         return _this;
     }
     return StockChartSelectedDataIndexDirective;
@@ -2983,8 +3001,8 @@ var StockChartSelectedDataIndexDirective = /** @class */ (function (_super) {
 StockChartSelectedDataIndexDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'ejs-stockchart-selectedDataIndexes>e-stockchart-selectedDataIndex',
-                inputs: input$23,
-                outputs: outputs$28,
+                inputs: input$22,
+                outputs: outputs$27,
                 queries: {}
             },] },
 ];
@@ -3016,8 +3034,8 @@ StockChartSelectedDataIndexesDirective.decorators = [
  * @nocollapse
  */
 StockChartSelectedDataIndexesDirective.ctorParameters = function () { return []; };
-var input$24 = ['interval', 'intervalType', 'selected', 'text'];
-var outputs$29 = [];
+var input$23 = ['interval', 'intervalType', 'selected', 'text'];
+var outputs$28 = [];
 /**
  * Indicator Directive
  * ```html
@@ -3035,7 +3053,8 @@ var StockChartPeriodDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$29);
+        _this.registerEvents(outputs$28);
+        _this.directivePropList = input$23;
         return _this;
     }
     return StockChartPeriodDirective;
@@ -3043,8 +3062,8 @@ var StockChartPeriodDirective = /** @class */ (function (_super) {
 StockChartPeriodDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-period',
-                inputs: input$24,
-                outputs: outputs$29,
+                inputs: input$23,
+                outputs: outputs$28,
                 queries: {}
             },] },
 ];
@@ -3076,8 +3095,8 @@ StockChartPeriodsDirective.decorators = [
  * @nocollapse
  */
 StockChartPeriodsDirective.ctorParameters = function () { return []; };
-var input$25 = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
-var outputs$30 = [];
+var input$24 = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
+var outputs$29 = [];
 /**
  * StockEvents
  * ```html
@@ -3095,7 +3114,8 @@ var StockEventDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$30);
+        _this.registerEvents(outputs$29);
+        _this.directivePropList = input$24;
         return _this;
     }
     return StockEventDirective;
@@ -3103,8 +3123,8 @@ var StockEventDirective = /** @class */ (function (_super) {
 StockEventDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-stockevent',
-                inputs: input$25,
-                outputs: outputs$30,
+                inputs: input$24,
+                outputs: outputs$29,
                 queries: {}
             },] },
 ];
@@ -3136,8 +3156,8 @@ StockEventsDirective.decorators = [
  * @nocollapse
  */
 StockEventsDirective.ctorParameters = function () { return []; };
-var input$26 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
-var outputs$31 = [];
+var input$25 = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+var outputs$30 = [];
 /**
  * Indicator Directive
  * ```html
@@ -3155,7 +3175,8 @@ var StockChartIndicatorDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$31);
+        _this.registerEvents(outputs$30);
+        _this.directivePropList = input$25;
         return _this;
     }
     return StockChartIndicatorDirective;
@@ -3163,8 +3184,8 @@ var StockChartIndicatorDirective = /** @class */ (function (_super) {
 StockChartIndicatorDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-stockchart-indicators>e-stockchart-indicator',
-                inputs: input$26,
-                outputs: outputs$31,
+                inputs: input$25,
+                outputs: outputs$30,
                 queries: {}
             },] },
 ];
@@ -3211,7 +3232,7 @@ var __metadata$10 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$5 = ['annotations', 'axes', 'background', 'border', 'chartArea', 'crosshair', 'dataSource', 'enableCustomRange', 'enablePeriodSelector', 'enablePersistence', 'enableRtl', 'enableSelector', 'exportType', 'height', 'indicatorType', 'indicators', 'isMultiSelect', 'isSelect', 'isTransposed', 'locale', 'margin', 'periods', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'series', 'seriesType', 'stockEvents', 'theme', 'title', 'titleStyle', 'tooltip', 'trendlineType', 'width', 'zoomSettings'];
-var outputs$32 = ['axisLabelRender', 'load', 'loaded', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
+var outputs$31 = ['axisLabelRender', 'load', 'loaded', 'onZooming', 'pointClick', 'pointMove', 'rangeChange', 'selectorRender', 'seriesRender', 'stockChartMouseClick', 'stockChartMouseDown', 'stockChartMouseLeave', 'stockChartMouseMove', 'stockChartMouseUp', 'stockEventRender', 'tooltipRender', 'dataSourceChange'];
 var twoWays$5 = ['dataSource'];
 /**
  * Stock Chart Component
@@ -3439,30 +3460,57 @@ exports.StockChartComponent = /** @class */ (function (_super) {
             }
         }
         catch (_4) { }
-        _this.registerEvents(outputs$32);
+        _this.registerEvents(outputs$31);
         _this.addTwoWay.call(_this, twoWays$5);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     StockChartComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     StockChartComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     StockChartComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     StockChartComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childSeries;
+        if (this.childAxes) {
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAxes);
+        }
+        if (this.childRows) {
+            this.tagObjects[2].instance = /** @type {?} */ (this.childRows);
+        }
+        if (this.childAnnotations) {
+            this.tagObjects[3].instance = /** @type {?} */ (this.childAnnotations);
+        }
+        if (this.childSelectedDataIndexes) {
+            this.tagObjects[4].instance = /** @type {?} */ (this.childSelectedDataIndexes);
+        }
+        if (this.childPeriods) {
+            this.tagObjects[5].instance = /** @type {?} */ (this.childPeriods);
+        }
+        if (this.childStockEvents) {
+            this.tagObjects[6].instance = /** @type {?} */ (this.childStockEvents);
+        }
+        if (this.childIndicators) {
+            this.tagObjects[7].instance = /** @type {?} */ (this.childIndicators);
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return StockChartComponent;
 }(ej2Charts.StockChart));
@@ -3470,7 +3518,7 @@ exports.StockChartComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-stockchart',
                 inputs: inputs$5,
-                outputs: outputs$32,
+                outputs: outputs$31,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -3525,8 +3573,6 @@ StockChartModule.decorators = [
                     StockChartTrendlinesDirective,
                     StockChartSeriesDirective,
                     StockChartSeriesCollectionDirective,
-                    StockChartStripLineDirective,
-                    StockChartStripLinesDirective,
                     StockChartAxisDirective,
                     StockChartAxesDirective,
                     StockChartRowDirective,
@@ -3548,8 +3594,6 @@ StockChartModule.decorators = [
                     StockChartTrendlinesDirective,
                     StockChartSeriesDirective,
                     StockChartSeriesCollectionDirective,
-                    StockChartStripLineDirective,
-                    StockChartStripLinesDirective,
                     StockChartAxisDirective,
                     StockChartAxesDirective,
                     StockChartRowDirective,
@@ -3592,6 +3636,242 @@ StockChartAllModule.decorators = [
  * @nocollapse
  */
 StockChartAllModule.ctorParameters = function () { return []; };
+var input$26 = ['color', 'end', 'index', 'name', 'opacity', 'shape'];
+var outputs$32 = [];
+/**
+ * BulletRange Directive
+ * ```html
+ * <e-bullet-range-collection>
+ * <e-bullet-range></e-bullet-range>
+ * </e-bullet-range-collection>
+ * ```
+ */
+var BulletRangeDirective = /** @class */ (function (_super) {
+    __extends(BulletRangeDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function BulletRangeDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$32);
+        _this.directivePropList = input$26;
+        return _this;
+    }
+    return BulletRangeDirective;
+}(ej2AngularBase.ComplexBase));
+BulletRangeDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-bullet-range-collection>e-bullet-range',
+                inputs: input$26,
+                outputs: outputs$32,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletRangeDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * BulletRange Array Directive
+ */
+var BulletRangeCollectionDirective = /** @class */ (function (_super) {
+    __extends(BulletRangeCollectionDirective, _super);
+    function BulletRangeCollectionDirective() {
+        return _super.call(this, 'ranges') || this;
+    }
+    return BulletRangeCollectionDirective;
+}(ej2AngularBase.ArrayBase));
+BulletRangeCollectionDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'ej-bulletchart>e-bullet-range-collection',
+                queries: {
+                    children: new core.ContentChildren(BulletRangeDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletRangeCollectionDirective.ctorParameters = function () { return []; };
+var __decorate$11 = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+        r = Reflect.decorate(decorators, target, key, desc);
+    else
+        for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$11 = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+        return Reflect.metadata(k, v);
+};
+var inputs$6 = ['animation', 'border', 'categoryField', 'categoryLabelStyle', 'dataLabel', 'dataSource', 'enableGroupSeparator', 'enablePersistence', 'enableRtl', 'height', 'interval', 'labelFormat', 'labelPosition', 'labelStyle', 'legendSettings', 'locale', 'majorTickLines', 'margin', 'maximum', 'minimum', 'minorTickLines', 'minorTicksPerInterval', 'opposedPosition', 'orientation', 'query', 'ranges', 'subtitle', 'subtitleStyle', 'tabIndex', 'targetColor', 'targetField', 'targetTypes', 'targetWidth', 'theme', 'tickPosition', 'title', 'titlePosition', 'titleStyle', 'tooltip', 'type', 'valueBorder', 'valueField', 'valueFill', 'valueHeight', 'width'];
+var outputs$33 = ['beforePrint', 'bulletChartMouseClick', 'legendRender', 'load', 'loaded', 'tooltipRender', 'dataSourceChange'];
+var twoWays$6 = ['dataSource'];
+/**
+ * BulletChart Component
+ * ```html
+ * <ejs-bulletchart></ejs-bulletchart>
+ * ```
+ */
+exports.BulletChartComponent = /** @class */ (function (_super) {
+    __extends(BulletChartComponent, _super);
+    /**
+     * @param {?} ngEle
+     * @param {?} srenderer
+     * @param {?} viewContainerRef
+     * @param {?} injector
+     */
+    function BulletChartComponent(ngEle, srenderer, viewContainerRef, injector) {
+        var _this = _super.call(this) || this;
+        _this.ngEle = ngEle;
+        _this.srenderer = srenderer;
+        _this.viewContainerRef = viewContainerRef;
+        _this.injector = injector;
+        _this.tags = ['ranges'];
+        _this.element = _this.ngEle.nativeElement;
+        _this.injectedModules = _this.injectedModules || [];
+        try {
+            var mod = _this.injector.get('ChartsBulletTooltip');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_a) { }
+        try {
+            var mod = _this.injector.get('ChartsBulletChartLegend');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_b) { }
+        _this.registerEvents(outputs$33);
+        _this.addTwoWay.call(_this, twoWays$6);
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
+    };
+    /**
+     * @return {?}
+     */
+    BulletChartComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childRanges;
+        this.context.ngAfterContentChecked(this);
+    };
+    return BulletChartComponent;
+}(ej2Charts.BulletChart));
+exports.BulletChartComponent.decorators = [
+    { type: core.Component, args: [{
+                selector: 'ejs-bulletchart',
+                inputs: inputs$6,
+                outputs: outputs$33,
+                template: '',
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                queries: {
+                    childRanges: new core.ContentChild(BulletRangeCollectionDirective)
+                }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+exports.BulletChartComponent.ctorParameters = function () { return [
+    { type: core.ElementRef, },
+    { type: core.Renderer2, },
+    { type: core.ViewContainerRef, },
+    { type: core.Injector, },
+]; };
+exports.BulletChartComponent.propDecorators = {
+    'tooltip_template': [{ type: core.ContentChild, args: ['tooltipTemplate',] },],
+};
+__decorate$11([
+    ej2AngularBase.Template(),
+    __metadata$11("design:type", Object)
+], exports.BulletChartComponent.prototype, "tooltip_template", void 0);
+exports.BulletChartComponent = __decorate$11([
+    ej2AngularBase.ComponentMixins([ej2AngularBase.ComponentBase]),
+    __metadata$11("design:paramtypes", [core.ElementRef,
+        core.Renderer2,
+        core.ViewContainerRef,
+        core.Injector])
+], exports.BulletChartComponent);
+/**
+ * NgModule definition for the BulletChart component.
+ */
+var BulletChartModule = /** @class */ (function () {
+    function BulletChartModule() {
+    }
+    return BulletChartModule;
+}());
+BulletChartModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule],
+                declarations: [
+                    exports.BulletChartComponent,
+                    BulletRangeDirective,
+                    BulletRangeCollectionDirective
+                ],
+                exports: [
+                    exports.BulletChartComponent,
+                    BulletRangeDirective,
+                    BulletRangeCollectionDirective
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletChartModule.ctorParameters = function () { return []; };
+var BulletTooltipService = { provide: 'ChartsBulletTooltip', useValue: ej2Charts.BulletTooltip };
+var BulletChartLegendService = { provide: 'ChartsBulletChartLegend', useValue: ej2Charts.BulletChartLegend };
+/**
+ * NgModule definition for the BulletChart component with providers.
+ */
+var BulletChartAllModule = /** @class */ (function () {
+    function BulletChartAllModule() {
+    }
+    return BulletChartAllModule;
+}());
+BulletChartAllModule.decorators = [
+    { type: core.NgModule, args: [{
+                imports: [common.CommonModule, BulletChartModule],
+                exports: [
+                    BulletChartModule
+                ],
+                providers: [
+                    BulletTooltipService,
+                    BulletChartLegendService
+                ]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+BulletChartAllModule.ctorParameters = function () { return []; };
 
 exports.TrendlineDirective = TrendlineDirective;
 exports.TrendlinesDirective = TrendlinesDirective;
@@ -3674,6 +3954,7 @@ exports.MultiLevelLabelService = MultiLevelLabelService;
 exports.ParetoSeriesService = ParetoSeriesService;
 exports.ExportService = ExportService;
 exports.DataEditingService = DataEditingService;
+exports.HighlightService = HighlightService;
 exports.AccumulationSeriesDirective = AccumulationSeriesDirective;
 exports.AccumulationSeriesCollectionDirective = AccumulationSeriesCollectionDirective;
 exports.AccumulationAnnotationDirective = AccumulationAnnotationDirective;
@@ -3709,8 +3990,6 @@ exports.StockChartTrendlineDirective = StockChartTrendlineDirective;
 exports.StockChartTrendlinesDirective = StockChartTrendlinesDirective;
 exports.StockChartSeriesDirective = StockChartSeriesDirective;
 exports.StockChartSeriesCollectionDirective = StockChartSeriesCollectionDirective;
-exports.StockChartStripLineDirective = StockChartStripLineDirective;
-exports.StockChartStripLinesDirective = StockChartStripLinesDirective;
 exports.StockChartAxisDirective = StockChartAxisDirective;
 exports.StockChartAxesDirective = StockChartAxesDirective;
 exports.StockChartRowDirective = StockChartRowDirective;
@@ -3727,8 +4006,16 @@ exports.StockChartIndicatorDirective = StockChartIndicatorDirective;
 exports.StockChartIndicatorsDirective = StockChartIndicatorsDirective;
 exports.StockChartModule = StockChartModule;
 exports.StockChartAllModule = StockChartAllModule;
+exports.BulletRangeDirective = BulletRangeDirective;
+exports.BulletRangeCollectionDirective = BulletRangeCollectionDirective;
+exports.BulletChartModule = BulletChartModule;
+exports.BulletChartAllModule = BulletChartAllModule;
+exports.BulletTooltipService = BulletTooltipService;
+exports.BulletChartLegendService = BulletChartLegendService;
 exports.ɵc = inputs$1;
 exports.ɵd = outputs$15;
+exports.ɵm = inputs$6;
+exports.ɵn = outputs$33;
 exports.ɵa = inputs;
 exports.ɵb = outputs$12;
 exports.ɵe = inputs$2;
@@ -3738,7 +4025,7 @@ exports.ɵj = outputs$21;
 exports.ɵg = inputs$3;
 exports.ɵh = outputs$19;
 exports.ɵk = inputs$5;
-exports.ɵl = outputs$32;
+exports.ɵl = outputs$31;
 exports.CrosshairSettings = ej2Charts.CrosshairSettings;
 exports.ZoomSettings = ej2Charts.ZoomSettings;
 exports.Chart = ej2Charts.Chart;
@@ -3752,6 +4039,7 @@ exports.MinorTickLines = ej2Charts.MinorTickLines;
 exports.CrosshairTooltip = ej2Charts.CrosshairTooltip;
 exports.Axis = ej2Charts.Axis;
 exports.VisibleLabels = ej2Charts.VisibleLabels;
+exports.Double = ej2Charts.Double;
 exports.DateTime = ej2Charts.DateTime;
 exports.Category = ej2Charts.Category;
 exports.Logarithmic = ej2Charts.Logarithmic;
@@ -3761,6 +4049,7 @@ exports.StripLine = ej2Charts.StripLine;
 exports.Connector = ej2Charts.Connector;
 exports.Font = ej2Charts.Font;
 exports.Border = ej2Charts.Border;
+exports.Offset = ej2Charts.Offset;
 exports.ChartArea = ej2Charts.ChartArea;
 exports.Margin = ej2Charts.Margin;
 exports.Animation = ej2Charts.Animation;
@@ -3809,6 +4098,7 @@ exports.MacdIndicator = ej2Charts.MacdIndicator;
 exports.Trendlines = ej2Charts.Trendlines;
 exports.sort = ej2Charts.sort;
 exports.isBreakLabel = ej2Charts.isBreakLabel;
+exports.getVisiblePoints = ej2Charts.getVisiblePoints;
 exports.rotateTextSize = ej2Charts.rotateTextSize;
 exports.removeElement = ej2Charts.removeElement;
 exports.logBase = ej2Charts.logBase;
@@ -3822,6 +4112,9 @@ exports.subArraySum = ej2Charts.subArraySum;
 exports.subtractThickness = ej2Charts.subtractThickness;
 exports.subtractRect = ej2Charts.subtractRect;
 exports.degreeToLocation = ej2Charts.degreeToLocation;
+exports.degreeToRadian = ej2Charts.degreeToRadian;
+exports.getRotatedRectangleCoordinates = ej2Charts.getRotatedRectangleCoordinates;
+exports.isRotatedRectIntersect = ej2Charts.isRotatedRectIntersect;
 exports.getAngle = ej2Charts.getAngle;
 exports.subArray = ej2Charts.subArray;
 exports.valueToCoefficient = ej2Charts.valueToCoefficient;
@@ -3889,13 +4182,16 @@ exports.createSvg = ej2Charts.createSvg;
 exports.getTitle = ej2Charts.getTitle;
 exports.titlePositionX = ej2Charts.titlePositionX;
 exports.textWrap = ej2Charts.textWrap;
+exports.getUnicodeText = ej2Charts.getUnicodeText;
 exports.blazorTemplatesReset = ej2Charts.blazorTemplatesReset;
 exports.CustomizeOption = ej2Charts.CustomizeOption;
 exports.StackValues = ej2Charts.StackValues;
 exports.RectOption = ej2Charts.RectOption;
+exports.ImageOption = ej2Charts.ImageOption;
 exports.CircleOption = ej2Charts.CircleOption;
 exports.PolygonOption = ej2Charts.PolygonOption;
 exports.ChartLocation = ej2Charts.ChartLocation;
+exports.LabelLocation = ej2Charts.LabelLocation;
 exports.Thickness = ej2Charts.Thickness;
 exports.ColorValue = ej2Charts.ColorValue;
 exports.PointData = ej2Charts.PointData;
@@ -3906,6 +4202,7 @@ exports.Tooltip = ej2Charts.Tooltip;
 exports.Zoom = ej2Charts.Zoom;
 exports.Selection = ej2Charts.Selection;
 exports.DataEditing = ej2Charts.DataEditing;
+exports.Highlight = ej2Charts.Highlight;
 exports.DataLabel = ej2Charts.DataLabel;
 exports.ErrorBar = ej2Charts.ErrorBar;
 exports.DataLabelSettings = ej2Charts.DataLabelSettings;
@@ -3981,12 +4278,14 @@ exports.tooltipRender = ej2Charts.tooltipRender;
 exports.chartMouseMove = ej2Charts.chartMouseMove;
 exports.chartMouseClick = ej2Charts.chartMouseClick;
 exports.pointClick = ej2Charts.pointClick;
+exports.pointDoubleClick = ej2Charts.pointDoubleClick;
 exports.pointMove = ej2Charts.pointMove;
 exports.chartMouseLeave = ej2Charts.chartMouseLeave;
 exports.chartMouseDown = ej2Charts.chartMouseDown;
 exports.chartMouseUp = ej2Charts.chartMouseUp;
 exports.zoomComplete = ej2Charts.zoomComplete;
 exports.dragComplete = ej2Charts.dragComplete;
+exports.selectionComplete = ej2Charts.selectionComplete;
 exports.resized = ej2Charts.resized;
 exports.beforePrint = ej2Charts.beforePrint;
 exports.annotationRender = ej2Charts.annotationRender;
@@ -3998,6 +4297,12 @@ exports.multiLevelLabelClick = ej2Charts.multiLevelLabelClick;
 exports.dragStart = ej2Charts.dragStart;
 exports.drag = ej2Charts.drag;
 exports.dragEnd = ej2Charts.dragEnd;
+exports.regSub = ej2Charts.regSub;
+exports.regSup = ej2Charts.regSup;
+exports.beforeExport = ej2Charts.beforeExport;
+exports.afterExport = ej2Charts.afterExport;
+exports.bulletChartMouseClick = ej2Charts.bulletChartMouseClick;
+exports.onZooming = ej2Charts.onZooming;
 exports.Theme = ej2Charts.Theme;
 exports.getSeriesColor = ej2Charts.getSeriesColor;
 exports.getThemeColor = ej2Charts.getThemeColor;
@@ -4019,8 +4324,19 @@ exports.RangeNavigatorSeries = ej2Charts.RangeNavigatorSeries;
 exports.ThumbSettings = ej2Charts.ThumbSettings;
 exports.StyleSettings = ej2Charts.StyleSettings;
 exports.RangeTooltipSettings = ej2Charts.RangeTooltipSettings;
-exports.Double = ej2Charts.Double;
 exports.RangeTooltip = ej2Charts.RangeTooltip;
+exports.BulletChart = ej2Charts.BulletChart;
+exports.Range = ej2Charts.Range;
+exports.MajorTickLinesSettings = ej2Charts.MajorTickLinesSettings;
+exports.MinorTickLinesSettings = ej2Charts.MinorTickLinesSettings;
+exports.BulletLabelStyle = ej2Charts.BulletLabelStyle;
+exports.BulletTooltipSettings = ej2Charts.BulletTooltipSettings;
+exports.BulletDataLabel = ej2Charts.BulletDataLabel;
+exports.BulletChartLegendSettings = ej2Charts.BulletChartLegendSettings;
+exports.BulletChartTheme = ej2Charts.BulletChartTheme;
+exports.getBulletThemeColor = ej2Charts.getBulletThemeColor;
+exports.BulletTooltip = ej2Charts.BulletTooltip;
+exports.BulletChartLegend = ej2Charts.BulletChartLegend;
 exports.Smithchart = ej2Charts.Smithchart;
 exports.SmithchartMajorGridLines = ej2Charts.SmithchartMajorGridLines;
 exports.SmithchartMinorGridLines = ej2Charts.SmithchartMinorGridLines;

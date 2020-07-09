@@ -2,6 +2,162 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with 'addGroups' method is fixed.
+
+## 18.1.55 (2020-06-02)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with 'setRulesFromSql' method is fixed.
+
+## 18.1.53 (2020-05-19)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with boolean value has been resolved.
+
+## 18.1.48 (2020-05-05)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with SQL parsing has been resolved.
+
+## 18.1.45 (2020-04-21)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with grouping after refreshing QueryBuilder has been resolved.
+
+## 18.1.44 (2020-04-14)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Compatibility with EJ1 issues has been resolved.
+
+## 18.1.43 (2020-04-07)
+
+### QueryBuilder
+
+#### New Features
+
+- Provided `readonly` support.
+
+## 18.1.36-beta (2020-03-19)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Improvements in Value Template support.
+
+## 17.4.49 (2020-02-11)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- CSS validation issues has been resolved.
+
+## 17.4.47 (2020-02-05)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with predicate generation for date type is fixed.
+
+#### Breaking Changes
+
+|Property Name|Previous Type|Current Type       |
+|-------------|-------------|-------------------|
+|format       |string       |string|FormatObject|
+
+## 17.4.46 (2020-01-30)
+
+### QueryBuilder
+
+#### New Features
+
+- Provided the support to disable the combinator if only one rule is present.
+
+## 17.4.43 (2020-01-14)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with predicate generation for between operator is fixed.
+
+## 17.4.41 (2020-01-07)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with 'setRulesFromSql' method is fixed.
+
+## 17.4.39 (2019-12-17)
+
+### QueryBuilder
+
+#### New Features
+
+- Provided `NOT` Condition support.
+- Provided Template support for Time Picker.
+
+#### Bug Fixes
+
+- Tooltip is not destroyed while using destroy method.
+- Predicate is not created for Date type when between operator is fixed.
+
+## 17.3.27 (2019-11-12)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with changing 'number' type field is fixed.
+
+## 17.3.26 (2019-11-05)
+
+### QueryBuilder
+
+#### New Features
+
+- Provided Not Contains, Not Starts With and Not Ends With operator support.
+
+## 17.3.21 (2019-10-30)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Value not updated properly while changing 'Between' operator.
+
+## 17.3.19 (2019-10-22)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Value not updated properly while changing operator.
+
 ## 17.2.46 (2019-08-22)
 
 ### QueryBuilder

@@ -1,7 +1,7 @@
-import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
+import { Directive, ViewContainerRef, ContentChildren } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
-import { StockChartStripLinesDirective } from './striplines.directive';
+
 
 let input: string[] = ['coefficient', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableTrim', 'interval', 'intervalType', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startAngle', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 let outputs: string[] = [];
@@ -16,12 +16,13 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
-        childStripLines: new ContentChild(StockChartStripLinesDirective)
+
     }
 })
 export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective> {
-    public childStripLines: any;
-    public tags: string[] = ['stripLines'];
+    public directivePropList: any;
+
+
     /** 
      * The polar radar radius position.
      * @default 100
@@ -292,6 +293,7 @@ export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -2,6 +2,94 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#268838`, `#154237` - Resolved the parent dialog button click action is not working while rendering the dialog within an Dialog.
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#154807` - Tooltip not opening more than once when target specified has been resolved.
+
+## 18.1.53 (2020-05-19)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#275330` - The issue with tooltip position misalignment has been resolved.
+
+## 18.1.36-beta (2020-03-19)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#262998` - The issue with Tooltip element not removed properly from DOM in certain cases has been resolved.
+
+## 17.4.51 (2020-02-25)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#151574` - The issue with adding custom classes using the `cssClass` property has been resolved.
+
+## 17.4.49 (2020-02-11)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#263239` - The issue with destroying the `Tooltip` component with popup opened state has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### Dialog
+
+#### New Features
+
+- `#256585` - Provided the new event `destroyed` that triggers when the component of the dialog is destroyed.
+
+#### Bug Fixes
+
+- `#150796` -  The issue with the parent element that is scrolled after reaching the end of the modal dialog has been resolved.
+
+## 17.3.29 (2019-11-26)
+
+### Dialog
+
+#### New Features
+
+- `#253239` - Provided the `minHeight` property to set minimum height for the dialog without considering the target's height.
+
+#### Bug Fixes
+
+- `#253239` - The issue with content overflow in IE browser has been resolved in Dialog.
+
+## 17.3.19 (2019-10-22)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#251762` - The issue with position property that accepts camel case alone has been resolved in Dialog.
+
+## 17.3.16 (2019-10-09)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#240696`- Resolved the odd dragging behaviour on Dialog when scrolling the page.
+- `#249144`- Resolved the issue with rendering templates when enabled the policy `"script-src self"` in  Dialog.
+- `#249263`, `#249478`- The issue with dynamically updating the Dialog content using the function template has been resolved.
+
 ## 17.2.35 (2019-07-17)
 
 ### Dialog
@@ -16,7 +104,7 @@
 
 #### Bug Fixes
 
-- `#144624` - Resolved the issue with resizing when rendering a grid inside a dialog.
+- #144624 - Resolved the issue with resizing when rendering a grid inside a dialog.
 
 ## 17.1.47 (2019-05-14)
 
@@ -281,6 +369,14 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 18.1.42 (2020-04-01)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#F152391` - The issue with Tooltip content component reference is not destroyed has been resolved.
 
 ## 16.2.47 (2018-08-07)
 

@@ -26,6 +26,7 @@ let outputs: string[] = ['click'];
     }
 })
 export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -39,6 +40,7 @@ export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropDirecti
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

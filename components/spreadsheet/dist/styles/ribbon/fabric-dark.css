@@ -1,0 +1,203 @@
+.e-ribbon .e-drop-icon::before {
+  content: '\e36a';
+}
+
+.e-ribbon {
+  border: 1px solid #514f4f;
+  position: relative;
+}
+
+.e-ribbon .e-tab .e-content .e-toolbar {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.e-ribbon .e-tab .e-tab-header {
+  height: 35px;
+  min-height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) {
+  height: 35px;
+  min-height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-tab-wrap {
+  height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-text-wrap {
+  height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items {
+  height: 35px;
+  min-height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-scroll-nav {
+  height: 35px;
+  min-height: 35px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-hscroll {
+  display: inline-block !important;
+  width: calc(100% - 28px);
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-tab-wrap {
+  padding: 0 0 0 8px;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-text-wrap {
+  vertical-align: top;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-indicator {
+  z-index: 1;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item.e-hide {
+  display: none;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-item {
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.e-ribbon .e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  text-transform: none;
+}
+
+.e-ribbon .e-tab.e-sheet-tab .e-tab-header .e-tab-text {
+  white-space: pre;
+}
+
+.e-ribbon .e-drop-icon {
+  cursor: pointer;
+  font-family: 'e-icons';
+  margin: 12.5px 4px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transform: rotate(180deg);
+  transition: transform 300ms ease;
+  width: 18px;
+  font-size: 10px;
+}
+
+.e-ribbon .e-drop-icon.e-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.e-ribbon.e-collapsed .e-content,
+.e-ribbon.e-collapsed .e-indicator,
+.e-ribbon.e-collapsed .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {
+  display: none;
+}
+
+.e-ribbon.e-collapsed .e-drop-icon {
+  transform: rotate(0deg);
+}
+
+.e-ribbon .e-content .e-toolbar.e-overlay .e-toolbar-items .e-toolbar-item.e-overlay {
+  opacity: 1;
+}
+
+.e-ribbon .e-menu-wrapper {
+  border-width: 0;
+}
+
+.e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+
+.e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon {
+  height: 35px;
+  line-height: 35px;
+}
+
+.e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon .e-caret {
+  line-height: 35px;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu,
+.e-bigger.e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu {
+  padding: 0;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon,
+.e-bigger.e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon {
+  height: 41px;
+  line-height: 41px;
+}
+
+.e-bigger .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret,
+.e-bigger.e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret {
+  line-height: 41px;
+}
+
+.e-bigger .e-ribbon .e-drop-icon,
+.e-bigger.e-ribbon .e-drop-icon {
+  font-size: 12px;
+  margin: 14.5px 5px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header,
+.e-bigger.e-ribbon .e-tab .e-tab-header {
+  height: 41px;
+  min-height: 41px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator),
+.e-bigger.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) {
+  height: 41px;
+  min-height: 41px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-tab-wrap,
+.e-bigger.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-tab-wrap {
+  height: 41px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-text-wrap,
+.e-bigger.e-ribbon .e-tab .e-tab-header .e-toolbar-item:not(.e-separator) .e-text-wrap {
+  height: 41px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header .e-toolbar-items,
+.e-bigger.e-ribbon .e-tab .e-tab-header .e-toolbar-items {
+  height: 41px;
+  min-height: 41px;
+}
+
+.e-bigger .e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-scroll-nav,
+.e-bigger.e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-scroll-nav {
+  height: 41px;
+  min-height: 41px;
+}
+
+.e-ribbon {
+  background-color: #333232;
+}
+
+.e-ribbon .e-tab .e-tab-header {
+  background-color: inherit;
+}
+
+.e-ribbon .e-drop-icon {
+  color: #dadada;
+}
+
+.e-ribbon .e-tab .e-content .e-toolbar {
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.e-ribbon .e-menu-wrapper {
+  background-color: transparent;
+}

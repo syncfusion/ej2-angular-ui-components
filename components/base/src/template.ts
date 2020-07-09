@@ -18,9 +18,11 @@ export function compile(templateEle: AngularElementType, helper?: Object):
         //tslint:disable-next-line        
         return (data: Object, component?: any, propName?: any): Object => {
             let context: Object = { $implicit: data };
+            /* istanbul ignore next */
             let conRef: ViewContainerRef = contRef ? contRef : component.viewContainerRef;
             let viewRef: EmbeddedViewRef<Object> = conRef.createEmbeddedView(templateEle as TemplateRef<Object>, context);
             viewRef.markForCheck();
+            /* istanbul ignore next */
             let viewCollection: { [key: string]: EmbeddedViewRef<Object>[] } = component ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
             propName = propName ? propName : pName;
@@ -66,6 +68,7 @@ function setter(key: string): Function {
 
 function getter(key: string, defaultValue: Object): Function {
     return function (): Object {
+        /* istanbul ignore next */
         return getValue(key + 'Ref', this) || defaultValue;
     };
 }

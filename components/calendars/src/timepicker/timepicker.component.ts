@@ -5,8 +5,8 @@ import { TimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','min','placeholder','readonly','scrollTo','showClearButton','step','strictMode','value','width','zIndex'];
-export const outputs: string[] = ['blur','change','close','created','destroyed','focus','itemRender','open','valueChange'];
+export const inputs: string[] = ['allowEdit','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','min','openOnFocus','placeholder','readonly','scrollTo','showClearButton','step','strictMode','value','width','zIndex'];
+export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','itemRender','open','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class TimePickerComponent extends TimePicker implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -47,6 +50,8 @@ export class TimePickerComponent extends TimePicker implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -62,15 +67,20 @@ export class TimePickerComponent extends TimePicker implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

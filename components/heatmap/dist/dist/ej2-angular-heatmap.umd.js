@@ -78,27 +78,32 @@ exports.HeatMapComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     HeatMapComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return HeatMapComponent;
 }(ej2Heatmap.HeatMap));
@@ -202,6 +207,7 @@ exports.Border = ej2Heatmap.Border;
 exports.TooltipBorder = ej2Heatmap.TooltipBorder;
 exports.BubbleData = ej2Heatmap.BubbleData;
 exports.Title = ej2Heatmap.Title;
+exports.FillColor = ej2Heatmap.FillColor;
 exports.PaletteCollection = ej2Heatmap.PaletteCollection;
 exports.AxisLabelBorder = ej2Heatmap.AxisLabelBorder;
 exports.BubbleSize = ej2Heatmap.BubbleSize;
@@ -210,6 +216,7 @@ exports.MultiLevelLabels = ej2Heatmap.MultiLevelLabels;
 exports.ColorCollection = ej2Heatmap.ColorCollection;
 exports.BubbleTooltipData = ej2Heatmap.BubbleTooltipData;
 exports.LegendColorCollection = ej2Heatmap.LegendColorCollection;
+exports.MultipleRow = ej2Heatmap.MultipleRow;
 exports.CellSettings = ej2Heatmap.CellSettings;
 exports.Series = ej2Heatmap.Series;
 exports.PaletteSettings = ej2Heatmap.PaletteSettings;
@@ -217,6 +224,7 @@ exports.RgbColor = ej2Heatmap.RgbColor;
 exports.CellColor = ej2Heatmap.CellColor;
 exports.TooltipSettings = ej2Heatmap.TooltipSettings;
 exports.Tooltip = ej2Heatmap.Tooltip;
+exports.ExportUtils = ej2Heatmap.ExportUtils;
 exports.stringToNumber = ej2Heatmap.stringToNumber;
 exports.measureText = ej2Heatmap.measureText;
 exports.TextElement = ej2Heatmap.TextElement;

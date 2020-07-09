@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-charts",
-	"version": "17.2.47",
+	"version": "17.2.48",
 	"description": "Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -59,6 +59,7 @@
 		"sparkline",
 		"Sparkline ej2-smithchart",
 		"smithchart",
+		"bulletchart",
 		"syncfusion",
 		"angular",
 		"ng-charts",
@@ -70,7 +71,9 @@
 		"ng-sparkline",
 		"ej2-ng-sparkline",
 		"ng-smithchart",
-		"ej2-ng-smithchart"
+		"ej2-ng-smithchart",
+		"ng-bulletchart",
+		"ej2-ng-bulletchart"
 	],
 	"repository": {
 		"type": "git",

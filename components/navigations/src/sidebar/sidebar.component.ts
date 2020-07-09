@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Sidebar } from '@syncfusion/ej2-navigations';
 
@@ -26,6 +26,8 @@ export const twoWays: string[] = ['isOpen'];
 })
 @ComponentMixins([ComponentBase])
 export class SidebarComponent extends Sidebar implements IComponentBase {
+    public containerContext : any;
+    public tagObjects: any;
 
 
     public isOpenChange: any;
@@ -38,18 +40,24 @@ export class SidebarComponent extends Sidebar implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

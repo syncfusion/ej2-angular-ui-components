@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { DocumentEditor } from '@syncfusion/ej2-documenteditor';
 
 
 
-export const inputs: string[] = ['acceptTab','currentUser','defaultPasteOption','documentName','enableBookmarkDialog','enableBordersAndShadingDialog','enableContextMenu','enableCursorOnReadOnly','enableEditor','enableEditorHistory','enableFontDialog','enableHyperlinkDialog','enableImageResizer','enableListDialog','enableLocalPaste','enableOptionsPane','enablePageSetupDialog','enableParagraphDialog','enablePersistence','enablePrint','enableRtl','enableSearch','enableSelection','enableSfdtExport','enableSpellCheck','enableStyleDialog','enableTableDialog','enableTableOfContentsDialog','enableTableOptionsDialog','enableTablePropertiesDialog','enableTextExport','enableWordExport','isReadOnly','locale','pageGap','pageOutline','serverActionSettings','serviceUrl','useCtrlClickToFollowHyperlink','userColor','zoomFactor'];
-export const outputs: string[] = ['contentChange','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','keyDown','requestNavigate','searchResultsChange','selectionChange','viewChange','zoomFactorChange'];
+export const inputs: string[] = ['acceptTab','currentUser','defaultPasteOption','documentEditorSettings','documentName','enableBookmarkDialog','enableBordersAndShadingDialog','enableComment','enableContextMenu','enableCursorOnReadOnly','enableEditor','enableEditorHistory','enableFontDialog','enableFormField','enableHyperlinkDialog','enableImageResizer','enableListDialog','enableLocalPaste','enableOptionsPane','enablePageSetupDialog','enableParagraphDialog','enablePersistence','enablePrint','enableRtl','enableSearch','enableSelection','enableSfdtExport','enableSpellCheck','enableStyleDialog','enableTableDialog','enableTableOfContentsDialog','enableTableOptionsDialog','enableTablePropertiesDialog','enableTextExport','enableTrackChanges','enableWordExport','headers','height','isReadOnly','layoutType','locale','pageGap','pageOutline','serverActionSettings','serviceUrl','showComments','showRevisions','useCtrlClickToFollowHyperlink','userColor','width','zIndex','zoomFactor'];
+export const outputs: string[] = ['afterFormFieldFill','beforeFormFieldFill','beforePaneSwitch','commentBegin','commentDelete','commentEnd','contentChange','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','keyDown','requestNavigate','searchResultsChange','selectionChange','trackChange','viewChange','zoomFactorChange'];
 export const twoWays: string[] = [];
 
 /**
@@ -26,6 +26,8 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase])
 export class DocumentEditorComponent extends DocumentEditor implements IComponentBase {
+    public context : any;
+    public tagObjects: any;
 
 
 
@@ -206,18 +208,24 @@ export class DocumentEditorComponent extends DocumentEditor implements IComponen
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

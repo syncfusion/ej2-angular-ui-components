@@ -1,3 +1,21 @@
+@keyframes material-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fabric-spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .e-dropdownbase .e-list-item .e-list-icon {
   padding: 0 10px 0 0;
 }
@@ -25,6 +43,10 @@
   display: -ms-flexbox;
   display: flex;
   width: auto;
+}
+
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
 }
 
 .e-ddl.e-popup .e-filter-parent {
@@ -55,7 +77,7 @@
 
 .e-bigger .e-ddl.e-popup .e-input-group input,
 .e-bigger .e-ddl.e-popup .e-input-group input.e-input {
-  height: 30px;
+  height: 38px;
 }
 
 .e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
@@ -64,10 +86,6 @@
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:hover {
   background: transparent;
   color: #333;
-}
-
-.e-bigger .e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
 }
 
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
@@ -98,7 +116,6 @@
 
 .e-ddl .e-back-icon::before {
   content: '\e962';
-  font-size: 20px;
 }
 
 .e-ddl.e-input-group.e-control-wrapper .e-ddl-icon::before {
@@ -120,6 +137,15 @@
   padding: 4px 0;
 }
 
+.e-bigger.e-ddl.e-popup .e-list-item,
+.e-bigger.e-ddl.e-popup .e-list-group-item {
+  font-size: 15px;
+}
+
+.e-bigger.e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+
 .e-popup-full-page {
   bottom: 0;
   left: 0;
@@ -138,14 +164,6 @@
   content: '';
 }
 
-.e-bigger .e-ddl-device .e-input-group {
-  margin-left: 52px;
-}
-
-.e-bigger .e-ddl-device .e-input-group .e-clear-icon {
-  margin-right: 0;
-}
-
 .e-ddl-device-filter .e-filter-parent {
   background-color: #fff;
 }
@@ -161,7 +179,7 @@
 .e-filter-parent {
   border: 1px solid #c8c8c8;
   border-top-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   display: block;
   padding: 5px;
 }
@@ -188,9 +206,7 @@
 }
 
 .e-ddl.e-popup .e-filter-parent .e-back-icon {
-  margin: -2px 10px 0 -54px;
   padding: 0;
-  position: absolute;
 }
 
 .e-ddl.e-popup.e-rtl .e-filter-parent .e-input-group.e-control-wrapper .e-input-filter,
@@ -206,10 +222,6 @@
 .e-ddl.e-popup .e-ddl-footer,
 .e-ddl.e-popup .e-ddl-header {
   cursor: default;
-}
-
-.e-bigger .e-popup .e-clear-icon {
-  display: none;
 }
 
 .e-ddl.e-input-group .e-ddl-hidden {
@@ -238,7 +250,7 @@
 
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   height: auto;
   margin: 0;
@@ -265,8 +277,22 @@ ejs-dropdownlist {
   font-size: 13px;
 }
 
+.e-small.e-ddl.e-popup .e-list-item,
+.e-small.e-ddl.e-popup .e-list-group-item,
+.e-input-group.e-ddl.e-small .e-list-item,
+.e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 13px;
+}
+
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,
 .e-bigger.e-small .e-ddl.e-popup .e-list-group-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-item,
+.e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
+  font-size: 14px;
+}
+
+.e-bigger.e-small.e-ddl.e-popup .e-list-item,
+.e-bigger.e-small.e-ddl.e-popup .e-list-group-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-item,
 .e-bigger .e-input-group.e-ddl.e-small .e-list-group-item {
   font-size: 14px;

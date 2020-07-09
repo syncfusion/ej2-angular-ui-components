@@ -14,6 +14,10 @@
   width: auto;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-popup .e-filter-parent {
   border-left-width: 0;
   border-right-width: 0;
@@ -42,7 +46,7 @@
 
 .e-bigger .e-ddl.e-popup .e-input-group input,
 .e-bigger .e-ddl.e-popup .e-input-group input.e-input {
-  height: 30px;
+  height: 38px;
 }
 
 .e-input-group:not(.e-disabled) .e-control.e-dropdownlist ~ .e-ddl-icon:active,
@@ -51,10 +55,6 @@
 .e-ddl.e-popup .e-input-group:not(.e-disabled) .e-clear-icon:hover {
   background: transparent;
   color: #333;
-}
-
-.e-bigger .e-popup.e-ddl-device .e-input-group {
-  margin: 0 0 0 55px;
 }
 
 .e-bigger.e-small .e-ddl.e-popup .e-list-item,

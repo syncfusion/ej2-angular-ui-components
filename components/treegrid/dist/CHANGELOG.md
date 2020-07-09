@@ -2,77 +2,72 @@
 
 ## [Unreleased]
 
-## 17.2.47 (2019-08-27)
+## 18.2.44 (2020-07-07)
 
 ### TreeGrid
 
 #### Bug Fixes
 
-- `#243953` - Filter works properly with Filter Settings and Search Settings.
+- `#279109` - Checkbox checked properly for child records in remote data.
+- `#277364`, `#279732` - Checkbox with `allowRowDragAndDrop` property rendered properly after editing and cancelling in cell edit mode.
+- `#277364` - Checkbox with `autoCheckHierarchy` property rendered properly after editing and cancelling in cell edit mode.
+- `#278266` - Edit type `dropdownedit` is working properly in cell edit mode when enter key is pressed.
+- `#272026` - `updateRow` method works fine for updating treegrid data source.
+- `#273309` - Editing the zeroth level added record works fine in Batch mode.
+- `#277361` - Auto generated columns work fine when two treegrids are rendered on the same page.
 
-## 17.2.46 (2019-08-22)
+- `F153495` - Sorting after editing is working fine with cell edit mode.
+- `#266963`- Drag and drop works fine in unordered list of data.
+- `#F151795` - Localization support works fine in Add row, Above, Below Context Menu Items.
+- `#F151795`- In Drag and drop, while dropping at first row, its border color is changed properly.
+
+#### New Features
+
+- `#258863`, `#271677` - Expand & Collapse child rows support has been provided in Excel Export.
+- Columnchooser support has been provided that allows user to show or hide columns dynamically.
+- Provided support for Editing with Virtualization feature.
+
+#### Breaking Changes
+
+- Now `data`, `row` these Tree Grid selection event arguments are get array values only when we perform multi selection. Please find modified event arguments and it types from the below table,
+
+| `Properties` | `Type` | 
+|---|---|
+| `data` | `Object or Object[]` | 
+| `rowIndex` | `number` | 
+| `rowIndexes` | `number[]` | 
+| `row` | `Element or Element[]` | 
+
+## 17.4.39 (2019-12-17)
 
 ### TreeGrid
 
 #### New Features
 
-- `#231649` - Support for Row Drag and Drop has been provided that allows to reorder rows within grid and also to drag and drop rows between two treegrid.
-
-## 17.2.41 (2019-08-14)
-
-### TreeGrid
-
-#### Bug Fixes
-
-- `#243065` - `expandAll` and `collapseAll` method works fine for remote data with `loadChildOnDemand` property as true.
-
-## 17.2.40 (2019-08-06)
-
-### TreeGrid
-
-#### Bug Fixes
-
-- `#146272` - Ellipsis works fine for tree-view column.
-
-- `#146212` - Template works fine for dynamic columns.
-
-## 17.2.39 (2019-07-30)
-
-### TreeGrid
-
-#### Bug Fixes
-
-- #145979 - `checkboxChange` event will trigger for header cell check.
-- #240702 - `allowEditOnDblClick` works fine in Cell Edit mode.
+- AutoFill support has been provided that allows users to copy the data of selected cells and paste it to another cells by dragging.
 
 #### Breaking Changes
 
-- `checkboxChange` event will trigger after the cell checked.
-
-## 17.2.35 (2019-07-17)
-
-### TreeGrid
+- Default value of column's `disableHtmlEncode` is set to true, so the HTML tags can be displayed in the Grid header and content by default. To display it as html content `disableHtmlEncode` need to be set as false.
 
 #### Bug Fixes
 
-- `crudaction` works fine while performing crud actions with server-side.
+- `#148913` - Expand icon displays properly for the nested records in Custom Data Binding.
 
-## 17.2.28-beta (2019-06-27)
+## 17.2.48-beta (2019-08-28)
 
 ### TreeGrid
 
 #### New Features
 
-- Virtual Scrolling support has been provided in which the rows are added dynamically while scrolling.
-- Detail Template support has been provided that provides additional information about a particular row.
+- Checkbox selection support has been provided that allows users to select rows using checkbox.
+- Checkbox Column support has been provided that allows users to check rows using checkbox in treegrid column.
 
 #### Bug Fixes
 
-- `collapseAll` method works fine with pageSize mode set to `All`.
-
-#### Breaking Changes
-
-- The default value of `enableHover` property has been changed from `true` to `false`.
+- Change detection for properties `dataSource` and `query` were handled for remote data.
+- Edited records can be searched/filtered.
+- Inner level records will be collapsed/expanded after filtering/searching actions.
 
 ## 17.1.1-beta (2019-01-29)
 

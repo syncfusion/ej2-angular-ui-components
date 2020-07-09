@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['ajaxSettings', 'allowDragAndDrop', 'allowMultiSelection', 'contextMenuSettings', 'cssClass', 'detailsViewSettings', 'enablePersistence', 'enableRtl', 'height', 'locale', 'navigationPaneSettings', 'path', 'searchSettings', 'selectedItems', 'showFileExtension', 'showHiddenItems', 'showThumbnail', 'toolbarSettings', 'uploadSettings', 'view', 'width'];
-var outputs = ['beforePopupClose', 'beforePopupOpen', 'beforeSend', 'created', 'destroyed', 'failure', 'fileDragStart', 'fileDragStop', 'fileDragging', 'fileDropped', 'fileLoad', 'fileOpen', 'fileSelect', 'menuClick', 'menuOpen', 'popupClose', 'popupOpen', 'success', 'toolbarClick', 'toolbarCreate', 'uploadListCreate'];
+var inputs = ['ajaxSettings', 'allowDragAndDrop', 'allowMultiSelection', 'contextMenuSettings', 'cssClass', 'detailsViewSettings', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'height', 'locale', 'navigationPaneSettings', 'path', 'popupTarget', 'rootAliasName', 'searchSettings', 'selectedItems', 'showFileExtension', 'showHiddenItems', 'showThumbnail', 'sortOrder', 'toolbarSettings', 'uploadSettings', 'view', 'width'];
+var outputs = ['beforeDownload', 'beforeImageLoad', 'beforePopupClose', 'beforePopupOpen', 'beforeSend', 'created', 'destroyed', 'failure', 'fileDragStart', 'fileDragStop', 'fileDragging', 'fileDropped', 'fileLoad', 'fileOpen', 'fileSelect', 'fileSelection', 'menuClick', 'menuOpen', 'popupClose', 'popupOpen', 'success', 'toolbarClick', 'toolbarCreate', 'uploadListCreate'];
 var twoWays = [''];
 /**
  * Represents the Essential JS 2 Angular FileManager Component.
@@ -98,27 +98,32 @@ exports.FileManagerComponent = /** @class */ (function (_super) {
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ej2AngularBase.ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     FileManagerComponent.prototype.ngAfterContentChecked = function () {
+        this.context.ngAfterContentChecked(this);
     };
     return FileManagerComponent;
 }(ej2Filemanager.FileManager));
@@ -228,6 +233,7 @@ exports.layoutItems = ej2Filemanager.layoutItems;
 exports.ContextMenuSettings = ej2Filemanager.ContextMenuSettings;
 exports.NavigationPaneSettings = ej2Filemanager.NavigationPaneSettings;
 exports.UploadSettings = ej2Filemanager.UploadSettings;
+exports.Column = ej2Filemanager.Column;
 exports.TOOLBAR_ID = ej2Filemanager.TOOLBAR_ID;
 exports.LAYOUT_ID = ej2Filemanager.LAYOUT_ID;
 exports.NAVIGATION_ID = ej2Filemanager.NAVIGATION_ID;
@@ -254,6 +260,7 @@ exports.CONTROL = ej2Filemanager.CONTROL;
 exports.CHECK_SELECT = ej2Filemanager.CHECK_SELECT;
 exports.ROOT_POPUP = ej2Filemanager.ROOT_POPUP;
 exports.MOBILE = ej2Filemanager.MOBILE;
+exports.MOB_POPUP = ej2Filemanager.MOB_POPUP;
 exports.MULTI_SELECT = ej2Filemanager.MULTI_SELECT;
 exports.FILTER = ej2Filemanager.FILTER;
 exports.LAYOUT = ej2Filemanager.LAYOUT;
@@ -352,6 +359,7 @@ exports.pathChanged = ej2Filemanager.pathChanged;
 exports.destroy = ej2Filemanager.destroy;
 exports.beforeRequest = ej2Filemanager.beforeRequest;
 exports.upload = ej2Filemanager.upload;
+exports.skipUpload = ej2Filemanager.skipUpload;
 exports.afterRequest = ej2Filemanager.afterRequest;
 exports.download = ej2Filemanager.download;
 exports.layoutRefresh = ej2Filemanager.layoutRefresh;
@@ -393,6 +401,12 @@ exports.dragHelper = ej2Filemanager.dragHelper;
 exports.dragging = ej2Filemanager.dragging;
 exports.updateSelectionData = ej2Filemanager.updateSelectionData;
 exports.methodCall = ej2Filemanager.methodCall;
+exports.permissionRead = ej2Filemanager.permissionRead;
+exports.permissionEdit = ej2Filemanager.permissionEdit;
+exports.permissionEditContents = ej2Filemanager.permissionEditContents;
+exports.permissionCopy = ej2Filemanager.permissionCopy;
+exports.permissionUpload = ej2Filemanager.permissionUpload;
+exports.permissionDownload = ej2Filemanager.permissionDownload;
 exports.FileManager = ej2Filemanager.FileManager;
 exports.Toolbar = ej2Filemanager.Toolbar;
 exports.BreadCrumbBar = ej2Filemanager.BreadCrumbBar;

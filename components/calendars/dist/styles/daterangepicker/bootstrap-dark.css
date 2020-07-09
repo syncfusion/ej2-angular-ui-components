@@ -69,6 +69,21 @@
   display: flex;
 }
 
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  visibility: hidden;
+  width: 0;
+}
+
 .e-daterangepicker.e-popup,
 .e-bigger.e-small .e-daterangepicker.e-popup {
   border: 1px solid rgba(141, 141, 141, 0.15);
@@ -111,7 +126,6 @@
   text-decoration: none;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -134,7 +148,6 @@
   margin: 0 0 13px 0;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -426,7 +439,6 @@
   -ms-flex-pack: center;
       justify-content: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;

@@ -19,7 +19,6 @@ ejs-calendar {
   display: block;
   overflow: auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -127,8 +126,8 @@ ejs-calendar {
 .e-calendar .e-content td.e-week-number,
 .e-bigger.e-small .e-calendar .e-content td.e-week-number {
   color: #f0f0f0;
-  font-family: normal;
   font-size: 14px;
+  font-style: italic;
   font-weight: 500;
 }
 
@@ -1090,6 +1089,34 @@ ejs-calendar {
   min-height: 40px;
 }
 
+.e-time-overflow {
+  overflow: hidden;
+}
+
+.e-timepicker-mob-popup-wrap {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+.e-timepicker-mob-popup-wrap .e-timepicker.e-popup.e-lib.e-control.e-popup-open {
+  left: 0 !important;
+  position: relative;
+  top: 0 !important;
+}
+
 /*! timepicker theme */
 .e-time-wrapper .e-input-group-icon.e-icons.e-active {
   color: #fff;
@@ -1229,8 +1256,8 @@ ejs-calendar {
 }
 
 .e-datepicker .e-model-header {
-  background-color: none;
-  color: none;
+  background-color: transparent;
+  color: transparent;
   cursor: default;
   display: none;
   padding: 10px 10px 10px 15px;
@@ -1290,8 +1317,8 @@ ejs-calendar {
   min-height: 40px;
 }
 
-@media screen and (orientation: landscape) and (max-device-height: 360px) {
-  .e-datepicker .e-calendar .e-month table tbody {
+@media screen and (orientation: landscape) and (max-height: 360px) {
+  .e-datepicker .e-calendar.e-device .e-month table tbody {
     display: inline-block;
     height: 150px;
     overflow: auto;
@@ -1312,14 +1339,6 @@ ejs-calendar {
 
 .e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
-}
-
-.e-date-wrapper span.e-input-group-icon.e-date-icon.e-icons.e-active {
-  color: none;
 }
 
 /*! component icons */
@@ -1393,6 +1412,21 @@ ejs-calendar {
   display: flex;
 }
 
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper .e-daterange-hidden,
+.e-float-input.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-input-group.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden,
+.e-float-input.e-control-wrapper.e-date-range-wrapper.e-input-focus .e-daterange-hidden {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  visibility: hidden;
+  width: 0;
+}
+
 .e-daterangepicker.e-popup,
 .e-bigger.e-small .e-daterangepicker.e-popup {
   border: 1px solid rgba(141, 141, 141, 0.15);
@@ -1435,7 +1469,6 @@ ejs-calendar {
   text-decoration: none;
   text-overflow: ellipsis;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -1458,7 +1491,6 @@ ejs-calendar {
   margin: 0 0 13px 0;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -1750,7 +1782,6 @@ ejs-calendar {
   -ms-flex-pack: center;
       justify-content: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 100%;
@@ -2309,7 +2340,7 @@ ejs-calendar {
   margin: 0;
 }
 
-.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 0;
 }
 
@@ -2371,8 +2402,8 @@ ejs-calendar {
   margin: 0;
 }
 
-.e-bigger.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon,
-.e-bigger .e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-bigger.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon,
+.e-bigger .e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 0;
 }
 

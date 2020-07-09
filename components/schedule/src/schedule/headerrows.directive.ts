@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -52,6 +53,7 @@ export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

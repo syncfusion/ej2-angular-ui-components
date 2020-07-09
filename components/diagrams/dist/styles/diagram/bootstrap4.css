@@ -4,7 +4,6 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  speak: none;
   text-transform: none;
 }
 
@@ -134,15 +133,15 @@
   stroke: #fff;
 }
 
+.e-diagram-endpoint-handle.e-connected {
+  fill: #fff;
+  stroke: #007bff;
+}
+
 .e-diagram-endpoint-handle.e-disabled {
   fill: #ced4da;
   opacity: 1;
   stroke: #fff;
-}
-
-.e-diagram-endpoint-handle.e-connected {
-  fill: #fff;
-  stroke: #007bff;
 }
 
 .e-diagram-bezier-handle {
@@ -204,10 +203,12 @@
 
 .e-symbolpalette .e-symbol-hover:hover {
   background: #e9ecef;
+  border-radius: 4px;
 }
 
 .e-symbolpalette .e-symbol-selected {
   background: #007bff;
+  border-radius: 4px;
 }
 
 .e-diagram-tooltip {

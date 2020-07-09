@@ -22,6 +22,7 @@ let outputs: string[] = [];
     }
 })
 export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -75,6 +76,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * Index of the point, to be exploded on load.
      * @default null
      * @aspdefaultvalueignore 
+     * @blazordefaultvalue Double.NaN
      */
     public explodeIndex: any;
     /** 
@@ -211,6 +213,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

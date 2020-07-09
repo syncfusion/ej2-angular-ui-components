@@ -337,12 +337,12 @@
 
 .e-device .e-recurrenceeditor .e-form-left,
 .e-device .e-recurrenceeditor .e-input-wrapper-side.e-form-left {
-  padding: 0 0 10px;
+  padding: 0 3px 10px 0;
 }
 
 .e-device .e-recurrenceeditor .e-form-right,
 .e-device .e-recurrenceeditor .e-input-wrapper-side.e-form-right {
-  padding: 0 0 10px;
+  padding: 0 0 10px 3px;
 }
 
 .e-device .e-recurrenceeditor .e-input-wrapper.e-end-on-date,

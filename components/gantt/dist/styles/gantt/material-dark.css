@@ -4,6 +4,10 @@
   transition: transform 300ms ease;
 }
 
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
 .e-ddl.e-control-wrapper.e-icon-anim .e-ddl-icon::before {
   transform: rotate(180deg);
   transition: transform 300ms ease;
@@ -44,7 +48,7 @@
 .e-bigger .e-ddl-device .e-input-group.e-input-focus:not(.e-success):not(.e-warning):not(.e-error) {
   background: #f5f5f5;
   border-width: 0;
-  box-shadow: 0;
+  box-shadow: none;
   margin-bottom: 0;
 }
 
@@ -61,12 +65,14 @@
   padding: 6px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon {
   min-height: 16px;
   min-width: 16px;
 }
 
-.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
+.e-bigger .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter,
+.e-bigger.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-filter {
   padding: 8px 16px 8px 0;
 }
 
@@ -83,14 +89,18 @@
 
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-small .e-clear-icon,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group .e-clear-icon,
 .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus.e-small .e-clear-icon,
-.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
+.e-small .e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-input-group.e-input-focus .e-clear-icon {
   margin: 0;
 }
 
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small .e-input-filter,
 .e-small .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
+.e-small.e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
 .e-popup.e-ddl:not(.e-ddl-device) .e-filter-parent .e-input-group.e-small.e-input-focus .e-input-filter {
   padding: 5px 5px 5px 12px;
 }
@@ -219,6 +229,26 @@
   content: '\e657';
 }
 
+.e-gantt .e-csvexport::before {
+  content: '\e241';
+}
+
+.e-gantt .e-excelexport::before {
+  content: '\e242';
+}
+
+.e-gantt .e-pdfexport::before {
+  content: '\e240';
+}
+
+.e-gantt .e-indent::before {
+  content: '\e33f';
+}
+
+.e-gantt .e-outdent::before {
+  content: '\e35d';
+}
+
 .e-gantt .e-add-above::before {
   content: '\e658';
 }
@@ -240,6 +270,77 @@
 .e-gantt {
   display: block;
   width: 100%;
+}
+
+.e-gantt .e-cloneproperties {
+  padding: 4px 5px;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop .e-row .e-icon-rowdragicon::before {
+  left: -5px;
+  position: relative;
+}
+
+.e-gantt .e-cloneproperties {
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 1;
+  overflow: hidden;
+  padding: 4px 5px;
+  text-align: center;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop {
+  border-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: visible;
+}
+
+.e-gantt .e-cloneproperties .e-bothganttlines {
+  border-width: 1px 0 0 1px;
+}
+
+.e-gantt .e-draganddrop {
+  border-width: 0 1px 1px;
+  font-weight: normal;
+  padding: 0;
+}
+
+.e-gantt .e-draganddrop .e-rowcell {
+  opacity: .95;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop table {
+  border-spacing: 0;
+}
+
+.e-gantt .e-icons.e-errorelem {
+  display: inline-block;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.e-gantt .e-errorelem::before {
+  color: #e3165b;
+  content: '\e22a';
+  transform: rotate(180deg);
+}
+
+.e-gantt .e-verticallines .e-cloneproperties.e-draganddrop .e-rowdragdrop,
+.e-gantt .e-bothlines .e-cloneproperties.e-draganddrop .e-rowdragdrop {
+  border-bottom: 0;
+  border-right: 1px solid #616161;
+  border-top: 1px solid #616161;
 }
 
 .e-gantt .e-gantt-toolbar {
@@ -423,7 +524,6 @@
   position: static;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -454,7 +554,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-zero-spacing {
-  border-spacing: none;
+  border-spacing: 0;
 }
 
 .e-gantt .e-gantt-chart .e-chart-row:first-child .e-chart-row-border {
@@ -536,6 +636,7 @@
 }
 
 .e-gantt .e-gantt-chart .e-label {
+  margin: 3px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -561,6 +662,7 @@
 .e-gantt .e-gantt-chart .e-indicator-span {
   display: inline-block;
   font-size: 13px;
+  font-weight: 400;
   overflow: hidden;
   position: absolute;
   text-overflow: ellipsis;
@@ -570,9 +672,22 @@
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar,
 .e-gantt .e-gantt-chart .e-gantt-child-progressbar,
 .e-gantt .e-gantt-chart .e-gantt-parent-progressbar,
-.e-gantt .e-gantt-chart .e-gantt-milestone {
+.e-gantt .e-gantt-chart .e-gantt-milestone,
+.e-gantt .e-gantt-chart .e-gantt-parent-milestone,
+.e-gantt .e-gantt-chart .e-gantt-manualparent-milestone {
   display: inline-block;
   width: 100%;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-main-container {
+  background-color: transparent;
+  cursor: move;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparent-taskbar {
+  margin-top: 3px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div,
@@ -598,7 +713,6 @@
 .e-gantt .e-gantt-chart .e-chart-scroll-container,
 .e-gantt .e-gantt-chart .e-chart-rows-container {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -656,7 +770,7 @@
   border-right: 6px solid transparent;
   cursor: col-resize;
   height: 0;
-  left: -1;
+  left: -1px;
   position: absolute;
   top: -6px;
   width: 0;
@@ -668,18 +782,26 @@
   z-index: 3;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-top {
+.e-gantt .e-gantt-chart .e-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
   border-style: none solid solid;
   border-top: 0;
 }
 
 .e-gantt .e-gantt-chart .e-milestone-top,
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-top,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
-.e-gantt .e-gantt-chart .e-milestone-bottom {
+.e-gantt .e-gantt-chart .e-milestone-bottom,
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
   border-bottom: 0;
   border-style: solid solid none;
 }
@@ -727,6 +849,18 @@
   display: inline-block;
   position: absolute;
   z-index: 0;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-leftarc {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  position: absolute;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rightarc {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  position: absolute;
 }
 
 .e-gantt .e-gantt-chart .e-event-markers {
@@ -827,6 +961,38 @@
   cursor: no-drop;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left,
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  background-color: #989A9C;
+  border-color: #989A9C;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: -1px;
+  position: absolute;
+  width: 10px;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top,
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-right {
+  cursor: e-resize;
+  margin-left: -8px;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar-left {
+  margin-left: 0;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-manualparenttaskbar {
+  background: #989A9C;
+  margin-top: 3px;
+  position: absolute;
+}
+
 .e-gantt .e-gantt-chart .e-icon {
   font-family: 'e-icons';
   font-size: 13px;
@@ -836,6 +1002,11 @@
   line-height: 1;
   text-transform: none;
   vertical-align: middle;
+}
+
+.e-gantt .e-gantt-chart .e-active-container {
+  outline: 1px solid;
+  outline-offset: 2px;
 }
 
 .e-gantt .e-gantt-dialog {
@@ -1018,7 +1189,7 @@
 }
 
 .e-gantt.e-device .e-gantt-dialog {
-  max-height: auto;
+  max-height: none;
 }
 
 .e-gantt.e-device .e-gantt-dialog .e-dlg-closeicon-btn {
@@ -1080,9 +1251,35 @@
   border-radius: 0px;
 }
 
+.e-gantt .e-cloneproperties.e-draganddrop {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  opacity: .95;
+  overflow: visible;
+}
+
+.e-gantt .e-cloneproperties {
+  background-color: #424242;
+  border-color: #424242;
+  color: #fff;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop .e-rowcell {
+  color: #fff;
+}
+
+.e-gantt .e-cloneproperties.e-draganddrop table,
+.e-gantt .e-cloneproperties.e-draganddrop table .e-selectionbackground {
+  background-color: #424242;
+  height: 30px;
+}
+
 .e-gantt .e-gantt-toolbar + .e-gantt-splitter {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+.e-gantt .e-grid .e-focused:not(.e-menu-item) {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset !important;
 }
 
 .e-gantt .e-gantt-dialog .e-dlg-header {
@@ -1178,7 +1375,6 @@
 .e-gantt .e-gantt-chart .e-timeline-single-header-cell {
   border-color: #616161;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
 }
 
 .e-gantt .e-gantt-chart .e-timeline-single-header-cell {
@@ -1219,10 +1415,36 @@
   border-color: #616161;
 }
 
+.e-gantt .e-gantt-chart .e-active-container {
+  outline-color: rgba(255, 255, 255, 0.5);
+}
+
 .e-gantt .e-gantt-chart .e-gantt-child-taskbar-inner-div {
   background-color: #3f51b5;
   border: 1px solid #7280ce;
   border-radius: 4px;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-taskbar-inner-div {
+  border: 1px solid #fff;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-gantt-child-progressbar {
+  width: 0px !important;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-collapsed-taskbar-drag {
+  background-color: #7280ce;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-left-connectorpoint-outer-div {
+  display: none;
+}
+
+.e-gantt .e-gantt-chart .e-collapse-parent .e-right-connectorpoint-outer-div {
+  display: none;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-parent-taskbar-inner-div {
@@ -1241,6 +1463,20 @@
   border: 0px;
 }
 
+.e-gantt .e-gantt-chart .e-gantt-child-manualtaskbar {
+  background-color: #8dd1c4;
+  border: #4fb29f;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar.e-gantt-child-manualtaskbar {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #8dd1c4 30%, #8dd1c4 70%, #8dd1c4 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
+.e-gantt .e-gantt-chart .e-gantt-child-manualprogressbar {
+  background-color: #67c1b2;
+  border: #4fb29f;
+}
+
 .e-gantt .e-gantt-chart .e-holiday {
   background: #616161;
 }
@@ -1256,6 +1492,12 @@
 
 .e-gantt .e-gantt-chart .e-weekend-header-cell {
   background: #424242;
+}
+
+.e-gantt .e-gantt-chart .e-rangecontainer .e-rg-rangdiv {
+  border: 2px solid #FC7A05;
+  width: 5px;
+  z-index: 6;
 }
 
 .e-gantt .e-gantt-chart .e-event-markers {
@@ -1349,22 +1591,19 @@
 .e-gantt .e-gantt-chart .e-left-label-inner-div,
 .e-gantt .e-gantt-chart .e-right-label-inner-div {
   color: rgba(0, 0, 0, 0.87);
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
   font-size: 13px;
 }
 
 .e-gantt .e-gantt-chart .e-left-label-temp-container {
-  padding-right: 25px;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
+  padding-right: 25px;
 }
 
 .e-gantt .e-gantt-chart .e-right-label-temp-container {
-  margin-left: 25px;
-  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
+  margin-left: 25px;
 }
 
 .e-gantt .e-gantt-chart .e-right-label-container {
@@ -1381,8 +1620,8 @@
 
 .e-gantt .e-gantt-chart .e-right-connectorpoint-outer-div,
 .e-gantt .e-gantt-chart .e-left-connectorpoint-outer-div {
-  width: 12px;
   height: 8px;
+  width: 12px;
 }
 
 .e-gantt .e-gantt-chart .e-left-connectorpoint-outer-div {
@@ -1396,10 +1635,10 @@
 }
 
 .e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar-right {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
   border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 2px;
   border-top-left-radius: 0px;
+  border-top-right-radius: 2px;
 }
 
 .e-gantt .e-gantt-chart .e-gantt-unscheduled-taskbar-left {
@@ -1424,9 +1663,29 @@
   border-top-color: #dadada;
 }
 
+.e-gantt .e-gantt-chart .e-parent-milestone-top {
+  border-bottom-color: #4cc7ba;
+}
+
+.e-gantt .e-gantt-chart .e-parent-milestone-bottom {
+  border-top-color: #4cc7ba;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-top {
+  border-bottom-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-manualparent-milestone-bottom {
+  border-top-color: #989A9C;
+}
+
+.e-gantt .e-gantt-chart .e-gantt-unscheduled-manualtask {
+  background: linear-gradient(to right, rgba(63, 81, 181, 0.2), #989A9C 30%, #989A9C 70%, #989A9C 70%, rgba(63, 81, 181, 0.2) 100%);
+}
+
 .e-gantt .e-gantt-chart .e-label {
-  font-size: 13px;
   color: #fff;
+  font-size: 13px;
 }
 
 .e-gantt .e-gantt-chart .e-active {
@@ -1463,7 +1722,7 @@
   border-top-color: #e0e0e0;
 }
 
-.e-gantt .e-gantt-chart .e-content {
+.e-gantt .e-gantt-chart .e-ganttpopup .e-content {
   background-color: #fff;
   border-color: #e0e0e0;
 }
@@ -1474,8 +1733,8 @@
 }
 
 .e-gantt .e-gantt-chart .e-active-parent-task {
-  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+  box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .e-gantt .e-gantt-chart .e-active-parent-task .e-gantt-parent-taskbar-inner-div {
@@ -1493,88 +1752,92 @@
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-task-label {
-  color: transparent;
+  color: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-line {
-  border-color: #8A8A8A;
+  border-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-connector-line-right-arrow {
-  border-left-color: #8A8A8A;
+  border-left-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-connector-line-left-arrow {
-  border-right-color: #8A8A8A;
+  border-right-color: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-child-taskbar-inner-div {
-  background: #D5D5D5;
-  border: #D5D5D5;
+  background: #D5D5D5 !important;
+  border: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-child-progressbar-inner-div {
-  background-color: transparent;
-  border: transparent;
+  background-color: transparent !important;
+  border: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-milestone-top {
-  border-bottom-color: #D5D5D5;
+  border-bottom-color: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-milestone-bottom {
-  border-top-color: #D5D5D5;
+  border-top-color: #D5D5D5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-parent-taskbar-inner-div {
-  background-color: #8A8A8A;
-  border: #8A8A8A;
+  background-color: #8A8A8A !important;
+  border: #8A8A8A !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-gantt-parent-progressbar-inner-div {
-  background-color: transparent;
-  border: transparent;
+  background-color: transparent !important;
+  border: transparent !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-gantt-child-taskbar-inner-div {
-  background: #7280ce;
-  border: #7280ce;
+  background: #7280ce !important;
+  border: #7280ce !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-milestone-top {
-  border-bottom-color: #7280ce;
+  border-bottom-color: #7280ce !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-child-task .e-milestone-bottom {
-  border-top-color: #7280ce;
+  border-top-color: #7280ce !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-gantt-child-taskbar-inner-div {
-  background: #8591d5;
-  border: #8591d5;
+  background: #8591d5 !important;
+  border: #8591d5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-milestone-top {
-  border-bottom-color: #8591d5;
+  border-bottom-color: #8591d5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-milestone-bottom {
-  border-top-color: #8591d5;
+  border-top-color: #8591d5 !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-line {
-  border-color: #7280ce;
+  border-color: #7280ce !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-connector-line-right-arrow {
-  border-left-color: #7280ce;
+  border-left-color: #7280ce !important;
 }
 
 .e-gantt .e-gantt-chart .e-predecessor-touch-mode .e-active-connected-task .e-connector-line-left-arrow {
-  border-right-color: #7280ce;
+  border-right-color: #7280ce !important;
 }
 
-.e-gantt .e-grid .e-icons {
+.e-gantt .e-icons {
+  color: #fff;
+}
+
+.e-gantt .e-grid .e-icons:not(.e-stop):not(.e-check):not(.e-icon-left):not(.e-date-icon) {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 

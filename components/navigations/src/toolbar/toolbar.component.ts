@@ -1,15 +1,15 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Toolbar } from '@syncfusion/ej2-navigations';
 
 import { ItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['enableCollision','enablePersistence','enableRtl','height','items','locale','overflowMode','scrollStep','width'];
+export const inputs: string[] = ['allowKeyboard','cssClass','enableCollision','enableHtmlSanitizer','enablePersistence','enableRtl','height','items','locale','overflowMode','scrollStep','width'];
 export const outputs: string[] = ['beforeCreate','clicked','created','destroyed'];
 export const twoWays: string[] = [''];
 
 /**
- * Represents the Essential JS 2 Angular Toolbar Component.
+ * Represents the Angular Toolbar Component.
  * ```html
  * <ejs-toolbar></ejs-toolbar>
  * ```
@@ -26,7 +26,9 @@ export const twoWays: string[] = [''];
 })
 @ComponentMixins([ComponentBase])
 export class ToolbarComponent extends Toolbar implements IComponentBase {
-    public childItems: any;
+    public containerContext : any;
+    public tagObjects: any;
+    public childItems: QueryList<ItemsDirective>;
     public tags: string[] = ['items'];
 
 
@@ -38,18 +40,24 @@ export class ToolbarComponent extends Toolbar implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childItems;
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

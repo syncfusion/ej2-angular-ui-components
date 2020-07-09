@@ -177,7 +177,7 @@ export class <%= classify(name) %>Component {
 
         return pivotData;
     }
-
+/* tslint:enable */
     public gridSettings: GridSettings = {
         columnWidth: 140
     } as GridSettings;

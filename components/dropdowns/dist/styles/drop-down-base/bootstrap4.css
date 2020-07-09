@@ -23,7 +23,8 @@
   padding: 0 8px 0 0;
 }
 
-.e-input-group.e-ddl .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
+.e-input-group.e-ddl .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle,
+.e-ddl.e-popup .e-filter-parent .e-spinner-pane .e-spinner-inner .e-spin-bootstrap4 .e-path-circle {
   stroke-width: 1px;
 }
 
@@ -96,7 +97,7 @@
 .e-popup.e-ddl .e-dropdownbase.e-nodata {
   color: #212529;
   cursor: default;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding: 14px 16px;
   text-align: center;
@@ -138,6 +139,27 @@
   padding-right: 30px;
 }
 
+.e-rtl .e-dropdownbase .e-list-item {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+.e-small.e-rtl .e-dropdownbase .e-list-item,
+.e-small .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small .e-dropdownbase .e-list-item {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+.e-small.e-bigger.e-rtl .e-dropdownbase .e-list-item,
+.e-small.e-bigger .e-rtl .e-dropdownbase .e-list-item,
+.e-rtl .e-small.e-bigger .e-dropdownbase .e-list-item,
+.e-small .e-rtl.e-bigger .e-dropdownbase .e-list-item,
+.e-bigger .e-rtl.e-small .e-dropdownbase .e-list-item {
+  padding-left: 24px;
+  padding-right: 0;
+}
+
 .e-dropdownbase {
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -147,7 +169,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #212529;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   line-height: 26px;
   min-height: 26px;
@@ -160,7 +182,7 @@
   background-color: #fff;
   border-color: #fff;
   color: #6c757d;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   line-height: 26px;
@@ -221,7 +243,7 @@
   border-style: solid;
   border-width: 0 0 1px 0;
   color: #6c757d;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 12px;
   font-weight: normal;
   text-indent: 10px;
@@ -306,7 +328,7 @@
   border-bottom: 1px;
   border-color: #fff;
   color: #212529;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-family: inherit;
   font-size: 14px;
   padding-right: 24px;
   text-indent: 20px;

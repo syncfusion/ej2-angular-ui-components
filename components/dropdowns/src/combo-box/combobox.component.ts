@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class ComboBoxComponent extends ComboBox implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -41,6 +44,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * Accepts the template design and assigns it to the footer container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
+     * @deprecated 
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -49,6 +53,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * Accepts the template design and assigns it to the header container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.
      * @default null
+     * @deprecated 
      */
     @ContentChild('headerTemplate')
     @Template()
@@ -56,6 +61,7 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
     /** 
      * Accepts the template design and assigns it to the group headers present in the popup list.
      * @default null
+     * @deprecated 
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -67,15 +73,16 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
+     * @deprecated 
      */
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
     @ContentChild('noRecordsTemplate')
-    @Template('No Records Found')
+    @Template('No records found')
     public noRecordsTemplate: any;
     @ContentChild('actionFailureTemplate')
-    @Template('The Request Failed')
+    @Template('Request failed')
     public actionFailureTemplate: any;
 
     private skipFromEvent:boolean = true;
@@ -87,6 +94,8 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -102,15 +111,20 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

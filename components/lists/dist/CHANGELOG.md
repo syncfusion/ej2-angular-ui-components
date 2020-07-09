@@ -2,6 +2,58 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### ListView
+
+#### Bug Fixes
+
+- The issue with `enabling the virtualization support in ListView component that throws script error in IE 11 browser` has been resolved.
+
+### ListBase
+
+#### Bug Fixes
+
+- #276068 Issue with `grouping of list-item in header` has been fixed.
+
+## 17.4.40 (2019-12-24)
+
+### ListBox
+
+#### Bug Fixes
+
+- Provided 'beforeDrop' event.
+
+## 17.3.27 (2019-11-12)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with Drag and Drop in Empty area of List Box has been fixed
+
+## 17.3.21 (2019-10-30)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with Drag and Drop has been fixed
+
+### ListView
+
+#### Bug Fixes
+
+- #251219 - The content security policy issue has been fixed.
+
+## 17.3.16 (2019-10-09)
+
+### ListView
+
+#### Bug Fixes
+
+- Issue of rendering a listview with new data in virtualization has been fixed.
+
 ## 17.1.47 (2019-05-14)
 
 ### ListView
@@ -285,6 +337,14 @@ ListView component represent data in interactive hierarchical structure interfac
 - **Customizing templates** - Allows you to customize the list item, header and category group header.
 - **Accessibility** - Provides built-in accessibility support which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 17.4.39 (2019-12-17)
+
+### ListView
+
+#### Bug Fixes
+
+- `#255485` - The crashing issue that occurred when rendering list view with virtualization and grouping has been fixed.
 
 ## 16.3.24 (2018-10-09)
 

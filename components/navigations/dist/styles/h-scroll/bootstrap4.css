@@ -263,7 +263,6 @@
 .e-hscroll.e-rtl .e-scroll-nav:hover {
   background: #5a6268;
   border: 1px #545b62;
-  border-color: "";
   color: #fff;
 }
 
@@ -280,7 +279,6 @@
 .e-hscroll:not(.e-scroll-device) .e-scroll-nav:focus {
   background: #5a6268;
   border: 1px #6c757d;
-  border-color: "";
   color: #fff;
 }
 

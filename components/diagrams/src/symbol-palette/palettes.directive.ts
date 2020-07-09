@@ -20,6 +20,7 @@ let outputs: string[] = [];
     }
 })
 export class PaletteDirective extends ComplexBase<PaletteDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -59,6 +60,7 @@ export class PaletteDirective extends ComplexBase<PaletteDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

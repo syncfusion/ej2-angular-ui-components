@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class DropDownListComponent extends DropDownList implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -69,6 +72,7 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     /** 
      * Accepts the template design and assigns it to the group headers present in the popup list.
      * @default null
+     * @deprecated 
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -80,15 +84,16 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
      * which provides options to compile template string into a executable function.
      *For EX: We have expression evolution as like ES6 expression string literals.     
      * @default null
+     * @deprecated 
      */
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
     @ContentChild('noRecordsTemplate')
-    @Template('No Records Found')
+    @Template('No records found')
     public noRecordsTemplate: any;
     @ContentChild('actionFailureTemplate')
-    @Template('The Request Failed')
+    @Template('Request failed')
     public actionFailureTemplate: any;
 
     private skipFromEvent:boolean = true;
@@ -100,6 +105,8 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -115,15 +122,20 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

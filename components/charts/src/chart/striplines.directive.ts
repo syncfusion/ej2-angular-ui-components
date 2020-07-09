@@ -24,6 +24,7 @@ let outputs: string[] = [];
     }
 })
 export class StripLineDirective extends ComplexBase<StripLineDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -164,6 +165,7 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -47,6 +48,7 @@ export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeDirective
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

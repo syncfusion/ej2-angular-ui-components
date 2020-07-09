@@ -65,7 +65,6 @@
 .e-bigger .e-pager div.e-icons,
 .e-pager.e-bigger div.e-icons {
   font-size: 13px;
-  vertical-align: "";
 }
 
 .e-bigger .e-pager div.e-parentmsgbar,
@@ -95,8 +94,7 @@
 
 .e-bigger .e-pager.e-rtl .e-pagercontainer,
 .e-pager.e-bigger.e-rtl .e-pagercontainer {
-  margin: 0 0 -4px 0;
-  margin-top: 5px;
+  margin: 5px 0 -4px 0;
 }
 
 @media (max-width: 769px) {
@@ -316,7 +314,6 @@
 .e-pager a {
   display: inline;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -413,7 +410,7 @@
 .e-pager .e-mprev,
 .e-pager .e-mnext,
 .e-pager .e-mlast {
-  -webkit-tap-highlight-color: #fff;
+  -webkit-tap-highlight-color: #400074;
 }
 
 .e-pager .e-pp,
@@ -636,9 +633,18 @@
   }
 }
 
+.e-pager.sf-pager .e-link,
+.e-pager.sf-pager .e-prev,
+.e-pager.sf-pager .e-last,
+.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
+.e-pager.sf-pager .e-mnext,
+.e-pager.sf-pager .e-mlast {
+  margin-left: -4px;
+}
+
 /*! Pager theme */
 .e-pager {
-  background-color: #fff;
+  background-color: #400074;
   border-color: #757575;
   color: #000;
   opacity: 1;
@@ -648,8 +654,12 @@
   color: #000;
 }
 
+.e-pager div.e-icons.e-disable {
+  color: unset;
+}
+
 .e-pager .e-pager-default:hover {
-  background: "";
+  background: #ecf;
   color: #000;
   opacity: 1;
 }
@@ -663,13 +673,17 @@
   opacity: 1;
 }
 
+.e-pager .e-spacing.e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
+  background: unset;
+}
+
 .e-pager .e-numericitem:hover {
   color: #000;
   opacity: 1;
 }
 
 .e-pager .e-numericitem:hover:not(.e-np):not(.e-pp):not(.e-active) {
-  border: 2px solid #000;
+  border-left: 0 solid #000;
 }
 
 .e-pager .e-numericitem:not(.e-active):not(.e-np):not(.e-pp):hover {
@@ -678,7 +692,7 @@
 }
 
 .e-pager .e-numericitem {
-  background: #fff;
+  background: #400074;
   border-right-color: #757575;
   color: #000;
 }
@@ -691,7 +705,7 @@
 .e-pager .e-lastpage,
 .e-pager .e-firstpage,
 .e-pager .e-firstpagedisabled {
-  background-color: #fff;
+  background-color: #400074;
   color: #000;
 }
 
@@ -701,7 +715,7 @@
 }
 
 .e-pager .e-pagercontainer {
-  background-color: #fff;
+  background-color: #400074;
   border-color: #757575;
 }
 
@@ -725,7 +739,7 @@
 
 @media (max-width: 590px) {
   .e-pager .e-pager-default:hover {
-    background: #fff;
+    background: #400074;
     color: #000;
     opacity: 1;
   }

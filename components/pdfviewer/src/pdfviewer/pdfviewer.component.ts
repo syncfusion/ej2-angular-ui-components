@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, Renderer2, Injector, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 
-export const inputs: string[] = ['annotations','drawingObject','tool','ajaxRequestSettings','annotationToolbarSettings','areaSettings','arrowSettings','circleSettings','contextMenuOption','customStampItems','customStampSettings','distanceSettings','documentPath','enableAnnotation','enableAnnotationToolbar','enableBookmark','enableDownload','enableHyperlink','enableMagnification','enableMeasureAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','height','highlightSettings','hyperlinkOpenState','interactionMode','lineSettings','locale','measurementSettings','perimeterSettings','polygonSettings','radiusSettings','rectangleSettings','selectedItems','serverActionSettings','serviceUrl','stampSettings','stickyNotesSettings','strikethroughSettings','toolbarSettings','underlineSettings','volumeSettings','width'];
-export const outputs: string[] = ['ajaxRequestFailed','annotationAdd','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','documentLoad','documentLoadFailed','documentUnload','hyperlinkClick','hyperlinkMouseOver','pageChange','pageClick','zoomChange'];
+export const inputs: string[] = ['ajaxRequestSettings','annotationSelectorSettings','annotationSettings','annotations','areaSettings','arrowSettings','circleSettings','contextMenuOption','contextMenuSettings','currentPageNumber','customStamp','customStampSettings','disableContextMenuItems','distanceSettings','documentPath','downloadFileName','drawingObject','enableAnnotation','enableAnnotationToolbar','enableAutoComplete','enableBookmark','enableCommentPanel','enableDownload','enableFormFields','enableFormFieldsValidation','enableFreeText','enableHandwrittenSignature','enableHyperlink','enableImportAnnotationMeasurement','enableInkAnnotation','enableMagnification','enableMeasureAnnotation','enableMultiLineOverlap','enableMultiPageAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableShapeLabel','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextMarkupResizer','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','enableZoomOptimization','formFieldCollections','freeTextSettings','handWrittenSignatureSettings','height','highlightSettings','hyperlinkOpenState','inkAnnotationSettings','interactionMode','isCommandPanelOpen','isDocumentEdited','isExtractText','isFormFieldDocument','isSignatureEditable','isThumbnailViewOpen','lineSettings','locale','measurementSettings','pageCount','perimeterSettings','polygonSettings','printMode','radiusSettings','rectangleSettings','restrictZoomRequest','retryCount','scrollSettings','selectedItems','serverActionSettings','serviceUrl','shapeLabelSettings','showNotificationDialog','stampSettings','stickyNotesSettings','strikethroughSettings','textSearchColorSettings','tileRenderingSettings','toolbarSettings','underlineSettings','volumeSettings','width','zoomMode','zoomValue'];
+export const outputs: string[] = ['addSignature','ajaxRequestFailed','ajaxRequestInitiate','annotationAdd','annotationDoubleClick','annotationMouseLeave','annotationMouseover','annotationMove','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','documentLoad','documentLoadFailed','documentUnload','downloadEnd','downloadStart','exportFailed','exportStart','exportSuccess','extractTextCompleted','hyperlinkClick','hyperlinkMouseOver','importFailed','importStart','importSuccess','moveSignature','pageChange','pageClick','pageMouseover','printEnd','printStart','removeSignature','resizeSignature','signaturePropertiesChange','signatureSelect','textSearchComplete','textSearchHighlight','textSearchStart','textSelectionEnd','textSelectionStart','thumbnailClick','validateFormFields','zoomChange'];
 export const twoWays: string[] = [];
 
 /**
@@ -26,6 +26,8 @@ export const twoWays: string[] = [];
 })
 @ComponentMixins([ComponentBase])
 export class PdfViewerComponent extends PdfViewer implements IComponentBase {
+    public context : any;
+    public tagObjects: any;
 
 
 
@@ -94,22 +96,34 @@ export class PdfViewerComponent extends PdfViewer implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('PdfViewerFormFields');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.context  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.context.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.context.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.context.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.context.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

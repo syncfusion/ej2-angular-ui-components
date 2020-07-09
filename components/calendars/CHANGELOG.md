@@ -2,6 +2,180 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### DatePicker
+
+#### New Features
+
+- `#274484`,`F145781` - Provided option to open the popup while focusing the input element.
+
+### DateTimePicker
+
+#### New Features
+
+- `#274484`,`F145781` - Provided option to open the popup while focusing the input element.
+
+### TimePicker
+
+#### New Features
+
+- `#274484`,`F145781` - Provided option to open the popup while focusing the input element.
+
+### DateRangePicker
+
+#### New Features
+
+- `#274484`,`F145781` - Provided option to open the popup while focusing the input element.
+
+## 18.1.43 (2020-04-07)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#266088`- Now, you can use focusOut method inside close event.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#263008`- Issue with "script error throws while navigating month using previous and next icon in the mobile mode" has been resolved.
+
+## 17.4.50 (2020-02-18)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#256702` - Issue with "consecutive month is displayed while drill down the left or right calendar" has been resolved.
+
+### Calendar
+
+#### Bug Fixes
+
+- Now, selection style is applied to the previous month selected date in the current month view.
+
+## 17.4.49 (2020-02-11)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- Issue with script error throws while selecting value from popup in touch mode has been resolved.
+
+## 17.4.47 (2020-02-05)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#260342` - Issue with "input not focus while already opened the another datepicker" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#261538` - Issue with script error throws while selecting value from popup in touch mode has been resolved.
+
+## 17.4.46 (2020-01-30)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#260342` - Issue with "datepicker popup not closed while use `shift+tab`" has been resolved.
+
+## 17.4.43 (2020-01-14)
+
+### Calendar
+
+#### Bug Fixes
+
+- Issue with "datepicker popup not opened in IE browser" has been resolved.
+
+## 17.4.41 (2020-01-07)
+
+### Calendar
+
+#### Bug Fixes
+
+- Issue with "change event triggered while again click on the selected month in month view" has been resolved.
+
+## 17.4.40 (2019-12-24)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- Issue with "popup not opened by using alt + down key while enabling JAWS" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#257448` - Issue with "timepicker popup not destroyed while destroy the datetimepicker on close event" has been resolved.
+
+## 17.4.39 (2019-12-17)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#255630` - Issue with "change event argument `isInteracted` return as false while select the range from presets" has been resolved.
+
+- `#F149064` - Issue with "script error throws while navigate month in mobile mode" has been resolved.
+
+## 17.3.27 (2019-11-12)
+
+### DateTimePicker
+
+#### New Features
+
+- `#147796` - Now, you can get the cleared event when clear the DateTimePicker's value using clear button.
+
+### DatePicker
+
+#### New Features
+
+- `#147796` - Now, you can get the cleared event when clear the DatePicker's value using clear button.
+
+### TimePicker
+
+#### New Features
+
+- `#147796` - Now, you can get the cleared event when clear the TimePicker's value using clear button.
+
+### DateRangePicker
+
+#### New Features
+
+- `#147796` - Now, you can get the cleared event when clear the DateRangePicker's value using clear button.
+
+undefined- `#250743` - Issue with "script error occurs while selecting values in mobile emulator" has been resolved.
+
+## 17.3.26 (2019-11-05)
+
+### DateTimePicker
+
+#### New Features
+
+- `#249683` - Now, you can set the server time zone for initial date value process using `serverTimezoneOffset` property.
+
+### Calendar
+
+#### New Features
+
+- `#246049` - Now, month name, day name are capitalized for all localization.
+
+## 17.3.19 (2019-10-22)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#248416` - In mobile device, TimePicker popup displays in the center of the viewport.
+
 ## 17.2.49 (2019-09-04)
 
 ### DatePicker
@@ -916,4 +1090,12 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.1.53 (2020-05-19)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#275716`- Issue with "script error occurs when disable the clear icon dynamically" has been resolved.
 

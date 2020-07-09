@@ -10,8 +10,74 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Annotations, Bubble, DataLabel, Highlight, Legend, Maps, MapsTooltip, Marker, NavigationLine, Selection, Zoom } from '@syncfusion/ej2-maps';
+import { Annotations, Bubble, DataLabel, Highlight, ImageExport, Legend, Maps, MapsTooltip, Marker, NavigationLine, PdfExport, Print, Selection, Zoom } from '@syncfusion/ej2-maps';
 import { CommonModule } from '@angular/common';
+var input = ['shapePath', 'shapeValue'];
+var outputs = [];
+/**
+ * Layer Directive
+ * ```html
+ * <e-layers>
+ * <e-layer>
+ * <e-initialShapeSelections>
+ * <e-initialShapeSelection>
+ * </e-initialShapeSelection>
+ * </e-initialShapeSelections>
+ * </e-layer>
+ * </e-layers>
+ * ```
+ */
+var InitialShapeSelectionDirective = /** @class */ (function (_super) {
+    __extends(InitialShapeSelectionDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function InitialShapeSelectionDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        _this.directivePropList = input;
+        return _this;
+    }
+    return InitialShapeSelectionDirective;
+}(ComplexBase));
+InitialShapeSelectionDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-layer>e-initialShapeSelections>e-initialShapeSelection',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+InitialShapeSelectionDirective.ctorParameters = function () { return [
+    { type: ViewContainerRef, },
+]; };
+/**
+ * InitialShapeSelection Array Directive
+ */
+var InitialShapeSelectionsDirective = /** @class */ (function (_super) {
+    __extends(InitialShapeSelectionsDirective, _super);
+    function InitialShapeSelectionsDirective() {
+        return _super.call(this, 'initialshapeselection') || this;
+    }
+    return InitialShapeSelectionsDirective;
+}(ArrayBase));
+InitialShapeSelectionsDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-layer>e-initialShapeSelections',
+                queries: {
+                    children: new ContentChildren(InitialShapeSelectionDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+InitialShapeSelectionsDirective.ctorParameters = function () { return []; };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -26,8 +92,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input = ['animationDelay', 'animationDuration', 'border', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'template', 'tooltipSettings', 'visible', 'width'];
-var outputs = [];
+var input$1 = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+var outputs$1 = [];
 /**
  * Layer Directive
  * ```html
@@ -50,7 +116,8 @@ var MarkerDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs);
+        _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return MarkerDirective;
@@ -58,8 +125,8 @@ var MarkerDirective = /** @class */ (function (_super) {
 MarkerDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-layer>e-markerSettings>e-markerSetting',
-                inputs: input,
-                outputs: outputs,
+                inputs: input$1,
+                outputs: outputs$1,
                 queries: {}
             },] },
 ];
@@ -103,8 +170,8 @@ MarkersDirective.decorators = [
  * @nocollapse
  */
 MarkersDirective.ctorParameters = function () { return []; };
-var input$1 = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
-var outputs$1 = [];
+var input$2 = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
+var outputs$2 = [];
 /**
  * ColorMapping Directive
  * ```html
@@ -129,7 +196,8 @@ var ColorMappingDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$1);
+        _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return ColorMappingDirective;
@@ -137,8 +205,8 @@ var ColorMappingDirective = /** @class */ (function (_super) {
 ColorMappingDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-bubbleSettings>e-colorMappings>e-colorMapping',
-                inputs: input$1,
-                outputs: outputs$1,
+                inputs: input$2,
+                outputs: outputs$2,
                 queries: {}
             },] },
 ];
@@ -184,8 +252,8 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$2 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
-var outputs$2 = [];
+var input$3 = ['animationDelay', 'animationDuration', 'border', 'bubbleType', 'colorMapping', 'colorValuePath', 'dataSource', 'fill', 'highlightSettings', 'maxRadius', 'minRadius', 'opacity', 'query', 'selectionSettings', 'tooltipSettings', 'valuePath', 'visible'];
+var outputs$3 = [];
 /**
  * Layer Directive
  * ```html
@@ -209,7 +277,8 @@ var BubbleDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['colorMapping'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
+        _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return BubbleDirective;
@@ -217,8 +286,8 @@ var BubbleDirective = /** @class */ (function (_super) {
 BubbleDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-layer>e-bubbleSettings>e-bubbleSetting',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {
                     childColorMapping: new ContentChild(ColorMappingsDirective)
                 }
@@ -273,8 +342,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$3 = ['angle', 'arrowSettings', 'color', 'dashArray', 'highlightSettings', 'latitude', 'longitude', 'selectionSettings', 'visible', 'width'];
-var outputs$3 = [];
+var input$4 = ['angle', 'arrowSettings', 'color', 'dashArray', 'highlightSettings', 'latitude', 'longitude', 'selectionSettings', 'visible', 'width'];
+var outputs$4 = [];
 /**
  * Layer Directive
  * ```html
@@ -297,7 +366,8 @@ var NavigationLineDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return NavigationLineDirective;
@@ -305,8 +375,8 @@ var NavigationLineDirective = /** @class */ (function (_super) {
 NavigationLineDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-layer>e-navigationLineSettings>e-navigationLineSetting',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {}
             },] },
 ];
@@ -345,8 +415,8 @@ NavigationLinesDirective.decorators = [
  * @nocollapse
  */
 NavigationLinesDirective.ctorParameters = function () { return []; };
-var input$4 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
-var outputs$4 = [];
+var input$5 = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+var outputs$5 = [];
 /**
  * Layer Directive
  * ```html
@@ -363,9 +433,10 @@ var LayerDirective = /** @class */ (function (_super) {
     function LayerDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['markerSettings', 'bubbleSettings', 'navigationLineSettings'];
+        _this.tags = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return LayerDirective;
@@ -373,9 +444,10 @@ var LayerDirective = /** @class */ (function (_super) {
 LayerDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-layers>e-layer',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {
+                    childInitialShapeSelection: new ContentChild(InitialShapeSelectionsDirective),
                     childMarkerSettings: new ContentChild(MarkersDirective),
                     childBubbleSettings: new ContentChild(BubblesDirective),
                     childNavigationLineSettings: new ContentChild(NavigationLinesDirective)
@@ -424,8 +496,8 @@ var __metadata$3 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var input$5 = ['content', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
-var outputs$5 = [];
+var input$6 = ['content', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
+var outputs$6 = [];
 /**
  * Annotation Directive
  * ```html
@@ -443,7 +515,8 @@ var AnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return AnnotationDirective;
@@ -451,8 +524,8 @@ var AnnotationDirective = /** @class */ (function (_super) {
 AnnotationDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-maps-annotations>e-maps-annotation',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {}
             },] },
 ];
@@ -505,8 +578,8 @@ var __metadata$4 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$6 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'zoom', 'dataSourceChange'];
+var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'background', 'baseLayerIndex', 'border', 'centerPosition', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'layers', 'legendSettings', 'locale', 'mapsArea', 'margin', 'projectionType', 'tabIndex', 'theme', 'titleSettings', 'tooltipDisplayMode', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$7 = ['animationComplete', 'annotationRendering', 'beforePrint', 'bubbleClick', 'bubbleMouseMove', 'bubbleRendering', 'click', 'dataLabelRendering', 'doubleClick', 'itemHighlight', 'itemSelection', 'layerRendering', 'legendRendering', 'load', 'loaded', 'markerClick', 'markerClusterClick', 'markerClusterMouseMove', 'markerClusterRendering', 'markerMouseMove', 'markerRendering', 'pan', 'resize', 'rightClick', 'shapeHighlight', 'shapeRendering', 'shapeSelected', 'tooltipRender', 'tooltipRenderComplete', 'zoom', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Represents Maps Component
@@ -601,30 +674,60 @@ var MapsComponent = /** @class */ (function (_super) {
             }
         }
         catch (_k) { }
-        _this.registerEvents(outputs$6);
+        try {
+            var mod = _this.injector.get('MapsPrint');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
+        try {
+            var mod = _this.injector.get('MapsPdfExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_m) { }
+        try {
+            var mod = _this.injector.get('MapsImageExport');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_o) { }
+        _this.registerEvents(outputs$7);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.context = new ComponentBase();
         return _this;
     }
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnInit = function () {
+        this.context.ngOnInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterViewInit = function () {
+        this.context.ngAfterViewInit(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngOnDestroy = function () {
+        this.context.ngOnDestroy(this);
     };
     /**
      * @return {?}
      */
     MapsComponent.prototype.ngAfterContentChecked = function () {
+        this.tagObjects[0].instance = this.childLayers;
+        if (this.childAnnotations) {
+            this.tagObjects[1].instance = /** @type {?} */ (this.childAnnotations);
+        }
+        this.context.ngAfterContentChecked(this);
     };
     return MapsComponent;
 }(Maps));
@@ -632,7 +735,7 @@ MapsComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-maps',
                 inputs: inputs,
-                outputs: outputs$6,
+                outputs: outputs$7,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -670,6 +773,8 @@ MapsModule.decorators = [
                 imports: [CommonModule],
                 declarations: [
                     MapsComponent,
+                    InitialShapeSelectionDirective,
+                    InitialShapeSelectionsDirective,
                     MarkerDirective,
                     MarkersDirective,
                     ColorMappingDirective,
@@ -685,6 +790,8 @@ MapsModule.decorators = [
                 ],
                 exports: [
                     MapsComponent,
+                    InitialShapeSelectionDirective,
+                    InitialShapeSelectionsDirective,
                     MarkerDirective,
                     MarkersDirective,
                     ColorMappingDirective,
@@ -714,6 +821,9 @@ var ZoomService = { provide: 'MapsZoom', useValue: Zoom };
 var DataLabelService = { provide: 'MapsDataLabel', useValue: DataLabel };
 var NavigationLineService = { provide: 'MapsNavigationLine', useValue: NavigationLine };
 var AnnotationsService = { provide: 'MapsAnnotations', useValue: Annotations };
+var PrintService = { provide: 'MapsPrint', useValue: Print };
+var PdfExportService = { provide: 'MapsPdfExport', useValue: PdfExport };
+var ImageExportService = { provide: 'MapsImageExport', useValue: ImageExport };
 /**
  * NgModule definition for the Maps component with providers.
  */
@@ -738,7 +848,10 @@ MapsAllModule.decorators = [
                     ZoomService,
                     DataLabelService,
                     NavigationLineService,
-                    AnnotationsService
+                    AnnotationsService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -749,6 +862,6 @@ MapsAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { MarkerDirective, MarkersDirective, ColorMappingDirective, ColorMappingsDirective, BubbleDirective, BubblesDirective, NavigationLineDirective, NavigationLinesDirective, LayerDirective, LayersDirective, AnnotationDirective, AnnotationsDirective, MapsComponent, MapsModule, MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, inputs as ɵa, outputs$6 as ɵb };
-export { Maps, load, loaded, click, rightClick, doubleClick, resize, tooltipRender, shapeSelected, shapeHighlight, mousemove, mouseup, mousedown, layerRendering, shapeRendering, markerRendering, markerClusterRendering, markerClick, markerClusterClick, markerMouseMove, markerClusterMouseMove, dataLabelRendering, bubbleRendering, bubbleClick, bubbleMouseMove, animationComplete, legendRendering, annotationRendering, itemSelection, itemHighlight, beforePrint, zoomIn, zoomOut, pan, Annotation, Arrow, Font, Border, CenterPosition, TooltipSettings, Margin, MarkerClusterSettings, ColorMappingSettings, SelectionSettings, HighlightSettings, NavigationLineSettings, BubbleSettings, CommonTitleSettings, SubTitleSettings, TitleSettings, ZoomSettings, LegendSettings, DataLabelSettings, ShapeSettings, MarkerBase, MarkerSettings, LayerSettings, Tile, MapsAreaSettings, Size, stringToNumber, calculateSize, createSvg, getMousePosition, degreesToRadians, radiansToDegrees, convertGeoToPoint, convertTileLatLongToPoint, xToCoordinate, yToCoordinate, aitoff, roundTo, sinci, acos, calculateBound, Point, MinMax, GeoLocation, measureText, TextOption, PathOption, ColorValue, RectOption, CircleOption, PolygonOption, PolylineOption, LineOption, Line, MapLocation, Rect, PatternOptions, renderTextElement, convertElement, convertElementFromLabel, drawSymbols, clusterTemplate, marker, markerTemplate, appendShape, drawCircle, drawRectangle, drawPath, drawPolygon, drawPolyline, drawLine, calculateShapes, drawDiamond, drawTriangle, drawCross, drawHorizontalLine, drawVerticalLine, drawStar, drawBalloon, drawPattern, getFieldData, checkShapeDataFields, checkPropertyPath, filter, getRatioOfBubble, findMidPointOfPolygon, isCustomPath, textTrim, findPosition, removeElement, getTranslate, getZoomTranslate, getElementByID, Internalize, getTemplateFunction, getElement, getShapeData, triggerShapeEvent, getElementsByClassName, querySelector, getTargetElement, createStyle, customizeStyle, removeClass, elementAnimate, timeout, showTooltip, wordWrap, createTooltip, drawSymbol, renderLegendShape, getElementOffset, changeBorderWidth, changeNavaigationLineWidth, targetTouches, calculateScale, getDistance, getTouches, getTouchCenter, sum, zoomAnimate, animate, MapAjax, smoothTranslate, LayerPanel, Bubble, BingMap, Marker, ColorMapping, DataLabel, NavigationLine, Legend, Highlight, Selection, MapsTooltip, Zoom, Annotations } from '@syncfusion/ej2-maps';
+export { InitialShapeSelectionDirective, InitialShapeSelectionsDirective, MarkerDirective, MarkersDirective, ColorMappingDirective, ColorMappingsDirective, BubbleDirective, BubblesDirective, NavigationLineDirective, NavigationLinesDirective, LayerDirective, LayersDirective, AnnotationDirective, AnnotationsDirective, MapsComponent, MapsModule, MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService, inputs as ɵa, outputs$7 as ɵb };
+export { Maps, load, loaded, click, rightClick, doubleClick, resize, tooltipRender, shapeSelected, shapeHighlight, mousemove, mouseup, mousedown, layerRendering, shapeRendering, markerRendering, markerClusterRendering, markerClick, markerClusterClick, markerMouseMove, markerClusterMouseMove, dataLabelRendering, bubbleRendering, bubbleClick, bubbleMouseMove, animationComplete, legendRendering, annotationRendering, itemSelection, itemHighlight, beforePrint, zoomIn, zoomOut, pan, Annotation, Arrow, Font, Border, CenterPosition, TooltipSettings, Margin, ConnectorLineSettings, MarkerClusterSettings, MarkerClusterData, ColorMappingSettings, InitialMarkerSelectionSettings, InitialShapeSelectionSettings, SelectionSettings, HighlightSettings, NavigationLineSettings, BubbleSettings, CommonTitleSettings, SubTitleSettings, TitleSettings, ZoomSettings, ToggleLegendSettings, LegendSettings, DataLabelSettings, ShapeSettings, MarkerBase, MarkerSettings, LayerSettings, Tile, MapsAreaSettings, Size, stringToNumber, calculateSize, createSvg, getMousePosition, degreesToRadians, radiansToDegrees, convertGeoToPoint, convertTileLatLongToPoint, xToCoordinate, yToCoordinate, aitoff, roundTo, sinci, acos, calculateBound, triggerDownload, Point, MinMax, GeoLocation, measureText, TextOption, PathOption, ColorValue, RectOption, CircleOption, PolygonOption, PolylineOption, LineOption, Line, MapLocation, Rect, PatternOptions, renderTextElement, convertElement, formatValue, convertStringToValue, convertElementFromLabel, drawSymbols, getValueFromObject, markerColorChoose, markerShapeChoose, clusterTemplate, mergeSeparateCluster, clusterSeparate, marker, markerTemplate, maintainSelection, maintainStyleClass, appendShape, drawCircle, drawRectangle, drawPath, drawPolygon, drawPolyline, drawLine, calculateShapes, drawDiamond, drawTriangle, drawCross, drawHorizontalLine, drawVerticalLine, drawStar, drawBalloon, drawPattern, getFieldData, checkShapeDataFields, checkPropertyPath, filter, getRatioOfBubble, findMidPointOfPolygon, isCustomPath, textTrim, findPosition, removeElement, calculateCenterFromPixel, getTranslate, getZoomTranslate, fixInitialScaleForTile, getElementByID, Internalize, getTemplateFunction, getElement, getShapeData, triggerShapeEvent, getElementsByClassName, querySelector, getTargetElement, createStyle, customizeStyle, triggerItemSelectionEvent, removeClass, elementAnimate, timeout, showTooltip, wordWrap, createTooltip, drawSymbol, renderLegendShape, getElementOffset, changeBorderWidth, changeNavaigationLineWidth, targetTouches, calculateScale, getDistance, getTouches, getTouchCenter, sum, zoomAnimate, animate, MapAjax, smoothTranslate, compareZoomFactor, calculateZoomLevel, processResult, LayerPanel, Bubble, BingMap, Marker, ColorMapping, DataLabel, NavigationLine, Legend, Highlight, Selection, MapsTooltip, Zoom, Annotations, Print, ImageExport, PdfExport } from '@syncfusion/ej2-maps';
 //# sourceMappingURL=ej2-angular-maps.es5.js.map

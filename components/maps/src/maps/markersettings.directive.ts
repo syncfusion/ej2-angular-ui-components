@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'legendText', 'offset', 'opacity', 'selectionSettings', 'shape', 'template', 'tooltipSettings', 'visible', 'width'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -27,90 +27,127 @@ let outputs: string[] = [];
     }
 })
 export class MarkerDirective extends ComplexBase<MarkerDirective> {
+    public directivePropList: any;
 
 
     /** 
-     * Animation delay time
+     * Sets and gets the delay time for the animation in marker.
      * @default 0
      */
     public animationDelay: any;
     /** 
-     * Animation duration time
+     * Sets and gets the duration time for animating the marker.
      * @default 1000
      */
     public animationDuration: any;
     /** 
-     * Options for customizing the color and width of the marker.
+     * Sets and gets the options for customizing the color and width of the border for the marker in maps.
      */
     public border: any;
     /** 
-     * Options for customizing the dash array options
+     * Sets and gets the value path from the marker data source to apply color for the marker.
+     * @default null
+     */
+    public colorValuePath: any;
+    /** 
+     * Sets and gets the dash-array for the marker.
      */
     public dashArray: any;
     /** 
-     * To configure the dataSource of the marker.
-     * @isdatamanager false
+     * Sets and gets the data source for the marker. 
+     * The data source for the marker will contain latitude and longitude values to specify the location 
+     * of the marker. 
+     * The data source can contain data such as color, shape, and other details that can be bound to the color, shape, 
+     * and tooltip of the marker.
      * @isobservable true
      * @default []
      */
     public dataSource: any;
     /** 
-     * To customize the fill color of the marker.
+     * Sets and gets the color for the marker in maps.
      * @default '#FF471A'
      */
     public fill: any;
     /** 
-     * To customize the height of the marker.
+     * Sets and gets the height of the marker in maps.
      * @default 10
      */
     public height: any;
     /** 
-     * To configure the highlight settings of the maps.
+     * Sets and gets the options to customize the marker while the mouse has hovered on the marker in maps.
      */
     public highlightSettings: any;
     /** 
-     * To provide the image url for rendering marker image
+     * Sets and gets the URL for rendering the marker as image.
      */
     public imageUrl: any;
     /** 
-     * To provide the dataSource field to display legend text
+     * Sets and gets the value path from the marker data source for the image of the marker.
+     * @default null
+     */
+    public imageUrlValuePath: any;
+    /** 
+     * To select the shape at the rendering time.
+     */
+    public initialMarkerSelection: any;
+    /** 
+     * Defines the value path from the marker data source for setting latitude for a set of markers.
+     */
+    public latitudeValuePath: any;
+    /** 
+     * Sets and gets the text for the legend from the marker data source.
      * @default ''
      */
     public legendText: any;
     /** 
-     * To move the marker by setting offset values
+     * Defines the value path from the marker data source for setting longitude for a set of markers.
+     */
+    public longitudeValuePath: any;
+    /** 
+     * Sets and gets the position to move the marker by setting specific value.
      */
     public offset: any;
     /** 
-     * To customize the opacity of the marker.
+     * Sets and gets the opacity for the marker in maps.
      * @default 1
      */
     public opacity: any;
     /** 
-     * To configure the selection settings of the maps.
+     * Sets and gets the query to select particular data from the marker data. 
+     * This property is applicable only when the data source is created by data manager.
+     * @default null
+     */
+    public query: any;
+    /** 
+     * Sets and gets the options to customize the marker while selecting the marker in maps.
      */
     public selectionSettings: any;
     /** 
-     * To customize the shape of the marker.
+     * Sets and gets the shape of the marker in maps.
      * @default Balloon
      */
     public shape: any;
     /** 
-     * To configure the tooltip settings of the maps marker.
+     * Sets and gets the value path from the marker data source to set the shape of the marker.
+     * @default null
+     */
+    public shapeValuePath: any;
+    /** 
+     * Sets and gets the options to customize the tooltip for the marker in maps.
      */
     public tooltipSettings: any;
     /** 
-     * Toggle the visibility of the marker.
+     * Enables or disables the visibility state of the marker based on the marker data source in maps.
      * @default false
      */
     public visible: any;
     /** 
-     * To customize the width of the marker.
+     * Sets and gets the width of the marker in maps.
      * @default 10
      */
     public width: any;
     /** 
-     * To customize the template of the marker.
+     * Sets and gets the template for the marker.
      * @default null
      */
     @ContentChild('template')
@@ -124,6 +161,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

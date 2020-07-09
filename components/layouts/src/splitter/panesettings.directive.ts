@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['collapsed', 'collapsible', 'content', 'max', 'min', 'resizable', 'size'];
+let input: string[] = ['collapsed', 'collapsible', 'content', 'cssClass', 'max', 'min', 'resizable', 'size'];
 let outputs: string[] = [];
 /**
  * 'e-panesettings' directive represent a panes of angular splitter 
@@ -26,18 +26,33 @@ let outputs: string[] = [];
     }
 })
 export class PaneDirective extends ComplexBase<PaneDirective> {
+    public directivePropList: any;
 
 
     /** 
      * Specifies whether a pane is collapsed or not collapsed at the initial rendering of splitter.
+     * 
+     * {% codeBlock src='splitter/collapsed/index.md' %}{% endcodeBlock %}
+     *     
      * @default false
      */
     public collapsed: any;
     /** 
      * Specifies whether a pane is collapsible or not collapsible.
+     * 
+     * {% codeBlock src='splitter/collapsible/index.md' %}{% endcodeBlock %}
+     *     
      * @default false
      */
     public collapsible: any;
+    /** 
+     * Specifies the CSS class names that defines specific user-defined 
+     * styles and themes to be appended on corresponding pane of the Splitter. 
+     * It is used to customize the Splitter control panes. 
+     * One or more custom CSS classes can be specified to the Splitter panes.
+     * @default ''
+     */
+    public cssClass: any;
     /** 
      * Specifies the maximum size of a pane. The pane cannot be resized if it is more than the specified maximum limit.
      * @default null
@@ -72,6 +87,7 @@ export class PaneDirective extends ComplexBase<PaneDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

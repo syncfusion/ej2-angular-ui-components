@@ -15,6 +15,7 @@ let outputs: string[] = [];
     }
 })
 export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -41,6 +42,7 @@ export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingDirec
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

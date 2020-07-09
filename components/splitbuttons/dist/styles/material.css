@@ -8,6 +8,7 @@
 .e-dropdown-btn,
 .e-dropdown-btn.e-btn {
   box-shadow: none;
+  position: relative;
   text-transform: none;
   white-space: normal;
 }
@@ -91,7 +92,8 @@
 .e-dropdown-popup ul {
   border: none;
   border-radius: 0;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: normal;
   list-style-image: none;
@@ -102,7 +104,6 @@
   overflow: hidden;
   padding: 8px 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
@@ -117,8 +118,13 @@
   padding: 0 16px;
 }
 
+.e-dropdown-popup ul .e-item.e-url {
+  padding: 0;
+}
+
 .e-dropdown-popup ul .e-item .e-menu-url {
   display: inline-block;
+  padding: 0 16px;
   text-decoration: none;
 }
 
@@ -128,10 +134,7 @@
   line-height: 36px;
   margin-right: 10px;
   vertical-align: middle;
-}
-
-.e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 40px;
+  width: 1em;
 }
 
 .e-dropdown-popup ul .e-item.e-disabled {
@@ -149,8 +152,17 @@
   pointer-events: none;
 }
 
-.e-rtl.e-dropdown-popup .e-item.e-blank-icon {
-  padding-right: 40px;
+.e-dropdown-popup.e-transparent {
+  background: transparent;
+  box-shadow: none;
+}
+
+.e-dropdown-popup.e-transparent .e-dropdown-menu {
+  border: 0;
+  height: 1px;
+  min-width: 0;
+  padding: 0;
+  width: 1px;
 }
 
 .e-rtl.e-dropdown-popup .e-item .e-menu-icon {
@@ -161,7 +173,7 @@
 
 .e-bigger .e-dropdown-popup ul,
 .e-bigger.e-dropdown-popup ul {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
   font-size: 15px;
   max-width: 280px;
   min-width: 112px;
@@ -175,15 +187,15 @@
   padding: 0 16px;
 }
 
+.e-bigger .e-dropdown-popup ul .e-item.e-url,
+.e-bigger.e-dropdown-popup ul .e-item.e-url {
+  padding: 0;
+}
+
 .e-bigger .e-dropdown-popup ul .e-item .e-menu-icon,
 .e-bigger.e-dropdown-popup ul .e-item .e-menu-icon {
   font-size: 16px;
   line-height: 48px;
-}
-
-.e-bigger .e-dropdown-popup ul .e-item.e-blank-icon,
-.e-bigger.e-dropdown-popup ul .e-item.e-blank-icon {
-  padding-left: 42px;
 }
 
 .e-bigger .e-dropdown-popup ul .e-item.e-separator,
@@ -237,6 +249,7 @@
 .e-split-btn-wrapper {
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: relative;
   white-space: nowrap;
   width: -webkit-min-content;
   width: min-content;
@@ -255,7 +268,12 @@
   outline-offset: 0;
 }
 
-.e-split-btn-wrapper .e-split-btn:focus, .e-split-btn-wrapper .e-split-btn:hover, .e-split-btn-wrapper .e-split-btn:active {
+.e-split-btn-wrapper .e-split-btn:hover, .e-split-btn-wrapper .e-split-btn:focus {
+  box-shadow: none;
+}
+
+.e-split-btn-wrapper .e-split-btn:active {
+  box-shadow: none;
   z-index: 2;
 }
 
@@ -289,11 +307,17 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: 0;
+  position: static;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.e-split-btn-wrapper .e-dropdown-btn:focus, .e-split-btn-wrapper .e-dropdown-btn:hover, .e-split-btn-wrapper .e-dropdown-btn:active {
+.e-split-btn-wrapper .e-dropdown-btn:focus, .e-split-btn-wrapper .e-dropdown-btn:hover {
+  box-shadow: none;
+}
+
+.e-split-btn-wrapper .e-dropdown-btn:active {
+  box-shadow: none;
   z-index: 0;
 }
 
@@ -510,11 +534,11 @@
   border-right-color: rgba(0, 0, 0, 0.12);
 }
 
-.e-split-btn-wrapper:hover .e-split-btn {
+.e-split-btn-wrapper:hover :not(e-active) .e-split-btn {
   border-right-color: transparent;
 }
 
-.e-split-btn-wrapper:hover .e-split-btn:disabled {
+.e-split-btn-wrapper:hover :not(e-active) .e-split-btn:disabled {
   border-right-color: transparent;
 }
 
@@ -535,12 +559,12 @@
   border-right-color: transparent;
 }
 
-.e-split-btn-wrapper.e-rtl:hover .e-split-btn {
+.e-split-btn-wrapper.e-rtl:hover .e-split-btn :not(e-active) {
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
-.e-split-btn-wrapper.e-rtl:hover .e-split-btn:disabled {
+.e-split-btn-wrapper.e-rtl:hover .e-split-btn :not(e-active):disabled {
   border-left-color: transparent;
 }
 
@@ -908,7 +932,7 @@
   outline-offset: 0;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-primary,
@@ -921,7 +945,7 @@
   outline: #fafafa 0 solid;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-success,
@@ -933,7 +957,7 @@
   color: #fff;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-info,
@@ -945,7 +969,7 @@
   color: #fff;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-warning,
@@ -957,7 +981,7 @@
   color: #fff;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-danger,
@@ -969,7 +993,7 @@
   color: #fff;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: none;
-  outline-color: none;
+  outline-color: inherit;
 }
 
 .e-btn-group .e-btn:focus.e-link,
@@ -1368,48 +1392,48 @@
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group:not(.e-vertical):not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-outline:not(:first-of-type):not(:last-of-type),
@@ -1432,48 +1456,48 @@
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-primary,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-primary {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-success,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-success {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-info,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-info {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-warning,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-warning {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) .e-btn:focus.e-outline.e-danger,
 .e-css.e-btn-group.e-vertical:not(.e-rtl) input:focus + label.e-btn.e-outline.e-danger {
-  border-color: transparent;
-  outline-color: none;
+  border-color: inherit;
+  outline-color: inherit;
 }
 
 .e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type),

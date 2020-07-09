@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, ValueProvider, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDetectionStrategy, QueryList, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { Dialog } from '@syncfusion/ej2-popups';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ButtonsDirective } from './buttons.directive';
 
-export const inputs: string[] = ['allowDragging','animationSettings','buttons','closeOnEscape','content','cssClass','enablePersistence','enableResize','enableRtl','footerTemplate','header','height','isModal','locale','position','showCloseIcon','target','visible','width','zIndex'];
-export const outputs: string[] = ['beforeClose','beforeOpen','close','created','drag','dragStart','dragStop','open','overlayClick','resizeStart','resizeStop','resizing','visibleChange'];
+export const inputs: string[] = ['allowDragging','animationSettings','buttons','closeOnEscape','content','cssClass','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','footerTemplate','header','height','isModal','locale','minHeight','position','showCloseIcon','target','visible','width','zIndex'];
+export const outputs: string[] = ['beforeClose','beforeOpen','beforeSanitizeHtml','close','created','destroyed','drag','dragStart','dragStop','open','overlayClick','resizeStart','resizeStop','resizing','visibleChange'];
 export const twoWays: string[] = ['visible'];
 
 /**
@@ -26,7 +26,9 @@ export const twoWays: string[] = ['visible'];
 })
 @ComponentMixins([ComponentBase])
 export class DialogComponent extends Dialog implements IComponentBase {
-    public childButtons: any;
+    public containerContext : any;
+    public tagObjects: any;
+    public childButtons: QueryList<ButtonsDirective>;
     public tags: string[] = ['buttons'];
     public visibleChange: any;
     /** 
@@ -75,18 +77,24 @@ export class DialogComponent extends Dialog implements IComponentBase {
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.containerContext  = new ComponentBase();
     }
 
     public ngOnInit() {
+        this.containerContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.containerContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.containerContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        this.tagObjects[0].instance = this.childButtons;
+        this.containerContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

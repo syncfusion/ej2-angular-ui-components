@@ -19,7 +19,6 @@
   text-decoration: none;
   text-transform: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -199,7 +198,7 @@
 .e-btn.e-small.e-rtl .e-icon-left,
 .e-css.e-btn.e-small.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-btn.e-block,
@@ -307,7 +306,7 @@
 .e-small .e-css.e-btn.e-rtl .e-icon-left,
 .e-small.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
-  margin-right: btn-small-icon-margin;
+  margin-right: -0.7273em;
 }
 
 .e-bigger.e-small .e-btn,
@@ -1528,7 +1527,6 @@
   line-height: 1;
   outline: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -1571,7 +1569,6 @@
   font-weight: normal;
   line-height: 20px;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2064,6 +2061,7 @@
 .e-radio-wrapper {
   display: inline-block;
   line-height: 1;
+  position: relative;
 }
 
 .e-radio {
@@ -2081,7 +2079,6 @@
   margin: 0;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -2622,7 +2619,6 @@
   height: 20px;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   width: 44px;
@@ -3649,7 +3645,6 @@
   cursor: pointer;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
   font-size: 13px;
   font-weight: 400;
   height: 28px;
@@ -3663,7 +3658,6 @@
   position: relative;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -3740,6 +3734,43 @@
   font-family: 'e-icons';
 }
 
+.e-chip-list.e-chip .image-url,
+.e-chip-list .e-chip .image-url {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 0%;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  height: 20px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 8px 0 -6px;
+  overflow: hidden;
+  width: 20px;
+}
+
+.e-chip-list.e-chip .trailing-icon-url,
+.e-chip-list .e-chip .trailing-icon-url {
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  border-radius: 0%;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'e-icons';
+  font-size: 10px;
+  height: 14px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  margin: 0 -2px 0 8px;
+  overflow: hidden;
+  width: 14px;
+}
+
 .e-chip-list:not(.e-chip) {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -3812,6 +3843,11 @@
   border-radius: 0 14px 14px 0;
 }
 
+.e-chip-list.e-rtl.e-chip .trailing-icon-url,
+.e-chip-list.e-rtl .e-chip .trailing-icon-url {
+  margin: 0 8px 0 -2px;
+}
+
 .e-chip-list.e-rtl.e-multi-selection .e-chip::before {
   margin: 0 -6px 0 8px;
   margin-top: 0;
@@ -3856,6 +3892,14 @@
 
 .e-bigger .e-chip-list .e-chip-delete,
 .e-bigger.e-chip-list .e-chip-delete {
+  font-size: 10px;
+  height: 18px;
+  margin: 0 -4px 0 8px;
+  width: 18px;
+}
+
+.e-bigger .e-chip-list .trailing-icon-url,
+.e-bigger.e-chip-list .trailing-icon-url {
   font-size: 10px;
   height: 18px;
   margin: 0 -4px 0 8px;
@@ -3924,6 +3968,11 @@
 .e-bigger.e-chip-list.e-rtl.e-multi-selection .e-chip.e-chip-avatar-wrap::before {
   margin: 0 -12px 0 8px;
   margin-top: 0;
+}
+
+.e-bigger .e-chip-list.e-rtl .trailing-icon-url,
+.e-bigger.e-chip-list.e-rtl .trailing-icon-url {
+  margin: 0 8px 0 -4px;
 }
 
 .e-chip-list.e-chip,

@@ -1,11 +1,12 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
+import { InitialShapeSelectionsDirective } from './initialshapeselection.directive';
 import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Layer Directive
@@ -20,117 +21,136 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
+        childInitialShapeSelection: new ContentChild(InitialShapeSelectionsDirective), 
         childMarkerSettings: new ContentChild(MarkersDirective), 
         childBubbleSettings: new ContentChild(BubblesDirective), 
         childNavigationLineSettings: new ContentChild(NavigationLinesDirective)
     }
 })
 export class LayerDirective extends ComplexBase<LayerDirective> {
+    public directivePropList: any;
+    public childInitialShapeSelection: any;
     public childMarkerSettings: any;
     public childBubbleSettings: any;
     public childNavigationLineSettings: any;
-    public tags: string[] = ['markerSettings', 'bubbleSettings', 'navigationLineSettings'];
+    public tags: string[] = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
     /** 
-     * Specifies the type for the layer.
+     * Sets and gets the type of the layer in maps.
      * @default Layer
      */
     public type: any;
     /** 
-     * Specifies the animation duration for the layer.
+     * Sets and gets the duration for the animation of layers in maps.
      * @default 0
      */
     public animationDuration: any;
     /** 
-     * Specifies the type for the bing map.
+     * Sets and gets the Bing map type for the layer. If you use shape data with BingMapType without using layer type as Bing, 
+     * then the map will render based on shape data since default layer type will be set as Geometry.
      * @default Aerial
      */
     public bingMapType: any;
     /** 
-     * To configure the bubble settings of the maps.
+     * Sets and gets the options for customizing the bubble in maps.
      */
     public bubbleSettings: any;
     /** 
-     * To configure the datalabel settings of the maps.
+     * Sets and gets the options for customizing the data-label in maps.
      */
     public dataLabelSettings: any;
     /** 
-     * Specifies the data source for the layer.
-     * @isdatamanager false
+     * * Sets and gets the data source for the layer. 
+     * * The data source can contain data that can be bound to the tooltip, marker, and bubble.
+     * @isobservable true
      * @default []
      */
     public dataSource: any;
     /** 
-     * Specifies the geometry type
+     * Sets and gets the geometry type for the layer in maps.
      * @default Geographic
      */
     public geometryType: any;
     /** 
-     * To configure the highlight settings of the maps.
+     * Sets and gets the options for customizing the shapes when the mouse has hovered on maps.
      */
     public highlightSettings: any;
     /** 
-     * Specifies the key for the layer.
+     * Sets and gets the settings for shapes that is selected at the time of rendering.
+     */
+    public initialShapeSelection: any;
+    /** 
+     * Sets and gets the key for the tile map layer in maps.
      * @default ''
      */
     public key: any;
     /** 
-     * Specifies the layerType for the layer.
+     * Sets and gets the type of the layer in maps. If we use layer type with shape data property in layer of the maps 
+     * then map will render based on the provided layer type.
      * @default Geometry
      */
     public layerType: any;
     /** 
-     * To configure the cluster settings.
+     * Sets and gets the options for customizing the cluster of markers in maps.
      */
     public markerClusterSettings: any;
     /** 
-     * To configure the marker settings.
+     * Sets and gets the options for customizing the marker in maps.
      */
     public markerSettings: any;
     /** 
-     * navigationLineSetting
+     * Sets and gets the options for customizing the navigation line in maps.
      */
     public navigationLineSettings: any;
     /** 
-     * Specifies the query to select particular data from the shape data. 
-     * This property is applicable only when the DataSource is `ej.DataManager`.
+     * Sets and gets the query to select particular data from the shape data. 
+     * This property is applicable only when the data source is created by data manager.
      * @default null
      */
     public query: any;
     /** 
-     * To configure the selection settings of the maps.
+     * Sets and gets the options for customizing the shapes when clicking the shapes in maps.
      */
     public selectionSettings: any;
     /** 
-     * Specifies the shape data for the layer.
-     * @isdatamanager false
+     * Sets and gets the shape data for the maps to render.
+     * @isobservable true
      * @default null
      */
     public shapeData: any;
     /** 
-     * Specifies the shapeDataPath for the layer.
+     * Sets and gets the path for the shape from the shape data in maps.
      * @default 'name'
      */
     public shapeDataPath: any;
     /** 
-     * Specifies the shapePropertyPath for the layer.
+     * Sets and gets the path for the layers from the layer data source in maps.
      * @default 'name'
      */
     public shapePropertyPath: any;
     /** 
-     * Specifies the shape properties
+     * Sets and gets the options to customize the shape of the maps.
      */
     public shapeSettings: any;
     /** 
-     * To configure the tooltip settings of the maps layer.
+     * Sets and gets the type of the static maps.
+     * @default RoadMap
+     */
+    public staticMapType: any;
+    /** 
+     * Sets and gets the options for customizing the toggle state of shapes when selecting the legend in maps.
+     */
+    public toggleLegendSettings: any;
+    /** 
+     * Sets and gets the options for customizing the tooltip for the layers, markers, and bubbles in maps.
      */
     public tooltipSettings: any;
     /** 
-     * Specifies the urlTemplate for the layer.
+     * Sets and gets the template for the map using the url.
      * @default 'https://a.tile.openstreetmap.org/level/tileX/tileY.png'
      */
     public urlTemplate: any;
     /** 
-     * Toggle the visibility of the layers.
+     * Enables or disables the visibility state for the layers in maps.
      * @default true
      */
     public visible: any;
@@ -139,6 +159,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

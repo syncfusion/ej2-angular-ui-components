@@ -2,6 +2,274 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Menu
+
+#### Bug Fixes
+
+- An issue with menu selection has been fixed.
+- An issue with hamburger mode has been fixed.
+
+### Context Menu
+
+#### Bug Fixes
+
+- An issue with sub menu after preventing first sub menu has been fixed.
+
+### Accordion
+
+#### Bug Fixes
+
+- `#275090` - An issue with Ripple effect when destroy and rendered nested accordions has been fixed.
+- `#273054` - An issue with cross side scripting validation has been fixed.
+- `#275509` - An issue with `addItem` public method when passing multiple items has been fixed.
+
+### Tab
+
+#### Bug Fixes
+
+- `#273054` - An issue with cross side scripting validation has been fixed.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#275422` - An issue with toolbar scrolling is not working properly after perform window resize has been fixed.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#276986` - Now, the previous state will be restored in the TreeView when the CRUD operation is failed at the server side.
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#272991` - The issue with "Unable to use the same target for more than one Sidebar component" has been resolved.
+
+## 18.1.54 (2020-05-26)
+
+### Menu
+
+#### Bug Fixes
+
+- Provided 'getItemIndex' public method to get the index of the menu item.
+
+### TreeView
+
+#### Bug Fixes
+
+- `#269540` -The issue with `The getAllCheckedNodes method which is not returning the proper checkedNodes values in the TreeView component` has been fixed.
+
+#### New Features
+
+- `#274084` - Provided an option to set the drag area in TreeView component.
+
+## 18.1.45 (2020-04-21)
+
+### Menu
+
+#### Bug Fixes
+
+- Menu selection issue has been resolved.
+
+## 18.1.43 (2020-04-07)
+
+### ContextMenu
+
+#### Bug Fixes
+
+- `F152308` - Context menu popup position misaligned while using `beforeOpen` event has been resolved.
+
+### Menu
+
+#### Bug Fixes
+
+- Menu not working properly when collapsing the sub menu in hamburger mode has been resolved.
+
+## 18.1.36-beta (2020-03-19)
+
+### TreeView
+
+#### New Features
+
+- `#253508` - Now, the `actionFailure` event triggers when failure occurs while performing the CRUD operations in TreeView remote data.
+- `#227878` - Provided an option to disable the TreeView component.
+- `#255907, #F146305` - Provided an option to enable the entire TreeView node as navigable.
+
+#### Breaking Changes
+
+- Using the remote data and performing CRUD operation in TreeView requires the controller part to handle the CRUD operation at server-side. But, it doesn’t require controller part while using the offline remote data.
+- `#227540` - Reverted the support for rendering TreeView data in single server request while disabling the loadOnDemand. But, this support can be achieved by specifying the offline as `true` in remote data.
+
+### Tab
+
+#### Bug Fixes
+
+- `#266275` - An issue with tab navigation is not working after removed the first tab has been fixed.
+
+### Accordion
+
+#### Bug Fixes
+
+- `#263853` - An issue with height is not properly set to the accordion item when perform expand or collapse has been fixed.
+
+- `#259370, #259573, #253809` - An issue with `datasource` not get changed while using ng-for in template property has been fixed.
+- `#257298` - An issue with the Accordion items was resolved when we dynamically change the ng-if in the template property.
+
+## 17.4.50 (2020-02-18)
+
+### TreeView
+
+#### Breaking Changes
+
+- `#263334` - Standardized the right-click interaction in TreeView component. Now, the TreeView node will not be selected when you right-click it.
+
+## 17.4.49 (2020-02-11)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#262276` - Resolved the performance issue occurred when check or uncheck the parent node in TreeView component.
+
+### Menu
+
+#### Bug Fixes
+
+- An issue when setting id as number in menu Item is fixed.
+
+## 17.4.46 (2020-01-30)
+
+### Tab
+
+#### Bug Fixes
+
+- `#260479` - An issue with selected event is triggered unnecessarily after the refresh tab has been fixed.
+
+## 17.4.44 (2021-01-21)
+
+### Menu
+
+#### Bug Fixes
+
+- Issue with closing sub menu is fixed.
+
+## 17.4.43 (2020-01-14)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#258993` - Now, expand and collapse is working properly after enabling the ripple effect.
+- `#258121` - Resolved the CSS warnings in Firefox 71.0 version.
+
+## 17.4.39 (2019-12-17)
+
+### TreeView
+
+#### New Features
+
+- `#249238` - Provided the support for refreshing a specific node in tree view.
+- `#253508` - Now, the `actionFailure` event triggers while fetching data from the invalid path.
+- `#247333` - Support has been provided to get the disabled nodes in the tree view.
+
+### Tab
+
+#### Breaking Changes
+
+- An issue with duplicate Tab item id while rendering more than one Tab in same page has been fixed.
+
+#### Bug Fixes
+
+- An issue with bootstrap CSS file generation has been fixed.
+
+### Accordion
+
+#### Bug Fixes
+
+- An issue with bootstrap CSS file generation has been fixed.
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#248406` - An issue with destroying sub control rendered inside toolbar is fixed.
+
+## 17.3.27 (2019-11-12)
+
+### Tab
+
+#### Bug Fixes
+
+- `#253216` - An issue with destroying Tab component in IE11 has been fixed.
+
+### TreeView
+
+#### Bug Fixes
+
+- #242926 - Now the drop indicator has been shown correctly while hovering the expand and collapse icon.
+
+## 17.3.17 (2019-10-15)
+
+### Tab
+
+#### Bug Fixes
+
+- `#250013` - An issue with nested tab rendering while `headerPlacement` is set as `Bottom` has been fixed.
+
+## 17.3.16 (2019-10-09)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#246126` - An issue with toolbar is not working properly in overflow as popup mode when we used input elements in it has been fixed.
+
+## 17.3.14 (2019-10-03)
+
+### Accordion
+
+#### Bug Fixes
+
+- #245474 - Improper rendering of other components inside the accordion content issue has been fixed.
+- Material dark theme issue has been resolved.
+- Accessing multiple cssClass property issue with accordion has been fixed.
+
+### Tab
+
+#### New Features
+
+- Provided scroll step customization support for tab header.
+
+### TreeView
+
+#### Bug Fixes
+
+- #246937 - The unchecking checkbox performance issue has been resolved.
+
+## 17.3.9-beta (2019-09-20)
+
+### Tab
+
+#### New Features
+
+- Provided template support for tab header.
+
+### Accordion
+
+#### New Features
+
+- Provided item template support for accorion.
+
+### TreeView
+
+#### Bug Fixes
+
+- #242926 - Now the drop indicator has been shown correctly while enabling the checkbox.
+
 ## 17.2.49 (2019-09-04)
 
 ### Menu
@@ -10,13 +278,7 @@
 
 - Issue with modifying item in 'beforeOpen' event creates extra Item in Context Menu is fixed.
 
-## 17.2.47 (2019-08-27)
-
-### Sidebar
-
-#### Bug Fixes
-
-- Sidebar expand or collapse when scrolling in the landscape mode in chrome mobile browser is fixed.
+## 17.2.48-beta (2019-08-28)
 
 ### Toolbar
 
@@ -38,6 +300,14 @@
 
 - Issue with custom icon size changed while double clicking the tree node has been fixed.
 
+## 17.2.40 (2019-08-06)
+
+### TreeView
+
+#### Bug Fixes
+
+- #242925 - Issue with checked and unchecked the checkbox using keyboard interaction even disable the checkbox has been fixed.
+
 ## 17.2.39 (2019-07-30)
 
 ### TreeView
@@ -45,14 +315,6 @@
 #### Bug Fixes
 
 - #242589 - Issue with getting checked nodes value using `checkedNodes` property has been fixed.
-
-## 17.2.36 (2019-07-24)
-
-### Menu
-
-#### Bug Fixes
-
-- Issue with Submenu when the id contains special character.
 
 ## 17.2.34 (2019-07-11)
 
@@ -798,12 +1060,4 @@ TreeView component is used to represent hierarchical data in a tree like structu
 - **Template** - Allows you to customize the nodes in TreeView.
 - **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 17.2.40 (2019-08-06)
-
-### TreeView
-
-#### Bug Fixes
-
-- #242925 - Issue with checked and unchecked the checkbox using keyboard interaction even disable the checkbox has been fixed.
 

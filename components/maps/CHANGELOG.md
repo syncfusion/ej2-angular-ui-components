@@ -11,6 +11,64 @@
 
 ## [Unreleased]
 
+## 18.2.44 (2020-07-07)
+
+### Maps
+
+#### New Features
+
+- The data manager support for bubble and marker data source is now available.
+- `Google` enum value is provided in `ShapeLayerType` to render the Google maps in the Maps control.
+- `#280380` - `isResized` argument is exposed in the `loaded` event argument for indicating that the component is resized.
+
+- The data manager support for bubble and marker data source is now available.
+- `Google` enum value is provided in `ShapeLayerType` to render the Google maps in the Maps control.
+
+#### Bug Fixes
+
+- `#278468` - The script errors will not be thrown when rendering the GeoJSON file with line string geometry in Maps control.
+- `#280380` - The center position property will be maintained when the zooming operation is done after the reset zoom.
+
+- `#I278468` - The script errors will not be thrown when rendering the GeoJSON file with line string geometry in Maps control.
+
+## 17.4.39 (2019-12-17)
+
+### Maps
+
+#### New Features
+
+- `#I244108`, `#I240060`, `#I247767`, `#I250088` - Provided support to zoom the maps initially, based on the marker’s location.
+- `#I248021` - Provided support to cluster and expand markers with the same latitude and longitude values.
+- `#I253516` - Provided clustering support for marker templates.
+- `#I255189` - Improved the `markerClusterClick` event to get the hidden cluster collection details.
+- `#I242130` - Provided support to select or deselect the shapes dynamically and on initial rendering.
+- `#I248172` - Provided support to show tooltip on tap/click.
+- `F146103`, `F147309` - Provided support to bind the shapes and colors to the markers from the data source.
+
+## 17.3.21 (2019-10-30)
+
+### Maps
+
+#### New Features
+
+- Improved the marker cluster appearance for duplicate markers.
+
+## 17.3.14 (2019-10-03)
+
+### Maps
+
+#### Bug Fixes
+
+- `F147309` - Issue in adding sub layer in the 'OpenStreetMap' has been resolved.
+
+## 17.3.9-beta (2019-09-20)
+
+### Maps
+
+#### New Features
+
+- The toggle option has been provided for legend. So, if you toggle the legend, the given color will be changed to the corresponding shape item.
+
 ## 17.2.41 (2019-08-14)
 
 ### Maps
@@ -68,78 +126,6 @@
 - `#F143717` - Zooming toolbar position misalign problem that occurs when there are multiple elements in DOM has been fixed
 - `#I238404` - The issue that occurs when rendering bubble for point type Shape Data has been fixed
 - `#I238839` - The console error that occurs when mouse leaves from the maps Shapes with legend hide option has been resolved
-
-## 17.2.28-beta (2019-06-27)
-
-### Maps
-
-#### New Features
-
-- `#I227277` - Support has been provided to get geo location when clicking on maps.
-- `#I217458` - Support has been provided to hide and cluster a marker when it intersects with other markers.
-
-## 17.1.51 (2019-06-11)
-
-### Maps
-
-#### Bug Fixes
-
-- `#I237116` - The issue with default highlight and selection fill color has been resolved.
-
-## 17.1.50 (2019-06-04)
-
-### Maps
-
-#### Bug Fixes
-
-- `#I237041` - The issue in the sublayers are not re-rendered when zooming or panning is fixed.
-
-## 17.1.48 (2019-05-21)
-
-### Maps
-
-#### New Features
-
-- `#I233127` - The issue with recalculating the data labels when zooming the maps has been fixed.
-
-## 17.1.44 (2019-05-07)
-
-### Maps
-
-#### Bug Fixes
-
-- `#I234578` - The issue with rendering data label and tooltip when the layers type is set to 'Sublayer' has been fixed.
-- `#I234578` - The issue with returning wrong highlight opacity to shapes in maps when highlighting the legend has been fixed.
-
-## 17.1.43 (2019-04-30)
-
-### Maps
-
-#### Bug Fixes
-
-- `#F143717` - The div containing the maps component overlaps the div with inputs above it issue has                 been fixed
-- `#I233127` - The issue with the last interacted scaling is not maintained when refreshing the browser
-```
-       with the 'enablePersistence' API as true has been fixed.
-```
-
-## 17.1.42 (2019-04-23)
-
-### Maps
-
-#### Bug Fixes
-
-- `#I233129` – The issue in data label rendering, if you resize the map by setting the "intersectionAction" property to 'hide' has been fixed.
-- `#I233127` - When selecting the new shape, the border for old shape is not removed issue has been fixed.
-- `#I233127` – The issue of border width changing, when zooming the map has been fixed.
-
-## 17.1.41 (2019-04-16)
-
-### Maps
-
-#### Bug Fixes
-
-- `#F143717` - The issue "When setting high zoom factor to OpenStreetMap, sub layer is not placed properly" has been fixed".
 
 ## 17.1.32-beta (2019-03-13)
 
@@ -266,6 +252,70 @@ The Maps control is used to visualize the geographical data. It is used to repre
 - **Annotations** - Supports placing any HTML element on desired location in the map.
 - **User interaction** - Supports interactive features like zooming, panning, tooltip, highlight, selection and interactive legend.
 
+
+## 17.2.28-beta (2019-06-27)
+
+### Maps
+
+#### New Features
+
+- `#I227277` - Support has been provided to get geo location when clicking on maps.
+- `#I217458` - Support has been provided to hide and cluster a marker when it intersects with other markers.
+
+## 17.1.50 (2019-06-04)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I237041` - The issue in the sublayers are not re-rendered when zooming or panning is fixed.
+
+## 17.1.48 (2019-05-21)
+
+### Maps
+
+#### New Features
+
+- `#I233127` - The issue with recalculating the data labels when zooming the maps has been fixed.
+
+## 17.1.44 (2019-05-07)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I234578` - The issue with rendering data label and tooltip when the layers type is set to 'Sublayer' has been fixed.
+- `#I234578` - The issue with returning wrong highlight opacity to shapes in maps when highlighting the legend has been fixed.
+
+## 17.1.43 (2019-04-30)
+
+### Maps
+
+#### Bug Fixes
+
+- `#F143717` - The div containing the maps component overlaps the div with inputs above it issue has                 been fixed
+- `#I233127` - The issue with the last interacted scaling is not maintained when refreshing the browser
+```
+       with the 'enablePersistence' API as true has been fixed.
+```
+
+## 17.1.42 (2019-04-23)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I233129` – The issue in data label rendering, if you resize the map by setting the "intersectionAction" property to 'hide' has been fixed.
+- `#I233127` - When selecting the new shape, the border for old shape is not removed issue has been fixed.
+- `#I233127` – The issue of border width changing, when zooming the map has been fixed.
+
+## 17.1.41 (2019-04-16)
+
+### Maps
+
+#### Bug Fixes
+
+- `#F143717` - The issue "When setting high zoom factor to OpenStreetMap, sub layer is not placed properly" has been fixed".
 
 ## 17.1.38 (2019-03-29)
 

@@ -26,6 +26,7 @@ let outputs: string[] = [];
     }
 })
 export class PresetDirective extends ComplexBase<PresetDirective> {
+    public directivePropList: any;
 
 
     /** 
@@ -45,6 +46,7 @@ export class PresetDirective extends ComplexBase<PresetDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

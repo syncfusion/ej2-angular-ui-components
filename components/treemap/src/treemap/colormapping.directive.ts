@@ -15,45 +15,48 @@ let outputs: string[] = [];
     }
 })
 export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
+    public directivePropList: any;
 
 
     /** 
-     * specifies the color
+     * Sets and gets the color for the color-mapping in treemap.
      * @default null
      */
     public color: any;
     /** 
-     * Specifies the from
+     * Sets and gets the value from which the range of color mapping starts.
      * @default null
+     * @isblazornullabletype true
      */
     public from: any;
     /** 
-     * Specifies the label text.
+     * Sets and gets the label text for the legend based on color mapping.
      * @default null
      */
     public label: any;
     /** 
-     * maxOpacity
+     * Sets and gets the maximum opacity for the color-mapping in the treemap component.
      * @default null
      */
     public maxOpacity: any;
     /** 
-     * Specifies the minOpacity
+     * Sets and gets the minimum opacity for the color-mapping in the treemap component.
      * @default null
      */
     public minOpacity: any;
     /** 
-     * Specifies the visibility of the legend for color mapping
+     * Enables or disables the visibility of the legend for color mapping in the treemap component.
      * @default true
      */
     public showLegend: any;
     /** 
-     * Specifies the to
+     * Sets and gets the value to which the range of color mapping ends.
      * @default null
+     * @isblazornullabletype true
      */
     public to: any;
     /** 
-     * Specifies the value
+     * Sets and gets the value for the color-mapping from the data source.
      * @default null
      */
     public value: any;
@@ -62,6 +65,7 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
         super();
         setValue('currentInstance', this, this.viewContainerRef);
         this.registerEvents(outputs);
+        this.directivePropList = input;
     }
 }
 

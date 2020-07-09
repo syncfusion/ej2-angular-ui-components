@@ -5,8 +5,8 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['backgroundColor','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enablePersistence','enableRtl','enableTabKey','enabled','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','valueChange'];
+export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','beforeDialogClose','beforeDialogOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -34,6 +34,9 @@ export const twoWays: string[] = ['value'];
 })
 @ComponentMixins([ComponentBase, FormBase])
 export class RichTextEditorComponent extends RichTextEditor implements IComponentBase {
+    public formCompContext : any;
+    public formContext : any;
+    public tagObjects: any;
 
 
     public valueChange: any;
@@ -41,6 +44,9 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
      * Accepts the template design and assigns it as RichTextEditor’s content. 
      * The built-in template engine which provides options to compile template string into a executable function. 
      * For EX: We have expression evolution as like ES6 expression string literals
+     * 
+     * {% codeBlock src='rich-text-editor/value-template/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('valueTemplate')
@@ -106,10 +112,18 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorResize');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
+        this.formContext  = new FormBase();
+        this.formCompContext  = new ComponentBase();
     }
 
     public registerOnChange(registerFunction: (_: any) => void): void {
@@ -125,15 +139,20 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
     }
 
     public ngOnInit() {
+        this.formCompContext.ngOnInit(this);
     }
 
     public ngAfterViewInit(): void {
+        this.formContext.ngAfterViewInit(this);
     }
 
     public ngOnDestroy(): void {
+        this.formCompContext.ngOnDestroy(this);
     }
 
     public ngAfterContentChecked(): void {
+        
+        this.formCompContext.ngAfterContentChecked(this);
     }
 
     public registerEvents: (eventList: string[]) => void;

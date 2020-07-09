@@ -12,6 +12,55 @@
   font-family: 'e-icons';
 }
 
+.e-datetime-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-datetime-wrapper.e-outline .e-input-group-icon.e-time-icon,
+.e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-time-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
+.e-bigger .e-datetime-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-datetime-wrapper.e-control-wrapper.e-bigger.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger .e-datetime-wrapper.e-outline .e-input-group-icon.e-time-icon,
+.e-datetime-wrapper.e-control-wrapper.e-bigger.e-outline .e-input-group-icon.e-time-icon,
+.e-bigger .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-time-icon {
+  min-height: 0;
+  min-width: 24px;
+}
+
+.e-small .e-datetime-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-datetime-wrapper.e-control-wrapper.e-small.e-outline .e-input-group-icon.e-date-icon,
+.e-small .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-small .e-datetime-wrapper.e-outline .e-input-group-icon.e-time-icon,
+.e-datetime-wrapper.e-control-wrapper.e-small.e-outline .e-input-group-icon.e-time-icon,
+.e-small .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-time-icon {
+  min-height: 0;
+  min-width: 18px;
+}
+
+.e-bigger.e-small .e-outline.e-datetime-wrapper .e-input-group-icon.e-date-icon,
+.e-bigger.e-small.e-outline.e-datetime-wrapper .e-input-group-icon.e-date-icon,
+.e-datetime-wrapper.e-control-wrapper.e-bigger.e-small.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger.e-small .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-date-icon,
+.e-bigger.e-small .e-outline.e-datetime-wrapper .e-input-group-icon.e-time-icon,
+.e-bigger.e-small.e-outline.e-datetime-wrapper .e-input-group-icon.e-time-icon,
+.e-datetime-wrapper.e-control-wrapper.e-bigger.e-small.e-outline .e-input-group-icon.e-time-icon,
+.e-bigger.e-small .e-datetime-wrapper.e-control-wrapper.e-outline .e-input-group-icon.e-time-icon {
+  min-height: 0;
+  min-width: 20px;
+}
+
+.e-datetime-wrapper.e-filled .e-input-group-icon.e-time-icon,
+.e-datetime-wrapper.e-control-wrapper.e-filled .e-input-group-icon.e-time-icon,
+.e-rtl.e-datetime-wrapper.e-filled .e-input-group-icon.e-time-icon,
+.e-rtl.e-datetime-wrapper.e-control-wrapper.e-filled .e-input-group-icon.e-time-icon,
+.e-rtl .e-datetime-wrapper.e-filled .e-input-group-icon.e-time-icon,
+.e-rtl .e-datetime-wrapper.e-control-wrapper.e-filled .e-input-group-icon.e-time-icon {
+  margin: 0;
+}
+
 .e-input-group.e-control-wrapper.e-datetime-wrapper.e-non-edit.e-input-focus .e-input:focus ~ .e-clear-icon,
 .e-float-input.e-control-wrapper.e-input-group.e-datetime-wrapper.e-non-edit.e-input-focus input:focus ~ .e-clear-icon {
   display: -ms-flexbox;
@@ -58,7 +107,7 @@
   margin: 0 0 4px 6px;
 }
 
-.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 0 6px 4px 0;
 }
 
@@ -122,8 +171,8 @@
   min-width: 26px;
 }
 
-.e-bigger.e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon,
-.e-bigger .e-datetime-wrapper.e-rtl .e-input-group-icon.e-time-icon {
+.e-bigger.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon,
+.e-bigger .e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 5px 8px 6px 0;
 }
 

@@ -2,19 +2,108 @@
 
 ## [Unreleased]
 
-## 17.2.46 (2019-08-22)
+## 18.2.44 (2020-07-07)
 
 ### Pivot Table
 
 #### New Features
 
-- `#F144352` – The `fieldListRefreshed` event has been introduced; it occurs on each UI operation performed in field list.
-- `#F144382` – Localization text for aggregation types has been included.
-- `#232925`, `#234552` - Number formatting can be applied through built-in UI.
+- `#233316`,`#234648`,`#247163` - The pivot chart in the Pivot Table now has these chart types: pie, doughnut, pyramid, and funnel.
+- In addition to JSON, the pivot table now supports CSV data sources, as well.
 
-- `#242845` – Localization text for aggregation types has been included.
-- `#239461` - Scroll position is maintained on external data source refresh.
-- `#237962` - Performance has been improved with date format fields.
+#### Bug Fixes
+
+- `#275647` - Now the spanning issue in excel exporting has been fixed.
+- `#F154285` - Now the issue in custom number formatting has been fixed.
+
+## 18.1.44 (2020-04-14)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#266106` - Improved the data refresh on virtual scrolling.
+
+## 18.1.36-beta (2020-03-19)
+
+### Pivot Table
+
+#### Breaking Changes
+
+The appearance of the pivot table component has been improved.
+
+
+#### New Features
+
+- `#259812` - Provision has been provided to display only the required aggregation types in their context menu.
+- `#262927` - Now, the drill through and editing feature can be worked in pivot chart by clicking its series.
+- `#263612` - Authentication option provided to access the OLAP Cube while connecting it in a pivot table.
+- `#151883` - Additional parameters are included in the cell template feature to distinguish each cells.
+- Now, you can customize the each field buttons (show and hide the icons, restrict drag and drop operations) available in grouping bar and field list separately.
+- Provision provided to customize the tooltip for both pivot table and pivot chart views.
+- Formatting option included in the calculated field pop-up to format the calculated fields dynamically.
+- Provision provided to display only the required chart types in its context menu available in toolbar panel.
+- An option included in the chart types context menu to change the multiple axes option dynamically.
+- An option included in the member editor to sort its members in a desired order.
+- Provision provided to export the complete page when virtual scroll option is enabled.
+
+#### Bug Fixes
+
+- `#266452` - Now, the pivot table sample can be run in production mode of Angular framework.
+
+## 17.4.39 (2019-12-17)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#254586` - The conditional formatting will no longer be applied in empty cells.
+- The summarization text `of` in value buttons inside grouping bar and field list layout can be localized now.
+
+- `#254586` - The conditional formatting will no longer be applied in empty cells.
+- The summarization text `of` in value buttons inside grouping bar and field list layout can be localized now.
+- `#247376` - The chart events under the chart settings property works now.
+
+#### New Features
+
+- `#252636` - Provision provided to disable the scrollbars in pivot chart.
+- `#250072` - Provision provided to group and separate the grouped headers through UI.
+
+## 17.3.26 (2019-11-05)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#251642` – Now, the defer layout update option can be enabled or disabled dynamically through field list UI.
+- `#251558` – Now, the pivot chart draws with the percent of height value.
+
+- #251642 – Now, the defer layout update option can be enabled or disabled dynamically through field list UI.
+- #251558 – Now, the pivot chart draws with the percent of height value.
+
+#### New Features
+
+- `#248131` – Provided the conditional expression support to create calculated field.
+- `#251642` – The performance of virtual scrolling while adding or removing fields and moving fields to any axis is improved.
+
+- #248131 – Provided the conditional expression support to create calculated field.
+- #251642 – The performance of virtual scrolling while adding or removing fields and moving fields to any axis is improved.
+
+## 17.3.9-beta (2019-09-20)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- #244842 – Field list icon will be now placed inside the pivot table when field list option isn't included in toolbar.
+- The last column of the pivot table can be displayed in Excel exported page properly.
+
+- #247376 – The localization text for calculated fields is now displayed properly in tooltip.
+
+#### New Features
+
+- #245423 – Provision provided to persist and reload the pivot report.
+- Provided SSAS OLAP data source support.
 
 ## 17.2.28-beta (2019-06-27)
 
@@ -179,7 +268,24 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
 
-## 17.2.35 (2019-07-17)
+## 18.1.54 (2020-05-26)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#F154078` - The Error dialog is now clearly visible.
+
+## 18.1.52 (2020-05-13)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#272044` - Now the localization string of the `null` value isn’t cleared on component refresh.
+- `#273266` - The custom number format `#,###;(#,###)` now works in negative numbers.
+
+## 17.2.34 (2019-07-11)
 
 ### Pivot Table
 

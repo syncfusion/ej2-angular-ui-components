@@ -9,6 +9,18 @@
   text-align: center;
 }
 
+.e-slider-horizantal-color {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.e-slider-vertical-color {
+  left: -1px;
+  position: absolute;
+  width: 100%;
+}
+
 .e-bigger .e-slider-tooltip.e-tooltip-wrap.e-popup .e-tip-content {
   padding: 2px 12px;
 }
@@ -154,6 +166,7 @@
   position: absolute;
   width: 100%;
   background: #414040;
+  overflow: hidden;
   top: calc(50% - 2px);
 }
 
@@ -197,6 +210,7 @@
   height: 100%;
   position: absolute;
   left: calc(50% - 2px);
+  overflow: hidden;
   width: 4px;
 }
 
@@ -398,7 +412,6 @@
   outline: none;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-position: center center;
@@ -411,7 +424,6 @@
   outline: none;
   position: absolute;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;

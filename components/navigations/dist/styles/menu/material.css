@@ -92,6 +92,10 @@
   line-height: 0;
 }
 
+.e-menu-wrapper .e-menu-vscroll {
+  height: inherit;
+}
+
 .e-menu-wrapper ul {
   font-weight: normal;
   list-style-image: none;
@@ -100,7 +104,6 @@
   margin: 0;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-size: 13px;
@@ -230,6 +233,7 @@
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
 }
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-icon {
@@ -347,7 +351,7 @@
 
 .e-menu-wrapper.e-popup.e-menu-popup {
   border: none;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   position: absolute;
 }
@@ -392,12 +396,12 @@
 }
 
 .e-rtl.e-menu-wrapper ul .e-menu-item .e-menu-icon {
-  float: right;
   margin-right: 0;
 }
 
 .e-rtl.e-menu-wrapper ul .e-menu-item .e-caret {
   margin-left: 0;
+  margin-right: 16px;
   right: auto;
 }
 
@@ -570,7 +574,7 @@
 
 .e-bigger .e-menu-wrapper.e-menu-popup,
 .e-bigger.e-menu-wrapper.e-menu-popup {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 .e-bigger .e-menu-wrapper .e-scroll-nav .e-icons,
@@ -677,13 +681,16 @@
   text-indent: 0;
 }
 
-.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item .e-caret {
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item[aria-expanded="true"] .e-caret {
   transition: transform .3s ease-in-out;
+  transform: rotate(-180deg);
   text-indent: 0;
 }
 
-.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item.e-selected > .e-caret {
-  transform: rotate(-180deg);
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item[aria-expanded="false"] .e-caret {
+  transition: transform .3s ease-in-out;
+  transform: rotate(0deg);
+  text-indent: 0;
 }
 
 .e-menu-wrapper.e-hamburger ul.e-menu:not(.e-vertical) {
@@ -725,6 +732,7 @@
 
 .e-menu-wrapper.e-hamburger ul .e-menu-item .e-menu-url {
   display: inline-block;
+  min-width: 120px;
   text-indent: 0;
   width: 100%;
 }
@@ -868,7 +876,7 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-focused {
-  color: none;
+  color: initial;
   outline: 0 solid rgba(0, 0, 0, 0.12);
   outline-offset: 0;
   background-color: #eee;
@@ -890,11 +898,11 @@
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-caret {
-  color: none;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .e-menu-wrapper ul .e-menu-item.e-selected .e-menu-icon {
-  color: none;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .e-menu-wrapper ul .e-menu-item.e-separator {
