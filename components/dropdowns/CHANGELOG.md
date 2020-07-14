@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.45 (2020-07-14)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#283346` - Issue with "chip content is not displayed in bootstrap4 theme when disable the control" has been resolved.
+
 ## 18.1.59 (2020-06-23)
 
 ### MultiSelect

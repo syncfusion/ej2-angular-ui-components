@@ -131,7 +131,7 @@
 }
 
 .e-bigger .e-multi-select-wrapper {
-  min-height: 36px;
+  min-height: 43px;
 }
 
 .e-multi-select-wrapper.e-close-icon-hide {
@@ -315,7 +315,7 @@
 }
 
 .e-bigger .e-multi-select-wrapper .e-delim-values {
-  line-height: 34px;
+  line-height: 43px;
 }
 
 .e-multi-select-list-wrapper .e-hide-listitem {
@@ -590,7 +590,7 @@
 }
 
 .e-bigger .e-checkbox .e-multi-select-wrapper .e-delim-values {
-  line-height: 34px;
+  line-height: 43px;
 }
 
 .e-checkbox .e-multi-select-wrapper .e-delim-values .e-remain {
@@ -640,7 +640,7 @@ ejs-multiselect {
 
 .e-small .e-multi-select-wrapper .e-delim-values {
   font-size: 12px;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -661,13 +661,13 @@ ejs-multiselect {
 }
 
 .e-bigger.e-small .e-multi-select-wrapper input[type='text'] {
-  height: 30px;
-  min-height: 30px;
+  height: 34px;
+  min-height: 34px;
 }
 
 .e-small.e-bigger .e-multi-select-wrapper .e-delim-values {
   font-size: 13px;
-  line-height: 30px;
+  line-height: 34px;
 }
 
 .e-bigger.e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -1050,6 +1050,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  -webkit-text-fill-color: #fff;
   color: #fff;
   font-family: inherit;
   font-size: 13px;
@@ -1078,6 +1079,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
 }
@@ -1200,6 +1202,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-delim-values {
+  -webkit-text-fill-color: #fff;
   color: #fff;
 }
 
@@ -1208,7 +1211,7 @@ ejs-multiselect {
 }
 
 .e-small .e-multi-select-wrapper .e-chips {
-  height: 22px;
+  height: 20px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {

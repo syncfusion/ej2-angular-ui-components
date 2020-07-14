@@ -1825,7 +1825,7 @@ ejs-dropdownlist {
 }
 
 .e-bigger .e-checkbox .e-multi-select-wrapper .e-delim-values {
-  line-height: 39px;
+  line-height: 36px;
 }
 
 .e-checkbox .e-multi-select-wrapper .e-delim-values .e-remain {
@@ -1865,17 +1865,17 @@ ejs-multiselect {
 }
 
 .e-small .e-multi-select-wrapper {
-  min-height: 24px;
+  min-height: 22px;
 }
 
 .e-small .e-multi-select-wrapper input[type='text'] {
-  height: 24px;
-  min-height: 24px;
+  height: 22px;
+  min-height: 22px;
 }
 
 .e-small .e-multi-select-wrapper .e-delim-values {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -1956,6 +1956,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  -webkit-text-fill-color: #fff;
   color: #fff;
   font-family: inherit;
   font-size: 14px;
@@ -1984,6 +1985,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  -webkit-text-fill-color: #fff;
   color: #fff;
   font-size: 8px;
 }
@@ -2122,7 +2124,9 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-delim-values {
+  -webkit-text-fill-color: #fff;
   color: #fff;
+  -webkit-text-fill-color: #212529;
   color: #212529;
 }
 
@@ -2131,7 +2135,7 @@ ejs-multiselect {
 }
 
 .e-small .e-multi-select-wrapper .e-chips {
-  height: 22px;
+  height: 20px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {

@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { AccumulationAnnotation, AccumulationChart, AccumulationDataLabel, AccumulationDistributionIndicator, AccumulationLegend, AccumulationSelection, AccumulationTooltip, AreaSeries, AtrIndicator, BarSeries, BollingerBands, BoxAndWhiskerSeries, BubbleSeries, BulletChart, BulletChartLegend, BulletTooltip, CandleSeries, Category, Chart, ChartAnnotation, ColumnSeries, Crosshair, DataEditing, DataLabel, DateTime, DateTimeCategory, EmaIndicator, ErrorBar, Export, FunnelSeries, Highlight, HiloOpenCloseSeries, HiloSeries, HistogramSeries, Legend, LineSeries, Logarithmic, MacdIndicator, MomentumIndicator, MultiColoredAreaSeries, MultiColoredLineSeries, MultiLevelLabel, ParetoSeries, PeriodSelector, PieSeries, PolarSeries, PyramidSeries, RadarSeries, RangeAreaSeries, RangeColumnSeries, RangeNavigator, RangeTooltip, RsiIndicator, ScatterSeries, ScrollBar, Selection, SmaIndicator, Smithchart, SmithchartLegend, Sparkline, SparklineTooltip, SplineAreaSeries, SplineSeries, StackingAreaSeries, StackingBarSeries, StackingColumnSeries, StackingLineSeries, StepAreaSeries, StepLineSeries, StochasticIndicator, StockChart, StripLine, TmaIndicator, Tooltip, TooltipRender, Trendlines, WaterfallSeries, Zoom } from '@syncfusion/ej2-charts';
+import { AccumulationAnnotation, AccumulationChart, AccumulationDataLabel, AccumulationDistributionIndicator, AccumulationLegend, AccumulationSelection, AccumulationTooltip, AreaSeries, AtrIndicator, BarSeries, BollingerBands, BoxAndWhiskerSeries, BubbleSeries, BulletChart, BulletChartLegend, BulletTooltip, CandleSeries, Category, Chart, ChartAnnotation, ColumnSeries, Crosshair, DataEditing, DataLabel, DateTime, DateTimeCategory, EmaIndicator, ErrorBar, Export, FunnelSeries, Highlight, HiloOpenCloseSeries, HiloSeries, HistogramSeries, Legend, LineSeries, Logarithmic, MacdIndicator, MomentumIndicator, MultiColoredAreaSeries, MultiColoredLineSeries, MultiLevelLabel, ParetoSeries, PeriodSelector, PieSeries, PolarSeries, PyramidSeries, RadarSeries, RangeAreaSeries, RangeColumnSeries, RangeNavigator, RangeTooltip, RsiIndicator, ScatterSeries, ScrollBar, Selection, SmaIndicator, Smithchart, SmithchartLegend, Sparkline, SparklineTooltip, SplineAreaSeries, SplineSeries, StackingAreaSeries, StackingBarSeries, StackingColumnSeries, StackingLineSeries, StackingStepAreaSeries, StepAreaSeries, StepLineSeries, StochasticIndicator, StockChart, StripLine, TmaIndicator, Tooltip, TooltipRender, Trendlines, WaterfallSeries, Zoom } from '@syncfusion/ej2-charts';
 import { CommonModule } from '@angular/common';
 var input = ['animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
 var outputs = [];
@@ -818,8 +818,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableAutoIntervalOnBothAxis', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'sharedTooltipRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -936,306 +936,313 @@ var ChartComponent = /** @class */ (function (_super) {
         }
         catch (_o) { }
         try {
-            var mod = _this.injector.get('ChartsBarSeries');
+            var mod = _this.injector.get('ChartsStackingStepAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_p) { }
         try {
-            var mod = _this.injector.get('ChartsStackingBarSeries');
+            var mod = _this.injector.get('ChartsBarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_q) { }
         try {
-            var mod = _this.injector.get('ChartsRangeColumnSeries');
+            var mod = _this.injector.get('ChartsStackingBarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_r) { }
         try {
-            var mod = _this.injector.get('ChartsBubbleSeries');
+            var mod = _this.injector.get('ChartsRangeColumnSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_s) { }
         try {
-            var mod = _this.injector.get('ChartsTooltip');
+            var mod = _this.injector.get('ChartsBubbleSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_t) { }
         try {
-            var mod = _this.injector.get('ChartsCrosshair');
+            var mod = _this.injector.get('ChartsTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_u) { }
         try {
-            var mod = _this.injector.get('ChartsCategory');
+            var mod = _this.injector.get('ChartsCrosshair');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_v) { }
         try {
-            var mod = _this.injector.get('ChartsDateTime');
+            var mod = _this.injector.get('ChartsCategory');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_w) { }
         try {
-            var mod = _this.injector.get('ChartsLogarithmic');
+            var mod = _this.injector.get('ChartsDateTime');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_x) { }
         try {
-            var mod = _this.injector.get('ChartsLegend');
+            var mod = _this.injector.get('ChartsLogarithmic');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_y) { }
         try {
-            var mod = _this.injector.get('ChartsZoom');
+            var mod = _this.injector.get('ChartsLegend');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_z) { }
         try {
-            var mod = _this.injector.get('ChartsDataLabel');
+            var mod = _this.injector.get('ChartsZoom');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_0) { }
         try {
-            var mod = _this.injector.get('ChartsSelection');
+            var mod = _this.injector.get('ChartsDataLabel');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_1) { }
         try {
-            var mod = _this.injector.get('ChartsChartAnnotation');
+            var mod = _this.injector.get('ChartsSelection');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_2) { }
         try {
-            var mod = _this.injector.get('ChartsHiloSeries');
+            var mod = _this.injector.get('ChartsChartAnnotation');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_3) { }
         try {
-            var mod = _this.injector.get('ChartsHiloOpenCloseSeries');
+            var mod = _this.injector.get('ChartsHiloSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_4) { }
         try {
-            var mod = _this.injector.get('ChartsWaterfallSeries');
+            var mod = _this.injector.get('ChartsHiloOpenCloseSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_5) { }
         try {
-            var mod = _this.injector.get('ChartsRangeAreaSeries');
+            var mod = _this.injector.get('ChartsWaterfallSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_6) { }
         try {
-            var mod = _this.injector.get('ChartsCandleSeries');
+            var mod = _this.injector.get('ChartsRangeAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_7) { }
         try {
-            var mod = _this.injector.get('ChartsPolarSeries');
+            var mod = _this.injector.get('ChartsCandleSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_8) { }
         try {
-            var mod = _this.injector.get('ChartsRadarSeries');
+            var mod = _this.injector.get('ChartsPolarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_9) { }
         try {
-            var mod = _this.injector.get('ChartsSmaIndicator');
+            var mod = _this.injector.get('ChartsRadarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_10) { }
         try {
-            var mod = _this.injector.get('ChartsTmaIndicator');
+            var mod = _this.injector.get('ChartsSmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_11) { }
         try {
-            var mod = _this.injector.get('ChartsEmaIndicator');
+            var mod = _this.injector.get('ChartsTmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_12) { }
         try {
-            var mod = _this.injector.get('ChartsAccumulationDistributionIndicator');
+            var mod = _this.injector.get('ChartsEmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_13) { }
         try {
-            var mod = _this.injector.get('ChartsMacdIndicator');
+            var mod = _this.injector.get('ChartsAccumulationDistributionIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_14) { }
         try {
-            var mod = _this.injector.get('ChartsAtrIndicator');
+            var mod = _this.injector.get('ChartsMacdIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_15) { }
         try {
-            var mod = _this.injector.get('ChartsRsiIndicator');
+            var mod = _this.injector.get('ChartsAtrIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_16) { }
         try {
-            var mod = _this.injector.get('ChartsMomentumIndicator');
+            var mod = _this.injector.get('ChartsRsiIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_17) { }
         try {
-            var mod = _this.injector.get('ChartsStochasticIndicator');
+            var mod = _this.injector.get('ChartsMomentumIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_18) { }
         try {
-            var mod = _this.injector.get('ChartsBollingerBands');
+            var mod = _this.injector.get('ChartsStochasticIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_19) { }
         try {
-            var mod = _this.injector.get('ChartsBoxAndWhiskerSeries');
+            var mod = _this.injector.get('ChartsBollingerBands');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_20) { }
         try {
-            var mod = _this.injector.get('ChartsHistogramSeries');
+            var mod = _this.injector.get('ChartsBoxAndWhiskerSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_21) { }
         try {
-            var mod = _this.injector.get('ChartsErrorBar');
+            var mod = _this.injector.get('ChartsHistogramSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_22) { }
         try {
-            var mod = _this.injector.get('ChartsTrendlines');
+            var mod = _this.injector.get('ChartsErrorBar');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_23) { }
         try {
-            var mod = _this.injector.get('ChartsDateTimeCategory');
+            var mod = _this.injector.get('ChartsTrendlines');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_24) { }
         try {
-            var mod = _this.injector.get('ChartsMultiColoredLineSeries');
+            var mod = _this.injector.get('ChartsDateTimeCategory');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_25) { }
         try {
-            var mod = _this.injector.get('ChartsMultiColoredAreaSeries');
+            var mod = _this.injector.get('ChartsMultiColoredLineSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_26) { }
         try {
-            var mod = _this.injector.get('ChartsMultiLevelLabel');
+            var mod = _this.injector.get('ChartsMultiColoredAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_27) { }
         try {
-            var mod = _this.injector.get('ChartsParetoSeries');
+            var mod = _this.injector.get('ChartsMultiLevelLabel');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_28) { }
         try {
-            var mod = _this.injector.get('ChartsExport');
+            var mod = _this.injector.get('ChartsParetoSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_29) { }
         try {
-            var mod = _this.injector.get('ChartsDataEditing');
+            var mod = _this.injector.get('ChartsExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_30) { }
         try {
-            var mod = _this.injector.get('ChartsHighlight');
+            var mod = _this.injector.get('ChartsDataEditing');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_31) { }
+        try {
+            var mod = _this.injector.get('ChartsHighlight');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_32) { }
         _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
@@ -1293,7 +1300,6 @@ ChartComponent.decorators = [
                 inputs: inputs,
                 outputs: outputs$12,
                 template: '',
-                changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
                     childSeries: new ContentChild(SeriesCollectionDirective),
                     childAxes: new ContentChild(AxesDirective),
@@ -1412,6 +1418,7 @@ var StepAreaSeriesService = { provide: 'ChartsStepAreaSeries', useValue: StepAre
 var StackingColumnSeriesService = { provide: 'ChartsStackingColumnSeries', useValue: StackingColumnSeries };
 var StackingLineSeriesService = { provide: 'ChartsStackingLineSeries', useValue: StackingLineSeries };
 var StackingAreaSeriesService = { provide: 'ChartsStackingAreaSeries', useValue: StackingAreaSeries };
+var StackingStepAreaSeriesService = { provide: 'ChartsStackingStepAreaSeries', useValue: StackingStepAreaSeries };
 var BarSeriesService = { provide: 'ChartsBarSeries', useValue: BarSeries };
 var StackingBarSeriesService = { provide: 'ChartsStackingBarSeries', useValue: StackingBarSeries };
 var RangeColumnSeriesService = { provide: 'ChartsRangeColumnSeries', useValue: RangeColumnSeries };
@@ -1483,6 +1490,7 @@ ChartAllModule.decorators = [
                     StackingColumnSeriesService,
                     StackingLineSeriesService,
                     StackingAreaSeriesService,
+                    StackingStepAreaSeriesService,
                     BarSeriesService,
                     StackingBarSeriesService,
                     RangeColumnSeriesService,
@@ -3873,6 +3881,6 @@ BulletChartAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, DataEditingService, HighlightService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent, BulletChartModule, BulletChartAllModule, BulletTooltipService, BulletChartLegendService, inputs$1 as ɵc, outputs$15 as ɵd, inputs$6 as ɵm, outputs$33 as ɵn, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$31 as ɵl };
-export { CrosshairSettings, ZoomSettings, Chart, Row, Column, MajorGridLines, MinorGridLines, AxisLine, MajorTickLines, MinorTickLines, CrosshairTooltip, Axis, VisibleLabels, Double, DateTime, Category, Logarithmic, DateTimeCategory, NiceInterval, StripLine, Connector, Font, Border, Offset, ChartArea, Margin, Animation, Indexes, CornerRadius, Index, EmptyPointSettings, DragSettings, TooltipSettings, Periods, PeriodSelectorSettings, LineSeries, ColumnSeries, AreaSeries, BarSeries, PolarSeries, RadarSeries, StackingBarSeries, CandleSeries, StackingColumnSeries, StepLineSeries, StepAreaSeries, StackingAreaSeries, StackingLineSeries, ScatterSeries, RangeColumnSeries, WaterfallSeries, HiloSeries, HiloOpenCloseSeries, RangeAreaSeries, BubbleSeries, SplineSeries, HistogramSeries, SplineAreaSeries, TechnicalIndicator, SmaIndicator, EmaIndicator, TmaIndicator, AccumulationDistributionIndicator, AtrIndicator, MomentumIndicator, RsiIndicator, StochasticIndicator, BollingerBands, MacdIndicator, Trendlines, sort, isBreakLabel, getVisiblePoints, rotateTextSize, removeElement, logBase, showTooltip, inside, withIn, logWithIn, withInRange, sum, subArraySum, subtractThickness, subtractRect, degreeToLocation, degreeToRadian, getRotatedRectangleCoordinates, isRotatedRectIntersect, getAngle, subArray, valueToCoefficient, TransformToVisible, indexFinder, CoefficientToVector, valueToPolarCoefficient, Mean, PolarArc, createTooltip, createZoomingLabels, withInBounds, getValueXByPoint, getValueYByPoint, findClipRect, firstToLowerCase, getTransform, getMinPointsDelta, getAnimationFunction, linear, markerAnimate, animateRectElement, pathAnimation, appendClipElement, triggerLabelRender, setRange, getActualDesiredIntervalsCount, templateAnimate, drawSymbol, calculateShapes, getRectLocation, minMax, getElement, getTemplateFunction, createTemplate, getFontStyle, measureElementRect, findlElement, getPoint, appendElement, appendChildElement, getDraggedRectLocation, checkBounds, getLabelText, stopTimer, isCollide, isOverlap, containsRect, calculateRect, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, getSaturationColor, getMedian, calculateLegendShapes, textTrim, lineBreakLabelTrim, stringToNumber, redrawElement, animateRedrawElement, textElement, calculateSize, createSvg, getTitle, titlePositionX, textWrap, getUnicodeText, blazorTemplatesReset, CustomizeOption, StackValues, RectOption, ImageOption, CircleOption, PolygonOption, ChartLocation, LabelLocation, Thickness, ColorValue, PointData, AccPointData, ControlPoints, Crosshair, Tooltip, Zoom, Selection, DataEditing, Highlight, DataLabel, ErrorBar, DataLabelSettings, MarkerSettings, Points, Trendline, ErrorBarCapSettings, ChartSegment, ErrorBarSettings, SeriesBase, Series, Legend, ChartAnnotation, ChartAnnotationSettings, LabelBorder, MultiLevelCategories, StripLineSettings, MultiLevelLabels, ScrollbarSettingsRange, ScrollbarSettings, BoxAndWhiskerSeries, MultiColoredAreaSeries, MultiColoredLineSeries, MultiColoredSeries, MultiLevelLabel, ScrollBar, ParetoSeries, Export, AccumulationChart, AccumulationAnnotationSettings, AccumulationDataLabelSettings, PieCenter, AccPoints, AccumulationSeries, getSeriesFromIndex, pointByIndex, PieSeries, FunnelSeries, PyramidSeries, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, AccumulationSelection, AccumulationAnnotation, StockChart, StockChartFont, StockChartBorder, StockChartArea, StockMargin, StockChartStripLineSettings, StockEmptyPointSettings, StockChartConnector, StockSeries, StockChartIndicator, StockChartAxis, StockChartRow, StockChartTrendline, StockChartAnnotationSettings, StockChartIndexes, StockEventsSettings, loaded, legendClick, load, animationComplete, legendRender, textRender, pointRender, seriesRender, axisLabelRender, axisRangeCalculated, axisMultiLabelRender, tooltipRender, chartMouseMove, chartMouseClick, pointClick, pointDoubleClick, pointMove, chartMouseLeave, chartMouseDown, chartMouseUp, zoomComplete, dragComplete, selectionComplete, resized, beforePrint, annotationRender, scrollStart, scrollEnd, scrollChanged, stockEventRender, multiLevelLabelClick, dragStart, drag, dragEnd, regSub, regSup, beforeExport, afterExport, bulletChartMouseClick, onZooming, Theme, getSeriesColor, getThemeColor, getScrollbarThemeColor, PeriodSelector, RangeNavigator, rangeValueToCoefficient, getXLocation, getRangeValueXByPoint, getExactData, getNearestValue, DataPoint, RangeNavigatorTheme, getRangeThemeColor, RangeNavigatorAxis, RangeSeries, RangeSlider, RangeNavigatorSeries, ThumbSettings, StyleSettings, RangeTooltipSettings, RangeTooltip, BulletChart, Range, MajorTickLinesSettings, MinorTickLinesSettings, BulletLabelStyle, BulletTooltipSettings, BulletDataLabel, BulletChartLegendSettings, BulletChartTheme, getBulletThemeColor, BulletTooltip, BulletChartLegend, Smithchart, SmithchartMajorGridLines, SmithchartMinorGridLines, SmithchartAxisLine, SmithchartAxis, LegendTitle, LegendLocation, LegendItemStyleBorder, LegendItemStyle, LegendBorder, SmithchartLegendSettings, SeriesTooltipBorder, SeriesTooltip, SeriesMarkerBorder, SeriesMarkerDataLabelBorder, SeriesMarkerDataLabelConnectorLine, SeriesMarkerDataLabel, SeriesMarker, SmithchartSeries, TooltipRender, Subtitle, Title, SmithchartFont, SmithchartMargin, SmithchartBorder, SmithchartRect, LabelCollection, LegendSeries, LabelRegion, HorizontalLabelCollection, RadialLabelCollections, LineSegment, PointRegion, Point, ClosestPoint, MarkerOptions, SmithchartLabelPosition, Direction, DataLabelTextOptions, LabelOption, SmithchartSize, GridArcPoints, smithchartBeforePrint, SmithchartLegend, Sparkline, SparklineTooltip, SparklineBorder, SparklineFont, TrackLineSettings, SparklineTooltipSettings, ContainerArea, LineSettings, RangeBandSettings, AxisSettings, Padding, SparklineMarkerSettings, LabelOffset, SparklineDataLabelSettings } from '@syncfusion/ej2-charts';
+export { TrendlineDirective, TrendlinesDirective, SegmentDirective, SegmentsDirective, SeriesDirective, SeriesCollectionDirective, StripLineDirective, StripLinesDirective, CategoryDirective, CategoriesDirective, MultiLevelLabelDirective, MultiLevelLabelsDirective, AxisDirective, AxesDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, AnnotationDirective, AnnotationsDirective, SelectedDataIndexDirective, SelectedDataIndexesDirective, IndicatorDirective, IndicatorsDirective, ChartComponent, ChartModule, ChartAllModule, LineSeriesService, ScatterSeriesService, ColumnSeriesService, SplineSeriesService, SplineAreaSeriesService, StripLineService, AreaSeriesService, ScrollBarService, StepLineSeriesService, StepAreaSeriesService, StackingColumnSeriesService, StackingLineSeriesService, StackingAreaSeriesService, StackingStepAreaSeriesService, BarSeriesService, StackingBarSeriesService, RangeColumnSeriesService, BubbleSeriesService, TooltipService, CrosshairService, CategoryService, DateTimeService, LogarithmicService, LegendService, ZoomService, DataLabelService, SelectionService, ChartAnnotationService, HiloSeriesService, HiloOpenCloseSeriesService, WaterfallSeriesService, RangeAreaSeriesService, CandleSeriesService, PolarSeriesService, RadarSeriesService, SmaIndicatorService, TmaIndicatorService, EmaIndicatorService, AccumulationDistributionIndicatorService, MacdIndicatorService, AtrIndicatorService, RsiIndicatorService, MomentumIndicatorService, StochasticIndicatorService, BollingerBandsService, BoxAndWhiskerSeriesService, HistogramSeriesService, ErrorBarService, TrendlinesService, DateTimeCategoryService, MultiColoredLineSeriesService, MultiColoredAreaSeriesService, MultiLevelLabelService, ParetoSeriesService, ExportService, DataEditingService, HighlightService, AccumulationSeriesDirective, AccumulationSeriesCollectionDirective, AccumulationAnnotationDirective, AccumulationAnnotationsDirective, AccumulationChartComponent, AccumulationChartModule, AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService, RangenavigatorSeriesDirective, RangenavigatorSeriesCollectionDirective, RangeNavigatorComponent, RangeNavigatorModule, RangeNavigatorAllModule, RangeTooltipService, PeriodSelectorService, RangeBandSettingDirective, RangeBandSettingsDirective, SparklineComponent, SparklineModule, SparklineAllModule, SparklineTooltipService, SmithchartSeriesDirective, SmithchartSeriesCollectionDirective, SmithchartComponent, SmithchartModule, SmithchartAllModule, SmithchartLegendService, TooltipRenderService, StockChartTrendlineDirective, StockChartTrendlinesDirective, StockChartSeriesDirective, StockChartSeriesCollectionDirective, StockChartAxisDirective, StockChartAxesDirective, StockChartRowDirective, StockChartRowsDirective, StockChartAnnotationDirective, StockChartAnnotationsDirective, StockChartSelectedDataIndexDirective, StockChartSelectedDataIndexesDirective, StockChartPeriodDirective, StockChartPeriodsDirective, StockEventDirective, StockEventsDirective, StockChartIndicatorDirective, StockChartIndicatorsDirective, StockChartComponent, StockChartModule, StockChartAllModule, BulletRangeDirective, BulletRangeCollectionDirective, BulletChartComponent, BulletChartModule, BulletChartAllModule, BulletTooltipService, BulletChartLegendService, inputs$1 as ɵc, outputs$15 as ɵd, inputs$6 as ɵm, outputs$33 as ɵn, inputs as ɵa, outputs$12 as ɵb, inputs$2 as ɵe, outputs$17 as ɵf, inputs$4 as ɵi, outputs$21 as ɵj, inputs$3 as ɵg, outputs$19 as ɵh, inputs$5 as ɵk, outputs$31 as ɵl };
+export { CrosshairSettings, ZoomSettings, Chart, Row, Column, MajorGridLines, MinorGridLines, AxisLine, MajorTickLines, MinorTickLines, CrosshairTooltip, Axis, VisibleLabels, Double, DateTime, Category, Logarithmic, DateTimeCategory, NiceInterval, StripLine, Connector, Font, Border, Offset, ChartArea, Margin, Animation, Indexes, CornerRadius, Index, EmptyPointSettings, DragSettings, TooltipSettings, Periods, PeriodSelectorSettings, LineSeries, ColumnSeries, AreaSeries, BarSeries, PolarSeries, RadarSeries, StackingBarSeries, CandleSeries, StackingColumnSeries, StepLineSeries, StepAreaSeries, StackingAreaSeries, StackingStepAreaSeries, StackingLineSeries, ScatterSeries, RangeColumnSeries, WaterfallSeries, HiloSeries, HiloOpenCloseSeries, RangeAreaSeries, BubbleSeries, SplineSeries, HistogramSeries, SplineAreaSeries, TechnicalIndicator, SmaIndicator, EmaIndicator, TmaIndicator, AccumulationDistributionIndicator, AtrIndicator, MomentumIndicator, RsiIndicator, StochasticIndicator, BollingerBands, MacdIndicator, Trendlines, sort, isBreakLabel, getVisiblePoints, rotateTextSize, removeElement, logBase, showTooltip, inside, withIn, logWithIn, withInRange, sum, subArraySum, subtractThickness, subtractRect, degreeToLocation, degreeToRadian, getRotatedRectangleCoordinates, isRotatedRectIntersect, getAngle, subArray, valueToCoefficient, TransformToVisible, indexFinder, CoefficientToVector, valueToPolarCoefficient, Mean, PolarArc, createTooltip, createZoomingLabels, withInBounds, getValueXByPoint, getValueYByPoint, findClipRect, firstToLowerCase, getTransform, getMinPointsDelta, getAnimationFunction, linear, markerAnimate, animateRectElement, pathAnimation, appendClipElement, triggerLabelRender, setRange, getActualDesiredIntervalsCount, templateAnimate, drawSymbol, calculateShapes, getRectLocation, minMax, getElement, getTemplateFunction, createTemplate, getFontStyle, measureElementRect, findlElement, getPoint, appendElement, appendChildElement, getDraggedRectLocation, checkBounds, getLabelText, stopTimer, isCollide, isOverlap, containsRect, calculateRect, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, getSaturationColor, getMedian, calculateLegendShapes, textTrim, lineBreakLabelTrim, stringToNumber, redrawElement, animateRedrawElement, textElement, calculateSize, createSvg, getTitle, titlePositionX, textWrap, getUnicodeText, blazorTemplatesReset, CustomizeOption, StackValues, RectOption, ImageOption, CircleOption, PolygonOption, ChartLocation, LabelLocation, Thickness, ColorValue, PointData, AccPointData, ControlPoints, Crosshair, Tooltip, Zoom, Selection, DataEditing, Highlight, DataLabel, ErrorBar, DataLabelSettings, MarkerSettings, Points, Trendline, ErrorBarCapSettings, ChartSegment, ErrorBarSettings, SeriesBase, Series, Legend, ChartAnnotation, ChartAnnotationSettings, LabelBorder, MultiLevelCategories, StripLineSettings, MultiLevelLabels, ScrollbarSettingsRange, ScrollbarSettings, BoxAndWhiskerSeries, MultiColoredAreaSeries, MultiColoredLineSeries, MultiColoredSeries, MultiLevelLabel, ScrollBar, ParetoSeries, Export, AccumulationChart, AccumulationAnnotationSettings, AccumulationDataLabelSettings, PieCenter, AccPoints, AccumulationSeries, getSeriesFromIndex, pointByIndex, PieSeries, FunnelSeries, PyramidSeries, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, AccumulationSelection, AccumulationAnnotation, StockChart, StockChartFont, StockChartBorder, StockChartArea, StockMargin, StockChartStripLineSettings, StockEmptyPointSettings, StockChartConnector, StockSeries, StockChartIndicator, StockChartAxis, StockChartRow, StockChartTrendline, StockChartAnnotationSettings, StockChartIndexes, StockEventsSettings, loaded, legendClick, load, animationComplete, legendRender, textRender, pointRender, sharedTooltipRender, seriesRender, axisLabelRender, axisRangeCalculated, axisMultiLabelRender, tooltipRender, chartMouseMove, chartMouseClick, pointClick, pointDoubleClick, pointMove, chartMouseLeave, chartMouseDown, chartMouseUp, zoomComplete, dragComplete, selectionComplete, resized, beforePrint, annotationRender, scrollStart, scrollEnd, scrollChanged, stockEventRender, multiLevelLabelClick, dragStart, drag, dragEnd, regSub, regSup, beforeExport, afterExport, bulletChartMouseClick, onZooming, Theme, getSeriesColor, getThemeColor, getScrollbarThemeColor, PeriodSelector, RangeNavigator, rangeValueToCoefficient, getXLocation, getRangeValueXByPoint, getExactData, getNearestValue, DataPoint, RangeNavigatorTheme, getRangeThemeColor, RangeNavigatorAxis, RangeSeries, RangeSlider, RangeNavigatorSeries, ThumbSettings, StyleSettings, RangeTooltipSettings, RangeTooltip, BulletChart, Range, MajorTickLinesSettings, MinorTickLinesSettings, BulletLabelStyle, BulletTooltipSettings, BulletDataLabel, BulletChartLegendSettings, BulletChartTheme, getBulletThemeColor, BulletTooltip, BulletChartLegend, Smithchart, SmithchartMajorGridLines, SmithchartMinorGridLines, SmithchartAxisLine, SmithchartAxis, LegendTitle, LegendLocation, LegendItemStyleBorder, LegendItemStyle, LegendBorder, SmithchartLegendSettings, SeriesTooltipBorder, SeriesTooltip, SeriesMarkerBorder, SeriesMarkerDataLabelBorder, SeriesMarkerDataLabelConnectorLine, SeriesMarkerDataLabel, SeriesMarker, SmithchartSeries, TooltipRender, Subtitle, Title, SmithchartFont, SmithchartMargin, SmithchartBorder, SmithchartRect, LabelCollection, LegendSeries, LabelRegion, HorizontalLabelCollection, RadialLabelCollections, LineSegment, PointRegion, Point, ClosestPoint, MarkerOptions, SmithchartLabelPosition, Direction, DataLabelTextOptions, LabelOption, SmithchartSize, GridArcPoints, smithchartBeforePrint, SmithchartLegend, Sparkline, SparklineTooltip, SparklineBorder, SparklineFont, TrackLineSettings, SparklineTooltipSettings, ContainerArea, LineSettings, RangeBandSettings, AxisSettings, Padding, SparklineMarkerSettings, LabelOffset, SparklineDataLabelSettings } from '@syncfusion/ej2-charts';
 //# sourceMappingURL=ej2-angular-charts.es5.js.map

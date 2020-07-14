@@ -1397,7 +1397,7 @@ ejs-dropdownlist {
 .e-multi-select-wrapper .e-delim-values {
   font-family: inherit;
   font-size: 14px;
-  line-height: 35px;
+  line-height: 32px;
   max-width: 100%;
   padding-left: 6px;
   padding-right: 6px;
@@ -1405,7 +1405,7 @@ ejs-dropdownlist {
 }
 
 .e-bigger .e-multi-select-wrapper .e-delim-values {
-  line-height: 39px;
+  line-height: 36px;
 }
 
 .e-multi-select-list-wrapper .e-hide-listitem {
@@ -1669,7 +1669,7 @@ ejs-dropdownlist {
 }
 
 .e-bigger .e-checkbox .e-multi-select-wrapper .e-delim-values {
-  line-height: 39px;
+  line-height: 36px;
 }
 
 .e-checkbox .e-multi-select-wrapper .e-delim-values .e-remain {
@@ -1713,13 +1713,13 @@ ejs-multiselect {
 }
 
 .e-small .e-multi-select-wrapper input[type='text'] {
-  height: 28px;
-  min-height: 28px;
+  height: 26px;
+  min-height: 26px;
 }
 
 .e-small .e-multi-select-wrapper .e-delim-values {
   font-size: 13px;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -1740,13 +1740,13 @@ ejs-multiselect {
 }
 
 .e-bigger.e-small .e-multi-select-wrapper input[type='text'] {
-  height: 35px;
-  min-height: 35px;
+  height: 34px;
+  min-height: 34px;
 }
 
 .e-small.e-bigger .e-multi-select-wrapper .e-delim-values {
   font-size: 14px;
-  line-height: 35px;
+  line-height: 34px;
 }
 
 .e-bigger.e-small .e-multi-select-wrapper .e-chips-close.e-close-hooker {
@@ -1792,6 +1792,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  -webkit-text-fill-color: #333;
   color: #333;
   font-family: inherit;
   font-size: 15px;
@@ -1808,7 +1809,7 @@ ejs-multiselect {
 .e-multi-select-wrapper .e-chips {
   background-color: #e6e6e6;
   border-radius: 4px;
-  height: 30px;
+  height: 28px;
 }
 
 .e-multi-select-wrapper .e-chips:hover {
@@ -1820,6 +1821,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  -webkit-text-fill-color: #333;
   color: #333;
   font-size: 10px;
 }
@@ -1942,6 +1944,7 @@ ejs-multiselect {
 }
 
 .e-multi-select-wrapper .e-delim-values {
+  -webkit-text-fill-color: #333;
   color: #333;
 }
 
@@ -1950,7 +1953,7 @@ ejs-multiselect {
 }
 
 .e-small .e-multi-select-wrapper .e-chips {
-  height: 24px;
+  height: 22px;
 }
 
 .e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {
@@ -1966,7 +1969,7 @@ ejs-multiselect {
 }
 
 .e-bigger.e-small .e-multi-select-wrapper .e-chips {
-  height: 30px;
+  height: 28px;
 }
 
 .e-bigger.e-small .e-multi-select-wrapper .e-chips > .e-chipcontent {

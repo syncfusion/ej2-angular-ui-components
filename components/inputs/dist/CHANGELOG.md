@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.45 (2020-07-14)
+
+### FormValidator
+
+#### Bug Fixes
+
+- `#283063`, `#283067`, `#283061` - Now, required field validation works properly for date picker component.
+
 ## 18.1.56 (2020-06-09)
 
 ### Uploader

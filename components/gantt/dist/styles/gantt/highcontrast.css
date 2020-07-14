@@ -143,10 +143,12 @@
 }
 
 .e-multi-select-wrapper .e-delim-values.e-delim-view {
+  -webkit-text-fill-color: #fff;
   color: #fff;
 }
 
 .e-multi-select-wrapper.e-delimiter .e-delim-values {
+  -webkit-text-fill-color: #fff;
   color: #fff;
 }
 

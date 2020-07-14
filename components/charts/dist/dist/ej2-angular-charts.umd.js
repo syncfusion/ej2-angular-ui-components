@@ -820,8 +820,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableAutoIntervalOnBothAxis', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'sharedTooltipRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -938,306 +938,313 @@ exports.ChartComponent = /** @class */ (function (_super) {
         }
         catch (_o) { }
         try {
-            var mod = _this.injector.get('ChartsBarSeries');
+            var mod = _this.injector.get('ChartsStackingStepAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_p) { }
         try {
-            var mod = _this.injector.get('ChartsStackingBarSeries');
+            var mod = _this.injector.get('ChartsBarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_q) { }
         try {
-            var mod = _this.injector.get('ChartsRangeColumnSeries');
+            var mod = _this.injector.get('ChartsStackingBarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_r) { }
         try {
-            var mod = _this.injector.get('ChartsBubbleSeries');
+            var mod = _this.injector.get('ChartsRangeColumnSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_s) { }
         try {
-            var mod = _this.injector.get('ChartsTooltip');
+            var mod = _this.injector.get('ChartsBubbleSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_t) { }
         try {
-            var mod = _this.injector.get('ChartsCrosshair');
+            var mod = _this.injector.get('ChartsTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_u) { }
         try {
-            var mod = _this.injector.get('ChartsCategory');
+            var mod = _this.injector.get('ChartsCrosshair');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_v) { }
         try {
-            var mod = _this.injector.get('ChartsDateTime');
+            var mod = _this.injector.get('ChartsCategory');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_w) { }
         try {
-            var mod = _this.injector.get('ChartsLogarithmic');
+            var mod = _this.injector.get('ChartsDateTime');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_x) { }
         try {
-            var mod = _this.injector.get('ChartsLegend');
+            var mod = _this.injector.get('ChartsLogarithmic');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_y) { }
         try {
-            var mod = _this.injector.get('ChartsZoom');
+            var mod = _this.injector.get('ChartsLegend');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_z) { }
         try {
-            var mod = _this.injector.get('ChartsDataLabel');
+            var mod = _this.injector.get('ChartsZoom');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_0) { }
         try {
-            var mod = _this.injector.get('ChartsSelection');
+            var mod = _this.injector.get('ChartsDataLabel');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_1) { }
         try {
-            var mod = _this.injector.get('ChartsChartAnnotation');
+            var mod = _this.injector.get('ChartsSelection');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_2) { }
         try {
-            var mod = _this.injector.get('ChartsHiloSeries');
+            var mod = _this.injector.get('ChartsChartAnnotation');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_3) { }
         try {
-            var mod = _this.injector.get('ChartsHiloOpenCloseSeries');
+            var mod = _this.injector.get('ChartsHiloSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_4) { }
         try {
-            var mod = _this.injector.get('ChartsWaterfallSeries');
+            var mod = _this.injector.get('ChartsHiloOpenCloseSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_5) { }
         try {
-            var mod = _this.injector.get('ChartsRangeAreaSeries');
+            var mod = _this.injector.get('ChartsWaterfallSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_6) { }
         try {
-            var mod = _this.injector.get('ChartsCandleSeries');
+            var mod = _this.injector.get('ChartsRangeAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_7) { }
         try {
-            var mod = _this.injector.get('ChartsPolarSeries');
+            var mod = _this.injector.get('ChartsCandleSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_8) { }
         try {
-            var mod = _this.injector.get('ChartsRadarSeries');
+            var mod = _this.injector.get('ChartsPolarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_9) { }
         try {
-            var mod = _this.injector.get('ChartsSmaIndicator');
+            var mod = _this.injector.get('ChartsRadarSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_10) { }
         try {
-            var mod = _this.injector.get('ChartsTmaIndicator');
+            var mod = _this.injector.get('ChartsSmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_11) { }
         try {
-            var mod = _this.injector.get('ChartsEmaIndicator');
+            var mod = _this.injector.get('ChartsTmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_12) { }
         try {
-            var mod = _this.injector.get('ChartsAccumulationDistributionIndicator');
+            var mod = _this.injector.get('ChartsEmaIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_13) { }
         try {
-            var mod = _this.injector.get('ChartsMacdIndicator');
+            var mod = _this.injector.get('ChartsAccumulationDistributionIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_14) { }
         try {
-            var mod = _this.injector.get('ChartsAtrIndicator');
+            var mod = _this.injector.get('ChartsMacdIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_15) { }
         try {
-            var mod = _this.injector.get('ChartsRsiIndicator');
+            var mod = _this.injector.get('ChartsAtrIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_16) { }
         try {
-            var mod = _this.injector.get('ChartsMomentumIndicator');
+            var mod = _this.injector.get('ChartsRsiIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_17) { }
         try {
-            var mod = _this.injector.get('ChartsStochasticIndicator');
+            var mod = _this.injector.get('ChartsMomentumIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_18) { }
         try {
-            var mod = _this.injector.get('ChartsBollingerBands');
+            var mod = _this.injector.get('ChartsStochasticIndicator');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_19) { }
         try {
-            var mod = _this.injector.get('ChartsBoxAndWhiskerSeries');
+            var mod = _this.injector.get('ChartsBollingerBands');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_20) { }
         try {
-            var mod = _this.injector.get('ChartsHistogramSeries');
+            var mod = _this.injector.get('ChartsBoxAndWhiskerSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_21) { }
         try {
-            var mod = _this.injector.get('ChartsErrorBar');
+            var mod = _this.injector.get('ChartsHistogramSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_22) { }
         try {
-            var mod = _this.injector.get('ChartsTrendlines');
+            var mod = _this.injector.get('ChartsErrorBar');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_23) { }
         try {
-            var mod = _this.injector.get('ChartsDateTimeCategory');
+            var mod = _this.injector.get('ChartsTrendlines');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_24) { }
         try {
-            var mod = _this.injector.get('ChartsMultiColoredLineSeries');
+            var mod = _this.injector.get('ChartsDateTimeCategory');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_25) { }
         try {
-            var mod = _this.injector.get('ChartsMultiColoredAreaSeries');
+            var mod = _this.injector.get('ChartsMultiColoredLineSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_26) { }
         try {
-            var mod = _this.injector.get('ChartsMultiLevelLabel');
+            var mod = _this.injector.get('ChartsMultiColoredAreaSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_27) { }
         try {
-            var mod = _this.injector.get('ChartsParetoSeries');
+            var mod = _this.injector.get('ChartsMultiLevelLabel');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_28) { }
         try {
-            var mod = _this.injector.get('ChartsExport');
+            var mod = _this.injector.get('ChartsParetoSeries');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_29) { }
         try {
-            var mod = _this.injector.get('ChartsDataEditing');
+            var mod = _this.injector.get('ChartsExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_30) { }
         try {
-            var mod = _this.injector.get('ChartsHighlight');
+            var mod = _this.injector.get('ChartsDataEditing');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_31) { }
+        try {
+            var mod = _this.injector.get('ChartsHighlight');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_32) { }
         _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -1295,7 +1302,6 @@ exports.ChartComponent.decorators = [
                 inputs: inputs,
                 outputs: outputs$12,
                 template: '',
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
                     childSeries: new core.ContentChild(SeriesCollectionDirective),
                     childAxes: new core.ContentChild(AxesDirective),
@@ -1414,6 +1420,7 @@ var StepAreaSeriesService = { provide: 'ChartsStepAreaSeries', useValue: ej2Char
 var StackingColumnSeriesService = { provide: 'ChartsStackingColumnSeries', useValue: ej2Charts.StackingColumnSeries };
 var StackingLineSeriesService = { provide: 'ChartsStackingLineSeries', useValue: ej2Charts.StackingLineSeries };
 var StackingAreaSeriesService = { provide: 'ChartsStackingAreaSeries', useValue: ej2Charts.StackingAreaSeries };
+var StackingStepAreaSeriesService = { provide: 'ChartsStackingStepAreaSeries', useValue: ej2Charts.StackingStepAreaSeries };
 var BarSeriesService = { provide: 'ChartsBarSeries', useValue: ej2Charts.BarSeries };
 var StackingBarSeriesService = { provide: 'ChartsStackingBarSeries', useValue: ej2Charts.StackingBarSeries };
 var RangeColumnSeriesService = { provide: 'ChartsRangeColumnSeries', useValue: ej2Charts.RangeColumnSeries };
@@ -1485,6 +1492,7 @@ ChartAllModule.decorators = [
                     StackingColumnSeriesService,
                     StackingLineSeriesService,
                     StackingAreaSeriesService,
+                    StackingStepAreaSeriesService,
                     BarSeriesService,
                     StackingBarSeriesService,
                     RangeColumnSeriesService,
@@ -3912,6 +3920,7 @@ exports.StepAreaSeriesService = StepAreaSeriesService;
 exports.StackingColumnSeriesService = StackingColumnSeriesService;
 exports.StackingLineSeriesService = StackingLineSeriesService;
 exports.StackingAreaSeriesService = StackingAreaSeriesService;
+exports.StackingStepAreaSeriesService = StackingStepAreaSeriesService;
 exports.BarSeriesService = BarSeriesService;
 exports.StackingBarSeriesService = StackingBarSeriesService;
 exports.RangeColumnSeriesService = RangeColumnSeriesService;
@@ -4073,6 +4082,7 @@ exports.StackingColumnSeries = ej2Charts.StackingColumnSeries;
 exports.StepLineSeries = ej2Charts.StepLineSeries;
 exports.StepAreaSeries = ej2Charts.StepAreaSeries;
 exports.StackingAreaSeries = ej2Charts.StackingAreaSeries;
+exports.StackingStepAreaSeries = ej2Charts.StackingStepAreaSeries;
 exports.StackingLineSeries = ej2Charts.StackingLineSeries;
 exports.ScatterSeries = ej2Charts.ScatterSeries;
 exports.RangeColumnSeries = ej2Charts.RangeColumnSeries;
@@ -4270,6 +4280,7 @@ exports.animationComplete = ej2Charts.animationComplete;
 exports.legendRender = ej2Charts.legendRender;
 exports.textRender = ej2Charts.textRender;
 exports.pointRender = ej2Charts.pointRender;
+exports.sharedTooltipRender = ej2Charts.sharedTooltipRender;
 exports.seriesRender = ej2Charts.seriesRender;
 exports.axisLabelRender = ej2Charts.axisLabelRender;
 exports.axisRangeCalculated = ej2Charts.axisRangeCalculated;

@@ -7,7 +7,6 @@
 .e-dropdown-btn,
 .e-dropdown-btn.e-btn {
   box-shadow: none;
-  position: relative;
   text-transform: none;
   white-space: normal;
 }
@@ -122,9 +121,10 @@
 }
 
 .e-dropdown-popup ul .e-item .e-menu-url {
-  display: inline-block;
+  display: block;
   padding: 0 14px;
   text-decoration: none;
+  width: 100%;
 }
 
 .e-dropdown-popup ul .e-item .e-menu-icon {
@@ -248,7 +248,6 @@
 .e-split-btn-wrapper {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   white-space: nowrap;
   width: -webkit-min-content;
   width: min-content;
@@ -306,7 +305,6 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  position: static;
   padding-left: 4px;
   padding-right: 4px;
 }

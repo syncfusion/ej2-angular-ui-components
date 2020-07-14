@@ -1892,7 +1892,7 @@ textarea.e-input,
 .e-float-input textarea,
 .e-float-input.e-control-wrapper textarea {
   box-sizing: border-box;
-  height: 52px;
+  height: auto;
 }
 
 .e-input-group textarea.e-input.e-bigger,
@@ -1915,7 +1915,7 @@ textarea.e-input.e-bigger,
 .e-bigger .e-float-input.e-control-wrapper textarea,
 .e-bigger .e-float-input.e-control-wrapper textarea.e-input {
   box-sizing: border-box;
-  height: 62px;
+  height: auto;
 }
 
 textarea.e-input.e-small,
@@ -1936,7 +1936,7 @@ textarea.e-input.e-small,
 .e-small .e-float-input.e-control-wrapper textarea,
 .e-small .e-float-input.e-control-wrapper textarea.e-input {
   box-sizing: border-box;
-  height: 42px;
+  height: auto;
 }
 
 textarea.e-input.e-small.e-bigger,

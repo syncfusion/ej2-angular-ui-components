@@ -2700,11 +2700,15 @@
 .e-grid.e-afenabled .e-frozencontent,
 .e-grid.e-afenabled .e-movableheader,
 .e-grid.e-afenabled .e-frozenheader,
-.e-grid.e-afenabled .e-headercontent {
+.e-grid.e-afenabled .e-headercontent, .e-grid.e-enabledboxbdr .e-movablecontent,
+.e-grid.e-enabledboxbdr .e-frozencontent,
+.e-grid.e-enabledboxbdr .e-movableheader,
+.e-grid.e-enabledboxbdr .e-frozenheader,
+.e-grid.e-enabledboxbdr .e-headercontent {
   position: relative;
 }
 
-.e-grid.e-afenabled {
+.e-grid.e-afenabled, .e-grid.e-enabledboxbdr {
   overflow: hidden;
 }
 

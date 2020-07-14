@@ -8,7 +8,6 @@
 .e-dropdown-btn,
 .e-dropdown-btn.e-btn {
   box-shadow: none;
-  position: relative;
   text-transform: none;
   white-space: normal;
 }
@@ -123,9 +122,10 @@
 }
 
 .e-dropdown-popup ul .e-item .e-menu-url {
-  display: inline-block;
+  display: block;
   padding: 0 16px;
   text-decoration: none;
+  width: 100%;
 }
 
 .e-dropdown-popup ul .e-item .e-menu-icon {

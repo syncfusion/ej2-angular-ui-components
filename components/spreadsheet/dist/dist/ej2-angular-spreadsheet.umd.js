@@ -512,7 +512,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$7 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
+var outputs$7 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'dialogBeforeOpen', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -1009,6 +1009,7 @@ exports.protectSheetWorkBook = ej2Spreadsheet.protectSheetWorkBook;
 exports.updateToggle = ej2Spreadsheet.updateToggle;
 exports.protectsheetHandler = ej2Spreadsheet.protectsheetHandler;
 exports.replaceAllDialog = ej2Spreadsheet.replaceAllDialog;
+exports.unprotectsheetHandler = ej2Spreadsheet.unprotectsheetHandler;
 exports.workBookeditAlert = ej2Spreadsheet.workBookeditAlert;
 exports.setLockCells = ej2Spreadsheet.setLockCells;
 exports.applyLockCells = ej2Spreadsheet.applyLockCells;
@@ -1028,6 +1029,8 @@ exports.clear = ej2Spreadsheet.clear;
 exports.clearCF = ej2Spreadsheet.clearCF;
 exports.clearCells = ej2Spreadsheet.clearCells;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
+exports.isCellReference = ej2Spreadsheet.isCellReference;
+exports.isChar = ej2Spreadsheet.isChar;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
 exports.intToDate = ej2Spreadsheet.intToDate;
@@ -1155,6 +1158,7 @@ exports.invalidData = ej2Spreadsheet.invalidData;
 exports.clearInvalid = ej2Spreadsheet.clearInvalid;
 exports.protectSheet = ej2Spreadsheet.protectSheet;
 exports.applyProtect = ej2Spreadsheet.applyProtect;
+exports.unprotectSheet = ej2Spreadsheet.unprotectSheet;
 exports.protectCellFormat = ej2Spreadsheet.protectCellFormat;
 exports.gotoDlg = ej2Spreadsheet.gotoDlg;
 exports.findDlg = ej2Spreadsheet.findDlg;

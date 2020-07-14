@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-dropdowns';
-export const pkgVer = '^17.4.50';
+export const pkgVer = '^18.2.44';
 export const moduleName = 'DropDownListModule, ComboBoxModule, AutoCompleteModule, MultiSelectModule, ListBoxModule, DropDownTreeModule';
-export const themeVer = '~17.4.50';
+export const themeVer = '~18.2.44';

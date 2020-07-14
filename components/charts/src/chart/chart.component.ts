@@ -10,8 +10,8 @@ import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
+export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','sharedTooltipRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -25,7 +25,6 @@ export const twoWays: string[] = ['dataSource'];
     inputs: inputs,
     outputs: outputs,
     template: '',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
         childSeries: new ContentChild(SeriesCollectionDirective), 
         childAxes: new ContentChild(AxesDirective), 
@@ -131,6 +130,12 @@ export class ChartComponent extends Chart implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ChartsStackingAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsStackingStepAreaSeries');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

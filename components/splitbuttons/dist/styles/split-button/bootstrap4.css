@@ -2,7 +2,6 @@
 .e-split-btn-wrapper {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   white-space: nowrap;
   width: -webkit-min-content;
   width: min-content;
@@ -56,7 +55,6 @@
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  position: static;
   padding-left: 8px;
   padding-right: 8px;
 }

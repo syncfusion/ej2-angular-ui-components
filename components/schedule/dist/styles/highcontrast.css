@@ -624,6 +624,10 @@
   display: none;
 }
 
+.e-schedule .e-appointment .e-inline-appointment {
+  z-index: 1;
+}
+
 .e-schedule .e-appointment .e-inline-subject {
   background-color: transparent;
   border: 0;
@@ -1392,6 +1396,10 @@
   margin-top: -20px;
 }
 
+.e-schedule .e-month-view .e-inline-appointment {
+  z-index: 1;
+}
+
 .e-schedule .e-month-view .e-appointment {
   background: #1c8000;
   border: 1px solid #1a1a1a;
@@ -1792,6 +1800,10 @@
   position: absolute;
 }
 
+.e-schedule .e-timeline-year-view .e-event-table .e-inline-appointment {
+  z-index: 1;
+}
+
 .e-schedule .e-timeline-year-view .e-event-table .e-appointment {
   background: #1c8000;
   border: 1px solid #1a1a1a;
@@ -2038,6 +2050,11 @@
   position: absolute;
 }
 
+.e-schedule .e-timeline-view .e-inline-appointment,
+.e-schedule .e-timeline-month-view .e-inline-appointment {
+  z-index: 1;
+}
+
 .e-schedule .e-timeline-view .e-appointment,
 .e-schedule .e-timeline-month-view .e-appointment {
   background: #1c8000;
@@ -2191,6 +2208,11 @@
 .e-schedule.e-rtl .e-timeline-month-view .e-appointment .e-left-icon,
 .e-schedule.e-rtl .e-timeline-month-view .e-appointment .e-right-icon {
   padding: 0 0 0 5px;
+}
+
+.e-schedule.e-rtl .e-timeline-view .e-inline-appointment,
+.e-schedule.e-rtl .e-timeline-month-view .e-inline-appointment {
+  z-index: 1;
 }
 
 .e-schedule.e-rtl .e-timeline-view .e-resource-left-td,
