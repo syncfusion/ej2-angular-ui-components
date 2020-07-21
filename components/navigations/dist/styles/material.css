@@ -7794,7 +7794,7 @@ ejs-sidebar {
 }
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-icon {
-  width: auto;
+  width: 1em;
 }
 
 .e-menu-wrapper.e-menu-icon-right .e-menu-header .e-menu-icon {
@@ -8073,7 +8073,7 @@ ejs-sidebar {
 .e-bigger .e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon,
 .e-bigger.e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon {
   margin-right: 10px;
-  width: auto;
+  width: 1em;
 }
 
 .e-bigger .e-menu-wrapper .e-menu-hscroll.e-hscroll:not(.e-scroll-device),
@@ -8203,6 +8203,10 @@ ejs-sidebar {
 .e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item .e-menu-icon {
   display: inline;
   text-indent: 0;
+}
+
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item.e-menu-hide {
+  display: none;
 }
 
 .e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item[aria-expanded="true"] .e-caret {

@@ -774,6 +774,7 @@ exports.isOffline = ej2Treegrid.isOffline;
 exports.extendArray = ej2Treegrid.extendArray;
 exports.getPlainData = ej2Treegrid.getPlainData;
 exports.getParentData = ej2Treegrid.getParentData;
+exports.isHidden = ej2Treegrid.isHidden;
 exports.ToolbarItem = ej2Treegrid.ToolbarItem;
 exports.ContextMenuItems = ej2Treegrid.ContextMenuItems;
 exports.Filter = ej2Treegrid.Filter;

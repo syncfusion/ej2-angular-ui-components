@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.2.46 (2020-07-21)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- Issue with 'boolean' type value is fixed.
+
+`#F156190` - Not able to select value field using 'IN' operator in production mode issue fixed.
+
+
 ## 18.2.45 (2020-07-14)
 
 ### QueryBuilder
@@ -96,9 +107,9 @@
 
 #### Breaking Changes
 
-|Property Name|Previous Type|Current Type       |
-|-------------|-------------|-------------------|
-|format       |string       |string|FormatObject|
+| Property Name | Previous Type | Current Type | 
+|---|---|---|
+| format | string | string | FormatObject | 
 
 ## 17.4.46 (2020-01-30)
 
@@ -244,7 +255,7 @@
 - Updating conditions throws script error after using 'setRules' method.
 - Rule with AND operator is not properly updated in ASP.NET MVC and Core.
 - Multiselect datasource not properly updated for in and notin operators.
-- Provided option for handling data source request on demand.
+- Provided option for handling data source request on demand.
 
 ## 17.1.43 (2019-04-30)
 
@@ -278,20 +289,20 @@
 
 - The following events are renamed.
 
-| Existing Event Name| New Event Name |
-|------|-------------|
-|beforeConditionChange|beforeChange|
-|beforeFieldChange|beforeChange|
-|beforeOperatorChange|beforeChange|
-|beforeValueChange|beforeChange|
-|conditionChanged|change|
-|fieldChanged|change|
-|operatorChanged|change|
-|valueChanged|change|
-|groupDelete|change|
-|groupInsert|change|
-|ruleDelete|change|
-|ruleInsert|change|
+| Existing Event Name | New Event Name | 
+|---|---|
+| beforeConditionChange | beforeChange | 
+| beforeFieldChange | beforeChange | 
+| beforeOperatorChange | beforeChange | 
+| beforeValueChange | beforeChange | 
+| conditionChanged | change | 
+| fieldChanged | change | 
+| operatorChanged | change | 
+| valueChanged | change | 
+| groupDelete | change | 
+| groupInsert | change | 
+| ruleDelete | change | 
+| ruleInsert | change | 
 
 - Modified the return type of 'getFilteredRecords' method from object collection to promise.
 - Renamed the 'RulesModel' class to 'RuleModel' and removed the 'RulesModel' class.
@@ -310,20 +321,20 @@
 
 - The following events are renamed.
 
-| Existing Event Name| New Event Name |
-|------|-------------|
-|beforeConditionChange|beforeChange|
-|beforeFieldChange|beforeChange|
-|beforeOperatorChange|beforeChange|
-|beforeValueChange|beforeChange|
-|conditionChanged|change|
-|fieldChanged|change|
-|operatorChanged|change|
-|valueChanged|change|
-|groupDelete|change|
-|groupInsert|change|
-|ruleDelete|change|
-|ruleInsert|change|
+| Existing Event Name | New Event Name | 
+|---|---|
+| beforeConditionChange | beforeChange | 
+| beforeFieldChange | beforeChange | 
+| beforeOperatorChange | beforeChange | 
+| beforeValueChange | beforeChange | 
+| conditionChanged | change | 
+| fieldChanged | change | 
+| operatorChanged | change | 
+| valueChanged | change | 
+| groupDelete | change | 
+| groupInsert | change | 
+| ruleDelete | change | 
+| ruleInsert | change | 
 
 #### Bug Fixes
 
@@ -359,8 +370,9 @@
 
 The Query Builder component is a graphical user interface that allows users to create and edit filters. It outputs a structured JSON of filters which that can be easily parsed to create SQL. It is integrated with Data Manager to communicates with data sources and returns the desired result based on the provided filter. It supports data binding, templates, validation, and horizontal and vertical orientation.
 
+
 - **Data binding**: It auto populates the data source and maps the data to the appropriate fields.
-
 - **Template**: Supports templates and it is applicable for all input components.
-
 - **Queries**: Queries supports JSON/SQL rules.
+
+

@@ -194,7 +194,7 @@
   line-height: 42px;
   margin-right: 8px;
   text-align: center;
-  width: auto;
+  width: 24px;
 }
 
 .e-menu-wrapper ul .e-menu-item .e-caret {
@@ -268,7 +268,7 @@
 }
 
 .e-menu-wrapper .e-ul .e-menu-item .e-menu-icon {
-  width: auto;
+  width: 1em;
 }
 
 .e-menu-wrapper.e-menu-icon-right .e-menu-header .e-menu-icon {
@@ -459,7 +459,7 @@
   font-size: 16px;
   line-height: 56px;
   margin-right: 10px;
-  width: auto;
+  width: 24px;
 }
 
 .e-bigger .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon,
@@ -547,7 +547,7 @@
 .e-bigger .e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon,
 .e-bigger.e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon {
   margin-right: 10px;
-  width: auto;
+  width: 1em;
 }
 
 .e-bigger .e-menu-wrapper .e-menu-hscroll.e-hscroll:not(.e-scroll-device),
@@ -677,6 +677,10 @@
 .e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item .e-menu-icon {
   display: inline;
   text-indent: 0;
+}
+
+.e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item.e-menu-hide {
+  display: none;
 }
 
 .e-menu-wrapper.e-hamburger ul.e-menu .e-menu-item[aria-expanded="true"] .e-caret {

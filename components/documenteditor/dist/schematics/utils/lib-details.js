@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-documenteditor';
-exports.pkgVer = '^18.2.44';
+exports.pkgVer = '^18.2.45';
 exports.moduleName = 'DocumentEditorModule, DocumentEditorContainerModule';
-exports.themeVer = '~18.2.44';
+exports.themeVer = '~18.2.45';

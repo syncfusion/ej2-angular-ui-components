@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.2.45 (2020-07-14)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#283346` - Issue with "chip content is not displayed in bootstrap4 theme when disable the control" has been resolved.
-
 ## 18.1.59 (2020-06-23)
 
 ### MultiSelect
@@ -1563,6 +1555,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.2.45 (2020-07-14)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#283346` - Issue with "chip content is not displayed in bootstrap4 theme when disable the control" has been resolved.
 
 ## 18.1.54 (2020-05-26)
 

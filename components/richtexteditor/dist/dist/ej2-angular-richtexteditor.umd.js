@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['autoSaveOnIdle', 'backgroundColor', 'cssClass', 'editorMode', 'enableAutoUrl', 'enableHtmlEncode', 'enableHtmlSanitizer', 'enablePersistence', 'enableResize', 'enableRtl', 'enableTabKey', 'enableXhtml', 'enabled', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
-var outputs = ['actionBegin', 'actionComplete', 'afterImageDelete', 'beforeDialogClose', 'beforeDialogOpen', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
+var outputs = ['actionBegin', 'actionComplete', 'afterImageDelete', 'beforeDialogClose', 'beforeDialogOpen', 'beforeImageUpload', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
 var twoWays = ['value'];
 /**
  * `ejs-richtexteditor` represents the Angular richtexteditor Component.
@@ -442,6 +442,7 @@ exports.imageRemoving = ej2Richtexteditor.imageRemoving;
 exports.afterImageDelete = ej2Richtexteditor.afterImageDelete;
 exports.drop = ej2Richtexteditor.drop;
 exports.xhtmlValidation = ej2Richtexteditor.xhtmlValidation;
+exports.beforeImageUpload = ej2Richtexteditor.beforeImageUpload;
 exports.CLS_RTE = ej2Richtexteditor.CLS_RTE;
 exports.CLS_RTL = ej2Richtexteditor.CLS_RTL;
 exports.CLS_CONTENT = ej2Richtexteditor.CLS_CONTENT;
@@ -544,6 +545,7 @@ exports.CLS_NOCOLOR_ITEM = ej2Richtexteditor.CLS_NOCOLOR_ITEM;
 exports.CLS_TABLE = ej2Richtexteditor.CLS_TABLE;
 exports.CLS_TABLE_BORDER = ej2Richtexteditor.CLS_TABLE_BORDER;
 exports.CLS_RTE_TABLE_RESIZE = ej2Richtexteditor.CLS_RTE_TABLE_RESIZE;
+exports.CLS_RTE_FIXED_TB_EXPAND = ej2Richtexteditor.CLS_RTE_FIXED_TB_EXPAND;
 exports.getIndex = ej2Richtexteditor.getIndex;
 exports.hasClass = ej2Richtexteditor.hasClass;
 exports.getDropDownValue = ej2Richtexteditor.getDropDownValue;

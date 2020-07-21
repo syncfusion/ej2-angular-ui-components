@@ -1061,6 +1061,11 @@
   z-index: 100;
 }
 
+.e-richtexteditor.e-rte-tb-expand.e-rte-fixed-tb-expand {
+  overflow: hidden;
+  transition: none;
+}
+
 .e-rte-linkcontent .e-rte-label {
   padding-top: 14px;
 }
