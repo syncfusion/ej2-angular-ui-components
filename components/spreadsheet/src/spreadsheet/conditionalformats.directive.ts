@@ -45,7 +45,7 @@ export class ConditionalFormatDirective extends ComplexBase<ConditionalFormatDir
     public cFColor: any;
     /** 
      * Specifies format.
-     * @default []
+     * @default {}
      */
     public format: any;
     /** 

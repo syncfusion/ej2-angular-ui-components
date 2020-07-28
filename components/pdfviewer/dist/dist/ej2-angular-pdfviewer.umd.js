@@ -353,6 +353,7 @@ exports.CursorType = ej2Pdfviewer.CursorType;
 exports.DynamicStampItem = ej2Pdfviewer.DynamicStampItem;
 exports.SignStampItem = ej2Pdfviewer.SignStampItem;
 exports.StandardBusinessStampItem = ej2Pdfviewer.StandardBusinessStampItem;
+exports.AllowedInteraction = ej2Pdfviewer.AllowedInteraction;
 exports.AjaxHandler = ej2Pdfviewer.AjaxHandler;
 exports.Signature = ej2Pdfviewer.Signature;
 exports.Magnification = ej2Pdfviewer.Magnification;

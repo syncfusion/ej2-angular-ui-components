@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.2.47 (2020-07-28)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#F156190` - Not able to select value field using 'IN' operator in production mode issue fixed.
+
+
 ## 18.2.46 (2020-07-21)
 
 ### QueryBuilder
@@ -9,9 +18,6 @@
 #### Bug Fixes
 
 - Issue with 'boolean' type value is fixed.
-
-`#F156190` - Not able to select value field using 'IN' operator in production mode issue fixed.
-
 
 ## 18.2.45 (2020-07-14)
 

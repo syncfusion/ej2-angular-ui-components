@@ -375,7 +375,6 @@
   line-height: 48px;
 }
 
-.sf-grid
 .e-excelfilter .e-checkboxlist {
   height: 200px;
   margin-top: 5px;
@@ -383,13 +382,11 @@
   overflow-y: auto;
 }
 
-.sf-grid
 .e-excelfilter .e-checkboxfiltertext {
   width: 150px;
   word-break: normal;
 }
 
-.sf-grid
 .e-excelfilter .e-chk-hidden {
   -moz-appearance: none;
   height: 1px;
@@ -397,44 +394,36 @@
   width: 1px;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper,
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   display: block;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   padding-bottom: 4px;
   position: static;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul li {
   height: 36px;
   line-height: 36px;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
   height: 36px;
   line-height: 36px;
   margin-right: 12px;
 }
 
-.sf-grid
 .e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
   margin-right: 0;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 36px;
   line-height: 36px;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   border: 0;
   box-shadow: none;
@@ -443,60 +432,49 @@
   position: static;
 }
 
-.sf-grid
 .e-excelfilter .e-footer-content {
   border-style: solid;
   border-width: 1px 0 0;
 }
 
-.sf-grid
 .e-excelfilter .e-excel-menu {
   z-index: 1000;
 }
 
-.sf-grid
 .e-excelfilter .e-dlg-content {
   padding-top: 0;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper,
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   display: block;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   padding-bottom: 4px;
   position: static;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul li {
   height: 36px;
   line-height: 36px;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
   height: 36px;
   line-height: 36px;
   margin-right: 12px;
 }
 
-.sf-grid
 .e-excelfilter.e-rtl .e-contextmenu-wrapper ul li .e-menu-icon {
   margin-right: 0;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 36px;
   line-height: 36px;
 }
 
-.sf-grid
 .e-excelfilter .e-contextmenu-wrapper ul {
   border: 0;
   box-shadow: none;
@@ -505,23 +483,19 @@
   position: static;
 }
 
-.sf-grid
 .e-excelfilter .e-footer-content {
   border-style: solid;
   border-width: 1px 0 0;
 }
 
-.sf-grid
 .e-excelfilter .e-excel-menu {
   z-index: 1000;
 }
 
-.sf-grid
 .e-excelfilter .e-dlg-content {
   padding-top: 0;
 }
 
-.sf-grid
 .e-excelfilter .e-xlsel {
   border: 0 solid;
   position: absolute;

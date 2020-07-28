@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 18.2.47 (2020-07-28)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#277503` - Issue with "sort order is not working for filtering dropdown after adding new item using addItem method" has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- Filtering is not working in IE browser has been fixed.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#276842` - Issue with "list data is not updated properly while pressing alt+down key in auto filling autocomplete" has been resolved.
+
 ## 18.1.59 (2020-06-23)
 
 ### MultiSelect

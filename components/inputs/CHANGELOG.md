@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.47 (2020-07-28)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#276502` - Issue with "sequential upload is not working with custom upload button" has been resolved.
+
 ## 18.1.56 (2020-06-09)
 
 ### Uploader
