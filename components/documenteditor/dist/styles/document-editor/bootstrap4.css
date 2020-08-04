@@ -1904,6 +1904,15 @@ label[for*='_wholeWord_e-de-rtl'] {
   margin-left: 58px;
 }
 
+.e-de-font-checkbox-transform {
+  margin-left: 58px;
+}
+
+.e-de-font-checkbox-transform-label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .e-de-font-checkbox.e-de-rtl {
   margin-left: 0;
   margin-right: 58px;

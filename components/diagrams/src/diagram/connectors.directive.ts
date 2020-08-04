@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -175,6 +175,13 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @blazordefaultvalue new ConnectorShapeStyle()
      */
     public style: any;
+    /** 
+     * Defines the symbol info of a connector
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     */
+    public symbolInfo: any;
     /** 
      * Defines the target decorator of the connector
      * @default new Decorator()

@@ -3775,6 +3775,10 @@
   border-left-color: #dee2e6;
 }
 
+.e-grid.e-rtl .e-filterbardropdown {
+  margin-left: 22px;
+}
+
 .e-grid.sf-grid .e-gridfooter .e-summarycontent {
   border-right: 0 #dee2e6 solid;
 }
@@ -3805,4 +3809,12 @@
 .e-dropitemscount {
   background-color: #317ab9;
   color: #fff;
+}
+
+.e-filterbaroperator.e-dropdownlist {
+  position: absolute;
+}
+
+.e-filterbardropdown:not(.e-rtl) {
+  margin-right: 22px;
 }

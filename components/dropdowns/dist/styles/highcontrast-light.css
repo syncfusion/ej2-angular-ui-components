@@ -2364,25 +2364,6 @@ e-ddl.e-popup.e-multi-select-list-wrapper.e-multiselct-group.e-checkbox .e-list-
   margin: -2px 0 0 10px;
 }
 
-.e-listbox-wrapper .e-list-item .e-list-badge {
-  -ms-flex-align: center;
-      align-items: center;
-  background-color: #400074;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  height: 22px;
-  -ms-flex-pack: center;
-      justify-content: center;
-  position: absolute;
-  right: -10px;
-  top: -10px;
-  width: 22px;
-}
-
 .e-listbox-wrapper .e-checkbox-wrapper {
   margin: -2px 10px 0 0;
   text-indent: 0;
@@ -2416,16 +2397,44 @@ e-ddl.e-popup.e-multi-select-list-wrapper.e-multiselct-group.e-checkbox .e-list-
   height: 1px;
 }
 
-.e-listbox-wrapper .e-sortableclone {
-  z-index: 10000;
+ejs-listbox {
+  display: block;
 }
 
-.e-listbox-wrapper .e-sortableclone.e-ripple {
+.e-listbox-wrapper.e-sortableclone {
+  border-width: 0;
   overflow: visible;
 }
 
-ejs-listbox {
-  display: block;
+.e-listbox-wrapper.e-sortableclone .e-list-item {
+  list-style-type: none;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-ripple {
+  overflow: visible;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-ripple .e-ripple-element {
+  display: none;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-list-badge {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #400074;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 22px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 22px;
 }
 
 .e-listboxtool-wrapper {

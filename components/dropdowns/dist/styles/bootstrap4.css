@@ -2429,25 +2429,6 @@ ejs-multiselect {
   margin: 0 0 0 10px;
 }
 
-.e-listbox-wrapper .e-list-item .e-list-badge {
-  -ms-flex-align: center;
-      align-items: center;
-  background-color: #007bff;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  height: 22px;
-  -ms-flex-pack: center;
-      justify-content: center;
-  position: absolute;
-  right: -10px;
-  top: -10px;
-  width: 22px;
-}
-
 .e-listbox-wrapper .e-checkbox-wrapper {
   margin: 0 10px 0 0;
   text-indent: 0;
@@ -2481,16 +2462,44 @@ ejs-multiselect {
   height: 1px;
 }
 
-.e-listbox-wrapper .e-sortableclone {
-  z-index: 10000;
+ejs-listbox {
+  display: block;
 }
 
-.e-listbox-wrapper .e-sortableclone.e-ripple {
+.e-listbox-wrapper.e-sortableclone {
+  border-width: 0;
   overflow: visible;
 }
 
-ejs-listbox {
-  display: block;
+.e-listbox-wrapper.e-sortableclone .e-list-item {
+  list-style-type: none;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-ripple {
+  overflow: visible;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-ripple .e-ripple-element {
+  display: none;
+}
+
+.e-listbox-wrapper.e-sortableclone .e-list-badge {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #007bff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 22px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 22px;
 }
 
 .e-listboxtool-wrapper {

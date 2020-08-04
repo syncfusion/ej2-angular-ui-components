@@ -5,7 +5,7 @@ import { SymbolPalette } from '@syncfusion/ej2-diagrams';
 import { PalettesDirective } from './palettes.directive';
 
 export const inputs: string[] = ['accessKey','allowDrag','connectorDefaults','enableAnimation','enablePersistence','enableRtl','enableSearch','expandMode','filterSymbols','getConnectorDefaults','getNodeDefaults','getSymbolInfo','getSymbolTemplate','height','ignoreSymbolsOnSearch','locale','nodeDefaults','palettes','symbolDragSize','symbolHeight','symbolInfo','symbolMargin','symbolPreview','symbolWidth','width'];
-export const outputs: string[] = ['paletteSelectionChange'];
+export const outputs: string[] = ['paletteExpanding','paletteSelectionChange'];
 export const twoWays: string[] = [''];
 
 /**

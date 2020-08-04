@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 18.2.47 (2020-07-28)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#F156190` - Not able to select value field using 'IN' operator in production mode issue fixed.
-
-
 ## 18.2.46 (2020-07-21)
 
 ### QueryBuilder
@@ -380,5 +371,14 @@ The Query Builder component is a graphical user interface that allows users to c
 - **Data binding**: It auto populates the data source and maps the data to the appropriate fields.
 - **Template**: Supports templates and it is applicable for all input components.
 - **Queries**: Queries supports JSON/SQL rules.
+
+
+## 18.2.47 (2020-07-28)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#F156190` - Not able to select value field using 'IN' operator in production mode issue fixed.
 
 

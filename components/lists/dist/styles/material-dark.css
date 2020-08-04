@@ -479,14 +479,14 @@
   opacity: .35;
 }
 
-.e-sortable .e-sortableclone {
-  position: fixed !important;
-}
-
 .e-sortable * {
   box-sizing: border-box;
 }
 
 .e-sortable *:focus {
   outline: none;
+}
+
+.e-sortableclone {
+  position: fixed !important;
 }

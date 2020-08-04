@@ -578,6 +578,7 @@ exports.ɵc = inputs$1;
 exports.ɵd = outputs$3;
 exports.getModel = ej2Splitbuttons.getModel;
 exports.upDownKeyHandler = ej2Splitbuttons.upDownKeyHandler;
+exports.setBlankIconStyle = ej2Splitbuttons.setBlankIconStyle;
 exports.Item = ej2Splitbuttons.Item;
 exports.DropDownButton = ej2Splitbuttons.DropDownButton;
 exports.SplitButton = ej2Splitbuttons.SplitButton;
