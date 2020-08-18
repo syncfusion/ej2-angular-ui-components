@@ -4619,11 +4619,11 @@
   visibility: hidden;
 }
 
-.e-pivotview .e-toolbar .e-toolbar-items {
+.e-pivotview .e-member-editor-dialog .e-toolbar .e-toolbar-items {
   margin-left: 20px;
 }
 
-.e-pivotview .e-rtl.e-toolbar .e-toolbar-items {
+.e-pivotview .e-member-editor-dialog .e-rtl.e-toolbar .e-toolbar-items {
   margin-left: 0;
   margin-right: 20px;
 }

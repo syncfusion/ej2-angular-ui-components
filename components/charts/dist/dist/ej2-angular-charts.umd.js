@@ -821,7 +821,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['allowExport', 'allowMultiSelection', 'annotations', 'axes', 'background', 'backgroundImage', 'border', 'chartArea', 'columns', 'crosshair', 'currencyCode', 'dataSource', 'description', 'enableAnimation', 'enableAutoIntervalOnBothAxis', 'enableCanvas', 'enableExport', 'enablePersistence', 'enableRtl', 'enableSideBySidePlacement', 'height', 'highlightMode', 'highlightPattern', 'indicators', 'isMultiSelect', 'isTransposed', 'legendSettings', 'locale', 'margin', 'palettes', 'primaryXAxis', 'primaryYAxis', 'rows', 'selectedDataIndexes', 'selectionMode', 'selectionPattern', 'series', 'subTitle', 'subTitleStyle', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width', 'zoomSettings'];
-var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'sharedTooltipRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
+var outputs$12 = ['afterExport', 'animationComplete', 'annotationRender', 'axisLabelClick', 'axisLabelRender', 'axisMultiLabelRender', 'axisRangeCalculated', 'beforeExport', 'beforePrint', 'chartMouseClick', 'chartMouseDown', 'chartMouseLeave', 'chartMouseMove', 'chartMouseUp', 'drag', 'dragComplete', 'dragEnd', 'dragStart', 'legendClick', 'legendRender', 'load', 'loaded', 'multiLevelLabelClick', 'onZooming', 'pointClick', 'pointDoubleClick', 'pointMove', 'pointRender', 'resized', 'scrollChanged', 'scrollEnd', 'scrollStart', 'selectionComplete', 'seriesRender', 'sharedTooltipRender', 'textRender', 'tooltipRender', 'zoomComplete', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * Chart Component
@@ -3103,7 +3103,7 @@ StockChartPeriodsDirective.decorators = [
  * @nocollapse
  */
 StockChartPeriodsDirective.ctorParameters = function () { return []; };
-var input$24 = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
+var input$24 = ['background', 'border', 'date', 'description', 'placeAt', 'seriesIndexes', 'showOnSeries', 'text', 'textStyle', 'type'];
 var outputs$29 = [];
 /**
  * StockEvents
@@ -4283,6 +4283,7 @@ exports.pointRender = ej2Charts.pointRender;
 exports.sharedTooltipRender = ej2Charts.sharedTooltipRender;
 exports.seriesRender = ej2Charts.seriesRender;
 exports.axisLabelRender = ej2Charts.axisLabelRender;
+exports.axisLabelClick = ej2Charts.axisLabelClick;
 exports.axisRangeCalculated = ej2Charts.axisRangeCalculated;
 exports.axisMultiLabelRender = ej2Charts.axisMultiLabelRender;
 exports.tooltipRender = ej2Charts.tooltipRender;

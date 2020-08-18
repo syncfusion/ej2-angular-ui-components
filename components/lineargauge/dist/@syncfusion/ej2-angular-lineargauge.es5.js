@@ -314,28 +314,28 @@ var LinearGaugeComponent = /** @class */ (function (_super) {
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
-            var mod = _this.injector.get('LinearGaugeGaugeTooltip');
+            var mod = _this.injector.get('LinearGaugePrint');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            var mod = _this.injector.get('LinearGaugeAnnotations');
+            var mod = _this.injector.get('LinearGaugePdfExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            var mod = _this.injector.get('LinearGaugePrint');
+            var mod = _this.injector.get('LinearGaugeGaugeTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            var mod = _this.injector.get('LinearGaugePdfExport');
+            var mod = _this.injector.get('LinearGaugeAnnotations');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
@@ -466,10 +466,10 @@ LinearGaugeModule.decorators = [
  * @nocollapse
  */
 LinearGaugeModule.ctorParameters = function () { return []; };
-var GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: GaugeTooltip };
-var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: Annotations };
 var PrintService = { provide: 'LinearGaugePrint', useValue: Print };
 var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: PdfExport };
+var GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: GaugeTooltip };
+var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: Annotations };
 var ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ImageExport };
 var GradientService = { provide: 'LinearGaugeGradient', useValue: Gradient };
 /**
@@ -487,10 +487,10 @@ LinearGaugeAllModule.decorators = [
                     LinearGaugeModule
                 ],
                 providers: [
-                    GaugeTooltipService,
-                    AnnotationsService,
                     PrintService,
                     PdfExportService,
+                    GaugeTooltipService,
+                    AnnotationsService,
                     ImageExportService,
                     GradientService
                 ]
@@ -503,6 +503,6 @@ LinearGaugeAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, GaugeTooltipService, AnnotationsService, PrintService, PdfExportService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
+export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, PrintService, PdfExportService, GaugeTooltipService, AnnotationsService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
 export { LinearGauge, Font, Margin, Border, Annotation, Container, RangeTooltip, TooltipSettings, Line, Label, Range, Tick, Pointer, Axis, stringToNumber, measureText, withInRange, convertPixelToValue, getPathToRect, getElement, removeElement, isPointerDrag, valueToCoefficient, getFontStyle, textFormatter, formatValue, getLabelFormat, getTemplateFunction, getElementOffset, triggerDownload, VisibleRange, GaugeLocation, Size, Rect, CustomizeOption, PathOption, RectOption, TextOption, VisibleLabels, Align, textElement, calculateNiceInterval, getActualDesiredIntervalsCount, getPointer, getRangeColor, getMousePosition, getRangePalette, calculateShapes, getBox, Annotations, GaugeTooltip, Print, ImageExport, PdfExport, ColorStop, GradientPosition, LinearGradient, RadialGradient, Gradient } from '@syncfusion/ej2-lineargauge';
 //# sourceMappingURL=ej2-angular-lineargauge.es5.js.map

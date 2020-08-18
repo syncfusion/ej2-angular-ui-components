@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 18.2.54 (2020-08-18)
+
+### Dropdown Tree
+
+#### Breaking Changes
+
+- `#273325` - Provided the option to customize the Dropdown Tree’s input height when the content is increased.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#275308` - Performance issue will no longer occurs when render the multiselect with checkbox.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#285069` - Issue with "popup is not opened when focus out the component before loading the remote data" has been resolved.
+
 ## 18.2.48 (2020-08-04)
 
 ### ListBox
@@ -20,8 +40,8 @@
 
 #### Bug Fixes
 
-`#285164`, `#277294` - Issue with "First list item got selected while pressing space key in the MultiSelect along with checkbox mode and remote data" has been resolved.
-
+- `#282905`, `#273055` - Now, Cross-Site Scripting issues will no longer occurs.
+- `#285164`, `#277294` - Issue with "First list item got selected while pressing space key in the MultiSelect along with checkbox mode and remote data" has been resolved.
 
 ## 18.2.47 (2020-07-28)
 

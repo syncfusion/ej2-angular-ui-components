@@ -40,6 +40,18 @@ export class CircularGaugeComponent extends CircularGauge implements IComponentB
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
         try {
+                let mod = this.injector.get('CircularGaugePrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CircularGaugePdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('CircularGaugeGaugeTooltip');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
@@ -53,18 +65,6 @@ export class CircularGaugeComponent extends CircularGauge implements IComponentB
             } catch { }
         try {
                 let mod = this.injector.get('CircularGaugeLegend');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('CircularGaugePrint');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('CircularGaugePdfExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

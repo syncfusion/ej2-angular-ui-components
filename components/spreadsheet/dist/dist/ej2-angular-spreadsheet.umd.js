@@ -1182,6 +1182,7 @@ exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
 exports.getScrollBarWidth = ej2Spreadsheet.getScrollBarWidth;
+exports.getSiblingsHeight = ej2Spreadsheet.getSiblingsHeight;
 exports.inView = ej2Spreadsheet.inView;
 exports.getCellPosition = ej2Spreadsheet.getCellPosition;
 exports.locateElem = ej2Spreadsheet.locateElem;

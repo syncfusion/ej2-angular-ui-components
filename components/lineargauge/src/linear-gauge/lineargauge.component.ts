@@ -43,18 +43,6 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
         try {
-                let mod = this.injector.get('LinearGaugeGaugeTooltip');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('LinearGaugeAnnotations');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
                 let mod = this.injector.get('LinearGaugePrint');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
@@ -62,6 +50,18 @@ export class LinearGaugeComponent extends LinearGauge implements IComponentBase 
             } catch { }
         try {
                 let mod = this.injector.get('LinearGaugePdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeGaugeTooltip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('LinearGaugeAnnotations');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

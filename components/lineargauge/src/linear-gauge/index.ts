@@ -4,4 +4,4 @@ export {AxisDirective,AxesDirective} from './axes.directive';
 export {AnnotationDirective,AnnotationsDirective} from './annotations.directive';
 export { LinearGaugeComponent} from './lineargauge.component';
 export { LinearGaugeModule } from './lineargauge.module';
-export { LinearGaugeAllModule, GaugeTooltipService, AnnotationsService, PrintService, PdfExportService, ImageExportService, GradientService } from './lineargauge-all.module';
+export { LinearGaugeAllModule, PrintService, PdfExportService, GaugeTooltipService, AnnotationsService, ImageExportService, GradientService } from './lineargauge-all.module';

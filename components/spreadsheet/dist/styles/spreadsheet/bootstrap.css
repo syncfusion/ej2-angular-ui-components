@@ -413,10 +413,7 @@
 
 /*! spreadsheet layout */
 .e-spreadsheet {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  display: block;
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
@@ -1378,9 +1375,6 @@
 }
 
 .e-spreadsheet .e-sheet-panel {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  overflow-y: hidden;
   position: relative;
 }
 

@@ -4163,11 +4163,19 @@ label[for*='_wholeWord_e-de-rtl'] {
   width: 75px;
 }
 
+.e-de-pane-enable-clr.e-de-ctnr-properties-pane-btn .e-btn {
+  color: #317ab9;
+}
+
+.e-de-pane-disable-clr.e-de-ctnr-properties-pane-btn .e-btn {
+  color: #333;
+}
+
 .e-de-ctnr-properties-pane-btn .e-btn {
   background-color: #f8f8f8;
   border-radius: 0;
   box-shadow: none;
-  color: #333;
+  color: #317ab9;
   min-height: 100%;
   min-width: 100%;
 }

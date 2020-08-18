@@ -327,6 +327,11 @@
   width: auto;
 }
 
+.e-inplaceeditor .e-input-group.e-numeric.e-control-wrapper .e-clear-icon.e-clear-icon-hide {
+  display: block;
+  visibility: hidden;
+}
+
 .e-inplaceeditor .e-editable-value-wrapper {
   display: inline-block;
   padding: 6px 10px;

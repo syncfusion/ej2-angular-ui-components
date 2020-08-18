@@ -315,35 +315,35 @@ var CircularGaugeComponent = /** @class */ (function (_super) {
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
-            var mod = _this.injector.get('CircularGaugeGaugeTooltip');
+            var mod = _this.injector.get('CircularGaugePrint');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            var mod = _this.injector.get('CircularGaugeAnnotations');
+            var mod = _this.injector.get('CircularGaugePdfExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            var mod = _this.injector.get('CircularGaugeLegend');
+            var mod = _this.injector.get('CircularGaugeGaugeTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            var mod = _this.injector.get('CircularGaugePrint');
+            var mod = _this.injector.get('CircularGaugeAnnotations');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_d) { }
         try {
-            var mod = _this.injector.get('CircularGaugePdfExport');
+            var mod = _this.injector.get('CircularGaugeLegend');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
@@ -470,11 +470,11 @@ CircularGaugeModule.decorators = [
  * @nocollapse
  */
 CircularGaugeModule.ctorParameters = function () { return []; };
+var PrintService = { provide: 'CircularGaugePrint', useValue: Print };
+var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: PdfExport };
 var GaugeTooltipService = { provide: 'CircularGaugeGaugeTooltip', useValue: GaugeTooltip };
 var AnnotationsService = { provide: 'CircularGaugeAnnotations', useValue: Annotations };
 var LegendService = { provide: 'CircularGaugeLegend', useValue: Legend };
-var PrintService = { provide: 'CircularGaugePrint', useValue: Print };
-var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: PdfExport };
 var ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ImageExport };
 var GradientService = { provide: 'CircularGaugeGradient', useValue: Gradient };
 /**
@@ -492,11 +492,11 @@ CircularGaugeAllModule.decorators = [
                     CircularGaugeModule
                 ],
                 providers: [
+                    PrintService,
+                    PdfExportService,
                     GaugeTooltipService,
                     AnnotationsService,
                     LegendService,
-                    PrintService,
-                    PdfExportService,
                     ImageExportService,
                     GradientService
                 ]
@@ -509,6 +509,6 @@ CircularGaugeAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, GaugeTooltipService, AnnotationsService, LegendService, PrintService, PdfExportService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
+export { AnnotationDirective, AnnotationsDirective, RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, CircularGaugeComponent, CircularGaugeModule, CircularGaugeAllModule, PrintService, PdfExportService, GaugeTooltipService, AnnotationsService, LegendService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
 export { CircularGauge, Annotations, Line, Label, Range, Tick, Cap, NeedleTail, Animation, Annotation, Pointer, Axis, Border, Font, RangeTooltip, AnnotationTooltip, Margin, TooltipSettings, GaugeTooltip, measureText, toPixel, getFontStyle, setStyles, measureElementRect, stringToNumber, textElement, appendPath, calculateSum, linear, getAngleFromValue, getDegree, getValueFromAngle, isCompleteAngle, getAngleFromLocation, getLocationFromAngle, getPathArc, getRangePath, getRoundedPathArc, getRoundedPath, getCompleteArc, getCirclePath, getCompletePath, getElement, getTemplateFunction, removeElement, getPointer, getRange, getElementSize, getMousePosition, getLabelFormat, calculateShapes, getRangeColor, CustomizeOption, PathOption, RectOption, Size, GaugeLocation, Rect, textTrim, showTooltip, TextOption, VisibleLabels, triggerDownload, Location, LegendSettings, Legend, Index, LegendOptions, ImageExport, PdfExport, Print, ColorStop, GradientPosition, LinearGradient, RadialGradient, Gradient } from '@syncfusion/ej2-circulargauge';
 //# sourceMappingURL=ej2-angular-circulargauge.es5.js.map

@@ -443,6 +443,7 @@ exports.afterImageDelete = ej2Richtexteditor.afterImageDelete;
 exports.drop = ej2Richtexteditor.drop;
 exports.xhtmlValidation = ej2Richtexteditor.xhtmlValidation;
 exports.beforeImageUpload = ej2Richtexteditor.beforeImageUpload;
+exports.resizeInitialized = ej2Richtexteditor.resizeInitialized;
 exports.CLS_RTE = ej2Richtexteditor.CLS_RTE;
 exports.CLS_RTL = ej2Richtexteditor.CLS_RTL;
 exports.CLS_CONTENT = ej2Richtexteditor.CLS_CONTENT;

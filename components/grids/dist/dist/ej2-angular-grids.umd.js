@@ -984,6 +984,7 @@ exports.ensureFirstRow = ej2Grids.ensureFirstRow;
 exports.getEditedDataIndex = ej2Grids.getEditedDataIndex;
 exports.eventPromise = ej2Grids.eventPromise;
 exports.getStateEventArgument = ej2Grids.getStateEventArgument;
+exports.ispercentageWidth = ej2Grids.ispercentageWidth;
 exports.created = ej2Grids.created;
 exports.destroyed = ej2Grids.destroyed;
 exports.load = ej2Grids.load;

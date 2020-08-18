@@ -278,28 +278,28 @@ let LinearGaugeComponent = class LinearGaugeComponent extends LinearGauge {
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
         try {
-            let mod = this.injector.get('LinearGaugeGaugeTooltip');
+            let mod = this.injector.get('LinearGaugePrint');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            let mod = this.injector.get('LinearGaugeAnnotations');
+            let mod = this.injector.get('LinearGaugePdfExport');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            let mod = this.injector.get('LinearGaugePrint');
+            let mod = this.injector.get('LinearGaugeGaugeTooltip');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            let mod = this.injector.get('LinearGaugePdfExport');
+            let mod = this.injector.get('LinearGaugeAnnotations');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
@@ -427,10 +427,10 @@ LinearGaugeModule.decorators = [
  */
 LinearGaugeModule.ctorParameters = () => [];
 
-const GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: GaugeTooltip };
-const AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: Annotations };
 const PrintService = { provide: 'LinearGaugePrint', useValue: Print };
 const PdfExportService = { provide: 'LinearGaugePdfExport', useValue: PdfExport };
+const GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: GaugeTooltip };
+const AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: Annotations };
 const ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ImageExport };
 const GradientService = { provide: 'LinearGaugeGradient', useValue: Gradient };
 /**
@@ -445,10 +445,10 @@ LinearGaugeAllModule.decorators = [
                     LinearGaugeModule
                 ],
                 providers: [
-                    GaugeTooltipService,
-                    AnnotationsService,
                     PrintService,
                     PdfExportService,
+                    GaugeTooltipService,
+                    AnnotationsService,
                     ImageExportService,
                     GradientService
                 ]
@@ -463,6 +463,6 @@ LinearGaugeAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, GaugeTooltipService, AnnotationsService, PrintService, PdfExportService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
+export { RangeDirective, RangesDirective, PointerDirective, PointersDirective, AxisDirective, AxesDirective, AnnotationDirective, AnnotationsDirective, LinearGaugeComponent, LinearGaugeModule, LinearGaugeAllModule, PrintService, PdfExportService, GaugeTooltipService, AnnotationsService, ImageExportService, GradientService, inputs as ɵa, outputs$4 as ɵb };
 export { LinearGauge, Font, Margin, Border, Annotation, Container, RangeTooltip, TooltipSettings, Line, Label, Range, Tick, Pointer, Axis, stringToNumber, measureText, withInRange, convertPixelToValue, getPathToRect, getElement, removeElement, isPointerDrag, valueToCoefficient, getFontStyle, textFormatter, formatValue, getLabelFormat, getTemplateFunction, getElementOffset, triggerDownload, VisibleRange, GaugeLocation, Size, Rect, CustomizeOption, PathOption, RectOption, TextOption, VisibleLabels, Align, textElement, calculateNiceInterval, getActualDesiredIntervalsCount, getPointer, getRangeColor, getMousePosition, getRangePalette, calculateShapes, getBox, Annotations, GaugeTooltip, Print, ImageExport, PdfExport, ColorStop, GradientPosition, LinearGradient, RadialGradient, Gradient } from '@syncfusion/ej2-lineargauge';
 //# sourceMappingURL=ej2-angular-lineargauge.js.map

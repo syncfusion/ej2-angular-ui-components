@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['actionOnBlur', 'adaptor', 'cancelButton', 'cssClass', 'disabled', 'editableOn', 'emptyText', 'enableEditMode', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'locale', 'mode', 'model', 'name', 'popupSettings', 'primaryKey', 'saveButton', 'showButtons', 'submitOnEnter', 'template', 'textOption', 'type', 'url', 'validationRules', 'value'];
-var outputs = ['focus', 'blur', 'actionBegin', 'actionFailure', 'actionSuccess', 'beforeSanitizeHtml', 'beginEdit', 'created', 'destroyed', 'validating'];
+var outputs = ['focus', 'blur', 'actionBegin', 'actionFailure', 'actionSuccess', 'beforeSanitizeHtml', 'beginEdit', 'change', 'created', 'destroyed', 'validating'];
 var twoWays = [''];
 /**
  * `ejs-inplaceeditor` represents the Angular InPlaceEditor Component.

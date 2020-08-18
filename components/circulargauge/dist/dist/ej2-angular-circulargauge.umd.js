@@ -317,35 +317,35 @@ exports.CircularGaugeComponent = /** @class */ (function (_super) {
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
-            var mod = _this.injector.get('CircularGaugeGaugeTooltip');
+            var mod = _this.injector.get('CircularGaugePrint');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            var mod = _this.injector.get('CircularGaugeAnnotations');
+            var mod = _this.injector.get('CircularGaugePdfExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            var mod = _this.injector.get('CircularGaugeLegend');
+            var mod = _this.injector.get('CircularGaugeGaugeTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            var mod = _this.injector.get('CircularGaugePrint');
+            var mod = _this.injector.get('CircularGaugeAnnotations');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_d) { }
         try {
-            var mod = _this.injector.get('CircularGaugePdfExport');
+            var mod = _this.injector.get('CircularGaugeLegend');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
@@ -472,11 +472,11 @@ CircularGaugeModule.decorators = [
  * @nocollapse
  */
 CircularGaugeModule.ctorParameters = function () { return []; };
+var PrintService = { provide: 'CircularGaugePrint', useValue: ej2Circulargauge.Print };
+var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: ej2Circulargauge.PdfExport };
 var GaugeTooltipService = { provide: 'CircularGaugeGaugeTooltip', useValue: ej2Circulargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'CircularGaugeAnnotations', useValue: ej2Circulargauge.Annotations };
 var LegendService = { provide: 'CircularGaugeLegend', useValue: ej2Circulargauge.Legend };
-var PrintService = { provide: 'CircularGaugePrint', useValue: ej2Circulargauge.Print };
-var PdfExportService = { provide: 'CircularGaugePdfExport', useValue: ej2Circulargauge.PdfExport };
 var ImageExportService = { provide: 'CircularGaugeImageExport', useValue: ej2Circulargauge.ImageExport };
 var GradientService = { provide: 'CircularGaugeGradient', useValue: ej2Circulargauge.Gradient };
 /**
@@ -494,11 +494,11 @@ CircularGaugeAllModule.decorators = [
                     CircularGaugeModule
                 ],
                 providers: [
+                    PrintService,
+                    PdfExportService,
                     GaugeTooltipService,
                     AnnotationsService,
                     LegendService,
-                    PrintService,
-                    PdfExportService,
                     ImageExportService,
                     GradientService
                 ]
@@ -519,11 +519,11 @@ exports.AxisDirective = AxisDirective;
 exports.AxesDirective = AxesDirective;
 exports.CircularGaugeModule = CircularGaugeModule;
 exports.CircularGaugeAllModule = CircularGaugeAllModule;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
 exports.LegendService = LegendService;
-exports.PrintService = PrintService;
-exports.PdfExportService = PdfExportService;
 exports.ImageExportService = ImageExportService;
 exports.GradientService = GradientService;
 exports.ɵa = inputs;

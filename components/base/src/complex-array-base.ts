@@ -21,6 +21,8 @@ interface Tag {
 export class ComplexBase<T> {
     public isUpdated: boolean;
     public hasChanges?: boolean = false;
+    // public initChange?: boolean = false;
+    // public onChanges?: boolean = true;
     public index?: number;
     public propCollection?: { [key: string]: Object } = {};
     public dataSource?: { [key: string]: Object } = {};
@@ -59,6 +61,8 @@ export class ComplexBase<T> {
             }
         }
         this.hasChanges = true;
+        // this.initChange = true;
+        // this.onChanges = false;
         }
     }
 
@@ -169,6 +173,22 @@ export class ArrayBase<T> {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
+                // if(!this.list[i].initChange) {
+                //     let propList: string[] = Object.keys(this.list[i]);
+                //     if (this.list[i].directivePropList) {
+                //         for (let k: number = 0; k < this.list[i].directivePropList.length; k++) {
+                //             let dirPropName = this.list[i].directivePropList[k];
+                //             if (propList.indexOf(dirPropName) !== -1) {
+                //                 setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
+                //                 this.list[i].hasChanges = true;
+                //                 this.list[i].initChange = true;
+                //                 this.hasChanges = true;
+                //             }
+                //         }
+                //     }
+                // }else if(!this.list[i].onChanges){
+                //     this.list[i].initChange = false;
+                // }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;

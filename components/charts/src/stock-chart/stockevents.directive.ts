@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['background', 'border', 'date', 'description', 'placeAt', 'showOnSeries', 'text', 'textStyle', 'type'];
+let input: string[] = ['background', 'border', 'date', 'description', 'placeAt', 'seriesIndexes', 'showOnSeries', 'text', 'textStyle', 'type'];
 let outputs: string[] = [];
 /**
  * StockEvents
@@ -67,6 +67,12 @@ export class StockEventDirective extends ComplexBase<StockEventDirective> {
      * @default 'close'
      */
     public placeAt: any;
+    /** 
+     * To render stock events in particular series. 
+     * By default stock events will render for all series.
+     * @default []
+     */
+    public seriesIndexes: any;
     /** 
      * Enables the stock events to be render on series. If it disabled, stock event rendered on primaryXAxis.
      * @default true

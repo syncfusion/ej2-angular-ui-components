@@ -789,25 +789,27 @@ ejs-dropdownlist {
   display: none;
 }
 
-.e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon {
-  bottom: 2px;
+.e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon, .e-ddt.e-input-group.e-control-wrapper.e-show-text .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-text .e-clear-icon {
+  bottom: 0;
   position: absolute;
   right: 0;
 }
 
-.e-ddt.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon {
+.e-ddt.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-input-group.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon {
   right: 18px;
 }
 
-.e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon {
+.e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-input-group.e-control-wrapper.e-show-text .e-ddt-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-float-input.e-control-wrapper.e-show-text .e-ddt-icon {
   bottom: 2px;
   position: absolute;
   right: 0;
 }
 
 .e-ddt.e-input-group.e-control-wrapper.e-show-chip.e-input-focus input.e-dropdowntree.e-chip-input,
-.e-ddt.e-input-group.e-control-wrapper.e-show-chip input.e-dropdowntree.e-chip-input, .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-input-focus input.e-dropdowntree.e-chip-input,
-.e-ddt.e-float-input.e-control-wrapper.e-show-chip input.e-dropdowntree.e-chip-input {
+.e-ddt.e-input-group.e-control-wrapper.e-show-chip input.e-dropdowntree.e-chip-input, .e-ddt.e-input-group.e-control-wrapper.e-show-text.e-input-focus input.e-dropdowntree.e-chip-input,
+.e-ddt.e-input-group.e-control-wrapper.e-show-text input.e-dropdowntree.e-chip-input, .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-input-focus input.e-dropdowntree.e-chip-input,
+.e-ddt.e-float-input.e-control-wrapper.e-show-chip input.e-dropdowntree.e-chip-input, .e-ddt.e-float-input.e-control-wrapper.e-show-text.e-input-focus input.e-dropdowntree.e-chip-input,
+.e-ddt.e-float-input.e-control-wrapper.e-show-text input.e-dropdowntree.e-chip-input {
   padding-left: 0;
   padding-right: 0;
 }
@@ -816,19 +818,19 @@ ejs-dropdownlist {
   width: 100%;
 }
 
-.e-ddt .e-chips-wrapper .e-chips-close {
+.e-ddt.e-show-chip .e-chips-close {
   line-height: 16px;
   min-height: 16px;
   min-width: 16px;
   text-align: center;
 }
 
-.e-ddt .e-chips-wrapper .e-chips-close::before {
+.e-ddt.e-show-chip .e-chips-close::before {
   font-size: 16px;
   vertical-align: middle;
 }
 
-.e-ddt .e-chips-wrapper .e-chips {
+.e-ddt.e-show-chip .e-chips {
   -ms-flex-align: center;
       align-items: center;
   border-radius: 16px;
@@ -845,13 +847,51 @@ ejs-dropdownlist {
   white-space: nowrap;
 }
 
-.e-ddt .e-chips-wrapper .e-chips > .e-chipcontent {
+.e-ddt.e-show-chip .e-chips > .e-chipcontent {
   max-width: 100%;
   overflow: hidden;
   padding: 0 4px 0 4px;
   text-indent: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.e-ddt .e-overflow {
+  white-space: nowrap;
+}
+
+.e-ddt .e-overflow.e-show-text {
+  padding: 6px 0 0 0;
+}
+
+.e-ddt .e-overflow.e-total-count {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.e-ddt .e-overflow.e-total-count .e-remain {
+  padding: 0 16px 0 0;
+}
+
+.e-ddt .e-overflow.e-wrap-count {
+  padding-top: 6px;
+}
+
+.e-ddt .e-overflow .e-remain {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  padding: 0 0 0 16px;
+}
+
+.e-ddt .e-overflow .e-remain.e-wrap-count {
+  padding-top: 6px;
+}
+
+.e-ddt.e-show-chip .e-overflow.e-total-count .e-remain {
+  padding: 6px 0 0 0;
 }
 
 .e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
@@ -1002,8 +1042,29 @@ ejs-dropdownlist {
   cursor: default;
 }
 
-.e-ddt.e-rtl .e-chips-wrapper .e-chips {
+.e-ddt.e-rtl.e-show-chip .e-chips {
   float: right;
+}
+
+.e-ddt.e-rtl.e-show-chip .e-overflow .e-remain, .e-ddt.e-rtl.e-show-text .e-overflow .e-remain {
+  padding: 0 16px 0 0;
+}
+
+.e-ddt.e-rtl.e-show-chip .e-overflow .e-remain.e-wrap-count, .e-ddt.e-rtl.e-show-text .e-overflow .e-remain.e-wrap-count {
+  padding-top: 6px;
+}
+
+.e-ddt.e-rtl.e-show-chip .e-overflow.e-wrap-count, .e-ddt.e-rtl.e-show-text .e-overflow.e-wrap-count {
+  position: absolute;
+  right: auto;
+}
+
+.e-ddt.e-rtl.e-show-text .e-overflow.e-total-count .e-remain {
+  padding: 0 0 0 16px;
+}
+
+.e-ddt.e-rtl.e-show-chip .e-overflow.e-total-count .e-remain {
+  padding: 6px 0 0 0;
 }
 
 .e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
@@ -1022,13 +1083,15 @@ ejs-dropdownlist {
 }
 
 .e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-clear-icon,
-.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon,
-.e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon {
+.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-text .e-clear-icon,
+.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-text .e-ddt-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-clear-icon,
+.e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-text .e-clear-icon,
+.e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-text .e-ddt-icon {
   left: 0;
   right: auto;
 }
 
-.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon {
+.e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-rtl.e-input-group.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-ddt.e-rtl.e-float-input.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon {
   left: 18px;
 }
 
@@ -1036,20 +1099,31 @@ ejs-dropdownlist {
   padding: 0 14px 0 0;
 }
 
+.e-dropdowntree .e-ddt.e-input-group.e-control-wrapper .e-clear-icon,
+.e-dropdowntree .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
+  margin: 6px;
+  min-height: 18px;
+  padding: 0;
+}
+
 .e-bigger .e-ddt .e-chips,
 .e-ddt.e-bigger .e-chips {
   height: 31px;
 }
 
-.e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon,
+.e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon,
 .e-ddt.e-bigger.e-input-group.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon,
-.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon {
+.e-ddt.e-bigger.e-input-group.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon,
+.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-chip.e-show-dd-icon .e-clear-icon,
+.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-text.e-show-dd-icon .e-clear-icon {
   right: 20px;
 }
 
-.e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon,
+.e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon, .e-bigger .e-ddt.e-input-group.e-control-wrapper.e-show-text .e-ddt-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon, .e-bigger .e-ddt.e-float-input.e-control-wrapper.e-show-text .e-ddt-icon,
 .e-ddt.e-bigger.e-input-group.e-control-wrapper.e-show-chip .e-ddt-icon,
-.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon {
+.e-ddt.e-bigger.e-input-group.e-control-wrapper.e-show-text .e-ddt-icon,
+.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-chip .e-ddt-icon,
+.e-ddt.e-bigger.e-float-input.e-control-wrapper.e-show-text .e-ddt-icon {
   bottom: 3px;
 }
 
@@ -1057,6 +1131,11 @@ ejs-dropdownlist {
 .e-ddt.e-bigger.e-input-group.e-control-wrapper .e-clear-icon,
 .e-ddt.e-bigger.e-float-input.e-control-wrapper .e-clear-icon {
   min-height: 26px;
+}
+
+.e-bigger .e-ddt .e-overflow.e-show-text,
+.e-ddt.e-bigger .e-overflow.e-show-text {
+  padding: 8px 0 0 0;
 }
 
 .e-bigger .e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips:last-child,
@@ -1105,8 +1184,9 @@ ejs-dropdownlist {
   margin-right: 1px;
 }
 
-.e-bigger .e-ddt.e-rtl.e-show-chip.e-input-group.e-show-dd-icon .e-clear-icon,
-.e-ddt.e-bigger.e-rtl.e-show-chip.e-input-group.e-show-dd-icon .e-clear-icon {
+.e-bigger .e-ddt.e-rtl.e-show-chip.e-input-group.e-show-dd-icon .e-clear-icon, .e-bigger .e-ddt.e-rtl.e-show-text.e-input-group.e-show-dd-icon .e-clear-icon,
+.e-ddt.e-bigger.e-rtl.e-show-chip.e-input-group.e-show-dd-icon .e-clear-icon,
+.e-ddt.e-bigger.e-rtl.e-show-text.e-input-group.e-show-dd-icon .e-clear-icon {
   left: 20px;
   right: auto;
 }
@@ -1129,6 +1209,10 @@ ejs-dropdownlist {
 
 .e-ddt .e-chips:hover > .e-chipcontent {
   color: rgba(0, 0, 0, 0.87);
+}
+
+.e-ddt .e-overflow .e-remain {
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .e-ddt.e-input-group.e-control-wrapper .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
@@ -1214,8 +1298,20 @@ ejs-dropdownlist {
   width: 16px;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 38px;
+  margin-top: -35px;
+  right: 18px;
+  top: 100%;
+  width: 16px;
+}
+
 .e-multiselect.e-outline .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
   right: 52px;
+}
+
+.e-multiselect.e-filled .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+  right: 45px;
 }
 
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
@@ -1444,6 +1540,227 @@ ejs-dropdownlist {
   margin: 6px 0 8px 12px;
 }
 
+.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 20px;
+  margin-top: -33px;
+  right: 18px;
+  width: 20px;
+}
+
+.e-bigger.e-small.e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker {
+  height: 20px;
+  margin-top: -35px;
+  right: 45px;
+  width: 20px;
+}
+
+.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-small.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker {
+  margin-top: -32px;
+}
+
+.e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-small .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 18px;
+  margin: -29px 0 8px;
+  width: 18px;
+}
+
+.e-bigger.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 24px;
+  width: 24px;
+}
+
+.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-small .e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker {
+  margin-top: -26px;
+}
+
+.e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker {
+  margin-top: -36px;
+}
+
+.e-bigger.e-small.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled.e-float-input.e-multiselect .e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  margin-top: -32px;
+  right: 40px;
+}
+
+.e-bigger.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger .e-filled.e-multiselect .e-down-icon .e-chips-close.e-close-hooker {
+  margin-top: -42px;
+}
+
+.e-bigger.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-bigger .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close {
+  height: 14px;
+  width: 14px;
+}
+
+.e-bigger.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-bigger .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close {
+  height: 16px;
+  width: 16px;
+}
+
+.e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-small .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close {
+  height: 10px;
+  width: 10px;
+}
+
+.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger.e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger.e-small .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger .e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-small.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-small .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+
+.e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-small .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  font-size: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+.e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger .e-filled.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger.e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger.e-small .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-bigger .e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before,
+.e-small .e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close::before {
+  font-size: 14px;
+  height: 14px;
+  width: 14px;
+}
+
+.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-bigger.e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-bigger.e-small .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-bigger .e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-small .e-bigger.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before {
+  content: '\e208';
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.e-small.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-small .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+
+.e-bigger.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before,
+.e-bigger .e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker::before {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+}
+
+.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 11px 0 9px;
+}
+
+.e-multiselect.e-filled.e-input-group.e-float-input.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 0 8px 8px 0;
+  padding: 0;
+}
+
+.e-small.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  height: 18px;
+  margin: 7px 0 2px;
+  width: 18px;
+}
+
+.e-bigger.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  height: 24px;
+  margin: 12px -4px 8px -1px;
+  padding: 0;
+  width: 24px;
+}
+
+.e-small.e-multiselect.e-input-group.e-float-input.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-multiselect.e-filled.e-input-group.e-float-input.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 0 12px 4px 0;
+}
+
+.e-bigger.e-multiselect.e-input-group.e-filled.e-float-input .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-multiselect.e-filled.e-input-group.e-control-wrapper.e-float-input .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  margin: 4px 8px 8px 0;
+}
+
+.e-bigger.e-small.e-multiselect.e-input-group.e-float-input.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-small .e-multiselect.e-input-group.e-float-input.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-small.e-multiselect.e-input-group.e-float-input.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon,
+.e-small .e-bigger.e-multiselect.e-input-group.e-float-input.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon {
+  height: 20px;
+  margin: 0 8px 8px 0;
+  padding: 0;
+  width: 20px;
+}
+
+.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-bigger.e-small.e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-bigger.e-small .e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-bigger .e-small.e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-small .e-bigger.e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before {
+  font-size: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+.e-small.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-small .e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before {
+  font-size: 8px;
+  height: 8px;
+  width: 8px;
+}
+
+.e-bigger.e-multiselect.e-input-group.e-filled .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before,
+.e-bigger .e-multiselect.e-filled.e-input-group.e-control-wrapper .e-multi-select-wrapper .e-input-group-icon.e-ddl-icon::before {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+}
+
 .e-multi-select-wrapper {
   box-sizing: border-box;
   cursor: text;
@@ -1616,6 +1933,19 @@ ejs-dropdownlist {
   border: 0;
   font-family: inherit;
   font-size: 13px;
+  font-weight: 400;
+  height: 28px;
+  min-height: 28px;
+  outline: none;
+  padding: 0;
+  text-indent: 0;
+}
+
+.e-multiselect.e-filled .e-multi-select-wrapper input[type='text'] {
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 14px;
   font-weight: 400;
   height: 28px;
   min-height: 28px;
@@ -2395,25 +2725,381 @@ ejs-multiselect {
       align-items: normal;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
   font-size: 14px;
 }
 
+.e-bigger.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-bigger .e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
   font-size: 16px;
 }
 
+.e-small.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-small .e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
   font-size: 13px;
 }
 
+.e-bigger.e-small.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-bigger.e-small .e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-bigger .e-small.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-small .e-bigger.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
 .e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
   font-size: 14px;
+}
+
+.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper {
+  padding: 0 12px 0 8px;
+}
+
+.e-small.e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper,
+.e-small .e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper {
+  padding: 0 12px 0 4px;
+}
+
+.e-multiselect.e-filled.e-input-group.e-control-wrapper,
+.e-bigger.e-small.e-multiselect.e-filled.e-input-group.e-control-wrapper,
+.e-bigger.e-small .e-multiselect.e-filled.e-input-group.e-control-wrapper,
+.e-bigger .e-small.e-multiselect.e-filled.e-input-group.e-control-wrapper,
+.e-small .e-bigger.e-multiselect.e-filled.e-input-group.e-control-wrapper {
+  padding: 0;
+}
+
+.e-filled.e-float-input .e-multi-select-wrapper,
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper {
+  padding: 14px 12px 0;
+}
+
+.e-small.e-filled.e-float-input .e-multi-select-wrapper,
+.e-small .e-filled.e-float-input .e-multi-select-wrapper {
+  padding: 12px 12px 0 8px;
+}
+
+.e-bigger.e-filled.e-float-input .e-multi-select-wrapper,
+.e-bigger .e-filled.e-float-input .e-multi-select-wrapper {
+  padding: 14px 12px 0 16px;
+}
+
+.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-bigger.e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-bigger.e-small .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-bigger .e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-small .e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'] {
+  min-height: 39px;
+}
+
+.e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-small .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'] {
+  min-height: 32px;
+}
+
+.e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper input[type='text'],
+.e-small .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper input[type='text'] {
+  height: 22px;
+  min-height: 22px;
+  padding: 2px;
+}
+
+.e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'],
+.e-bigger .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper input[type='text'] {
+  min-height: 52px;
+}
+
+.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper input[type='text'],
+.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper input[type='text'] {
+  min-height: 36px;
+}
+
+.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 39px;
+}
+
+.e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-small .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 32px;
+}
+
+.e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-small .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 22px;
+}
+
+.e-bigger.e-filled:not(.e-small).e-multiselect:not(.e-float-input) .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-bigger .e-filled:not(.e-small).e-multiselect:not(.e-float-input) .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 52px;
+}
+
+.e-bigger.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-bigger .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 36px;
+}
+
+.e-bigger.e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-bigger.e-small .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher
+.e-bigger .e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher,
+.e-small .e-bigger.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-delimiter .e-searcher {
+  height: 28px;
+}
+
+.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper.e-delimiter input[type='text'],
+.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper.e-delimiter input[type='text'] {
+  padding: 5px 0;
+}
+
+.e-multiselect.e-filled.e-float-input .e-searcher .e-dropdownbase,
+.e-bigger.e-small.e-multiselect.e-filled.e-float-input .e-searcher .e-dropdownbase,
+.e-bigger.e-small .e-multiselect.e-filled.e-float-input .e-searcher .e-dropdownbase,
+.e-bigger .e-small.e-multiselect.e-filled.e-float-input .e-searcher .e-dropdownbase,
+.e-small .e-bigger.e-multiselect.e-filled.e-float-input .e-searcher .e-dropdownbase {
+  min-height: 28px;
+}
+
+.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-small.e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-small.e-bigger .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-small .e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-bigger .e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values {
+  font-size: 14px;
+  line-height: 39px;
+}
+
+.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-small.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-small.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-small .e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-bigger .e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-bigger .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values {
+  font-size: 16px;
+  line-height: 52px;
+}
+
+.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values {
+  line-height: 36px;
+}
+
+.e-small.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-small .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-delim-values,
+.e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-small .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values {
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.e-small.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values,
+.e-small .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-delim-values {
+  line-height: 22px;
+}
+
+.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger .e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-small .e-bigger.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  height: 28px;
+}
+
+.e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger .e-multiselect.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  height: 24px;
+}
+
+.e-bigger.e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger .e-multiselect.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  height: 32px;
+}
+
+.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper.e-mob-wrapper .e-chips.e-mob-chip {
+  height: 24px;
+}
+
+.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips {
+  height: 18px;
+}
+
+.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-bigger .e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-small .e-bigger.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  margin: 5px 8px 0 0;
+  padding: 0 8px;
+}
+
+.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips {
+  padding-left: 8px;
+}
+
+.e-small .e-filled .e-multi-select-wrapper .e-chips,
+.e-small.e-filled .e-multi-select-wrapper .e-chips {
+  height: 16px;
+  margin: 4px 4px 0 0;
+  padding-right: 8px;
+}
+
+.e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  height: 24px;
+}
+
+.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-small.e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-small .e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-bigger.e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-bigger.e-small .e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-bigger .e-small.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close,
+.e-small .e-bigger.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper .e-chips .e-chips-close {
+  height: 12px;
+  width: 12px;
+}
+
+.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger.e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger.e-small .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger .e-small.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small .e-bigger.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 13px;
+  padding: 0 8px 0 0;
+}
+
+.e-small.e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small .e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 12px;
+}
+
+.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger.e-small.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger.e-small .e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger .e-small.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small .e-bigger.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 12px;
+  padding: 0 4px 0 0;
+}
+
+.e-small.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-small .e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 10px;
+}
+
+.e-bigger.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger .e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 13px;
+}
+
+.e-filled.e-multiselect.e-float-input .e-multi-select-wrapper.e-mob-wrapper .e-chips > .e-chipcontent {
+  font-size: 13px;
+  padding-right: 4px;
+}
+
+.e-bigger.e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-bigger .e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  font-size: 14px;
+}
+
+.e-bigger.e-filled .e-multi-select-wrapper .e-chips,
+.e-bigger .e-filled .e-multi-select-wrapper .e-chips {
+  padding: 0 12px;
+}
+
+.e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-bigger .e-filled.e-float-input .e-multi-select-wrapper .e-chips {
+  padding-right: 8px;
+}
+
+.e-filled.e-float-input .e-multi-select-wrapper.e-mob-wrapper .e-chips.e-mob-chip .e-chips-close {
+  height: 14px;
+  margin: 0;
+  width: 14px;
+}
+
+.e-filled.e-multiselect.e-float-input input:focus ~ label.e-float-text,
+.e-filled.e-multiselect.e-float-input input:valid ~ label.e-float-text,
+.e-filled.e-multiselect.e-float-input input ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input input[readonly] ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input input[disabled] ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input input label.e-float-text.e-label-top,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input:focus ~ label.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input:valid ~ label.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input[readonly] ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input[disabled] ~ label.e-label-top.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper input label.e-float-text.e-label-top,
+.e-filled.e-multiselect.e-float-input.e-input-focus input ~ label.e-float-text,
+.e-filled.e-multiselect.e-float-input.e-control-wrapper.e-input-focus input ~ label.e-float-text {
+  font-size: 14px;
+}
+
+.e-bigger.e-filled.e-multiselect.e-float-input input:focus ~ label.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input input:valid ~ label.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input input ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input input[readonly] ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input input[disabled] ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input input label.e-float-text.e-label-top,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input:focus ~ label.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input:valid ~ label.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input[readonly] ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input[disabled] ~ label.e-label-top.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper input label.e-float-text.e-label-top,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-input-focus input ~ label.e-float-text,
+.e-bigger.e-filled.e-multiselect.e-float-input.e-control-wrapper.e-input-focus input ~ label.e-float-text {
+  font-size: 12px;
+}
+
+.e-small.e-filled.e-multiselect.e-float-input input:focus ~ label.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input input:valid ~ label.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input input ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input input[readonly] ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input input[disabled] ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input input label.e-float-text.e-label-top,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input:focus ~ label.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input:valid ~ label.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input[readonly] ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input[disabled] ~ label.e-label-top.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper input label.e-float-text.e-label-top,
+.e-small.e-filled.e-multiselect.e-float-input.e-input-focus input ~ label.e-float-text,
+.e-small.e-filled.e-multiselect.e-float-input.e-control-wrapper.e-input-focus input ~ label.e-float-text {
+  font-size: 10px;
+}
+
+.e-filled.e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  height: 38px;
+  margin-top: -38px;
+  right: 12px;
+  top: 100%;
+  width: 16px;
 }
 
 .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
@@ -2625,47 +3311,65 @@ ejs-multiselect {
   background-color: #e0e0e0;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips {
+  background-color: #cecece;
+}
+
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips:hover {
   background-color: #d6d6d6;
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected {
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips:hover {
+  background-color: #cecece;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-chip-selected {
   background-color: #c7c7c7;
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected:hover {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected:hover,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-chip-selected:hover {
   background-color: #c7c7c7;
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent:hover {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent:hover,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-chip-selected > .e-chipcontent:hover {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   color: rgba(0, 0, 0, 0.54);
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker:hover {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips-close.e-close-hooker:hover,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips-close.e-close-hooker:hover {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close::before {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close::before,
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close::before {
   color: #fff;
 }
 
-.e-multiselect.e-outline:not(.e-disabled) .e-multi-select-wrapper .e-chips:not(.e-chip-selected) .e-chips-close:hover::before {
+.e-multiselect.e-outline:not(.e-disabled) .e-multi-select-wrapper .e-chips:not(.e-chip-selected) .e-chips-close:hover::before,
+.e-multiselect.e-filled:not(.e-disabled) .e-multi-select-wrapper .e-chips:not(.e-chip-selected) .e-chips-close:hover::before {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain {
+.e-multiselect.e-outline .e-multi-select-wrapper .e-delim-values .e-remain,
+.e-multiselect.e-filled .e-multi-select-wrapper .e-delim-values .e-remain {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -2681,6 +3385,7 @@ ejs-multiselect {
   background-color: #f5f5f5;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper.e-mob-wrapper .e-chips.e-mob-chip.e-chip-selected,
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
   background-color: #3f51b5;
   border-radius: 4px;
@@ -2693,10 +3398,12 @@ ejs-multiselect {
   width: 100%;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close,
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chips-close {
   width: 33px;
 }
 
+.e-multiselect.e-filled .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chipcontent,
 .e-multiselect.e-outline .e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chipcontent {
   color: #fff;
 }
