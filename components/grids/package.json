@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-grids",
-	"version": "18.2.48",
+	"version": "18.2.54",
 	"description": "Feature-rich JavaScript datagrid (datatable) control with built-in support for editing, filtering, grouping, paging, sorting, and exporting to Excel. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -8,7 +8,8 @@
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-angular-base": "*",
-		"@syncfusion/ej2-grids": "*"
+		"@syncfusion/ej2-grids": "*",
+		"@types/lodash": "4.14.159"
 	},
 	"devDependencies": {
 		"rxjs": "5.0.0 - 5.5.10",

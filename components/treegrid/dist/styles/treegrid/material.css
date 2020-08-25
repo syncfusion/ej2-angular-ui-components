@@ -202,6 +202,10 @@
   padding-left: 2px;
 }
 
+.e-bigger .e-treegrid .e-treecell {
+  line-height: 18px;
+}
+
 .e-treegrid .e-treegridexpand::before,
 .e-treegrid .e-treegridcollapse::before {
   vertical-align: middle;
@@ -289,7 +293,7 @@
 
 .e-treegrid .e-treecell {
   display: table-cell;
-  line-height: normal;
+  line-height: 16px;
 }
 
 .e-treegrid .e-grid.e-wrap .e-rowcell .e-treecolumn-container {

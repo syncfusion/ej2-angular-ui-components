@@ -234,7 +234,9 @@ export class ComponentBase<T> {
                                             let innerTag = innerchildObj.list[0].tags[0];
                                             if (innerTag) {
                                                 let innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchildObj.list[j]);
-                                                innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                if (innerchildTag) {
+                                                    innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                }
                                             }
                                         }
                                     }

@@ -112,7 +112,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'readonly', 'rule', 'showButtons', 'sortDirection', 'summaryView', 'width'];
+var inputs = ['allowValidation', 'columns', 'cssClass', 'dataSource', 'displayMode', 'enableNotCondition', 'enablePersistence', 'enableRtl', 'height', 'immediateModeDelay', 'locale', 'matchCase', 'maxGroupCount', 'readonly', 'rule', 'separator', 'showButtons', 'sortDirection', 'summaryView', 'width'];
 var outputs$1 = ['actionBegin', 'beforeChange', 'change', 'created', 'ruleChange'];
 var twoWays = [''];
 /**

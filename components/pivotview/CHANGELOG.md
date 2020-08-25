@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 18.2.55 (2020-08-25)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- The drill through dialog now be showed the correct raw items when we filtering applied in fields in filter axis.
+- The drill through dialog can now be openend when we bind measures in row axis.
+
+#### New Features
+
+- `#283107` - Provided template support in toolbar panel to create custom toolbar option.
+
 ## 18.2.54 (2020-08-18)
 
 ### Pivot Table
@@ -20,6 +33,12 @@
 - `#F155279` - Provided an option to restrict the drill-through dialog to display.
 - `#281462`,`#282526`,`#287070` - Provided an option to edit the aggregated cells directly (inline editing) without opening editing dialog.
 - `#283107` - Provided template support in toolbar panel to create custom toolbar option.
+- `#284800` - Introduced an event to get the edited raw data information after the editing operation.
+
+- `#260352`,`#276917`,`#280407`,`#281842` - Provided an option to do the aggregation in server side and the rendering part alone will be done in client side. It is to improve the performance while binding huge size of data from remote server.
+- `#279727` - Provided support to sort the alphanumeric field members.
+- `#F155279` - Provided an option to restrict the drill-through dialog to display.
+- `#281462`,`#282526`,`#287070` - Provided an option to edit the aggregated cells directly (inline editing) without opening editing dialog.
 - `#284800` - Introduced an event to get the edited raw data information after the editing operation.
 
 ## 18.2.44 (2020-07-07)

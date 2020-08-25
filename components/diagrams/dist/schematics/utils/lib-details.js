@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-diagrams';
-exports.pkgVer = '^18.2.46';
+exports.pkgVer = '^18.2.54';
 exports.moduleName = 'DiagramModule, SymbolPaletteModule, OverviewModule';
-exports.themeVer = '~18.2.46';
+exports.themeVer = '~18.2.54';

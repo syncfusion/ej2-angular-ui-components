@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.55 (2020-08-25)
+
+### Multiselect
+
+#### Bug Fixes
+
+- `#285661` - Issue with "maximum call stack size exceeded issue raised when enable filtering and custom value in the Multiselect" has been resolved.
+
 ## 18.2.54 (2020-08-18)
 
 ### Dropdown Tree

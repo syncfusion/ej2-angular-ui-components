@@ -523,7 +523,9 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                                             var innerTag = innerchildObj.list[0].tags[0];
                                             if (innerTag) {
                                                 var innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchildObj.list[j]);
-                                                innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                if (innerchildTag) {
+                                                    innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                }
                                             }
                                         }
                                     }
