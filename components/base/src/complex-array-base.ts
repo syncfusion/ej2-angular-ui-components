@@ -21,8 +21,6 @@ interface Tag {
 export class ComplexBase<T> {
     public isUpdated: boolean;
     public hasChanges?: boolean = false;
-    // public initChange?: boolean = false;
-    // public onChanges?: boolean = true;
     public index?: number;
     public propCollection?: { [key: string]: Object } = {};
     public dataSource?: { [key: string]: Object } = {};
@@ -31,7 +29,7 @@ export class ComplexBase<T> {
     private tagObjects?: { name: string, instance: Tag }[] = [];
     private registeredTemplate: { [key: string]: EmbeddedViewRef<Object>[] };
     // tslint:disable-next-line:no-any
-    protected directivePropList: any;
+    public directivePropList: any;
     public ngOnInit(): void {
         this.registeredTemplate = {};
         for (let tag of this.tags) {
@@ -61,8 +59,6 @@ export class ComplexBase<T> {
             }
         }
         this.hasChanges = true;
-        // this.initChange = true;
-        // this.onChanges = false;
         }
     }
 
@@ -173,22 +169,20 @@ export class ArrayBase<T> {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
-                // if(!this.list[i].initChange) {
-                //     let propList: string[] = Object.keys(this.list[i]);
-                //     if (this.list[i].directivePropList) {
-                //         for (let k: number = 0; k < this.list[i].directivePropList.length; k++) {
-                //             let dirPropName = this.list[i].directivePropList[k];
-                //             if (propList.indexOf(dirPropName) !== -1) {
-                //                 setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
-                //                 this.list[i].hasChanges = true;
-                //                 this.list[i].initChange = true;
-                //                 this.hasChanges = true;
-                //             }
-                //         }
-                //     }
-                // }else if(!this.list[i].onChanges){
-                //     this.list[i].initChange = false;
-                // }
+                    let propList: string[] = Object.keys(this.list[i]);
+                    if (this.list[i].directivePropList) {
+                        for (let k: number = 0; k < this.list[i].directivePropList.length; k++) {
+                            let dirPropName = this.list[i].directivePropList[k];
+                            if (propList.indexOf(dirPropName) !== -1) {
+                                let tempList: any = this.list[i];
+                                if((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))){
+                                    setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
+                                    this.list[i].hasChanges = true;
+                                    this.list[i].isUpdated = false;
+                                }
+                            }
+                        }
+                    }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;

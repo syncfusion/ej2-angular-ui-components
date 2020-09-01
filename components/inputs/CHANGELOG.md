@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.2.56 (2020-09-01)
+
+### Uploader
+
+#### Bug Fixes
+
+`#286772` - Issue with "wrong files get removed from file list when multiple time upload the same files " has been resolved.
+
+
 ## 18.2.54 (2020-08-18)
 
 ### Range Slider

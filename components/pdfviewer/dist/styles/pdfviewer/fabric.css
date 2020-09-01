@@ -819,6 +819,7 @@
 }
 
 .e-pv-annotation-toolbar.e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator) {
+  height: auto;
   margin-left: 1.5px;
   margin-right: 1.5px;
 }

@@ -159,8 +159,6 @@ var ComplexBase = /** @class */ (function () {
                 }
             }
             this.hasChanges = true;
-            // this.initChange = true;
-            // this.onChanges = false;
         }
     };
     ComplexBase.prototype.registerEvents = function (eventList) {
@@ -259,22 +257,20 @@ var ArrayBase = /** @class */ (function () {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (var i = 0; i < this.list.length; i++) {
-                // if(!this.list[i].initChange) {
-                //     let propList: string[] = Object.keys(this.list[i]);
-                //     if (this.list[i].directivePropList) {
-                //         for (let k: number = 0; k < this.list[i].directivePropList.length; k++) {
-                //             let dirPropName = this.list[i].directivePropList[k];
-                //             if (propList.indexOf(dirPropName) !== -1) {
-                //                 setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
-                //                 this.list[i].hasChanges = true;
-                //                 this.list[i].initChange = true;
-                //                 this.hasChanges = true;
-                //             }
-                //         }
-                //     }
-                // }else if(!this.list[i].onChanges){
-                //     this.list[i].initChange = false;
-                // }
+                var propList = Object.keys(this.list[i]);
+                if (this.list[i].directivePropList) {
+                    for (var k = 0; k < this.list[i].directivePropList.length; k++) {
+                        var dirPropName = this.list[i].directivePropList[k];
+                        if (propList.indexOf(dirPropName) !== -1) {
+                            var tempList = this.list[i];
+                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))) {
+                                sf.base.setValue(dirPropName, sf.base.getValue(dirPropName, this.list[i]), this.list[i].propCollection);
+                                this.list[i].hasChanges = true;
+                                this.list[i].isUpdated = false;
+                            }
+                        }
+                    }
+                }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;

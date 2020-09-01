@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.56 (2020-09-01)
+
+### Common
+
+#### Bug Fixes
+
+- `I283512` - Resolved `Dynamic value` binding not working for component base components.
+
 ## 18.2.48 (2020-08-04)
 
 ### Common

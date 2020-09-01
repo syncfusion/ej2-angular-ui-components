@@ -64,6 +64,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      * if set coordinateUnit as `Pixel` X specifies the axis value 
      * else is specifies pixel or percentage of coordinate
      * @default '0'
+     * @asptype object
      */
     public x: any;
     /** 
