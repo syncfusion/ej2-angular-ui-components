@@ -72,8 +72,10 @@ function clearTemplate(_this, templateNames, index) {
                     if (!rt.destroyed) {
                         if (rt._view) {
                             var pNode = rt._view.renderer.parentNode(rt.rootNodes[0]);
-                            for (var m = 0; m < rt.rootNodes.length; m++) {
-                                pNode.appendChild(rt.rootNodes[m]);
+                            if (!sf.base.isNullOrUndefined(pNode)) {
+                                for (var m = 0; m < rt.rootNodes.length; m++) {
+                                    pNode.appendChild(rt.rootNodes[m]);
+                                }
                             }
                         }
                         rt.destroy();
@@ -548,7 +550,12 @@ var ComponentBase = /** @class */ (function () {
                         var curIndex = tagObject.instance.list.indexOf(list);
                         var curChild = sf.base.getValue(tagObject.name, tempAfterContentThis)[curIndex];
                         if (curChild !== undefined && curChild.setProperties !== undefined) {
-                            curChild.setProperties(list.getProperties());
+                            if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
+                                curChild.setProperties(list.getProperties(), true);
+                            }
+                            else {
+                                curChild.setProperties(list.getProperties());
+                            }
                         }
                         list.isUpdated = true;
                     }
@@ -721,10 +728,10 @@ var FormBase = /** @class */ (function () {
                 this.checked = value === this.value;
             }
         }
+        this.angularValue = value;
         if (value === null) {
             return;
         }
-        this.angularValue = value;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
         this.preventChange = true;

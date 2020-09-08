@@ -9,7 +9,8 @@
         "@syncfusion/ej2-base": "*",
         "@syncfusion/ej2-angular-base": "*",
         "@syncfusion/ej2-schedule": "*",
-        "@types/lodash": "4.14.159"
+        "@types/lodash": "4.14.159",
+        "@types/node": "11.15.20"
     },
     "devDependencies": {
         "@syncfusion/ej2-build": "*",

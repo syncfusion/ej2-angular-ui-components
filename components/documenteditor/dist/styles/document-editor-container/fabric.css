@@ -449,6 +449,10 @@
   font-size: 14px;
 }
 
+.e-de-linespacing {
+  margin-top: 12px;
+}
+
 .e-de-statusbar-zoom {
   background-color: #fff;
   border: 0;

@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 18.2.57 (2020-09-08)
+
+### Common
+
+#### Bug Fixes
+
+- `I289906` - Resolved script error throws while changing the data source in angular template.
+- Resolved `Dirty & Pristine` value is not updated properly when resetting the form.
+- `I286988` - Resolved template properties which rendered using `ng-for` not updated properly when changing data source dynamically.
+- Increased `peerDependencies` version from `9.1.3` to `10.1.0`
+
 ## 18.2.56 (2020-09-01)
 
 ### Common

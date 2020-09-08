@@ -1,4 +1,5 @@
 import { EventEmitter } from '@angular/core';
+import { isNullOrUndefined } from '@syncfusion/ej2-base';
 /**
  * Angular Utility Module
  */
@@ -69,8 +70,10 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
                     if (!rt.destroyed) {
                         if(rt._view){
                             let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
-                            for (let m: number = 0; m < rt.rootNodes.length; m++) {
-                                pNode.appendChild(rt.rootNodes[m]);
+                            if (!isNullOrUndefined(pNode)) {
+                                for (let m: number = 0; m < rt.rootNodes.length; m++) {
+                                    pNode.appendChild(rt.rootNodes[m]);
+                                }
                             }
                         }
                         rt.destroy();

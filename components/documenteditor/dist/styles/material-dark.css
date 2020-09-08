@@ -3887,6 +3887,10 @@ label[for*='_wholeWord_e-de-rtl'] {
   font-size: 14px;
 }
 
+.e-de-linespacing {
+  margin-top: 11px;
+}
+
 .e-de-statusbar-zoom {
   background-color: #303030;
   border: 0;

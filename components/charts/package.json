@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-charts",
-	"version": "18.2.55",
+	"version": "18.2.56",
 	"description": "Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -9,7 +9,8 @@
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-angular-base": "*",
 		"@syncfusion/ej2-charts": "*",
-		"@types/lodash": "4.14.159"
+		"@types/lodash": "4.14.159",
+		"@types/node": "11.15.20"
 	},
 	"devDependencies": {
 		"rxjs": "5.0.0 - 5.5.10",

@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enableHtmlSanitizer','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','textOption','type','url','validationRules','value'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','change','created','destroyed','validating'];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','cancelClick','change','created','destroyed','submitClick','validating'];
 export const twoWays: string[] = [''];
 
 /**

@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-grids';
-export const pkgVer = '^18.2.55';
+export const pkgVer = '^18.2.56';
 export const moduleName = 'GridModule, PagerModule';
-export const themeVer = '~18.2.55';
+export const themeVer = '~18.2.56';

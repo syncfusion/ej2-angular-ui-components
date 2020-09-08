@@ -3044,6 +3044,10 @@ label[for='container_wholeWord'] {
   font-size: 14px;
 }
 
+.e-de-linespacing {
+  margin-top: 11px;
+}
+
 .e-de-statusbar-zoom {
   background-color: #fff;
   border: 0;

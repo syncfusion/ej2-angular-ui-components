@@ -260,7 +260,11 @@ export class ComponentBase<T> {
                             let curIndex: number = tagObject.instance.list.indexOf(list);
                             let curChild: { setProperties: Function } = getValue(tagObject.name, tempAfterContentThis)[curIndex];
                             if (curChild !== undefined && curChild.setProperties !== undefined) {
-                                curChild.setProperties(list.getProperties());
+                                if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
+                                    curChild.setProperties(list.getProperties(), true);
+                                } else {
+                                    curChild.setProperties(list.getProperties());   
+                                }
                             }
                             list.isUpdated = true;
                     }

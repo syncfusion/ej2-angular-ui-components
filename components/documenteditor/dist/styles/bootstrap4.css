@@ -4034,6 +4034,10 @@ textarea.e-de-cmt-textarea {
   font-size: 14px;
 }
 
+.e-de-linespacing {
+  margin-top: 6px;
+}
+
 .e-de-statusbar-zoom {
   background-color: #f8f9fa;
   border: 0;

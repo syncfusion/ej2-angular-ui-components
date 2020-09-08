@@ -1009,11 +1009,15 @@
 
 .e-grid .e-gridcontent tr.e-row:first-child .e-rowcell.e-dragborder,
 .e-grid .e-gridcontent .e-rowcell.e-dragborder,
-.e-grid .e-gridcontent .e-rowdragdrop.e-dragborder,
-.e-grid .e-gridheader thead tr th.e-firstrowdragborder,
+.e-grid .e-gridcontent .e-rowdragdrop.e-dragborder, .e-grid .e-gridheader tr.e-row:first-child .e-rowcell.e-dragborder,
+.e-grid .e-gridheader .e-rowcell.e-dragborder,
+.e-grid .e-gridheader .e-rowdragdrop.e-dragborder,
 .e-grid.e-rtl .e-gridcontent tr.e-row:first-child .e-rowcell.e-dragborder,
 .e-grid.e-rtl .e-gridcontent .e-rowcell.e-dragborder,
-.e-grid.e-rtl .e-gridcontent .e-rowdragdrop.e-dragborder {
+.e-grid.e-rtl .e-gridcontent .e-rowdragdrop.e-dragborder,
+.e-grid.e-rtl .e-gridheader tr.e-row:first-child .e-rowcell.e-dragborder,
+.e-grid.e-rtl .e-gridheader .e-rowcell.e-dragborder,
+.e-grid.e-rtl .e-gridheader .e-rowdragdrop.e-dragborder {
   box-shadow: 0 2px 0 0 #317ab9;
   position: relative;
   z-index: 5;
@@ -1046,7 +1050,8 @@
   padding-right: 6px;
 }
 
-.e-grid .e-gridcontent .e-rowdragdrop {
+.e-grid .e-gridcontent .e-rowdragdrop,
+.e-grid .e-gridheader .e-rowdragdrop {
   border-style: solid;
   border-width: 1px 0 0 0;
   border-color: #ddd;
@@ -1483,10 +1488,6 @@
 .e-grid.e-enabledboxbdr .e-frozenheader,
 .e-grid.e-enabledboxbdr .e-headercontent {
   position: relative;
-}
-
-.e-grid.e-afenabled, .e-grid.e-enabledboxbdr {
-  overflow: hidden;
 }
 
 .e-grid .e-rowcell:first-child,
@@ -3421,6 +3422,7 @@
 .e-grid .e-detailrowcollapse:not(.e-editedbatchcell),
 .e-grid .e-detailrowexpand:not(.e-editedbatchcell),
 .e-grid .e-gridcontent .e-rowdragdrop:not(.e-editedbatchcell),
+.e-grid .e-gridheader .e-rowdragdrop:not(.e-editedbatchcell),
 .e-grid .e-emptyrow:not(.e-editedbatchcell) {
   color: #333;
   opacity: 1;

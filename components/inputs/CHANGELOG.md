@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 18.2.56 (2020-09-01)
-
-### Uploader
-
-#### Bug Fixes
-
-`#286772` - Issue with "wrong files get removed from file list when multiple time upload the same files " has been resolved.
-
-
 ## 18.2.54 (2020-08-18)
 
 ### Range Slider
@@ -1093,6 +1084,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Custom Characters** - allows you to use your own characters as the mask elements.
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
+
+
+## 18.2.56 (2020-09-01)
+
+### Uploader
+
+#### Bug Fixes
+
+`#286772` - Issue with "wrong files get removed from file list when multiple time upload the same files " has been resolved.
 
 
 ## 18.2.47 (2020-07-28)
