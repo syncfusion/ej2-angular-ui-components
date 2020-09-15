@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 18.2.57 (2020-09-08)
+## 18.2.58 (2020-09-15)
 
 ### Pivot Table
 
 #### Bug Fixes
 
-- `#290020` - Unwanted scrollbars will not be shown in the pivot table when exporting is allowed.
-- `#F157261` - The component can now be refreshed when bind empty data source.
+- `#289127` - The component can now be rendered by binding its report inside the asynchronous function.
 
 ## 18.2.56 (2020-09-01)
 
@@ -327,6 +326,15 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.2.57 (2020-09-08)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#290020` - Unwanted scrollbars will not be shown in the pivot table when exporting is allowed.
+- `#F157261` - The component can now be refreshed when bind empty data source.
 
 ## 18.2.46 (2020-07-21)
 

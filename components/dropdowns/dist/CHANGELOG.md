@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 18.2.57 (2020-09-08)
+## 18.2.58 (2020-09-15)
 
-### ComboBox
+### ListBox
 
 #### Bug Fixes
 
-- `#288033` - Issue with "value is not set to the component when assign the respective ID to the value property" has been resolved.
+- 'moveAll' is not working after applied grouping has been fixed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#289874` - Issue with "invalid value is added to the control while providing the invalid value to the value property" has been resolved.
 
 ## 18.2.54 (2020-08-18)
 
@@ -1624,6 +1630,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.2.57 (2020-09-08)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#288033` - Issue with "value is not set to the component when assign the respective ID to the value property" has been resolved.
 
 ## 18.2.55 (2020-08-25)
 
