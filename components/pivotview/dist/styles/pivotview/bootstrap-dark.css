@@ -4742,6 +4742,11 @@
   margin-top: 5px;
 }
 
+.e-pivotview .e-headercelldiv.e-cellvalue {
+  float: left;
+  margin-left: 0px;
+}
+
 .e-pivotview .e-stackedheadercelldiv {
   padding: 0 0 0 1px !important;
 }

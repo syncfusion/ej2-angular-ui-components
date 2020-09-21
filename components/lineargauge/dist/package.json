@@ -1,6 +1,6 @@
 {
     "name": "@syncfusion/ej2-angular-lineargauge",
-    "version": "18.2.54",
+    "version": "18.2.57",
     "description": "Essential JS 2 LinearGauge Components for Angular",
     "author": "Syncfusion Inc.",
     "license": "SEE LICENSE IN license",
@@ -9,7 +9,8 @@
         "@syncfusion/ej2-base": "*",
         "@syncfusion/ej2-angular-base": "*",
         "@syncfusion/ej2-lineargauge": "*",
-        "@types/lodash": "4.14.159"
+        "@types/lodash": "4.14.159",
+        "@types/node": "11.15.20"
     },
     "devDependencies": {
         "@syncfusion/ej2-build": "*",

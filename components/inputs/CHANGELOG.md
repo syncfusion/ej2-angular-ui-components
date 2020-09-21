@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.2.59 (2020-09-21)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#287079` - Issue with "file is removing from file list while providing the invalid remove URL" has been resolved.
+
 ## 18.2.58 (2020-09-15)
 
 ### ColorPicker

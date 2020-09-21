@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.2.58 (2020-09-15)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#289127` - The component can now be rendered by binding its report inside the asynchronous function.
-
 ## 18.2.56 (2020-09-01)
 
 ### Pivot Table
@@ -326,6 +318,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.2.58 (2020-09-15)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#289127` - The component can now be rendered by binding its report inside the asynchronous function.
 
 ## 18.2.57 (2020-09-08)
 
