@@ -79,6 +79,7 @@
 }
 
 .e-ddt.e-input-group.e-control-wrapper .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
+  box-sizing: content-box;
   min-height: 30px;
 }
 
@@ -163,7 +164,7 @@
 }
 
 .e-ddt .e-overflow.e-show-text {
-  padding: 5.5px 10px 0 10px;
+  padding: 6px 10px 0 10px;
 }
 
 .e-ddt .e-overflow.e-total-count {
@@ -178,7 +179,7 @@
 }
 
 .e-ddt .e-overflow.e-wrap-count {
-  padding-top: 5.5px;
+  padding-top: 6px;
 }
 
 .e-ddt .e-overflow .e-remain {
@@ -193,7 +194,7 @@
 }
 
 .e-ddt.e-show-chip .e-overflow.e-total-count .e-remain {
-  padding: 5.5px 10px 0 10px;
+  padding: 6px 10px 0 10px;
 }
 
 .e-ddt.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {
@@ -344,7 +345,7 @@
 }
 
 .e-ddt.e-rtl.e-show-chip .e-overflow .e-remain.e-wrap-count, .e-ddt.e-rtl.e-show-text .e-overflow .e-remain.e-wrap-count {
-  padding-top: 5.5px;
+  padding-top: 6px;
 }
 
 .e-ddt.e-rtl.e-show-chip .e-overflow.e-wrap-count, .e-ddt.e-rtl.e-show-text .e-overflow.e-wrap-count {
@@ -357,7 +358,7 @@
 }
 
 .e-ddt.e-rtl.e-show-chip .e-overflow.e-total-count .e-remain {
-  padding: 5.5px 10px 0 10px;
+  padding: 6px 10px 0 10px;
 }
 
 .e-ddt.e-rtl.e-show-dd-icon .e-chips-wrapper .e-chips:last-child {

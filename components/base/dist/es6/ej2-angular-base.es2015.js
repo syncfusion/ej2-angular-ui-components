@@ -607,6 +607,9 @@ class FormBase {
         //tslint:disable-next-line
         let value = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
+        if (this.isUpdated === true) {
+            this.angularValue = this.oldValue;
+        }
         if (this.objCheck === true) {
             this.duplicateValue = JSON.stringify(value);
             this.duplicateAngularValue = JSON.stringify(this.angularValue);
@@ -640,7 +643,7 @@ class FormBase {
         this.propagateTouch = registerFunction;
     }
     twoWaySetter(newVal, prop) {
-        let oldVal = getValue(prop, this.properties);
+        let oldVal = this.oldValue || getValue(prop, this.properties);
         let ele = this.inputElement || this.element;
         if (oldVal === newVal &&
             (ele.value === undefined || ele.value === '')) {
@@ -696,6 +699,7 @@ class FormBase {
         if (value === null) {
             return;
         }
+        this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
         this.preventChange = true;
@@ -735,9 +739,9 @@ function compile(templateEle, helper) {
             let viewRef = conRef.createEmbeddedView(templateEle, context);
             viewRef.markForCheck();
             /* istanbul ignore next */
-            let viewCollection = component ?
+            let viewCollection = (component && component.registeredTemplate) ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
-            propName = propName ? propName : pName;
+            propName = (propName && component.registeredTemplate) ? propName : pName;
             if (typeof viewCollection[propName] === 'undefined') {
                 viewCollection[propName] = [];
             }

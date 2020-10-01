@@ -895,13 +895,13 @@ body.e-colorpicker-overflow {
   color: #fff;
 }
 
-.e-color-picker .e-selected-value .e-css.e-btn.e-flat {
+* .e-color-picker .e-selected-value .e-css.e-btn.e-flat {
   background-color: #fff;
   border-color: #fff;
   color: #495057;
 }
 
-.e-color-picker .e-selected-value .e-css.e-btn.e-flat:hover, .e-color-picker .e-selected-value .e-css.e-btn.e-flat:active {
+* .e-color-picker .e-selected-value .e-css.e-btn.e-flat:hover, * .e-color-picker .e-selected-value .e-css.e-btn.e-flat:active {
   color: #212529;
 }
 

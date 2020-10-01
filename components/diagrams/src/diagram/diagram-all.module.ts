@@ -2,14 +2,16 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayerDirective, LayersDirective } from './layers.directive';
 import { CustomCursorDirective, CustomCursorsDirective } from './customcursor.directive';
+import { ConnectorFixedUserHandleDirective, ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationDirective, ConnectorAnnotationsDirective } from './connector-annotation.directive';
 import { ConnectorDirective, ConnectorsDirective } from './connectors.directive';
+import { NodeFixedUserHandleDirective, NodeFixedUserHandlesDirective } from './node-fixeduserhandle.directive';
 import { NodeAnnotationDirective, NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -27,6 +29,7 @@ export const LayoutAnimationService: ValueProvider = { provide: 'DiagramsLayoutA
 export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu};
 export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
+export const BlazorTooltipService: ValueProvider = { provide: 'DiagramsBlazorTooltip', useValue: BlazorTooltip};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -51,7 +54,8 @@ export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnec
         LayoutAnimationService,
         DiagramContextMenuService,
         LineRoutingService,
-        ConnectorEditingService
+        ConnectorEditingService,
+        BlazorTooltipService
     ]
 })
 export class DiagramAllModule { }

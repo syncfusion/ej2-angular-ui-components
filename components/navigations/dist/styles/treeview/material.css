@@ -6,6 +6,15 @@
   }
 }
 
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 /*! TreeView's material theme wise override definitions and variables */
 .e-treeview .e-list-item div.e-icons.interaction {
   -webkit-transition: -webkit-transform .3s ease-in-out;

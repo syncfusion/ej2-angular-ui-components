@@ -113,33 +113,33 @@
 }
 
 .e-bigger.e-dialog .e-dlg-header-content,
-.e-bigger .e-dialog .e-dlg-header-content {
+*.e-bigger .e-dialog .e-dlg-header-content {
   padding: 24px 24px 20px;
 }
 
 .e-bigger.e-dialog .e-dlg-header,
-.e-bigger .e-dialog .e-dlg-header {
+*.e-bigger .e-dialog .e-dlg-header {
   font-size: 18px;
 }
 
 .e-bigger.e-dialog .e-dlg-content,
-.e-bigger .e-dialog .e-dlg-content {
+*.e-bigger .e-dialog .e-dlg-content {
   font-size: 13px;
   padding: 24px;
 }
 
 .e-bigger.e-dialog .e-footer-content,
-.e-bigger .e-dialog .e-footer-content {
+*.e-bigger .e-dialog .e-footer-content {
   padding: 8px;
 }
 
 .e-bigger.e-dialog .e-footer-content .e-btn,
-.e-bigger .e-dialog .e-footer-content .e-btn {
+*.e-bigger .e-dialog .e-footer-content .e-btn {
   margin-left: 8px;
 }
 
 .e-bigger.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn,
-.e-bigger .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
+*.e-bigger .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
   bottom: 3px;
   height: 36px;
   left: 6px;
@@ -147,7 +147,7 @@
 }
 
 .e-bigger.e-dialog .e-btn .e-btn-icon.e-icon-dlg-close,
-.e-bigger .e-dialog .e-btn .e-btn-icon.e-icon-dlg-close {
+*.e-bigger .e-dialog .e-btn .e-btn-icon.e-icon-dlg-close {
   font-size: 12px;
   width: auto;
 }

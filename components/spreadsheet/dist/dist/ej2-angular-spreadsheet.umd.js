@@ -14,8 +14,61 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['colSpan', 'format', 'formula', 'hyperlink', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+var input = ['height', 'id', 'left', 'src', 'top', 'width'];
 var outputs = [];
+var ImageDirective = /** @class */ (function (_super) {
+    __extends(ImageDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function ImageDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        _this.directivePropList = input;
+        return _this;
+    }
+    return ImageDirective;
+}(ej2AngularBase.ComplexBase));
+ImageDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-images>e-image',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ImageDirective.ctorParameters = function () { return [
+    { type: core.ViewContainerRef, },
+]; };
+/**
+ * Image Array Directive
+ */
+var ImagesDirective = /** @class */ (function (_super) {
+    __extends(ImagesDirective, _super);
+    function ImagesDirective() {
+        return _super.call(this, 'image') || this;
+    }
+    return ImagesDirective;
+}(ej2AngularBase.ArrayBase));
+ImagesDirective.decorators = [
+    { type: core.Directive, args: [{
+                selector: 'e-cell>e-images',
+                queries: {
+                    children: new core.ContentChildren(ImageDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ImagesDirective.ctorParameters = function () { return []; };
+var input$1 = ['colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+var outputs$1 = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
  * It must be contained in a `e-row` directive.
@@ -43,9 +96,10 @@ var CellDirective = /** @class */ (function (_super) {
     function CellDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
+        _this.tags = ['image'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs);
-        _this.directivePropList = input;
+        _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return CellDirective;
@@ -53,9 +107,11 @@ var CellDirective = /** @class */ (function (_super) {
 CellDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-cells>e-cell',
-                inputs: input,
-                outputs: outputs,
-                queries: {}
+                inputs: input$1,
+                outputs: outputs$1,
+                queries: {
+                    childImage: new core.ContentChild(ImagesDirective)
+                }
             },] },
 ];
 /**
@@ -86,8 +142,8 @@ CellsDirective.decorators = [
  * @nocollapse
  */
 CellsDirective.ctorParameters = function () { return []; };
-var input$1 = ['cells', 'customHeight', 'height', 'hidden', 'index'];
-var outputs$1 = [];
+var input$2 = ['cells', 'customHeight', 'height', 'hidden', 'index'];
+var outputs$2 = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -113,8 +169,8 @@ var RowDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['cells'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$1);
-        _this.directivePropList = input$1;
+        _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return RowDirective;
@@ -122,8 +178,8 @@ var RowDirective = /** @class */ (function (_super) {
 RowDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-rows>e-row',
-                inputs: input$1,
-                outputs: outputs$1,
+                inputs: input$2,
+                outputs: outputs$2,
                 queries: {
                     childCells: new core.ContentChild(CellsDirective)
                 }
@@ -157,8 +213,8 @@ RowsDirective.decorators = [
  * @nocollapse
  */
 RowsDirective.ctorParameters = function () { return []; };
-var input$2 = ['customWidth', 'hidden', 'index', 'width'];
-var outputs$2 = [];
+var input$3 = ['customWidth', 'hidden', 'index', 'width'];
+var outputs$3 = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -183,8 +239,8 @@ var ColumnDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
-        _this.directivePropList = input$2;
+        _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return ColumnDirective;
@@ -192,8 +248,8 @@ var ColumnDirective = /** @class */ (function (_super) {
 ColumnDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-columns>e-column',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {}
             },] },
 ];
@@ -225,8 +281,8 @@ ColumnsDirective.decorators = [
  * @nocollapse
  */
 ColumnsDirective.ctorParameters = function () { return []; };
-var input$3 = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
-var outputs$3 = [];
+var input$4 = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
+var outputs$4 = [];
 /**
  * `e-range` directive represent a range of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -251,8 +307,8 @@ var RangeDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
-        _this.directivePropList = input$3;
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return RangeDirective;
@@ -260,8 +316,8 @@ var RangeDirective = /** @class */ (function (_super) {
 RangeDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-ranges>e-range',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {}
             },] },
 ];
@@ -293,8 +349,8 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$4 = ['cFColor', 'format', 'range', 'type', 'value'];
-var outputs$4 = [];
+var input$5 = ['cFColor', 'format', 'range', 'type', 'value'];
+var outputs$5 = [];
 /**
  * `e-conditionalformat` directive represent a conditionalformat of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -319,8 +375,8 @@ var ConditionalFormatDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
-        _this.directivePropList = input$4;
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return ConditionalFormatDirective;
@@ -328,8 +384,8 @@ var ConditionalFormatDirective = /** @class */ (function (_super) {
 ConditionalFormatDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-conditionalformats>e-conditionalformat',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {}
             },] },
 ];
@@ -361,8 +417,8 @@ ConditionalFormatsDirective.decorators = [
  * @nocollapse
  */
 ConditionalFormatsDirective.ctorParameters = function () { return []; };
-var input$5 = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
-var outputs$5 = [];
+var input$6 = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var outputs$6 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -385,8 +441,8 @@ var SheetDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['rows', 'columns', 'ranges', 'conditionalFormats'];
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
-        _this.directivePropList = input$5;
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return SheetDirective;
@@ -394,8 +450,8 @@ var SheetDirective = /** @class */ (function (_super) {
 SheetDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-sheets>e-sheet',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {
                     childRows: new core.ContentChild(RowsDirective),
                     childColumns: new core.ContentChild(ColumnsDirective),
@@ -432,8 +488,8 @@ SheetsDirective.decorators = [
  * @nocollapse
  */
 SheetsDirective.ctorParameters = function () { return []; };
-var input$6 = ['comment', 'name', 'refersTo', 'scope'];
-var outputs$6 = [];
+var input$7 = ['comment', 'name', 'refersTo', 'scope'];
+var outputs$7 = [];
 /**
  * `e-definedname` directive represent a defined name of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -455,8 +511,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$6);
-        _this.directivePropList = input$6;
+        _this.registerEvents(outputs$7);
+        _this.directivePropList = input$7;
         return _this;
     }
     return DefinedNameDirective;
@@ -464,8 +520,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
 DefinedNameDirective.decorators = [
     { type: core.Directive, args: [{
                 selector: 'e-definednames>e-definedname',
-                inputs: input$6,
-                outputs: outputs$6,
+                inputs: input$7,
+                outputs: outputs$7,
                 queries: {}
             },] },
 ];
@@ -511,8 +567,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$7 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'dialogBeforeOpen', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
+var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowImage', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var outputs$8 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'dialogBeforeOpen', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -663,7 +719,7 @@ exports.SpreadsheetComponent = /** @class */ (function (_super) {
             }
         }
         catch (_t) { }
-        _this.registerEvents(outputs$7);
+        _this.registerEvents(outputs$8);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ej2AngularBase.ComponentBase();
@@ -703,7 +759,7 @@ exports.SpreadsheetComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'ejs-spreadsheet',
                 inputs: inputs,
-                outputs: outputs$7,
+                outputs: outputs$8,
                 template: '',
                 changeDetection: core.ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -748,6 +804,8 @@ SpreadsheetModule.decorators = [
                 imports: [common.CommonModule],
                 declarations: [
                     exports.SpreadsheetComponent,
+                    ImageDirective,
+                    ImagesDirective,
                     CellDirective,
                     CellsDirective,
                     RowDirective,
@@ -765,6 +823,8 @@ SpreadsheetModule.decorators = [
                 ],
                 exports: [
                     exports.SpreadsheetComponent,
+                    ImageDirective,
+                    ImagesDirective,
                     CellDirective,
                     CellsDirective,
                     RowDirective,
@@ -845,6 +905,8 @@ SpreadsheetAllModule.decorators = [
  */
 SpreadsheetAllModule.ctorParameters = function () { return []; };
 
+exports.ImageDirective = ImageDirective;
+exports.ImagesDirective = ImagesDirective;
 exports.CellDirective = CellDirective;
 exports.CellsDirective = CellsDirective;
 exports.RowDirective = RowDirective;
@@ -880,7 +942,7 @@ exports.CellFormatService = CellFormatService;
 exports.NumberFormatService = NumberFormatService;
 exports.FormulaService = FormulaService;
 exports.ɵa = inputs;
-exports.ɵb = outputs$7;
+exports.ɵb = outputs$8;
 exports.Workbook = ej2Spreadsheet.Workbook;
 exports.Range = ej2Spreadsheet.Range;
 exports.UsedRange = ej2Spreadsheet.UsedRange;
@@ -941,6 +1003,7 @@ exports.Hyperlink = ej2Spreadsheet.Hyperlink;
 exports.Validation = ej2Spreadsheet.Validation;
 exports.Format = ej2Spreadsheet.Format;
 exports.ConditionalFormat = ej2Spreadsheet.ConditionalFormat;
+exports.Image = ej2Spreadsheet.Image;
 exports.workbookDestroyed = ej2Spreadsheet.workbookDestroyed;
 exports.updateSheetFromDataSource = ej2Spreadsheet.updateSheetFromDataSource;
 exports.dataSourceChanged = ej2Spreadsheet.dataSourceChanged;
@@ -1028,6 +1091,7 @@ exports.cFDelete = ej2Spreadsheet.cFDelete;
 exports.clear = ej2Spreadsheet.clear;
 exports.clearCF = ej2Spreadsheet.clearCF;
 exports.clearCells = ej2Spreadsheet.clearCells;
+exports.setImage = ej2Spreadsheet.setImage;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.isCellReference = ej2Spreadsheet.isCellReference;
 exports.isChar = ej2Spreadsheet.isChar;
@@ -1049,6 +1113,7 @@ exports.getFormatFromType = ej2Spreadsheet.getFormatFromType;
 exports.getTypeFromFormat = ej2Spreadsheet.getTypeFromFormat;
 exports.WorkbookSort = ej2Spreadsheet.WorkbookSort;
 exports.WorkbookFilter = ej2Spreadsheet.WorkbookFilter;
+exports.WorkbookImage = ej2Spreadsheet.WorkbookImage;
 exports.WorkbookCellFormat = ej2Spreadsheet.WorkbookCellFormat;
 exports.WorkbookEdit = ej2Spreadsheet.WorkbookEdit;
 exports.WorkbookHyperlink = ej2Spreadsheet.WorkbookHyperlink;
@@ -1178,6 +1243,22 @@ exports.initiateConditionalFormat = ej2Spreadsheet.initiateConditionalFormat;
 exports.checkConditionalFormat = ej2Spreadsheet.checkConditionalFormat;
 exports.setCF = ej2Spreadsheet.setCF;
 exports.clearViewer = ej2Spreadsheet.clearViewer;
+exports.initiateFormulaReference = ej2Spreadsheet.initiateFormulaReference;
+exports.initiateCur = ej2Spreadsheet.initiateCur;
+exports.clearCellRef = ej2Spreadsheet.clearCellRef;
+exports.editValue = ej2Spreadsheet.editValue;
+exports.addressHandle = ej2Spreadsheet.addressHandle;
+exports.initiateEdit = ej2Spreadsheet.initiateEdit;
+exports.forRefSelRender = ej2Spreadsheet.forRefSelRender;
+exports.blankWorkbook = ej2Spreadsheet.blankWorkbook;
+exports.insertImage = ej2Spreadsheet.insertImage;
+exports.refreshImgElem = ej2Spreadsheet.refreshImgElem;
+exports.refreshImgCellObj = ej2Spreadsheet.refreshImgCellObj;
+exports.getRowIdxFromClientY = ej2Spreadsheet.getRowIdxFromClientY;
+exports.getColIdxFromClientX = ej2Spreadsheet.getColIdxFromClientX;
+exports.createImageElement = ej2Spreadsheet.createImageElement;
+exports.deleteImage = ej2Spreadsheet.deleteImage;
+exports.refreshImagePosition = ej2Spreadsheet.refreshImagePosition;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;
@@ -1254,6 +1335,7 @@ exports.ContextMenu = ej2Spreadsheet.ContextMenu;
 exports.NumberFormat = ej2Spreadsheet.NumberFormat;
 exports.Sort = ej2Spreadsheet.Sort;
 exports.Filter = ej2Spreadsheet.Filter;
+exports.SpreadsheetImage = ej2Spreadsheet.SpreadsheetImage;
 exports.Render = ej2Spreadsheet.Render;
 exports.SheetRender = ej2Spreadsheet.SheetRender;
 exports.RowRenderer = ej2Spreadsheet.RowRenderer;

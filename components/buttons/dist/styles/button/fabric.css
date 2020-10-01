@@ -310,7 +310,7 @@
 }
 
 .e-bigger.e-small .e-btn,
-.e-bigger.e-small.e-btn,
+.e-bigger.e-small .e-btn,
 .e-bigger.e-small .e-css.e-btn,
 .e-bigger.e-small.e-css.e-btn {
   font-size: 16px;
@@ -319,7 +319,7 @@
 }
 
 .e-bigger.e-small .e-btn .e-btn-icon,
-.e-bigger.e-small.e-btn .e-btn-icon,
+.e-bigger.e-small .e-btn .e-btn-icon,
 .e-bigger.e-small .e-css.e-btn .e-btn-icon,
 .e-bigger.e-small.e-css.e-btn .e-btn-icon {
   font-size: 15px;
@@ -327,7 +327,7 @@
 }
 
 .e-bigger.e-small .e-btn .e-btn-icon.e-icon-left,
-.e-bigger.e-small.e-btn .e-btn-icon.e-icon-left,
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-left,
 .e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-left,
 .e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-left {
   margin-left: -0.5334em;
@@ -335,7 +335,7 @@
 }
 
 .e-bigger.e-small .e-btn .e-btn-icon.e-icon-right,
-.e-bigger.e-small.e-btn .e-btn-icon.e-icon-right,
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-right,
 .e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-right,
 .e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-right {
   margin-right: -0.5334em;
@@ -343,7 +343,7 @@
 }
 
 .e-bigger.e-small .e-btn .e-btn-icon.e-icon-top,
-.e-bigger.e-small.e-btn .e-btn-icon.e-icon-top,
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-top,
 .e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-top,
 .e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-top {
   padding-bottom: 6px;
@@ -351,7 +351,7 @@
 }
 
 .e-bigger.e-small .e-btn .e-btn-icon.e-icon-bottom,
-.e-bigger.e-small.e-btn .e-btn-icon.e-icon-bottom,
+.e-bigger.e-small .e-btn .e-btn-icon.e-icon-bottom,
 .e-bigger.e-small .e-css.e-btn .e-btn-icon.e-icon-bottom,
 .e-bigger.e-small.e-css.e-btn .e-btn-icon.e-icon-bottom {
   padding-top: 6px;
@@ -359,15 +359,15 @@
 }
 
 .e-bigger.e-small .e-btn.e-icon-btn,
-.e-bigger.e-small.e-btn.e-icon-btn,
+.e-bigger.e-small .e-btn.e-icon-btn,
 .e-bigger.e-small .e-css.e-btn.e-icon-btn,
 .e-bigger.e-small.e-css.e-btn.e-icon-btn {
   padding: 1px 9px;
 }
 
 .e-bigger.e-small .e-btn.e-top-icon-btn, .e-bigger.e-small .e-btn.e-bottom-icon-btn,
-.e-bigger.e-small.e-btn.e-top-icon-btn,
-.e-bigger.e-small.e-btn.e-bottom-icon-btn,
+.e-bigger.e-small .e-btn.e-top-icon-btn,
+.e-bigger.e-small .e-btn.e-bottom-icon-btn,
 .e-bigger.e-small .e-css.e-btn.e-top-icon-btn,
 .e-bigger.e-small .e-css.e-btn.e-bottom-icon-btn,
 .e-bigger.e-small.e-css.e-btn.e-top-icon-btn,
@@ -377,7 +377,7 @@
 }
 
 .e-bigger.e-small .e-btn.e-round,
-.e-bigger.e-small.e-btn.e-round,
+.e-bigger.e-small .e-btn.e-round,
 .e-bigger.e-small .e-css.e-btn.e-round,
 .e-bigger.e-small.e-css.e-btn.e-round {
   height: 2.5em;
@@ -387,7 +387,7 @@
 }
 
 .e-bigger.e-small .e-btn.e-round .e-btn-icon,
-.e-bigger.e-small.e-btn.e-round .e-btn-icon,
+.e-bigger.e-small .e-btn.e-round .e-btn-icon,
 .e-bigger.e-small .e-css.e-btn.e-round .e-btn-icon,
 .e-bigger.e-small.e-css.e-btn.e-round .e-btn-icon {
   font-size: 18px;
@@ -396,7 +396,7 @@
 }
 
 .e-bigger.e-small .e-btn.e-rtl .e-icon-right,
-.e-bigger.e-small.e-btn.e-rtl .e-icon-right,
+.e-bigger.e-small .e-btn.e-rtl .e-icon-right,
 .e-bigger.e-small .e-css.e-btn.e-rtl .e-icon-right,
 .e-bigger.e-small.e-css.e-btn.e-rtl .e-icon-right {
   margin-left: -0.5334em;
@@ -404,7 +404,7 @@
 }
 
 .e-bigger.e-small .e-btn.e-rtl .e-icon-left,
-.e-bigger.e-small.e-btn.e-rtl .e-icon-left,
+.e-bigger.e-small .e-btn.e-rtl .e-icon-left,
 .e-bigger.e-small .e-css.e-btn.e-rtl .e-icon-left,
 .e-bigger.e-small.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
@@ -412,7 +412,7 @@
 }
 
 .e-bigger .e-btn,
-.e-bigger.e-btn,
+.e-bigger .e-btn,
 .e-bigger .e-css.e-btn,
 .e-bigger.e-css.e-btn {
   font-size: 16px;
@@ -421,7 +421,7 @@
 }
 
 .e-bigger .e-btn .e-btn-icon,
-.e-bigger.e-btn .e-btn-icon,
+.e-bigger .e-btn .e-btn-icon,
 .e-bigger .e-css.e-btn .e-btn-icon,
 .e-bigger.e-css.e-btn .e-btn-icon {
   font-size: 16px;
@@ -429,7 +429,7 @@
 }
 
 .e-bigger .e-btn .e-btn-icon.e-icon-left,
-.e-bigger.e-btn .e-btn-icon.e-icon-left,
+.e-bigger .e-btn .e-btn-icon.e-icon-left,
 .e-bigger .e-css.e-btn .e-btn-icon.e-icon-left,
 .e-bigger.e-css.e-btn .e-btn-icon.e-icon-left {
   margin-left: -0.688em;
@@ -437,7 +437,7 @@
 }
 
 .e-bigger .e-btn .e-btn-icon.e-icon-right,
-.e-bigger.e-btn .e-btn-icon.e-icon-right,
+.e-bigger .e-btn .e-btn-icon.e-icon-right,
 .e-bigger .e-css.e-btn .e-btn-icon.e-icon-right,
 .e-bigger.e-css.e-btn .e-btn-icon.e-icon-right {
   margin-right: -0.688em;
@@ -445,7 +445,7 @@
 }
 
 .e-bigger .e-btn .e-btn-icon.e-icon-top,
-.e-bigger.e-btn .e-btn-icon.e-icon-top,
+.e-bigger .e-btn .e-btn-icon.e-icon-top,
 .e-bigger .e-css.e-btn .e-btn-icon.e-icon-top,
 .e-bigger.e-css.e-btn .e-btn-icon.e-icon-top {
   padding-bottom: 10px;
@@ -453,7 +453,7 @@
 }
 
 .e-bigger .e-btn .e-btn-icon.e-icon-bottom,
-.e-bigger.e-btn .e-btn-icon.e-icon-bottom,
+.e-bigger .e-btn .e-btn-icon.e-icon-bottom,
 .e-bigger .e-css.e-btn .e-btn-icon.e-icon-bottom,
 .e-bigger.e-css.e-btn .e-btn-icon.e-icon-bottom {
   padding-top: 10px;
@@ -461,15 +461,15 @@
 }
 
 .e-bigger .e-btn.e-icon-btn,
-.e-bigger.e-btn.e-icon-btn,
+.e-bigger .e-btn.e-icon-btn,
 .e-bigger .e-css.e-btn.e-icon-btn,
 .e-bigger.e-css.e-btn.e-icon-btn {
   padding: 3px 11px;
 }
 
 .e-bigger .e-btn.e-top-icon-btn, .e-bigger .e-btn.e-bottom-icon-btn,
-.e-bigger.e-btn.e-top-icon-btn,
-.e-bigger.e-btn.e-bottom-icon-btn,
+.e-bigger .e-btn.e-top-icon-btn,
+.e-bigger .e-btn.e-bottom-icon-btn,
 .e-bigger .e-css.e-btn.e-top-icon-btn,
 .e-bigger .e-css.e-btn.e-bottom-icon-btn,
 .e-bigger.e-css.e-btn.e-top-icon-btn,
@@ -479,7 +479,7 @@
 }
 
 .e-bigger .e-btn.e-round,
-.e-bigger.e-btn.e-round,
+.e-bigger .e-btn.e-round,
 .e-bigger .e-css.e-btn.e-round,
 .e-bigger.e-css.e-btn.e-round {
   height: 2.875em;
@@ -489,7 +489,7 @@
 }
 
 .e-bigger .e-btn.e-round .e-btn-icon,
-.e-bigger.e-btn.e-round .e-btn-icon,
+.e-bigger .e-btn.e-round .e-btn-icon,
 .e-bigger .e-css.e-btn.e-round .e-btn-icon,
 .e-bigger.e-css.e-btn.e-round .e-btn-icon {
   font-size: 20px;
@@ -498,7 +498,7 @@
 }
 
 .e-bigger .e-btn.e-rtl .e-icon-right,
-.e-bigger.e-btn.e-rtl .e-icon-right,
+.e-bigger .e-btn.e-rtl .e-icon-right,
 .e-bigger .e-css.e-btn.e-rtl .e-icon-right,
 .e-bigger.e-css.e-btn.e-rtl .e-icon-right {
   margin-left: -0.688em;
@@ -506,7 +506,7 @@
 }
 
 .e-bigger .e-btn.e-rtl .e-icon-left,
-.e-bigger.e-btn.e-rtl .e-icon-left,
+.e-bigger .e-btn.e-rtl .e-icon-left,
 .e-bigger .e-css.e-btn.e-rtl .e-icon-left,
 .e-bigger.e-css.e-btn.e-rtl .e-icon-left {
   margin-left: 0;
@@ -514,7 +514,7 @@
 }
 
 .e-bigger .e-btn.e-small,
-.e-bigger.e-btn.e-small,
+.e-bigger .e-btn.e-small,
 .e-bigger .e-css.e-btn.e-small,
 .e-bigger.e-css.e-btn.e-small {
   font-size: 16px;
@@ -523,7 +523,7 @@
 }
 
 .e-bigger .e-btn.e-small .e-btn-icon,
-.e-bigger.e-btn.e-small .e-btn-icon,
+.e-bigger .e-btn.e-small .e-btn-icon,
 .e-bigger .e-css.e-btn.e-small .e-btn-icon,
 .e-bigger.e-css.e-btn.e-small .e-btn-icon {
   font-size: 15px;
@@ -531,7 +531,7 @@
 }
 
 .e-bigger .e-btn.e-small .e-btn-icon.e-icon-left,
-.e-bigger.e-btn.e-small .e-btn-icon.e-icon-left,
+.e-bigger .e-btn.e-small .e-btn-icon.e-icon-left,
 .e-bigger .e-css.e-btn.e-small .e-btn-icon.e-icon-left,
 .e-bigger.e-css.e-btn.e-small .e-btn-icon.e-icon-left {
   margin-left: -0.5334em;
@@ -539,7 +539,7 @@
 }
 
 .e-bigger .e-btn.e-small .e-btn-icon.e-icon-right,
-.e-bigger.e-btn.e-small .e-btn-icon.e-icon-right,
+.e-bigger .e-btn.e-small .e-btn-icon.e-icon-right,
 .e-bigger .e-css.e-btn.e-small .e-btn-icon.e-icon-right,
 .e-bigger.e-css.e-btn.e-small .e-btn-icon.e-icon-right {
   margin-right: -0.5334em;
@@ -547,7 +547,7 @@
 }
 
 .e-bigger .e-btn.e-small .e-btn-icon.e-icon-top,
-.e-bigger.e-btn.e-small .e-btn-icon.e-icon-top,
+.e-bigger .e-btn.e-small .e-btn-icon.e-icon-top,
 .e-bigger .e-css.e-btn.e-small .e-btn-icon.e-icon-top,
 .e-bigger.e-css.e-btn.e-small .e-btn-icon.e-icon-top {
   padding-bottom: 6px;
@@ -555,7 +555,7 @@
 }
 
 .e-bigger .e-btn.e-small .e-btn-icon.e-icon-bottom,
-.e-bigger.e-btn.e-small .e-btn-icon.e-icon-bottom,
+.e-bigger .e-btn.e-small .e-btn-icon.e-icon-bottom,
 .e-bigger .e-css.e-btn.e-small .e-btn-icon.e-icon-bottom,
 .e-bigger.e-css.e-btn.e-small .e-btn-icon.e-icon-bottom {
   padding-top: 6px;
@@ -563,15 +563,15 @@
 }
 
 .e-bigger .e-btn.e-small.e-icon-btn,
-.e-bigger.e-btn.e-small.e-icon-btn,
+.e-bigger .e-btn.e-small.e-icon-btn,
 .e-bigger .e-css.e-btn.e-small.e-icon-btn,
 .e-bigger.e-css.e-btn.e-small.e-icon-btn {
   padding: 1px 9px;
 }
 
 .e-bigger .e-btn.e-small.e-top-icon-btn, .e-bigger .e-btn.e-small.e-bottom-icon-btn,
-.e-bigger.e-btn.e-small.e-top-icon-btn,
-.e-bigger.e-btn.e-small.e-bottom-icon-btn,
+.e-bigger .e-btn.e-small.e-top-icon-btn,
+.e-bigger .e-btn.e-small.e-bottom-icon-btn,
 .e-bigger .e-css.e-btn.e-small.e-top-icon-btn,
 .e-bigger .e-css.e-btn.e-small.e-bottom-icon-btn,
 .e-bigger.e-css.e-btn.e-small.e-top-icon-btn,
@@ -581,7 +581,7 @@
 }
 
 .e-bigger .e-btn.e-small.e-round,
-.e-bigger.e-btn.e-small.e-round,
+.e-bigger .e-btn.e-small.e-round,
 .e-bigger .e-css.e-btn.e-small.e-round,
 .e-bigger.e-css.e-btn.e-small.e-round {
   height: 2.5em;
@@ -591,7 +591,7 @@
 }
 
 .e-bigger .e-btn.e-small.e-round .e-btn-icon,
-.e-bigger.e-btn.e-small.e-round .e-btn-icon,
+.e-bigger .e-btn.e-small.e-round .e-btn-icon,
 .e-bigger .e-css.e-btn.e-small.e-round .e-btn-icon,
 .e-bigger.e-css.e-btn.e-small.e-round .e-btn-icon {
   font-size: 18px;
@@ -600,7 +600,7 @@
 }
 
 .e-bigger .e-btn.e-small.e-rtl .e-icon-right,
-.e-bigger.e-btn.e-small.e-rtl .e-icon-right,
+.e-bigger .e-btn.e-small.e-rtl .e-icon-right,
 .e-bigger .e-css.e-btn.e-small.e-rtl .e-icon-right,
 .e-bigger.e-css.e-btn.e-small.e-rtl .e-icon-right {
   margin-left: -0.5334em;
@@ -608,7 +608,7 @@
 }
 
 .e-bigger .e-btn.e-small.e-rtl .e-icon-left,
-.e-bigger.e-btn.e-small.e-rtl .e-icon-left,
+.e-bigger .e-btn.e-small.e-rtl .e-icon-left,
 .e-bigger .e-css.e-btn.e-small.e-rtl .e-icon-left,
 .e-bigger.e-css.e-btn.e-small.e-rtl .e-icon-left {
   margin-left: 0;

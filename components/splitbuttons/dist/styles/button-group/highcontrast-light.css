@@ -1,5 +1,5 @@
-.e-btn-group,
-.e-css.e-btn-group {
+*.e-btn-group,
+*.e-css.e-btn-group {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 0;
@@ -8,22 +8,22 @@
   position: relative;
 }
 
-.e-btn-group input:focus + label.e-btn,
-.e-btn-group .e-btn:focus,
-.e-btn-group .e-btn:hover,
-.e-css.e-btn-group input:focus + label.e-btn,
-.e-css.e-btn-group .e-btn:focus,
-.e-css.e-btn-group .e-btn:hover {
+*.e-btn-group input:focus + label.e-btn,
+*.e-btn-group .e-btn:focus,
+*.e-btn-group .e-btn:hover,
+*.e-css.e-btn-group input:focus + label.e-btn,
+*.e-css.e-btn-group .e-btn:focus,
+*.e-css.e-btn-group .e-btn:hover {
   z-index: 2;
 }
 
-.e-btn-group input + label.e-btn,
-.e-css.e-btn-group input + label.e-btn {
+*.e-btn-group input + label.e-btn,
+*.e-css.e-btn-group input + label.e-btn {
   margin-bottom: 0;
 }
 
-.e-btn-group input,
-.e-css.e-btn-group input {
+*.e-btn-group input,
+*.e-css.e-btn-group input {
   -moz-appearance: none;
   height: 1px;
   margin: 0 0 0 -1px;
@@ -32,250 +32,250 @@
   width: 1px;
 }
 
-.e-btn-group input:disabled + label.e-btn,
-.e-btn-group :disabled,
-.e-css.e-btn-group input:disabled + label.e-btn,
-.e-css.e-btn-group :disabled {
+*.e-btn-group input:disabled + label.e-btn,
+*.e-btn-group :disabled,
+*.e-css.e-btn-group input:disabled + label.e-btn,
+*.e-css.e-btn-group :disabled {
   cursor: default;
   pointer-events: none;
 }
 
-.e-btn-group .e-btn-icon,
-.e-css.e-btn-group .e-btn-icon {
+*.e-btn-group .e-btn-icon,
+*.e-css.e-btn-group .e-btn-icon {
   font-size: 14px;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn {
   margin-left: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:not(:first-of-type):not(:last-of-type),
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:not(:first-of-type):not(:last-of-type) {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:not(:first-of-type):not(:last-of-type),
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:first-of-type,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:first-of-type {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:first-of-type,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:first-of-type {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type:not(:last-child),
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type:not(:last-child) {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type:not(:last-child),
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-btn:last-of-type:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper + .e-btn,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper + .e-btn {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper + .e-btn,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper + .e-btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:first-child .e-btn:last-child,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:first-child .e-btn:last-child {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:first-child .e-btn:last-child,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:first-child .e-btn:last-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:last-child .e-btn:first-child,
-.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:last-child .e-btn:first-child {
+*.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:last-child .e-btn:first-child,
+*.e-css.e-btn-group:not(.e-rtl):not(.e-vertical) .e-split-btn-wrapper:last-child .e-btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-btn,
-.e-css.e-btn-group.e-rtl .e-btn {
+*.e-btn-group.e-rtl .e-btn,
+*.e-css.e-btn-group.e-rtl .e-btn {
   margin-left: 0;
 }
 
-.e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type),
-.e-css.e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type) {
+*.e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type),
+*.e-css.e-btn-group.e-rtl .e-btn:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-btn:first-of-type,
-.e-css.e-btn-group.e-rtl .e-btn:first-of-type {
+*.e-btn-group.e-rtl .e-btn:first-of-type,
+*.e-css.e-btn-group.e-rtl .e-btn:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-btn:last-of-type,
-.e-css.e-btn-group.e-rtl .e-btn:last-of-type {
+*.e-btn-group.e-rtl .e-btn:last-of-type,
+*.e-css.e-btn-group.e-rtl .e-btn:last-of-type {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-btn:last-of-type:not(:last-child),
-.e-css.e-btn-group.e-rtl .e-btn:last-of-type:not(:last-child) {
+*.e-btn-group.e-rtl .e-btn:last-of-type:not(:last-child),
+*.e-css.e-btn-group.e-rtl .e-btn:last-of-type:not(:last-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-split-btn-wrapper + .e-btn,
-.e-css.e-btn-group.e-rtl .e-split-btn-wrapper + .e-btn {
+*.e-btn-group.e-rtl .e-split-btn-wrapper + .e-btn,
+*.e-css.e-btn-group.e-rtl .e-split-btn-wrapper + .e-btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child,
-.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child {
+*.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child,
+*.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child,
-.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child {
+*.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child,
+*.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:not(:first-child):not(:last-child) .e-btn:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-split-btn-wrapper:first-child .e-btn:last-child,
-.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:first-child .e-btn:last-child {
+*.e-btn-group.e-rtl .e-split-btn-wrapper:first-child .e-btn:last-child,
+*.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:first-child .e-btn:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-rtl .e-split-btn-wrapper:last-child .e-btn:first-child,
-.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:last-child .e-btn:first-child {
+*.e-btn-group.e-rtl .e-split-btn-wrapper:last-child .e-btn:first-child,
+*.e-css.e-btn-group.e-rtl .e-split-btn-wrapper:last-child .e-btn:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-vertical,
-.e-css.e-btn-group.e-vertical {
+*.e-btn-group.e-vertical,
+*.e-css.e-btn-group.e-vertical {
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-.e-btn-group.e-vertical input,
-.e-css.e-btn-group.e-vertical input {
+*.e-btn-group.e-vertical input,
+*.e-css.e-btn-group.e-vertical input {
   margin: -1px 0 0;
 }
 
-.e-btn-group.e-vertical .e-btn:not(.e-outline),
-.e-css.e-btn-group.e-vertical .e-btn:not(.e-outline) {
+*.e-btn-group.e-vertical .e-btn:not(.e-outline),
+*.e-css.e-btn-group.e-vertical .e-btn:not(.e-outline) {
   margin-top: -1px;
 }
 
-.e-btn-group.e-vertical .e-btn:not(:first-of-type):not(:last-of-type),
-.e-css.e-btn-group.e-vertical .e-btn:not(:first-of-type):not(:last-of-type) {
+*.e-btn-group.e-vertical .e-btn:not(:first-of-type):not(:last-of-type),
+*.e-css.e-btn-group.e-vertical .e-btn:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
 }
 
-.e-btn-group.e-vertical .e-btn:first-of-type,
-.e-css.e-btn-group.e-vertical .e-btn:first-of-type {
+*.e-btn-group.e-vertical .e-btn:first-of-type,
+*.e-css.e-btn-group.e-vertical .e-btn:first-of-type {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
-.e-btn-group.e-vertical .e-btn:last-of-type,
-.e-css.e-btn-group.e-vertical .e-btn:last-of-type {
+*.e-btn-group.e-vertical .e-btn:last-of-type,
+*.e-css.e-btn-group.e-vertical .e-btn:last-of-type {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl),
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl),
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) {
   border-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:first-of-type,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:first-of-type {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:first-of-type,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:first-of-type {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type:not(:last-child),
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type:not(:last-child) {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type:not(:last-child),
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-btn:last-of-type:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper + .e-btn,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper + .e-btn {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper + .e-btn,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper + .e-btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:first-child,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:first-child {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:first-child,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:first-child {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:last-child,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:last-child {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:last-child,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:first-child .e-btn:last-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:first-child,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:first-child {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:first-child,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:last-child,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:last-child {
+*.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:last-child,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical):not(.e-rtl) .e-split-btn-wrapper:last-child .e-btn:last-child {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical).e-rtl,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl {
+*.e-btn-group.e-round-corner:not(.e-vertical).e-rtl,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl {
   border-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type {
+*.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type,
-.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type {
+*.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type,
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type:not(:last-child),
-.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type:not(:last-child) {
+*.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type:not(:last-child),
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:last-of-type:not(:last-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type:not(:first-child),
-.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type:not(:first-child) {
+*.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type:not(:first-child),
+*.e-css.e-btn-group.e-round-corner:not(.e-vertical).e-rtl .e-btn:first-of-type:not(:first-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }

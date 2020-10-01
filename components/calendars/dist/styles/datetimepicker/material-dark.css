@@ -151,55 +151,55 @@
 }
 
 .e-bigger.e-datetime-wrapper .e-time-icon.e-icons::before,
-.e-bigger .e-datetime-wrapper .e-time-icon.e-icons::before {
+*.e-bigger .e-datetime-wrapper .e-time-icon.e-icons::before {
   font-size: 20px;
 }
 
 .e-bigger.e-datetime-wrapper .e-input-group-icon.e-time-icon,
-.e-bigger .e-datetime-wrapper .e-input-group-icon.e-time-icon {
+*.e-bigger .e-datetime-wrapper .e-input-group-icon.e-time-icon {
   margin: 5px 0 6px 8px;
   min-height: 26px;
   min-width: 26px;
 }
 
 .e-bigger.e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon,
-.e-bigger .e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
+*.e-bigger .e-datetime-wrapper:not(.e-outline).e-rtl .e-input-group-icon.e-time-icon {
   margin: 5px 8px 6px 0;
 }
 
 .e-bigger .e-datetimepicker.e-popup .e-list-parent.e-ul,
-.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul {
+*.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul {
   padding: 8px 0;
 }
 
 .e-bigger .e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 14px;
   line-height: 48px;
   text-indent: 16px;
 }
 
 .e-small .e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-small.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-small.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 12px;
   line-height: 26px;
   text-indent: 12px;
 }
 
 .e-small.e-bigger .e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-small.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-small.e-bigger.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 13px;
   line-height: 40px;
   text-indent: 16px;
 }
 
 .e-small.e-datetime-wrapper .e-time-icon.e-icons::before,
-.e-small .e-datetime-wrapper .e-time-icon.e-icons::before {
+*.e-small .e-datetime-wrapper .e-time-icon.e-icons::before {
   font-size: 14px;
 }
 
 .e-small.e-bigger.e-datetime-wrapper .e-time-icon.e-icons::before,
-.e-small.e-bigger .e-datetime-wrapper .e-time-icon.e-icons::before {
+*.e-small.e-bigger .e-datetime-wrapper .e-time-icon.e-icons::before {
   font-size: 18px;
 }
 

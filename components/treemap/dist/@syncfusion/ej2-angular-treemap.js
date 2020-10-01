@@ -163,49 +163,49 @@ let TreeMapComponent = class TreeMapComponent extends TreeMap {
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
         try {
-            let mod = this.injector.get('TreeMapPrint');
+            let mod = this.injector.get('TreeMapTreeMapTooltip');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            let mod = this.injector.get('TreeMapPdfExport');
+            let mod = this.injector.get('TreeMapTreeMapLegend');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            let mod = this.injector.get('TreeMapImageExport');
+            let mod = this.injector.get('TreeMapTreeMapHighlight');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            let mod = this.injector.get('TreeMapTreeMapTooltip');
+            let mod = this.injector.get('TreeMapTreeMapSelection');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_d) { }
         try {
-            let mod = this.injector.get('TreeMapTreeMapLegend');
+            let mod = this.injector.get('TreeMapPrint');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_e) { }
         try {
-            let mod = this.injector.get('TreeMapTreeMapHighlight');
+            let mod = this.injector.get('TreeMapPdfExport');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
         }
         catch (_f) { }
         try {
-            let mod = this.injector.get('TreeMapTreeMapSelection');
+            let mod = this.injector.get('TreeMapImageExport');
             if (this.injectedModules.indexOf(mod) === -1) {
                 this.injectedModules.push(mod);
             }
@@ -312,13 +312,13 @@ TreeMapModule.decorators = [
  */
 TreeMapModule.ctorParameters = () => [];
 
-const PrintService = { provide: 'TreeMapPrint', useValue: Print };
-const PdfExportService = { provide: 'TreeMapPdfExport', useValue: PdfExport };
-const ImageExportService = { provide: 'TreeMapImageExport', useValue: ImageExport };
 const TreeMapTooltipService = { provide: 'TreeMapTreeMapTooltip', useValue: TreeMapTooltip };
 const TreeMapLegendService = { provide: 'TreeMapTreeMapLegend', useValue: TreeMapLegend };
 const TreeMapHighlightService = { provide: 'TreeMapTreeMapHighlight', useValue: TreeMapHighlight };
 const TreeMapSelectionService = { provide: 'TreeMapTreeMapSelection', useValue: TreeMapSelection };
+const PrintService = { provide: 'TreeMapPrint', useValue: Print };
+const PdfExportService = { provide: 'TreeMapPdfExport', useValue: PdfExport };
+const ImageExportService = { provide: 'TreeMapImageExport', useValue: ImageExport };
 /**
  * NgModule definition for the TreeMap component with providers.
  */
@@ -331,13 +331,13 @@ TreeMapAllModule.decorators = [
                     TreeMapModule
                 ],
                 providers: [
-                    PrintService,
-                    PdfExportService,
-                    ImageExportService,
                     TreeMapTooltipService,
                     TreeMapLegendService,
                     TreeMapHighlightService,
-                    TreeMapSelectionService
+                    TreeMapSelectionService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -350,6 +350,6 @@ TreeMapAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { ColorMappingDirective, ColorMappingsDirective, LevelDirective, LevelsDirective, TreeMapComponent, TreeMapModule, TreeMapAllModule, PrintService, PdfExportService, ImageExportService, TreeMapTooltipService, TreeMapLegendService, TreeMapHighlightService, TreeMapSelectionService, inputs as ɵa, outputs$2 as ɵb };
+export { ColorMappingDirective, ColorMappingsDirective, LevelDirective, LevelsDirective, TreeMapComponent, TreeMapModule, TreeMapAllModule, TreeMapTooltipService, TreeMapLegendService, TreeMapHighlightService, TreeMapSelectionService, PrintService, PdfExportService, ImageExportService, inputs as ɵa, outputs$2 as ɵb };
 export { TreeMap, LevelsData, Border, Margin, Font, CommonTitleSettings, SubTitleSettings, TitleSettings, ColorMapping, LegendSettings, InitialDrillSettings, LeafItemSettings, TooltipSettings, SelectionSettings, HighlightSettings, LevelSettings, load, loaded, beforePrint, itemRendering, drillStart, drillEnd, itemSelected, itemHighlight, tooltipRendering, itemClick, itemMove, click, doubleClick, rightClick, mouseMove, legendItemRendering, legendRendering, resize, defaultFont, Theme, getThemeStyle, Size, stringToNumber, Rect, RectOption, PathOption, measureText, TextOption, textTrim, Location, findPosition, createTextStyle, renderTextElement, getElement, itemsToOrder, isContainsData, findChildren, findHightLightItems, getTemplateFunction, convertElement, findLabelLocation, measureElement, getArea, getShortestEdge, convertToContainer, convertToRect, getMousePosition, colorMap, deSaturationColor, colorCollections, rgbToHex, getColorByValue, getGradientColor, getPercentageColor, getPercentage, wordWrap, textWrap, hide, orderByArea, maintainSelection, legendMaintain, removeClassNames, applyOptions, textFormatter, formatValue, ColorValue, convertToHexCode, componentToHex, convertHexToColor, colorNameToHex, drawSymbol, renderLegendShape, isParentItem, TreeMapAjax, removeShape, removeLegend, setColor, removeSelectionWithHighlight, getLegendIndex, pushCollection, triggerDownload, removeElement, TreeMapLegend, LayoutPanel, TreeMapHighlight, TreeMapSelection, TreeMapTooltip, ImageExport, PdfExport, Print } from '@syncfusion/ej2-treemap';
 //# sourceMappingURL=ej2-angular-treemap.js.map

@@ -1,6 +1,6 @@
 {
     "name": "@syncfusion/ej2-angular-notifications",
-    "version": "18.2.44",
+    "version": "17.2.48",
     "description": "A package of Essential JS 2 notification components such as Toast and Badge which used to notify important information to end-users. for Angular",
     "author": "Syncfusion Inc.",
     "license": "SEE LICENSE IN license",
@@ -8,7 +8,9 @@
     "dependencies": {
         "@syncfusion/ej2-base": "*",
         "@syncfusion/ej2-angular-base": "*",
-        "@syncfusion/ej2-notifications": "*"
+        "@syncfusion/ej2-notifications": "*",
+        "@types/lodash": "4.14.159",
+        "@types/node": "11.15.20"
     },
     "devDependencies": {
         "@syncfusion/ej2-build": "*",

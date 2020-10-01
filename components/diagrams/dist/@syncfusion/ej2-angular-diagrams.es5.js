@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { BpmnDiagrams, ComplexHierarchicalTree, ConnectorBridging, ConnectorEditing, DataBinding, Diagram, DiagramContextMenu, HierarchicalTree, LayoutAnimation, LineRouting, MindMap, Overview, PrintAndExport, RadialTree, Snapping, SymbolPalette, SymmetricLayout, UndoRedo } from '@syncfusion/ej2-diagrams';
+import { BlazorTooltip, BpmnDiagrams, ComplexHierarchicalTree, ConnectorBridging, ConnectorEditing, DataBinding, Diagram, DiagramContextMenu, HierarchicalTree, LayoutAnimation, LineRouting, MindMap, Overview, PrintAndExport, RadialTree, Snapping, SymbolPalette, SymmetricLayout, UndoRedo } from '@syncfusion/ej2-diagrams';
 import { CommonModule } from '@angular/common';
 var input = ['addInfo', 'id', 'lock', 'objects', 'visible', 'zIndex'];
 var outputs = [];
@@ -134,8 +134,74 @@ CustomCursorsDirective.decorators = [
  * @nocollapse
  */
 CustomCursorsDirective.ctorParameters = function () { return []; };
-var input$2 = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var input$2 = ['alignment', 'cornerRadius', 'displacement', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'offset', 'padding', 'pathData', 'visibility', 'width'];
 var outputs$2 = [];
+/**
+ * Connectors Directive
+ * ```html
+ * <e-connectors>
+ * <e-connector>
+ * <e-connector-fixeduserhandles>
+ * <e-connector-fixeduserhandle>
+ * </e-connector-fixeduserhandle>
+ * </e-connector-fixeduserhandles>
+ * </e-connector>
+ * </e-connectors>
+ * ```
+ */
+var ConnectorFixedUserHandleDirective = /** @class */ (function (_super) {
+    __extends(ConnectorFixedUserHandleDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function ConnectorFixedUserHandleDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
+        return _this;
+    }
+    return ConnectorFixedUserHandleDirective;
+}(ComplexBase));
+ConnectorFixedUserHandleDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-connector>e-connector-fixeduserhandles>e-connector-fixeduserhandle',
+                inputs: input$2,
+                outputs: outputs$2,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ConnectorFixedUserHandleDirective.ctorParameters = function () { return [
+    { type: ViewContainerRef, },
+]; };
+/**
+ * ConnectorFixedUserHandle Array Directive
+ */
+var ConnectorFixedUserHandlesDirective = /** @class */ (function (_super) {
+    __extends(ConnectorFixedUserHandlesDirective, _super);
+    function ConnectorFixedUserHandlesDirective() {
+        return _super.call(this, 'fixeduserhandles') || this;
+    }
+    return ConnectorFixedUserHandlesDirective;
+}(ArrayBase));
+ConnectorFixedUserHandlesDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-connector>e-connector-fixeduserhandles',
+                queries: {
+                    children: new ContentChildren(ConnectorFixedUserHandleDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ConnectorFixedUserHandlesDirective.ctorParameters = function () { return []; };
+var input$3 = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var outputs$3 = [];
 /**
  * Connectors Directive
  * ```html
@@ -158,8 +224,8 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
-        _this.directivePropList = input$2;
+        _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return ConnectorAnnotationDirective;
@@ -167,8 +233,8 @@ var ConnectorAnnotationDirective = /** @class */ (function (_super) {
 ConnectorAnnotationDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-connector>e-connector-annotations>e-connector-annotation',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {}
             },] },
 ];
@@ -200,8 +266,8 @@ ConnectorAnnotationsDirective.decorators = [
  * @nocollapse
  */
 ConnectorAnnotationsDirective.ctorParameters = function () { return []; };
-var input$3 = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
-var outputs$3 = [];
+var input$4 = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+var outputs$4 = [];
 /**
  * Connectors Directive
  * ```html
@@ -218,10 +284,10 @@ var ConnectorDirective = /** @class */ (function (_super) {
     function ConnectorDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['annotations'];
+        _this.tags = ['fixedUserHandles', 'annotations'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
-        _this.directivePropList = input$3;
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return ConnectorDirective;
@@ -229,9 +295,10 @@ var ConnectorDirective = /** @class */ (function (_super) {
 ConnectorDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-connectors>e-connector',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {
+                    childFixedUserHandles: new ContentChild(ConnectorFixedUserHandlesDirective),
                     childAnnotations: new ContentChild(ConnectorAnnotationsDirective)
                 }
             },] },
@@ -264,8 +331,74 @@ ConnectorsDirective.decorators = [
  * @nocollapse
  */
 ConnectorsDirective.ctorParameters = function () { return []; };
-var input$4 = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
-var outputs$4 = [];
+var input$5 = ['cornerRadius', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'margin', 'offset', 'padding', 'pathData', 'visibility', 'width'];
+var outputs$5 = [];
+/**
+ * Nodes Directive
+ * ```html
+ * <e-nodes>
+ * <e-node>
+ * <e-node-fixeduserhandles>
+ * <e-node-fixeduserhandle>
+ * </e-node-fixeduserhandle>
+ * </e-node-fixeduserhandles>
+ * </e-node>
+ * </e-nodes>
+ * ```
+ */
+var NodeFixedUserHandleDirective = /** @class */ (function (_super) {
+    __extends(NodeFixedUserHandleDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function NodeFixedUserHandleDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
+        return _this;
+    }
+    return NodeFixedUserHandleDirective;
+}(ComplexBase));
+NodeFixedUserHandleDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-node>e-node-fixeduserhandles>e-node-fixeduserhandle',
+                inputs: input$5,
+                outputs: outputs$5,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NodeFixedUserHandleDirective.ctorParameters = function () { return [
+    { type: ViewContainerRef, },
+]; };
+/**
+ * NodeFixedUserHandle Array Directive
+ */
+var NodeFixedUserHandlesDirective = /** @class */ (function (_super) {
+    __extends(NodeFixedUserHandlesDirective, _super);
+    function NodeFixedUserHandlesDirective() {
+        return _super.call(this, 'fixeduserhandles') || this;
+    }
+    return NodeFixedUserHandlesDirective;
+}(ArrayBase));
+NodeFixedUserHandlesDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-node>e-node-fixeduserhandles',
+                queries: {
+                    children: new ContentChildren(NodeFixedUserHandleDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NodeFixedUserHandlesDirective.ctorParameters = function () { return []; };
+var input$6 = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+var outputs$6 = [];
 /**
  * Nodes Directive
  * ```html
@@ -288,8 +421,8 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
-        _this.directivePropList = input$4;
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return NodeAnnotationDirective;
@@ -297,8 +430,8 @@ var NodeAnnotationDirective = /** @class */ (function (_super) {
 NodeAnnotationDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-node>e-node-annotations>e-node-annotation',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {}
             },] },
 ];
@@ -330,8 +463,8 @@ NodeAnnotationsDirective.decorators = [
  * @nocollapse
  */
 NodeAnnotationsDirective.ctorParameters = function () { return []; };
-var input$5 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
-var outputs$5 = [];
+var input$7 = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+var outputs$7 = [];
 /**
  * Nodes Directive
  * ```html
@@ -354,8 +487,8 @@ var PortDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
-        _this.directivePropList = input$5;
+        _this.registerEvents(outputs$7);
+        _this.directivePropList = input$7;
         return _this;
     }
     return PortDirective;
@@ -363,8 +496,8 @@ var PortDirective = /** @class */ (function (_super) {
 PortDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-node>e-node-ports>e-node-port',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$7,
+                outputs: outputs$7,
                 queries: {}
             },] },
 ];
@@ -396,8 +529,8 @@ PortsDirective.decorators = [
  * @nocollapse
  */
 PortsDirective.ctorParameters = function () { return []; };
-var input$6 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
-var outputs$6 = [];
+var input$8 = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'fixedUserHandles', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+var outputs$8 = [];
 /**
  * Nodes Directive
  * ```html
@@ -414,10 +547,10 @@ var NodeDirective = /** @class */ (function (_super) {
     function NodeDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
-        _this.tags = ['annotations', 'ports'];
+        _this.tags = ['fixedUserHandles', 'annotations', 'ports'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$6);
-        _this.directivePropList = input$6;
+        _this.registerEvents(outputs$8);
+        _this.directivePropList = input$8;
         return _this;
     }
     return NodeDirective;
@@ -425,9 +558,10 @@ var NodeDirective = /** @class */ (function (_super) {
 NodeDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-nodes>e-node',
-                inputs: input$6,
-                outputs: outputs$6,
+                inputs: input$8,
+                outputs: outputs$8,
                 queries: {
+                    childFixedUserHandles: new ContentChild(NodeFixedUserHandlesDirective),
                     childAnnotations: new ContentChild(NodeAnnotationsDirective),
                     childPorts: new ContentChild(PortsDirective)
                 }
@@ -476,7 +610,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['addInfo', 'annotationTemplate', 'backgroundColor', 'bridgeDirection', 'commandManager', 'connectorDefaults', 'connectors', 'constraints', 'contextMenuSettings', 'customCursor', 'dataSourceSettings', 'diagramSettings', 'drawingObject', 'enablePersistence', 'enableRtl', 'getConnectorDefaults', 'getCustomCursor', 'getCustomProperty', 'getCustomTool', 'getDescription', 'getNodeDefaults', 'height', 'historyManager', 'layers', 'layout', 'locale', 'mode', 'nodeDefaults', 'nodeTemplate', 'nodes', 'pageSettings', 'rulerSettings', 'scrollSettings', 'selectedItems', 'serializationSettings', 'setNodeTemplate', 'snapSettings', 'tool', 'tooltip', 'updateSelection', 'userHandleTemplate', 'width'];
-var outputs$7 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'historyChange', 'historyStateChange', 'keyDown', 'keyUp', 'mouseEnter', 'mouseLeave', 'mouseOver', 'onImageLoad', 'onUserHandleMouseDown', 'onUserHandleMouseEnter', 'onUserHandleMouseLeave', 'onUserHandleMouseUp', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
+var outputs$9 = ['animationComplete', 'click', 'collectionChange', 'commandExecute', 'connectionChange', 'contextMenuBeforeItemRender', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataLoaded', 'doubleClick', 'dragEnter', 'dragLeave', 'dragOver', 'drop', 'expandStateChange', 'fixedUserHandleClick', 'historyChange', 'historyStateChange', 'keyDown', 'keyUp', 'mouseEnter', 'mouseLeave', 'mouseOver', 'onImageLoad', 'onUserHandleMouseDown', 'onUserHandleMouseEnter', 'onUserHandleMouseLeave', 'onUserHandleMouseUp', 'positionChange', 'propertyChange', 'rotateChange', 'scrollChange', 'segmentCollectionChange', 'selectionChange', 'sizeChange', 'sourcePointChange', 'targetPointChange', 'textEdit'];
 var twoWays = [''];
 /**
  * Diagram Component
@@ -606,7 +740,14 @@ var DiagramComponent = /** @class */ (function (_super) {
             }
         }
         catch (_q) { }
-        _this.registerEvents(outputs$7);
+        try {
+            var mod = _this.injector.get('DiagramsBlazorTooltip');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_r) { }
+        _this.registerEvents(outputs$9);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ComponentBase();
@@ -652,7 +793,7 @@ DiagramComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-diagram',
                 inputs: inputs,
-                outputs: outputs$7,
+                outputs: outputs$9,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -713,10 +854,14 @@ DiagramModule.decorators = [
                     LayersDirective,
                     CustomCursorDirective,
                     CustomCursorsDirective,
+                    ConnectorFixedUserHandleDirective,
+                    ConnectorFixedUserHandlesDirective,
                     ConnectorAnnotationDirective,
                     ConnectorAnnotationsDirective,
                     ConnectorDirective,
                     ConnectorsDirective,
+                    NodeFixedUserHandleDirective,
+                    NodeFixedUserHandlesDirective,
                     NodeAnnotationDirective,
                     NodeAnnotationsDirective,
                     PortDirective,
@@ -730,10 +875,14 @@ DiagramModule.decorators = [
                     LayersDirective,
                     CustomCursorDirective,
                     CustomCursorsDirective,
+                    ConnectorFixedUserHandleDirective,
+                    ConnectorFixedUserHandlesDirective,
                     ConnectorAnnotationDirective,
                     ConnectorAnnotationsDirective,
                     ConnectorDirective,
                     ConnectorsDirective,
+                    NodeFixedUserHandleDirective,
+                    NodeFixedUserHandlesDirective,
                     NodeAnnotationDirective,
                     NodeAnnotationsDirective,
                     PortDirective,
@@ -762,6 +911,7 @@ var LayoutAnimationService = { provide: 'DiagramsLayoutAnimation', useValue: Lay
 var DiagramContextMenuService = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu };
 var LineRoutingService = { provide: 'DiagramsLineRouting', useValue: LineRouting };
 var ConnectorEditingService = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing };
+var BlazorTooltipService = { provide: 'DiagramsBlazorTooltip', useValue: BlazorTooltip };
 /**
  * NgModule definition for the Diagram component with providers.
  */
@@ -791,7 +941,8 @@ DiagramAllModule.decorators = [
                     LayoutAnimationService,
                     DiagramContextMenuService,
                     LineRoutingService,
-                    ConnectorEditingService
+                    ConnectorEditingService,
+                    BlazorTooltipService
                 ]
             },] },
 ];
@@ -799,8 +950,8 @@ DiagramAllModule.decorators = [
  * @nocollapse
  */
 DiagramAllModule.ctorParameters = function () { return []; };
-var input$7 = ['expanded', 'height', 'iconCss', 'id', 'symbols', 'title'];
-var outputs$8 = [];
+var input$9 = ['expanded', 'height', 'iconCss', 'id', 'symbols', 'title'];
+var outputs$10 = [];
 /**
  * Palette Directive
  * ```html
@@ -816,8 +967,8 @@ var PaletteDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$8);
-        _this.directivePropList = input$7;
+        _this.registerEvents(outputs$10);
+        _this.directivePropList = input$9;
         return _this;
     }
     return PaletteDirective;
@@ -825,8 +976,8 @@ var PaletteDirective = /** @class */ (function (_super) {
 PaletteDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-palettes>e-palette',
-                inputs: input$7,
-                outputs: outputs$8,
+                inputs: input$9,
+                outputs: outputs$10,
                 queries: {}
             },] },
 ];
@@ -873,7 +1024,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$1 = ['accessKey', 'allowDrag', 'connectorDefaults', 'enableAnimation', 'enablePersistence', 'enableRtl', 'enableSearch', 'expandMode', 'filterSymbols', 'getConnectorDefaults', 'getNodeDefaults', 'getSymbolInfo', 'getSymbolTemplate', 'height', 'ignoreSymbolsOnSearch', 'locale', 'nodeDefaults', 'palettes', 'symbolDragSize', 'symbolHeight', 'symbolInfo', 'symbolMargin', 'symbolPreview', 'symbolWidth', 'width'];
-var outputs$9 = ['paletteExpanding', 'paletteSelectionChange'];
+var outputs$11 = ['paletteExpanding', 'paletteSelectionChange'];
 var twoWays$1 = [''];
 /**
  * SymbolPalette Component
@@ -905,7 +1056,7 @@ var SymbolPaletteComponent = /** @class */ (function (_super) {
             }
         }
         catch (_a) { }
-        _this.registerEvents(outputs$9);
+        _this.registerEvents(outputs$11);
         _this.addTwoWay.call(_this, twoWays$1);
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ComponentBase();
@@ -942,7 +1093,7 @@ SymbolPaletteComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-symbolpalette',
                 inputs: inputs$1,
-                outputs: outputs$9,
+                outputs: outputs$11,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -1029,7 +1180,7 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs$2 = ['enablePersistence', 'enableRtl', 'height', 'locale', 'sourceID', 'width'];
-var outputs$10 = ['created'];
+var outputs$12 = ['created'];
 var twoWays$2 = [''];
 /**
  * Overview Component
@@ -1054,7 +1205,7 @@ var OverviewComponent = /** @class */ (function (_super) {
         _this.tags = [''];
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
-        _this.registerEvents(outputs$10);
+        _this.registerEvents(outputs$12);
         _this.addTwoWay.call(_this, twoWays$2);
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ComponentBase();
@@ -1090,7 +1241,7 @@ OverviewComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-overview',
                 inputs: inputs$2,
-                outputs: outputs$10,
+                outputs: outputs$12,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {}
@@ -1159,6 +1310,6 @@ OverviewAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { LayerDirective, LayersDirective, CustomCursorDirective, CustomCursorsDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, ConnectorDirective, ConnectorsDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, NodeDirective, NodesDirective, DiagramComponent, DiagramModule, DiagramAllModule, HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, LineRoutingService, ConnectorEditingService, PaletteDirective, PalettesDirective, SymbolPaletteComponent, SymbolPaletteModule, SymbolPaletteAllModule, OverviewComponent, OverviewModule, OverviewAllModule, inputs as ɵa, outputs$7 as ɵb, inputs$2 as ɵe, outputs$10 as ɵf, inputs$1 as ɵc, outputs$9 as ɵd };
-export { Diagram, PrintAndExport, Size, Rect, MatrixTypes, Matrix, identityMatrix, transformPointByMatrix, transformPointsByMatrix, rotateMatrix, scaleMatrix, translateMatrix, multiplyMatrix, Point, BlazorAction, PortVisibility, SnapConstraints, SelectorConstraints, ConnectorConstraints, AnnotationConstraints, NodeConstraints, ElementAction, ThumbsConstraints, DiagramConstraints, DiagramTools, Transform, RenderMode, KeyModifiers, Keys, DiagramAction, RendererAction, RealAction, NoOfSegments, DiagramEvent, PortConstraints, contextMenuClick, contextMenuOpen, contextMenuBeforeItemRender, Thickness, Margin, Shadow, Stop, Gradient, DiagramGradient, LinearGradient, RadialGradient, ShapeStyle, StrokeStyle, TextStyle, DiagramShapeStyle, DiagramElement, PathElement, ImageElement, TextElement, Container, Canvas, GridPanel, RowDefinition, ColumnDefinition, GridRow, GridCell, StackPanel, findConnectorPoints, swapBounds, findAngle, findPoint, getIntersection, getIntersectionPoints, orthoConnection2Segment, getPortDirection, getOuterBounds, getOppositeDirection, processPathData, parsePathData, getRectanglePath, getPolygonPath, pathSegmentCollection, transformPath, updatedSegment, scalePathData, splitArrayCollection, getPathString, getString, randomId, getIndex, templateCompiler, cornersPointsBeforeRotation, getBounds, cloneObject, getInternalProperties, cloneArray, extendObject, extendArray, textAlignToString, wordBreakToString, bBoxText, middleElement, overFlow, whiteSpaceToString, rotateSize, rotatePoint, getOffset, getFunction, completeRegion, findNodeByName, findObjectType, setSwimLaneDefaults, getSpaceValue, getInterval, setUMLActivityDefaults, setConnectorDefaults, findNearestPoint, isDiagramChild, groupHasType, updateDefaultValues, updateLayoutValue, isPointOverConnector, intersect3, intersect2, getLineSegment, getPoints, getTooltipOffset, sort, getAnnotationPosition, getOffsetOfConnector, getAlignedPosition, alignLabelOnSegments, getBezierDirection, removeChildNodes, serialize, deserialize, upgrade, updateStyle, updateHyperlink, updateShapeContent, updateShape, updateContent, updateUmlActivityNode, getUMLFinalNode, getUMLActivityShapes, removeGradient, removeItem, updateConnector, getUserHandlePosition, canResizeCorner, canShowCorner, checkPortRestriction, findAnnotation, findPort, getInOutConnectPorts, findObjectIndex, getObjectFromCollection, scaleElement, arrangeChild, insertObject, getElement, getCollectionChangeEventArguements, getDropEventArguements, getPoint, getObjectType, flipConnector, updatePortEdges, alignElement, cloneSelectedObjects, updatePathElement, checkPort, findPath, findDistance, cloneBlazorObject, checkBrowserInfo, canMeasureDecoratorPath, CanvasRenderer, DiagramRenderer, DataBinding, getBasicShape, getPortShape, getDecoratorShape, getIconShape, getFlowShape, Hyperlink, Annotation, ShapeAnnotation, PathAnnotation, Port, PointPort, menuClass, DiagramContextMenu, Shape, Path, Native, Html, Image, Text, BasicShape, FlowShape, BpmnGateway, BpmnDataObject, BpmnTask, BpmnEvent, BpmnSubEvent, BpmnTransactionSubProcess, BpmnSubProcess, BpmnActivity, BpmnAnnotation, BpmnShape, UmlActivityShape, MethodArguments, UmlClassAttribute, UmlClassMethod, UmlClass, UmlInterface, UmlEnumerationMember, UmlEnumeration, UmlClassifierShape, DiagramShape, Node, Header, Lane, Phase, SwimLane, ChildContainer, Selector, BpmnDiagrams, getBpmnShapePathData, getBpmnTriggerShapePathData, getBpmnGatewayShapePathData, getBpmnTaskShapePathData, getBpmnLoopShapePathData, Decorator, Vector, ConnectorShape, ActivityFlow, BpmnFlow, ConnectorSegment, StraightSegment, BezierSegment, OrthogonalSegment, DiagramConnectorSegment, getDirection, isEmptyVector, getBezierPoints, getBezierBounds, bezierPoints, MultiplicityLabel, ClassifierMultiplicity, RelationShip, DiagramConnectorShape, Connector, ConnectorBridging, Snapping, UndoRedo, DiagramTooltip, initTooltip, updateTooltip, LayoutAnimation, SymbolSize, SymbolPaletteInfo, UserHandle, ToolBase, SelectTool, ConnectTool, MoveTool, RotateTool, ResizeTool, NodeDrawingTool, ConnectorDrawingTool, TextDrawingTool, ZoomPanTool, ExpandTool, LabelTool, PolygonDrawingTool, PolyLineDrawingTool, LabelDragTool, LabelResizeTool, LabelRotateTool, DiagramEventHandler, CommandHandler, findToolToActivate, findPortToolToActivate, contains, hasSelection, hasSingleConnection, isSelected, getCursor, ConnectorEditing, updateCanvasBounds, removeChildInContainer, findBounds, createHelper, renderContainerHelper, checkParentAsContainer, checkChildNodeInContainer, addChildToContainer, updateLaneBoundsAfterAddChild, renderStackHighlighter, moveChildInStack, LineRouting, CrudAction, ConnectionDataSource, DataSource, Gridlines, SnapSettings, KeyGesture, Command, CommandManager, ContextMenuSettings, CustomCursorAction, DataMappingItems, Layout, MindMap, HierarchicalTree, RadialTree, GraphForceNode, SymmetricLayout, GraphLayoutManager, ComplexHierarchicalTree, Palette, SymbolDragSize, SymbolPreview, SymbolPalette, Ruler, Overview } from '@syncfusion/ej2-diagrams';
+export { LayerDirective, LayersDirective, CustomCursorDirective, CustomCursorsDirective, ConnectorFixedUserHandleDirective, ConnectorFixedUserHandlesDirective, ConnectorAnnotationDirective, ConnectorAnnotationsDirective, ConnectorDirective, ConnectorsDirective, NodeFixedUserHandleDirective, NodeFixedUserHandlesDirective, NodeAnnotationDirective, NodeAnnotationsDirective, PortDirective, PortsDirective, NodeDirective, NodesDirective, DiagramComponent, DiagramModule, DiagramAllModule, HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, LineRoutingService, ConnectorEditingService, BlazorTooltipService, PaletteDirective, PalettesDirective, SymbolPaletteComponent, SymbolPaletteModule, SymbolPaletteAllModule, OverviewComponent, OverviewModule, OverviewAllModule, inputs as ɵa, outputs$9 as ɵb, inputs$2 as ɵe, outputs$12 as ɵf, inputs$1 as ɵc, outputs$11 as ɵd };
+export { Diagram, PrintAndExport, Size, Rect, MatrixTypes, Matrix, identityMatrix, transformPointByMatrix, transformPointsByMatrix, rotateMatrix, scaleMatrix, translateMatrix, multiplyMatrix, Point, BlazorAction, PortVisibility, SnapConstraints, SelectorConstraints, ConnectorConstraints, AnnotationConstraints, NodeConstraints, ElementAction, ThumbsConstraints, DiagramConstraints, DiagramTools, Transform, RenderMode, KeyModifiers, Keys, DiagramAction, RendererAction, RealAction, NoOfSegments, DiagramEvent, PortConstraints, contextMenuClick, contextMenuOpen, contextMenuBeforeItemRender, Thickness, Margin, Shadow, Stop, Gradient, DiagramGradient, LinearGradient, RadialGradient, ShapeStyle, StrokeStyle, TextStyle, DiagramShapeStyle, DiagramElement, PathElement, ImageElement, TextElement, Container, Canvas, GridPanel, RowDefinition, ColumnDefinition, GridRow, GridCell, StackPanel, findConnectorPoints, swapBounds, findAngle, findPoint, getIntersection, getIntersectionPoints, orthoConnection2Segment, getPortDirection, getOuterBounds, getOppositeDirection, processPathData, parsePathData, getRectanglePath, getPolygonPath, pathSegmentCollection, transformPath, updatedSegment, scalePathData, splitArrayCollection, getPathString, getString, randomId, getIndex, templateCompiler, cornersPointsBeforeRotation, getBounds, cloneObject, getInternalProperties, cloneArray, extendObject, extendArray, textAlignToString, wordBreakToString, bBoxText, middleElement, overFlow, whiteSpaceToString, rotateSize, rotatePoint, getOffset, getFunction, completeRegion, findNodeByName, findObjectType, setSwimLaneDefaults, getSpaceValue, getInterval, setUMLActivityDefaults, setConnectorDefaults, findNearestPoint, isDiagramChild, groupHasType, updateDefaultValues, updateLayoutValue, isPointOverConnector, intersect3, intersect2, getLineSegment, getPoints, getTooltipOffset, initfixedUserHandlesSymbol, sort, getAnnotationPosition, getOffsetOfConnector, getAlignedPosition, alignLabelOnSegments, getBezierDirection, removeChildNodes, serialize, deserialize, upgrade, updateStyle, updateHyperlink, updateShapeContent, updateShape, updateContent, updateUmlActivityNode, getUMLFinalNode, getUMLActivityShapes, removeGradient, removeItem, updateConnector, getUserHandlePosition, canResizeCorner, canShowCorner, checkPortRestriction, findAnnotation, findPort, getInOutConnectPorts, findObjectIndex, getObjectFromCollection, scaleElement, arrangeChild, insertObject, getElement, getCollectionChangeEventArguements, getDropEventArguements, getPoint, getObjectType, flipConnector, updatePortEdges, alignElement, cloneSelectedObjects, updatePathElement, checkPort, findPath, findDistance, cloneBlazorObject, checkBrowserInfo, canMeasureDecoratorPath, CanvasRenderer, DiagramRenderer, DataBinding, getBasicShape, getPortShape, getDecoratorShape, getIconShape, getFlowShape, Hyperlink, Annotation, ShapeAnnotation, PathAnnotation, Port, PointPort, menuClass, DiagramContextMenu, Shape, Path, Native, Html, Image, Text, BasicShape, FlowShape, BpmnGateway, BpmnDataObject, BpmnTask, BpmnEvent, BpmnSubEvent, BpmnTransactionSubProcess, BpmnSubProcess, BpmnActivity, BpmnAnnotation, BpmnShape, UmlActivityShape, MethodArguments, UmlClassAttribute, UmlClassMethod, UmlClass, UmlInterface, UmlEnumerationMember, UmlEnumeration, UmlClassifierShape, DiagramShape, Node, Header, Lane, Phase, SwimLane, ChildContainer, Selector, BpmnDiagrams, getBpmnShapePathData, getBpmnTriggerShapePathData, getBpmnGatewayShapePathData, getBpmnTaskShapePathData, getBpmnLoopShapePathData, Decorator, Vector, ConnectorShape, ActivityFlow, BpmnFlow, ConnectorSegment, StraightSegment, BezierSegment, OrthogonalSegment, DiagramConnectorSegment, getDirection, isEmptyVector, getBezierPoints, getBezierBounds, bezierPoints, MultiplicityLabel, ClassifierMultiplicity, RelationShip, DiagramConnectorShape, Connector, ConnectorBridging, Snapping, UndoRedo, DiagramTooltip, initTooltip, updateTooltip, LayoutAnimation, SymbolSize, SymbolPaletteInfo, FixedUserHandle, NodeFixedUserHandle, ConnectorFixedUserHandle, UserHandle, ToolBase, SelectTool, FixedUserHandleTool, ConnectTool, MoveTool, RotateTool, ResizeTool, NodeDrawingTool, ConnectorDrawingTool, TextDrawingTool, ZoomPanTool, ExpandTool, LabelTool, PolygonDrawingTool, PolyLineDrawingTool, LabelDragTool, LabelResizeTool, LabelRotateTool, DiagramEventHandler, CommandHandler, findToolToActivate, findPortToolToActivate, contains, hasSelection, hasSingleConnection, isSelected, getCursor, ConnectorEditing, updateCanvasBounds, removeChildInContainer, findBounds, createHelper, renderContainerHelper, checkParentAsContainer, checkChildNodeInContainer, addChildToContainer, updateLaneBoundsAfterAddChild, renderStackHighlighter, moveChildInStack, LineRouting, CrudAction, ConnectionDataSource, DataSource, Gridlines, SnapSettings, KeyGesture, Command, CommandManager, ContextMenuSettings, CustomCursorAction, DataMappingItems, BlazorAnimation, BlazorTooltip, Layout, MindMap, HierarchicalTree, RadialTree, GraphForceNode, SymmetricLayout, GraphLayoutManager, ComplexHierarchicalTree, Palette, SymbolDragSize, SymbolPreview, SymbolPalette, Ruler, Overview } from '@syncfusion/ej2-diagrams';
 //# sourceMappingURL=ej2-angular-diagrams.es5.js.map

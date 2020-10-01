@@ -874,13 +874,13 @@
   text-align: right;
 }
 
-.e-device .e-rule-value {
+*.e-device .e-rule-value {
   width: 100%;
 }
 
-.e-bigger .e-group-body .e-rule-container .e-rule-filter,
-.e-bigger .e-group-body .e-rule-container .e-operator,
-.e-bigger .e-group-body .e-rule-container .e-value {
+*.e-bigger .e-group-body .e-rule-container .e-rule-filter,
+*.e-bigger .e-group-body .e-rule-container .e-operator,
+*.e-bigger .e-group-body .e-rule-container .e-value {
   padding: 15px 0 15px 15px;
 }
 

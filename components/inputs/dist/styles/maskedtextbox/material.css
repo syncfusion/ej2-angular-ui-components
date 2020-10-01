@@ -6,6 +6,15 @@
   }
 }
 
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 /*! maskedtextbox layout */
 .e-control-wrapper.e-mask .e-maskedtextbox {
   font-family: Arial, "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";

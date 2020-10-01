@@ -255,6 +255,27 @@
   opacity: 1;
 }
 
+.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon,
+.e-input-group input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon,
+.e-input-group.e-control-wrapper input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon,
+.e-float-input input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon,
+.e-float-input.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon,
+.e-float-input.e-input-group input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon,
+.e-float-input.e-input-group.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-input-group input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-input-group.e-control-wrapper input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-input-group input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-input-group.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide {
+  display: none;
+}
+
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
   font-family: inherit;

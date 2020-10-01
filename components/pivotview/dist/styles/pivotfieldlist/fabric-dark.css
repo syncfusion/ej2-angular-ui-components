@@ -2386,7 +2386,7 @@
   background-color: #414040;
 }
 
-.e-rtl .e-select-table {
+*.e-rtl .e-select-table {
   padding: 8px 5px;
 }
 

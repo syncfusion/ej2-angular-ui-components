@@ -3017,9 +3017,9 @@ textarea.e-input.e-bigger.e-small,
   border-bottom-width: 1px;
 }
 
-.e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
+.e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
   font-size: 12px;
   font-weight: bold;
   padding-right: 0;
@@ -3028,12 +3028,12 @@ textarea.e-input.e-bigger.e-small,
           user-select: text;
 }
 
-.e-bigger .e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-bigger.e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-bigger .e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-bigger.e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-bigger .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
-.e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
+.e-bigger .e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger.e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
+.e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
   font-size: 13px;
   font-weight: bold;
   padding-right: 0;
@@ -3043,12 +3043,12 @@ textarea.e-input.e-bigger.e-small,
           user-select: text;
 }
 
-.e-small .e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-small.e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-small .e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-small.e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-small .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
-.e-small.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
+.e-small .e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-small.e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-small .e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-small.e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-small .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
+.e-small.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
   font-size: 11px;
   font-weight: bold;
   padding-right: 0;
@@ -3058,16 +3058,16 @@ textarea.e-input.e-bigger.e-small,
           user-select: text;
 }
 
-.e-bigger .e-float-input.e-small input:-webkit-autofill ~ label.e-float-text,
-.e-bigger.e-small .e-float-input input:-webkit-autofill ~ label.e-float-text,
-.e-float-input.e-bigger.e-small input:-webkit-autofill ~ label.e-float-text,
-.e-bigger .e-float-input.e-small.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-bigger.e-small .e-float-input.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-float-input.e-bigger.e-small.e-control-wrapper.e-autofill input:-webkit-autofill ~ label.e-float-text,
-.e-small.e-bigger .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
-.e-small.e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
-.e-bigger .e-small.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
-.e-small .e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
+.e-bigger .e-float-input.e-small:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger.e-small .e-float-input:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-float-input.e-bigger.e-small:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger .e-float-input.e-small.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-bigger.e-small .e-float-input.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-float-input.e-bigger.e-small.e-control-wrapper.e-autofill:not(.e-outline) input:-webkit-autofill ~ label.e-float-text,
+.e-small.e-bigger .e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
+.e-small.e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
+.e-bigger .e-small.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom,
+.e-small .e-bigger.e-float-input.e-control-wrapper.e-autofill:not(.e-input-focus):not(.e-outline) input:not(:focus):valid:-webkit-autofill ~ label.e-float-text.e-label-bottom {
   font-size: 12px;
   font-weight: bold;
   padding-right: 0;

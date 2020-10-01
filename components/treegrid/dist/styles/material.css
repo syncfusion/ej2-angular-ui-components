@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 .e-ddl.e-control-wrapper .e-ddl-icon::before {
   transform: rotate(0deg);
   transition: transform 300ms ease;
@@ -350,7 +359,7 @@
 
 .e-treegrid .e-errorelem::before {
   color: #e3165b;
-  content: '\e22a';
+  content: "";
   transform: rotate(180deg);
 }
 

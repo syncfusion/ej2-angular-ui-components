@@ -1,9 +1,9 @@
-import { Directive, ViewContainerRef, ContentChildren } from '@angular/core';
+import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
+import { ImagesDirective } from './image.directive';
 
-
-let input: string[] = ['colSpan', 'format', 'formula', 'hyperlink', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+let input: string[] = ['colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -29,13 +29,13 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
-
+        childImage: new ContentChild(ImagesDirective)
     }
 })
 export class CellDirective extends ComplexBase<CellDirective> {
     public directivePropList: any;
-
-
+    public childImage: any;
+    public tags: string[] = ['image'];
     /** 
      * Specifies the column-wise cell merge count.
      * @default 1
@@ -57,6 +57,11 @@ export class CellDirective extends ComplexBase<CellDirective> {
      * @default ''
      */
     public hyperlink: any;
+    /** 
+     * Specifies the image of the cell.
+     * @default []
+     */
+    public image: any;
     /** 
      * Specifies the index of the cell.
      * @default 0

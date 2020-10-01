@@ -634,13 +634,19 @@
   }
 }
 
-.e-pager.sf-pager .e-link,
-.e-pager.sf-pager .e-prev,
 .e-pager.sf-pager .e-last,
-.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default,
 .e-pager.sf-pager .e-mnext,
 .e-pager.sf-pager .e-mlast {
   margin-left: -4px;
+}
+
+.e-pager.sf-pager .e-prev {
+  margin-left: -3px;
+}
+
+.e-pager.sf-pager .e-link,
+.e-pager.sf-pager .e-next.e-icons.e-icon-next.e-nextpage.e-pager-default {
+  margin-left: 0;
 }
 
 /*! Pager theme */
@@ -770,6 +776,15 @@
   100% {
     opacity: 0;
     transform: scale(4);
+  }
+}
+
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -958,21 +973,26 @@
   padding-top: 4px;
 }
 
-.sf-grid .e-excelfilter .e-contextmenu-wrapper.e-sfcontextmenu .e-ul .e-menu-item:not(.e-separator) {
+.sf-grid .e-excelfilter .e-contextmenu-container.e-sfcontextmenu .e-ul .e-menu-item:not(.e-separator) {
   height: 26px;
   line-height: 26px;
 }
 
-.sf-grid .e-excelfilter .e-contextmenu-wrapper.e-sfcontextmenu .e-ul .e-separator {
+.sf-grid .e-excelfilter .e-searchbox {
+  padding-left: 0;
+}
+
+.sf-grid .e-excelfilter .e-contextmenu-container.e-sfcontextmenu .e-ul .e-separator {
   height: auto;
 }
 
-.sf-grid .e-excelfilter .e-contextmenu-wrapper.e-sfcontextmenu .e-ul {
+.sf-grid .e-excelfilter .e-contextmenu-container.e-sfcontextmenu .e-ul {
   position: absolute;
 }
 
-.sf-grid .e-excelfilter .e-contextmenu-wrapper.e-sfcontextmenu {
+.sf-grid .e-excelfilter .e-contextmenu-container.e-sfcontextmenu {
   display: inline-block;
+  position: relative;
   width: 100%;
 }
 
@@ -1124,13 +1144,17 @@
 }
 
 .e-bigger .e-excelfilter .e-contextmenu-wrapper ul li,
-.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li {
+.e-bigger .e-excelfilter .e-contextmenu-container ul li,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li,
+.e-excelfilter.e-bigger .e-contextmenu-container ul li {
   height: 48px;
   line-height: 48px;
 }
 
 .e-bigger .e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
-.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li .e-menu-icon {
+.e-bigger .e-excelfilter .e-contextmenu-container ul li .e-menu-icon,
+.e-excelfilter.e-bigger .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter.e-bigger .e-contextmenu-container ul li .e-menu-icon {
   height: 48px;
   line-height: 48px;
   margin-right: 15px;
@@ -1140,6 +1164,32 @@
 .e-excelfilter.e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 48px;
   line-height: 48px;
+}
+
+.e-bigger .e-excelfilter .e-dlg-content,
+.e-excelfilter.e-bigger .e-dlg-content {
+  padding-left: 11px;
+}
+
+.e-bigger .e-excelfilter .e-ftrchk,
+.e-bigger .e-excelfilter .e-searchbox,
+.e-excelfilter.e-bigger .e-ftrchk,
+.e-excelfilter.e-bigger .e-searchbox {
+  padding-left: 13px;
+}
+
+.e-bigger .e-excelfilter.e-rtl .e-dlg-content,
+.e-excelfilter.e-bigger.e-rtl .e-dlg-content {
+  padding-left: 24px;
+  padding-right: 11px;
+}
+
+.e-bigger .e-excelfilter.e-rtl .e-ftrchk,
+.e-bigger .e-excelfilter.e-rtl .e-searchbox,
+.e-excelfilter.e-bigger.e-rtl .e-ftrchk,
+.e-excelfilter.e-bigger.e-rtl .e-searchbox {
+  padding-left: 0;
+  padding-right: 13px;
 }
 
 .e-excelfilter .e-checkboxlist {
@@ -1171,12 +1221,14 @@
   position: static;
 }
 
-.e-excelfilter .e-contextmenu-wrapper ul li {
+.e-excelfilter .e-contextmenu-wrapper ul li,
+.e-excelfilter .e-contextmenu-container ul li {
   height: 36px;
   line-height: 36px;
 }
 
-.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter .e-contextmenu-container ul li .e-menu-icon {
   height: 36px;
   line-height: 36px;
   margin-right: 12px;
@@ -1191,7 +1243,8 @@
   line-height: 36px;
 }
 
-.e-excelfilter .e-contextmenu-wrapper ul {
+.e-excelfilter .e-contextmenu-wrapper ul,
+.e-excelfilter .e-contextmenu-container ul {
   border: 0;
   box-shadow: none;
   max-width: 300px;
@@ -1222,12 +1275,14 @@
   position: static;
 }
 
-.e-excelfilter .e-contextmenu-wrapper ul li {
+.e-excelfilter .e-contextmenu-wrapper ul li
+.e-contextmenu-container ul li {
   height: 36px;
   line-height: 36px;
 }
 
-.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon {
+.e-excelfilter .e-contextmenu-wrapper ul li .e-menu-icon,
+.e-excelfilter .e-contextmenu-container ul li .e-menu-icon {
   height: 36px;
   line-height: 36px;
   margin-right: 12px;
@@ -1240,14 +1295,6 @@
 .e-excelfilter .e-contextmenu-wrapper ul .e-menu-item .e-caret {
   height: 36px;
   line-height: 36px;
-}
-
-.e-excelfilter .e-contextmenu-wrapper ul {
-  border: 0;
-  box-shadow: none;
-  max-width: 300px;
-  padding-bottom: 4px;
-  position: static;
 }
 
 .e-excelfilter .e-footer-content {
@@ -1269,6 +1316,30 @@
   -webkit-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.e-excelfilter .e-dlg-content {
+  padding-left: 9px;
+}
+
+.e-excelfilter .e-ftrchk,
+.e-excelfilter .e-searchbox {
+  padding-left: 9px;
+}
+
+.e-excelfilter.e-rtl .e-dlg-content {
+  padding-left: 18px;
+  padding-right: 9px;
+}
+
+.e-excelfilter.e-rtl .e-ftrchk,
+.e-excelfilter.e-rtl .e-searchbox {
+  padding-left: 0;
+  padding-right: 9px;
+}
+
+.e-excelfilter .e-searchbox {
+  display: block;
 }
 
 .e-ftrchk {
@@ -1295,6 +1366,15 @@
   100% {
     opacity: 0;
     transform: scale(4);
+  }
+}
+
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -1547,7 +1627,7 @@
 }
 
 /*! Blazor column menu custom css */
-.e-contextmenu-wrapper.e-sfcontextmenu.e-hide-menu {
+.e-contextmenu-container.e-sfcontextmenu.e-hide-menu {
   visibility: hidden;
 }
 
@@ -1717,32 +1797,31 @@
 
 .e-bigger .e-grid .e-dialog.e-checkboxfilter,
 .e-grid.e-bigger .e-dialog.e-checkboxfilter {
-  min-height: 328px;
+  min-height: 352px;
 }
 
-.e-bigger .e-grid .e-filter-popup .e-dlg-content,
-.e-grid.e-bigger .e-filter-popup .e-dlg-content {
-  padding-bottom: 0;
+.e-bigger .e-grid .e-checkboxfilter .e-dlg-content,
+.e-grid.e-bigger .e-checkboxfilter .e-dlg-content {
   padding-left: 11px;
 }
 
-.e-bigger .e-grid .e-filter-popup .e-ftrchk,
-.e-bigger .e-grid .e-filter-popup .e-searchbox,
-.e-grid.e-bigger .e-filter-popup .e-ftrchk,
-.e-grid.e-bigger .e-filter-popup .e-searchbox {
+.e-bigger .e-grid .e-checkboxfilter .e-ftrchk,
+.e-bigger .e-grid .e-checkboxfilter .e-searchbox,
+.e-grid.e-bigger .e-checkboxfilter .e-ftrchk,
+.e-grid.e-bigger .e-checkboxfilter .e-searchbox {
   padding-left: 13px;
 }
 
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-dlg-content,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-dlg-content {
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-dlg-content,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-dlg-content {
   padding-left: 24px;
   padding-right: 11px;
 }
 
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-ftrchk,
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-searchbox,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-ftrchk,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-searchbox {
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-searchbox,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-searchbox {
   padding-left: 0;
   padding-right: 13px;
 }
@@ -3212,20 +3291,19 @@
 }
 
 .e-grid .e-dialog.e-checkboxfilter {
-  min-height: 304px;
+  min-height: 322px;
 }
 
-.e-grid .e-filter-popup .e-searchbox {
+.e-grid .e-checkboxfilter .e-searchbox {
   display: block;
 }
 
-.e-grid .e-filter-popup .e-dlg-content {
-  padding-bottom: 0;
+.e-grid .e-checkboxfilter .e-dlg-content {
   padding-left: 9px;
 }
 
-.e-grid .e-filter-popup .e-ftrchk,
-.e-grid .e-filter-popup .e-searchbox {
+.e-grid .e-checkboxfilter .e-ftrchk,
+.e-grid .e-checkboxfilter .e-searchbox {
   padding-left: 9px;
 }
 
@@ -3922,13 +4000,13 @@
   border-right: 0;
 }
 
-.e-grid.e-rtl .e-filter-popup .e-dlg-content {
+.e-grid.e-rtl .e-checkboxfilter .e-dlg-content {
   padding-left: 18px;
   padding-right: 9px;
 }
 
-.e-grid.e-rtl .e-filter-popup .e-ftrchk,
-.e-grid.e-rtl .e-filter-popup .e-searchbox {
+.e-grid.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-grid.e-rtl .e-checkboxfilter .e-searchbox {
   padding-left: 0;
   padding-right: 9px;
 }

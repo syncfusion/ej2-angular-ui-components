@@ -1,3 +1,4 @@
+export {ImageDirective,ImagesDirective} from './spreadsheet/image.directive';
 export {CellDirective,CellsDirective} from './spreadsheet/cells.directive';
 export {RowDirective,RowsDirective} from './spreadsheet/rows.directive';
 export {ColumnDirective,ColumnsDirective} from './spreadsheet/columns.directive';

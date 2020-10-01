@@ -1,10 +1,11 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
+import { NodeFixedUserHandlesDirective } from './node-fixeduserhandle.directive';
 import { NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortsDirective } from './ports.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'fixedUserHandles', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -19,15 +20,17 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
+        childFixedUserHandles: new ContentChild(NodeFixedUserHandlesDirective), 
         childAnnotations: new ContentChild(NodeAnnotationsDirective), 
         childPorts: new ContentChild(PortsDirective)
     }
 })
 export class NodeDirective extends ComplexBase<NodeDirective> {
     public directivePropList: any;
+    public childFixedUserHandles: any;
     public childAnnotations: any;
     public childPorts: any;
-    public tags: string[] = ['annotations', 'ports'];
+    public tags: string[] = ['fixedUserHandles', 'annotations', 'ports'];
     /** 
      * Allows the user to save custom information/data about a node/connector
      * @aspdefaultvalueignore 
@@ -165,6 +168,14 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @default {}
      */
     public expandIcon: any;
+    /** 
+     * Specifies the collection of the fixed user handle
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     * @blazortype ObservableCollection<DiagramNodeFixedUserHandle>
+     */
+    public fixedUserHandles: any;
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 

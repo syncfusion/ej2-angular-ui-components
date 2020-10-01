@@ -1611,7 +1611,7 @@
   color: #f0f0f0;
   font-size: 13px;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 4px 15px;
   text-overflow: ellipsis;
 }
 
@@ -1646,6 +1646,10 @@
   background-color: #1a1a1a;
 }
 
+.e-schedule .e-timeline-year-view .e-resource-column-wrap .e-resource-cells:focus {
+  background-color: #393939;
+}
+
 .e-schedule .e-timeline-year-view .e-resource-column-table {
   height: 100%;
 }
@@ -1660,6 +1664,7 @@
   float: left;
   font-family: 'e-icons';
   font-size: 12px;
+  padding: 4px 7px;
 }
 
 .e-schedule .e-timeline-year-view .e-resource-collapse {
@@ -1968,7 +1973,7 @@
   color: #f0f0f0;
   font-size: 13px;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 4px 15px;
   text-overflow: ellipsis;
 }
 
@@ -1994,6 +1999,18 @@
   padding-left: 15px;
   padding-right: 0;
   vertical-align: middle;
+}
+
+.e-schedule .e-timeline-view .e-resource-cells:focus,
+.e-schedule .e-timeline-month-view .e-resource-cells:focus {
+  background-color: #393939;
+}
+
+.e-schedule .e-timeline-view .e-resource-cells:focus .e-resource-tree-icon,
+.e-schedule .e-timeline-month-view .e-resource-cells:focus .e-resource-tree-icon {
+  background-color: #484848;
+  border-radius: 50%;
+  color: #fff;
 }
 
 .e-schedule .e-timeline-view .e-resource-column-wrap,
@@ -2026,6 +2043,7 @@
   float: left;
   font-family: 'e-icons';
   font-size: 12px;
+  padding: 4px 7px;
 }
 
 .e-schedule .e-timeline-view .e-resource-collapse,

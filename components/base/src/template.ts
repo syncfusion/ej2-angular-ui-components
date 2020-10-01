@@ -23,9 +23,9 @@ export function compile(templateEle: AngularElementType, helper?: Object):
             let viewRef: EmbeddedViewRef<Object> = conRef.createEmbeddedView(templateEle as TemplateRef<Object>, context);
             viewRef.markForCheck();
             /* istanbul ignore next */
-            let viewCollection: { [key: string]: EmbeddedViewRef<Object>[] } = component ?
+            let viewCollection: { [key: string]: EmbeddedViewRef<Object>[] } = (component && component.registeredTemplate) ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
-            propName = propName ? propName : pName;
+            propName = (propName && component.registeredTemplate) ? propName : pName;
             if (typeof viewCollection[propName] === 'undefined') {
                 viewCollection[propName] = [];
             }

@@ -458,6 +458,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-card-container,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-limits {
   display: none;
 }
@@ -493,80 +494,106 @@
   color: #757575;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-multi-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-multi-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-multi-card-container {
   display: none;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container {
+  height: inherit;
   overflow: auto;
   padding: 8px 8px 0;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-empty-card,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-empty-card {
+  font-size: 13px;
+  line-height: 40px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card {
   margin-bottom: 8px;
   min-height: 50px;
   border-radius: 0;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-draggable {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-draggable,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-draggable {
   cursor: all-scroll;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-header {
   padding: 7px 11px 0;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-header .e-card-header-title {
   font-size: 14px;
   line-height: 20px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-footer {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-footer,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-footer {
   display: -ms-inline-flexbox;
   display: inline-flex;
   line-height: normal;
   padding: 0 11px 7px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-content {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-content,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-content {
   font-size: 13px;
   line-height: 20px;
   padding: 8px 11px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color {
   border-left: 3px solid;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-header {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-header,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color .e-card-header {
   padding: 7px 11px 0 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-content {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-content,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color .e-card-content {
   padding: 8px 11px 8px 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-tags {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-tags,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color .e-card-tags {
   padding: 0 11px 8px 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color.e-selection {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color.e-selection,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color.e-selection {
   border-left: 3px solid;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color.e-selection:hover {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color.e-selection:hover,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color.e-selection:hover {
   padding: 1px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color:hover {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color:hover,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color:hover {
   border-left: 4px solid;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-footer {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color .e-card-footer,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color .e-card-footer {
   padding: 0 11px 7px 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-tag {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-tag,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-tag {
   border-radius: 12px;
   display: inline-block;
   font-size: 12px;
@@ -579,38 +606,46 @@
   border-radius: 0;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-tags {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-tags,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-tags {
   line-height: 1;
   padding: 0 11px 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-footer {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-footer,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-footer {
   padding: 0 11px 7px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-cloned-card {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-cloned-card,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-cloned-card {
   position: absolute;
   z-index: 1;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-selection:hover {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-selection:hover,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-selection:hover {
   padding: 1px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color:focus {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-card-color:focus,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-card-color:focus {
   border-left: 3px solid;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-kanban-dragged-card {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.e-kanban-dragged-card,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card.e-kanban-dragged-card {
   display: none;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-clone {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-clone,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-multi-card-clone {
   border: 1px solid #757575;
   height: 34px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-text {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-text,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-multi-card-text {
   background: #fff;
   display: table-cell;
   padding-left: 8px;
@@ -619,15 +654,19 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dragged-clone,
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dropped-clone {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dropped-clone,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dragged-clone,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dropped-clone {
   margin-bottom: 8px;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dragged-clone {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dragged-clone,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dragged-clone {
   border: 1px dashed #757575;
 }
 
-.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dropped-clone {
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dropped-clone,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dropped-clone {
   background: rgba(64, 0, 116, 0.5);
   border: 1px dashed #400074;
 }
@@ -715,7 +754,8 @@
   border: 1px solid #757575;
 }
 
-.e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-card-container {
   min-height: 50px;
 }
 
@@ -727,7 +767,8 @@
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells > .e-collapse-header-text,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-limits,
 .e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-show-add-button,
-.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper {
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-wrapper,
+.e-kanban .e-kanban-content .e-content-row.e-collapsed:not(.e-swimlane-row) .e-content-cells .e-card-container {
   display: none;
 }
 
@@ -854,16 +895,21 @@
 }
 
 .e-bigger .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title,
-.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title {
+.e-bigger .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-header .e-card-header-title,
+.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title,
+.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-header .e-card-header-title {
   font-size: 15px;
 }
 
 .e-bigger .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-content,
-.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-content {
+.e-bigger .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-content,
+.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-content,
+.e-bigger.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-card .e-card-content {
   font-size: 14px;
 }
 
-.e-mobile-popup-wrapper.e-device {
+.e-mobile-popup-wrapper.e-device,
+.e-mobile-popup-container.e-device {
   background-color: #fff;
   border-radius: 2px;
   bottom: 0;
@@ -888,11 +934,13 @@
   z-index: 1004;
 }
 
-.e-mobile-popup-wrapper.e-device .e-popup-header .e-close {
+.e-mobile-popup-wrapper.e-device .e-popup-header .e-close,
+.e-mobile-popup-container.e-device .e-popup-header .e-close {
   background-color: transparent;
 }
 
-.e-mobile-popup-wrapper.e-device .e-popup-content {
+.e-mobile-popup-wrapper.e-device .e-popup-content,
+.e-mobile-popup-container.e-device .e-popup-content {
   font-size: 15px;
   font-weight: 500;
   overflow: hidden;
@@ -904,11 +952,13 @@
   padding: 3px;
 }
 
-.e-kanban-dialog .e-kanban-form-wrapper table {
+.e-kanban-dialog .e-kanban-form-wrapper table,
+.e-kanban-dialog .e-kanban-form-container table {
   width: 100%;
 }
 
-.e-kanban-dialog .e-kanban-form-wrapper table td {
+.e-kanban-dialog .e-kanban-form-wrapper table td,
+.e-kanban-dialog .e-kanban-form-container table td {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 18px;
@@ -917,12 +967,14 @@
   text-align: left;
 }
 
-.e-kanban-dialog .e-kanban-form-wrapper table .e-label {
+.e-kanban-dialog .e-kanban-form-wrapper table .e-label,
+.e-kanban-dialog .e-kanban-form-container table .e-label {
   padding-right: 10px;
   width: 35px;
 }
 
-.e-kanban-dialog .e-kanban-form-wrapper table .e-field {
+.e-kanban-dialog .e-kanban-form-wrapper table .e-field,
+.e-kanban-dialog .e-kanban-form-container table .e-field {
   width: 100%;
 }
 
@@ -930,13 +982,14 @@
   float: left;
 }
 
-.e-rtl .e-kanban-form-wrapper table .e-label {
+*.e-rtl .e-kanban-form-wrapper table .e-label,
+*.e-rtl .e-kanban-form-container table .e-label {
   padding-left: 10px;
   padding-right: 0;
   text-align: right;
 }
 
-.e-rtl .e-dialog-delete {
+*.e-rtl .e-dialog-delete {
   float: right;
 }
 

@@ -12,8 +12,61 @@ import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Dire
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
 import { AllModule, BasicModule, CellFormat, Clipboard, CollaborativeEditing, ContextMenu, DataBind, Edit, Formula, FormulaBar, KeyboardNavigation, KeyboardShortcut, NumberFormat, Open, Ribbon, Save, Selection, SheetTabs, Spreadsheet } from '@syncfusion/ej2-spreadsheet';
 import { CommonModule } from '@angular/common';
-var input = ['colSpan', 'format', 'formula', 'hyperlink', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+var input = ['height', 'id', 'left', 'src', 'top', 'width'];
 var outputs = [];
+var ImageDirective = /** @class */ (function (_super) {
+    __extends(ImageDirective, _super);
+    /**
+     * @param {?} viewContainerRef
+     */
+    function ImageDirective(viewContainerRef) {
+        var _this = _super.call(this) || this;
+        _this.viewContainerRef = viewContainerRef;
+        setValue('currentInstance', _this, _this.viewContainerRef);
+        _this.registerEvents(outputs);
+        _this.directivePropList = input;
+        return _this;
+    }
+    return ImageDirective;
+}(ComplexBase));
+ImageDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-images>e-image',
+                inputs: input,
+                outputs: outputs,
+                queries: {}
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ImageDirective.ctorParameters = function () { return [
+    { type: ViewContainerRef, },
+]; };
+/**
+ * Image Array Directive
+ */
+var ImagesDirective = /** @class */ (function (_super) {
+    __extends(ImagesDirective, _super);
+    function ImagesDirective() {
+        return _super.call(this, 'image') || this;
+    }
+    return ImagesDirective;
+}(ArrayBase));
+ImagesDirective.decorators = [
+    { type: Directive, args: [{
+                selector: 'e-cell>e-images',
+                queries: {
+                    children: new ContentChildren(ImageDirective)
+                },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ImagesDirective.ctorParameters = function () { return []; };
+var input$1 = ['colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+var outputs$1 = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
  * It must be contained in a `e-row` directive.
@@ -41,9 +94,10 @@ var CellDirective = /** @class */ (function (_super) {
     function CellDirective(viewContainerRef) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
+        _this.tags = ['image'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs);
-        _this.directivePropList = input;
+        _this.registerEvents(outputs$1);
+        _this.directivePropList = input$1;
         return _this;
     }
     return CellDirective;
@@ -51,9 +105,11 @@ var CellDirective = /** @class */ (function (_super) {
 CellDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-cells>e-cell',
-                inputs: input,
-                outputs: outputs,
-                queries: {}
+                inputs: input$1,
+                outputs: outputs$1,
+                queries: {
+                    childImage: new ContentChild(ImagesDirective)
+                }
             },] },
 ];
 /**
@@ -84,8 +140,8 @@ CellsDirective.decorators = [
  * @nocollapse
  */
 CellsDirective.ctorParameters = function () { return []; };
-var input$1 = ['cells', 'customHeight', 'height', 'hidden', 'index'];
-var outputs$1 = [];
+var input$2 = ['cells', 'customHeight', 'height', 'hidden', 'index'];
+var outputs$2 = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -111,8 +167,8 @@ var RowDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['cells'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$1);
-        _this.directivePropList = input$1;
+        _this.registerEvents(outputs$2);
+        _this.directivePropList = input$2;
         return _this;
     }
     return RowDirective;
@@ -120,8 +176,8 @@ var RowDirective = /** @class */ (function (_super) {
 RowDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-rows>e-row',
-                inputs: input$1,
-                outputs: outputs$1,
+                inputs: input$2,
+                outputs: outputs$2,
                 queries: {
                     childCells: new ContentChild(CellsDirective)
                 }
@@ -155,8 +211,8 @@ RowsDirective.decorators = [
  * @nocollapse
  */
 RowsDirective.ctorParameters = function () { return []; };
-var input$2 = ['customWidth', 'hidden', 'index', 'width'];
-var outputs$2 = [];
+var input$3 = ['customWidth', 'hidden', 'index', 'width'];
+var outputs$3 = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -181,8 +237,8 @@ var ColumnDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$2);
-        _this.directivePropList = input$2;
+        _this.registerEvents(outputs$3);
+        _this.directivePropList = input$3;
         return _this;
     }
     return ColumnDirective;
@@ -190,8 +246,8 @@ var ColumnDirective = /** @class */ (function (_super) {
 ColumnDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-columns>e-column',
-                inputs: input$2,
-                outputs: outputs$2,
+                inputs: input$3,
+                outputs: outputs$3,
                 queries: {}
             },] },
 ];
@@ -223,8 +279,8 @@ ColumnsDirective.decorators = [
  * @nocollapse
  */
 ColumnsDirective.ctorParameters = function () { return []; };
-var input$3 = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
-var outputs$3 = [];
+var input$4 = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
+var outputs$4 = [];
 /**
  * `e-range` directive represent a range of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -249,8 +305,8 @@ var RangeDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$3);
-        _this.directivePropList = input$3;
+        _this.registerEvents(outputs$4);
+        _this.directivePropList = input$4;
         return _this;
     }
     return RangeDirective;
@@ -258,8 +314,8 @@ var RangeDirective = /** @class */ (function (_super) {
 RangeDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-ranges>e-range',
-                inputs: input$3,
-                outputs: outputs$3,
+                inputs: input$4,
+                outputs: outputs$4,
                 queries: {}
             },] },
 ];
@@ -291,8 +347,8 @@ RangesDirective.decorators = [
  * @nocollapse
  */
 RangesDirective.ctorParameters = function () { return []; };
-var input$4 = ['cFColor', 'format', 'range', 'type', 'value'];
-var outputs$4 = [];
+var input$5 = ['cFColor', 'format', 'range', 'type', 'value'];
+var outputs$5 = [];
 /**
  * `e-conditionalformat` directive represent a conditionalformat of the Angular Spreadsheet.
  * It must be contained in a `e-sheet` directive.
@@ -317,8 +373,8 @@ var ConditionalFormatDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$4);
-        _this.directivePropList = input$4;
+        _this.registerEvents(outputs$5);
+        _this.directivePropList = input$5;
         return _this;
     }
     return ConditionalFormatDirective;
@@ -326,8 +382,8 @@ var ConditionalFormatDirective = /** @class */ (function (_super) {
 ConditionalFormatDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-conditionalformats>e-conditionalformat',
-                inputs: input$4,
-                outputs: outputs$4,
+                inputs: input$5,
+                outputs: outputs$5,
                 queries: {}
             },] },
 ];
@@ -359,8 +415,8 @@ ConditionalFormatsDirective.decorators = [
  * @nocollapse
  */
 ConditionalFormatsDirective.ctorParameters = function () { return []; };
-var input$5 = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
-var outputs$5 = [];
+var input$6 = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+var outputs$6 = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -383,8 +439,8 @@ var SheetDirective = /** @class */ (function (_super) {
         _this.viewContainerRef = viewContainerRef;
         _this.tags = ['rows', 'columns', 'ranges', 'conditionalFormats'];
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$5);
-        _this.directivePropList = input$5;
+        _this.registerEvents(outputs$6);
+        _this.directivePropList = input$6;
         return _this;
     }
     return SheetDirective;
@@ -392,8 +448,8 @@ var SheetDirective = /** @class */ (function (_super) {
 SheetDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-sheets>e-sheet',
-                inputs: input$5,
-                outputs: outputs$5,
+                inputs: input$6,
+                outputs: outputs$6,
                 queries: {
                     childRows: new ContentChild(RowsDirective),
                     childColumns: new ContentChild(ColumnsDirective),
@@ -430,8 +486,8 @@ SheetsDirective.decorators = [
  * @nocollapse
  */
 SheetsDirective.ctorParameters = function () { return []; };
-var input$6 = ['comment', 'name', 'refersTo', 'scope'];
-var outputs$6 = [];
+var input$7 = ['comment', 'name', 'refersTo', 'scope'];
+var outputs$7 = [];
 /**
  * `e-definedname` directive represent a defined name of the Angular Spreadsheet.
  * It must be contained in a Spreadsheet component(`ejs-spreadsheet`).
@@ -453,8 +509,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.viewContainerRef = viewContainerRef;
         setValue('currentInstance', _this, _this.viewContainerRef);
-        _this.registerEvents(outputs$6);
-        _this.directivePropList = input$6;
+        _this.registerEvents(outputs$7);
+        _this.directivePropList = input$7;
         return _this;
     }
     return DefinedNameDirective;
@@ -462,8 +518,8 @@ var DefinedNameDirective = /** @class */ (function (_super) {
 DefinedNameDirective.decorators = [
     { type: Directive, args: [{
                 selector: 'e-definednames>e-definedname',
-                inputs: input$6,
-                outputs: outputs$6,
+                inputs: input$7,
+                outputs: outputs$7,
                 queries: {}
             },] },
 ];
@@ -509,8 +565,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
-var outputs$7 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'dialogBeforeOpen', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
+var inputs = ['activeSheetIndex', 'allowCellFormatting', 'allowConditionalFormat', 'allowDataValidation', 'allowDelete', 'allowEditing', 'allowFiltering', 'allowFindAndReplace', 'allowHyperlink', 'allowImage', 'allowInsert', 'allowMerge', 'allowNumberFormatting', 'allowOpen', 'allowResizing', 'allowSave', 'allowScrolling', 'allowSorting', 'allowUndoRedo', 'allowWrap', 'cellStyle', 'cssClass', 'definedNames', 'enableClipboard', 'enableContextMenu', 'enableKeyboardNavigation', 'enableKeyboardShortcut', 'enablePersistence', 'enableRtl', 'height', 'locale', 'openUrl', 'saveUrl', 'scrollSettings', 'selectionSettings', 'sheets', 'showFormulaBar', 'showRibbon', 'showSheetTabs', 'width'];
+var outputs$8 = ['actionBegin', 'actionComplete', 'afterHyperlinkClick', 'afterHyperlinkCreate', 'beforeCellFormat', 'beforeCellRender', 'beforeCellSave', 'beforeDataBound', 'beforeHyperlinkClick', 'beforeHyperlinkCreate', 'beforeOpen', 'beforeSave', 'beforeSelect', 'beforeSort', 'cellEdit', 'cellEditing', 'cellSave', 'contextMenuBeforeClose', 'contextMenuBeforeOpen', 'contextMenuItemSelect', 'created', 'dataBound', 'dialogBeforeOpen', 'fileMenuBeforeClose', 'fileMenuBeforeOpen', 'fileMenuItemSelect', 'openComplete', 'openFailure', 'queryCellInfo', 'saveComplete', 'select', 'sortComplete'];
 var twoWays = [''];
 /**
  * `ejs-spreadsheet` represents the Angular Spreadsheet Component.
@@ -661,7 +717,7 @@ var SpreadsheetComponent = /** @class */ (function (_super) {
             }
         }
         catch (_t) { }
-        _this.registerEvents(outputs$7);
+        _this.registerEvents(outputs$8);
         _this.addTwoWay.call(_this, twoWays);
         setValue('currentInstance', _this, _this.viewContainerRef);
         _this.context = new ComponentBase();
@@ -701,7 +757,7 @@ SpreadsheetComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ejs-spreadsheet',
                 inputs: inputs,
-                outputs: outputs$7,
+                outputs: outputs$8,
                 template: '',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 queries: {
@@ -746,6 +802,8 @@ SpreadsheetModule.decorators = [
                 imports: [CommonModule],
                 declarations: [
                     SpreadsheetComponent,
+                    ImageDirective,
+                    ImagesDirective,
                     CellDirective,
                     CellsDirective,
                     RowDirective,
@@ -763,6 +821,8 @@ SpreadsheetModule.decorators = [
                 ],
                 exports: [
                     SpreadsheetComponent,
+                    ImageDirective,
+                    ImagesDirective,
                     CellDirective,
                     CellsDirective,
                     RowDirective,
@@ -845,6 +905,6 @@ SpreadsheetAllModule.ctorParameters = function () { return []; };
 /**
  * Generated bundle index. Do not edit.
  */
-export { CellDirective, CellsDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, SheetDirective, SheetsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent, SpreadsheetModule, SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, CollaborativeEditingService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, AllModuleService, BasicModuleService, CellFormatService, NumberFormatService, FormulaService, inputs as ɵa, outputs$7 as ɵb };
-export { Workbook, Range, UsedRange, Sheet, getSheetIndex, getSheetIndexFromId, getSheetNameFromAddress, getSheetIndexByName, updateSelectedRange, getSelectedRange, getSheet, getSheetNameCount, getMaxSheetId, initSheet, getSheetName, Row, getRow, setRow, isHiddenRow, getRowHeight, setRowHeight, getRowsHeight, Column, getColumn, setColumn, getColumnWidth, getColumnsWidth, isHiddenCol, Cell, getCell, setCell, skipDefaultValue, wrap, getData, getModel, processIdx, clearRange, getRangeIndexes, getCellIndexes, getColIndex, getCellAddress, getRangeAddress, getColumnHeaderText, getIndexesFromAddress, getRangeFromAddress, getAddressFromSelectedRange, getAddressInfo, getSwapRange, isSingleCell, executeTaskAsync, WorkbookBasicModule, WorkbookAllModule, getWorkbookRequiredModules, CellStyle, DefineName, ProtectSettings, Hyperlink, Validation, Format, ConditionalFormat, workbookDestroyed, updateSheetFromDataSource, dataSourceChanged, workbookOpen, beginSave, saveCompleted, applyNumberFormatting, getFormattedCellObject, refreshCellElement, setCellFormat, findAllValues, textDecorationUpdate, applyCellFormat, updateUsedRange, workbookFormulaOperation, workbookEditOperation, checkDateFormat, getFormattedBarText, activeCellChanged, openSuccess, openFailure, sheetCreated, sheetsDestroyed, aggregateComputation, beforeSort, initiateSort, sortComplete, sortRangeAlert, initiatelink, beforeHyperlinkCreate, afterHyperlinkCreate, beforeHyperlinkClick, afterHyperlinkClick, addHyperlink, setLinkModel, beforeFilter, initiateFilter, filterComplete, filterRangeAlert, clearAllFilter, wrapEvent, onSave, insert, deleteAction, insertModel, deleteModel, isValidation, setValidation, addHighlight, dataValidate, findNext, findPrevious, goto, findWorkbookHandler, replaceHandler, replaceAllHandler, showDialog, findUndoRedo, findKeyUp, removeValidation, removeHighlight, queryCellInfo, count, findCount, protectSheetWorkBook, updateToggle, protectsheetHandler, replaceAllDialog, unprotectsheetHandler, workBookeditAlert, setLockCells, applyLockCells, setMerge, applyMerge, mergedRange, activeCellMergedRange, insertMerge, pasteMerge, setCFRule, cFInitialCheck, clearCFRule, initiateClearCFRule, cFRender, cFDelete, clear, clearCF, clearCells, checkIsFormula, isCellReference, isChar, toFraction, getGcd, intToDate, dateToInt, isDateTime, isNumber, toDate, workbookLocale, localeData, DataBind, WorkbookOpen, WorkbookSave, WorkbookFormula, WorkbookNumberFormat, getFormatFromType, getTypeFromFormat, WorkbookSort, WorkbookFilter, WorkbookCellFormat, WorkbookEdit, WorkbookHyperlink, WorkbookInsert, WorkbookDelete, WorkbookDataValidation, WorkbookFindAndReplace, WorkbookProtectSheet, WorkbookMerge, WorkbookConditionalFormat, getRequiredModules, ribbon, formulaBar, sheetTabs, refreshSheetTabs, dataRefresh, initialLoad, contentLoaded, mouseDown, spreadsheetDestroyed, editOperation, formulaOperation, formulaBarOperation, click, keyUp, keyDown, formulaKeyUp, formulaBarUpdate, onVerticalScroll, onHorizontalScroll, beforeContentLoaded, beforeVirtualContentLoaded, virtualContentLoaded, contextMenuOpen, cellNavigate, mouseUpAfterSelection, selectionComplete, cMenuBeforeOpen, insertSheetTab, removeSheetTab, renameSheetTab, ribbonClick, refreshRibbon, enableToolbarItems, tabSwitch, selectRange, cut, copy, paste, clearCopy, dataBound, beforeDataBound, addContextMenuItems, removeContextMenuItems, enableContextMenuItems, enableFileMenuItems, hideFileMenuItems, addFileMenuItems, hideRibbonTabs, enableRibbonTabs, addRibbonTabs, addToolbarItems, hideToolbarItems, beforeRibbonCreate, rowHeightChanged, colWidthChanged, beforeHeaderLoaded, onContentScroll, deInitProperties, activeSheetChanged, renameSheet, initiateCustomSort, applySort, collaborativeUpdate, hideShow, autoFit, updateToggleItem, initiateHyperlink, editHyperlink, openHyperlink, removeHyperlink, createHyperlinkElement, sheetNameUpdate, hideSheet, performUndoRedo, updateUndoRedoCollection, setActionData, getBeforeActionData, clearUndoRedoCollection, initiateFilterUI, renderFilterCell, reapplyFilter, filterByCellValue, clearFilter, getFilteredColumn, completeAction, beginAction, filterCellKeyDown, getFilterRange, setAutoFit, refreshFormulaDatasource, setScrollEvent, initiateDataValidation, validationError, startEdit, invalidData, clearInvalid, protectSheet, applyProtect, unprotectSheet, protectCellFormat, gotoDlg, findDlg, findHandler, replace, created, editAlert, setUndoRedo, enableFormulaInput, protectSelection, hiddenMerge, checkPrevMerge, checkMerge, removeDataValidation, showAggregate, initiateConditionalFormat, checkConditionalFormat, setCF, clearViewer, getUpdateUsingRaf, removeAllChildren, getColGroupWidth, getScrollBarWidth, getSiblingsHeight, inView, getCellPosition, locateElem, setStyleAttribute, getStartEvent, getMoveEvent, getEndEvent, isTouchStart, isTouchMove, isTouchEnd, getClientX, getClientY, setAriaOptions, destroyComponent, setResize, setWidthAndHeight, findMaxValue, updateAction, hasTemplate, setRowEleHeight, getTextHeight, getTextWidth, getLines, setMaxHgt, getMaxHgt, skipHiddenIdx, BasicModule, AllModule, ScrollSettings, SelectionSettings, DISABLED, WRAPTEXT, locale, dialog, actionEvents, overlay, fontColor, fillColor, defaultLocale, Spreadsheet, Clipboard, Edit, Selection, Scroll, VirtualScroll, KeyboardNavigation, KeyboardShortcut, CellFormat, Resize, CollaborativeEditing, ShowHide, SpreadsheetHyperlink, UndoRedo, WrapText, Insert, Delete, DataValidation, ProtectSheet, FindAndReplace, Merge, ConditionalFormatting, Ribbon, FormulaBar, Formula, SheetTabs, Open, Save, ContextMenu, NumberFormat, Sort, Filter, Render, SheetRender, RowRenderer, CellRenderer, Calculate, FormulaError, FormulaInfo, CalcSheetFamilyItem, getAlphalabel, ValueChangedArgs, Parser, CalculateCommon, isUndefined, getModules, getValue, setValue, ModuleLoader, CommonErrors, FormulasErrorsStrings, BasicFormulas } from '@syncfusion/ej2-spreadsheet';
+export { ImageDirective, ImagesDirective, CellDirective, CellsDirective, RowDirective, RowsDirective, ColumnDirective, ColumnsDirective, RangeDirective, RangesDirective, ConditionalFormatDirective, ConditionalFormatsDirective, SheetDirective, SheetsDirective, DefinedNameDirective, DefinedNamesDirective, SpreadsheetComponent, SpreadsheetModule, SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, CollaborativeEditingService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, AllModuleService, BasicModuleService, CellFormatService, NumberFormatService, FormulaService, inputs as ɵa, outputs$8 as ɵb };
+export { Workbook, Range, UsedRange, Sheet, getSheetIndex, getSheetIndexFromId, getSheetNameFromAddress, getSheetIndexByName, updateSelectedRange, getSelectedRange, getSheet, getSheetNameCount, getMaxSheetId, initSheet, getSheetName, Row, getRow, setRow, isHiddenRow, getRowHeight, setRowHeight, getRowsHeight, Column, getColumn, setColumn, getColumnWidth, getColumnsWidth, isHiddenCol, Cell, getCell, setCell, skipDefaultValue, wrap, getData, getModel, processIdx, clearRange, getRangeIndexes, getCellIndexes, getColIndex, getCellAddress, getRangeAddress, getColumnHeaderText, getIndexesFromAddress, getRangeFromAddress, getAddressFromSelectedRange, getAddressInfo, getSwapRange, isSingleCell, executeTaskAsync, WorkbookBasicModule, WorkbookAllModule, getWorkbookRequiredModules, CellStyle, DefineName, ProtectSettings, Hyperlink, Validation, Format, ConditionalFormat, Image, workbookDestroyed, updateSheetFromDataSource, dataSourceChanged, workbookOpen, beginSave, saveCompleted, applyNumberFormatting, getFormattedCellObject, refreshCellElement, setCellFormat, findAllValues, textDecorationUpdate, applyCellFormat, updateUsedRange, workbookFormulaOperation, workbookEditOperation, checkDateFormat, getFormattedBarText, activeCellChanged, openSuccess, openFailure, sheetCreated, sheetsDestroyed, aggregateComputation, beforeSort, initiateSort, sortComplete, sortRangeAlert, initiatelink, beforeHyperlinkCreate, afterHyperlinkCreate, beforeHyperlinkClick, afterHyperlinkClick, addHyperlink, setLinkModel, beforeFilter, initiateFilter, filterComplete, filterRangeAlert, clearAllFilter, wrapEvent, onSave, insert, deleteAction, insertModel, deleteModel, isValidation, setValidation, addHighlight, dataValidate, findNext, findPrevious, goto, findWorkbookHandler, replaceHandler, replaceAllHandler, showDialog, findUndoRedo, findKeyUp, removeValidation, removeHighlight, queryCellInfo, count, findCount, protectSheetWorkBook, updateToggle, protectsheetHandler, replaceAllDialog, unprotectsheetHandler, workBookeditAlert, setLockCells, applyLockCells, setMerge, applyMerge, mergedRange, activeCellMergedRange, insertMerge, pasteMerge, setCFRule, cFInitialCheck, clearCFRule, initiateClearCFRule, cFRender, cFDelete, clear, clearCF, clearCells, setImage, checkIsFormula, isCellReference, isChar, toFraction, getGcd, intToDate, dateToInt, isDateTime, isNumber, toDate, workbookLocale, localeData, DataBind, WorkbookOpen, WorkbookSave, WorkbookFormula, WorkbookNumberFormat, getFormatFromType, getTypeFromFormat, WorkbookSort, WorkbookFilter, WorkbookImage, WorkbookCellFormat, WorkbookEdit, WorkbookHyperlink, WorkbookInsert, WorkbookDelete, WorkbookDataValidation, WorkbookFindAndReplace, WorkbookProtectSheet, WorkbookMerge, WorkbookConditionalFormat, getRequiredModules, ribbon, formulaBar, sheetTabs, refreshSheetTabs, dataRefresh, initialLoad, contentLoaded, mouseDown, spreadsheetDestroyed, editOperation, formulaOperation, formulaBarOperation, click, keyUp, keyDown, formulaKeyUp, formulaBarUpdate, onVerticalScroll, onHorizontalScroll, beforeContentLoaded, beforeVirtualContentLoaded, virtualContentLoaded, contextMenuOpen, cellNavigate, mouseUpAfterSelection, selectionComplete, cMenuBeforeOpen, insertSheetTab, removeSheetTab, renameSheetTab, ribbonClick, refreshRibbon, enableToolbarItems, tabSwitch, selectRange, cut, copy, paste, clearCopy, dataBound, beforeDataBound, addContextMenuItems, removeContextMenuItems, enableContextMenuItems, enableFileMenuItems, hideFileMenuItems, addFileMenuItems, hideRibbonTabs, enableRibbonTabs, addRibbonTabs, addToolbarItems, hideToolbarItems, beforeRibbonCreate, rowHeightChanged, colWidthChanged, beforeHeaderLoaded, onContentScroll, deInitProperties, activeSheetChanged, renameSheet, initiateCustomSort, applySort, collaborativeUpdate, hideShow, autoFit, updateToggleItem, initiateHyperlink, editHyperlink, openHyperlink, removeHyperlink, createHyperlinkElement, sheetNameUpdate, hideSheet, performUndoRedo, updateUndoRedoCollection, setActionData, getBeforeActionData, clearUndoRedoCollection, initiateFilterUI, renderFilterCell, reapplyFilter, filterByCellValue, clearFilter, getFilteredColumn, completeAction, beginAction, filterCellKeyDown, getFilterRange, setAutoFit, refreshFormulaDatasource, setScrollEvent, initiateDataValidation, validationError, startEdit, invalidData, clearInvalid, protectSheet, applyProtect, unprotectSheet, protectCellFormat, gotoDlg, findDlg, findHandler, replace, created, editAlert, setUndoRedo, enableFormulaInput, protectSelection, hiddenMerge, checkPrevMerge, checkMerge, removeDataValidation, showAggregate, initiateConditionalFormat, checkConditionalFormat, setCF, clearViewer, initiateFormulaReference, initiateCur, clearCellRef, editValue, addressHandle, initiateEdit, forRefSelRender, blankWorkbook, insertImage, refreshImgElem, refreshImgCellObj, getRowIdxFromClientY, getColIdxFromClientX, createImageElement, deleteImage, refreshImagePosition, getUpdateUsingRaf, removeAllChildren, getColGroupWidth, getScrollBarWidth, getSiblingsHeight, inView, getCellPosition, locateElem, setStyleAttribute, getStartEvent, getMoveEvent, getEndEvent, isTouchStart, isTouchMove, isTouchEnd, getClientX, getClientY, setAriaOptions, destroyComponent, setResize, setWidthAndHeight, findMaxValue, updateAction, hasTemplate, setRowEleHeight, getTextHeight, getTextWidth, getLines, setMaxHgt, getMaxHgt, skipHiddenIdx, BasicModule, AllModule, ScrollSettings, SelectionSettings, DISABLED, WRAPTEXT, locale, dialog, actionEvents, overlay, fontColor, fillColor, defaultLocale, Spreadsheet, Clipboard, Edit, Selection, Scroll, VirtualScroll, KeyboardNavigation, KeyboardShortcut, CellFormat, Resize, CollaborativeEditing, ShowHide, SpreadsheetHyperlink, UndoRedo, WrapText, Insert, Delete, DataValidation, ProtectSheet, FindAndReplace, Merge, ConditionalFormatting, Ribbon, FormulaBar, Formula, SheetTabs, Open, Save, ContextMenu, NumberFormat, Sort, Filter, SpreadsheetImage, Render, SheetRender, RowRenderer, CellRenderer, Calculate, FormulaError, FormulaInfo, CalcSheetFamilyItem, getAlphalabel, ValueChangedArgs, Parser, CalculateCommon, isUndefined, getModules, getValue, setValue, ModuleLoader, CommonErrors, FormulasErrorsStrings, BasicFormulas } from '@syncfusion/ej2-spreadsheet';
 //# sourceMappingURL=ej2-angular-spreadsheet.es5.js.map

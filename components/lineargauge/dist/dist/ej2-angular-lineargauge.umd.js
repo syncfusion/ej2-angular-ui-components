@@ -289,7 +289,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowImageExport', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs = ['allowImageExport', 'allowMargin', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
@@ -316,28 +316,28 @@ exports.LinearGaugeComponent = /** @class */ (function (_super) {
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
-            var mod = _this.injector.get('LinearGaugePrint');
+            var mod = _this.injector.get('LinearGaugeGaugeTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            var mod = _this.injector.get('LinearGaugePdfExport');
+            var mod = _this.injector.get('LinearGaugeAnnotations');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            var mod = _this.injector.get('LinearGaugeGaugeTooltip');
+            var mod = _this.injector.get('LinearGaugePrint');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            var mod = _this.injector.get('LinearGaugeAnnotations');
+            var mod = _this.injector.get('LinearGaugePdfExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
@@ -468,10 +468,10 @@ LinearGaugeModule.decorators = [
  * @nocollapse
  */
 LinearGaugeModule.ctorParameters = function () { return []; };
-var PrintService = { provide: 'LinearGaugePrint', useValue: ej2Lineargauge.Print };
-var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: ej2Lineargauge.PdfExport };
 var GaugeTooltipService = { provide: 'LinearGaugeGaugeTooltip', useValue: ej2Lineargauge.GaugeTooltip };
 var AnnotationsService = { provide: 'LinearGaugeAnnotations', useValue: ej2Lineargauge.Annotations };
+var PrintService = { provide: 'LinearGaugePrint', useValue: ej2Lineargauge.Print };
+var PdfExportService = { provide: 'LinearGaugePdfExport', useValue: ej2Lineargauge.PdfExport };
 var ImageExportService = { provide: 'LinearGaugeImageExport', useValue: ej2Lineargauge.ImageExport };
 var GradientService = { provide: 'LinearGaugeGradient', useValue: ej2Lineargauge.Gradient };
 /**
@@ -489,10 +489,10 @@ LinearGaugeAllModule.decorators = [
                     LinearGaugeModule
                 ],
                 providers: [
-                    PrintService,
-                    PdfExportService,
                     GaugeTooltipService,
                     AnnotationsService,
+                    PrintService,
+                    PdfExportService,
                     ImageExportService,
                     GradientService
                 ]
@@ -513,10 +513,10 @@ exports.AnnotationDirective = AnnotationDirective;
 exports.AnnotationsDirective = AnnotationsDirective;
 exports.LinearGaugeModule = LinearGaugeModule;
 exports.LinearGaugeAllModule = LinearGaugeAllModule;
-exports.PrintService = PrintService;
-exports.PdfExportService = PdfExportService;
 exports.GaugeTooltipService = GaugeTooltipService;
 exports.AnnotationsService = AnnotationsService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
 exports.ImageExportService = ImageExportService;
 exports.GradientService = GradientService;
 exports.ɵa = inputs;

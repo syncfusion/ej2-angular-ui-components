@@ -43,15 +43,13 @@
   display: none;
 }
 
-.e-dropdown-btn.e-small .e-dropdown-btn.e-small, .e-dropdown-btn.e-small .e-dropdown-btn.e-btn.e-small.e-dropdown-popup ul,
-.e-dropdown-btn.e-btn.e-small .e-dropdown-btn.e-small,
-.e-dropdown-btn.e-btn.e-small .e-dropdown-btn.e-btn.e-small.e-dropdown-popup ul {
+.e-dropdown-btn.e-small .e-dropdown-popup ul,
+.e-dropdown-btn.e-btn.e-small .e-dropdown-popup ul {
   padding: 0;
 }
 
-.e-dropdown-btn.e-small .e-dropdown-btn.e-small .e-item, .e-dropdown-btn.e-small .e-dropdown-btn.e-btn.e-small.e-dropdown-popup ul .e-item,
-.e-dropdown-btn.e-btn.e-small .e-dropdown-btn.e-small .e-item,
-.e-dropdown-btn.e-btn.e-small .e-dropdown-btn.e-btn.e-small.e-dropdown-popup ul .e-item {
+.e-dropdown-btn.e-small .e-dropdown-popup ul .e-item,
+.e-dropdown-btn.e-btn.e-small .e-dropdown-popup ul .e-item {
   padding: 0 10px;
 }
 
@@ -170,8 +168,8 @@
   margin-right: 0;
 }
 
-.e-bigger .e-dropdown-popup ul,
-.e-bigger.e-dropdown-popup ul {
+*.e-bigger .e-dropdown-popup ul,
+*.e-bigger.e-dropdown-popup ul {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   font-size: 15px;
   max-width: 280px;
@@ -179,26 +177,26 @@
   padding: 0;
 }
 
-.e-bigger .e-dropdown-popup ul .e-item,
-.e-bigger.e-dropdown-popup ul .e-item {
+*.e-bigger .e-dropdown-popup ul .e-item,
+*.e-bigger.e-dropdown-popup ul .e-item {
   height: 48px;
   line-height: 48px;
   padding: 0 10px;
 }
 
-.e-bigger .e-dropdown-popup ul .e-item.e-url,
-.e-bigger.e-dropdown-popup ul .e-item.e-url {
+*.e-bigger .e-dropdown-popup ul .e-item.e-url,
+*.e-bigger.e-dropdown-popup ul .e-item.e-url {
   padding: 0;
 }
 
-.e-bigger .e-dropdown-popup ul .e-item .e-menu-icon,
-.e-bigger.e-dropdown-popup ul .e-item .e-menu-icon {
+*.e-bigger .e-dropdown-popup ul .e-item .e-menu-icon,
+*.e-bigger.e-dropdown-popup ul .e-item .e-menu-icon {
   font-size: 18px;
   line-height: 48px;
 }
 
-.e-bigger .e-dropdown-popup ul .e-item.e-separator,
-.e-bigger.e-dropdown-popup ul .e-item.e-separator {
+*.e-bigger .e-dropdown-popup ul .e-item.e-separator,
+*.e-bigger.e-dropdown-popup ul .e-item.e-separator {
   height: auto;
   line-height: normal;
 }

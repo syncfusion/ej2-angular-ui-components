@@ -298,7 +298,7 @@
 
 .e-treegrid .e-errorelem::before {
   color: #e3165b;
-  content: '\e22a';
+  content: "";
   transform: rotate(180deg);
 }
 

@@ -360,7 +360,7 @@
 }
 
 /*! Blazor column menu custom css */
-.e-contextmenu-wrapper.e-sfcontextmenu.e-hide-menu {
+.e-contextmenu-container.e-sfcontextmenu.e-hide-menu {
   visibility: hidden;
 }
 
@@ -530,32 +530,31 @@
 
 .e-bigger .e-grid .e-dialog.e-checkboxfilter,
 .e-grid.e-bigger .e-dialog.e-checkboxfilter {
-  min-height: 328px;
+  min-height: 352px;
 }
 
-.e-bigger .e-grid .e-filter-popup .e-dlg-content,
-.e-grid.e-bigger .e-filter-popup .e-dlg-content {
-  padding-bottom: 0;
+.e-bigger .e-grid .e-checkboxfilter .e-dlg-content,
+.e-grid.e-bigger .e-checkboxfilter .e-dlg-content {
   padding-left: 11px;
 }
 
-.e-bigger .e-grid .e-filter-popup .e-ftrchk,
-.e-bigger .e-grid .e-filter-popup .e-searchbox,
-.e-grid.e-bigger .e-filter-popup .e-ftrchk,
-.e-grid.e-bigger .e-filter-popup .e-searchbox {
+.e-bigger .e-grid .e-checkboxfilter .e-ftrchk,
+.e-bigger .e-grid .e-checkboxfilter .e-searchbox,
+.e-grid.e-bigger .e-checkboxfilter .e-ftrchk,
+.e-grid.e-bigger .e-checkboxfilter .e-searchbox {
   padding-left: 13px;
 }
 
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-dlg-content,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-dlg-content {
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-dlg-content,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-dlg-content {
   padding-left: 24px;
   padding-right: 11px;
 }
 
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-ftrchk,
-.e-bigger .e-grid.e-rtl .e-filter-popup .e-searchbox,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-ftrchk,
-.e-grid.e-bigger.e-rtl .e-filter-popup .e-searchbox {
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-bigger .e-grid.e-rtl .e-checkboxfilter .e-searchbox,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-grid.e-bigger.e-rtl .e-checkboxfilter .e-searchbox {
   padding-left: 0;
   padding-right: 13px;
 }
@@ -2025,20 +2024,19 @@
 }
 
 .e-grid .e-dialog.e-checkboxfilter {
-  min-height: 304px;
+  min-height: 322px;
 }
 
-.e-grid .e-filter-popup .e-searchbox {
+.e-grid .e-checkboxfilter .e-searchbox {
   display: block;
 }
 
-.e-grid .e-filter-popup .e-dlg-content {
-  padding-bottom: 0;
+.e-grid .e-checkboxfilter .e-dlg-content {
   padding-left: 9px;
 }
 
-.e-grid .e-filter-popup .e-ftrchk,
-.e-grid .e-filter-popup .e-searchbox {
+.e-grid .e-checkboxfilter .e-ftrchk,
+.e-grid .e-checkboxfilter .e-searchbox {
   padding-left: 9px;
 }
 
@@ -2735,13 +2733,13 @@
   border-right: 0;
 }
 
-.e-grid.e-rtl .e-filter-popup .e-dlg-content {
+.e-grid.e-rtl .e-checkboxfilter .e-dlg-content {
   padding-left: 18px;
   padding-right: 9px;
 }
 
-.e-grid.e-rtl .e-filter-popup .e-ftrchk,
-.e-grid.e-rtl .e-filter-popup .e-searchbox {
+.e-grid.e-rtl .e-checkboxfilter .e-ftrchk,
+.e-grid.e-rtl .e-checkboxfilter .e-searchbox {
   padding-left: 0;
   padding-right: 9px;
 }

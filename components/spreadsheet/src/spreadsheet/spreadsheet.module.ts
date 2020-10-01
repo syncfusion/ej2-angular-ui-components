@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ImageDirective, ImagesDirective } from './image.directive';
 import { CellDirective, CellsDirective } from './cells.directive';
 import { RowDirective, RowsDirective } from './rows.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
@@ -16,6 +17,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
     imports: [CommonModule],
     declarations: [
         SpreadsheetComponent,
+        ImageDirective,
+        ImagesDirective,
         CellDirective,
         CellsDirective,
         RowDirective,
@@ -33,6 +36,8 @@ import { SpreadsheetComponent } from './spreadsheet.component';
     ],
     exports: [
         SpreadsheetComponent,
+        ImageDirective,
+        ImagesDirective,
         CellDirective,
         CellsDirective,
         RowDirective,

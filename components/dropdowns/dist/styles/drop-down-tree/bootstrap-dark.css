@@ -78,6 +78,7 @@
 }
 
 .e-ddt.e-input-group.e-control-wrapper .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
+  box-sizing: content-box;
   min-height: 32px;
 }
 

@@ -316,8 +316,8 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowGrouping', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowRowDragAndDrop', 'allowSelection', 'allowSorting', 'allowTextWrap', 'childGrid', 'clipMode', 'columnChooserSettings', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'currencyCode', 'currentAction', 'dataSource', 'detailTemplate', 'editSettings', 'enableAltRow', 'enableAutoFill', 'enableColumnVirtualization', 'enableHeaderFocus', 'enableHover', 'enableInfiniteScrolling', 'enablePersistence', 'enableRtl', 'enableVirtualization', 'filterSettings', 'frozenColumns', 'frozenRows', 'gridLines', 'groupSettings', 'height', 'hierarchyPrintMode', 'infiniteScrollSettings', 'locale', 'pageSettings', 'pagerTemplate', 'parentDetails', 'printMode', 'query', 'queryString', 'resizeSettings', 'rowDropSettings', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnChooser', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'toolbarTemplate', 'width'];
-var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'batchAdd', 'batchCancel', 'batchDelete', 'beforeAutoFill', 'beforeBatchAdd', 'beforeBatchDelete', 'beforeBatchSave', 'beforeCopy', 'beforeDataBound', 'beforeExcelExport', 'beforeOpenColumnChooser', 'beforePaste', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSave', 'cellSaved', 'cellSelected', 'cellSelecting', 'checkBoxChange', 'columnDataStateChange', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'commandClick', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'destroyed', 'detailDataBound', 'excelAggregateQueryCellInfo', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'exportDetailDataBound', 'exportGroupCaption', 'headerCellInfo', 'keyPressed', 'load', 'pdfAggregateQueryCellInfo', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordClick', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowDrag', 'rowDragStart', 'rowDragStartHelper', 'rowDrop', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
+var inputs = ['aggregates', 'allowExcelExport', 'allowFiltering', 'allowGrouping', 'allowMultiSorting', 'allowPaging', 'allowPdfExport', 'allowReordering', 'allowResizing', 'allowRowDragAndDrop', 'allowSelection', 'allowSorting', 'allowTextWrap', 'childGrid', 'clipMode', 'columnChooserSettings', 'columnMenuItems', 'columnQueryMode', 'columns', 'contextMenuItems', 'currencyCode', 'currentAction', 'dataSource', 'detailTemplate', 'editSettings', 'enableAltRow', 'enableAutoFill', 'enableColumnVirtualization', 'enableHeaderFocus', 'enableHover', 'enableImmutableMode', 'enableInfiniteScrolling', 'enablePersistence', 'enableRtl', 'enableVirtualization', 'filterSettings', 'frozenColumns', 'frozenRows', 'gridLines', 'groupSettings', 'height', 'hierarchyPrintMode', 'infiniteScrollSettings', 'locale', 'pageSettings', 'pagerTemplate', 'parentDetails', 'printMode', 'query', 'queryString', 'resizeSettings', 'rowDropSettings', 'rowHeight', 'rowTemplate', 'searchSettings', 'selectedRowIndex', 'selectionSettings', 'showColumnChooser', 'showColumnMenu', 'sortSettings', 'textWrapSettings', 'toolbar', 'toolbarTemplate', 'width'];
+var outputs$3 = ['actionBegin', 'actionComplete', 'actionFailure', 'batchAdd', 'batchCancel', 'batchDelete', 'beforeAutoFill', 'beforeBatchAdd', 'beforeBatchDelete', 'beforeBatchSave', 'beforeCopy', 'beforeDataBound', 'beforeExcelExport', 'beforeOpenColumnChooser', 'beforePaste', 'beforePdfExport', 'beforePrint', 'beginEdit', 'cellDeselected', 'cellDeselecting', 'cellEdit', 'cellSave', 'cellSaved', 'cellSelected', 'cellSelecting', 'checkBoxChange', 'columnDataStateChange', 'columnDrag', 'columnDragStart', 'columnDrop', 'columnMenuClick', 'columnMenuOpen', 'commandClick', 'contextMenuClick', 'contextMenuOpen', 'created', 'dataBound', 'dataSourceChanged', 'dataStateChange', 'destroyed', 'detailDataBound', 'excelAggregateQueryCellInfo', 'excelExportComplete', 'excelHeaderQueryCellInfo', 'excelQueryCellInfo', 'exportDetailDataBound', 'exportGroupCaption', 'headerCellInfo', 'keyPressed', 'lazyLoadGroupCollapse', 'lazyLoadGroupExpand', 'load', 'pdfAggregateQueryCellInfo', 'pdfExportComplete', 'pdfHeaderQueryCellInfo', 'pdfQueryCellInfo', 'printComplete', 'queryCellInfo', 'recordClick', 'recordDoubleClick', 'resizeStart', 'resizeStop', 'resizing', 'rowDataBound', 'rowDeselected', 'rowDeselecting', 'rowDrag', 'rowDragStart', 'rowDragStartHelper', 'rowDrop', 'rowSelected', 'rowSelecting', 'toolbarClick', 'dataSourceChange'];
 var twoWays = ['dataSource'];
 /**
  * `ejs-grid` represents the Angular Grid Component.
@@ -510,6 +510,13 @@ exports.GridComponent = /** @class */ (function (_super) {
             }
         }
         catch (_z) { }
+        try {
+            var mod = _this.injector.get('GridsLazyLoadGroup');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_0) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -666,6 +673,7 @@ var ColumnChooserService = { provide: 'GridsColumnChooser', useValue: ej2Grids.C
 var ForeignKeyService = { provide: 'GridsForeignKey', useValue: ej2Grids.ForeignKey };
 var BlazorActionService = { provide: 'GridsBlazorAction', useValue: ej2Grids.BlazorAction };
 var InfiniteScrollService = { provide: 'GridsInfiniteScroll', useValue: ej2Grids.InfiniteScroll };
+var LazyLoadGroupService = { provide: 'GridsLazyLoadGroup', useValue: ej2Grids.LazyLoadGroup };
 /**
  * NgModule definition for the Grid component with providers.
  */
@@ -704,7 +712,8 @@ GridAllModule.decorators = [
                     ColumnChooserService,
                     ForeignKeyService,
                     BlazorActionService,
-                    InfiniteScrollService
+                    InfiniteScrollService,
+                    LazyLoadGroupService
                 ]
             },] },
 ];
@@ -893,6 +902,7 @@ exports.ColumnChooserService = ColumnChooserService;
 exports.ForeignKeyService = ForeignKeyService;
 exports.BlazorActionService = BlazorActionService;
 exports.InfiniteScrollService = InfiniteScrollService;
+exports.LazyLoadGroupService = LazyLoadGroupService;
 exports.PagerModule = PagerModule;
 exports.PagerAllModule = PagerAllModule;
 exports.ɵa = inputs;
@@ -983,10 +993,14 @@ exports.applyBiggerTheme = ej2Grids.applyBiggerTheme;
 exports.alignFrozenEditForm = ej2Grids.alignFrozenEditForm;
 exports.ensureLastRow = ej2Grids.ensureLastRow;
 exports.ensureFirstRow = ej2Grids.ensureFirstRow;
+exports.isRowEnteredInGrid = ej2Grids.isRowEnteredInGrid;
 exports.getEditedDataIndex = ej2Grids.getEditedDataIndex;
 exports.eventPromise = ej2Grids.eventPromise;
 exports.getStateEventArgument = ej2Grids.getStateEventArgument;
 exports.ispercentageWidth = ej2Grids.ispercentageWidth;
+exports.resetRowIndex = ej2Grids.resetRowIndex;
+exports.compareChanges = ej2Grids.compareChanges;
+exports.setRowElements = ej2Grids.setRowElements;
 exports.created = ej2Grids.created;
 exports.destroyed = ej2Grids.destroyed;
 exports.load = ej2Grids.load;
@@ -1046,6 +1060,8 @@ exports.filterBeforeOpen = ej2Grids.filterBeforeOpen;
 exports.filterSearchBegin = ej2Grids.filterSearchBegin;
 exports.commandClick = ej2Grids.commandClick;
 exports.exportGroupCaption = ej2Grids.exportGroupCaption;
+exports.lazyLoadGroupExpand = ej2Grids.lazyLoadGroupExpand;
+exports.lazyLoadGroupCollapse = ej2Grids.lazyLoadGroupCollapse;
 exports.initialLoad = ej2Grids.initialLoad;
 exports.initialEnd = ej2Grids.initialEnd;
 exports.dataReady = ej2Grids.dataReady;
@@ -1204,6 +1220,9 @@ exports.getFilterBarOperator = ej2Grids.getFilterBarOperator;
 exports.resetColumns = ej2Grids.resetColumns;
 exports.pdfAggregateQueryCellInfo = ej2Grids.pdfAggregateQueryCellInfo;
 exports.excelAggregateQueryCellInfo = ej2Grids.excelAggregateQueryCellInfo;
+exports.setGroupCache = ej2Grids.setGroupCache;
+exports.lazyLoadScrollHandler = ej2Grids.lazyLoadScrollHandler;
+exports.groupCollapse = ej2Grids.groupCollapse;
 exports.beforeCheckboxRenderer = ej2Grids.beforeCheckboxRenderer;
 exports.refreshHandlers = ej2Grids.refreshHandlers;
 exports.Data = ej2Grids.Data;
@@ -1249,6 +1268,7 @@ exports.detailLists = ej2Grids.detailLists;
 exports.gridObserver = ej2Grids.gridObserver;
 exports.BlazorAction = ej2Grids.BlazorAction;
 exports.InfiniteScroll = ej2Grids.InfiniteScroll;
+exports.LazyLoadGroup = ej2Grids.LazyLoadGroup;
 exports.Column = ej2Grids.Column;
 exports.CommandColumnModel = ej2Grids.CommandColumnModel;
 exports.Row = ej2Grids.Row;
@@ -1290,6 +1310,7 @@ exports.MaskedTextBoxCellEdit = ej2Grids.MaskedTextBoxCellEdit;
 exports.VirtualContentRenderer = ej2Grids.VirtualContentRenderer;
 exports.VirtualHeaderRenderer = ej2Grids.VirtualHeaderRenderer;
 exports.VirtualElementHandler = ej2Grids.VirtualElementHandler;
+exports.GroupLazyLoadRenderer = ej2Grids.GroupLazyLoadRenderer;
 exports.CellRendererFactory = ej2Grids.CellRendererFactory;
 exports.ServiceLocator = ej2Grids.ServiceLocator;
 exports.RowModelGenerator = ej2Grids.RowModelGenerator;

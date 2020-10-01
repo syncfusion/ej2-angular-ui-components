@@ -27,11 +27,16 @@ export class FormBase<T> implements ControlValueAccessor {
     public focus: EventEmitter<Object>;
     public blur: EventEmitter<Object>;
     public preventChange: boolean;
+    public isUpdated: boolean;
+    public oldValue: any;
 
     public localChange(e: { value?: T, checked?: T }): void {
         //tslint:disable-next-line
         let value: T | any = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
+        if (this.isUpdated === true) {
+            this.angularValue = this.oldValue;
+        }
         if (this.objCheck === true) {
             this.duplicateValue = JSON.stringify(value);
             this.duplicateAngularValue = JSON.stringify(this.angularValue);
@@ -69,7 +74,7 @@ export class FormBase<T> implements ControlValueAccessor {
         this.propagateTouch = registerFunction;
     }
     public twoWaySetter(newVal: Object, prop: string): void {
-        let oldVal: Object = getValue(prop, this.properties);
+        let oldVal: Object = this.oldValue || getValue(prop, this.properties);
         let ele: HTMLElement = this.inputElement || this.element;
         if (oldVal === newVal &&
             ((<HTMLInputElement>ele).value === undefined || (<HTMLInputElement>ele).value === '')) {
@@ -123,6 +128,7 @@ export class FormBase<T> implements ControlValueAccessor {
         if (value === null) {
             return;
         }
+        this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
         this.preventChange = true;

@@ -8,7 +8,9 @@
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
 		"@syncfusion/ej2-angular-base": "*",
-		"@syncfusion/ej2-splitbuttons": "*"
+		"@syncfusion/ej2-splitbuttons": "*",
+		"@types/lodash": "4.14.159",
+		"@types/node": "11.15.20"
 	},
 	"devDependencies": {
 		"rxjs": "5.0.0 - 5.5.10",

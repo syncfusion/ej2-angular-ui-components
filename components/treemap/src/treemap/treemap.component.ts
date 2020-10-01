@@ -43,24 +43,6 @@ export class TreeMapComponent extends TreeMap implements IComponentBase {
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
         try {
-                let mod = this.injector.get('TreeMapPrint');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('TreeMapPdfExport');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('TreeMapImageExport');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
                 let mod = this.injector.get('TreeMapTreeMapTooltip');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
@@ -80,6 +62,24 @@ export class TreeMapComponent extends TreeMap implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('TreeMapTreeMapSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapPrint');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapPdfExport');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeMapImageExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

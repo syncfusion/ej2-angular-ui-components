@@ -642,6 +642,9 @@ var FormBase = /** @__PURE__ @class */ (function () {
         //tslint:disable-next-line
         var value = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
+        if (this.isUpdated === true) {
+            this.angularValue = this.oldValue;
+        }
         if (this.objCheck === true) {
             this.duplicateValue = JSON.stringify(value);
             this.duplicateAngularValue = JSON.stringify(this.angularValue);
@@ -675,7 +678,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
         this.propagateTouch = registerFunction;
     };
     FormBase.prototype.twoWaySetter = function (newVal, prop) {
-        var oldVal = getValue(prop, this.properties);
+        var oldVal = this.oldValue || getValue(prop, this.properties);
         var ele = this.inputElement || this.element;
         if (oldVal === newVal &&
             (ele.value === undefined || ele.value === '')) {
@@ -731,6 +734,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
         if (value === null) {
             return;
         }
+        this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
         this.preventChange = true;
@@ -771,9 +775,9 @@ function compile(templateEle, helper) {
             var viewRef = conRef.createEmbeddedView(templateEle, context);
             viewRef.markForCheck();
             /* istanbul ignore next */
-            var viewCollection = component ?
+            var viewCollection = (component && component.registeredTemplate) ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);
-            propName = propName ? propName : pName_1;
+            propName = (propName && component.registeredTemplate) ? propName : pName_1;
             if (typeof viewCollection[propName] === 'undefined') {
                 viewCollection[propName] = [];
             }

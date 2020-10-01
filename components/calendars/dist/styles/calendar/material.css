@@ -15,7 +15,7 @@ ejs-calendar {
 }
 
 .e-calendar,
-.e-bigger.e-small .e-calendar {
+.e-bigger.e-small.e-calendar {
   -webkit-tap-highlight-color: transparent;
   border-radius: 2px;
   display: block;
@@ -26,18 +26,18 @@ ejs-calendar {
 }
 
 .e-calendar.e-rtl .e-header .e-title,
-.e-bigger.e-small .e-calendar.e-rtl .e-header .e-title {
+.e-bigger.e-small.e-calendar.e-rtl .e-header .e-title {
   float: right;
   text-align: right;
 }
 
 .e-calendar.e-rtl .e-header .e-icon-container,
-.e-bigger.e-small .e-calendar.e-rtl .e-header .e-icon-container {
+.e-bigger.e-small.e-calendar.e-rtl .e-header .e-icon-container {
   float: left;
 }
 
 .e-calendar .e-header,
-.e-bigger.e-small .e-calendar .e-header {
+.e-bigger.e-small.e-calendar .e-header {
   background: none;
   display: table;
   font-weight: 500;
@@ -47,7 +47,7 @@ ejs-calendar {
 }
 
 .e-calendar .e-header button,
-.e-bigger.e-small .e-calendar .e-header button {
+.e-bigger.e-small.e-calendar .e-header button {
   background: transparent;
   border: 0;
   padding: 0;
@@ -55,7 +55,7 @@ ejs-calendar {
 }
 
 .e-calendar .e-header span,
-.e-bigger.e-small .e-calendar .e-header span {
+.e-bigger.e-small.e-calendar .e-header span {
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -66,17 +66,17 @@ ejs-calendar {
 }
 
 .e-calendar .e-header span.e-disabled,
-.e-bigger.e-small .e-calendar .e-header span.e-disabled {
+.e-bigger.e-small.e-calendar .e-header span.e-disabled {
   cursor: default;
 }
 
 .e-calendar .e-week-header,
-.e-bigger.e-small .e-calendar .e-week-header {
+.e-bigger.e-small.e-calendar .e-week-header {
   padding: 0;
 }
 
 .e-calendar th,
-.e-bigger.e-small .e-calendar th {
+.e-bigger.e-small.e-calendar th {
   cursor: default;
   font-size: 13px;
   font-weight: normal;
@@ -85,13 +85,13 @@ ejs-calendar {
 
 .e-calendar .e-content .e-selected,
 .e-calendar .e-content .e-state-hover,
-.e-bigger.e-small .e-calendar .e-content .e-selected,
-.e-bigger.e-small .e-calendar .e-content .e-state-hover {
+.e-bigger.e-small.e-calendar .e-content .e-selected,
+.e-bigger.e-small.e-calendar .e-content .e-state-hover {
   border-radius: 0;
 }
 
 .e-calendar .e-content span.e-day,
-.e-bigger.e-small .e-calendar .e-content span.e-day {
+.e-bigger.e-small.e-calendar .e-content span.e-day {
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
@@ -105,13 +105,13 @@ ejs-calendar {
 
 .e-calendar .e-content th,
 .e-calendar .e-content td,
-.e-bigger.e-small .e-calendar .e-content th,
-.e-bigger.e-small .e-calendar .e-content td {
+.e-bigger.e-small.e-calendar .e-content th,
+.e-bigger.e-small.e-calendar .e-content td {
   box-sizing: border-box;
 }
 
 .e-calendar .e-content td.e-disabled,
-.e-bigger.e-small .e-calendar .e-content td.e-disabled {
+.e-bigger.e-small.e-calendar .e-content td.e-disabled {
   opacity: 0.35;
   pointer-events: none;
   -ms-touch-action: none;
@@ -119,14 +119,14 @@ ejs-calendar {
 }
 
 .e-calendar .e-content td,
-.e-bigger.e-small .e-calendar .e-content td {
+.e-bigger.e-small.e-calendar .e-content td {
   cursor: pointer;
   padding: 2px;
   text-align: center;
 }
 
 .e-calendar .e-content td.e-week-number,
-.e-bigger.e-small .e-calendar .e-content td.e-week-number {
+.e-bigger.e-small.e-calendar .e-content td.e-week-number {
   color: rgba(0, 0, 0, 0.87);
   font-size: 12px;
   font-style: italic;
@@ -134,13 +134,13 @@ ejs-calendar {
 }
 
 .e-calendar .e-content td.e-overlay,
-.e-bigger.e-small .e-calendar .e-content td.e-overlay {
+.e-bigger.e-small.e-calendar .e-content td.e-overlay {
   background: none;
   width: initial;
 }
 
 .e-calendar .e-content table,
-.e-bigger.e-small .e-calendar .e-content table {
+.e-bigger.e-small.e-calendar .e-content table {
   border-collapse: separate;
   border-spacing: 0;
   border-width: 0;
@@ -154,14 +154,14 @@ ejs-calendar {
 
 .e-calendar .e-content td.e-other-month > span.e-day,
 .e-calendar .e-content td.e-other-year > span.e-day,
-.e-bigger.e-small .e-calendar .e-content td.e-other-month > span.e-day,
-.e-bigger.e-small .e-calendar .e-content td.e-other-year > span.e-day {
+.e-bigger.e-small.e-calendar .e-content td.e-other-month > span.e-day,
+.e-bigger.e-small.e-calendar .e-content td.e-other-year > span.e-day {
   display: none;
   font-weight: normal;
 }
 
 .e-calendar .e-content tr.e-month-hide,
-.e-bigger.e-small .e-calendar .e-content tr.e-month-hide {
+.e-bigger.e-small.e-calendar .e-content tr.e-month-hide {
   display: none;
   font-weight: normal;
 }
@@ -169,9 +169,9 @@ ejs-calendar {
 .e-calendar .e-content tr.e-month-hide,
 .e-calendar .e-content td.e-other-month,
 .e-calendar .e-content td.e-other-year,
-.e-bigger.e-small .e-calendar .e-content tr.e-month-hide,
-.e-bigger.e-small .e-calendar .e-content td.e-other-month,
-.e-bigger.e-small .e-calendar .e-content td.e-other-year {
+.e-bigger.e-small.e-calendar .e-content tr.e-month-hide,
+.e-bigger.e-small.e-calendar .e-content td.e-other-month,
+.e-bigger.e-small.e-calendar .e-content td.e-other-year {
   pointer-events: none;
   -ms-touch-action: none;
       touch-action: none;
@@ -180,9 +180,9 @@ ejs-calendar {
 .e-calendar .e-content tr.e-month-hide,
 .e-calendar .e-content td.e-other-month.e-disabled,
 .e-calendar .e-content td.e-other-year.e-disabled,
-.e-bigger.e-small .e-calendar .e-content tr.e-month-hide,
-.e-bigger.e-small .e-calendar .e-content td.e-other-month.e-disabled,
-.e-bigger.e-small .e-calendar .e-content td.e-other-year.e-disabled {
+.e-bigger.e-small.e-calendar .e-content tr.e-month-hide,
+.e-bigger.e-small.e-calendar .e-content td.e-other-month.e-disabled,
+.e-bigger.e-small.e-calendar .e-content td.e-other-year.e-disabled {
   pointer-events: none;
   -ms-touch-action: none;
       touch-action: none;
@@ -190,16 +190,16 @@ ejs-calendar {
 
 .e-calendar .e-content td.e-week-number:hover span.e-day,
 .e-calendar .e-content td.e-week-number:hover,
-.e-bigger.e-small .e-calendar .e-content td.e-week-number:hover span.e-day,
-.e-bigger.e-small .e-calendar .e-content td.e-week-number:hover {
+.e-bigger.e-small.e-calendar .e-content td.e-week-number:hover span.e-day,
+.e-bigger.e-small.e-calendar .e-content td.e-week-number:hover {
   background-color: #fff;
   cursor: default;
 }
 
 .e-calendar .e-header .e-prev,
 .e-calendar .e-header .e-next,
-.e-bigger.e-small .e-calendar .e-header .e-prev,
-.e-bigger.e-small .e-calendar .e-header .e-next {
+.e-bigger.e-small.e-calendar .e-header .e-prev,
+.e-bigger.e-small.e-calendar .e-header .e-next {
   border-radius: 50%;
   display: inline-block;
   font-size: 14px;
@@ -207,7 +207,7 @@ ejs-calendar {
 }
 
 .e-calendar .e-header .e-title,
-.e-bigger.e-small .e-calendar .e-header .e-title {
+.e-bigger.e-small.e-calendar .e-header .e-title {
   cursor: pointer;
   display: inline-block;
   float: left;
@@ -217,113 +217,113 @@ ejs-calendar {
 }
 
 .e-calendar .e-header .e-title,
-.e-bigger.e-small .e-calendar .e-header .e-title {
+.e-bigger.e-small.e-calendar .e-header .e-title {
   margin-left: 5px;
 }
 
 .e-calendar .e-header .e-prev:hover,
 .e-calendar .e-header .e-next:hover,
-.e-bigger.e-small .e-calendar .e-header .e-prev:hover,
-.e-bigger.e-small .e-calendar .e-header .e-next:hover {
+.e-bigger.e-small.e-calendar .e-header .e-prev:hover,
+.e-bigger.e-small.e-calendar .e-header .e-next:hover {
   cursor: pointer;
 }
 
 .e-calendar .e-header .e-prev.e-overlay,
 .e-calendar .e-header .e-next.e-overlay,
-.e-bigger.e-small .e-calendar .e-header .e-prev.e-overlay,
-.e-bigger.e-small .e-calendar .e-header .e-next.e-overlay {
+.e-bigger.e-small.e-calendar .e-header .e-prev.e-overlay,
+.e-bigger.e-small.e-calendar .e-header .e-next.e-overlay {
   background: none;
 }
 
 .e-calendar .e-header.e-decade .e-title,
 .e-calendar .e-header.e-year .e-title,
-.e-bigger.e-small .e-calendar .e-header.e-decade .e-title,
-.e-bigger.e-small .e-calendar .e-header.e-year .e-title {
+.e-bigger.e-small.e-calendar .e-header.e-decade .e-title,
+.e-bigger.e-small.e-calendar .e-header.e-year .e-title {
   margin-left: 5px;
 }
 
 .e-calendar .e-header.e-decade .e-title,
-.e-bigger.e-small .e-calendar .e-header.e-decade .e-title {
+.e-bigger.e-small.e-calendar .e-header.e-decade .e-title {
   cursor: default;
 }
 
 .e-calendar .e-header .e-icon-container,
-.e-bigger.e-small .e-calendar .e-header .e-icon-container {
+.e-bigger.e-small.e-calendar .e-header .e-icon-container {
   display: inline-block;
   float: right;
 }
 
 .e-calendar .e-footer-container,
-.e-bigger.e-small .e-calendar .e-footer-container {
+.e-bigger.e-small.e-calendar .e-footer-container {
   text-transform: uppercase;
 }
 
 .e-calendar,
-.e-bigger.e-small .e-calendar {
+.e-bigger.e-small.e-calendar {
   max-width: 246px;
   min-width: 240px;
   padding: 0;
 }
 
 .e-calendar.e-calendar-day-header-lg,
-.e-bigger.e-small .e-calendar.e-calendar-day-header-lg {
+.e-bigger.e-small.e-calendar.e-calendar-day-header-lg {
   max-width: 100%;
   min-width: 540px;
 }
 
 .e-calendar.e-week-number,
-.e-bigger.e-small .e-calendar.e-week-number {
+.e-bigger.e-small.e-calendar.e-week-number {
   min-width: 262px;
 }
 
 .e-calendar.e-week,
-.e-bigger.e-small .e-calendar.e-week {
+.e-bigger.e-small.e-calendar.e-week {
   max-width: 246px;
   min-width: 240px;
 }
 
 .e-calendar .e-header .e-title,
-.e-bigger.e-small .e-calendar .e-header .e-title {
+.e-bigger.e-small.e-calendar .e-header .e-title {
   line-height: 40px;
 }
 
 .e-calendar.e-rtl .e-header .e-title,
-.e-bigger.e-small .e-calendar.e-rtl .e-header .e-title {
+.e-bigger.e-small.e-calendar.e-rtl .e-header .e-title {
   text-align: right;
   text-indent: 4px;
 }
 
 .e-calendar .e-header,
-.e-bigger.e-small .e-calendar .e-header {
+.e-bigger.e-small.e-calendar .e-header {
   height: 40px;
 }
 
 .e-calendar .e-header.e-month,
-.e-bigger.e-small .e-calendar .e-header.e-month {
+.e-bigger.e-small.e-calendar .e-header.e-month {
   padding: 10px 10px 0 10px;
 }
 
 .e-calendar .e-header.e-year, .e-calendar .e-header.e-decade,
-.e-bigger.e-small .e-calendar .e-header.e-year,
-.e-bigger.e-small .e-calendar .e-header.e-decade {
+.e-bigger.e-small.e-calendar .e-header.e-year,
+.e-bigger.e-small.e-calendar .e-header.e-decade {
   padding: 10px 10px 0 10px;
 }
 
 .e-calendar th,
-.e-bigger.e-small .e-calendar th {
+.e-bigger.e-small.e-calendar th {
   font-weight: normal;
   height: 30px;
 }
 
 .e-calendar .e-content .e-selected,
 .e-calendar .e-content .e-state-hover,
-.e-bigger.e-small .e-calendar .e-content .e-selected,
-.e-bigger.e-small .e-calendar .e-content .e-state-hover {
+.e-bigger.e-small.e-calendar .e-content .e-selected,
+.e-bigger.e-small.e-calendar .e-content .e-state-hover {
   border-radius: 0;
 }
 
 .e-calendar .e-content span.e-day,
-.e-bigger.e-small .e-calendar .e-content span.e-day {
+.e-bigger.e-small.e-calendar .e-content span.e-day {
   border: none;
   font-size: 13px;
   font-weight: normal;
@@ -334,36 +334,36 @@ ejs-calendar {
 
 .e-calendar .e-content.e-year table,
 .e-calendar .e-content.e-decade table,
-.e-bigger.e-small .e-calendar .e-content.e-year table,
-.e-bigger.e-small .e-calendar .e-content.e-decade table {
+.e-bigger.e-small.e-calendar .e-content.e-year table,
+.e-bigger.e-small.e-calendar .e-content.e-decade table {
   border-spacing: 0;
   padding: 10px;
 }
 
 .e-calendar .e-content.e-month td,
-.e-bigger.e-small .e-calendar .e-content.e-month td {
+.e-bigger.e-small.e-calendar .e-content.e-month td {
   height: 30px;
   padding: 2px;
 }
 
 .e-calendar .e-content .tfooter > tr > td,
-.e-bigger.e-small .e-calendar .e-content .tfooter > tr > td {
+.e-bigger.e-small.e-calendar .e-content .tfooter > tr > td {
   height: 36px;
   line-height: 36px;
 }
 
 .e-calendar .e-content.e-year td,
 .e-calendar .e-content.e-decade td,
-.e-bigger.e-small .e-calendar .e-content.e-year td,
-.e-bigger.e-small .e-calendar .e-content.e-decade td {
+.e-bigger.e-small.e-calendar .e-content.e-year td,
+.e-bigger.e-small.e-calendar .e-content.e-decade td {
   height: 45px;
   padding: 6px;
 }
 
 .e-calendar .e-content.e-year td > span.e-day,
 .e-calendar .e-content.e-decade td > span.e-day,
-.e-bigger.e-small .e-calendar .e-content.e-year td > span.e-day,
-.e-bigger.e-small .e-calendar .e-content.e-decade td > span.e-day {
+.e-bigger.e-small.e-calendar .e-content.e-year td > span.e-day,
+.e-bigger.e-small.e-calendar .e-content.e-decade td > span.e-day {
   font-weight: normal;
   height: 45px;
   line-height: 45px;
@@ -372,14 +372,14 @@ ejs-calendar {
 
 .e-calendar .e-header .e-icon-container .e-prev,
 .e-calendar .e-header .e-icon-container .e-next,
-.e-bigger.e-small .e-calendar .e-header .e-icon-container .e-prev,
-.e-bigger.e-small .e-calendar .e-header .e-icon-container .e-next {
+.e-bigger.e-small.e-calendar .e-header .e-icon-container .e-prev,
+.e-bigger.e-small.e-calendar .e-header .e-icon-container .e-next {
   height: 36px;
   width: 36px;
 }
 
 .e-calendar .e-footer-container,
-.e-bigger.e-small .e-calendar .e-footer-container {
+.e-bigger.e-small.e-calendar .e-footer-container {
   border-top: none;
   cursor: default;
   display: -ms-flexbox;
@@ -394,103 +394,103 @@ ejs-calendar {
 }
 
 .e-small.e-bigger.e-calendar .e-content.e-year span.e-day,
-.e-small.e-bigger .e-calendar .e-content.e-year span.e-day {
+.e-small.e-bigger.e-calendar .e-content.e-year span.e-day {
   font-size: 13px;
 }
 
 .e-small.e-bigger.e-calendar .e-content.e-month table,
-.e-small.e-bigger .e-calendar .e-content.e-month table {
+.e-small.e-bigger.e-calendar .e-content.e-month table {
   padding: 0 10px 10px;
 }
 
 .e-bigger.e-calendar,
-.e-bigger .e-calendar {
+*.e-bigger .e-calendar {
   max-width: 296px;
   min-width: 296px;
   padding: 0;
 }
 
 .e-bigger.e-calendar.e-calendar-day-header-lg,
-.e-bigger .e-calendar.e-calendar-day-header-lg {
+*.e-bigger .e-calendar.e-calendar-day-header-lg {
   max-width: 100%;
   min-width: 540px;
 }
 
 .e-bigger.e-calendar.e-week,
-.e-bigger .e-calendar.e-week {
+*.e-bigger .e-calendar.e-week {
   max-width: 296px;
   min-width: 296px;
 }
 
 .e-bigger.e-calendar.e-week-number,
-.e-bigger .e-calendar.e-week-number {
+*.e-bigger .e-calendar.e-week-number {
   min-width: 320px;
 }
 
 .e-bigger.e-calendar .e-header .e-title,
-.e-bigger .e-calendar .e-header .e-title {
+*.e-bigger .e-calendar .e-header .e-title {
   font-size: 16px;
   line-height: 48px;
   width: 60%;
 }
 
 .e-bigger.e-calendar.e-rtl .e-header .e-title,
-.e-bigger .e-calendar.e-rtl .e-header .e-title {
+*.e-bigger .e-calendar.e-rtl .e-header .e-title {
   line-height: 48px;
   text-indent: 6px;
 }
 
 .e-bigger.e-calendar .e-header,
-.e-bigger .e-calendar .e-header {
+*.e-bigger .e-calendar .e-header {
   height: 48px;
   padding: 10px 10px 0 16px;
 }
 
 .e-bigger.e-calendar .e-header span,
-.e-bigger .e-calendar .e-header span {
+*.e-bigger .e-calendar .e-header span {
   font-size: 16px;
   padding: 15px;
 }
 
 .e-bigger.e-calendar .e-header.e-year, .e-bigger.e-calendar .e-header.e-decade,
-.e-bigger .e-calendar .e-header.e-year,
-.e-bigger .e-calendar .e-header.e-decade {
+*.e-bigger .e-calendar .e-header.e-year,
+*.e-bigger .e-calendar .e-header.e-decade {
   padding: 10px 10px 0 16px;
 }
 
 .e-bigger.e-calendar th,
-.e-bigger .e-calendar th {
+*.e-bigger .e-calendar th {
   font-size: 14px;
   height: 36px;
 }
 
 .e-bigger.e-calendar .e-content.e-year span.e-day,
-.e-bigger .e-calendar .e-content.e-year span.e-day {
+*.e-bigger .e-calendar .e-content.e-year span.e-day {
   font-size: 13px;
   font-weight: normal;
 }
 
 .e-bigger.e-calendar .e-content.e-month table,
-.e-bigger .e-calendar .e-content.e-month table {
+*.e-bigger .e-calendar .e-content.e-month table {
   padding: 0 10px 10px;
 }
 
 .e-bigger.e-calendar .e-content.e-year table,
 .e-bigger.e-calendar .e-content.e-decade table,
-.e-bigger .e-calendar .e-content.e-year table,
-.e-bigger .e-calendar .e-content.e-decade table {
+*.e-bigger .e-calendar .e-content.e-year table,
+*.e-bigger .e-calendar .e-content.e-decade table {
   padding: 0 10px 10px;
 }
 
 .e-bigger.e-calendar .e-content .e-selected,
 .e-bigger.e-calendar .e-content .e-state-hover,
-.e-bigger .e-calendar .e-content .e-selected,
-.e-bigger .e-calendar .e-content .e-state-hover {
+*.e-bigger .e-calendar .e-content .e-selected,
+*.e-bigger .e-calendar .e-content .e-state-hover {
   border-radius: 0;
 }
 
 .e-bigger.e-calendar .e-content span.e-day,
-.e-bigger .e-calendar .e-content span.e-day {
+*.e-bigger .e-calendar .e-content span.e-day {
   font-size: 13px;
   height: 36px;
   line-height: 36px;
@@ -498,23 +498,23 @@ ejs-calendar {
 }
 
 .e-bigger.e-calendar .e-content.e-month td,
-.e-bigger .e-calendar .e-content.e-month td {
+*.e-bigger .e-calendar .e-content.e-month td {
   height: 2px;
   padding: 2px;
 }
 
 .e-bigger.e-calendar .e-content.e-year td,
 .e-bigger.e-calendar .e-content.e-decade td,
-.e-bigger .e-calendar .e-content.e-year td,
-.e-bigger .e-calendar .e-content.e-decade td {
+*.e-bigger .e-calendar .e-content.e-year td,
+*.e-bigger .e-calendar .e-content.e-decade td {
   height: 60px;
   padding: 2px;
 }
 
 .e-bigger.e-calendar .e-content.e-year td > span.e-day,
 .e-bigger.e-calendar .e-content.e-decade td > span.e-day,
-.e-bigger .e-calendar .e-content.e-year td > span.e-day,
-.e-bigger .e-calendar .e-content.e-decade td > span.e-day {
+*.e-bigger .e-calendar .e-content.e-year td > span.e-day,
+*.e-bigger .e-calendar .e-content.e-decade td > span.e-day {
   height: 60px;
   line-height: 60px;
   width: 60px;
@@ -522,14 +522,14 @@ ejs-calendar {
 
 .e-bigger.e-calendar .e-header .e-icon-container .e-prev,
 .e-bigger.e-calendar .e-header .e-icon-container .e-next,
-.e-bigger .e-calendar .e-header .e-icon-container .e-prev,
-.e-bigger .e-calendar .e-header .e-icon-container .e-next {
+*.e-bigger .e-calendar .e-header .e-icon-container .e-prev,
+*.e-bigger .e-calendar .e-header .e-icon-container .e-next {
   height: 48px;
   width: 48px;
 }
 
 .e-bigger.e-calendar .e-footer-container,
-.e-bigger .e-calendar .e-footer-container {
+*.e-bigger .e-calendar .e-footer-container {
   border-top: none;
   padding: 0 10px 10px 10px;
 }

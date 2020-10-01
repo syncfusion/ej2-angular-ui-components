@@ -112,33 +112,33 @@
 }
 
 .e-bigger.e-dialog .e-dlg-header-content,
-.e-bigger .e-dialog .e-dlg-header-content {
+*.e-bigger .e-dialog .e-dlg-header-content {
   padding: 25px 23.25px 11px;
 }
 
 .e-bigger.e-dialog .e-dlg-header,
-.e-bigger .e-dialog .e-dlg-header {
+*.e-bigger .e-dialog .e-dlg-header {
   font-size: 21px;
 }
 
 .e-bigger.e-dialog .e-dlg-content,
-.e-bigger .e-dialog .e-dlg-content {
+*.e-bigger .e-dialog .e-dlg-content {
   font-size: 14px;
   padding: 35px 31.25px 12.5px;
 }
 
 .e-bigger.e-dialog .e-footer-content,
-.e-bigger .e-dialog .e-footer-content {
+*.e-bigger .e-dialog .e-footer-content {
   padding: 0 31.25px 25px;
 }
 
 .e-bigger.e-dialog .e-footer-content .e-btn,
-.e-bigger .e-dialog .e-footer-content .e-btn {
+*.e-bigger .e-dialog .e-footer-content .e-btn {
   margin-left: 10px;
 }
 
 .e-bigger.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn,
-.e-bigger .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
+*.e-bigger .e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
   bottom: 4px;
   height: 40px;
   left: 12px;
@@ -146,7 +146,7 @@
 }
 
 .e-bigger.e-dialog .e-btn .e-btn-icon.e-icon-dlg-close,
-.e-bigger .e-dialog .e-btn .e-btn-icon.e-icon-dlg-close {
+*.e-bigger .e-dialog .e-btn .e-btn-icon.e-icon-dlg-close {
   font-size: 16px;
   width: 16px;
 }

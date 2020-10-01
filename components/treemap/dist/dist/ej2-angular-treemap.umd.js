@@ -193,49 +193,49 @@ exports.TreeMapComponent = /** @class */ (function (_super) {
         _this.element = _this.ngEle.nativeElement;
         _this.injectedModules = _this.injectedModules || [];
         try {
-            var mod = _this.injector.get('TreeMapPrint');
+            var mod = _this.injector.get('TreeMapTreeMapTooltip');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_a) { }
         try {
-            var mod = _this.injector.get('TreeMapPdfExport');
+            var mod = _this.injector.get('TreeMapTreeMapLegend');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_b) { }
         try {
-            var mod = _this.injector.get('TreeMapImageExport');
+            var mod = _this.injector.get('TreeMapTreeMapHighlight');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_c) { }
         try {
-            var mod = _this.injector.get('TreeMapTreeMapTooltip');
+            var mod = _this.injector.get('TreeMapTreeMapSelection');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_d) { }
         try {
-            var mod = _this.injector.get('TreeMapTreeMapLegend');
+            var mod = _this.injector.get('TreeMapPrint');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_e) { }
         try {
-            var mod = _this.injector.get('TreeMapTreeMapHighlight');
+            var mod = _this.injector.get('TreeMapPdfExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
         }
         catch (_f) { }
         try {
-            var mod = _this.injector.get('TreeMapTreeMapSelection');
+            var mod = _this.injector.get('TreeMapImageExport');
             if (_this.injectedModules.indexOf(mod) === -1) {
                 _this.injectedModules.push(mod);
             }
@@ -345,13 +345,13 @@ TreeMapModule.decorators = [
  * @nocollapse
  */
 TreeMapModule.ctorParameters = function () { return []; };
-var PrintService = { provide: 'TreeMapPrint', useValue: ej2Treemap.Print };
-var PdfExportService = { provide: 'TreeMapPdfExport', useValue: ej2Treemap.PdfExport };
-var ImageExportService = { provide: 'TreeMapImageExport', useValue: ej2Treemap.ImageExport };
 var TreeMapTooltipService = { provide: 'TreeMapTreeMapTooltip', useValue: ej2Treemap.TreeMapTooltip };
 var TreeMapLegendService = { provide: 'TreeMapTreeMapLegend', useValue: ej2Treemap.TreeMapLegend };
 var TreeMapHighlightService = { provide: 'TreeMapTreeMapHighlight', useValue: ej2Treemap.TreeMapHighlight };
 var TreeMapSelectionService = { provide: 'TreeMapTreeMapSelection', useValue: ej2Treemap.TreeMapSelection };
+var PrintService = { provide: 'TreeMapPrint', useValue: ej2Treemap.Print };
+var PdfExportService = { provide: 'TreeMapPdfExport', useValue: ej2Treemap.PdfExport };
+var ImageExportService = { provide: 'TreeMapImageExport', useValue: ej2Treemap.ImageExport };
 /**
  * NgModule definition for the TreeMap component with providers.
  */
@@ -367,13 +367,13 @@ TreeMapAllModule.decorators = [
                     TreeMapModule
                 ],
                 providers: [
-                    PrintService,
-                    PdfExportService,
-                    ImageExportService,
                     TreeMapTooltipService,
                     TreeMapLegendService,
                     TreeMapHighlightService,
-                    TreeMapSelectionService
+                    TreeMapSelectionService,
+                    PrintService,
+                    PdfExportService,
+                    ImageExportService
                 ]
             },] },
 ];
@@ -388,13 +388,13 @@ exports.LevelDirective = LevelDirective;
 exports.LevelsDirective = LevelsDirective;
 exports.TreeMapModule = TreeMapModule;
 exports.TreeMapAllModule = TreeMapAllModule;
-exports.PrintService = PrintService;
-exports.PdfExportService = PdfExportService;
-exports.ImageExportService = ImageExportService;
 exports.TreeMapTooltipService = TreeMapTooltipService;
 exports.TreeMapLegendService = TreeMapLegendService;
 exports.TreeMapHighlightService = TreeMapHighlightService;
 exports.TreeMapSelectionService = TreeMapSelectionService;
+exports.PrintService = PrintService;
+exports.PdfExportService = PdfExportService;
+exports.ImageExportService = ImageExportService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$2;
 exports.TreeMap = ej2Treemap.TreeMap;

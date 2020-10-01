@@ -1,6 +1,6 @@
 /*! component icons */
 .e-time-wrapper .e-time-icon.e-icons::before,
-.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons::before {
+*.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons::before {
   content: '\e93e';
 }
 
@@ -11,22 +11,22 @@
 }
 
 .e-time-wrapper,
-.e-control-wrapper.e-time-wrapper {
+*.e-control-wrapper.e-time-wrapper {
   -webkit-tap-highlight-color: transparent;
 }
 
 .e-time-wrapper .e-time-icon.e-icons,
-.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons {
+*.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons {
   font-size: 16px;
 }
 
 .e-time-wrapper .e-time-icon.e-icons.e-disabled,
-.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons.e-disabled {
+*.e-control-wrapper.e-time-wrapper .e-time-icon.e-icons.e-disabled {
   pointer-events: none;
 }
 
 .e-time-wrapper span,
-.e-control-wrapper.e-time-wrapper span {
+*.e-control-wrapper.e-time-wrapper span {
   cursor: pointer;
 }
 
@@ -78,49 +78,49 @@
 }
 
 .e-bigger .e-time-wrapper .e-time-icon.e-icons,
-.e-bigger.e-time-wrapper .e-time-icon.e-icons,
-.e-bigger .e-control-wrapper .e-time-wrapper .e-time-icon.e-icons,
-.e-control-wrapper.e-bigger.e-time-wrapper .e-time-icon.e-icons {
+*.e-bigger.e-time-wrapper .e-time-icon.e-icons,
+*.e-bigger .e-control-wrapper .e-time-wrapper .e-time-icon.e-icons,
+*.e-control-wrapper.e-bigger.e-time-wrapper .e-time-icon.e-icons {
   font-size: 16px;
 }
 
 .e-bigger .e-timepicker.e-popup .e-list-parent.e-ul,
-.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul {
+*.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul {
   padding: 0 0;
 }
 
 .e-bigger .e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 15px;
   line-height: 40px;
   text-indent: 20px;
 }
 
 .e-small .e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 13px;
   line-height: 22px;
   text-indent: 12px;
 }
 
 .e-small .e-time-wrapper .e-time-icon.e-icons,
-.e-small.e-time-wrapper .e-time-icon.e-icons,
-.e-small .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons,
-.e-control-wrapper.e-small.e-time-wrapper .e-time-icon.e-icons {
+*.e-small.e-time-wrapper .e-time-icon.e-icons,
+*.e-small .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons,
+*.e-control-wrapper.e-small.e-time-wrapper .e-time-icon.e-icons {
   font-size: 14px;
 }
 
 .e-small.e-bigger .e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-small.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-small.e-bigger.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
   font-size: 14px;
   line-height: 34px;
   text-indent: 20px;
 }
 
 .e-small.e-bigger .e-time-wrapper .e-time-icon.e-icons,
-.e-small.e-bigger.e-time-wrapper .e-time-icon.e-icons,
-.e-small.bigger .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons,
-.e-control-wrapper.e-small.bigger.e-time-wrapper .e-time-icon.e-icons {
+*.e-small.e-bigger.e-time-wrapper .e-time-icon.e-icons,
+*.e-small.bigger .e-control-wrapper.e-time-wrapper .e-time-icon.e-icons,
+*.e-control-wrapper.e-small.bigger.e-time-wrapper .e-time-icon.e-icons {
   font-size: 18px;
 }
 
@@ -214,8 +214,8 @@
 }
 
 .e-small .e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
+*.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
 .e-bigger.e-small .e-timepicker.e-popup .e-list-parent.e-ul .e-list-item,
-.e-bigger.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
+*.e-bigger.e-small.e-timepicker.e-popup .e-list-parent.e-ul .e-list-item {
   color: #333;
 }

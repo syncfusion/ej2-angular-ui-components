@@ -1,9 +1,10 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
+import { ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -18,13 +19,15 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
+        childFixedUserHandles: new ContentChild(ConnectorFixedUserHandlesDirective), 
         childAnnotations: new ContentChild(ConnectorAnnotationsDirective)
     }
 })
 export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     public directivePropList: any;
+    public childFixedUserHandles: any;
     public childAnnotations: any;
-    public tags: string[] = ['annotations'];
+    public tags: string[] = ['fixedUserHandles', 'annotations'];
     /** 
      * Defines the type of the connector 
      * * Straight - Sets the segment type as Straight 
@@ -97,6 +100,14 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default false
      */
     public excludeFromLayout: any;
+    /** 
+     * Specifies the collection of the fixed user handle
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalueignore 
+     * @default undefined
+     * @blazortype ObservableCollection<DiagramFixedUserHandle>
+     */
+    public fixedUserHandles: any;
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 

@@ -173,6 +173,15 @@
   }
 }
 
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 @keyframes material-spinner-rotate {
   0% {
     transform: rotate(0deg);

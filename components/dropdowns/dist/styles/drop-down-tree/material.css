@@ -6,6 +6,15 @@
   }
 }
 
+@keyframes slideTopUp {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 @keyframes material-spinner-rotate {
   0% {
     transform: rotate(0deg);
@@ -86,6 +95,7 @@
 }
 
 .e-ddt.e-input-group.e-control-wrapper .e-clear-icon, .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
+  box-sizing: content-box;
   min-height: 22px;
 }
 
@@ -405,13 +415,6 @@
 
 .e-ddt.e-rtl.e-popup .e-treeview .e-list-item .e-ul {
   padding: 0 14px 0 0;
-}
-
-.e-dropdowntree .e-ddt.e-input-group.e-control-wrapper .e-clear-icon,
-.e-dropdowntree .e-ddt.e-float-input.e-control-wrapper .e-clear-icon {
-  margin: 6px;
-  min-height: 18px;
-  padding: 0;
 }
 
 .e-bigger .e-ddt .e-chips,

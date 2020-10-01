@@ -1613,7 +1613,7 @@
   color: #000;
   font-size: 13px;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 4px 15px;
   text-overflow: ellipsis;
 }
 
@@ -1648,6 +1648,10 @@
   background-color: #fff;
 }
 
+.e-schedule .e-timeline-year-view .e-resource-column-wrap .e-resource-cells:focus {
+  background-color: #ecf;
+}
+
 .e-schedule .e-timeline-year-view .e-resource-column-table {
   height: 100%;
 }
@@ -1662,6 +1666,7 @@
   float: left;
   font-family: 'e-icons';
   font-size: 12px;
+  padding: 4px 7px;
 }
 
 .e-schedule .e-timeline-year-view .e-resource-collapse {
@@ -1975,7 +1980,7 @@
   color: #000;
   font-size: 13px;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 4px 15px;
   text-overflow: ellipsis;
 }
 
@@ -2001,6 +2006,18 @@
   padding-left: 15px;
   padding-right: 0;
   vertical-align: middle;
+}
+
+.e-schedule .e-timeline-view .e-resource-cells:focus,
+.e-schedule .e-timeline-month-view .e-resource-cells:focus {
+  background-color: #ecf;
+}
+
+.e-schedule .e-timeline-view .e-resource-cells:focus .e-resource-tree-icon,
+.e-schedule .e-timeline-month-view .e-resource-cells:focus .e-resource-tree-icon {
+  background-color: #ecf;
+  border-radius: 50%;
+  color: #000;
 }
 
 .e-schedule .e-timeline-view .e-resource-column-wrap,
@@ -2033,6 +2050,7 @@
   float: left;
   font-family: 'e-icons';
   font-size: 12px;
+  padding: 4px 7px;
 }
 
 .e-schedule .e-timeline-view .e-resource-collapse,

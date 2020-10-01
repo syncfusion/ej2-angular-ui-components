@@ -2205,11 +2205,11 @@
   width: 60% !important;
 }
 
-.e-rtl .e-pivotview-report-input {
+*.e-rtl .e-pivotview-report-input {
   float: left;
 }
 
-.e-rtl .e-pivotview-report-label {
+*.e-rtl .e-pivotview-report-label {
   float: right;
 }
 

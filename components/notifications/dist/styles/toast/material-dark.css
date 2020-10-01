@@ -362,6 +362,16 @@
   visibility: hidden;
 }
 
+.e-toast-container .e-toast .e-toast-close-icon.blazor-toast-close-icon {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  bottom: 6px;
+  height: 20px;
+  position: relative;
+  width: 22px;
+}
+
 .e-toast-container .e-toast {
   background-color: #424242;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);

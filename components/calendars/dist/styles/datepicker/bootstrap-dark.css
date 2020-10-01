@@ -1,53 +1,53 @@
 /*! component icons */
 .e-input-group-icon.e-date-icon,
-.e-control-wrapper .e-input-group-icon.e-date-icon {
+*.e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 16px;
   margin: 0;
   outline: none;
 }
 
 .e-input-group-icon.e-date-icon::before,
-.e-control-wrapper .e-input-group-icon.e-date-icon::before {
+*.e-control-wrapper .e-input-group-icon.e-date-icon::before {
   content: '\e960';
   font-family: 'e-icons';
 }
 
 .e-input-group-icon.e-date-icon:focus,
-.e-control-wrapper .e-input-group-icon.e-date-icon:focus {
+*.e-control-wrapper .e-input-group-icon.e-date-icon:focus {
   background: #959595;
   border-radius: 0;
 }
 
 .e-bigger .e-input-group-icon.e-date-icon,
-.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon,
-.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
+*.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon,
+*.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 20px;
   margin: 0;
 }
 
 .e-bigger .e-input-group-icon.e-date-icon::before,
-.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon::before,
-.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon::before {
+*.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon::before,
+*.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon::before {
   content: '\e960';
   font-family: 'e-icons';
 }
 
 .e-bigger .e-input-group-icon.e-date-icon:focus,
-.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon:focus,
-.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon:focus {
+*.e-control-wrapper.e-bigger .e-input-group-icon.e-date-icon:focus,
+*.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon:focus {
   background: #959595;
   border-radius: 0;
 }
 
 .e-small .e-input-group-icon.e-date-icon,
-.e-control-wrapper.e-small .e-input-group-icon.e-date-icon,
-.e-small .e-control-wrapper .e-input-group-icon.e-date-icon {
+*.e-control-wrapper.e-small .e-input-group-icon.e-date-icon,
+*.e-small .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 14px;
 }
 
 .e-small.e-bigger .e-input-group-icon.e-date-icon,
-.e-control-wrapper.e-small.e-bigger .e-input-group-icon.e-date-icon,
-.e-small.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
+*.e-control-wrapper.e-small.e-bigger .e-input-group-icon.e-date-icon,
+*.e-small.e-bigger .e-control-wrapper .e-input-group-icon.e-date-icon {
   font-size: 18px;
 }
 
@@ -161,6 +161,6 @@
   border: none;
 }
 
-.e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
+*.e-input-group.e-date-wrapper.e-dateinput-active:active:not(.e-success):not(.e-warning):not(.e-error) {
   border: none;
 }
