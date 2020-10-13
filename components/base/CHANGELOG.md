@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 18.3.40 (2020-10-13)
+
+### Common
+
+#### Bug Fixes
+
+- `I292856` - Resolved Drag and Drop functionality not properly working for `child directives` in Angular 8.
+- `I293632,I18019` - Resolved `Template` property which has circular reference inside the `Child directives` throws script error.
+
 ## 18.3.35 (2020-10-01)
 
 ### Common

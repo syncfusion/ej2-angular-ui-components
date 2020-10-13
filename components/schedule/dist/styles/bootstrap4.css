@@ -1772,7 +1772,7 @@
 
 .e-schedule .e-timeline-year-view .e-month-header,
 .e-schedule .e-timeline-year-view .e-work-cells {
-  height: 75px;
+  height: 70px;
 }
 
 .e-schedule .e-timeline-year-view .e-header-cells,
@@ -1822,6 +1822,10 @@
   height: 22px;
   overflow: hidden;
   position: absolute;
+}
+
+.e-schedule .e-timeline-year-view .e-event-table .e-appointment.e-hidden {
+  display: none;
 }
 
 .e-schedule .e-timeline-year-view .e-event-table .e-appointment .e-appointment-details {
@@ -1894,6 +1898,10 @@
   padding: 2px 4px;
   position: absolute;
   text-overflow: ellipsis;
+}
+
+.e-schedule .e-timeline-year-view .e-event-table .e-more-indicator.e-hidden {
+  display: none;
 }
 
 .e-schedule .e-timeline-year-view .e-event-table .e-more-indicator:focus {

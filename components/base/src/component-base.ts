@@ -208,6 +208,7 @@ export class ComponentBase<T> {
                     // So we have constructed property here and used
                     let complexDirProps;
                     let list = getValue('instance.list', tagObject);
+                    tagObject.instance.moduleName = tempAfterContentThis.getModuleName();
                     if(list && list.length){
                         complexDirProps =  list[0].directivePropList;
                     }

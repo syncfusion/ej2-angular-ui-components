@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 18.3.40 (2020-10-13)
+
+### Pivot Table
+
+#### New Features
+
+- `#F156978` - Provided additional cell information for cell template event.
+
+#### Bug Fixes
+
+- `#293916` - The stripline feature is now worked in pivot chart.
+- `#295491` - Now the script error will not occur when clicking the empty pivot table.
+
 ## 18.2.56 (2020-09-01)
 
 ### Pivot Table

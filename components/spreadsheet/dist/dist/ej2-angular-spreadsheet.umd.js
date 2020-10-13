@@ -1129,6 +1129,7 @@ exports.ribbon = ej2Spreadsheet.ribbon;
 exports.formulaBar = ej2Spreadsheet.formulaBar;
 exports.sheetTabs = ej2Spreadsheet.sheetTabs;
 exports.refreshSheetTabs = ej2Spreadsheet.refreshSheetTabs;
+exports.isFormulaBarEdit = ej2Spreadsheet.isFormulaBarEdit;
 exports.dataRefresh = ej2Spreadsheet.dataRefresh;
 exports.initialLoad = ej2Spreadsheet.initialLoad;
 exports.contentLoaded = ej2Spreadsheet.contentLoaded;

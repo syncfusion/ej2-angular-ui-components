@@ -1822,6 +1822,10 @@
   position: absolute;
 }
 
+.e-schedule .e-timeline-year-view .e-event-table .e-appointment.e-hidden {
+  display: none;
+}
+
 .e-schedule .e-timeline-year-view .e-event-table .e-appointment .e-appointment-details {
   display: -ms-flexbox;
   display: flex;
@@ -1892,6 +1896,10 @@
   padding: 2px 4px;
   position: absolute;
   text-overflow: ellipsis;
+}
+
+.e-schedule .e-timeline-year-view .e-event-table .e-more-indicator.e-hidden {
+  display: none;
 }
 
 .e-schedule .e-timeline-year-view .e-event-table .e-more-indicator:focus {

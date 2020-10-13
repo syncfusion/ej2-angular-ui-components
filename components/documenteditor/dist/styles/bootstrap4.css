@@ -3960,6 +3960,10 @@ textarea.e-de-cmt-textarea {
   font-family: 'e-icons';
 }
 
+.e-de-toolbar {
+  height: 100%;
+}
+
 .e-de-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text .e-de-text-wrap {
   height: 0;
   line-height: 0;
@@ -4004,6 +4008,10 @@ textarea.e-de-cmt-textarea {
   padding-top: 11px;
   position: absolute;
   top: 100px;
+}
+
+.e-de-toolbar {
+  height: 100%;
 }
 
 .e-de-statusbar-pageweb {

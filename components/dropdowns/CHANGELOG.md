@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 18.3.40 (2020-10-13)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#291884` - Issue with "clear icon overlaps the selected value" has been resolved.
+
+- `#F157575` - Issue with "value selection by using the space key at the popup opening on second time" has been resolved.
+
 ## 18.3.35 (2020-10-01)
 
 ### ListBox

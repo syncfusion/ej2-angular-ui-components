@@ -1,4 +1,4 @@
 export const pkgName = '@syncfusion/ej2-angular-splitbuttons';
-export const pkgVer = '^18.2.44';
+export const pkgVer = '^18.3.35';
 export const moduleName = 'DropDownButtonModule, SplitButtonModule, ProgressButtonModule';
-export const themeVer = '~18.2.44';
+export const themeVer = '~18.3.35';

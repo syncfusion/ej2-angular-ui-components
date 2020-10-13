@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-buttons';
-exports.pkgVer = '^18.2.44';
+exports.pkgVer = '^18.3.35';
 exports.moduleName = 'ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule, ChipListModule';
-exports.themeVer = '~18.2.44';
+exports.themeVer = '~18.3.35';

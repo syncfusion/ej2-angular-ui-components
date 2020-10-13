@@ -53,16 +53,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines the maximum card count in column
      * @default null
      * @asptype int
-     * @blazortype int
-     * @isblazornullabletype true
      */
     public maxCount: any;
     /** 
      * Defines the minimum card count in column
      * @default null
      * @asptype int
-     * @blazortype int
-     * @isblazornullabletype true
      */
     public minCount: any;
     /** 
@@ -78,7 +74,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the column template
      * @default null
-     * @deprecated 
      */
     @ContentChild('template')
     @Template()

@@ -247,7 +247,8 @@ class ArrayBase {
                         let dirPropName = this.list[i].directivePropList[k];
                         if (propList.indexOf(dirPropName) !== -1) {
                             let tempList = this.list[i];
-                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))) {
+                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))
+                                && this.moduleName && this.moduleName === 'diagram') {
                                 setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
                                 this.list[i].hasChanges = true;
                                 this.list[i].isUpdated = false;
@@ -262,17 +263,6 @@ class ArrayBase {
                     }
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
-                }
-                else {
-                    // tslint:disable-next-line
-                    let keys = Object.keys(this.list[i].propCollection);
-                    for (let j = 0; j < keys.length; j++) {
-                        if (this.list[i].propCollection[keys[j]] &&
-                            this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
-                            isSourceChanged = true;
-                            break;
-                        }
-                    }
                 }
             }
         }
@@ -470,6 +460,7 @@ class ComponentBase {
                     // So we have constructed property here and used
                     let complexDirProps;
                     let list = getValue('instance.list', tagObject);
+                    tagObject.instance.moduleName = tempAfterContentThis.getModuleName();
                     if (list && list.length) {
                         complexDirProps = list[0].directivePropList;
                     }

@@ -264,7 +264,8 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
                         var dirPropName = this.list[i].directivePropList[k];
                         if (propList.indexOf(dirPropName) !== -1) {
                             var tempList = this.list[i];
-                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))) {
+                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))
+                                && this.moduleName && this.moduleName === 'diagram') {
                                 setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
                                 this.list[i].hasChanges = true;
                                 this.list[i].isUpdated = false;
@@ -279,17 +280,6 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
                     }
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
-                }
-                else {
-                    // tslint:disable-next-line
-                    var keys = Object.keys(this.list[i].propCollection);
-                    for (var j = 0; j < keys.length; j++) {
-                        if (this.list[i].propCollection[keys[j]] &&
-                            this.list[i].propCollection[keys[j]].constructor.name === 'TemplateRef_') {
-                            isSourceChanged = true;
-                            break;
-                        }
-                    }
                 }
             }
         }
@@ -495,6 +485,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                     // So we have constructed property here and used
                     var complexDirProps = void 0;
                     var list = getValue('instance.list', tagObject);
+                    tagObject.instance.moduleName = tempAfterContentThis.getModuleName();
                     if (list && list.length) {
                         complexDirProps = list[0].directivePropList;
                     }

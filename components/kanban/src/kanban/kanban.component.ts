@@ -36,7 +36,6 @@ export class KanbanComponent extends Kanban implements IComponentBase {
 
     /** 
      * Defines the template content to card’s tooltip. The property works by enabling the ‘enableTooltip’ property.
-     * @deprecated 
      * @default null
      */
     @ContentChild('tooltipTemplate')
