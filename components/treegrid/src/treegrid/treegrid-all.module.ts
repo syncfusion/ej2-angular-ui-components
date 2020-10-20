@@ -5,7 +5,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { TreeGridComponent } from './treegrid.component';
 import { TreeGridModule } from './treegrid.module';
-import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit, Selection, VirtualScroll, DetailRow, RowDD, Freeze, ColumnChooser} from '@syncfusion/ej2-treegrid'
+import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit, Selection, VirtualScroll, DetailRow, RowDD, Freeze, ColumnChooser, Logger} from '@syncfusion/ej2-treegrid'
 
 
 export const FilterService: ValueProvider = { provide: 'TreeGridFilter', useValue: Filter};
@@ -27,6 +27,7 @@ export const DetailRowService: ValueProvider = { provide: 'TreeGridDetailRow', u
 export const RowDDService: ValueProvider = { provide: 'TreeGridRowDD', useValue: RowDD};
 export const FreezeService: ValueProvider = { provide: 'TreeGridFreeze', useValue: Freeze};
 export const ColumnChooserService: ValueProvider = { provide: 'TreeGridColumnChooser', useValue: ColumnChooser};
+export const LoggerService: ValueProvider = { provide: 'TreeGridLogger', useValue: Logger};
 
 /**
  * NgModule definition for the TreeGrid component with providers.
@@ -55,7 +56,8 @@ export const ColumnChooserService: ValueProvider = { provide: 'TreeGridColumnCho
         DetailRowService,
         RowDDService,
         FreezeService,
-        ColumnChooserService
+        ColumnChooserService,
+        LoggerService
     ]
 })
 export class TreeGridAllModule { }

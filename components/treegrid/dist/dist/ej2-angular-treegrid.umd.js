@@ -465,6 +465,13 @@ exports.TreeGridComponent = /** @class */ (function (_super) {
             }
         }
         catch (_u) { }
+        try {
+            var mod = _this.injector.get('TreeGridLogger');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_v) { }
         _this.registerEvents(outputs$3);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -611,6 +618,7 @@ var DetailRowService = { provide: 'TreeGridDetailRow', useValue: ej2Treegrid.Det
 var RowDDService = { provide: 'TreeGridRowDD', useValue: ej2Treegrid.RowDD };
 var FreezeService = { provide: 'TreeGridFreeze', useValue: ej2Treegrid.Freeze };
 var ColumnChooserService = { provide: 'TreeGridColumnChooser', useValue: ej2Treegrid.ColumnChooser };
+var LoggerService = { provide: 'TreeGridLogger', useValue: ej2Treegrid.Logger };
 /**
  * NgModule definition for the TreeGrid component with providers.
  */
@@ -644,7 +652,8 @@ TreeGridAllModule.decorators = [
                     DetailRowService,
                     RowDDService,
                     FreezeService,
-                    ColumnChooserService
+                    ColumnChooserService,
+                    LoggerService
                 ]
             },] },
 ];
@@ -680,6 +689,7 @@ exports.DetailRowService = DetailRowService;
 exports.RowDDService = RowDDService;
 exports.FreezeService = FreezeService;
 exports.ColumnChooserService = ColumnChooserService;
+exports.LoggerService = LoggerService;
 exports.ɵa = inputs;
 exports.ɵb = outputs$3;
 exports.TreeGrid = ej2Treegrid.TreeGrid;
@@ -795,6 +805,8 @@ exports.VirtualScroll = ej2Treegrid.VirtualScroll;
 exports.TreeVirtual = ej2Treegrid.TreeVirtual;
 exports.Freeze = ej2Treegrid.Freeze;
 exports.ColumnChooser = ej2Treegrid.ColumnChooser;
+exports.Logger = ej2Treegrid.Logger;
+exports.treeGridDetails = ej2Treegrid.treeGridDetails;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

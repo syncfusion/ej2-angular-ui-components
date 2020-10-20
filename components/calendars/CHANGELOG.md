@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.42 (2020-10-20)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#292562`- Issue with " isInteracted change event argument return as false while clicking on the today button" has been resolved.
+
 ## 18.3.40 (2020-10-13)
 
 ### DateRangePicker

@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentEditorComponent } from './documenteditor.component';
 import { DocumentEditorModule } from './documenteditor.module';
-import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog} from '@syncfusion/ej2-documenteditor'
+import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing} from '@syncfusion/ej2-documenteditor'
 
 
 export const PrintService: ValueProvider = { provide: 'DocumentEditorPrint', useValue: Print};
@@ -33,6 +33,7 @@ export const TableOptionsDialogService: ValueProvider = { provide: 'DocumentEdit
 export const CellOptionsDialogService: ValueProvider = { provide: 'DocumentEditorCellOptionsDialog', useValue: CellOptionsDialog};
 export const SpellCheckerService: ValueProvider = { provide: 'DocumentEditorSpellChecker', useValue: SpellChecker};
 export const SpellCheckDialogService: ValueProvider = { provide: 'DocumentEditorSpellCheckDialog', useValue: SpellCheckDialog};
+export const CollaborativeEditingService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditing', useValue: CollaborativeEditing};
 
 /**
  * NgModule definition for the DocumentEditor component with providers.
@@ -70,7 +71,8 @@ export const SpellCheckDialogService: ValueProvider = { provide: 'DocumentEditor
         TableOptionsDialogService,
         CellOptionsDialogService,
         SpellCheckerService,
-        SpellCheckDialogService
+        SpellCheckDialogService,
+        CollaborativeEditingService
     ]
 })
 export class DocumentEditorAllModule { }

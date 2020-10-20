@@ -563,6 +563,10 @@
   max-width: 200px;
 }
 
+.e-query-builder .e-group-body .e-rule-container .e-rule-value.e-custom-value {
+  width: 200px;
+}
+
 .e-query-builder .e-group-body .e-rule-container .e-operator,
 .e-query-builder .e-group-body .e-rule-container .e-value {
   padding: 12px 0 12px 12px;
@@ -836,6 +840,12 @@
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value-delete {
   display: inline-block;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-custom-value,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-custom-value,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-custom-value {
+  width: 200px;
 }
 
 .e-query-builder.e-device .e-group-body .e-rule-value.e-hide,

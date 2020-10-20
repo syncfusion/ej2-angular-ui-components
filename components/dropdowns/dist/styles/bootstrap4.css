@@ -672,6 +672,17 @@
   display: none;
 }
 
+.e-input-group.e-static-clear input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-input-group.e-static-clear.e-control-wrapper input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-input-group input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-input-group.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide {
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
   font-family: inherit;
@@ -1380,10 +1391,11 @@ ejs-dropdownlist {
 .e-bigger .e-multiselect .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 36px;
   margin-top: -3em;
-  right: 34px;
+  right: 0;
 }
 
-.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
   right: 34px;
 }
 
@@ -1591,8 +1603,13 @@ ejs-dropdownlist {
 }
 
 .e-bigger .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  font-size: 12px;
   margin-top: -3.5em;
+}
+
+.e-bigger .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-down-icon .e-chips-close.e-close-hooker.e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  font-size: 12px;
+  margin-top: -2.9em;
 }
 
 .e-multi-select-wrapper input[type='text'] {

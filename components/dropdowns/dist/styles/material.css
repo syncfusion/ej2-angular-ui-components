@@ -657,6 +657,17 @@
   display: none;
 }
 
+.e-input-group.e-static-clear input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-input-group.e-static-clear.e-control-wrapper input.e-dropdownlist.e-input:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-input-group input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide,
+.e-float-input.e-static-clear.e-input-group.e-control-wrapper input.e-dropdownlist:not(:valid):first-child ~ .e-clear-icon.e-clear-icon-hide {
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .e-ddl.e-input-group .e-input-value,
 .e-ddl.e-input-group .e-input-value:focus {
   font-family: inherit;
@@ -1801,6 +1812,20 @@ ejs-dropdownlist {
   font-size: 12px;
   height: 12px;
   width: 12px;
+}
+
+.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-small.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-small.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-small .e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-bigger.e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-bigger.e-small .e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-bigger .e-small.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-bigger.e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before,
+.e-bigger .e-multiselect.e-outline .e-multi-select-wrapper .e-close-hooker.e-ddl-disable-icon::before {
+  content: '';
 }
 
 .e-multi-select-wrapper {

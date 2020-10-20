@@ -105,10 +105,11 @@
 .e-bigger .e-multiselect .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 36px;
   margin-top: -3em;
-  right: 34px;
+  right: 0;
 }
 
-.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
   right: 34px;
 }
 
@@ -316,8 +317,13 @@
 }
 
 .e-bigger .e-multi-select-wrapper .e-chips-close.e-close-hooker {
-  font-size: 12px;
   margin-top: -3.5em;
+}
+
+.e-bigger .e-multi-select-wrapper .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-down-icon .e-chips-close.e-close-hooker.e-multi-select-wrapper .e-chips-close.e-close-hooker {
+  font-size: 12px;
+  margin-top: -2.9em;
 }
 
 .e-multi-select-wrapper input[type='text'] {

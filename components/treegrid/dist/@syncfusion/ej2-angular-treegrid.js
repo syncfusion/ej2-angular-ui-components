@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Directive, ElementRef, Injector, NgModule, Renderer2, ViewContainerRef } from '@angular/core';
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, Template, setValue } from '@syncfusion/ej2-angular-base';
-import { Aggregate, ColumnChooser, ColumnMenu, CommandColumn, ContextMenu, DetailRow, Edit, ExcelExport, Filter, Freeze, Page, PdfExport, Reorder, Resize, RowDD, Selection, Sort, Toolbar, TreeGrid, VirtualScroll } from '@syncfusion/ej2-treegrid';
+import { Aggregate, ColumnChooser, ColumnMenu, CommandColumn, ContextMenu, DetailRow, Edit, ExcelExport, Filter, Freeze, Logger, Page, PdfExport, Reorder, Resize, RowDD, Selection, Sort, Toolbar, TreeGrid, VirtualScroll } from '@syncfusion/ej2-treegrid';
 import { CommonModule } from '@angular/common';
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -426,6 +426,13 @@ let TreeGridComponent = class TreeGridComponent extends TreeGrid {
             }
         }
         catch (_u) { }
+        try {
+            let mod = this.injector.get('TreeGridLogger');
+            if (this.injectedModules.indexOf(mod) === -1) {
+                this.injectedModules.push(mod);
+            }
+        }
+        catch (_v) { }
         this.registerEvents(outputs$3);
         this.addTwoWay.call(this, twoWays);
         setValue('currentInstance', this, this.viewContainerRef);
@@ -569,6 +576,7 @@ const DetailRowService = { provide: 'TreeGridDetailRow', useValue: DetailRow };
 const RowDDService = { provide: 'TreeGridRowDD', useValue: RowDD };
 const FreezeService = { provide: 'TreeGridFreeze', useValue: Freeze };
 const ColumnChooserService = { provide: 'TreeGridColumnChooser', useValue: ColumnChooser };
+const LoggerService = { provide: 'TreeGridLogger', useValue: Logger };
 /**
  * NgModule definition for the TreeGrid component with providers.
  */
@@ -599,7 +607,8 @@ TreeGridAllModule.decorators = [
                     DetailRowService,
                     RowDDService,
                     FreezeService,
-                    ColumnChooserService
+                    ColumnChooserService,
+                    LoggerService
                 ]
             },] },
 ];
@@ -612,6 +621,6 @@ TreeGridAllModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { ColumnDirective, ColumnsDirective, AggregateColumnDirective, AggregateColumnsDirective, AggregateDirective, AggregatesDirective, TreeGridComponent, TreeGridModule, TreeGridAllModule, FilterService, PageService, SortService, ReorderService, ToolbarService, AggregateService, ResizeService, ColumnMenuService, ExcelExportService, PdfExportService, CommandColumnService, ContextMenuService, EditService, SelectionService, VirtualScrollService, DetailRowService, RowDDService, FreezeService, ColumnChooserService, inputs as ɵa, outputs$3 as ɵb };
-export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, dataStateChange, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, beforeCopy, beforePaste, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchDelete, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, rowDrag, rowDragStartHelper, rowDrop, rowDragStart, rowsAdd, rowsRemove, rowdraging, rowDropped, DataManipulation, Reorder, Resize, RowDD, Column, EditSettings, Predicate, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, RowDropSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, isCountRequired, isCheckboxcolumn, isFilterChildHierarchy, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, isHidden, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, TreeClipboard, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual, Freeze, ColumnChooser } from '@syncfusion/ej2-treegrid';
+export { ColumnDirective, ColumnsDirective, AggregateColumnDirective, AggregateColumnsDirective, AggregateDirective, AggregatesDirective, TreeGridComponent, TreeGridModule, TreeGridAllModule, FilterService, PageService, SortService, ReorderService, ToolbarService, AggregateService, ResizeService, ColumnMenuService, ExcelExportService, PdfExportService, CommandColumnService, ContextMenuService, EditService, SelectionService, VirtualScrollService, DetailRowService, RowDDService, FreezeService, ColumnChooserService, LoggerService, inputs as ɵa, outputs$3 as ɵb };
+export { TreeGrid, load, rowDataBound, dataBound, queryCellInfo, beforeDataBound, actionBegin, dataStateChange, actionComplete, rowSelecting, rowSelected, checkboxChange, rowDeselected, toolbarClick, beforeExcelExport, beforePdfExport, resizeStop, expanded, expanding, collapsed, collapsing, remoteExpand, localPagedExpandCollapse, pagingActions, printGridInit, contextMenuOpen, contextMenuClick, beforeCopy, beforePaste, savePreviousRowPosition, crudAction, beginEdit, beginAdd, recordDoubleClick, cellSave, cellSaved, cellEdit, batchDelete, batchCancel, batchAdd, beforeBatchDelete, beforeBatchAdd, beforeBatchSave, batchSave, keyPressed, updateData, doubleTap, virtualColumnIndex, virtualActionArgs, dataListener, indexModifier, beforeStartEdit, beforeBatchCancel, batchEditFormRendered, detailDataBound, rowDrag, rowDragStartHelper, rowDrop, rowDragStart, rowsAdd, rowsRemove, rowdraging, rowDropped, DataManipulation, Reorder, Resize, RowDD, Column, EditSettings, Predicate, FilterSettings, PageSettings, SearchSettings, SelectionSettings, AggregateColumn, AggregateRow, SortDescriptor, SortSettings, RowDropSettings, Render, TreeVirtualRowModelGenerator, isRemoteData, isCountRequired, isCheckboxcolumn, isFilterChildHierarchy, findParentRecords, getExpandStatus, findChildrenRecords, isOffline, extendArray, getPlainData, getParentData, isHidden, ToolbarItem, ContextMenuItems, Filter, ExcelExport, PdfExport, Page, Toolbar, Aggregate, Sort, TreeClipboard, ColumnMenu, ContextMenu, Edit, CommandColumn, Selection, DetailRow, VirtualScroll, TreeVirtual, Freeze, ColumnChooser, Logger, treeGridDetails } from '@syncfusion/ej2-treegrid';
 //# sourceMappingURL=ej2-angular-treegrid.js.map

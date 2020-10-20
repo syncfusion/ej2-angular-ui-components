@@ -200,10 +200,11 @@
 .e-bigger .e-multiselect .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 36px;
   margin-top: -3em;
-  right: 34px;
+  right: 0;
 }
 
-.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
   right: 34px;
 }
 
@@ -556,6 +557,10 @@
   max-width: 200px;
 }
 
+.e-query-builder .e-group-body .e-rule-container .e-rule-value.e-custom-value {
+  width: 200px;
+}
+
 .e-query-builder .e-group-body .e-rule-container .e-operator,
 .e-query-builder .e-group-body .e-rule-container .e-value {
   padding: 8px 0 8px 8px;
@@ -829,6 +834,12 @@
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value,
 .e-bigger .e-query-builder .e-group-body .e-horizontal-mode .e-rule-value-delete {
   display: inline-block;
+}
+
+.e-query-builder.e-device .e-group-body .e-rule-value.e-custom-value,
+.e-bigger.e-query-builder .e-group-body .e-rule-value.e-custom-value,
+.e-bigger .e-query-builder .e-group-body .e-rule-value.e-custom-value {
+  width: 200px;
 }
 
 .e-query-builder.e-device .e-group-body .e-rule-value.e-hide,

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.42 (2020-10-20)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#287079` - Issue with "file is removed from UI while providing the invalid remove URL" has been resolved.
+
 ## 18.3.35 (2020-10-01)
 
 ### TextBox

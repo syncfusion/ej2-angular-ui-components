@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 18.3.42 (2020-10-20)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `F155642` - The issue with "the two-way binding is not working while enabling checkbox support in the Dropdown Tree component" has been resolved.
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'dragStart' event has been fixed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#289874` - Issue with "invalid predefined value is added to the control while disabling the custom value" has been resolved.
+- `#291608` - Issue with "spinner icon is overlapped with clear icon while fetching data from server" has been resolved.
+
 ## 18.3.40 (2020-10-13)
 
 ### MultiSelect
@@ -10,6 +31,7 @@
 
 - `#291884` - Issue with "clear icon overlaps the selected value" has been resolved.
 
+- `#F158089` - Issue with "misplacement of footer template for checkbox mode" has been resolved.
 - `#F157575` - Issue with "value selection by using the space key at the popup opening on second time" has been resolved.
 
 ## 18.3.35 (2020-10-01)

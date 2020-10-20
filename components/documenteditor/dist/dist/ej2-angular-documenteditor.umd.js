@@ -28,8 +28,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentEditorSettings', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableFormField', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableTrackChanges', 'enableWordExport', 'headers', 'height', 'isReadOnly', 'layoutType', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'showRevisions', 'useCtrlClickToFollowHyperlink', 'userColor', 'width', 'zIndex', 'zoomFactor'];
-var outputs = ['afterFormFieldFill', 'beforeFileOpen', 'beforeFormFieldFill', 'beforePaneSwitch', 'commentBegin', 'commentDelete', 'commentEnd', 'contentChange', 'contentControl', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'serviceFailure', 'trackChange', 'viewChange', 'zoomFactorChange'];
+var inputs = ['acceptTab', 'currentUser', 'defaultPasteOption', 'documentEditorSettings', 'documentName', 'enableBookmarkDialog', 'enableBordersAndShadingDialog', 'enableComment', 'enableContextMenu', 'enableCursorOnReadOnly', 'enableEditor', 'enableEditorHistory', 'enableFontDialog', 'enableFormField', 'enableHyperlinkDialog', 'enableImageResizer', 'enableListDialog', 'enableLocalPaste', 'enableLockAndEdit', 'enableOptionsPane', 'enablePageSetupDialog', 'enableParagraphDialog', 'enablePersistence', 'enablePrint', 'enableRtl', 'enableSearch', 'enableSelection', 'enableSfdtExport', 'enableSpellCheck', 'enableStyleDialog', 'enableTableDialog', 'enableTableOfContentsDialog', 'enableTableOptionsDialog', 'enableTablePropertiesDialog', 'enableTextExport', 'enableTrackChanges', 'enableWordExport', 'headers', 'height', 'isReadOnly', 'layoutType', 'locale', 'pageGap', 'pageOutline', 'serverActionSettings', 'serviceUrl', 'showComments', 'showRevisions', 'useCtrlClickToFollowHyperlink', 'userColor', 'width', 'zIndex', 'zoomFactor'];
+var outputs = ['actionComplete', 'afterFormFieldFill', 'beforeFileOpen', 'beforeFormFieldFill', 'beforePaneSwitch', 'commentBegin', 'commentDelete', 'commentEnd', 'contentChange', 'contentControl', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'keyDown', 'requestNavigate', 'searchResultsChange', 'selectionChange', 'serviceFailure', 'trackChange', 'viewChange', 'zoomFactorChange'];
 var twoWays = [];
 /**
  * `ejs-documenteditor` represents the Angular Document Editor Component.
@@ -249,6 +249,13 @@ exports.DocumentEditorComponent = /** @class */ (function (_super) {
             }
         }
         catch (_3) { }
+        try {
+            var mod = _this.injector.get('DocumentEditorCollaborativeEditing');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_4) { }
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -358,6 +365,7 @@ var TableOptionsDialogService = { provide: 'DocumentEditorTableOptionsDialog', u
 var CellOptionsDialogService = { provide: 'DocumentEditorCellOptionsDialog', useValue: ej2Documenteditor.CellOptionsDialog };
 var SpellCheckerService = { provide: 'DocumentEditorSpellChecker', useValue: ej2Documenteditor.SpellChecker };
 var SpellCheckDialogService = { provide: 'DocumentEditorSpellCheckDialog', useValue: ej2Documenteditor.SpellCheckDialog };
+var CollaborativeEditingService = { provide: 'DocumentEditorCollaborativeEditing', useValue: ej2Documenteditor.CollaborativeEditing };
 /**
  * NgModule definition for the DocumentEditor component with providers.
  */
@@ -400,7 +408,8 @@ DocumentEditorAllModule.decorators = [
                     TableOptionsDialogService,
                     CellOptionsDialogService,
                     SpellCheckerService,
-                    SpellCheckDialogService
+                    SpellCheckDialogService,
+                    CollaborativeEditingService
                 ]
             },] },
 ];
@@ -422,7 +431,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$1 = ['currentUser', 'documentEditorSettings', 'enableComment', 'enableCsp', 'enableLocalPaste', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'enableTrackChanges', 'headers', 'height', 'layoutType', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane', 'toolbarItems', 'userColor', 'width', 'zIndex'];
+var inputs$1 = ['currentUser', 'documentEditorSettings', 'enableComment', 'enableCsp', 'enableLocalPaste', 'enableLockAndEdit', 'enablePersistence', 'enableRtl', 'enableSpellCheck', 'enableToolbar', 'enableTrackChanges', 'headers', 'height', 'layoutType', 'locale', 'restrictEditing', 'serverActionSettings', 'serviceUrl', 'showPropertiesPane', 'toolbarItems', 'userColor', 'width', 'zIndex'];
 var outputs$1 = ['beforePaneSwitch', 'commentDelete', 'contentChange', 'contentControl', 'created', 'customContextMenuBeforeOpen', 'customContextMenuSelect', 'destroyed', 'documentChange', 'selectionChange', 'serviceFailure', 'toolbarClick', 'trackChange'];
 var twoWays$1 = [];
 /**
@@ -590,6 +599,7 @@ exports.TableOptionsDialogService = TableOptionsDialogService;
 exports.CellOptionsDialogService = CellOptionsDialogService;
 exports.SpellCheckerService = SpellCheckerService;
 exports.SpellCheckDialogService = SpellCheckDialogService;
+exports.CollaborativeEditingService = CollaborativeEditingService;
 exports.DocumentEditorContainerModule = DocumentEditorContainerModule;
 exports.DocumentEditorContainerAllModule = DocumentEditorContainerAllModule;
 exports.ToolbarService = ToolbarService;
@@ -718,6 +728,7 @@ exports.TableResizer = ej2Documenteditor.TableResizer;
 exports.HelperMethods = ej2Documenteditor.HelperMethods;
 exports.Point = ej2Documenteditor.Point;
 exports.Base64 = ej2Documenteditor.Base64;
+exports.CollaborativeEditing = ej2Documenteditor.CollaborativeEditing;
 exports.EditorHistory = ej2Documenteditor.EditorHistory;
 exports.BaseHistoryInfo = ej2Documenteditor.BaseHistoryInfo;
 exports.HistoryInfo = ej2Documenteditor.HistoryInfo;
@@ -769,6 +780,7 @@ exports.DocumentEditorSettings = ej2Documenteditor.DocumentEditorSettings;
 exports.DocumentEditor = ej2Documenteditor.DocumentEditor;
 exports.ServerActionSettings = ej2Documenteditor.ServerActionSettings;
 exports.FormFieldSettings = ej2Documenteditor.FormFieldSettings;
+exports.CollaborativeEditingSettings = ej2Documenteditor.CollaborativeEditingSettings;
 exports.ContainerServerActionSettings = ej2Documenteditor.ContainerServerActionSettings;
 exports.Toolbar = ej2Documenteditor.Toolbar;
 exports.DocumentEditorContainer = ej2Documenteditor.DocumentEditorContainer;
