@@ -749,6 +749,13 @@ exports.DiagramComponent = /** @class */ (function (_super) {
             }
         }
         catch (_r) { }
+        try {
+            var mod = _this.injector.get('DiagramsLineDistribution');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_s) { }
         _this.registerEvents(outputs$9);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -914,6 +921,7 @@ var DiagramContextMenuService = { provide: 'DiagramsDiagramContextMenu', useValu
 var LineRoutingService = { provide: 'DiagramsLineRouting', useValue: ej2Diagrams.LineRouting };
 var ConnectorEditingService = { provide: 'DiagramsConnectorEditing', useValue: ej2Diagrams.ConnectorEditing };
 var BlazorTooltipService = { provide: 'DiagramsBlazorTooltip', useValue: ej2Diagrams.BlazorTooltip };
+var LineDistributionService = { provide: 'DiagramsLineDistribution', useValue: ej2Diagrams.LineDistribution };
 /**
  * NgModule definition for the Diagram component with providers.
  */
@@ -944,7 +952,8 @@ DiagramAllModule.decorators = [
                     DiagramContextMenuService,
                     LineRoutingService,
                     ConnectorEditingService,
-                    BlazorTooltipService
+                    BlazorTooltipService,
+                    LineDistributionService
                 ]
             },] },
 ];
@@ -1346,6 +1355,7 @@ exports.DiagramContextMenuService = DiagramContextMenuService;
 exports.LineRoutingService = LineRoutingService;
 exports.ConnectorEditingService = ConnectorEditingService;
 exports.BlazorTooltipService = BlazorTooltipService;
+exports.LineDistributionService = LineDistributionService;
 exports.PaletteDirective = PaletteDirective;
 exports.PalettesDirective = PalettesDirective;
 exports.SymbolPaletteModule = SymbolPaletteModule;
@@ -1376,6 +1386,8 @@ exports.BlazorAction = ej2Diagrams.BlazorAction;
 exports.PortVisibility = ej2Diagrams.PortVisibility;
 exports.SnapConstraints = ej2Diagrams.SnapConstraints;
 exports.SelectorConstraints = ej2Diagrams.SelectorConstraints;
+exports.ConnectionPointOrigin = ej2Diagrams.ConnectionPointOrigin;
+exports.ChildArrangement = ej2Diagrams.ChildArrangement;
 exports.ConnectorConstraints = ej2Diagrams.ConnectorConstraints;
 exports.AnnotationConstraints = ej2Diagrams.AnnotationConstraints;
 exports.NodeConstraints = ej2Diagrams.NodeConstraints;
@@ -1663,6 +1675,7 @@ exports.updateLaneBoundsAfterAddChild = ej2Diagrams.updateLaneBoundsAfterAddChil
 exports.renderStackHighlighter = ej2Diagrams.renderStackHighlighter;
 exports.moveChildInStack = ej2Diagrams.moveChildInStack;
 exports.LineRouting = ej2Diagrams.LineRouting;
+exports.LineDistribution = ej2Diagrams.LineDistribution;
 exports.CrudAction = ej2Diagrams.CrudAction;
 exports.ConnectionDataSource = ej2Diagrams.ConnectionDataSource;
 exports.DataSource = ej2Diagrams.DataSource;

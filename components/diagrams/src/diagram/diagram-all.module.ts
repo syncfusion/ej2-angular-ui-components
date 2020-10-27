@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip, LineDistribution} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -30,6 +30,7 @@ export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiag
 export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
 export const BlazorTooltipService: ValueProvider = { provide: 'DiagramsBlazorTooltip', useValue: BlazorTooltip};
+export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDistribution', useValue: LineDistribution};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -55,7 +56,8 @@ export const BlazorTooltipService: ValueProvider = { provide: 'DiagramsBlazorToo
         DiagramContextMenuService,
         LineRoutingService,
         ConnectorEditingService,
-        BlazorTooltipService
+        BlazorTooltipService,
+        LineDistributionService
     ]
 })
 export class DiagramAllModule { }

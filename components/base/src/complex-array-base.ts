@@ -1,5 +1,5 @@
 import { QueryList, SimpleChanges, SimpleChange, EmbeddedViewRef } from '@angular/core';
-import { getValue, setValue } from '@syncfusion/ej2-base';
+import { getValue, setValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { clearTemplate, registerEvents } from './util';
 
 /**
@@ -7,7 +7,7 @@ import { clearTemplate, registerEvents } from './util';
  */
 
 export interface IChildChange {
-    index: number;
+    dirIndex: number;
     change: Object;
 }
 
@@ -21,7 +21,7 @@ interface Tag {
 export class ComplexBase<T> {
     public isUpdated: boolean;
     public hasChanges?: boolean = false;
-    public index?: number;
+    public dirIndex?: number;
     public propCollection?: { [key: string]: Object } = {};
     public dataSource?: { [key: string]: Object } = {};
     public property?: string;
@@ -89,11 +89,29 @@ export class ComplexBase<T> {
 
     public isChanged(): boolean {
         let result: boolean = this.hasChanges;
+        if (!isNullOrUndefined(this.propCollection[this.property])) {
+            let tempProps: any = this.propCollection[this.property];
+            let props: string[]= Object.keys(tempProps[0]);
+            for (let d: number = 0; d < props.length; d++) {
+                if (!isNullOrUndefined(this.propCollection[props[d]])) {
+                    let val: any = getValue(props[d], this);
+                    let propVal: any = (this.propCollection[this.property] as any)[0][props[d]];
+                    if (!isNullOrUndefined(val) && this.propCollection[props[d]] !== val
+                    && propVal !== val) {
+                        (this.propCollection[this.property] as any)[0][props[d]] = val;
+                        this.propCollection[props[d]] = val;
+                        this.hasChanges = true;
+                        this.isUpdated = false;
+                    }
+                    
+                }
+            }
+        }
         /* istanbul ignore next */
         for (let item of this.tagObjects) {
             result = result || item.instance.hasChanges;
         }
-        return result;
+        return result || this.hasChanges;
     }
 
     public ngAfterContentChecked(): void {
@@ -142,7 +160,7 @@ export class ArrayBase<T> {
         let index: number = 0;
         /* istanbul ignore next */
         this.list = this.children.map((child: T & ComplexBase<T>) => {
-            child.index = index++;
+            child.dirIndex = index++;
             child.property = this.propertyName;
             return child;
         });
@@ -170,21 +188,6 @@ export class ArrayBase<T> {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
-                    let propList: string[] = Object.keys(this.list[i]);
-                    if (this.list[i].directivePropList) {
-                        for (let k: number = 0; k < this.list[i].directivePropList.length; k++) {
-                            let dirPropName = this.list[i].directivePropList[k];
-                            if (propList.indexOf(dirPropName) !== -1) {
-                                let tempList: any = this.list[i];
-                                if((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))
-                                && this.moduleName && this.moduleName === 'diagram'){
-                                    setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
-                                    this.list[i].hasChanges = true;
-                                    this.list[i].isUpdated = false;
-                                }
-                            }
-                        }
-                    }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;
@@ -199,7 +202,7 @@ export class ArrayBase<T> {
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         if (this.hasNewChildren) {
             this.list = this.children.map((child: T & ComplexBase<T>) => {
-                child.index = index++;
+                child.dirIndex = index++;
                 child.property = this.propertyName;
                 return child;
             });

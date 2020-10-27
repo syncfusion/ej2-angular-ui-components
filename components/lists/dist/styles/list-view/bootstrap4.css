@@ -124,6 +124,7 @@
 
 .e-listview .e-list-item {
   border-bottom: 1px solid;
+  cursor: pointer;
 }
 
 .e-listview .e-list-parent {

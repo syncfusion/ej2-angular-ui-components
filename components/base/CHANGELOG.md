@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 18.3.42 (2020-10-20)
+## 18.3.44 (2020-10-27)
+
+### Common
+
+#### Bug Fixes
+
+- `I291168` - Resolved peer dependency issue for Angular `10.1.5`.
+- Resolved complex directives property change not working issue.
+
+## 18.3.40 (2020-10-13)
 
 ### Common
 

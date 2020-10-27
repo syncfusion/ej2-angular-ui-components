@@ -9,7 +9,7 @@ export {PortDirective,PortsDirective} from './diagram/ports.directive';
 export {NodeDirective,NodesDirective} from './diagram/nodes.directive';
 export { DiagramComponent} from './diagram/diagram.component';
 export { DiagramModule } from './diagram/diagram.module';
-export { DiagramAllModule, HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, LineRoutingService, ConnectorEditingService, BlazorTooltipService } from './diagram/diagram-all.module';
+export { DiagramAllModule, HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, LineRoutingService, ConnectorEditingService, BlazorTooltipService, LineDistributionService } from './diagram/diagram-all.module';
 export {PaletteDirective,PalettesDirective} from './symbol-palette/palettes.directive';
 export { SymbolPaletteComponent} from './symbol-palette/symbolpalette.component';
 export { SymbolPaletteModule } from './symbol-palette/symbolpalette.module';

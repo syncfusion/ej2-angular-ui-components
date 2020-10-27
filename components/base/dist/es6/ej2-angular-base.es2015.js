@@ -177,11 +177,28 @@ class ComplexBase {
     }
     isChanged() {
         let result = this.hasChanges;
+        if (!isNullOrUndefined(this.propCollection[this.property])) {
+            let tempProps = this.propCollection[this.property];
+            let props = Object.keys(tempProps[0]);
+            for (let d = 0; d < props.length; d++) {
+                if (!isNullOrUndefined(this.propCollection[props[d]])) {
+                    let val = getValue(props[d], this);
+                    let propVal = this.propCollection[this.property][0][props[d]];
+                    if (!isNullOrUndefined(val) && this.propCollection[props[d]] !== val
+                        && propVal !== val) {
+                        this.propCollection[this.property][0][props[d]] = val;
+                        this.propCollection[props[d]] = val;
+                        this.hasChanges = true;
+                        this.isUpdated = false;
+                    }
+                }
+            }
+        }
         /* istanbul ignore next */
         for (let item of this.tagObjects) {
             result = result || item.instance.hasChanges;
         }
-        return result;
+        return result || this.hasChanges;
     }
     ngAfterContentChecked() {
         this.hasChanges = this.isChanged();
@@ -217,7 +234,7 @@ class ArrayBase {
         let index = 0;
         /* istanbul ignore next */
         this.list = this.children.map((child) => {
-            child.index = index++;
+            child.dirIndex = index++;
             child.property = this.propertyName;
             return child;
         });
@@ -241,21 +258,6 @@ class ArrayBase {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i = 0; i < this.list.length; i++) {
-                let propList = Object.keys(this.list[i]);
-                if (this.list[i].directivePropList) {
-                    for (let k = 0; k < this.list[i].directivePropList.length; k++) {
-                        let dirPropName = this.list[i].directivePropList[k];
-                        if (propList.indexOf(dirPropName) !== -1) {
-                            let tempList = this.list[i];
-                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))
-                                && this.moduleName && this.moduleName === 'diagram') {
-                                setValue(dirPropName, getValue(dirPropName, this.list[i]), this.list[i].propCollection);
-                                this.list[i].hasChanges = true;
-                                this.list[i].isUpdated = false;
-                            }
-                        }
-                    }
-                }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;
@@ -269,7 +271,7 @@ class ArrayBase {
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         if (this.hasNewChildren) {
             this.list = this.children.map((child) => {
-                child.index = index++;
+                child.dirIndex = index++;
                 child.property = this.propertyName;
                 return child;
             });

@@ -595,6 +595,10 @@
   pointer-events: none;
 }
 
+.e-treeview.e-interaction.e-fullrow-wrap .e-text-content {
+  pointer-events: auto;
+}
+
 .e-bigger .e-treeview .e-list-text,
 .e-treeview.e-bigger .e-list-text {
   font-size: 15px;

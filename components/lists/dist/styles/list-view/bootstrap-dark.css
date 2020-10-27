@@ -68,6 +68,7 @@
 
 .e-listview .e-list-item {
   border-bottom: 0 solid;
+  cursor: pointer;
 }
 
 .e-listview .e-list-parent {

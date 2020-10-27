@@ -189,12 +189,29 @@ var ComplexBase = /** @class */ (function () {
     };
     ComplexBase.prototype.isChanged = function () {
         var result = this.hasChanges;
+        if (!sf.base.isNullOrUndefined(this.propCollection[this.property])) {
+            var tempProps = this.propCollection[this.property];
+            var props = Object.keys(tempProps[0]);
+            for (var d = 0; d < props.length; d++) {
+                if (!sf.base.isNullOrUndefined(this.propCollection[props[d]])) {
+                    var val = sf.base.getValue(props[d], this);
+                    var propVal = this.propCollection[this.property][0][props[d]];
+                    if (!sf.base.isNullOrUndefined(val) && this.propCollection[props[d]] !== val
+                        && propVal !== val) {
+                        this.propCollection[this.property][0][props[d]] = val;
+                        this.propCollection[props[d]] = val;
+                        this.hasChanges = true;
+                        this.isUpdated = false;
+                    }
+                }
+            }
+        }
         /* istanbul ignore next */
         for (var _i = 0, _a = this.tagObjects; _i < _a.length; _i++) {
             var item = _a[_i];
             result = result || item.instance.hasChanges;
         }
-        return result;
+        return result || this.hasChanges;
     };
     ComplexBase.prototype.ngAfterContentChecked = function () {
         this.hasChanges = this.isChanged();
@@ -233,7 +250,7 @@ var ArrayBase = /** @class */ (function () {
         var index = 0;
         /* istanbul ignore next */
         this.list = this.children.map(function (child) {
-            child.index = index++;
+            child.dirIndex = index++;
             child.property = _this.propertyName;
             return child;
         });
@@ -259,21 +276,6 @@ var ArrayBase = /** @class */ (function () {
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (var i = 0; i < this.list.length; i++) {
-                var propList = Object.keys(this.list[i]);
-                if (this.list[i].directivePropList) {
-                    for (var k = 0; k < this.list[i].directivePropList.length; k++) {
-                        var dirPropName = this.list[i].directivePropList[k];
-                        if (propList.indexOf(dirPropName) !== -1) {
-                            var tempList = this.list[i];
-                            if ((JSON.stringify(tempList[dirPropName])) !== (JSON.stringify(tempList.propCollection[dirPropName]))
-                                && this.moduleName && this.moduleName === 'diagram') {
-                                sf.base.setValue(dirPropName, sf.base.getValue(dirPropName, this.list[i]), this.list[i].propCollection);
-                                this.list[i].hasChanges = true;
-                                this.list[i].isUpdated = false;
-                            }
-                        }
-                    }
-                }
                 if (this.list[i].propCollection.dataSource) {
                     if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;
@@ -287,7 +289,7 @@ var ArrayBase = /** @class */ (function () {
         this.hasNewChildren = (this.list.length !== this.children.length || isSourceChanged) ? true : null;
         if (this.hasNewChildren) {
             this.list = this.children.map(function (child) {
-                child.index = index++;
+                child.dirIndex = index++;
                 child.property = _this.propertyName;
                 return child;
             });

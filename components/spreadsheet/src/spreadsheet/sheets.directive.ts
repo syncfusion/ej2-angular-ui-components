@@ -99,7 +99,7 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
     /** 
      * Specifies selected range in the sheet. 
      *  
-     * @default 'A1'
+     * @default 'A1:A1'
      */
     public selectedRange: any;
     /** 

@@ -759,6 +759,13 @@ button .e-badge.e-badge-circle.e-badge-ghost {
   color: #fff;
 }
 
+.e-toast-container .e-toast .e-toast-close-icon.e-blazor-toast-close-icon, .e-toast-container .e-toast .e-toast-close-icon.e-blazor-toast-close-icon:focus, .e-toast-container .e-toast .e-toast-close-icon.e-blazor-toast-close-icon:active {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+}
+
 .e-toast-container .e-toast .e-toast-message .e-toast-title {
   color: #fff;
 }

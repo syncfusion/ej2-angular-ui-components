@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.3.44 (2020-10-27)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#292479` - Issue with "beforeOpen event is triggered while rendering the component with initial value" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F158340` - Issue with "popup is not getting refreshed after filtering while updating the remote data dynamically " has been resolved.
+
 ## 18.3.42 (2020-10-20)
 
 ### Dropdown Tree

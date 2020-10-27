@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.3.42 (2020-10-20)
+## 18.3.44 (2020-10-27)
 
-### Uploader
+### Range Slider
 
 #### Bug Fixes
 
-- `#287079` - Issue with "file is removed from UI while providing the invalid remove URL" has been resolved.
+- `#294975` - Issue with Slider's handle staying large in size when clicking out of the screen has been fixed.
 
 ## 18.3.35 (2020-10-01)
 
@@ -1114,6 +1114,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.3.42 (2020-10-20)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#287079` - Issue with "file is removed from UI while providing the invalid remove URL" has been resolved.
 
 ## 18.2.56 (2020-09-01)
 

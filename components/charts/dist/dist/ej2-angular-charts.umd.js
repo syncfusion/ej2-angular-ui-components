@@ -4151,6 +4151,7 @@ exports.pathAnimation = ej2Charts.pathAnimation;
 exports.appendClipElement = ej2Charts.appendClipElement;
 exports.triggerLabelRender = ej2Charts.triggerLabelRender;
 exports.setRange = ej2Charts.setRange;
+exports.isZoomSet = ej2Charts.isZoomSet;
 exports.getActualDesiredIntervalsCount = ej2Charts.getActualDesiredIntervalsCount;
 exports.templateAnimate = ej2Charts.templateAnimate;
 exports.drawSymbol = ej2Charts.drawSymbol;
