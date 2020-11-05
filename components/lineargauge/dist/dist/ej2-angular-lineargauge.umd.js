@@ -289,7 +289,7 @@ var __metadata$1 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['allowImageExport', 'allowMargin', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
+var inputs = ['allowImageExport', 'allowMargin', 'allowPdfExport', 'allowPrint', 'annotations', 'axes', 'background', 'border', 'container', 'description', 'edgeLabelPlacement', 'enablePersistence', 'enableRtl', 'format', 'height', 'locale', 'margin', 'orientation', 'rangePalettes', 'tabIndex', 'theme', 'title', 'titleStyle', 'tooltip', 'useGroupingSeparator', 'width'];
 var outputs$4 = ['animationComplete', 'annotationRender', 'axisLabelRender', 'beforePrint', 'dragEnd', 'dragMove', 'dragStart', 'gaugeMouseDown', 'gaugeMouseLeave', 'gaugeMouseMove', 'gaugeMouseUp', 'load', 'loaded', 'resized', 'tooltipRender', 'valueChange'];
 var twoWays = [''];
 /**
@@ -537,6 +537,7 @@ exports.Pointer = ej2Lineargauge.Pointer;
 exports.Axis = ej2Lineargauge.Axis;
 exports.stringToNumber = ej2Lineargauge.stringToNumber;
 exports.measureText = ej2Lineargauge.measureText;
+exports.textTrim = ej2Lineargauge.textTrim;
 exports.withInRange = ej2Lineargauge.withInRange;
 exports.convertPixelToValue = ej2Lineargauge.convertPixelToValue;
 exports.getPathToRect = ej2Lineargauge.getPathToRect;

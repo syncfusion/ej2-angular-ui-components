@@ -492,6 +492,7 @@ exports.rowSelected = ej2Pivotview.rowSelected;
 exports.rowDeselected = ej2Pivotview.rowDeselected;
 exports.beginDrillThrough = ej2Pivotview.beginDrillThrough;
 exports.editCompleted = ej2Pivotview.editCompleted;
+exports.multiLevelLabelClick = ej2Pivotview.multiLevelLabelClick;
 exports.saveReport = ej2Pivotview.saveReport;
 exports.fetchReport = ej2Pivotview.fetchReport;
 exports.loadReport = ej2Pivotview.loadReport;
