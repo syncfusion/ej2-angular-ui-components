@@ -12,7 +12,7 @@ import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, Dire
 import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from '@syncfusion/ej2-angular-base';
 import { DropDownButton, ProgressButton, SplitButton } from '@syncfusion/ej2-splitbuttons';
 import { CommonModule } from '@angular/common';
-var input = ['iconCss', 'id', 'separator', 'text', 'url'];
+var input = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 var outputs = [];
 var DropDownButtonItemDirective = /** @class */ (function (_super) {
     __extends(DropDownButtonItemDirective, _super);
@@ -214,7 +214,7 @@ DropDownButtonAllModule.decorators = [
  * @nocollapse
  */
 DropDownButtonAllModule.ctorParameters = function () { return []; };
-var input$1 = ['iconCss', 'id', 'separator', 'text', 'url'];
+var input$1 = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 var outputs$2 = [];
 var SplitButtonItemDirective = /** @class */ (function (_super) {
     __extends(SplitButtonItemDirective, _super);

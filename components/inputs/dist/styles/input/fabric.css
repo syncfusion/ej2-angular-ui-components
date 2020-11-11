@@ -3500,6 +3500,11 @@ textarea.e-input,
   box-sizing: border-box;
 }
 
+.e-float-input.e-control-wrapper.e-hidden,
+.e-input-group.e-control-wrapper.e-hidden {
+  display: none;
+}
+
 /*! input theme */
 input.e-input,
 .e-input-group input.e-input,

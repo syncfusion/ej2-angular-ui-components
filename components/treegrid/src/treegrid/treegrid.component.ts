@@ -43,7 +43,8 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
     /** 
      * The row template that renders customized rows from the given template. 
      * By default, TreeGrid renders a table row for every data source item. 
-     * > * It accepts either [template string](../../common/template-engine/) or HTML element ID. 
+     * > * It accepts either [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) 
+     * or HTML element ID. 
      * > * The row template must be a table row.
      * 
      * > Check the [`Row Template`](../../treegrid/row) customization.
@@ -55,7 +56,8 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
     /** 
      * The detail template allows you to show or hide additional information about a particular row.
      * 
-     * > It accepts either the [template string](../../common/template-engine/) or the HTML element ID.
+     * > It accepts either the [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+     *or the HTML element ID.
      *
      *     
      */

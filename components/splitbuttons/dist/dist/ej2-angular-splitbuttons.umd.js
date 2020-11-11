@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var input = ['iconCss', 'id', 'separator', 'text', 'url'];
+var input = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 var outputs = [];
 var DropDownButtonItemDirective = /** @class */ (function (_super) {
     __extends(DropDownButtonItemDirective, _super);
@@ -216,7 +216,7 @@ DropDownButtonAllModule.decorators = [
  * @nocollapse
  */
 DropDownButtonAllModule.ctorParameters = function () { return []; };
-var input$1 = ['iconCss', 'id', 'separator', 'text', 'url'];
+var input$1 = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 var outputs$2 = [];
 var SplitButtonItemDirective = /** @class */ (function (_super) {
     __extends(SplitButtonItemDirective, _super);

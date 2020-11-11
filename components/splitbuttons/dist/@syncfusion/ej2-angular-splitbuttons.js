@@ -3,7 +3,7 @@ import { ArrayBase, ComplexBase, ComponentBase, ComponentMixins, setValue } from
 import { DropDownButton, ProgressButton, SplitButton } from '@syncfusion/ej2-splitbuttons';
 import { CommonModule } from '@angular/common';
 
-let input = ['iconCss', 'id', 'separator', 'text', 'url'];
+let input = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 let outputs = [];
 class DropDownButtonItemDirective extends ComplexBase {
     /**
@@ -190,7 +190,7 @@ DropDownButtonAllModule.decorators = [
  */
 DropDownButtonAllModule.ctorParameters = () => [];
 
-let input$1 = ['iconCss', 'id', 'separator', 'text', 'url'];
+let input$1 = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 let outputs$2 = [];
 class SplitButtonItemDirective extends ComplexBase {
     /**

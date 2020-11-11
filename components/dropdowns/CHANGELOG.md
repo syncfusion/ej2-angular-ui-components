@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.3.47 (2020-11-05)
+## 18.3.48 (2020-11-11)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#298297` - Now, proper selected item count is updated in the remaining template.
+
+## 18.3.44 (2020-10-27)
 
 ### MultiSelect
 

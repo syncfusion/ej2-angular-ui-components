@@ -1225,6 +1225,7 @@ exports.lazyLoadScrollHandler = ej2Grids.lazyLoadScrollHandler;
 exports.groupCollapse = ej2Grids.groupCollapse;
 exports.beforeCheckboxRenderer = ej2Grids.beforeCheckboxRenderer;
 exports.refreshHandlers = ej2Grids.refreshHandlers;
+exports.beforeRefreshOnDataChange = ej2Grids.beforeRefreshOnDataChange;
 exports.Data = ej2Grids.Data;
 exports.Sort = ej2Grids.Sort;
 exports.Page = ej2Grids.Page;

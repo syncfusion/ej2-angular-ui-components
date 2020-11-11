@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['iconCss', 'id', 'separator', 'text', 'url'];
+let input: string[] = ['disabled', 'iconCss', 'id', 'separator', 'text', 'url'];
 let outputs: string[] = [];
 
 @Directive({
@@ -18,6 +18,11 @@ export class DropDownButtonItemDirective extends ComplexBase<DropDownButtonItemD
     public directivePropList: any;
 
 
+    /** 
+     * Used to enable or disable the item.
+     * @default false
+     */
+    public disabled: any;
     /** 
      * Defines class/multiple classes separated by a space for the item that is used to include an icon. 
      * Action item can include font icon and sprite image.

@@ -282,10 +282,6 @@
   word-wrap: break-word;
 }
 
-.e-treegrid .e-summarycell {
-  pointer-events: none;
-}
-
 .e-treegrid.e-grid.e-print-grid-layout .e-icons {
   display: inline-block;
 }

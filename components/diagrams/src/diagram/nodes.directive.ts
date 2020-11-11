@@ -327,6 +327,7 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
+     * @ignoreapilink 
      */
     public symbolInfo: any;
     /** 

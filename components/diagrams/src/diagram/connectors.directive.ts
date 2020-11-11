@@ -191,6 +191,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @aspdefaultvalueignore 
      * @blazordefaultvalueignore 
      * @default undefined
+     * @ignoreapilink 
      */
     public symbolInfo: any;
     /** 

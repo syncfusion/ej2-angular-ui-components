@@ -133,11 +133,6 @@
   margin: 0;
 }
 
-.e-contextmenu-wrapper ul .e-menu-item.e-blankicon,
-.e-contextmenu-container ul .e-menu-item.e-blankicon {
-  padding-left: 36px;
-}
-
 .e-contextmenu-wrapper ul .e-menu-item .e-caret,
 .e-contextmenu-container ul .e-menu-item .e-caret {
   font-size: 10px;
@@ -220,7 +215,6 @@
 .e-rtl.e-contextmenu-wrapper .e-menu-item.e-blankicon,
 .e-rtl.e-contextmenu-container .e-menu-item.e-blankicon {
   padding-left: 10px;
-  padding-right: 36px;
 }
 
 .e-rtl.e-contextmenu-wrapper .e-menu-item.e-blankicon.e-menu-caret-icon,
@@ -271,13 +265,6 @@
   line-height: normal;
 }
 
-.e-bigger .e-contextmenu-wrapper ul .e-menu-item.e-blankicon,
-.e-bigger.e-contextmenu-wrapper ul .e-menu-item.e-blankicon,
-.e-bigger .e-contextmenu-container ul .e-menu-item.e-blankicon,
-.e-bigger.e-contextmenu-container ul .e-menu-item.e-blankicon {
-  padding-left: 38px;
-}
-
 .e-bigger .e-contextmenu-wrapper ul .e-menu-item .e-caret,
 .e-bigger.e-contextmenu-wrapper ul .e-menu-item .e-caret,
 .e-bigger .e-contextmenu-container ul .e-menu-item .e-caret,
@@ -290,7 +277,6 @@
 .e-bigger .e-contextmenu-container.e-rtl ul .e-blankicon,
 .e-bigger.e-contextmenu-container.e-rtl ul .e-blankicon {
   padding-left: 10px;
-  padding-right: 38px;
 }
 
 .e-bigger .e-contextmenu-wrapper.e-rtl ul .e-blankicon.e-menu-caret-icon,
