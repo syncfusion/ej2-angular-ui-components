@@ -260,7 +260,7 @@
 .e-pivotview .e-member-editor-dialog .e-dlg-content .e-editor-label-wrapper .e-editor-label,
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-editor-label-wrapper .e-editor-label,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-editor-label-wrapper .e-editor-label {
-  color: #000;
+  color: #fff;
   font: 500 13px Roboto;
   opacity: 0.87;
   overflow: hidden;
@@ -1803,6 +1803,7 @@
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-value-filter .e-filter-text-div,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-label-filter .e-filter-text-div,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-value-filter .e-filter-text-div {
+  color: #fff !important;
   font-size: 13px;
   font-weight: 500;
 }
@@ -2169,7 +2170,7 @@
 }
 
 .e-drillthrough-dialog .e-drillthrough-body-header {
-  color: #000;
+  color: #fff;
   font-weight: 600;
   opacity: 0.87;
 }

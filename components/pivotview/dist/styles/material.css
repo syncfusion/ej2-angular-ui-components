@@ -1804,6 +1804,7 @@
 .e-pivotview .e-pivot-format-dialog .e-dlg-content .e-value-filter .e-filter-text-div,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-label-filter .e-filter-text-div,
 .e-pivotview .e-group-field-settings .e-dlg-content .e-value-filter .e-filter-text-div {
+  color: rgba(0, 0, 0, 0.6) !important;
   font-size: 13px;
   font-weight: 500;
 }
@@ -7530,6 +7531,7 @@
 .e-pivotfieldlist-wrapper .e-member-editor-dialog .e-dlg-content .e-value-filter .e-filter-text-div,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-label-filter .e-filter-text-div,
 .e-pivotfieldlist-wrapper .e-value-field-settings .e-dlg-content .e-value-filter .e-filter-text-div {
+  color: rgba(0, 0, 0, 0.54) !important;
   font-size: 13px;
   font-weight: 500;
 }
