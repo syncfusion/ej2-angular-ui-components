@@ -2,6 +2,56 @@
 
 ## [Unreleased]
 
+## 18.3.51 (2020-11-24)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#301613` - Issue with "week number is not updated properly in first week of the year" has been resolved.
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the datepicker value programmatically, the `change` event will not trigger.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the daterangepicker value programmatically, the `change` event will not trigger.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the datetimepicker value programmatically, the `change` event will not trigger.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the timepicker value programmatically, the `change` event will not trigger.
+
+### Calendar
+
+#### Bug Fixes
+
+- `#299743` - Issue with "week number is not updated properly in first week of the year" has been resolved.
+
 ## 18.3.40 (2020-10-13)
 
 ### DateRangePicker

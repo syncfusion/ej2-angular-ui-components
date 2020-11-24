@@ -2,6 +2,35 @@
 
 ## [Unreleased]
 
+## 18.3.51 (2020-11-24)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+- `#300140` - Now, Numeric textbox model value will update on every key press.
+
+#### Breaking Changes
+
+- While setting the numerictextbox value programmatically, the `change` event will not trigger.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the maskedtextbox value programmatically, the `change` event will not trigger.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#299942`, `#300515` - Now, you can add the additional form data in canceling event.
+
 ## 18.3.48 (2020-11-11)
 
 ### Uploader

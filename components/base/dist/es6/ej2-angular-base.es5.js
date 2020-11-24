@@ -233,6 +233,10 @@ var ComplexBase = /** @__PURE__ @class */ (function () {
             this.hasChanges = false;
         }
     };
+    ComplexBase.prototype.ngOnDestroy = function () {
+        /* istanbul ignore next */
+        this.directivePropList = [];
+    };
     return ComplexBase;
 }());
 var ArrayBase = /** @__PURE__ @class */ (function () {
@@ -319,6 +323,9 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
     ArrayBase.prototype.ngAfterViewInit = function () {
         this.isInitChanges = false;
     };
+    ArrayBase.prototype.ngOnDestroy = function () {
+        this.list = [];
+    };
     return ArrayBase;
 }());
 
@@ -328,6 +335,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
 var ComponentBase = /** @__PURE__ @class */ (function () {
     function ComponentBase() {
         this.isProtectedOnChange = true;
+        this.isFormInit = true;
     }
     ComponentBase.prototype.saveChanges = function (key, newValue, oldValue) {
         if (this.isProtectedOnChange) {
@@ -351,6 +359,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
+        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;
@@ -465,6 +474,9 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
             tempOnDestroyThis.destroy();
             tempOnDestroyThis.clearTemplate(null);
+            // removing bounded events and tagobjects from component after destroy
+            tempOnDestroyThis.ngBoundedEvents = {};
+            tempOnDestroyThis.tagObjects = {};
         }
     };
     //tslint:disable-next-line
@@ -696,6 +708,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
+        this.isFormInit = false;
         // });
     };
     FormBase.prototype.setDisabledState = function (disabled) {
@@ -724,13 +737,13 @@ var FormBase = /** @__PURE__ @class */ (function () {
             }
         }
         this.angularValue = value;
-        if (value === null) {
-            return;
-        }
         this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
-        this.preventChange = true;
+        this.preventChange = this.isFormInit ? false : true;
+        if (value === null) {
+            return;
+        }
     };
     FormBase.prototype.ngOnFocus = function (e) {
         /* istanbul ignore else */

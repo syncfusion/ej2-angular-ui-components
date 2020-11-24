@@ -387,6 +387,10 @@
   text-indent: 10px;
 }
 
+.e-rtl.e-multiselect.e-filled .e-multi-select-wrapper input[type='text'] {
+  padding: 5px;
+}
+
 .e-bigger .e-multi-select-wrapper input[type='text'],
 .e-multi-select-wrapper.e-mob-wrapper input[type='text'] {
   height: 28px;
@@ -820,7 +824,7 @@ ejs-multiselect {
 
 .e-small.e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper,
 .e-small .e-filled:not(.e-bigger).e-multiselect:not(.e-float-input) .e-multi-select-wrapper {
-  padding: 0 12px 0 4px;
+  padding: 3px 12px 0 4px;
 }
 
 .e-multiselect.e-filled.e-input-group.e-control-wrapper,
@@ -836,7 +840,7 @@ ejs-multiselect {
 .e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper,
 .e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper,
 .e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper {
-  padding: 14px 12px 0;
+  padding: 11px 12px 0;
 }
 
 .e-small.e-filled.e-float-input .e-multi-select-wrapper,
@@ -846,7 +850,16 @@ ejs-multiselect {
 
 .e-bigger.e-filled.e-float-input .e-multi-select-wrapper,
 .e-bigger .e-filled.e-float-input .e-multi-select-wrapper {
-  padding: 14px 12px 0 16px;
+  padding: 19px 12px 0 16px;
+}
+
+.e-bigger:not(.e-small).e-filled.e-multiselect:not(.e-float-input) .e-multi-select-wrapper {
+  padding-top: 3px;
+}
+
+.e-rtl.e-multiselect.e-filled.e-input-group.e-control-wrapper,
+.e-rtl.e-multiselect.e-filled.e-float-input.e-control-wrapper {
+  padding: 0;
 }
 
 .e-bigger.e-multiselect.e-filled.e-float-input .e-multi-select-wrapper.e-delimiter input[type='text'],
@@ -896,7 +909,21 @@ ejs-multiselect {
 .e-bigger.e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
 .e-bigger .e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
 .e-small .e-bigger.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
-  margin: 5px 8px 0 0;
+  margin: 8px 8px 0 0;
+  padding: 0 8px;
+}
+
+.e-rtl.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger .e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-small .e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger.e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger.e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger .e-small.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
+.e-rtl.e-small .e-bigger.e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips {
+  margin: 8px 0 0 8px;
   padding: 0 8px;
 }
 
@@ -912,6 +939,11 @@ ejs-multiselect {
   height: 16px;
   margin: 4px 4px 0 0;
   padding-right: 8px;
+}
+
+.e.rtl.e-small .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-small.e-filled.e-float-input .e-multi-select-wrapper .e-chips {
+  margin: 4px 0 0 4px;
 }
 
 .e-small .e-filled:not(.e-float-input) .e-multi-select-wrapper .e-chips,
@@ -942,6 +974,14 @@ ejs-multiselect {
   padding: 0 4px 0 0;
 }
 
+.e-rtl.e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-rtl.e-bigger.e-small.e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-rtl.e-bigger.e-small .e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-rtl.e-bigger .e-small.e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
+.e-rtl.e-small .e-bigger.e-filled.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
+  padding: 0 0 0 4px;
+}
+
 .e-small.e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent,
 .e-small .e-filled.e-float-input.e-multiselect .e-multi-select-wrapper .e-chips > .e-chipcontent {
   font-size: 10px;
@@ -957,6 +997,10 @@ ejs-multiselect {
   padding-right: 4px;
 }
 
+.e-rtl.e-bigger.e-filled .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger .e-filled .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger.e-filled.e-float-input .e-multi-select-wrapper .e-chips,
+.e-rtl.e-bigger .e-filled.e-float-input .e-multi-select-wrapper .e-chips,
 .e-bigger.e-filled .e-multi-select-wrapper .e-chips,
 .e-bigger .e-filled .e-multi-select-wrapper .e-chips {
   padding: 0 12px;

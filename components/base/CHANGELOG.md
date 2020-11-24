@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 18.3.50 (2020-11-17)
+## 18.3.51 (2020-11-24)
+
+### Common
+
+#### Bug Fixes
+
+- `I300269, I301493` - Resolved Memory Leak issue in Angular Components while switching between pages.
+- Resolved `Dirty and Pristine` value is not updated when resetting `form` with values.
+
+## 18.3.44 (2020-10-27)
 
 ### Common
 

@@ -220,6 +220,10 @@ class ComplexBase {
             this.hasChanges = false;
         }
     }
+    ngOnDestroy() {
+        /* istanbul ignore next */
+        this.directivePropList = [];
+    }
 }
 class ArrayBase {
     constructor(propertyName) {
@@ -299,6 +303,9 @@ class ArrayBase {
     ngAfterViewInit() {
         this.isInitChanges = false;
     }
+    ngOnDestroy() {
+        this.list = [];
+    }
 }
 
 /**
@@ -307,6 +314,7 @@ class ArrayBase {
 class ComponentBase {
     constructor() {
         this.isProtectedOnChange = true;
+        this.isFormInit = true;
     }
     saveChanges(key, newValue, oldValue) {
         if (this.isProtectedOnChange) {
@@ -330,6 +338,7 @@ class ComponentBase {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
+        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;
@@ -441,6 +450,9 @@ class ComponentBase {
         if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
             tempOnDestroyThis.destroy();
             tempOnDestroyThis.clearTemplate(null);
+            // removing bounded events and tagobjects from component after destroy
+            tempOnDestroyThis.ngBoundedEvents = {};
+            tempOnDestroyThis.tagObjects = {};
         }
     }
     //tslint:disable-next-line
@@ -661,6 +673,7 @@ class FormBase {
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
+        this.isFormInit = false;
         // });
     }
     setDisabledState(disabled) {
@@ -689,13 +702,13 @@ class FormBase {
             }
         }
         this.angularValue = value;
-        if (value === null) {
-            return;
-        }
         this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
-        this.preventChange = true;
+        this.preventChange = this.isFormInit ? false : true;
+        if (value === null) {
+            return;
+        }
     }
     ngOnFocus(e) {
         /* istanbul ignore else */

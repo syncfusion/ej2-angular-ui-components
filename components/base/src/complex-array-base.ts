@@ -136,6 +136,11 @@ export class ComplexBase<T> {
             this.hasChanges = false;
         }
     }
+    
+    public ngOnDestroy(): void {
+        /* istanbul ignore next */
+        this.directivePropList = [];
+    }
 
 }
 
@@ -232,6 +237,10 @@ export class ArrayBase<T> {
 
     public ngAfterViewInit(): void {
         this.isInitChanges = false;
+    }
+    
+    public ngOnDestroy(): void {
+        this.list = [];
     }
 
 }

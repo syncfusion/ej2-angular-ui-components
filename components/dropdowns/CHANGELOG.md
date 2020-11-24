@@ -2,13 +2,47 @@
 
 ## [Unreleased]
 
-## 18.3.50 (2020-11-17)
+## 18.3.51 (2020-11-24)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the autocomplete value programmatically, the `change` event will not trigger.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the combobox value programmatically, the `change` event will not trigger.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the dropdownlist value programmatically, the `change` event will not trigger.
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#298297` - Now, proper selected item count is updated in the remaining template.
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the multiselect value programmatically, the `change` event will not trigger.
 
 ## 18.3.44 (2020-10-27)
 
@@ -1692,6 +1726,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.3.48 (2020-11-11)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#298297` - Now, proper selected item count is updated in the remaining template.
 
 ## 18.2.57 (2020-09-08)
 
