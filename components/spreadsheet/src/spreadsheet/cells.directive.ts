@@ -70,7 +70,7 @@ export class CellDirective extends ComplexBase<CellDirective> {
     public index: any;
     /** 
      * Specifies the cell is locked or not, for allow edit range in spreadsheet protect option.
-     * @default true
+     * @default null
      */
     public isLocked: any;
     /** 

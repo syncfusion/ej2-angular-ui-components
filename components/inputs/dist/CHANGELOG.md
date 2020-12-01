@@ -2,34 +2,13 @@
 
 ## [Unreleased]
 
-## 18.3.51 (2020-11-24)
+## 18.3.52 (2020-12-01)
 
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
-- `#300140` - Now, Numeric textbox model value will update on every key press.
-
-#### Breaking Changes
-
-- While setting the numerictextbox value programmatically, the `change` event will not trigger.
-
-### MaskedTextBox
+### TextBox
 
 #### Bug Fixes
 
-- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
-
-#### Breaking Changes
-
-- While setting the maskedtextbox value programmatically, the `change` event will not trigger.
-
-### Uploader
-
-#### Bug Fixes
-
-- `#299942`, `#300515` - Now, you can add the additional form data in canceling event.
+- `#304117`,`#304560` - EJ1 and EJ2 controls theme compatibility issue resolved.
 
 ## 18.3.48 (2020-11-11)
 
@@ -1152,6 +1131,35 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.3.51 (2020-11-24)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+- `#300140` - Now, Numeric textbox model value will update on every key press.
+
+#### Breaking Changes
+
+- While setting the numerictextbox value programmatically, the `change` event will not trigger.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#300567`, `#299294`- Issue with "dirty and pristine is not updated properly while resetting the form with values" has been resolved.
+
+#### Breaking Changes
+
+- While setting the maskedtextbox value programmatically, the `change` event will not trigger.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#299942`, `#300515` - Now, you can add the additional form data in canceling event.
 
 ## 18.3.42 (2020-10-20)
 

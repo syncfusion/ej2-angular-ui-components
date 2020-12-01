@@ -156,6 +156,14 @@
   content: '\e7a7';
 }
 
+.e-excelfilter .e-sortascending::before {
+  content: '\e734';
+}
+
+.e-excelfilter .e-sortdescending::before {
+  content: '\e733';
+}
+
 /*! Excel-Filter layout */
 .sf-grid .e-excelfilter .e-dlg-content {
   overflow: visible;
@@ -549,6 +557,15 @@
 
 .e-excelfilter .e-filtered::before {
   color: #317ab9;
+}
+
+.e-excelfilter .e-dlg-content {
+  padding-bottom: 0;
+}
+
+li.e-separator.e-menu-item.e-excel-separator {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .e-xlsel {

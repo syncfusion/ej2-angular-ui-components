@@ -216,10 +216,11 @@
 .e-bigger .e-multiselect .e-multi-select-wrapper .e-chips-close.e-close-hooker {
   height: 36px;
   margin-top: -3em;
-  right: 34px;
+  right: 0;
 }
 
-.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+.e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
   right: 34px;
 }
 

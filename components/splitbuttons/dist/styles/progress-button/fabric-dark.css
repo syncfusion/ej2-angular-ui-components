@@ -59,6 +59,7 @@
 
 .e-progress-btn.e-progress-active {
   overflow: hidden;
+  pointer-events: none;
 }
 
 .e-progress-btn.e-progress-active .e-progress {

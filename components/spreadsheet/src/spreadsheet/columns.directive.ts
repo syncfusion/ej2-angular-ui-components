@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['customWidth', 'hidden', 'index', 'width'];
+let input: string[] = ['customWidth', 'hidden', 'index', 'isLocked', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -48,6 +48,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @asptype int
      */
     public index: any;
+    /** 
+     * To lock/unlock the column in the protected sheet.
+     * @default null
+     */
+    public isLocked: any;
     /** 
      * Specifies width of the column.
      * @default 64

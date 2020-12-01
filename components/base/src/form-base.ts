@@ -15,7 +15,6 @@ export class FormBase<T> implements ControlValueAccessor {
     public enabled: Object;
     public disabled: Object;
     public angularValue: T;
-    private isFormInit: Boolean;
     public objCheck: Boolean;
     public duplicateValue: string;
     public duplicateAngularValue: string;
@@ -100,7 +99,6 @@ export class FormBase<T> implements ControlValueAccessor {
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
-        this.isFormInit = false;
         // });
     }
     public setDisabledState(disabled: boolean): void {
@@ -127,14 +125,13 @@ export class FormBase<T> implements ControlValueAccessor {
             }
         }
         this.angularValue = value;
-        this.isUpdated = true;
-        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
-        // To prevent change event, trigger change in component side based on `preventChange` value
-        this.preventChange = this.isFormInit ? false : true;
         if (value === null) {
             return;
         }
-
+        this.isUpdated = true;
+        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
+        // To prevent change event, trigger change in component side based on `preventChange` value
+        this.preventChange = true;
     }
 
     public ngOnFocus(e: Event): void {

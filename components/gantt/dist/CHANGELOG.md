@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 18.3.52 (2020-12-01)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159625` - Console error on indent action after adding record has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 18.3.51 (2020-11-24)
 
 ### Gantt
@@ -9,8 +19,6 @@
 #### Bug Fixes
 
 - `301606` - Issue in template column when use it as `treeColumnIndex` has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 18.3.50 (2020-11-17)
 

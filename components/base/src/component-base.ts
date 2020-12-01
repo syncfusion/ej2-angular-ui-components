@@ -34,7 +34,6 @@ export class ComponentBase<T> {
     private srenderer: Renderer2;
     protected isProtectedOnChange: boolean = true;
     private isAngular: boolean;
-    private isFormInit: boolean = true;
     protected oldProperties: { [key: string]: Object };
     protected changedProperties: { [key: string]: Object };
     protected finalUpdate: Function;
@@ -73,7 +72,6 @@ export class ComponentBase<T> {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
-        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;

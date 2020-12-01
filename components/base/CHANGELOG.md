@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.3.52 (2020-12-01)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved `two way binding` not working for input components issue.
+
 ## 18.3.51 (2020-11-24)
 
 ### Common

@@ -576,7 +576,7 @@
 .e-bigger .e-grid .e-gridheader .e-rightalign .e-sortnumber,
 .e-grid.e-bigger .e-gridheader .e-rightalign .e-sortnumber {
   float: left;
-  margin: 9px 0 0 15px;
+  margin: 9px 0 0;
 }
 
 .e-bigger .e-grid .e-sortnumber,
@@ -587,7 +587,7 @@
   font-size: 9px;
   height: 15px;
   line-height: 15px;
-  margin: 9px 25px 0 2px;
+  margin: 9px 2px 0;
   text-align: center;
   width: 15px;
 }
@@ -1674,7 +1674,7 @@
   float: right;
   height: 16px;
   margin: -21px 11px;
-  padding: 2px;
+  padding: 2px 2px 2px 4px;
   width: 16px;
 }
 
@@ -1685,7 +1685,7 @@
 
 .e-grid .e-gridheader .e-sortfilter .e-rightalign .e-headercelldiv,
 .e-grid .e-gridheader .e-rightalign .e-stackedheadercelldiv {
-  padding: 0;
+  padding: 0 0 0 1em;
 }
 
 .e-grid .e-gridheader .e-sortfilter .e-rightalign.e-fltr-icon .e-headercelldiv {
@@ -1699,7 +1699,7 @@
 .e-grid .e-gridheader .e-sortfilter .e-headercelldiv,
 .e-grid .e-gridheader .e-stackedheadercelldiv,
 .e-grid .e-gridheader .e-headercell .e-headercelldiv.e-headerchkcelldiv {
-  padding: 0 1px;
+  padding: 0 25px 0 0;
 }
 
 .e-grid .e-filtermenudiv {
@@ -1757,18 +1757,18 @@
   font-size: 9px;
   height: 15px;
   line-height: 15px;
-  margin: 9px 25px 0 2px;
+  margin: 9px 2px 0;
   text-align: center;
   width: 15px;
 }
 
 .e-grid .e-gridheader .e-rightalign .e-sortnumber {
   float: left;
-  margin: 9px 0 0 15px;
+  margin: 9px 0 0;
 }
 
 .e-grid .e-gridheader .e-fltr-icon .e-sortfilterdiv {
-  margin: -20px 30px 0 0;
+  margin: -20px 20px 0 0;
 }
 
 .e-grid .e-gridheader .e-rightalign.e-fltr-icon .e-sortfilterdiv {
@@ -2711,7 +2711,7 @@
 .e-grid.e-rtl .e-headercell .e-headercelldiv.e-headerchkcelldiv,
 .e-grid.e-rtl .e-detailheadercell .e-headercelldiv,
 .e-grid.e-rtl .e-detailheadercell .e-headercelldiv.e-headerchkcelldiv {
-  padding: 1px 0;
+  padding: 0 0 0 25px;
   text-align: right;
 }
 

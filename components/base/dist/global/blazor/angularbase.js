@@ -336,7 +336,6 @@ var ArrayBase = /** @class */ (function () {
 var ComponentBase = /** @class */ (function () {
     function ComponentBase() {
         this.isProtectedOnChange = true;
-        this.isFormInit = true;
     }
     ComponentBase.prototype.saveChanges = function (key, newValue, oldValue) {
         if (this.isProtectedOnChange) {
@@ -360,7 +359,6 @@ var ComponentBase = /** @class */ (function () {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
-        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;
@@ -709,7 +707,6 @@ var FormBase = /** @class */ (function () {
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
-        this.isFormInit = false;
         // });
     };
     FormBase.prototype.setDisabledState = function (disabled) {
@@ -738,13 +735,13 @@ var FormBase = /** @class */ (function () {
             }
         }
         this.angularValue = value;
-        this.isUpdated = true;
-        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
-        // To prevent change event, trigger change in component side based on `preventChange` value
-        this.preventChange = this.isFormInit ? false : true;
         if (value === null) {
             return;
         }
+        this.isUpdated = true;
+        // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
+        // To prevent change event, trigger change in component side based on `preventChange` value
+        this.preventChange = true;
     };
     FormBase.prototype.ngOnFocus = function (e) {
         /* istanbul ignore else */

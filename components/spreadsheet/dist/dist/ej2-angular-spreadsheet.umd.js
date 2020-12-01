@@ -213,7 +213,7 @@ RowsDirective.decorators = [
  * @nocollapse
  */
 RowsDirective.ctorParameters = function () { return []; };
-var input$3 = ['customWidth', 'hidden', 'index', 'width'];
+var input$3 = ['customWidth', 'hidden', 'index', 'isLocked', 'width'];
 var outputs$3 = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -1097,6 +1097,7 @@ exports.refreshRibbonIcons = ej2Spreadsheet.refreshRibbonIcons;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.isCellReference = ej2Spreadsheet.isCellReference;
 exports.isChar = ej2Spreadsheet.isChar;
+exports.isLocked = ej2Spreadsheet.isLocked;
 exports.toFraction = ej2Spreadsheet.toFraction;
 exports.getGcd = ej2Spreadsheet.getGcd;
 exports.intToDate = ej2Spreadsheet.intToDate;
