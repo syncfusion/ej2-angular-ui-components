@@ -2664,6 +2664,10 @@
   float: right;
 }
 
+.e-grid.e-rtl .e-frozenfootercontent {
+  float: right;
+}
+
 .e-grid .e-movableheader {
   overflow: hidden;
 }
@@ -3549,6 +3553,11 @@
 
 .e-grid td.e-active {
   background: #400074;
+  color: #fff;
+}
+
+.e-grid .e-columnselection {
+  background-color: #400074;
   color: #fff;
 }
 

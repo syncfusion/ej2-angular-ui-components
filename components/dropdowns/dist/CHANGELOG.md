@@ -2,6 +2,34 @@
 
 ## [Unreleased]
 
+## 18.3.53 (2020-12-08)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in dropdownlist" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in multiselect" has been resolved.
+- `#304185` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
+- `#303760` - Issue with "popup is displayed with two scrollbar in the bootstrap theme while resizing the browser window" has been resolved.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in autocomplete" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in combobox" has been resolved.
+
 ## 18.3.52 (2020-12-01)
 
 ### DropDownList

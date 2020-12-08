@@ -2,7 +2,6 @@
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   margin-top: 3px;
-  overflow: auto;
 }
 
 .e-popup.e-ddl .e-input-group {
@@ -2681,6 +2680,10 @@
   float: right;
 }
 
+.e-grid.e-rtl .e-frozenfootercontent {
+  float: right;
+}
+
 .e-grid .e-movableheader {
   overflow: hidden;
 }
@@ -3566,6 +3569,11 @@
 
 .e-grid td.e-active {
   background: #484848;
+  color: #fff;
+}
+
+.e-grid .e-columnselection {
+  background-color: #484848;
   color: #fff;
 }
 

@@ -3930,6 +3930,10 @@ li.e-separator.e-menu-item.e-excel-separator {
   float: right;
 }
 
+.e-grid.e-rtl .e-frozenfootercontent {
+  float: right;
+}
+
 .e-grid .e-movableheader {
   overflow: hidden;
 }
@@ -4815,6 +4819,11 @@ li.e-separator.e-menu-item.e-excel-separator {
 
 .e-grid td.e-active {
   background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.e-grid .e-columnselection {
+  background-color: rgba(255, 255, 255, 0.28);
   color: #fff;
 }
 

@@ -783,7 +783,6 @@
   border-radius: 4px;
   box-shadow: none;
   margin-top: 3px;
-  overflow: auto;
 }
 
 .e-popup.e-ddl .e-input-group {
@@ -3958,6 +3957,10 @@ li.e-separator.e-menu-item.e-excel-separator {
   float: right;
 }
 
+.e-grid.e-rtl .e-frozenfootercontent {
+  float: right;
+}
+
 .e-grid .e-movableheader {
   overflow: hidden;
 }
@@ -4843,6 +4846,11 @@ li.e-separator.e-menu-item.e-excel-separator {
 
 .e-grid td.e-active {
   background: rgba(0, 0, 0, 0.17);
+  color: #333;
+}
+
+.e-grid .e-columnselection {
+  background-color: rgba(0, 0, 0, 0.17);
   color: #333;
 }
 
