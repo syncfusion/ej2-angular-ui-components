@@ -141,7 +141,6 @@
   border-radius: 4px;
   box-shadow: none;
   margin-top: 3px;
-  overflow: auto;
 }
 
 .e-popup.e-ddl .e-input-group {
@@ -350,8 +349,14 @@
 }
 
 .e-bigger .e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
-.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker {
+.e-bigger.e-multiselect .e-multi-select-wrapper.e-down-icon .e-chips-close.e-close-hooker,
+.e-bigger .e-multiselect.e-input-group.e-control-container .e-multi-select-wrapper.e-down-icon .e-clear-icon {
   right: 34px;
+}
+
+.e-bigger .e-multiselect.e-input-group.e-control-container .e-multi-select-wrapper .e-clear-icon {
+  height: 36px;
+  margin-top: -3.5em;
 }
 
 /*! Horizontal Tab */

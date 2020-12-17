@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowToggle', 'headerText', 'isExpanded', 'keyField', 'maxCount', 'minCount', 'showAddButton', 'showItemCount', 'template'];
+let input: string[] = ['allowDrag', 'allowDrop', 'allowToggle', 'headerText', 'isExpanded', 'keyField', 'maxCount', 'minCount', 'showAddButton', 'showItemCount', 'template', 'transitionColumns'];
 let outputs: string[] = [];
 /**
  * `e-columns` directive represent a columns of the Kanban board. 
@@ -29,6 +29,16 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public directivePropList: any;
 
 
+    /** 
+     * Enable or disable column drag
+     * @default true
+     */
+    public allowDrag: any;
+    /** 
+     * Enable or disable column drop
+     * @default true
+     */
+    public allowDrop: any;
     /** 
      * Enable or disable toggle column
      * @default false
@@ -71,6 +81,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default true
      */
     public showItemCount: any;
+    /** 
+     * Defines the column transition
+     * @default []
+     */
+    public transitionColumns: any;
     /** 
      * Defines the column template
      * @default null

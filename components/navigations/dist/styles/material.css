@@ -1060,6 +1060,12 @@
   white-space: nowrap;
 }
 
+.e-toolbar .e-blazor-toolbar-items {
+  position: absolute;
+  top: -9999px;
+  visibility: hidden;
+}
+
 .e-toolbar.e-extended-toolbar.e-rtl .e-hor-nav {
   left: 0;
   right: auto;

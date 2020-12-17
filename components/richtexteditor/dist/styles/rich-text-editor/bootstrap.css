@@ -353,6 +353,11 @@
   content: '\ea9f';
 }
 
+.e-rte-toolbar .e-rte-file-manager::before,
+.e-rte-dropdown-popup .e-rte-file-manager::before {
+  content: '\e42b';
+}
+
 .e-richtexteditor .e-south-east::before,
 .e-richtexteditor .e-south-west::before {
   content: '\eb08';
@@ -2013,6 +2018,16 @@
   opacity: .87;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.e-rte-file-manager-dialog .e-rte-label {
+  padding-bottom: 8px;
+  padding-top: 15px;
+}
+
+.e-rte-file-manager-dialog .e-rte-label label {
+  font-size: 15px;
+  opacity: .87;
 }
 
 .e-rte-upload-popup.e-dialog .e-file-select-wrap {

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.30 (2020-12-17)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#300140`-  Issue with "form invalid status is not updated properly while clearing the value" has been resolved.
+
 ## 18.3.52 (2020-12-01)
 
 ### TextBox

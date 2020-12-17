@@ -131,6 +131,16 @@
   border-right-width: 1px;
 }
 
+.e-multiselect.e-control-container .e-multi-select-wrapper .e-clear-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.e-bigger .e-multiselect.e-control-container .e-multi-select-wrapper .e-clear-icon {
+  height: 40px;
+  width: 40px;
+}
+
 @keyframes material-spinner-rotate {
   0% {
     transform: rotate(0);

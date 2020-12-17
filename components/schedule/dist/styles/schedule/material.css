@@ -713,6 +713,16 @@
   margin-left: 8px;
 }
 
+.e-schedule .e-timeline-year-view .e-event-resize.e-left-handler, .e-schedule .e-timeline-year-view .e-event-resize.e-right-handler {
+  height: 100%;
+  width: 5px;
+}
+
+.e-schedule .e-timeline-year-view .e-event-resize.e-top-handler, .e-schedule .e-timeline-year-view .e-event-resize.e-bottom-handler {
+  height: 5px;
+  width: 100%;
+}
+
 .e-schedule .e-event-resize {
   position: absolute;
 }

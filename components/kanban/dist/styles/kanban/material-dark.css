@@ -235,7 +235,7 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-stacked-header-cell {
-  border-bottom: 1px solid #616161;
+  border-bottom: 1px solid #9e9e9e;
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-toggle-header .e-column-expand {
@@ -258,7 +258,7 @@
 }
 
 .e-kanban .e-kanban-header .e-header-cells.e-collapsed {
-  background-color: #424242;
+  background-color: #f5f5f5;
   text-align: center;
   width: 50px;
 }
@@ -356,7 +356,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-collapse-header-text {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
   font-size: 16px;
   font-weight: 400;
   transform: rotate(90deg) translate(30px);
@@ -371,7 +371,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-show-add-button {
-  border: 1px dashed #616161;
+  border: 1px dashed #3f51b5;
   height: 36px;
   margin: 8px 8px 0;
 }
@@ -382,8 +382,8 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-show-add-button:focus {
-  border: 1px dashed #616161;
-  color: #616161;
+  border: 1px dashed #9e9e9e;
+  color: #9e9e9e;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-multi-card-wrapper,
@@ -521,13 +521,13 @@
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-clone,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-multi-card-clone {
-  border: 1px solid #616161;
+  border: 1px solid #9e9e9e;
   height: 34px;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-multi-card-text,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-multi-card-text {
-  background: #303030;
+  background: #fff;
   display: table-cell;
   padding-left: 8px;
   text-align: center;
@@ -542,19 +542,19 @@
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dragged-clone,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dragged-clone {
-  border: 1px dashed #616161;
+  border: 1px dashed #9e9e9e;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-target-dropped-clone,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-container .e-target-dropped-clone {
   background: rgba(63, 81, 181, 0.1);
-  border: 1px dashed #616161;
+  border: 1px dashed #3f51b5;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-target-multi-clone .e-column-key {
-  border-bottom: 1px dashed #616161;
-  border-left: 1px dashed #616161;
-  border-right: 1px dashed #616161;
+  border-bottom: 1px dashed #9e9e9e;
+  border-left: 1px dashed #9e9e9e;
+  border-right: 1px dashed #9e9e9e;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-target-multi-clone .e-column-key .e-text {
@@ -563,7 +563,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-target-multi-clone .e-column-key:first-child {
-  border-top: 1px dashed #616161;
+  border-top: 1px dashed #9e9e9e;
 }
 
 .e-kanban .e-kanban-content .e-content-row.e-swimlane-row .e-content-cells {
@@ -616,7 +616,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-dropping {
-  border: 1px dashed #616161;
+  border: 1px dashed #9e9e9e;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-min-color {
@@ -628,7 +628,7 @@
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells:focus {
-  border: 1px solid #616161;
+  border: 1px solid #9e9e9e;
   border-color: #e0e0e0;
 }
 
@@ -685,7 +685,7 @@
 }
 
 .e-kanban.e-device .e-swimlane-header .e-swimlane-header-toolbar {
-  background: #424242;
+  background: #f5f5f5;
   border-bottom: 0;
   display: -ms-flexbox;
   display: flex;
@@ -721,8 +721,8 @@
 }
 
 .e-kanban.e-device .e-swimlane-content .e-swimlane-resource {
-  background: #303030;
-  border: 1px solid #616161;
+  background: #fff;
+  border: 1px solid #e0e0e0;
   height: 100%;
   width: 225px;
 }
@@ -786,7 +786,7 @@
 
 .e-mobile-popup-wrapper.e-device,
 .e-mobile-popup-container.e-device {
-  background-color: #303030;
+  background-color: #fff;
   border-radius: 2px;
   bottom: 0;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
@@ -869,16 +869,16 @@
 
 /*! kanban component theme */
 .e-kanban {
-  background: #303030;
+  background: #fff;
 }
 
 .e-kanban .e-kanban-table .e-header-cells {
-  background-color: #424242;
+  background-color: #f5f5f5;
 }
 
 .e-kanban .e-kanban-table .e-header-cells .e-header-text,
 .e-kanban .e-kanban-table .e-header-cells .e-item-count {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-kanban .e-kanban-table .e-header-cells .e-column-expand,
@@ -895,28 +895,28 @@
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) td {
-  background-color: #424242;
+  background-color: #f5f5f5;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-swimlane-text,
 .e-kanban .e-kanban-table.e-content-table .e-content-row.e-swimlane-row .e-item-count {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row .e-show-add-button .e-show-add-icon {
-  color: #616161;
+  color: #3f51b5;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-card.e-selection {
-  background-color: #616161;
+  background-color: #eee;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-card .e-card-header {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-card .e-card-content {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-card .e-card-tag.e-card-label {
@@ -926,13 +926,13 @@
 
 .e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-active {
   background: rgba(63, 81, 181, 0.1);
-  border-color: #616161;
+  border-color: #3f51b5;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-bottom-border {
-  border-bottom-color: #616161;
+  border-bottom-color: #3f51b5;
 }
 
 .e-kanban .e-kanban-table.e-content-table .e-target-multi-clone .e-column-key.e-multi-active:first-child {
-  border-color: #616161;
+  border-color: #3f51b5;
 }

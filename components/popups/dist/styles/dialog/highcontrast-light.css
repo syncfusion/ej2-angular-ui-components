@@ -16,7 +16,9 @@
 }
 
 .e-dialog .e-south-east::before,
-.e-dialog .e-south-west::before {
+.e-dialog .e-south-west::before,
+.e-dialog .e-north-east::before,
+.e-dialog .e-north-west::before {
   content: '\eb06';
 }
 
@@ -109,6 +111,47 @@
   bottom: 0;
   cursor: nwse-resize;
   right: 0;
+}
+
+.e-dialog .e-resize-handle.e-south-west {
+  bottom: 0;
+  cursor: nesw-resize;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.e-dialog .e-resize-handle.e-north-east {
+  cursor: nesw-resize;
+  right: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+.e-dialog .e-resize-handle.e-north-west {
+  cursor: nwse-resize;
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.e-dialog .e-south,
+.e-dialog .e-north,
+.e-dialog .e-east,
+.e-dialog .e-west {
+  background-color: transparent;
+  background-repeat: repeat;
+  overflow: visible;
+  position: absolute;
+}
+
+.e-dialog .e-east,
+.e-dialog .e-west {
+  cursor: ew-resize;
+}
+
+.e-dialog .e-south,
+.e-dialog .e-north {
+  cursor: ns-resize;
 }
 
 .e-bigger.e-dialog .e-dlg-header-content,
@@ -463,7 +506,20 @@
   background-color: transparent;
 }
 
-.e-south-east,
-.e-south-west {
+.e-south-east {
   color: #000;
+}
+
+.e-rtl .e-south-east {
+  color: transparent;
+}
+
+.e-rtl .e-south-west {
+  color: #000;
+}
+
+.e-south-west,
+.e-north-east,
+.e-north-west {
+  color: transparent;
 }

@@ -2,33 +2,19 @@
 
 ## [Unreleased]
 
-## 18.3.53 (2020-12-08)
+## 18.4.30 (2020-12-17)
 
 ### DropDownList
 
 #### Bug Fixes
 
-- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in dropdownlist" has been resolved.
+- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in multiselect" has been resolved.
-- `#304185` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
-- `#303760` - Issue with "popup is displayed with two scrollbar in the bootstrap theme while resizing the browser window" has been resolved.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in autocomplete" has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in combobox" has been resolved.
+- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
 
 ## 18.3.52 (2020-12-01)
 
@@ -1744,6 +1730,34 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.3.53 (2020-12-08)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in dropdownlist" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in multiselect" has been resolved.
+- `#304185` - Issue with "SelectAll checkbox is not displayed while changing the data source dynamically" has been resolved.
+- `#303760` - Issue with "popup is displayed with two scrollbar in the bootstrap theme while resizing the browser window" has been resolved.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in autocomplete" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#F159477` - Issue with "highlight search is not working properly when using item template with filter type as `StartsWith` and `EndsWith` in combobox" has been resolved.
 
 ## 18.3.51 (2020-11-24)
 

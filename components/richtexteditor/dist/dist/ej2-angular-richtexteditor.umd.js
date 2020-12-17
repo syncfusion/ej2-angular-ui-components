@@ -28,7 +28,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs = ['autoSaveOnIdle', 'backgroundColor', 'cssClass', 'editorMode', 'enableAutoUrl', 'enableHtmlEncode', 'enableHtmlSanitizer', 'enablePersistence', 'enableResize', 'enableRtl', 'enableTabKey', 'enableXhtml', 'enabled', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
+var inputs = ['autoSaveOnIdle', 'backgroundColor', 'cssClass', 'editorMode', 'enableAutoUrl', 'enableHtmlEncode', 'enableHtmlSanitizer', 'enablePersistence', 'enableResize', 'enableRtl', 'enableTabKey', 'enableXhtml', 'enabled', 'fileManagerSettings', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
 var outputs = ['actionBegin', 'actionComplete', 'afterImageDelete', 'beforeDialogClose', 'beforeDialogOpen', 'beforeImageUpload', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
 var twoWays = ['value'];
 /**
@@ -124,6 +124,13 @@ exports.RichTextEditorComponent = RichTextEditorComponent_1 = /** @class */ (fun
             }
         }
         catch (_k) { }
+        try {
+            var mod = _this.injector.get('RichTextEditorFileManager');
+            if (_this.injectedModules.indexOf(mod) === -1) {
+                _this.injectedModules.push(mod);
+            }
+        }
+        catch (_l) { }
         _this.registerEvents(outputs);
         _this.addTwoWay.call(_this, twoWays);
         ej2AngularBase.setValue('currentInstance', _this, _this.viewContainerRef);
@@ -255,6 +262,7 @@ var MarkdownEditorService = { provide: 'RichTextEditorMarkdownEditor', useValue:
 var TableService = { provide: 'RichTextEditorTable', useValue: ej2Richtexteditor.Table };
 var PasteCleanupService = { provide: 'RichTextEditorPasteCleanup', useValue: ej2Richtexteditor.PasteCleanup };
 var ResizeService = { provide: 'RichTextEditorResize', useValue: ej2Richtexteditor.Resize };
+var FileManagerService = { provide: 'RichTextEditorFileManager', useValue: ej2Richtexteditor.FileManager };
 /**
  * NgModule definition for the RichTextEditor component with providers.
  */
@@ -279,7 +287,8 @@ RichTextEditorAllModule.decorators = [
                     MarkdownEditorService,
                     TableService,
                     PasteCleanupService,
-                    ResizeService
+                    ResizeService,
+                    FileManagerService
                 ]
             },] },
 ];
@@ -300,6 +309,7 @@ exports.MarkdownEditorService = MarkdownEditorService;
 exports.TableService = TableService;
 exports.PasteCleanupService = PasteCleanupService;
 exports.ResizeService = ResizeService;
+exports.FileManagerService = FileManagerService;
 exports.ɵa = inputs;
 exports.ɵb = outputs;
 exports.Toolbar = ej2Richtexteditor.Toolbar;
@@ -317,6 +327,7 @@ exports.HtmlEditor = ej2Richtexteditor.HtmlEditor;
 exports.PasteCleanup = ej2Richtexteditor.PasteCleanup;
 exports.Resize = ej2Richtexteditor.Resize;
 exports.DropDownButtons = ej2Richtexteditor.DropDownButtons;
+exports.FileManager = ej2Richtexteditor.FileManager;
 exports.FullScreen = ej2Richtexteditor.FullScreen;
 exports.setAttributes = ej2Richtexteditor.setAttributes;
 exports.HtmlToolbarStatus = ej2Richtexteditor.HtmlToolbarStatus;
@@ -444,6 +455,7 @@ exports.drop = ej2Richtexteditor.drop;
 exports.xhtmlValidation = ej2Richtexteditor.xhtmlValidation;
 exports.beforeImageUpload = ej2Richtexteditor.beforeImageUpload;
 exports.resizeInitialized = ej2Richtexteditor.resizeInitialized;
+exports.renderFileManager = ej2Richtexteditor.renderFileManager;
 exports.CLS_RTE = ej2Richtexteditor.CLS_RTE;
 exports.CLS_RTL = ej2Richtexteditor.CLS_RTL;
 exports.CLS_CONTENT = ej2Richtexteditor.CLS_CONTENT;

@@ -151,7 +151,6 @@ export class ArrayBase<T> {
     public hasChanges: boolean = false;
     private propertyName: string;
     public hasNewChildren: boolean;
-    public moduleName: string;
 
     constructor(propertyName: string) {
         this.propertyName = propertyName;

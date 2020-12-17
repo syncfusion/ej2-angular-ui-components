@@ -390,6 +390,17 @@
   font-family: 'e-icons';
 }
 
+.e-de-footnote::before {
+  content: '\e435';
+  font-family: 'e-icons';
+  font-weight: 800;
+}
+
+.e-de-endnote::before {
+  content: '\e436';
+  font-family: 'e-icons';
+}
+
 .e-de-toolbar {
   height: 100%;
 }

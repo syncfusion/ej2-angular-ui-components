@@ -692,6 +692,10 @@ ejs-filemanager {
   width: 18px;
 }
 
+.e-filemanager .e-view-container .e-grid .e-gridheader {
+  padding-right: 0 !important;
+}
+
 .e-filemanager .e-large-icons {
   float: left;
   overflow: auto;
@@ -947,7 +951,9 @@ ejs-filemanager {
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-dot,
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-tick,
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-dot,
-.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick {
+.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item .e-fe-dot,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item .e-fe-tick {
   font-size: 14px;
 }
 
@@ -955,7 +961,8 @@ ejs-filemanager {
   overflow: hidden;
 }
 
-.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item.e-separator {
+.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item.e-separator,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item.e-separator {
   margin: 0 0;
 }
 
@@ -1898,12 +1905,15 @@ ejs-filemanager {
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-dot,
 .e-fe-popup.e-dropdown-popup ul .e-item .e-fe-tick,
 .e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-dot,
-.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick {
+.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item .e-fe-dot,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item .e-fe-tick {
   color: #6c757d;
 }
 
 .e-fe-popup.e-dropdown-popup ul .e-item.e-separator,
-.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item.e-separator {
+.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item.e-separator,
+.e-fe-popup.e-contextmenu-container ul .e-menu-item.e-separator {
   border-bottom-color: #e9ecef;
 }
 

@@ -1,6 +1,6 @@
-import { Directive, ViewContainerRef, ContentChildren } from '@angular/core';
+import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
-
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
 let input: string[] = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
@@ -62,6 +62,8 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * Template helps to compiles the given HTML String (or HTML Element ID) into HtML Element and append to the Cell. 
      *  @default ''
      */
+    @ContentChild('template')
+    @Template()
     public template: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pkgName = '@syncfusion/ej2-angular-popups';
-exports.pkgVer = '^18.3.50';
+exports.pkgVer = '^18.3.35';
 exports.moduleName = 'DialogModule, TooltipModule';
-exports.themeVer = '~18.3.50';
+exports.themeVer = '~18.3.35';

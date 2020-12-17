@@ -1,4 +1,5 @@
 export {ImageDirective,ImagesDirective} from './image.directive';
+export {ChartDirective,ChartsDirective} from './chart.directive';
 export {CellDirective,CellsDirective} from './cells.directive';
 export {RowDirective,RowsDirective} from './rows.directive';
 export {ColumnDirective,ColumnsDirective} from './columns.directive';

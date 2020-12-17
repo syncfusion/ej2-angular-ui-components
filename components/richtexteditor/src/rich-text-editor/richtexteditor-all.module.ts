@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RichTextEditorComponent } from './richtexteditor.component';
 import { RichTextEditorModule } from './richtexteditor.module';
-import {Toolbar, Link, Image, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize} from '@syncfusion/ej2-richtexteditor'
+import {Toolbar, Link, Image, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager} from '@syncfusion/ej2-richtexteditor'
 
 
 export const ToolbarService: ValueProvider = { provide: 'RichTextEditorToolbar', useValue: Toolbar};
@@ -15,6 +15,7 @@ export const MarkdownEditorService: ValueProvider = { provide: 'RichTextEditorMa
 export const TableService: ValueProvider = { provide: 'RichTextEditorTable', useValue: Table};
 export const PasteCleanupService: ValueProvider = { provide: 'RichTextEditorPasteCleanup', useValue: PasteCleanup};
 export const ResizeService: ValueProvider = { provide: 'RichTextEditorResize', useValue: Resize};
+export const FileManagerService: ValueProvider = { provide: 'RichTextEditorFileManager', useValue: FileManager};
 
 /**
  * NgModule definition for the RichTextEditor component with providers.
@@ -34,7 +35,8 @@ export const ResizeService: ValueProvider = { provide: 'RichTextEditorResize', u
         MarkdownEditorService,
         TableService,
         PasteCleanupService,
-        ResizeService
+        ResizeService,
+        FileManagerService
     ]
 })
 export class RichTextEditorAllModule { }

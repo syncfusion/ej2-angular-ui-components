@@ -363,6 +363,99 @@
   content: '\e340';
 }
 
+.e-chart-ddb .e-chart-icon::before {
+  content: '\e440';
+}
+
+.e-chart-menu .e-ul .e-menu-item .e-menu-icon {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.e-chart-menu .e-column::before {
+  content: '\e440';
+}
+
+.e-chart-menu .e-bar::before {
+  content: '\e877';
+}
+
+.e-chart-menu .e-area::before {
+  content: '\e455';
+}
+
+.e-chart-menu .e-pie-doughnut::before {
+  content: '\e458';
+}
+
+.e-chart-menu .e-line::before {
+  content: '\e449';
+}
+
+.e-chart-menu .e-scatter::before {
+  content: '\e443';
+}
+
+.e-chart-menu .e-column-main .e-clusteredcolumn::before {
+  content: '\e847';
+}
+
+.e-chart-menu .e-column-main .e-stackedcolumn::before {
+  content: '\e888';
+}
+
+.e-chart-menu .e-column-main .e-stackedcolumn100::before {
+  content: '\e868';
+}
+
+.e-chart-menu .e-bar-main .e-clusteredbar::before {
+  content: '\e855';
+}
+
+.e-chart-menu .e-bar-main .e-stackedbar::before {
+  content: '\e889';
+}
+
+.e-chart-menu .e-bar-main .e-stackedbar100::before {
+  content: '\e863';
+}
+
+.e-chart-menu .e-pie-main .e-pie::before {
+  content: '\e141';
+}
+
+.e-chart-menu .e-pie-main .e-doughnut::before {
+  content: '\e112';
+}
+
+.e-chart-menu .e-area-main .e-area::before {
+  content: '\e883';
+}
+
+.e-chart-menu .e-area-main .e-stackedarea::before {
+  content: '\e875';
+}
+
+.e-chart-menu .e-area-main .e-stackedarea100::before {
+  content: '\e900';
+}
+
+.e-chart-menu .e-line-main .e-line::before {
+  content: '\e867';
+}
+
+.e-chart-menu .e-line-main .e-stackedline::before {
+  content: '\e841';
+}
+
+.e-chart-menu .e-line-main .e-stackedline100::before {
+  content: '\e871';
+}
+
+.e-chart-menu .e-scatter-main .e-scatter::before {
+  content: '\e887';
+}
+
 .e-cf-ddb .e-conditionalformatting-icon::before {
   content: '\e401';
 }
@@ -829,6 +922,10 @@
   text-align: right;
 }
 
+.e-spreadsheet .e-main-panel .e-ss-chart-overlay {
+  border: 1px solid #616161;
+}
+
 .e-spreadsheet .e-main-panel .e-virtualable {
   position: absolute;
 }
@@ -885,10 +982,13 @@
   white-space: nowrap;
 }
 
+.e-spreadsheet .e-table tr .e-cell.e-ie-wrap {
+  word-break: break-all;
+}
+
 .e-spreadsheet .e-table tr .e-cell.e-wraptext {
   overflow-wrap: break-word;
   white-space: pre-wrap;
-  word-break: break-all;
 }
 
 .e-spreadsheet .e-table tr .e-cell.e-wraptext .e-wrap-content {
@@ -1012,6 +1112,10 @@
   transform: translate(-50%, -50%);
 }
 
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart.e-ss-overlay {
+  border: 1px solid #e0e0e0;
+}
+
 .e-spreadsheet .e-sheet-content .e-ss-overlay.e-ss-overlay-active {
   border: 1px solid #e3165b;
   cursor: move;
@@ -1123,6 +1227,27 @@
 .e-spreadsheet .e-column-header .e-table th.e-hide-end.e-header-cell::before {
   border-left: 1px solid #e0e0e0;
   left: .5px;
+}
+
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-control.e-chart {
+  height: 100%;
+  position: initial !important;
+  width: 100%;
+}
+
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-control.e-accumulationchart {
+  height: 100%;
+  overflow: hidden;
+  padding: 4px;
+  position: initial !important;
+  width: 100%;
+}
+
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-ss-overlay-l,
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-ss-overlay-r,
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-ss-overlay-t,
+.e-spreadsheet .e-sheet-content .e-datavisualization-chart .e-ss-overlay-b {
+  position: absolute;
 }
 
 .e-spreadsheet .e-header-panel .e-header-row,
@@ -1405,6 +1530,13 @@
 
 .e-spreadsheet .e-ribbon .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-icons.e-btn-icon:not(.e-caret) {
   font-size: 16px;
+}
+
+.e-spreadsheet .e-ribbon .e-toolbar .e-toolbar-item .e-btn .e-chart-icon {
+  font-size: 30px !important;
+  margin-right: 5px;
+  padding: 0 5px;
+  width: 30px;
 }
 
 .e-spreadsheet .e-ribbon .e-toolbar .e-toolbar-item .e-btn.e-split-colorpicker {
@@ -2360,6 +2492,248 @@
   display: block;
 }
 
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul {
+  min-width: 165px;
+  overflow: visible;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item {
+  height: auto;
+  line-height: 0;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main {
+  height: 90px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-text {
+  height: 40%;
+  padding: 18px 16px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont {
+  height: 60%;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-clusteredcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedcolumn100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-clusteredcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedcolumn1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-clusteredbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedbar100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-clusteredbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-column1-cont .e-stackedbar1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-clusteredcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedcolumn100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-clusteredcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedcolumn1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-clusteredbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedbar100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-clusteredbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-column-main .e-bar1-cont .e-stackedbar1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-clusteredcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedcolumn100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-clusteredcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedcolumn1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-clusteredbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedbar100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-clusteredbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-column1-cont .e-stackedbar1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-clusteredcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedcolumn,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedcolumn100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-clusteredcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedcolumn3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedcolumn1003d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-clusteredbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedbar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedbar100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-clusteredbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedbar3d,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-bar-main .e-bar1-cont .e-stackedbar1003d {
+  display: inline-block;
+  font-size: 40px;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  width: 55px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul {
+  min-width: 110px;
+  overflow: visible;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item {
+  height: auto;
+  line-height: 0;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main {
+  height: 90px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-text {
+  height: 40%;
+  padding: 18px 16px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-cont {
+  height: 60%;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-cont .e-pie,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-cont .e-doughnut,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-cont .e-radar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-pie-cont .e-radar-markers,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-cont .e-pie,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-cont .e-doughnut,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-cont .e-radar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-pie-main .e-radar-cont .e-radar-markers,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-cont .e-pie,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-cont .e-doughnut,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-cont .e-radar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-pie-cont .e-radar-markers,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-cont .e-pie,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-cont .e-doughnut,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-cont .e-radar,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-radar-main .e-radar-cont .e-radar-markers {
+  display: inline-block;
+  font-size: 40px;
+  height: 60px;
+  margin: 0;
+  padding: 10px;
+  width: 55px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul {
+  min-width: 165px;
+  overflow: visible;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item {
+  height: auto;
+  line-height: 0;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main {
+  height: 90px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-text,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-text {
+  height: 40%;
+  padding: 18px 16px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont {
+  height: 60%;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-area,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-stackedarea,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-stackedarea100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-line,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-stackedline,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-line-cont .e-stackedline100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-area,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-stackedarea,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-stackedarea100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-line,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-stackedline,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-line-main .e-area-cont .e-stackedline100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-area,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-stackedarea,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-stackedarea100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-line,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-stackedline,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-line-cont .e-stackedline100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-area,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-stackedarea,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-stackedarea100,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-line,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-stackedline,
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-area-main .e-area-cont .e-stackedline100 {
+  display: inline-block;
+  font-size: 40px;
+  height: 60px;
+  margin: 0;
+  padding: 10px;
+  width: 55px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul {
+  min-width: 60px;
+  overflow: visible;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item {
+  height: auto;
+  line-height: 0;
+  padding: 0;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-scatter-main {
+  height: 90px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-scatter-main .e-scatter-text {
+  height: 40%;
+  padding: 18px 16px;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-scatter-main .e-scatter-cont {
+  height: 60%;
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup.e-chart-menu ul .e-menu-item .e-scatter-main .e-scatter-cont .e-scatter {
+  display: inline-block;
+  font-size: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
 .e-spreadsheet-function-dlg {
   min-height: 480px;
   -webkit-user-select: none;
@@ -3158,11 +3532,13 @@
   color: #dd2c2c;
 }
 
-.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vborderright {
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vborderright,
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vcborderright {
   border-right: 1px dashed #673ab8;
 }
 
-.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vborderbottom {
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vborderbottom,
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-vcborderbottom {
   border-bottom: 1px dashed #673ab8;
 }
 
@@ -3198,12 +3574,22 @@
   border-bottom: 1px dashed #fe9800;
 }
 
-.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bborderright {
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bborderright,
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bcborderright {
   border-right: 1px dashed #3f52b5;
 }
 
-.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bborderbottom {
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bborderbottom,
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-bcborderbottom {
   border-bottom: 1px dashed #3f52b5;
+}
+
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-rcborderbottom {
+  border-bottom: 1px dashed #dd2c2c;
+}
+
+.e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-cell.e-rcborderright {
+  border-right: 1px dashed #dd2c2c;
 }
 
 .e-popup.e-menu-popup.e-databars ul .e-bdatabar:hover,
@@ -3693,6 +4079,244 @@
 .e-menu-wrapper .e-5boxes-5,
 .e-spreadsheet .e-5boxes-5 {
   background: transparent url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjYjNiM2IzOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICM3MjcyNzI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDx0aXRsZT5BcnRib2FyZCA1MCBjb3B5PC90aXRsZT4KICA8Zz4KICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHJ4PSIwLjUiIHJ5PSIwLjUiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYsN0gxQTEsMSwwLDAsMSwwLDZWMUExLDEsMCwwLDEsMSwwSDZBMSwxLDAsMCwxLDcsMVY2QTEsMSwwLDAsMSw2LDdaTTYsNlY2Wk0xLDFWNkg2VjFaIi8+CiAgPC9nPgogIDxnPgogICAgPHJlY3QgY2xhc3M9ImNscy0xIiB4PSI2LjUiIHk9IjAuNSIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcng9IjAuNSIgcnk9IjAuNSIvPgogICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTIsN0g3QTEsMSwwLDAsMSw2LDZWMUExLDEsMCwwLDEsNywwaDVhMSwxLDAsMCwxLDEsMVY2QTEsMSwwLDAsMSwxMiw3Wm0wLTFWNlpNNywxVjZoNVYxWiIvPgogIDwvZz4KICA8Zz4KICAgIDxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMC41IiB5PSI2LjUiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHJ4PSIwLjUiIHJ5PSIwLjUiLz4KICAgIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYsMTNIMWExLDEsMCwwLDEtMS0xVjdBMSwxLDAsMCwxLDEsNkg2QTEsMSwwLDAsMSw3LDd2NUExLDEsMCwwLDEsNiwxM1ptMC0xdjBaTTEsN3Y1SDZWN1oiLz4KICA8L2c+CiAgPGc+CiAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYuNSIgeT0iNi41IiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiByeD0iMC41IiByeT0iMC41Ii8+CiAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMiwxM0g3YTEsMSwwLDAsMS0xLTFWN0ExLDEsMCwwLDEsNyw2aDVhMSwxLDAsMCwxLDEsMXY1QTEsMSwwLDAsMSwxMiwxM1ptMC0xdjBaTTcsN3Y1aDVWN1oiLz4KICA8L2c+Cjwvc3ZnPgo=") no-repeat 50% 50%;
+}
+
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-text,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-text {
+  background-color: #eee;
+}
+
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont {
+  background-color: #fff;
+}
+
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column1-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-column2-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar1-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-bar2-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-line-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-pie-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-radar-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-area-cont .e-scatter:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-clusteredcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedcolumn:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedcolumn100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-clusteredcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedcolumn3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedcolumn1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-clusteredbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedbar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedbar100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-clusteredbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedbar3d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedbar1003d:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-line:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedline:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedline100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-pie:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-doughnut:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-radar:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-radar-markers:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-area:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedarea:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-stackedarea100:hover,
+.e-popup.e-menu-popup.e-chart-menu ul .e-scatter-cont .e-scatter:hover {
+  background-color: #eee;
+}
+
+.e-popup.e-menu-popup.e-chart-menu ul .e-is-wrapper:hover {
+  background-color: #eee;
 }
 
 .e-ribbon .e-content .e-toolbar .e-toolbar-items .e-toolbar-item.e-overlay .e-icons {

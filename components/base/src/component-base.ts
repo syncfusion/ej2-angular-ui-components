@@ -34,6 +34,9 @@ export class ComponentBase<T> {
     private srenderer: Renderer2;
     protected isProtectedOnChange: boolean = true;
     private isAngular: boolean;
+    private isFormInit: boolean = true;
+    public preventChange: boolean;
+    public isPreventChange: boolean;
     protected oldProperties: { [key: string]: Object };
     protected changedProperties: { [key: string]: Object };
     protected finalUpdate: Function;
@@ -72,6 +75,7 @@ export class ComponentBase<T> {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
+        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;
@@ -190,6 +194,7 @@ export class ComponentBase<T> {
             // removing bounded events and tagobjects from component after destroy
             tempOnDestroyThis.ngBoundedEvents = {};
             tempOnDestroyThis.tagObjects = {};
+            tempOnDestroyThis.element = null;
         }
     }
     //tslint:disable-next-line
@@ -211,7 +216,6 @@ export class ComponentBase<T> {
                     // So we have constructed property here and used
                     let complexDirProps;
                     let list = getValue('instance.list', tagObject);
-                    tagObject.instance.moduleName = tempAfterContentThis.getModuleName();
                     if(list && list.length){
                         complexDirProps =  list[0].directivePropList;
                     }
@@ -343,8 +347,10 @@ export class ComponentBase<T> {
         this.isProtectedOnChange = prevDetection;
         /* istanbul ignore else  */
         if (success) {
+            this.preventChange = this.isPreventChange;
             success.call(this, eventArgs);
         }
+        this.isPreventChange = false;
 
     }
 

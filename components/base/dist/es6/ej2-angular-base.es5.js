@@ -335,6 +335,7 @@ var ArrayBase = /** @__PURE__ @class */ (function () {
 var ComponentBase = /** @__PURE__ @class */ (function () {
     function ComponentBase() {
         this.isProtectedOnChange = true;
+        this.isFormInit = true;
     }
     ComponentBase.prototype.saveChanges = function (key, newValue, oldValue) {
         if (this.isProtectedOnChange) {
@@ -358,6 +359,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
+        tempOnThis.isFormInit = true;
         /* istanbul ignore next */
         if (isTempRef) {
             this.tags = isTempRef.tags;
@@ -475,6 +477,7 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
             // removing bounded events and tagobjects from component after destroy
             tempOnDestroyThis.ngBoundedEvents = {};
             tempOnDestroyThis.tagObjects = {};
+            tempOnDestroyThis.element = null;
         }
     };
     //tslint:disable-next-line
@@ -497,7 +500,6 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
                     // So we have constructed property here and used
                     var complexDirProps = void 0;
                     var list = getValue('instance.list', tagObject);
-                    tagObject.instance.moduleName = tempAfterContentThis.getModuleName();
                     if (list && list.length) {
                         complexDirProps = list[0].directivePropList;
                     }
@@ -627,8 +629,10 @@ var ComponentBase = /** @__PURE__ @class */ (function () {
         this.isProtectedOnChange = prevDetection;
         /* istanbul ignore else  */
         if (success) {
+            this.preventChange = this.isPreventChange;
             success.call(this, eventArgs);
         }
+        this.isPreventChange = false;
     };
     return ComponentBase;
 }());
@@ -706,6 +710,7 @@ var FormBase = /** @__PURE__ @class */ (function () {
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
+        this.isFormInit = false;
         // });
     };
     FormBase.prototype.setDisabledState = function (disabled) {
@@ -734,13 +739,13 @@ var FormBase = /** @__PURE__ @class */ (function () {
             }
         }
         this.angularValue = value;
-        if (value === null) {
-            return;
-        }
         this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
-        this.preventChange = true;
+        this.preventChange = this.isFormInit ? false : true;
+        if (value === null) {
+            return;
+        }
     };
     FormBase.prototype.ngOnFocus = function (e) {
         /* istanbul ignore else */

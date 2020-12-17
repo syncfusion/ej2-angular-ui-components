@@ -1,6 +1,7 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageDirective, ImagesDirective } from './image.directive';
+import { ChartDirective, ChartsDirective } from './chart.directive';
 import { CellDirective, CellsDirective } from './cells.directive';
 import { RowDirective, RowsDirective } from './rows.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';

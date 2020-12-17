@@ -59,7 +59,7 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     /** 
      * Specifies a template to render customized content for all the items. 
      * If the **itemTemplate** property is set, the template content overrides the displayed item text. 
-     * The property accepts [template string](http://ej2.syncfusion.com/documentation/base/template-engine.html) 
+     * The property accepts [template string](https://ej2.syncfusion.com/documentation/common/template-engine/) 
      * or HTML element ID holding the content.
      * @default null
      */

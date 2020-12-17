@@ -2,51 +2,13 @@
 
 ## [Unreleased]
 
-## 18.3.53 (2020-12-08)
+## 18.4.30 (2020-12-17)
 
 ### Common
 
 #### Bug Fixes
 
-- Resolved `two way binding` not working for input components issue.
-
-## 18.3.51 (2020-11-24)
-
-### Common
-
-#### Bug Fixes
-
-- `I300269, I301493` - Resolved Memory Leak issue in Angular Components while switching between pages.
-- Resolved `Dirty and Pristine` value is not updated when resetting `form` with values.
-
-## 18.3.44 (2020-10-27)
-
-### Common
-
-#### Bug Fixes
-
-- `I291168` - Resolved peer dependency issue for Angular `10.1.5`.
-- Resolved complex directives property change not working issue.
-
-## 18.3.40 (2020-10-13)
-
-### Common
-
-#### Bug Fixes
-
-- `I292856` - Resolved Drag and Drop functionality not properly working for `child directives` in Angular 8.
-- `I293632,I18019` - Resolved `Template` property which has circular reference inside the `Child directives` throws script error.
-
-## 18.3.35 (2020-10-01)
-
-### Common
-
-#### Bug Fixes
-
-- `I289906` - Resolved script error throws while changing the data source in angular template.
 - Resolved `Dirty & Pristine` value is not updated properly when resetting the form.
-- `I286988` - Resolved template properties which rendered using `ng-for` not updated properly when changing data source dynamically.
-- Increased `peerDependencies` version from `9.1.3` to `10.1.0`
 
 ## 18.2.56 (2020-09-01)
 

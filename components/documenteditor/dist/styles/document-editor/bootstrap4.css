@@ -1409,6 +1409,14 @@ label[for*='_wholeWord_e-de-rtl'] {
   margin-top: 0;
 }
 
+.e-de-insert-footnote-dlg-sub-header {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
 .e-de-insert-table-dlg-input {
   margin-bottom: 14px;
 }
@@ -2007,6 +2015,11 @@ label[for*='_wholeWord_e-de-rtl'] {
 .e-de-insert-table {
   height: auto;
   width: auto;
+}
+
+.e-de-insert-footnote {
+  height: 139px;
+  width: 247px;
 }
 
 .e-de-insert-spellchecker {
@@ -2842,6 +2855,11 @@ label[for*='_wholeWord_e-de-rtl'] {
 }
 
 .e-bigger .e-de-insert-table {
+  height: auto;
+  width: auto;
+}
+
+.e-bigger .e-de-insert-footnote {
   height: auto;
   width: auto;
 }

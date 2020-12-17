@@ -988,6 +988,14 @@ label[for='container_wholeWord'] {
   margin-bottom: 15px;
 }
 
+.e-de-insert-footnote-dlg-sub-header {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
 .e-de-list-ddl-subheader,
 .e-de-list-ddl-subheaderbottom {
   font-size: 12px;
@@ -1382,6 +1390,11 @@ label[for='container_wholeWord'] {
 .e-de-insert-table {
   height: 131px;
   width: 230px;
+}
+
+.e-de-insert-table {
+  height: 139px;
+  width: 247px;
 }
 
 .e-de-list-dlg {

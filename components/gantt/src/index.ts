@@ -6,5 +6,5 @@ export {HolidayDirective,HolidaysDirective} from './gantt/holidays.directive';
 export {EventMarkerDirective,EventMarkersDirective} from './gantt/eventmarkers.directive';
 export { GanttComponent} from './gantt/gantt.component';
 export { GanttModule } from './gantt/gantt.module';
-export { GanttAllModule, FilterService, SelectionService, SortService, ReorderService, ResizeService, EditService, DayMarkersService, ToolbarService, ContextMenuService, ExcelExportService, RowDDService, ColumnMenuService, PdfExportService } from './gantt/gantt-all.module';
+export { GanttAllModule, FilterService, SelectionService, SortService, ReorderService, ResizeService, EditService, DayMarkersService, ToolbarService, ContextMenuService, ExcelExportService, RowDDService, ColumnMenuService, PdfExportService, VirtualScrollService } from './gantt/gantt-all.module';
 export * from '@syncfusion/ej2-gantt';
