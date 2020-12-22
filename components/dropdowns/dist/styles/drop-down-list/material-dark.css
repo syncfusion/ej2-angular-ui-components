@@ -242,7 +242,9 @@
 
 .e-ddl.e-popup.e-rtl .e-filter-parent .e-input-group.e-control-wrapper .e-input-filter,
 .e-ddl.e-popup .e-filter-parent .e-input-filter,
-.e-ddl.e-popup .e-filter-parent .e-input-filter:focus {
+.e-ddl.e-popup .e-filter-parent .e-input-filter:focus,
+.e-ddl.e-popup .e-filter-parent .e-input-group.e-input-focus .e-input-filter,
+.e-ddl.e-popup .e-filter-parent .e-input-group.e-control-wrapper.e-input-focus .e-input-filter {
   padding: 8px 16px 8px;
 }
 

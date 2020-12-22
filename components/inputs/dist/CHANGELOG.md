@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 18.4.30 (2020-12-17)
+## 18.4.31 (2020-12-22)
 
-### NumericTextBox
+### TextBox
 
 #### Bug Fixes
 
-- `#300140`-  Issue with "form invalid status is not updated properly while clearing the value" has been resolved.
+- `#305784` - Issue with "clear icon is not visible until typing a valid email on the email input" has been resolved.
 
 ## 18.3.52 (2020-12-01)
 
@@ -1139,6 +1139,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.4.30 (2020-12-17)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#300140`-  Issue with "form invalid status is not updated properly while clearing the value" has been resolved.
 
 ## 18.3.51 (2020-11-24)
 

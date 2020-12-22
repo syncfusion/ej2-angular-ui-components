@@ -181,11 +181,11 @@
 }
 
 .e-treegrid .e-toolbar-item .e-indent::before {
-  content: "";
+  content: "";
 }
 
 .e-treegrid .e-toolbar-item .e-outdent::before {
-  content: "";
+  content: "";
 }
 
 .e-bigger .e-treegrid .e-treegridexpand,

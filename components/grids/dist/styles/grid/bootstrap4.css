@@ -1803,7 +1803,7 @@
 .e-grid .e-gridheader .e-sortfilter .e-headercelldiv,
 .e-grid .e-gridheader .e-stackedheadercelldiv,
 .e-grid .e-gridheader .e-headercell .e-headercelldiv.e-headerchkcelldiv {
-  padding: 0 5px 0;
+  padding: 0 25px 0 0;
 }
 
 .e-grid .e-filtermenudiv {
@@ -3304,12 +3304,12 @@
 
 .e-grid .e-columnheader.e-wrap .e-fltr-icon .e-sortfilterdiv,
 .e-grid.e-wrap .e-columnheader .e-fltr-icon .e-sortfilterdiv {
-  margin: -24px 28px -29px 0;
+  margin: -27px 28px -29px 0;
 }
 
 .e-grid .e-columnheader.e-wrap .e-fltr-icon.e-rightalign .e-sortfilterdiv,
 .e-grid.e-wrap .e-columnheader .e-fltr-icon.e-rightalign .e-sortfilterdiv {
-  margin: -24px 0;
+  margin: -28px 0;
 }
 
 .e-grid .e-columnheader.e-wrap .e-icon-group::before,

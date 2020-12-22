@@ -472,6 +472,12 @@
   width: inherit;
 }
 
+.e-menu-wrapper.e-contextmenu-container .e-menu-vscroll,
+.e-menu-container.e-contextmenu-container .e-menu-vscroll {
+  border: none;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
 .e-menu-container:not(.e-hamburger):not(.e-rtl) .e-menu.e-vertical .e-blankicon {
   padding-left: 44px;
 }

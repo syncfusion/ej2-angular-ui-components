@@ -449,6 +449,12 @@
   width: inherit;
 }
 
+.e-menu-wrapper.e-contextmenu-container .e-menu-vscroll,
+.e-menu-container.e-contextmenu-container .e-menu-vscroll {
+  border: 1px solid #505050;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
 .e-menu-container:not(.e-hamburger):not(.e-rtl) .e-menu.e-vertical .e-blankicon {
   padding-left: 34px;
 }

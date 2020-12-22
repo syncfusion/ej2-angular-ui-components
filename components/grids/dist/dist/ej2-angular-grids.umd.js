@@ -1257,6 +1257,7 @@ exports.checkScrollReset = ej2Grids.checkScrollReset;
 exports.refreshFrozenHeight = ej2Grids.refreshFrozenHeight;
 exports.setHeightToFrozenElement = ej2Grids.setHeightToFrozenElement;
 exports.preventFrozenScrollRefresh = ej2Grids.preventFrozenScrollRefresh;
+exports.nextCellIndex = ej2Grids.nextCellIndex;
 exports.Data = ej2Grids.Data;
 exports.Sort = ej2Grids.Sort;
 exports.Page = ej2Grids.Page;

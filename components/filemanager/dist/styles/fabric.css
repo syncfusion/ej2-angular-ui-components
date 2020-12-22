@@ -496,6 +496,10 @@ ejs-filemanager {
   padding: 5px;
 }
 
+.e-filemanager .e-view-container .e-grid .e-gridcontent .e-emptyrow {
+  display: table-row;
+}
+
 .e-filemanager .e-grid {
   border-width: 0;
   float: left;

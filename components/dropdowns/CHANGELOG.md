@@ -2,19 +2,30 @@
 
 ## [Unreleased]
 
-## 18.4.30 (2020-12-17)
+## 18.4.31 (2020-12-22)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with 'drag and drop' has been fixed.
+- Issue with toolbar option has been fixed.
 
 ### DropDownList
 
 #### Bug Fixes
 
-- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
+- `#305245` - Now, popup values reset back to full data while clicking on the clear icon in the filter input.
+- `#305962` - Now, `sortOrder` property works for data source with `Array` type.
+- `#304595` - Issue with "dynamic value changes is not updated to the component after performing the filtering action" has been resolved.
+- `#305983` - Issue with "unable to select dropdown items after calling `refresh` method" has been resolved.
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
+- `#305461` - Issue with "popup is not closed when render multiple multiselect dropdown with checkbox mode" has been resolved.
+- `#302393` - Issue with "the focus class is maintained in the previous multiselect after move the focus to another multiselect component" has been resolved.
 
 ## 18.3.52 (2020-12-01)
 
@@ -1730,6 +1741,20 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.30 (2020-12-17)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#304890`, `#304801` - Issue with "`model value` is not updated inside form while changing the value at first time" has been resolved.
 
 ## 18.3.53 (2020-12-08)
 

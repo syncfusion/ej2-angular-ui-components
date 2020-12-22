@@ -8478,6 +8478,12 @@ ejs-sidebar {
   width: inherit;
 }
 
+.e-menu-wrapper.e-contextmenu-container .e-menu-vscroll,
+.e-menu-container.e-contextmenu-container .e-menu-vscroll {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: none;
+}
+
 .e-menu-container:not(.e-hamburger):not(.e-rtl) .e-menu.e-vertical .e-blankicon {
   padding-left: 34px;
 }

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.31 (2020-12-22)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#291772`- Issue with "popup gets closed while dynamically changing the max days property in select event" has been resolved.
+
 ## 18.3.52 (2020-12-01)
 
 ### Calendar
