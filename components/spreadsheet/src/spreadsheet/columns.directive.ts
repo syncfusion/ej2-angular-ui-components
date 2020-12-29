@@ -55,7 +55,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public index: any;
     /** 
      * To lock/unlock the column in the protected sheet.
-     * @default null
+     * @default true
      */
     public isLocked: any;
     /** 

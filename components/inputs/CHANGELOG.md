@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.31 (2020-12-22)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#305784` - Issue with "clear icon is not visible until typing a valid email on the email input" has been resolved.
-
 ## 18.3.52 (2020-12-01)
 
 ### TextBox
@@ -1139,6 +1131,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.4.31 (2020-12-22)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#305784` - Issue with "clear icon is not visible until typing a valid email on the email input" has been resolved.
 
 ## 18.4.30 (2020-12-17)
 

@@ -1361,6 +1361,7 @@ exports.updateTableWidth = ej2Spreadsheet.updateTableWidth;
 exports.focusBorder = ej2Spreadsheet.focusBorder;
 exports.clearChartBorder = ej2Spreadsheet.clearChartBorder;
 exports.insertChart = ej2Spreadsheet.insertChart;
+exports.chartRangeSelection = ej2Spreadsheet.chartRangeSelection;
 exports.getUpdateUsingRaf = ej2Spreadsheet.getUpdateUsingRaf;
 exports.removeAllChildren = ej2Spreadsheet.removeAllChildren;
 exports.getColGroupWidth = ej2Spreadsheet.getColGroupWidth;

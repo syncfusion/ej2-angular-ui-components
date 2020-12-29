@@ -1630,6 +1630,11 @@ div > .e-pv-bookmark-icon.e-pv-icon {
   color: #fff;
 }
 
+.e-pv-toolbar .e-pv-zoom-drop-down-container .e-ddl.e-input-group.e-control-wrapper .e-ddl-icon:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
 .e-pv-print-popup-container {
   height: 100%;
   left: 0;
@@ -2796,7 +2801,7 @@ div > .e-pv-bookmark-icon.e-pv-icon.e-right {
   margin-top: 25px;
   padding-top: 40px;
   text-align: center;
-  width: 200px;
+  width: 320px;
   word-wrap: break-word;
 }
 

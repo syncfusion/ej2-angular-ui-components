@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.31 (2020-12-22)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#291772`- Issue with "popup gets closed while dynamically changing the max days property in select event" has been resolved.
-
 ## 18.3.52 (2020-12-01)
 
 ### Calendar
@@ -1188,6 +1180,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.31 (2020-12-22)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#291772`- Issue with "popup gets closed while dynamically changing the max days property in select event" has been resolved.
 
 ## 18.3.42 (2020-10-20)
 

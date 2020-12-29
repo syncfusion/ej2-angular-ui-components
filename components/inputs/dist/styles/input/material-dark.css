@@ -7281,6 +7281,13 @@ input.e-input.e-bigger.e-small,
   border-width: 0 0 1px 0;
 }
 
+.e-input-group.e-control-container.valid.modified,
+.e-input-group.e-control-container.invalid,
+.e-float-input.e-control-container.valid.modified,
+.e-float-input.e-control-container.invalid {
+  outline: none;
+}
+
 /*! input theme */
 input.e-input,
 .e-input-group input.e-input,
