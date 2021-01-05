@@ -258,7 +258,7 @@
 
 .e-pager .e-pagerconstant {
   display: inline-block;
-  margin: 0 0 6px 8px;
+  margin: 11px 0 6px 8px;
   overflow: hidden;
   width: auto;
 }
@@ -4588,6 +4588,14 @@ li.e-separator.e-menu-item.e-excel-separator {
 .e-grid.sf-grid .e-gridcontent .e-content.e-noscroll,
 .e-grid.sf-grid .e-gridcontent .e-content .e-movablecontent.e-noscroll {
   overflow-y: hidden;
+}
+
+.e-grid.sf-grid .e-label.e-fltrcheck {
+  width: 0;
+}
+
+.e-grid.sf-grid .e-checkboxlist .e-fltrcheck {
+  white-space: nowrap;
 }
 
 .e-grid-min-height .e-rowcell {

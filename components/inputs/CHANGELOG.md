@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.4.33 (2021-01-05)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#307344` - Issue with "delete key allows to remove only one character from the input while placing cursor between characters" has been resolved.
+
+## 18.4.32 (2020-12-29)
+
+### ColorPicker
+
+- `F160947` - Unwanted parent selector removed from the top level selector.
+
 ## 18.3.52 (2020-12-01)
 
 ### TextBox

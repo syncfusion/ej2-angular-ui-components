@@ -29,7 +29,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
         return Reflect.metadata(k, v);
 };
 var inputs = ['autoSaveOnIdle', 'backgroundColor', 'cssClass', 'editorMode', 'enableAutoUrl', 'enableHtmlEncode', 'enableHtmlSanitizer', 'enablePersistence', 'enableResize', 'enableRtl', 'enableTabKey', 'enableXhtml', 'enabled', 'fileManagerSettings', 'floatingToolbarOffset', 'fontColor', 'fontFamily', 'fontSize', 'format', 'formatter', 'height', 'htmlAttributes', 'iframeSettings', 'inlineMode', 'insertImageSettings', 'keyConfig', 'locale', 'maxLength', 'pasteCleanupSettings', 'placeholder', 'quickToolbarSettings', 'readonly', 'saveInterval', 'showCharCount', 'tableSettings', 'toolbarSettings', 'undoRedoSteps', 'undoRedoTimer', 'value', 'valueTemplate', 'width'];
-var outputs = ['actionBegin', 'actionComplete', 'afterImageDelete', 'beforeDialogClose', 'beforeDialogOpen', 'beforeImageUpload', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
+var outputs = ['actionBegin', 'actionComplete', 'afterImageDelete', 'beforeDialogClose', 'beforeDialogOpen', 'beforeImageDrop', 'beforeImageUpload', 'beforeQuickToolbarOpen', 'beforeSanitizeHtml', 'blur', 'change', 'created', 'destroyed', 'dialogClose', 'dialogOpen', 'focus', 'imageRemoving', 'imageSelected', 'imageUploadFailed', 'imageUploadSuccess', 'imageUploading', 'quickToolbarClose', 'quickToolbarOpen', 'resizeStart', 'resizeStop', 'resizing', 'toolbarClick', 'toolbarStatusUpdate', 'valueChange'];
 var twoWays = ['value'];
 /**
  * `ejs-richtexteditor` represents the Angular richtexteditor Component.
@@ -456,6 +456,7 @@ exports.xhtmlValidation = ej2Richtexteditor.xhtmlValidation;
 exports.beforeImageUpload = ej2Richtexteditor.beforeImageUpload;
 exports.resizeInitialized = ej2Richtexteditor.resizeInitialized;
 exports.renderFileManager = ej2Richtexteditor.renderFileManager;
+exports.beforeImageDrop = ej2Richtexteditor.beforeImageDrop;
 exports.CLS_RTE = ej2Richtexteditor.CLS_RTE;
 exports.CLS_RTL = ej2Richtexteditor.CLS_RTL;
 exports.CLS_CONTENT = ej2Richtexteditor.CLS_CONTENT;

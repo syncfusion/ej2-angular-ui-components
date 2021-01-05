@@ -4650,6 +4650,14 @@ li.e-separator.e-menu-item.e-excel-separator {
   overflow-y: hidden;
 }
 
+.e-grid.sf-grid .e-label.e-fltrcheck {
+  width: 0;
+}
+
+.e-grid.sf-grid .e-checkboxlist .e-fltrcheck {
+  white-space: nowrap;
+}
+
 .e-grid-min-height .e-rowcell {
   line-height: 0;
   padding-bottom: 0;
