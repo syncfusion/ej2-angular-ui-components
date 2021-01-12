@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.4.33 (2021-01-05)
+## 18.4.34 (2021-01-12)
+
+### Common
+
+#### Bug Fixes
+
+- Fixed ngFor databinding items have property losses if `directives` have child content template property.
+
+## 18.4.30 (2020-12-17)
 
 ### Common
 

@@ -417,6 +417,7 @@
 .e-schedule .e-schedule-resource-toolbar .e-resource-level-title .e-resource-name {
   font-size: 14px;
   padding: 5px;
+  color: #fff;
 }
 
 .e-schedule .e-schedule-resource-toolbar .e-resource-level-title .e-resource-name:not(:last-child) {

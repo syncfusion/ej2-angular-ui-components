@@ -259,22 +259,29 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    let oldProbLength = tempAfterContentThis[tagObject.name].length;
-                    let newPropLendgth = tagObject.instance.list.length;
-                    if (oldProbLength !== newPropLendgth) {
+                    if (tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {
-                            let curIndex: number = tagObject.instance.list.indexOf(list);
-                            let curChild: { setProperties: Function } = getValue(tagObject.name, tempAfterContentThis)[curIndex];
-                            if (curChild !== undefined && curChild.setProperties !== undefined) {
-                                if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
-                                    curChild.setProperties(list.getProperties(), true);
-                                } else {
-                                    curChild.setProperties(list.getProperties());   
-                                }
+                        let curIndex: number = tagObject.instance.list.indexOf(list);
+                        let curChild: any = getValue(tagObject.name, tempAfterContentThis)[curIndex];
+                        let complexTemplates: string[] = Object.keys(curChild);
+                        complexTemplates = complexTemplates.filter((val: string): boolean => {
+                            return /Ref$/i.test(val);
+                        });
+                        for (let complexPropName of complexTemplates) {
+                            complexPropName = complexPropName.replace(/Ref/, '');
+                            curChild.properties[complexPropName] = curChild.properties && !curChild.properties[complexPropName] ?
+                                curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                        }
+                        if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
+                            if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
+                                curChild.setProperties(list.getProperties(), true);
+                            } else {
+                                curChild.setProperties(list.getProperties());
                             }
-                            list.isUpdated = true;
+                        }
+                        list.isUpdated = true;
                     }
                 }
             }

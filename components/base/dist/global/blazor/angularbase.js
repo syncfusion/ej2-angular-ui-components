@@ -545,16 +545,24 @@ var ComponentBase = /** @class */ (function () {
                 }
                 else {
                     /* istanbul ignore next */
-                    var oldProbLength = tempAfterContentThis[tagObject.name].length;
-                    var newPropLendgth = tagObject.instance.list.length;
-                    if (oldProbLength !== newPropLendgth) {
+                    if (tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (var _b = 0, _c = tagObject.instance.list; _b < _c.length; _b++) {
                         var list = _c[_b];
                         var curIndex = tagObject.instance.list.indexOf(list);
                         var curChild = sf.base.getValue(tagObject.name, tempAfterContentThis)[curIndex];
-                        if (curChild !== undefined && curChild.setProperties !== undefined) {
+                        var complexTemplates = Object.keys(curChild);
+                        complexTemplates = complexTemplates.filter(function (val) {
+                            return /Ref$/i.test(val);
+                        });
+                        for (var _d = 0, complexTemplates_2 = complexTemplates; _d < complexTemplates_2.length; _d++) {
+                            var complexPropName = complexTemplates_2[_d];
+                            complexPropName = complexPropName.replace(/Ref/, '');
+                            curChild.properties[complexPropName] = curChild.properties && !curChild.properties[complexPropName] ?
+                                curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                        }
+                        if (!sf.base.isUndefined(curChild) && !sf.base.isUndefined(curChild.setProperties)) {
                             if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
                                 curChild.setProperties(list.getProperties(), true);
                             }

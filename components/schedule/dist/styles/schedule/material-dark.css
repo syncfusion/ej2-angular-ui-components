@@ -400,7 +400,7 @@
 }
 
 .e-schedule .e-schedule-resource-toolbar .e-resource-menu .e-icon-menu {
-  color: rgba(0, 0, 0, 0.54);
+  color: #fff;
   font-size: 14px;
   padding: 7px;
   padding-left: 4px;
@@ -418,6 +418,7 @@
 .e-schedule .e-schedule-resource-toolbar .e-resource-level-title .e-resource-name {
   font-size: 14px;
   padding: 5px;
+  color: #fff;
 }
 
 .e-schedule .e-schedule-resource-toolbar .e-resource-level-title .e-resource-name:not(:last-child) {
@@ -425,7 +426,7 @@
 }
 
 .e-schedule .e-schedule-resource-toolbar .e-resource-level-title .e-icon-next {
-  color: rgba(0, 0, 0, 0.54);
+  color: #fff;
   font-size: 10px;
   line-height: 18px;
   opacity: .4;
@@ -461,7 +462,7 @@
 }
 
 .e-schedule .e-resource-tree-popup {
-  background: #fff;
+  background: #303030;
   box-shadow: 0 3px 4px 0.2px rgba(0, 0, 0, 0.4);
   height: 100%;
   position: absolute;
@@ -1669,7 +1670,7 @@
 }
 
 .e-schedule .e-timeline-year-view .e-resource-tree-icon {
-  color: rgba(0, 0, 0, 0.54);
+  color: #fff;
   cursor: pointer;
   float: left;
   font-family: 'e-icons';
@@ -2056,7 +2057,7 @@
 
 .e-schedule .e-timeline-view .e-resource-tree-icon,
 .e-schedule .e-timeline-month-view .e-resource-tree-icon {
-  color: rgba(0, 0, 0, 0.54);
+  color: #fff;
   cursor: pointer;
   float: left;
   font-family: 'e-icons';

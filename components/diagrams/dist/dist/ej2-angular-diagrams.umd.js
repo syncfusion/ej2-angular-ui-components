@@ -1480,6 +1480,7 @@ exports.findObjectType = ej2Diagrams.findObjectType;
 exports.setSwimLaneDefaults = ej2Diagrams.setSwimLaneDefaults;
 exports.getSpaceValue = ej2Diagrams.getSpaceValue;
 exports.getInterval = ej2Diagrams.getInterval;
+exports.setPortsEdges = ej2Diagrams.setPortsEdges;
 exports.setUMLActivityDefaults = ej2Diagrams.setUMLActivityDefaults;
 exports.setConnectorDefaults = ej2Diagrams.setConnectorDefaults;
 exports.findNearestPoint = ej2Diagrams.findNearestPoint;

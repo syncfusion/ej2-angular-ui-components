@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 18.4.34 (2021-01-12)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with remote data has been fixed.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#F159036` - Issue with "popup doesn't show the entire data source when render component with item template and clearing the filtered value" has been resolved.
+
 ## 18.4.32 (2020-12-29)
 
 ### AutoComplete

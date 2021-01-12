@@ -4586,11 +4586,59 @@ li.e-separator.e-menu-item.e-excel-separator {
   padding: 0 8px;
 }
 
+.e-grid-min-height .e-grid-height .e-rowcell {
+  line-height: 21px;
+  padding: 7px 8px;
+}
+
+.e-grid-min-height .e-grid-height .e-gridheader .e-headercell,
+.e-grid-min-height .e-grid-height .e-gridheader .e-detailheadercell,
+.e-grid-min-height .e-grid-height .e-gridheader .e-headercell .e-headercelldiv {
+  height: 29px;
+}
+
+.e-grid-min-height .e-grid-height .e-gridcontent .e-groupcaption {
+  line-height: 20px;
+  padding: .7em;
+}
+
+.e-grid-min-height .e-grid-height .e-summarycell {
+  line-height: 21px;
+  padding: 7px 8px;
+}
+
+.e-device.e-grid-min-height .e-grid-height .e-rowcell {
+  padding: 7px 8px;
+}
+
+.e-device.e-grid-min-height .e-grid-height .e-rowcell:first-child {
+  padding: 7px 8px 7px 10px;
+}
+
+.e-device.e-grid-min-height .e-grid-height .e-rowcell:last-child {
+  padding: 7px 10px 7px 8px;
+}
+
 .e-device.e-grid-min-height .e-rowcell,
 .e-device.e-grid-min-height .e-rowcell:first-child,
 .e-device.e-grid-min-height .e-rowcell:last-child {
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.e-bigger .e-grid.e-grid-min-height .e-grid-height .e-rowcell {
+  line-height: 26px;
+  padding: 9px 10px;
+}
+
+.e-bigger .e-grid.e-grid-min-height .e-grid-height .e-rowcell:first-child {
+  line-height: 13px;
+  padding-left: 13px;
+}
+
+.e-bigger .e-grid.e-grid-min-height .e-grid-height .e-rowcell:last-child {
+  line-height: 13px;
+  padding-right: 13px;
 }
 
 .e-bigger .e-grid.e-grid-min-height .e-rowcell,
@@ -4599,6 +4647,18 @@ li.e-separator.e-menu-item.e-excel-separator {
   line-height: 0;
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height .e-rowcell {
+  line-height: 18px;
+}
+
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height .e-frozencontent table tr td:first-child:empty,
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height .e-movablecontent table tr td:first-child:empty,
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height .e-frozenhdrcont table tr td:first-child:empty,
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty,
+.e-bigger .e-wrap.e-grid-min-height .e-grid-height:not(.e-grid-min-height) .e-gridcontent tr.e-row .e-rowcell:empty {
+  height: 44px;
 }
 
 .e-bigger .e-wrap.e-grid-min-height .e-rowcell {
