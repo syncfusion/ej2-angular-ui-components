@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.35 (2021-01-19)
+
+### Calendar
+
+#### New Features
+
+- `#302472` - Now, you can change the rule for defining the first week of the year using `weekRule` property.
+
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker

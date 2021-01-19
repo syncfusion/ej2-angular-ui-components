@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.35 (2021-01-19)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#308692` - The issue with "Script error occurs, when destroy the Rich Text Editor with toolbar disabled" has been resolved.
+
 ## 18.4.34 (2021-01-12)
 
 ### RichTextEditor

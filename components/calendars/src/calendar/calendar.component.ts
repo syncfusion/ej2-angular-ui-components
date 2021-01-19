@@ -5,7 +5,7 @@ import { Calendar } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['calendarMode','dayHeaderFormat','depth','enablePersistence','enableRtl','firstDayOfWeek','isMultiSelection','keyConfigs','locale','max','min','serverTimezoneOffset','showTodayButton','start','value','values','weekNumber'];
+export const inputs: string[] = ['calendarMode','dayHeaderFormat','depth','enablePersistence','enableRtl','firstDayOfWeek','isMultiSelection','keyConfigs','locale','max','min','serverTimezoneOffset','showTodayButton','start','value','values','weekNumber','weekRule'];
 export const outputs: string[] = ['focus', 'blur', 'change','created','destroyed','navigated','renderDayCell','valueChange','valuesChange'];
 export const twoWays: string[] = ['value', 'values'];
 
