@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 18.4.39 (2021-01-28)
+
+### Gantt
+
+#### New Features
+
+- `#306342` - Included target element in `actionBegin`, `taskbarEditing`, `contextMenuOpen` events.
+- `#291192` - Provided Immutable Support to refresh specific rows while performing Gantt actions.
+
+#### Bug Fixes
+
+- `F161492` - Console error on converting milestone to task has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 18.4.35 (2021-01-19)
 
 ### Gantt
@@ -10,8 +25,6 @@
 
 - `F161492` - Console error on drag and drop action has been fixed.
 - `F161492` - Issue on indent action has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 18.4.33 (2021-01-05)
 

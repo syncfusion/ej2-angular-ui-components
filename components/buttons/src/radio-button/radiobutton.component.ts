@@ -5,9 +5,9 @@ import { RadioButton } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['checked','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','label','labelPosition','locale','name','value'];
-export const outputs: string[] = ['focus', 'blur', 'change','created','checkedChange'];
-export const twoWays: string[] = ['checked'];
+export const inputs: string[] = ['checked','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','htmlAttributes','label','labelPosition','locale','name','value'];
+export const outputs: string[] = ['focus', 'blur', 'change','created','valueChange'];
+export const twoWays: string[] = ['value'];
 
 /**
  * Represents the Angular RadioButton Component.
@@ -39,7 +39,7 @@ export class RadioButtonComponent extends RadioButton implements IComponentBase 
     public tagObjects: any;
 
 
-    public checkedChange: any;
+    public valueChange: any;
 
     public focus: any;
     public blur: any;

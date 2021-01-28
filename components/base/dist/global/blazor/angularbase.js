@@ -566,6 +566,14 @@ var ComponentBase = /** @class */ (function () {
                             if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
                                 curChild.setProperties(list.getProperties(), true);
                             }
+                            else if (tempAfterContentThis.getModuleName() === 'diagram') {
+                                if (list.hasChanges) {
+                                    curChild.setProperties(list.getProperties());
+                                }
+                                else {
+                                    curChild.setProperties(list.getProperties(), true);
+                                }
+                            }
                             else {
                                 curChild.setProperties(list.getProperties());
                             }

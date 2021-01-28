@@ -342,9 +342,9 @@ var __metadata$2 = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
         return Reflect.metadata(k, v);
 };
-var inputs$2 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'label', 'labelPosition', 'locale', 'name', 'value'];
-var outputs$2 = ['focus', 'blur', 'change', 'created', 'checkedChange'];
-var twoWays$2 = ['checked'];
+var inputs$2 = ['checked', 'cssClass', 'disabled', 'enableHtmlSanitizer', 'enablePersistence', 'enableRtl', 'htmlAttributes', 'label', 'labelPosition', 'locale', 'name', 'value'];
+var outputs$2 = ['focus', 'blur', 'change', 'created', 'valueChange'];
+var twoWays$2 = ['value'];
 /**
  * Represents the Angular RadioButton Component.
  * ```html

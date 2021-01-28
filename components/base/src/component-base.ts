@@ -203,7 +203,7 @@ export class ComponentBase<T> {
     };
     // tslint:disable-next-line:no-any
     public ngAfterContentChecked(isTempRef?: any): void {
-        
+
         // tslint:disable-next-line:no-any
         let tempAfterContentThis: any = isTempRef || this;
         for (let tagObject of tempAfterContentThis.tagObjects) {
@@ -216,11 +216,11 @@ export class ComponentBase<T> {
                     // So we have constructed property here and used
                     let complexDirProps;
                     let list = getValue('instance.list', tagObject);
-                    if(list && list.length){
-                        complexDirProps =  list[0].directivePropList;
+                    if (list && list.length) {
+                        complexDirProps = list[0].directivePropList;
                     }
                     let skip: any = true;
-                    if((tempAfterContentThis as any).getModuleName && (tempAfterContentThis as any).getModuleName() === 'gantt'){
+                    if ((tempAfterContentThis as any).getModuleName && (tempAfterContentThis as any).getModuleName() === 'gantt') {
                         skip = false
                     }
                     if (complexDirProps && skip && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
@@ -277,6 +277,12 @@ export class ComponentBase<T> {
                         if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
                             if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
                                 curChild.setProperties(list.getProperties(), true);
+                            } else if (tempAfterContentThis.getModuleName() === 'diagram') {
+                                if (list.hasChanges) {
+                                    curChild.setProperties(list.getProperties());
+                                } else {
+                                    curChild.setProperties(list.getProperties(), true);
+                                }
                             } else {
                                 curChild.setProperties(list.getProperties());
                             }

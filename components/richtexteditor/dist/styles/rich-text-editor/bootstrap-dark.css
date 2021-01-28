@@ -541,7 +541,6 @@
 
 .e-richtexteditor .e-rte-toolbar,
 .e-richtexteditor .e-rte-toolbar.e-toolbar.e-extended-toolbar {
-  position: inherit;
   z-index: 101;
 }
 
@@ -2229,6 +2228,16 @@
 
 .e-richtexteditor.e-rte-inline .e-rte-content {
   border: 0;
+}
+
+.e-richtexteditor:not(.e-rte-tb-expand) {
+  border: 1px solid #505050;
+}
+
+.e-richtexteditor:not(.e-rte-tb-expand) .e-rte-content {
+  border: 0;
+  border-bottom: 0;
+  border-top: 0;
 }
 
 .e-richtexteditor.e-rte-tb-expand {
