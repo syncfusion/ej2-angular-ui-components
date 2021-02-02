@@ -2,20 +2,31 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#298884` - Error on reorder rows method has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+#### New Features
+
+- `#306342` - Included target element in `actionBegin`, `taskbarEditing`, `contextMenuOpen` events.
+
 ## 18.4.39 (2021-01-28)
 
 ### Gantt
 
 #### New Features
 
-- `#306342` - Included target element in `actionBegin`, `taskbarEditing`, `contextMenuOpen` events.
 - `#291192` - Provided Immutable Support to refresh specific rows while performing Gantt actions.
 
 #### Bug Fixes
 
 - `F161492` - Console error on converting milestone to task has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 18.4.35 (2021-01-19)
 

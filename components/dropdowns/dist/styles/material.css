@@ -2492,10 +2492,17 @@ ejs-dropdownlist {
   display: block;
   line-height: 36px;
   overflow: hidden;
+  padding-right: 16px;
   position: relative;
   text-indent: 17px;
   white-space: nowrap;
   width: 100%;
+}
+
+.e-rtl .e-multi-select-list-wrapper .e-selectall-parent,
+.e-multi-select-list-wrapper.e-rtl .e-selectall-parent {
+  padding-left: 16px;
+  padding-right: 0;
 }
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {

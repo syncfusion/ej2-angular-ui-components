@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#F161379` - Issue with "drag and drop highlight is flickered when render uploader with custom drop area" has been resolved.
+
 ## 18.4.32 (2020-12-29)
 
 ### ColorPicker

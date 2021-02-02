@@ -665,6 +665,10 @@
   margin-left: 6px;
 }
 
+.e-richtexteditor .e-rte-toolbar .e-hor-nav.e-expended-nav {
+  height: auto;
+}
+
 .e-richtexteditor.e-rtl .e-rte-toolbar .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:first-child {
   margin-left: 0;
   margin-right: 6px;
@@ -680,6 +684,7 @@
 
 .e-richtexteditor .e-rte-toolbar,
 .e-richtexteditor .e-rte-toolbar.e-toolbar.e-extended-toolbar {
+  position: inherit;
   z-index: 101;
 }
 

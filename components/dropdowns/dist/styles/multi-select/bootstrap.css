@@ -645,10 +645,17 @@
   display: block;
   line-height: 26px;
   overflow: hidden;
+  padding-right: 20px;
   position: relative;
   text-indent: 21px;
   white-space: nowrap;
   width: 100%;
+}
+
+.e-rtl .e-multi-select-list-wrapper .e-selectall-parent,
+.e-multi-select-list-wrapper.e-rtl .e-selectall-parent {
+  padding-left: 20px;
+  padding-right: 0;
 }
 
 .e-multi-select-list-wrapper .e-selectall-parent .e-all-text {

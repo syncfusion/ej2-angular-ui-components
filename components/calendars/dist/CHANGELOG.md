@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.39 (2021-01-28)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#309782` - Issue with "datepicker popup is not opened when disable the form and enable the datepicker control" has been resolved.
-
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker
@@ -1196,6 +1188,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.39 (2021-01-28)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#309782` - Issue with "datepicker popup is not opened when disable the form and enable the datepicker control" has been resolved.
 
 ## 18.4.35 (2021-01-19)
 

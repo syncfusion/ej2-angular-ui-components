@@ -14,6 +14,33 @@ ejs-calendar {
   display: block;
 }
 
+.e-calendar.e-disabled .e-header .e-prev,
+.e-calendar.e-disabled .e-header .e-next {
+  cursor: default;
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.e-calendar.e-disabled .e-header .e-title {
+  cursor: default;
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.e-calendar.e-disabled .e-content td {
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.e-calendar.e-disabled .e-btn.e-today {
+  pointer-events: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
 .e-calendar,
 .e-bigger.e-small .e-calendar {
   -webkit-tap-highlight-color: transparent;

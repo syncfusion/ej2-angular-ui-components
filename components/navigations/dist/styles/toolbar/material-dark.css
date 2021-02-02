@@ -1035,7 +1035,7 @@
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator) {
-  height: 100%;
+  height: inherit;
   min-width: 34px;
   padding: 3.5px;
 }

@@ -1540,6 +1540,7 @@ exports.cloneSelectedObjects = ej2Diagrams.cloneSelectedObjects;
 exports.updatePathElement = ej2Diagrams.updatePathElement;
 exports.checkPort = ej2Diagrams.checkPort;
 exports.findPath = ej2Diagrams.findPath;
+exports.getConnectorDirection = ej2Diagrams.getConnectorDirection;
 exports.findDistance = ej2Diagrams.findDistance;
 exports.cloneBlazorObject = ej2Diagrams.cloneBlazorObject;
 exports.checkBrowserInfo = ej2Diagrams.checkBrowserInfo;

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['id', 'isSeriesInRows', 'range', 'theme', 'type'];
+let input: string[] = ['height', 'id', 'isSeriesInRows', 'range', 'theme', 'type', 'width'];
 let outputs: string[] = [];
 
 @Directive({
@@ -24,6 +24,12 @@ export class ChartDirective extends ComplexBase<ChartDirective> {
      */
     public type: any;
     /** 
+     * Specifies the height of the chart.
+     * @default 290
+     * @asptype int
+     */
+    public height: any;
+    /** 
      * Specifies chart element id.
      * @default ''
      */
@@ -43,6 +49,12 @@ export class ChartDirective extends ComplexBase<ChartDirective> {
      * @default 'Material'
      */
     public theme: any;
+    /** 
+     * Specifies the width of the chart.
+     * @default 480
+     * @asptype int
+     */
+    public width: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

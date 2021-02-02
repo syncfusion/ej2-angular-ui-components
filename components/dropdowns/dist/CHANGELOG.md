@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#311499` - Issue with "console error is thrown in the filtering and custom value multiselect while choosing existing value" has been resolved.
+
 ## 18.4.35 (2021-01-19)
 
 ### DropDownList

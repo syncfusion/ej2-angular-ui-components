@@ -67,7 +67,7 @@ ImagesDirective.decorators = [
  * @nocollapse
  */
 ImagesDirective.ctorParameters = function () { return []; };
-var input$1 = ['id', 'isSeriesInRows', 'range', 'theme', 'type'];
+var input$1 = ['height', 'id', 'isSeriesInRows', 'range', 'theme', 'type', 'width'];
 var outputs$1 = [];
 var ChartDirective = /** @class */ (function (_super) {
     __extends(ChartDirective, _super);
@@ -1186,6 +1186,7 @@ exports.updateChart = ej2Spreadsheet.updateChart;
 exports.deleteChartColl = ej2Spreadsheet.deleteChartColl;
 exports.initiateChartModel = ej2Spreadsheet.initiateChartModel;
 exports.focusChartBorder = ej2Spreadsheet.focusChartBorder;
+exports.saveError = ej2Spreadsheet.saveError;
 exports.checkIsFormula = ej2Spreadsheet.checkIsFormula;
 exports.isCellReference = ej2Spreadsheet.isCellReference;
 exports.isChar = ej2Spreadsheet.isChar;

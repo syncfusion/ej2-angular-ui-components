@@ -1554,7 +1554,7 @@
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator) {
-  height: 100%;
+  height: inherit;
   min-width: 34px;
   padding: 0 1px;
 }
@@ -7961,6 +7961,7 @@ ejs-sidebar {
   line-height: 42px;
   position: absolute;
   right: 8px;
+  top: 0;
   width: auto;
 }
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 18.4.41 (2021-02-02)
+
+### Common
+
+#### Bug Fixes
+
+- `I313011` - Increased `peerDependencies` version from `10.1.0` to `11.1.1`.
+
 ## 18.4.34 (2021-01-12)
 
 ### Common

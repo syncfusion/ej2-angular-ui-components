@@ -3044,7 +3044,7 @@ li.e-separator.e-menu-item.e-excel-separator {
 .e-grid .e-gridheader .e-sortfilter .e-headercelldiv,
 .e-grid .e-gridheader .e-stackedheadercelldiv,
 .e-grid .e-gridheader .e-headercell .e-headercelldiv.e-headerchkcelldiv {
-  padding: 0 25px 0 0;
+  padding: 0 20px 0 5px;
 }
 
 .e-grid .e-filtermenudiv {
@@ -3121,7 +3121,7 @@ li.e-separator.e-menu-item.e-excel-separator {
 }
 
 .e-grid.e-wrap .e-gridheader .e-rightalign .e-sortnumber {
-  margin: 3px 2px 0 5px;
+  margin: 3px 2px 0 10px;
 }
 
 .e-grid.e-wrap .e-gridheader .e-sortnumber {
@@ -4545,7 +4545,7 @@ li.e-separator.e-menu-item.e-excel-separator {
 
 .e-grid .e-columnheader.e-wrap .e-fltr-icon .e-sortfilterdiv,
 .e-grid.e-wrap .e-columnheader .e-fltr-icon .e-sortfilterdiv {
-  margin: -27px 28px -29px 0;
+  margin: -27px 20px -29px 0;
 }
 
 .e-grid .e-columnheader.e-wrap .e-fltr-icon.e-rightalign .e-sortfilterdiv,
