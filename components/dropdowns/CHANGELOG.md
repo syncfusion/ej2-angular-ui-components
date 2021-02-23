@@ -2,13 +2,27 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
+## 18.4.44 (2021-02-23)
+
+### MultiSelect
+
+#### New Features
+
+- `#283275`, `#289148`, `#296652` - Now, selection and deselection performance is improved while providing the large data to the component.
+
+## 18.4.43 (2021-02-16)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#310244` - The issue on changing the `treeSettings.autoCheck` property dynamically in the `Box` mode has been resolved in the Dropdown Tree component.
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#311499` - Issue with "console error is thrown in the filtering and custom value multiselect while choosing existing value" has been resolved.
+- `#310590` - Now, chip will create in focused multiselect component while updating the value property on dynamically.
 
 ## 18.4.35 (2021-01-19)
 
@@ -1785,6 +1799,22 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 18.4.42 (2021-02-09)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#311416` - Issue with "form value is not updated while clicking clear icon after patching the value" has been resolved.
+
+## 18.4.41 (2021-02-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#311499` - Issue with "console error is thrown in the filtering and custom value multiselect while choosing existing value" has been resolved.
 
 ## 18.4.30 (2020-12-17)
 

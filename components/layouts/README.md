@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-layouts)](https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts)
+
 # ej2-angular-layouts
 
 The layout package contains cards, avatars, splitter and Dashboard Layout components. 

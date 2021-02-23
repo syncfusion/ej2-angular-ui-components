@@ -67,11 +67,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public step: any;
     /** 
-     * Specifies the template for value field such as slider or any other widgets.
-     * @default null
-     */
-    public template: any;
-    /** 
      * Specifies the validation for columns (text, number and date).
      * @default { isRequired: true , min: 0, max: Number.MAX_VALUE }
      */
@@ -92,6 +87,13 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('ruleTemplate')
     @Template()
     public ruleTemplate: any;
+    /** 
+     * Specifies the template for value field such as slider or any other widgets.
+     * @default null
+     */
+    @ContentChild('template')
+    @Template()
+    public template: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

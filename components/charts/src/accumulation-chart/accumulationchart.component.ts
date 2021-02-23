@@ -6,7 +6,7 @@ import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highLightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','beforeResize','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**

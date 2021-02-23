@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['color', 'end', 'index', 'name', 'opacity', 'shape'];
+let input: string[] = ['color', 'end', 'index', 'legendImageUrl', 'name', 'opacity', 'shape'];
 let outputs: string[] = [];
 /**
  * BulletRange Directive
@@ -41,6 +41,11 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
      */
     public index: any;
     /** 
+     * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
+     * @default ''
+     */
+    public legendImageUrl: any;
+    /** 
      * Default value for qualitative range name
      * @default null
      */
@@ -61,7 +66,8 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
      * * VerticalLine 
      * * Pentagon 
      * * InvertedTriangle 
-     * * SeriesType
+     * * SeriesType 
+     * * Image
      * @default 'Rectangle'
      */
     public shape: any;

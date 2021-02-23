@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 18.4.44 (2021-02-23)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved script error when set to null value to form group.
+
+## 18.4.43 (2021-02-16)
+
+### Common
+
+#### Bug Fixes
+
+- `I307728` - Provided performance improvement on complex directives.
+-  `I312275` - Resolved Script error while unsubscribing events on `OnDestroy` hook.
+
 ## 18.4.41 (2021-02-02)
 
 ### Common

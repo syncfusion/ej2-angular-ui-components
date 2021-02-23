@@ -78,7 +78,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public twoWaySetter(newVal: Object, prop: string): void {
         let oldVal: Object = this.oldValue || getValue(prop, this.properties);
         let ele: HTMLElement = this.inputElement || this.element;
-        if (oldVal === newVal &&
+        if (ele && oldVal === newVal &&
             ((<HTMLInputElement>ele).value === undefined || (<HTMLInputElement>ele).value === '')) {
             return;
         }

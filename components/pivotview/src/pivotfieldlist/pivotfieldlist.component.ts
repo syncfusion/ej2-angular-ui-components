@@ -5,7 +5,7 @@ import { PivotFieldList } from '@syncfusion/ej2-pivotview';
 
 
 export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowDeferLayoutUpdate','cssClass','dataSourceSettings','enablePersistence','enableRtl','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','renderMode','showValuesButton','spinnerTemplate','target'];
-export const outputs: string[] = ['aggregateCellInfo','aggregateMenuOpen','calculatedFieldCreate','created','dataBound','destroyed','enginePopulated','enginePopulating','fieldDragStart','fieldDrop','fieldRemove','load','memberEditorOpen','memberFiltering','onFieldDropped'];
+export const outputs: string[] = ['aggregateCellInfo','aggregateMenuOpen','beforeServiceInvoke','calculatedFieldCreate','created','dataBound','destroyed','enginePopulated','enginePopulating','fieldDragStart','fieldDrop','fieldRemove','load','memberEditorOpen','memberFiltering','onFieldDropped'];
 export const twoWays: string[] = [];
 
 /**

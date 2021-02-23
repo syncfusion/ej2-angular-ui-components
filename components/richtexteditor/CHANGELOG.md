@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 18.4.44 (2021-02-23)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#314104` - The issue with the "Rich Text Editor's table width is not set properly if values are configured higher" is resolved.
+- `F161887` - The issue with "Removing the italic format removes the underline format in the Rich Text Editor" is resolved.
+
+- `#314801` - The issue with "Throwing script error while rendering the RichTextEditor with valueTemplate as empty" has been resolved.
+
+## 18.4.42 (2021-02-09)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `F160581` - The issue with "The RichTextEditor table toolbar popup is hidden inside the higher Z-Index elements" has been resolved.
+
+- `#F161740` - The issue with "The Backspace key is not working on an empty list with a bold tag" has been resolved.
+
 ## 18.4.39 (2021-01-28)
 
 ### RichTextEditor

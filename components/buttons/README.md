@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-buttons)](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons)
+
 # ej2-angular-buttons
 
 A package of Syncfusion Angular UI Components (Essential JS 2) Button, CheckBox, RadioButton and Switch.

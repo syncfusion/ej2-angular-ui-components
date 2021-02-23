@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animation', 'border', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
+let input: string[] = ['animation', 'border', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
 let outputs: string[] = [];
 /**
  * AccumulationSeries Directive
@@ -110,6 +110,11 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public innerRadius: any;
     /** 
+     * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
+     * @default ''
+     */
+    public legendImageUrl: any;
+    /** 
      * The shape of the legend. Each series has its own legend shape. They are 
      * * Circle - Renders a circle. 
      * * Rectangle - Renders a rectangle. 
@@ -120,7 +125,8 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * * VerticalLine - Renders a verticalLine. 
      * * Pentagon - Renders a pentagon. 
      * * InvertedTriangle - Renders a invertedTriangle. 
-     * * SeriesType -Render a legend shape based on series type.
+     * * SeriesType -Render a legend shape based on series type. 
+     * * Image -Render a image.
      * @default 'SeriesType'
      */
     public legendShape: any;

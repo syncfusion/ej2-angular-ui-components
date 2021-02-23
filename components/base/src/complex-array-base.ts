@@ -2,6 +2,8 @@ import { QueryList, SimpleChanges, SimpleChange, EmbeddedViewRef } from '@angula
 import { getValue, setValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { clearTemplate, registerEvents } from './util';
 
+const refRegex: RegExp = /Ref$/;
+
 /**
  * Complex Array Base module
  */
@@ -26,6 +28,7 @@ export class ComplexBase<T> {
     public dataSource?: { [key: string]: Object } = {};
     public property?: string;
     public tags?: string[] = [];
+    public isInitChanges: boolean;
     private tagObjects?: { name: string, instance: Tag }[] = [];
     private registeredTemplate: { [key: string]: EmbeddedViewRef<Object>[] };
     // tslint:disable-next-line:no-any
@@ -60,6 +63,7 @@ export class ComplexBase<T> {
         }
         this.hasChanges = true;
         }
+        this.isInitChanges = true;
     }
 
     protected registerEvents(eventList: string[]): void {
@@ -116,17 +120,15 @@ export class ComplexBase<T> {
 
     public ngAfterContentChecked(): void {
         this.hasChanges = this.isChanged();
-        let templateProperties: string[] = Object.keys(this);
-        templateProperties = templateProperties.filter((val: string) => {
-            return /Ref$/i.test(val);
-        });
-        // For angular 9 compatibility
-        // ngOnchange hook not get triggered for copmplex directive
-        // Due to this, we have manually set template properties v alues once we get template property reference
-        for (let tempName of templateProperties) {
-            let propName: string = tempName.replace('Ref', '');
-            let val: Object = {};
-            setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
+        if (this.isInitChanges || this.hasChanges){
+            let templateProperties: string[] = Object.keys(this);
+            templateProperties = templateProperties.filter((val: string) => {
+                return refRegex.test(val);
+            });
+            for (let tempName of templateProperties) {
+                let propName: string = tempName.replace('Ref', '');
+                setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
+            }
         }
     }
 
@@ -135,6 +137,11 @@ export class ComplexBase<T> {
         if (this.isUpdated) {
             this.hasChanges = false;
         }
+    }
+
+    public ngAfterViewInit(): void {
+        /* istanbul ignore next */
+        this.isInitChanges = false;
     }
     
     public ngOnDestroy(): void {

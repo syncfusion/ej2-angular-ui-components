@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
+## 18.4.44 (2021-02-23)
 
 ### Pivot Table
 
@@ -10,7 +10,10 @@
 
 - `#298311` - CSS issue of calculated field dialog in dark theme has been fixed.
 
-- Fields in the static field list are now updated as the data source is being changed.
+- `#302097` - In drill-through grid, child grid can now be added.
+- `#312097` - Alignment issue when RTL is enabled in the pivot chart is fixed.
+- `#F157008` - Fixed a script error that occurs when the aggregation menu is clicked.
+- Now you can bind a field with null values to column and row axis.
 
 ## 18.4.39 (2021-01-28)
 
@@ -376,6 +379,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.4.41 (2021-02-02)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- Fields in the static field list are now updated as the data source is being changed.
 
 ## 18.2.58 (2020-09-15)
 

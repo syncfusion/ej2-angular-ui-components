@@ -2,13 +2,33 @@
 
 ## [Unreleased]
 
-## 18.4.41 (2021-02-02)
+## 18.4.44 (2021-02-23)
+
+### TextBox
+
+#### Bug Fixes
+
+- Issue with "`e-mappinguid` attribute is added to textarea element while rendering the multiline textbox" has been resolved.
+
+## 18.4.43 (2021-02-16)
 
 ### Uploader
 
 #### Bug Fixes
 
-- `#F161379` - Issue with "drag and drop highlight is flickered when render uploader with custom drop area" has been resolved.
+- Issue with "dot present in the end of file name while rendering the preload files without type of file" has been resolved.
+
+### TextBox
+
+#### Bug Fixes
+
+- `#313099` - Issue with "script error throws when disable the clear button dynamically" has been resolved.
+
+### FormValidator
+
+#### Bug Fixes
+
+- `#F162275` - Issue with "validation message shows while setting required as false in the rules property" has been resolved.
 
 ## 18.4.32 (2020-12-29)
 
@@ -1145,6 +1165,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 18.4.41 (2021-02-02)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#F161379` - Issue with "drag and drop highlight is flickered when render uploader with custom drop area" has been resolved.
 
 ## 18.4.33 (2021-01-05)
 

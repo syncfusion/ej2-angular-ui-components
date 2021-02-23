@@ -188,14 +188,16 @@ export class ComponentBase<T> {
         // tslint:disable-next-line:no-any
         let tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
-        if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
-            tempOnDestroyThis.destroy();
-            tempOnDestroyThis.clearTemplate(null);
-            // removing bounded events and tagobjects from component after destroy
-            tempOnDestroyThis.ngBoundedEvents = {};
-            tempOnDestroyThis.tagObjects = {};
-            tempOnDestroyThis.element = null;
-        }
+        setTimeout(() => {
+            if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
+                tempOnDestroyThis.destroy();
+                tempOnDestroyThis.clearTemplate(null);
+                // removing bounded events and tagobjects from component after destroy
+                tempOnDestroyThis.ngBoundedEvents = {};
+                tempOnDestroyThis.tagObjects = {};
+                tempOnDestroyThis.element = null;
+            }
+        });
     }
     //tslint:disable-next-line
     public clearTemplate(templateNames?: string[], index?: any): void {
