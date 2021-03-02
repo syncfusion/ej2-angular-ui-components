@@ -261,7 +261,7 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    if (tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) {
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (tempAfterContentThis.getModuleName() === 'diagram')) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {
@@ -277,14 +277,8 @@ export class ComponentBase<T> {
                                 curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
                         }
                         if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
-                            if (tempAfterContentThis.getModuleName() === 'DashboardLayout') {
+                            if (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName())) {
                                 curChild.setProperties(list.getProperties(), true);
-                            } else if (tempAfterContentThis.getModuleName() === 'diagram') {
-                                if (list.hasChanges) {
-                                    curChild.setProperties(list.getProperties());
-                                } else {
-                                    curChild.setProperties(list.getProperties(), true);
-                                }
                             } else {
                                 curChild.setProperties(list.getProperties());
                             }

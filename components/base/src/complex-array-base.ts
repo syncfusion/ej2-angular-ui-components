@@ -102,8 +102,8 @@ export class ComplexBase<T> {
                     let propVal: any = (this.propCollection[this.property] as any)[0][props[d]];
                     if (!isNullOrUndefined(val) && this.propCollection[props[d]] !== val
                     && propVal !== val) {
-                        (this.propCollection[this.property] as any)[0][props[d]] = val;
-                        this.propCollection[props[d]] = val;
+                        setValue(props[d], val, (this.propCollection[this.property] as any)[0]);
+                        setValue(props[d], val, this.propCollection);
                         this.hasChanges = true;
                         this.isUpdated = false;
                     }

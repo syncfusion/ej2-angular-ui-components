@@ -1,3 +1,5 @@
+[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-querybuilder)](https://www.npmjs.com/package/@syncfusion/ej2-angular-querybuilder)
+
 # ej2-angular-querybuilder
 
 A package of Syncfusion Angular UI Components (Essential JS 2) QueryBuilder.
