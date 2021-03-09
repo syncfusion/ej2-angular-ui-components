@@ -2,56 +2,23 @@
 
 ## [Unreleased]
 
-## 18.4.43 (2021-02-16)
+## 18.4.47 (2021-03-09)
 
 ### Pivot Table
 
 #### Bug Fixes
 
-- `#298311` - CSS issue of calculated field dialog in dark theme has been fixed.
+- `#315248` - Issues in "Field list(Popup)" when enabling "Defer layout update" have been fixed.
 
-- `#302097` - In drill-through grid, child grid can now be added.
-- `#312097` - Alignment issue when RTL is enabled in the pivot chart is fixed.
-- `#F157008` - Fixed a script error that occurs when the aggregation menu is clicked.
-- Now you can bind a field with null values to column and row axis.
-
-## 18.4.39 (2021-01-28)
-
-### Pivot Table
-
-#### Features
-
-- `#294982`,`#F157008` - "Median" aggregation is now supported.
-
-- `#294982`,`#F157008` - "Median" aggregation is now supported.
-- `#299762` - The pivot chart context menu only opens if there is more than one field in the row axis.
-
-#### Bug Fixes
-
-- Fields in the static field list are now updated as the data source is being changed.
-
-## 18.4.34 (2021-01-12)
+## 18.4.46 (2021-03-02)
 
 ### Pivot Table
 
 #### Bug Fixes
 
-- `#301448` - The pivot table now displays no unnecessary scrollbars when the browser is resized.
+- Border alignment issue in "Grouping Bar" UI has been fixed.
 
-- `#299730`,`#299738` - The issues in grouping feature have been fixed.
-
-#### New Features
-
-- `#298512` - The drill-through grid can now be exported, like the pivot table.
-
-## 18.4.31 (2020-12-22)
-
-### Pivot Table
-
-#### Bug Fixes
-
--`#298296` - Columns are now properly stretched when resizing the browser.
-
+- `#299730`, `#315686` - Issues in "Date Grouping" feature have been fixed.
 
 ## 18.4.30 (2020-12-17)
 
@@ -59,7 +26,7 @@
 
 #### Bug Fixes
 
-- `#300162` - The pivot chart now works properly with height as a percentage..
+- `#300162` - The pivot chart now works properly with height as a percentage.
 
 - `#298258` - Now the field list can be dynamically rendered without any errors.
 
@@ -379,14 +346,6 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
-
-## 18.4.41 (2021-02-02)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- Fields in the static field list are now updated as the data source is being changed.
 
 ## 18.2.58 (2020-09-15)
 

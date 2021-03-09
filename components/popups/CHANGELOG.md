@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 18.4.46 (2021-03-02)
+## 18.4.44 (2021-02-23)
 
 ### Dialog
 
 #### Bug Fixes
+
+- `#315130` - The issue with, "Provide support to prevent default focus in the 'OnOverlayClick' event" has been resolved
 
 - The issue with "Tab action with modal dialog outside of the elements, can still be focused" has been resolved.
 

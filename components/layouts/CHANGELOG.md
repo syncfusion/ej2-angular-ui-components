@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 18.4.46 (2021-03-02)
+## 18.4.47 (2021-03-09)
+
+### Splitter
+
+#### Bug Fixes
+
+- `#315820, #313937, #316711` - The issue with "Console error occurs on resizing when the splitter is rendered" has been resolved.
+
+## 18.4.44 (2021-02-23)
 
 ### Dashboard Layout
 
