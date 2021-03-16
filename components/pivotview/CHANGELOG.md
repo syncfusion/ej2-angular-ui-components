@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 18.4.47 (2021-03-09)
-
-### Pivot Table
-
-#### Bug Fixes
-
-- `#315248` - Issues in "Field list(Popup)" when enabling "Defer layout update" have been fixed.
-
 ## 18.4.46 (2021-03-02)
 
 ### Pivot Table
@@ -346,6 +338,14 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.
 
+
+## 18.4.47 (2021-03-09)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#315248` - Issues in "Field list(Popup)" when enabling "Defer layout update" have been fixed.
 
 ## 18.2.58 (2020-09-15)
 
