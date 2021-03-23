@@ -195,7 +195,7 @@ export class ComponentBase<T> {
                 // removing bounded events and tagobjects from component after destroy
                 tempOnDestroyThis.ngBoundedEvents = {};
                 tempOnDestroyThis.tagObjects = {};
-                tempOnDestroyThis.element = null;
+                tempOnDestroyThis.ngEle = null;
             }
         });
     }
@@ -271,10 +271,12 @@ export class ComponentBase<T> {
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
                         });
-                        for (let complexPropName of complexTemplates) {
-                            complexPropName = complexPropName.replace(/Ref/, '');
-                            curChild.properties[complexPropName] = curChild.properties && !curChild.properties[complexPropName] ?
-                                curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                        if (Object.keys(curChild.properties).length !== 0){
+                            for (let complexPropName of complexTemplates) {
+                                complexPropName = complexPropName.replace(/Ref/, '');
+                                curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?
+                                    curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                            }
                         }
                         if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
                             if (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName())) {

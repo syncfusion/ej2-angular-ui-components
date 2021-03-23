@@ -66,17 +66,19 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
                     }
                 }
             } else {
-                for (let rt of _this.registeredTemplate[registeredTemplate]) {
-                    if (!rt.destroyed) {
-                        if(rt._view){
-                            let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
-                            if (!isNullOrUndefined(pNode)) {
-                                for (let m: number = 0; m < rt.rootNodes.length; m++) {
-                                    pNode.appendChild(rt.rootNodes[m]);
+                if (_this.registeredTemplate[registeredTemplate]) {
+                    for (let rt of _this.registeredTemplate[registeredTemplate]) {
+                        if (!rt.destroyed) {
+                            if (rt._view) {
+                                let pNode: any = rt._view.renderer.parentNode(rt.rootNodes[0]);
+                                if (!isNullOrUndefined(pNode)) {
+                                    for (let m: number = 0; m < rt.rootNodes.length; m++) {
+                                        pNode.appendChild(rt.rootNodes[m]);
+                                    }
                                 }
                             }
+                            rt.destroy();
                         }
-                        rt.destroy();
                     }
                 }
             }

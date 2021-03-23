@@ -2,7 +2,24 @@
 
 ## [Unreleased]
 
-## 18.4.48 (2021-03-16)
+## 18.4.49 (2021-03-23)
+
+### Common
+
+#### Bug Fixes
+
+- `I306436,I313360` - Resolved `dynamic property` change not working for `Tab` component.
+- Resolved script error while using `clearTemplate` method.
+
+## 18.4.48 (2021-03-23)
+
+### Common
+
+#### Bug Fixes
+
+- `I312916,I316685` - Resolved script error When resetting form controls to non-null values, if the elements are no longer in the DOM.
+
+## 18.4.46 (2021-03-02)
 
 ### Common
 

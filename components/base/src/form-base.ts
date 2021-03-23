@@ -117,14 +117,16 @@ export class FormBase<T> implements ControlValueAccessor {
         } else {
             // To resolve boolean type formControl value is not working for radio button control.
             /* istanbul ignore next */
-            if (typeof value === 'boolean') {
-                if (this.ngEle && regExp.test(this.ngEle.nativeElement.outerHTML)) {
-                    this.checked = value === this.value;
+            if (this.ngEle) {
+                if (typeof value === 'boolean') {
+                    if (regExp.test(this.ngEle.nativeElement.outerHTML)) {
+                        this.checked = value === this.value;
+                    } else {
+                        this.checked = value;
+                    }
                 } else {
-                    this.checked = value;
+                    this.checked = value === this.value;
                 }
-            } else {
-                this.checked = value === this.value;
             }
         }
         this.angularValue = value;
