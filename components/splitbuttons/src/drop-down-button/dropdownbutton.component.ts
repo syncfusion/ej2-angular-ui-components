@@ -4,7 +4,7 @@ import { DropDownButton } from '@syncfusion/ej2-splitbuttons';
 
 import { DropDownButtonItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
+export const inputs: string[] = ['content','createPopupOnClick','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','close','created','open','select'];
 export const twoWays: string[] = [];
 

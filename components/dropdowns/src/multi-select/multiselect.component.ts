@@ -63,7 +63,8 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      * 
      * We have built-in `template engine`
      *which provides options to compile template string into a executable function.
-     *For EX: We have expression evolution as like ES6 expression string literals.     
+     *For EX: We have expression evolution as like ES6 expression string literals.
+     *     
      * @default null
      */
     @ContentChild('valueTemplate')
@@ -75,7 +76,8 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      * 
      * We have built-in `template engine`
      *which provides options to compile template string into a executable function.
-     *For EX: We have expression evolution as like ES6 expression string literals.     
+     *For EX: We have expression evolution as like ES6 expression string literals.
+     *     
      * @default null
      */
     @ContentChild('itemTemplate')

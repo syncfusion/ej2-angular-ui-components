@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-base)](https://www.npmjs.com/package/@syncfusion/ej2-angular-base)
-
 # ej2-angular-base
 
 A common package of Syncfusion Angular UI Components which contains base libraries, methods and class definitions.

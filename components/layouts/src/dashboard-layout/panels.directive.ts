@@ -52,16 +52,14 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      */
     public id: any;
     /** 
-     * Specifies the maximum width of the panel in cells count. 
-     * *
+     * Specifies the maximum width of the panel in cells count.
      * @default null
      * @asptype int
      * @blazortype int?
      */
     public maxSizeX: any;
     /** 
-     * Specifies the maximum height of the panel in cells count. 
-     * *
+     * Specifies the maximum height of the panel in cells count.
      * @default null
      * @asptype int
      * @blazortype int?
@@ -69,8 +67,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      */
     public maxSizeY: any;
     /** 
-     * Specifies the minimum width of the panel in cells count. 
-     * *
+     * Specifies the minimum width of the panel in cells count.
      * @default 1
      * @blazortype int
      */
@@ -101,8 +98,7 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      */
     public sizeY: any;
     /** 
-     * Specifies the z-index of the panel 
-     * *
+     * Specifies the z-index of the panel
      * @default 1000
      * @asptype double
      * @blazortype double

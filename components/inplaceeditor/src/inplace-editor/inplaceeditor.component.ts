@@ -6,8 +6,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['actionOnBlur','adaptor','cancelButton','cssClass','disabled','editableOn','emptyText','enableEditMode','enableHtmlSanitizer','enablePersistence','enableRtl','locale','mode','model','name','popupSettings','primaryKey','saveButton','showButtons','submitOnEnter','template','textOption','type','url','validationRules','value'];
-export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','cancelClick','change','created','destroyed','submitClick','validating'];
-export const twoWays: string[] = [''];
+export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionFailure','actionSuccess','beforeSanitizeHtml','beginEdit','cancelClick','change','created','destroyed','submitClick','validating','valueChange'];
+export const twoWays: string[] = ['value'];
 
 /**
  * `ejs-inplaceeditor` represents the Angular InPlaceEditor Component.
@@ -39,7 +39,7 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
     public tagObjects: any;
 
 
-
+    public valueChange: any;
     /** 
      * Specifies the HTML element ID as a string that can be added as a editable field.
      * 

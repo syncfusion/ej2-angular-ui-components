@@ -19,7 +19,7 @@ export class DropDownButtonItemDirective extends ComplexBase<DropDownButtonItemD
 
 
     /** 
-     * Used to enable or disable the item.
+     * Used to enable or disable the item.
      * @default false
      */
     public disabled: any;

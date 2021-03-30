@@ -2,14 +2,22 @@
 
 ## [Unreleased]
 
-## 18.4.49 (2021-03-23)
+## 19.1.54 (2021-03-30)
 
 ### RichTextEditor
+
+#### New Features
+
+- `#257889`, `#264792`, `#280064`, `#305551`, `#316177`,  - Provided support for the table cell merge and split in Rich Text Editor table properties.
 
 #### Bug Fixes
 
 - `#318815`- The issue with "Resize grip of the image freezes, after resizing for the first time" has been resolved.
 - `#317508`- The issue with "Resize icon of an image is not positioned properly, when height is set to the Rich Text Editor" has been resolved.
+- `F163544`- The issue with "Pressing the 'cmd+z' in mac after deleting all contents, deletes the first paragraph of the Rich Text Editor" has been resolved.
+- `F163545`- The issue with "'cmd+z' is not working after pasting the content in Mac machine" has been resolved.
+- `#313508` - The issue with "event 'afterImageDelete' triggers two times when removing the image using the backspace key" has been resolved.
+- `#313508` - The issue with "Console error is thrown, when updating the selected image with another image" has been resolved.
 
 ## 18.4.47 (2021-03-09)
 
@@ -90,7 +98,7 @@
 
 #### New Features
 
-- **File Manager**: `F144048`, `#234755`, `#261368`, `#261882`, `#150871`, `#270549` - This feature allows the editor to browse and insert the images from FileManager using various remote service. In ES5 RichTextEditor, it is mandatory to include the `ej2-filemanager` dependency to render properly.
+- **File Manager**: `F144048`, `#234755`, `#261368`, `#261882`, `#150871`, `#270549` - This feature allows the editor to browse and insert the images from FileManager using various remote service.
 - `F149800` - Provided new property `removeUrl` in `insertImageSettings` API to trigger the image remove operation in server, when image removed from editor.
 - `#301980` - Provided the support to return the `Xhtml` value in the `value` property when the `enableXtml` property is enabled in the Rich Text Editor.
 - `#264791`, `#295032`, `#299905`, `#F159588` - Provided the support to retain all the styles from MS Excel while pasting the content in the Rich Text Editor.
@@ -727,17 +735,6 @@ The rich text editor component is WYSIWYG ("what you see is what you get") edito
 - Contains undo/redo manager.
 - Creates bulleted and numbered lists.
 
-
-## 18.4.48 (2021-03-16)
-
-### RichTextEditor
-
-#### Bug Fixes
-
-- `#313508` - The issue with “Exception occurs while removing the images in the Rich Text Editor” has been resolved.
-- `F162028` - The issue with “List not generated when the list style is applied after pressing the enter key and removing the bold format” has been resolved.
-- `#301635` - The issue with “Pasting content with bolded list does not paste the content in the Rich Text Editor” has been resolved.
-- `#318107` - The issue with “Resizing a table column and dragging over another table resizes the other table column” has been resolved.
 
 ## 18.4.35 (2021-01-19)
 

@@ -24,7 +24,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      */
     public animationDuration: any;
     /** 
-     *  Specifies the dataSource
+     * Specifies the dataSource
      * @default null
      * @isdatamanager false
      */
@@ -45,7 +45,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      */
     public fill: any;
     /** 
-     *  options for customizing marker
+     * options for customizing marker
      */
     public marker: any;
     /** 
@@ -74,7 +74,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      */
     public resistance: any;
     /** 
-     *  options for customizing tooltip
+     * options for customizing tooltip
      */
     public tooltip: any;
     /** 

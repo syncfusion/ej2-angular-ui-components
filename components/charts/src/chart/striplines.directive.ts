@@ -127,8 +127,10 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      */
     public start: any;
     /** 
-     *  If set true, strip line get render from axis origin. 
+     *  If set true, strip line get render from axis origin.
+     * 
      *  @default false
+     *     
      */
     public startFromAxis: any;
     /** 

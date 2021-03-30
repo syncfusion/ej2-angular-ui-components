@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
-
+import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 
-export const inputs: string[] = ['allowValidation','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','height','immediateModeDelay','locale','matchCase','maxGroupCount','readonly','rule','separator','showButtons','sortDirection','summaryView','width'];
-export const outputs: string[] = ['actionBegin','beforeChange','change','created','ruleChange'];
+export const inputs: string[] = ['allowValidation','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','fieldModel','headerTemplate','height','immediateModeDelay','locale','matchCase','maxGroupCount','operatorModel','readonly','rule','separator','showButtons','sortDirection','summaryView','valueModel','width'];
+export const outputs: string[] = ['actionBegin','beforeChange','change','created','dataBound','ruleChange'];
 export const twoWays: string[] = [''];
 
 /**
@@ -31,6 +31,13 @@ export class QueryBuilderComponent extends QueryBuilder implements IComponentBas
     public childColumns: QueryList<ColumnsDirective>;
     public tags: string[] = ['columns'];
 
+    /** 
+     * Specifies the template for the header with any other widgets.
+     * @default null
+     */
+    @ContentChild('headerTemplate')
+    @Template()
+    public headerTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

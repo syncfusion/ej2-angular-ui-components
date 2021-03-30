@@ -9,6 +9,7 @@ import { MultiLevelLabelDirective, MultiLevelLabelsDirective } from './multileve
 import { AxisDirective, AxesDirective } from './axes.directive';
 import { RowDirective, RowsDirective } from './rows.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
+import { RangeColorSettingDirective, RangeColorSettingsDirective } from './rangecolorsettings.directive';
 import { AnnotationDirective, AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexDirective, SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorDirective, IndicatorsDirective } from './indicators.directive';

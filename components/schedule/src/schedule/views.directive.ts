@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -134,6 +134,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default '00:00'
      */
     public startHour: any;
+    /** 
+     * By default, Schedule follows the time-format as per the default culture assigned to it. 
+     * It is also possible to manually set specific time format by using the `timeFormat` property. 
+     * {% codeBlock src='schedule/timeFormat/index.md' %}{% endcodeBlock %}
+     * @default null
+     */
+    public timeFormat: any;
     /** 
      * Allows to set different timescale configuration on each applicable view modes such as day, week and work week.
      * @default { enable: true, interval: 60, slotCount: 2, majorSlotTemplate: null, minorSlotTemplate: null }

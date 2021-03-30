@@ -126,7 +126,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * * Pentagon - Renders a pentagon. 
      * * InvertedTriangle - Renders a invertedTriangle. 
      * * SeriesType -Render a legend shape based on series type. 
-     * * Image -Render a image.
+     * * Image -Render a image.     *
      * @default 'SeriesType'
      */
     public legendShape: any;

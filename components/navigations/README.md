@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-navigations)](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations)
-
 # ej2-angular-navigations
 
 ![ej2-angular-navigations](https://ej2.syncfusion.com/products/images/navigations/readMe.gif)

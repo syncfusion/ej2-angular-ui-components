@@ -30,7 +30,6 @@ export class FormBase<T> implements ControlValueAccessor {
     public preventChange: boolean;
     public isUpdated: boolean;
     public oldValue: any;
-    public isPreventChange: boolean;
 
     public localChange(e: { value?: T, checked?: T }): void {
         //tslint:disable-next-line

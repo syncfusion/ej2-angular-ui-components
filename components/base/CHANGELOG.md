@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 18.4.49 (2021-03-23)
+## 19.1.54 (2021-03-30)
 
 ### Common
 
@@ -18,14 +18,6 @@
 #### Bug Fixes
 
 - `I312916,I316685` - Resolved script error When resetting form controls to non-null values, if the elements are no longer in the DOM.
-
-## 18.4.46 (2021-03-02)
-
-### Common
-
-#### Bug Fixes
-
-- `I306436` - Resolved `dynamic property` change not working for complex directives.
 
 ## 18.4.44 (2021-02-23)
 

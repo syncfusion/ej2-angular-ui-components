@@ -109,7 +109,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * {commands: [{buttonOption:{content: 'Details', click: onClick, cssClass: details-icon}}], headerText: 'Customer Details'}
      *]
      *gridObj.appendTo("#TreeGrid");
-     *```     
+     *```
+     *     
      * @default null
      */
     public commands: any;
@@ -156,8 +157,10 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public field: any;
     /** 
-     *  Defines the filter options to customize filtering for the particular column. 
+     *  Defines the filter options to customize filtering for the particular column.
+     * 
      *  @default null
+     *     
      */
     public filter: any;
     /** 

@@ -36,7 +36,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public end: any;
     /** 
-     *   Sets and gets the width for the end of the range in the circular gauge component.
+     * Sets and gets the width for the end of the range in the circular gauge component.
      * @default '10'
      */
     public endWidth: any;
@@ -88,7 +88,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public start: any;
     /** 
-     *  Sets and gets the width for the start of the range in the circular gauge component.
+     * Sets and gets the width for the start of the range in the circular gauge component.
      * @default '10'
      */
     public startWidth: any;

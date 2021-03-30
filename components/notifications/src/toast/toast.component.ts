@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ButtonModelPropsDirective } from './buttons.directive';
 
 export const inputs: string[] = ['animation','buttons','content','cssClass','enableHtmlSanitizer','enablePersistence','enableRtl','extendedTimeout','height','icon','locale','newestOnTop','position','progressDirection','showCloseButton','showProgressBar','target','template','timeOut','title','width'];
-export const outputs: string[] = ['beforeOpen','beforeSanitizeHtml','click','close','created','destroyed','open'];
+export const outputs: string[] = ['beforeClose','beforeOpen','beforeSanitizeHtml','click','close','created','destroyed','open'];
 export const twoWays: string[] = [''];
 
 /**
@@ -33,7 +33,7 @@ export class ToastComponent extends Toast implements IComponentBase {
 
     /** 
      * Specifies the title to be displayed on the Toast. 
-     * Works only with string values.
+     * Accepts selectors, string values and HTML elements.
      * @default null
      */
     @ContentChild('title')

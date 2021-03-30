@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['category', 'field', 'format', 'label', 'operators', 'ruleTemplate', 'step', 'template', 'type', 'validation', 'value', 'values'];
+let input: string[] = ['category', 'columns', 'field', 'format', 'label', 'operators', 'ruleTemplate', 'step', 'template', 'type', 'validation', 'value', 'values'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular QueryBuilder. 
@@ -30,7 +30,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
 
 
     /** 
-     * Specifies the types in columns field
+     * Specifies the types in columns field.
      * @default null
      */
     public type: any;
@@ -39,6 +39,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default null
      */
     public category: any;
+    /** 
+     * Specifies the sub fields in columns.
+     * @default null
+
+     */
+    public columns: any;
     /** 
      * Specifies the fields in columns.
      * @default null
@@ -52,7 +58,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public format: any;
     /** 
-     * Specifies the labels name in columns
+     * Specifies the labels name in columns.
      * @default null
      */
     public label: any;
@@ -83,6 +89,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public values: any;
     /** 
      * Specifies the rule template for the field with any other widgets.
+     * @default null
      */
     @ContentChild('ruleTemplate')
     @Template()

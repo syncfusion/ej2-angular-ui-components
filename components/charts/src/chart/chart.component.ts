@@ -6,11 +6,12 @@ import { SeriesCollectionDirective } from './series.directive';
 import { AxesDirective } from './axes.directive';
 import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
+import { RangeColorSettingsDirective } from './rangecolorsettings.directive';
 import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rangeColorSettings','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
 export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelClick','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','beforeResize','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','sharedTooltipRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -30,6 +31,7 @@ export const twoWays: string[] = ['dataSource'];
         childAxes: new ContentChild(AxesDirective), 
         childRows: new ContentChild(RowsDirective), 
         childColumns: new ContentChild(ColumnsDirective), 
+        childRangeColorSettings: new ContentChild(RangeColorSettingsDirective), 
         childAnnotations: new ContentChild(AnnotationsDirective), 
         childSelectedDataIndexes: new ContentChild(SelectedDataIndexesDirective), 
         childIndicators: new ContentChild(IndicatorsDirective)
@@ -43,10 +45,11 @@ export class ChartComponent extends Chart implements IComponentBase {
     public childAxes: QueryList<AxesDirective>;
     public childRows: QueryList<RowsDirective>;
     public childColumns: QueryList<ColumnsDirective>;
+    public childRangeColorSettings: QueryList<RangeColorSettingsDirective>;
     public childAnnotations: QueryList<AnnotationsDirective>;
     public childSelectedDataIndexes: QueryList<SelectedDataIndexesDirective>;
     public childIndicators: QueryList<IndicatorsDirective>;
-    public tags: string[] = ['series', 'axes', 'rows', 'columns', 'annotations', 'selectedDataIndexes', 'indicators'];
+    public tags: string[] = ['series', 'axes', 'rows', 'columns', 'rangeColorSettings', 'annotations', 'selectedDataIndexes', 'indicators'];
     public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
@@ -432,16 +435,20 @@ export class ChartComponent extends Chart implements IComponentBase {
             this.tagObjects[3].instance = this.childColumns;
         }
         
+	    if (this.childRangeColorSettings) {
+            this.tagObjects[4].instance = this.childRangeColorSettings;
+        }
+        
 	    if (this.childAnnotations) {
-            this.tagObjects[4].instance = this.childAnnotations;
+            this.tagObjects[5].instance = this.childAnnotations;
         }
         
 	    if (this.childSelectedDataIndexes) {
-            this.tagObjects[5].instance = this.childSelectedDataIndexes;
+            this.tagObjects[6].instance = this.childSelectedDataIndexes;
         }
         
 	    if (this.childIndicators) {
-            this.tagObjects[6].instance = this.childIndicators;
+            this.tagObjects[7].instance = this.childIndicators;
         }
         this.context.ngAfterContentChecked(this);
     }

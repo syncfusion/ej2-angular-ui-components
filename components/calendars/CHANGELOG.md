@@ -1189,14 +1189,6 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
 
-## 18.4.48 (2021-03-16)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#318084` - Issue with "date input gets empty in the strict mode while typing invalid date" has been resolved.
-
 ## 18.4.43 (2021-02-16)
 
 ### DatePicker

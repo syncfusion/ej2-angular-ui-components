@@ -7,6 +7,7 @@ export {MultiLevelLabelDirective,MultiLevelLabelsDirective} from './multilevella
 export {AxisDirective,AxesDirective} from './axes.directive';
 export {RowDirective,RowsDirective} from './rows.directive';
 export {ColumnDirective,ColumnsDirective} from './columns.directive';
+export {RangeColorSettingDirective,RangeColorSettingsDirective} from './rangecolorsettings.directive';
 export {AnnotationDirective,AnnotationsDirective} from './annotations.directive';
 export {SelectedDataIndexDirective,SelectedDataIndexesDirective} from './selecteddataindexes.directive';
 export {IndicatorDirective,IndicatorsDirective} from './indicators.directive';

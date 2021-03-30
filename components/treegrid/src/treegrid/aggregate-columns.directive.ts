@@ -85,7 +85,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * Defines the footer cell template as a string for the aggregate column. 
      * The `type` name should be used to access aggregate values inside the template.
      * 
-     * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('footerTemplate')

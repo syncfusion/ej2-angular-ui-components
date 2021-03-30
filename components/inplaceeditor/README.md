@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-inplace-editor)](https://www.npmjs.com/package/@syncfusion/ej2-angular-inplace-editor)
-
 # ej2-angular-inplace-editor
 
 ![ej2-angular-inplace-editor](https://ej2.syncfusion.com/products/images/inplace-editor/readMe.gif)

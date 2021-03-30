@@ -7,6 +7,7 @@ export {MultiLevelLabelDirective,MultiLevelLabelsDirective} from './chart/multil
 export {AxisDirective,AxesDirective} from './chart/axes.directive';
 export {RowDirective,RowsDirective} from './chart/rows.directive';
 export {ColumnDirective,ColumnsDirective} from './chart/columns.directive';
+export {RangeColorSettingDirective,RangeColorSettingsDirective} from './chart/rangecolorsettings.directive';
 export {AnnotationDirective,AnnotationsDirective} from './chart/annotations.directive';
 export {SelectedDataIndexDirective,SelectedDataIndexesDirective} from './chart/selecteddataindexes.directive';
 export {IndicatorDirective,IndicatorsDirective} from './chart/indicators.directive';

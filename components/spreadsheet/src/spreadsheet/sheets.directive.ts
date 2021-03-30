@@ -6,7 +6,7 @@ import { ColumnsDirective } from './columns.directive';
 import { RangesDirective } from './ranges.directive';
 import { ConditionalFormatsDirective } from './conditionalformats.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'index', 'isProtected', 'name', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -60,6 +60,18 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      */
     public conditionalFormats: any;
     /** 
+     * Gets or sets the number of frozen columns.
+     * @default 0
+     * @asptype int
+     */
+    public frozenColumns: any;
+    /** 
+     * Gets or sets the number of frozen rows.
+     * @default 0
+     * @asptype int
+     */
+    public frozenRows: any;
+    /** 
      * Specifies index of the sheet. Based on the index, sheet properties are applied.
      * @default 0
      * @asptype int
@@ -75,6 +87,11 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      * @default ''
      */
     public name: any;
+    /** 
+     * Represents the freeze pane top left cell. Its default value would be based on the number of freeze rows and columns.
+     * @default 'A1'
+     */
+    public paneTopLeftCell: any;
     /** 
      * Configures protect and its options.
      * @default { selectCells: false, formatCells: false, formatRows: false, formatColumns: false, insertLink: false  }

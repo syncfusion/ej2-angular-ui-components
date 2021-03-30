@@ -1,5 +1,3 @@
-[![npm](http://ej2.syncfusion.com/github-badges?package=@syncfusion/ej2-angular-dropdowns)](https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns)
-
 # ej2-angular-dropdowns
 
 Superset of HTML select box contains specific features such as data binding, grouping, sorting, filtering, and templates.

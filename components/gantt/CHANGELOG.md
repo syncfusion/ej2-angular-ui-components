@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.1.54 (2021-03-30)
+
+### Gantt
+
+#### New Features
+
+- `#298361` - Provided Observable data binding support in Gantt.
+- `#300136` - Provided support for tab like behaviour on cell navigation for cell edit mode.
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 18.4.49 (2021-03-23)
 
 ### Gantt
@@ -9,14 +22,6 @@
 #### New Features
 
 - `#317550` - Provided support to define `valueAccessor` as string.
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
-
-## 18.4.49 (2021-03-16)
-
-### Gantt
 
 #### Bug Fixes
 

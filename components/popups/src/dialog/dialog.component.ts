@@ -61,7 +61,8 @@ export class DialogComponent extends Dialog implements IComponentBase {
      * 
      * {% codeBlock src="dialog/content-api/index.ts" %}{% endcodeBlock %}
      *
-     *{% codeBlock src="dialog/content-api/index.html" %}{% endcodeBlock %}     
+     *{% codeBlock src="dialog/content-api/index.html" %}{% endcodeBlock %}
+     *     
      * @default ''
      * @blazortype string
      */
