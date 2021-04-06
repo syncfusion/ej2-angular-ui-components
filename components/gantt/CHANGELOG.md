@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.1.55 (2021-04-06)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#320882` - Issue on expand/collapse icon in `Resource view` has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.1.54 (2021-03-30)
 
 ### Gantt
@@ -10,10 +20,6 @@
 
 - `#298361` - Provided Observable data binding support in Gantt.
 - `#300136` - Provided support for tab like behaviour on cell navigation for cell edit mode.
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 18.4.49 (2021-03-23)
 
