@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['buttonModel', 'type'];
+let input: string[] = ['buttonModel', 'isFlat', 'type'];
 let outputs: string[] = ['click'];
 /**
  * 'e-button' directive represent a button of angular dialog 
@@ -41,6 +41,11 @@ export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
      * Specifies the button component properties to render the dialog buttons.
      */
     public buttonModel: any;
+    /** 
+     * Specifies the flat appearance of the dialog buttons
+     * @default true
+     */
+    public isFlat: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

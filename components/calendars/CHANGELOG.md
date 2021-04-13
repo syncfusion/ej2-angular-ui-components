@@ -2,26 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.55 (2021-04-06)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
-
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker
@@ -1208,6 +1188,26 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.55 (2021-04-06)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#319099` - Issue with "dirty and pristine is not updated properly while performing the disable and reset the form simultaneously" has been resolved.
 
 ## 18.4.43 (2021-02-16)
 

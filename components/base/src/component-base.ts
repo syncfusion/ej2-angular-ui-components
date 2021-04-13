@@ -271,11 +271,12 @@ export class ComponentBase<T> {
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
                         });
-                        for (let complexPropName of complexTemplates) {
-                            complexPropName = complexPropName.replace(/Ref/, '');
-                            curChild.properties[complexPropName] = Object.keys(curChild.properties).length != 0 &&
-                                !curChild.properties[complexPropName] ?
-                                curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                        if (Object.keys(curChild.properties).length !== 0 && /chart/.test(tempAfterContentThis.getModuleName())){
+                            for (let complexPropName of complexTemplates) {
+                                complexPropName = complexPropName.replace(/Ref/, '');
+                                curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?
+                                    curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                            }
                         }
                         if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
                             if (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName())) {

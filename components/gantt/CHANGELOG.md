@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.1.56 (2021-04-13)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#320979` - Provided support to update data source dynamically with `collapseAllParentTasks` and `enableMultiTaskbar` enabled mode.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.1.55 (2021-04-06)
 
 ### Gantt
@@ -9,8 +19,6 @@
 #### Bug Fixes
 
 - `#320882` - Issue on expand/collapse icon in `Resource view` has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.1.54 (2021-03-30)
 
