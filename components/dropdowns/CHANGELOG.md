@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I320251` - Issue with "previously selected value is shown in the popup while removing the value using backspace rapidly in the custom value enabled component" has been resolved.
+
 ## 19.1.56 (2021-04-13)
 
 ### ListBox

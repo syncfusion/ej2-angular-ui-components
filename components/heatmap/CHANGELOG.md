@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.57 (2021-04-20)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `321299` - Dynamic change of `category` axis from `DateTime` freezes the component has been resolved.
+
 ## 19.1.54 (2021-03-30)
 
 ### Heatmap
