@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.57 (2021-04-20)
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#FB23988` - Issue with "blur event gets fired on initial rendering when render the component with placeholder" has been resolved.
-
 ## 19.1.54 (2021-03-30)
 
 ### MaskedTextBox
@@ -1189,6 +1181,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 19.1.57 (2021-04-20)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#FB23988` - Issue with "blur event gets fired on initial rendering when render the component with placeholder" has been resolved.
 
 ## 18.4.41 (2021-02-02)
 

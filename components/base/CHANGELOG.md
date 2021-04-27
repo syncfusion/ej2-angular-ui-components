@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 19.1.57 (2021-04-20)
+## 19.1.58 (2021-04-27)
+
+### Common
+
+#### Bug Fixes
+
+- `I287376,I311253,F156542` - Provided support for `strict` mode compilation.
+
+
+## 19.1.56 (2021-04-13)
 
 ### Common
 

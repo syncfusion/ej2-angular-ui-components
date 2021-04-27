@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
+## 19.1.58 (2021-04-27)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I323805` - Issue with "pasted content is partially visible in the input element while pasting long text content" has been resolved.
+
 ## 19.1.57 (2021-04-20)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#311323` - Issue with 'No Records Found' text occurred twice has been resolved.
 
 ### MultiSelect
 
