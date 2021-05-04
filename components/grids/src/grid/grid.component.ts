@@ -215,12 +215,6 @@ export class GridComponent extends Grid implements IComponentBase {
                 }
             } catch { }
         try {
-                let mod = this.injector.get('GridsBlazorAction');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
                 let mod = this.injector.get('GridsInfiniteScroll');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)

@@ -5,7 +5,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { GridComponent } from './grid.component';
 import { GridModule } from './grid.module';
-import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, BlazorAction, InfiniteScroll, LazyLoadGroup} from '@syncfusion/ej2-grids'
+import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, InfiniteScroll, LazyLoadGroup} from '@syncfusion/ej2-grids'
 
 
 export const FilterService: ValueProvider = { provide: 'GridsFilter', useValue: Filter};
@@ -30,7 +30,6 @@ export const FreezeService: ValueProvider = { provide: 'GridsFreeze', useValue: 
 export const ColumnMenuService: ValueProvider = { provide: 'GridsColumnMenu', useValue: ColumnMenu};
 export const ColumnChooserService: ValueProvider = { provide: 'GridsColumnChooser', useValue: ColumnChooser};
 export const ForeignKeyService: ValueProvider = { provide: 'GridsForeignKey', useValue: ForeignKey};
-export const BlazorActionService: ValueProvider = { provide: 'GridsBlazorAction', useValue: BlazorAction};
 export const InfiniteScrollService: ValueProvider = { provide: 'GridsInfiniteScroll', useValue: InfiniteScroll};
 export const LazyLoadGroupService: ValueProvider = { provide: 'GridsLazyLoadGroup', useValue: LazyLoadGroup};
 
@@ -65,7 +64,6 @@ export const LazyLoadGroupService: ValueProvider = { provide: 'GridsLazyLoadGrou
         ColumnMenuService,
         ColumnChooserService,
         ForeignKeyService,
-        BlazorActionService,
         InfiniteScrollService,
         LazyLoadGroupService
     ]

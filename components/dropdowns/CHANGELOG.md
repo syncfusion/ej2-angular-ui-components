@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 19.1.58 (2021-04-27)
+## 19.1.59 (2021-05-04)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#317293` - Listbox event properties descriptions added.
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#I323805` - Issue with "pasted content is partially visible in the input element while pasting long text content" has been resolved.
+- `#I323182` - Issue with "grouping headers are duplicated and overlapped with popup items while scrolling the popup after selecting the first popup item" has been resolved.
 
 ## 19.1.57 (2021-04-20)
 
@@ -1849,6 +1855,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.58 (2021-04-27)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I323805` - Issue with "pasted content is partially visible in the input element while pasting long text content" has been resolved.
 
 ## 19.1.55 (2021-04-06)
 
