@@ -55,7 +55,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public isExpanded: any;
     /** 
-     * Defines the column keyField
+     * Defines the column keyField. It supports both number and string type. 
+     * String type supports the multiple column keys and number type does not support the multiple column keys.
      * @default null
      */
     public keyField: any;

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.63 (2021-05-13)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I325682` - Issue with "exception throws in the customized uploader component when cancel the uploading process using abort icon" has been resolved.
+
 ## 19.1.59 (2021-05-04)
 
 ### Range Slider

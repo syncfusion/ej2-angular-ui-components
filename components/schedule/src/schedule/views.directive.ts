@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'group', 'headerRows', 'interval', 'isSelected', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -43,6 +43,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public dateFormat: any;
     /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
+     *  Year view day cell header. 
+     *  This template is only applicable for year view header cells.
+     * @default null
+     */
+    public dayHeaderTemplate: any;
+    /** 
      * When the same view is customized with different intervals, this property allows the user to set different display name 
      *  for those views.
      * @default null
@@ -60,6 +67,12 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default 0
      */
     public firstDayOfWeek: any;
+    /** 
+     * This property helps render the year view customized months. 
+     * By default, it is set to `0`.
+     * @default 0
+     */
+    public firstMonthOfYear: any;
     /** 
      * Allows to set different resource grouping options on all available schedule view modes.
      * @default { byDate: false, byGroupID: true, allowGroupEdit: false, resources:[]}
@@ -82,6 +95,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default false
      */
     public isSelected: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
+     *  Year view day cell header. 
+     *  This template is only applicable for year view header cells.
+     * @default null
+     */
+    public monthHeaderTemplate: any;
     /** 
      * It accepts the schedule view name, based on which we can define with its related properties in a single object. 
      * The applicable view names are, 
