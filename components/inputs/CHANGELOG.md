@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.63 (2021-05-13)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I325682` - Issue with "exception throws in the customized uploader component when cancel the uploading process using abort icon" has been resolved.
-
 ## 19.1.59 (2021-05-04)
 
 ### Range Slider
@@ -1197,6 +1189,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 19.1.63 (2021-05-13)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I325682` - Issue with "exception throws in the customized uploader component when cancel the uploading process using abort icon" has been resolved.
 
 ## 19.1.57 (2021-04-20)
 

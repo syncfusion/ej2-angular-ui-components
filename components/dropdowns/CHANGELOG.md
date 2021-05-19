@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.64 (2021-05-19)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I323861` - Issue with "popup does not shows the proper list items on filtering dropdown while closing the popup before data gets fetched and open the popup again" has been resolved.
+
 ## 19.1.59 (2021-05-04)
 
 ### ListBox

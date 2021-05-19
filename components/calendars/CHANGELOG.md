@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.64 (2021-05-19)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I325926` - Issue with "custom range popup shows always in the presets popup while rendering the component with preset range as date time value and selecting any presets range from popup" has been resolved.
+
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker

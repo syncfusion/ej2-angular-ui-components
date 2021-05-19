@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 19.1.64 (2021-05-19)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#325587` - Issue while deleting resource on split task has been fixed.
+- Issue on dynamically changing the `allowTaskbarEditing` property has been fixed.
+- `#165210` - Issue while filtering using Excel type has been fixed.
+- `#327043` - Issue in rendering taskbar template has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.1.63 (2021-05-13)
 
 ### Gantt
@@ -12,13 +25,13 @@
 - `#317529, #320843` - Provide support to cancel the merging of split tasks using client-side event.
 - `#307881`, `#309475`, `#325067` - Improved performance while scrolling, when predecessors are mapped.
 
+- `#296315` - Provided support for managing date with different time zones.
+
 #### Bug Fixes
 
 - `#326155` - Issue in splitting task using public method has been fixed.
 - `#325948` - Issue in adding new task with empty string has been fixed.
 - `#325585` - Issue while defining columns and dynamically changing the view type has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.1.59 (2021-05-04)
 

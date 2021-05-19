@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.1.63 (2021-05-13)
+## 19.1.64 (2021-05-19)
+
+### Common
+
+#### Bug Fixes
+
+- `I324729` - Increased `peerDependencies` version from `11.1.1` to `11.2.13`.
+
+## 19.1.58 (2021-04-27)
 
 ### Common
 

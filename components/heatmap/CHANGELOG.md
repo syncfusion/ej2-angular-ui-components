@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.63 (2021-05-13)
-
-### HeatMap
-
-#### Bug Fixes
-
-- `321299` - Dynamic change of `category` axis from `DateTime` freezes the component has been resolved.
-
 ## 19.1.54 (2021-03-30)
 
 ### Heatmap
@@ -185,4 +177,12 @@ The HeatMap control is used to visualize a two-dimensional data in which the val
 - **Data Binding** - Supports binding data in JSON and two-dimensional array formats.
 - **Rendering Modes** - Supports automatic switching between SVG and Canvas rendering modes based on the data source length.
 
+
+## 19.1.57 (2021-04-20)
+
+### HeatMap
+
+#### Bug Fixes
+
+- `321299` - Dynamic change of `category` axis from `DateTime` freezes the component has been resolved.
 
