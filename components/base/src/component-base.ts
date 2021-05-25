@@ -271,7 +271,7 @@ export class ComponentBase<T> {
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
                         });
-                        if (Object.keys(curChild.properties).length !== 0 && /chart/.test(tempAfterContentThis.getModuleName())){
+                        if (curChild.properties && Object.keys(curChild.properties).length !== 0 && /chart/.test(tempAfterContentThis.getModuleName())){
                             for (let complexPropName of complexTemplates) {
                                 complexPropName = complexPropName.replace(/Ref/, '');
                                 curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?

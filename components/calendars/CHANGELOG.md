@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.64 (2021-05-19)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I325926` - Issue with "custom range popup shows always in the presets popup while rendering the component with preset range as date time value and selecting any presets range from popup" has been resolved.
-
 ## 18.4.34 (2021-01-12)
 
 ### DateTimePicker
@@ -1196,6 +1188,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.64 (2021-05-19)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I325926` - Issue with "custom range popup shows always in the presets popup while rendering the component with preset range as date time value and selecting any presets range from popup" has been resolved.
 
 ## 19.1.55 (2021-04-06)
 

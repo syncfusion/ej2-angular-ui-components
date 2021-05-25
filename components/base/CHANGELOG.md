@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.1.65 (2021-05-25)
+
+### Common
+
+#### Bug Fixes
+
+- `I327789` - Resolved Angular 6 compatibility issue. 
+- `I325467` - Resolved script error when binding `async` data to the directive.
+
 ## 19.1.64 (2021-05-19)
 
 ### Common

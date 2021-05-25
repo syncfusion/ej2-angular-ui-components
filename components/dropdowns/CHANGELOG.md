@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.64 (2021-05-19)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I323861` - Issue with "popup does not shows the proper list items on filtering dropdown while closing the popup before data gets fetched and open the popup again" has been resolved.
-
 ## 19.1.59 (2021-05-04)
 
 ### ListBox
@@ -1863,6 +1855,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.64 (2021-05-19)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I323861` - Issue with "popup does not shows the proper list items on filtering dropdown while closing the popup before data gets fetched and open the popup again" has been resolved.
 
 ## 19.1.58 (2021-04-27)
 
