@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.66 (2021-06-01)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I323536` - Issue with "typed value is changed to positive while typing negative value starting with decimal separator" has been resolved.
+
 ## 19.1.59 (2021-05-04)
 
 ### Range Slider

@@ -2,7 +2,20 @@
 
 ## [Unreleased]
 
-## 19.1.65 (2021-05-25)
+## 19.1.66 (2021-06-01)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#328182` - Mismatch between timeline and chart body content has been fixed.
+- `#165629` - Notes updated properly in Gantt chart when new task is added.
+- `#325331` - Immutable mode issue on data source refresh has been fixed.
+- `F163073` - Issue on `RemoteSaveAdaptor` has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 19.1.64 (2021-05-19)
 
 ### Gantt
 
@@ -12,8 +25,6 @@
 - Issue on dynamically changing the `allowTaskbarEditing` property has been fixed.
 - `#165210` - Issue while filtering using Excel type has been fixed.
 - `#327043` - Issue in rendering taskbar template has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.1.63 (2021-05-13)
 

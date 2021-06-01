@@ -51,11 +51,13 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * The template option which is used to render the customized work cells on the Schedule. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the work cells. 
      *  The fields accessible via template are as follows. 
-     *  * date 
-     *  * groupIndex 
-     *  * type
+     * * date 
+     * * groupIndex 
+     * * type
      * 
-     * {% codeBlock src='schedule/cellTemplate/index.md' %}{% endcodeBlock %}
+     * Refer to the below code snippet
+     *
+     *{% codeBlock src='schedule/cellTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
      */
@@ -97,8 +99,12 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the resource header cells. 
      * The following can be accessible via template. 
      * * resource - All the resource fields. 
-     * * resourceData - object collection of current resource. 
-     * {% codeBlock src='schedule/resourceHeaderTemplate/index.md' %}{% endcodeBlock %}
+     * * resourceData - object collection of current resource.
+     * 
+     * Refer to the below code snippet
+     *
+     *{% codeBlock src='schedule/resourceHeaderTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('resourceHeaderTemplate')

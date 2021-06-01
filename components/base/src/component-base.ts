@@ -189,7 +189,7 @@ export class ComponentBase<T> {
         let tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
         setTimeout(() => {
-            if (typeof window !== 'undefined' && tempOnDestroyThis.element.classList.contains('e-control')) {
+            if (typeof window !== 'undefined' && (tempOnDestroyThis.element.classList.contains('e-control') || tempOnDestroyThis.element)) {
                 tempOnDestroyThis.destroy();
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy

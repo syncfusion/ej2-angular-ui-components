@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.66 (2021-06-01)
+
+### Common
+
+#### Bug Fixes
+
+- `I310815` - Resolved memory leak issue while using routing.
+
 ## 19.1.65 (2021-05-25)
 
 ### Common

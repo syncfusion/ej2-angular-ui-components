@@ -85,7 +85,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * Defines the footer cell template as a string for the aggregate column. 
      * The `type` name should be used to access aggregate values inside the template.
      * 
-     * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('footerTemplate')
@@ -98,7 +99,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * * **field**: The current grouped field. 
      * * **key**: The current grouped value.
      * 
-     * {% codeBlock src="grid/group-footer-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="grid/group-footer-api/index.ts" %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('groupFooterTemplate')
@@ -111,7 +113,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * * **field**: The current grouped field name. 
      * * **key**: The current grouped field value.
      * 
-     * {% codeBlock src="grid/group-caption-api/index.ts" %}{% endcodeBlock %}     
+     * {% codeBlock src="grid/group-caption-api/index.ts" %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('groupCaptionTemplate')
