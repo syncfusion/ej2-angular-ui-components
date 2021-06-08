@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.67 (2021-06-08)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I329663` - Issue with "width is not applied to the fixed header element while scrolling the popup items" has been resolved.
+
 ## 19.1.65 (2021-05-25)
 
 ### DropDownList

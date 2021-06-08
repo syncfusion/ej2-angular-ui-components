@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.1.67 (2021-06-08)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.1.66 (2021-06-01)
 
 ### Gantt
@@ -13,7 +21,7 @@
 - `#325331` - Immutable mode issue on data source refresh has been fixed.
 - `F163073` - Issue on `RemoteSaveAdaptor` has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#325331` - Immutable mode issue on data source refresh has been fixed.
 
 ## 19.1.64 (2021-05-19)
 

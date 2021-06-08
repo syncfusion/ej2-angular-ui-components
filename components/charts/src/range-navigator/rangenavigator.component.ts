@@ -4,7 +4,7 @@ import { RangeNavigator } from '@syncfusion/ej2-charts';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { RangenavigatorSeriesCollectionDirective } from './series.directive';
 
-export const inputs: string[] = ['allowIntervalData','allowSnapping','animationDuration','dataSource','disableRangeSelector','enableDeferredUpdate','enableGrouping','enablePersistence','enableRtl','groupBy','height','interval','intervalType','labelFormat','labelIntersectAction','labelPosition','labelStyle','locale','logBase','majorGridLines','majorTickLines','margin','maximum','minimum','navigatorBorder','navigatorStyleSettings','periodSelectorSettings','query','secondaryLabelAlignment','series','skeleton','skeletonType','theme','tickPosition','tooltip','useGroupingSeparator','value','valueType','width','xName','yName'];
+export const inputs: string[] = ['allowIntervalData','allowSnapping','animationDuration','background','dataSource','disableRangeSelector','enableDeferredUpdate','enableGrouping','enablePersistence','enableRtl','groupBy','height','interval','intervalType','labelFormat','labelIntersectAction','labelPosition','labelStyle','locale','logBase','majorGridLines','majorTickLines','margin','maximum','minimum','navigatorBorder','navigatorStyleSettings','periodSelectorSettings','query','secondaryLabelAlignment','series','skeleton','skeletonType','theme','tickPosition','tooltip','useGroupingSeparator','value','valueType','width','xName','yName'];
 export const outputs: string[] = ['beforePrint','changed','labelRender','load','loaded','resized','selectorRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 

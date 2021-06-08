@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 19.1.67 (2021-06-08)
+
+### Tree Grid
+
+#### Bug Fixes
+
+- `#I328708` - Child level aggregate values when using stacked header works fine.
+- `#I312347` - Selected row is displayed properly in view port when Virtualization is enabled.
+
+- `#I328708` - Child level aggregate values when using stacked header works fine.
+
 ## 19.1.66 (2021-06-01)
 
 ### Tree Grid
