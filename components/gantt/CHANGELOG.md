@@ -2,11 +2,14 @@
 
 ## [Unreleased]
 
-## 19.1.67 (2021-06-08)
+## 19.1.69 (2021-06-15)
 
 ### Gantt
 
 #### Bug Fixes
+
+- `#330806` - When using `updateTaskId` method with predecessor field is not mapped in the `taskFields` has been fixed.
+- At certain zoom level, both halves of year are H1 has been resolved.
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 

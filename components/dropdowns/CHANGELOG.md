@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.1.67 (2021-06-08)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I329663` - Issue with "width is not applied to the fixed header element while scrolling the popup items" has been resolved.
-
 ## 19.1.65 (2021-05-25)
 
 ### DropDownList
@@ -1871,6 +1863,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.1.67 (2021-06-08)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I329663` - Issue with "width is not applied to the fixed header element while scrolling the popup items" has been resolved.
 
 ## 19.1.64 (2021-05-19)
 
