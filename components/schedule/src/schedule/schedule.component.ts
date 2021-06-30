@@ -6,7 +6,7 @@ import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dayHeaderTemplate','editorTemplate','enableAllDayScroll','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','views','weekRule','width','workDays','workHours'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dayHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','views','weekRule','width','workDays','workHours'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
@@ -55,7 +55,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * * groupIndex 
      * * type
      * 
-     * Refer to the below code snippet
+     * Refer to the below code snippet.
      *
      *{% codeBlock src='schedule/cellTemplate/index.md' %}{% endcodeBlock %}
      *     
@@ -101,7 +101,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * * resource - All the resource fields. 
      * * resourceData - object collection of current resource.
      * 
-     * Refer to the below code snippet
+     * Refer to the below code snippet.
      *
      *{% codeBlock src='schedule/resourceHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     

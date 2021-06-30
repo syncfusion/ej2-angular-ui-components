@@ -5,7 +5,7 @@ import { TimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','format','htmlAttributes','keyConfigs','locale','max','min','openOnFocus','placeholder','readonly','scrollTo','showClearButton','step','strictMode','value','width','zIndex'];
+export const inputs: string[] = ['allowEdit','cssClass','enableMask','enablePersistence','enableRtl','enabled','floatLabelType','format','htmlAttributes','keyConfigs','locale','maskPlaceholder','max','min','openOnFocus','placeholder','readonly','scrollTo','showClearButton','step','strictMode','value','width','zIndex'];
 export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','itemRender','open','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -46,6 +46,12 @@ export class TimePickerComponent extends TimePicker implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('CalendarsMaskedDateTime');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

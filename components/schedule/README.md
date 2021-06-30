@@ -70,4 +70,4 @@ Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-com
 
 Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2021 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

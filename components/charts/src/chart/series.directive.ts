@@ -50,6 +50,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * * HiloOpenClose 
      * * Waterfall 
      * * RangeArea 
+     * * SplineRangeArea 
      * * Bubble 
      * * Candle 
      * * Polar 

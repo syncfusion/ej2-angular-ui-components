@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -102,6 +102,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default null
      */
     public monthHeaderTemplate: any;
+    /** 
+     * This option allows the user to set the number of months count to be displayed on the Schedule. 
+     * {% codeBlock src='schedule/monthsCount/index.md' %}{% endcodeBlock %}
+     * @default 12
+     * @asptype int
+     */
+    public monthsCount: any;
     /** 
      * It accepts the schedule view name, based on which we can define with its related properties in a single object. 
      * The applicable view names are, 

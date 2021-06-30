@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.2.44 (2021-06-30)
+
+### Gantt
+
+#### New Features
+
+- `#290125` - Provided support to add multiple tasks in Gantt.
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.1.69 (2021-06-15)
 
 ### Gantt
@@ -10,8 +22,6 @@
 
 - `#330806` - When using `updateTaskId` method with predecessor field is not mapped in the `taskFields` has been fixed.
 - At certain zoom level, both halves of year are H1 has been resolved.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.1.66 (2021-06-01)
 

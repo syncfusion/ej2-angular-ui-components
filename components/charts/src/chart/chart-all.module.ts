@@ -15,7 +15,7 @@ import { SelectedDataIndexDirective, SelectedDataIndexesDirective } from './sele
 import { IndicatorDirective, IndicatorsDirective } from './indicators.directive';
 import { ChartComponent } from './chart.component';
 import { ChartModule } from './chart.module';
-import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, StackingStepAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing, Highlight} from '@syncfusion/ej2-charts'
+import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, StackingStepAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, SplineRangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing, Highlight} from '@syncfusion/ej2-charts'
 
 
 export const LineSeriesService: ValueProvider = { provide: 'ChartsLineSeries', useValue: LineSeries};
@@ -50,6 +50,7 @@ export const HiloSeriesService: ValueProvider = { provide: 'ChartsHiloSeries', u
 export const HiloOpenCloseSeriesService: ValueProvider = { provide: 'ChartsHiloOpenCloseSeries', useValue: HiloOpenCloseSeries};
 export const WaterfallSeriesService: ValueProvider = { provide: 'ChartsWaterfallSeries', useValue: WaterfallSeries};
 export const RangeAreaSeriesService: ValueProvider = { provide: 'ChartsRangeAreaSeries', useValue: RangeAreaSeries};
+export const SplineRangeAreaSeriesService: ValueProvider = { provide: 'ChartsSplineRangeAreaSeries', useValue: SplineRangeAreaSeries};
 export const CandleSeriesService: ValueProvider = { provide: 'ChartsCandleSeries', useValue: CandleSeries};
 export const PolarSeriesService: ValueProvider = { provide: 'ChartsPolarSeries', useValue: PolarSeries};
 export const RadarSeriesService: ValueProvider = { provide: 'ChartsRadarSeries', useValue: RadarSeries};
@@ -117,6 +118,7 @@ export const HighlightService: ValueProvider = { provide: 'ChartsHighlight', use
         HiloOpenCloseSeriesService,
         WaterfallSeriesService,
         RangeAreaSeriesService,
+        SplineRangeAreaSeriesService,
         CandleSeriesService,
         PolarSeriesService,
         RadarSeriesService,

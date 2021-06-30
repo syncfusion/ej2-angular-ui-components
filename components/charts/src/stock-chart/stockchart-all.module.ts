@@ -11,10 +11,10 @@ import { StockEventDirective, StockEventsDirective } from './stockevents.directi
 import { StockChartIndicatorDirective, StockChartIndicatorsDirective } from './indicators.directive';
 import { StockChartComponent } from './stockchart.component';
 import { StockChartModule } from './stockchart.module';
+import {StockLegend} from '@syncfusion/ej2-charts'
 
 
-
-
+export const StockLegendService: ValueProvider = { provide: 'ChartsStockLegend', useValue: StockLegend};
 
 /**
  * NgModule definition for the StockChart component with providers.
@@ -25,7 +25,7 @@ import { StockChartModule } from './stockchart.module';
         StockChartModule
     ],
     providers:[
-        
+        StockLegendService
     ]
 })
 export class StockChartAllModule { }

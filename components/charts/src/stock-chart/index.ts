@@ -9,4 +9,4 @@ export {StockEventDirective,StockEventsDirective} from './stockevents.directive'
 export {StockChartIndicatorDirective,StockChartIndicatorsDirective} from './indicators.directive';
 export { StockChartComponent} from './stockchart.component';
 export { StockChartModule } from './stockchart.module';
-export { StockChartAllModule } from './stockchart-all.module';
+export { StockChartAllModule, StockLegendService } from './stockchart-all.module';

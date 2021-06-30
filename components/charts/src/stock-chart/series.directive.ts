@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { StockChartTrendlinesDirective } from './trendlines.directive';
 
-let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'selectionStyle', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
+let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'legendImageUrl', 'legendShape', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'selectionStyle', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -122,6 +122,27 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      * @default ''
      */
     public high: any;
+    /** 
+     * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
+     * @default ''
+     */
+    public legendImageUrl: any;
+    /** 
+     * The shape of the legend. Each series has its own legend shape. They are 
+     * * Circle - Renders a circle. 
+     * * Rectangle - Renders a rectangle. 
+     * * Triangle - Renders a triangle. 
+     * * Diamond - Renders a diamond. 
+     * * Cross - Renders a cross. 
+     * * HorizontalLine - Renders a horizontalLine. 
+     * * VerticalLine - Renders a verticalLine. 
+     * * Pentagon - Renders a pentagon. 
+     * * InvertedTriangle - Renders a invertedTriangle. 
+     * * SeriesType -Render a legend shape based on series type. 
+     * * Image -Render a image.     *
+     * @default 'SeriesType'
+     */
+    public legendShape: any;
     /** 
      * The DataSource field that contains the low value of y 
      * It is applicable for series and technical indicators

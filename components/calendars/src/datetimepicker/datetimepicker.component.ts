@@ -5,7 +5,7 @@ import { DateTimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','htmlAttributes','isMultiSelection','keyConfigs','locale','max','min','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','weekRule','width','zIndex'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enableMask','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','htmlAttributes','isMultiSelection','keyConfigs','locale','maskPlaceholder','max','min','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','weekRule','width','zIndex'];
 export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -48,6 +48,12 @@ export class DateTimePickerComponent extends DateTimePicker implements IComponen
         this.injectedModules = this.injectedModules || [];
         try {
                 let mod = this.injector.get('CalendarsIslamic');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('CalendarsMaskedDateTime');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

@@ -252,6 +252,12 @@ export class ChartComponent extends Chart implements IComponentBase {
                 }
             } catch { }
         try {
+                let mod = this.injector.get('ChartsSplineRangeAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('ChartsCandleSeries');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)

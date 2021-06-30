@@ -2,13 +2,20 @@
 
 ## [Unreleased]
 
-## 19.1.54 (2021-03-30)
+## 18.4.30 (2020-12-17)
 
 ### Heatmap
 
 #### Bug Fixes
 
 - `#287830` - The issue with using setState in the HeatMap has been resolved.
+
+## 18.4.39 (2021-01-28)
+
+### Heatmap
+
+#### Bug Fixes
+
 - `#299279` - The issue "API level styles was not taken as important for HeatMap" has been resolved.
 
 ## 18.2.57 (2020-09-08)
@@ -177,12 +184,4 @@ The HeatMap control is used to visualize a two-dimensional data in which the val
 - **Data Binding** - Supports binding data in JSON and two-dimensional array formats.
 - **Rendering Modes** - Supports automatic switching between SVG and Canvas rendering modes based on the data source length.
 
-
-## 19.1.57 (2021-04-20)
-
-### HeatMap
-
-#### Bug Fixes
-
-- `321299` - Dynamic change of `category` axis from `DateTime` freezes the component has been resolved.
 
