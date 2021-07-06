@@ -2,13 +2,20 @@
 
 ## [Unreleased]
 
-## 19.2.44 (2021-06-30)
+## 19.2.46 (2021-07-06)
 
 ### Chips
 
 #### Bug Fixes
 
 - Issue with `selectedChips` property is not maintained after deletion of Chip items has been resolved.
+
+### Radio Button
+
+#### Bug Fixes
+
+-`I332876` - cssClass need to be included wrapper element of radio button issue fixed.
+
 
 ## 18.4.44 (2021-02-23)
 

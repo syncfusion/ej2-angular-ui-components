@@ -48,6 +48,15 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     @Template()
     public dateHeaderTemplate: any;
     /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
+     * the day header cells. This template is only applicable for year view header cells. 
+     * {% codeBlock src='schedule/dayHeaderTemplate/index.md' %}{% endcodeBlock %}
+     * @default null
+     */
+    @ContentChild('dayHeaderTemplate')
+    @Template()
+    public dayHeaderTemplate: any;
+    /** 
      * The template option which is used to render the customized work cells on the Schedule. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the work cells. 
      *  The fields accessible via template are as follows. 
@@ -88,6 +97,15 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     @ContentChild('editorTemplate')
     @Template()
     public editorTemplate: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
+     * the month header cells. This template is only applicable for year view header cells. 
+     * {% codeBlock src='schedule/monthHeaderTemplate/index.md' %}{% endcodeBlock %}
+     * @default null
+     */
+    @ContentChild('monthHeaderTemplate')
+    @Template()
+    public monthHeaderTemplate: any;
     @ContentChild('timeScaleMinorSlotTemplate')
     @Template()
     public timeScale_minorSlotTemplate: any;

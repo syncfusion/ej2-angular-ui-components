@@ -2,7 +2,17 @@
 
 ## [Unreleased]
 
-## 19.2.44 (2021-06-30)
+## 19.2.46 (2021-07-06)
+
+### Context Menu
+
+#### Bug Fixes
+
+- Role Attribute issue in context menu has been fixed.
+
+### Menu
+
+- `#I330684` - Submenu not aligned properly while using templates issue has been fixed.
 
 ### Tab
 

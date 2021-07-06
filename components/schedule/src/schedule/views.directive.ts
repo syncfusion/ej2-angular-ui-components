@@ -43,13 +43,6 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public dateFormat: any;
     /** 
-     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
-     *  Year view day cell header. 
-     *  This template is only applicable for year view header cells.
-     * @default null
-     */
-    public dayHeaderTemplate: any;
-    /** 
      * When the same view is customized with different intervals, this property allows the user to set different display name 
      *  for those views.
      * @default null
@@ -95,13 +88,6 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default false
      */
     public isSelected: any;
-    /** 
-     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
-     *  Year view day cell header. 
-     *  This template is only applicable for year view header cells.
-     * @default null
-     */
-    public monthHeaderTemplate: any;
     /** 
      * This option allows the user to set the number of months count to be displayed on the Schedule. 
      * {% codeBlock src='schedule/monthsCount/index.md' %}{% endcodeBlock %}
@@ -192,6 +178,15 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     public dateHeaderTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
+     *  Year view day cell header. 
+     *  This template is only applicable for year view header cells.
+     * @default null
+     */
+    @ContentChild('dayHeaderTemplate')
+    @Template()
+    public dayHeaderTemplate: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
      *  month date cells. 
      *  This template is only applicable for month view day cells.
      * @default null
@@ -218,6 +213,15 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     @ContentChild('eventTemplate')
     @Template()
     public eventTemplate: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
+     *  Year view day cell header. 
+     *  This template is only applicable for year view header cells.
+     * @default null
+     */
+    @ContentChild('monthHeaderTemplate')
+    @Template()
+    public monthHeaderTemplate: any;
     /** 
      * The template option which is used to render the customized header cells on the schedule. Here, the 
      *  template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the header cells. 

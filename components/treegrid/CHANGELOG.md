@@ -2,19 +2,20 @@
 
 ## [Unreleased]
 
-## 19.2.44 (2021-06-30)
+## 19.2.46 (2021-07-06)
 
 ### Tree Grid
 
 #### Bug Fixes
 
-- `#I329350` - Immutable mode works fine for date values and row reordering.
-- `#I329988`, `#I331155` - Editing a newly added child record works fine with self referential data.
+- `#I331724` - Child summary values are updated properly after editing a record.
+- `#332604` - Resolved white space issue while using less number of records with Virtualization.
+- `#I328508` - Selecting a row using selectRow method at load time works properly with Virtualization.
+- `#332847` - Batch Edit mode works properly with custom data binding.
+- `#333663` - Cancelling the edit action works properly when using escape key.
 
-#### New Features
-
-- `#274416, #274607, #313192, #F159014` - Provided Infinite Scrolling support for Tree Grid which allows you to lazy load data when scroller reaches the near end.
-- `#280065` - Provided support to maintain Expand/Collapse state of Tree Grid while exporting the data.
+- `#332604` - Resolved white space issue while using less number of records with Virtualization.
+- `#332847` - Batch Edit mode works properly with observable data binding.
 
 ## 18.4.30 (2020-12-17)
 
