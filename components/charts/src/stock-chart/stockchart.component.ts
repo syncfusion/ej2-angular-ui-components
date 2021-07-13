@@ -97,6 +97,12 @@ export class StockChartComponent extends StockChart implements IComponentBase {
                 }
             } catch { }
         try {
+                let mod = this.injector.get('ChartsRangeAreaSeries');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('ChartsTooltip');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.2.47 (2021-07-13)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I331063` - Issue with "popup is not opened while rendering component with HTML select tag and dynamically changing the data source" has been resolved.
+
+- `#F166677` - Issue with "incorrect selected count is displayed in the multiselect while choosing multiple items" has been resolved.
+
 ## 19.1.65 (2021-05-25)
 
 ### DropDownList
@@ -1863,6 +1873,20 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.46 (2021-07-06)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I332596` - Issue with "incremental search not working when searching same key value multiple time" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F165832` - Issue with "dynamically updated value is not cleared while clearing the value using clear icon" has been resolved.
 
 ## 19.1.67 (2021-06-08)
 

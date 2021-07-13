@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.2.47 (2021-07-13)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#331618` - Issue in updating `dataSource` property has been fixed.
+- `#333672` - Issue in calculating duration across DST has been fixed.
+- Issue in tooltip position has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.2.46 (2021-07-06)
 
 ### Gantt
@@ -10,8 +22,6 @@
 
 - `#331671` - Right Labels are rendered properly in exported PDF document.
 - `#332161` - Issue fixed when drag and drop performed after adding record through context menu.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.2.44 (2021-06-30)
 

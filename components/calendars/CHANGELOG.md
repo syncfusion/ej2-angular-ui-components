@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.47 (2021-07-13)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I334467` - Issue with "input is not disabled while disabling the `formControlName` using form group" has been resolved.
+
 ## 19.2.44 (2021-06-30)
 
 ### DatePicker
