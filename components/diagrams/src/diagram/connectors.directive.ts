@@ -35,20 +35,16 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * Bezier - Sets the segment type as Bezier
      * @default 'Straight'
      * @asptype Syncfusion.EJ2.Diagrams.Segments
-     * @blazordefaultvalueignore 
-     * @blazordefaultvalue Syncfusion.Blazor.Diagrams.Segments.Straight
      */
     public type: any;
     /** 
      * Allows the user to save custom information/data about a node/connector
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
     /** 
      * 
-     * @blazortype ObservableCollection<DiagramConnectorAnnotation>
      */
     public annotations: any;
     /** 
@@ -80,7 +76,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * * ReadOnly - Enables ReadOnly
      * @default 'Default'
      * @aspnumberenum 
-     * @blazornumberenum 
      */
     public constraints: any;
     /** 
@@ -91,7 +86,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the size of a drop symbol
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public dragSize: any;
@@ -103,15 +97,12 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Specifies the collection of the fixed user handle
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
-     * @blazortype ObservableCollection<DiagramFixedUserHandle>
      */
     public fixedUserHandles: any;
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
-     * @blazordefaultvalue None
      * @default None
      */
     public flip: any;
@@ -133,7 +124,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the size of the symbol preview
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public previewSize: any;
@@ -141,21 +131,17 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * Defines the segments
      * @default []
      * @asptype object
-     * @blazortype ObservableCollection<DiagramConnectorSegment>
      */
     public segments: any;
     /** 
      * Defines the shape of the connector
      * @default 'Bpmn'
      * @asptype object
-     * @blazortype DiagramConnectorShape
      */
     public shape: any;
     /** 
      * Defines the source decorator of the connector
      * @default new Decorator()
-     * @blazortype ConnectorSourceDecorator
-     * @blazordefaultvalue new ConnectorSourceDecorator()
      */
     public sourceDecorator: any;
     /** 
@@ -166,7 +152,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Sets the source padding of the connector
      * @default 0
-     * @isblazornullabletype true
      */
     public sourcePadding: any;
     /** 
@@ -182,14 +167,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the appearance of the connection path
      * @default ''
-     * @blazortype ConnectorShapeStyle
-     * @blazordefaultvalue new ConnectorShapeStyle()
      */
     public style: any;
     /** 
      * Defines the symbol info of a connector
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      * @ignoreapilink 
      */
@@ -197,8 +179,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Defines the target decorator of the connector
      * @default new Decorator()
-     * @blazortype ConnectorTargetDecorator
-     * @blazordefaultvalue new ConnectorTargetDecorator()
      */
     public targetDecorator: any;
     /** 
@@ -209,7 +189,6 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     /** 
      * Sets the target padding of the connector
      * @default 0
-     * @isblazornullabletype true
      */
     public targetPadding: any;
     /** 

@@ -27,7 +27,6 @@ export class CustomCursorDirective extends ComplexBase<CustomCursorDirective> {
 
     /** 
      * Defines the property of a Data Map Items
-     * @blazordefaultvalueignore 
      */
     public action: any;
     /** 

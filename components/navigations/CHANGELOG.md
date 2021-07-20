@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.48 (2021-07-20)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I333305` - An issue with script error thrown when rendering other components inside tab at initial load has been fixed.
+
 ## 19.2.46 (2021-07-06)
 
 ### Context Menu

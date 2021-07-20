@@ -41,7 +41,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * Allows the user to save custom information/data about an annotation 
      * 
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
@@ -66,7 +65,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * * InheritReadOnly - Enables/Disables the InheritReadOnly Constraints
      * @default 'InheritReadOnly'
      * @aspnumberenum 
-     * @blazornumberenum 
      */
     public constraints: any;
     /** 
@@ -89,7 +87,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
     /** 
      * Sets the height of the text
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public height: any;
@@ -107,7 +104,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * Sets the hyperlink of the label 
      * 
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public hyperlink: any;
@@ -139,7 +135,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
     /** 
      * Defines the appearance of the text
      * @default new TextStyle()
-     * @blazortype AnnotationStyle
      */
     public style: any;
     /** 
@@ -165,7 +160,6 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
     /** 
      * Sets the width of the text
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public width: any;

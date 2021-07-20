@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.2.48 (2021-07-20)
+
+### Common
+
+#### Bug Fixes
+
+- `I331403,I334510` - Resolved `dynamic property` change not working for complex directives.
+- `I333399` - Resolved `dynamic property` change not working for `equal` length properties.
+
 ## 19.1.66 (2021-06-01)
 
 ### Common

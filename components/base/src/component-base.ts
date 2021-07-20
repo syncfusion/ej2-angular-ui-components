@@ -261,7 +261,7 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (tempAfterContentThis.getModuleName() === 'diagram')) {
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || /diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName())) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {
@@ -271,7 +271,7 @@ export class ComponentBase<T> {
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
                         });
-                        if (curChild.properties && Object.keys(curChild.properties).length !== 0 && /chart/.test(tempAfterContentThis.getModuleName())){
+                        if (curChild.properties && Object.keys(curChild.properties).length !== 0 && /chart|kanban/.test(tempAfterContentThis.getModuleName())){
                             for (let complexPropName of complexTemplates) {
                                 complexPropName = complexPropName.replace(/Ref/, '');
                                 curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?

@@ -34,16 +34,13 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Allows the user to save custom information/data about a node/connector
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public addInfo: any;
     /** 
      * Defines the collection of textual annotations of nodes/connectors
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
-     * @blazortype ObservableCollection<DiagramNodeAnnotation>
      */
     public annotations: any;
     /** 
@@ -61,21 +58,17 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Sets the border width of the node
      * @deprecated 
      * @default 0
-     * @isblazornullabletype true
      */
     public borderWidth: any;
     /** 
      * Set the branch for the mind map
      * @aspdefaultvalueignore 
-     * @blazordefaultvalue null
-     * @isblazornullabletype true
      * @default ''
      */
     public branch: any;
     /** 
      * Defines the children of group element
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public children: any;
@@ -87,21 +80,18 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Used to define a index of column in the grid
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columnIndex: any;
     /** 
      * Merge the column use the property in the grid container
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columnSpan: any;
     /** 
      * Used to define the column for the grid container
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public columns: any;
@@ -136,13 +126,11 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * * ReadOnly - Enables the  ReadOnly support for Annotation
      * @default 'Default'
      * @aspnumberenum 
-     * @blazornumberenum 
      */
     public constraints: any;
     /** 
      * Defines the type of the container
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default null
      * @deprecated 
      */
@@ -154,7 +142,6 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Defines the size of a drop symbol
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public dragSize: any;
@@ -171,29 +158,24 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Specifies the collection of the fixed user handle
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
-     * @blazortype ObservableCollection<DiagramNodeFixedUserHandle>
      */
     public fixedUserHandles: any;
     /** 
      * Flip the element in Horizontal/Vertical directions
      * @aspdefaultvalueignore 
-     * @blazordefaultvalue None
      * @default None
      */
     public flip: any;
     /** 
      * Sets the height of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public height: any;
     /** 
      * Sets the horizontalAlignment of the node
      * @default 'Stretch'
-     * @blazordefaultvalue 'Left'
      */
     public horizontalAlignment: any;
     /** 
@@ -210,7 +192,6 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Sets the layout properties using node property
      * @default new NodeLayoutInfo()
      * @asptype object
-     * @blazortype DiagramNodeLayoutInfo
      */
     public layoutInfo: any;
     /** 
@@ -221,28 +202,24 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the maximum height of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public maxHeight: any;
     /** 
      * Sets the maximum width of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public maxWidth: any;
     /** 
      * Sets the minimum height of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public minHeight: any;
     /** 
      * Sets the minimum width of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public minWidth: any;
@@ -259,21 +236,17 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the reference point, that will act as the offset values(offsetX, offsetY) of a node
      * @default new Point(0.5,0.5)
-     * @blazortype NodePivotPoint
      */
     public pivot: any;
     /** 
      * Defines the collection of connection points of nodes/connectors
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
-     * @blazortype ObservableCollection<DiagramPort>
      */
     public ports: any;
     /** 
      * Defines the size of the symbol preview
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public previewSize: any;
@@ -285,14 +258,12 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Used to define a index of row in the grid
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public rowIndex: any;
     /** 
      * Merge the row use the property in the grid container
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public rowSpan: any;
@@ -312,20 +283,17 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * Defines the shape of a node
      * @default Basic Shape
      * @asptype object
-     * @blazortype DiagramShape
      */
     public shape: any;
     /** 
      * Sets the shape style of the node
      * @default new ShapeStyle()
      * @asptype object
-     * @blazortype NodeShapeStyle
      */
     public style: any;
     /** 
      * Defines the symbol info of a connector
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      * @ignoreapilink 
      */
@@ -338,7 +306,6 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the verticalAlignment of the node
      * @default 'Stretch'
-     * @blazordefaultvalue 'Top'
      */
     public verticalAlignment: any;
     /** 
@@ -349,7 +316,6 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
     /** 
      * Sets the width of the node
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public width: any;

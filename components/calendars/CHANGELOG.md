@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.2.47 (2021-07-13)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I334467` - Issue with "input is not disabled while disabling the `formControlName` using form group" has been resolved.
-
 ## 19.2.44 (2021-06-30)
 
 ### DatePicker
@@ -1216,6 +1208,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.47 (2021-07-13)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I334467` - Issue with "input is not disabled while disabling the `formControlName` using form group" has been resolved.
 
 ## 19.1.64 (2021-05-19)
 

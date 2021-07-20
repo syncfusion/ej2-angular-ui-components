@@ -78,13 +78,11 @@ export class NodeFixedUserHandleDirective extends ComplexBase<NodeFixedUserHandl
     /** 
      * Specifies the position of the node fixed user handle
      * @default { x: 0, y: 0 }
-     * @blazortype NodeFixedUserHandles
      */
     public offset: any;
     /** 
      * Specifies the space between the fixed user handle and container
      * @default new Margin(0,0,0,0)
-     * @blazortype fixedUserHandlePadding
      */
     public padding: any;
     /** 

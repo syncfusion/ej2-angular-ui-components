@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.48 (2021-07-20)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.2.47 (2021-07-13)
 
 ### Gantt
@@ -12,7 +20,7 @@
 - `#333672` - Issue in calculating duration across DST has been fixed.
 - Issue in tooltip position has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- Issue in tooltip position has been fixed.
 
 ## 19.2.46 (2021-07-06)
 

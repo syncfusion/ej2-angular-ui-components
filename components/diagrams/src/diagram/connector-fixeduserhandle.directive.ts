@@ -46,7 +46,6 @@ export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixe
     /** 
      * Specifies the displacement of an fixed user handle from its actual position
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default undefined
      */
     public displacement: any;
@@ -93,7 +92,6 @@ export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixe
     /** 
      * Specifies the space between the fixed user handle and container
      * @default new Margin(0,0,0,0)
-     * @blazortype fixedUserHandlePadding
      */
     public padding: any;
     /** 
