@@ -32,7 +32,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the data type of the column.
      * @default null
-     * @blazortype ColumnType
      */
     public type: any;
     /** 
@@ -162,7 +161,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines default values for the component when adding a new record to the Grid.
      * @default null
      * @asptype object
-     * @blazortype object
      */
     public defaultValue: any;
     /** 
@@ -183,8 +181,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the type of component for editing.
      * @default 'stringedit'
-     * @blazortype EditType
-     * @blazordefaultvalue EditType.DefaultEdit
      */
     public editType: any;
     /** 
@@ -265,7 +261,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * and [`date`](../../common/internationalization/#manipulating-datetime) formats.
      * @default null
      * @asptype string
-     * @blazortype string
      */
     public format: any;
     /** 
@@ -304,7 +299,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Define the alignment of column header which is used to align the text of column header.
      * @aspdefaultvalueignore 
-     * @blazordefaultvalueignore 
      * @default null
      */
     public headerTextAlign: any;
@@ -328,7 +322,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      *```
      *     
      * @default null
-     * @deprecated 
      */
     public headerValueAccessor: any;
     /** 
