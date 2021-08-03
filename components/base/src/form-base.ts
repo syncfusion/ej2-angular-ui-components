@@ -35,7 +35,7 @@ export class FormBase<T> implements ControlValueAccessor {
         //tslint:disable-next-line
         let value: T | any = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
-        if (this.isUpdated === true) {
+        if (this.isUpdated === true && this.oldValue) {
             this.angularValue = this.oldValue;
         }
         if (this.objCheck === true) {
