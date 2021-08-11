@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 19.2.51 (2021-08-03)
+## 19.2.55 (2021-08-11)
 
 ### Gantt
 
 #### Bug Fixes
+
+- `#336211` - Issue with Virtual Scrolling in Firefox browse has been resolved.
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 

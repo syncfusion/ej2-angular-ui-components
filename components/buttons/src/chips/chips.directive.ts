@@ -46,8 +46,6 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
     /** 
      * Specifies a value that indicates whether the chip component is enabled or not.
      * @default true
-     * @blazordefaultvalue null
-     * @blazortype bool?
      */
     public enabled: any;
     /** 

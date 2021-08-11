@@ -37,8 +37,8 @@ export class TooltipComponent extends Tooltip implements IComponentBase {
      *  to know more about this property with demo.
      * 
      * {% codeBlock src="tooltip/content-api/index.ts" %}{% endcodeBlock %}
+     *
      *     
-     * @blazortype object
      */
     @ContentChild('content')
     @Template()

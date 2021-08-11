@@ -53,6 +53,9 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
+    @ContentChild('noRecordsTemplate')
+    @Template('No records found')
+    public noRecordsTemplate: any;
 
     public focus: any;
     public blur: any;
