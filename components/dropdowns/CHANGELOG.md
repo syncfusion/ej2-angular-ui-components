@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.57 (2021-08-24)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I338226` - Issue with "popup does not shows the list items when click on the input before data gets fetch" has been resolved.
+
 ## 19.2.55 (2021-08-11)
 
 ### ListBox
