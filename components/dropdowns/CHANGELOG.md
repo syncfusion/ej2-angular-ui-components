@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 19.2.57 (2021-08-24)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I338226` - Issue with "popup does not shows the list items when click on the input before data gets fetch" has been resolved.
-
 ## 19.2.55 (2021-08-11)
 
 ### ListBox
@@ -1957,6 +1949,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.2.57 (2021-08-24)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I338226` - Issue with "popup does not shows the list items when click on the input before data gets fetch" has been resolved.
 
 ## 19.2.46 (2021-07-06)
 

@@ -2,7 +2,26 @@
 
 ## [Unreleased]
 
+## 19.2.59 (2021-08-31)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#339434` - Issue in tooltip has been resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.2.57 (2021-08-24)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#339511` - Issue in maintaining resource selection has been resolved.
+- `#338206` - Cleared warnings thrown in Firefox browser.
+
+## 19.2.56 (2021-08-17)
 
 ### Gantt
 
@@ -10,8 +29,6 @@
 
 - `#338587` - Issue in assigning empty data to datasource has been resolved.
 - `#335677` - Issue in `expandAtLevel` and `collapseAtLevel` method with virtual scrolling has been resolved.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.2.55 (2021-08-11)
 

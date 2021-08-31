@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.2.57 (2021-08-24)
+## 19.2.59 (2021-08-31)
+
+### Common
+
+#### Bug Fixes
+
+- `I338378` Resolved get reference of `ElementRef` not accessible in complex directives.
+
+## 19.2.51 (2021-08-03)
 
 ### Common
 
