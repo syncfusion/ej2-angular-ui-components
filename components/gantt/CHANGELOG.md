@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.2.60 (2021-09-07)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#340155` - Dialog closes when pressing insert key issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.2.59 (2021-08-31)
 
 ### Gantt
@@ -9,8 +19,6 @@
 #### Bug Fixes
 
 - `#339434` - Issue in tooltip has been resolved.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.2.57 (2021-08-24)
 

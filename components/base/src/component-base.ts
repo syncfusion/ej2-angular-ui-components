@@ -177,7 +177,7 @@ export class ComponentBase<T> {
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(() => {
             /* istanbul ignore else  */
-            if (typeof window !== 'undefined') {
+            if (typeof window !== 'undefined' && document.body.contains(tempAfterViewThis.element)) {
                 tempAfterViewThis.appendTo(tempAfterViewThis.element);
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
@@ -189,7 +189,7 @@ export class ComponentBase<T> {
         let tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
         setTimeout(() => {
-            if (typeof window !== 'undefined' && (tempOnDestroyThis.element.classList.contains('e-control') || tempOnDestroyThis.element)) {
+            if (typeof window !== 'undefined' && document.body.contains(tempOnDestroyThis.element) && (tempOnDestroyThis.element.classList.contains('e-control') || tempOnDestroyThis.element)) {
                 tempOnDestroyThis.destroy();
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy

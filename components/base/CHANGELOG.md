@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 19.2.60 (2021-09-07)
+
+### Common
+
+#### Bug Fixes
+
+- `I336550` Resolved script error if Component not in the `DOM` while component rendering.
+
 ## 19.2.59 (2021-08-31)
 
 ### Common
