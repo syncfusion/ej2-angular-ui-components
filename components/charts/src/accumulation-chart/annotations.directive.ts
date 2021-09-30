@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnnotationDirective> {
     public directivePropList: any;
+	
 
 
     /** 

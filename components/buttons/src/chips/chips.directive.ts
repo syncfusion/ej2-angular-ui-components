@@ -26,6 +26,7 @@ let outputs: string[] = [];
 })
 export class ChipDirective extends ComplexBase<ChipDirective> {
     public directivePropList: any;
+	
 
 
     /** 

@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class UploadedFilesDirective extends ComplexBase<UploadedFilesDirective> {
     public directivePropList: any;
+	
 
 
     /** 

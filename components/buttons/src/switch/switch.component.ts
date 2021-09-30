@@ -37,9 +37,11 @@ export class SwitchComponent extends Switch implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	change: any;
+	created: any;
+	public checkedChange: any;
 
 
-    public checkedChange: any;
 
     public focus: any;
     public blur: any;

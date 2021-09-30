@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotationDirective> {
     public directivePropList: any;
+	
 
 
     /** 

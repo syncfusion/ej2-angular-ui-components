@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class MenuItemDirective extends ComplexBase<MenuItemDirective> {
     public directivePropList: any;
+	
 
 
     /** 

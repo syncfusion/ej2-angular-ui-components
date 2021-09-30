@@ -37,11 +37,22 @@ export class DateRangePickerComponent extends DateRangePicker implements ICompon
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	blur: any;
+	change: any;
+	cleared: any;
+	close: any;
+	created: any;
+	destroyed: any;
+	focus: any;
+	navigated: any;
+	open: any;
+	renderDayCell: any;
+	select: any;
+	startDateChange: any;
+	endDateChange: any;
+	public valueChange: any;
     public childPresets: any;
     public tags: string[] = ['presets'];
-    public startDateChange: any;
-    public endDateChange: any;
-    public valueChange: any;
     /** 
      * Specifies the initial view of the Calendar when it is opened. 
      * With the help of this property, initial view can be changed to year or decade view.

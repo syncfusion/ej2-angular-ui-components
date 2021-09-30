@@ -34,12 +34,50 @@ export const twoWays: string[] = [''];
 export class DiagramComponent extends Diagram implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	animationComplete: any;
+	click: any;
+	collectionChange: any;
+	commandExecute: any;
+	connectionChange: any;
+	contextMenuBeforeItemRender: any;
+	contextMenuClick: any;
+	contextMenuOpen: any;
+	created: any;
+	dataLoaded: any;
+	doubleClick: any;
+	dragEnter: any;
+	dragLeave: any;
+	dragOver: any;
+	drop: any;
+	expandStateChange: any;
+	fixedUserHandleClick: any;
+	historyChange: any;
+	historyStateChange: any;
+	keyDown: any;
+	keyUp: any;
+	mouseEnter: any;
+	mouseLeave: any;
+	mouseOver: any;
+	onImageLoad: any;
+	onUserHandleMouseDown: any;
+	onUserHandleMouseEnter: any;
+	onUserHandleMouseLeave: any;
+	onUserHandleMouseUp: any;
+	positionChange: any;
+	propertyChange: any;
+	rotateChange: any;
+	scrollChange: any;
+	segmentCollectionChange: any;
+	selectionChange: any;
+	sizeChange: any;
+	sourcePointChange: any;
+	targetPointChange: any;
+	public textEdit: any;
     public childLayers: QueryList<LayersDirective>;
     public childCustomCursor: QueryList<CustomCursorsDirective>;
     public childConnectors: QueryList<ConnectorsDirective>;
     public childNodes: QueryList<NodesDirective>;
     public tags: string[] = ['layers', 'customCursor', 'connectors', 'nodes'];
-
     /** 
      * Customizes the annotation template
      * @default undefined

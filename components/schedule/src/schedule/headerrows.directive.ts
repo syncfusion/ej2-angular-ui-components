@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
     public directivePropList: any;
+	
 
 
     /** 

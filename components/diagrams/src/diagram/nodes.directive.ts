@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class NodeDirective extends ComplexBase<NodeDirective> {
     public directivePropList: any;
+	
     public childFixedUserHandles: any;
     public childAnnotations: any;
     public childPorts: any;

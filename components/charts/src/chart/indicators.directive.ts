@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
     public directivePropList: any;
+	
 
 
     /** 

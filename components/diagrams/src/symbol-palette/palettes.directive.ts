@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class PaletteDirective extends ComplexBase<PaletteDirective> {
     public directivePropList: any;
+	
 
 
     /** 

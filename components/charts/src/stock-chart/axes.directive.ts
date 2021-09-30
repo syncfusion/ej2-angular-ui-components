@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective> {
     public directivePropList: any;
+	
 
 
     /** 

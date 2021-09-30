@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
     public directivePropList: any;
+	
 
 
     /** 

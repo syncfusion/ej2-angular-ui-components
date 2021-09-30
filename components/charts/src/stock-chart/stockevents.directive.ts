@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class StockEventDirective extends ComplexBase<StockEventDirective> {
     public directivePropList: any;
+	
 
 
     /** 

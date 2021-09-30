@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class SegmentDirective extends ComplexBase<SegmentDirective> {
     public directivePropList: any;
+	
 
 
     /** 

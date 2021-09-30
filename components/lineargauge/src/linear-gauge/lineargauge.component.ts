@@ -30,10 +30,25 @@ export const twoWays: string[] = [''];
 export class LinearGaugeComponent extends LinearGauge implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	animationComplete: any;
+	annotationRender: any;
+	axisLabelRender: any;
+	beforePrint: any;
+	dragEnd: any;
+	dragMove: any;
+	dragStart: any;
+	gaugeMouseDown: any;
+	gaugeMouseLeave: any;
+	gaugeMouseMove: any;
+	gaugeMouseUp: any;
+	load: any;
+	loaded: any;
+	resized: any;
+	tooltipRender: any;
+	public valueChange: any;
     public childAxes: QueryList<AxesDirective>;
     public childAnnotations: QueryList<AnnotationsDirective>;
     public tags: string[] = ['axes', 'annotations'];
-
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

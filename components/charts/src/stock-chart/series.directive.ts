@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirective> {
     public directivePropList: any;
+	
     public childTrendlines: any;
     public tags: string[] = ['trendlines'];
     /** 

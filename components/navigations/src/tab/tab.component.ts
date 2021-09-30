@@ -28,9 +28,19 @@ export const twoWays: string[] = [''];
 export class TabComponent extends Tab implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	added: any;
+	adding: any;
+	created: any;
+	destroyed: any;
+	dragged: any;
+	dragging: any;
+	onDragStart: any;
+	removed: any;
+	removing: any;
+	selected: any;
+	public selecting: any;
     public childItems: QueryList<TabItemsDirective>;
     public tags: string[] = ['items'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

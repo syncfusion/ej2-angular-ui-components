@@ -37,9 +37,18 @@ export class TimePickerComponent extends TimePicker implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	blur: any;
+	change: any;
+	cleared: any;
+	close: any;
+	created: any;
+	destroyed: any;
+	focus: any;
+	itemRender: any;
+	open: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {

@@ -30,10 +30,30 @@ export const twoWays: string[] = ['dataSource'];
 export class AccumulationChartComponent extends AccumulationChart implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	afterExport: any;
+	animationComplete: any;
+	annotationRender: any;
+	beforePrint: any;
+	beforeResize: any;
+	chartMouseClick: any;
+	chartMouseDown: any;
+	chartMouseLeave: any;
+	chartMouseMove: any;
+	chartMouseUp: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	pointClick: any;
+	pointMove: any;
+	pointRender: any;
+	resized: any;
+	seriesRender: any;
+	textRender: any;
+	tooltipRender: any;
+	public dataSourceChange: any;
     public childSeries: QueryList<AccumulationSeriesCollectionDirective>;
     public childAnnotations: QueryList<AccumulationAnnotationsDirective>;
     public tags: string[] = ['series', 'annotations'];
-    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

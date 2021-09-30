@@ -4,7 +4,7 @@ import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 
-export const inputs: string[] = ['allowValidation','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','fieldModel','headerTemplate','height','immediateModeDelay','locale','matchCase','maxGroupCount','operatorModel','readonly','rule','separator','showButtons','sortDirection','summaryView','valueModel','width'];
+export const inputs: string[] = ['allowValidation','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','fieldMode','fieldModel','headerTemplate','height','immediateModeDelay','locale','matchCase','maxGroupCount','operatorModel','readonly','rule','separator','showButtons','sortDirection','summaryView','valueModel','width'];
 export const outputs: string[] = ['actionBegin','beforeChange','change','created','dataBound','ruleChange'];
 export const twoWays: string[] = [''];
 
@@ -28,9 +28,14 @@ export const twoWays: string[] = [''];
 export class QueryBuilderComponent extends QueryBuilder implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	actionBegin: any;
+	beforeChange: any;
+	change: any;
+	created: any;
+	dataBound: any;
+	public ruleChange: any;
     public childColumns: QueryList<ColumnsDirective>;
     public tags: string[] = ['columns'];
-
     /** 
      * Specifies the template for the header with any other widgets.
      * @default null

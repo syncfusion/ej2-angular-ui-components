@@ -37,9 +37,11 @@ export class RadioButtonComponent extends RadioButton implements IComponentBase 
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	change: any;
+	created: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
 
     public focus: any;
     public blur: any;

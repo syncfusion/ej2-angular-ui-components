@@ -28,7 +28,7 @@ export const twoWays: string[] = [''];
 export class QRCodeGeneratorComponent extends QRCodeGenerator implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	public invalid: any;
 
 
 

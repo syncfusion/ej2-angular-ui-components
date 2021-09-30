@@ -27,6 +27,7 @@ let outputs: string[] = ['click'];
 })
 export class ItemDirective extends ComplexBase<ItemDirective> {
     public directivePropList: any;
+	public click: any;
 
 
     /** 

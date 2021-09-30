@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class DropDownButtonItemDirective extends ComplexBase<DropDownButtonItemDirective> {
     public directivePropList: any;
+	
 
 
     /** 

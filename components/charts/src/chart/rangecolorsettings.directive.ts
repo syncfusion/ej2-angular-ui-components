@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class RangeColorSettingDirective extends ComplexBase<RangeColorSettingDirective> {
     public directivePropList: any;
+	
 
 
     /** 

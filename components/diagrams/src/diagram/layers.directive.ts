@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class LayerDirective extends ComplexBase<LayerDirective> {
     public directivePropList: any;
+	
 
 
     /** 

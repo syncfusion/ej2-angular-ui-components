@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isPrimaryKey', 'maxWidth', 'minWidth', 'template', 'textAlign', 'type', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isPrimaryKey', 'maxWidth', 'minWidth', 'sortComparer', 'template', 'textAlign', 'type', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Gantt. 
@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -72,7 +73,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.ClipMode
      */
     public clipMode: any;
     /** 
@@ -123,7 +123,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * and [`date`](../../../common/internationalization/#formatting) formats.
      * @default null
      * @asptype string
-     * @blazortype object
      */
     public format: any;
     /** 
@@ -143,7 +142,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public headerTextAlign: any;
     /** 
@@ -168,11 +166,15 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public minWidth: any;
     /** 
+     * Defines the sort comparer property.
+     * @default null
+     */
+    public sortComparer: any;
+    /** 
      * Defines the alignment of the column in both header and content cells.
      * @default Syncfusion.EJ2.Grids.TextAlign.Left
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.TextAlign
-     * @blazortype Syncfusion.EJ2.Blazor.Grids.TextAlign
      */
     public textAlign: any;
     /** 

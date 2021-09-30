@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public directivePropList: any;
+	
 
 
     /** 

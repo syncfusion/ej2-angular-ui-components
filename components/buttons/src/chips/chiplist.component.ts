@@ -28,9 +28,12 @@ export const twoWays: string[] = [''];
 export class ChipListComponent extends ChipList implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforeClick: any;
+	click: any;
+	created: any;
+	public delete: any;
     public childChips: QueryList<ChipsDirective>;
     public tags: string[] = ['chips'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

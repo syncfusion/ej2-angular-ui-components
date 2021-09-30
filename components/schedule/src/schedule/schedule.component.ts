@@ -6,7 +6,7 @@ import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dayHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','views','weekRule','width','workDays','workHours'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dayHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','views','weekRule','width','workDays','workHours'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
@@ -32,12 +32,36 @@ export const twoWays: string[] = ['currentView', 'selectedDate'];
 export class ScheduleComponent extends Schedule implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	cellClick: any;
+	cellDoubleClick: any;
+	created: any;
+	dataBinding: any;
+	dataBound: any;
+	destroyed: any;
+	drag: any;
+	dragStart: any;
+	dragStop: any;
+	eventClick: any;
+	eventRendered: any;
+	hover: any;
+	moreEventsClick: any;
+	navigating: any;
+	popupClose: any;
+	popupOpen: any;
+	renderCell: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
+	select: any;
+	currentViewChange: any;
+	public selectedDateChange: any;
     public childViews: QueryList<ViewsDirective>;
     public childResources: QueryList<ResourcesDirective>;
     public childHeaderRows: QueryList<HeaderRowsDirective>;
     public tags: string[] = ['views', 'resources', 'headerRows'];
-    public currentViewChange: any;
-    public selectedDateChange: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
      * the date header cells. The field that can be accessed via this template is `date`. 
@@ -128,6 +152,19 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     @ContentChild('resourceHeaderTemplate')
     @Template()
     public resourceHeaderTemplate: any;
+    /** 
+     * Template option to customize the header indent bar. Here, the template accepts either 
+     *  the string or HTMLElement as template design and then the parsed design is displayed onto the header indent cell.
+     * 
+     * Refer to the below code snippet.
+     *
+     *{% codeBlock src='schedule/headerIndentTemplate/index.md' %}{% endcodeBlock %}
+     *     
+     * @default null
+     */
+    @ContentChild('headerIndentTemplate')
+    @Template()
+    public headerIndentTemplate: any;
     @ContentChild('quickInfoTemplatesHeader')
     @Template()
     public quickInfoTemplates_header: any;

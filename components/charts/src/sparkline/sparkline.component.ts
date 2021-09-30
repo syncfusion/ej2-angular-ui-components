@@ -28,9 +28,21 @@ export const twoWays: string[] = [''];
 export class SparklineComponent extends Sparkline implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	axisRendering: any;
+	dataLabelRendering: any;
+	load: any;
+	loaded: any;
+	markerRendering: any;
+	pointRegionMouseClick: any;
+	pointRegionMouseMove: any;
+	pointRendering: any;
+	resize: any;
+	seriesRendering: any;
+	sparklineMouseClick: any;
+	sparklineMouseMove: any;
+	public tooltipInitialize: any;
     public childRangeBandSettings: QueryList<RangeBandSettingsDirective>;
     public tags: string[] = ['rangeBandSettings'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

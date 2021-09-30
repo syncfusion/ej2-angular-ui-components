@@ -28,7 +28,11 @@ export const twoWays: string[] = [];
 export class ProgressButtonComponent extends ProgressButton implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
-
+	begin: any;
+	created: any;
+	end: any;
+	fail: any;
+	public progress: any;
 
 
 

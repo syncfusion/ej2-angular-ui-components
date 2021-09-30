@@ -28,9 +28,17 @@ export const twoWays: string[] = [''];
 export class HeatMapComponent extends HeatMap implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	cellClick: any;
+	cellRender: any;
+	cellSelected: any;
+	created: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	resized: any;
+	public tooltipRender: any;
 
     public tags: string[] = [''];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

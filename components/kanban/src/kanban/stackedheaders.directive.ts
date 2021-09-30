@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class StackedHeaderDirective extends ComplexBase<StackedHeaderDirective> {
     public directivePropList: any;
+	
 
 
     /** 

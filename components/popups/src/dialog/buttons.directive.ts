@@ -27,6 +27,7 @@ let outputs: string[] = ['click'];
 })
 export class DialogButtonDirective extends ComplexBase<DialogButtonDirective> {
     public directivePropList: any;
+	public click: any;
 
 
     /** 

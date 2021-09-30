@@ -28,9 +28,16 @@ export const twoWays: string[] = [''];
 export class ToastComponent extends Toast implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	beforeClose: any;
+	beforeOpen: any;
+	beforeSanitizeHtml: any;
+	click: any;
+	close: any;
+	created: any;
+	destroyed: any;
+	public open: any;
     public childButtons: QueryList<ButtonModelPropsDirective>;
     public tags: string[] = ['buttons'];
-
     /** 
      * Specifies the title to be displayed on the Toast. 
      * Accepts selectors, string values and HTML elements.

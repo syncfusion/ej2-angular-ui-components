@@ -28,9 +28,17 @@ export const twoWays: string[] = [''];
 export class SplitterComponent extends Splitter implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	beforeCollapse: any;
+	beforeExpand: any;
+	beforeSanitizeHtml: any;
+	collapsed: any;
+	created: any;
+	expanded: any;
+	resizeStart: any;
+	resizeStop: any;
+	public resizing: any;
     public childPaneSettings: QueryList<PanesDirective>;
     public tags: string[] = ['paneSettings'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

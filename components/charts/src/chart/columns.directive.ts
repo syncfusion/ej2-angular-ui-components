@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public directivePropList: any;
+	
 
 
     /** 

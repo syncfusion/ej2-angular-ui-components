@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class NodeFixedUserHandleDirective extends ComplexBase<NodeFixedUserHandleDirective> {
     public directivePropList: any;
+	
 
 
     /** 

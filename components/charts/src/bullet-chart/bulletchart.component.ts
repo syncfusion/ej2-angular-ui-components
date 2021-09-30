@@ -28,9 +28,15 @@ export const twoWays: string[] = ['dataSource'];
 export class BulletChartComponent extends BulletChart implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforePrint: any;
+	bulletChartMouseClick: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	tooltipRender: any;
+	public dataSourceChange: any;
     public childRanges: QueryList<BulletRangeCollectionDirective>;
     public tags: string[] = ['ranges'];
-    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

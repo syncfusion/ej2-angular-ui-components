@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class SelectedDataIndexDirective extends ComplexBase<SelectedDataIndexDirective> {
     public directivePropList: any;
+	
 
 
     /** 

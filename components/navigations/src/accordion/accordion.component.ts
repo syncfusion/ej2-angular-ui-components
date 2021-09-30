@@ -28,9 +28,14 @@ export const twoWays: string[] = ['expandedIndices'];
 export class AccordionComponent extends Accordion implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	clicked: any;
+	created: any;
+	destroyed: any;
+	expanded: any;
+	expanding: any;
+	public expandedIndicesChange: any;
     public childItems: QueryList<AccordionItemsDirective>;
     public tags: string[] = ['items'];
-    public expandedIndicesChange: any;
     /** 
      * Specifies the header title template option for accordion items.
      * @default null

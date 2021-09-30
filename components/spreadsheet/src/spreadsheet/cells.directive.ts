@@ -36,6 +36,7 @@ let outputs: string[] = [];
 })
 export class CellDirective extends ComplexBase<CellDirective> {
     public directivePropList: any;
+	
     public childImage: any;
     public childChart: any;
     public tags: string[] = ['image', 'chart'];

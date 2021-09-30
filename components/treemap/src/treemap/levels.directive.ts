@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class LevelDirective extends ComplexBase<LevelDirective> {
     public directivePropList: any;
+	
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 

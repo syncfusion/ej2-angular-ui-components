@@ -37,9 +37,18 @@ export class ColorPickerComponent extends ColorPicker implements IComponentBase 
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	beforeClose: any;
+	beforeModeSwitch: any;
+	beforeOpen: any;
+	beforeTileRender: any;
+	change: any;
+	created: any;
+	onModeSwitch: any;
+	open: any;
+	select: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
 
     public focus: any;
     public blur: any;

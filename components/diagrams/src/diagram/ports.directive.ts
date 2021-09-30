@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class PortDirective extends ComplexBase<PortDirective> {
     public directivePropList: any;
+	
 
 
     /** 

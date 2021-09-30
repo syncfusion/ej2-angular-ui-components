@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class DefinedNameDirective extends ComplexBase<DefinedNameDirective> {
     public directivePropList: any;
+	
 
 
     /** 

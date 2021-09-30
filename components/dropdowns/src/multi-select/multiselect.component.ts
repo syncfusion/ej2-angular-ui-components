@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['actionFailureTemplate','allowCustomValue','allowFiltering','changeOnBlur','closePopupOnSelect','cssClass','dataSource','delimiterChar','enableGroupCheckBox','enableHtmlSanitizer','enablePersistence','enableRtl','enableSelectionOrder','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','hideSelectedItem','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','maximumSelectionLength','mode','noRecordsTemplate','openOnClick','placeholder','popupHeight','popupWidth','query','readonly','selectAllText','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','unSelectAllText','value','valueTemplate','width','zIndex'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','chipSelection','close','created','customValueSelection','dataBound','destroyed','filtering','focus','open','removed','removing','select','selectedAll','tagging','valueChange'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','beforeSelectAll','blur','change','chipSelection','close','created','customValueSelection','dataBound','destroyed','filtering','focus','open','removed','removing','select','selectedAll','tagging','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -37,9 +37,30 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	beforeOpen: any;
+	beforeSelectAll: any;
+	blur: any;
+	change: any;
+	chipSelection: any;
+	close: any;
+	created: any;
+	customValueSelection: any;
+	dataBound: any;
+	destroyed: any;
+	filtering: any;
+	focus: any;
+	open: any;
+	removed: any;
+	removing: any;
+	select: any;
+	selectedAll: any;
+	tagging: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
     /** 
      * Accepts the template design and assigns it to the footer container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.

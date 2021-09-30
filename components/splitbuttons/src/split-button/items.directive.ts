@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class SplitButtonItemDirective extends ComplexBase<SplitButtonItemDirective> {
     public directivePropList: any;
+	
 
 
     /** 

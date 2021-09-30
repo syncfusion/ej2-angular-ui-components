@@ -28,7 +28,10 @@ export const twoWays: string[] = [''];
 export class ListViewComponent extends ListView implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	public select: any;
 
 
     /** 

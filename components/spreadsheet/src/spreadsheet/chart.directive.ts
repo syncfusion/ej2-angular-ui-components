@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class ChartDirective extends ComplexBase<ChartDirective> {
     public directivePropList: any;
+	
 
 
     /** 

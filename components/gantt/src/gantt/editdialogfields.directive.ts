@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class EditDialogFieldDirective extends ComplexBase<EditDialogFieldDirective> {
     public directivePropList: any;
+	
 
 
     /** 

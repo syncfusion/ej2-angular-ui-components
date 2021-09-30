@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class HolidayDirective extends ComplexBase<HolidayDirective> {
     public directivePropList: any;
+	
 
 
     /** 

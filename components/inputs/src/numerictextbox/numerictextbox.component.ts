@@ -37,9 +37,14 @@ export class NumericTextBoxComponent extends NumericTextBox implements IComponen
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	blur: any;
+	change: any;
+	created: any;
+	destroyed: any;
+	focus: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {

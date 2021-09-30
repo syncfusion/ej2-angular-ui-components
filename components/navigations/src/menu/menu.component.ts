@@ -28,9 +28,15 @@ export const twoWays: string[] = [''];
 export class MenuComponent extends Menu implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforeClose: any;
+	beforeItemRender: any;
+	beforeOpen: any;
+	created: any;
+	onClose: any;
+	onOpen: any;
+	public select: any;
     public childItems: QueryList<MenuItemsDirective>;
     public tags: string[] = ['items'];
-
     /** 
      * Specifies the template for Menu item.
      * @default null

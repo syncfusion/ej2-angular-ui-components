@@ -27,6 +27,7 @@ let outputs: string[] = ['click'];
 })
 export class ButtonModelPropDirective extends ComplexBase<ButtonModelPropDirective> {
     public directivePropList: any;
+	public click: any;
 
 
     /** 

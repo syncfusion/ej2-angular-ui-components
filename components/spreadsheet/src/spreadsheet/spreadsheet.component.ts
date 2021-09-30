@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetIndex','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','autoFillSettings','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showFormulaBar','showRibbon','showSheetTabs','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','queryCellInfo','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
@@ -30,10 +30,43 @@ export const twoWays: string[] = [''];
 export class SpreadsheetComponent extends Spreadsheet implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	afterHyperlinkClick: any;
+	afterHyperlinkCreate: any;
+	beforeCellFormat: any;
+	beforeCellRender: any;
+	beforeCellSave: any;
+	beforeConditionalFormat: any;
+	beforeDataBound: any;
+	beforeHyperlinkClick: any;
+	beforeHyperlinkCreate: any;
+	beforeOpen: any;
+	beforeSave: any;
+	beforeSelect: any;
+	beforeSort: any;
+	cellEdit: any;
+	cellEditing: any;
+	cellSave: any;
+	contextMenuBeforeClose: any;
+	contextMenuBeforeOpen: any;
+	contextMenuItemSelect: any;
+	created: any;
+	dataBound: any;
+	dataSourceChanged: any;
+	dialogBeforeOpen: any;
+	fileMenuBeforeClose: any;
+	fileMenuBeforeOpen: any;
+	fileMenuItemSelect: any;
+	openComplete: any;
+	openFailure: any;
+	queryCellInfo: any;
+	saveComplete: any;
+	select: any;
+	public sortComplete: any;
     public childSheets: QueryList<SheetsDirective>;
     public childDefinedNames: QueryList<DefinedNamesDirective>;
     public tags: string[] = ['sheets', 'definedNames'];
-
     @ContentChild('template')
     @Template()
     public template: any;

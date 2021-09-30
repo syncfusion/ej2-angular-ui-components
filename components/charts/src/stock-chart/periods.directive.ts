@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class StockChartPeriodDirective extends ComplexBase<StockChartPeriodDirective> {
     public directivePropList: any;
+	
 
 
     /** 

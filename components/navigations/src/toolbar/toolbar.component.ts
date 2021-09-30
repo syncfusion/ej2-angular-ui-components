@@ -28,9 +28,12 @@ export const twoWays: string[] = [''];
 export class ToolbarComponent extends Toolbar implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	beforeCreate: any;
+	clicked: any;
+	created: any;
+	public destroyed: any;
     public childItems: QueryList<ItemsDirective>;
     public tags: string[] = ['items'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

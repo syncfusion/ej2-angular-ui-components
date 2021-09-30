@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesDirective> {
     public directivePropList: any;
+	
 
 
     /** 

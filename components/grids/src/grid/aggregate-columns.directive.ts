@@ -33,6 +33,7 @@ let outputs: string[] = [];
 })
 export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirective> {
     public directivePropList: any;
+	
 
 
     /** 

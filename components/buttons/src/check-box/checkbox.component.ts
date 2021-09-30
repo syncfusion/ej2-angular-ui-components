@@ -37,10 +37,12 @@ export class CheckBoxComponent extends CheckBox implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	change: any;
+	created: any;
+	checkedChange: any;
+	public indeterminateChange: any;
 
 
-    public checkedChange: any;
-    public indeterminateChange: any;
 
     public focus: any;
     public blur: any;

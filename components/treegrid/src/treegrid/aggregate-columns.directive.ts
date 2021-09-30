@@ -33,6 +33,7 @@ let outputs: string[] = [];
 })
 export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -77,7 +78,6 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * [`number`](../../../common/internationalization/#supported-format-string) 
      * and [`date`](../../../common/internationalization/#supported-format-string-1) formats.
      * @asptype string
-     * @blazortype string
      * @default null
      */
     public format: any;

@@ -30,6 +30,7 @@ let outputs: string[] = [];
 })
 export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -41,7 +42,6 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
      * Sets and gets the value from where the range color-mapping starts.
      * @aspdefaultvalueignore 
      * @default null
-     * @isblazornullabletype true
      */
     public from: any;
     /** 
@@ -68,7 +68,6 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
      * Sets and gets the value to where the range color-mapping ends.
      * @aspdefaultvalueignore 
      * @default null
-     * @isblazornullabletype true
      */
     public to: any;
     /** 

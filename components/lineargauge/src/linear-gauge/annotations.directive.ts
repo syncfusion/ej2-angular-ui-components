@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -31,7 +32,6 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * Sets and gets the value of axis in linear gauge.
      * @aspdefaultvalueignore 
-     * @blazordefaultvalue null
      */
     public axisValue: any;
     /** 

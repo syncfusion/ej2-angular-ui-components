@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class PresetDirective extends ComplexBase<PresetDirective> {
     public directivePropList: any;
+	
 
 
     /** 

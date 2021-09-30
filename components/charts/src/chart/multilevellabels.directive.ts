@@ -25,6 +25,7 @@ let outputs: string[] = [];
 })
 export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirective> {
     public directivePropList: any;
+	
     public childCategories: any;
     public tags: string[] = ['categories'];
     /** 

@@ -25,6 +25,7 @@ let outputs: string[] = [];
 })
 export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     public directivePropList: any;
+	
     public childFixedUserHandles: any;
     public childAnnotations: any;
     public tags: string[] = ['fixedUserHandles', 'annotations'];

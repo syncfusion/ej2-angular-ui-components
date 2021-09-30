@@ -28,7 +28,7 @@ export const twoWays: string[] = [];
 export class RecurrenceEditorComponent extends RecurrenceEditor implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	public change: any;
 
 
 

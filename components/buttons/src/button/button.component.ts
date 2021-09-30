@@ -28,7 +28,7 @@ export const twoWays: string[] = [];
 export class ButtonComponent extends Button implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
-
+	public created: any;
 
 
 

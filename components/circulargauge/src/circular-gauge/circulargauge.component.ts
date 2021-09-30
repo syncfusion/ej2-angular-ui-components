@@ -28,9 +28,25 @@ export const twoWays: string[] = [''];
 export class CircularGaugeComponent extends CircularGauge implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	animationComplete: any;
+	annotationRender: any;
+	axisLabelRender: any;
+	beforePrint: any;
+	dragEnd: any;
+	dragMove: any;
+	dragStart: any;
+	gaugeMouseDown: any;
+	gaugeMouseLeave: any;
+	gaugeMouseMove: any;
+	gaugeMouseUp: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	radiusCalculate: any;
+	resized: any;
+	public tooltipRender: any;
     public childAxes: QueryList<AxesDirective>;
     public tags: string[] = ['axes'];
-
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

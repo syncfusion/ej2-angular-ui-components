@@ -28,9 +28,10 @@ export const twoWays: string[] = [''];
 export class SymbolPaletteComponent extends SymbolPalette implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	paletteExpanding: any;
+	public paletteSelectionChange: any;
     public childPalettes: QueryList<PalettesDirective>;
     public tags: string[] = ['palettes'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

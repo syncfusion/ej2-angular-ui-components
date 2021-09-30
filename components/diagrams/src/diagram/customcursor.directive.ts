@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class CustomCursorDirective extends ComplexBase<CustomCursorDirective> {
     public directivePropList: any;
+	
 
 
     /** 

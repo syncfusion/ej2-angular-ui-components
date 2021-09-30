@@ -6,7 +6,7 @@ import { ColumnsDirective } from './columns.directive';
 import { RangesDirective } from './ranges.directive';
 import { ConditionalFormatsDirective } from './conditionalformats.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'password', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -33,6 +33,7 @@ let outputs: string[] = [];
 })
 export class SheetDirective extends ComplexBase<SheetDirective> {
     public directivePropList: any;
+	
     public childRows: any;
     public childColumns: any;
     public childRanges: any;
@@ -51,7 +52,7 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
     public colCount: any;
     /** 
      * Configures column and its properties for the sheet.
-     * @default []
+     * @default null
      */
     public columns: any;
     /** 
@@ -93,6 +94,11 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      */
     public paneTopLeftCell: any;
     /** 
+     * Specifies the password.
+     * @default ''
+     */
+    public password: any;
+    /** 
      * Configures protect and its options.
      * @default { selectCells: false, formatCells: false, formatRows: false, formatColumns: false, insertLink: false  }
      */
@@ -110,7 +116,7 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
     public rowCount: any;
     /** 
      * Configures row and its properties for the sheet.
-     * @default []
+     * @default null
      */
     public rows: any;
     /** 

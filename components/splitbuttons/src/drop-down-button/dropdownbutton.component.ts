@@ -28,9 +28,15 @@ export const twoWays: string[] = [];
 export class DropDownButtonComponent extends DropDownButton implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	beforeClose: any;
+	beforeItemRender: any;
+	beforeOpen: any;
+	close: any;
+	created: any;
+	open: any;
+	public select: any;
     public childItems: QueryList<DropDownButtonItemsDirective>;
     public tags: string[] = ['items'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

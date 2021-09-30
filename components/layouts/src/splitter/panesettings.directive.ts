@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class PaneDirective extends ComplexBase<PaneDirective> {
     public directivePropList: any;
+	
 
 
     /** 

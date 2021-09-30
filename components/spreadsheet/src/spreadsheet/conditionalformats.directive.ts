@@ -30,6 +30,7 @@ let outputs: string[] = [];
 })
 export class ConditionalFormatDirective extends ComplexBase<ConditionalFormatDirective> {
     public directivePropList: any;
+	
 
 
     /** 

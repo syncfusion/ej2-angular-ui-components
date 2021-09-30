@@ -28,9 +28,23 @@ export const twoWays: string[] = ['visible'];
 export class DialogComponent extends Dialog implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	beforeClose: any;
+	beforeOpen: any;
+	beforeSanitizeHtml: any;
+	close: any;
+	created: any;
+	destroyed: any;
+	drag: any;
+	dragStart: any;
+	dragStop: any;
+	open: any;
+	overlayClick: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
+	public visibleChange: any;
     public childButtons: QueryList<ButtonsDirective>;
     public tags: string[] = ['buttons'];
-    public visibleChange: any;
     /** 
      * Specifies the template value that can be displayed with dialog's footer area. 
      * This is optional property and can be used only when the footer is occupied with information or custom components. 

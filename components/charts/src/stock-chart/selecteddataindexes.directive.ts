@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class StockChartSelectedDataIndexDirective extends ComplexBase<StockChartSelectedDataIndexDirective> {
     public directivePropList: any;
+	
 
 
     /** 

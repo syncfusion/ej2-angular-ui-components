@@ -28,9 +28,9 @@ export const twoWays: string[] = [''];
 export class OverviewComponent extends Overview implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	public created: any;
 
     public tags: string[] = [''];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

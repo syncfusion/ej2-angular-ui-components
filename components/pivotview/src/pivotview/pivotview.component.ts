@@ -28,7 +28,44 @@ export const twoWays: string[] = [];
 export class PivotViewComponent extends PivotView implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	aggregateCellInfo: any;
+	aggregateMenuOpen: any;
+	beforeExport: any;
+	beforeServiceInvoke: any;
+	beginDrillThrough: any;
+	calculatedFieldCreate: any;
+	cellClick: any;
+	cellSelected: any;
+	cellSelecting: any;
+	chartSeriesCreated: any;
+	conditionalFormatting: any;
+	created: any;
+	dataBound: any;
+	destroyed: any;
+	drill: any;
+	drillThrough: any;
+	editCompleted: any;
+	enginePopulated: any;
+	enginePopulating: any;
+	fetchReport: any;
+	fieldDragStart: any;
+	fieldDrop: any;
+	fieldListRefreshed: any;
+	fieldRemove: any;
+	hyperlinkCellClick: any;
+	load: any;
+	loadReport: any;
+	memberEditorOpen: any;
+	memberFiltering: any;
+	newReport: any;
+	numberFormatting: any;
+	onFieldDropped: any;
+	onPdfCellRender: any;
+	removeReport: any;
+	renameReport: any;
+	saveReport: any;
+	toolbarClick: any;
+	public toolbarRender: any;
 
 
     /** 

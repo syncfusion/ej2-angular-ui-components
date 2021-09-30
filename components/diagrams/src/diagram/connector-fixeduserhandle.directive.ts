@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixedUserHandleDirective> {
     public directivePropList: any;
+	
 
 
     /** 

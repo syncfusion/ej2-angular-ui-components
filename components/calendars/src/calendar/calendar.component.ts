@@ -37,10 +37,15 @@ export class CalendarComponent extends Calendar implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	change: any;
+	created: any;
+	destroyed: any;
+	navigated: any;
+	renderDayCell: any;
+	valueChange: any;
+	public valuesChange: any;
 
 
-    public valueChange: any;
-    public valuesChange: any;
 
     public focus: any;
     public blur: any;

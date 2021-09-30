@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class MarkerDirective extends ComplexBase<MarkerDirective> {
     public directivePropList: any;
+	
 
 
     /** 

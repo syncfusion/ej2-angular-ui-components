@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class ImageDirective extends ComplexBase<ImageDirective> {
     public directivePropList: any;
+	
 
 
     /** 

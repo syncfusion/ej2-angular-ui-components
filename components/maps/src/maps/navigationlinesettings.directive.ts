@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class NavigationLineDirective extends ComplexBase<NavigationLineDirective> {
     public directivePropList: any;
+	
 
 
     /** 

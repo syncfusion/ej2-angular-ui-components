@@ -4,7 +4,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { TrendlinesDirective } from './trendlines.directive';
 import { SegmentsDirective } from './segments.directive';
 
-let input: string[] = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnSpacing', 'columnWidth', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+let input: string[] = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'high', 'intermediateSumIndexes', 'isClosed', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -25,6 +25,7 @@ let outputs: string[] = [];
 })
 export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public directivePropList: any;
+	
     public childTrendlines: any;
     public childSegments: any;
     public tags: string[] = ['trendlines', 'segments'];
@@ -123,6 +124,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * @blazordefaultvalue Double.NaN
      */
     public columnWidth: any;
+    /** 
+     * To render the column series points with particular column width as pixel.
+     * @default null
+     * @aspdefaultvalueignore 
+     * @blazordefaultvalue Double.NaN
+     */
+    public columnWidthInPixel: any;
     /** 
      * Defines the appearance of line connecting adjacent points in waterfall charts.
      */

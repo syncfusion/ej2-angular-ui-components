@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class PointerDirective extends ComplexBase<PointerDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -104,7 +105,6 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
     public roundedCornerRadius: any;
     /** 
      * Sets and gets the value of the pointer in axis.
-     * @blazordefaultvalue 0
      * @default null
      */
     public value: any;

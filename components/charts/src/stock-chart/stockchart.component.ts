@@ -42,6 +42,25 @@ export const twoWays: string[] = ['dataSource'];
 export class StockChartComponent extends StockChart implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	axisLabelRender: any;
+	legendClick: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	onZooming: any;
+	pointClick: any;
+	pointMove: any;
+	rangeChange: any;
+	selectorRender: any;
+	seriesRender: any;
+	stockChartMouseClick: any;
+	stockChartMouseDown: any;
+	stockChartMouseLeave: any;
+	stockChartMouseMove: any;
+	stockChartMouseUp: any;
+	stockEventRender: any;
+	tooltipRender: any;
+	public dataSourceChange: any;
     public childSeries: QueryList<StockChartSeriesCollectionDirective>;
     public childAxes: QueryList<StockChartAxesDirective>;
     public childRows: QueryList<StockChartRowsDirective>;
@@ -51,7 +70,6 @@ export class StockChartComponent extends StockChart implements IComponentBase {
     public childStockEvents: QueryList<StockEventsDirective>;
     public childIndicators: QueryList<StockChartIndicatorsDirective>;
     public tags: string[] = ['series', 'axes', 'rows', 'annotations', 'selectedDataIndexes', 'periods', 'stockEvents', 'indicators'];
-    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

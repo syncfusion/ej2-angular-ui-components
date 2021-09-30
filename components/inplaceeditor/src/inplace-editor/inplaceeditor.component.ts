@@ -37,9 +37,21 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionFailure: any;
+	actionSuccess: any;
+	beforeSanitizeHtml: any;
+	beginEdit: any;
+	cancelClick: any;
+	change: any;
+	created: any;
+	destroyed: any;
+	endEdit: any;
+	submitClick: any;
+	validating: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
     /** 
      * Specifies the HTML element ID as a string that can be added as a editable field.
      * 

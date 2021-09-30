@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSeriesDirective> {
     public directivePropList: any;
+	
 
 
     /** 

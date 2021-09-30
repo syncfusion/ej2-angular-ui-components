@@ -28,7 +28,22 @@ export const twoWays: string[] = [];
 export class PivotFieldListComponent extends PivotFieldList implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	aggregateCellInfo: any;
+	aggregateMenuOpen: any;
+	beforeServiceInvoke: any;
+	calculatedFieldCreate: any;
+	created: any;
+	dataBound: any;
+	destroyed: any;
+	enginePopulated: any;
+	enginePopulating: any;
+	fieldDragStart: any;
+	fieldDrop: any;
+	fieldRemove: any;
+	load: any;
+	memberEditorOpen: any;
+	memberFiltering: any;
+	public onFieldDropped: any;
 
 
 

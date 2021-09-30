@@ -4,7 +4,7 @@ import { PdfViewer } from '@syncfusion/ej2-pdfviewer';
 
 
 
-export const inputs: string[] = ['DropdownFieldSettings','ajaxRequestSettings','annotationSelectorSettings','annotationSettings','annotations','areaSettings','arrowSettings','checkBoxFieldSettings','circleSettings','contextMenuOption','contextMenuSettings','currentPageNumber','customStamp','customStampSettings','dateTimeFormat','designerMode','disableContextMenuItems','distanceSettings','documentPath','downloadFileName','drawingObject','enableAnnotation','enableAnnotationToolbar','enableAutoComplete','enableBookmark','enableBookmarkStyles','enableCommentPanel','enableDesktopMode','enableDownload','enableFormDesigner','enableFormDesignerToolbar','enableFormFields','enableFormFieldsValidation','enableFreeText','enableHandwrittenSignature','enableHyperlink','enableImportAnnotationMeasurement','enableInkAnnotation','enableMagnification','enableMeasureAnnotation','enableMultiLineOverlap','enableMultiPageAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enableRtl','enableShapeAnnotation','enableShapeLabel','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextMarkupResizer','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','enableZoomOptimization','exportAnnotationFileName','formFieldCollections','formFields','freeTextSettings','handWrittenSignatureSettings','height','hideSaveSignature','highlightSettings','hyperlinkOpenState','initialDialogSettings','initialFieldSettings','inkAnnotationSettings','interactionMode','isAnnotationToolbarOpen','isAnnotationToolbarVisible','isBookmarkPanelOpen','isCommandPanelOpen','isDocumentEdited','isExtractText','isFormDesignerToolbarVisible','isFormFieldDocument','isInitialFieldToolbarSelection','isMaintainSelection','isSignatureEditable','isThumbnailViewOpen','isValidFreeText','lineSettings','listBoxFieldSettings','locale','measurementSettings','pageCount','passwordFieldSettings','perimeterSettings','polygonSettings','printMode','radioButtonFieldSettings','radiusSettings','rectangleSettings','restrictZoomRequest','retryCount','scrollSettings','selectedItems','serverActionSettings','serviceUrl','shapeLabelSettings','showNotificationDialog','signatureDialogSettings','signatureFieldSettings','signatureFitMode','stampSettings','stickyNotesSettings','strikethroughSettings','textFieldSettings','textSearchColorSettings','tileRenderingSettings','toolbarSettings','underlineSettings','volumeSettings','width','zoomMode','zoomValue'];
+export const inputs: string[] = ['DropdownFieldSettings','ajaxRequestSettings','annotationSelectorSettings','annotationSettings','annotations','areaSettings','arrowSettings','checkBoxFieldSettings','circleSettings','contextMenuOption','contextMenuSettings','currentPageNumber','customStamp','customStampSettings','dateTimeFormat','designerMode','disableContextMenuItems','distanceSettings','documentPath','downloadFileName','drawingObject','enableAnnotation','enableAnnotationToolbar','enableAutoComplete','enableBookmark','enableBookmarkStyles','enableCommentPanel','enableDesktopMode','enableDownload','enableFormDesigner','enableFormDesignerToolbar','enableFormFields','enableFormFieldsValidation','enableFreeText','enableHandwrittenSignature','enableHyperlink','enableImportAnnotationMeasurement','enableInkAnnotation','enableMagnification','enableMeasureAnnotation','enableMultiLineOverlap','enableMultiPageAnnotation','enableNavigation','enableNavigationToolbar','enablePersistence','enablePinchZoom','enablePrint','enablePrintRotation','enableRtl','enableShapeAnnotation','enableShapeLabel','enableStampAnnotations','enableStickyNotesAnnotation','enableTextMarkupAnnotation','enableTextMarkupResizer','enableTextSearch','enableTextSelection','enableThumbnail','enableToolbar','enableZoomOptimization','exportAnnotationFileName','formFieldCollections','formFields','freeTextSettings','handWrittenSignatureSettings','height','hideSaveSignature','highlightSettings','hyperlinkOpenState','initialDialogSettings','initialFieldSettings','inkAnnotationSettings','interactionMode','isAnnotationToolbarOpen','isAnnotationToolbarVisible','isBookmarkPanelOpen','isCommandPanelOpen','isDocumentEdited','isExtractText','isFormDesignerToolbarVisible','isFormFieldDocument','isInitialFieldToolbarSelection','isMaintainSelection','isSignatureEditable','isThumbnailViewOpen','isValidFreeText','lineSettings','listBoxFieldSettings','locale','measurementSettings','pageCount','passwordFieldSettings','perimeterSettings','polygonSettings','printMode','radioButtonFieldSettings','radiusSettings','rectangleSettings','restrictZoomRequest','retryCount','scrollSettings','selectedItems','serverActionSettings','serviceUrl','shapeLabelSettings','showNotificationDialog','signatureDialogSettings','signatureFieldSettings','signatureFitMode','stampSettings','stickyNotesSettings','strikethroughSettings','textFieldSettings','textSearchColorSettings','tileRenderingSettings','toolbarSettings','underlineSettings','volumeSettings','width','zoomMode','zoomValue'];
 export const outputs: string[] = ['addSignature','ajaxRequestFailed','ajaxRequestInitiate','ajaxRequestSuccess','annotationAdd','annotationDoubleClick','annotationMouseLeave','annotationMouseover','annotationMove','annotationPropertiesChange','annotationRemove','annotationResize','annotationSelect','annotationUnSelect','beforeAddFreeText','bookmarkClick','buttonFieldClick','commentAdd','commentDelete','commentEdit','commentSelect','commentStatusChanged','created','documentLoad','documentLoadFailed','documentUnload','downloadEnd','downloadStart','exportFailed','exportStart','exportSuccess','extractTextCompleted','formFieldAdd','formFieldClick','formFieldDoubleClick','formFieldFocusOut','formFieldMouseLeave','formFieldMouseover','formFieldMove','formFieldPropertiesChange','formFieldRemove','formFieldResize','formFieldSelect','formFieldUnselect','hyperlinkClick','hyperlinkMouseOver','importFailed','importStart','importSuccess','moveSignature','pageChange','pageClick','pageMouseover','printEnd','printStart','removeSignature','resizeSignature','signaturePropertiesChange','signatureSelect','textSearchComplete','textSearchHighlight','textSearchStart','textSelectionEnd','textSelectionStart','thumbnailClick','validateFormFields','zoomChange'];
 export const twoWays: string[] = [];
 
@@ -28,7 +28,73 @@ export const twoWays: string[] = [];
 export class PdfViewerComponent extends PdfViewer implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	addSignature: any;
+	ajaxRequestFailed: any;
+	ajaxRequestInitiate: any;
+	ajaxRequestSuccess: any;
+	annotationAdd: any;
+	annotationDoubleClick: any;
+	annotationMouseLeave: any;
+	annotationMouseover: any;
+	annotationMove: any;
+	annotationPropertiesChange: any;
+	annotationRemove: any;
+	annotationResize: any;
+	annotationSelect: any;
+	annotationUnSelect: any;
+	beforeAddFreeText: any;
+	bookmarkClick: any;
+	buttonFieldClick: any;
+	commentAdd: any;
+	commentDelete: any;
+	commentEdit: any;
+	commentSelect: any;
+	commentStatusChanged: any;
+	created: any;
+	documentLoad: any;
+	documentLoadFailed: any;
+	documentUnload: any;
+	downloadEnd: any;
+	downloadStart: any;
+	exportFailed: any;
+	exportStart: any;
+	exportSuccess: any;
+	extractTextCompleted: any;
+	formFieldAdd: any;
+	formFieldClick: any;
+	formFieldDoubleClick: any;
+	formFieldFocusOut: any;
+	formFieldMouseLeave: any;
+	formFieldMouseover: any;
+	formFieldMove: any;
+	formFieldPropertiesChange: any;
+	formFieldRemove: any;
+	formFieldResize: any;
+	formFieldSelect: any;
+	formFieldUnselect: any;
+	hyperlinkClick: any;
+	hyperlinkMouseOver: any;
+	importFailed: any;
+	importStart: any;
+	importSuccess: any;
+	moveSignature: any;
+	pageChange: any;
+	pageClick: any;
+	pageMouseover: any;
+	printEnd: any;
+	printStart: any;
+	removeSignature: any;
+	resizeSignature: any;
+	signaturePropertiesChange: any;
+	signatureSelect: any;
+	textSearchComplete: any;
+	textSearchHighlight: any;
+	textSearchStart: any;
+	textSelectionEnd: any;
+	textSelectionStart: any;
+	thumbnailClick: any;
+	validateFormFields: any;
+	public zoomChange: any;
 
 
 

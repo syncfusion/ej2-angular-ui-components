@@ -28,9 +28,26 @@ export const twoWays: string[] = [''];
 export class TreeMapComponent extends TreeMap implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforePrint: any;
+	click: any;
+	doubleClick: any;
+	drillEnd: any;
+	drillStart: any;
+	itemClick: any;
+	itemHighlight: any;
+	itemMove: any;
+	itemRendering: any;
+	itemSelected: any;
+	legendItemRendering: any;
+	legendRendering: any;
+	load: any;
+	loaded: any;
+	mouseMove: any;
+	resize: any;
+	rightClick: any;
+	public tooltipRendering: any;
     public childLevels: QueryList<LevelsDirective>;
     public tags: string[] = ['levels'];
-
     @ContentChild('tooltipSettingsTemplate')
     @Template()
     public tooltipSettings_template: any;

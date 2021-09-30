@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class CategoryDirective extends ComplexBase<CategoryDirective> {
     public directivePropList: any;
+	
 
 
     /** 

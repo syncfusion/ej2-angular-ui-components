@@ -28,9 +28,17 @@ export const twoWays: string[] = ['dataSource'];
 export class RangeNavigatorComponent extends RangeNavigator implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforePrint: any;
+	changed: any;
+	labelRender: any;
+	load: any;
+	loaded: any;
+	resized: any;
+	selectorRender: any;
+	tooltipRender: any;
+	public dataSourceChange: any;
     public childSeries: QueryList<RangenavigatorSeriesCollectionDirective>;
     public tags: string[] = ['series'];
-    public dataSourceChange: any;
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;

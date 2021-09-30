@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -26,7 +27,6 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
     /** 
      * Sets and gets the value from which the range of color mapping starts.
      * @default null
-     * @isblazornullabletype true
      */
     public from: any;
     /** 
@@ -52,7 +52,6 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
     /** 
      * Sets and gets the value to which the range of color mapping ends.
      * @default null
-     * @isblazornullabletype true
      */
     public to: any;
     /** 

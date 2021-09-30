@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirective> {
     public directivePropList: any;
+	
 
 
     /** 

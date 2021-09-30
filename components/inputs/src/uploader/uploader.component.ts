@@ -37,9 +37,28 @@ export class UploaderComponent extends Uploader implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionComplete: any;
+	beforeRemove: any;
+	beforeUpload: any;
+	canceling: any;
+	change: any;
+	chunkFailure: any;
+	chunkSuccess: any;
+	chunkUploading: any;
+	clearing: any;
+	created: any;
+	failure: any;
+	fileListRendering: any;
+	pausing: any;
+	progress: any;
+	removing: any;
+	rendering: any;
+	resuming: any;
+	selected: any;
+	success: any;
+	public uploading: any;
     public childFiles: any;
     public tags: string[] = ['files'];
-
     /** 
      * Specifies the HTML string that used to customize the content of each file in the list.
      * 

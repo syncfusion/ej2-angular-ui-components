@@ -28,9 +28,19 @@ export const twoWays: string[] = [''];
 export class SmithchartComponent extends Smithchart implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	animationComplete: any;
+	axisLabelRender: any;
+	beforePrint: any;
+	legendRender: any;
+	load: any;
+	loaded: any;
+	seriesRender: any;
+	subtitleRender: any;
+	textRender: any;
+	titleRender: any;
+	public tooltipRender: any;
     public childSeries: QueryList<SmithchartSeriesCollectionDirective>;
     public tags: string[] = ['series'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSelectionDirective> {
     public directivePropList: any;
+	
 
 
     /** 

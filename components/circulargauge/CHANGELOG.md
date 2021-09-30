@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 19.3.43 (2021-09-30)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#I340382` - The script size in the Circular Gauge has been reduced.
+
 ## 19.2.62 (2021-09-14)
 
 ### CircularGauge

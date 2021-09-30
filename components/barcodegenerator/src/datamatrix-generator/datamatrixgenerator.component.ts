@@ -28,7 +28,7 @@ export const twoWays: string[] = [''];
 export class DataMatrixGeneratorComponent extends DataMatrixGenerator implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	public invalid: any;
 
 
 

@@ -25,6 +25,7 @@ let outputs: string[] = [];
 })
 export class StripLineDirective extends ComplexBase<StripLineDirective> {
     public directivePropList: any;
+	
 
 
     /** 

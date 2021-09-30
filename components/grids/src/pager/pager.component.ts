@@ -28,7 +28,9 @@ export const twoWays: string[] = [];
 export class PagerComponent extends Pager implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	click: any;
+	created: any;
+	public dropDownChanged: any;
 
 
     /** 

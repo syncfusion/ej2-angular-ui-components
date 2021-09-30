@@ -28,7 +28,7 @@ export const twoWays: string[] = [''];
 export class BarcodeGeneratorComponent extends BarcodeGenerator implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	public invalid: any;
 
 
 

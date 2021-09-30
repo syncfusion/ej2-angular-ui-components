@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class ViewDirective extends ComplexBase<ViewDirective> {
     public directivePropList: any;
+	
 
 
     /** 
@@ -232,6 +233,15 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     @ContentChild('resourceHeaderTemplate')
     @Template()
     public resourceHeaderTemplate: any;
+    /** 
+     * The template option which is used to render the customized header indent cell on the schedule. Here, the 
+     *  template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the header indent cell. 
+     *  It gets applied only to the view objects on which it is defined.
+     * @default null
+     */
+    @ContentChild('headerIndentTemplate')
+    @Template()
+    public headerIndentTemplate: any;
     @ContentChild('timeScaleMinorSlotTemplate')
     @Template()
     public timeScale_minorSlotTemplate: any;

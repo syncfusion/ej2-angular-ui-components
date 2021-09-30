@@ -28,9 +28,14 @@ export const twoWays: string[] = ['isOpen'];
 export class SidebarComponent extends Sidebar implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	change: any;
+	close: any;
+	created: any;
+	destroyed: any;
+	open: any;
+	public isOpenChange: any;
 
 
-    public isOpenChange: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

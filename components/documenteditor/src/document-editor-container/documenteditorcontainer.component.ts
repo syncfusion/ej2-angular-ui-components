@@ -28,7 +28,20 @@ export const twoWays: string[] = [];
 export class DocumentEditorContainerComponent extends DocumentEditorContainer implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	beforeCommentAction: any;
+	beforePaneSwitch: any;
+	commentDelete: any;
+	contentChange: any;
+	contentControl: any;
+	created: any;
+	customContextMenuBeforeOpen: any;
+	customContextMenuSelect: any;
+	destroyed: any;
+	documentChange: any;
+	selectionChange: any;
+	serviceFailure: any;
+	toolbarClick: any;
+	public trackChange: any;
 
 
 

@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective> {
     public directivePropList: any;
+	
 
 
     /** 

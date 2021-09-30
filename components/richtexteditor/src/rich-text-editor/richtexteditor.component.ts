@@ -5,7 +5,7 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertImageSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterPasteCleanup','beforeDialogClose','beforeDialogOpen','beforeImageDrop','beforeImageUpload','beforePasteCleanup','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -37,9 +37,40 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	afterImageDelete: any;
+	afterPasteCleanup: any;
+	beforeDialogClose: any;
+	beforeDialogOpen: any;
+	beforeImageDrop: any;
+	beforeImageUpload: any;
+	beforePasteCleanup: any;
+	beforeQuickToolbarOpen: any;
+	beforeSanitizeHtml: any;
+	blur: any;
+	change: any;
+	created: any;
+	destroyed: any;
+	dialogClose: any;
+	dialogOpen: any;
+	focus: any;
+	imageRemoving: any;
+	imageSelected: any;
+	imageUploadFailed: any;
+	imageUploadSuccess: any;
+	imageUploading: any;
+	quickToolbarClose: any;
+	quickToolbarOpen: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
+	toolbarClick: any;
+	toolbarStatusUpdate: any;
+	updatedToolbarStatus: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
     /** 
      * Accepts the template design and assigns it as RichTextEditor’s content. 
      * The built-in template engine which provides options to compile template string into a executable function. 

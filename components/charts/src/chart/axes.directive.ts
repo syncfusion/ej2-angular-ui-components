@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
     public directivePropList: any;
+	
     public childStripLines: any;
     public childMultiLevelLabels: any;
     public tags: string[] = ['stripLines', 'multiLevelLabels'];

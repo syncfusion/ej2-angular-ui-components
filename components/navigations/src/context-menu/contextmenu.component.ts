@@ -29,7 +29,13 @@ export const twoWays: string[] = [''];
 export class ContextMenuComponent extends ContextMenu implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	beforeClose: any;
+	beforeItemRender: any;
+	beforeOpen: any;
+	created: any;
+	onClose: any;
+	onOpen: any;
+	public select: any;
 
 
 

@@ -29,6 +29,7 @@ let outputs: string[] = [];
 })
 export class LayerDirective extends ComplexBase<LayerDirective> {
     public directivePropList: any;
+	
     public childInitialShapeSelection: any;
     public childMarkerSettings: any;
     public childBubbleSettings: any;

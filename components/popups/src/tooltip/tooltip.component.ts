@@ -28,7 +28,14 @@ export const twoWays: string[] = [''];
 export class TooltipComponent extends Tooltip implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
-
+	afterClose: any;
+	afterOpen: any;
+	beforeClose: any;
+	beforeCollision: any;
+	beforeOpen: any;
+	beforeRender: any;
+	created: any;
+	public destroyed: any;
 
 
     /** 

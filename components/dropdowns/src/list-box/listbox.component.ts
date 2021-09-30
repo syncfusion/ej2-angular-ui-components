@@ -37,9 +37,23 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	beforeDrop: any;
+	beforeItemRender: any;
+	change: any;
+	created: any;
+	dataBound: any;
+	destroyed: any;
+	drag: any;
+	dragStart: any;
+	drop: any;
+	filtering: any;
+	select: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
     /** 
      * Accepts the template design and assigns it to each list item present in the popup. 
      * We have built-in `template engine`

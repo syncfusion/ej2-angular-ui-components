@@ -37,9 +37,24 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	beforeOpen: any;
+	blur: any;
+	change: any;
+	close: any;
+	created: any;
+	customValueSpecifier: any;
+	dataBound: any;
+	destroyed: any;
+	filtering: any;
+	focus: any;
+	open: any;
+	select: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
     /** 
      * Accepts the template design and assigns it to the footer container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../drop-down-list/templates) documentation.

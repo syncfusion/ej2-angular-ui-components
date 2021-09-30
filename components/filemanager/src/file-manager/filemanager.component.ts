@@ -28,7 +28,30 @@ export const twoWays: string[] = [''];
 export class FileManagerComponent extends FileManager implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	beforeDownload: any;
+	beforeImageLoad: any;
+	beforePopupClose: any;
+	beforePopupOpen: any;
+	beforeSend: any;
+	created: any;
+	destroyed: any;
+	failure: any;
+	fileDragStart: any;
+	fileDragStop: any;
+	fileDragging: any;
+	fileDropped: any;
+	fileLoad: any;
+	fileOpen: any;
+	fileSelect: any;
+	fileSelection: any;
+	menuClick: any;
+	menuOpen: any;
+	popupClose: any;
+	popupOpen: any;
+	success: any;
+	toolbarClick: any;
+	toolbarCreate: any;
+	public uploadListCreate: any;
 
 
 

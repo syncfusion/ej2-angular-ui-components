@@ -21,6 +21,7 @@ let outputs: string[] = [];
 })
 export class PointerDirective extends ComplexBase<PointerDirective> {
     public directivePropList: any;
+	
 
 
     /** 

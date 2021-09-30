@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
     public directivePropList: any;
+	
 
 
     /** 

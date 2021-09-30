@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class TabItemDirective extends ComplexBase<TabItemDirective> {
     public directivePropList: any;
+	
 
 
     /** 

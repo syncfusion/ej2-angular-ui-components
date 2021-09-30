@@ -28,7 +28,28 @@ export const twoWays: string[] = [''];
 export class TreeViewComponent extends TreeView implements IComponentBase {
     public context : any;
     public tagObjects: any;
-
+	actionFailure: any;
+	created: any;
+	dataBound: any;
+	dataSourceChanged: any;
+	destroyed: any;
+	drawNode: any;
+	keyPress: any;
+	nodeChecked: any;
+	nodeChecking: any;
+	nodeClicked: any;
+	nodeCollapsed: any;
+	nodeCollapsing: any;
+	nodeDragStart: any;
+	nodeDragStop: any;
+	nodeDragging: any;
+	nodeDropped: any;
+	nodeEdited: any;
+	nodeEditing: any;
+	nodeExpanded: any;
+	nodeExpanding: any;
+	nodeSelected: any;
+	public nodeSelecting: any;
 
 
     /** 

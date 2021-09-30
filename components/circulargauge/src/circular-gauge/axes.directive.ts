@@ -25,6 +25,7 @@ let outputs: string[] = [];
 })
 export class AxisDirective extends ComplexBase<AxisDirective> {
     public directivePropList: any;
+	
     public childAnnotations: any;
     public childRanges: any;
     public childPointers: any;

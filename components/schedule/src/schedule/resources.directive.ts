@@ -27,6 +27,7 @@ let outputs: string[] = [];
 })
 export class ResourceDirective extends ComplexBase<ResourceDirective> {
     public directivePropList: any;
+	
 
 
     /** 

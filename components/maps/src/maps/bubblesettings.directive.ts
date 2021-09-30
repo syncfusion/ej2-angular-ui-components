@@ -28,6 +28,7 @@ let outputs: string[] = [];
 })
 export class BubbleDirective extends ComplexBase<BubbleDirective> {
     public directivePropList: any;
+	
     public childColorMapping: any;
     public tags: string[] = ['colorMapping'];
     /** 

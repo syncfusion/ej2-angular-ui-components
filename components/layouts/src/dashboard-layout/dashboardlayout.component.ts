@@ -28,9 +28,17 @@ export const twoWays: string[] = [''];
 export class DashboardLayoutComponent extends DashboardLayout implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	change: any;
+	created: any;
+	destroyed: any;
+	drag: any;
+	dragStart: any;
+	dragStop: any;
+	resize: any;
+	resizeStart: any;
+	public resizeStop: any;
     public childPanels: QueryList<PanelsDirective>;
     public tags: string[] = ['panels'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

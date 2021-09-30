@@ -26,6 +26,7 @@ let outputs: string[] = [];
 })
 export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
     public directivePropList: any;
+	
 
 
     /** 

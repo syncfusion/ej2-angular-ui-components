@@ -6,7 +6,7 @@ import { ColumnsDirective } from './columns.directive';
 import { StackedHeadersDirective } from './stackedheaders.directive';
 
 export const inputs: string[] = ['allowDragAndDrop','allowKeyboard','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enablePersistence','enableRtl','enableTooltip','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','created','dataBinding','dataBound','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
 export const twoWays: string[] = [''];
 
 /**
@@ -30,10 +30,26 @@ export const twoWays: string[] = [''];
 export class KanbanComponent extends Kanban implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	actionBegin: any;
+	actionComplete: any;
+	actionFailure: any;
+	cardClick: any;
+	cardDoubleClick: any;
+	cardRendered: any;
+	created: any;
+	dataBinding: any;
+	dataBound: any;
+	dataSourceChanged: any;
+	dataStateChange: any;
+	dialogClose: any;
+	dialogOpen: any;
+	drag: any;
+	dragStart: any;
+	dragStop: any;
+	public queryCellInfo: any;
     public childColumns: QueryList<ColumnsDirective>;
     public childStackedHeaders: QueryList<StackedHeadersDirective>;
     public tags: string[] = ['columns', 'stackedHeaders'];
-
     /** 
      * Defines the template content to card’s tooltip. The property works by enabling the ‘enableTooltip’ property.
      * @default null

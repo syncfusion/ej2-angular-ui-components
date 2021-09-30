@@ -16,6 +16,7 @@ let outputs: string[] = [];
 })
 export class RangeBandSettingDirective extends ComplexBase<RangeBandSettingDirective> {
     public directivePropList: any;
+	
 
 
     /** 

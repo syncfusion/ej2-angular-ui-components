@@ -37,9 +37,15 @@ export class SliderComponent extends Slider implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	change: any;
+	changed: any;
+	created: any;
+	renderedTicks: any;
+	renderingTicks: any;
+	tooltipChange: any;
+	public valueChange: any;
 
 
-    public valueChange: any;
 
     public focus: any;
     public blur: any;
