@@ -2,72 +2,13 @@
 
 ## [Unreleased]
 
-## 19.3.43 (2021-09-30)
+## 19.3.44 (2021-10-05)
 
 ### Common
 
 #### Bug Fixes
 
-- `I336550` Resolved script error if Component not in the `DOM` while component rendering.
-
-## 19.2.59 (2021-08-31)
-
-### Common
-
-#### Bug Fixes
-
-- `I338378` Resolved get reference of `ElementRef` not accessible in complex directives.
-
-## 19.2.51 (2021-08-03)
-
-### Common
-
-#### Bug Fixes
-
-- `I334468` Resolved Form get `Dirty` while initial databinding.
-
-## 19.2.48 (2021-07-20)
-
-### Common
-
-#### Bug Fixes
-
-- `I331403,I334510` - Resolved `dynamic property` change not working for complex directives.
-- `I333399` - Resolved `dynamic property` change not working for `equal` length properties.
-
-## 19.1.66 (2021-06-01)
-
-### Common
-
-#### Bug Fixes
-
-- `I310815` - Resolved memory leak issue while using routing.
-
-## 19.1.65 (2021-05-25)
-
-### Common
-
-#### Bug Fixes
-
-- `I327789` - Resolved Angular 6 compatibility issue. 
-- `I325467` - Resolved script error when binding `async` data to the directive.
-
-## 19.1.64 (2021-05-19)
-
-### Common
-
-#### Bug Fixes
-
-- `I324729` - Increased `peerDependencies` version from `11.1.1` to `11.2.13`.
-
-## 19.1.58 (2021-04-27)
-
-### Common
-
-#### Bug Fixes
-
-- `I287376,I311253,F156542` - Provided support for `strict` mode compilation.
-
+- `I342446` - Increased `peerDependencies` version from `11.1.1` to `12.2.8`.
 
 ## 19.1.56 (2021-04-13)
 

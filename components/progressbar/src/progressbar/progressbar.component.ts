@@ -28,9 +28,19 @@ export const twoWays: string[] = [''];
 export class ProgressBarComponent extends ProgressBar implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	animationComplete: any;
+	load: any;
+	loaded: any;
+	mouseClick: any;
+	mouseDown: any;
+	mouseLeave: any;
+	mouseMove: any;
+	mouseUp: any;
+	progressCompleted: any;
+	textRender: any;
+	public valueChanged: any;
     public childAnnotations: QueryList<ProgressBarAnnotationsDirective>;
     public tags: string[] = ['annotations'];
-
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

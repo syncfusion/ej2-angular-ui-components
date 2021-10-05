@@ -5,7 +5,7 @@ import { DocumentEditor } from '@syncfusion/ej2-documenteditor';
 
 
 export const inputs: string[] = ['acceptTab','currentUser','defaultPasteOption','documentEditorSettings','documentName','enableBookmarkDialog','enableBordersAndShadingDialog','enableComment','enableContextMenu','enableCursorOnReadOnly','enableEditor','enableEditorHistory','enableFontDialog','enableFootnoteAndEndnoteDialog','enableFormField','enableHyperlinkDialog','enableImageResizer','enableListDialog','enableLocalPaste','enableLockAndEdit','enableOptionsPane','enablePageSetupDialog','enableParagraphDialog','enablePersistence','enablePrint','enableRtl','enableSearch','enableSelection','enableSfdtExport','enableSpellCheck','enableStyleDialog','enableTableDialog','enableTableOfContentsDialog','enableTableOptionsDialog','enableTablePropertiesDialog','enableTextExport','enableTrackChanges','enableWordExport','headers','height','isReadOnly','layoutType','locale','pageGap','pageOutline','serverActionSettings','serviceUrl','showComments','showRevisions','useCtrlClickToFollowHyperlink','userColor','width','zIndex','zoomFactor'];
-export const outputs: string[] = ['actionComplete','afterFormFieldFill','beforeCommentAction','beforeFileOpen','beforeFormFieldFill','beforePaneSwitch','commentBegin','commentDelete','commentEnd','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','keyDown','requestNavigate','searchResultsChange','selectionChange','serviceFailure','trackChange','viewChange','zoomFactorChange'];
+export const outputs: string[] = ['actionComplete','afterFormFieldFill','beforeCommentAction','beforeFileOpen','beforeFormFieldFill','beforePaneSwitch','commentBegin','commentDelete','commentEnd','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','keyDown','requestNavigate','searchResultsChange','selectionChange','serviceFailure','trackChange','viewChange','zoomFactorChange','beforeXmlHttpRequestSend'];
 export const twoWays: string[] = [];
 
 /**
@@ -51,7 +51,8 @@ export class DocumentEditorComponent extends DocumentEditor implements IComponen
 	serviceFailure: any;
 	trackChange: any;
 	viewChange: any;
-	public zoomFactorChange: any;
+	zoomFactorChange: any;
+	public beforeXmlHttpRequestSend: any;
 
 
 

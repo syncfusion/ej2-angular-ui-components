@@ -22,6 +22,7 @@ export function compile(templateEle: AngularElementType, helper?: Object):
             let conRef: ViewContainerRef = contRef ? contRef : component.viewContainerRef;
             let viewRef: EmbeddedViewRef<Object> = conRef.createEmbeddedView(templateEle as TemplateRef<Object>, context);
             viewRef.markForCheck();
+            viewRef.detectChanges();
             /* istanbul ignore next */
             let viewCollection: { [key: string]: EmbeddedViewRef<Object>[] } = (component && component.registeredTemplate) ?
                 component.registeredTemplate : getValue('currentInstance.registeredTemplate', conRef);

@@ -212,6 +212,9 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public formatter: any;
     /** 
      * Defines which side the column need to freeze
+     * @default Syncfusion.EJ2.Grids.FreezeDirection.None
+     * @isenumeration true
+     * @asptype Syncfusion.EJ2.Grids.FreezeDirection.None
      */
     public freeze: any;
     /** 

@@ -23,6 +23,7 @@ let outputs: string[] = [];
 })
 export class ProgressBarAnnotationDirective extends ComplexBase<ProgressBarAnnotationDirective> {
     public directivePropList: any;
+	
 
 
     /** 

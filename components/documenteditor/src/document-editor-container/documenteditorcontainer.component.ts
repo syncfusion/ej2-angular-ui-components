@@ -5,7 +5,7 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 export const inputs: string[] = ['currentUser','documentEditorSettings','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','headers','height','layoutType','locale','restrictEditing','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','userColor','width','zIndex'];
-export const outputs: string[] = ['beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange','serviceFailure','toolbarClick','trackChange'];
+export const outputs: string[] = ['beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
 export const twoWays: string[] = [];
 
 /**
@@ -41,7 +41,8 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer im
 	selectionChange: any;
 	serviceFailure: any;
 	toolbarClick: any;
-	public trackChange: any;
+	trackChange: any;
+	public beforeXmlHttpRequestSend: any;
 
 
 

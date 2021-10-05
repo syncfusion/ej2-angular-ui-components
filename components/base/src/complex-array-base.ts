@@ -57,7 +57,7 @@ export class ComplexBase<T> {
         if (this.directivePropList) {
         for (let k: number = 0; k < this.directivePropList.length; k++) {
             let dirPropName: string = this.directivePropList[k];
-            if (propList.indexOf(dirPropName) !== -1 && getValue(dirPropName, this)) {
+            if (propList.indexOf(dirPropName) !== -1  && getValue(dirPropName, this)) {
                 setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
             }
         }
@@ -207,7 +207,6 @@ export class ArrayBase<T> {
                     isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
                         JSON.stringify(childrenDataSource[i].propCollection.dataSource));
                 }
-                isSourceChanged = this.list[i].hasChanges !== childrenDataSource[i].hasChanges;
             }
         }
 
