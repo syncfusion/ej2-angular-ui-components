@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-navigations",
-	"version": "19.24.0",
+	"version": "19.3.44",
 	"description": "A package of Essential JS 2 navigation components such as Tree-view, Tab, Toolbar, Context-menu, and Accordion which is used to navigate from one page to another for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -85,6 +85,18 @@
 		"context menu",
 		"contextmenu",
 		"breadcrumb",
+		"breadcrumb navigation",
+		"breadcrumb trail",
+		"ej2 breadcrumb",
+		"navigation links",
+		"navigational aid",
+		"previous page navigation",
+		"current page hierarchy",
+		"current page location",
+		"path of url",
+		"trace page location",
+		"list of breadcrumb links",
+		"breadcrumb routing",
 		"ej2 contextmenu",
 		"tab-directive",
 		"toolbar-directive",
@@ -158,7 +170,8 @@
 		"ng-menu",
 		"angular menu",
 		"angular menubar",
-		"angular breadcrumb"
+		"angular breadcrumb",
+		"ng breadcrumb"
 	],
 	"repository": {
 		"type": "git",

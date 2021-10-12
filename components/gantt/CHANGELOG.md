@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.3.45 (2021-10-12)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#342557` - In fixed work type duration update issue has been fixed.
+- `#340406` - Misalignment while using line height property issue has been fixed.
+- `#310346` - Pdf export issue while changing date format has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.3.44 (2021-10-05)
 
 ### Gantt
@@ -10,9 +22,7 @@
 
 - `#304621, #322659` - Provided percentage support for height and width of Gantt element.
 
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#322659` - Provided percentage support for height and width of Gantt element.
 
 ## 19.2.62 (2021-09-14)
 

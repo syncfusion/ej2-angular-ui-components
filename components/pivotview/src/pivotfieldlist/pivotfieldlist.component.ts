@@ -51,6 +51,12 @@ export class PivotFieldListComponent extends PivotFieldList implements IComponen
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('PivotViewCalculatedField');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
