@@ -5,13 +5,14 @@
 
 ## [Unreleased]
 
-## 19.3.45 (2021-10-12)
+## 19.3.46 (2021-10-19)
 
 ### CircularGauge
 
 #### Bug Fixes
 
-- `#I340382` - The script size in the Circular Gauge has been reduced.
+- `I345167`, `I345348` - The range bar pointer with rounded corner radius will now render properly when the pointer value is set below 7.
+- `I340597` - When the overflow elements are around the Circular Gauge control, the tooltip will now render properly within the control.
 
 ## 19.2.62 (2021-09-14)
 
@@ -369,6 +370,14 @@ customized.
 - **Custom Label** - Supports the addition of custom label text in the required location of the gauge.
 - **User Interaction** - Supports interactive features like tooltip and pointer drag and drop.
 
+
+## 19.3.44 (2021-10-05)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#I340382` - The script size in the Circular Gauge has been reduced.
 
 ## 17.1.32-beta (2019-03-13)
 

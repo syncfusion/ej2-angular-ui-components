@@ -2,19 +2,13 @@
 
 ## [Unreleased]
 
-## 19.3.45 (2021-10-12)
+## 19.3.46 (2021-10-19)
 
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#F168372` - Issue with "invalid date time is updated to the input while enabling the masked date time" has been resolved.
-
-### DatePicker
+### TimePicker
 
 #### Bug Fixes
 
-- `#FB27745` - Issue with "day to month segment switching is not worked while typing the day value that starting with zero" has been resolved.
+- `#I342551` - Issue with "unable to select the time from the popup when its has selected class" has been resolved.
 
 ## 19.2.44 (2021-06-30)
 
@@ -1222,6 +1216,20 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.3.44 (2021-10-05)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#F168372` - Issue with "invalid date time is updated to the input while enabling the masked date time" has been resolved.
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#FB27745` - Issue with "day to month segment switching is not worked while typing the day value that starting with zero" has been resolved.
 
 ## 19.2.62 (2021-09-14)
 

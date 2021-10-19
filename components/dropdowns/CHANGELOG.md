@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 19.3.46 (2021-10-19)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#F169190` - The issue with "The Dropdown tree is not focused while pressing single tab key" has been resolved.
+- `#I341135` - The issue with "The Dropdown Tree selected items are misaligned while adding  the `e-outline` and `e-filled` CSS classes" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I329545` - Issue with "clear icon is not working while rendering the component with custom value as preselected value" has been resolved.
+
 ## 19.3.45 (2021-10-12)
 
 ### ComboBox
