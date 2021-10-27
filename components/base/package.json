@@ -16,12 +16,12 @@
 		"ng"
 	],
 	"peerDependencies": {
-		"@angular/common": "4.10.0 - 12.2.8",
-		"@angular/compiler": "4.10.0 - 12.2.8",
-		"@angular/core": "4.10.0 - 12.2.8",
-		"@angular/forms": "4.10.0 - 12.2.8",
-		"@angular/platform-browser": "4.10.0 - 12.2.8",
-		"@angular/platform-browser-dynamic": "4.10.0 - 12.2.8"
+		"@angular/common": "4.10.0 - 12.2.11",
+		"@angular/compiler": "4.10.0 - 12.2.11",
+		"@angular/core": "4.10.0 - 12.2.11",
+		"@angular/forms": "4.10.0 - 12.2.11",
+		"@angular/platform-browser": "4.10.0 - 12.2.11",
+		"@angular/platform-browser-dynamic": "4.10.0 - 12.2.11"
 	},
 	"dependencies": {
 		"@syncfusion/ej2-base": "*",
