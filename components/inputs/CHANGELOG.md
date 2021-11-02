@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 19.3.47 (2021-10-26)
+## 19.3.48 (2021-11-02)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `createPopupOnClick` property scenario not handled properly in `ColorPicker` has been resolved.
+- `I344127` - Issue with ColorPicker value not updated properly if opacity is set to false has been resolved.
+
+## 19.3.44 (2021-10-05)
 
 ### NumericTextBox
 
@@ -1219,6 +1228,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 19.3.47 (2021-10-26)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#FB29286` - Issue with "return the wrong value in the blur event argument while clearing the value using static clear button" has been resolved.
 
 ## 19.1.66 (2021-06-01)
 

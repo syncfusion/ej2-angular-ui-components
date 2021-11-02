@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#343417` - Issue in updating row index after row drag and drop has been fixed.
+- `#346516` - Issue in context menu after cell editing has been fixed.
+- `#346736` - Issue in rendering connector points when progress field is not mapped has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.3.47 (2021-10-26)
 
 ### Gantt
@@ -13,7 +25,8 @@
 - `#345841` - Issue on taskbar editing when timezone property set as `UTC` has been fixed.
 - `#341691` - Bring back browser default context menu in dialog editing has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#345841` - Issue on taskbar editing when timezone property set as `UTC` has been fixed.
+- `#341691` - Bring back browser default context menu in dialog editing has been fixed.
 
 #### Breaking Changes
 

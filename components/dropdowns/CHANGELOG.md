@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 19.3.48 (2021-11-02)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I344723` - The issue with "The selected value is not removed from the Dropdown Tree while using the value property as two-way binding" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I342517` - Issue with "Content Security Policy violation exception throws on initial rendering" has been resolved.
+
 ## 19.3.47 (2021-10-26)
 
 ### Dropdown Tree
