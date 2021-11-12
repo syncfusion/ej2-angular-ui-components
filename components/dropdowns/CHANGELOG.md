@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I345378` - The issue with "The interaction value is not updated properly in the select event while selecting via Select All checkbox" has been resolved.
+
+### MultiSelect
+
+#### New Features
+
+- `#F158756` - Now, you can convert the typed value as chip or update as value of the component while focusing out the component by enabling the `addTagOnBlur` property.
+- `#I346387` - Issue with "select all checkbox is not displayed properly while selecting an item from the list" has been resolved.
+
 ## 19.3.48 (2021-11-02)
 
 ### Dropdown Tree

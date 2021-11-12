@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 19.3.53 (2021-11-12)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#342557` - In fixed work type duration update issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.3.48 (2021-11-02)
 
 ### Gantt
@@ -12,7 +22,8 @@
 - `#346516` - Issue in context menu after cell editing has been fixed.
 - `#346736` - Issue in rendering connector points when progress field is not mapped has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#346516` - Issue in context menu after cell editing has been fixed.
+- `#346736` - Issue in rendering connector points when progress field is not mapped has been fixed.
 
 ## 19.3.47 (2021-10-26)
 
