@@ -1,3 +1,4 @@
+export {StackedColumnDirective,StackedColumnsDirective} from './grid/stacked-column.directive';
 export {ColumnDirective,ColumnsDirective} from './grid/columns.directive';
 export {AggregateColumnDirective,AggregateColumnsDirective} from './grid/aggregate-columns.directive';
 export {AggregateDirective,AggregatesDirective} from './grid/aggregates.directive';

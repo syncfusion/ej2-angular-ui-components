@@ -1,35 +1,39 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
-import { StackedColumnsDirective } from './stacked-column.directive';
+
 
 let input: string[] = ['allowEditing', 'allowFiltering', 'allowGrouping', 'allowReordering', 'allowResizing', 'allowSearching', 'allowSorting', 'autoFit', 'clipMode', 'columns', 'commands', 'customAttributes', 'dataSource', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableGroupByFormat', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'foreignKeyField', 'foreignKeyValue', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'headerValueAccessor', 'hideAtMedia', 'index', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
- * `e-column` directive represent a column of the Angular Grid. 
- * It must be contained in a Grid component(`ejs-grid`). 
+ * `e-stacked-column` directive represent the stacked column of the Angular Grid.
+ * It must be contained in a StackedColumns component(`e-stacked-columns`). 
  * ```html
  * <ejs-grid [dataSource]='data' allowPaging='true' allowSorting='true'> 
  *   <e-columns>
- *    <e-column field='ID' width='100'></e-column>
- *    <e-column field='name' headerText='Name' width='100'></e-column>
+ *     <e-column field='ID' width='100'></e-column>
+ *     <e-column headerText='Details' width='100'>
+ *       <e-stacked-columns>
+ *         <e-stacked-column field='Name' width='140'></e-stacked-column>
+ *       </e-stacked-columns>
+ *     </e-column>
  *   </e-columns>
  * </ejs-grid>
  * ```
  */
 @Directive({
-    selector: 'ejs-grid>e-columns>e-column',
+    selector: 'ejs-grid>e-columns>e-column>e-stacked-columns>e-stacked-column',
     inputs: input,
     outputs: outputs,    
     queries: {
-        childColumns: new ContentChild(StackedColumnsDirective)
+
     }
 })
-export class ColumnDirective extends ComplexBase<ColumnDirective> {
+export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> {
     public directivePropList: any;
 	
-    public childColumns: any;
-    public tags: string[] = ['columns'];
+
+
     /** 
      * Defines the data type of the column.
      * @default null
@@ -483,16 +487,16 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
 }
 
 /**
- * Column Array Directive
+ * StackedColumn Array Directive
  * @private
  */
 @Directive({
-    selector: 'ejs-grid>e-columns',
+    selector: 'ejs-grid>e-columns>e-column>e-stacked-columns',
     queries: {
-        children: new ContentChildren(ColumnDirective)
+        children: new ContentChildren(StackedColumnDirective)
     },
 })
-export class ColumnsDirective extends ArrayBase<ColumnsDirective> {
+export class StackedColumnsDirective extends ArrayBase<StackedColumnsDirective> {
     constructor() {
         super('columns');
     }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StackedColumnDirective, StackedColumnsDirective } from './stacked-column.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate-columns.directive';
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
@@ -12,6 +13,8 @@ import { GridComponent } from './grid.component';
     imports: [CommonModule],
     declarations: [
         GridComponent,
+        StackedColumnDirective,
+        StackedColumnsDirective,
         ColumnDirective,
         ColumnsDirective,
         AggregateColumnDirective,
@@ -21,6 +24,8 @@ import { GridComponent } from './grid.component';
     ],
     exports: [
         GridComponent,
+        StackedColumnDirective,
+        StackedColumnsDirective,
         ColumnDirective,
         ColumnsDirective,
         AggregateColumnDirective,
