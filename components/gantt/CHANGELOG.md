@@ -2,15 +2,23 @@
 
 ## [Unreleased]
 
-## 19.3.54 (2021-11-17)
+## 19.3.55 (2021-11-23)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#347753` - Issue in `defaultedit` edit type has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 19.3.53 (2021-11-12)
 
 ### Gantt
 
 #### Bug Fixes
 
 - `#342557` - In fixed work type duration update issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.3.48 (2021-11-02)
 
