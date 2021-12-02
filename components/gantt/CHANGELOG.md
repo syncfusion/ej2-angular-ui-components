@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 19.3.56 (2021-12-02)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#347613` - Connector line issue after updating the datasource dynamically has been fixed.
+- `#346909` - Issue in disable custom context menu has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 19.3.55 (2021-11-23)
 
 ### Gantt
@@ -9,8 +20,6 @@
 #### Bug Fixes
 
 - `#347753` - Issue in `defaultedit` edit type has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.3.53 (2021-11-12)
 
