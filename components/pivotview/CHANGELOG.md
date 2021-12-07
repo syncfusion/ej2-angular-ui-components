@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.56 (2021-12-02)
+## 19.3.57 (2021-12-07)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- Pivot chart's `textRender` event now works properly in Angular.
+
+## 19.3.55 (2021-11-23)
 
 ### Pivot Table
 

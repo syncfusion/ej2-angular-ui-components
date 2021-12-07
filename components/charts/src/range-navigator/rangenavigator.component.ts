@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { RangenavigatorSeriesCollectionDirective } from './series.directive';
 
 export const inputs: string[] = ['allowIntervalData','allowSnapping','animationDuration','background','dataSource','disableRangeSelector','enableDeferredUpdate','enableGrouping','enablePersistence','enableRtl','groupBy','height','interval','intervalType','labelFormat','labelIntersectAction','labelPosition','labelStyle','locale','logBase','majorGridLines','majorTickLines','margin','maximum','minimum','navigatorBorder','navigatorStyleSettings','periodSelectorSettings','query','secondaryLabelAlignment','series','skeleton','skeletonType','theme','tickPosition','tooltip','useGroupingSeparator','value','valueType','width','xName','yName'];
-export const outputs: string[] = ['beforePrint','changed','labelRender','load','loaded','resized','selectorRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['beforePrint','beforeResize','changed','labelRender','load','loaded','resized','selectorRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -29,6 +29,7 @@ export class RangeNavigatorComponent extends RangeNavigator implements IComponen
     public context : any;
     public tagObjects: any;
 	beforePrint: any;
+	beforeResize: any;
 	changed: any;
 	labelRender: any;
 	load: any;
