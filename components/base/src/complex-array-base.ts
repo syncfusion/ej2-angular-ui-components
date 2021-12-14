@@ -42,6 +42,13 @@ export class ComplexBase<T> {
             }
         }
         let templateProperties: string[] = Object.keys(this);
+        for(let i = 0; i < templateProperties.length; i++) {
+            var tempProp = getValue(templateProperties[i], this);
+            if (typeof tempProp === 'object' && tempProp.elementRef && !getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)){
+                setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
+            }
+        }
+        templateProperties = Object.keys(this)
         templateProperties = templateProperties.filter((val: string): boolean => {
             return /Ref$/i.test(val);
         });
@@ -237,6 +244,9 @@ export class ArrayBase<T> {
     public ngAfterContentChecked(): void {
         this.hasChanges = this.isChanged();
         for (let i: number = 0; i < this.list.length; i++) {
+            if (getValue('childColumns', this.list[i]) && getValue('property', this.list[i]) === 'columns') {
+                setValue('columns', getValue('childColumns', this.list[i]).getProperties(), this.list[i].propCollection);
+            }
             this.list[i].isUpdated = true;
         }
     }

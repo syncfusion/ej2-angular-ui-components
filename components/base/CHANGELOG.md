@@ -2,7 +2,49 @@
 
 ## [Unreleased]
 
-## 19.3.57 (2021-12-07)
+## 19.3.59 (2021-12-14)
+
+### Common
+
+#### Bug Fixes
+
+- `F170730` - Resolved `Button` component not properly rendered while using `ncstate popover` third party.
+
+## 19.3.55 (2021-11-23)
+
+### Common
+
+#### Bug Fixes
+
+- `I347507` - Resolved `Button` component not render inside the `ng-template`.
+
+## 19.3.53 (2021-11-12)
+
+### Common
+
+#### New Features
+
+- Provided `tagDirective` support for third level tag element.
+
+## 19.3.47 (2021-10-26)
+
+### Common
+
+#### Bug Fixes
+
+- `I341989` - Resolved `ng-template` not rendering in angular 7 production mode.
+
+## 19.3.45 (2021-10-12)
+
+### Common
+
+#### Bug Fixes
+
+- `I335868` - Resolved resetting Form component not working.
+- `F27111` - Resolved non `ng-template` component flickering issue.
+- `I342098` - Resolved form component not destroyed properly.
+
+## 19.3.44 (2021-10-05)
 
 ### Common
 
