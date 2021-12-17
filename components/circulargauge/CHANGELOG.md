@@ -5,6 +5,14 @@
 
 ## [Unreleased]
 
+## 19.4.38 (2021-12-17)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#F170652` - When the `roundedCornerRadius` property is set, the radius will be applied to both ends of the range.
+
 ## 19.3.53 (2021-11-12)
 
 ### CircularGauge

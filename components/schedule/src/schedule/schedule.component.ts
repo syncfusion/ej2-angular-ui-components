@@ -64,8 +64,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public tags: string[] = ['views', 'resources', 'headerRows'];
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     * the date header cells. The field that can be accessed via this template is `date`. 
+     * the date header cells. The field that can be accessed via this template is `date`.
+     * 
      * {% codeBlock src='schedule/dateHeaderTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('dateHeaderTemplate')
@@ -73,8 +75,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public dateHeaderTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     * the day header cells. This template is only applicable for year view header cells. 
+     * the day header cells. This template is only applicable for year view header cells.
+     * 
      * {% codeBlock src='schedule/dayHeaderTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('dayHeaderTemplate')
@@ -99,8 +103,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public cellTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     * the month date cells. This template is only applicable for month view day cells. 
+     * the month date cells. This template is only applicable for month view day cells.
+     * 
      * {% codeBlock src='schedule/cellHeaderTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('cellHeaderTemplate')
@@ -114,8 +120,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public eventSettings_template: any;
     /** 
      * The template option to render the customized editor window. The form elements defined within this template should be accompanied 
-     *  with `e-field` class, so as to fetch and process it from internally. 
+     *  with `e-field` class, so as to fetch and process it from internally.
+     * 
      * {% codeBlock src='schedule/editorTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('editorTemplate')
@@ -123,8 +131,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public editorTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
-     * the month header cells. This template is only applicable for year view header cells. 
+     * the month header cells. This template is only applicable for year view header cells.
+     * 
      * {% codeBlock src='schedule/monthHeaderTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default null
      */
     @ContentChild('monthHeaderTemplate')

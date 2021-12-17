@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -43,6 +43,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default null
      */
     public dateFormat: any;
+    /** 
+     * Specifies the starting week date at an initial rendering of month view. This property is only applicable for month view. 
+     *  If this property value is not set, then the month view will be rendered from the first week of the month. 
+     * {% codeBlock src='schedule/displayDate/index.md' %}{% endcodeBlock %}
+     * @default null
+     */
+    public displayDate: any;
     /** 
      * When the same view is customized with different intervals, this property allows the user to set different display name 
      *  for those views.
@@ -96,6 +103,14 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @asptype int
      */
     public monthsCount: any;
+    /** 
+     * This property customizes the number of weeks that are shown in month view. By default, it shows all weeks in the current month. 
+     *  Use displayDate property to customize the starting week of month. 
+     * {% codeBlock src='schedule/numberOfWeeks/index.md' %}{% endcodeBlock %}
+     * @default 0
+     * @asptype int
+     */
+    public numberOfWeeks: any;
     /** 
      * It accepts the schedule view name, based on which we can define with its related properties in a single object. 
      * The applicable view names are, 

@@ -11,8 +11,8 @@ import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rangeColorSettings','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelClick','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','beforeResize','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','sharedTooltipRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
+export const inputs: string[] = ['allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enablePersistence','enableRtl','enableSideBySidePlacement','height','highlightColor','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','palettes','primaryXAxis','primaryYAxis','rangeColorSettings','rows','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelClick','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','beforeResize','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','sharedTooltipRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -51,6 +51,7 @@ export class ChartComponent extends Chart implements IComponentBase {
 	beforeExport: any;
 	beforePrint: any;
 	beforeResize: any;
+	chartDoubleClick: any;
 	chartMouseClick: any;
 	chartMouseDown: any;
 	chartMouseLeave: any;

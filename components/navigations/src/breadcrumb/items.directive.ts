@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['iconCss', 'text', 'url'];
+let input: string[] = ['disabled', 'iconCss', 'text', 'url'];
 let outputs: string[] = [];
 /**
  * `e-breadcrumb-item` directive represent a item of the Angular Breadcrumb.
@@ -30,6 +30,11 @@ export class BreadcrumbItemDirective extends ComplexBase<BreadcrumbItemDirective
 	
 
 
+    /** 
+     * Enable or disable the breadcrumb item, when set to true, the breadcrumb item will be disabled.
+     * @default false
+     */
+    public disabled: any;
     /** 
      * Defines a class/multiple classes separated by a space for the item that is used to include an icon.
      * @default null

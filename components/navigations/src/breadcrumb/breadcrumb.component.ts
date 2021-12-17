@@ -4,7 +4,7 @@ import { Breadcrumb } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { BreadcrumbItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['activeItem','cssClass','enableActiveItemNavigation','enableNavigation','enablePersistence','enableRtl','itemTemplate','items','locale','maxItems','overflowMode','separatorTemplate','url','width'];
+export const inputs: string[] = ['activeItem','cssClass','disabled','enableActiveItemNavigation','enableNavigation','enablePersistence','enableRtl','itemTemplate','items','locale','maxItems','overflowMode','separatorTemplate','url'];
 export const outputs: string[] = ['beforeItemRender','created','itemClick','activeItemChange'];
 export const twoWays: string[] = ['activeItem'];
 

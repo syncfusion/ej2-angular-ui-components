@@ -4,7 +4,7 @@ import { Tab } from '@syncfusion/ej2-navigations';
 
 import { TabItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['allowDragAndDrop','animation','cssClass','dragArea','enableHtmlSanitizer','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','loadOn','locale','overflowMode','scrollStep','selectedItem','showCloseButton','width'];
+export const inputs: string[] = ['allowDragAndDrop','animation','cssClass','dragArea','enableHtmlSanitizer','enablePersistence','enableRtl','headerPlacement','height','heightAdjustMode','items','loadOn','locale','overflowMode','reorderActiveTab','scrollStep','selectedItem','showCloseButton','width'];
 export const outputs: string[] = ['added','adding','created','destroyed','dragged','dragging','onDragStart','removed','removing','selected','selecting'];
 export const twoWays: string[] = [''];
 

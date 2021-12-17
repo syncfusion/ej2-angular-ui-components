@@ -17,5 +17,8 @@ export { UploaderAllModule } from './uploader/uploader-all.module';
 export { ColorPickerComponent} from './color-picker/colorpicker.component';
 export { ColorPickerModule } from './color-picker/colorpicker.module';
 export { ColorPickerAllModule } from './color-picker/colorpicker-all.module';
+export { SignatureComponent} from './signature/signature.component';
+export { SignatureModule } from './signature/signature.module';
+export { SignatureAllModule } from './signature/signature-all.module';
 export * from './form-validator/form-validator';
 export * from '@syncfusion/ej2-inputs';

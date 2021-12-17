@@ -4,7 +4,7 @@ import { Tooltip } from '@syncfusion/ej2-popups';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['animation','closeDelay','content','cssClass','enableHtmlParse','enableHtmlSanitizer','enablePersistence','enableRtl','height','isSticky','locale','mouseTrail','offsetX','offsetY','openDelay','opensOn','position','showTipPointer','target','tipPointerPosition','width','windowCollision'];
+export const inputs: string[] = ['animation','closeDelay','container','content','cssClass','enableHtmlParse','enableHtmlSanitizer','enablePersistence','enableRtl','height','isSticky','locale','mouseTrail','offsetX','offsetY','openDelay','opensOn','position','showTipPointer','target','tipPointerPosition','width','windowCollision'];
 export const outputs: string[] = ['afterClose','afterOpen','beforeClose','beforeCollision','beforeOpen','beforeRender','created','destroyed'];
 export const twoWays: string[] = [''];
 

@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 19.3.59 (2021-12-14)
+## 19.4.38 (2021-12-17)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I347955` - Issue with "custom value is not updated to the input while typing the custom value and pressing the enter key" has been resolved.
+
+## 19.3.56 (2021-12-02)
 
 ### MultiSelect
 

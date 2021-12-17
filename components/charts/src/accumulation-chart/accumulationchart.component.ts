@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highLightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','beforeResize','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','seriesRender','textRender','tooltipRender','dataSourceChange'];
+export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highlightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','beforeResize','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','selectionComplete','seriesRender','textRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -35,6 +35,7 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
 	annotationRender: any;
 	beforePrint: any;
 	beforeResize: any;
+	chartDoubleClick: any;
 	chartMouseClick: any;
 	chartMouseDown: any;
 	chartMouseLeave: any;
@@ -47,6 +48,7 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
 	pointMove: any;
 	pointRender: any;
 	resized: any;
+	selectionComplete: any;
 	seriesRender: any;
 	textRender: any;
 	tooltipRender: any;
