@@ -211,8 +211,6 @@ export class ArrayBase<T> {
                         this.list[i].propCollection.dataSource = this.list[i].dataSource;
                         this.list[i].hasChanges = true;
                     }
-                    isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
                 }
             }
         }

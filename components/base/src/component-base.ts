@@ -120,6 +120,13 @@ export class ComponentBase<T> {
         }
 
         let complexTemplates: string[] = Object.keys(tempOnThis);
+        for (let i = 0; i < complexTemplates.length; i++) { 
+            var compProp = getValue(complexTemplates[i], tempOnThis);
+            if (typeof compProp === 'object' && compProp.elementRef && complexTemplates[i].indexOf('_') !== -1 && complexTemplates[i].indexOf('Ref') === -1) {
+                setValue(complexTemplates[i] + 'Ref', compProp, tempOnThis);
+            }
+        }
+        complexTemplates = Object.keys(tempOnThis);
         complexTemplates = complexTemplates.filter((val: string): boolean => {
             return /Ref$/i.test(val) && /\_/i.test(val);
         });

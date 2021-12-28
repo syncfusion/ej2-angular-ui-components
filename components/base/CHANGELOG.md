@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 19.4.40 (2021-12-28)
+
+### Common
+
+#### Bug Fixes
+
+- `I343317` - Improved performance for `complex directives` larger data binding.
+- `I354304` - Resolved grid `editsetting` template not working in angular 7 with deploy mode.
+
 ## 19.3.59 (2021-12-14)
 
 ### Common
