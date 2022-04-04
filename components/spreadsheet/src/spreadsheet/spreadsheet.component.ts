@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','autoFillSettings','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showFormulaBar','showRibbon','showSheetTabs','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','queryCellInfo','saveComplete','select','sortComplete'];
+export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowFreezePane','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','autoFillSettings','cellStyle','cssClass','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeCellUpdate','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','queryCellInfo','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
 /**
@@ -37,6 +37,7 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
 	beforeCellFormat: any;
 	beforeCellRender: any;
 	beforeCellSave: any;
+	beforeCellUpdate: any;
 	beforeConditionalFormat: any;
 	beforeDataBound: any;
 	beforeHyperlinkClick: any;

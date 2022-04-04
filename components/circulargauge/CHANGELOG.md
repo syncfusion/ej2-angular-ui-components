@@ -5,13 +5,13 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
+## 19.4.43 (2022-01-18)
 
 ### CircularGauge
 
-#### Bug Fixes
+#### New Features
 
-- `#F170652` - When the `roundedCornerRadius` property is set, the radius will be applied to both ends of the range.
+- `cancel` argument is now available in the `resized` event to restrict the resize of the control when set as `true`.
 
 ## 19.3.53 (2021-11-12)
 
@@ -386,6 +386,14 @@ customized.
 - **Custom Label** - Supports the addition of custom label text in the required location of the gauge.
 - **User Interaction** - Supports interactive features like tooltip and pointer drag and drop.
 
+
+## 19.4.38 (2021-12-17)
+
+### CircularGauge
+
+#### Bug Fixes
+
+- `#F170652` - When the `roundedCornerRadius` property is set, the radius will be applied to both ends of the range.
 
 ## 19.3.44 (2021-10-05)
 

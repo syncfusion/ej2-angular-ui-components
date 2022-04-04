@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 19.4.56 (2022-03-15)
+## 20.1.47 (2022-04-04)
 
-### ComboBox
+### MultiSelect
 
 #### Bug Fixes
 
-- `#I347955` - Issue with "custom value is not updated to the input while typing the custom value and pressing the enter key" has been resolved.
+- `#FB31100` - Issue with "popup is not opened while changing the `popupHeight` dynamically in the `beforeOpen` event" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 
@@ -2060,6 +2060,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 19.4.38 (2021-12-17)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I347955` - Issue with "custom value is not updated to the input while typing the custom value and pressing the enter key" has been resolved.
 
 ## 19.2.57 (2021-08-24)
 

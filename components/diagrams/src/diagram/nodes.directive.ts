@@ -5,7 +5,7 @@ import { NodeFixedUserHandlesDirective } from './node-fixeduserhandle.directive'
 import { NodeAnnotationsDirective } from './node-annotation.directive';
 import { PortsDirective } from './ports.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'fixedUserHandles', 'flip', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'backgroundColor', 'borderColor', 'borderWidth', 'branch', 'children', 'collapseIcon', 'columnIndex', 'columnSpan', 'columns', 'constraints', 'container', 'data', 'dragSize', 'excludeFromLayout', 'expandIcon', 'fixedUserHandles', 'flip', 'flipMode', 'height', 'horizontalAlignment', 'id', 'isExpanded', 'layoutInfo', 'margin', 'maxHeight', 'maxWidth', 'minHeight', 'minWidth', 'offsetX', 'offsetY', 'padding', 'pivot', 'ports', 'previewSize', 'rotateAngle', 'rowIndex', 'rowSpan', 'rows', 'shadow', 'shape', 'style', 'symbolInfo', 'tooltip', 'verticalAlignment', 'visible', 'width', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -169,6 +169,12 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      */
     public flip: any;
     /** 
+     * Allows you to flip only the node or along with port and label
+     * @aspdefaultvalueignore 
+     * @default All
+     */
+    public flipMode: any;
+    /** 
      * Sets the height of the node
      * @aspdefaultvalueignore 
      * @default undefined
@@ -234,6 +240,12 @@ export class NodeDirective extends ComplexBase<NodeDirective> {
      * @default 0
      */
     public offsetY: any;
+    /** 
+     * Defines the space between the group node edges and its children
+     * @aspdefaultvalueignore 
+     * @default 0
+     */
+    public padding: any;
     /** 
      * Sets the reference point, that will act as the offset values(offsetX, offsetY) of a node
      * @default new Point(0.5,0.5)

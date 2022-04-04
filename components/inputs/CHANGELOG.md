@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.47 (2022-04-04)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
+
 ## 19.4.38 (2021-12-17)
 
 ### Signature

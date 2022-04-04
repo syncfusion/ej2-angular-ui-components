@@ -104,6 +104,13 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
+    /** 
+     * Accepts the template design and assigns it to the group headers present in the MultiSelect popup list.
+     * @default null
+     */
+    @ContentChild('groupTemplate')
+    @Template()
+    public groupTemplate: any;
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;

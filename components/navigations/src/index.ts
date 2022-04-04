@@ -13,6 +13,10 @@ export {BreadcrumbItemDirective,BreadcrumbItemsDirective} from './breadcrumb/ite
 export { BreadcrumbComponent} from './breadcrumb/breadcrumb.component';
 export { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 export { BreadcrumbAllModule } from './breadcrumb/breadcrumb-all.module';
+export {CarouselItemDirective,CarouselItemsDirective} from './carousel/items.directive';
+export { CarouselComponent} from './carousel/carousel.component';
+export { CarouselModule } from './carousel/carousel.module';
+export { CarouselAllModule } from './carousel/carousel-all.module';
 export {TabItemDirective,TabItemsDirective} from './tab/items.directive';
 export { TabComponent} from './tab/tab.component';
 export { TabModule } from './tab/tab.module';
