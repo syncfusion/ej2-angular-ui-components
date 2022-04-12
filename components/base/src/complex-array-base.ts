@@ -70,7 +70,7 @@ export class ComplexBase<T> {
         if (this.directivePropList) {
         for (let k: number = 0; k < this.directivePropList.length; k++) {
             let dirPropName: string = this.directivePropList[k];
-            if (propList.indexOf(dirPropName) !== -1  && getValue(dirPropName, this)) {
+            if (propList.indexOf(dirPropName) !== -1  && (getValue(dirPropName, this) === false || getValue(dirPropName, this))) {
                 setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
             }
         }

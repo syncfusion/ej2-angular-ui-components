@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.48 (2022-04-12)
+
+### Common
+
+#### Bug Fixes
+
+- `I365879` - Component tags boolean property not updated properly in Angular 9
+
 ## 19.1.56 (2021-04-13)
 
 ### Common

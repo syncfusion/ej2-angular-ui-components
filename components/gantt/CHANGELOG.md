@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.1.48 (2022-04-12)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#371080` - Issue in `actionBegin` event for cancelling the row drag and drop action using request type `beforeDrop` has been fixed.
+- `#374064` - Gantt height not gets responsive when collapsing all tasks in `auto` mode.
+- `#372623` - Filter popup gets closed automatically When clicking between the filter fields has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.1.47 (2022-04-04)
 
 ### Gantt
@@ -11,8 +23,6 @@
 - `#300959` - Provided support to fill empty space with extended timeline in zoom out action.
 - `#371372` - Unable to change end Date of manual parent task issue has been fixed.
 - `#363003` - Child mapping order not maintained in data source property issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 19.4.56 (2022-03-15)
 

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.1.47 (2022-04-04)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
-
 ## 19.4.38 (2021-12-17)
 
 ### Signature
@@ -1264,6 +1256,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.1.47 (2022-04-04)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
 
 ## 19.3.47 (2021-10-26)
 
