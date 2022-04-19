@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 20.1.50 (2022-04-19)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#372623` - New record keeps an editable state in dependency tab even after switching the tabs has been fixed.
+- `#373803` - Scrollbar not available in notes tab issue has been fixed.
+- `#372344` - Issue in `taskLabelTemplate` using `ngTemplate` has been fixed.
+- `#372131` - Issue in `taskbarTemplate` with `enableMultiTaskbar` enabled has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.1.48 (2022-04-12)
 
 ### Gantt
@@ -12,7 +25,7 @@
 - `#374064` - Gantt height not gets responsive when collapsing all tasks in `auto` mode.
 - `#372623` - Filter popup gets closed automatically When clicking between the filter fields has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#372623` - Filter popup gets closed automatically When clicking between the filter fields has been fixed.
 
 ## 20.1.47 (2022-04-04)
 

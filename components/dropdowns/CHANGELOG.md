@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 20.1.50 (2022-04-19)
+
+### ListBox
+
+#### Bug Fixes
+
+- Issue with "Keyboard navigation correction for select the multiple items of listbox" has been resolved.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I373560` - Issue with "exception throws while typing the special characters on the input" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#F173763`,`#I372051`,`#I371821` - Issue with "filtering is not working properly while rendering the component with item template" has been resolved.
+
 ## 20.1.47 (2022-04-04)
 
 ### MultiSelect
