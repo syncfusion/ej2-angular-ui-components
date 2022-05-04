@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 20.1.51 (2022-04-26)
+## 20.1.52 (2022-05-04)
 
 ### ListBox
 
@@ -14,7 +14,7 @@
 
 #### Bug Fixes
 
-- `#F33764` - Issue with "dynamically added item is not displayed in the popup while rendering the component with item template" has been resolved.
+- `#I373951` - Issue with "unable to type the value in the input while enabling `autofill` with filter type as `contains`" has been resolved.
 
 ## 20.1.50 (2022-04-19)
 
@@ -2094,6 +2094,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.1.51 (2022-04-26)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#F33764` - Issue with "dynamically added item is not displayed in the popup while rendering the component with item template" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

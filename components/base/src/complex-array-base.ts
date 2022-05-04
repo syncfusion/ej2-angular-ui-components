@@ -218,7 +218,7 @@ export class ArrayBase<T> {
                         this.list[i].hasChanges = true;
                     }
                 }
-                if (this.list[i].hasChanges !== childrenDataSource[i].hasChanges) {
+                if (childrenDataSource[i].hasChanges) {
                     isSourceChanged = true;
                 }
             }

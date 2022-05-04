@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 20.1.51 (2022-04-26)
+## 20.1.52 (2022-05-04)
+
+### Common
+
+#### Bug Fixes
+
+- `I367449` - Resolved Equal length of data property changes not working.
+
+## 20.1.48 (2022-04-12)
 
 ### Common
 
