@@ -4,7 +4,7 @@ import { Pager } from '@syncfusion/ej2-grids';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['currentPage','customText','enableExternalMessage','enablePagerMessage','enablePersistence','enableQueryString','enableRtl','externalMessage','locale','pageCount','pageSize','pageSizes','template','totalRecordsCount'];
+export const inputs: string[] = ['cssClass','currentPage','customText','enableExternalMessage','enablePagerMessage','enablePersistence','enableQueryString','enableRtl','externalMessage','locale','pageCount','pageSize','pageSizes','template','totalRecordsCount'];
 export const outputs: string[] = ['click','created','dropDownChanged'];
 export const twoWays: string[] = [];
 
