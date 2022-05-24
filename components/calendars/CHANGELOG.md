@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.1.57 (2022-05-24)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I378357` - Issue with "tab key navigation is not working between calendars" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I373889` - Issue with "navigated to year section after typing 0 in the month section" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
