@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.58 (2022-05-31)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I372680` - Now, you are able to enter the decimal separator in the Spanish culture.
+
 ## 19.4.38 (2021-12-17)
 
 ### Signature

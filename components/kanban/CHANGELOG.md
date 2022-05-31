@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.1.58 (2022-05-31)
+
+### Kanban
+
+#### New Features
+
+- `#I373922` - Now, we have improved the performance with the Kanban drag and drop action when large data is being loaded.
+
 ## 20.1.52 (2022-05-04)
 
 ### Kanban
