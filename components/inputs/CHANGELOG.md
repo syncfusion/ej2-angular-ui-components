@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.1.58 (2022-05-31)
+## 20.1.59 (2022-06-07)
 
-### NumericTextBox
+### TextBox
 
 #### Bug Fixes
 
-- `#I372680` - Now, you are able to enter the decimal separator in the Spanish culture.
+- `#I376978` - Issue with "ng-* classes are not maintain property in the component" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 
@@ -1264,6 +1264,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.1.58 (2022-05-31)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I372680` - Now, you are able to enter the decimal separator in the Spanish culture.
 
 ## 20.1.47 (2022-04-04)
 

@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.1.59 (2022-06-07)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#379229` - Pdf export is not working when using custom date format issue has been fixed.
+- `#381109` - Issue when Zoom To Fit with unscheduled tasks has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.1.58 (2022-05-31)
 
 ### Gantt
@@ -12,7 +23,8 @@
 - `#378491` - Data is not displayed when we frequently move between different tabs has been fixed.
 - `#379660` - Script error thrown when switching between tabs has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#378491` - Data is not displayed when we frequently move between different tabs has been fixed.
+- `#379660` - Script error thrown when switching between tabs has been fixed.
 
 ## 20.1.56 (2022-05-17)
 
