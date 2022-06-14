@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.1.60 (2022-06-14)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#367483` - Indent Outdent toolbar options appearing when edit settings is not defined issue has been been fixed.
+- `#384296` - Unable to draw dependency when progress mapping is disabled issue has been been fixed.
+- `#381374` - Editing milestone duration varies the start date issue has been been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.1.59 (2022-06-07)
 
 ### Gantt
@@ -10,8 +22,7 @@
 
 - `#379229` - Pdf export is not working when using custom date format issue has been fixed.
 - `#381109` - Issue when Zoom To Fit with unscheduled tasks has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#382884` - work value calculation issue for parent task has been fixed.
 
 ## 20.1.58 (2022-05-31)
 
