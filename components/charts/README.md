@@ -17,18 +17,15 @@ npm install @syncfusion/ej2-angular-charts
 ## Components included
 
 Following list of components are available in the package
-*	Chart - Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
+*	[Chart](https://www.syncfusion.com/angular-ui-components/charts/) - Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
       *	[Getting Started](https://ej2.syncfusion.com/angular/documentation/chart/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/chart/line)
-      *	[Product Page](https://www.syncfusion.com/angular-ui-components/charts/)
-*	Accumulation Chart - Built-in support for Pie, Doughnut, Pyramid and funnel series type, to show the proportions and percentages between the categories.
+*	[Accumulation Chart](https://www.syncfusion.com/angular-ui-components/charts/) - Built-in support for Pie, Doughnut, Pyramid and funnel series type, to show the proportions and percentages between the categories.
       *	[Getting Started](https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/chart/default-pie)
-      *	[Product Page](https://www.syncfusion.com/angular-ui-components/charts/)
-*	Range Navigator - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized.
+*	[Range Navigator](https://www.syncfusion.com/angular-ui-components/range-selector/) - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized.
       *	[Getting Started](https://ej2.syncfusion.com/angular/documentation/rangenavigator/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/rangenavigator/default)
-      *	[Product Page](https://www.syncfusion.com/angular-ui-components/range-selector/)
 
 ## Supported frameworks
  `Chart` components are available in following list of    
@@ -100,5 +97,31 @@ Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-com
 ## Changelog
 
 Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/charts/CHANGELOG.md)
+
+## Related Links
+
+[Learn More about Angular Charts](https://www.syncfusion.com/angular-ui-components/angular-charts?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/angular/documentation/chart/getting-started/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Download Free Trial](https://www.syncfusion.com/downloads?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/line?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Community Forums](https://www.syncfusion.com/forums/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)<br/><br/>
+
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular UI Components](https://www.syncfusion.com/angular-ui-components?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) library is the only suite that you will ever need to build an application since it contains over 70 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Charts, we provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/angular-ui-components/angular-grid), [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [Angular Diagram](https://www.syncfusion.com/angular-ui-components/angular-diagram?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), and [Angular PDF Viewer](https://www.syncfusion.com/angular-ui-components/angular-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples).
+
+## About Syncfusion
+
+Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 28000+ companies and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
+
+Today, we provide 1700+ controls and frameworks for web ([ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-webforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [React](https://www.syncfusion.com/react-ui-components?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [Blazor](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [Vue](https://www.syncfusion.com/vue-ui-components?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)), mobile ([WinForms](https://www.syncfusion.com/WinForms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)), and desktop development ([Windows Forms](https://www.syncfusion.com/winforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [WPF](https://www.syncfusion.com/wpf-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [WinUI)](https://www.syncfusion.com/winui-controls?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples), [.NET MAUI](https://www.syncfusion.com/maui-controls), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)). We provide ready-to-deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
+
+<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
+
+<p align="center">
+  <a href="mailto:sales@syncfusion.com?Subject=Syncfusion Angular Charts - Github Sample" target="_top">sales@syncfusion.com</a> | Toll Free: 1-888-9 DOTNET <br>
+</p>
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
