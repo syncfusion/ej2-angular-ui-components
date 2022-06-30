@@ -48,6 +48,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     /** 
      * Sets and gets the Bing map type for the layer. If you use shape data with BingMapType without using layer type as Bing, 
      * then the map will render based on shape data since default layer type will be set as Geometry.
+     * @deprecated 
      * @default Aerial
      */
     public bingMapType: any;
@@ -81,12 +82,14 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public initialShapeSelection: any;
     /** 
      * Sets and gets the key for the tile map layer in maps.
+     * @deprecated 
      * @default ''
      */
     public key: any;
     /** 
      * Sets and gets the type of the layer in maps. If we use layer type with shape data property in layer of the maps 
      * then map will render based on the provided layer type.
+     * @deprecated 
      * @default Geometry
      */
     public layerType: any;
@@ -134,6 +137,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public shapeSettings: any;
     /** 
      * Sets and gets the type of the static maps.
+     * @deprecated 
      * @default RoadMap
      */
     public staticMapType: any;
@@ -147,7 +151,7 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public tooltipSettings: any;
     /** 
      * Sets and gets the template for the map using the url.
-     * @default 'https://a.tile.openstreetmap.org/level/tileX/tileY.png'
+     * @default ''
      */
     public urlTemplate: any;
     /** 

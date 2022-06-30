@@ -2,21 +2,28 @@
 
 ## [Unreleased]
 
-## 20.1.60 (2022-06-14)
+## 20.2.36 (2022-06-30)
 
 ### Common
 
-#### Bug Fixes
+#### New Features
 
-- `I367449` - Resolved Equal length of data property changes not working.
+- Provided the TypeScript 4.7 compatible support for the Angular components.
 
-## 20.1.48 (2022-04-12)
+- Provided option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
+- - Install the Syncfusion packages from npm.
+- - Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file.
+- - Run the command `npx syncfusion-license activate` to register the license automatically.
 
-### Common
+- `#I376821` - Provided support to compile the Sass files using [Dart Sass](https://sass-lang.com/dart-sass) instead of [node-sass](https://github.com/sass/node-sass). This change has been made since `node-sass` has been deprecated.
 
-#### Bug Fixes
+- Added support to work with Angular 14 version.
 
-- `I365879` - Component tags boolean property not updated properly in Angular 9
+- Provided the Ivy-compatible support for the Angular packages. Ivy Angular packages support Angular versions 12 and above.
+
+#### Breaking Changes
+
+- From this release, Angular packages tagged with `ngcc` will be published and maintained to provide the latest features and fixes for Angular versions 11 and below. This changes has been made since providing the Ivy-compatible support for the Angular packages. To install Angular packages that are compatible with `ngcc`, run the `npm install @syncfusion/ej2-angular-grids@ngcc` command.
 
 ## 19.1.56 (2021-04-13)
 

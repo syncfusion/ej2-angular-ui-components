@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bridgeSpace', 'connectionPadding', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -49,6 +49,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public annotations: any;
     /** 
+     * Sets the bezier settings of editing the segments.
+     * @default null
+     */
+    public bezierSettings: any;
+    /** 
      * Defines the bridgeSpace of connector
      * @default 10
      */
@@ -58,6 +63,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default 0
      */
     public connectionPadding: any;
+    /** 
+     * Sets the distance between source node and connector
+     * @default 13
+     */
+    public connectorSpacing: any;
     /** 
      * Defines the constraints of connector 
      * * None - Interaction of the connectors cannot be done. 
@@ -128,6 +138,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default {}
      */
     public margin: any;
+    /** 
+     * Sets the maximum segment thumb for the connector
+     * @default null
+     */
+    public maxSegmentThumb: any;
     /** 
      * Defines the size of the symbol preview
      * @aspdefaultvalueignore 

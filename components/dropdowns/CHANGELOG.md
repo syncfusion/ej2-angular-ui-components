@@ -2,91 +2,30 @@
 
 ## [Unreleased]
 
-## 20.1.59 (2022-06-07)
-
-### DropDownList
-
-#### Bug Fixes
-
-- "Dropdown List template sample is not working in React 18" issue has been resolved.
-
-## 20.1.58 (2022-05-31)
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#F34768` - Issue with "change event argument `IsInteracted` returns wrong value while rendering component with disabled custom value" has been resolved
-
-## 20.1.57 (2022-05-24)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I374653` - The issue with "The filtering was not working properly when using a hierarchical data source for the Dropdown Tree component" has been resolved.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `I375107` - Issue with "cascading dropdown list doesn't display the updated data while binding the remote data and filtering enabled" has been resolved.
-
-## 20.1.56 (2022-05-17)
+## 20.2.36 (2022-06-30)
 
 ### ListBox
 
 #### Bug Fixes
 
-- `F174682` - Issue with "Drag and Drop not working properly while using item template in listbox" has been resolved.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `I372269` - Issue with "value is displayed instead of text while binding beyond the initial loading data values" has been resolved.
-
-## 20.1.52 (2022-05-04)
-
-### ListBox
-
-#### Bug Fixes
-
-- `I374083` - Issue with "Filtering did not work in the datasource empty list" has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I373951` - Issue with "unable to type the value in the input while enabling `autofill` with filter type as `contains`" has been resolved.
-
-## 20.1.50 (2022-04-19)
-
-### ListBox
-
-#### Bug Fixes
-
-- Issue with "Keyboard navigation correction for select the multiple items of listbox" has been resolved.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I373560` - Issue with "exception throws while typing the special characters on the input" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#F173763`,`#I372051`,`#I371821` - Issue with "filtering is not working properly while rendering the component with item template" has been resolved.
-
-## 20.1.47 (2022-04-04)
+- `#I383114` - Issue with "Drop event argument not passes the selected item properly, while drag and drop the multiple item of listbox" has been resolved.
 
 ### MultiSelect
 
 #### Bug Fixes
 
 - `#FB31100` - Issue with "popup is not opened while changing the `popupHeight` dynamically in the `beforeOpen` event" has been resolved.
+
+#### Bug fixes
+
+- `#I383092` - Issue with "popup is not updated while clearing the filter input value using long backspace keypress" has been resolved.
+- `#FB31983` - Issue with "empty popup shows while rendering the component with item template and changing the query property dynamically" has been resolved.
+
+### DropDownList
+
+#### Bug fixes
+
+- `#I382870` - Issue with "NVDA reader does not read the selected value in the component" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 
@@ -2138,14 +2077,6 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.1.51 (2022-04-26)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#F33764` - Issue with "dynamically added item is not displayed in the popup while rendering the component with item template" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

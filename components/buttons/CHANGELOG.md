@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.1.50 (2022-04-19)
+## 20.2.36 (2022-06-30)
 
 ### Checkbox
 
 #### Bug Fixes
 
-- `F173431` - Issue with Checkbox validation state is incorrect issue has been resolved.
+- `F379986` - The issue with "Screen reader reads checkbox field twice for tab keypress" has been resolved.
 
 ## 19.2.47 (2021-07-13)
 
