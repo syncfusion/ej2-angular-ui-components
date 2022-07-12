@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 20.2.38 (2022-07-12)
+
+### DropDownList
+
+#### Bug fixes
+
+- `#I388961` - Now, change event is not trigger when we bind the remote data with value
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I379731` - Issue with "popup is not opening while typing a single digit with custom value enabled" has been resolved.
+- `#I382004` - Issue with "unable to remove the added custom value from the input element on specific scenario" has been resolved.
+
 ## 20.2.36 (2022-06-30)
 
 ### ListBox

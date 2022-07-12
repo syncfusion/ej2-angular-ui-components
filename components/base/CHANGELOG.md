@@ -6,24 +6,22 @@
 
 ### Common
 
-#### New Features
-
-- Provided the TypeScript 4.7 compatible support for the Angular components.
-
-- Provided option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
-- - Install the Syncfusion packages from npm.
-- - Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file.
-- - Run the command `npx syncfusion-license activate` to register the license automatically.
-
-- `#I376821` - Provided support to compile the Sass files using [Dart Sass](https://sass-lang.com/dart-sass) instead of [node-sass](https://github.com/sass/node-sass). This change has been made since `node-sass` has been deprecated.
-
-- Added support to work with Angular 14 version.
-
-- Provided the Ivy-compatible support for the Angular packages. Ivy Angular packages support Angular versions 12 and above.
-
 #### Breaking Changes
 
-- From this release, Angular packages tagged with `ngcc` will be published and maintained to provide the latest features and fixes for Angular versions 11 and below. This changes has been made since providing the Ivy-compatible support for the Angular packages. To install Angular packages that are compatible with `ngcc`, run the `npm install @syncfusion/ej2-angular-grids@ngcc` command.
+- From this release, Syncfusion provided the Ivy-compatible support for the Angular packages. Ivy Angular packages support Angular versions 12 and above. While using the latest Angular packages in the Angular 11 and below version application, components will not work. To provide the latest features and fixes for Angular versions 11 and below, Syncfusion will maintain the Angular packages tagged with `ngcc`. To install Angular packages that are compatible with `ngcc` for the Angular versions 11 and below application, run the `npm install @syncfusion/ej2-angular-grids@ngcc` command.
+
+#### New Features
+
+- Syncfusion components are now compatible with Angular 14 version.
+- Provided the Ivy-compatible support for the Angular packages. Ivy Angular packages support Angular versions 12 and above.
+- Provided the TypeScript 4.7 compatible support for the Angular components.
+- Provided the option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
+
+| The `npx` command |
+|---|
+| Install the Syncfusion packages from `npm`. |
+| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. |
+| Run the command `npx syncfusion-license activate` to automatically register the license. |
 
 ## 19.1.56 (2021-04-13)
 

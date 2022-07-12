@@ -43,6 +43,6 @@
  ## License
  Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
  ## Changelog
- Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
+ Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes?utm_source=npm&utm_campaign=ej2-angular-ui-components)
+     © Copyright 2020 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
