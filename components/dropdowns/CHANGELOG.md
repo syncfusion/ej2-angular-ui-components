@@ -2,20 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.38 (2022-07-12)
+## 20.2.39 (2022-07-19)
 
-### DropDownList
+### ListBox
 
-#### Bug fixes
+#### Bug Fixes
 
-- `#I388961` - Now, change event is not trigger when we bind the remote data with value
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I379731` - Issue with "popup is not opening while typing a single digit with custom value enabled" has been resolved.
-- `#I382004` - Issue with "unable to remove the added custom value from the input element on specific scenario" has been resolved.
+- `#I384240` - Issue with "`RemoveItems` not working properly after adding items with specific index" has been resolved.
 
 ## 20.2.36 (2022-06-30)
 
@@ -2092,6 +2085,21 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.38 (2022-07-12)
+
+### DropDownList
+
+#### Bug fixes
+
+- `#I388961` - Now, change event is not trigger when we bind the remote data with value
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I379731` - Issue with "popup is not opening while typing a single digit with custom value enabled" has been resolved.
+- `#I382004` - Issue with "unable to remove the added custom value from the input element on specific scenario" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 
