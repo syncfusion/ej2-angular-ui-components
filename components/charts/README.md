@@ -26,6 +26,10 @@ Following list of components are available in the package
 *	[Range Navigator](https://www.syncfusion.com/angular-ui-components/range-selector/) - Interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized.
       *	[Getting Started](https://ej2.syncfusion.com/angular/documentation/rangenavigator/getting-started.html)
       *	[View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/rangenavigator/default)
+* [Smith chart](https://www.syncfusion.com/angular-ui-components/angular-smith-chart?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)
+: Tool for visualize data of high frequency circuit applications. It contains two sets of circles to plot parameters of transmission lines.
+      *	[Getting started](https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)
+      *	[View online demos](https://ej2.syncfusion.com/angular/demos/#/material/smith-chart/default?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples)
 
 ## Supported frameworks
  `Chart` components are available in following list of    
@@ -82,6 +86,13 @@ Following list of components are available in the package
    * [**Lightweight**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=chart#/material/rangenavigator/light-weight) - Supports light-weight Range navigator to load in mobile device.
    * [**Period Selector**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=chart#/material/rangenavigator/period-default) - Provides options to select the data over the custom period.
    * **Axis Types** - Supports multiple axis and series types to plot the data.
+
+### Smith chart
+   * [**Series**](https://ej2.syncfusion.com/angular/documentation/smithchart/smith-chart-series/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) - Supports any number of series to display data points.
+   * [**Legend**](https://ej2.syncfusion.com/angular/documentation/smithchart/smith-chart-legend/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) - Provides options to display additional information about the series.
+   * [**Marker and Data label**](https://ej2.syncfusion.com/angular/documentation/smithchart/smith-chart-marker/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) - Provides options to display additional information about data points.
+   * [**Tooltip**](https://ej2.syncfusion.com/angular/documentation/smithchart/smith-chart-tooltip/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) - Provides options to display additional information about data points on mouse hover.
+   * [**Print and Export**](https://ej2.syncfusion.com/angular/documentation/smithchart/smithchart-print/?utm_source=github&utm_medium=listing&utm_campaign=angular-charts-github-samples) - Provides support to print and export the rendered smith chart for future use.
 
 ## Support
   Product support is available for through following mediums.
