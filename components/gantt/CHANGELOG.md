@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.40 (2022-07-26)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.2.39 (2022-07-19)
 
 ### Gantt
@@ -9,8 +17,7 @@
 #### Bug Fixes
 
 - `#I389834` - Records position not updated properly in datasource when we drag and drop the records issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I376455` - Unable to focus on chart element when editing is not enabled has been fixed.
 
 ## 20.2.38 (2022-07-12)
 
@@ -44,6 +51,7 @@
 
 - `#I376455` - Tab key navigation not working properly when moving to new records has been fixed.
 - `#I383128` - DataSource gets updated wrongly when we update the data with invalid `parentID` issue has been fixed.
+- `#I376455` - Unable to focus on chart element when editing is not enabled has been fixed.
 
 ## 20.1.60 (2022-06-14)
 

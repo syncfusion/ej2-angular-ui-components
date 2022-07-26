@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.40 (2022-07-26)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I387858` - The issue of "the missing year 1396 in the Islamic calendar" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
