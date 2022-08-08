@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 20.2.43 (2022-08-08)
+
+### ListView
+
+#### Bug Fixes
+
+- `#I395385` - The issue with "Unable to interact with HTML elements within the template of ListView component" has been resolved.
+
+## 20.2.39 (2022-07-19)
+
+### ListView
+
+#### New Features
+
+- `#I385167` - Provided support to cancel the ListView select event.
+
 ## 20.2.36 (2022-06-30)
 
 ### ListView

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.2.40 (2022-07-26)
-
-### Calendar
-
-#### Bug Fixes
-
-- `#I387858` - The issue of "the missing year 1396 in the Islamic calendar" has been resolved.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
@@ -1224,6 +1216,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.40 (2022-07-26)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I387858` - The issue of "the missing year 1396 in the Islamic calendar" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 

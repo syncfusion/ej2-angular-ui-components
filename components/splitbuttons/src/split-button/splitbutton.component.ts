@@ -4,7 +4,7 @@ import { SplitButton } from '@syncfusion/ej2-splitbuttons';
 
 import { SplitButtonItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['content','createPopupOnClick','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
+export const inputs: string[] = ['closeActionEvents','content','createPopupOnClick','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','items','locale','target'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','click','close','created','open','select'];
 export const twoWays: string[] = [];
 

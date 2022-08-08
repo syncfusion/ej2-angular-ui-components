@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.43 (2022-08-08)
+
+### Common
+
+#### Bug Fixes
+
+- `I391967,I393562` - Resolved components not loaded inside the `ng template`.
+
 ## 20.2.36 (2022-06-30)
 
 ### Common

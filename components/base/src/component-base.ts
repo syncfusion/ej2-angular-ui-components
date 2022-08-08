@@ -120,6 +120,19 @@ export class ComponentBase<T> {
         }
 
         let complexTemplates: string[] = Object.keys(tempOnThis);
+        for (let i = 0; i < complexTemplates.length; i++) { 
+            var compProp = getValue(complexTemplates[i], tempOnThis);
+            if (typeof compProp === 'object' && compProp && compProp.elementRef) {
+                if (typeof compProp === 'object' && compProp && compProp.elementRef && complexTemplates[i].indexOf('_') !== -1 && complexTemplates[i].indexOf('Ref') === -1) {
+                    setValue(complexTemplates[i] + 'Ref', compProp, tempOnThis);
+                }
+                if (tempOnThis.viewContainerRef && !getValue("_viewContainerRef", compProp.elementRef.nativeElement) && !getValue("propName", compProp.elementRef.nativeElement)) {
+                    setValue("_viewContainerRef", tempOnThis.viewContainerRef, compProp.elementRef.nativeElement);
+                    setValue("propName", complexTemplates[i].replace("Ref", ''), compProp.elementRef.nativeElement);
+                }
+            }
+        }
+        complexTemplates = Object.keys(tempOnThis);
         complexTemplates = complexTemplates.filter((val: string): boolean => {
             return /Ref$/i.test(val) && /\_/i.test(val);
         });
@@ -177,7 +190,7 @@ export class ComponentBase<T> {
         // Refer Link: https://github.com/angular/angular/issues/6005
         setTimeout(() => {
             /* istanbul ignore else  */
-            if (typeof window !== 'undefined' && document.body.contains(tempAfterViewThis.element)) {
+            if (typeof window !== 'undefined' && tempAfterViewThis.element || tempAfterViewThis.getModuleName().includes('btn')) {
                 tempAfterViewThis.appendTo(tempAfterViewThis.element);
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
@@ -189,7 +202,7 @@ export class ComponentBase<T> {
         let tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
         setTimeout(() => {
-            if (typeof window !== 'undefined' && document.body.contains(tempOnDestroyThis.element) && tempOnDestroyThis.element.classList.contains('e-control')) {
+            if (typeof window !== 'undefined' && (tempOnDestroyThis.element.classList.contains('e-control'))) {
                 tempOnDestroyThis.destroy();
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy
@@ -261,7 +274,7 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (tempAfterContentThis.getModuleName() === 'diagram')) {
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|tab/.test(tempAfterContentThis.getModuleName()))) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {
@@ -271,7 +284,7 @@ export class ComponentBase<T> {
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
                         });
-                        if (curChild.properties && Object.keys(curChild.properties).length !== 0 && /chart/.test(tempAfterContentThis.getModuleName())){
+                        if (curChild.properties && Object.keys(curChild.properties).length !== 0){
                             for (let complexPropName of complexTemplates) {
                                 complexPropName = complexPropName.replace(/Ref/, '');
                                 curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?

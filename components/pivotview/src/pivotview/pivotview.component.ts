@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowConditionalFormatting','allowDataCompression','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowGrouping','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','chartTypes','cssClass','currencyCode','dataSourceSettings','displayOption','editSettings','enableFieldSearching','enableHtmlSanitizer','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','exportAllPages','gridSettings','groupingBarSettings','height','hyperlinkSettings','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','maxRowsInDrillThrough','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','spinnerTemplate','toolbar','toolbarTemplate','tooltipTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforeServiceInvoke','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforeServiceInvoke','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','exportComplete','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
 export const twoWays: string[] = [];
 
 /**
@@ -50,6 +50,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
 	editCompleted: any;
 	enginePopulated: any;
 	enginePopulating: any;
+	exportComplete: any;
 	fetchReport: any;
 	fieldDragStart: any;
 	fieldDrop: any;
