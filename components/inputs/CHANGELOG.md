@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.2.44 (2022-08-16)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I381508` - Issue with "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I392246` - Issue with "focus is not added for delete icon by using tab key" is resolved.
+
 ## 19.4.38 (2021-12-17)
 
 ### Signature

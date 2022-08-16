@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+## 20.2.44 (2022-08-16)
+
+### MultiSelect
+
+#### New Features
+
+- Provided event details in open and close event arguments in the multiselect component.
+
+### AutoComplete
+
+#### New Features
+
+- Provided event details in open and close event arguments in the autocomplete component.
+
+#### Bug Fixes
+
+- `I382840` - Issue with "preselect value is not updated on input when we bind greater than 20th item" has been resolved.
+
+### ComboBox
+
+#### New Features
+
+- Provided event details in open and close event arguments in the combobox component.
+
+### DropDownList
+
+#### New Features
+
+- Provided event details in open and close event arguments in the dropdownlist component.
+
 ## 20.2.43 (2022-08-08)
 
 ### ListBox
@@ -17,12 +47,6 @@
 #### Bug Fixes
 
 - `#F175828` - Now, `customSelection` event is trigger when we render the component with `itemTemplate` and `allowFiltering`.
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `I382840` - Issue with "preselect value is not updated on input when we bind greater than 20th item" has been resolved.
 
 ## 20.2.39 (2022-07-19)
 

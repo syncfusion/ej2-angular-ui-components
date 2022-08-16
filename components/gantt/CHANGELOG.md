@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 20.2.44 (2022-08-16)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I394194` - Timeline changes when toggling critical path issue has been fixed.
+- `#I388575` - Gantt chart disappears when searching is performed with tasks in collapsed state with virtualization issue has been fixed.
+- `#I394195` - Week start day not working properly after perform Zooming actions issue has been fixed.
+- `#I393709` - Baseline milestone not rendered in proper position .
+- `#I394223` - Gantt Chart does not update data source when adding new record.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.2.43 (2022-08-08)
 
 ### Gantt
@@ -15,8 +29,6 @@
 - `#I393670`, `#I393633` - End date calculated wrongly for adding new task after zoom to fit is performed issue has been fixed.
 - `#I391704`-Need to disable HTML encoding in tooltip has been fixed.
 - `#F149986` - Unable to use drop down edit in progress column has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.2.39 (2022-07-19)
 
