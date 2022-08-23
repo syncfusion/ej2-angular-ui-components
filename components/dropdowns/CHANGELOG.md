@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.45 (2022-08-23)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I396357` - The issue "Placeholder is not read by screenreader in readonly mode" has been resolved.
+
 ## 20.2.44 (2022-08-16)
 
 ### MultiSelect

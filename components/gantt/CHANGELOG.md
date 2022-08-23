@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 20.2.45 (2022-08-23)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I389542` - Filter records with hierarchy mode as both shows no record to display issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.2.44 (2022-08-16)
 
 ### Gantt
@@ -14,7 +24,7 @@
 - `#I393709` - Baseline milestone not rendered in proper position .
 - `#I394223` - Gantt Chart does not update data source when adding new record.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I393709` - Baseline milestone not rendered in proper position.
 
 ## 20.2.43 (2022-08-08)
 
