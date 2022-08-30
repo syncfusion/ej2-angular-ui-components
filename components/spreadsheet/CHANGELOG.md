@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 20.2.46 (2022-08-30)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I387270` - Issue with "post back occurs while clicking the button in the control" has been resolved.
+
+- `#I397860` - Issue with "characters are repeated in the locked cells while scroll down the sheet and move on the top of the sheet" has been resolved.
+
 ## 20.2.45 (2022-08-23)
 
 ### Spreadsheet

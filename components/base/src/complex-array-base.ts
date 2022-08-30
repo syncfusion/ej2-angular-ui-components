@@ -44,8 +44,8 @@ export class ComplexBase<T> {
         let templateProperties: string[] = Object.keys(this);
         for(let i = 0; i < templateProperties.length; i++) {
             var tempProp = getValue(templateProperties[i], this);
-            if (typeof tempProp === 'object' && tempProp.elementRef && !getValue(templateProperties[i]+'Ref', this)){
-                setValue(templateProperties[i]+'Ref', tempProp, this);
+            if (typeof tempProp === 'object' && tempProp.elementRef && !getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)){
+                setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
             }
         }
         templateProperties = Object.keys(this)

@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 20.2.45 (2022-08-23)
+## 20.2.46 (2022-08-30)
+
+### Common
+
+#### Bug Fixes
+
+`I331403,I334510` - Resolved `dynamic property` change not working for complex directives.
+`I356669` - Resolved script error Converting circular structure to JSON.
+
+## 20.2.43 (2022-08-08)
 
 ### Common
 

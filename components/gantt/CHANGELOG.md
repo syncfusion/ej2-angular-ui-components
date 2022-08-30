@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.2.46 (2022-08-30)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#F176984` - Timeline is extended when the splitter position is moved issue has been fixed.
+- `#I398394` - Row drag and drop not working properly on resource view sample issue has been fixed.
+- `#I396036` - Baselines become milestones when start date and end date are mapped.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.2.45 (2022-08-23)
 
 ### Gantt
@@ -9,8 +21,6 @@
 #### Bug Fixes
 
 - `#I389542` - Filter records with hierarchy mode as both shows no record to display issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.2.44 (2022-08-16)
 
