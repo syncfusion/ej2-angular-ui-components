@@ -2,20 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.46 (2022-08-30)
+## 20.2.48 (2022-09-06)
 
-### ComboBox
-
-#### Bug Fixes
-
-- `#I397359` - The issue "Placeholder is not read by screenreader when floatLabelType is enabled in combobox" has been resolved.
-- `#I396357` - The issue "Placeholder is not read by screenreader in readonly mode" has been resolved.
-
-### MultiSelect
+### DropDownList
 
 #### Bug fixes
 
-- `#I398999` - Issue with "Placeholder is not read by screenreader when floatLabelType is enabled in multiselect" has been resolved.
+- `#I398924` - The issue "console error occurred While using cssClass and floatLabelType property" has been resolved.
 
 ## 20.2.44 (2022-08-16)
 
@@ -2146,6 +2139,21 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.46 (2022-08-30)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I397359` - The issue "Placeholder is not read by screenreader when floatLabelType is enabled in combobox" has been resolved.
+- `#I396357` - The issue "Placeholder is not read by screenreader in readonly mode" has been resolved.
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I398999` - Issue with "Placeholder is not read by screenreader when floatLabelType is enabled in multiselect" has been resolved.
 
 ## 20.2.45 (2022-08-23)
 

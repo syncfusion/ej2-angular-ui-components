@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.48 (2022-09-06)
+
+### Common
+
+#### Bug Fixes
+
+`I397712` - Resolved Reactive Form `Control` and `Group` not working issue.
+
 ## 20.2.46 (2022-08-30)
 
 ### Common
