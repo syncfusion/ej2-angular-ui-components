@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.2.48 (2022-09-06)
-
-### DropDownList
-
-#### Bug fixes
-
-- `#I398924` - The issue "console error occurred While using cssClass and floatLabelType property" has been resolved.
-
 ## 20.2.44 (2022-08-16)
 
 ### MultiSelect
@@ -2139,6 +2131,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.48 (2022-09-06)
+
+### DropDownList
+
+#### Bug fixes
+
+- `#I398924` - The issue "console error occurred While using cssClass and floatLabelType property" has been resolved.
 
 ## 20.2.46 (2022-08-30)
 

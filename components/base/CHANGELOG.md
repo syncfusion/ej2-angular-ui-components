@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.2.49 (2022-09-13)
+
+### Common
+
+#### Bug Fixes
+
+`I396002` - Resolved `ngFor` not working inside the `ng template`with Array based `directives`.
+
 ## 20.2.48 (2022-09-06)
 
 ### Common

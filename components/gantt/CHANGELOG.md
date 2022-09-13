@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.48 (2022-09-06)
+## 20.2.49 (2022-09-13)
 
 ### Gantt
 
 #### Bug Fixes
+
+- `#I403222` - Console error occurs in resource view with enabled persistence issue has been fixed.
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
