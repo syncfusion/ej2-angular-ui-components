@@ -2,6 +2,38 @@
 
 ## [Unreleased]
 
+## 20.2.50 (2022-09-20)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I403191` - The issue "change event argument contains duplicate dates while using multiselection" has been resolved
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker

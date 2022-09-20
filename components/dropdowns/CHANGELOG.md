@@ -2,6 +2,33 @@
 
 ## [Unreleased]
 
+## 20.2.50 (2022-09-20)
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+- `#I384422` - The issue "empty popup is shown when we clear the preselect value using clear button" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+
 ## 20.2.44 (2022-08-16)
 
 ### MultiSelect

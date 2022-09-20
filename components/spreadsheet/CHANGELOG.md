@@ -2,19 +2,14 @@
 
 ## [Unreleased]
 
-## 20.2.49 (2022-09-13)
+## 20.2.50 (2022-09-20)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I399409` - Issue with "formula value is not calculated properly when formula has two operators continuously" has been resolved.
-- `#I399404` - Issue with "formula reference is not updated properly while pasting the formula with multiple cells" has been resolved.
-- `#I399744` - Issue with "formula selector is not working properly when colon ":" is present before the cursor position" has been resolved.
-- `#I401876` - Issue with "freeze pane is not applied properly when selection range before the viewport" has been resolved.
-- `#I402213` - Issue with "exception throws on the horizontal scrolling when sheet contains freeze pane and multiple columns selection" has been resolved.
-- `#FB37470` - Issue with "string concatenation formula is not working properly when formula contains string values and space" has been resolved.
-- `#I403235` - Issue with "filter state is not maintained properly while loading JSON using the `openFromJson` method" has been resolved.
+- `#I401897` - Issue with "exception throws on the filter applied frozen sheet while clicking `Alt` key after scrolling to the end" has been resolved.
+- `#I401076` - Issue with "`created` event is not triggered while using `rxjs` latest version" has been resolved.
 
 ## 20.2.46 (2022-08-30)
 
@@ -1219,6 +1214,20 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.2.49 (2022-09-13)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I399409` - Issue with "formula value is not calculated properly when formula has two operators continuously" has been resolved.
+- `#I399404` - Issue with "formula reference is not updated properly while pasting the formula with multiple cells" has been resolved.
+- `#I399744` - Issue with "formula selector is not working properly when colon ":" is present before the cursor position" has been resolved.
+- `#I401876` - Issue with "freeze pane is not applied properly when selection range before the viewport" has been resolved.
+- `#I402213` - Issue with "exception throws on the horizontal scrolling when sheet contains freeze pane and multiple columns selection" has been resolved.
+- `#FB37470` - Issue with "string concatenation formula is not working properly when formula contains string values and space" has been resolved.
+- `#I403235` - Issue with "filter state is not maintained properly while loading JSON using the `openFromJson` method" has been resolved.
 
 ## 20.2.48 (2022-09-06)
 
