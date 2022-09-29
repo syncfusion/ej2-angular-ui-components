@@ -4,7 +4,7 @@ import { Carousel } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { CarouselItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animationEffect','autoPlay','buttonsVisibility','cssClass','dataSource','enablePersistence','enableRtl','enableTouchSwipe','height','htmlAttributes','indicatorsTemplate','interval','itemTemplate','items','locale','loop','nextButtonTemplate','pauseOnHover','playButtonTemplate','previousButtonTemplate','selectedIndex','showIndicators','showPlayButton','width'];
+export const inputs: string[] = ['animationEffect','autoPlay','buttonsVisibility','cssClass','dataSource','enablePersistence','enableRtl','enableTouchSwipe','height','htmlAttributes','indicatorsTemplate','interval','itemTemplate','items','locale','loop','nextButtonTemplate','partialVisible','pauseOnHover','playButtonTemplate','previousButtonTemplate','selectedIndex','showIndicators','showPlayButton','width'];
 export const outputs: string[] = ['slideChanged','slideChanging','selectedIndexChange'];
 export const twoWays: string[] = ['selectedIndex'];
 

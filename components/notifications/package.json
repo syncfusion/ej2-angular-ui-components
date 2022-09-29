@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-notifications",
-	"version": "20.2.45",
+	"version": "19.16.0",
 	"description": "A package of Essential JS 2 notification components such as Toast and Badge which used to notify important information to end-users. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -60,7 +60,12 @@
 		"circle badge",
 		"badge css",
 		"toast css",
-		"alart",
+		"alert",
+		"message",
+		"messages",
+		"skeleton",
+		"shimmer",
+		"ej2-skeleton",
 		"angular",
 		"ng",
 		"ng-template",
@@ -72,7 +77,11 @@
 		"ej2-angular-notifications",
 		"angular-notifications",
 		"angular-toast",
-		"angular-toaster"
+		"angular-toaster",
+		"ng-message",
+		"angular-message",
+		"ng-skeleton",
+		"angular-skeleton"
 	],
 	"repository": {
 		"type": "git",

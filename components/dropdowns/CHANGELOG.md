@@ -2,88 +2,22 @@
 
 ## [Unreleased]
 
-## 20.2.50 (2022-09-20)
+## 20.3.47 (2022-09-29)
 
-### AutoComplete
+### Mention
 
-#### Bug Fixes
+- The `@Mention` component can be used to display a pop-up suggestion list whenever the designated mention key character is entered into a text box, rich text editor, or other editable element.
 
-- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
+**Key features**:
 
-### ComboBox
 
-#### Bug Fixes
-
-- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
-- `#I384422` - The issue "empty popup is shown when we clear the preselect value using clear button" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I381508` - The issue "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
-
-## 20.2.44 (2022-08-16)
-
-### MultiSelect
-
-#### New Features
-
-- Provided event details in open and close event arguments in the multiselect component.
-
-### AutoComplete
-
-#### New Features
-
-- Provided event details in open and close event arguments in the autocomplete component.
-
-#### Bug Fixes
-
-- `I382840` - Issue with "preselect value is not updated on input when we bind greater than 20th item" has been resolved.
-
-### ComboBox
-
-#### New Features
-
-- Provided event details in open and close event arguments in the combobox component.
-
-### DropDownList
-
-#### New Features
-
-- Provided event details in open and close event arguments in the dropdownlist component.
-
-## 20.2.43 (2022-08-08)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I384240` - Issue with "`RemoveItems` not working properly after adding items with specific index" has been resolved.
-
-## 20.2.40 (2022-07-26)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#F175828` - Now, `customSelection` event is trigger when we render the component with `itemTemplate` and `allowFiltering`.
-
-## 20.2.39 (2022-07-19)
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I386103` - Issue with "Datasource not update properly after clearing the filtering in the dual listbox" has been resolved.
-
-## 20.2.36 (2022-06-30)
+- **Data binding**: Binds the list of items from local and remote data sources such as JSON, OData, WCF, and RESTful web services.
+- **Grouping**: Groups the logically related items under a single or specific category.
+- **Filtering**: Filters the list items based on a character typed in the component.
+- **Sorting**: Sorts the list items in alphabetical order (either ascending or descending).
+- **Highlight search**: Highlights the typed text in the suggestion list.
+- **Templates**: Customize the list item, display value, no records, and spinner loading content.
+- **Accessibility**: Built-in accessibility support that helps to access all the Mention component features using the keyboard, on-screen readers, or other assistive technology devices.
 
 ### ListBox
 
@@ -96,11 +30,6 @@
 #### Bug Fixes
 
 - `#FB31100` - Issue with "popup is not opened while changing the `popupHeight` dynamically in the `beforeOpen` event" has been resolved.
-
-#### Bug fixes
-
-- `#I383092` - Issue with "popup is not updated while clearing the filter input value using long backspace keypress" has been resolved.
-- `#FB31983` - Issue with "empty popup shows while rendering the component with item template and changing the query property dynamically" has been resolved.
 
 ### DropDownList
 
@@ -2158,52 +2087,6 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.2.48 (2022-09-06)
-
-### DropDownList
-
-#### Bug fixes
-
-- `#I398924` - The issue "console error occurred While using cssClass and floatLabelType property" has been resolved.
-
-## 20.2.46 (2022-08-30)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I397359` - The issue "Placeholder is not read by screenreader when floatLabelType is enabled in combobox" has been resolved.
-- `#I396357` - The issue "Placeholder is not read by screenreader in readonly mode" has been resolved.
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I398999` - Issue with "Placeholder is not read by screenreader when floatLabelType is enabled in multiselect" has been resolved.
-
-## 20.2.45 (2022-08-23)
-
-### AutoComplete
-
-#### Bug Fixes
-
-- `#I398013` - Issue with "Dynamic data source not update correctly after filtering the value" has been resolved.
-
-## 20.2.38 (2022-07-12)
-
-### DropDownList
-
-#### Bug fixes
-
-- `#I388961` - Now, change event is not trigger when we bind the remote data with value
-
-### MultiSelect
-
-#### Bug fixes
-
-- `#I379731` - Issue with "popup is not opening while typing a single digit with custom value enabled" has been resolved.
-- `#I382004` - Issue with "unable to remove the added custom value from the input element on specific scenario" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

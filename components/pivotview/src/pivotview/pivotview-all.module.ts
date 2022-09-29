@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PivotViewComponent } from './pivotview.component';
 import { PivotViewModule } from './pivotview.module';
-import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough, Toolbar, PivotChart, PDFExport, ExcelExport, NumberFormatting, Grouping} from '@syncfusion/ej2-pivotview'
+import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough, Toolbar, PivotChart, PDFExport, ExcelExport, NumberFormatting, Grouping, Pager} from '@syncfusion/ej2-pivotview'
 
 
 export const GroupingBarService: ValueProvider = { provide: 'PivotViewGroupingBar', useValue: GroupingBar};
@@ -17,6 +17,7 @@ export const PDFExportService: ValueProvider = { provide: 'PivotViewPDFExport', 
 export const ExcelExportService: ValueProvider = { provide: 'PivotViewExcelExport', useValue: ExcelExport};
 export const NumberFormattingService: ValueProvider = { provide: 'PivotViewNumberFormatting', useValue: NumberFormatting};
 export const GroupingService: ValueProvider = { provide: 'PivotViewGrouping', useValue: Grouping};
+export const PagerService: ValueProvider = { provide: 'PivotViewPager', useValue: Pager};
 
 /**
  * NgModule definition for the PivotView component with providers.
@@ -38,7 +39,8 @@ export const GroupingService: ValueProvider = { provide: 'PivotViewGrouping', us
         PDFExportService,
         ExcelExportService,
         NumberFormattingService,
-        GroupingService
+        GroupingService,
+        PagerService
     ]
 })
 export class PivotViewAllModule { }

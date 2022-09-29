@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-buttons",
-	"version": "20.2.46",
+	"version": "18.44.0",
 	"description": "A package of feature-rich Essential JS 2 components such as Button, CheckBox, RadioButton and Switch. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -67,13 +67,22 @@
 		"form control",
 		"form controls",
 		"input",
+		"fab",
+		"floating button",
+		"floating action button",
+		"speeddial",
+		"floating menu",
 		"angular",
 		"ng",
 		"ej2-ng-buttons",
 		"ng-button",
 		"ng-checkbox",
 		"ng-radiobutton",
-		"ng-switch"
+		"ng-switch",
+		"ng-fab",
+		"angular-fab",
+		"ng-speeddial",
+		"angular-speeddial"
 	],
 	"repository": {
 		"type": "git",

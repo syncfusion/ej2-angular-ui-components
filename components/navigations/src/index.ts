@@ -31,4 +31,7 @@ export {MenuItemDirective,MenuItemsDirective} from './menu/items.directive';
 export { MenuComponent} from './menu/menu.component';
 export { MenuModule } from './menu/menu.module';
 export { MenuAllModule } from './menu/menu-all.module';
+export { AppBarComponent} from './appbar/appbar.component';
+export { AppBarModule } from './appbar/appbar.module';
+export { AppBarAllModule } from './appbar/appbar-all.module';
 export * from '@syncfusion/ej2-navigations';

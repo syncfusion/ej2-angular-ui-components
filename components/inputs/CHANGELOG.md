@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.2.48 (2022-09-06)
+## 20.3.47 (2022-09-29)
 
-### TextBox
+### NumericTextBox
 
 #### Bug Fixes
 
-- Issue with "Change event is triggered without changing the value when we focusout the component" has been resolved.
+- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
 
 ## 19.4.38 (2021-12-17)
 
@@ -1264,28 +1264,6 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 20.2.44 (2022-08-16)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I381508` - Issue with "ellipsis style is not applied to long floating label text in the material outline mode" has been resolved.
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I392246` - Issue with "focus is not added for delete icon by using tab key" is resolved.
-
-## 20.2.36 (2022-06-30)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
 
 ## 19.3.47 (2021-10-26)
 

@@ -2,38 +2,18 @@
 
 ## [Unreleased]
 
-## 20.2.50 (2022-09-20)
+## 20.3.47 (2022-09-29)
 
 ### Common
 
-#### Bug Fixes
+#### New Features
 
-`I396002` - Resolved `ngFor` not working inside the `ng template`with Array based `directives`.
-
-## 20.2.48 (2022-09-06)
-
-### Common
+- Provided the schematic ng add support for Syncfusion Angular IVY packages.
 
 #### Bug Fixes
 
-`I397712` - Resolved Reactive Form `Control` and `Group` not working issue.
-
-## 20.2.46 (2022-08-30)
-
-### Common
-
-#### Bug Fixes
-
-`I331403,I334510` - Resolved `dynamic property` change not working for complex directives.
-`I356669` - Resolved script error Converting circular structure to JSON.
-
-## 20.2.43 (2022-08-08)
-
-### Common
-
-#### Bug Fixes
-
-- `I391967,I393562` - Resolved components not loaded inside the `ng template`.
+- `#I358566` - The issue with the `ng-template` not working in the Karma unit test has been resolved.
+- `#I392021` - The issue with the "Gantt header template image is not shown in the stack blitz sample" has been resolved.
 
 ## 20.2.36 (2022-06-30)
 
@@ -50,10 +30,10 @@
 - Provided the TypeScript 4.7 compatible support for the Angular components.
 - Provided the option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
 
-| The `npx` command |
+| The `npx` command | 
 |---|
-| Install the Syncfusion packages from `npm`. |
-| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. |
+| Install the Syncfusion packages from `npm`. | 
+| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. | 
 | Run the command `npx syncfusion-license activate` to automatically register the license. |
 
 ## 19.1.56 (2021-04-13)

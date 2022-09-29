@@ -16,4 +16,7 @@ export { ListBoxAllModule } from './list-box/listbox-all.module';
 export { DropDownTreeComponent} from './drop-down-tree/dropdowntree.component';
 export { DropDownTreeModule } from './drop-down-tree/dropdowntree.module';
 export { DropDownTreeAllModule } from './drop-down-tree/dropdowntree-all.module';
+export { MentionComponent} from './mention/mention.component';
+export { MentionModule } from './mention/mention.module';
+export { MentionAllModule } from './mention/mention-all.module';
 export * from '@syncfusion/ej2-dropdowns';
