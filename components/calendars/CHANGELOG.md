@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.48 (2022-10-05)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I405991` - The issue "placeholder is being read by NVDA reader While the DatePicker is not in focus" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
