@@ -2,14 +2,15 @@
 
 ## [Unreleased]
 
-## 20.3.48 (2022-10-05)
+## 20.3.49 (2022-10-11)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I404920` - Issue with "wrong date value returns while passing negative value to the date formula calculation " has been resolved.
-- `#I405151` - Issue with "cell value is not updated in the UI level when applied number format" has been resolved.
+- `#I408641` - Issue with "formula with reverse range is not working properly while inserting the rows dynamically" has been resolved.
+- `#I406989` - Issue with "`=(B2+B3)^2` formula is not calculated the result properly" has been resolved.
+- `#I408315` - Issue with "`addContextMenuItems` method is not working properly while providing the unavailable item in the menu" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -1221,6 +1222,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.48 (2022-10-05)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I404920` - Issue with "wrong date value returns while passing negative value to the date formula calculation " has been resolved.
+- `#I405151` - Issue with "cell value is not updated in the UI level when applied number format" has been resolved.
 
 ## 20.2.50 (2022-09-20)
 

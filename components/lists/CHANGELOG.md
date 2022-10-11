@@ -2,23 +2,7 @@
 
 ## [Unreleased]
 
-## 20.2.46 (2022-08-30)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I395385` - The issue with "Space key is not working inside input element within ListView Template" has been resolved.
-
-## 20.2.39 (2022-07-19)
-
-### ListView
-
-#### New Features
-
-- `#I385167` - Provided support to cancel the ListView select event.
-
-## 20.2.36 (2022-06-30)
+## 20.3.47 (2022-09-29)
 
 ### ListView
 
@@ -479,14 +463,6 @@ ListView component represent data in interactive hierarchical structure interfac
 - **Customizing templates** - Allows you to customize the list item, header and category group header.
 - **Accessibility** - Provides built-in accessibility support which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 20.2.43 (2022-08-08)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I395385` - The issue with "Unable to interact with HTML elements within the template of ListView component" has been resolved.
 
 ## 17.4.39 (2019-12-17)
 
