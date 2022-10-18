@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.3.49 (2022-10-11)
+## 20.3.50 (2022-10-18)
 
-### NumericTextBox
+### TextBox
 
 #### Bug Fixes
 
-- `#I381508` - Issue with "ellipsis style is not applied to long floating label text when we preselect the value" has been resolved.
+- `#FB15052` - Issue with "Form Validator wrongly validates while clearing the components value using clear icon" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 
@@ -1264,6 +1264,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.3.49 (2022-10-11)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I381508` - Issue with "ellipsis style is not applied to long floating label text when we preselect the value" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 

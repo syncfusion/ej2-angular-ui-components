@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I400881` - Now, When you set a secondary font color in the bootstrap 5 theme using the theme studio, the changes will be reflected for the Dialog Cancel button.
+
+## 20.3.49 (2022-10-11)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I397894` - The issue with "when using custom template variant the anchor that triggers the tooltip when hover is unable to receive keyboard focus" has been resolved.
+
 ## 20.3.48 (2022-10-05)
 
 ### Dialog
@@ -17,7 +33,6 @@
 #### Bug Fixes
 
 - `#I401514` - Now, when we begin to drag the Utility Dialog, it does not move to the left side.
-- `#I400881` - Now, When you set a secondary font color in the bootstrap 5 theme using the theme studio, the changes will be reflected for the Dialog Cancel button.
 
 ## 20.2.45 (2022-08-23)
 

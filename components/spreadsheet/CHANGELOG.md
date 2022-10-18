@@ -2,15 +2,13 @@
 
 ## [Unreleased]
 
-## 20.3.49 (2022-10-11)
+## 20.3.50 (2022-10-18)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I408641` - Issue with "formula with reverse range is not working properly while inserting the rows dynamically" has been resolved.
-- `#I406989` - Issue with "`=(B2+B3)^2` formula is not calculated the result properly" has been resolved.
-- `#I408315` - Issue with "`addContextMenuItems` method is not working properly while providing the unavailable item in the menu" has been resolved.
+- `#I411173` - Issue with "initially loaded chart with JSON data is removed while rendering another chart through menu option" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -1222,6 +1220,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.49 (2022-10-11)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I408641` - Issue with "formula with reverse range is not working properly while inserting the rows dynamically" has been resolved.
+- `#I406989` - Issue with "`=(B2+B3)^2` formula is not calculated the result properly" has been resolved.
+- `#I408315` - Issue with "`addContextMenuItems` method is not working properly while providing the unavailable item in the menu" has been resolved.
 
 ## 20.3.48 (2022-10-05)
 

@@ -2,13 +2,31 @@
 
 ## [Unreleased]
 
-## 20.3.49 (2022-10-11)
+## 20.3.50 (2022-10-18)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I403191` - The issue "selection is not removed properly when we select the already selected date in Calendar multiselection" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#FB15052` - Issue with "Form Validator wrongly validates while clearing the components value using clear icon" has been resolved.
 
 ### DatePicker
 
 #### Bug Fixes
 
-- `#I405991` - The issue "placeholder is being read by NVDA reader While the DatePicker is not in focus" has been resolved.
+- `#FB15052` - Issue with "Form Validator wrongly validates while clearing the components value using clear icon" has been resolved.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#FB15052` - Issue with "Form Validator wrongly validates while clearing the components value using clear icon" has been resolved.
 
 ## 19.3.46 (2021-10-19)
 
@@ -1224,6 +1242,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.49 (2022-10-11)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I405991` - The issue "placeholder is being read by NVDA reader While the DatePicker is not in focus" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.3.50 (2022-10-18)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I409097` - Deleting record when search text is selected issue has been fixed.
+- `#I404228` - Saving record even when in edited state issue has been fixed.
+- `#I413093` -  Pdf export is not working in latest version issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.3.49 (2022-10-11)
 
 ### Gantt
@@ -14,7 +26,8 @@
 - `#I407716` - Data source update on load time issue has been fixed.
 - `#I400913`, `#I405837` - Pdf export is not working when the data has Hebrew and Vietnamese characters.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I407437` - Add new record in resource view without child mapping issue has been fixed.
+- `#I405837` - Pdf export is not working when the data has Hebrew and Vietnamese characters.
 
 ## 20.3.48 (2022-10-05)
 
