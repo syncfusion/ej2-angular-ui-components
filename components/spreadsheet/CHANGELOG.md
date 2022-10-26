@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 20.3.50 (2022-10-18)
+## 20.3.52 (2022-10-26)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I411173` - Issue with "initially loaded chart with JSON data is removed while rendering another chart through menu option" has been resolved.
+- `#I411683` - Issue with "`ROUND` formula is not calculated properly while passing the number that end with digit 5" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -1220,6 +1220,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.50 (2022-10-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I411173` - Issue with "initially loaded chart with JSON data is removed while rendering another chart through menu option" has been resolved.
 
 ## 20.3.49 (2022-10-11)
 

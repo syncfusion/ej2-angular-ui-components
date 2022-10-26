@@ -44,8 +44,12 @@ export class ComplexBase<T> {
         let templateProperties: string[] = Object.keys(this);
         for(let i = 0; i < templateProperties.length; i++) {
             var tempProp = getValue(templateProperties[i], this);
-            if (typeof tempProp === 'object' && tempProp.elementRef && !getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)){
+            if (typeof tempProp === 'object' && tempProp && tempProp.elementRef && !getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)){
                 setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
+            }
+            if (getValue("viewContainerRef", this) && !getValue("_viewContainerRef", tempProp.elementRef.nativeElement) && !getValue("propName", tempProp.elementRef.nativeElement)) {
+                    setValue("_viewContainerRef", getValue("viewContainerRef", this), tempProp.elementRef.nativeElement);
+                    setValue("propName", templateProperties[i].replace("Ref", ''), tempProp.elementRef.nativeElement);
             }
         }
         templateProperties = Object.keys(this)
@@ -64,7 +68,7 @@ export class ComplexBase<T> {
         if (this.directivePropList) {
         for (let k: number = 0; k < this.directivePropList.length; k++) {
             let dirPropName: string = this.directivePropList[k];
-            if (propList.indexOf(dirPropName) !== -1  && getValue(dirPropName, this)) {
+            if (propList.indexOf(dirPropName) !== -1  && (getValue(dirPropName, this) === false || getValue(dirPropName, this))) {
                 setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
             }
         }

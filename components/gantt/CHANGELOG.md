@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.3.52 (2022-10-26)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I413261` - Dependency values for the parent task are not properly updated issue has been fixed.
+- `#I412821` - Row drag and drop is not working properly when Virtualization is enabled.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.3.50 (2022-10-18)
 
 ### Gantt
@@ -12,7 +23,8 @@
 - `#I404228` - Saving record even when in edited state issue has been fixed.
 - `#I413093` -  Pdf export is not working in latest version issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I404228` - Saving record even when in edited state issue has been fixed.
+- `#I412821` - Row drag and drop is not working properly when Virtualization is enabled.
 
 ## 20.3.49 (2022-10-11)
 
