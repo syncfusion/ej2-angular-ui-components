@@ -44,12 +44,14 @@ export class ComplexBase<T> {
         let templateProperties: string[] = Object.keys(this);
         for(let i = 0; i < templateProperties.length; i++) {
             var tempProp = getValue(templateProperties[i], this);
-            if (typeof tempProp === 'object' && tempProp && tempProp.elementRef && !getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)){
-                setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
-            }
-            if (getValue("viewContainerRef", this) && !getValue("_viewContainerRef", tempProp.elementRef.nativeElement) && !getValue("propName", tempProp.elementRef.nativeElement)) {
+            if (typeof tempProp === 'object' && tempProp && tempProp.elementRef) {
+                if (!getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)) {
+                    setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
+                }
+                if (getValue("viewContainerRef", this) && !getValue("_viewContainerRef", tempProp.elementRef.nativeElement) && !getValue("propName", tempProp.elementRef.nativeElement)) {
                     setValue("_viewContainerRef", getValue("viewContainerRef", this), tempProp.elementRef.nativeElement);
                     setValue("propName", templateProperties[i].replace("Ref", ''), tempProp.elementRef.nativeElement);
+                }
             }
         }
         templateProperties = Object.keys(this)

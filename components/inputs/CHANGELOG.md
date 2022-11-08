@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-## 20.3.52 (2022-10-26)
+## 20.3.56 (2022-11-08)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+## 20.3.50 (2022-10-18)
 
 ### TextBox
 

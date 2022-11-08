@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 20.3.52 (2022-10-26)
+## 20.3.56 (2022-11-08)
 
 ### Spreadsheet
 
+#### Features
+
+- `#F176472` - Provided `setRowsHeight` and `setColumnsWidth` methods to set the height and width to multiple rows and columns respectively.
+
 #### Bug Fixes
 
-- `#I411683` - Issue with "`ROUND` formula is not calculated properly while passing the number that end with digit 5" has been resolved.
+- `#I411919` - Issue with "performance issue occurs on the chart refresh when chart is mapped to formula applied cells" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -1220,6 +1224,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.52 (2022-10-26)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I411683` - Issue with "`ROUND` formula is not calculated properly while passing the number that end with digit 5" has been resolved.
+- `#I406371` - Issue with "`SUMIFS` formula is not calculated properly while passing the cell reference with other sheets" has been resolved.
 
 ## 20.3.50 (2022-10-18)
 

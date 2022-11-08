@@ -2,6 +2,49 @@
 
 ## [Unreleased]
 
+## 20.3.56 (2022-11-08)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F178523` - Issue with "Script error thrown when we drag and drop the listbox item in angular platform" has been resolved.
+
+### DropDownList
+
+#### Bug fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### AutoComplete
+
+#### Bug fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+`#I414946` - The issue "API documentation broken on autocomplete component" has been resolved.
+
+
+### ComboBox
+
+#### Bug fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+## 20.3.50 (2022-10-18)
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I408860` - The issue with "While focus the item using tab key, focus disappeared instead of focus the first popup element in the Angular Dropdown Tree component" has been resolved.
+
 ## 20.3.49 (2022-10-11)
 
 ### ListBox
