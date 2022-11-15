@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'allowNodeOverlap', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -44,6 +44,12 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default undefined
      */
     public addInfo: any;
+    /** 
+     * Specifies a value indicating whether to overlap the connector over with the source and target node. 
+     * If the LineRouting is enabled in the diagram, then allowNodeOverlap property will not work.
+     * @default false
+     */
+    public allowNodeOverlap: any;
     /** 
      * 
      */

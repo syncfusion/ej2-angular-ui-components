@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 20.3.56 (2022-11-08)
+## 20.3.50 (2022-10-18)
 
 ### Calendar
 
@@ -1242,6 +1242,38 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.56 (2022-11-08)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute is not disabled the form components" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
 
 ## 20.3.49 (2022-10-11)
 

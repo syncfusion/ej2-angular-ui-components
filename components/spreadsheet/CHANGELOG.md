@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.3.57 (2022-11-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I412994` - Issue with "string value is converted into Date value when string contains the month name as its part of the string" has been resolved.
+
 ## 20.3.56 (2022-11-08)
 
 ### Spreadsheet

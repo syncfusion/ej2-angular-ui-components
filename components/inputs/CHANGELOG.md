@@ -2,25 +2,19 @@
 
 ## [Unreleased]
 
-## 20.3.56 (2022-11-08)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+## 20.3.57 (2022-11-15)
 
 ### NumericTextBox
 
 #### Bug Fixes
 
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+- `#I417969` - The issue "Clear button does not working after the component is enabled" has been resolved.
 
-### MaskedTextBox
+### TextBox
 
 #### Bug Fixes
 
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+- `#I415324` - The issue "Refresh method is not working properly in TextBox component" has been resolved.
 
 ## 20.3.50 (2022-10-18)
 
@@ -1284,6 +1278,26 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.3.56 (2022-11-08)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
 
 ## 20.3.49 (2022-10-11)
 
