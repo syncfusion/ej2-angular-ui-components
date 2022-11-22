@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.3.58 (2022-11-22)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I416610` - Able to scroll vertically when virtual scrolling enabled without scrollable records issue has been fixed.
+- `#I417049` - Adding duration to an unscheduled task affects the project start date.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.3.57 (2022-11-15)
 
 ### Gantt
@@ -13,8 +24,6 @@
 - `#I413560` - Datasource Property not updated properly after row indent and outdent issue has been fixed.
 - `#I65261`  - Filtering functionality issues in duration column.
 - `#I65321`  - Task duration is not calculated properly in dialog edit.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.3.56 (2022-11-08)
 

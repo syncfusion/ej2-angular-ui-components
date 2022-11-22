@@ -2,13 +2,14 @@
 
 ## [Unreleased]
 
-## 20.3.57 (2022-11-15)
+## 20.3.58 (2022-11-22)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I412994` - Issue with "string value is converted into Date value when string contains the month name as its part of the string" has been resolved.
+- `#I416319` - Issue with "exception throws in the data validation input field while providing input value as formula like (TODAY()) " has been resolved.
+- `#I406345` - Issue with "page goes unresponsive on editing cell which has multiple formula dependency" has been resolved.
 
 ## 20.3.56 (2022-11-08)
 
@@ -1232,6 +1233,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.57 (2022-11-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I412994` - Issue with "string value is converted into Date value when string contains the month name as its part of the string" has been resolved.
 
 ## 20.3.52 (2022-10-26)
 
