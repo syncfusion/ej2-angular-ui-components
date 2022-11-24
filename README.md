@@ -1,14 +1,14 @@
 # Syncfusion Angular UI Components Library (Essential JS 2)
- Syncfusion [Angular UI Components library](https://www.syncfusion.com/angular-components?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples) has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 80+ UI components that every applications will ever need.
+ Syncfusion [Angular UI Components library](https://www.syncfusion.com/angular-?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 80+ UI components that every applications will ever need.
  
- > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
+ > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
 
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community license (https://www.syncfusion.com/products/communitylicense?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 ## Resources
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_campaign=ej2-angular-components)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Product Page](https://www.syncfusion.com/angular-components?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Product Page](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
 ## Framework highlights
  ### Lightweight and user friendly
@@ -27,7 +27,7 @@
  With our commitment to at least four major updates per year, you receive the most up-to-date functionality and new components in addition to monthly service packs and bug fixes. Custom patches are available as needed.
 
 ## About Syncfusion Angular UI Components
-Syncfusion's [Angular UI Components](https://www.syncfusion.com/angular-components?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. We provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/angular-components/angular-grid), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts), [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples).
+Syncfusion's [Angular UI Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. We provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm), [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
 
 ## Control List
 ### Grids
@@ -1198,39 +1198,39 @@ Syncfusion's [Angular UI Components](https://www.syncfusion.com/angular-componen
  
 ## Supported Frameworks
 The Syncfusion Essential JS 2 is also offered in following list of frameworks.
-* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
-* [React](https://www.syncfusion.com/react-components?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Vue.js](https://www.syncfusion.com/vue-components?utm_source=npm&utm_campaign=ej2-angular-components)
-* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
-* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
+* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [React](https://www.syncfusion.com/react-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Vue.js](https://www.syncfusion.com/vue-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
 ## Showcase Applications
-* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
 ## Support
 Product support is available for through following mediums.
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-angular-components) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-angular-components).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new).
-* Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
+* Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) with tag `syncfusion` and `ej2`.
 
 ## Related Links
 
-* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_campaign=ej2-angular-components)
-* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
+* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
 ## License
-Check the [license detail here](https://github.com/syncfusion/ej2-angular-components/blob/master/license).
+Check the [license detail here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
 
 ## Changelog
-Check the [changelog here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-components)
+Check the [changelog here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
      © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
