@@ -1,13 +1,16 @@
 # Syncfusion Angular UI Components Library (Essential JS 2)
- Syncfusion Angular UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 70+ UI components that every applications will ever need.
+ Syncfusion [Angular UI Components library](https://www.syncfusion.com/angular-components?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples) has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 80+ UI components that every applications will ever need.
+ 
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
-> 
+
 > A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
- ## Resources
- * [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Product Page](https://www.syncfusion.com/angular-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
- ## Framework highlights
+
+## Resources
+* [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_campaign=ej2-angular-components)
+* [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Product Page](https://www.syncfusion.com/angular-components?utm_source=npm&utm_campaign=ej2-angular-components)
+
+## Framework highlights
  ### Lightweight and user friendly
  The entire library is built from scratch to be lightweight and modular. Its footprint can be reduced further by including only the specific components and features your application requires.
  ### Modular architecture
@@ -23,13 +26,15 @@
  ### Stay current
  With our commitment to at least four major updates per year, you receive the most up-to-date functionality and new components in addition to monthly service packs and bug fixes. Custom patches are available as needed.
 
- ## Control List
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular UI Components](https://www.syncfusion.com/angular-components?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. We provide popular Angular Components such as [Angular DataGrid](https://www.syncfusion.com/angular-components/angular-grid), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts), [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=github&utm_medium=listing&utm_campaign=angular-github-samples).
 
+## Control List
 ### Grids
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-grid"><b>Data Grid</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-grid"><b>Data Grid</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-grids"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-grids" title="@syncfusion/ej2-angular-grids" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-grids"><img src="https://ej2.syncfusion.com/badges/ej2-grids/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-grids" title="@syncfusion/ej2-angular-grids" /></a>
@@ -46,7 +51,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-pivot-table"><b>Pivot Table</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-pivot-table"><b>Pivot Table</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-pivotview" title="@syncfusion/ej2-angular-pivotview" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-pivotview"><img src="https://ej2.syncfusion.com/badges/ej2-pivotview/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-pivotview" title="@syncfusion/ej2-angular-pivotview" /></a>
@@ -63,7 +68,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-spreadsheet"><b>Spreadsheet</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-spreadsheet"><b>Spreadsheet</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-spreadsheet"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-spreadsheet" title="@syncfusion/ej2-angular-spreadsheet" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-spreadsheet"><img src="https://ej2.syncfusion.com/badges/ej2-spreadsheet/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-spreadsheet" title="@syncfusion/ej2-angular-spreadsheet" /></a>
@@ -80,7 +85,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-tree-grid"><b>Tree Grid</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-tree-grid"><b>Tree Grid</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-treegrid"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-treegrid" title="@syncfusion/ej2-angular-treegrid" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treegrid"><img src="https://ej2.syncfusion.com/badges/ej2-treegrid/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-treegrid" title="@syncfusion/ej2-angular-treegrid" /></a>
@@ -102,7 +107,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-in-place-editor"><b>In-place Editor</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-in-place-editor"><b>In-place Editor</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-inplace-editor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-inplace-editor" title="@syncfusion/ej2-angular-inplace-editor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inplace-editor"><img src="https://ej2.syncfusion.com/badges/ej2-inplace-editor/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-inplace-editor" title="@syncfusion/ej2-angular-inplace-editor" /></a>
@@ -119,7 +124,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor"><b>Rich Text Editor</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor"><b>Rich Text Editor</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-richtexteditor" title="@syncfusion/ej2-angular-richtexteditor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-richtexteditor"><img src="https://ej2.syncfusion.com/badges/ej2-richtexteditor/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-richtexteditor" title="@syncfusion/ej2-angular-richtexteditor" /></a>
@@ -136,7 +141,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-word-processor"><b>Word Processor</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-word-processor"><b>Word Processor</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-documenteditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-documenteditor" title="@syncfusion/ej2-angular-documenteditor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-documenteditor"><img src="https://ej2.syncfusion.com/badges/ej2-documenteditor/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-documenteditor" title="@syncfusion/ej2-angular-documenteditor" /></a>
@@ -158,7 +163,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-autocomplete"><b>AutoComplete</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-autocomplete"><b>AutoComplete</b></a>
        </td>
        <td rowspan="6">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-dropdowns"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-dropdowns" title="@syncfusion/ej2-angular-dropdowns" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-dropdowns"><img src="https://ej2.syncfusion.com/badges/ej2-dropdowns/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-dropdowns" title="@syncfusion/ej2-angular-dropdowns" /></a>
@@ -175,7 +180,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-combobox"><b>ComboBox</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-combobox"><b>ComboBox</b></a>
        </td>
        <td>
            <a href="src/dropdowns/src/combo-box">Source</a>
@@ -189,7 +194,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-dropdown-list"><b>Dropdown List</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-dropdown-list"><b>Dropdown List</b></a>
        </td>
        <td>
            <a href="src/dropdowns/src/drop-down-list">Source</a>
@@ -203,7 +208,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-dropdown-tree"><b>Dropdown Tree</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-dropdown-tree"><b>Dropdown Tree</b></a>
        </td>
        <td>
            <a href="src/dropdowns/src/drop-down-tree">Source</a>
@@ -217,7 +222,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-listbox"><b>List Box</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-listbox"><b>List Box</b></a>
        </td>
        <td>
            <a href="src/dropdowns/src/list-box">Source</a>
@@ -231,7 +236,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-multiselect-dropdown"><b>MultiSelect Dropdown</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-multiselect-dropdown"><b>MultiSelect Dropdown</b></a>
        </td>
        <td>
            <a href="src/dropdowns/src/multi-select">Source</a>
@@ -250,7 +255,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-checkbox"><b>Checkbox</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-checkbox"><b>Checkbox</b></a>
        </td>
        <td rowspan="3">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-buttons" title="@syncfusion/ej2-angular-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-buttons" title="@syncfusion/ej2-angular-buttons" /></a>
@@ -267,7 +272,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-radio-button"><b>Radio Button</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-radio-button"><b>Radio Button</b></a>
        </td>
        <td>
            <a href="src/buttons/src/radio-button">Source</a>
@@ -281,7 +286,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-toggle-switch-button"><b>Toggle Switch Button</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-toggle-switch-button"><b>Toggle Switch Button</b></a>
        </td>
        <td>
            <a href="src/buttons/src/switch">Source</a>
@@ -295,7 +300,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-color-picker"><b>Color Picker</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-color-picker"><b>Color Picker</b></a>
        </td>
        <td rowspan="8">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-inputs" title="@syncfusion/ej2-angular-inputs" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-inputs"><img src="https://ej2.syncfusion.com/badges/ej2-inputs/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-inputs" title="@syncfusion/ej2-angular-inputs" /></a>
@@ -312,7 +317,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-file-upload"><b>File Upload</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-file-upload"><b>File Upload</b></a>
        </td>
        <td>
            <a href="src/inputs/src/uploader">Source</a>
@@ -326,7 +331,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-input-mask"><b>Input Mask</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-input-mask"><b>Input Mask</b></a>
        </td>
        <td>
            <a href="src/inputs/src/maskedtextbox">Source</a>
@@ -340,7 +345,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-numeric-textbox"><b>Numeric Textbox</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-numeric-textbox"><b>Numeric Textbox</b></a>
        </td>
        <td>
            <a href="src/inputs/src/numerictextbox">Source</a>
@@ -354,7 +359,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-range-selector"><b>Range Slider</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-range-selector"><b>Range Slider</b></a>
        </td>
        <td>
            <a href="src/inputs/src/slider">Source</a>
@@ -368,7 +373,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-textbox"><b>TextBox</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-textbox"><b>TextBox</b></a>
        </td>
        <td>
            <a href="src/inputs/src/textbox">Source</a>
@@ -382,7 +387,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/Signature"><b>Signature</b></a>
+           <a href="https://www.syncfusion.com/angular-components/Signature"><b>Signature</b></a>
        </td>
        <td>
            <a href="src/inputs/src/signature">Source</a>
@@ -401,7 +406,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-barcode"><b>Barcode Generator</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-barcode"><b>Barcode Generator</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-barcode-generator" title="@syncfusion/ej2-angular-barcode-generator" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-barcode-generator"><img src="https://ej2.syncfusion.com/badges/ej2-barcode-generator/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-barcode-generator" title="@syncfusion/ej2-angular-barcode-generator" /></a>
@@ -418,7 +423,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-circular-gauge"><b>Circular Gauge</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-circular-gauge"><b>Circular Gauge</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-circulargauge" title="@syncfusion/ej2-angular-circulargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-circulargauge"><img src="https://ej2.syncfusion.com/badges/ej2-circulargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-circulargauge" title="@syncfusion/ej2-angular-circulargauge" /></a>
@@ -435,7 +440,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-diagram"><b>Diagram</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-diagram"><b>Diagram</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-diagrams"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-diagrams" title="@syncfusion/ej2-angular-diagrams" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-diagrams"><img src="https://ej2.syncfusion.com/badges/ej2-diagrams/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-diagrams" title="@syncfusion/ej2-angular-diagrams" /></a>
@@ -452,7 +457,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-heatmap-chart"><b>HeatMap Chart</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-heatmap-chart"><b>HeatMap Chart</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-heatmap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-heatmap" title="@syncfusion/ej2-angular-heatmap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-heatmap"><img src="https://ej2.syncfusion.com/badges/ej2-heatmap/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-heatmap" title="@syncfusion/ej2-angular-heatmap" /></a>
@@ -469,7 +474,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-kanban-board"><b>Kanban</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-kanban-board"><b>Kanban</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-kanban" title="@syncfusion/ej2-angular-kanban" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-kanban"><img src="https://ej2.syncfusion.com/badges/ej2-kanban/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-kanban" title="@syncfusion/ej2-angular-kanban" /></a>
@@ -486,7 +491,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-linear-gauge"><b>Linear Gauge</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-linear-gauge"><b>Linear Gauge</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-lineargauge" title="@syncfusion/ej2-angular-lineargauge" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lineargauge"><img src="https://ej2.syncfusion.com/badges/ej2-lineargauge/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-lineargauge" title="@syncfusion/ej2-angular-lineargauge" /></a>
@@ -503,7 +508,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-maps"><b>Maps</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-maps"><b>Maps</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-maps"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-maps" title="@syncfusion/ej2-angular-maps" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-maps"><img src="https://ej2.syncfusion.com/badges/ej2-maps/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-maps" title="@syncfusion/ej2-angular-maps" /></a>
@@ -520,7 +525,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-treemap"><b>TreeMap</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-treemap"><b>TreeMap</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-treemap"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-treemap" title="@syncfusion/ej2-angular-treemap" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-treemap"><img src="https://ej2.syncfusion.com/badges/ej2-treemap/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-treemap" title="@syncfusion/ej2-angular-treemap" /></a>
@@ -537,7 +542,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-bullet-chart"><b>Bullet Chart</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-bullet-chart"><b>Bullet Chart</b></a>
        </td>
        <td rowspan="6">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-charts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-charts" title="@syncfusion/ej2-angular-charts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-charts"><img src="https://ej2.syncfusion.com/badges/ej2-charts/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-charts" title="@syncfusion/ej2-angular-charts" /></a>
@@ -554,7 +559,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-charts"><b>Charts</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-charts"><b>Charts</b></a>
        </td>
        <td>
            <a href="src/charts/src/chart">Source</a>
@@ -568,7 +573,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-range-selector"><b>Range Selector</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-range-selector"><b>Range Selector</b></a>
        </td>
        <td>
            <a href="src/charts/src/range-navigator">Source</a>
@@ -582,7 +587,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-smith-chart"><b>Smith Chart</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-smith-chart"><b>Smith Chart</b></a>
        </td>
        <td>
            <a href="src/charts/src/smithchart">Source</a>
@@ -596,7 +601,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-sparkline"><b>Sparkline Charts</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-sparkline"><b>Sparkline Charts</b></a>
        </td>
        <td>
            <a href="src/charts/src/sparkline">Source</a>
@@ -610,7 +615,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-stock-chart"><b>Stock Chart</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-stock-chart"><b>Stock Chart</b></a>
        </td>
        <td>
            <a href="src/charts/src/stock-chart">Source</a>
@@ -629,7 +634,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-calendar"><b>Calendar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-calendar"><b>Calendar</b></a>
        </td>
        <td rowspan="5">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-calendars"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-calendars" title="@syncfusion/ej2-angular-calendars" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-calendars"><img src="https://ej2.syncfusion.com/badges/ej2-calendars/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-calendars" title="@syncfusion/ej2-angular-calendars" /></a>
@@ -646,7 +651,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-datepicker"><b>DatePicker</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-datepicker"><b>DatePicker</b></a>
        </td>
        <td>
            <a href="src/calendars/src/datepicker">Source</a>
@@ -660,7 +665,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-daterangepicker"><b>DateRangePicker</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-daterangepicker"><b>DateRangePicker</b></a>
        </td>
        <td>
            <a href="src/calendars/src/daterangepicker">Source</a>
@@ -674,7 +679,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-datetime-picker"><b>DateTime Picker</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-datetime-picker"><b>DateTime Picker</b></a>
        </td>
        <td>
            <a href="src/calendars/src/datetimepicker">Source</a>
@@ -688,7 +693,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-timepicker"><b>TimePicker</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-timepicker"><b>TimePicker</b></a>
        </td>
        <td>
            <a href="src/calendars/src/timepicker">Source</a>
@@ -702,7 +707,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-gantt-chart"><b>Gantt Chart</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-gantt-chart"><b>Gantt Chart</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-gantt"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-gantt" title="@syncfusion/ej2-angular-gantt" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-gantt"><img src="https://ej2.syncfusion.com/badges/ej2-gantt/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-gantt" title="@syncfusion/ej2-angular-gantt" /></a>
@@ -719,7 +724,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-scheduler"><b>Scheduler</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-scheduler"><b>Scheduler</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-schedule" title="@syncfusion/ej2-angular-schedule" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-schedule"><img src="https://ej2.syncfusion.com/badges/ej2-schedule/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-schedule" title="@syncfusion/ej2-angular-schedule" /></a>
@@ -741,7 +746,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-accordion"><b>Accordion</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-accordion"><b>Accordion</b></a>
        </td>
        <td rowspan="9">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-navigations" title="@syncfusion/ej2-angular-navigations" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-navigations"><img src="https://ej2.syncfusion.com/badges/ej2-navigations/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-navigations" title="@syncfusion/ej2-angular-navigations" /></a>
@@ -758,7 +763,7 @@
    </tr>
     <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/breadcrumb"><b>Breadcrumb</b></a>
+           <a href="https://www.syncfusion.com/angular-components/breadcrumb"><b>Breadcrumb</b></a>
        </td>
        <td>
            <a href="src/navigations/src/breadcrumb">Source</a>
@@ -772,7 +777,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/carousel"><b>Carousel</b></a>
+           <a href="https://www.syncfusion.com/angular-components/carousel"><b>Carousel</b></a>
        </td>
        <td>
            <a href="src/navigations/src/carousel">Source</a>
@@ -786,7 +791,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-context-menu"><b>Context Menu</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-context-menu"><b>Context Menu</b></a>
        </td>
        <td>
            <a href="src/navigations/src/context-menu">Source</a>
@@ -800,7 +805,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-menu-bar"><b>Menu Bar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-menu-bar"><b>Menu Bar</b></a>
        </td>
        <td>
            <a href="src/navigations/src/menu">Source</a>
@@ -814,7 +819,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-sidebar"><b>Sidebar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-sidebar"><b>Sidebar</b></a>
        </td>
        <td>
            <a href="src/navigations/src/sidebar">Source</a>
@@ -828,7 +833,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-tabs"><b>Tabs</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-tabs"><b>Tabs</b></a>
        </td>
        <td>
            <a href="src/navigations/src/tab">Source</a>
@@ -842,7 +847,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-toolbar"><b>Toolbar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-toolbar"><b>Toolbar</b></a>
        </td>
        <td>
            <a href="src/navigations/src/toolbar">Source</a>
@@ -856,7 +861,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-treeview"><b>TreeView</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-treeview"><b>TreeView</b></a>
        </td>
        <td>
            <a href="src/navigations/src/treeview">Source</a>
@@ -870,7 +875,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-file-manager"><b>File Manager</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-file-manager"><b>File Manager</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-filemanager" title="@syncfusion/ej2-angular-filemanager" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-filemanager"><img src="https://ej2.syncfusion.com/badges/ej2-filemanager/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-filemanager" title="@syncfusion/ej2-angular-filemanager" /></a>
@@ -892,7 +897,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-button"><b>Button</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-button"><b>Button</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-buttons" title="@syncfusion/ej2-angular-buttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-buttons"><img src="https://ej2.syncfusion.com/badges/ej2-buttons/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-buttons" title="@syncfusion/ej2-angular-buttons" /></a>
@@ -909,7 +914,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-chips"><b>Chips</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-chips"><b>Chips</b></a>
        </td>
        <td>
            <a href="src/buttons/src/chips">Source</a>
@@ -923,7 +928,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-button-group"><b>Button Group</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-button-group"><b>Button Group</b></a>
        </td>
        <td rowspan="4">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-splitbuttons"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-splitbuttons" title="@syncfusion/ej2-angular-splitbuttons" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-splitbuttons"><img src="https://ej2.syncfusion.com/badges/ej2-splitbuttons/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-splitbuttons" title="@syncfusion/ej2-angular-splitbuttons" /></a>
@@ -940,7 +945,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-dropdown-menu"><b>Dropdown Menu</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-dropdown-menu"><b>Dropdown Menu</b></a>
        </td>
        <td>
            <a href="src/splitbuttons/src/drop-down-button">Source</a>
@@ -954,7 +959,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-progress-button"><b>Progress Button</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-progress-button"><b>Progress Button</b></a>
        </td>
        <td>
            <a href="src/splitbuttons/src/progress-button">Source</a>
@@ -968,7 +973,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-split-button"><b>Split Button</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-split-button"><b>Split Button</b></a>
        </td>
        <td>
            <a href="src/splitbuttons/src/split-button">Source</a>
@@ -987,7 +992,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-avatar"><b>Avatar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-avatar"><b>Avatar</b></a>
        </td>
        <td rowspan="4">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-layouts"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-layouts" title="@syncfusion/ej2-angular-layouts" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-layouts"><img src="https://ej2.syncfusion.com/badges/ej2-layouts/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-layouts" title="@syncfusion/ej2-angular-layouts" /></a>
@@ -1004,7 +1009,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-card"><b>Card</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-card"><b>Card</b></a>
        </td>
        <td>
            <a href="src/layouts/styles/card">Styles</a>
@@ -1018,7 +1023,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout"><b>Dashboard Layout</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-dashboard-layout"><b>Dashboard Layout</b></a>
        </td>
        <td>
            <a href="src/layouts/src/dashboard-layout">Source</a>
@@ -1032,7 +1037,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-splitter"><b>Splitter</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-splitter"><b>Splitter</b></a>
        </td>
        <td>
            <a href="src/layouts/src/splitter">Source</a>
@@ -1046,7 +1051,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-modal-dialog"><b>Dialog</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-modal-dialog"><b>Dialog</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-popups"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-popups" title="@syncfusion/ej2-angular-popups" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-popups"><img src="https://ej2.syncfusion.com/badges/ej2-popups/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-popups" title="@syncfusion/ej2-angular-popups" /></a>
@@ -1063,7 +1068,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-tooltip"><b>Tooltip</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-tooltip"><b>Tooltip</b></a>
        </td>
        <td>
            <a href="src/popups/src/tooltip">Source</a>
@@ -1077,7 +1082,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-listview"><b>ListView</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-listview"><b>ListView</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-lists"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-lists" title="@syncfusion/ej2-angular-lists" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-lists"><img src="https://ej2.syncfusion.com/badges/ej2-lists/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-lists" title="@syncfusion/ej2-angular-lists" /></a>
@@ -1099,7 +1104,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-badge"><b>Badge</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-badge"><b>Badge</b></a>
        </td>
        <td rowspan="2">
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-notifications"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-notifications" title="@syncfusion/ej2-angular-notifications" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-notifications"><img src="https://ej2.syncfusion.com/badges/ej2-notifications/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-notifications" title="@syncfusion/ej2-angular-notifications" /></a>
@@ -1116,7 +1121,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-toast"><b>Toast</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-toast"><b>Toast</b></a>
        </td>
        <td>
            <a href="src/notifications/src/toast">Source</a>
@@ -1130,7 +1135,7 @@
    </tr>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-progressbar"><b>Progress Bar</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-progressbar"><b>Progress Bar</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-progressbar"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-progressbar" title="@syncfusion/ej2-angular-progressbar" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-progressbar"><img src="https://ej2.syncfusion.com/badges/ej2-progressbar/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-progressbar" title="@syncfusion/ej2-angular-progressbar" /></a>
@@ -1152,7 +1157,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-query-builder"><b>Query Builder UI</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-query-builder"><b>Query Builder UI</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-querybuilder"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-querybuilder" title="@syncfusion/ej2-angular-querybuilder" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-querybuilder"><img src="https://ej2.syncfusion.com/badges/ej2-querybuilder/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-querybuilder" title="@syncfusion/ej2-angular-querybuilder" /></a>
@@ -1174,7 +1179,7 @@
 <table>
    <tr>
        <td>
-           <a href="https://www.syncfusion.com/angular-ui-components/angular-pdf-viewer"><b>PDF Viewer</b></a>
+           <a href="https://www.syncfusion.com/angular-components/angular-pdf-viewer"><b>PDF Viewer</b></a>
        </td>
        <td>
            <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-pdfviewer" title="@syncfusion/ej2-angular-pdfviewer" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-pdfviewer"><img src="https://ej2.syncfusion.com/badges/ej2-pdfviewer/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-pdfviewer" title="@syncfusion/ej2-angular-pdfviewer" /></a>
@@ -1191,27 +1196,47 @@
    </tr>
 </table>
  
- ## Supported Frameworks
- The Syncfusion Essential JS 2 is also offered in following list of frameworks.
- * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
- ## Showcase Applications
- * [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-angular-ui-components)
- ## Support
- Product support is available for through following mediums.
- * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-angular-ui-components) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-angular-ui-components).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
+## Supported Frameworks
+The Syncfusion Essential JS 2 is also offered in following list of frameworks.
+* [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
+* [React](https://www.syncfusion.com/react-components?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Vue.js](https://www.syncfusion.com/vue-components?utm_source=npm&utm_campaign=ej2-angular-components)
+* [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
+* [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-components)
+
+## Showcase Applications
+* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Loan Calculator](https://ej2.syncfusion.com/showcase/angular/loancalculator?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-angular-components)
+
+## Support
+Product support is available for through following mediums.
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-angular-components) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-angular-components).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
- ## License
- Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
- ## Changelog
- Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
+
+## Related Links
+
+* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_campaign=ej2-angular-components)
+* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_campaign=ej2-angular-components)
+
+## License
+Check the [license detail here](https://github.com/syncfusion/ej2-angular-components/blob/master/license).
+
+## Changelog
+Check the [changelog here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-components)
+
      © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
+
+<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
+
+<p align="center">
+  <a href="mailto:sales@syncfusion.com?Subject=Syncfusion Angular Components - NPM" target="_top">sales@syncfusion.com</a> | Toll Free: 1-888-9 DOTNET <br>
+</p>
