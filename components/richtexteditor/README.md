@@ -1,6 +1,6 @@
 # ej2-angular-richtexteditor
 
-The [Angular Rich Text Editor](https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) component is a HTML and markdown editor that provides best user experience for creating and updating the content.
+The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) component is a HTML and markdown editor that provides best user experience for creating and updating the content.
 
 ![](../../ReadMe_Images/RTE.GIF)
 
@@ -17,50 +17,52 @@ npm install @syncfusion/ej2-angular-richtexteditor
 
 ```
 
-## 2. Components included
+## Related Links
 
-* [GettingStarted](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/tools)
-* [Product Page](https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+[Learn More about Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Download Free Trial](https://www.syncfusion.com/downloads/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[View Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Community Forums](https://www.syncfusion.com/forums/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Knowledge Base](https://www.syncfusion.com/kb/angular-js2/richtexteditor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
 
-## 3. Supported frameworks
+## Supported frameworks
 Rich text editor component also supports the following frameworks:
-1.  [TypeScript Rich Text editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-2.	[React Rich Text Editor](https://www.syncfusion.com/react-ui-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-3.	[Vue Rich Text Editor](https://www.syncfusion.com/vue-ui-components/vue-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-4.	[ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-5.	[ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+1. [Blazor Rich Text Editor](https://www.syncfusion.com/blazor-components/blazor-wysiwyg-rich-text-editor) 
+2. [JavaScript Rich Text editor](https://www.syncfusion.com/javascript-ui-controls/js-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+3.	[React Rich Text Editor](https://www.syncfusion.com/react-components/react-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+4.	[Vue Rich Text Editor](https://www.syncfusion.com/vue-components/vue-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+5.	[ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+6.	[ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
 
-## 4. Use-case samples / Showcase samples
+## Use-case samples / Showcase samples
 
 * [Angular HTML editor Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/tools)
 * [Blog posting Demo in Angular](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/blog-posting)
 * [Angular Markdown editor Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor)
 * [Inline edit Demo in Angular](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/inline)
 
-## 5. Key features
+## Key features
 
-* [Mode](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/iframe): Provides &lt;IFRAME&gt; and &lt;DIV&gt; mode.
-* [Markdown](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor-preview): Handles markdown editing.
-* [Module](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#module-injection): Contains a modular library to load the necessary functionality on demand.
-* [Toolbar](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/types): Provides a fully customizable toolbar.
-* [Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/miscellaneous/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#code-view): HTML view to edit the source directly for developers.
+* [Mode](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/iframe?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Provides &lt;IFRAME&gt; and &lt;DIV&gt; mode.
+* [Markdown](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/markdown-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Handles markdown editing.
+* [Module](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/#module-injection?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Contains a modular library to load the necessary functionality on demand.
+* [Toolbar](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/types?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Provides a fully customizable toolbar.
+* [Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-mode/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): HTML view to edit the source directly for developers.
 * [Third-party Integration](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Integrates third-party library.
-* [Preview](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#/material/rich-text-editor/markdown-editor-preview): Preview the modified content before saving it.
-* [Tools](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#toolbar-items): Handles images, hyperlinks, uploads, and more.
-* [Undo and Redo](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/miscellaneous/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm/#undoredo-manager): Contains undo/redo manager.
+* [Preview](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/markdown-editor-preview?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Preview the modified content before saving it.
+* [Tools](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar/#toolbar-items?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Handles images, hyperlinks, uploads, and more.
+* [Undo and Redo](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/miscellaneous/#undoredo-manager?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm): Contains undo/redo manager.
 
-## 6. Support
-
-Product support can be obtained through the following mediums:
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) support system or [Community forum.](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm).
-8 Ask your query in Stack Overflow with tag ‘syncfusion’, ‘ej2’.
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Rich Text Editor, we provide popular Angular Components such as [Angular Grid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm), [Angular ListView](https://www.syncfusion.com/angular-components/angular-listview?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm), [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm).
  
-## 7. License 
-Check the license details [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+## License 
+Check the license details [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
 
-## 8. Change log 
- Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/richtexteditor/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
+## Change log 
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/richtexteditor/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

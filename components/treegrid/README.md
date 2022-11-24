@@ -32,10 +32,10 @@ Tree Grid component is also offered in following list of frameworks.
 
 1. [Blazor](https://www.syncfusion.com/blazor-components/blazor-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
 2. [React](https://www.syncfusion.com/react-components/react-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
-2. [Vue](https://www.syncfusion.com/vue-components/vue-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
-3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
-4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
-5. [JavaScript](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
+3. [Vue](https://www.syncfusion.com/vue-components/vue-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
+4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
+5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
+6. [JavaScript](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
 
 ## Key Features
 
@@ -50,21 +50,21 @@ Tree Grid component is also offered in following list of frameworks.
   * [**Cell Styling**](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/conditionalformatting) - TreeGrid cell styles can be customized either by using CSS or programmatically.
   * [**Selection**](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/selection) - Rows or cells can be selected in the TreeGrid. One or more rows or cells can also be selected by holding Ctrl or Command, or programmatically.
   * [**Templates**](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/columntemplate) - Templates can be used to create custom user experiences in the TreeGrid.
-* **Aggregation** - Provides the option to easily visualized the Aggregates for column values.
+* [**Aggregation**](https://ej2.syncfusion.com/angular/documentation/treegrid/aggregates/aggregates/) - Provides the option to easily visualized the Aggregates for column values.
 * [**Context menu**](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/contextmenu-default) -The context menu provides a list of actions to be performed in the TreeGrid. It appears when a cell, header, or the pager is right-clicked.
 * [**Export**](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/exporting-default) - Provides the options to Export the TreeGrid data to Excel, PDF, and CSV formats.
-* **RTL support** - Provides a full-fledged right-to-left mode which aligns content in the TreeGrid control from right to left.
-* **Localization** - Provides inherent support to localize the UI.
+* [**RTL support**](https://ej2.syncfusion.com/angular/documentation/treegrid/global-local/#right-to-left-rtl) - Provides a full-fledged right-to-left mode which aligns content in the TreeGrid control from right to left.
+* [**Localization**](https://ej2.syncfusion.com/angular/documentation/treegrid/global-local/#localization) - Provides inherent support to localize the UI.
 
 ## About Syncfusion Angular UI Components
 Syncfusion's [Angular Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Tree Grid, we provide popular Angular Components such as [Angular Grid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm), [Angular ListView](https://www.syncfusion.com/angular-components/angular-listview?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm).
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=grid).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/treegrid/CHANGELOG.md?utm_source=npm&utm_campaign=grid)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/treegrid/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-tree-grid-npm)
 
 &copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
