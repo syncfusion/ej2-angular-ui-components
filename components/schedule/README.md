@@ -1,12 +1,12 @@
 # ej2-angular-schedule
 
-The [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) component is an event calendar that facilitates almost all the basic Outlook and Google Calendar features, allowing the user to plan and manage appointments and time efficiently. It receives data from a variety of data sources, such as an array of JSON objects, OData web services, RESTful or WCF services, and [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data/) with built-in load on demand support to reduce the data transfer and load time. Also, it is availed with the multiple resources support that allots an unique individual space for more than one resources on the same calendar.
+The [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) component is an event calendar that facilitates almost all the basic Outlook and Google Calendar features, allowing the user to plan and manage appointments and time efficiently. It receives data from a variety of data sources, such as an array of JSON objects, OData web services, RESTful or WCF services, and [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data/?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) with built-in load on demand support to reduce the data transfer and load time. Also, it is availed with the multiple resources support that allots an unique individual space for more than one resources on the same calendar.
 
 ![Schedule](https://ej2.syncfusion.com/products/images/schedule/readme.png)
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at [here](https://www.syncfusion.com/sales/products) or start a free 30-day trial from [here](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm). To acquire a license, you can purchase one at [here](https://www.syncfusion.com/sales/products?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) or start a free 30-day trial from [here](https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 
-> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community [license](https://www.syncfusion.com/products/communitylicense?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 ## Setup
 
@@ -20,14 +20,14 @@ npm install @syncfusion/ej2-angular-schedule
 
 * [Getting Started](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started.html?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/schedule/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
-* [Product Page](https://www.syncfusion.com/angular-ui-components/angular-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Product Page](https://www.syncfusion.com/angular-components/angular-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 
 ## Supported Frameworks
 
 Schedule component is also available in following list of frameworks.
 
-1. [React Scheduler](https://www.syncfusion.com/react-ui-components/react-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
-2. [Vue Scheduler](https://www.syncfusion.com/vue-ui-components/vue-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+1. [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+2. [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 3. [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 4. [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 5. [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
@@ -59,12 +59,21 @@ Schedule component is also available in following list of frameworks.
 Product support is available through following mediums.
 
 * Creating incident through Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
+
+## Related Links
+
+* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
+* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm)
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 
 ## Changelog
 
