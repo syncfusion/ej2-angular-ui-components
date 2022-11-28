@@ -1,16 +1,16 @@
 # ej2-angular-documenteditor
 
-The [Angular Document Editor](https://www.syncfusion.com/angular-ui-components/angular-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
+The [Angular Word Processor](https://www.syncfusion.com/angular-components/angular-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
 ![Document Editor](https://ej2.syncfusion.com/products/images/documenteditor/readme.gif)
 
-An example [Word Processor server-side Web API projects for ASP.NET MVC, ASP.NET Core, and Java is available in GitHub](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) which contains all the mandatory Web APIs for opening Word documents, paste with formatting, restrict editing, spell-checking, and saving documents.
+An example [Word Processor server-side Web API projects for ASP.NET MVC, ASP.NET Core, and Java is available in GitHub](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Web-Services?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) which contains all the mandatory Web APIs for opening Word documents, paste with formatting, restrict editing, spell-checking, and saving documents.
 
 Syncfusion provides a predefined [Word Processor server docker image](https://hub.docker.com/r/syncfusion/word-processor-server?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) targeting ASP.NET Core 2.1 framework. You can directly pull this docker image and deploy it in server on the go. You can also create own docker image by customizing the existing [docker project from GitHub](https://github.com/SyncfusionExamples/Word-Processor-Server-Docker?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm).
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community license (https://www.syncfusion.com/products/communitylicense?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 
 ## Setup
@@ -23,7 +23,7 @@ npm install @syncfusion/ej2-angular-documenteditor
 
 ## Resources
 
-* [Product Page](https://www.syncfusion.com/angular-ui-components/angular-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+* [Product Page](https://www.syncfusion.com/angular-components/angular-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
 * [Getting Started](https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
 * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm/#/material/document-editor/default)
 
@@ -31,11 +31,12 @@ npm install @syncfusion/ej2-angular-documenteditor
 
 Document Editor component is also available in following list of frameworks.
 
-1. [React Document Editor](https://www.syncfusion.com/react-ui-components/react-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
-2. [Vue Document Editor](https://www.syncfusion.com/vue-ui-components/vue-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
-3. [JavaScript Document Editor](https://www.syncfusion.com/javascript-ui-controls/js-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
-4. [ASP.NET Core Document Editor](https://www.syncfusion.com/aspnet-core-ui-controls/word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
-5. [ASP.NET MVC Document Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+1. [Blazor Word Processor](https://www.syncfusion.com/blazor-components/blazor-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+2. [React Word Processor](https://www.syncfusion.com/react-components/react-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+3. [Vue Word Processor](https://www.syncfusion.com/vue-components/vue-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+4. [JavaScript Word Processor](https://www.syncfusion.com/javascript-ui-controls/js-word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+5. [ASP.NET Core Word Processor](https://www.syncfusion.com/aspnet-core-ui-controls/word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
+6. [ASP.NET MVC Word Processor](https://www.syncfusion.com/aspnet-mvc-ui-controls/word-processor?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm)
 
 ## Key Features
 
@@ -72,3 +73,6 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Grid, we provide popular Angular Components such as [Angular Grid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm), [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm), [Angular ListView](https://www.syncfusion.com/angular-components/angular-listview?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-word-processor-npm).
