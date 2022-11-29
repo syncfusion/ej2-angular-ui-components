@@ -118,7 +118,7 @@ export class GridComponent extends Grid implements IComponentBase {
      * > * It accepts either [template string](../../common/template-engine/) or HTML element ID. 
      * > * The row template must be a table row.
      * 
-     * > Check the [`Row Template`](../../grid/row/) customization.
+     * > Check the [`Row Template`](../../grid/row/row-template/) customization.
      *     
      */
     @ContentChild('rowTemplate')

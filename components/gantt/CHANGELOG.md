@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.3.59 (2022-11-29)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I419062` - Edit type issue when datasource is undefined issue has been fixed.
+- `#I417042` - A console error is thrown when updating the parent task's start date.
+- `#I419262` - The dependency line is rendered even after cancel.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.3.58 (2022-11-22)
 
 ### Gantt
@@ -10,8 +22,6 @@
 
 - `#I416610` - Able to scroll vertically when virtual scrolling enabled without scrollable records issue has been fixed.
 - `#I417049` - Adding duration to an unscheduled task affects the project start date.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.3.57 (2022-11-15)
 
