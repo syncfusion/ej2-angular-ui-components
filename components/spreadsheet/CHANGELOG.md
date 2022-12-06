@@ -2,14 +2,16 @@
 
 ## [Unreleased]
 
-## 20.3.59 (2022-11-29)
+## 20.3.60 (2022-12-06)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I414041` - Issue with "SUM formula range is not updated properly while inserting a new row at the last index of formula range" has been resolved.
-- `#I418122` - Issue with "autofit rows and columns are not working properly when rows and columns contain the wrap content" has been resolved.
+- `#I412801` - Issue with "cell text is not displayed while using the custom cell styling in the imported excel file" has been resolved.
+
+- `#I420156` - Issue with "autofill icon is not aligned properly while rendering the component in the RTL mode" has been resolved.
+- `#I420156` - Issue with "row and column resize is not working while rendering the component in the RTL mode" has been resolved.
 
 ## 20.3.56 (2022-11-08)
 
@@ -1233,6 +1235,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.59 (2022-11-29)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I414041` - Issue with "SUM formula range is not updated properly while inserting a new row at the last index of formula range" has been resolved.
+- `#I418122` - Issue with "autofit rows and columns are not working properly when rows and columns contain the wrap content" has been resolved.
 
 ## 20.3.58 (2022-11-22)
 

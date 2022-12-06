@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 20.3.56 (2022-11-08)
+## 20.3.60 (2022-12-06)
+
+### Kanban
+
+#### Bug Fixes
+
+- `#F178602` - Now, the ability to drag & drop several cards onto the same column works properly.
+- `#F178604` - Now, the arrangement of several cards in descending order after drag and drop is now resolved.
+
+## 20.3.59 (2022-11-29)
 
 ### Kanban
 
