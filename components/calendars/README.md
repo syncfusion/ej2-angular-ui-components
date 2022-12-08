@@ -1,12 +1,12 @@
 # ej2-angular-calendars
 
-The calendar package contains date and time components such as calendar, date picker, date range picker, date time picker, and time picker. These components come with options to disable dates, restrict selection, and show custom events. It also has documentation and support available under commercial and community licenses. Please visit [www.syncfusion.com](https://www.syncfusion.com/) to get started.
+The Angular Calendar package contains date and time components such as [calendar](https://www.syncfusion.com/angular-components/angular-calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm),[ date picker](https://www.syncfusion.com/angular-components/angular-datepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm), [daterangepicker](https://www.syncfusion.com/angular-components/angular-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm), [datetime picker](https://www.syncfusion.com/angular-components/angular-datetime-picker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm), and [time picker](https://www.syncfusion.com/angular-components/angular-timepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm). These components come with options to disable dates, restrict selection, and show custom events. It also has documentation and support available under commercial and community licenses. Please visit [our website](https://www.syncfusion.com/) to get started.
 
 <p align="center" style="width:400px; margin:0 auto;">
   <img src="https://ej2.syncfusion.com/products/images/calendar/readme.gif" alt="Calendar components">
 </p>
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here  (https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or start a [free 30-day trial here](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -34,22 +34,23 @@ The `calendar` is a graphical user interface component that displays a Gregorian
 
 #### Key features
 
-* [Date range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/date-range) - Restricts the range of dates that can be selected by using the `min` and `max` properties.
-* [Customization](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/special-dates) - Allows complete control over the appearance of the calendar component.
-* [Month or year selection](https://ej2.syncfusion.com/angular/documentation/calendar/calendar-views#calendar-views) - Provides a flexible option to select only a month or year as the date value.
-* [First day of week](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/change-the-first-day-of-week#change-the-first-day-of-week) - Changes the first day of all weeks in every month.
-* [Week number](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/render-the-calendar-with-week-numbers#render-calendar-with-week-number) - Displays the week number of the selected date in the calendar by enabling the week number option.
-* [Disabled dates](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/disabled) - Disables any date to prevent the user from selecting that date.
-* [Start and depth view](https://ej2.syncfusion.com/angular/documentation/calendar/calendar-views#view-restriction) - The Calendar has `month`, `year`, and `decade` views that provide flexibility to select dates.
-* [Highlight weekends](https://ej2.syncfusion.com/angular/documentation/calendar/customization#highlight-weekends) - The calendar supports to highlighting every weekend in a month.
-* [Globalization](https://ej2.syncfusion.com/angular/documentation/calendar/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and the today button text to any supported language.
+* [Date range](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/date-range?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Restricts the range of dates that can be selected by using the `min` and `max` properties.
+* [Customization](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/special-dates?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Allows complete control over the appearance of the calendar component.
+* [Month or year selection](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/month-picker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Provides a flexible option to select only a month or year as the date value.
+* [First day of week](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/change-the-first-day-of-week#change-the-first-day-of-week?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Changes the first day of all weeks in every month.
+* [Week number](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/render-the-calendar-with-week-numbers#render-calendar-with-week-number?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Displays the week number of the selected date in the calendar by enabling the week number option.
+* [Islamic calendar](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/islamic-calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Islamic calendar or Hijri calendar is a lunar calendar consisting of 12 months in a year of 354 or 355 days.
+* [Disabled dates](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/disabled?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Disables any date to prevent the user from selecting that date.
+* [Start and depth view](https://ej2.syncfusion.com/angular/documentation/calendar/calendar-views#view-restriction?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - The Calendar has `month`, `year`, and `decade` views that provide flexibility to select dates.
+* [Highlight weekends](https://ej2.syncfusion.com/angular/documentation/calendar/customization#highlight-weekends?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - The calendar supports to highlighting every weekend in a month.
+* [Globalization](https://ej2.syncfusion.com/angular/documentation/calendar/globalization#globalization?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Supports globalization (internationalization and localization) to translate the names of months, days, and the today button text to any supported language.
 
 #### Resources
 
-* [Getting started](https://ej2.syncfusion.com/angular/documentation/calendar/getting-started?utm_source=npm&utm_campaign=calendar#getting-started)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/api/calendar?utm_source=npm&utm_campaign=calendar)
-* [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/calendar)
+* [Getting started](https://ej2.syncfusion.com/angular/documentation/calendar/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [API reference](https://ej2.syncfusion.com/angular/documentation/api/calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [View online demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Product page](https://www.syncfusion.com/products/angular-components/calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
 
 ### DatePicker
 
@@ -67,7 +68,7 @@ The date picker is inherited from the calendar component. So, all the key featur
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started?utm_source=npm&utm_campaign=datepicker#getting-started)
 * [API reference](https://ej2.syncfusion.com/angular/documentation/api/datepicker?utm_source=npm&utm_campaign=datepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datepicker#/material/datepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/datepicker)
+* [Product page](https://www.syncfusion.com/products/angular-components/datepicker)
 
 ### TimePicker
 
@@ -89,7 +90,7 @@ The date picker is inherited from the calendar component. So, all the key featur
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started?utm_source=npm&utm_campaign=timepicker#getting-started)
 * [API reference](https://ej2.syncfusion.com/angular/documentation/api/timepicker?utm_source=npm&utm_campaign=timepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/timepicker)
+* [Product page](https://www.syncfusion.com/products/angular-components/timepicker)
 
 ### DateTimePicker
 
@@ -107,7 +108,7 @@ The date time picker is inherited from the date picker and time picker component
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started?utm_source=npm&utm_campaign=datetimepicker#getting-started)
 * [API reference](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker?utm_source=npm&utm_campaign=datetimepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/datetimepicker)
+* [Product page](https://www.syncfusion.com/products/angular-components/datetimepicker)
 
 ### DateRangePicker
 
@@ -129,14 +130,14 @@ The `date range picker` is a graphical user interface control that allows an end
 * [Getting started](https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started?utm_source=npm&utm_campaign=daterangepicker#getting-started)
 * [API reference](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker?utm_source=npm&utm_campaign=daterangepicker)
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/daterangepicker)
+* [Product page](https://www.syncfusion.com/products/angular-components/daterangepicker)
 
 ## Supported Frameworks
 
 Date time components are also offered in the following list of frameworks.
 
-* [React](https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
-* [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
+* [React](https://github.com/syncfusion/ej2-react-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
+* [VueJS](https://github.com/syncfusion/ej2-vue-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
 * [ASP.NET Core](https://www.syncfusion.com/products/aspnet-core-ui-controls/calendar)
 * [ASP.NET MVC](https://www.syncfusion.com/products/aspnet-mvc-ui-controls/calendar)
 * [JavaScript](https://www.syncfusion.com/products/javascript-ui-controls/calendar)
@@ -154,15 +155,24 @@ Date time components are also offered in the following list of frameworks.
 Product support is available through the following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=calendar) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=calendar).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new).
 * Ask your queries in Stack Overflow with tag `syncfusion`, `ej2`, and so on.
+
+## Related Links
+
+* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
+* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm)
 
 ## License
 
-Check the license details [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
+Check the license details [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/calendars/CHANGELOG.md).
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/calendars/CHANGELOG.md).
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
