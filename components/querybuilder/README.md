@@ -56,7 +56,7 @@ These components are available in following list of frameworks.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=querybuilder)?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm.
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm ).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm ).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm) with tag `syncfusion`, `ej2`.
 
 ## Related Links
@@ -70,10 +70,10 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/querybuilder/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/querybuilder/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm)
 
 © Copyright 2021 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

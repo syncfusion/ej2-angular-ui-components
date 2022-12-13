@@ -113,7 +113,7 @@ These components are available in following list of:
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-Trac](https://www.syncfusion.com/support/directtrac/incidents/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) with tag `syncfusion` and `ej2`.
 
 ## Related Links
@@ -127,10 +127,10 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/layouts/license/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/layouts/license/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/layouts/CHANGELOG.md/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/layouts/CHANGELOG.md/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
