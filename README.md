@@ -1214,7 +1214,7 @@ The Syncfusion Essential JS 2 is also offered in following list of frameworks.
 ## Support
 Product support is available for through following mediums.
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm) with tag `syncfusion` and `ej2`.
 
 ## Related Links
@@ -1227,7 +1227,7 @@ Product support is available for through following mediums.
 * [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)
 
 ## License
-Check the [license detail here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
+Check the [license detail here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm).
 
 ## Changelog
 Check the [changelog here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_medium=listing&utm_campaign=angular-components-npm)

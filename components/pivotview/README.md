@@ -26,10 +26,10 @@ npm install @syncfusion/ej2-angular-pivotview
 
 Pivot Grid component is also offered in following list of frameworks.
 
-1. [React](https://www.syncfusion.com/react-components/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
-2. [VueJS](https://www.syncfusion.com/vue-components/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
-3. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
-4. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
+1. [React](https://www.syncfusion.com/react-components/react-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
+2. [Vue](https://www.syncfusion.com/vue-components/vue-pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
+3. ASP.NET Core
+4. ASP.NET MVC
 5. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/pivot-table?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
 
 ## Key Features
@@ -48,7 +48,7 @@ Pivot Grid component is also offered in following list of frameworks.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## Related Links
@@ -62,10 +62,10 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/pivotview/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/pivotview/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-pivot-table-npm)
 
 &copy; Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

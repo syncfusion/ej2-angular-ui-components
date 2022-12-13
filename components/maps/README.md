@@ -29,8 +29,8 @@ Maps component is also offered in following list of frameworks.
 1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-maps?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
 2. [React](https://www.npmjs.com/package/@syncfusion/ej2-react-maps?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
 3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-maps?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/Maps/Default#/material?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/Maps/Default#/material?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
+4. ASP.NET Core
+5. ASP.NET MVC
 6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/js-maps?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
 
 ## Use case samples
@@ -61,7 +61,7 @@ Maps component is also offered in following list of frameworks.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm).
-* New [GitHub issues](https://github.com/syncfusion/ej2-angular-components/issues?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm).
+* New [GitHub issues](https://github.com/syncfusion/ej2-angular-ui-components/issues?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## Related Links
@@ -75,10 +75,10 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/LICENSE??utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/LICENSE??utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/maps/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/maps/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-maps-npm)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
