@@ -48,7 +48,7 @@ PDF Viewer component is also offered in following list of frameworks.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-pdfviewer/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## Related Links

@@ -23,14 +23,14 @@ Following list of components are available in the package
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/accordion/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=accordion)
   * [API References](https://ej2.syncfusion.com/angular/documentation/accordion/api-accordion.html?utm_source=npm&utm_campaign=accordion)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=accordion#/material/accordion/default.html)
-  * [Product Page](https://www.syncfusion.com/products/angular/accordion)
+  * [Product Page](https://www.syncfusion.com/angular-components/angular-accordion)
 
 * AppBar - The AppBar displays information and actions related to the current application screen. It is used to show branding, screen titles, navigation, and actions.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/appbar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=appbar)
   * [API References](https://ej2.syncfusion.com/angular/documentation/appbar/api-appbar.html?utm_source=npm&utm_campaign=appbar)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=appbar#/material/appbar/default.html)
-  * [Product Page](https://www.syncfusion.com/products/angular/appbar)
+  * [Product Page](https://www.syncfusion.com/angular-components/angular-appbar)
 
 * Breadcrumb - Graphical user interface that helps to identify or highlight the current location within a hierarchical structure of websites. The aim is to make the user aware of their current position in a hierarchy of website links.
 
@@ -58,21 +58,21 @@ Following list of components are available in the package
   * [Getting started](https://ej2.syncfusion.com/angular/documentation/sidebar/getting-started?lang=typescript&utm_source=npm&utm_campaign=sidebar#getting-started)
   * [API references](https://ej2.syncfusion.com/angular/documentation/api/sidebar?utm_source=npm&utm_campaign=sidebar)
   * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=tab#/material/sidebar/default)
-  * [Product page](https://www.syncfusion.com/products/angular-components/sidebar)
+  * [Product page](https://www.syncfusion.com/angular-components/angular-sidebar)
 
 * Tab - Content panel to show multiple contents in a specific space, one at a time.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/tab/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=tab)
   * [API References](https://ej2.syncfusion.com/angular/documentation/tab/api-tab.html?utm_source=npm&utm_campaign=tab)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=tab#/material/tab/default.html)
-  * [Product Page](https://www.syncfusion.com/products/angular/tab)
+  * [Product Page](https://www.syncfusion.com/angular-components/angular-tabs)
 
 * Toolbar - Displays a group of command buttons arranged horizontally.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=toolbar)
   * [API References](https://ej2.syncfusion.com/angular/documentation/toolbar/api-toolbar.html?utm_source=npm&utm_campaign=toolbar)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=toolbar#/material/toolbar/default.html)
-  * [Product Page](https://www.syncfusion.com/products/angular/toolbar)
+  * [Product Page](https://www.syncfusion.com/angular-components/angular-toolbar)
 
 * TreeView - Represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more.
 
@@ -92,12 +92,12 @@ Following list of components are available in the package
 
 `Navigation` component is also offered in following list of frameworks.
 
-1. [JavaScript](https://github.com/syncfusion/ej2-javascript-controls/tree/master/controls/navigations?utm_source=npm&utm_campaign=navigation)
-2. [React](https://github.com/syncfusion/ej2-react-components/tree/master/components/navigations?utm_source=npm&utm_campaign=navigation)
-3. [VueJS](https://github.com/syncfusion/ej2-vue-components/tree/master/components/navigations?utm_source=npm&utm_campaign=navigation)
-4. [ASP.NET Core](https://www.syncfusion.com/aspnet-core-controls/accordion)
-5. [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-controls/accordion)
-6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/accordion)
+1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
+2. [React](https://github.com/syncfusion/ej2-react-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
+3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
+4. [ASP.NET Core](https://github.com/syncfusion/ej2-aspnetcore-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
+5. [ASP.NET MVC](https://github.com/syncfusion/ej2-aspnetmvc-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
+6. [JavaScript (ES5)](https://github.com/syncfusion/ej2-javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
 
 ## Use-case samples / Showcase samples
 
@@ -194,7 +194,7 @@ Sidebar component is used in the following samples.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=navigation) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=navigation).
-* New [GitHub issue](https://github.com/syncfusion/ej2-javascript-ui-controls/issues/new).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_campaign=navigation) with tag `syncfusion` and `ej2`.
 
 ## Related Links
@@ -208,10 +208,10 @@ Product support is available for through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_campaign=navigation).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=navigation).
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/navigations/CHANGELOG.md?utm_source=npm&utm_campaign=navigation)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/navigations/CHANGELOG.md?utm_source=npm&utm_campaign=navigation)
 
 © Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

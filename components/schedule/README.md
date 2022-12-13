@@ -59,7 +59,7 @@ Schedule component is also available in following list of frameworks.
 Product support is available through following mediums.
 
 * Creating incident through Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## Related Links
@@ -73,7 +73,7 @@ Product support is available through following mediums.
 
 ## License
 
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
+Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-scheduler-npm).
 
 ## Changelog
 

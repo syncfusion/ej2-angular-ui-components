@@ -26,12 +26,12 @@ npm install @syncfusion/ej2-angular-diagrams
 
 Diagram component is also offered in following list of frameworks.
 
-1. [Angular](https://github.com/syncfusion/ej2-angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-2. [React](https://github.com/syncfusion/ej2-react-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-3. [VueJS](https://github.com/syncfusion/ej2-vue-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/Diagram/FlowChart#/material?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/Diagram/DefaultFunctionalities#/material?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-6. [JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls/diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+2. [React](https://github.com/syncfusion/ej2-react-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+4. [ASP.NET Core](https://github.com/syncfusion/ej2-aspnetcore-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+5. [ASP.NET MVC](https://github.com/syncfusion/ej2-aspnetmvc-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+6. [JavaScript (ES5)](https://github.com/syncfusion/ej2-javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
 
 ## Showcase samples
 
@@ -61,7 +61,7 @@ Diagram component is also offered in following list of frameworks.
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-components/issues/new).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
 * Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
 
 ## Related Links
@@ -79,6 +79,6 @@ Check the license detail [here](https://github.com/syncfusion/ej2/blob/master/li
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-components/blob/master/components/diagrams/CHANGELOG.md)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/diagrams/CHANGELOG.md)
 
 © Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
