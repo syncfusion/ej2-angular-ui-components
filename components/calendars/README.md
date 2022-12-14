@@ -109,52 +109,60 @@ The date time picker is inherited from the date picker and time picker component
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/default)
 * [Product page](https://www.syncfusion.com/products/angular-ui-components/datetimepicker)
 
-### DateRangePicker
+### Angular DateRangePicker
 
-The `date range picker` is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
+The [Angular DateRangePicker](https://www.syncfusion.com/angular-components/angular-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
 
 #### Key features
 
-* [Preset ranges](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/presets) - Defines the preset ranges to select the frequently used date range by the end users.
-* [Range restriction](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/date-range) - This control restricts the entry or selection of values within a specific range of date by defining the min and max properties.
-* [Limit the selection range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/day-span) - Directs the end user to select only the date range with specific minimum and maximum number of days’ count by setting the minDays and maxDays options.
-* [First day of week](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization#first-day-of-week) - Changes the first day of weeks in every month.
-* [Strict mode](https://ej2.syncfusion.com/angular/documentation/daterangepicker/range-selection#strict-mode) - The strictMode is an act that allows entry only of a valid date within the specified min and max range in a textbox.
-* [Customization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization#daterangepicker) - The appearance of the component can be customized completely.
-* [Format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/date-format) - The control’s input value can be custom formatted apart from the default culture’s specific date range format.
-* [Globalization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and button text to any supported language.
+* [Preset ranges](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/presets?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - Defines the preset ranges to select the frequently used date range by the end users.
+* [Range restriction](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/date-range?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - This control restricts the entry or selection of values within a specific range of date by defining the min and max properties.
+* [Limit the selection range](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/day-span?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - Directs the end user to select only the date range with specific minimum and maximum number of days’ count by setting the minDays and maxDays options.
+* [First day of week](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization/#first-day-of-week?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - Changes the first day of weeks in every month.
+* [Strict mode](https://ej2.syncfusion.com/angular/documentation/daterangepicker/range-selection/#strict-mode?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - The strictMode is an act that allows entry only of a valid date within the specified min and max range in a textbox.
+* [Customization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization/#daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - The appearance of the component can be customized completely.
+* [Format](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/date-format?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - The control’s input value can be custom formatted apart from the default culture’s specific date range format.
+* [Globalization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/globalization/#globalization?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) - Supports globalization (internationalization and localization) to translate the names of months, days, and button text to any supported language.
 
 #### Resources
 
-* [Getting started](https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started?utm_source=npm&utm_campaign=daterangepicker#getting-started)
-* [API reference](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker?utm_source=npm&utm_campaign=daterangepicker)
-* [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/default)
-* [Product page](https://www.syncfusion.com/products/angular-ui-components/daterangepicker)
+[Learn More about Angular DateRangePicker](https://www.syncfusion.com/angular-components/angular-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Download Free Trial](https://www.syncfusion.com/downloads/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[View Demos](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Community Forums](https://www.syncfusion.com/forums/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Knowledge Base](https://www.syncfusion.com/kb/angular-js2/daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
 
-## Supported Frameworks
+## Supported frameworks
 
 Date time components are also offered in the following list of frameworks.
 
-* [React](https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
-* [VueJS](https://github.com/syncfusion/ej2-vue-ui-components/tree/master/components/calendars?utm_source=npm&utm_campaign=calendars)
-* [ASP.NET Core](https://www.syncfusion.com/products/aspnet-core-ui-controls/calendar)
-* [ASP.NET MVC](https://www.syncfusion.com/products/aspnet-mvc-ui-controls/calendar)
-* [JavaScript](https://www.syncfusion.com/products/javascript-ui-controls/calendar)
+* [Blazor DateRangePicker](https://www.syncfusion.com/blazor-components/blazor-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
+* [React DateRangePicker](https://www.syncfusion.com/react-components/react-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
+* [Vue DateRangePicker](https://www.syncfusion.com/vue-components/vue-date-range-picker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
+* [ASP.NET Core DateRangePicker](https://www.syncfusion.com/products/aspnet-core-ui-controls/calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
+* [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/products/aspnet-mvc-ui-controls/calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
+* [JavaScript DateRangePicker](https://www.syncfusion.com/products/javascript-ui-controls/calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)
 
 ## Showcase samples
 
-1. Expanse tracker ([Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component is used in this showcase sample to depict total expenses.
+1. Expanse tracker ([Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date range picker component is used in this showcase sample to depict total expenses.
 
-2. Loan calculator ([Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=datepicker)) - Date picker component in this showcase sample displays the balance from monthly payment.
+2. Loan calculator ([Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date picker component in this showcase sample displays the balance from monthly payment.
 
-3. Stock chart ([Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component in this showcase sample to display the stock analysis.
+3. Stock chart ([Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date range picker component in this showcase sample to display the stock analysis.
+
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Date Range Picker, we provide popular Angular Components such as [Angular Grid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular ListView](https://www.syncfusion.com/angular-components/angular-listview?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm).
 
 ## Support
 
 Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=calendar) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=calendar).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
+* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm).
 * Ask your queries in Stack Overflow with tag `syncfusion`, `ej2`, and so on.
 
 ## License
