@@ -49,9 +49,15 @@ Following list of components are available in the package.
   * [Product Page](https://www.syncfusion.com/angular-ui-components/slider/?utm_source=npm&utm_campaign=slider)
 
 * **Uploader** - The [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload/?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) component is an extended version of the HTML5 upload control which is used to upload images, documents, and other files to a server.
-  * [Product Page](https://www.syncfusion.com/angular-ui-components/angular-file-upload/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm)
-  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/default)
+
+[Learn More about Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload/?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Download Free Trial](https://www.syncfusion.com/downloads/angular?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Documentation](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[View Demos](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Community Forums](https://www.syncfusion.com/forums/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Knowledge Base](https://www.syncfusion.com/kb/angular-js2/uploader?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)<br/><br/>
+[Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm)
 
 ## Supported frameworks
 
@@ -119,12 +125,12 @@ Input component is also offered in following list of frameworks.
 - [**Keyboard Interaction**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=slider#/material/slider/api) - The Slider can be intractable through the keyboard.
 
 ### 7. Upload
-- [**Chunk Upload**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/chunk-upload) – used to upload large files as chunks
-- [**Drag-and-drop**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/custom-drop-area) – drag the files and drop into component to upload them.
-- [**Template**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/custom-file-list) – the file list and buttons can be customize using template
-- [**Validation**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/file-validation) – validate extension and size of upload file
-- [**Auto Upload**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/default) – Process the file to upload without interaction.
-- [**Preload Files**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/preload-files) – View and manipulate previously uploaded files
+- [**Chunk Upload**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/chunk-upload?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – used to upload large files as chunks
+- [**Drag-and-drop**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/custom-drop-area?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – drag the files and drop into component to upload them.
+- [**Template**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/custom-file-list?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – the file list and buttons can be customize using template
+- [**Validation**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/file-validation?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – validate extension and size of upload file
+- [**Auto Upload**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – Process the file to upload without interaction.
+- [**Preload Files**](https://ej2.syncfusion.com/angular/demos/#/material/uploader/preload-files?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-file-upload-npm) – View and manipulate previously uploaded files
 
 ## Support
 

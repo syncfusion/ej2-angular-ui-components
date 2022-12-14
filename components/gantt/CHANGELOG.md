@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.3.61 (2022-12-13)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I417035` - Expand Collapse not working properly after cell editing issue has been fixed.
+- `#I421663` - The baseline end date has not been properly validated issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.3.60 (2022-12-06)
 
 ### Gantt
@@ -13,8 +24,6 @@
 - `#I420126` - Error thrown when deleting a Unassigned task in the Resource View issue has been fixed.
 - `#I415400` - Cell Edit does not save when clicking on the chart side issue has been fixed.
 - `#I419273` - End Key not working as expected when selection type set to Both.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.3.59 (2022-11-29)
 

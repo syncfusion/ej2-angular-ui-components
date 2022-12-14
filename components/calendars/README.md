@@ -110,9 +110,9 @@ The date time picker is inherited from the date picker and time picker component
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/bootstrap5/datetimepicker/default)
 * [Product page](https://www.syncfusion.com/angular-components/angular-datetime-picker)
 
-### DateRangePicker
+### Angular DateRangePicker
 
-The `date range picker` is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
+The [Angular DateRangePicker](https://www.syncfusion.com/angular-components/angular-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) is a graphical user interface control that allows an end user to select start and end date values as a range from a calendar pop-up or by entering the value directly in the input element.
 
 #### Key features
 
@@ -132,7 +132,7 @@ The `date range picker` is a graphical user interface control that allows an end
 * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/bootstrap5/daterangepicker/default)
 * [Product page](https://www.syncfusion.com/angular-components/angular-daterangepicker)
 
-## Supported Frameworks
+## Supported frameworks
 
 Date time components are also offered in the following list of frameworks.
 
@@ -144,11 +144,14 @@ Date time components are also offered in the following list of frameworks.
 
 ## Showcase samples
 
-1. Expanse tracker ([Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component is used in this showcase sample to depict total expenses.
+1. Expanse tracker ([Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date range picker component is used in this showcase sample to depict total expenses.
 
-2. Loan calculator ([Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=datepicker)) - Date picker component in this showcase sample displays the balance from monthly payment.
+2. Loan calculator ([Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date picker component in this showcase sample displays the balance from monthly payment.
 
-3. Stock chart ([Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_campaign=daterangepicker)) - Date range picker component in this showcase sample to display the stock analysis.
+3. Stock chart ([Live Demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm)) - Date range picker component in this showcase sample to display the stock analysis.
+
+## About Syncfusion Angular UI Components
+Syncfusion's [Angular Components](https://www.syncfusion.com/angular-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm) library is the only suite that you will ever need to build an application since it contains over 80 high-performance, lightweight, modular, and responsive UI Components in a single package. In addition to Date Range Picker, we provide popular Angular Components such as [Angular Grid](https://www.syncfusion.com/angular-components/angular-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular ListView](https://www.syncfusion.com/angular-components/angular-listview?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm), and [Angular PDF Viewer](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-daterangepicker-npm).
 
 ## Support
 

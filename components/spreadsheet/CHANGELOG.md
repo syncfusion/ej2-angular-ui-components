@@ -12,6 +12,7 @@
 
 - `#I420156` - Issue with "autofill icon is not aligned properly while rendering the component in the RTL mode" has been resolved.
 - `#I420156` - Issue with "row and column resize is not working while rendering the component in the RTL mode" has been resolved.
+- `#I421804` - Issue with "IF formula returns wrong comparison result value while using formula result value as actual value" has been resolved.
 
 ## 20.3.56 (2022-11-08)
 
