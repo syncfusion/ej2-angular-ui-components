@@ -19,7 +19,7 @@ npm install @syncfusion/ej2-pdfviewer
 ## Resources
 
 * [Getting Started](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
+* [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/pdfviewer/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
 * [Product Page](https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
 
 ## Supported Frameworks

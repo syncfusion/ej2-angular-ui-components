@@ -19,7 +19,7 @@ npm install @syncfusion/ej2-angular-diagrams
 ## Resources
 
 * [Getting Started](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+* [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
 * [Product Page](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
 
 ## Supported Frameworks

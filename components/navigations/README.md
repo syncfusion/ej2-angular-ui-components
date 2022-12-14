@@ -22,56 +22,56 @@ Following list of components are available in the package
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/accordion/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=accordion)
   * [API References](https://ej2.syncfusion.com/angular/documentation/accordion/api-accordion.html?utm_source=npm&utm_campaign=accordion)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=accordion#/material/accordion/default.html)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/accordion/default?utm_source=npm&utm_campaign=accordion)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-accordion)
 
 * AppBar - The AppBar displays information and actions related to the current application screen. It is used to show branding, screen titles, navigation, and actions.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/appbar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=appbar)
   * [API References](https://ej2.syncfusion.com/angular/documentation/appbar/api-appbar.html?utm_source=npm&utm_campaign=appbar)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=appbar#/material/appbar/default.html)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/appbar/default?utm_source=npm&utm_campaign=appbar)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-appbar)
 
 * Breadcrumb - Graphical user interface that helps to identify or highlight the current location within a hierarchical structure of websites. The aim is to make the user aware of their current position in a hierarchy of website links.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/breadcrumb/getting-started?lang=typescript&utm_source=npm&utm_campaign=breadcrumb)
   * [API References](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb?utm_source=npm&utm_campaign=breadcrumb)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=breadcrumb#/material/breadcrumb/default)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/breadcrumb/default?utm_source=npm&utm_campaign=breadcrumb)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-breadcrumb)
 
 * Carousel - The Carousel component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/carousel/getting-started?lang=typescript&utm_source=npm&utm_campaign=carousel)
   * [API References](https://ej2.syncfusion.com/angular/documentation/api/carousel?utm_source=npm&utm_campaign=carousel)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=carousel#/material/carousel/default)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/carousel/default?utm_source=npm&utm_campaign=carousel)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-carousel)
 
 * ContextMenu - Graphical user interface that appears on the user right click/touch hold action. It has the support to provide nested level menu items.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started?lang=typescript&utm_source=npm&utm_campaign=context-menu)
   * [API References](https://ej2.syncfusion.com/angular/documentation/api/context-menu?utm_source=npm&utm_campaign=context-menu)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=contextmenu#/material/context-menu/default)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/context-menu/default?utm_source=npm&utm_campaign=contextmenu)
   * [Product Page](https://www.syncfusion.com/angular-components/context-menu)
 
 * Sidebar - Expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 
   * [Getting started](https://ej2.syncfusion.com/angular/documentation/sidebar/getting-started?lang=typescript&utm_source=npm&utm_campaign=sidebar#getting-started)
   * [API references](https://ej2.syncfusion.com/angular/documentation/api/sidebar?utm_source=npm&utm_campaign=sidebar)
-  * [View online demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=tab#/material/sidebar/default)
+  * [View online demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/sidebar/default?utm_source=npm&utm_campaign=tab)
   * [Product page](https://www.syncfusion.com/angular-components/angular-sidebar)
 
 * Tab - Content panel to show multiple contents in a specific space, one at a time.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/tab/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=tab)
   * [API References](https://ej2.syncfusion.com/angular/documentation/tab/api-tab.html?utm_source=npm&utm_campaign=tab)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=tab#/material/tab/default.html)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/tab/default?utm_source=npm&utm_campaign=tab)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-tabs)
 
 * Toolbar - Displays a group of command buttons arranged horizontally.
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started.html?lang=typescript&utm_source=npm&utm_campaign=toolbar)
   * [API References](https://ej2.syncfusion.com/angular/documentation/toolbar/api-toolbar.html?utm_source=npm&utm_campaign=toolbar)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=toolbar#/material/toolbar/default.html)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/toolbar/default?utm_source=npm&utm_campaign=toolbar)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-toolbar)
 
 * TreeView - Represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more.
@@ -85,7 +85,7 @@ Following list of components are available in the package
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/menu/getting-started?lang=typescript&utm_source=npm&utm_campaign=menu)
   * [API References](https://ej2.syncfusion.com/angular/documentation/api/menu?utm_source=npm&utm_campaign=menu)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=menu#/material/menu/default)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/menu/default?utm_source=npm&utm_campaign=menu)
   * [Product Page](https://www.syncfusion.com/angular-components/menu)
 
 ## Supported Frameworks
