@@ -54,7 +54,7 @@ Product support is available for through following mediums.
 ## Related Links
 
 * [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
-* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
+* [Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/pdfviewer/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
 * [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
 * [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)
 * [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm)

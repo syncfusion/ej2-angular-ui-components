@@ -78,7 +78,7 @@ Following list of components are available in the package
 
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treeview-npm)
   * [API References](https://ej2.syncfusion.com/angular/documentation/api/treeview?utm_source=npm&utm_medium=listing&utm_campaign=angular-treeview-npm)
-  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treeview-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treeview/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-treeview-npm)
   * [Product Page](https://www.syncfusion.com/angular-components/angular-treeview?utm_source=npm&utm_medium=listing&utm_campaign=angular-treeview-npm)
 
 * Menu - Graphical user interface that serves as navigation header for your application or site. It has the support to provide nested level menu items that can be populated from a data source such as an array of JavaScript objects.
@@ -200,7 +200,6 @@ Product support is available for through following mediums.
 ## Related Links
 
 * [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
-* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
 * [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
 * [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
 * [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-navigations-npm)
