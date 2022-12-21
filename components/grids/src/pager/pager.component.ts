@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['cssClass','currentPage','customText','enableExternalMessage','enablePagerMessage','enablePersistence','enableQueryString','enableRtl','externalMessage','locale','pageCount','pageSize','pageSizes','template','totalRecordsCount'];
-export const outputs: string[] = ['click','created','dropDownChanged'];
-export const twoWays: string[] = [];
+export const outputs: string[] = ['click','created','dropDownChanged','currentPageChange','pageSizeChange','pageCountChange','pageSizesChange'];
+export const twoWays: string[] = ['currentPage', 'pageSize', 'pageCount', 'pageSizes'];
 
 /**
  * `ejs-pager` represents the Angular Pager Component.
@@ -30,7 +30,11 @@ export class PagerComponent extends Pager implements IComponentBase {
     public tagObjects: any;
 	click: any;
 	created: any;
-	public dropDownChanged: any;
+	dropDownChanged: any;
+	currentPageChange: any;
+	pageSizeChange: any;
+	pageCountChange: any;
+	public pageSizesChange: any;
 
 
     /** 

@@ -1,69 +1,143 @@
-# ej2-angular-treemap
+# Angular TreeMap Component
 
-The tree map control provides a simple and effective way to visualize flat or hierarchical data as clustered rectangles with a specific, weighted attribute determining the size of each rectangle.
+The [Angular TreeMap](https://www.syncfusion.com/angular-components/angular-treemap?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm) component provides a simple and effective way to visualize flat or hierarchical data as clustered rectangles with a specific, weighted attribute determining the size of each rectangle.
 
-![TreeMap] (https://ej2.syncfusion.com/products/images/treemap/readme.gif)
+<p align="center">
+    <a href="https://ej2.syncfusion.com/angular/documentation/treemap/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm#/bootstrap5/treemap/default">Online demos</a> . 
+    <a href="https://www.syncfusion.com/angular-components/angular-treemap?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm">Learn more</a>
+</p>
 
-> TreeMap is part of Syncfusion Essential JS 2 commercial program. License is available in two models Community and Paid. Please refer the license file for more information. License can be obtained by registering at [https://www.syncfusion.com/downloads/essential-js2](https://www.syncfusion.com/downloads/essential-js2?utm_source=npm&utm_campaign=treemap)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-treemap.png" alt="Angular TreeMap Component">
+</p>
+
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+  </a>
+</p>
 
 ## Setup
 
-To install TreeMap and its dependent packages, use the following command
+### Create an Angular Application
 
-```sh
-npm install @syncfusion/ej2-treemap
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install the Angular CLI, use the following command.
+
+```bash
+npm install -g @angular/cli
 ```
 
-## Resources
+Create a new Angular application using the following Angular CLI command.
 
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/treemap/getting-started.html)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/material/treemap/default)
-* [Product Page](https://www.syncfusion.com/products/angular/treemap)
+```bash
+ng new my-app
+cd my-app
+```
 
-## Supported Frameworks
+### Add Syncfusion TreeMap package
 
-TreeMap component is also offered in following list of frameworks.
+All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the Angular TreeMap package, use the following command.
 
-1. [Angular](https://www.npmjs.com/package/@syncfusion/ej2-ng-treemap?utm_source=npm&utm_campaign=treemap)
-2. [React](https://www.npmjs.com/package/@syncfusion/ej2-react-treemap?utm_source=npm&utm_campaign=treemap)
-3. [Vue.js](https://www.npmjs.com/package/@syncfusion/ej2-vue-treemap?utm_source=npm&utm_campaign=treemap)
-4. [ASP.NET Core](https://aspdotnetcore.syncfusion.com/TreeMap/Default#/material)
-5. [ASP.NET MVC](https://aspnetmvc.syncfusion.com/TreeMap/Default#/material)
-6. [JavaScript (ES5)](https://www.syncfusion.com/products/javascript/treemap)
+```sh
+npm install @syncfusion/ej2-angular-treemap
+```
 
-## Use case samples
+The above command does the below configuration to your Angular app.
 
-* Olympic medal categories details ([Live Demo](https://ej2.syncfusion.com/angular/demos/#/material/treemap/custom))
-* Countries population details ([Live Demo](https://ej2.syncfusion.com/angular/demos/#/material/treemap/drilldown))
+ * Adds `@syncfusion/ej2-angular-treemap` package and its peer dependencies to your `package.json` file.
+ * Imports the `TreeMapModule` in your application module `app.module.ts`.
+ * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
 
-## Key Features
+This makes it easy to add the Syncfusion Angular TreeMap module to your project and start using it in your application.
 
-* [**Data sources**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/pie) - Binds the tree map component with an array of JSON objects or DataManager. Both the heirarcical and flat collection data sources are supported.
-* [**Levels**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/default) - Renders with any number of levels and items.
-* [**Layout**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/layout) - Supports four types of layouts: square, horizontal, vertical, and auto.
-* [**Drill-down**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/drilldown) - Provides drill-down option to have a closer look at the lower level of a hierarchy.
-* [**Data label**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/label) - Provides additional information about the nodes.
-* [**Label template**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/custom) - Uses any custom HTML element as data label for each node.
-* [**Color mapping**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/label) - Applies colors to the nodes based on various conditions. Tree map supports three types of color mapping: range, equal, and desaturation.
-* [**Legend**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/legend) - Denotes the color mapping categories.
-* [**Selection and Highlight**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/selection) - Supports selecting or highlighting the nodes to bring center of attraction.
-* [**Tooltip**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/tooltip) - Provides additonal information about the nodes on mouse hover.
-* [**Print and Export**](https://ej2.syncfusion.com/angular/demos/#/material/treemap/print) - Provides options to print and export the rendered tree map for future use.
+### Add TreeMap component
+
+In **src/app/app.component.ts**, use `<ejs-treemap>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion Angular TreeMap component.
+
+```typescript
+import { Component } from '@angular/core';
+@Component({
+selector: 'app-container',
+template:
+`<ejs-treemap id='container' style='display: block;' height='350px' [dataSource]='data' weightValuePath='Count'
+[leafItemSettings]='leafItemSettings'>
+</ejs-treemap>`
+})
+export class AppComponent {
+  public data: object[] = [
+    { State: 'Brazil', Count: 25 },
+    { State: 'Colombia', Count: 12 },
+    { State: 'Argentina', Count: 9 },
+    { State: 'Ecuador', Count: 7 },
+    { State: 'Chile', Count: 6 },
+    { State: 'Peru', Count: 3 },
+    { State: 'Venezuela', Count: 3 },
+    { State: 'Bolivia', Count: 2 },
+    { State: 'Paraguay', Count: 2 },
+    { State: 'Uruguay', Count: 2 },
+    { State: 'Falkland Islands',Count: 1 },
+    { State: 'French Guiana', Count:1 },
+    { State: 'Guyana', Count: 1 },
+    { State: 'Suriname', Count: 1 },
+  ];
+  public leafItemSettings: object = {
+    labelPath: 'State'
+  };
+}
+```
+
+## Supported frameworks
+
+TreeMap component is also offered in the following list of frameworks.
+
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/react.svg"  height="50" />](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[React](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+
+## Showcase samples
+
+* Olympic medal categories details - [Live Demo](https://ej2.syncfusion.com/angular/demos/#/material/treemap/custom)
+* Countries population details - [Live Demo](https://ej2.syncfusion.com/angular/demos/#/material/treemap/drilldown)
+* Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-angular-health-tracker-dashboard-demo), [Live Demo](https://ej2.syncfusion.com/showcase/angular/fitness-tracker-app/)
+
+## Key features
+
+* [Data sources](https://ej2.syncfusion.com/angular/documentation/treemap/data-binding/?utm_source=npm&utm_campaign=angular-treemap-npm): Binds the treemap component with an array of JSON objects or DataManager. Both hierarchical and flat collection data sources are supported.
+* [Levels](https://ej2.syncfusion.com/angular/documentation/treemap/levels/?utm_source=npm&utm_campaign=angular-treemap-npm): Renders with any number of levels and items.
+* [Layout](https://ej2.syncfusion.com/angular/documentation/treemap/layout/?utm_source=npm&utm_campaign=angular-treemap-npm): Supports four types of layouts: square, horizontal, vertical, and auto.
+* [Drill-down](https://ej2.syncfusion.com/angular/documentation/treemap/drilldown/?utm_source=npm&utm_campaign=angular-treemap-npm): Provides drill-down option to have a closer look at the lower level of a hierarchy.
+* [Data label](https://ej2.syncfusion.com/angular/documentation/treemap/data-label/?utm_source=npm&utm_campaign=angular-treemap-npm): Provides additional information about the nodes.
+* [Header template](https://ej2.syncfusion.com/angular/documentation/treemap/levels/?utm_source=npm&utm_campaign=angular-treemap-npm#header-template-and-position): Uses any custom HTML element to customize the header of each item.
+* [Label template](https://ej2.syncfusion.com/angular/documentation/treemap/data-label/?utm_source=npm&utm_campaign=angular-treemap-npm#template): Uses any custom HTML element to customize the data label for each node.
+* [Color mapping](https://ej2.syncfusion.com/angular/documentation/treemap/color-mapping/?utm_source=npm&utm_campaign=angular-treemap-npm): Applies colors to the nodes based on various conditions. Treemap supports three types of color mapping: range, equal, and desaturation.
+* [Legend](https://ej2.syncfusion.com/angular/documentation/treemap/legend/?utm_source=npm&utm_campaign=angular-treemap-npm): Provide useful information for conveying what the treemap showcases. 
+* [Selection and highlight](https://ej2.syncfusion.com/angular/documentation/treemap/selection-and-highlight/?utm_source=npm&utm_campaign=angular-treemap-npm): Support selecting or highlighting the nodes to bring center of attraction.
+* [Tooltip](https://ej2.syncfusion.com/angular/documentation/treemap/tooltip/?utm_source=npm&utm_campaign=angular-treemap-npm): Provides additional information about the node on hover.
+* [Print and Export](https://ej2.syncfusion.com/angular/documentation/treemap/print-and-export/?utm_source=npm&utm_campaign=angular-treemap-npm): Prints or exports the rendered treemap to a desired format. Exporting supports four formats: PDF, PNG, JPEG and SVG.
+* [Globalization](https://ej2.syncfusion.com/angular/documentation/treemap/internationalization/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm): Personalize the treemap component with different languages, as well as culture-specific number, date and time formatting.
+* [Accessibility](https://ej2.syncfusion.com/angular/documentation/treemap/accessibility/?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm): Provides with built-in accessibility support which helps to access all the treemap component features through the keyboard, screen readers, or other assistive technology devices.
 
 ## Support
 
-Product support is available for through following mediums.
+Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=treemap) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_campaign=treemap).
-* New [GitHub issues](https://github.com/syncfusion/ej2-angular-ui-components/issues).
-* Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/LICENSE?utm_source=npm&utm_campaign=treemap).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-angular-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-treemap-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/treemap/CHANGELOG.md?utm_source=npm&utm_campaign=treemap)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/treemap/CHANGELOG.md?utm_source=npm&utm_campaign=angular-treemap-npm). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=angular-treemap-npm) for more info.
+
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

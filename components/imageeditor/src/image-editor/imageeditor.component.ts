@@ -4,8 +4,8 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['backgroundColor','backgroundImage','cssClass','disabled','enablePersistence','enableRtl','height','isReadOnly','maxStrokeWidth','minStrokeWidth','saveWithBackground','strokeColor','theme','toolbar','toolbarTemplate','velocity','width'];
-export const outputs: string[] = ['beforeSave','created','cropping','destroyed','fileOpened','flipping','panning','rotating','saved','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
+export const inputs: string[] = ['backgroundColor','backgroundImage','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','maxStrokeWidth','minStrokeWidth','saveWithBackground','signatureValue','strokeColor','theme','toolbar','toolbarTemplate','velocity','width'];
+export const outputs: string[] = ['beforeSave','created','cropping','destroyed','fileOpened','fineTuneValueChanging','flipping','imageFiltering','panning','rotating','saved','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
 export const twoWays: string[] = [''];
 
 /**
@@ -33,7 +33,9 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
 	cropping: any;
 	destroyed: any;
 	fileOpened: any;
+	fineTuneValueChanging: any;
 	flipping: any;
+	imageFiltering: any;
 	panning: any;
 	rotating: any;
 	saved: any;

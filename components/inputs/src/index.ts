@@ -20,5 +20,8 @@ export { ColorPickerAllModule } from './color-picker/colorpicker-all.module';
 export { SignatureComponent} from './signature/signature.component';
 export { SignatureModule } from './signature/signature.module';
 export { SignatureAllModule } from './signature/signature-all.module';
+export { RatingComponent} from './rating/rating.component';
+export { RatingModule } from './rating/rating.module';
+export { RatingAllModule } from './rating/rating-all.module';
 export * from './form-validator/form-validator';
 export * from '@syncfusion/ej2-inputs';

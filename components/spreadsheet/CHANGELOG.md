@@ -12,7 +12,6 @@
 
 - `#I420156` - Issue with "autofill icon is not aligned properly while rendering the component in the RTL mode" has been resolved.
 - `#I420156` - Issue with "row and column resize is not working while rendering the component in the RTL mode" has been resolved.
-- `#I421804` - Issue with "IF formula returns wrong comparison result value while using formula result value as actual value" has been resolved.
 
 ## 20.3.56 (2022-11-08)
 
@@ -1236,6 +1235,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.3.61 (2022-12-13)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I421804` - Issue with "IF formula returns wrong comparison result value while using formula result value as actual value" has been resolved.
 
 ## 20.3.59 (2022-11-29)
 

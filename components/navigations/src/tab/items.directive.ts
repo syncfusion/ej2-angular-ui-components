@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate', 'id', 'visible'];
+let input: string[] = ['content', 'cssClass', 'disabled', 'header', 'headerTemplate', 'id', 'tabIndex', 'visible'];
 let outputs: string[] = [];
 /**
  * 'e-tabitem' directive represent a item of the Angular Tab.
@@ -50,6 +50,13 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
      * @default null
      */
     public id: any;
+    /** 
+     * Specifies the tab order of the Tabs items. When positive values assigned, it allows to switch focus to the next/previous tabs items with Tab/ShiftTab keys. 
+     * By default, user can able to switch between items only via arrow keys. 
+     * If the value is set to 0 for all tabs items, then tab switches based on element order.
+     * @default -1
+     */
+    public tabIndex: any;
     /** 
      * Sets false to hide the Tab item.
      * @default true

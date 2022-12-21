@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -44,6 +44,11 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public dateFormat: any;
     /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
+     * @default null
+     */
+    public dateRangeTemplate: any;
+    /** 
      * Specifies the starting week date at an initial rendering of month view. This property is only applicable for month view. 
      *  If this property value is not set, then the month view will be rendered from the first week of the month. 
      * {% codeBlock src='schedule/displayDate/index.md' %}{% endcodeBlock %}
@@ -76,7 +81,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     public firstMonthOfYear: any;
     /** 
      * Allows to set different resource grouping options on all available schedule view modes.
-     * @default { byDate: false, byGroupID: true, allowGroupEdit: false, resources:[]}
+     * @default { byDate: false, byGroupID: true, allowGroupEdit: false, resources:[], hideNonWorkingDays: false }
      */
     public group: any;
     /** 

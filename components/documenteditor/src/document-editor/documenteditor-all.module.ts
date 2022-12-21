@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentEditorComponent } from './documenteditor.component';
 import { DocumentEditorModule } from './documenteditor.module';
-import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing} from '@syncfusion/ej2-documenteditor'
+import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing, ColumnsDialog} from '@syncfusion/ej2-documenteditor'
 
 
 export const PrintService: ValueProvider = { provide: 'DocumentEditorPrint', useValue: Print};
@@ -34,6 +34,7 @@ export const CellOptionsDialogService: ValueProvider = { provide: 'DocumentEdito
 export const SpellCheckerService: ValueProvider = { provide: 'DocumentEditorSpellChecker', useValue: SpellChecker};
 export const SpellCheckDialogService: ValueProvider = { provide: 'DocumentEditorSpellCheckDialog', useValue: SpellCheckDialog};
 export const CollaborativeEditingService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditing', useValue: CollaborativeEditing};
+export const ColumnsDialogService: ValueProvider = { provide: 'DocumentEditorColumnsDialog', useValue: ColumnsDialog};
 
 /**
  * NgModule definition for the DocumentEditor component with providers.
@@ -72,7 +73,8 @@ export const CollaborativeEditingService: ValueProvider = { provide: 'DocumentEd
         CellOptionsDialogService,
         SpellCheckerService,
         SpellCheckDialogService,
-        CollaborativeEditingService
+        CollaborativeEditingService,
+        ColumnsDialogService
     ]
 })
 export class DocumentEditorAllModule { }

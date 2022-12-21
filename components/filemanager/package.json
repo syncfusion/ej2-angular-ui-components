@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-filemanager",
-	"version": "20.3.56",
+	"version": "18.18.1",
 	"description": "Essential JS 2 FileManager Component for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -46,18 +46,21 @@
 	"keywords": [
 		"ej2",
 		"syncfusion",
-		"web-components",
 		"typescript",
 		"javascript",
-		"ej2-filemanager",
 		"filemanager",
 		"fileexplorer",
 		"file-explorer",
 		"file-manager",
 		"angular",
-		"ng",
-		"ng-filemanager",
-		"ej2-ng-filemanager"
+		"angular-filemanager",
+		"angular-file organizer",
+		"angular-file organizing tool",
+		"angular-file picker",
+		"angular-file viewer",
+		"angular-file browser",
+		"angular-file selector",
+		"angular-directory viewer"
 	],
 	"repository": {
 		"type": "git",

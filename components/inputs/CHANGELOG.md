@@ -2,27 +2,26 @@
 
 ## [Unreleased]
 
-## 20.3.57 (2022-11-15)
+## 20.4.38 (2022-12-21)
+
+### Rating `Preview`
+
+**Key features**:
+
+
+The Rating component lets the user provide a star rating or view other people’s ratings on a numeric scale for any service provided, such as for movies, applications, or products.
+
+
+- **Precision** - Different precision modes to provide more accurate rating.
+- **Tooltip and Label** - Provide more expressive rating with tooltip and label.
+- **Template** - Support to customize the rating item to heart, svg or any content that precisely match our unique needs.
+- **Accessibility** - The Rating provides built-in compliance with the `WAI-ARIA` specifications and it is achieved through attributes.
 
 ### NumericTextBox
 
 #### Bug Fixes
 
-- `#I417969` - The issue "Clear button does not working after the component is enabled" has been resolved.
-
-### TextBox
-
-#### Bug Fixes
-
-- `#I415324` - The issue "Refresh method is not working properly in TextBox component" has been resolved.
-
-## 20.3.50 (2022-10-18)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#FB15052` - Issue with "Form Validator wrongly validates while clearing the components value using clear icon" has been resolved.
+- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
 
 ## 19.4.38 (2021-12-17)
 
@@ -1278,42 +1277,6 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 20.3.56 (2022-11-08)
-
-### TextBox
-
-#### Bug Fixes
-
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#I407373` - The issue "fieldset disabled attribute does not disable the form components" has been resolved.
-
-## 20.3.49 (2022-10-11)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I381508` - Issue with "ellipsis style is not applied to long floating label text when we preselect the value" has been resolved.
-
-## 20.3.47 (2022-09-29)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
 
 ## 19.3.47 (2021-10-26)
 

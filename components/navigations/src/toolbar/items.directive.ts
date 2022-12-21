@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'template', 'text', 'tooltipText', 'type', 'visible', 'width'];
+let input: string[] = ['align', 'cssClass', 'disabled', 'htmlAttributes', 'id', 'overflow', 'prefixIcon', 'showAlwaysInPopup', 'showTextOn', 'suffixIcon', 'tabIndex', 'template', 'text', 'tooltipText', 'type', 'visible', 'width'];
 let outputs: string[] = ['click'];
 /**
  * 'e-item' directive represent a item of the Angular Toolbar.
@@ -107,6 +107,13 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * @default ""
      */
     public suffixIcon: any;
+    /** 
+     * Specifies the tab order of the Toolbar items. When positive values assigned, it allows to switch focus to the next/previous toolbar items with Tab/ShiftTab keys. 
+     * By default, user can able to switch between items only via arrow keys. 
+     * If the value is set to 0 for all tool bar items, then tab switches based on element order.
+     * @default -1
+     */
+    public tabIndex: any;
     /** 
      * Specifies the text to be displayed on the Toolbar button.
      * @default ""

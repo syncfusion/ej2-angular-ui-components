@@ -1,6 +1,6 @@
 # ej2-angular-layouts
 
-The layout package contains [cards](https://www.syncfusion.com/angular-components/angular-card?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm), [avatars](https://www.syncfusion.com/angular-components/angular-avatar?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm), [splitter](https://www.syncfusion.com/angular-components/angular-splitter?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) and [Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) Angular components.
+The layout package contains cards, avatars, splitter and Dashboard Layout components. 
 
 * The `card` is a small container in which user can show defined content in specific structure.
 
@@ -12,7 +12,7 @@ The layout package contains [cards](https://www.syncfusion.com/angular-component
 
 ![Layout](https://ej2.syncfusion.com/products/images/layout/readme.png)
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can [purchase](https://www.syncfusion.com/sales/products) or start a [free 30-day trial here](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at [https://www.syncfusion.com/sales/products](https://www.syncfusion.com/sales/products/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) or start a free 30-day trial [here](https://www.syncfusion.com/account/manage-trials/start-trials/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
 
 > A free [community license](https://www.syncfusion.com/products/communitylicense/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
@@ -28,28 +28,28 @@ npm install @syncfusion/ej2-angular-layouts
 
 Following list of components are available in the package
 
-* [Angular Card](https://www.syncfusion.com/angular-components/angular-card?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Container used to display content in specific structure.
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/card/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/basic)
+* [Angular Card](https://www.syncfusion.com/angular-ui-components/angular-card?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Container used to display content in specific structure.
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/card/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/basic)
 
-* [Angular Avatar](https://www.syncfusion.com/angular-components/angular-avatar?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to add images or initials or icons in different shapes and sizes to your application.
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/default)
+* [Angular Avatar](https://www.syncfusion.com/angular-ui-components/angular-avatar?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to add images or initials or icons in different shapes and sizes to your application.
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/default)
 
-* [Angular Splitter](https://www.syncfusion.com/angular-components/angular-splitter?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to construct a different layout using its multiple and nested panes with resizable.
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/splitter/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/default)
+* [Angular Splitter](https://www.syncfusion.com/angular-ui-components/angular-splitter?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to construct a different layout using its multiple and nested panes with resizable.
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/splitter/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/default)
 
-* [Angular Dashboard Layout](https://www.syncfusion.com/angular-components/angular-dashboard-layout?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to build dashboards with panels that holds the UI components and allow resize, reorder, drag-n-drop, remove and add options.
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/dashboard-layout/default)
+* [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to build dashboards with panels that holds the UI components and allow resize, reorder, drag-n-drop, remove and add options.
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/default)
 
 ## Supported Frameworks
 
 These components are available in following list of:
 
-1.	[React](https://www.syncfusion.com/react-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-2.	[Vue](https://www.syncfusion.com/vue-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+1.	[React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+2.	[Vue](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
 3.	[ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
 4.	[ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
 5.	[JavaScript (ES5)](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
@@ -57,29 +57,29 @@ These components are available in following list of:
 ## Use Case samples
 
 * IT Asset Management ([Live Demo](https://ej2.syncfusion.com/showcase/vue/assetmanagement/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm))
-* Swipeable Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/swipeable.html))
-* Flip Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/flip.html))
-* Tile View ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/tile.html))
-* Contact Application ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/listview.html))
-* Avatar Badge ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/badge.html))
-* Avatar Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/card.html))
-* SEO Analysis Dashboard ([Live Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/dashboard-layout/analytics-dashboard.html))
+* Swipeable Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/swipeable.html))
+* Flip Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/flip.html))
+* Tile View ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/tile.html))
+* Contact Application ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/listview.html))
+* Avatar Badge ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/badge.html))
+* Avatar Card ([Live Demo](https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/card.html))
+* SEO Analysis Dashboard ([Live Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/analytics-dashboard.html))
 
 ## Key Features
 
 * Card
-  * [Header](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/basic) - Header supports to include title, subtitle along with image.
+  * [Header](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/basic) - Header supports to include title, subtitle along with image.
 
-  * [Images and Title](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/reveal) - Support to include images with customizable caption positions in it.
+  * [Images and Title](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/reveal) - Support to include images with customizable caption positions in it.
 
-  * [Action Buttons](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/vertical) - Supports to add buttons within the card either in vertical or horizontal alignment.
+  * [Action Buttons](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/vertical) - Supports to add buttons within the card either in vertical or horizontal alignment.
 
-  * [Horizontal Card](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/card/horizontal) - Allows to align card elements horizontally and also allows to stack the content vertically within horizontal alignment.
+  * [Horizontal Card](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/horizontal) - Allows to align card elements horizontally and also allows to stack the content vertically within horizontal alignment.
 
 * Avatar
-  * [Types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/default) - Provided `2` types of avatars such as `default` and `circle`.
+  * [Types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/default) - Provided `2` types of avatars such as `default` and `circle`.
 
-  * [Sizes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/avatar/types) - Supports `7` different sizes to adapt the various application scenario.
+  * [Sizes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/types) - Supports `7` different sizes to adapt the various application scenario.
 
         * xsmall
         * small
@@ -88,42 +88,33 @@ These components are available in following list of:
         * xlarge
 
 * Splitter
-  * [Multiple Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/default) - Provided an option to configure more than two panes.
+  * [Multiple Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/default) - Provided an option to configure more than two panes.
 
-  * [Resizable Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/code-editor-layout) - Supports resizable to adjust its pane size dynamically.
+  * [Resizable Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/code-editor-layout) - Supports resizable to adjust its pane size dynamically.
 
-  * [Orientation](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/default) - The panes can orient either `horizontally` or `vertically`.
+  * [Orientation](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/default) - The panes can orient either `horizontally` or `vertically`.
 
-  * [Integration](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/accordion-navigation-menu) - Other Angular UI components can be integrated within panes.
+  * [Integration](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/accordion-navigation-menu) - Other Angular UI components can be integrated within panes.
 
-  * [Nested Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/bootstrap5/splitter/code-editor-layout) - Another splitter can be integrated within panes to create a complex layout.
+  * [Nested Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/code-editor-layout) - Another splitter can be integrated within panes to create a complex layout.
 
-* Dashboard Layout
+ * Dashboard Layout
  
-* [Drag and Drop](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dashboard-layout/analytics-dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Allows drag and drop of panels at the desired location within the dashboard.
+   * [Drag and Drop](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Allows drag and drop of panels at the desired location within the dashboard.
 
-* [Floating](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/floating-of-panels/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Floats the panels upward when the dragging option is enabled.
+   * [Floating](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Floats the panels upward when the dragging option is enabled.
 
-* [Resizing](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/interaction-with-panels/resizing-of-panels/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Support to resize the panels in any direction as per the requirement.
+   * [Resizing](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Support to resize the panels in any direction as per the requirement.
 
-* [MediaQuery](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dashboard-layout/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Allows the panels to be stacked when the specified resolution is met.
+   * [MediaQuery](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/default.html) - Allows the panels to be stacked when the specified resolution is met.
 
 ## Support
 
 Product support is available for through following mediums.
 
 * Creating incident in Syncfusion [Direct-Trac](https://www.syncfusion.com/support/directtrac/incidents/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm).
 * Ask your query in [Stack Overflow](https://stackoverflow.com/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) with tag `syncfusion` and `ej2`.
-
-## Related Links
-
-* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
-* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
 
 ## License
 

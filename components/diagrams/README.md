@@ -1,84 +1,157 @@
-# ej2-angular-diagrams
+# Angular Diagram Component
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm) component visually represents information. It is also used to create diagrams like flow charts, organizational charts, mind maps, and BPMN either through code or a visual interface.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm) component is used for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 
-![Diagram](https://ej2.syncfusion.com/products/images/diagram/read-me.gif)
+<p align="center">
+    <a href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm#/bootstrap5/diagram/default-functionalities">Online demos</a> . 
+    <a href="https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Learn more</a>
+</p>
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
+<p align="center">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-diagram.png" alt="Angular Diagram Control"/>
+</p>
 
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+  </a>
+</p>
 
 ## Setup
 
-To install Diagram and its dependent packages, use the following command
+### Create an Angular Application
 
-```sh
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install the Angular CLI, use the following command.
+
+```bash
+npm install -g @angular/cli
+```
+
+Create a new Angular application using the following Angular CLI command.
+
+```bash
+ng new my-app
+cd my-app
+```
+
+### Adding Syncfusion Diagram package
+
+All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the Angular diagram package, use the following command.
+
+```bash
 npm install @syncfusion/ej2-angular-diagrams
 ```
 
-## Resources
+The above command does the below configuration to your Angular app.
+ 
+ * Adds `@syncfusion/ej2-angular-diagrams` package and its peer dependencies to your `package.json` file.
+ * Imports the `DiagramModule` in your application module `app.module.ts`.
+ * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
 
-* [Getting Started](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [View Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Product Page](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+This makes it easy to add the Syncfusion Angular Diagram module to your project and start using it in your application.
 
-## Supported Frameworks
+### Add Diagram component
 
-Diagram component is also offered in following list of frameworks.
+In **src/app/app.component.ts**, use `<ejs-diagram>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion Angular Diagram component.
 
-1. [Angular](https://github.com/syncfusion/ej2-angular-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-2. [React](https://github.com/syncfusion/ej2-react-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-3. [VueJS](https://github.com/syncfusion/ej2-vue-ui-components?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-4. [ASP.NET Core](https://github.com/syncfusion/ej2-aspnetcore-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-5. [ASP.NET MVC](https://github.com/syncfusion/ej2-aspnetmvc-samples?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-6. [JavaScript (ES5)](https://github.com/syncfusion/ej2-javascript-ui-controls?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+```typescript
+import { Component, OnInit } from '@angular/core';
 
-## Showcase samples
+@Component({
+    selector: 'app-root',
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="700px">
+          <e-nodes>
+            <e-node id="begin" [height]="40" [offsetX]="300" [offsetY]="80" [shape]="terminator">
+              <e-node-annotations>
+                <e-node-annotation content="Begin"> </e-node-annotation>
+              </e-node-annotations>
+            </e-node>
+            <e-node id="process" [height]="80" [offsetX]="300" [offsetY]="160" [shape]="decision">
+              <e-node-annotations>
+                <e-node-annotation content="Process"> </e-node-annotation>
+              </e-node-annotations>
+            </e-node>
+            <e-node id="end" [height]="40" [offsetX]="300" [offsetY]="240" [shape]="process">
+              <e-node-annotations>
+                <e-node-annotation content="End"> </e-node-annotation>
+              </e-node-annotations>
+            </e-node>
+          </e-nodes>
+          <e-connectors>
+            <e-connector id="connector1" sourceID="begin" targetID="process">
+            </e-connector>
+            <e-connector id="connector2" sourceID="process" targetID="end">
+            </e-connector>
+          </e-connectors>
+        </ejs-diagram>`
+})
+export class AppComponent implements OnInit { 
+    public terminator: FlowShapeModel = { type: 'Flow', shape: 'Terminator' };
+    public decision: FlowShapeModel = { type: 'Flow', shape: 'Decision' };
+}
+```
 
-* Diagram Builder ([Source](https://github.com/syncfusion/ej2-showcase-ng-diagrambuilder?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/diagrambuilder/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm))
+## Supported frameworks
 
+Diagram component is also offered in the following list of frameworks.
 
-## Key Features
+| [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/react.svg"  height="50" />](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[React](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
+| :-----: | :-----: | :-----: | :-----: | :-----: |
 
-- [**Nodes**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/nodes)  - Nodes are used to host graphical objects (path or controls) that can be arranged and manipulated on a diagram page. Many predefined standard shapes are included. Custom shapes can also be created and added easily.
-- [**Connectors**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/connectors) - The relationship between two nodes is represented using a connector.
-- [**Labels**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/annotations)- Labels are used to annotate nodes and connectors.
-- [**Interactive Features**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/drawing-tool) - Interactive features are used to improve the run time editing experience of a diagram.
-- [**Data Binding**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/local-data) - Generates diagram with nodes and connectors based on the information provided from an external data source.
-- [**Commands**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/key-board-functions) - Supports a set of predefined commands that helps edit the diagram using keyboard. It is also possible to configure new commands and key combinations.
-- [**Automatic Layout**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/hierarchical-tree) - Automatic layouts are used to arrange nodes automatically based on a predefined layout logic. There is built-in support for organizational chart layout, hierarchical tree layout, symmetric layout, radial tree layout, and mind map layout.
-- [**Overview Panel**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/overview) -  The overview panel is used to improve navigation experience when exploring large diagrams.
-- [**SymbolPalettes**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/symbol-palette) - The symbol palette is a gallery of reusable symbols and nodes that can be dragged and dropped on the surface of a diagram.
-- [**Rulers**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/drawing-tool) - The ruler provides horizontal and vertical guides for measuring diagram objects in diagram control.
-- [**Serialization**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/serialization) - When saved in JSON format a diagram’s state persists, and then it can be loaded back using serialization.
-- [**Exporting and Printing**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/print-export) - Diagrams can be exported as .png, .jpeg, .bmp, and .svg image files, and can also be printed as documents.
-- [**Gridlines**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/default-functionalities) - Gridlines are the pattern of lines drawn behind diagram elements. It provides a visual guidance while dragging or arranging the objects on a diagram surface.
-- [**Page Layout**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/print-export)- The drawing surface can be configured to page-like appearance using page size, orientation, and margins.
-- [**Context Menu**](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/bootstrap5/diagram/key-board-functions) - Frequently used commands can easily be mapped to the context menu.
+## Use case demos
+
+* [Angular Diagram Builder demo](https://ej2.syncfusion.com/showcase/angular/diagrambuilder/)
+* [Angular Organizational Chart demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/organization-chart)
+* [Angular Mind Map demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/mind-map)
+* [Angular BPMN Editor demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/bpmn-editor)
+* [Angular Logic Circuit Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/logic-circuit)
+* [Angular UML Activity Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/uml-activity)
+* [Angular Network Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/network-diagram)
+* [Angular UML Class Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/uml-Class-diagram)
+* [Angular Venn Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/venn-diagram)
+* [Angular Fishbone Diagram demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/fishbone-diagram)
+
+## Key features
+
+* [Nodes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/nodes)  - Nodes are used to host graphical objects (path or controls) that can be arranged and manipulated on a diagram page. Many predefined standard shapes are included. Custom shapes can also be created and added easily.
+* [Connectors](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/connectors) - The relationship between two nodes is represented using a connector.
+* [Labels](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/annotations)- Labels are used to annotate nodes and connectors.
+* [Ports](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/ports) - Ports act as the connection points of the node and allows to create connections with only those specific points.
+* [Interactive features](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/drawing-tool) - Interactive features are used to improve the run time editing experience of a diagram.
+* [Data binding](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/local-data) - Generates diagram with nodes and connectors based on the information provided from an external data source.
+* [Commands](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/key-board-functions) - Supports a set of predefined commands that helps edit the diagram using keyboard. It is also possible to configure new commands and key combinations.
+* [Automatic layout](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/hierarchical-tree) - Automatic layouts are used to arrange nodes automatically based on a predefined layout logic. There is built-in support for organizational chart layout, hierarchical tree layout, symmetric layout, radial tree layout, and mind map layout.
+* [Overview panel](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/overview) -  The overview panel is used to improve navigation experience when exploring large diagrams.
+* [SymbolPalettes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/symbol-palette) - The symbol palette is a gallery of reusable symbols and nodes that can be dragged and dropped on the surface of a diagram.
+* [Rulers](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/drawing-tool) - The ruler provides horizontal and vertical guides for measuring diagram objects in diagram component.
+* [Serialization](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/serialization) - When saved in JSON format a diagram’s state persists, and then it can be loaded back using serialization.
+* [Exporting and Printing](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/print-export) - Diagrams can be exported as .png, .jpeg, .bmp, and .svg image files, and can also be printed as documents.
+* [Gridlines](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/default-functionalities) - Gridlines are the pattern of lines drawn behind diagram elements. It provides a visual guidance while dragging or arranging the objects on a diagram surface.
+* [Page layout](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/print-export)- The drawing surface can be configured to page-like appearance using page size, orientation, and margins.
+* [Context menu](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=diagram#/material/diagram/key-board-functions) - Frequently used commands can easily be mapped to the context menu.
 
 ## Support
 
-Product support is available for through following mediums.
+Product support is available through the following mediums.
 
-* Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm) support system or [Community forum](https://www.syncfusion.com/forums/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
-* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
-* Ask your query in Stack Overflow with tag `syncfusion`, `ej2`.
-
-## Related Links
-
-* [Download Free Trial](https://www.syncfusion.com/downloads?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Online Demos](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Community Forums](https://www.syncfusion.com/forums/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Knowledge Base](https://www.syncfusion.com/kb/essential-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Suggest a feature](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-* [Pricing](https://www.syncfusion.com/sales/products/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
-
-## License
-
-Check the license detail [here](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm).
+* [Support ticket](https://support.syncfusion.com/support/tickets/create) - Guaranteed Response in 24 hours | Unlimited tickets | Holiday support
+* [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+* [GitHub issues](https://github.com/syncfusion/ej2-angular-ui-components/issues/new)
+* [Request feature or report bug](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm)
+* Live chat
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/diagrams/CHANGELOG.md)
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/diagrams/CHANGELOG.md). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-© Copyright 2019 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+## License and copyright
+
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+
+See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_campaign=diagram) for more info.
+
+&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

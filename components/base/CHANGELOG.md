@@ -2,15 +2,6 @@
 
 ## [Unreleased]
 
-## 20.3.52 (2022-10-26)
-
-### Common
-
-#### Bug Fixes
-
-- `#I412969` - Component tags boolean property not updated properly in Angular 9.
-- `#I411249` - Resolved the script error throwing in complex array base.
-
 ## 20.3.47 (2022-09-29)
 
 ### Common

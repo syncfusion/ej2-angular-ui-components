@@ -175,7 +175,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public displayAsCheckBox: any;
     /** 
-     * Defines the `IEditCell`(../../grid/editing/edit-types/#custom-editors-using-template) object to customize default edit cell.
+     * Defines the `IEditCell`(../../grid/edit/#cell-edit-template) object to customize default edit cell.
      * @default {}
      */
     public edit: any;
@@ -400,7 +400,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public uid: any;
     /** 
-     * `editType`(../../grid/editing/edit-types/#customize-editors-using-params) Defines rules to validate data before creating and updating.
+     * `editType`(../../grid/edit/#cell-edit-type-and-its-params) Defines rules to validate data before creating and updating.
      * @default null
      */
     public validationRules: any;
