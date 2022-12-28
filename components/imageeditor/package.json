@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-image-editor",
-	"version": "20.5.2",
+	"version": "20.4.38",
 	"description": "Essential JS 2 ImageEditor for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -44,19 +44,6 @@
 		"typescript": "2.3.4"
 	},
 	"keywords": [
-		"ej2",
-		"Syncfusion",
-		"image editor",
-		"imageeditor",
-		"photo editor",
-		"photo viewer",
-		"javascript image editor",
-		"typescript image editor",
-		"syncfusion image editor",
-		"image manipulation tool",
-		"canvas image editor",
-		"web image editor",
-		"image editing software",
 		"angular",
 		"ng",
 		"ng image editor",

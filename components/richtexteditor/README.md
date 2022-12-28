@@ -3,7 +3,7 @@
 The [Angular RichTextEditor](https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) component is a feature-rich WYSIWYG HTML editor and WYSIWYG Markdown editor. The Rich Text Editor is widely used to create blogs, forum posts, notes sections, comment sections, messaging applications, and more. The control provides an efficient user interface for a better editing experience with mobile support. It has a variety of tools to edit and format rich content, and it return a valid HTML markup or Markdown (MD) content. It allows users to insert images, links, tables, media files and lists with modular architectures.
 
 <p align="center">
-    <a href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">Getting Started</a> . 
+    <a href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">Getting started</a> . 
     <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools">Online demos</a> . 
     <a href="https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">Learn more</a>
 </p>
@@ -21,7 +21,7 @@ Trusted by the world's leading companies
 
 ## Setup
 
-### Create an Angular Application
+### Create a Angular Application
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install the Angular CLI, use the following command.
 
@@ -41,7 +41,7 @@ cd my-app
 To install RichTextEditor and its dependent packages, use the following command.
 
 ```
-npm install @syncfusion/ej2-angular-richtexteditor --save
+ng add @syncfusion/ej2-angular-richtexteditor
 ```
 
 The above command does the below configuration to your Angular app.

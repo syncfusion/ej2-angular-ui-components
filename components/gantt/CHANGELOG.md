@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 20.4.40 (2022-12-28)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I420702` - Persistence settings prevent changing the timeline settings issue has been fixed.
+- `#I422731` - Issue when predecessor is given for unscheduled parent issue has been fixed.
+- `#I423435` - Customize baseline colour in `queryTaskbarInfo` event in segmented tasks issue has been fixed.
+- `#I420280` - The `actionBegin` event receives more records as modified data when task is edited issue has been fixed.
+- `#I422943` - Taskbar appearing on next date issue has been fixed.
+- `#I422476` - Progress value issue in parent task has been fixed.
+- `#I425389`- Baseline not properly rendered after moving Milestone.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.38 (2022-12-21)
 
 ### Gantt
@@ -11,12 +27,13 @@
 - `#I237939`,`#I255626`,`#I398597` - Provided `RTL` support in Gantt chart. Please find the documentation link [here](https://ej2.syncfusion.com/documentation/gantt/global-local/#right-to-left-rtl).
 - Provided `Shimmer` support in Gantt chart. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/loading-animation).
 
+- `#I237939`,`#I255626`,`#I398597` - Provided `RTL` support in Gantt chart. Please find the documentation link [here](https://ej2.syncfusion.com/angular/documentation/gantt/global-local/#right-to-left-rtl).
+- Provided `Shimmer` support in Gantt chart. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/gantt/loading-animation).
+
 #### Bug Fixes
 
 - `#I417035` - Expand Collapse not working properly after cell editing issue has been fixed.
 - `#I421663` - The baseline end date has not been properly validated issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.3.60 (2022-12-06)
 

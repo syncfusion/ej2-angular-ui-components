@@ -44,10 +44,6 @@
 		"typescript": "2.3.4"
 	},
 	"keywords": [
-		"ej2",
-		"Syncfusion",
-		"web-components",
-		"diagram",
 		"angular",
 		"ng",
 		"ng-diagrams",

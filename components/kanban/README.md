@@ -40,7 +40,7 @@ cd my-app
 To install Kanban and its dependent packages, use the following command.
 
 ```sh
-npm install @syncfusion/ej2-angular-kanban --save
+ng add @syncfusion/ej2-angular-kanban
 ```
 
 The above command does the below configuration to your Angular app.

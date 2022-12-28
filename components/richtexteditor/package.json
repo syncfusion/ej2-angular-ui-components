@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-richtexteditor",
-	"version": "19.12.13",
+	"version": "20.4.38",
 	"description": "Essential JS 2 RichTextEditor component for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -44,11 +44,6 @@
 		"typescript": "2.3.4"
 	},
 	"keywords": [
-		"rich-text-editor",
-		"markdown-editor",
-		"HTML5-rich-text-editor",
-		"wysiwyg-html-editor",
-		"wysiwyg-markdown-editor",
 		"angular-rich-text-editor",
 		"angular-html-editor",
 		"angular-markdown-editor",

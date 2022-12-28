@@ -92,7 +92,6 @@ export class FormBase<T> implements ControlValueAccessor {
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
-        setTimeout(() => {
         /* istanbul ignore else */
         if (typeof window !== 'undefined') {
             tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
@@ -101,7 +100,6 @@ export class FormBase<T> implements ControlValueAccessor {
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
         this.isFormInit = false;
-        });
     }
     public setDisabledState(disabled: boolean): void {
         this.enabled = !disabled;

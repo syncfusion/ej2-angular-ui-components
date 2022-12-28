@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.40 (2022-12-28)
+
+### Common
+
+#### Bug Fixes
+
+- `#I426526`, `#I421906` - The issue with the delay rendering of controls in the `ngAfterViewInit` hook has been resolved.
+
 ## 20.3.47 (2022-09-29)
 
 ### Common

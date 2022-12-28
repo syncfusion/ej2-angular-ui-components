@@ -1,4 +1,4 @@
-# Angular Image Editor Component (React Photo Editor Component)
+# Angular Image Editor Component (Angular Photo Editor Component)
 
 The [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-image-editor-npm) component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
 
@@ -39,12 +39,12 @@ cd my-app
 All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the angular image editor package, use the following command.
 
 ```bash
-ng add @syncfusion/ej2-angular-image-editors
+ng add @syncfusion/ej2-angular-image-editor
 ```
 
 The above command does the below configuration to your Angular app.
  
- * Adds `@syncfusion/ej2-angular-image-editors` package and its peer dependencies to your `package.json` file.
+ * Adds `@syncfusion/ej2-angular-image-editor` package and its peer dependencies to your `package.json` file.
  * Imports the `ImageEditorModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
 
@@ -59,7 +59,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     template: `<div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor></ejs-imageeditor>
+                <ejs-imageeditor id="image-editor"></ejs-imageeditor>
               </div>`
 })
 export class AppComponent {
@@ -77,7 +77,7 @@ Image Editor component is also offered in the following list of frameworks.
 ## Key features
 
 * [Load and save images in various formats](https://ej2.syncfusion.com/angular/documentation/image-editor/open-save): The Image Editor control allows users to load and edit existing images, as well as export the edited version in PNG, SVG, and JPG formats.
-* [Selection and cropping](https://ej2.syncfusion.com/documentation/angular/image-editor/selection-cropping): The control provides selection and cropping functionality, allowing users to crop images based on a customizable selection region with various aspect ratios and the ability to reposition the selection by dragging and resizing.
+* [Selection and cropping](https://ej2.syncfusion.com/angular/documentation/image-editor/selection-cropping): The control provides selection and cropping functionality, allowing users to crop images based on a customizable selection region with various aspect ratios and the ability to reposition the selection by dragging and resizing.
 * [Image transformations](https://ej2.syncfusion.com/angular/documentation/image-editor/transform): The control offers basic image editing features such as rotate, flip, zoom, and crop to adjust the appearance and composition of images.
 * [Image annotation](https://ej2.syncfusion.com/angular/documentation/image-editor/annotation): Users can insert annotations including text, rectangle, ellipse, freehand draw, and lines to mark up and annotate their images.
 * Image Finetunes: Includes support to adjust the brightness, contrast, saturation, hue, exposure, opacity, and blur of their images to achieve the desired look and feel.
