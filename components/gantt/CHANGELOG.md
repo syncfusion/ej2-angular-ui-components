@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.4.42 (2023-01-04)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I421870`- Record does not update properly when its modified in `actionBegin` event issue has been fixed.
+- `#I420414` - Row height issue in task mode has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.40 (2022-12-28)
 
 ### Gantt
@@ -16,7 +27,8 @@
 - `#I422476` - Progress value issue in parent task has been fixed.
 - `#I425389`- Baseline not properly rendered after moving Milestone.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I420702` - Persistence settings prevent changing the timeline settings issue has been fixed.
+- `#I422943` - Taskbar appearing on next date issue has been fixed.
 
 ## 20.4.38 (2022-12-21)
 

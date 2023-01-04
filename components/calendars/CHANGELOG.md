@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.42 (2023-01-04)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I424417` - The issue "Browser would hang when entering a large difference between the start and end date values" has been resolved.
+
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker

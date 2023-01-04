@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-documenteditor",
-	"version": "19.45.0",
+	"version": "20.4.40",
 	"description": "Feature-rich document editor control with built-in support for context menu, options pane and dialogs. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -44,16 +44,6 @@
 		"typescript": "2.3.4"
 	},
 	"keywords": [
-		"ej2",
-		"web-components",
-		"syncfusion",
-		"Javascript",
-		"TypeScript",
-		"js",
-		"documenteditor",
-		"document-editor",
-		"word-editor",
-		"ej2-documenteditor-container",
 		"ej2-angular-documenteditor",
 		"angular-documenteditor",
 		"angular"

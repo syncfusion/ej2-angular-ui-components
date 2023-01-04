@@ -41,7 +41,7 @@ cd my-app
 All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the Angular diagram package, use the following command.
 
 ```bash
-npm install @syncfusion/ej2-angular-diagrams
+ng add @syncfusion/ej2-angular-diagrams
 ```
 
 The above command does the below configuration to your Angular app.
