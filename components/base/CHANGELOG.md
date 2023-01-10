@@ -10,6 +10,20 @@
 
 - `#I426526`, `#I421906` - The issue with the delay rendering of controls in the `ngAfterViewInit` hook has been resolved.
 
+## 20.4.38 (2022-12-21)
+
+### Common
+
+#### New Features
+
+- Provided the Angular version 15 compatible support for the Angular components.
+- The new `Rating` component has been added to Angular.
+- The `AppBar`, `Floating Action Button (FAB)`, `Mention`, `Message` and `Speed Dial` components have been developed to meet industry standards and are now marked production-ready.
+
+#### Breaking Changes
+
+- If you are using Syncfusion's Angular components without first registering a license, a license dialog will appear after a certain limit of usage, preventing further interaction in the application. Please make sure to register a valid license in order to continue using the Syncfusion Angular components without interruption.
+
 ## 20.3.47 (2022-09-29)
 
 ### Common

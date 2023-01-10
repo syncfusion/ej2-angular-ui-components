@@ -44,11 +44,6 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      */
     public dateFormat: any;
     /** 
-     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
-     * @default null
-     */
-    public dateRangeTemplate: any;
-    /** 
      * Specifies the starting week date at an initial rendering of month view. This property is only applicable for month view. 
      *  If this property value is not set, then the month view will be rendered from the first week of the month. 
      * {% codeBlock src='schedule/displayDate/index.md' %}{% endcodeBlock %}
@@ -197,6 +192,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     @ContentChild('dateHeaderTemplate')
     @Template()
     public dateHeaderTemplate: any;
+    /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
+     * @default null
+     */
+    @ContentChild('dateRangeTemplate')
+    @Template()
+    public dateRangeTemplate: any;
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the 
      *  Year view day cell header. 

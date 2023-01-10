@@ -45,32 +45,29 @@ export class RatingComponent extends Rating implements IComponentBase {
 
 
     /** 
-     * Defines the template content for each item when it is selected. 
-     * The template context will contain the current item value for customization.
+     * Defines the template that defines the appearance of each rated item in a rating component.
      * @default ''
      */
     @ContentChild('fullTemplate')
     @Template()
     public fullTemplate: any;
     /** 
-     * Defines the template content for each item when it is not selected. 
-     * The template context will contain the current item value for customization.
+     * Defines the template that defines the appearance of each un-rated item in a rating component.
      * @default ''
      */
     @ContentChild('emptyTemplate')
     @Template()
     public emptyTemplate: any;
     /** 
-     * Defines the template content for the tooltip. 
-     * The template context will contain the current value for customization.
+     * Defines the template that used as tooltip content over default tooltip content of the rating. 
+     * The current value of rating passed as context to build the content.
      * @default ''
      */
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltipTemplate: any;
     /** 
-     * Defines the template content for the label. 
-     * The template context will contain the current value and maximum value for customization.
+     * Defines the template that used as label over default label of the rating. The current value of rating passed as context to build the content.
      * @default ''
      */
     @ContentChild('labelTemplate')

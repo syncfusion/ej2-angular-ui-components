@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.43 (2023-01-10)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
+
 ## 20.4.42 (2023-01-04)
 
 ### Mention

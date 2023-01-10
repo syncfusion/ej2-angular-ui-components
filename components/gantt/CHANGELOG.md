@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.4.43 (2023-01-10)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I426170` - Incorrect request type in zooming action has been fixed.
+- `#FB39646` - Incorrect index value during row drag and drop has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.42 (2023-01-04)
 
 ### Gantt
@@ -11,7 +22,7 @@
 - `#I421870`- Record does not update properly when its modified in `actionBegin` event issue has been fixed.
 - `#I420414` - Row height issue in task mode has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I420414` - Row height issue in task mode has been fixed.
 
 ## 20.4.40 (2022-12-28)
 

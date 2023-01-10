@@ -74,6 +74,13 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     @Template()
     public dateHeaderTemplate: any;
     /** 
+     * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
+     * @default null
+     */
+    @ContentChild('dateRangeTemplate')
+    @Template()
+    public dateRangeTemplate: any;
+    /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
      * the day header cells. This template is only applicable for year view header cells.
      * 
