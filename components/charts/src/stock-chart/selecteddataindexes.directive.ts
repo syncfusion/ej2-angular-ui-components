@@ -25,13 +25,13 @@ export class StockChartSelectedDataIndexDirective extends ComplexBase<StockChart
 
 
     /** 
-     * Specifies index of point
+     * Specifies index of point.
      * @default 0
      * @asptype int
      */
     public point: any;
     /** 
-     * Specifies index of series
+     * Specifies index of series.
      * @default 0
      * @asptype int
      */

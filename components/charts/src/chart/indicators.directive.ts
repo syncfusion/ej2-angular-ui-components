@@ -27,7 +27,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
 
 
     /** 
-     * Defines the type of the technical indicator
+     * Defines the type of the technical indicator.
      * @default 'Sma'
      */
     public type: any;
@@ -52,7 +52,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public colorName: any;
     /** 
-     * Defines the period, the price changes over which will define the %D value in stochastic indicators
+     * Defines the period, the price changes over which will define the %D value in stochastic indicators.
      * @default 3
      */
     public dPeriod: any;
@@ -73,12 +73,12 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public enableComplexProperty: any;
     /** 
-     * Sets the fast period to define the Macd line
+     * Sets the fast period to define the Macd line.
      * @default 26
      */
     public fastPeriod: any;
     /** 
-     * Defines the field to compare the current value with previous values
+     * Defines the field to compare the current value with previous values.
      * @default 'Close'
      */
     public field: any;
@@ -96,7 +96,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public high: any;
     /** 
-     * Defines the look back period, the price changes over which will define the %K value in stochastic indicators
+     * Defines the look back period, the price changes over which will define the %K value in stochastic indicators.
      * @default 14
      */
     public kPeriod: any;
@@ -107,21 +107,21 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public low: any;
     /** 
-     * Defines the appearance of lower line in technical indicators
+     * Defines the appearance of lower line in technical indicators.
      */
     public lowerLine: any;
     /** 
-     * Defines the appearance of the the MacdLine of Macd indicator
+     * Defines the appearance of the the MacdLine of Macd indicator.
      * @default { color: '#ff9933', width: 2 }
      */
     public macdLine: any;
     /** 
-     * Defines the color of the negative bars in Macd indicators
+     * Defines the color of the negative bars in Macd indicators.
      * @default '#e74c3d'
      */
     public macdNegativeColor: any;
     /** 
-     * Defines the color of the positive bars in Macd indicators
+     * Defines the color of the positive bars in Macd indicators.
      * @default '#2ecd71'
      */
     public macdPositiveColor: any;
@@ -137,22 +137,22 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public open: any;
     /** 
-     * Defines the over-bought(threshold) values. It is applicable for RSI and stochastic indicators
+     * Defines the over-bought(threshold) values. It is applicable for RSI and stochastic indicators.
      * @default 80
      */
     public overBought: any;
     /** 
-     * Defines the over-sold(threshold) values. It is applicable for RSI and stochastic indicators
+     * Defines the over-sold(threshold) values. It is applicable for RSI and stochastic indicators.
      * @default 20
      */
     public overSold: any;
     /** 
-     * Defines the period, the price changes over which will be considered to predict the trend
+     * Defines the period, the price changes over which will be considered to predict the trend.
      * @default 14
      */
     public period: any;
     /** 
-     * Defines the appearance of period line in technical indicators
+     * Defines the appearance of period line in technical indicators.
      */
     public periodLine: any;
     /** 
@@ -175,27 +175,27 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public segments: any;
     /** 
-     * Defines the name of the series, the data of which has to be depicted as indicator
+     * Defines the name of the series, the data of which has to be depicted as indicator.
      * @default ''
      */
     public seriesName: any;
     /** 
-     * Enables/Disables the over-bought and over-sold regions
+     * Enables/Disables the over-bought and over-sold regions.
      * @default true
      */
     public showZones: any;
     /** 
-     * Sets the slow period to define the Macd line
+     * Sets the slow period to define the Macd line.
      * @default 12
      */
     public slowPeriod: any;
     /** 
-     * Sets the standard deviation values that helps to define the upper and lower bollinger bands
+     * Sets the standard deviation values that helps to define the upper and lower bollinger bands.
      * @default 2
      */
     public standardDeviation: any;
     /** 
-     * Defines the appearance of the upper line in technical indicators
+     * Defines the appearance of the upper line in technical indicators.
      */
     public upperLine: any;
     /** 

@@ -35,7 +35,7 @@ export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective
      */
     public crossesAt: any;
     /** 
-     * Specifies axis name with which the axis line has to be crossed
+     * Specifies axis name with which the axis line has to be crossed.
      * @default null
      */
     public crossesInAxis: any;
@@ -194,7 +194,7 @@ export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective
      */
     public opposedPosition: any;
     /** 
-     * Specifies whether axis elements like axis labels, axis title, etc has to be crossed with axis line
+     * Specifies whether axis elements like axis labels, axis title, etc has to be crossed with axis line.
      * @default true
      */
     public placeNextToAxisLine: any;
@@ -239,7 +239,7 @@ export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective
      */
     public startAngle: any;
     /** 
-     * Specifies the stripLine collection for the axis
+     * Specifies the stripLine collection for the axis.
      */
     public stripLines: any;
     /** 

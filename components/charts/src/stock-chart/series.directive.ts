@@ -59,7 +59,7 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      */
     public bullFillColor: any;
     /** 
-     * It defines tension of cardinal spline types
+     * It defines tension of cardinal spline types.
      * @default 0.5
      */
     public cardinalSplineTension: any;
@@ -96,7 +96,7 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      */
     public dataSource: any;
     /** 
-     * options to customize the empty points in series
+     * options to customize the empty points in series.
      */
     public emptyPointSettings: any;
     /** 

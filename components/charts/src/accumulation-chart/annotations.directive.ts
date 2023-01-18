@@ -64,14 +64,14 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      */
     public verticalAlignment: any;
     /** 
-     * if set coordinateUnit as `Pixel` X specifies the axis value 
-     * else is specifies pixel or percentage of coordinate
+     * if set coordinateUnit as `Pixel` X specifies the axis value. 
+     * else is specifies pixel or percentage of coordinate.
      * @default '0'
      */
     public x: any;
     /** 
-     * if set coordinateUnit as `Pixel` Y specifies the axis value 
-     * else is specifies pixel or percentage of coordinate
+     * if set coordinateUnit as `Pixel` Y specifies the axis value. 
+     * else is specifies pixel or percentage of coordinate.
      * @default '0'
      */
     public y: any;

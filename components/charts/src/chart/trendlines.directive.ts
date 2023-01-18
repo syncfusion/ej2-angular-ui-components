@@ -31,16 +31,16 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
 
 
     /** 
-     * Defines the type of the trendline
+     * Defines the type of the trendline.
      * @default 'Linear'
      */
     public type: any;
     /** 
-     * Options to customize the animation for trendlines
+     * Options to customize the animation for trendlines.
      */
     public animation: any;
     /** 
-     * Defines the period, by which the trend has to backward forecast
+     * Defines the period, by which the trend has to backward forecast.
      * @default 0
      */
     public backwardForecast: any;
@@ -50,48 +50,48 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      */
     public dashArray: any;
     /** 
-     * Enables/disables tooltip for trendlines
+     * Enables/disables tooltip for trendlines.
      * @default true
      */
     public enableTooltip: any;
     /** 
-     * Defines the fill color of trendline
+     * Defines the fill color of trendline.
      * @default ''
      */
     public fill: any;
     /** 
-     * Defines the period, by which the trend has to forward forecast
+     * Defines the period, by which the trend has to forward forecast.
      * @default 0
      */
     public forwardForecast: any;
     /** 
-     * Defines the intercept of the trendline
+     * Defines the intercept of the trendline.
      * @default null
      * @aspdefaultvalueignore 
      */
     public intercept: any;
     /** 
-     * Sets the legend shape of the trendline
+     * Sets the legend shape of the trendline.
      * @default 'SeriesType'
      */
     public legendShape: any;
     /** 
-     * Options to customize the marker for trendlines
+     * Options to customize the marker for trendlines.
      * @deprecated 
      */
     public marker: any;
     /** 
-     * Defines the name of trendline
+     * Defines the name of trendline.
      * @default ''
      */
     public name: any;
     /** 
-     * Defines the period, the price changes over which will be considered to predict moving average trend line
+     * Defines the period, the price changes over which will be considered to predict moving average trend line.
      * @default 2
      */
     public period: any;
     /** 
-     * Defines the polynomial order of the polynomial trendline
+     * Defines the polynomial order of the polynomial trendline.
      * @default 2
      */
     public polynomialOrder: any;
@@ -101,7 +101,7 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      */
     public visible: any;
     /** 
-     * Defines the width of the trendline
+     * Defines the width of the trendline.
      * @default 1
      */
     public width: any;

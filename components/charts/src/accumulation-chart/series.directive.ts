@@ -50,7 +50,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public dataSource: any;
     /** 
-     * options to customize the empty points in series
+     * options to customize the empty points in series.
      */
     public emptyPointSettings: any;
     /** 
@@ -91,17 +91,17 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public gapRatio: any;
     /** 
-     * AccumulationSeries y values less than groupMode are combined into single slice named others
+     * AccumulationSeries y values less than groupMode are combined into single slice named others.
      * @default Value
      */
     public groupMode: any;
     /** 
-     * AccumulationSeries y values less than groupTo are combined into single slice named others
+     * AccumulationSeries y values less than groupTo are combined into single slice named others.
      * @default null
      */
     public groupTo: any;
     /** 
-     * Defines the height of the funnel/pyramid with respect to the chart area
+     * Defines the height of the funnel/pyramid with respect to the chart area.
      * @default '80%'
      */
     public height: any;
@@ -137,12 +137,12 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public name: any;
     /** 
-     * Defines the height of the funnel neck with respect to the chart area
+     * Defines the height of the funnel neck with respect to the chart area.
      * @default '20%'
      */
     public neckHeight: any;
     /** 
-     * Defines the width of the funnel neck with respect to the chart area
+     * Defines the width of the funnel neck with respect to the chart area.
      * @default '20%'
      */
     public neckWidth: any;
@@ -163,7 +163,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public pointColorMapping: any;
     /** 
-     * Defines how the values have to be reflected, whether through height/surface of the segments
+     * Defines how the values have to be reflected, whether through height/surface of the segments.
      * @default 'Linear'
      */
     public pyramidMode: any;
@@ -188,7 +188,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public startAngle: any;
     /** 
-     * The provided value will be considered as a Tooltip Mapping name
+     * The provided value will be considered as a Tooltip Mapping name.
      * @default ''
      */
     public tooltipMappingName: any;
@@ -198,7 +198,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public visible: any;
     /** 
-     * Defines the width of the funnel/pyramid with respect to the chart area
+     * Defines the width of the funnel/pyramid with respect to the chart area.
      * @default '80%'
      */
     public width: any;

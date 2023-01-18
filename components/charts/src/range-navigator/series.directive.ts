@@ -27,7 +27,7 @@ export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSer
 
 
     /** 
-     * It defines the series type of the range navigator
+     * It defines the series type of the range navigator.
      * @default 'Line'
      */
     public type: any;
@@ -62,7 +62,7 @@ export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSer
      */
     public opacity: any;
     /** 
-     * It defines the query for the data source
+     * It defines the query for the data source.
      * @default null
      */
     public query: any;
@@ -73,12 +73,12 @@ export class RangenavigatorSeriesDirective extends ComplexBase<RangenavigatorSer
      */
     public width: any;
     /** 
-     * It defines the xName for the series
+     * It defines the xName for the series.
      * @default null
      */
     public xName: any;
     /** 
-     * It defines the yName for the series
+     * It defines the yName for the series.
      * @default null
      */
     public yName: any;

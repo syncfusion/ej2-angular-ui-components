@@ -49,7 +49,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public crossesAt: any;
     /** 
-     * Specifies axis name with which the axis line has to be crossed
+     * Specifies axis name with which the axis line has to be crossed.
      * @default null
      */
     public crossesInAxis: any;
@@ -138,7 +138,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public labelIntersectAction: any;
     /** 
-     * Specifies the labelPadding from axis
+     * Specifies the labelPadding from axis.
      * @default 5
      */
     public labelPadding: any;
@@ -221,7 +221,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public minorTicksPerInterval: any;
     /** 
-     * Specifies the multi level labels collection for the axis
+     * Specifies the multi level labels collection for the axis.
      */
     public multiLevelLabels: any;
     /** 
@@ -236,7 +236,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public opposedPosition: any;
     /** 
-     * Specifies whether axis elements like axis labels, axis title, etc has to be crossed with axis line
+     * Specifies whether axis elements like axis labels, axis title, etc has to be crossed with axis line.
      * @default true
      */
     public placeNextToAxisLine: any;
@@ -281,7 +281,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public rowIndex: any;
     /** 
-     * Option to customize scrollbar with lazy loading
+     * Option to customize scrollbar with lazy loading.
      */
     public scrollbarSettings: any;
     /** 
@@ -311,7 +311,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public startFromZero: any;
     /** 
-     * Specifies the stripLine collection for the axis
+     * Specifies the stripLine collection for the axis.
      */
     public stripLines: any;
     /** 
@@ -332,7 +332,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public title: any;
     /** 
-     * Specifies the titlePadding from axis label
+     * Specifies the titlePadding from axis label.
      * @default 5
      */
     public titlePadding: any;

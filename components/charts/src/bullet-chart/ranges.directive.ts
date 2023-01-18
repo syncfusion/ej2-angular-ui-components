@@ -27,17 +27,17 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
 
 
     /** 
-     * Default value for qualitative range Color
+     * Default value for qualitative range Color.
      * @default null
      */
     public color: any;
     /** 
-     * Default value for qualitative range end value
+     * Default value for qualitative range end value.
      * @default null
      */
     public end: any;
     /** 
-     * Default value for qualitative range Color
+     * Default value for qualitative range Color.
      * @default null
      */
     public index: any;
@@ -47,7 +47,7 @@ export class BulletRangeDirective extends ComplexBase<BulletRangeDirective> {
      */
     public legendImageUrl: any;
     /** 
-     * Default value for qualitative range name
+     * Default value for qualitative range name.
      * @default null
      */
     public name: any;

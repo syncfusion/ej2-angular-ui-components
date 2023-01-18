@@ -46,7 +46,7 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      */
     public fill: any;
     /** 
-     * options for customizing marker
+     * options for customizing marker.
      */
     public marker: any;
     /** 
@@ -65,21 +65,21 @@ export class SmithchartSeriesDirective extends ComplexBase<SmithchartSeriesDirec
      */
     public points: any;
     /** 
-     * reactance name for dataSource
+     * reactance name for dataSource.
      * @default ''
      */
     public reactance: any;
     /** 
-     * resistance name for dataSource
+     * resistance name for dataSource.
      * @default ''
      */
     public resistance: any;
     /** 
-     * options for customizing tooltip
+     * options for customizing tooltip.
      */
     public tooltip: any;
     /** 
-     * tooltip mapping name for the series
+     * tooltip mapping name for the series.
      * @default ''
      */
     public tooltipMappingName: any;

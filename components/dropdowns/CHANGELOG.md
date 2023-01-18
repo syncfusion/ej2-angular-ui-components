@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 20.4.43 (2023-01-10)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
-
 ## 20.4.42 (2023-01-04)
 
 ### Mention
@@ -2145,6 +2137,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.43 (2023-01-10)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

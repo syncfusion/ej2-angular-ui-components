@@ -50,7 +50,7 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
      */
     public customAttributes: any;
     /** 
-     * End value of the multi level labels
+     * End value of the multi level labels.
      * @default null
      * @aspdefaultvalueignore 
      */
@@ -62,7 +62,7 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
      */
     public maximumTextWidth: any;
     /** 
-     * Start value of the multi level labels
+     * Start value of the multi level labels.
      * @default null
      * @aspdefaultvalueignore 
      */

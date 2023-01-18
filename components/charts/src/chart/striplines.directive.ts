@@ -64,13 +64,13 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      */
     public isRepeat: any;
     /** 
-     * isSegmented value of the strip line
+     * isSegmented value of the strip line.
      * @default false
      * @aspdefaultvalueignore 
      */
     public isSegmented: any;
     /** 
-     * Strip line Opacity
+     * Strip line Opacity.
      * @default 1
      */
     public opacity: any;
@@ -117,7 +117,7 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      */
     public size: any;
     /** 
-     * Size type of the strip line
+     * Size type of the strip line.
      * @default Auto
      */
     public sizeType: any;

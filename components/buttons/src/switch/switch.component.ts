@@ -5,7 +5,7 @@ import { Switch } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['checked','cssClass','disabled','enablePersistence','enableRtl','locale','name','offLabel','onLabel','value'];
+export const inputs: string[] = ['checked','cssClass','disabled','enablePersistence','enableRtl','htmlAttributes','locale','name','offLabel','onLabel','value'];
 export const outputs: string[] = ['focus', 'blur', 'change','created','checkedChange'];
 export const twoWays: string[] = ['checked'];
 

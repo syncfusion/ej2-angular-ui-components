@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.4.44 (2023-01-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+`#F179211` - Issue with "scrollbar is moving automatically while rendering the component inside dialog and editing the view port cells" has been resolved.
+
+
 ## 20.4.40 (2022-12-28)
 
 ### Spreadsheet
