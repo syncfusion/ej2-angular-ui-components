@@ -2,7 +2,19 @@
 
 ## [Unreleased]
 
-## 20.4.44 (2023-01-18)
+## 20.4.48 (2023-02-01)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I427837` - Baseline renders with incorrect date in difference timezone issue has been fixed.
+- `#I430365` - Child tasks not updated after updating parent task predecessor has been fixed.
+- `#I428064` - Incorrect unit in timeline issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 20.4.43 (2023-01-10)
 
 ### Gantt
 
@@ -10,8 +22,6 @@
 
 - `#I426170` - Incorrect request type in zooming action has been fixed.
 - `#FB39646` - Incorrect index value during row drag and drop has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.4.42 (2023-01-04)
 

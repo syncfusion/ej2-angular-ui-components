@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.4.48 (2023-02-01)
+
+### Common
+
+#### Bug Fixes
+
+- `#I396539`, `#I371348` - Memory leaks in the Syncfusion Angular components have been improved.
+- `#I432238`, `#I431640` - Resolved the `displayTemplate` not working in `mention` component.
+
 ## 20.4.40 (2022-12-28)
 
 ### Common

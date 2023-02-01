@@ -39,6 +39,7 @@
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/node": "^6.0.46",
 		"@types/requirejs": "^2.1.26",
+		"@types/glob": "8.0.0",
 		"es6-module-loader": "^0.17.11",
 		"karma-systemjs": "^0.16.0",
 		"systemjs": "^0.19.40",

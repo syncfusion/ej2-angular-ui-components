@@ -39,7 +39,8 @@ export class SpeedDialComponent extends SpeedDial implements IComponentBase {
     public childItems: QueryList<SpeedDialItemsDirective>;
     public tags: string[] = ['items'];
     /** 
-     * Defines the template content for the speed dial item.
+     * Defines the template content for the speed dial item. 
+     * {% codeBlock src='speeddial/itemTemplate/index.md' %}{% endcodeBlock %}
      * @default ''
      */
     @ContentChild('itemTemplate')

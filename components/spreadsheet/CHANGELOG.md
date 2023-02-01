@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.44 (2023-01-18)
+## 20.4.48 (2023-02-01)
 
 ### Spreadsheet
 
-#### Bug Fixes
+#### New Features
 
-`#F179211` - Issue with "scrollbar is moving automatically while rendering the component inside dialog and editing the view port cells" has been resolved.
-
+- `#F178912` - Now, you can specify the `orientation` type for PDF export.
 
 ## 20.4.40 (2022-12-28)
 
@@ -1255,6 +1254,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
+
+
+## 20.4.44 (2023-01-18)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+`#F179211` - Issue with "scrollbar is moving automatically while rendering the component inside dialog and editing the view port cells" has been resolved.
 
 
 ## 20.3.61 (2022-12-13)
