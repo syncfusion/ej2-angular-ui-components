@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 20.4.49 (2023-02-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I432121` - Issue with "editing cell data is not updated on the cell while scrolling the sheet before save the edited cell value" has been resolved.
+
+`#I421472` - Issue with "decimal separator is not updated properly for decimal numbers in the `NL` culture" has been resolved.
+
+
 ## 20.4.48 (2023-02-01)
 
 ### Spreadsheet
