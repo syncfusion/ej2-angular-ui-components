@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I434123` - Issue with "NVDA reader does not read the selected value in the list" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I434089` - The issue "Placeholder overlaps with the selected data in the multiselect" has been resolved.
+- `#I435032` - Issue with "Selected Item overlapped with clear icon in the multiselect component" has been resolved.
+
 ## 20.4.49 (2023-02-07)
 
 ### Dropdown Tree

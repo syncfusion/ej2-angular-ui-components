@@ -81,6 +81,14 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
     @ContentChild('cellTemplate')
     @Template()
     public cellTemplate: any;
+    /** 
+     * Allows the tooltip element to be customized with either an HTML string or the element’s ID, 
+     * can be used to displayed with custom formats either by mouse hovering or by touch in the pivot table.
+     * @default null
+     */
+    @ContentChild('tooltipTemplate')
+    @Template()
+    public tooltipTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

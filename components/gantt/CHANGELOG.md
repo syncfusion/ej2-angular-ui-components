@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 20.4.50 (2023-02-14)
+
+### Gantt
+
+#### Bug Fixes
+
+- `#I431629`- A script error is thrown while performing tab navigation on the last row.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.49 (2023-02-07)
 
 ### Gantt
@@ -12,7 +22,8 @@
 - `#I428914` - Duration value is not maintained when using `valueAccessor` issue has been fixed.
 - `#I426170` - Action complete is not triggered properly for Zoom In and Zoom to fit in Gantt chart.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+-`#I428914`- Duration value is not maintained when using `valueAccessor` issue has been fixed.
+
 
 ## 20.4.48 (2023-02-01)
 
