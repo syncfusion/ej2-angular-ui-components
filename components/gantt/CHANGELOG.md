@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 20.4.51 (2023-02-21)
+
+### Gantt
+
+#### Bug Fixes
+
+-`I432910`- Export Issue with Predecessor Connectivity for Filtered Data.
+-`#I434098`- Script error occurs when updating resources dynamically without child mapping.
+
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.50 (2023-02-14)
 
 ### Gantt
@@ -9,8 +21,6 @@
 #### Bug Fixes
 
 - `#I431629`- A script error is thrown while performing tab navigation on the last row.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.4.49 (2023-02-07)
 

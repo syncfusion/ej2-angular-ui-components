@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.51 (2023-02-21)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I436425` - Issue with "Accessibility tool reports that duplicate ID value for the uploader component" has been resolved
+
 ## 20.4.48 (2023-02-01)
 
 ### Signature

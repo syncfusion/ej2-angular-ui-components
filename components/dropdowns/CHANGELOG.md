@@ -2,20 +2,19 @@
 
 ## [Unreleased]
 
-## 20.4.50 (2023-02-14)
+## 20.4.51 (2023-02-21)
 
-### ComboBox
-
-#### Bug Fixes
-
-- `#I434123` - Issue with "NVDA reader does not read the selected value in the list" has been resolved.
-
-### MultiSelect
+### Mention
 
 #### Bug Fixes
 
-- `#I434089` - The issue "Placeholder overlaps with the selected data in the multiselect" has been resolved.
-- `#I435032` - Issue with "Selected Item overlapped with clear icon in the multiselect component" has been resolved.
+- `#I430690` - The issue "Mention popup doesn't flip out when there is no space at the bottom" has been resolved.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I435114` - The issue "popup is not opening through keyboard action when dynamically changing the datasource value" has been resolved.
 
 ## 20.4.49 (2023-02-07)
 
@@ -2188,6 +2187,22 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.50 (2023-02-14)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I434123` - Issue with "NVDA reader does not read the selected value in the list" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I432789` - Resolved issue with top border is not visible when using floatLabelType as "Auto" or "Always" with cssClass as "e-outline".
+- `#I434089` - The issue "Placeholder overlaps with the selected data in the multiselect" has been resolved.
+- `#I435032` - Issue with "Selected Item overlapped with clear icon in the multiselect component" has been resolved.
 
 ## 20.4.43 (2023-01-10)
 
