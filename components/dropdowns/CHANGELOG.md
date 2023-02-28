@@ -2,19 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.51 (2023-02-21)
+## 20.4.52 (2023-02-28)
 
 ### Mention
 
 #### Bug Fixes
 
 - `#I430690` - The issue "Mention popup doesn't flip out when there is no space at the bottom" has been resolved.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I435114` - The issue "popup is not opening through keyboard action when dynamically changing the datasource value" has been resolved.
 
 ## 20.4.49 (2023-02-07)
 
@@ -2187,6 +2181,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 20.4.51 (2023-02-21)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I435114` - The issue "popup is not opening through keyboard action when dynamically changing the datasource value" has been resolved.
 
 ## 20.4.50 (2023-02-14)
 

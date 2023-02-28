@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 20.4.51 (2023-02-21)
+## 20.4.52 (2023-02-28)
 
-### Uploader
+### MaskedTextBox
 
 #### Bug Fixes
 
-- `#I436425` - Issue with "Accessibility tool reports that duplicate ID value for the uploader component" has been resolved
+- `#I435597` - Resolved issue with pasting using keyboard shortcuts not working properly in Safari browser.
+
+### Signature
+
+#### Bug Fixes
+
+- `#I433821` - Correcting the signature scaling issue while resizing the web browser has been resolved.
 
 ## 20.4.48 (2023-02-01)
 
@@ -1293,6 +1299,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 20.4.51 (2023-02-21)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I436425` - Issue with "Accessibility tool reports that duplicate ID value for the uploader component" has been resolved
 
 ## 19.3.47 (2021-10-26)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 20.4.52 (2023-02-28)
+
+### Common
+
+#### Bug Fixes
+
+- `#I431692` - Resolved the Form based components script errors in the Angular 14.
+
 ## 20.4.48 (2023-02-01)
 
 ### Common

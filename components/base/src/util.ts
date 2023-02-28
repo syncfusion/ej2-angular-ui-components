@@ -8,7 +8,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 export function applyMixins(derivedClass: any, baseClass: any[]): void {
     baseClass.forEach(baseClass => {
         Object.getOwnPropertyNames(baseClass.prototype).forEach(name => {
-             if (!derivedClass.prototype.hasOwnProperty(name) || baseClass.isFormBase) {
+             if (!derivedClass.prototype.hasOwnProperty(name) || (baseClass.isFormBase && name !== 'constructor')) {
                 derivedClass.prototype[name] = baseClass.prototype[name];
               }
         });
