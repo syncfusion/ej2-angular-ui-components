@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 20.4.53 (2023-03-07)
+
+### Common
+
+#### Bug Fixes
+
+- `#I438234`, `#I438255` - Resolved Form base components `Set` and `Reset` not working properly.
+- `#F180765` - Resolved the ngFor destroy throws script errors.
+
 ## 20.4.52 (2023-02-28)
 
 ### Common

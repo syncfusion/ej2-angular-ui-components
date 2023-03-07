@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 20.4.53 (2023-03-07)
+
+### Gantt
+
+#### Bug Fixes
+
+-`I413261`- Validate predecessor link on editing issue has been fixed.
+-`I441394`- Gantt Column name doesn't change respect to changing of culture at runtime issue has been fixed.
+-`I437053`- Task label not updated correctly When dynamically updating data source issue has been fixed.
+
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.52 (2023-02-28)
 
 ### Gantt
@@ -16,7 +29,8 @@
 -`#I436476`- Gantt Task doesn't get updated after Batch Update issue is fixed.
 
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+-`I394676`- Incorrect Date in milestone while on load and editing issue has been fixed.
+
 
 ## 20.4.51 (2023-02-21)
 

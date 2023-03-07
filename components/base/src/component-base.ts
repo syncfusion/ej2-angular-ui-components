@@ -207,8 +207,17 @@ export class ComponentBase<T> {
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy
                 for (var key of Object.keys(tempOnDestroyThis)) {
-                    if (/function|object/.test(typeof tempOnDestroyThis[key])) {
-                        tempOnDestroyThis[key] = null;
+                    if (tempOnDestroyThis[key] && /object/.test(typeof tempOnDestroyThis[key]) && Object.keys(tempOnDestroyThis[key]).length !== 0) {
+                        if (/properties|changedProperties|childChangedProperties/.test(key)) {
+                            for (var propkey of Object.keys(tempOnDestroyThis[key])) {
+                                if (tempOnDestroyThis[key][propkey] && /object/.test(typeof tempOnDestroyThis[key][propkey]) && Object.keys(tempOnDestroyThis[key][propkey]).length !== 0) {
+                                    tempOnDestroyThis[key][propkey] = null;
+                                }
+                            }
+                        }
+                        else {
+                            tempOnDestroyThis[key] = null;
+                        }
                     }
                 }
             }

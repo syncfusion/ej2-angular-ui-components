@@ -2,13 +2,25 @@
 
 ## [Unreleased]
 
-## 20.4.52 (2023-02-28)
+## 20.4.53 (2023-03-07)
 
-### Mention
+### Dropdown Tree
 
 #### Bug Fixes
 
-- `#I430690` - The issue "Mention popup doesn't flip out when there is no space at the bottom" has been resolved.
+- `#I429410` - The issue of facing a delay while unselecting large set of items using close icon in the Dropdown Tree component has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I439556`, `I442336` - The issue "Script error throws after clear the selected value using clear icon" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I440980` - Issue with "close event is triggered only once if args.cancel is set as true" has been resolved.
 
 ## 20.4.49 (2023-02-07)
 
@@ -2189,6 +2201,14 @@ DropDownList component contains a list of predefined values from which a single 
 #### Bug Fixes
 
 - `#I435114` - The issue "popup is not opening through keyboard action when dynamically changing the datasource value" has been resolved.
+
+## 20.4.52 (2023-02-28)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I430690` - The issue "Mention popup doesn't flip out when there is no space at the bottom" has been resolved.
 
 ## 20.4.50 (2023-02-14)
 

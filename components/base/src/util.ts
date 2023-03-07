@@ -53,15 +53,26 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
             (val: string) => {
                 return (/\./g.test(val) ? false : true);
             });
+        let tabTemp: boolean = _this.getModuleName() === 'tab';
         for (let registeredTemplate of (regProperties && regProperties || regTemplates)) {
             /* istanbul ignore next */
             if (index && index.length) {
                 for (let e = 0; e < index.length; e++) {
-                    for (let m = 0; m < _this.registeredTemplate.template.length; m++) {
-                        let value = _this.registeredTemplate.template[m].rootNodes[0];
-                        if (value === index[e]) {
-                            let rt = _this.registeredTemplate[registeredTemplate];
-                            rt[m].destroy();
+                    if (tabTemp) {
+                        for (let m = 0; m < _this.registeredTemplate[registeredTemplate].length; m++) {
+                            let value = _this.registeredTemplate[registeredTemplate][m];
+                            if (value && value === index[e]) {
+                                value.destroy();
+                                _this.registeredTemplate[registeredTemplate].splice(m, 1);
+                            }
+                        }
+                    } else {
+                        for (let m = 0; m < _this.registeredTemplate.template.length; m++) {
+                            let value = _this.registeredTemplate.template[m].rootNodes[0];
+                            if (value === index[e]) {
+                                let rt = _this.registeredTemplate[registeredTemplate];
+                                rt[m].destroy();
+                            }
                         }
                     }
                 }
@@ -82,7 +93,9 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
                     }
                 }
             }
-            delete _this.registeredTemplate[registeredTemplate];
+            if (!tabTemp || !index) {
+                delete _this.registeredTemplate[registeredTemplate];
+            }
         }
     }
     for (let tagObject of _this.tagObjects) {
