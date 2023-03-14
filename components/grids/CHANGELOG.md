@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 20.4.54 (2023-03-14)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I445812` - Column Reordering index is wrong when Grid has hidden columns issue has been fixed.
+- `#I440720` - Executing query with custom dataSource is not working in excel export issue has been fixed.
+- `#F180504` - Copy not working properly when using `hideColumns` property issue has been fixed.
+- `#I433483` - Header cell alignment not proper when text wrapping enabled with filtering issue has been fixed.
+- `#I440455` - Unable to get the row element in the `rowDataBound` when using `rowTemplate` in `React18` issue has been fixed.
+- `#I380872` - All child element gets Hovered on hovering one child issue has been fixed.
+- `#I442280` - Provided the locale support for Expand and Collapse icons issue has been fixed.
+- `#I443824` - The issue with the clear icon displaying incorrect text when hovering over it has been resolved.
+
+- `#I432092`, `#I438520`, `#I438656`, `#I437702` -  Script error thrown when Printing Grid in angular platform has been resolved.
+
 ## 20.4.53 (2023-03-07)
 
 ### Grid
@@ -15,8 +32,6 @@
 - `#I436480` - Showing HTML tags in tooltip on hovering the group caption issue has been fixed.
 - `#I437570` - Using String Template causes exception issue has been fixed.
 - `#F180121` - Grid's Content cropped when rendering with toolbar template inside a card component issue has been fixed.
-
-- `#I432092`, `#I438520`, `#I438656`, `#I437702` -  Script error thrown when Printing Grid in angular platform has been resolved.
 
 ## 20.4.52 (2023-02-28)
 
