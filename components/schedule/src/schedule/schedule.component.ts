@@ -6,7 +6,7 @@ import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','views','weekRule','width','workDays','workHours'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','views','weekRule','width','workDays','workHours'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
@@ -95,9 +95,9 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * The template option which is used to render the customized work cells on the Schedule. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the work cells. 
      *  The fields accessible via template are as follows. 
-     * * date 
-     * * groupIndex 
-     * * type
+     * * `date`: Returns the date of the cell. 
+     * * `groupIndex`: Returns the group index of the cell. 
+     * * `type`: Returns the type of the work cell.
      * 
      * Refer to the below code snippet.
      *
@@ -157,8 +157,8 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * Template option to customize the resource header bar. Here, the template accepts either 
      *  the string or HTMLElement as template design and then the parsed design is displayed onto the resource header cells. 
      * The following can be accessible via template. 
-     * * resource - All the resource fields. 
-     * * resourceData - object collection of current resource.
+     * * `resource` - All the resource fields. 
+     * * `resourceData` - Object collection of current resource.
      * 
      * Refer to the below code snippet.
      *

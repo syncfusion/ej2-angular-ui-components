@@ -8,7 +8,7 @@ import { PointersDirective } from './pointers.directive';
 let input: string[] = ['annotations', 'background', 'direction', 'endAngle', 'hideIntersectingLabel', 'labelStyle', 'lineStyle', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'pointers', 'radius', 'rangeGap', 'ranges', 'roundingPlaces', 'showLastLabel', 'startAndEndRangeGap', 'startAngle'];
 let outputs: string[] = [];
 /**
- * Axes directive
+ * Represents the directive to render the axes in the Circular Gauge.
  * ```html
  * <e-axes><e-axis></e-axis></e-axes>
  * ```
@@ -31,7 +31,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public childPointers: any;
     public tags: string[] = ['annotations', 'ranges', 'pointers'];
     /** 
-     * Sets and gets the annotation element for an axis in circular gauge component.
+     * Sets and gets the annotation elements for an axis in circular gauge.
      */
     public annotations: any;
     /** 
@@ -45,7 +45,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public direction: any;
     /** 
-     * Sets and gets the end angle of an axis in circular gauge component.
+     * Sets and gets the end angle of an axis in circular gauge.
      * @default 160
      */
     public endAngle: any;
@@ -55,37 +55,37 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public hideIntersectingLabel: any;
     /** 
-     * Sets and gets the style of the axis label in circular gauge component.
+     * Sets and gets the style of the axis label in circular gauge.
      */
     public labelStyle: any;
     /** 
-     * Sets and gets the style of the line in axis of circular gauge component.
+     * Sets and gets the style of the line in axis of circular gauge.
      */
     public lineStyle: any;
     /** 
-     * Sets and gets the major tick lines of an axis in circular gauge component.
+     * Sets and gets the major tick lines of an axis in circular gauge.
      * @default { width: 2, height: 10 }
      */
     public majorTicks: any;
     /** 
-     * Sets and gets the maximum value of an axis in the circular gauge component.
+     * Sets and gets the maximum value of an axis in the circular gauge.
      * @aspdefaultvalueignore 
      * @default null
      */
     public maximum: any;
     /** 
-     * Sets and gets the minimum value of an axis in the circular gauge component.
+     * Sets and gets the minimum value of an axis in the circular gauge.
      * @aspdefaultvalueignore 
      * @default null
      */
     public minimum: any;
     /** 
-     * Sets and gets the minor tick lines of an axis in circular gauge component.
+     * Sets and gets the minor tick lines of an axis in circular gauge.
      * @default { width: 2, height: 5 }
      */
     public minorTicks: any;
     /** 
-     * Sets and gets the pointers of an axis in circular gauge component.
+     * Sets and gets the pointers of an axis in circular gauge.
      */
     public pointers: any;
     /** 
@@ -94,21 +94,21 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public radius: any;
     /** 
-     * Sets and gets the gap between the ranges by specified value in circular gauge component.
+     * Sets and gets the gap between the ranges by specified value in circular gauge.
      * @default null
      */
     public rangeGap: any;
     /** 
-     * Sets and gets the ranges of an axis in circular gauge component.
+     * Sets and gets the ranges of an axis in circular gauge.
      */
     public ranges: any;
     /** 
-     * Sets and gets the rounding Off value in the label in an axis.
+     * Sets and gets the rounding off value in the an axis label.
      * @default null
      */
     public roundingPlaces: any;
     /** 
-     * Enables and disables the last label of axis when it is hidden in circular gauge component.
+     * Enables and disables the last label of axis when it is hidden in circular gauge.
      * @default false
      */
     public showLastLabel: any;
@@ -118,7 +118,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public startAndEndRangeGap: any;
     /** 
-     * Sets and gets the start angle of an axis in circular gauge component.
+     * Sets and gets the start angle of an axis in circular gauge.
      * @default 200
      */
     public startAngle: any;

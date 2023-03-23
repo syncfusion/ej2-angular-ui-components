@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ProgressBarAnnotationDirective, ProgressBarAnnotationsDirective } from './annotations.directive';
 import { ProgressBarComponent } from './progressbar.component';
 import { ProgressBarModule } from './progressbar.module';
-import {ProgressAnnotation} from '@syncfusion/ej2-progressbar'
+import {ProgressAnnotation, ProgressTooltip} from '@syncfusion/ej2-progressbar'
 
 
 export const ProgressAnnotationService: ValueProvider = { provide: 'ProgressBarProgressAnnotation', useValue: ProgressAnnotation};
+export const ProgressTooltipService: ValueProvider = { provide: 'ProgressBarProgressTooltip', useValue: ProgressTooltip};
 
 /**
  * NgModule definition for the ProgressBar component with providers.
@@ -17,7 +18,8 @@ export const ProgressAnnotationService: ValueProvider = { provide: 'ProgressBarP
         ProgressBarModule
     ],
     providers:[
-        ProgressAnnotationService
+        ProgressAnnotationService,
+        ProgressTooltipService
     ]
 })
 export class ProgressBarAllModule { }

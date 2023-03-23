@@ -4,8 +4,8 @@ import { ProgressBar } from '@syncfusion/ej2-progressbar';
 
 import { ProgressBarAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['animation','annotations','cornerRadius','enablePersistence','enablePieProgress','enableProgressSegments','enableRtl','endAngle','gapWidth','height','innerRadius','isActive','isGradient','isIndeterminate','isStriped','labelOnTrack','labelStyle','locale','margin','maximum','minimum','progressColor','progressThickness','radius','rangeColors','role','secondaryProgress','segmentColor','segmentCount','showProgressValue','startAngle','theme','trackColor','trackThickness','type','value','width'];
-export const outputs: string[] = ['animationComplete','load','loaded','mouseClick','mouseDown','mouseLeave','mouseMove','mouseUp','progressCompleted','textRender','valueChanged'];
+export const inputs: string[] = ['animation','annotations','cornerRadius','enablePersistence','enablePieProgress','enableProgressSegments','enableRtl','endAngle','gapWidth','height','innerRadius','isActive','isGradient','isIndeterminate','isStriped','labelOnTrack','labelStyle','locale','margin','maximum','minimum','progressColor','progressThickness','radius','rangeColors','role','secondaryProgress','secondaryProgressColor','secondaryProgressThickness','segmentColor','segmentCount','showProgressValue','startAngle','theme','tooltip','trackColor','trackThickness','type','value','width'];
+export const outputs: string[] = ['animationComplete','load','loaded','mouseClick','mouseDown','mouseLeave','mouseMove','mouseUp','progressCompleted','textRender','tooltipRender','valueChanged'];
 export const twoWays: string[] = [''];
 
 /**
@@ -38,6 +38,7 @@ export class ProgressBarComponent extends ProgressBar implements IComponentBase 
 	mouseUp: any;
 	progressCompleted: any;
 	textRender: any;
+	tooltipRender: any;
 	public valueChanged: any;
     public childAnnotations: QueryList<ProgressBarAnnotationsDirective>;
     public tags: string[] = ['annotations'];
@@ -48,6 +49,12 @@ export class ProgressBarComponent extends ProgressBar implements IComponentBase 
         this.injectedModules = this.injectedModules || [];
         try {
                 let mod = this.injector.get('ProgressBarProgressAnnotation');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ProgressBarProgressTooltip');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

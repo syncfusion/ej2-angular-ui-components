@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['angle', 'autoAngle', 'content', 'description', 'radius', 'textStyle', 'zIndex'];
 let outputs: string[] = [];
 /**
- * Annotation directive
+ * Represents the directive to render and customize the annotations in an axis of circular gauge.
  * ```html
  * <e-annotations><e-annotation></e-annotation></e-annotations>
  * ```
@@ -25,12 +25,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Sets and gets the angle for annotation with respect to axis in circular gauge component.
+     * Sets and gets the angle for annotation with respect to axis in circular gauge.
      * @default 90
      */
     public angle: any;
     /** 
-     * Enables and disables the annotation rotation along the axis.
+     * Enables and disables the rotation of the annotation along the axis.
      * @default false
      */
     public autoAngle: any;
@@ -40,7 +40,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      */
     public description: any;
     /** 
-     * Sets and gets the radius for annotation with respect to axis in circular gauge component.
+     * Sets and gets the radius for annotation with respect to axis in circular gauge.
      * @default '50%'
      */
     public radius: any;
@@ -49,12 +49,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      */
     public textStyle: any;
     /** 
-     * Sets and gets the z-index of an annotation in an axis in the circular gauge component.
+     * Sets and gets the z-index of an annotation in an axis in the circular gauge.
      * @default '-1'
      */
     public zIndex: any;
     /** 
-     * Sets and gets the content of the annotation. This property accepts the id of the custom element.
+     * Sets and gets the content of the annotation. This property accepts the HTML string or id of the custom element.
      * @default null
      */
     @ContentChild('content')

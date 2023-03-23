@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['angle', 'arrowSettings', 'color', 'dashArray', 'highlightSettings', 'latitude', 'longitude', 'selectionSettings', 'visible', 'width'];
 let outputs: string[] = [];
 /**
- * Layer Directive
+ * Represents the directive to define the navigation lines in the maps.
  * ```html
  * <e-layers>
  * <e-layer>
@@ -32,39 +32,40 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
 
 
     /** 
-     * Sets and gets the angle of curve connecting different locations in maps.
+     * Gets or sets the angle of the curve connecting different locations in maps.
      * @default 0
      */
     public angle: any;
     /** 
-     * Sets and gets the options to customize the arrow for the navigation line in maps.
+     * Gets or sets the options to customize the arrow for the navigation line in maps.
      */
     public arrowSettings: any;
     /** 
-     * Sets and gets the color for the navigation lines in maps.
+     * Gets or sets the color for the navigation lines in maps.
+     * @default 'black'
      */
     public color: any;
     /** 
-     * Sets and gets the dash-array for the navigation lines drawn in maps.
+     * Gets or sets the dash-array for the navigation lines drawn in maps.
      * @default ''
      */
     public dashArray: any;
     /** 
-     * Sets and gets the highlight settings of the navigation line in maps.
+     * Gets or sets the highlight settings of the navigation line in maps.
      */
     public highlightSettings: any;
     /** 
-     * Sets and gets the latitude value for the navigation lines drawn in maps.
+     * Gets or sets the latitude value for the navigation lines to be drawn in maps.
      * @default []
      */
     public latitude: any;
     /** 
-     * Sets and gets the longitude for the navigation lines drawn in maps.
+     * Gets or sets the longitude for the navigation lines to be drawn in maps.
      * @default []
      */
     public longitude: any;
     /** 
-     * Sets and gets the selection settings of the navigation line in maps.
+     * Gets or sets the selection settings of the navigation line in maps.
      */
     public selectionSettings: any;
     /** 
@@ -73,7 +74,7 @@ export class NavigationLineDirective extends ComplexBase<NavigationLineDirective
      */
     public visible: any;
     /** 
-     * Sets and gets the width of the navigation lines in maps.
+     * Gets or sets the width of the navigation lines in maps.
      * @default 1
      */
     public width: any;

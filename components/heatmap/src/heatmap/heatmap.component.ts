@@ -9,7 +9,8 @@ export const outputs: string[] = ['cellClick','cellRender','cellSelected','creat
 export const twoWays: string[] = [''];
 
 /**
- * `ejs-heatmap` represents the Angular HeatMap Component.
+ * Represents the Angular HeatMap component. 
+ * This is used to customize the properties of the heatmap in order to visualize two-dimensional data, with values represented by gradient or solid color variations.
  * ```html
  * <ejs-heatmap></ejs-heatmap>
  * ```

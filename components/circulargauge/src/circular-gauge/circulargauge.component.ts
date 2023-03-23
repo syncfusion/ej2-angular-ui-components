@@ -9,7 +9,7 @@ export const outputs: string[] = ['animationComplete','annotationRender','axisLa
 export const twoWays: string[] = [''];
 
 /**
- * Circular Gauge Component
+ * Represents the Angular Circular Gauge component. This tag is used to customize the properties of the circular gauge to visualize the data in circular scale.
  * ```html
  * <ej-circulargauge></ej-circulargauge>
  * ```

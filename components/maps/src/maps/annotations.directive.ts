@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['content', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
 let outputs: string[] = [];
 /**
- * Annotation Directive
+ * Represents the directive to define the annotations in the maps.
  * ```html
  * <e-maps-annotations>
  * <e-maps-annotation></e-maps-annotation>
@@ -27,30 +27,33 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Sets and gets the annotation element to be aligned horizontally.
+     * Gets or sets the type of the placement when the annotation is to be aligned horizontally.
      * @default None
      */
     public horizontalAlignment: any;
     /** 
-     * Sets and gets the annotation element to be aligned vertically.
+     * Gets or sets the type of the placement when the annotation is to be aligned vertically.
      * @default None
      */
     public verticalAlignment: any;
     /** 
-     * Sets and gets the x position of the annotation in maps component.
+     * Gets or sets the x position of the annotation in pixel or percentage format.
+     * @default '0px'
      */
     public x: any;
     /** 
-     * Sets and gets the y position of the annotation in maps component.
+     * Gets or sets the y position of the annotation in pixel or percentage format.
+     * @default '0px'
      */
     public y: any;
     /** 
-     * Sets and gets the z-index of the annotation in maps component.
+     * Gets or sets the z-index of the annotation in maps.
      * @default '-1'
      */
     public zIndex: any;
     /** 
-     * Sets and gets the content for the annotation in maps component.
+     * Gets or sets the content for the annotation in maps.
+     * @default ''
      */
     @ContentChild('content')
     @Template()

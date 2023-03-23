@@ -7,7 +7,7 @@ import { PointersDirective } from './pointers.directive';
 let input: string[] = ['isInversed', 'labelStyle', 'line', 'majorTicks', 'maximum', 'minimum', 'minorTicks', 'opposedPosition', 'pointers', 'ranges', 'showLastLabel'];
 let outputs: string[] = [];
 /**
- * Axes directive
+ * Represents the directive to render the axes in the Linear Gauge.
  * ```html
  * <e-axes><e-axis></e-axis></e-axes>
  * ```
@@ -29,6 +29,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public tags: string[] = ['ranges', 'pointers'];
     /** 
      * Enables or disables the inversed axis.
+     * @default false
      */
     public isInversed: any;
     /** 
@@ -36,7 +37,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public labelStyle: any;
     /** 
-     * Sets and gets the options for customizing the axis line.
+     * Sets and gets the options for customizing the appearance of the axis line.
      */
     public line: any;
     /** 
@@ -59,6 +60,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public minorTicks: any;
     /** 
      * Enables or disables the opposed position of the axis in the linear gauge.
+     * @default false
      */
     public opposedPosition: any;
     /** 
@@ -71,6 +73,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public ranges: any;
     /** 
      * Shows or hides the last label in the axis of the linear gauge.
+     * @default false
      */
     public showLastLabel: any;
 

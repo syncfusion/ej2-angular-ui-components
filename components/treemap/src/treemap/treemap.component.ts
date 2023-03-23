@@ -9,7 +9,7 @@ export const outputs: string[] = ['beforePrint','click','doubleClick','drillEnd'
 export const twoWays: string[] = [''];
 
 /**
- * TreeMap Component
+ * Represents the Angular TreeMap component. It is used to visualize both hierarchical and flat data.
  * ```html
  * <ej-treemap></ej-treemap>
  * ```

@@ -9,7 +9,7 @@ import { NavigationLinesDirective } from './navigationlinesettings.directive';
 let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
- * Layer Directive
+ * Represents the directive to define the layer of the maps.
  * ```html
  * <e-layers>
  * <e-layer></e-layer>
@@ -36,126 +36,131 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public childNavigationLineSettings: any;
     public tags: string[] = ['initialShapeSelection', 'markerSettings', 'bubbleSettings', 'navigationLineSettings'];
     /** 
-     * Sets and gets the type of the layer in maps.
+     * Gets or sets the type of the layer in maps. There are two types: Layer and SubLayer.
      * @default Layer
      */
     public type: any;
     /** 
-     * Sets and gets the duration for the animation of layers in maps.
+     * Gets or sets the duration of the animation of layers when the zooming is performed in maps.
      * @default 0
      */
     public animationDuration: any;
     /** 
-     * Sets and gets the Bing map type for the layer. If you use shape data with BingMapType without using layer type as Bing, 
-     * then the map will render based on shape data since default layer type will be set as Geometry.
+     * Gets or sets the Bing map type for the layer. If you set GeoJSON data in the map and set the `BingMapType` value without setting the layer type as "Bing", 
+     * then the map will be rendered based on the provided shape data since the default layer type will be set as "Geometry".
      * @deprecated 
      * @default Aerial
      */
     public bingMapType: any;
     /** 
-     * Sets and gets the options for customizing the bubble in maps.
+     * Gets or sets the options for customizing the bubbles in maps.
      */
     public bubbleSettings: any;
     /** 
-     * Sets and gets the options for customizing the data-label in maps.
+     * Gets or sets the options for customizing the data labels in maps.
      */
     public dataLabelSettings: any;
     /** 
-     * * Sets and gets the data source for the layer. 
-     * * The data source can contain data that can be bound to the tooltip, marker, and bubble.
+     * Gets or sets the data source for the layer. 
+     * The data bound to the shapes using data source can be used to display the tooltip, marker, and bubble.
      * @isobservable true
      * @default []
      */
     public dataSource: any;
     /** 
-     * Sets and gets the geometry type for the layer in maps.
+     * Gets or sets the geometry type for the layer in maps. There are two types: Geographic and Normal. 
+     * * Geographic type renders the shape maps with geographical coordinate system. 
+     * * Normal type renders the shape maps using default coordinate system.
      * @default Geographic
      */
     public geometryType: any;
     /** 
-     * Sets and gets the options for customizing the shapes when the mouse has hovered on maps.
+     * Gets or sets the options for customizing the shapes when the mouse hovers over maps.
      */
     public highlightSettings: any;
     /** 
-     * Sets and gets the settings for shapes that is selected at the time of rendering.
+     * Gets or sets the settings for the shapes to be selected when the maps rendering initially. 
+     * The initial selection of shapes will be performed only when the selection functionality of layer is enabled.
      */
     public initialShapeSelection: any;
     /** 
-     * Sets and gets the key for the tile map layer in maps.
+     * Gets or sets the key for the online map provider to render in the layer of the maps.
      * @deprecated 
      * @default ''
      */
     public key: any;
     /** 
-     * Sets and gets the type of the layer in maps. If we use layer type with shape data property in layer of the maps 
+     * Gets or sets the type of the layer in maps. If we use layer type with shape data property in layer of the maps 
      * then map will render based on the provided layer type.
      * @deprecated 
      * @default Geometry
      */
     public layerType: any;
     /** 
-     * Sets and gets the options for customizing the cluster of markers in maps.
+     * Gets or sets the options for customizing the cluster of markers in maps.
      */
     public markerClusterSettings: any;
     /** 
-     * Sets and gets the options for customizing the marker in maps.
+     * Gets or sets the options for customizing the markers in maps.
      */
     public markerSettings: any;
     /** 
-     * Sets and gets the options for customizing the navigation line in maps.
+     * Gets or sets the options for customizing the navigation lines in maps.
      */
     public navigationLineSettings: any;
     /** 
-     * Sets and gets the query to select particular data from the shape data. 
+     * Gets or sets the query to select particular data from the layer data source. 
      * This property is applicable only when the data source is created by data manager.
      * @default null
      */
     public query: any;
     /** 
-     * Sets and gets the options for customizing the shapes when clicking the shapes in maps.
+     * Gets or sets the options for customizing the shapes when clicking on the shapes in maps.
      */
     public selectionSettings: any;
     /** 
-     * Sets and gets the shape data for the maps to render.
+     * Gets or sets the data for the maps to render. 
+     * The data is normally JSON object with GeoJSON format that defines the shapes and geometries of the map.
      * @isobservable true
      * @default null
      */
     public shapeData: any;
     /** 
-     * Sets and gets the path for the shape from the shape data in maps.
+     * Gets or sets the field name from the GeoJSON data to map the shape to the data defined in the layer data source.
      * @default 'name'
      */
     public shapeDataPath: any;
     /** 
-     * Sets and gets the path for the layers from the layer data source in maps.
+     * Gets or sets the field name from the data source to map the shape to the data defined in the layer data source.
      * @default 'name'
      */
     public shapePropertyPath: any;
     /** 
-     * Sets and gets the options to customize the shape of the maps.
+     * Gets or sets the options to customize the shape of the maps.
      */
     public shapeSettings: any;
     /** 
-     * Sets and gets the type of the static maps.
+     * Gets or sets the type of the static maps.
      * @deprecated 
      * @default RoadMap
      */
     public staticMapType: any;
     /** 
-     * Sets and gets the options for customizing the toggle state of shapes when selecting the legend in maps.
+     * Gets or sets the options for customizing the toggle state of shapes when selecting the legend in maps.
      */
     public toggleLegendSettings: any;
     /** 
-     * Sets and gets the options for customizing the tooltip for the layers, markers, and bubbles in maps.
+     * Gets or sets the options for customizing the tooltip of the layers in maps.
      */
     public tooltipSettings: any;
     /** 
-     * Sets and gets the template for the map using the url.
+     * Gets or sets the URL of the online map providers. 
+     * The online map providers will be rendered only when the shape data is not set and layer type is set with default value.
      * @default ''
      */
     public urlTemplate: any;
     /** 
-     * Enables or disables the visibility state for the layers in maps.
+     * Enables or disables the visibility of the layers in maps.
      * @default true
      */
     public visible: any;

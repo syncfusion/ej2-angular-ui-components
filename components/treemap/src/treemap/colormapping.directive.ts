@@ -30,22 +30,22 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
      */
     public from: any;
     /** 
-     * Sets and gets the label text for the legend based on color mapping.
+     * Sets and gets the label text for the legend when it is rendered based on color mapping.
      * @default null
      */
     public label: any;
     /** 
-     * Sets and gets the maximum opacity for the color-mapping in the treemap component.
+     * Sets and gets the maximum opacity for the color-mapping in the treemap.
      * @default null
      */
     public maxOpacity: any;
     /** 
-     * Sets and gets the minimum opacity for the color-mapping in the treemap component.
+     * Sets and gets the minimum opacity for the color-mapping in the treemap.
      * @default null
      */
     public minOpacity: any;
     /** 
-     * Enables or disables the visibility of the legend for color mapping in the treemap component.
+     * Enables or disables the visibility of the legend for color mapping in the treemap.
      * @default true
      */
     public showLegend: any;

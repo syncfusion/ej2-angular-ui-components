@@ -9,7 +9,7 @@ export const outputs: string[] = ['actionBegin','actionComplete','actionFailure'
 export const twoWays: string[] = [];
 
 /**
- * `ej-pivotview` represents the Angular PivotView Component.
+ * `ej-pivotview` represents the Angular Pivot Table Component.
  * ```html
  * <ej-pivotview></ej-pivotview>
  * ```

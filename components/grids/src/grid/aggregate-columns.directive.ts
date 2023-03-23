@@ -49,7 +49,6 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * * falsecount 
      * * custom 
      * > Specify the `type` value as `custom` to use custom aggregation.
-     * @asptype string
      * @default null
      */
     public type: any;

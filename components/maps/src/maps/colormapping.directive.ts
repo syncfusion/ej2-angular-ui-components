@@ -6,7 +6,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['color', 'from', 'label', 'maxOpacity', 'minOpacity', 'showLegend', 'to', 'value'];
 let outputs: string[] = [];
 /**
- * ColorMapping Directive
+ * Represents the directive to define the bubble color mapping in the maps.
  * ```html
  * <e-layers>
  * <e-layer>
@@ -34,44 +34,44 @@ export class ColorMappingDirective extends ComplexBase<ColorMappingDirective> {
 
 
     /** 
-     * Sets and gets the color for the color-mapping in maps.
+     * Gets or sets the color for the color-mapping in maps.
      * @default null
      */
     public color: any;
     /** 
-     * Sets and gets the value from where the range color-mapping starts.
+     * Gets or sets the value from where the range for the color-mapping starts.
      * @aspdefaultvalueignore 
      * @default null
      */
     public from: any;
     /** 
-     * Sets and gets the label for the color-mapping from the data source in maps.
+     * Gets or sets the label for the color-mapping to display in the legend item text.
      * @default null
      */
     public label: any;
     /** 
-     * Sets and gets the maximum opacity for the color-mapping in maps.
+     * Gets or sets the maximum opacity for the color-mapping in maps.
      * @default null
      */
     public maxOpacity: any;
     /** 
-     * Sets and gets the minimum opacity for the color-mapping in maps.
+     * Gets or sets the minimum opacity for the color-mapping in maps.
      * @default null
      */
     public minOpacity: any;
     /** 
-     * Enables or disables the visibility state of legend for the color-mapping shapes in maps.
+     * Enables or disables the visibility of legend for the corresponding color-mapped shapes in maps.
      * @default true
      */
     public showLegend: any;
     /** 
-     * Sets and gets the value to where the range color-mapping ends.
+     * Gets or sets the value to where the range for the color-mapping ends.
      * @aspdefaultvalueignore 
      * @default null
      */
     public to: any;
     /** 
-     * Sets and gets the value for the color-mapping from the data source.
+     * Gets or sets the value from the data source to map the corresponding colors to the shapes.
      * @default null
      */
     public value: any;

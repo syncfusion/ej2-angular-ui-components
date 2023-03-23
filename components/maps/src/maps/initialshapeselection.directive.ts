@@ -6,7 +6,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['shapePath', 'shapeValue'];
 let outputs: string[] = [];
 /**
- * Layer Directive
+ * Represents the directive to configure the selection of the shapes when the maps is initially rendered.
  * ```html
  * <e-layers>
  * <e-layer>
@@ -32,12 +32,12 @@ export class InitialShapeSelectionDirective extends ComplexBase<InitialShapeSele
 
 
     /** 
-     * Sets and gets the property name from the data source in maps.
+     * Gets or sets the property name from the data source in maps.
      * @default null
      */
     public shapePath: any;
     /** 
-     * Sets and gets the value for the shape from data source in maps.
+     * Gets or sets the value from the data source which is bound to the shape in maps.
      * @default null
      */
     public shapeValue: any;

@@ -46,6 +46,9 @@ export class RatingComponent extends Rating implements IComponentBase {
 
     /** 
      * Defines the template that defines the appearance of each rated item in a rating component.
+     * 
+     * {% codeBlock src='rating/fullTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      */
     @ContentChild('fullTemplate')
@@ -61,6 +64,9 @@ export class RatingComponent extends Rating implements IComponentBase {
     /** 
      * Defines the template that used as tooltip content over default tooltip content of the rating. 
      * The current value of rating passed as context to build the content.
+     * 
+     * {% codeBlock src='rating/tooltipTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      */
     @ContentChild('tooltipTemplate')
@@ -68,6 +74,9 @@ export class RatingComponent extends Rating implements IComponentBase {
     public tooltipTemplate: any;
     /** 
      * Defines the template that used as label over default label of the rating. The current value of rating passed as context to build the content.
+     * 
+     * {% codeBlock src='rating/labelTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      */
     @ContentChild('labelTemplate')

@@ -4,8 +4,8 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','locale','theme','toolbar','toolbarTemplate','width'];
-export const outputs: string[] = ['beforeSave','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','imageFiltering','panning','rotating','saved','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
+export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','locale','quickAccessToolbarTemplate','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','width','zoomSettings'];
+export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','imageFiltering','panning','quickAccessToolbarOpening','rotating','saved','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
 export const twoWays: string[] = [''];
 
 /**
@@ -29,6 +29,7 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
     public context : any;
     public tagObjects: any;
 	beforeSave: any;
+	click: any;
 	created: any;
 	cropping: any;
 	destroyed: any;
@@ -37,6 +38,7 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
 	flipping: any;
 	imageFiltering: any;
 	panning: any;
+	quickAccessToolbarOpening: any;
 	rotating: any;
 	saved: any;
 	shapeChanging: any;
@@ -47,25 +49,13 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
 
 
     /** 
-     * Specifies template to the Image Editor Toolbar. 
-     * If you want to customize the entire toolbar in own way by using this property. 
-     * The property is depending on ‘toolbar’.
-     * @default null```html
-<div id='imageeditor'></div>
-```
-```typescript
-<script>
-var imageObj = new ImageEditor({
-    toolbarTemplate: '#toolbarTemplate'
-});
-imageObj.appendTo("#imageeditor");
-</script>
-<script id="toolbarTemplate" type="text/x-template">
-   <div class = 'e-toolbar'>
-     <button id= 'dltbtn'></button>
-   </div>
- </script>
-```
+     * Specifies a custom template for the toolbar of an image editor control. 
+     * A string that specifies a custom template for the toolbar of the image editor. If this property is defined, the 'toolbar' property will not have any effect.
+     * @remarks Use this property if you want to customize the entire toolbar in your own way. The template should be a string that contains the HTML markup for the custom toolbar.
+
+     * @default null
+{% codeBlock src='image-editor/toolbarTemplate/index.md' %}{% endcodeBlock %}
+
 
      */
     @ContentChild('toolbarTemplate')

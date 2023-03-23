@@ -263,17 +263,29 @@ export class ComponentBase<T> {
                                 let childObj = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[h]);
                                 if (childObj) {
                                     let innerchildObj = tagObject.instance.list[h]['child' + tag.substring(0, 1).toUpperCase() + tag.substring(1)];
-                                    if (innerchildObj) {
-                                        for (let j = 0; j < innerchildObj.list.length; j++) {
-                                            let innerTag = innerchildObj.list[0].tags[0];
-                                            if (innerTag) {
-                                                let innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchildObj.list[j]);
-                                                if (innerchildTag) {
-                                                    innerchildObj.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                    // Update the inner child tag objects
+                                    const updateChildTag = (innerchild: any) => {
+                                        let innerLevelTag: any = [];
+                                        if (innerchild) {
+                                            for (let j = 0; j < innerchild.list.length; j++) {
+                                                let innerTag = innerchild.list[0].tags[0];
+                                                if (innerTag) {
+                                                    let innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchild.list[j]);
+                                                    if (innerchildTag) {
+                                                        innerchild.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                        innerLevelTag.push(innerchildTag);
+                                                    }
                                                 }
                                             }
                                         }
-                                    }
+                                        // check for inner level tag
+                                        if (innerLevelTag.length !== 0) {
+                                            for (let l = 0; l < innerLevelTag.length; l++) {
+                                                updateChildTag(innerLevelTag[l]);
+                                            }
+                                        };
+                                    };
+                                    updateChildTag(innerchildObj);
                                     tagObject.instance.list[h].tagObjects.push({ instance: childObj, name: tag });
                                 }
                             }

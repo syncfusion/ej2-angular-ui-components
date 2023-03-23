@@ -10,7 +10,7 @@ export const outputs: string[] = ['animationComplete','annotationRender','axisLa
 export const twoWays: string[] = [''];
 
 /**
- * Linear Gauge Component
+ * Represents the Angular Linear Gauge Component. This tag is used to customize the properties of the linear gauge to visualize the data in linear scale.
  * ```html
  * <ej-lineargauge></ej-lineargauge>
  * ```

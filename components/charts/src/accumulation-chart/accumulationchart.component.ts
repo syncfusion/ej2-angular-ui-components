@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
-export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highlightColor','highlightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
+export const inputs: string[] = ['allowExport','annotations','background','backgroundImage','border','center','centerLabel','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enablePersistence','enableRtl','enableSmartLabels','height','highlightColor','highlightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
 export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','beforeResize','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendClick','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','selectionComplete','seriesRender','textRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 

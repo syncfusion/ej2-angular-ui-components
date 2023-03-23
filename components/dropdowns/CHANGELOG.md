@@ -2,99 +2,7 @@
 
 ## [Unreleased]
 
-## 20.4.53 (2023-03-07)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I429410` - The issue of facing a delay while unselecting large set of items using close icon in the Dropdown Tree component has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I439556`, `I442336` - The issue "Script error throws after clear the selected value using clear icon" has been resolved.
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I440980` - Issue with "close event is triggered only once if args.cancel is set as true" has been resolved.
-
-## 20.4.49 (2023-02-07)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I429410` - The issue of Select All/Unselect All taking an excessive amount of time and causing browser crashes in a Dropdown Tree with a large data source has been resolved.
-
-### Mention
-
-#### Bug Fixes
-
-- `#I428416` - Fixed issue where API call was not functioning correctly when typing the mention character.
-
-## 20.4.48 (2023-02-01)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I429647` - Fixed an issue where a console error occurred while using the destroy method in the AutoComplete.
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#I412684` - Resolved the issue "No Records Found" message is not showing in  Dropdown Tree while updating null data dynamically.
-- `#I430152` - Facing a console error while setting empty data to the Dropdown Tree has been resolved.
-- `#I420146` - The Placeholder alignment issue while setting the Dropdown Tree component as form control is resolved
-
-### ListBox
-
-#### Bug Fixes
-
-- `#F38636` - Issue with "`selectItems` function doesn't work in listbox when values contain backslashes" has been resolved
-
-## 20.4.42 (2023-01-04)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I422992` - Now, the `cssClass` property works fine in the Mention component.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I423751` - The issue "MultiSelect height not being set properly in the tailwind theme" has been resolved.
-
-## 20.4.40 (2022-12-28)
-
-### Dropdown Tree
-
-#### Bug Fixes
-
-- `#F178650` - Resolved the error after perform filtering in Dropdown Tree while updating data dynamically
-
-### ListBox
-
-#### Bug Fixes
-
-- `#F424252` - Issue with "Data source not update properly when we filtering and clicking move All button in listbox toolbar sample" has been resolved.
-- `#I423072` - Issue with "`actionBegin` event argument not passes the filtered item properly while filtering and clicking move All button in listbox toolbar sample" has been resolved.
-
-## 20.4.38 (2022-12-21)
-
-### Dropdown Tree
-
-#### New Features
-
-- `#I395558` - Provided enableHtmlSanitizer support for Dropdown Tree component.
-- `#F169154`, `#I424048` - Provided an option to prevent the parent node selection in the Dropdown Tree component.
+## 21.1.35 (2023-03-23)
 
 ### ListBox
 
@@ -107,6 +15,12 @@
 #### Bug Fixes
 
 - `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I435138` - Issue with "NVDA reader does not announces the aria-label text when added through Html Attribute" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -2193,46 +2107,6 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 20.4.51 (2023-02-21)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I435114` - The issue "popup is not opening through keyboard action when dynamically changing the datasource value" has been resolved.
-
-## 20.4.52 (2023-02-28)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I430690` - The issue "Mention popup doesn't flip out when there is no space at the bottom" has been resolved.
-
-## 20.4.50 (2023-02-14)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I434123` - Issue with "NVDA reader does not read the selected value in the list" has been resolved.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I432789` - Resolved issue with top border is not visible when using floatLabelType as "Auto" or "Always" with cssClass as "e-outline".
-- `#I434089` - The issue "Placeholder overlaps with the selected data in the multiselect" has been resolved.
-- `#I435032` - Issue with "Selected Item overlapped with clear icon in the multiselect component" has been resolved.
-
-## 20.4.43 (2023-01-10)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I397894` - The issue "aria-label added on input element instead of wrapper element while adding the aria-label by using Html Attribute property" has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

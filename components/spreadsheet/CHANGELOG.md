@@ -2,52 +2,13 @@
 
 ## [Unreleased]
 
-## 20.4.52 (2023-02-28)
+## 21.1.35 (2023-03-23)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I435982`, `#I434351` - Issue with "rendered cell template destroyed while updating the cell value using `updateCell` method" has been resolved.
-
-## 20.4.50 (2023-02-14)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I434077` - Issue with "after deleting rows beyond the rendered region, the edited cell value is not updated to the expected cell in finite mode" has been resolved.
-
-## 20.4.49 (2023-02-07)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I432121` - Issue with "editing cell data is not updated on the cell while scrolling the sheet before save the edited cell value" has been resolved.
-
-`#I421472` - Issue with "decimal separator is not updated properly for decimal numbers in the `NL` culture" has been resolved.
-
-
-## 20.4.48 (2023-02-01)
-
-### Spreadsheet
-
-#### New Features
-
-- `#F178912` - Now, you can specify the `orientation` type for PDF export.
-
-## 20.4.40 (2022-12-28)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I422232` - Issue with "`SUMIFS` formula is not working properly while providing as nested formula to the `SUM` formula" has been resolved.
-- `#F179330` - Issue with "custom function reference is removed from the control instance while calling the `refresh` method" has been resolved.
-
-- `#I422696` - Issue with "`SUMIFS` formula is not working properly when specify the criteria with operator and cell reference" has been resolved.
-- `#I424843`  - Issue with "undo action is not working properly while performing undo on the cell with data validation" has been resolved.
+- `#I434179` - Issue with "an unsupported file error occurs when importing an excel file with an image at the end of the used range index" has been resolved.
 
 ## 20.3.60 (2022-12-06)
 
@@ -1281,15 +1242,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
-
-
-## 20.4.44 (2023-01-18)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-`#F179211` - Issue with "scrollbar is moving automatically while rendering the component inside dialog and editing the view port cells" has been resolved.
 
 
 ## 20.3.61 (2022-12-13)

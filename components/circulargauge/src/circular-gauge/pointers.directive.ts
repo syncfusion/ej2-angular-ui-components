@@ -6,7 +6,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 let outputs: string[] = [];
 /**
- * Pointers directive
+ * Represents the directive to render and customize the pointers in an axis of circular gauge.
  * ```html
  * <e-pointers><e-pointer></e-pointer></e-pointers>
  * ```
@@ -25,24 +25,25 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
 
 
     /** 
-     * Sets and gets the type of pointer for an axis in Circular gauge component.
+     * Sets and gets the type of pointer for an axis in Circular gauge.
      * @default Needle
      */
     public type: any;
     /** 
-     * Sets and gets the animation of pointers while rendering the axis in circular gauge.
+     * Sets and gets the options for the animation of the pointers that propagate while rendering the axis and updating the pointer value in the circular gauge.
      */
     public animation: any;
     /** 
-     * Sets and gets the options to customize the color and width of the border for the needle pointer in an axis.
+     * Sets and gets the options to customize the style properties of the border for the needle pointer in an axis.
      */
     public border: any;
     /** 
-     * Sets and gets the cap of pointer in an axis.
+     * Sets and gets the options to customize the cap element of the needle pointer in an axis.
      */
     public cap: any;
     /** 
      * Sets and gets the color of the pointer in an axis.
+     * @default null
      */
     public color: any;
     /** 
@@ -51,8 +52,8 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public description: any;
     /** 
-     * Sets and gets the url for the image that is to be displayed as pointer. 
-     * It requires marker shape value to be Image.
+     * Sets and gets the URL for the image that is to be displayed as pointer. 
+     * It requires marker shape value to be `Image`.
      * @default null
      */
     public imageUrl: any;
@@ -68,7 +69,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public markerHeight: any;
     /** 
-     * Sets and gets the shape of the marker type pointer in an axis.
+     * Sets and gets the shape of the marker pointer in an axis.
      * @default Circle
      */
     public markerShape: any;
@@ -78,17 +79,17 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public markerWidth: any;
     /** 
-     * Sets or gets the end width of the needle pointer in an axis.
+     * Sets or gets the width at the ending edge of the needle pointer in an axis.
      * @default null
      */
     public needleEndWidth: any;
     /** 
-     * Sets or gets the start width of the needle pointer in an axis.
+     * Sets or gets the width at the starting edge of the needle pointer in an axis.
      * @default null
      */
     public needleStartWidth: any;
     /** 
-     * Sets and gets the tail of needle pointer in an axis.
+     * Sets and gets the options to customize the tail element of the needle pointer in an axis.
      */
     public needleTail: any;
     /** 
@@ -122,16 +123,16 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public roundedCornerRadius: any;
     /** 
-     * Sets and gets the text in pointer.
+     * Sets and gets the text for the marker pointer. To render the text in the marker pointer, the marker shape must be set as `Text`.
      * @default ''
      */
     public text: any;
     /** 
-     * Sets and gets the style of text in pointer of an axis.
+     * Sets and gets the style of text in marker pointer of an axis.
      */
     public textStyle: any;
     /** 
-     * Sets and gets the value of the pointer in circular gauge component.
+     * Sets and gets the value of the pointer in circular gauge.
      * @aspdefaultvalueignore 
      * @default null
      */

@@ -6,7 +6,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['border', 'color', 'end', 'endWidth', 'linearGradient', 'offset', 'position', 'radialGradient', 'start', 'startWidth'];
 let outputs: string[] = [];
 /**
- * Ranges directive
+ * Represents the directive to render and customize the ranges in an axis of linear gauge.
  * ```html
  * <e-ranges><e-range></e-range></e-ranges>
  * ```
@@ -25,11 +25,12 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
 
 
     /** 
-     * Sets and gets the options to customize the color and width of the border for the axis range.
+     * Sets and gets the options to customize the style properties of the border for the axis range.
      */
     public border: any;
     /** 
      * Sets and gets the color of the axis range.
+     * @default ''
      */
     public color: any;
     /** 
@@ -38,7 +39,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public end: any;
     /** 
-     * Sets and gets the width of the end of the range in axis.
+     * Sets and gets the width for the end of the range in axis.
      * @default 10
      */
     public endWidth: any;
@@ -49,7 +50,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public linearGradient: any;
     /** 
-     * Sets and gets the value to position the range in the axis.
+     * Sets and gets the offset value from where the range must be placed from the axis in linear gauge.
      * @default '0'
      */
     public offset: any;
@@ -69,7 +70,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      */
     public start: any;
     /** 
-     * Sets and gets the width of the start of the range in axis.
+     * Sets and gets the width for the start of the range in axis.
      * @default 10
      */
     public startWidth: any;

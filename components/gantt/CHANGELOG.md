@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 21.1.35 (2023-03-23)
+
+### Gantt Chart
+
+#### Features
+
+- `#I419169` - Provided Taskbar drag and drop support for resource view in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/resource-multi-taskbar.html).
+- `#I417330` - Provided support to disable parent predecessor by using `allowParentDependency` property. Please find the `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#allowparentdependency).
+- `#I413261` - Restricted offset value update based on enabling or disabling the `API`. Please find the
+- `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#updateoffsetontaskbaredit).
+- `#I420482` - Provided option to disable date validation at initial load based on enabling or disabling the `API`
+- By disabling this `API` we can improve load time performance by two time. Please find the
+- `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#autocalculatedatescheduling).
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 20.4.54 (2023-03-14)
 
 ### Gantt
@@ -15,8 +35,6 @@
 -`I440310`- Script error throws when parent ID mapped issue has been fixed.
 -`I441047`- An exception is thrown when attempting to update `task fields` and `data source`.
 
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 20.4.53 (2023-03-07)
 

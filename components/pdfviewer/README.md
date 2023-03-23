@@ -75,7 +75,6 @@ In **src/app/app.component.ts**, use `<ejs-pdfviewer>` selector in the `template
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import './styles.css';
 import {
   PdfViewerComponent,
   LinkAnnotationService,

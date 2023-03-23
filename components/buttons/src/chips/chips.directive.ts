@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'leadingIconCss', 'leadingIconUrl', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
+let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'htmlAttributes', 'leadingIconCss', 'leadingIconUrl', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
 let outputs: string[] = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -49,6 +49,13 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
      * @default true
      */
     public enabled: any;
+    /** 
+     * Specifies the additional HTML attributes, such as title, styles, class, id, and name, in a key-value pair format 
+     * and appended to the chip item element of the Chip component. If both the property and equivalent HTML attributes are configured, 
+     * then the component overrides the property value with the HTML attributes.
+     * @default {}
+     */
+    public htmlAttributes: any;
     /** 
      * Specifies the leading icon CSS class for the chip.
      * @default ''

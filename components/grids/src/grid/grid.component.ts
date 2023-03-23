@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { AggregatesDirective } from './aggregates.directive';
 
-export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowGrouping','allowKeyboard','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','childGrid','clipMode','columnChooserSettings','columnMenuItems','columnQueryMode','columns','contextMenuItems','cssClass','currencyCode','currentAction','dataSource','detailTemplate','editSettings','ej2StatePersistenceVersion','enableAdaptiveUI','enableAltRow','enableAutoFill','enableColumnVirtualization','enableHeaderFocus','enableHover','enableImmutableMode','enableInfiniteScrolling','enablePersistence','enableRtl','enableStickyHeader','enableVirtualMaskRow','enableVirtualization','filterSettings','frozenColumns','frozenRows','gridLines','groupSettings','height','hierarchyPrintMode','infiniteScrollSettings','loadingIndicator','locale','pageSettings','pagerTemplate','parentDetails','printMode','query','queryString','resizeSettings','rowDropSettings','rowHeight','rowRenderingMode','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnChooser','showColumnMenu','sortSettings','textWrapSettings','toolbar','toolbarTemplate','width'];
+export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowGrouping','allowKeyboard','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','autoFit','childGrid','clipMode','columnChooserSettings','columnMenuItems','columnQueryMode','columns','contextMenuItems','cssClass','currencyCode','currentAction','currentViewData','dataSource','detailTemplate','editSettings','ej2StatePersistenceVersion','enableAdaptiveUI','enableAltRow','enableAutoFill','enableColumnVirtualization','enableHeaderFocus','enableHover','enableHtmlSanitizer','enableImmutableMode','enableInfiniteScrolling','enablePersistence','enableRtl','enableStickyHeader','enableVirtualMaskRow','enableVirtualization','filterSettings','frozenColumns','frozenRows','gridLines','groupSettings','height','hierarchyPrintMode','infiniteScrollSettings','loadingIndicator','locale','pageSettings','pagerTemplate','parentDetails','printMode','query','queryString','resizeSettings','rowDropSettings','rowHeight','rowRenderingMode','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnChooser','showColumnMenu','showHider','sortSettings','textWrapSettings','toolbar','toolbarTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','batchAdd','batchCancel','batchDelete','beforeAutoFill','beforeBatchAdd','beforeBatchDelete','beforeBatchSave','beforeCopy','beforeDataBound','beforeExcelExport','beforeOpenAdaptiveDialog','beforeOpenColumnChooser','beforePaste','beforePdfExport','beforePrint','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSaved','cellSelected','cellSelecting','checkBoxChange','columnDataStateChange','columnDeselected','columnDeselecting','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','columnSelected','columnSelecting','commandClick','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','destroyed','detailDataBound','excelAggregateQueryCellInfo','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','exportDetailDataBound','exportGroupCaption','headerCellInfo','keyPressed','lazyLoadGroupCollapse','lazyLoadGroupExpand','load','pdfAggregateQueryCellInfo','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordClick','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -120,6 +120,7 @@ export class GridComponent extends Grid implements IComponentBase {
      * 
      * > Check the [`Row Template`](../../grid/row/) customization.
      *     
+     * @default ''
      */
     @ContentChild('rowTemplate')
     @Template()
@@ -131,6 +132,7 @@ export class GridComponent extends Grid implements IComponentBase {
      *
      *{% codeBlock src="grid/detail-template-api/index.ts" %}{% endcodeBlock %}
      *     
+     * @default ''
      */
     @ContentChild('detailTemplate')
     @Template()

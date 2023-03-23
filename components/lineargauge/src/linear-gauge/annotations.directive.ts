@@ -6,7 +6,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['axisIndex', 'axisValue', 'content', 'font', 'horizontalAlignment', 'verticalAlignment', 'x', 'y', 'zIndex'];
 let outputs: string[] = [];
 /**
- * Annotation directive
+ * Represents the directive to render and customize the annotations in the linear gauge.
  * ```html
  * <e-annotations><e-annotation></e-annotation></e-annotations>
  * ```
@@ -25,13 +25,15 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
-     * Sets and gets the axis index of the linear gauge
+     * Sets and gets the axis index which places the annotation in the specified axis in the linear gauge.
      * @aspdefaultvalueignore 
+     * @default null
      */
     public axisIndex: any;
     /** 
-     * Sets and gets the value of axis in linear gauge.
+     * Sets and gets the value of axis which places the annotation near the specified axis value.
      * @aspdefaultvalueignore 
+     * @default null
      */
     public axisValue: any;
     /** 
@@ -50,10 +52,12 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     public verticalAlignment: any;
     /** 
      * Sets and gets the x position for the annotation in linear gauge.
+     * @default 0
      */
     public x: any;
     /** 
      * Sets and gets the y position for the annotation in linear gauge.
+     * @default 0
      */
     public y: any;
     /** 
@@ -62,7 +66,8 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
      */
     public zIndex: any;
     /** 
-     * Sets and gets the content for the annotations.
+     * Sets and gets the content for the annotation.
+     * @default ''
      */
     @ContentChild('content')
     @Template()

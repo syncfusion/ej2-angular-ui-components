@@ -6,11 +6,12 @@ import { LayersDirective } from './layers.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','annotations','background','baseLayerIndex','border','centerPosition','description','enablePersistence','enableRtl','format','height','layers','legendSettings','locale','mapsArea','margin','projectionType','tabIndex','theme','titleSettings','tooltipDisplayMode','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','legendRendering','load','loaded','markerClick','markerClusterClick','markerClusterMouseMove','markerClusterRendering','markerMouseMove','markerRendering','onclick','pan','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','tooltipRenderComplete','zoom','dataSourceChange'];
+export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','legendRendering','load','loaded','markerClick','markerClusterClick','markerClusterMouseMove','markerClusterRendering','markerDragEnd','markerDragStart','markerMouseMove','markerRendering','onclick','pan','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','tooltipRenderComplete','zoom','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
- * Represents Maps Component
+ * Represents the Angular Maps component.
+ * It is ideal for rendering maps from GeoJSON data or other map providers like OpenStreetMap, Google Maps, Bing Maps, etc that has rich feature set that includes markers, labels, bubbles and much more. 
  * ```html
  * <ej-maps></ej-maps>
  * ```
@@ -49,6 +50,8 @@ export class MapsComponent extends Maps implements IComponentBase {
 	markerClusterClick: any;
 	markerClusterMouseMove: any;
 	markerClusterRendering: any;
+	markerDragEnd: any;
+	markerDragStart: any;
 	markerMouseMove: any;
 	markerRendering: any;
 	onclick: any;

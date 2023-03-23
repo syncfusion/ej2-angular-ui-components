@@ -5,7 +5,7 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','cssClass','editorMode','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterMediaDelete','afterPasteCleanup','beforeDialogClose','beforeDialogOpen','beforeFileUpload','beforeImageDrop','beforeImageUpload','beforePasteCleanup','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -170,6 +170,12 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('RichTextEditorFileManager');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorFormatPainter');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

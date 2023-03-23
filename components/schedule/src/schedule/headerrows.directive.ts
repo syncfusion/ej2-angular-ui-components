@@ -32,11 +32,11 @@ export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
 
     /** 
      * It defines the header row type, which accepts either of the following values. 
-     * * Year 
-     * * Month 
-     * * Week 
-     * * Date 
-     * * Hour
+     * * `Year`: Denotes the year row in the header bar. 
+     * * `Month`: Denotes the month row in the header bar. 
+     * * `Week`: Denotes the week row in the header bar. 
+     * * `Date`: Denotes the date row in the header bar. 
+     * * `Hour`: Denotes the hour row in the header bar.
      * @default null
      */
     public option: any;

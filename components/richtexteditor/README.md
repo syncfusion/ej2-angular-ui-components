@@ -41,7 +41,7 @@ cd my-app
 To install RichTextEditor and its dependent packages, use the following command.
 
 ```
-ng add @syncfusion/ej2-angular-richtexteditor
+npm install @syncfusion/ej2-angular-richtexteditor --save
 ```
 
 The above command does the below configuration to your Angular app.

@@ -27,12 +27,12 @@ export class ProgressBarAnnotationDirective extends ComplexBase<ProgressBarAnnot
 
 
     /** 
-     * to move annotation.
+     * to move annotation
      * @default 0
      */
     public annotationAngle: any;
     /** 
-     * to move annotation.
+     * to move annotation
      * @default '0%'
      */
     public annotationRadius: any;

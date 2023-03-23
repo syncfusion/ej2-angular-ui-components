@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { StackedHeadersDirective } from './stackedheaders.directive';
 
-export const inputs: string[] = ['allowDragAndDrop','allowKeyboard','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enablePersistence','enableRtl','enableTooltip','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
+export const inputs: string[] = ['allowDragAndDrop','allowKeyboard','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableTooltip','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
 export const twoWays: string[] = [''];
 

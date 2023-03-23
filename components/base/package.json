@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "20.4.53",
+	"version": "19.14.0",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -39,7 +39,6 @@
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/node": "^6.0.46",
 		"@types/requirejs": "^2.1.26",
-		"@types/glob": "8.0.0",
 		"es6-module-loader": "^0.17.11",
 		"karma-systemjs": "^0.16.0",
 		"systemjs": "^0.19.40",

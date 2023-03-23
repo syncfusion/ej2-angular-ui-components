@@ -33,19 +33,19 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
     /** 
      * Specifies the types of command to be rendered in the Toolbar. 
      * Supported types are: 
-     * - Button: Creates the Button control with its given properties like text, prefixIcon, etc. 
-     * - Separator: Adds a horizontal line that separates the Toolbar commands. 
-     * - Input: Creates an input element that is applicable to template rendering with Syncfusion controls like DropDownList, 
+     * * `Button`: Creates the Button control with its given properties like text, prefixIcon, etc. 
+     * * `Separator`: Adds a horizontal line that separates the Toolbar commands. 
+     * * `Input`: Creates an input element that is applicable to template rendering with Syncfusion controls like DropDownList, 
      * AutoComplete, etc.
      * @default 'Button'
      */
     public type: any;
     /** 
      * Specifies the location for aligning Toolbar items on the Toolbar. Each command will be aligned according to the `align` property. 
-     * Possible values are: 
-     * - Left: To align commands to the left side of the Toolbar. 
-     * - Center: To align commands at the center of the Toolbar. 
-     * - Right: To align commands to the right side of the Toolbar. 
+     * The possible values for this property as follows 
+     * * `Left`: To align commands to the left side of the Toolbar. 
+     * * `Center`: To align commands at the center of the Toolbar. 
+     * * `Right`: To align commands to the right side of the Toolbar. 
      * 
      * @default "Left"
      */
@@ -73,10 +73,10 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
     public id: any;
     /** 
      * Specifies the Toolbar command display area when an element's content is too large to fit available space. 
-     * This is applicable only to `popup` mode. Possible values are: 
-     * - Show:  Always shows the item as the primary priority on the *Toolbar*. 
-     * - Hide: Always shows the item as the secondary priority on the *popup*. 
-     * - None: No priority for display, and as per normal order moves to popup when content exceeds.
+     * This is applicable only to `popup` mode. The possible values for this property as follows 
+     * * `Show`:  Always shows the item as the primary priority on the *Toolbar*. 
+     * * `Hide`: Always shows the item as the secondary priority on the *popup*. 
+     * * `None`: No priority for display, and as per normal order moves to popup when content exceeds.
      * @default 'None'
      */
     public overflow: any;
@@ -94,10 +94,10 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
     public showAlwaysInPopup: any;
     /** 
      * Specifies where the button text will be displayed on *popup mode* of the Toolbar. 
-     * Possible values are: 
-     * - Toolbar:  Text will be displayed on *Toolbar* only. 
-     * - Overflow: Text will be displayed only when content overflows to *popup*. 
-     * - Both: Text will be displayed on *popup* and *Toolbar*.
+     * The possible values for this property as follows 
+     * * `Toolbar`:  Text will be displayed on *Toolbar* only. 
+     * * `Overflow`: Text will be displayed only when content overflows to *popup*. 
+     * * `Both`: Text will be displayed on *popup* and *Toolbar*.
      * @default 'Both'
      */
     public showTextOn: any;

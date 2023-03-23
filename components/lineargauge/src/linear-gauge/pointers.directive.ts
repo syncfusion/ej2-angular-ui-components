@@ -6,7 +6,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
 let outputs: string[] = [];
 /**
- * Pointers directive
+ * Represents the directive to render and customize the pointers in an axis of linear gauge.
  * ```html
  * <e-pointers><e-pointer></e-pointer></e-pointers>
  * ```
@@ -25,7 +25,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
 
 
     /** 
-     * Sets and gets the type of pointer in axis.
+     * Sets and gets the type of pointer in axis. There are two types of pointers: Marker and Bar.
      * @default Marker
      */
     public type: any;
@@ -35,11 +35,12 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public animationDuration: any;
     /** 
-     * Sets and gets the options to optimize the color and width of the border for pointers.
+     * Sets and gets the options to customize the style properties of the border for pointers.
      */
     public border: any;
     /** 
      * Sets and gets the color of the pointer.
+     * @default null
      */
     public color: any;
     /** 
@@ -48,7 +49,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public description: any;
     /** 
-     * Enables or disables the drag movement of pointer.
+     * Enables or disables the drag movement of pointer to update the pointer value.
      * @default false
      */
     public enableDrag: any;
@@ -58,7 +59,7 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      */
     public height: any;
     /** 
-     * Sets and gets the URL path for the image in marker when the marker type is chosen as image.
+     * Sets and gets the URL path for the image in marker when the marker type is set as image.
      * @default null
      */
     public imageUrl: any;
