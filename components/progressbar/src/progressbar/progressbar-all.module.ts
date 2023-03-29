@@ -1,6 +1,7 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProgressBarAnnotationDirective, ProgressBarAnnotationsDirective } from './annotations.directive';
+import { RangeColorDirective, RangeColorsDirective } from './rangecolors.directive';
 import { ProgressBarComponent } from './progressbar.component';
 import { ProgressBarModule } from './progressbar.module';
 import {ProgressAnnotation, ProgressTooltip} from '@syncfusion/ej2-progressbar'

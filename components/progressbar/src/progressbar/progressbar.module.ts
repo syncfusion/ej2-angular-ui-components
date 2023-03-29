@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProgressBarAnnotationDirective, ProgressBarAnnotationsDirective } from './annotations.directive';
+import { RangeColorDirective, RangeColorsDirective } from './rangecolors.directive';
 import { ProgressBarComponent } from './progressbar.component';
 
 /**
@@ -11,12 +12,16 @@ import { ProgressBarComponent } from './progressbar.component';
     declarations: [
         ProgressBarComponent,
         ProgressBarAnnotationDirective,
-        ProgressBarAnnotationsDirective
+        ProgressBarAnnotationsDirective,
+        RangeColorDirective,
+        RangeColorsDirective
     ],
     exports: [
         ProgressBarComponent,
         ProgressBarAnnotationDirective,
-        ProgressBarAnnotationsDirective
+        ProgressBarAnnotationsDirective,
+        RangeColorDirective,
+        RangeColorsDirective
     ]
 })
 export class ProgressBarModule { }

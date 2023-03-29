@@ -3,6 +3,7 @@ import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCo
 import { ProgressBar } from '@syncfusion/ej2-progressbar';
 
 import { ProgressBarAnnotationsDirective } from './annotations.directive';
+import { RangeColorsDirective } from './rangecolors.directive';
 
 export const inputs: string[] = ['animation','annotations','cornerRadius','enablePersistence','enablePieProgress','enableProgressSegments','enableRtl','endAngle','gapWidth','height','innerRadius','isActive','isGradient','isIndeterminate','isStriped','labelOnTrack','labelStyle','locale','margin','maximum','minimum','progressColor','progressThickness','radius','rangeColors','role','secondaryProgress','secondaryProgressColor','secondaryProgressThickness','segmentColor','segmentCount','showProgressValue','startAngle','theme','tooltip','trackColor','trackThickness','type','value','width'];
 export const outputs: string[] = ['animationComplete','load','loaded','mouseClick','mouseDown','mouseLeave','mouseMove','mouseUp','progressCompleted','textRender','tooltipRender','valueChanged'];
@@ -21,7 +22,8 @@ export const twoWays: string[] = [''];
     template: '',
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-        childAnnotations: new ContentChild(ProgressBarAnnotationsDirective)
+        childAnnotations: new ContentChild(ProgressBarAnnotationsDirective), 
+        childRangeColors: new ContentChild(RangeColorsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
@@ -41,7 +43,8 @@ export class ProgressBarComponent extends ProgressBar implements IComponentBase 
 	tooltipRender: any;
 	public valueChanged: any;
     public childAnnotations: QueryList<ProgressBarAnnotationsDirective>;
-    public tags: string[] = ['annotations'];
+    public childRangeColors: QueryList<RangeColorsDirective>;
+    public tags: string[] = ['annotations', 'rangeColors'];
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -80,6 +83,9 @@ export class ProgressBarComponent extends ProgressBar implements IComponentBase 
 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childAnnotations;
+        if (this.childRangeColors) {
+                    this.tagObjects[1].instance = this.childRangeColors as any;
+                }
         this.context.ngAfterContentChecked(this);
     }
 

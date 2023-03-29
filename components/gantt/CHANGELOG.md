@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 21.1.37 (2023-03-29)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+-`I441276`- Outdent task is not in correct index of modified records in `actionComplete` event issue has been fixed.
+-`I435254`, `I444942`- Taskbar not rendered in Pdf exported file when `timelineUnitSize` is initialized issue has been fixed.
+
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 21.1.35 (2023-03-23)
 
 ### Gantt Chart
@@ -16,11 +32,13 @@
 - By disabling this `API` we can improve load time performance by two time. Please find the
 - `API` link [here](https://ej2.syncfusion.com/documentation/api/gantt/#autocalculatedatescheduling).
 
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I419169` - Provided Taskbar drag and drop support for resource view in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/gantt/resource-multi-taskbar).
+- `#I417330` - Provided support to disable parent predecessor by using `allowParentDependency` property. Please find the `API` link [here](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowparentdependency).
+- `#I413261` - Restricted offset value update based on enabling or disabling the `API`. Please find the
+- `API` link [here](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateoffsetontaskbaredit).
+- `#I420482` - Provided option to disable date validation at initial load based on enabling or disabling the `API`
+- By disabling this `API` we can improve load time performance by two time. Please find the
+- `API` link [here](https://ej2.syncfusion.com/angular/documentation/api/gantt/#autocalculatedatescheduling).
 
 ## 20.4.54 (2023-03-14)
 
