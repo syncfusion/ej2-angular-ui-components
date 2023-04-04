@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.38 (2023-04-04)
+
+### Common
+
+#### Bug Fixes
+
+- `#I444984` - Resolved Form base components `Set` and `Reset` not working properly.
+- `#F180294` - Improved the component rendering delay in the `ngAfterViewInit` hook.
+
 ## 20.4.40 (2022-12-28)
 
 ### Common

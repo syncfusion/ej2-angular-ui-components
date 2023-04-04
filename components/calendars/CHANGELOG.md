@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 21.1.37 (2023-03-29)
+## 21.1.38 (2023-04-04)
 
 ### DatePicker
 
@@ -14,6 +14,7 @@
 
 - `#SF-446512` - Issue with "The mask placeholder not shown while bind with null value in ng-model" has been resolved.
 - `#SF-447843` - Issue with "after the form is reset, mask placeholder is not shown in the UI" has been resolved.
+- `#I450686` - Resolved issue with "Script error thrown in datepicker when we render inside the schedule component".
 
 ### DateTimePicker
 
