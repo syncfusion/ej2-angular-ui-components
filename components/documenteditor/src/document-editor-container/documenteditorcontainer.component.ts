@@ -5,7 +5,7 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 export const inputs: string[] = ['autoResizeOnVisibilityChange','currentUser','documentEditorSettings','documentSettings','enableAutoFocus','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','headers','height','layoutType','locale','restrictEditing','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','userColor','width','zIndex'];
-export const outputs: string[] = ['beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
+export const outputs: string[] = ['beforeAcceptRejectChanges','beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
 export const twoWays: string[] = [];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [];
 export class DocumentEditorContainerComponent extends DocumentEditorContainer implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforeAcceptRejectChanges: any;
 	beforeCommentAction: any;
 	beforePaneSwitch: any;
 	commentDelete: any;

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 21.1.38 (2023-04-04)
 
 ### Gantt Chart
@@ -14,11 +22,9 @@
 - -`I447475`- End key is not working properly issue has been fixed.
 - -`#I447772` - Application freezing while changing holidays/weekend issue has been fixed.
 
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I451243` - Unable to set zooming levels through `zoomingLevels` property issue has been fixed.
+- `#I447704` - Timeline tier is not changing dynamically issue has been fixed.
+- `#I447772` - Application freezing while changing holidays/weekend issue has been fixed.
 
 ## 21.1.37 (2023-03-29)
 

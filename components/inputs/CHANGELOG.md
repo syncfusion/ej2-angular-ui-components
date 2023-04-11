@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.1.39 (2023-04-11)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I436425` - The issue of 'Uploader Id being duplicated only when the uploader is rendered inside a form element' has been resolved.
+
 ## 21.1.38 (2023-04-04)
 
 ### Range Slider
