@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 21.1.39 (2023-04-11)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I436425` - The issue of 'Uploader Id being duplicated only when the uploader is rendered inside a form element' has been resolved.
-
 ## 21.1.38 (2023-04-04)
 
 ### Range Slider
@@ -1286,6 +1278,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 21.1.39 (2023-04-11)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I436425` - The issue of 'Uploader Id being duplicated only when the uploader is rendered inside a form element' has been resolved.
 
 ## 19.3.47 (2021-10-26)
 

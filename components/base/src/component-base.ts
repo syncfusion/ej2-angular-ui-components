@@ -182,11 +182,8 @@ export class ComponentBase<T> {
         templateProperties = templateProperties.filter((val: string): boolean => {
             return /Ref$/i.test(val);
         });
-        let ngtempRef = false;
+        let ngtempRef: boolean = tempAfterViewThis.getModuleName() === 'DocumentEditor';
         for (let tempName of templateProperties) {
-            if (!ngtempRef) {
-                ngtempRef = tempName.indexOf('templateRef') !== -1;
-            }
             let propName: string = tempName.replace('Ref', '');
             setValue(propName.replace('_', '.'), getValue(propName + 'Ref', tempAfterViewThis), tempAfterViewThis);
         }
@@ -199,7 +196,7 @@ export class ComponentBase<T> {
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
         }
-        if (ngtempRef) {
+        if (!ngtempRef) {
             setTimeout(() => {
                 appendToComponent(tempAfterViewThis);
             });   
@@ -221,7 +218,7 @@ export class ComponentBase<T> {
                     for (let key of Object.keys(tempOnDestroyThis)) {
                         let value = tempOnDestroyThis[key];
                         if (value && /object/.test(typeof value) && Object.keys(value).length !== 0) {
-                            if (/properties|changedProperties|childChangedProperties|oldProperties/.test(key)) {
+                            if (/properties|changedProperties|childChangedProperties|oldProperties|moduleLoader/.test(key)) {
                                 for (let propKey of Object.keys(tempOnDestroyThis[key])) {
                                     let propValue = value[propKey];
                                     if (propValue && /object/.test(typeof propValue) && Object.keys(propValue).length !== 0 && (propValue.parent || propValue.parentObj)) {

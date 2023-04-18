@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 21.1.41 (2023-04-18)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#F181311` - Issue with "Scrolling is not working while drag and drop the list box with item Template in angular platform" has been resolved.
+
+### Dropdown Tree
+
+#### Bug Fixes
+
+- `#I451965` - While performing filtering multiple times, the checked node state is cleared in the Dropdown Tree component has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `I451885` - The issue of being "unable to clear the value when 1000 data is bound to the multiselect component" has been resolved.
+- `I451655` - Issue with "Script error thrown when type text before open the popup using slow 3G" has been resolved.
+
 ## 21.1.39 (2023-04-11)
 
 ### ListBox
@@ -10,6 +31,12 @@
 
 - `#F181131` - Issue with "No Record Found text disappears while hovering the drag item on list box without drop" has been resolved.
 - `#F181311` - Issue with "Scrolling is not working while drag and drop the list box with item Template" has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `I454326` - The issue of "Browser hanging when focusing on the multiselect component in checkbox mode" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 

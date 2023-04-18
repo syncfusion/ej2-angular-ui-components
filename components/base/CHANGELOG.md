@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 21.1.41 (2023-04-18)
+
+### Common
+
+#### Bug Fixes
+
+- `#I454892` - The issue with the `ng-template` not working properly has been resolved.
+- `#I444984` - Resolved the script error while rendering Rich text editor component in the `NgbModel`.
+
 ## 21.1.38 (2023-04-04)
 
 ### Common
