@@ -4,6 +4,14 @@
 
 ## 21.2.3 (2023-05-03)
 
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 21.2.3 (2023-05-03)
+
 ### Gantt Chart
 
 #### Bug Fixes
@@ -11,12 +19,6 @@
 - `#I441205` - Two spinner appears while performing action issue has been fixed.
 - -`#I451257`- No proper template for manual milestone parent.
 - `#I443041` - Gantt react performance rendering issue during initial load has been fixed.
-
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 21.1.41 (2023-04-18)
 
