@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 21.2.3 (2023-05-03)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+- `#I441205` - Two spinner appears while performing action issue has been fixed.
+- -`#I451257`- No proper template for manual milestone parent.
+- `#I443041` - Gantt react performance rendering issue during initial load has been fixed.
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 21.1.41 (2023-04-18)
 
 ### Gantt Chart
@@ -16,11 +32,8 @@
 - -`#I449674`- Cannot split task when the taskbar is rendered to one day.
 - `#I449757` - Taskbar width rendered incorrectly issue has been fixed.
 
-### Gantt
+-`I449864`- Holiday label is not visible when we don't set height.
 
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 21.1.38 (2023-04-04)
 

@@ -58,7 +58,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
     public dPeriod: any;
     /** 
      * Defines the pattern of dashes and gaps to stroke the lines in `Line` type series.
-     * @default '0'
+     * @default ''
      */
     public dashArray: any;
     /** 

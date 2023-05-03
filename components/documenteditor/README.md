@@ -13,7 +13,7 @@ Syncfusion provides a predefined [Word Processor server docker image](https://hu
 </p>
 
 <p align="center">
-![Angular Word Processor Component](https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-word-processor.png)
+  <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-word-processor.png" alt="Angular Word Processor Component">
 </p>
 
 <p align="center">

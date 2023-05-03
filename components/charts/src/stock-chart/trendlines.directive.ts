@@ -47,7 +47,7 @@ export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlin
     public backwardForecast: any;
     /** 
      * Defines the pattern of dashes and gaps to stroke.
-     * @default '0'
+     * @default ''
      */
     public dashArray: any;
     /** 
