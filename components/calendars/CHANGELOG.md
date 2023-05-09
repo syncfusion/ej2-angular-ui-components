@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.2.4 (2023-05-09)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#SF-459727` - Issue with "unable to prevent the datepicker popup from closing in mobile mode" has been resolved.
+
 ## 21.1.41 (2023-04-18)
 
 ### DatePicker
@@ -9,6 +17,20 @@
 #### Bug Fixes
 
 - `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component."
+
+- `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#SF-454411` - Issue with "The mask support is not functioning correctly when using a null value for the [ng-model] date" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#SF-454411` - Issue with "The mask support is not functioning correctly when using a null value for the [ng-model] date" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 
