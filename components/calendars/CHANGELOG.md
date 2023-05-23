@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 21.2.6 (2023-05-23)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#SF-461465` - Issue with "Time picker dropdown width not responsive to input and icon" has been resolved.
+
 ## 21.1.41 (2023-04-18)
 
 ### DatePicker
@@ -9,6 +17,20 @@
 #### Bug Fixes
 
 - `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component."
+
+- `#453318` - Issue with "Placeholder text not get displayed on initial render with strict mode true case of the datepicker component" has been resolved.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#SF-454411` - Issue with "The mask support is not functioning correctly when using a null value for the [ng-model] date" has been resolved.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#SF-454411` - Issue with "The mask support is not functioning correctly when using a null value for the [ng-model] date" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 
@@ -1244,6 +1266,22 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 21.2.5 (2023-05-16)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#454411` - Issue with "Value is not updated for timepicker component when setting programmatically" has been resolved.
+
+## 21.2.4 (2023-05-09)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#SF-459727` - Issue with "unable to prevent the datepicker popup from closing in mobile mode" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 
