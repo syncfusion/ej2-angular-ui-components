@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 21.2.9 (2023-06-06)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I830604` - Issue with "defined name address is not properly changed after inserting a row or column" has been resolved.
+
+## 21.2.8 (2023-05-30)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I462789` - Issue with "formula calculation is not updated properly when cells contain the decimal values" has been resolved.
+
+- `#I460838` - Issue with "an exception occurs during export when a sheet contains an online image" has been resolved.
+- `#I462900` - Issue with "when using custom format to display zero as a dash, it doesn't work properly" has been resolved.
+
 ## 21.2.3 (2023-05-03)
 
 ### Spreadsheet
