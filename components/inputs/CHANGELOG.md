@@ -2,14 +2,30 @@
 
 ## [Unreleased]
 
-## 21.2.3 (2023-05-03)
+## 21.2.9 (2023-06-06)
 
-### NumericTextBox
+### ColorPicker
 
 #### Bug Fixes
 
-- `#F181652` - The issue of "ng model value not being updated properly when we use min and max value" has been resolved.
-- `#I455470` - The issue of "Numeric textbox name attribute not being updated with respect to the ID value in Angular" has been resolved
+- Facing exception when mode switching from color palette to color picker has been resolved.
+- Color picker value is not getting reset for transparent case.
+
+## 21.2.8 (2023-05-30)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Issue with keyboard navigation has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I460888` - Issue with "Console error occurs when deleting files after data load" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 
@@ -1287,6 +1303,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 21.2.3 (2023-05-03)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#F181652` - The issue of "ng model value not being updated properly when we use min and max value" has been resolved.
+- `#I455470` - The issue of "Numeric textbox name attribute not being updated with respect to the ID value in Angular" has been resolved
 
 ## 21.1.39 (2023-04-11)
 

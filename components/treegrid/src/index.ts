@@ -1,3 +1,4 @@
+export {StackedColumnDirective,StackedColumnsDirective} from './treegrid/stacked-column.directive';
 export {ColumnDirective,ColumnsDirective} from './treegrid/columns.directive';
 export {AggregateColumnDirective,AggregateColumnsDirective} from './treegrid/aggregate-columns.directive';
 export {AggregateDirective,AggregatesDirective} from './treegrid/aggregates.directive';
