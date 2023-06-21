@@ -2,7 +2,7 @@ import { ViewContainerRef, EmbeddedViewRef, ElementRef, TemplateRef } from '@ang
 import { setTemplateEngine, getTemplateEngine } from '@syncfusion/ej2-base';
 import { setValue, getValue } from '@syncfusion/ej2-base';
 
-let stringCompiler: (template: string, helper?: object) => (data: Object | JSON) => string = getTemplateEngine();
+let stringCompiler: (template: string | Function, helper?: object) => (data: Object | JSON) => string = getTemplateEngine();
 
 /**
  * Angular Template Compiler
@@ -10,7 +10,7 @@ let stringCompiler: (template: string, helper?: object) => (data: Object | JSON)
 export function compile(templateEle: AngularElementType, helper?: Object):
 //tslint:disable-next-line
     (data: Object | JSON, component?: any, propName?: any) => Object {
-    if (typeof templateEle === 'string') {
+    if (typeof templateEle === 'string' || (typeof templateEle === 'function' && (templateEle as Function).prototype && (templateEle as Function).prototype.CSPTemplate)) {
         return stringCompiler(templateEle, helper);
     } else {
         let contRef: ViewContainerRef = templateEle.elementRef.nativeElement._viewContainerRef;

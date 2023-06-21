@@ -45,6 +45,7 @@ export class HeaderRowDirective extends ComplexBase<HeaderRowDirective> {
      *  content and parse it appropriately before displaying it onto the header cells. The field that 
      *  can be accessed via this template is `date`.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

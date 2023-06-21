@@ -50,6 +50,7 @@ export class RatingComponent extends Rating implements IComponentBase {
      * {% codeBlock src='rating/fullTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default ''
+     * @asptype string
      */
     @ContentChild('fullTemplate')
     @Template()
@@ -57,6 +58,7 @@ export class RatingComponent extends Rating implements IComponentBase {
     /** 
      * Defines the template that defines the appearance of each un-rated item in a rating component.
      * @default ''
+     * @asptype string
      */
     @ContentChild('emptyTemplate')
     @Template()
@@ -68,6 +70,7 @@ export class RatingComponent extends Rating implements IComponentBase {
      * {% codeBlock src='rating/tooltipTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default ''
+     * @asptype string
      */
     @ContentChild('tooltipTemplate')
     @Template()
@@ -78,6 +81,7 @@ export class RatingComponent extends Rating implements IComponentBase {
      * {% codeBlock src='rating/labelTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default ''
+     * @asptype string
      */
     @ContentChild('labelTemplate')
     @Template()

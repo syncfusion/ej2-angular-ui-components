@@ -196,6 +196,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines the column template that renders customized element in each cell of the column. 
      * It accepts either template string or HTML element ID.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()
@@ -203,6 +204,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the header template as string or HTML element ID which is used to add customized element in the column header.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

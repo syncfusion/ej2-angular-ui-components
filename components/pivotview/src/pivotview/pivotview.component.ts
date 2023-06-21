@@ -77,6 +77,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
      * Allows the table cell elements to be customized with either an HTML string or the element’s ID, 
      * that can be used to add additional HTML elements with custom formats to the cell elements that are displayed in the pivot table.
      * @default null
+     * @asptype string
      */
     @ContentChild('cellTemplate')
     @Template()
@@ -85,6 +86,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
      * Allows the tooltip element to be customized with either an HTML string or the element’s ID, 
      * can be used to displayed with custom formats either by mouse hovering or by touch in the pivot table.
      * @default null
+     * @asptype string
      */
     @ContentChild('tooltipTemplate')
     @Template()

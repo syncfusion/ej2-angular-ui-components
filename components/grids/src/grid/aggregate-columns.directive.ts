@@ -88,6 +88,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -102,6 +103,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * {% codeBlock src="grid/group-footer-api/index.ts" %}{% endcodeBlock %}
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('groupFooterTemplate')
     @Template()
@@ -116,6 +118,7 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * {% codeBlock src="grid/group-caption-api/index.ts" %}{% endcodeBlock %}
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('groupCaptionTemplate')
     @Template()

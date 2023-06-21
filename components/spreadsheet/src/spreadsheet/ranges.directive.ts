@@ -63,6 +63,7 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * Template helps to compiles the given HTML String (or HTML Element ID) into HtML Element and append to the Cell.
      * 
      *  @default ''
+     * @aspType string
      *     
      */
     @ContentChild('template')

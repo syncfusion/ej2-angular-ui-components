@@ -4,8 +4,8 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','locale','quickAccessToolbarTemplate','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','width','zoomSettings'];
-export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','imageFiltering','panning','quickAccessToolbarOpening','rotating','saved','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
+export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','locale','quickAccessToolbarTemplate','selectionSettings','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','width','zoomSettings'];
+export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','imageFiltering','panning','quickAccessToolbarItemClick','quickAccessToolbarOpen','rotating','saved','selectionChanging','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
 export const twoWays: string[] = [''];
 
 /**
@@ -38,9 +38,11 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
 	flipping: any;
 	imageFiltering: any;
 	panning: any;
-	quickAccessToolbarOpening: any;
+	quickAccessToolbarItemClick: any;
+	quickAccessToolbarOpen: any;
 	rotating: any;
 	saved: any;
+	selectionChanging: any;
 	shapeChanging: any;
 	toolbarCreated: any;
 	toolbarItemClicked: any;
@@ -51,10 +53,13 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
     /** 
      * Specifies a custom template for the toolbar of an image editor control. 
      * A string that specifies a custom template for the toolbar of the image editor. If this property is defined, the 'toolbar' property will not have any effect.
+     * 
+     * {% codeBlock src='image-editor/toolbarTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @remarks Use this property if you want to customize the entire toolbar in your own way. The template should be a string that contains the HTML markup for the custom toolbar.
 
      * @default null
-{% codeBlock src='image-editor/toolbarTemplate/index.md' %}{% endcodeBlock %}
+     * @asptype string
 
 
      */

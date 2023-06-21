@@ -62,6 +62,7 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
      *For EX: We have expression evolution as like ES6 expression string literals.
      *     
      * @default null
+     * @asptype string
      * @deprecated 
      */
     @ContentChild('itemTemplate')
