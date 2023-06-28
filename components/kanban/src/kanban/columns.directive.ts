@@ -91,6 +91,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the column template
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

@@ -59,6 +59,9 @@ export class TreeViewComponent extends TreeView implements IComponentBase {
      * or HTML element ID holding the content. For more information on template concept, refer to 
      * [Template](../../treeview/template/).
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      */
     @ContentChild('nodeTemplate')
     @Template()

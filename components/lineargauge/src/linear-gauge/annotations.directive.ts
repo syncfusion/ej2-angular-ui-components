@@ -68,6 +68,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * Sets and gets the content for the annotation.
      * @default ''
+     * @asptype string
      */
     @ContentChild('content')
     @Template()

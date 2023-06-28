@@ -40,6 +40,7 @@ export class MenuComponent extends Menu implements IComponentBase {
     /** 
      * Specifies the template for Menu item.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()
