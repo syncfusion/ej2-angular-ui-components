@@ -444,6 +444,7 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
      * Defines the column template that renders customized element in each cell of the column. 
      * It accepts either [template string](../../common/template-engine/) or HTML element ID.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()
@@ -451,6 +452,7 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
     /** 
      * Defines the column template as string or HTML element ID which is used to add customized element in the column header.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

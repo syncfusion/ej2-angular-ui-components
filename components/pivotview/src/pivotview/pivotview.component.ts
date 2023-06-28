@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowConditionalFormatting','allowDataCompression','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowGrouping','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','chartTypes','cssClass','dataSourceSettings','displayOption','editSettings','enableFieldSearching','enableHtmlSanitizer','enablePaging','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','exportAllPages','gridSettings','groupingBarSettings','height','hyperlinkSettings','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','maxRowsInDrillThrough','pageSettings','pagerSettings','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','spinnerTemplate','toolbar','toolbarTemplate','tooltipTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforeServiceInvoke','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','exportComplete','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','afterServiceInvoke','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforeServiceInvoke','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','exportComplete','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
 export const twoWays: string[] = [];
 
 /**
@@ -31,6 +31,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
 	actionBegin: any;
 	actionComplete: any;
 	actionFailure: any;
+	afterServiceInvoke: any;
 	aggregateCellInfo: any;
 	aggregateMenuOpen: any;
 	beforeExport: any;
@@ -77,6 +78,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
      * Allows the table cell elements to be customized with either an HTML string or the element’s ID, 
      * that can be used to add additional HTML elements with custom formats to the cell elements that are displayed in the pivot table.
      * @default null
+     * @asptype string
      */
     @ContentChild('cellTemplate')
     @Template()
@@ -85,6 +87,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
      * Allows the tooltip element to be customized with either an HTML string or the element’s ID, 
      * can be used to displayed with custom formats either by mouse hovering or by touch in the pivot table.
      * @default null
+     * @asptype string
      */
     @ContentChild('tooltipTemplate')
     @Template()

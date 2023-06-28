@@ -5,7 +5,7 @@ import { HeatMap } from '@syncfusion/ej2-heatmap';
 
 
 export const inputs: string[] = ['allowSelection','backgroundColor','cellSettings','dataSource','dataSourceSettings','enableMultiSelect','enablePersistence','enableRtl','height','legendSettings','locale','margin','paletteSettings','renderingMode','showTooltip','theme','titleSettings','tooltipSettings','width','xAxis','yAxis'];
-export const outputs: string[] = ['cellClick','cellRender','cellSelected','created','legendRender','load','loaded','resized','tooltipRender'];
+export const outputs: string[] = ['cellClick','cellDoubleClick','cellRender','cellSelected','created','legendRender','load','loaded','resized','tooltipRender'];
 export const twoWays: string[] = [''];
 
 /**
@@ -30,6 +30,7 @@ export class HeatMapComponent extends HeatMap implements IComponentBase {
     public context : any;
     public tagObjects: any;
 	cellClick: any;
+	cellDoubleClick: any;
 	cellRender: any;
 	cellSelected: any;
 	created: any;

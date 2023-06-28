@@ -4,7 +4,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { TrendlinesDirective } from './trendlines.directive';
 import { SegmentsDirective } from './segments.directive';
 
-let input: string[] = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+let input: string[] = ['animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'nonHighlightStyle', 'opacity', 'open', 'paretoOptions', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNormalDistribution', 'size', 'splineType', 'stackingGroup', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -68,7 +68,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     /** 
      * This property is used in financial charts to visualize the price movements in stock. 
      * It defines the color of the candle/point, when the opening price is less than the closing price.
-     * @default '#2ecd71'
+     * @default null
      */
     public bearFillColor: any;
     /** 
@@ -92,7 +92,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     /** 
      * This property is used in financial charts to visualize the price movements in stock. 
      * It defines the color of the candle/point, when the opening price is higher than the closing price.
-     * @default '#e74c3d'
+     * @default null
      */
     public bullFillColor: any;
     /** 
@@ -289,6 +289,10 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * @default ''
      */
     public open: any;
+    /** 
+     * Options for customizing the pareto line series.
+     */
+    public paretoOptions: any;
     /** 
      * The DataSource field that contains the color value of point 
      * It is applicable for series

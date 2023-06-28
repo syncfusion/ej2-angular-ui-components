@@ -40,6 +40,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * {% codeBlock src='listview/template/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @deprecated 
      */
     @ContentChild('template')
@@ -51,6 +54,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * {% codeBlock src="listview/groupTemplate/index.md" %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @deprecated 
      */
     @ContentChild('groupTemplate')
@@ -62,6 +68,9 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * {% codeBlock src="listview/headerTemplate/index.md" %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @deprecated 
      */
     @ContentChild('headerTemplate')

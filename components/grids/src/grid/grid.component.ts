@@ -121,6 +121,7 @@ export class GridComponent extends Grid implements IComponentBase {
      * > Check the [`Row Template`](../../grid/row/) customization.
      *     
      * @default ''
+     * @asptype string
      */
     @ContentChild('rowTemplate')
     @Template()
@@ -133,6 +134,7 @@ export class GridComponent extends Grid implements IComponentBase {
      *{% codeBlock src="grid/detail-template-api/index.ts" %}{% endcodeBlock %}
      *     
      * @default ''
+     * @asptype string
      */
     @ContentChild('detailTemplate')
     @Template()
@@ -140,6 +142,7 @@ export class GridComponent extends Grid implements IComponentBase {
     /** 
      * It used to render toolbar template
      * @default null
+     * @asptype string
      */
     @ContentChild('toolbarTemplate')
     @Template()
@@ -147,6 +150,7 @@ export class GridComponent extends Grid implements IComponentBase {
     /** 
      * It used to render pager template
      * @default null
+     * @asptype string
      */
     @ContentChild('pagerTemplate')
     @Template()

@@ -55,6 +55,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      *     
      * @default ''
      * @blazortype string
+     * @asptype string
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -64,6 +65,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      * This is optional property and the dialog can be displayed without header, if the header property is null.
      * @default ''
      * @blazortype string
+     * @asptype string
      */
     @ContentChild('header')
     @Template()
@@ -79,6 +81,7 @@ export class DialogComponent extends Dialog implements IComponentBase {
      *     
      * @default ''
      * @blazortype string
+     * @asptype string
      */
     @ContentChild('content')
     @Template()

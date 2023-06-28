@@ -4,7 +4,7 @@ import { Carousel } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { CarouselItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animationEffect','autoPlay','buttonsVisibility','cssClass','dataSource','enablePersistence','enableRtl','enableTouchSwipe','height','htmlAttributes','indicatorsTemplate','interval','itemTemplate','items','locale','loop','nextButtonTemplate','partialVisible','pauseOnHover','playButtonTemplate','previousButtonTemplate','selectedIndex','showIndicators','showPlayButton','width'];
+export const inputs: string[] = ['animationEffect','autoPlay','buttonsVisibility','cssClass','dataSource','enablePersistence','enableRtl','enableTouchSwipe','height','htmlAttributes','indicatorsTemplate','indicatorsType','interval','itemTemplate','items','locale','loop','nextButtonTemplate','partialVisible','pauseOnHover','playButtonTemplate','previousButtonTemplate','selectedIndex','showIndicators','showPlayButton','swipeMode','width'];
 export const outputs: string[] = ['slideChanged','slideChanging','selectedIndexChange'];
 export const twoWays: string[] = ['selectedIndex'];
 
@@ -36,6 +36,7 @@ export class CarouselComponent extends Carousel implements IComponentBase {
     /** 
      * Accepts the template for indicator buttons.
      * @default null
+     * @asptype string
      */
     @ContentChild('indicatorsTemplate')
     @Template()
@@ -43,6 +44,7 @@ export class CarouselComponent extends Carousel implements IComponentBase {
     /** 
      * Accepts the template for next navigation button.
      * @default null
+     * @asptype string
      */
     @ContentChild('nextButtonTemplate')
     @Template()
@@ -50,6 +52,7 @@ export class CarouselComponent extends Carousel implements IComponentBase {
     /** 
      * Accepts the template for previous navigation button.
      * @default null
+     * @asptype string
      */
     @ContentChild('previousButtonTemplate')
     @Template()
@@ -57,6 +60,7 @@ export class CarouselComponent extends Carousel implements IComponentBase {
     /** 
      * Accepts the template for play/pause button.
      * @default null
+     * @asptype string
      */
     @ContentChild('playButtonTemplate')
     @Template()
@@ -64,6 +68,7 @@ export class CarouselComponent extends Carousel implements IComponentBase {
     /** 
      * Specifies the template option for carousel items.
      * @default null
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()
