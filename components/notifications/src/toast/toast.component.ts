@@ -42,6 +42,7 @@ export class ToastComponent extends Toast implements IComponentBase {
      * Specifies the title to be displayed on the Toast. 
      * Accepts selectors, string values and HTML elements.
      * @default null
+     * @asptype string
      */
     @ContentChild('title')
     @Template()
@@ -51,6 +52,7 @@ export class ToastComponent extends Toast implements IComponentBase {
      * Accepts selectors, string values and HTML elements.
      * @default null
      * @blazortype string
+     * @asptype string
      */
     @ContentChild('content')
     @Template()
@@ -62,6 +64,7 @@ export class ToastComponent extends Toast implements IComponentBase {
      * {% codeBlock src='toast/template/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

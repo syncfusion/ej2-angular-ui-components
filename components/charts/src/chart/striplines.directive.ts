@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['border', 'color', 'dashArray', 'end', 'horizontalAlignment', 'isRepeat', 'isSegmented', 'opacity', 'repeatEvery', 'repeatUntil', 'rotation', 'segmentAxisName', 'segmentEnd', 'segmentStart', 'size', 'sizeType', 'start', 'startFromAxis', 'text', 'textStyle', 'verticalAlignment', 'visible', 'zIndex'];
+let input: string[] = ['border', 'color', 'dashArray', 'end', 'horizontalAlignment', 'imageUrl', 'isRepeat', 'isSegmented', 'opacity', 'repeatEvery', 'repeatUntil', 'rotation', 'segmentAxisName', 'segmentEnd', 'segmentStart', 'size', 'sizeType', 'start', 'startFromAxis', 'text', 'textStyle', 'verticalAlignment', 'visible', 'zIndex'];
 let outputs: string[] = [];
 /**
  * StripLine Directive
@@ -57,6 +57,11 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      * @default 'Middle'
      */
     public horizontalAlignment: any;
+    /** 
+     * The URL of the background image for the strip line.
+     * @default ''
+     */
+    public imageUrl: any;
     /** 
      * isRepeat value of the strip line.
      * @default false

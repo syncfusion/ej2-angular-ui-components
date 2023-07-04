@@ -65,6 +65,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      * Accepts the template design and assigns it to the footer container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.
      * @default null
+     * @asptype string
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -73,6 +74,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      * Accepts the template design and assigns it to the header container of the popup list. 
      * > For more details about the available template options refer to [`Template`](../../multi-select/templates) documentation.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()
@@ -87,6 +89,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      *For EX: We have expression evolution as like ES6 expression string literals.
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('valueTemplate')
     @Template()
@@ -100,6 +103,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
      *For EX: We have expression evolution as like ES6 expression string literals.
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()
@@ -107,6 +111,7 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     /** 
      * Accepts the template design and assigns it to the group headers present in the MultiSelect popup list.
      * @default null
+     * @asptype string
      */
     @ContentChild('groupTemplate')
     @Template()

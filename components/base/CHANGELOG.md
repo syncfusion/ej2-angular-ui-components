@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.1.34 (2023-06-21)
+
+### Common
+
+#### New Features
+
+- Provided the TypeScript 5 compatible support for the Angular components.
+
 ## 21.1.41 (2023-04-18)
 
 ### Common

@@ -37,6 +37,7 @@ export class BreadcrumbComponent extends Breadcrumb implements IComponentBase {
     /** 
      * Specifies the separator template for Breadcrumb.
      * @default '/'
+     * @asptype string
      */
     @ContentChild('separatorTemplate')
     @Template()
@@ -44,6 +45,7 @@ export class BreadcrumbComponent extends Breadcrumb implements IComponentBase {
     /** 
      * Specifies the template for Breadcrumb item.
      * @default null
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()

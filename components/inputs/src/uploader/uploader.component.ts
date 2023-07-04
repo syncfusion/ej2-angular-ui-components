@@ -65,6 +65,7 @@ export class UploaderComponent extends Uploader implements IComponentBase {
      * > For more information, refer to the [template](../../uploader/template/) section from the documentation.
      *     
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

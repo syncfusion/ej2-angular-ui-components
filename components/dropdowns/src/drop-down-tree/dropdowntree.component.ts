@@ -57,6 +57,10 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
      * Specifies the template that renders a customized footer container at the bottom of the pop-up list. 
      * By default, the footerTemplate will be null and there will be no footer container for the pop-up list.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('footerTemplate')
     @Template()
@@ -65,6 +69,10 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
      * Specifies the template that renders a customized header container at the top of the pop-up list. 
      * By default, the headerTemplate will be null and there will be no header container for the pop-up list.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()
@@ -75,6 +83,10 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
      * The property accepts [template string](https://ej2.syncfusion.com/documentation/common/template-engine/) 
      * or HTML element ID holding the content.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()
