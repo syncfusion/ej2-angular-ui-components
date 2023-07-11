@@ -113,6 +113,7 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
      * 
      * > Check the [`Row Template`](../../treegrid/row) customization.
      *     
+     * @asptype string
      */
     @ContentChild('rowTemplate')
     @Template()
@@ -122,8 +123,8 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
      * 
      * > It accepts either the [template string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
      *or the HTML element ID.
-     *
      *     
+     * @asptype string
      */
     @ContentChild('detailTemplate')
     @Template()

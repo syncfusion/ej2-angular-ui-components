@@ -36,6 +36,10 @@ export class MessageComponent extends Message implements IComponentBase {
     /** 
      * Specifies the content to be displayed in the Message component. It can be a paragraph, a list, or any other HTML element.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('content')
     @Template()

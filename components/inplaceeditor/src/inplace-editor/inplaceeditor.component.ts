@@ -59,6 +59,7 @@ export class InPlaceEditorComponent extends InPlaceEditor implements IComponentB
      *     
      * @default ''
      * @blazortype string
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

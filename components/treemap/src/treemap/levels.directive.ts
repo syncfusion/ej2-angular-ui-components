@@ -97,6 +97,7 @@ export class LevelDirective extends ComplexBase<LevelDirective> {
     /** 
      * Sets and gets the template for header in the treemap.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

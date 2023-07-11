@@ -56,6 +56,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * Sets and gets the content of the annotation. This property accepts the HTML string or id of the custom element.
      * @default null
+     * @asptype string
      */
     @ContentChild('content')
     @Template()

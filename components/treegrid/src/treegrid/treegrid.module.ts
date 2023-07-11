@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StackedColumnDirective, StackedColumnsDirective } from './stacked-column.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate-columns.directive';
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
@@ -12,6 +13,8 @@ import { TreeGridComponent } from './treegrid.component';
     imports: [CommonModule],
     declarations: [
         TreeGridComponent,
+        StackedColumnDirective,
+        StackedColumnsDirective,
         ColumnDirective,
         ColumnsDirective,
         AggregateColumnDirective,
@@ -21,6 +24,8 @@ import { TreeGridComponent } from './treegrid.component';
     ],
     exports: [
         TreeGridComponent,
+        StackedColumnDirective,
+        StackedColumnsDirective,
         ColumnDirective,
         ColumnsDirective,
         AggregateColumnDirective,

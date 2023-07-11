@@ -88,6 +88,8 @@ export class AggregateColumnDirective extends ComplexBase<AggregateColumnDirecti
      * {% codeBlock src="grid/footer-template-api/index.ts" %}{% endcodeBlock %}
      *     
      * @default null
+     * @asptype string
+
      */
     @ContentChild('footerTemplate')
     @Template()

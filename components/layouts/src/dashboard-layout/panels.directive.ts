@@ -98,12 +98,14 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
     public zIndex: any;
     /** 
      * Defines the template value that should be displayed as the panel's header.
+     * @asptype string
      */
     @ContentChild('header')
     @Template()
     public header: any;
     /** 
      * Defines the template value that should be displayed as the panel's content.
+     * @asptype string
      */
     @ContentChild('content')
     @Template()
