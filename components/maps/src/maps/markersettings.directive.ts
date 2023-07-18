@@ -156,6 +156,7 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
     /** 
      * Gets or sets the template for the marker to render custom elements.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

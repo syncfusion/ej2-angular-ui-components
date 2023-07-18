@@ -39,6 +39,7 @@ export class QueryBuilderComponent extends QueryBuilder implements IComponentBas
     /** 
      * Specifies the template for the header with any other widgets.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

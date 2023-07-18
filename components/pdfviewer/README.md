@@ -158,7 +158,7 @@ Product support is available through the following mediums.
 
 ## Changelog
 
-Check the changelog [here](https://github.com/syncfusion/ej2-pdfviewer/blob/master/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
+Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/pdfviewer/CHANGELOG.md?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
 ## License and copyright
 

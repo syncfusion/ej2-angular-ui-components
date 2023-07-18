@@ -2,14 +2,75 @@
 
 ## [Unreleased]
 
-## 21.2.3 (2023-05-03)
+## 22.1.39 (2023-07-18)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I477415` - Fixed the error "File name is not allowed" that was being thrown when attempting to upload a file with a UTF-8 filename on the Uploader.
+
+## 22.1.38 (2023-07-11)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I460888` - Issue with "console error occurs when we render the toast in the `beforeUpload` event of the uploader" has been resolved.
+
+- `#I476742` - Fixed the issue with the File Uploader Drag and drop functionality.
+
+## 22.1.34 (2023-06-21)
+
+### NumericTextbox
+
+#### Bug Fixes
+
+- Issue with "Unwanted calls for CalculateWidth method" has been resolved.
+
+### TextBox
+
+#### New Features
+
+- Provided clear icon support for Multiline Textbox, allowing users to easily clear the contents of the textarea with a single click.
+
+### FormValidator
+
+#### New Features
+
+- Provided support for validating multiple date formats using a form validator.
+- Provided support for placing validation messages outside the component for all Syncfusion Form Components.
 
 ### NumericTextBox
 
 #### Bug Fixes
 
-- `#F181652` - The issue of "ng model value not being updated properly when we use min and max value" has been resolved.
-- `#I455470` - The issue of "Numeric textbox name attribute not being updated with respect to the ID value in Angular" has been resolved
+- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
+
+## 21.2.9 (2023-06-06)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Facing exception when mode switching from color palette to color picker has been resolved.
+- Color picker value is not getting reset for transparent case.
+
+## 21.2.8 (2023-05-30)
+
+### ColorPicker
+
+#### Bug Fixes
+
+- Issue with keyboard navigation has been resolved.
+
+## 21.2.6 (2023-05-23)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I460888` - Issue with "Console error occurs when deleting files after data load" has been resolved.
 
 ## 21.1.38 (2023-04-04)
 
@@ -27,11 +88,20 @@
 
 - `#I433821` - Correcting the signature scaling issue while resizing the web browser has been resolved.
 
-### NumericTextBox
+## 20.4.38 (2022-12-21)
 
-#### Bug Fixes
+### Rating
 
-- `#F170722` - Issue with "change event doesn't trigger while modifying the value using `setValue` method inside reactive form" is resolved.
+**Key features**:
+
+
+The Rating component lets the user provide a star rating or view other people’s ratings on a numeric scale for any service provided, such as for movies, applications, or products.
+
+
+- **Precision** - Different precision modes to provide more accurate rating.
+- **Tooltip and Label** - Provide more expressive rating with tooltip and label.
+- **Template** - Support to customize the rating item to heart, svg or any content that precisely match our unique needs.
+- **Accessibility** - The Rating provides built-in compliance with the `WAI-ARIA` specifications and it is achieved through attributes.
 
 ## 19.4.38 (2021-12-17)
 
@@ -1287,14 +1357,6 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
-
-## 21.1.39 (2023-04-11)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I436425` - The issue of 'Uploader Id being duplicated only when the uploader is rendered inside a form element' has been resolved.
 
 ## 19.3.47 (2021-10-26)
 

@@ -91,6 +91,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Specifies the rule template for the field with any other widgets.
      * @default null
+     * @asptype string
      */
     @ContentChild('ruleTemplate')
     @Template()
@@ -98,6 +99,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Specifies the template for value field such as slider or any other widgets.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

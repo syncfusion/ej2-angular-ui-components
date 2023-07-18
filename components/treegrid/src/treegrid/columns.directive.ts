@@ -1,7 +1,7 @@
 import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
-
+import { StackedColumnsDirective } from './stacked-column.directive';
 
 let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
@@ -22,14 +22,14 @@ let outputs: string[] = [];
     inputs: input,
     outputs: outputs,    
     queries: {
-
+        childColumns: new ContentChild(StackedColumnsDirective)
     }
 })
 export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public directivePropList: any;
 	
-
-
+    public childColumns: any;
+    public tags: string[] = ['columns'];
     /** 
      * Defines the data type of the column.
      * @default null
@@ -324,6 +324,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * Defines the column template that renders customized element in each cell of the column. 
      * It accepts either [template string](https://ej2.syncfusion.com/documentation/common/template-engine/) or HTML element ID.
      * @default null
+     * @asptype string
      */
     @ContentChild('template')
     @Template()
@@ -331,6 +332,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the header template as string or HTML element ID which is used to add customized element in the column header.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

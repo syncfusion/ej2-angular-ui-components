@@ -1,5 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StackedColumnDirective, StackedColumnsDirective } from './stacked-column.directive';
 import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate-columns.directive';
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';

@@ -75,6 +75,7 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
     /** 
      * Specifies the header text of Tab item.
      * @default null
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()
