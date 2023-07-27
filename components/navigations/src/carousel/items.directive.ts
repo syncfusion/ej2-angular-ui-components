@@ -48,6 +48,10 @@ export class CarouselItemDirective extends ComplexBase<CarouselItemDirective> {
     /** 
      * Accepts the template for individual carousel item.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

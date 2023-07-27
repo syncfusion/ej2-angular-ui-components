@@ -69,6 +69,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * {% codeBlock src='schedule/dateHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('dateHeaderTemplate')
     @Template()
@@ -76,6 +80,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('dateRangeTemplate')
     @Template()
@@ -87,6 +95,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * {% codeBlock src='schedule/dayHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('dayHeaderTemplate')
     @Template()
@@ -104,6 +116,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *{% codeBlock src='schedule/cellTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('cellTemplate')
     @Template()
@@ -115,6 +131,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * {% codeBlock src='schedule/cellHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('cellHeaderTemplate')
     @Template()
@@ -132,6 +152,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * {% codeBlock src='schedule/editorTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('editorTemplate')
     @Template()
@@ -143,6 +167,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      * {% codeBlock src='schedule/monthHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('monthHeaderTemplate')
     @Template()
@@ -165,6 +193,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *{% codeBlock src='schedule/resourceHeaderTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('resourceHeaderTemplate')
     @Template()
@@ -178,6 +210,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
      *{% codeBlock src='schedule/headerIndentTemplate/index.md' %}{% endcodeBlock %}
      *     
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('headerIndentTemplate')
     @Template()

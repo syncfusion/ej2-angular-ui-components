@@ -4,7 +4,7 @@ import { SpeedDial } from '@syncfusion/ej2-buttons';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { SpeedDialItemsDirective } from './items.directive';
 
-export const inputs: string[] = ['animation','closeIconCss','content','cssClass','direction','disabled','enablePersistence','enableRtl','iconPosition','itemTemplate','items','locale','modal','mode','openIconCss','opensOnHover','popupTemplate','position','radialSettings','target','visible'];
+export const inputs: string[] = ['animation','closeIconCss','content','cssClass','direction','disabled','enablePersistence','enableRtl','iconPosition','isPrimary','itemTemplate','items','locale','modal','mode','openIconCss','opensOnHover','popupTemplate','position','radialSettings','target','visible'];
 export const outputs: string[] = ['beforeClose','beforeItemRender','beforeOpen','clicked','created','onClose','onOpen','visibleChange'];
 export const twoWays: string[] = ['visible'];
 
@@ -42,6 +42,7 @@ export class SpeedDialComponent extends SpeedDial implements IComponentBase {
      * Defines the template content for the speed dial item. 
      * {% codeBlock src='speeddial/itemTemplate/index.md' %}{% endcodeBlock %}
      * @default ''
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()
@@ -49,6 +50,7 @@ export class SpeedDialComponent extends SpeedDial implements IComponentBase {
     /** 
      * Defines a template content for popup of SpeedDial.
      * @default ''
+     * @asptype string
      */
     @ContentChild('popupTemplate')
     @Template()

@@ -84,6 +84,7 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     /** 
      * Customizes the annotation template
      * @default undefined
+     * @asptype string
      */
     @ContentChild('annotationTemplate')
     @Template()
@@ -91,6 +92,7 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     /** 
      * Customizes the node template
      * @default undefined
+     * @asptype string
      */
     @ContentChild('nodeTemplate')
     @Template()
@@ -98,6 +100,7 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     /** 
      * This property represents the template content of a user handle. The user can define any HTML element as a template.
      * @default undefined
+     * @asptype string
      */
     @ContentChild('userHandleTemplate')
     @Template()

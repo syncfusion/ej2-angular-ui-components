@@ -44,6 +44,7 @@ export class MentionComponent extends Mention implements IComponentBase {
     /** 
      * Specifies the template for the selected value from the suggestion list.
      * @default null
+     * @asptype string
      */
     @ContentChild('displayTemplate')
     @Template()
@@ -58,6 +59,7 @@ export class MentionComponent extends Mention implements IComponentBase {
     /** 
      * Specifies the template for showing until data is loaded in the popup.
      * @default null
+     * @asptype string
      */
     @ContentChild('spinnerTemplate')
     @Template()

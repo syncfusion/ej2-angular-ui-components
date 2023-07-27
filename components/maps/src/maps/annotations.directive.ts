@@ -54,6 +54,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * Gets or sets the content for the annotation in maps.
      * @default ''
+     * @asptype string
      */
     @ContentChild('content')
     @Template()

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['dataLabelSettings', 'height', 'id', 'isSeriesInRows', 'legendSettings', 'primaryXAxis', 'primaryYAxis', 'range', 'theme', 'title', 'type', 'width'];
+let input: string[] = ['dataLabelSettings', 'height', 'id', 'isSeriesInRows', 'legendSettings', 'markerSettings', 'primaryXAxis', 'primaryYAxis', 'range', 'theme', 'title', 'type', 'width'];
 let outputs: string[] = [];
 
 @Directive({
@@ -49,6 +49,11 @@ export class ChartDirective extends ComplexBase<ChartDirective> {
      * @default {}
      */
     public legendSettings: any;
+    /** 
+     * Options to configure the marker
+     * @default {}
+     */
+    public markerSettings: any;
     /** 
      * Options to configure the horizontal axis.
      * @default {}

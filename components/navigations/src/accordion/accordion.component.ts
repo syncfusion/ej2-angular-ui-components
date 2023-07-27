@@ -39,6 +39,10 @@ export class AccordionComponent extends Accordion implements IComponentBase {
     /** 
      * Specifies the header title template option for accordion items.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()
@@ -46,6 +50,10 @@ export class AccordionComponent extends Accordion implements IComponentBase {
     /** 
      * Specifies the template option for accordion items.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('itemTemplate')
     @Template()

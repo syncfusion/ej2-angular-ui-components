@@ -189,6 +189,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  date header cells. The field that can be accessed via this template is `date`. 
      *  It gets applied only to the view objects on which it is defined.
      * @default null
+     * @asptype string
      */
     @ContentChild('dateHeaderTemplate')
     @Template()
@@ -196,6 +197,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto the header date range.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('dateRangeTemplate')
     @Template()
@@ -205,6 +210,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  Year view day cell header. 
      *  This template is only applicable for year view header cells.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('dayHeaderTemplate')
     @Template()
@@ -214,6 +223,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  month date cells. 
      *  This template is only applicable for month view day cells.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('cellHeaderTemplate')
     @Template()
@@ -223,6 +236,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the work cells. 
      *  The field accessible via template is `date`. It gets applied only to the view objects on which it is defined.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('cellTemplate')
     @Template()
@@ -233,6 +250,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  It is similar to that of the `template` option available within the `eventSettings` property, 
      *  whereas it will get applied only on the events of the view to which it is currently being defined.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('eventTemplate')
     @Template()
@@ -242,6 +263,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  Year view day cell header. 
      *  This template is only applicable for year view header cells.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('monthHeaderTemplate')
     @Template()
@@ -252,6 +277,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  All the resource fields mapped within resources can be accessed within this template code. 
      *  It gets applied only to the view objects on which it is defined.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('resourceHeaderTemplate')
     @Template()
@@ -261,6 +290,10 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      *  template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the header indent cell. 
      *  It gets applied only to the view objects on which it is defined.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('headerIndentTemplate')
     @Template()

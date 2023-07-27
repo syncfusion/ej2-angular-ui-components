@@ -48,6 +48,7 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * * `Right`: To align commands to the right side of the Toolbar. 
      * 
      * @default "Left"
+     * @asppopulatedefaultvalue 
      */
     public align: any;
     /** 
@@ -138,6 +139,10 @@ export class ItemDirective extends ComplexBase<ItemDirective> {
      * Specifies the HTML element/element ID as a string that can be added as a Toolbar command. 
      * 
      * @default ""
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('template')
     @Template()

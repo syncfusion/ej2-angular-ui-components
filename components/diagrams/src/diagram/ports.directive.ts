@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -106,6 +106,11 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * @default {}
      */
     public style: any;
+    /** 
+     * defines the tooltip for the Ports
+     * @default new DiagramToolTip();
+     */
+    public tooltip: any;
     /** 
      * Sets the vertical alignment of the port with respect to its immediate parent(node/connector) 
      * * Stretch - Stretches the diagram element throughout its immediate parent 

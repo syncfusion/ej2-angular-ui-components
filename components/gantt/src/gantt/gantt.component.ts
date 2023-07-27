@@ -109,6 +109,7 @@ export class GanttComponent extends Gantt implements IComponentBase {
     /** 
      * The parent task bar template that renders customized parent task bars from the given template.
      * @default null
+     * @asptype string
      */
     @ContentChild('parentTaskbarTemplate')
     @Template()
@@ -116,6 +117,7 @@ export class GanttComponent extends Gantt implements IComponentBase {
     /** 
      * The milestone template that renders customized milestone task from the given template.
      * @default null
+     * @asptype string
      */
     @ContentChild('milestoneTemplate')
     @Template()
@@ -123,6 +125,7 @@ export class GanttComponent extends Gantt implements IComponentBase {
     /** 
      * The task bar template that renders customized child task bars from the given template.
      * @default null
+     * @asptype string
      */
     @ContentChild('taskbarTemplate')
     @Template()

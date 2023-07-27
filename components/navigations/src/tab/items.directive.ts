@@ -65,6 +65,10 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
     /** 
      * Specifies the content of Tab item, that is displayed when concern item header is selected.
      * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('content')
     @Template()
@@ -75,6 +79,10 @@ export class TabItemDirective extends ComplexBase<TabItemDirective> {
     /** 
      * Specifies the header text of Tab item.
      * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()
