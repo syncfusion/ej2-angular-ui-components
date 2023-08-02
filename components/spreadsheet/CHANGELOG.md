@@ -2,16 +2,6 @@
 
 ## [Unreleased]
 
-## 22.2.5 (2023-07-27)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I479603` - Issue with "hyperlink opens two browser tabs while clicking on the hyperlink applied cells" has been resolved.
-- `#I483683` - Issue with "an exception is thrown when copying content from a text file and pasting it into a cell" has been resolved.
-- `#I837732` - Issue with "chart does not render properly while importing data using the `openFromJson` method with many spreadsheets on the same page" has been resolved.
-
 ## 22.1.37 (2023-07-04)
 
 ### Spreadsheet
@@ -1300,6 +1290,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 22.2.5 (2023-07-27)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I479603` - Issue with "hyperlink opens two browser tabs while clicking on the hyperlink applied cells" has been resolved.
+- `#I483683` - Issue with "an exception is thrown when copying content from a text file and pasting it into a cell" has been resolved.
+- `#I837732` - Issue with "chart does not render properly while importing data using the `openFromJson` method with many spreadsheets on the same page" has been resolved.
 
 ## 21.2.9 (2023-06-06)
 
