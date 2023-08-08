@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.8 (2023-08-08)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I469335` - Provided `clearTemplates` API support to control template clearing while adding, updating, and deleting items.
+
 ## 22.2.7 (2023-08-02)
 
 ### Menu

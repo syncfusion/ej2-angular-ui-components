@@ -5,7 +5,7 @@ import { TimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','cssClass','enableMask','enablePersistence','enableRtl','enabled','floatLabelType','format','fullScreenMode','htmlAttributes','keyConfigs','locale','maskPlaceholder','max','min','openOnFocus','placeholder','readonly','scrollTo','showClearButton','step','strictMode','value','width','zIndex'];
+export const inputs: string[] = ['allowEdit','cssClass','enableMask','enablePersistence','enableRtl','enabled','floatLabelType','format','fullScreenMode','htmlAttributes','keyConfigs','locale','maskPlaceholder','max','min','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','step','strictMode','value','width','zIndex'];
 export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','itemRender','open','valueChange'];
 export const twoWays: string[] = ['value'];
 

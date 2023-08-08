@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 22.2.8 (2023-08-08)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+- `#I485907` - When multiple records are selected after using the context menu to delete, it is not working issue has been fixed.
+- `#I483579` - Splitter resize issue when we resize browser window issue has been fixed.
+- `#I483399` - Style not applied for the collapsed row when the virtual scroll is enabled issue has been fixed.
+- `#I473286` - Unable to drag taskbar and tooltip is misaligned issue has been fixed.
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 22.2.7 (2023-08-02)
 
 ### Gantt Chart
@@ -19,11 +36,7 @@
 - `#I482456` - Critical path not working properly issue has been fixed.
 - `#I485219` - Selection is not working when we use react hook.
 
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#IF183168` - Record was not added in Gantt using `oDataV4Adaptor` issue has been fixed.
 
 ## 22.2.5 (2023-07-27)
 
