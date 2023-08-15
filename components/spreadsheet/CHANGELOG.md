@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 22.2.9 (2023-08-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I486679` - Issue with "cell borders are removed incorrectly during the undo operation after copy / paste from an external Excel file" has been resolved.
+
 ## 22.1.37 (2023-07-04)
 
 ### Spreadsheet

@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 22.2.9 (2023-08-15)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+- `#I485657` - Misalignment happened in timeline while exporting `PDF` in Gantt has been fixed.
+- `#I485398` - console error occurs while using segment data issue has been fixed.
+- `#I487527` - Data manager URL is called twice.
+- `#I484079`- Vertical scroll and taskbar is not fully visible in yearly mode issue has been fixed.
+- `#I461564`- No action is performed when we try to add task when the cell is in edited state issue has been fixed.
+- `#I486234` - Label gets hidden in Gantt Chart when task mode is manual issue has been fixed.
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 22.2.8 (2023-08-08)
 
 ### Gantt Chart
@@ -13,11 +32,7 @@
 - `#I483399` - Style not applied for the collapsed row when the virtual scroll is enabled issue has been fixed.
 - `#I473286` - Unable to drag taskbar and tooltip is misaligned issue has been fixed.
 
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I473286` - Unable to drag taskbar and tooltip is misaligned issue has been fixed.
 
 ## 22.2.7 (2023-08-02)
 
@@ -35,6 +50,7 @@
 - `#I481058` - Console error when we use RTL and taskbar template issue has been fixed.
 - `#I482456` - Critical path not working properly issue has been fixed.
 - `#I485219` - Selection is not working when we use react hook.
+- `#I486928` - Incorrect time is displayed in the column.
 
 - `#IF183168` - Record was not added in Gantt using `oDataV4Adaptor` issue has been fixed.
 
