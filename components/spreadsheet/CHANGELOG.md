@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 22.2.9 (2023-08-15)
+## 22.2.10 (2023-08-22)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I486679` - Issue with "cell borders are removed incorrectly during the undo operation after copy / paste from an external Excel file" has been resolved.
+- `#I489469` - Issue with "component throws an exception when open JSON data using the `openFromJson` method and sets the `showSheetTabs` property value to false on that JSON" has been resolved.
+- `#I489978` - Issue with "applied conditional formatting on hidden rows and columns are removed when unhide the hidden rows and columns" has been resolved.
+- `#I485361` - Issue with "pasted text overlaps with adjacent cell content while pasting the long text into the editor element" has been resolved.
 
 ## 22.1.37 (2023-07-04)
 
@@ -1298,6 +1300,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 22.2.9 (2023-08-15)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I486679` - Issue with "cell borders are removed incorrectly during the undo operation after copy / paste from an external Excel file" has been resolved.
+- `#I488568` - Issue with "`#SPILL` error occurs while entering the `UNIQUE` formula in lower case letter" has been resolved.
+- `#I488682` - Issue with "`#VALUE!` error throws when perform multiplication on boolean values with integers" has been resolved.
 
 ## 22.2.5 (2023-07-27)
 

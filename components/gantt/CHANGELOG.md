@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 22.2.10 (2023-08-22)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+- `#I486977` - Zoom To Fit issue when we resize browser window has been fixed.
+- `#I484086` - Other instance of the taskbar not moved in the resource view issue has been fixed.
+- `#I482456` - Critical path is incorrect in the Gantt Chart issue has been fixed.
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 22.2.9 (2023-08-15)
 
 ### Gantt Chart
@@ -14,12 +30,6 @@
 - `#I484079`- Vertical scroll and taskbar is not fully visible in yearly mode issue has been fixed.
 - `#I461564`- No action is performed when we try to add task when the cell is in edited state issue has been fixed.
 - `#I486234` - Label gets hidden in Gantt Chart when task mode is manual issue has been fixed.
-
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 22.2.8 (2023-08-08)
 
