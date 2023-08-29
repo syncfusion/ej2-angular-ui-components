@@ -2,12 +2,21 @@
 
 ## [Unreleased]
 
+## 22.2.11 (2023-08-29)
+
+### DropDown List
+
+#### Bug Fixes
+
+- `#I490309` - The issue with the `aria-owns` attribute not having the correct `ID` of its popup list element has been fixed.
+
 ## 22.2.10 (2023-08-22)
 
 ### DropDown List
 
 #### Bug Fixes
 
+- `#I490309` - The issue with the `aria-owns` attribute not having the correct `ID` of its popup list element has been fixed.
 - `#I481443` - Resolved the issue where the "no records" template was not being displayed and a console error occurred.
 
 ### MultiSelect

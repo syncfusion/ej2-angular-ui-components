@@ -2,15 +2,13 @@
 
 ## [Unreleased]
 
-## 22.2.10 (2023-08-22)
+## 22.2.11 (2023-08-29)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I489469` - Issue with "component throws an exception when open JSON data using the `openFromJson` method and sets the `showSheetTabs` property value to false on that JSON" has been resolved.
-- `#I489978` - Issue with "applied conditional formatting on hidden rows and columns are removed when unhide the hidden rows and columns" has been resolved.
-- `#I485361` - Issue with "pasted text overlaps with adjacent cell content while pasting the long text into the editor element" has been resolved.
+- `#I488994` - Issue with "row height is not updated properly when save and load the data using `openFromJson` method and then perform undo action" has been resolved.
 
 ## 22.1.37 (2023-07-04)
 
@@ -1300,6 +1298,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 22.2.10 (2023-08-22)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I489469` - Issue with "component throws an exception when open JSON data using the `openFromJson` method and sets the `showSheetTabs` property value to false on that JSON" has been resolved.
+- `#I489978` - Issue with "applied conditional formatting on hidden rows and columns are removed when unhide the hidden rows and columns" has been resolved.
+- `#I485361` - Issue with "pasted text overlaps with adjacent cell content while pasting the long text into the editor element" has been resolved.
 
 ## 22.2.9 (2023-08-15)
 

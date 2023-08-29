@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 22.2.11 (2023-08-29)
+
+### Gantt Chart
+
+#### Bug Fixes
+
+- `#I485527` - Filter menu opening issue in column menu has been fixed.
+- `#I491313` - Multiple records were selected after using the context menu, adding the milestone position wrong issue has been fixed.
+
+### Gantt
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 22.2.10 (2023-08-22)
 
 ### Gantt Chart
@@ -12,11 +27,8 @@
 - `#I484086` - Other instance of the taskbar not moved in the resource view issue has been fixed.
 - `#I482456` - Critical path is incorrect in the Gantt Chart issue has been fixed.
 
-### Gantt
-
-#### Bug Fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I486977` - Zoom To Fit issue when we resize browser window has been fixed.
+- `#I484086` - Other instance of the taskbar not moved in the resource view issue has been fixed.
 
 ## 22.2.9 (2023-08-15)
 
