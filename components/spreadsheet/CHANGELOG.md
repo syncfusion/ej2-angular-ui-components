@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 22.2.11 (2023-08-29)
+## 22.2.12 (2023-09-05)
 
 ### Spreadsheet
 
 #### Bug Fixes
 
-- `#I488994` - Issue with "row height is not updated properly when save and load the data using `openFromJson` method and then perform undo action" has been resolved.
+- `#I496631` - Issue with "arithmetic operations with direct boolean values throw a `#VALUE!` error" has been resolved.
 
 ## 22.1.37 (2023-07-04)
 
@@ -1298,6 +1298,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 22.2.11 (2023-08-29)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I488994` - Issue with "row height is not updated properly when save and load the data using `openFromJson` method and then perform undo action" has been resolved.
+- `#I475848` - Issue with "currency formatted value is not displayed on the `Danish` culture sample while importing the excel file with currency value" has been resolved.
 
 ## 22.2.10 (2023-08-22)
 
