@@ -1211,7 +1211,7 @@ For any questions or assistance, you can:
 * Renew your subscription by clicking [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=ej2-streamlit-components) or contacting our sales team at <salessupport@syncfusion.com>.
 * If you have specific feature requests or suggestions, please submit them through our [feedback portal](https://www.syncfusion.com/feedback/angular).
  ## License
- For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-streamlit-components/blob/master/LICENSE).
+ For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
      © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
