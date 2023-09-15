@@ -1214,5 +1214,5 @@ For any questions or assistance, you can:
  For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
+     © Copyright 2023 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
