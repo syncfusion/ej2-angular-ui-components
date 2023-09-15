@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ToolbarItemDirective, ToolbarItemsDirective } from './toolbaritems.directive';
 import { FileManagerComponent } from './filemanager.component';
 
 /**
@@ -8,10 +9,14 @@ import { FileManagerComponent } from './filemanager.component';
 @NgModule({
     imports: [CommonModule],
     declarations: [
-        FileManagerComponent
+        FileManagerComponent,
+        ToolbarItemDirective,
+        ToolbarItemsDirective
     ],
     exports: [
-        FileManagerComponent
+        FileManagerComponent,
+        ToolbarItemDirective,
+        ToolbarItemsDirective
     ]
 })
 export class FileManagerModule { }

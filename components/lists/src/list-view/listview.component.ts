@@ -43,7 +43,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
      * @vuetype string | function
-     * @deprecated 
+     * @asptype string
      */
     @ContentChild('template')
     @Template()
@@ -57,7 +57,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
      * @vuetype string | function
-     * @deprecated 
+     * @asptype string
      */
     @ContentChild('groupTemplate')
     @Template()
@@ -71,7 +71,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
      * @vuetype string | function
-     * @deprecated 
+     * @asptype string
      */
     @ContentChild('headerTemplate')
     @Template()

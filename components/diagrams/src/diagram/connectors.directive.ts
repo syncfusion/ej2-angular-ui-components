@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'allowNodeOverlap', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'previewSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'allowNodeOverlap', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'ports', 'previewSize', 'segmentThumbShape', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -150,11 +150,35 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      */
     public maxSegmentThumb: any;
     /** 
+     * Defines the behavior of connection ports
+     * @aspdefaultvalueignore 
+     * @default undefined
+     */
+    public ports: any;
+    /** 
      * Defines the size of the symbol preview
      * @aspdefaultvalueignore 
      * @default undefined
      */
     public previewSize: any;
+    /** 
+     * Defines the shape for the connector segmentThumb 
+     * Rhombus - Sets the segmentThumb shape as Rhombus 
+     * Square - Sets the segmentThumb shape as Square 
+     * Rectangle - Sets the segmentThumb shape as Rectangle 
+     * Ellipse - Sets the segmentThumb shape as Ellipse 
+     * Arrow - Sets the segmentThumb shape as Arrow 
+     * Diamond - Sets the segmentThumb shape as Diamond 
+     * OpenArrow - Sets the segmentThumb shape as OpenArrow 
+     * Circle - Sets the segmentThumb shape as Circle 
+     * Fletch - Sets the segmentThumb shape as Fletch 
+     * OpenFetch - Sets the segmentThumb shape as OpenFetch 
+     * IndentedArrow - Sets the segmentThumb shape as Indented Arrow 
+     * OutdentedArrow - Sets the segmentThumb shape as Outdented Arrow 
+     * DoubleArrow - Sets the segmentThumb shape as DoubleArrow
+     * @default 'Circle'
+     */
+    public segmentThumbShape: any;
     /** 
      * Defines the segments
      * @default []

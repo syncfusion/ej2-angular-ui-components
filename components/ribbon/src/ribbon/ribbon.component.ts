@@ -4,8 +4,8 @@ import { Ribbon } from '@syncfusion/ej2-ribbon';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { RibbonTabsDirective } from './tabs.directive';
 
-export const inputs: string[] = ['activeLayout','cssClass','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','isMinimized','launcherIconCss','locale','selectedTab','tabAnimation','tabs','width'];
-export const outputs: string[] = ['launcherIconClick','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
+export const inputs: string[] = ['activeLayout','backStageMenu','cssClass','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','hideLayoutSwitcher','isMinimized','launcherIconCss','locale','selectedTab','tabAnimation','tabs','width'];
+export const outputs: string[] = ['created','launcherIconClick','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
 export const twoWays: string[] = [''];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [''];
 export class RibbonComponent extends Ribbon implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	created: any;
 	launcherIconClick: any;
 	ribbonCollapsing: any;
 	ribbonExpanding: any;
@@ -39,6 +40,9 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
      * Specifies the template content for the help pane of ribbon. 
      * The help pane appears on the right side of the ribbon header row.
      * @default ''
+     * @angulartype string | object | HTMLElement
+     * @reacttype string | function | JSX.Element | HTMLElement
+     * @vuetype string | function | HTMLElement
      * @asptype string
      */
     @ContentChild('helpPaneTemplate')
@@ -86,7 +90,19 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
                 }
             } catch { }
         try {
+                let mod = this.injector.get('RibbonRibbonGroupButton');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('RibbonRibbonFileMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RibbonRibbonBackstage');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

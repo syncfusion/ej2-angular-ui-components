@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','height','isReadOnly','locale','quickAccessToolbarTemplate','selectionSettings','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','width','zoomSettings'];
-export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','imageFiltering','panning','quickAccessToolbarItemClick','quickAccessToolbarOpen','rotating','saved','selectionChanging','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
+export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','fileOpened','finetuneValueChanging','flipping','frameChange','imageFiltering','panning','quickAccessToolbarItemClick','quickAccessToolbarOpen','resizing','rotating','saved','selectionChanging','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
 export const twoWays: string[] = [''];
 
 /**
@@ -36,10 +36,12 @@ export class ImageEditorComponent extends ImageEditor implements IComponentBase 
 	fileOpened: any;
 	finetuneValueChanging: any;
 	flipping: any;
+	frameChange: any;
 	imageFiltering: any;
 	panning: any;
 	quickAccessToolbarItemClick: any;
 	quickAccessToolbarOpen: any;
+	resizing: any;
 	rotating: any;
 	saved: any;
 	selectionChanging: any;

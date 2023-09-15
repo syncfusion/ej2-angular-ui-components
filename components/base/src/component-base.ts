@@ -311,7 +311,7 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|tab|DashboardLayout/.test(tempAfterContentThis.getModuleName()))) {
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName()))) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                     }
                     for (let list of tagObject.instance.list) {

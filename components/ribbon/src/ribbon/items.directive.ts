@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['activeSize', 'allowedSizes', 'buttonSettings', 'checkBoxSettings', 'colorPickerSettings', 'comboBoxSettings', 'cssClass', 'disabled', 'displayOptions', 'dropDownSettings', 'id', 'itemTemplate', 'ribbonTooltipSettings', 'splitButtonSettings', 'type'];
+let input: string[] = ['activeSize', 'allowedSizes', 'buttonSettings', 'checkBoxSettings', 'colorPickerSettings', 'comboBoxSettings', 'cssClass', 'disabled', 'displayOptions', 'dropDownSettings', 'groupButtonSettings', 'id', 'itemTemplate', 'ribbonTooltipSettings', 'splitButtonSettings', 'type'];
 let outputs: string[] = [];
 /**
  * `e-ribbon-item` directive represent a item in the Angular Ribbon.
@@ -103,6 +103,11 @@ export class RibbonItemDirective extends ComplexBase<RibbonItemDirective> {
      */
     public dropDownSettings: any;
     /** 
+     * Defines the properties for group button in Ribbon
+     * @default {}
+     */
+    public groupButtonSettings: any;
+    /** 
      * Defines a unique identifier for the item.
      * @default ''
      */
@@ -121,6 +126,9 @@ export class RibbonItemDirective extends ComplexBase<RibbonItemDirective> {
      * Defines the template content for the ribbon item. 
      * `ActiveSize` property is passed as string in template context.
      * @default ''
+     * @angulartype string | object | HTMLElement
+     * @reacttype string | function | JSX.Element | HTMLElement
+     * @vuetype string | function | HTMLElement
      * @asptype string
      */
     @ContentChild('itemTemplate')

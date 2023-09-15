@@ -293,8 +293,10 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * defines which side the column need to freeze 
      * The available built-in freeze directions are 
      * * Left - Freeze the column at left side. 
-     * * Right - Freeze the column at right side.
-     * @default null
+     * * Right - Freeze the column at right side. 
+     * * Fixed - Freeze the column at Center. 
+     * * None - Does not freeze the column.
+     * @default None
      */
     public freeze: any;
     /** 

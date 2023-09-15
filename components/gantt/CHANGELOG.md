@@ -2,9 +2,27 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### GanttChart
+
+#### Features
+
+- `#I275966` - Provided lazy loading support in Gantt chart. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/load-on-demand.html).
+- `#I396039` - Provided baseline support for PDF export in Gantt Chart.
+- Provided support to export the Gantt component where each rows are auto-fit to the PDF document page width. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/exporting.html).
+- Provided touch interaction support for taskbar resizing, dragging, predecessor connectivity in Gantt chart.
+
+#### Bug Fixes
+
+- `#I492654` - When empty data source pdf export exception thrown issue has been fixed.
+- `#I479578` - Milestone parent is not appearing issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 22.2.12 (2023-09-05)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -16,11 +34,11 @@
 - `#I485527` - Filter menu opening issue in column menu has been fixed.
 - `#I494859` - Gantt shrinks when we update the datasource issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I494859` - Gantt shrinks when we update the datasource issue has been fixed.
 
 ## 22.2.11 (2023-08-29)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -33,7 +51,7 @@
 
 ## 22.2.10 (2023-08-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -46,7 +64,7 @@
 
 ## 22.2.9 (2023-08-15)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -59,7 +77,7 @@
 
 ## 22.2.8 (2023-08-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -72,7 +90,7 @@
 
 ## 22.2.7 (2023-08-02)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -92,7 +110,7 @@
 
 ## 22.2.5 (2023-07-27)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -105,7 +123,7 @@
 
 ## 22.1.39 (2023-07-18)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -113,7 +131,7 @@
 
 ## 22.1.38 (2023-07-11)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -127,7 +145,7 @@
 
 ## 22.1.37 (2023-07-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -138,7 +156,7 @@
 
 ## 22.1.36 (2023-06-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -153,7 +171,7 @@
 
 ## 22.1.34 (2023-06-21)
 
-### Gantt
+### GanttChart
 
 #### Features
 
@@ -166,7 +184,7 @@
 
 ## 21.2.10 (2023-06-13)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -179,7 +197,7 @@
 
 ## 21.2.9 (2023-06-06)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -203,7 +221,7 @@
 
 ## 21.2.8 (2023-05-30)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -220,7 +238,7 @@
 
 ## 21.2.6 (2023-05-23)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -230,7 +248,7 @@
 
 ## 21.2.5 (2023-05-16)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -246,7 +264,7 @@
 
 ## 21.2.4 (2023-05-09)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -263,7 +281,7 @@
 
 ## 21.2.3 (2023-05-03)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -273,7 +291,7 @@
 
 ## 21.1.41 (2023-04-18)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -290,7 +308,7 @@
 
 ## 21.1.38 (2023-04-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -306,7 +324,7 @@
 
 ## 21.1.37 (2023-03-29)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -319,7 +337,7 @@
 
 ## 21.1.35 (2023-03-23)
 
-### Gantt
+### GanttChart
 
 #### Features
 
@@ -341,7 +359,7 @@
 
 ## 20.4.54 (2023-03-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -355,7 +373,7 @@
 
 ## 20.4.53 (2023-03-07)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -366,7 +384,7 @@
 
 ## 20.4.52 (2023-02-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -383,7 +401,7 @@
 
 ## 20.4.51 (2023-02-21)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -396,7 +414,7 @@
 
 ## 20.4.50 (2023-02-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -404,7 +422,7 @@
 
 ## 20.4.49 (2023-02-07)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -417,7 +435,7 @@
 
 ## 20.4.48 (2023-02-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -429,7 +447,7 @@
 
 ## 20.4.43 (2023-01-10)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -438,7 +456,7 @@
 
 ## 20.4.42 (2023-01-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -449,7 +467,7 @@
 
 ## 20.4.40 (2022-12-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -466,7 +484,7 @@
 
 ## 20.4.38 (2022-12-21)
 
-### Gantt
+### GanttChart
 
 #### Features
 
@@ -483,7 +501,7 @@
 
 ## 20.3.60 (2022-12-06)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -495,7 +513,7 @@
 
 ## 20.3.59 (2022-11-29)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -506,7 +524,7 @@
 
 ## 20.3.58 (2022-11-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -515,7 +533,7 @@
 
 ## 20.3.57 (2022-11-15)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -527,7 +545,7 @@
 
 ## 20.3.56 (2022-11-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -537,7 +555,7 @@
 
 ## 20.3.52 (2022-10-26)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -546,7 +564,7 @@
 
 ## 20.3.50 (2022-10-18)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -559,7 +577,7 @@
 
 ## 20.3.49 (2022-10-11)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -574,7 +592,7 @@
 
 ## 20.3.48 (2022-10-05)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -590,7 +608,7 @@
 
 ## 20.3.47 (2022-09-29)
 
-### Gantt
+### GanttChart
 
 #### Features
 
@@ -618,7 +636,7 @@
 
 ## 20.2.49 (2022-09-13)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -626,7 +644,7 @@
 
 ## 20.2.46 (2022-08-30)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -638,7 +656,7 @@
 
 ## 20.2.45 (2022-08-23)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -646,7 +664,7 @@
 
 ## 20.2.44 (2022-08-16)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -660,7 +678,7 @@
 
 ## 20.2.43 (2022-08-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -674,7 +692,7 @@
 
 ## 20.2.39 (2022-07-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -682,7 +700,7 @@
 
 ## 20.2.38 (2022-07-12)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -692,7 +710,7 @@
 
 ## 20.2.36 (2022-06-30)
 
-### Gantt
+### GanttChart
 
 #### Features
 
@@ -717,7 +735,7 @@
 
 ## 20.1.60 (2022-06-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -730,7 +748,7 @@
 
 ## 20.1.59 (2022-06-07)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -740,7 +758,7 @@
 
 ## 20.1.58 (2022-05-31)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -753,7 +771,7 @@
 
 ## 20.1.56 (2022-05-17)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -762,7 +780,7 @@
 
 ## 20.1.55 (2022-05-12)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -774,7 +792,7 @@
 
 ## 20.1.52 (2022-05-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -782,7 +800,7 @@
 
 ## 20.1.51 (2022-04-26)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -796,7 +814,7 @@
 
 ## 20.1.50 (2022-04-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -807,7 +825,7 @@
 
 ## 20.1.48 (2022-04-12)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -819,7 +837,7 @@
 
 ## 20.1.47 (2022-04-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -829,7 +847,7 @@
 
 ## 19.4.56 (2022-03-15)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -850,7 +868,7 @@
 
 ## 19.4.55 (2022-03-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -861,7 +879,7 @@
 
 ## 19.4.54 (2022-03-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -870,7 +888,7 @@
 
 ## 19.4.53 (2022-02-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -878,7 +896,7 @@
 
 ## 19.4.52 (2022-02-15)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -889,7 +907,7 @@
 
 ## 19.4.50 (2022-02-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -903,7 +921,7 @@
 
 ## 19.4.47 (2022-01-25)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -921,7 +939,7 @@
 
 ## 19.4.43 (2022-01-18)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -932,7 +950,7 @@
 
 ## 19.4.42 (2022-01-11)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -941,7 +959,7 @@
 
 ## 19.4.41 (2022-01-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -952,7 +970,7 @@
 
 ## 19.4.40 (2021-12-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -960,7 +978,7 @@
 
 ## 19.4.38 (2021-12-17)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -976,7 +994,7 @@
 
 ## 19.3.56 (2021-12-02)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -987,7 +1005,7 @@
 
 ## 19.3.55 (2021-11-23)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -995,7 +1013,7 @@
 
 ## 19.3.53 (2021-11-12)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1003,7 +1021,7 @@
 
 ## 19.3.48 (2021-11-02)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1016,7 +1034,7 @@
 
 ## 19.3.47 (2021-10-26)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1034,7 +1052,7 @@
 
 ## 19.3.46 (2021-10-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1047,7 +1065,7 @@
 
 ## 19.3.45 (2021-10-12)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1060,7 +1078,7 @@
 
 ## 19.3.44 (2021-10-05)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1070,7 +1088,7 @@
 
 ## 19.2.62 (2021-09-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1081,7 +1099,7 @@
 
 ## 19.2.60 (2021-09-07)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1090,7 +1108,7 @@
 
 ## 19.2.59 (2021-08-31)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1098,7 +1116,7 @@
 
 ## 19.2.57 (2021-08-24)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1107,7 +1125,7 @@
 
 ## 19.2.56 (2021-08-17)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1116,7 +1134,7 @@
 
 ## 19.2.55 (2021-08-11)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1124,7 +1142,7 @@
 
 ## 19.2.47 (2021-07-13)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1136,7 +1154,7 @@
 
 ## 19.2.46 (2021-07-06)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1145,7 +1163,7 @@
 
 ## 19.2.44 (2021-06-30)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1153,7 +1171,7 @@
 
 ## 19.1.69 (2021-06-15)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1162,7 +1180,7 @@
 
 ## 19.1.66 (2021-06-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1175,7 +1193,7 @@
 
 ## 19.1.64 (2021-05-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1186,7 +1204,7 @@
 
 ## 19.1.63 (2021-05-13)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1204,7 +1222,7 @@
 
 ## 19.1.59 (2021-05-04)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1214,7 +1232,7 @@
 
 ## 19.1.58 (2021-04-27)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1225,7 +1243,7 @@
 
 ## 19.1.57 (2021-04-20)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1233,7 +1251,7 @@
 
 ## 19.1.56 (2021-04-13)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1241,7 +1259,7 @@
 
 ## 19.1.55 (2021-04-06)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1249,7 +1267,7 @@
 
 ## 19.1.54 (2021-03-30)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1258,7 +1276,7 @@
 
 ## 18.4.49 (2021-03-23)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1270,7 +1288,7 @@
 
 ## 18.4.47 (2021-03-09)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1278,7 +1296,7 @@
 
 ## 18.4.44 (2021-02-23)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1286,7 +1304,7 @@
 
 ## 18.4.43 (2021-02-16)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1299,7 +1317,7 @@
 
 ## 18.4.41 (2021-02-02)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1311,7 +1329,7 @@
 
 ## 18.4.39 (2021-01-28)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1323,7 +1341,7 @@
 
 ## 18.4.35 (2021-01-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1332,7 +1350,7 @@
 
 ## 18.4.33 (2021-01-05)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1340,7 +1358,7 @@
 
 ## 18.4.32 (2020-12-29)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1353,7 +1371,7 @@
 
 ## 18.4.31 (2020-12-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1367,7 +1385,7 @@
 
 ## 18.4.30 (2020-12-17)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1386,7 +1404,7 @@
 
 ## 18.3.52 (2020-12-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1394,7 +1412,7 @@
 
 ## 18.3.51 (2020-11-24)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1402,7 +1420,7 @@
 
 ## 18.3.50 (2020-11-17)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1412,7 +1430,7 @@
 
 ## 18.3.48 (2020-11-11)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1423,7 +1441,7 @@
 
 ## 18.3.47 (2020-11-05)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1443,7 +1461,7 @@
 
 ## 18.3.42 (2020-10-20)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1456,7 +1474,7 @@
 
 ## 18.3.35 (2020-10-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1464,7 +1482,7 @@
 
 ## 18.2.59 (2020-09-21)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1482,7 +1500,7 @@
 
 ## 18.2.57 (2020-09-08)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1491,7 +1509,7 @@
 
 ## 18.2.56 (2020-09-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1500,7 +1518,7 @@
 
 ## 18.2.55 (2020-08-25)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1509,7 +1527,7 @@
 
 ## 18.2.48 (2020-08-04)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1524,7 +1542,7 @@
 
 ## 18.2.47 (2020-07-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1538,7 +1556,7 @@
 
 ## 18.2.46 (2020-07-21)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1547,7 +1565,7 @@
 
 ## 18.2.45 (2020-07-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1559,7 +1577,7 @@
 
 ## 18.2.44 (2020-07-07)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1570,7 +1588,7 @@
 
 ## 18.1.59 (2020-06-23)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1589,7 +1607,7 @@
 
 ## 18.1.57 (2020-06-16)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1597,7 +1615,7 @@
 
 ## 18.1.55 (2020-06-02)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1610,7 +1628,7 @@
 
 ## 18.1.54 (2020-05-26)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1619,7 +1637,7 @@
 
 ## 18.1.53 (2020-05-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1639,7 +1657,7 @@
 
 ## 18.1.52 (2020-05-13)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1656,7 +1674,7 @@
 
 ## 18.1.48 (2020-05-05)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1664,7 +1682,7 @@
 
 ## 18.1.46 (2020-04-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1674,7 +1692,7 @@
 
 ## 18.1.45 (2020-04-21)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1682,7 +1700,7 @@
 
 ## 18.1.44 (2020-04-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1694,7 +1712,7 @@
 
 ## 18.1.43 (2020-04-07)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1706,7 +1724,7 @@
 
 ## 18.1.42 (2020-04-01)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1716,7 +1734,7 @@
 
 ## 18.1.36-beta (2020-03-19)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1734,7 +1752,7 @@
 
 ## 17.4.46 (2020-01-30)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1751,7 +1769,7 @@
 
 ## 17.4.44 (2021-01-21)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1759,7 +1777,7 @@
 
 ## 17.4.41 (2020-01-07)
 
-### Gantt
+### GanttChart
 
 #### New Features
 
@@ -1767,7 +1785,7 @@
 
 ## 17.4.40 (2019-12-24)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1775,7 +1793,7 @@
 
 ## 17.4.39 (2019-12-17)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1796,7 +1814,7 @@
 
 ## 17.3.30 (2019-12-03)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1804,7 +1822,7 @@
 
 ## 17.3.29 (2019-11-26)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1814,7 +1832,7 @@
 
 ## 17.3.28 (2019-11-19)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1822,7 +1840,7 @@
 
 ## 17.3.19 (2019-10-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1831,7 +1849,7 @@
 
 ## 17.3.14 (2019-10-03)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1839,7 +1857,7 @@
 
 ## 17.3.9-beta (2019-09-20)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1861,7 +1879,7 @@
 
 ## 17.2.46 (2019-08-22)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1872,7 +1890,7 @@
 
 ## 17.2.41 (2019-08-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1883,7 +1901,7 @@
 
 ## 17.2.40 (2019-08-06)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1894,7 +1912,7 @@
 
 ## 17.2.36 (2019-07-24)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1902,7 +1920,7 @@
 
 ## 17.2.28-beta (2019-06-27)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1916,7 +1934,7 @@
 
 ## 17.1.49 (2019-05-29)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1924,7 +1942,7 @@
 
 ## 17.1.47 (2019-05-14)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1936,7 +1954,7 @@
 
 ## 17.1.43 (2019-04-30)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1944,7 +1962,7 @@
 
 ## 17.1.40 (2019-04-09)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 
@@ -1952,7 +1970,7 @@
 
 ## 17.1.32-beta (2019-03-13)
 
-### Gantt
+### GanttChart
 
 - **Data sources** – Bind hierarchical or self-referential data to Gantt chart with an array of JavaScript objects or DataManager.
 - **Timeline** – Display timescale from minutes to decades easily, and also display custom texts in the timeline units. Timeline can be displayed in either one-tier or two-tier layout.
@@ -1970,7 +1988,7 @@
 
 ## 21.1.36 (2023-06-28)
 
-### Gantt
+### GanttChart
 
 #### Bug Fixes
 

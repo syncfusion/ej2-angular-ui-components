@@ -1,10 +1,10 @@
-import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { FileManager } from '@syncfusion/ej2-filemanager';
 
+import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-
-export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortOrder','toolbarSettings','uploadSettings','view','width'];
+export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
 export const outputs: string[] = ['beforeDownload','beforeImageLoad','beforePopupClose','beforePopupOpen','beforeSend','created','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','menuClick','menuOpen','popupClose','popupOpen','success','toolbarClick','toolbarCreate','uploadListCreate'];
 export const twoWays: string[] = [''];
 
@@ -21,7 +21,7 @@ export const twoWays: string[] = [''];
     template: '',
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-
+        childToolbarItems: new ContentChild(ToolbarItemsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
@@ -52,8 +52,8 @@ export class FileManagerComponent extends FileManager implements IComponentBase 
 	toolbarClick: any;
 	toolbarCreate: any;
 	public uploadListCreate: any;
-
-
+    public childToolbarItems: QueryList<ToolbarItemsDirective>;
+    public tags: string[] = ['toolbarItems'];
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -121,7 +121,7 @@ export class FileManagerComponent extends FileManager implements IComponentBase 
     }
 
     public ngAfterContentChecked(): void {
-        
+        this.tagObjects[0].instance = this.childToolbarItems;
         this.context.ngAfterContentChecked(this);
     }
 
