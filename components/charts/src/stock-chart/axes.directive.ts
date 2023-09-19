@@ -264,11 +264,12 @@ export class StockChartAxisDirective extends ComplexBase<StockChartAxisDirective
      */
     public titleStyle: any;
     /** 
-     * Specifies the type of data the axis is handling. 
-     * * Double:  Renders a numeric axis. 
-     * * DateTime: Renders a dateTime axis. 
-     * * Category: Renders a category axis. 
-     * * Logarithmic: Renders a log axis.
+     * Specifies the data types that the axis can handle: 
+     * * Double: This type is used for rendering a numeric axis to accommodate numeric data. 
+     * * DateTime: This type is utilized for rendering a date-time axis to manage date-time data. 
+     * * Category: This type is employed for rendering a category axis to manage categorical data. 
+     * * Logarithmic: This type is applied for rendering a logarithmic axis to handle a wide range of values. 
+     * * DateTimeCategory: This type is used to render a date time category axis for managing business days.
      * @default 'Double'
      * @blazortype Syncfusion.EJ2.Blazor.Charts.ValueType
      * @isenumeration true

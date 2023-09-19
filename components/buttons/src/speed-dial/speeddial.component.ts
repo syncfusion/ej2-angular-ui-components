@@ -42,6 +42,9 @@ export class SpeedDialComponent extends SpeedDial implements IComponentBase {
      * Defines the template content for the speed dial item. 
      * {% codeBlock src='speeddial/itemTemplate/index.md' %}{% endcodeBlock %}
      * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @asptype string
      */
     @ContentChild('itemTemplate')
@@ -50,6 +53,9 @@ export class SpeedDialComponent extends SpeedDial implements IComponentBase {
     /** 
      * Defines a template content for popup of SpeedDial.
      * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @asptype string
      */
     @ContentChild('popupTemplate')

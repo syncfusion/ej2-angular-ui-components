@@ -2,21 +2,15 @@
 
 ## [Unreleased]
 
-## 22.2.11 (2023-08-29)
+## 23.1.36 (2023-09-15)
 
 ### Spreadsheet
 
-#### Bug Fixes
+#### Features
 
-- `#I488994` - Issue with "row height is not updated properly when save and load the data using `openFromJson` method and then perform undo action" has been resolved.
-
-## 22.1.37 (2023-07-04)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I472639` - Issue with "merged cells become mixed up with one another while scrolling over the frozen column applied sheet" has been resolved.
+- `#339651` - Now, provided support for displaying the error alert dialog when an invalid formula is typed, or the wrong number of arguments is supplied to the formula.
+- `#369492` - Now, you can experience cut and paste actions in the Spreadsheet faster compared to earlier versions.
+- `#476502` - Now, you can experience smooth scrolling with multiple conditional formatting set in the Spreadsheet, which is faster compared to earlier versions.
 
 ## 22.1.34 (2023-06-21)
 
@@ -1298,36 +1292,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-## 22.2.10 (2023-08-22)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I489469` - Issue with "component throws an exception when open JSON data using the `openFromJson` method and sets the `showSheetTabs` property value to false on that JSON" has been resolved.
-- `#I489978` - Issue with "applied conditional formatting on hidden rows and columns are removed when unhide the hidden rows and columns" has been resolved.
-- `#I485361` - Issue with "pasted text overlaps with adjacent cell content while pasting the long text into the editor element" has been resolved.
-
-## 22.2.9 (2023-08-15)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I486679` - Issue with "cell borders are removed incorrectly during the undo operation after copy / paste from an external Excel file" has been resolved.
-- `#I488568` - Issue with "`#SPILL` error occurs while entering the `UNIQUE` formula in lower case letter" has been resolved.
-- `#I488682` - Issue with "`#VALUE!` error throws when perform multiplication on boolean values with integers" has been resolved.
-
-## 22.2.5 (2023-07-27)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I479603` - Issue with "hyperlink opens two browser tabs while clicking on the hyperlink applied cells" has been resolved.
-- `#I483683` - Issue with "an exception is thrown when copying content from a text file and pasting it into a cell" has been resolved.
-- `#I837732` - Issue with "chart does not render properly while importing data using the `openFromJson` method with many spreadsheets on the same page" has been resolved.
 
 ## 21.2.9 (2023-06-06)
 

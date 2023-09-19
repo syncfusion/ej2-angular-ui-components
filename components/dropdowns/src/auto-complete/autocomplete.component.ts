@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, forwardRef, ContentChild } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, ChangeDetectorRef, forwardRef, ContentChild } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','autofill','cssClass','dataSource','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','highlight','htmlAttributes','ignoreAccent','ignoreCase','index','itemTemplate','locale','minLength','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','showPopupButton','sortOrder','suggestionCount','text','value','valueTemplate','width','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','autofill','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','highlight','htmlAttributes','ignoreAccent','ignoreCase','index','itemTemplate','locale','minLength','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','showPopupButton','sortOrder','suggestionCount','text','value','valueTemplate','width','zIndex'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','customValueSpecifier','dataBound','destroyed','filtering','focus','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -106,10 +106,16 @@ export class AutoCompleteComponent extends AutoComplete implements IComponentBas
     public actionFailureTemplate: any;
 
     private skipFromEvent:boolean = true;
-    constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
+    constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector, private cdr: ChangeDetectorRef) {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('DropDownsVirtualScroll');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

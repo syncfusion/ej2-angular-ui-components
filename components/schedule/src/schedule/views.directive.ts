@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'enableLazyLoading', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -31,7 +31,7 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
 
 
     /** 
-     * It is used to allow or disallow the virtual scrolling functionality on Agenda View. This is applicable only on Agenda view.
+     * It is used to allow or disallow the virtual scrolling functionality.
      * @default false
      */
     public allowVirtualScrolling: any;
@@ -56,6 +56,13 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default null
      */
     public displayName: any;
+    /** 
+     * Enables the lazy loading of events for scrolling actions only when the resources grouping property is enabled. 
+     * Lazy loading allows the scheduler to fetch the appointments dynamically during scroll actions for the currently rendered resource collection. 
+     * New event data is fetched on-demand as the user scrolls through the schedule content.
+     * @default false
+     */
+    public enableLazyLoading: any;
     /** 
      * It is used to specify the end hour, at which the Schedule ends. It too accepts the time string in a short skeleton format.
      * @default '24:00'

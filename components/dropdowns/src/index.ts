@@ -1,6 +1,6 @@
 export { DropDownListComponent} from './drop-down-list/dropdownlist.component';
 export { DropDownListModule } from './drop-down-list/dropdownlist.module';
-export { DropDownListAllModule } from './drop-down-list/dropdownlist-all.module';
+export { DropDownListAllModule, VirtualScrollService } from './drop-down-list/dropdownlist-all.module';
 export { ComboBoxComponent} from './combo-box/combobox.component';
 export { ComboBoxModule } from './combo-box/combobox.module';
 export { ComboBoxAllModule } from './combo-box/combobox-all.module';

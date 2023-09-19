@@ -1,5 +1,6 @@
 import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ToolbarItemDirective, ToolbarItemsDirective } from './toolbaritems.directive';
 import { FileManagerComponent } from './filemanager.component';
 import { FileManagerModule } from './filemanager.module';
 import {DetailsView, NavigationPane, LargeIconsView, Toolbar, ContextMenu, BreadCrumbBar, Virtualization} from '@syncfusion/ej2-filemanager'

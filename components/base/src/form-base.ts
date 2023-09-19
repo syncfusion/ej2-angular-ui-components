@@ -1,4 +1,4 @@
-import { EventEmitter, ElementRef } from '@angular/core';
+import { EventEmitter, ElementRef, ChangeDetectorRef } from '@angular/core';
 import { getValue, setValue, isNullOrUndefined, isObject } from '@syncfusion/ej2-base';
 import { ControlValueAccessor } from '@angular/forms';
 /**
@@ -30,6 +30,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public preventChange: boolean;
     public isUpdated: boolean;
     public oldValue: any;
+    public cdr: ChangeDetectorRef;
 
     public localChange(e: { value?: T, checked?: T }): void {
         //tslint:disable-next-line
@@ -61,6 +62,7 @@ export class FormBase<T> implements ControlValueAccessor {
                 }
             }
         }
+        this.cdr.markForCheck();
     }
 
     public properties: Object;
@@ -131,6 +133,7 @@ export class FormBase<T> implements ControlValueAccessor {
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
         // To prevent change event, trigger change in component side based on `preventChange` value
         this.preventChange = this.isFormInit ? false : true;
+        this.cdr.markForCheck();
         if (value === null) {
             return;
         }
@@ -142,6 +145,7 @@ export class FormBase<T> implements ControlValueAccessor {
         if (this.skipFromEvent !== true) {
             this.focus.emit(e);
         }
+        this.cdr.markForCheck();
     }
 
     public ngOnBlur(e: Event): void {
@@ -150,5 +154,6 @@ export class FormBase<T> implements ControlValueAccessor {
         if (this.skipFromEvent !== true) {
             this.blur.emit(e);
         }
+        this.cdr.markForCheck();
     }
 }

@@ -4,5 +4,5 @@ export {RibbonGroupDirective,RibbonGroupsDirective} from './ribbon/groups.direct
 export {RibbonTabDirective,RibbonTabsDirective} from './ribbon/tabs.directive';
 export { RibbonComponent} from './ribbon/ribbon.component';
 export { RibbonModule } from './ribbon/ribbon.module';
-export { RibbonAllModule, RibbonButtonService, RibbonDropDownService, RibbonSplitButtonService, RibbonCheckBoxService, RibbonColorPickerService, RibbonComboBoxService, RibbonFileMenuService } from './ribbon/ribbon-all.module';
+export { RibbonAllModule, RibbonButtonService, RibbonDropDownService, RibbonSplitButtonService, RibbonCheckBoxService, RibbonColorPickerService, RibbonComboBoxService, RibbonGroupButtonService, RibbonFileMenuService, RibbonBackstageService } from './ribbon/ribbon-all.module';
 export * from '@syncfusion/ej2-ribbon';

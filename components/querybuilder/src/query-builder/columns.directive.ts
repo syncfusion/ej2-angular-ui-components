@@ -99,7 +99,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Specifies the template for value field such as slider or any other widgets.
      * @default null
-     * @asptype string
      */
     @ContentChild('template')
     @Template()

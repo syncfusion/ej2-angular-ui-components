@@ -53,12 +53,12 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
             (val: string) => {
                 return (/\./g.test(val) ? false : true);
             });
-        let tabTemp: boolean = _this.getModuleName() === 'tab';
+        let tabaccordionTemp: boolean = /tab|accordion|toolbar/.test(_this.getModuleName());
         for (let registeredTemplate of (regProperties && regProperties || regTemplates)) {
             /* istanbul ignore next */
             if (index && index.length) {
                 for (let e = 0; e < index.length; e++) {
-                    if (tabTemp) {
+                    if (tabaccordionTemp) {
                         for (let m = 0; m < _this.registeredTemplate[registeredTemplate].length; m++) {
                             let value = _this.registeredTemplate[registeredTemplate][m];
                             if (value && value === index[e]) {
@@ -93,7 +93,7 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
                     }
                 }
             }
-            if (!tabTemp || !index) {
+            if (!tabaccordionTemp || !index) {
                 delete _this.registeredTemplate[registeredTemplate];
             }
         }

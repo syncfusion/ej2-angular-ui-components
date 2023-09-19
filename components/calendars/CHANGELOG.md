@@ -2,58 +2,6 @@
 
 ## [Unreleased]
 
-## 22.2.11 (2023-08-29)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I492075` -  Fixed an issue where the popup in the DateRangePicker Component would not close when clicking outside the component while using the Preset Ranges feature.
-
-## 22.2.10 (2023-08-22)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I489129` -  Fixed an issue where the Daterangepicker popup was not opening properly on iPad devices.
-
-## 22.2.9 (2023-08-15)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I486181` - Fixed an issue where the DateRangePicker popup was not opening when there was not enough space in the window.
-
-## 22.2.8 (2023-08-08)
-
-### TimePicker
-
-#### Features
-
-- `#I480992` - Added support for configuring server time zone settings to the component. The `serverTimezoneOffset` property can now be used to set the pre-bound value based on the time zone provided to the component.
-
-## 21.1.34 (2023-06-21)
-
-### DatePicker
-
-#### Features
-
-- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
-
-### DateRangePicker
-
-#### Features
-
-- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
-
-### DateTimePicker
-
-#### Features
-
-- Added support for full screen calendar in mobile mode with landscape and portrait orientations. Enable the feature by setting fullScreenMode property to true.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
@@ -1268,20 +1216,6 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 22.1.38 (2023-07-11)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I476762` - Resolved the issue with "classes e-filled and e-outline not working for mobile when fullScreenMode is enabled"
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I476762` - Resolved the issue with "classes e-filled and e-outline not working for mobile when fullScreenMode is enabled"
 
 ## 19.3.56 (2021-12-02)
 

@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+## 23.1.36 (2023-09-15)
+
+### Schedule
+
+#### Features
+
+- `#I393657` - Provided on-demand data loading support that allows users to retrieve events from remote services for the current view port alone and retrieve the remaining data on demand while scrolling, which improves the performance and usability of the Scheduler component.
+- `#I397280`, `#I296716`, `#F184285`, `#FB37717` - Provided `virtualScrollStart` and `virtualScrollStop` event support to notify the resource virtual scrolling actions of Scheduler.
+- `#I339243`, `#I365629`, `#F174284` - Provided support to customize the header and footer of editor window.
+
+#### Bug fixes
+
+- `#F184224` - An issue with start and end date query parameters passed incorrectly, when timezone is applied for scheduler has been fixed.
+- `#I499207` - An issue with quick popup not opens on selected cell, when `allowMultiRowSelection` property disabled has been fixed.
+
+## 22.2.12 (2023-09-05)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I492172` - An issue with recurrence exception not calculated based on scheduler timezone has been fixed.
+- `#I490434` - An issue with current time indicator positioned wrongly when header rows is applied in timeline views has been fixed.
+- `#I497178` - An issue with quick popup opens for unselected resource cells has been fixed.
+
 ## 22.2.11 (2023-08-29)
 
 ### Schedule

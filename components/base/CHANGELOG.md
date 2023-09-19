@@ -2,13 +2,16 @@
 
 ## [Unreleased]
 
-## 22.2.5 (2023-07-27)
+## 23.1.36 (2023-09-15)
 
 ### Common
 
 #### Bug Fixes
 
-- `#I473940` - DropdownList Item Template not initially rendered for `OnPush` strategy.
+- `#I486549` - Provided `clearTemplates` support for `Accordion` Component.
+- `#F45098` - Resolved the `Complex Directives` property changes not being applied properly.
+- `#I496453` - Resolved the `Template` binding not working properly in Form Base.
+- `#I473932` - Resolved the `Angular Form` states not working properly for the `OnPush` strategy.
 
 ## 22.1.34 (2023-06-21)
 
