@@ -2,6 +2,25 @@
 
 ## [Unreleased]
 
+## 23.1.38 (2023-09-26)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I479961` - Milestone baseline moves along with the milestone issue has been fixed.
+- `#I501391` - Misalignment in tooltip when connecting predecessor.
+- `#I495216` - Predecessor is not displayed when we give `GUID` issue has been fixed.
+- `#I499587` - Update of custom column in general tab issue has been fixed.
+- `#I184189` - Changing values in the action Begin event does not reflect while rendering issue has been fixed.
+- `#F184629` - Milestone not rendered properly after editing issue has been fixed.
+- `#I492520` - Critical path styling not getting cleared correctly issue has been fixed.
+- `#I502650` - Taskbar dragging and progress resizing while moving the mouse outside chart issue has been fixed.
+- `#I493515` - When we collapse with Virtualization, the styles doesn't apply properly issue has been fixed.
+- `#I486977` - White space issue occur when we close the side pane issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 23.1.36 (2023-09-15)
 
 ### GanttChart
@@ -13,12 +32,15 @@
 - Provided support to export the Gantt component where each rows are auto-fit to the PDF document page width. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/exporting.html).
 - Provided touch interaction support for taskbar resizing, dragging, predecessor connectivity in Gantt chart.
 
+- `#I275966` - Provided lazy loading support in Gantt chart. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/gantt/load-on-demand.html).
+- `#I396039` - Provided baseline support for PDF export in Gantt Chart.
+- Provided support to export the Gantt component where each rows are auto-fit to the PDF document page width. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/gantt/exporting.html).
+- Provided touch interaction support for taskbar resizing, dragging, predecessor connectivity in Gantt chart.
+
 #### Bug Fixes
 
 - `#I492654` - When empty data source pdf export exception thrown issue has been fixed.
 - `#I479578` - Milestone parent is not appearing issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 22.2.12 (2023-09-05)
 

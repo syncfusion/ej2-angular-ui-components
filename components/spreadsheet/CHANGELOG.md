@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 23.1.38 (2023-09-26)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I499291`, `#I496936` - Issue with "`ESC` key and edit mode functionality don't work properly when rendering the spreadsheet inside the dialog" has been resolved.
+
+- `#I496631` - Issue with "`#VALUE` exception throws when performing arithmetic operations with direct boolean values without a cell reference" has been resolved.
+
 ## 23.1.36 (2023-09-15)
 
 ### Spreadsheet
