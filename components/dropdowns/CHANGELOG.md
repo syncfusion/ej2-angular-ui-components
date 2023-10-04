@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.39 (2023-10-04)
+
+### Dropdown Tree
+
+#### Bug fixes
+
+- `#I498924` - Issue with the locale property in the Dropdown Tree component has been resolved.
+
 ## 23.1.38 (2023-09-26)
 
 ### ListBox
