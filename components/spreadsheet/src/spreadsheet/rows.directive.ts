@@ -51,7 +51,7 @@ export class RowDirective extends ComplexBase<RowDirective> {
     /** 
      * Specifies height of the row.
      * @default 20
-     * @asptype int
+     * @asptype double
      */
     public height: any;
     /** 

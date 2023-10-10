@@ -261,3 +261,9 @@ The In-place Editor component is used to edit and update the input value dynamic
 - **Globalization**  - Provides right to left and localization support.
 
 
+## InPlaceEditor
+
+### Bug Fixes
+
+- `#F495335` - Resolved the issue where the "Clear" icon was not initially visible in the `DropDownList` inside the `InplaceEditor` on first `focus`.
+

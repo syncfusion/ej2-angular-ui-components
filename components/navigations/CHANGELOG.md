@@ -4,11 +4,11 @@
 
 ## 23.1.39 (2023-10-04)
 
-### Menu
+### ContextMenu
 
 #### Bug Fixes
 
-- `#F496214` - The issue with "Sub Menu can’t hide while using hideItems method of menu" has been resolved.
+- The issue with "in mobile mode, script error occurred when context menu item is destroyed" has been resolved.
 
 ## 23.1.36 (2023-09-15)
 
