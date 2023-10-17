@@ -261,6 +261,8 @@ The In-place Editor component is used to edit and update the input value dynamic
 - **Globalization**  - Provides right to left and localization support.
 
 
+## 23.1.40 (2023-10-10)
+
 ## InPlaceEditor
 
 ### Bug Fixes

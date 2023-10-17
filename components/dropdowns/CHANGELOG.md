@@ -2,13 +2,27 @@
 
 ## [Unreleased]
 
-## 23.1.40 (2023-10-10)
+## 23.1.41 (2023-10-17)
 
-### Dropdown Tree
+### MultiSelect
 
 #### Bug fixes
 
+- `#I503091` - Resolved a null exception that was thrown when dynamically changing the `groupBy` fields to undefined.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I498409` - Fixed an issue where the preselected `value` was getting cleared when updating the data source.
+- `#I500431` - Fixed issue where the preselected `value` through `index` property was not updated when updating the data source.
+
+### DropDownTree
+
+#### Bug Fixes
+
 - `#I498924` - Issue with the locale property in the Dropdown Tree component has been resolved.
+- `#F184672` - Issue with the `checkAll` and `uncheckAll` status not updated properly has been resolved.
 
 ## 23.1.38 (2023-09-26)
 
@@ -2145,6 +2159,14 @@ DropDownList component contains a list of predefined values from which a single 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 23.1.39 (2023-10-04)
+
+### Dropdown Tree
+
+#### Bug fixes
+
+- `#I498924` - Issue with the locale property in the Dropdown Tree component has been resolved.
 
 ## 19.4.38 (2021-12-17)
 

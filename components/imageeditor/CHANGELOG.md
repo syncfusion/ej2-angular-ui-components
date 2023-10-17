@@ -2,13 +2,23 @@
 
 ## [Unreleased]
 
-## 23.1.40 (2023-10-10)
+## 23.1.41 (2023-10-17)
+
+### ImageEditor
+
+#### Bug Fixes
+
+- `#I505985` - Provide the alert dialog for unsupported files and selecting multiple images in the Image Editor uploader.
+- `#I507638` - Provide the support to hide the uploader toolbar item in the Image Editor.
+
+## 23.1.39 (2023-10-04)
 
 ### ImageEditor
 
 #### Bug Fixes
 
 - `#I495933` - Resolved the GetImageData method does not return values properly in blazor image editor.
+- `#I507638` - Resolved the image not opening in ImageEditor while the image file name has two dots.
 
 ## 23.1.38 (2023-09-26)
 

@@ -2,7 +2,35 @@
 
 ## [Unreleased]
 
+## 23.1.41 (2023-10-17)
+
+### RangeNavigator
+
+- `#I502356` - Fixed the console error that throws when we resize the range navigator.
+
 ## 23.1.40 (2023-10-10)
+
+### Chart
+
+- `#I499384` - Now the chart series is getting focused properly after legend click.
+
+## 23.1.39 (2023-10-04)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I498233` - Now the `binInterval` is properly updating on dynamic change.
+- `#I504772` - Now, limit the zooming level in the chart through the onZooming event.
+- `#I501725` - Subtitle is now rendering properly based on the chart width.
+
+### AccumulationChart
+
+#### Bug Fixes
+
+- `#I503999` - Now, the legend in the shape of a `Cross` renders properly.
+
+## 23.1.38 (2023-09-26)
 
 ### Chart
 

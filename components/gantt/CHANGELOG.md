@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-## 23.1.40 (2023-10-10)
+## 23.1.41 (2023-10-17)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I494495` - Script error occurs when trying to edit after sorting in presence of validation message  issue has been fixed.
+- `#I508721` - Baseline date does not render properly for milestone task issue has been fixed.
+- `#I482456` - Critical path tasks not validated after drag and drop issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 23.1.39 (2023-10-04)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I502041` - Error throw while adding the record issue has been fixed.
+
+## 23.1.38 (2023-09-26)
 
 ### GanttChart
 
@@ -19,7 +39,8 @@
 - `#I493515` - When we collapse with Virtualization, the styles doesn't apply properly issue has been fixed.
 - `#I486977` - White space issue occur when we close the side pane issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I499587` - Update of custom column in general tab issue has been fixed.
+- `#I486977` - White space issue occur when we close the side pane issue has been fixed.
 
 ## 23.1.36 (2023-09-15)
 
