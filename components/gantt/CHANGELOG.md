@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 23.1.42 (2023-10-24)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I510092` - Taskbar not rendered in proper alignment in exported page issue has been fixed.
+- `#I512556` - Background color issue with dependency connector line has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 23.1.41 (2023-10-17)
 
 ### GanttChart
@@ -12,8 +23,6 @@
 - `#I508721` - Baseline date does not render properly for milestone task issue has been fixed.
 - `#I482456` - Critical path tasks not validated after drag and drop issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
-
 ## 23.1.39 (2023-10-04)
 
 ### GanttChart
@@ -21,6 +30,7 @@
 #### Bug Fixes
 
 - `#I502041` - Error throw while adding the record issue has been fixed.
+- `#I493515` - Style is not applied to the second segment issue has been fixed.
 
 ## 23.1.38 (2023-09-26)
 

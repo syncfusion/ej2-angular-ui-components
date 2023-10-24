@@ -95,7 +95,7 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     @Template('No Records Found')
     public noRecordsTemplate: any;
     @ContentChild('actionFailureTemplate')
-    @Template('The Request failed')
+    @Template('The Request Failed')
     public actionFailureTemplate: any;
 
     private skipFromEvent:boolean = true;
