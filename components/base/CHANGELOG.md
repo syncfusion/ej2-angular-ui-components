@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### Common
+
+#### Bug Fixes
+
+- `#I507537`, `#I508879`, `#I505342` - Resolved `chart` loading delays to enhance overall performance.
+
 ## 23.1.38 (2023-09-26)
 
 ### Common

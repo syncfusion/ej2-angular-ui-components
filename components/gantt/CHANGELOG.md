@@ -2,16 +2,30 @@
 
 ## [Unreleased]
 
+## 23.1.43 (2023-10-31)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I493515` - Console error throw while Expand and collapse the parent taskbar issue has been fixed.
+- `#I513655` - Filter menu close as soon as the mouse is up issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 23.1.42 (2023-10-24)
 
 ### GanttChart
 
 #### Bug Fixes
 
+- `#I508297` - Progress tooltip is misaligned after editing issue has been fixed.
+- `#I509023` - Duration changes to zero while giving input as decimal in remote data issue has been fixed.
 - `#I510092` - Taskbar not rendered in proper alignment in exported page issue has been fixed.
 - `#I512556` - Background color issue with dependency connector line has been fixed.
+- `#I502236` - Taskbar drag and drop issue in virtual scroll resource view issue been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I502236` - Taskbar drag and drop issue in virtual scroll resource view issue been fixed.
 
 ## 23.1.41 (2023-10-17)
 
