@@ -2,9 +2,26 @@
 
 ## [Unreleased]
 
+## 23.1.44 (2023-11-07)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+- `#I510408` - Resolved keep para together issue with RTF file.
+- `#I509697` - Resolved script error throws while opening a document.
+- `#I511095` - Resolved the paragraph and table rendering issue on If field condition.
+- `#I510706` - The text is not inserted in proper order on spell check enable mode.
+- `#I513307` - Resolved the SFDT pasting issue in blazor DocumentEditor.
+- `#I508874` - Resolved the script error when export as docx document.
+- `#I511641` - Underline for misspelled word not rendering properly in RTL text.
+- `#I509516` - Resolved the SVG image export and import issue as URL.
+- `#I513724` - Resolved the image rendering for screen tip text while hovering hyperlink.
+- `#I508875` - Resolved the cell content control layout issue in table.
+
 ## 23.1.43 (2023-10-31)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -14,7 +31,7 @@
 
 ## 23.1.42 (2023-10-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -27,7 +44,7 @@
 
 ## 23.1.41 (2023-10-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -38,7 +55,7 @@
 
 ## 23.1.40 (2023-10-10)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -56,7 +73,7 @@
 
 ## 23.1.39 (2023-10-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -76,7 +93,7 @@
 
 ## 23.1.38 (2023-09-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -90,7 +107,7 @@
 
 ## 23.1.36 (2023-09-15)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -102,7 +119,7 @@
 
 ## 22.2.12 (2023-09-05)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -113,7 +130,7 @@
 
 ## 22.2.11 (2023-08-29)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -134,7 +151,7 @@
 
 ## 22.2.10 (2023-08-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -150,7 +167,7 @@
 
 ## 22.2.9 (2023-08-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -163,7 +180,7 @@
 
 ## 22.2.8 (2023-08-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -177,7 +194,7 @@
 
 ## 22.2.7 (2023-08-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -193,7 +210,7 @@
 
 ## 22.2.5 (2023-07-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -207,7 +224,7 @@
 
 ## 22.1.39 (2023-07-18)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -222,7 +239,7 @@
 
 ## 22.1.38 (2023-07-11)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -236,7 +253,7 @@
 
 ## 22.1.37 (2023-07-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -248,7 +265,7 @@
 
 ## 22.1.36 (2023-06-28)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -268,7 +285,7 @@
 
 ## 21.2.10 (2023-06-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -279,7 +296,7 @@
 
 ## 21.2.9 (2023-06-06)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -293,7 +310,7 @@
 
 ## 21.2.8 (2023-05-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -314,7 +331,7 @@
 
 ## 21.2.6 (2023-05-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -334,7 +351,7 @@
 
 ## 21.2.5 (2023-05-16)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -352,7 +369,7 @@
 
 ## 21.2.4 (2023-05-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -363,7 +380,7 @@
 
 ## 21.2.3 (2023-05-03)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -375,7 +392,7 @@
 
 ## 21.1.41 (2023-04-18)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -390,7 +407,7 @@
 
 ## 21.1.39 (2023-04-11)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -416,7 +433,7 @@
 
 ## 21.1.38 (2023-04-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -431,7 +448,7 @@
 
 ## 21.1.37 (2023-03-29)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -443,7 +460,7 @@
 
 ## 21.1.35 (2023-03-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -465,7 +482,7 @@
 
 ## 20.4.54 (2023-03-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -475,7 +492,7 @@
 
 ## 20.4.53 (2023-03-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -485,7 +502,7 @@
 
 ## 20.4.52 (2023-02-28)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -494,7 +511,7 @@
 
 ## 20.4.51 (2023-02-21)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -503,7 +520,7 @@
 
 ## 20.4.50 (2023-02-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -515,7 +532,7 @@
 
 ## 20.4.49 (2023-02-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -526,7 +543,7 @@
 
 ## 20.4.48 (2023-02-01)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -538,7 +555,7 @@
 
 ## 20.4.44 (2023-01-18)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -550,7 +567,7 @@
 
 ## 20.4.43 (2023-01-10)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -559,7 +576,7 @@
 
 ## 20.4.42 (2023-01-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -582,7 +599,7 @@
 
 ## 20.4.40 (2022-12-28)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -592,7 +609,7 @@
 
 ## 20.3.60 (2022-12-06)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -601,7 +618,7 @@
 
 ## 20.3.59 (2022-11-29)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -610,7 +627,7 @@
 
 ## 20.3.58 (2022-11-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -625,7 +642,7 @@
 
 ## 20.3.57 (2022-11-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -639,7 +656,7 @@
 
 ## 20.3.56 (2022-11-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -659,7 +676,7 @@
 
 ## 20.3.52 (2022-10-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -671,7 +688,7 @@
 
 ## 20.3.50 (2022-10-18)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -686,7 +703,7 @@
 
 ## 20.3.49 (2022-10-11)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -701,7 +718,7 @@
 
 ## 20.3.48 (2022-10-05)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -720,7 +737,7 @@
 
 ## 20.3.47 (2022-09-29)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -728,7 +745,7 @@
 
 ## 20.1.52 (2022-05-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -755,7 +772,7 @@
 
 ## 20.1.51 (2022-04-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -768,7 +785,7 @@
 
 ## 20.1.50 (2022-04-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -778,7 +795,7 @@
 
 ## 20.1.48 (2022-04-12)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -802,7 +819,7 @@
 
 ## 20.1.47 (2022-04-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -822,7 +839,7 @@
 
 ## 19.4.56 (2022-03-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -836,7 +853,7 @@
 
 ## 19.4.55 (2022-03-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -858,7 +875,7 @@
 
 ## 19.4.54 (2022-03-01)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -871,7 +888,7 @@
 
 ## 19.4.53 (2022-02-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -888,7 +905,7 @@
 
 ## 19.4.52 (2022-02-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -910,7 +927,7 @@
 
 ## 19.4.50 (2022-02-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -927,7 +944,7 @@
 
 ## 19.4.48 (2022-01-31)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -989,7 +1006,7 @@
 
 ## 19.4.47 (2022-01-25)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1005,7 +1022,7 @@
 
 ## 19.4.43 (2022-01-18)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1033,7 +1050,7 @@
 
 ## 19.4.41 (2022-01-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1050,7 +1067,7 @@
 
 ## 19.4.40 (2021-12-28)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1064,7 +1081,7 @@
 
 ## 19.4.38 (2021-12-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1137,7 +1154,7 @@
 
 ## 19.3.56 (2021-12-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1156,7 +1173,7 @@
 
 ## 19.3.55 (2021-11-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1164,7 +1181,7 @@
 
 ## 19.3.54 (2021-11-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1175,7 +1192,7 @@
 
 ## 19.3.53 (2021-11-12)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1228,7 +1245,7 @@
 
 ## 19.3.48 (2021-11-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1238,7 +1255,7 @@
 
 ## 19.3.47 (2021-10-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1248,7 +1265,7 @@
 
 ## 19.3.46 (2021-10-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1266,7 +1283,7 @@
 
 ## 19.3.45 (2021-10-12)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1287,7 +1304,7 @@
 
 ## 19.3.44 (2021-10-05)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1310,7 +1327,7 @@
 
 ## 19.3.43 (2021-09-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -1388,7 +1405,7 @@
 
 ## 19.2.62 (2021-09-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1397,7 +1414,7 @@
 
 ## 19.2.60 (2021-09-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1408,7 +1425,7 @@
 
 ## 19.2.59 (2021-08-31)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1420,7 +1437,7 @@
 
 ## 19.2.57 (2021-08-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1437,7 +1454,7 @@
 
 ## 19.2.56 (2021-08-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1447,7 +1464,7 @@
 
 ## 19.2.55 (2021-08-11)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -1487,7 +1504,7 @@
 
 ## 19.2.49 (2021-07-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1500,7 +1517,7 @@
 
 ## 19.2.48 (2021-07-20)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1511,7 +1528,7 @@
 
 ## 19.2.47 (2021-07-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1530,7 +1547,7 @@
 
 ## 19.2.46 (2021-07-06)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1548,7 +1565,7 @@
 
 ## 19.2.44 (2021-06-30)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -1680,7 +1697,7 @@
 
 ## 19.1.69 (2021-06-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1694,7 +1711,7 @@
 
 ## 19.1.67 (2021-06-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1708,7 +1725,7 @@
 
 ## 19.1.66 (2021-06-01)
 
-### Document Editor
+### DocumentEditor
 
 - `#I326144` - Resolved the issue with multi line track changes.
 - `#I328063` - Document with checkbox form field applied with to character format is now opened properly.
@@ -1719,7 +1736,7 @@
 
 ## 19.1.65 (2021-05-25)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1737,7 +1754,7 @@
 
 ## 19.1.64 (2021-05-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1752,7 +1769,7 @@
 
 ## 19.1.63 (2021-05-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1776,7 +1793,7 @@
 
 ## 19.1.59 (2021-05-04)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -1801,7 +1818,7 @@
 
 ## 19.1.58 (2021-04-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1819,7 +1836,7 @@
 
 ## 19.1.57 (2021-04-20)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1846,7 +1863,7 @@
 
 ## 19.1.56 (2021-04-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1873,7 +1890,7 @@
 
 ## 19.1.55 (2021-04-06)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1893,7 +1910,7 @@
 
 ## 19.1.54 (2021-03-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -1914,7 +1931,7 @@
 
 ## 18.4.49 (2021-03-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1927,7 +1944,7 @@
 
 ## 18.4.48 (2021-03-16)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1941,7 +1958,7 @@
 
 ## 18.4.47 (2021-03-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -1962,7 +1979,7 @@
 
 ## 18.4.46 (2021-03-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1975,7 +1992,7 @@
 
 ## 18.4.44 (2021-02-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -1990,7 +2007,7 @@
 
 ## 18.4.43 (2021-02-16)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2003,7 +2020,7 @@
 
 ## 18.4.42 (2021-02-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2018,7 +2035,7 @@
 
 ## 18.4.41 (2021-02-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2034,7 +2051,7 @@
 
 ## 18.4.35 (2021-01-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2047,7 +2064,7 @@
 
 ## 18.4.34 (2021-01-12)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2063,7 +2080,7 @@
 
 ## 18.4.33 (2021-01-05)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2072,7 +2089,7 @@
 
 ## 18.4.32 (2020-12-29)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2082,7 +2099,7 @@
 
 ## 18.4.31 (2020-12-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2096,7 +2113,7 @@
 
 ## 18.4.30 (2020-12-17)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2104,7 +2121,7 @@
 
 ## 18.3.53 (2020-12-08)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2114,7 +2131,7 @@
 
 ## 18.3.52 (2020-12-01)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2124,7 +2141,7 @@
 
 ## 18.3.51 (2020-11-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2138,7 +2155,7 @@
 
 ## 18.3.50 (2020-11-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2147,7 +2164,7 @@
 
 ## 18.3.48 (2020-11-11)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2156,7 +2173,7 @@
 
 ## 18.3.47 (2020-11-05)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2191,7 +2208,7 @@
 
 ## 18.3.44 (2020-10-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2204,7 +2221,7 @@
 
 ## 18.3.42 (2020-10-20)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2224,7 +2241,7 @@
 
 ## 18.3.40 (2020-10-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2240,7 +2257,7 @@
 
 ## 18.3.35 (2020-10-01)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2312,7 +2329,7 @@
 
 ## 18.2.58 (2020-09-15)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2330,7 +2347,7 @@
 
 ## 18.2.57 (2020-09-08)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2355,7 +2372,7 @@
 
 ## 18.2.55 (2020-08-25)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2370,7 +2387,7 @@
 
 ## 18.2.54 (2020-08-18)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2411,7 +2428,7 @@
 
 ## 18.2.47 (2020-07-28)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2424,7 +2441,7 @@
 
 ## 18.2.46 (2020-07-21)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2441,7 +2458,7 @@
 
 ## 18.2.45 (2020-07-14)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2457,7 +2474,7 @@
 
 ## 18.2.44 (2020-07-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -2546,7 +2563,7 @@
 
 ## 18.1.56 (2020-06-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2561,7 +2578,7 @@
 
 ## 18.1.55 (2020-06-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2575,7 +2592,7 @@
 
 ## 18.1.54 (2020-05-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2590,7 +2607,7 @@
 
 ## 18.1.53 (2020-05-19)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2607,7 +2624,7 @@
 
 ## 18.1.52 (2020-05-13)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2620,7 +2637,7 @@
 
 ## 18.1.48 (2020-05-05)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2635,7 +2652,7 @@
 
 ## 18.1.46 (2020-04-28)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2654,7 +2671,7 @@
 
 ## 18.1.45 (2020-04-21)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2665,7 +2682,7 @@
 
 ## 18.1.44 (2020-04-14)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2681,7 +2698,7 @@
 
 ## 18.1.43 (2020-04-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2696,7 +2713,7 @@
 
 ## 18.1.42 (2020-04-01)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -2827,7 +2844,7 @@
 
 ## 18.1.36-beta (2020-03-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -2950,7 +2967,7 @@
 
 ## 17.4.55 (2020-03-10)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2967,7 +2984,7 @@
 
 ## 17.4.51 (2020-02-25)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -2979,7 +2996,7 @@
 
 ## 17.4.50 (2020-02-18)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -2991,7 +3008,7 @@
 
 ## 17.4.49 (2020-02-11)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3007,7 +3024,7 @@
 
 ## 17.4.47 (2020-02-05)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3023,7 +3040,7 @@
 
 ## 17.4.46 (2020-01-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -3038,7 +3055,7 @@
 
 ## 17.4.43 (2020-01-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3052,7 +3069,7 @@
 
 ## 17.4.41 (2020-01-07)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3072,7 +3089,7 @@
 
 ## 17.4.40 (2019-12-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -3144,7 +3161,7 @@
 
 ## 17.4.39 (2019-12-17)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3156,7 +3173,7 @@
 
 ## 17.3.29 (2019-11-26)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3169,7 +3186,7 @@
 
 ## 17.3.28 (2019-11-19)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3186,7 +3203,7 @@
 
 ## 17.3.27 (2019-11-12)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3202,7 +3219,7 @@
 
 ## 17.3.26 (2019-11-05)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3218,7 +3235,7 @@
 
 ## 17.3.21 (2019-10-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3229,7 +3246,7 @@
 
 ## 17.3.19 (2019-10-22)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3244,7 +3261,7 @@
 
 ## 17.3.17 (2019-10-15)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3260,7 +3277,7 @@
 
 ## 17.3.16 (2019-10-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3273,7 +3290,7 @@
 
 ## 17.3.14 (2019-10-03)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3301,7 +3318,7 @@
 
 ## 17.3.9-beta (2019-09-20)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3310,7 +3327,7 @@
 
 ## 17.2.49 (2019-09-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3323,7 +3340,7 @@
 
 ## 17.2.47 (2019-08-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3333,7 +3350,7 @@
 
 ## 17.2.41 (2019-08-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3346,7 +3363,7 @@
 
 ## 17.2.40 (2019-08-06)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3357,7 +3374,7 @@
 
 ## 17.2.39 (2019-07-30)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3370,7 +3387,7 @@
 
 ## 17.2.36 (2019-07-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3380,7 +3397,7 @@
 
 ## 17.2.35 (2019-07-17)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3392,7 +3409,7 @@
 
 ## 17.2.34 (2019-07-11)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -3407,7 +3424,7 @@
 
 ## 17.2.28-beta (2019-06-27)
 
-### Document Editor
+### DocumentEditor
 
 #### Breaking Changes
 
@@ -3433,7 +3450,7 @@
 
 ## 17.1.50 (2019-06-04)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3442,7 +3459,7 @@
 
 ## 17.1.49 (2019-05-29)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3450,7 +3467,7 @@
 
 ## 17.1.48 (2019-05-21)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3466,7 +3483,7 @@
 
 ## 17.1.47 (2019-05-14)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3479,7 +3496,7 @@
 
 ## 17.1.44 (2019-05-07)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3487,7 +3504,7 @@
 
 ## 17.1.43 (2019-04-30)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3495,7 +3512,7 @@
 
 ## 17.1.42 (2019-04-23)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3503,7 +3520,7 @@
 
 ## 17.1.41 (2019-04-16)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3513,7 +3530,7 @@
 
 ## 17.1.40 (2019-04-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3524,7 +3541,7 @@
 
 ## 17.1.38 (2019-03-29)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3538,7 +3555,7 @@
 
 ## 17.1.32-beta (2019-03-13)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3552,7 +3569,7 @@
 
 ## 16.4.54 (2019-02-19)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3560,7 +3577,7 @@
 
 ## 16.4.53 (2019-02-13)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3570,7 +3587,7 @@
 
 ## 16.4.48 (2019-01-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3578,7 +3595,7 @@
 
 ## 16.4.46 (2019-01-08)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3586,7 +3603,7 @@
 
 ## 16.4.45 (2019-01-02)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3594,7 +3611,7 @@
 
 ## 16.4.44 (2018-12-24)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3604,7 +3621,7 @@
 
 ## 16.4.40-beta (2018-12-10)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3614,7 +3631,7 @@
 
 ## 16.3.33 (2018-11-20)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3622,7 +3639,7 @@
 
 ## 16.3.29 (2018-10-31)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3634,7 +3651,7 @@
 
 ## 16.3.24 (2018-10-09)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3642,7 +3659,7 @@
 
 ## 16.3.23 (2018-10-03)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3650,7 +3667,7 @@
 
 ## 16.3.21 (2018-09-22)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3658,7 +3675,7 @@
 
 ## 16.3.17 (2018-09-12)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3667,7 +3684,7 @@
 
 ## 16.2.48 (2018-08-14)
 
-### Document Editor
+### DocumentEditor
 
 #### Bug Fixes
 
@@ -3678,7 +3695,7 @@
 
 ## 16.2.46 (2018-07-30)
 
-### Document Editor
+### DocumentEditor
 
 #### New Features
 
@@ -3686,7 +3703,7 @@
 
 ## 16.2.41 (2018-06-25)
 
-### Document Editor
+### DocumentEditor
 
 The Document Editor component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 

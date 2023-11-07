@@ -2,6 +2,29 @@
 
 ## [Unreleased]
 
+## 23.1.44 (2023-11-07)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I512609` - Issue with "aria-label is updated as undefined while changing the cell value using `updateCell` method" has been resolved.
+
+- `#I507482` - Issue with "unable to insert a new column before the column that contains the UNIQUE formula" has been resolved.
+- `#I510227` - Issue with "X-axis is not plotting with numerical values when rendering scatter charts" has been resolved.
+- `#I513432` - Issue with "filter type displayed as text filter for number based column while importing the excel file" has been resolved.
+- `#I515640` - Issue with "unprotect sheet dialog shows while importing a protected excel file with an empty password" has been resolved.
+
+## 23.1.42 (2023-10-24)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I509149` - Issue with "row model is not properly updated when the sheet model is constructed with the range property and provided as an argument to the `insertSheet` method for new sheet creation" has been resolved.
+
+- `#I506936` - Issue with "formula reference selection is not working properly while selecting a cell range using Shift+Down arrow keys" has been resolved.
+
 ## 23.1.38 (2023-09-26)
 
 ### Spreadsheet
@@ -1302,6 +1325,16 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 23.1.41 (2023-10-17)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I507814` - Issue with "list validation popup is wrongly positioned in the top-left corner of the spreadsheet when entering incorrect data in the data validation applied cells" has been resolved.
+- `#I507969` - Issue with "cell value is not updated properly while typing the value on the dynamic template rendering cell range" has been resolved.
+- `#I849789` - Issue with "IF formula returns the wrong result while performing an arithmetic operation with NOW formula inside the IF formula" has been resolved.
 
 ## 21.2.9 (2023-06-06)
 

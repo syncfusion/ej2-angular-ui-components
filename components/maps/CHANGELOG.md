@@ -11,7 +11,15 @@
 
 ## [Unreleased]
 
-## 23.1.43 (2023-10-31)
+## 23.1.42 (2023-10-24)
+
+### Maps
+
+#### Bug Fixes
+
+- `#I511944` - When the marker template is clicked, the `markerClick` event will now work properly.
+
+## 23.1.40 (2023-10-10)
 
 ### Maps
 
