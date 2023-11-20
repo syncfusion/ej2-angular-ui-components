@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 23.1.44 (2023-11-07)
+## 23.2.4 (2023-11-20)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#F519481` - Issue with "Aria-Label Attribute Not Supported on Span Without Valid Role" has been resolved.
+
+## 23.1.41 (2023-10-17)
 
 ### DateRangePicker
 

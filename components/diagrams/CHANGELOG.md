@@ -2,6 +2,43 @@
 
 ## [Unreleased]
 
+## 23.2.4 (2023-11-20)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I499552` - Now, fit to page is working properly when current zoom is less than min-zoom.
+- `#F185082` - Now, the transparent fill is applied properly for swimlane lanes.
+- `#I513170` - The exception will no longer be thrown during the dragging of connector segments.
+
+## 23.1.44 (2023-11-07)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I508486` - Now, user-handle template is rendered properly after save and load.
+
+## 23.1.43 (2023-10-31)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I506971` - Now, Overview with html node is updated properly when we zoom-out the diagram.
+- `#I505963` - Now, Exception occurs due to line routing constraints enabled is resolved.
+
+## 23.1.42 (2023-10-24)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I503100` - Now, Property Change Event triggers while Z-index value get changed.
+- `#F184671` - Now, the overview updated properly after loading the diagram.
+- `#I502515` – Now, the connector overlapping is resolved when enable routing is set to true.
+
 ## 23.1.40 (2023-10-10)
 
 ### Diagram

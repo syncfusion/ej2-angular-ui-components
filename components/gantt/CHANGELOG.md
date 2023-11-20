@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
+## 23.2.4 (2023-11-20)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I517359` - Columns does not update while changing columns value by Gantt instance issue has been fixed.
+- `#I514463` - PDF exported with blank pages and dislocated connected lines issue has been fixed.
+- `#I514452` - Baseline does not render by changing date issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 23.1.44 (2023-11-07)
+
+### GanttChart
+
+- `#I513332` - Excel filter only takes one character at a time issue has been fixed.
+- `#I517515` - Custom toolbar template not renders after toolbar click action in Gantt issue has been fixed.
+
+#### Bug Fixes
+
+## 23.1.43 (2023-10-31)
 
 ### GanttChart
 
@@ -10,8 +31,6 @@
 
 - `#I493515` - Console error throw while Expand and collapse the parent taskbar issue has been fixed.
 - `#I513655` - Filter menu close as soon as the mouse is up issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 23.1.42 (2023-10-24)
 
