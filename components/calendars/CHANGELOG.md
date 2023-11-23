@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 23.2.4 (2023-11-20)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#F519481` - Issue with "Aria-Label Attribute Not Supported on Span Without Valid Role" has been resolved.
-
 ## 23.1.41 (2023-10-17)
 
 ### DateRangePicker
@@ -1238,6 +1230,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 23.2.4 (2023-11-20)
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#F519481` - Issue with "Aria-Label Attribute Not Supported on Span Without Valid Role" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.2.5 (2023-11-23)
+
+### Common
+
+#### Bug Fixes
+
+- Resolved component's compilation issue.
+
 ## 23.1.43 (2023-10-31)
 
 ### Common

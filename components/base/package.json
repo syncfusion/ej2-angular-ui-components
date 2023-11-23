@@ -35,7 +35,7 @@
 		"@angular/router": "2.2.1 - 4.10.0",
 		"@types/chai": "^3.4.28",
 		"@types/core-js": "0.9.39",
-		"@types/jasmine": "^2.2.29",
+		"@types/jasmine": "2.8.22",
 		"@types/jasmine-ajax": "^3.1.27",
 		"@types/node": "^6.0.46",
 		"@types/requirejs": "^2.1.26",

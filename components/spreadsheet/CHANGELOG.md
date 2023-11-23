@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 23.2.5 (2023-11-23)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I515390` - Issue with "an exception occurs on new row insertion when a sheet contains a formula that uses the entire column as the formula range" has been resolved.
+
 ## 23.1.44 (2023-11-07)
 
 ### Spreadsheet
