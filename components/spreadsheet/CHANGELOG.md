@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 23.2.5 (2023-11-23)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- `#I515390` - Issue with "an exception occurs on new row insertion when a sheet contains a formula that uses the entire column as the formula range" has been resolved.
-
 ## 23.1.44 (2023-11-07)
 
 ### Spreadsheet
@@ -1333,6 +1325,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 23.2.5 (2023-11-23)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- `#I515390` - Issue with "an exception occurs on new row insertion when a sheet contains a formula that uses the entire column as the formula range" has been resolved.
 
 ## 23.1.41 (2023-10-17)
 
