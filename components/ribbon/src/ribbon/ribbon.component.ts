@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { RibbonTabsDirective } from './tabs.directive';
 
 export const inputs: string[] = ['activeLayout','backStageMenu','cssClass','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','hideLayoutSwitcher','isMinimized','launcherIconCss','locale','selectedTab','tabAnimation','tabs','width'];
-export const outputs: string[] = ['created','launcherIconClick','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
+export const outputs: string[] = ['created','launcherIconClick','overflowPopupClose','overflowPopupOpen','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
 export const twoWays: string[] = [''];
 
 /**
@@ -30,6 +30,8 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
     public tagObjects: any;
 	created: any;
 	launcherIconClick: any;
+	overflowPopupClose: any;
+	overflowPopupOpen: any;
 	ribbonCollapsing: any;
 	ribbonExpanding: any;
 	tabSelected: any;

@@ -2,7 +2,20 @@
 
 ## [Unreleased]
 
-## 23.2.6 (2023-11-28)
+## 23.2.7 (2023-12-05)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I525741` - Timeline rendered wrongly when changing the timeline from Fit to view to other view issue has been fixed.
+- `#I522431` - Parent task duration not update while child task date is edited issue has been fixed.
+- `#I520506` - Switching from yearly to quarterly view gives white space issue has been fixed.
+- `#I521365` - Dates in tooltip not rendered correctly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 23.2.5 (2023-11-23)
 
 ### GanttChart
 
@@ -12,8 +25,11 @@
 - `#I515425` - Issue with observable data binding in Gantt chart issue has been fixed.
 - `#I520146` - Timeline render in advance the project start date while resizing taskbar issue has been fixed.
 - `#I521906` - Milestone not working properly while drop at weekend issue has been fixed.
+- `#I516954` - Dependency line not render after adding child record issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I515425` - Issue with observable data binding in Gantt chart issue has been fixed.
+- `#I521906` - Milestone not working properly while drop at weekend issue has been fixed.
+- `#I516954` - Dependency line not render after adding child record issue has been fixed.
 
 ## 23.2.4 (2023-11-20)
 

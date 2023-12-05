@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+## 23.2.7 (2023-12-05)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I518299` - Fixed console error that occurred when adding an item using the addItem method.
+
+## 23.2.6 (2023-11-28)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I519795` - Fixed an issue where the `BeforeOpenEvent` was triggered twice when the open event was Cancelled.
+- `#I520598` - Resolved issue where the equal to operator on `props.dataSource` in the `updateDataSource` function would always evaluate to false when it was an empty array.
+
+## 23.2.5 (2023-11-23)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I519427` - Fixed a popup positioning issue that occurred when filtering.
+
 ## 23.2.4 (2023-11-20)
 
 ### ListBox
