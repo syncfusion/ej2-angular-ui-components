@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'type', 'value', 'width'];
+let input: string[] = ['animationDuration', 'border', 'color', 'description', 'enableDrag', 'height', 'imageUrl', 'linearGradient', 'markerType', 'offset', 'opacity', 'placement', 'position', 'radialGradient', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value', 'width'];
 let outputs: string[] = [];
 /**
  * Represents the directive to render and customize the pointers in an axis of linear gauge.
@@ -104,6 +104,15 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default 10
      */
     public roundedCornerRadius: any;
+    /** 
+     * Specifies the text that will be displayed as the pointer in Linear Gauge. To display the text pointer, the `markerType` property must be set to `Text`.
+     * @default ''
+     */
+    public text: any;
+    /** 
+     * Defines the font properties such as font-size, font family and others for the text pointer.
+     */
+    public textStyle: any;
     /** 
      * Sets and gets the value of the pointer in axis.
      * @default null

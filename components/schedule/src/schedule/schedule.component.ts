@@ -5,8 +5,9 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ViewsDirective } from './views.directive';
 import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
+import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','views','weekRule','width','workDays','workHours'];
+export const inputs: string[] = ['agendaDaysCount','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','toolbarItems','views','weekRule','width','workDays','workHours'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventDoubleClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','virtualScrollStart','virtualScrollStop','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
@@ -25,7 +26,8 @@ export const twoWays: string[] = ['currentView', 'selectedDate'];
     queries: {
         childViews: new ContentChild(ViewsDirective), 
         childResources: new ContentChild(ResourcesDirective), 
-        childHeaderRows: new ContentChild(HeaderRowsDirective)
+        childHeaderRows: new ContentChild(HeaderRowsDirective), 
+        childToolbarItems: new ContentChild(ToolbarItemsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
@@ -64,7 +66,8 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
     public childViews: QueryList<ViewsDirective>;
     public childResources: QueryList<ResourcesDirective>;
     public childHeaderRows: QueryList<HeaderRowsDirective>;
-    public tags: string[] = ['views', 'resources', 'headerRows'];
+    public childToolbarItems: QueryList<ToolbarItemsDirective>;
+    public tags: string[] = ['views', 'resources', 'headerRows', 'toolbarItems'];
     /** 
      * It accepts either the string or HTMLElement as template design content and parse it appropriately before displaying it onto 
      * the date header cells. The field that can be accessed via this template is `date`.
@@ -384,6 +387,10 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
         
 	    if (this.childHeaderRows) {
             this.tagObjects[2].instance = this.childHeaderRows;
+        }
+        
+	    if (this.childToolbarItems) {
+            this.tagObjects[3].instance = this.childToolbarItems;
         }
         this.context.ngAfterContentChecked(this);
     }

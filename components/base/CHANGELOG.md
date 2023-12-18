@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.41 (2023-12-18)
+
+### Common
+
+#### Bug Fixes
+
+- The Angular package size is minimised by removing redundant styles.
+
 ## 23.2.5 (2023-11-23)
 
 ### Common

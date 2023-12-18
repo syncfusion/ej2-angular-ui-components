@@ -124,7 +124,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public columnSpacing: any;
     /** 
-     * To render the column series points with particular column width. If the series type is histogram the 
+     * Render the column series points with a particular column width. If the series type is histogram the 
      * default value is 1 otherwise 0.7.
      * @default null
      * @aspdefaultvalueignore 
@@ -152,7 +152,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public dashArray: any;
     /** 
-     * Specifies the DataSource for the series. It can be an array of JSON objects or an instance of DataManager. 
+     * Specifies the data source for the series. It can be an array of JSON objects or an instance of DataManager. 
      * 
      * @default ''
      */
@@ -191,7 +191,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public enableSolidCandles: any;
     /** 
-     * If set true, the Tooltip for series will be visible.
+     * Enable tooltip for the chart series.
      * @default true
      */
     public enableTooltip: any;
@@ -200,7 +200,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public errorBar: any;
     /** 
-     * The fill color for the series that accepts value in hex and rgba as a valid CSS color string. 
+     * The fill color for the series, which can accept values in hex or rgba as a valid CSS color string. 
      * It also represents the color of the signal lines in technical indicators. 
      * For technical indicators, the default value is 'blue' and for series, it has null.
      * @default null
@@ -235,7 +235,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public legendImageUrl: any;
     /** 
-     * The shape of the legend. Each series has its own legend shape. They are, 
+     * The shape of the legend. Each series has its own legend shape, which can be one of the following: 
      * * Circle 
      * * Rectangle 
      * * Triangle 
@@ -271,7 +271,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public minRadius: any;
     /** 
-     * The name of the series visible in legend.
+     * The name of the series as displayed in the legend.
      * @default ''
      */
     public name: any;
@@ -301,13 +301,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public paretoOptions: any;
     /** 
-     * The DataSource field that contains the color value of point 
-     * It is applicable for series
+     * The DataSource field that contains the color value of point. 
+     * It is applicable for series.
      * @default ''
      */
     public pointColorMapping: any;
     /** 
-     * Specifies query to select data from DataSource. This property is applicable only when the DataSource is `ej.DataManager`.
+     * Specifies a query to select data from the DataSource. This property is applicable only when the DataSource is an `ej.DataManager`.
      * @default ''
      */
     public query: any;
@@ -371,12 +371,12 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public summaryFillColor: any;
     /** 
-     * user can format now each series tooltip format separately.
+     * Format of the tooltip content.
      * @default ''
      */
     public tooltipFormat: any;
     /** 
-     * The provided value will be considered as a Tooltip name
+     * The data source field that contains the tooltip value.
      * @default ''
      */
     public tooltipMappingName: any;
@@ -390,7 +390,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public unSelectedStyle: any;
     /** 
-     * Specifies the visibility of series.
+     * Specifies the visibility of the series.
      * @default true
      */
     public visible: any;

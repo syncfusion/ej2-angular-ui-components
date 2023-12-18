@@ -7,4 +7,4 @@ export {LayerDirective,LayersDirective} from './layers.directive';
 export {AnnotationDirective,AnnotationsDirective} from './annotations.directive';
 export { MapsComponent} from './maps.component';
 export { MapsModule } from './maps.module';
-export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService } from './maps-all.module';
+export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService, PolygonService } from './maps-all.module';

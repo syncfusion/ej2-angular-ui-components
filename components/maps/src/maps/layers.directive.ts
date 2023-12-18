@@ -6,7 +6,7 @@ import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'polygonSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Represents the directive to define the layer of the maps.
@@ -108,6 +108,11 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * Gets or sets the options for customizing the navigation lines in maps.
      */
     public navigationLineSettings: any;
+    /** 
+     * Gets or sets the properties of the polygon shapes that will be rendered on a map layer. 
+     * The selection and highlight settings for polygon shapes can also be defined.
+     */
+    public polygonSettings: any;
     /** 
      * Gets or sets the query to select particular data from the layer data source. 
      * This property is applicable only when the data source is created by data manager.

@@ -1,6 +1,6 @@
-# Angular File Manager Component
+# Angular FileManager Component
 
-The [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm) component is a graphical user interface that allows users to manage their file system in an intuitive and efficient manner. With this component, you can easily access, edit, upload, download, and organize files and folders. It also offers a convenient way to browse and select items from the file system.
+The [Angular FileManager](https://www.syncfusion.com/angular-components/angular-file-manager?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm) component is a graphical user interface that allows users to manage their file system in an intuitive and efficient manner. With this component, you can easily access, edit, upload, download, and organize files and folders. It also offers a convenient way to browse and select items from the file system.
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm">Getting Started</a> .
@@ -34,9 +34,9 @@ ng new my-app
 cd my-app
 ```
 
-### Adding Syncfusion File Manager package
+### Adding Syncfusion FileManager package
 
-All Syncfusion Angular packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install Angular File Manager package, use the following command.
+All Syncfusion Angular packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install Angular FileManager package, use the following command.
 
 ```bash
 ng add @syncfusion/ej2-angular-filemanager
@@ -48,20 +48,20 @@ The above command does the below configuration to your Angular app.
 * Import the `FileManagerModule` in your application module `app.module.ts`.
 * Register the Syncfusion UI Default theme in the `angular.json` file.
 
-This makes it easy to add the Syncfusion Angular File Manager module to your project and start using it in your application.
+This makes it easy to add the Syncfusion Angular FileManager module to your project and start using it in your application.
 
-### Add Angular File Manager component
+### Add Angular FileManager component
 
-In src/app/app.component.ts, use `<ejs-filemanager>` selector in `template` attribute of  `@Component` directive to render the Syncfusion Angular File Manager component.
+In src/app/app.component.ts, use `<ejs-filemanager>` selector in `template` attribute of  `@Component` directive to render the Syncfusion Angular FileManager component.
 
-Add the File Manager component snippet in **app.component.html** as follows.
+Add the FileManager component snippet in **app.component.html** as follows.
 
 ```html
 <ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
 </ejs-filemanager>
 ```
 
-Refer the File Manager component snippet in **app.component.ts** as follows.
+Refer the FileManager component snippet in **app.component.ts** as follows.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -80,7 +80,7 @@ url: this.hostUrl + 'api/FileManager/FileOperations'
 
 ## Supported frameworks
 
-The File Manager component is also offered in following list of frameworks,
+The FileManager component is also offered in following list of frameworks,
 
 | [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/react.svg"  height="50" />](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[React](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |

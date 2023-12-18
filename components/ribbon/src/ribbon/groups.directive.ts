@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { RibbonCollectionsDirective } from './collections.directive';
 
-let input: string[] = ['collections', 'cssClass', 'enableGroupOverflow', 'groupIconCss', 'header', 'id', 'isCollapsed', 'isCollapsible', 'orientation', 'priority', 'showLauncherIcon'];
+let input: string[] = ['collections', 'cssClass', 'enableGroupOverflow', 'groupIconCss', 'header', 'id', 'isCollapsed', 'isCollapsible', 'orientation', 'overflowHeader', 'priority', 'showLauncherIcon'];
 let outputs: string[] = [];
 /**
  * `e-ribbon-group` directive represent a group in the Angular Ribbon. 
@@ -84,6 +84,11 @@ export class RibbonGroupDirective extends ComplexBase<RibbonGroupDirective> {
      * @asptype ItemOrientation
      */
     public orientation: any;
+    /** 
+     * Defines the header shown in overflow popup of Ribbon group.
+     * @default ''
+     */
+    public overflowHeader: any;
     /** 
      * Defines the priority order at which the group should be collapsed or expanded. 
      * For collapsing value is fetched in ascending order and for expanding value is fetched in descending order.

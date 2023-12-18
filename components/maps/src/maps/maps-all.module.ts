@@ -9,7 +9,7 @@ import { LayerDirective, LayersDirective } from './layers.directive';
 import { AnnotationDirective, AnnotationsDirective } from './annotations.directive';
 import { MapsComponent } from './maps.component';
 import { MapsModule } from './maps.module';
-import {Bubble, Legend, Marker, Highlight, Selection, MapsTooltip, Zoom, DataLabel, NavigationLine, Annotations, Print, PdfExport, ImageExport} from '@syncfusion/ej2-maps'
+import {Bubble, Legend, Marker, Highlight, Selection, MapsTooltip, Zoom, DataLabel, NavigationLine, Annotations, Print, PdfExport, ImageExport, Polygon} from '@syncfusion/ej2-maps'
 
 
 export const BubbleService: ValueProvider = { provide: 'MapsBubble', useValue: Bubble};
@@ -25,6 +25,7 @@ export const AnnotationsService: ValueProvider = { provide: 'MapsAnnotations', u
 export const PrintService: ValueProvider = { provide: 'MapsPrint', useValue: Print};
 export const PdfExportService: ValueProvider = { provide: 'MapsPdfExport', useValue: PdfExport};
 export const ImageExportService: ValueProvider = { provide: 'MapsImageExport', useValue: ImageExport};
+export const PolygonService: ValueProvider = { provide: 'MapsPolygon', useValue: Polygon};
 
 /**
  * NgModule definition for the Maps component with providers.
@@ -47,7 +48,8 @@ export const ImageExportService: ValueProvider = { provide: 'MapsImageExport', u
         AnnotationsService,
         PrintService,
         PdfExportService,
-        ImageExportService
+        ImageExportService,
+        PolygonService
     ]
 })
 export class MapsAllModule { }

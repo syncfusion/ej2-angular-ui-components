@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 
 
 export const inputs: string[] = ['animation','checkBoxPosition','cssClass','dataSource','enable','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','fields','groupTemplate','headerTemplate','headerTitle','height','htmlAttributes','locale','query','showCheckBox','showHeader','showIcon','sortOrder','template','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','select'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','scroll','select'];
 export const twoWays: string[] = [''];
 
 /**
@@ -31,6 +31,7 @@ export class ListViewComponent extends ListView implements IComponentBase {
 	actionBegin: any;
 	actionComplete: any;
 	actionFailure: any;
+	scroll: any;
 	public select: any;
 
 

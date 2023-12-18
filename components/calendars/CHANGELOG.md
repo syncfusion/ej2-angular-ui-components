@@ -2,28 +2,6 @@
 
 ## [Unreleased]
 
-## 23.2.6 (2023-11-28)
-
-### Calendar
-
-#### Bug Fixes
-
-- `#I521911` - Fixed an issue where an exception was occurring when changing the culture dynamically.
-
-## 23.1.41 (2023-10-17)
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I506617` - Fixed issue where the previous and next icons were displaying incorrectly in the Fluent Theme.
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I504425` - Fixed an issue where typing "pm" and then focusing out would convert the "pm" extension to "am". This issue has been resolved.
-
 ## 19.3.46 (2021-10-19)
 
 ### TimePicker
@@ -1238,14 +1216,6 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
-
-## 23.2.4 (2023-11-20)
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#F519481` - Issue with "Aria-Label Attribute Not Supported on Span Without Valid Role" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 

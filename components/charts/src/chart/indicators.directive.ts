@@ -62,7 +62,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public dashArray: any;
     /** 
-     * Specifies the DataSource for the series. It can be an array of JSON objects or an instance of DataManager. 
+     * Specifies the data source for the series. It can be an array of JSON objects or an instance of DataManager. 
      * 
      * @default ''
      */
@@ -83,7 +83,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public field: any;
     /** 
-     * The fill color for the series that accepts value in hex and rgba as a valid CSS color string. 
+     * The fill color for the series, which can accept values in hex or rgba as a valid CSS color string. 
      * It also represents the color of the signal lines in technical indicators. 
      * For technical indicators, the default value is 'blue' and for series, it has null.
      * @default null
@@ -156,13 +156,13 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public periodLine: any;
     /** 
-     * The DataSource field that contains the color value of point 
-     * It is applicable for series
+     * The DataSource field that contains the color value of point. 
+     * It is applicable for series.
      * @default ''
      */
     public pointColorMapping: any;
     /** 
-     * Specifies query to select data from DataSource. This property is applicable only when the DataSource is `ej.DataManager`.
+     * Specifies a query to select data from the DataSource. This property is applicable only when the DataSource is an `ej.DataManager`.
      * @default ''
      */
     public query: any;
@@ -199,7 +199,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public upperLine: any;
     /** 
-     * Specifies the visibility of series.
+     * Specifies the visibility of the series.
      * @default true
      */
     public visible: any;

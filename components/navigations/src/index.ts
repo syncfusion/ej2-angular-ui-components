@@ -34,4 +34,8 @@ export { MenuAllModule } from './menu/menu-all.module';
 export { AppBarComponent} from './appbar/appbar.component';
 export { AppBarModule } from './appbar/appbar.module';
 export { AppBarAllModule } from './appbar/appbar-all.module';
+export {StepDirective,StepsDirective} from './stepper/steps.directive';
+export { StepperComponent} from './stepper/stepper.component';
+export { StepperModule } from './stepper/stepper.module';
+export { StepperAllModule } from './stepper/stepper-all.module';
 export * from '@syncfusion/ej2-navigations';

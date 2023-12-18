@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 23.2.5 (2023-11-23)
-
-### In-place Editor
-
-#### Bug Fixes
-
-- `#I501296` - Fixed an issue where the width of the in-place-editor was affected when attempting to remove values from it.
-
 ## 20.4.54 (2023-03-14)
 
 ### In-place Editor
@@ -268,12 +260,4 @@ The In-place Editor component is used to edit and update the input value dynamic
 - **Template**  - Templates can be used to integrate custom controls to the In-place Editor.
 - **Globalization**  - Provides right to left and localization support.
 
-
-## 23.1.40 (2023-10-10)
-
-## InPlaceEditor
-
-### Bug Fixes
-
-- `#F495335` - Resolved the issue where the "Clear" icon was not initially visible in the `DropDownList` inside the `InplaceEditor` on first `focus`.
 

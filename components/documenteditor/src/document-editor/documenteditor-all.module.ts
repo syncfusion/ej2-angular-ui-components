@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentEditorComponent } from './documenteditor.component';
 import { DocumentEditorModule } from './documenteditor.module';
-import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing, ColumnsDialog} from '@syncfusion/ej2-documenteditor'
+import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing, ColumnsDialog, CollaborativeEditingHandler} from '@syncfusion/ej2-documenteditor'
 
 
 export const PrintService: ValueProvider = { provide: 'DocumentEditorPrint', useValue: Print};
@@ -35,6 +35,7 @@ export const SpellCheckerService: ValueProvider = { provide: 'DocumentEditorSpel
 export const SpellCheckDialogService: ValueProvider = { provide: 'DocumentEditorSpellCheckDialog', useValue: SpellCheckDialog};
 export const CollaborativeEditingService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditing', useValue: CollaborativeEditing};
 export const ColumnsDialogService: ValueProvider = { provide: 'DocumentEditorColumnsDialog', useValue: ColumnsDialog};
+export const CollaborativeEditingHandlerService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditingHandler', useValue: CollaborativeEditingHandler};
 
 /**
  * NgModule definition for the DocumentEditor component with providers.
@@ -74,7 +75,8 @@ export const ColumnsDialogService: ValueProvider = { provide: 'DocumentEditorCol
         SpellCheckerService,
         SpellCheckDialogService,
         CollaborativeEditingService,
-        ColumnsDialogService
+        ColumnsDialogService,
+        CollaborativeEditingHandlerService
     ]
 })
 export class DocumentEditorAllModule { }

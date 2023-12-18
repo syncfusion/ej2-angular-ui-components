@@ -7,5 +7,5 @@ export {LayerDirective,LayersDirective} from './maps/layers.directive';
 export {AnnotationDirective,AnnotationsDirective} from './maps/annotations.directive';
 export { MapsComponent} from './maps/maps.component';
 export { MapsModule } from './maps/maps.module';
-export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService } from './maps/maps-all.module';
+export { MapsAllModule, BubbleService, LegendService, MarkerService, HighlightService, SelectionService, MapsTooltipService, ZoomService, DataLabelService, NavigationLineService, AnnotationsService, PrintService, PdfExportService, ImageExportService, PolygonService } from './maps/maps-all.module';
 export * from '@syncfusion/ej2-maps';
