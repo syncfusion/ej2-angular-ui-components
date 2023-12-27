@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 24.1.43 (2023-12-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I528757` - Issue with "script error occurs when trying to paste the externally copied formula content" has been resolved.
+- `#I529675` - Issue with "delete the value of the selected range does not work when the range is selected from right to left" has been resolved.
+
 ## 24.1.41 (2023-12-18)
 
 ### Spreadsheet
