@@ -2,14 +2,13 @@
 
 ## [Unreleased]
 
-## 24.1.43 (2023-12-27)
+## 24.1.44 (2024-01-03)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I528757` - Issue with "script error occurs when trying to paste the externally copied formula content" has been resolved.
-- `#I529675` - Issue with "delete the value of the selected range does not work when the range is selected from right to left" has been resolved.
+- `#I528462` - Now, provided an additional argument to the `find` method to open the find dialog.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1318,6 +1317,17 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.1.43 (2023-12-27)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I528757` - Issue with "script error occurs when trying to paste the externally copied formula content" has been resolved.
+- `#I529675` - Issue with "delete the value of the selected range does not work when the range is selected from right to left" has been resolved.
+- `#I529209` - Issue with "unable to perform the autofit action for the last column in finite mode" has been resolved.
+- `#I528462` - Provided option in the `openFromJson` method argument to trigger the `openComplete` event.
 
 ## 21.2.9 (2023-06-06)
 

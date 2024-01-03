@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.44 (2024-01-03)
+
+### Common
+
+#### Bug Fixes
+
+- `#528977` - Resolved the From Group OnBlur update not working proeprly.
+
 ## 24.1.41 (2023-12-18)
 
 ### Common
