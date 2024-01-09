@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 24.1.44 (2024-01-03)
+## 24.1.45 (2024-01-09)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I528462` - Now, provided an additional argument to the `find` method to open the find dialog.
+- `#I863643` - Issue with "formula returns an incorrect result when a negative cell referenced value is used in the formula without using brackets" has been resolved.
+- Issue with "duplicate template was added at the bottom of the spreadsheet while deleting the value on the template rendered cell" has been resolved.
+- `#I528462` - Issue with "find dialog was closed when switching to the next sheet" has been resolved.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1317,6 +1319,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.1.44 (2024-01-03)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I528462` - Now, provided an additional argument to the `find` method to open the find dialog.
 
 ## 24.1.43 (2023-12-27)
 
