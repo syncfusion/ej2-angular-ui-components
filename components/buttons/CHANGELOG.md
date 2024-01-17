@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.46 (2024-01-17)
+
+### Checkbox
+
+#### Bug Fixes
+
+- `#I535107` - Need to set `HtmlAttributes` Id in input element checkbox has been resolved.
+
 ## 24.1.45 (2024-01-09)
 
 ### Switch

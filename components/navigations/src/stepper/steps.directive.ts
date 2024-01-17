@@ -11,8 +11,8 @@ let outputs: string[] = [];
  * ```html
  * <ejs-stepper>
  *  <e-steps>
- *   <e-step [icon]='e-icons e-folder' [text]='Step 1' />
- *   <e-step [icon]='e-icons e-folder' [text]='Step 2' />
+ *   <e-step [iconCss]='e-icons e-folder' [text]='Step 1' />
+ *   <e-step [iconCss]='e-icons e-folder' [text]='Step 2' />
  *  </e-steps> 
  * </ejs-stepper>
  * ```

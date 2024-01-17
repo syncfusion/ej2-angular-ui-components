@@ -2,7 +2,36 @@
 
 ## [Unreleased]
 
+## 24.1.46 (2024-01-17)
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I541407` - The issue with the Dropdown Tree popup not closing when the preselected value is again selected has been resolved.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I535771` - Fixed issue where Z-index was not being added to the popup element when initially opening the popup.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#533973` - Issue with "model is not updated when the backspace key is clicked" has been resolved.
+
 ## 24.1.45 (2024-01-09)
+
+### Mention
+
+#### Bug Fixes
+
+- `#I534515` - Fixed an issue where unable to add image caption in `RTE` using the Mention integration.
+- `#I530749` - Now, the Change event triggers properly with the mention list in Rich Text Editor.
+
+## 24.1.44 (2024-01-03)
 
 ### DropDownTree
 
