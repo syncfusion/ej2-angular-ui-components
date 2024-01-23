@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 24.1.47 (2024-01-23)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I866111` - Issue with "chart data is not rendered properly after hiding the columns" has been resolved.
+- `#I866383` - Issue with "`unMerge` method does not work when the `showRibbon` option is set to `false`" has been resolved.
+
 ## 24.1.41 (2023-12-18)
 
 ### Spreadsheet

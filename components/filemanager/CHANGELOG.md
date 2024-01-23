@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.1.47 (2024-01-23)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I543790` - The issue with the breadcrumb bar of the File Manager showing an incorrect name for the Azure File service provider has been resolved.
+
 ## 24.1.45 (2024-01-09)
 
 ### FileManager

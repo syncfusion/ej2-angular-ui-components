@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 24.1.47 (2024-01-23)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I540518` - Can't able to drag and drop to the new resource issue has been fixed.
+- `#I185970` - Dynamic template updating in columns does not render issue has been fixed.
+- `#I538002` - Alignment Issue with PDF Export in React Gantt issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 24.1.46 (2024-01-17)
 
 ### GanttChart
@@ -13,7 +25,7 @@
 - `#I538917` - Text is not rendered properly in header while using page size issue has been fixed.
 - `#I185970` - Dynamic template updating in columns does not render issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I185970` - Dynamic template updating in columns does not render issue has been fixed.
 
 ## 24.1.45 (2024-01-09)
 

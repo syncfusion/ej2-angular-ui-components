@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.1.47 (2024-01-23)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I514409` - Issue with "Filtering focus not removed in listbox while clearing and click anywhere" has been resolved.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I531844` - Fixed issue where custom value could not be added to combobox when dataSource is empty.
+
 ## 24.1.46 (2024-01-17)
 
 ### DropDownTree
