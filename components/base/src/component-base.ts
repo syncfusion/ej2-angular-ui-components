@@ -249,8 +249,8 @@ export class ComponentBase<T> {
         for (let tagObject of tempAfterContentThis.tagObjects) {
             if (!isUndefined(tagObject.instance) &&
                 (tagObject.instance.isInitChanges || tagObject.instance.hasChanges || tagObject.instance.hasNewChildren)) {
+                let propObj: { [key: string]: Object } = {};
                 if (tagObject.instance.isInitChanges) {
-                    let propObj: { [key: string]: Object } = {};
                     // For angular 9 compatibility
                     // Not able to get complex directive properties reference ni Onint hook
                     // So we have constructed property here and used
@@ -336,6 +336,10 @@ export class ComponentBase<T> {
                             }
                         }
                         list.isUpdated = true;
+                    }
+                    if (/grid/.test(tempAfterContentThis.getModuleName())) {
+                        propObj[tagObject.name] = tagObject.instance.getProperties();
+                        tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                     }
                 }
             }

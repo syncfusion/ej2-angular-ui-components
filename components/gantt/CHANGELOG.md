@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 24.2.3 (2024-01-31)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I540355` - RTE create column not working in dialog box issue has been fixed.
+- `#I543351` - The taskbar render validation not working properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 24.1.47 (2024-01-23)
 
 ### GanttChart
@@ -12,7 +23,7 @@
 - `#I185970` - Dynamic template updating in columns does not render issue has been fixed.
 - `#I538002` - Alignment Issue with PDF Export in React Gantt issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I185970` - Dynamic template updating in columns does not render issue has been fixed.
 
 ## 24.1.46 (2024-01-17)
 
