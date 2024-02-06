@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.3 (2024-01-31)
+
+### Common
+
+#### Bug Fixes
+
+- `#521238` - Resolved the issue of dynamically updating the `ng-template` not working properly.
+
 ## 24.1.44 (2024-01-03)
 
 ### Common

@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 24.2.4 (2024-02-06)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I550406` - Task type property does not update properly by mapping work field issue has been fixed.
+- `#I542029` - Unable to render full lengthy text in pdf export issue has been fixed.
+- `#I549638` - The taskbar edit action is not working in RTL mode issue has been fixed.
+- `#I544478` - Validation rules not working for numeric field issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 24.2.3 (2024-01-31)
 
 ### GanttChart
@@ -11,7 +24,7 @@
 - `#I540355` - RTE create column not working in dialog box issue has been fixed.
 - `#I543351` - The taskbar render validation not working properly issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I540355` - RTE create column not working in dialog box issue has been fixed.
 
 ## 24.1.47 (2024-01-23)
 

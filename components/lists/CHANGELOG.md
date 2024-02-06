@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 24.2.4 (2024-02-06)
+
+### ListView
+
+#### Bug Fixes
+
+- `#I549283` - The list item checkbox removal instead of disabling in the ListView component has been resolved.
+
+#### Bug fixes
+
+- `#I549283` - List item checkbox removal instead of disabling in the ListView Component has been resolved.
+
 ## 24.1.46 (2024-01-17)
 
 ### ListBox

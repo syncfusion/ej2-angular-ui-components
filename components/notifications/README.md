@@ -68,6 +68,26 @@ The [Angular Toast](https://www.syncfusion.com/angular-components/angular-toast?
 * [Action buttons](https://ej2.syncfusion.com/angular/documentation/toast/action-buttons) - Supports to add buttons in the toast for archiving any actions within the toast.
 * [Template](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/toast/template) - User customized element can be defined for the toast using the template property.
 
+### Angular Skeleton
+
+The [Angular Skeleton](https://www.syncfusion.com/angular-components/angular-skeleton?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm) component is a placeholder that animates a shimmer effect to let users know that the page’s content is currently loading. It has several built-in features such as support for shapes, shimmer effect, and UI customization.
+
+<p align="center">
+    <a href="https://ej2.syncfusion.com/angular/documentation/skeleton/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm">Getting Started</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm#/material/skeleton/default">Online demos</a> .
+    <a href="https://www.syncfusion.com/angular-components/angular-skeleton?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="Angular Skeleton Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-skeleton.gif">
+</p>
+
+#### Key features
+
+* [Shapes](https://ej2.syncfusion.com/angular/documentation/skeleton/shapes) - Provides various built-in shape variants to design the layout of the page.
+* [ShimmerEffect](https://ej2.syncfusion.com/angular/documentation/skeleton/shimmer-effect) - Provides an option to display the skeleton with various animation effects.
+* [Styles](https://ej2.syncfusion.com/angular/documentation/skeleton/styles) - Customize the style of a skeleton.
+
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://getbootstrap.com/">
@@ -117,4 +137,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_campaign=notification) for more info.
 
-&copy; Copyright 2023 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

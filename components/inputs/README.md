@@ -164,6 +164,29 @@ The Angular [File Upload](https://www.syncfusion.com/angular-ui-components/angul
 * [Auto upload](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/default) - Process the file to upload without interaction.
 * [Preload files](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-file-upload-npm#/material/uploader/preload-files) - View and manipulate previously uploaded files.
 
+### Angular Rating
+
+The [Angular Rating](https://www.syncfusion.com/angular-ui-components/angular-rating/?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-inputs-npm) component is used to provide a star rating or view other people’s ratings on a numeric scale for any service provided, such as for movies, applications, or products. It has several built-in features such as support for precision modes, labels, tooltip, and UI customization.
+
+<p align="center">
+  <a href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-inputs-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-inputs-npm#/material/rating/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/angular-ui-components/angular-rating/?utm_source=npm&utm_medium=listing&utm_campaign=anuglar-inputs-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="Angular Rating Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-rating.gif">
+</p>
+
+#### Key features
+
+* [Precision modes](https://ej2.syncfusion.com/angular/documentation/rating/precision-modes) - Provides different precision modes for more accurate rating.
+* [Labels](https://ej2.syncfusion.com/angular/documentation/rating/labels) - Displays current value of the rating.
+* [Tooltip](https://ej2.syncfusion.com/angular/documentation/rating/tooltip) -  Displays additional information of the rating items.
+* [Selection](https://ej2.syncfusion.com/angular/documentation/rating/selection) - Customization options for the selected rating value and selection behavior.
+* [Appearance](https://ej2.syncfusion.com/angular/documentation/rating/appearance) - Customize the rating items appearance.
+* [Templates](https://ej2.syncfusion.com/angular/documentation/rating/templates) - Customize the rating item with a heart, SVG, or any content that precisely matches unique needs.
+
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com/">
@@ -213,4 +236,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license/?utm_source=npm&utm_campaign=input) for more info.
 
-& Copyright 2023 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+& Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
