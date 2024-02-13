@@ -261,3 +261,11 @@ The In-place Editor component is used to edit and update the input value dynamic
 - **Globalization**  - Provides right to left and localization support.
 
 
+## 24.2.4 (2024-02-06)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#I540657` - Fixed issue where the PasteCleanupSettings feature was not working properly when the type was set to 'RTE'.
+

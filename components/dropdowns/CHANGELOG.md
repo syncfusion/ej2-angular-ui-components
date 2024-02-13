@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 24.2.5 (2024-02-13)
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#F49655` - Fixed an issue where assigning null to a value, text and index property resulting in errors.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I552553` - Issue with "Multiselect box mode, the selected value is not clear while using backspace" has been resolved.
+- `#I545627` - Resolved an issue where the "aria-label" in Multiselect was not being read by JAWS.
+
 ## 24.2.4 (2024-02-06)
 
 ### ListBox

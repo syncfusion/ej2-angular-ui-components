@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 24.2.5 (2024-02-13)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I867373` - Issue with "exception is thrown while running the `ng test` command" has been resolved.
+
+## 24.2.4 (2024-02-06)
+
+### Spreadsheet
+
+#### Bug Fixes
+
+- Issue with "formula returns the wrong result when performing an arithmetic expression with a negative sign" has been resolved.
+
 ## 24.1.41 (2023-12-18)
 
 ### Spreadsheet

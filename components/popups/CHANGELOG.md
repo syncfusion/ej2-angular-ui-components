@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.2.5 (2024-02-13)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I549075` - The issue with positioning when using the container property in the Tooltip component has been resolved.
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I543788` - Issue with "The NVDA reader is not reading the content of the dialog" has been resolved.
+
 ## 24.2.3 (2024-01-31)
 
 ### Tooltip

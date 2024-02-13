@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.5 (2024-02-13)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#FB49729` - Issue with "Console error occurs When Submitting the Form" has been resolved.
+
 ## 24.2.4 (2024-02-06)
 
 ### Uploader
