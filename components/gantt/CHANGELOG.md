@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.6 (2024-02-15)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 24.2.5 (2024-02-13)
 
 ### GanttChart
@@ -13,7 +21,8 @@
 - `#I551289` - The zoom in action before horizontal scroll, after the zoom action triggers, alignment issues occur issue has been fixed.
 - `#I532096` - Failing Karma Test cases in Angular issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I544540` - Offset value not calculated properly issue has been fixed.
+- `#I532096` - Failing Karma Test cases in Angular issue has been fixed.
 
 ## 24.2.4 (2024-02-06)
 

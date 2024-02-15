@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 24.2.5 (2024-02-13)
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#FB49729` - Issue with "Console error occurs When Submitting the Form" has been resolved.
-
 ## 24.2.4 (2024-02-06)
 
 ### Uploader
@@ -1330,6 +1322,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 24.2.5 (2024-02-13)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#FB49729` - Issue with "Console error occurs When Submitting the Form" has been resolved.
 
 ## 19.3.47 (2021-10-26)
 
