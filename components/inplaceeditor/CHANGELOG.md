@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 24.2.7 (2024-02-20)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#I540657` - Fixed issue where the PasteCleanupSettings feature was not working properly when the type was set to 'RTE'.
+
 ## 20.4.54 (2023-03-14)
 
 ### In-place Editor

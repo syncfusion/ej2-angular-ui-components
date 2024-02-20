@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 24.2.6 (2024-02-15)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I867373` - Issue with "exception is thrown while running the `ng test` command" has been resolved.
-
 ## 24.2.4 (2024-02-06)
 
 ### Spreadsheet
@@ -1325,6 +1317,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 24.2.5 (2024-02-13)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I867373` - Issue with "exception is thrown while running the `ng test` command" has been resolved.
 
 ## 24.1.47 (2024-01-23)
 
