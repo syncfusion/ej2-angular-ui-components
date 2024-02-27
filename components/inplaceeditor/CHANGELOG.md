@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 24.2.7 (2024-02-20)
-
-### In-place Editor
-
-#### Bug Fixes
-
-- `#I540657` - Fixed issue where the PasteCleanupSettings feature was not working properly when the type was set to 'RTE'.
-
 ## 20.4.54 (2023-03-14)
 
 ### In-place Editor
@@ -268,6 +260,14 @@ The In-place Editor component is used to edit and update the input value dynamic
 - **Template**  - Templates can be used to integrate custom controls to the In-place Editor.
 - **Globalization**  - Provides right to left and localization support.
 
+
+## 24.2.7 (2024-02-20)
+
+### In-place Editor
+
+#### Bug Fixes
+
+- `#I540657` - Fixed issue where the PasteCleanupSettings feature was not working properly when the type was set to 'RTE'.
 
 ## 24.2.4 (2024-02-06)
 
