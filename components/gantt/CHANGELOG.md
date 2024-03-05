@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### GanttChart
+
+#### Bug Fixes
+
+- `#I557001` - Console error in dependency connection after row drag action issue has been fixed.
+- `#I556547` - top and bottom tier shows null when using custom zooming levels.
+- `#I552622` - The enable immutable enabled sample expand icon hide when record add issue has been fixed.
+- `#F186617` - Gantt pdf export taskbar text alignment issue has been fixed.
+- `#I561997` - The PDF export is not working properly when changing `bottomTier` to week.
+- `#I560166` - The context menu using "add child" for any task, dependency line validation is not working properly.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 24.2.8 (2024-02-27)
 
 ### GanttChart
@@ -20,7 +35,8 @@
 - `#I553748` - Editing the task name following the reset of the taskbar start date will lead to the taskbar rendering an incorrect date issue has been fixed.
 - `#I553710` - Dragging the task following the reset of the parent taskbar start date will lead to get duplicate taskbar issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I556229` - Splitter View is not updating properly while using `setSplitterPosition` issue has been fixed.
+- `#I548519` - Timeline start date changed after zooming action issue has been fixed.
 
 ## 24.2.7 (2024-02-20)
 

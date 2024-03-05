@@ -271,6 +271,7 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
     public wrapper: any;
     /** 
      * Defines the visual order of the node/connector in DOM
+     * @aspdefaultvalue 5e-324
      * @default Number.MIN_VALUE
      */
     public zIndex: any;

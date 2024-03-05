@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 24.2.9 (2024-03-05)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I557826` - Fixed an issue where preselected values in ComboBox were not working properly when Virtualization is enabled.
+
+### Mention
+
+#### Bug Fixes
+
+- `#I549354` - Issue with "No record found template displayed in the mention component when typing mention char" has been resolved.
+
 ## 24.2.8 (2024-02-27)
 
 ### Mention
