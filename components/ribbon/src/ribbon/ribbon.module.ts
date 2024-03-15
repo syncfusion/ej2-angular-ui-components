@@ -4,6 +4,7 @@ import { RibbonItemDirective, RibbonItemsDirective } from './items.directive';
 import { RibbonCollectionDirective, RibbonCollectionsDirective } from './collections.directive';
 import { RibbonGroupDirective, RibbonGroupsDirective } from './groups.directive';
 import { RibbonTabDirective, RibbonTabsDirective } from './tabs.directive';
+import { RibbonContextualTabDirective, RibbonContextualTabsDirective } from './contextualtabs.directive';
 import { RibbonComponent } from './ribbon.component';
 
 /**
@@ -20,7 +21,9 @@ import { RibbonComponent } from './ribbon.component';
         RibbonGroupDirective,
         RibbonGroupsDirective,
         RibbonTabDirective,
-        RibbonTabsDirective
+        RibbonTabsDirective,
+        RibbonContextualTabDirective,
+        RibbonContextualTabsDirective
     ],
     exports: [
         RibbonComponent,
@@ -31,7 +34,9 @@ import { RibbonComponent } from './ribbon.component';
         RibbonGroupDirective,
         RibbonGroupsDirective,
         RibbonTabDirective,
-        RibbonTabsDirective
+        RibbonTabsDirective,
+        RibbonContextualTabDirective,
+        RibbonContextualTabsDirective
     ]
 })
 export class RibbonModule { }

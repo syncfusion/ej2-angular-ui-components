@@ -3,32 +3,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['activeSize', 'allowedSizes', 'buttonSettings', 'checkBoxSettings', 'colorPickerSettings', 'comboBoxSettings', 'cssClass', 'disabled', 'displayOptions', 'dropDownSettings', 'groupButtonSettings', 'id', 'itemTemplate', 'ribbonTooltipSettings', 'splitButtonSettings', 'type'];
+let input: string[] = ['activeSize', 'allowedSizes', 'buttonSettings', 'checkBoxSettings', 'colorPickerSettings', 'comboBoxSettings', 'cssClass', 'disabled', 'displayOptions', 'dropDownSettings', 'gallerySettings', 'groupButtonSettings', 'id', 'itemTemplate', 'keyTip', 'ribbonTooltipSettings', 'splitButtonSettings', 'type'];
 let outputs: string[] = [];
-/**
- * `e-ribbon-item` directive represent a item in the Angular Ribbon.
- * ```html
- * <ejs-ribbon>
- *   <e-ribbon-tabs>
- *    <e-ribbon-tab></e-ribbon-tab>
- *    <e-ribbon-tab>
- *       <e-ribbon-groups>
- *         <e-ribbon-group>
- *             <e-ribbon-collections>
- *                 <e-ribbon-collection>
- *                     <e-ribbon-items>
- *                         <e-ribbon-item></e-ribbon-item>
- *                         <e-ribbon-item></e-ribbon-item>
- *                     </e-ribbon-items>
- *                 </e-ribbon-collection>
- *             </e-ribbon-collections>
- *         </e-ribbon-group>
- *       </e-ribbon-groups>
- *    </e-ribbon-tab>
- *   </e-ribbon-tabs>
- * </ejs-ribbon>
- * ```
- */
+
 @Directive({
     selector: 'e-ribbon-item',
     inputs: input,
@@ -103,6 +80,11 @@ export class RibbonItemDirective extends ComplexBase<RibbonItemDirective> {
      */
     public dropDownSettings: any;
     /** 
+     * Defines the properties of the gallery view in Ribbon.
+     * @default {}
+     */
+    public gallerySettings: any;
+    /** 
      * Defines the properties for group button in Ribbon
      * @default {}
      */
@@ -112,6 +94,11 @@ export class RibbonItemDirective extends ComplexBase<RibbonItemDirective> {
      * @default ''
      */
     public id: any;
+    /** 
+     * Defines the key tip text to be accessed for specified Ribbon item.
+     * @default ''
+     */
+    public keyTip: any;
     /** 
      * Defines the settings for the tooltip of the item.
      * @default {}

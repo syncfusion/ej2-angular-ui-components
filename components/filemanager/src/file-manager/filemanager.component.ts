@@ -4,7 +4,7 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 
 import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
+export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortComparer','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
 export const outputs: string[] = ['beforeDownload','beforeImageLoad','beforePopupClose','beforePopupOpen','beforeSend','created','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','menuClick','menuOpen','popupClose','popupOpen','success','toolbarClick','toolbarCreate','uploadListCreate'];
 export const twoWays: string[] = [''];
 

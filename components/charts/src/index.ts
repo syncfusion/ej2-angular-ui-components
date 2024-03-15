@@ -55,4 +55,9 @@ export {Chart3DSelectedDataIndexDirective,Chart3DSelectedDataIndexesDirective} f
 export { Chart3DComponent} from './chart3d/chart3d.component';
 export { Chart3DModule } from './chart3d/chart3d.module';
 export { Chart3DAllModule, ColumnSeries3DService, StackingColumnSeries3DService, BarSeries3DService, StackingBarSeries3DService, Category3DService, DateTime3DService, DateTimeCategory3DService, Logarithmic3DService, Tooltip3DService, Legend3DService, DataLabel3DService, Selection3DService, Export3DService, Highlight3DService } from './chart3d/chart3d-all.module';
+export {CircularChart3DSeriesDirective,CircularChart3DSeriesCollectionDirective} from './circularchart3d/series.directive';
+export {CircularChart3DSelectedDataIndexDirective,CircularChart3DSelectedDataIndexesDirective} from './circularchart3d/selecteddataindexes.directive';
+export { CircularChart3DComponent} from './circularchart3d/circularchart3d.component';
+export { CircularChart3DModule } from './circularchart3d/circularchart3d.module';
+export { CircularChart3DAllModule, PieSeries3DService, CircularChartTooltip3DService, CircularChartLegend3DService, CircularChartSelection3DService, CircularChartDataLabel3DService, CircularChartHighlight3DService, CircularChartExport3DService } from './circularchart3d/circularchart3d-all.module';
 export * from '@syncfusion/ej2-charts';

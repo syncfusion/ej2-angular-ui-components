@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-charts",
-	"version": "24.2.8",
+	"version": "20.22.1",
 	"description": "Feature-rich chart control with built-in support for over 25 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball. for Angular",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -56,7 +56,8 @@
 		"angular-smith-chart",
 		"angular-bullet-chart",
 		"angular-bullet-graph",
-		"angular-chart3d"
+		"angular-chart3d",
+		"angular-circularchart3d"
 	],
 	"repository": {
 		"type": "git",

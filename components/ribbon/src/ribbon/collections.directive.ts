@@ -5,26 +5,7 @@ import { RibbonItemsDirective } from './items.directive';
 
 let input: string[] = ['cssClass', 'id', 'items'];
 let outputs: string[] = [];
-/**
- * `e-ribbon-collection` directive represent a collection in the Angular Ribbon. 
- * ```html
- * <ejs-ribbon>
- *   <e-ribbon-tabs>
- *    <e-ribbon-tab></e-ribbon-tab>
- *    <e-ribbon-tab>
- *       <e-ribbon-groups>
- *         <e-ribbon-group>
- *             <e-ribbon-collections>
- *                 <e-ribbon-collection></e-ribbon-collection>
- *                 <e-ribbon-collection></e-ribbon-collection>
- *             </e-ribbon-collections>
- *         </e-ribbon-group>
- *       </e-ribbon-groups>
- *    </e-ribbon-tab>
- *   </e-ribbon-tabs>
- * </ejs-ribbon>
- * ```
- */
+
 @Directive({
     selector: 'e-ribbon-collection',
     inputs: input,

@@ -96,7 +96,7 @@ export class FormBase<T> implements ControlValueAccessor {
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         /* istanbul ignore else */
         if (typeof window !== 'undefined') {
-            if ((tempFormAfterViewThis.getModuleName()).includes('dropdowntree')){
+            if ((tempFormAfterViewThis.getModuleName()).includes('dropdowntree')) {
                 setTimeout(function () {
                     tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
                 });

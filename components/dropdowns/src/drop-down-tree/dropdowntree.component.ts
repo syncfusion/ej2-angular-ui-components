@@ -5,7 +5,7 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','width','wrapText','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','destroyPopupOnHide','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','width','wrapText','zIndex'];
 export const outputs: string[] = ['actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','keyPress','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 

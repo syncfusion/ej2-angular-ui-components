@@ -3,24 +3,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { RibbonCollectionsDirective } from './collections.directive';
 
-let input: string[] = ['collections', 'cssClass', 'enableGroupOverflow', 'groupIconCss', 'header', 'id', 'isCollapsed', 'isCollapsible', 'orientation', 'overflowHeader', 'priority', 'showLauncherIcon'];
+let input: string[] = ['collections', 'cssClass', 'enableGroupOverflow', 'groupIconCss', 'header', 'id', 'isCollapsed', 'isCollapsible', 'keyTip', 'launcherIconKeyTip', 'orientation', 'overflowHeader', 'priority', 'showLauncherIcon'];
 let outputs: string[] = [];
-/**
- * `e-ribbon-group` directive represent a group in the Angular Ribbon. 
- * ```html
- * <ejs-ribbon>
- *   <e-ribbon-tabs>
- *    <e-ribbon-tab></e-ribbon-tab>
- *    <e-ribbon-tab>
- *       <e-ribbon-groups>
- *         <e-ribbon-group></e-ribbon-group>
- *         <e-ribbon-group></e-ribbon-group>
- *       </e-ribbon-groups>
- *    </e-ribbon-tab>
- *   </e-ribbon-tabs>
- * </ejs-ribbon>
- * ```
- */
+
 @Directive({
     selector: 'e-ribbon-group',
     inputs: input,
@@ -77,6 +62,16 @@ export class RibbonGroupDirective extends ComplexBase<RibbonGroupDirective> {
      * @default true
      */
     public isCollapsible: any;
+    /** 
+     * Specifies the keytip content.
+     * @default ''
+     */
+    public keyTip: any;
+    /** 
+     * Specifies the keytip content for launcher icon.
+     * @default ''
+     */
+    public launcherIconKeyTip: any;
     /** 
      * Defines whether to orientation in which the items of the group should be arranged.
      * @isenumeration true

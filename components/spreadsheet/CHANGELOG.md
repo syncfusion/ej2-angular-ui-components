@@ -2,32 +2,20 @@
 
 ## [Unreleased]
 
-## 24.2.9 (2024-03-06)
+## 25.1.35 (2024-03-15)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I870831` - Issue with "formula calculation with defined name does not work as expected when adding the defined name using public method" has been resolved.
+- `#I549016` - Issue with "script error occurs when inserting multiple images into a single active cell and performing delete an action" has been resolved.
 
-- `#I870477` - Issue with "filter icon is not updated after sorting using the public method" has been resolved.
+- `#I558792` - Issue with "empty cells are highlighted while applying the duplicate value conditional formatting on the cell" has been resolved.
 
-## 24.2.8 (2024-02-27)
+#### Features
 
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I870021` - Issue with "`cellEditing` event is not triggered when you focus the cell and press the backspace key" has been resolved.
-- `#I870519` - Issue with "cell values are updated directly from the data source before being converted to formatted values" has been resolved.
-
-## 24.2.4 (2024-02-06)
-
-### Spreadsheet
-
-#### Bug Fixes
-
-- Issue with "formula returns the wrong result when performing an arithmetic expression with a negative sign" has been resolved.
+- `#I369726` - Now, provided support for accepting the culture-based argument separator in the formula.
+- `#I369726` - Now, provided support to pass numeric values with culture-based decimal separators as arguments to the formulas.
 
 ## 24.1.41 (2023-12-18)
 
@@ -1336,52 +1324,6 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
-
-## 24.2.5 (2024-02-13)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I867373` - Issue with "exception is thrown while running the `ng test` command" has been resolved.
-
-## 24.1.47 (2024-01-23)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I866111` - Issue with "chart data is not rendered properly after hiding the columns" has been resolved.
-- `#I866383` - Issue with "`unMerge` method does not work when the `showRibbon` option is set to `false`" has been resolved.
-
-## 24.1.45 (2024-01-09)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I863643` - Issue with "formula returns an incorrect result when a negative cell referenced value is used in the formula without using brackets" has been resolved.
-- Issue with "duplicate template was added at the bottom of the spreadsheet while deleting the value on the template rendered cell" has been resolved.
-- `#I528462` - Issue with "find dialog was closed when switching to the next sheet" has been resolved.
-
-## 24.1.44 (2024-01-03)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I528462` - Now, provided an additional argument to the `find` method to open the find dialog.
-
-## 24.1.43 (2023-12-27)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I528757` - Issue with "script error occurs when trying to paste the externally copied formula content" has been resolved.
-- `#I529675` - Issue with "delete the value of the selected range does not work when the range is selected from right to left" has been resolved.
-- `#I529209` - Issue with "unable to perform the autofit action for the last column in finite mode" has been resolved.
-- `#I528462` - Provided option in the `openFromJson` method argument to trigger the `openComplete` event.
 
 ## 21.2.9 (2023-06-06)
 

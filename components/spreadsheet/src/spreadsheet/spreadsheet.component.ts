@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowFreezePane','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','autoFillSettings','cellStyle','cssClass','currencyCode','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowFreezePane','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','autoFillSettings','cellStyle','cssClass','currencyCode','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enablePersistence','enableRtl','height','isProtected','listSeparator','locale','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showFormulaBar','showRibbon','showSheetTabs','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeCellUpdate','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEdited','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','queryCellInfo','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
@@ -102,12 +102,6 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
                 }
             } catch { }
         try {
-                let mod = this.injector.get('SpreadsheetCollaborativeEditing');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
                 let mod = this.injector.get('SpreadsheetSelection');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
@@ -151,18 +145,6 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
             } catch { }
         try {
                 let mod = this.injector.get('SpreadsheetDataBind');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('SpreadsheetAllModule');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('SpreadsheetBasicModule');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

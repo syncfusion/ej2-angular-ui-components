@@ -9,5 +9,5 @@ export {SheetDirective,SheetsDirective} from './spreadsheet/sheets.directive';
 export {DefinedNameDirective,DefinedNamesDirective} from './spreadsheet/definednames.directive';
 export { SpreadsheetComponent} from './spreadsheet/spreadsheet.component';
 export { SpreadsheetModule } from './spreadsheet/spreadsheet.module';
-export { SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, CollaborativeEditingService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, AllModuleService, BasicModuleService, CellFormatService, NumberFormatService, FormulaService } from './spreadsheet/spreadsheet-all.module';
+export { SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, CellFormatService, NumberFormatService, FormulaService } from './spreadsheet/spreadsheet-all.module';
 export * from '@syncfusion/ej2-spreadsheet';

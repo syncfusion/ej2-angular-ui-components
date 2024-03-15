@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip, LineDistribution} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip, LineDistribution, Ej1Serialization} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -31,6 +31,7 @@ export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
 export const BlazorTooltipService: ValueProvider = { provide: 'DiagramsBlazorTooltip', useValue: BlazorTooltip};
 export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDistribution', useValue: LineDistribution};
+export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Serialization', useValue: Ej1Serialization};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -57,7 +58,8 @@ export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDi
         LineRoutingService,
         ConnectorEditingService,
         BlazorTooltipService,
-        LineDistributionService
+        LineDistributionService,
+        Ej1SerializationService
     ]
 })
 export class DiagramAllModule { }

@@ -3,20 +3,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { RibbonGroupsDirective } from './groups.directive';
 
-let input: string[] = ['cssClass', 'groups', 'header', 'id'];
+let input: string[] = ['cssClass', 'groups', 'header', 'id', 'keyTip'];
 let outputs: string[] = [];
-/**
- * `e-ribbon-tab` directive represent a tab of the Angular Ribbon. 
- * It must be contained in a Ribbon component(`ejs-ribbon`). 
- * ```html
- * <ejs-ribbon>
- *   <e-ribbon-tabs>
- *    <e-ribbon-tab></e-ribbon-tab>
- *    <e-ribbon-tab></e-ribbon-tab>
- *   </e-ribbon-tabs>
- * </ejs-ribbon>
- * ```
- */
+
 @Directive({
     selector: 'e-ribbon-tab',
     inputs: input,
@@ -51,6 +40,11 @@ export class RibbonTabDirective extends ComplexBase<RibbonTabDirective> {
      * @default ''
      */
     public id: any;
+    /** 
+     * Specifies the keytip content.
+     * @default ''
+     */
+    public keyTip: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

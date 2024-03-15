@@ -3,8 +3,9 @@ import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCo
 import { Ribbon } from '@syncfusion/ej2-ribbon';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { RibbonTabsDirective } from './tabs.directive';
+import { RibbonContextualTabsDirective } from './contextualtabs.directive';
 
-export const inputs: string[] = ['activeLayout','backStageMenu','cssClass','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','hideLayoutSwitcher','isMinimized','launcherIconCss','locale','selectedTab','tabAnimation','tabs','width'];
+export const inputs: string[] = ['activeLayout','backStageMenu','contextualTabs','cssClass','enableKeyTips','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','hideLayoutSwitcher','isMinimized','launcherIconCss','layoutSwitcherKeyTip','locale','selectedTab','tabAnimation','tabs','width'];
 export const outputs: string[] = ['created','launcherIconClick','overflowPopupClose','overflowPopupOpen','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
 export const twoWays: string[] = [''];
 
@@ -21,7 +22,8 @@ export const twoWays: string[] = [''];
     template: `<ng-content select='div'></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-        childTabs: new ContentChild(RibbonTabsDirective)
+        childTabs: new ContentChild(RibbonTabsDirective), 
+        childContextualTabs: new ContentChild(RibbonContextualTabsDirective)
     }
 })
 @ComponentMixins([ComponentBase])
@@ -37,7 +39,8 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
 	tabSelected: any;
 	public tabSelecting: any;
     public childTabs: QueryList<RibbonTabsDirective>;
-    public tags: string[] = ['tabs'];
+    public childContextualTabs: QueryList<RibbonContextualTabsDirective>;
+    public tags: string[] = ['tabs', 'contextualTabs'];
     /** 
      * Specifies the template content for the help pane of ribbon. 
      * The help pane appears on the right side of the ribbon header row.
@@ -109,6 +112,24 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('RibbonRibbonKeyTip');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RibbonRibbonContextualTab');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RibbonRibbonGallery');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
@@ -130,6 +151,9 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
 
     public ngAfterContentChecked(): void {
         this.tagObjects[0].instance = this.childTabs;
+        if (this.childContextualTabs) {
+                    this.tagObjects[1].instance = this.childContextualTabs as any;
+                }
         this.containerContext.ngAfterContentChecked(this);
     }
 

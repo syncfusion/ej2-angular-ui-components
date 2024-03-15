@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['fields', 'headerText', 'type'];
+let input: string[] = ['additionalParams', 'fields', 'headerText', 'type'];
 let outputs: string[] = [];
 /**
  * `e-add-dialog-field` directive represent a add dialog fields collection in Gantt task add dialog. 
@@ -40,6 +40,11 @@ export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective
      * @default null
      */
     public type: any;
+    /** 
+     * Defines the properties of Grid or RTE or TreeGrid controls in Gantt edit dialog.
+     * @default null
+     */
+    public additionalParams: any;
     /** 
      * Defines edited column fields placed inside the tab.
      * @default null

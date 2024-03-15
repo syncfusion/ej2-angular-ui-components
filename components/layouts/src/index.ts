@@ -6,4 +6,8 @@ export {PanelDirective,PanelsDirective} from './dashboard-layout/panels.directiv
 export { DashboardLayoutComponent} from './dashboard-layout/dashboardlayout.component';
 export { DashboardLayoutModule } from './dashboard-layout/dashboardlayout.module';
 export { DashboardLayoutAllModule } from './dashboard-layout/dashboardlayout-all.module';
+export {ItemDirective,ItemsDirective} from './timeline/items.directive';
+export { TimelineComponent} from './timeline/timeline.component';
+export { TimelineModule } from './timeline/timeline.module';
+export { TimelineAllModule } from './timeline/timeline-all.module';
 export * from '@syncfusion/ej2-layouts';

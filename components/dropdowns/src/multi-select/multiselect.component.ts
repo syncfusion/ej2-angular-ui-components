@@ -5,7 +5,7 @@ import { MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','addTagOnBlur','allowCustomValue','allowFiltering','changeOnBlur','closePopupOnSelect','cssClass','dataSource','delimiterChar','enableGroupCheckBox','enableHtmlSanitizer','enablePersistence','enableRtl','enableSelectionOrder','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','hideSelectedItem','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','maximumSelectionLength','mode','noRecordsTemplate','openOnClick','placeholder','popupHeight','popupWidth','query','readonly','selectAllText','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','unSelectAllText','value','valueTemplate','width','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','addTagOnBlur','allowCustomValue','allowFiltering','allowObjectBinding','changeOnBlur','closePopupOnSelect','cssClass','dataSource','delimiterChar','enableGroupCheckBox','enableHtmlSanitizer','enablePersistence','enableRtl','enableSelectionOrder','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','hideSelectedItem','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','maximumSelectionLength','mode','noRecordsTemplate','openOnClick','placeholder','popupHeight','popupWidth','query','readonly','selectAllText','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','unSelectAllText','value','valueTemplate','width','zIndex'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','beforeSelectAll','blur','change','chipSelection','close','created','customValueSelection','dataBound','destroyed','filtering','focus','open','removed','removing','select','selectedAll','tagging','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -130,6 +130,12 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
         this.injectedModules = this.injectedModules || [];
         try {
                 let mod = this.injector.get('DropDownsCheckBoxSelection');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DropDownsVirtualScroll');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

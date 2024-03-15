@@ -1,6 +1,9 @@
 export { TextBoxComponent} from './textbox/textbox.component';
 export { TextBoxModule } from './textbox/textbox.module';
 export { TextBoxAllModule } from './textbox/textbox-all.module';
+export { TextAreaComponent} from './textarea/textarea.component';
+export { TextAreaModule } from './textarea/textarea.module';
+export { TextAreaAllModule } from './textarea/textarea-all.module';
 export { NumericTextBoxComponent} from './numerictextbox/numerictextbox.component';
 export { NumericTextBoxModule } from './numerictextbox/numerictextbox.module';
 export { NumericTextBoxAllModule } from './numerictextbox/numerictextbox-all.module';
