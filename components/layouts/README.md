@@ -1,12 +1,14 @@
 # ej2-angular-layouts
 
-The layout package contains cards, avatars, splitter and Dashboard Layout components. 
+The layout package contains cards, avatars, splitter, timeline and Dashboard Layout components. 
 
 * The `card` is a small container in which user can show defined content in specific structure.
 
 * The `avatars` are icons, initials or figures representing a particular person, used in popular media formats like images, SVG, font icons, and letters.
 
 * The `splitter` is container component which used to construct different layouts using multiple and nested panes.
+
+* The `timeline` is a tool for displaying chronological information effortlessly within your application. It offers a visually compelling and user-friendly experience for showcasing user activities, tracking progress, or narrating historical timelines.
 
 * The `DashboardLayout` is a grid structured layout component that helps to create a dashboard with panels. Panels hold the UI components and allow resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
 
@@ -40,6 +42,10 @@ Following list of components are available in the package
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/splitter/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/default)
 
+* [Angular Timeline](https://www.syncfusion.com/angular-ui-components/angular-timeline?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to build timelines to showcases user activities, tracking progress, narrating historical timelines, and more.
+  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/timeline/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
+  * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/default) 
+
 * [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm) - Used to build dashboards with panels that holds the UI components and allow resize, reorder, drag-n-drop, remove and add options.
   * [Getting Started](https://ej2.syncfusion.com/angular/documentation/dashboard-layout/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm)
   * [View Online Demos](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/default)
@@ -68,6 +74,7 @@ These components are available in following list of:
 ## Key Features
 
 * Card
+
   * [Header](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/basic) - Header supports to include title, subtitle along with image.
 
   * [Images and Title](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/reveal) - Support to include images with customizable caption positions in it.
@@ -77,6 +84,7 @@ These components are available in following list of:
   * [Horizontal Card](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/card/horizontal) - Allows to align card elements horizontally and also allows to stack the content vertically within horizontal alignment.
 
 * Avatar
+
   * [Types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/default) - Provided `2` types of avatars such as `default` and `circle`.
 
   * [Sizes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/avatar/types) - Supports `7` different sizes to adapt the various application scenario.
@@ -88,6 +96,7 @@ These components are available in following list of:
         * xlarge
 
 * Splitter
+
   * [Multiple Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/default) - Provided an option to configure more than two panes.
 
   * [Resizable Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/code-editor-layout) - Supports resizable to adjust its pane size dynamically.
@@ -98,15 +107,27 @@ These components are available in following list of:
 
   * [Nested Panes](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/splitter/code-editor-layout) - Another splitter can be integrated within panes to create a complex layout.
 
- * Dashboard Layout
- 
-   * [Drag and Drop](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Allows drag and drop of panels at the desired location within the dashboard.
+* Timeline
 
-   * [Floating](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Floats the panels upward when the dragging option is enabled.
+  * [Orientation](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/api) - Display items in a horizontal or vertical orientation.
 
-   * [Resizing](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Support to resize the panels in any direction as per the requirement.
+  * [Opposite content](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/api) -  Display additional information opposite to the item content.
+  
+  * [Items alignment](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/api) - Items content and opposite content can be aligned - before, after, alternate, or alternate reverse.
+  
+  * [Reverse timeline](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/api) - Shows the timeline items in the reverse order.
+  
+  * [Templates](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/timeline/template) - Customize the default appearance, including styling the dot item, templated content, and more.
 
-   * [MediaQuery](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/default.html) - Allows the panels to be stacked when the specified resolution is met.
+* Dashboard Layout
+    
+  * [Drag and Drop](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Allows drag and drop of panels at the desired location within the dashboard.
+
+  * [Floating](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Floats the panels upward when the dragging option is enabled.
+
+  * [Resizing](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/properties.html) - Support to resize the panels in any direction as per the requirement.
+
+  * [MediaQuery](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-layout-npm#/material/dashboard-layout/default.html) - Allows the panels to be stacked when the specified resolution is met.
 
 ## Support
 

@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### Common
+
+#### Bug Fixes
+
+- `#I558315` - Resolved the `chart` directives property changes not working.
+- `#I561506` - Resolved the `grid` with `column` pipe translate not working properly.
+
 ## 24.1.41 (2023-12-18)
 
 ### Common

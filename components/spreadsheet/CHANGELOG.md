@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I567170` - Issue with "`autofit` does not work properly when a column contains a wrap text cell with a bold style" has been resolved.
+- `#I566714` - Issue with "list validation is applied to all pasted cells after copying and pasting cells with column validation" has been resolved.
+- `#I566715` - Issue with "data validation is added to the first row additionally while importing an excel file with data validation applied in `A` column except `A1` cells" has been resolved.
+- `#I565632` - Issue with "exception is thrown when using the formula as a conditional formatting rule and saving the excel file" has been resolved.
+- `#I567132` - Issue with "font size is not updated properly when copying and pasting content from an external resource with `em` font size" has been resolved.
+- `#I564276` - Issue with "blank cells are not filtered properly when using the number filter" has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Spreadsheet

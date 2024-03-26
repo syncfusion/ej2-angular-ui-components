@@ -311,8 +311,10 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName()))) {
+                    let hasDiffLength = false;
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout|chart/.test(tempAfterContentThis.getModuleName()))) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
+                        hasDiffLength = true;
                     }
                     for (let list of tagObject.instance.list) {
                         let curIndex: number = tagObject.instance.list.indexOf(list);
@@ -337,7 +339,7 @@ export class ComponentBase<T> {
                         }
                         list.isUpdated = true;
                     }
-                    if (/grid/.test(tempAfterContentThis.getModuleName())) {
+                    if (/grid/.test(tempAfterContentThis.getModuleName()) && hasDiffLength) {
                         propObj[tagObject.name] = tagObject.instance.getProperties();
                         tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                     }

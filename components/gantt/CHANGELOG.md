@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+## 25.1.37 (2024-03-26)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#F187206` - The delete action not working in remote data when `timezone` using in sample.
+- `#I566491` - The exception is thrown when the resource ID mapping is empty issue has been fixed.
+- `#I565418` - Start date defaulting to incorrect value when remove the start Date in add dialog.
+- `#I566632` - Duration calculations are incorrect in edit or add dialog in decimals issue has been fixed.
+- `#I565751` - The chart does not refresh when any record is edited by cell editing issue has been fixed.
+- `#I566333` - Gantt chart disappeared while insert action with `timlineVirtualization` issue has been fixed.
+- `#F186355` - Taskbar template not showing in resource view issue has been fixed.
+- `#I562492` - `actionBegin` arguments miss the last record while dragging issue has been fixed.
+- `#I556547` - Top and bottom tier shows null when using custom zooming level issue has been fixed.
+- `#I566539` - Console error occurs while saving data in add dialog box with validation rule issue has been
+- fixed.
+- `#I553748` - Timeline dates validated wrongly after cell editing with timeline virtualization enabled issue has been fixed.
+- `#I565439` - Work calculations are incorrect for parent task in project view issue has been fixed.
+- `#I553710`,`#I565824` - Weekends are not highlighted while `timlineVirtualization` is enabled issue has been fixed.
+- `#I565359` - When `allowEditing` is disabled in a resource view, a console error is thrown issue has been fixed.
+- `#I560166` - The context menu using "add child" for any task, dependency line validation is not working properly.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 25.1.35 (2024-03-15)
 
 ### GanttChart
@@ -12,13 +37,15 @@
 - `#I561396` - When `hasChildMapping` is enabled `addParams` not working issue has been fixed.
 - `#I546767` - Split taskbar template not working properly with multiple levels.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
-
 #### Features
 
 - `#I468621`,`#I504565`,`#I518180`, `#I523106`,`#I558459` - Provided undo redo support for the actions such as `Edit`, `Add`, `Delete`, `Sorting`, `ColumnReorder`, `ColumnResize`, `Search`, `Filtering`, `ZoomIn`, `ZoomOut`, `ZoomToFit`, `ColumnState`, `Indent`, `Outdent`, `RowDragAndDrop`, `TaskbarDragAndDrop`, `PreviousTimeSpan` and `NextTimeSpan` in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/bootstrap5/gantt/undo-redo.html).
 - `#I364692` - Provided support for taskbars, task labels, and header templates in the Gantt Chart's PDF Export feature. Please find the documentation link [here](https://ej2.syncfusion.com/documentation/gantt/pdf-export/pdf-export#exporting-with-templates).
 - `#I522246`,`#I527511`,`#I562591`- Provided [`additionalParams`](https://ej2.syncfusion.com/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) API support to customize the Grid and RTE in edit/add dialog. Please find more information [here](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/managing-tasks#customize-tab-elements).
+
+- `#I468621`,`#I504565`,`#I518180`, `#I523106`,`#I558459` - Provided undo redo support for the actions such as `Edit`, `Add`, `Delete`, `Sorting`, `ColumnReorder`, `ColumnResize`, `Search`, `Filtering`, `ZoomIn`, `ZoomOut`, `ZoomToFit`, `ColumnState`, `Indent`, `Outdent`, `RowDragAndDrop`, `TaskbarDragAndDrop`, `PreviousTimeSpan` and `NextTimeSpan` in Gantt Chart. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/gantt/undo-redo.html).
+- `#I364692` - Provided support for taskbars, task labels, and header templates in the Gantt Chart's PDF Export feature. Please find the documentation link [here](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/pdf-export#exporting-with-templates).
+- `#I522246`,`#I527511`,`#I562591`- Provided [`additionalParams`](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) API support to customize the Grid and RTE in edit/add dialog. Please find more information [here](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/managing-tasks#customize-tab-elements).
 
 #### Breaking Changes
 
