@@ -107,7 +107,8 @@ export class GanttComponent extends Gantt implements IComponentBase {
     public childEventMarkers: QueryList<EventMarkersDirective>;
     public tags: string[] = ['columns', 'addDialogFields', 'editDialogFields', 'dayWorkingTime', 'holidays', 'eventMarkers'];
     /** 
-     * The parent task bar template that renders customized parent task bars from the given template.
+     * The parent task bar template that renders customized parent task bars from the given template. 
+     * {% codeBlock src='gantt/parentTaskbarTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      * @asptype string
      */
@@ -123,7 +124,8 @@ export class GanttComponent extends Gantt implements IComponentBase {
     @Template()
     public milestoneTemplate: any;
     /** 
-     * The task bar template that renders customized child task bars from the given template.
+     * The task bar template that renders customized child task bars from the given template. 
+     * {% codeBlock src='gantt/taskbarTemplate/index.md' %}{% endcodeBlock %}
      * @default null
      * @asptype string
      */

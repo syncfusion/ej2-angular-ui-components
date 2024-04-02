@@ -1205,14 +1205,13 @@
 * [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail?utm_source=npm&utm_campaign=ej2-angular-ui-components)
  ## Support
-For any questions or assistance, you can:
-* Visit the [Syncfusion support portal](https://support.syncfusion.com/).
-* Post your queries on the [community forums](https://www.syncfusion.com/forums).
-* Renew your subscription by clicking [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing&utm_campaign=ej2-angular-ui-components) or contacting our sales team at <salessupport@syncfusion.com>.
-* If you have specific feature requests or suggestions, please submit them through our [feedback portal](https://www.syncfusion.com/feedback/angular).
-## License
-For detailed information about the Syncfusion Essential Studio license and copyright, please refer to the [license](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
+ Product support is available for through following mediums.
+ * Creating incident in Syncfusion [Direct-trac](https://www.syncfusion.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-angular-ui-components) support system or [Community forum](https://www.syncfusion.com/forums/angular-js2?utm_source=npm&utm_campaign=ej2-angular-ui-components).
+* New [GitHub issue](https://github.com/syncfusion/ej2-angular-ui-components/issues/new).
+* Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `syncfusion` and `ej2`.
+ ## License
+ Check the license detail [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license).
  ## Changelog
-Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-    © Copyright 2024 Syncfusion, Inc. All Rights Reserved.
+ Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
+     © Copyright 2022 Syncfusion, Inc. All Rights Reserved.
     The Syncfusion Essential Studio license and copyright applies to this distribution.
