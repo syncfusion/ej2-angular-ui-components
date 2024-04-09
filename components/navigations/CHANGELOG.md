@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 25.1.39 (2024-04-09)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `#I560879` - An issue with getting console error when clicking schedule custom toolbar template item has been resolved.
+
+## 25.1.38 (2024-04-02)
+
+### Menu
+
+#### Bug Fixes
+
+- The issue with "focusing the first element by using tab key in Menu" has been resolved.
+
 ## 25.1.37 (2024-03-26)
 
 ### TreeView
