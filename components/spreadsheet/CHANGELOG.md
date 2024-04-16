@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 25.1.40 (2024-04-16)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I571073` - Issue with "`autofill` option does not work properly with time formatted values" has been resolved.
+- `#I560620` - Issue with "automatic wrap is applied at the initial load with `allowWrap` set to false when copying or pasting data with a new line character" has been resolved.
+
 ## 25.1.35 (2024-03-15)
 
 ### Spreadsheet
