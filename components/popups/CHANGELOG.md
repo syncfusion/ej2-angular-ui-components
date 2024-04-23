@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.41 (2024-04-23)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I578602` - The issue with the Tooltip animation not functioning properly has been resolved.
+
 ## 25.1.39 (2024-04-09)
 
 ### Tooltip
