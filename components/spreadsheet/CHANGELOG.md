@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.1.42 (2024-04-30)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I575250` - Issue with "unable to save the spreadsheet data as excel file after choosing many cells with `Ctrl+click`" has been resolved.
+
 ## 25.1.41 (2024-04-23)
 
 ### Spreadsheet
