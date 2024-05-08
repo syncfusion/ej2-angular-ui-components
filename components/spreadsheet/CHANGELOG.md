@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 25.1.42 (2024-04-30)
+## 25.2.3 (2024-05-08)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Bug Fixes
 
-- `#I575250` - Issue with "unable to save the spreadsheet data as excel file after choosing many cells with `Ctrl+click`" has been resolved.
+- `#I577454` - Issue with "cell values were not updating correctly in merged cells when scrolling through the spreadsheet content" has been resolved.
 
 ## 25.1.41 (2024-04-23)
 
@@ -1340,6 +1340,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.1.42 (2024-04-30)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I575250` - Issue with "unable to save the spreadsheet data as excel file after choosing many cells with `Ctrl+click`" has been resolved.
 
 ## 25.1.40 (2024-04-16)
 

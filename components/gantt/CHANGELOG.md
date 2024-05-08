@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 25.2.3 (2024-05-08)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I570803` - Tree Grid and Gantt chart side was not synchronized issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 25.1.42 (2024-04-30)
 
 ### GanttChart
@@ -15,7 +25,9 @@
 - `#I576290` - Dialog edit not working properly for multiple dependency issue has been fixed.
 - `#I577597` - `queryTaskbarInfo` event using style is not applied when resource view in collapsed state in tasks issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I578380` -  When using tooltip template, an exception is thrown issue has been fixed.
+- `#I577597` - `queryTaskbarInfo` event using style is not applied when resource view in collapsed state in tasks issue has been fixed.
+- `#I576290` - Dialog edit not working properly for multiple dependency issue has been fixed.
 
 ## 25.1.41 (2024-04-23)
 
