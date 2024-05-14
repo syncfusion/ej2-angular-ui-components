@@ -21,7 +21,7 @@ export function compile(templateEle: AngularElementType, helper?: Object):
             /* istanbul ignore next */
             let conRef: ViewContainerRef = contRef ? contRef : component.viewContainerRef;
             let viewRef: EmbeddedViewRef<Object> = conRef.createEmbeddedView(templateEle as TemplateRef<Object>, context);
-            if (/EJS-MENTION|EJS-DROPDOWNLIST/.test(getValue('currentInstance.element.nodeName', conRef))) {
+            if (/EJS-MENTION|EJS-DROPDOWNLIST/.test(getValue('currentInstance.element.nodeName', conRef)) || /E-TABITEM/.test(getValue('element.nativeElement.nodeName', conRef))) {
                 viewRef.detectChanges();
             } else {
                 viewRef.markForCheck();

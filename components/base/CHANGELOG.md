@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.4 (2024-05-14)
+
+### common
+
+#### Bug Fixes
+
+- `#I573637` -  Resolved `ng for` data binding not working properly in Array Directives.
+
 ## 25.1.37 (2024-03-26)
 
 ### Common

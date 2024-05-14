@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.4 (2024-05-14)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I576599` - Issue with "When enabling mask PM value is not updated" has been resolved.
+
 ## 25.1.40 (2024-04-16)
 
 ### DatePicker
