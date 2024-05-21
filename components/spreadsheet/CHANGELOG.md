@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 25.2.4 (2024-05-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I575250` - Issue with "unable to save the spreadsheet data as an excel file when the sheet name contains brackets and includes a chart within it" has been resolved.
-
 ## 25.2.3 (2024-05-08)
 
 ### Spreadsheet
@@ -1348,6 +1340,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Localization:** Provides inherent support to localize the UI.
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.2.4 (2024-05-14)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I575250` - Issue with "unable to save the spreadsheet data as an excel file when the sheet name contains brackets and includes a chart within it" has been resolved.
 
 ## 25.1.42 (2024-04-30)
 

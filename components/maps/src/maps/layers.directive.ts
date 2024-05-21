@@ -69,8 +69,8 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
     public dataSource: any;
     /** 
      * Gets or sets the geometry type for the layer in maps. There are two types: Geographic and Normal. 
-     * * Geographic type renders the shape maps with geographical coordinate system. 
-     * * Normal type renders the shape maps using default coordinate system.
+     * - Geographic type renders the shape maps with geographical coordinate system. 
+     * - Normal type renders the shape maps using default coordinate system.
      * @default Geographic
      */
     public geometryType: any;

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 25.2.4 (2024-05-14)
+## 25.2.5 (2024-05-21)
 
 ### TimePicker
 
 #### Bug Fixes
 
-- `#I576599` - Issue with "When enabling mask PM value is not updated" has been resolved.
+- `#I587516` - Fixed an issue where the timepicker `prevValue` property was holding the current selected value instead of the previous value.
 
 ## 25.1.40 (2024-04-16)
 
@@ -1240,6 +1240,14 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 - **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.
 
+
+## 25.2.4 (2024-05-14)
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I576599` - Issue with "When enabling mask PM value is not updated" has been resolved.
 
 ## 19.3.56 (2021-12-02)
 

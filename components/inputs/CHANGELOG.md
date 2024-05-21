@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.5 (2024-05-21)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I585900` - Issue with "Top border breaks when dynamically rendering the textbox component" has been resolved.
+
 ## 25.1.42 (2024-04-30)
 
 ### NumericTextBox
