@@ -1341,6 +1341,14 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.
 
 
+## 25.2.5 (2024-05-21)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I583824` - Issue with "custom number format is not working properly like as MS Excel when a format contains a character identical to date and time format characters" has been resolved.
+
 ## 25.2.4 (2024-05-14)
 
 ### Spreadsheet

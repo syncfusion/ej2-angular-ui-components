@@ -312,7 +312,7 @@ export class ComponentBase<T> {
                 } else {
                     /* istanbul ignore next */
                     let hasDiffLength = false;
-                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout|chart/.test(tempAfterContentThis.getModuleName()))) {
+                    if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName()))) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                         hasDiffLength = true;
                     }
@@ -339,7 +339,7 @@ export class ComponentBase<T> {
                         }
                         list.isUpdated = true;
                     }
-                    if (/grid/.test(tempAfterContentThis.getModuleName()) && hasDiffLength) {
+                    if ((/grid/.test(tempAfterContentThis.getModuleName()) && hasDiffLength) || /chart/.test(tempAfterContentThis.getModuleName())) {
                         propObj[tagObject.name] = tagObject.instance.getProperties();
                         tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                     }

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 25.2.5 (2024-05-21)
+## 25.2.6 (2024-05-28)
 
 ### TextBox
 
 #### Bug Fixes
 
-- `#I585900` - Issue with "Top border breaks when dynamically rendering the textbox component" has been resolved.
+- `#I587808` - Fixed an accessibility issue in the Multi Line textbox caused by the role attribute.
 
 ## 25.1.42 (2024-04-30)
 
@@ -1342,6 +1342,14 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 - **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.
 
+
+## 25.2.5 (2024-05-21)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I585900` - Issue with "Top border breaks when dynamically rendering the textbox component" has been resolved.
 
 ## 19.3.47 (2021-10-26)
 

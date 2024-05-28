@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 25.2.6 (2024-05-28)
+
+### common
+
+#### Bug Fixes
+
+- `#I52921` -  Resolved `ngAfterViewChecked` triggered infinite time for array base directives property change.
+
 ## 25.2.4 (2024-05-14)
 
 ### common
