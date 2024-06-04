@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#I593268` - The flickering issue that occurred when the Tooltip component was opened has been resolved.
-
 ## 25.1.42 (2024-04-30)
 
 ### Tooltip
@@ -653,6 +645,14 @@ Dialog is a window that displays information to the user, and used to get the us
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 - **Keyboard Interaction** - The Dialog can be intractable through keyboard.
 
+
+## 25.2.6 (2024-05-28)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#I593268` - The flickering issue that occurred when the Tooltip component was opened has been resolved.
 
 ## 25.1.41 (2024-04-23)
 

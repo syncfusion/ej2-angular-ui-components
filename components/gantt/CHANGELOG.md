@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 25.2.7 (2024-06-04)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I588548` - Taskbar template not working with `enableMultitaskbar` feature issue has been fixed.- `#I590430` - Delete dependency button in context menu not showing for parent taskbar issue has been fixed.
+- `#I589264` - `updateRecordById` method not working properly when `enableImmutableMode` enabled issue has been fixed.
+- `#I590132` - Editing issue for the grid rendered inside a custom column issue has been fixed.
+- `#I587961` - Incorrect dependency value while using remote data issue has been fixed.
+- `#I586548` - Console error occurs when datasource updated dynamically issue has been fixed.
+- `#I565931` - Taskbar render outside the grid line and bottom tier misalign issue has been fixed.
+- `#I591024` - Dependency line is not shown on initial load and after edit in virtual mode issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 25.2.6 (2024-05-28)
 
 ### GanttChart
@@ -15,7 +31,7 @@
 - `#I586548` - Console error occurs when datasource updated dynamically issue has been fixed.
 - `#I582746` - Critical path of task connected dependent tasks have not changed to critical issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I588524` - Custom value in segment not maintained issue has been fixed.
 
 ## 25.2.5 (2024-05-21)
 
