@@ -32,7 +32,7 @@
 		"rollup-plugin-uglify": "^1.0.1",
 		"systemjs": "^0.19.40",
 		"systemjs-plugin-babel": "0.0.17",
-		"ng-packagr": "1.5.0",
+		"ng-packagr": "10.1.1",
 		"tsickle": "0.34.0",
 		"@types/lodash": "4.14.159",
 		"@types/node": "11.15.20",
