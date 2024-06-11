@@ -42,6 +42,9 @@ export class StepperComponent extends Stepper implements IComponentBase {
      * {% codeBlock src='stepper/template/index.md' %}{% endcodeBlock %}
      *     
      * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @asptype string
      */
     @ContentChild('template')
@@ -50,6 +53,9 @@ export class StepperComponent extends Stepper implements IComponentBase {
     /** 
      * Defines the template content for the tooltip.
      * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
      * @asptype string
      */
     @ContentChild('tooltipTemplate')

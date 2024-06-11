@@ -205,9 +205,7 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
     public field: any;
     /** 
      *  Defines the filter options to customize filtering for the particular column.
-     * 
-     *  @default null
-     *     
+     * @default null
      */
     public filter: any;
     /** 

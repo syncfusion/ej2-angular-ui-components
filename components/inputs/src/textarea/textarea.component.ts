@@ -5,7 +5,7 @@ import { TextArea } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['columnsCount','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','readonly','resizeMode','rowsCount','showClearButton','value','width'];
+export const inputs: string[] = ['cols','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','readonly','resizeMode','rows','showClearButton','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 

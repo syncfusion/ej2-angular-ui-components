@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ImagesDirective } from './image.directive';
 import { ChartsDirective } from './chart.directive';
 
-let input: string[] = ['chart', 'colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+let input: string[] = ['chart', 'colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'isReadOnly', 'notes', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -82,6 +82,16 @@ export class CellDirective extends ComplexBase<CellDirective> {
      * @default true
      */
     public isLocked: any;
+    /** 
+     * Represents whether a cell in the sheet is read-only or not. If set to true, it prevents editing the specified cell in the sheet.
+     * @default false
+     */
+    public isReadOnly: any;
+    /** 
+     * Specifies the note of the cell.
+     * @default ''
+     */
+    public notes: any;
     /** 
      * Specifies the row-wise cell merge count.
      * @default 1

@@ -4,8 +4,8 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 
 import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortComparer','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
-export const outputs: string[] = ['beforeDownload','beforeImageLoad','beforePopupClose','beforePopupOpen','beforeSend','created','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','menuClick','menuOpen','popupClose','popupOpen','success','toolbarClick','toolbarCreate','uploadListCreate'];
+export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','fileSystemData','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortComparer','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
+export const outputs: string[] = ['beforeDelete','beforeDownload','beforeFolderCreate','beforeImageLoad','beforeMove','beforePopupClose','beforePopupOpen','beforeRename','beforeSend','created','delete','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','folderCreate','menuClick','menuOpen','move','popupClose','popupOpen','rename','search','success','toolbarClick','toolbarCreate','uploadListCreate'];
 export const twoWays: string[] = [''];
 
 /**
@@ -28,12 +28,17 @@ export const twoWays: string[] = [''];
 export class FileManagerComponent extends FileManager implements IComponentBase {
     public context : any;
     public tagObjects: any;
+	beforeDelete: any;
 	beforeDownload: any;
+	beforeFolderCreate: any;
 	beforeImageLoad: any;
+	beforeMove: any;
 	beforePopupClose: any;
 	beforePopupOpen: any;
+	beforeRename: any;
 	beforeSend: any;
 	created: any;
+	delete: any;
 	destroyed: any;
 	failure: any;
 	fileDragStart: any;
@@ -44,10 +49,14 @@ export class FileManagerComponent extends FileManager implements IComponentBase 
 	fileOpen: any;
 	fileSelect: any;
 	fileSelection: any;
+	folderCreate: any;
 	menuClick: any;
 	menuOpen: any;
+	move: any;
 	popupClose: any;
 	popupOpen: any;
+	rename: any;
+	search: any;
 	success: any;
 	toolbarClick: any;
 	toolbarCreate: any;

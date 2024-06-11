@@ -8,7 +8,7 @@ import { ConnectorsDirective } from './connectors.directive';
 import { NodesDirective } from './nodes.directive';
 
 export const inputs: string[] = ['addInfo','annotationTemplate','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','diagramSettings','drawingObject','enableConnectorSplit','enablePersistence','enableRtl','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','nodeDefaults','nodeTemplate','nodes','pageSettings','rulerSettings','scrollSettings','segmentThumbShape','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','userHandleTemplate','width'];
-export const outputs: string[] = ['animationComplete','click','collectionChange','commandExecute','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','expandStateChange','fixedUserHandleClick','historyChange','historyStateChange','keyDown','keyUp','load','mouseEnter','mouseLeave','mouseOver','mouseWheel','onImageLoad','onUserHandleMouseDown','onUserHandleMouseEnter','onUserHandleMouseLeave','onUserHandleMouseUp','positionChange','propertyChange','rotateChange','scrollChange','segmentChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit','elementDraw'];
+export const outputs: string[] = ['animationComplete','click','collectionChange','commandExecute','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','doubleClick','dragEnter','dragLeave','dragOver','drop','elementDraw','expandStateChange','fixedUserHandleClick','historyChange','historyStateChange','keyDown','keyUp','load','mouseEnter','mouseLeave','mouseOver','mouseWheel','onFixedUserHandleMouseDown','onFixedUserHandleMouseEnter','onFixedUserHandleMouseLeave','onFixedUserHandleMouseUp','onImageLoad','onUserHandleMouseDown','onUserHandleMouseEnter','onUserHandleMouseLeave','onUserHandleMouseUp','positionChange','propertyChange','rotateChange','scrollChange','segmentChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
 export const twoWays: string[] = [''];
 
 /**
@@ -49,6 +49,7 @@ export class DiagramComponent extends Diagram implements IComponentBase {
 	dragLeave: any;
 	dragOver: any;
 	drop: any;
+	elementDraw: any;
 	expandStateChange: any;
 	fixedUserHandleClick: any;
 	historyChange: any;
@@ -60,6 +61,10 @@ export class DiagramComponent extends Diagram implements IComponentBase {
 	mouseLeave: any;
 	mouseOver: any;
 	mouseWheel: any;
+	onFixedUserHandleMouseDown: any;
+	onFixedUserHandleMouseEnter: any;
+	onFixedUserHandleMouseLeave: any;
+	onFixedUserHandleMouseUp: any;
 	onImageLoad: any;
 	onUserHandleMouseDown: any;
 	onUserHandleMouseEnter: any;
@@ -75,8 +80,7 @@ export class DiagramComponent extends Diagram implements IComponentBase {
 	sizeChange: any;
 	sourcePointChange: any;
 	targetPointChange: any;
-	textEdit: any;
-	public elementDraw: any;
+	public textEdit: any;
     public childLayers: QueryList<LayersDirective>;
     public childCustomCursor: QueryList<CustomCursorsDirective>;
     public childConnectors: QueryList<ConnectorsDirective>;

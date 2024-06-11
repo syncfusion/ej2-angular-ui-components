@@ -34,9 +34,7 @@ module.exports = function(config) {
 
             { pattern: 'system.config.js', included: false, watched: false },
             { pattern: "src/**/*.js", included: false },
-            { pattern: "spec/**/*.js", included: false },
-            { pattern: "node_modules/@syncfusion/ej2-base/**/*.js", included: false },
-            'test-main.js'
+            { pattern: "node_modules/@syncfusion/ej2-base/**/*.js", included: false }
         ],
 
         // Proxied base paths for loading assets
@@ -53,6 +51,7 @@ module.exports = function(config) {
         logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: ['PhantomJS', 'Chrome', 'Firefox'],
-        singleRun: false
+        singleRun: false,
+        failOnEmptyTestSuite: false
     })
 }

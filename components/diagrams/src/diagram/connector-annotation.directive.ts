@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'rotationReference', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -128,6 +128,11 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * @default 0
      */
     public rotateAngle: any;
+    /** 
+     * Gets or sets the reference mode for annotation rotation.
+     * @default 'Parent'
+     */
+    public rotationReference: any;
     /** 
      * Enable/Disable the angle based on the connector segment
      * @default false

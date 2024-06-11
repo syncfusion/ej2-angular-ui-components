@@ -6,10 +6,11 @@ import { ColumnsDirective } from './columns.directive';
 import { AddDialogFieldsDirective } from './adddialogfields.directive';
 import { EditDialogFieldsDirective } from './editdialogfields.directive';
 import { DayWorkingTimeCollectionDirective } from './dayworkingtime.directive';
+import { WeekWorkingTimesDirective } from './weekworkingtime.directive';
 import { HolidaysDirective } from './holidays.directive';
 import { EventMarkersDirective } from './eventmarkers.directive';
 
-export const inputs: string[] = ['UpdateOffsetOnTaskbarEdit','addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowParentDependency','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTaskbarDragAndDrop','allowTaskbarOverlap','allowUnscheduledTasks','autoCalculateDateScheduling','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','enableContextMenu','enableCriticalPath','enableHtmlSanitizer','enableImmutableMode','enableMultiTaskbar','enablePersistence','enablePredecessorValidation','enableRtl','enableTimelineVirtualization','enableUndoRedo','enableVirtualMaskRow','enableVirtualization','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','loadChildOnDemand','loadingIndicator','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','readOnly','renderBaseline','resourceFields','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','segmentData','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','showOverAllocation','sortSettings','splitterSettings','taskFields','taskMode','taskType','taskbarHeight','taskbarTemplate','timelineSettings','timezone','toolbar','tooltipSettings','treeColumnIndex','undoRedoActions','undoRedoStepsCount','validateManualTasksOnLinking','viewType','width','workUnit','workWeek','zoomingLevels'];
+export const inputs: string[] = ['UpdateOffsetOnTaskbarEdit','addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowParentDependency','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTaskbarDragAndDrop','allowTaskbarOverlap','allowUnscheduledTasks','autoCalculateDateScheduling','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','enableAdaptiveUI','enableContextMenu','enableCriticalPath','enableHtmlSanitizer','enableImmutableMode','enableMultiTaskbar','enablePersistence','enablePredecessorValidation','enableRtl','enableTimelineVirtualization','enableUndoRedo','enableVirtualMaskRow','enableVirtualization','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','loadChildOnDemand','loadingIndicator','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','readOnly','renderBaseline','resourceFields','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','segmentData','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','showOverAllocation','sortSettings','splitterSettings','taskFields','taskMode','taskType','taskbarHeight','taskbarTemplate','timelineSettings','timelineTemplate','timezone','toolbar','tooltipSettings','treeColumnIndex','undoRedoActions','undoRedoStepsCount','updateOffsetOnTaskbarEdit','validateManualTasksOnLinking','viewType','weekWorkingTime','width','workUnit','workWeek','zoomingLevels'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeExcelExport','beforePdfExport','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataStateChange','destroyed','endEdit','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','onMouseMove','onTaskbarClick','pdfColumnHeaderQueryCellInfo','pdfExportComplete','pdfQueryCellInfo','pdfQueryTaskbarInfo','pdfQueryTimelineCellInfo','queryCellInfo','queryTaskbarInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -30,6 +31,7 @@ export const twoWays: string[] = ['dataSource'];
         childAddDialogFields: new ContentChild(AddDialogFieldsDirective), 
         childEditDialogFields: new ContentChild(EditDialogFieldsDirective), 
         childDayWorkingTime: new ContentChild(DayWorkingTimeCollectionDirective), 
+        childWeekWorkingTime: new ContentChild(WeekWorkingTimesDirective), 
         childHolidays: new ContentChild(HolidaysDirective), 
         childEventMarkers: new ContentChild(EventMarkersDirective)
     }
@@ -103,9 +105,10 @@ export class GanttComponent extends Gantt implements IComponentBase {
     public childAddDialogFields: QueryList<AddDialogFieldsDirective>;
     public childEditDialogFields: QueryList<EditDialogFieldsDirective>;
     public childDayWorkingTime: QueryList<DayWorkingTimeCollectionDirective>;
+    public childWeekWorkingTime: QueryList<WeekWorkingTimesDirective>;
     public childHolidays: QueryList<HolidaysDirective>;
     public childEventMarkers: QueryList<EventMarkersDirective>;
-    public tags: string[] = ['columns', 'addDialogFields', 'editDialogFields', 'dayWorkingTime', 'holidays', 'eventMarkers'];
+    public tags: string[] = ['columns', 'addDialogFields', 'editDialogFields', 'dayWorkingTime', 'weekWorkingTime', 'holidays', 'eventMarkers'];
     /** 
      * The parent task bar template that renders customized parent task bars from the given template. 
      * {% codeBlock src='gantt/parentTaskbarTemplate/index.md' %}{% endcodeBlock %}
@@ -115,6 +118,14 @@ export class GanttComponent extends Gantt implements IComponentBase {
     @ContentChild('parentTaskbarTemplate')
     @Template()
     public parentTaskbarTemplate: any;
+    /** 
+     * Renders customized html elements for timeline cell from the given template.
+     * @default null
+     * @asptype string
+     */
+    @ContentChild('timelineTemplate')
+    @Template()
+    public timelineTemplate: any;
     /** 
      * The milestone template that renders customized milestone task from the given template.
      * @default null
@@ -288,12 +299,16 @@ export class GanttComponent extends Gantt implements IComponentBase {
             this.tagObjects[3].instance = this.childDayWorkingTime;
         }
         
+	    if (this.childWeekWorkingTime) {
+            this.tagObjects[4].instance = this.childWeekWorkingTime;
+        }
+        
 	    if (this.childHolidays) {
-            this.tagObjects[4].instance = this.childHolidays;
+            this.tagObjects[5].instance = this.childHolidays;
         }
         
 	    if (this.childEventMarkers) {
-            this.tagObjects[5].instance = this.childEventMarkers;
+            this.tagObjects[6].instance = this.childEventMarkers;
         }
         this.context.ngAfterContentChecked(this);
     }

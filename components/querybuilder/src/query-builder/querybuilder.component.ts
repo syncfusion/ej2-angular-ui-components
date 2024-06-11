@@ -4,8 +4,8 @@ import { QueryBuilder } from '@syncfusion/ej2-querybuilder';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 
-export const inputs: string[] = ['addRuleToNewGroups','allowValidation','autoSelectField','autoSelectOperator','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','fieldMode','fieldModel','headerTemplate','height','immediateModeDelay','locale','matchCase','maxGroupCount','operatorModel','readonly','rule','separator','showButtons','sortDirection','summaryView','valueModel','width'];
-export const outputs: string[] = ['actionBegin','beforeChange','change','created','dataBound','ruleChange'];
+export const inputs: string[] = ['addRuleToNewGroups','allowDragAndDrop','allowValidation','autoSelectField','autoSelectOperator','columns','cssClass','dataSource','displayMode','enableNotCondition','enablePersistence','enableRtl','enableSeparateConnector','fieldMode','fieldModel','headerTemplate','height','immediateModeDelay','locale','matchCase','maxGroupCount','operatorModel','readonly','rule','separator','showButtons','sortDirection','summaryView','valueModel','width'];
+export const outputs: string[] = ['actionBegin','beforeChange','change','created','dataBound','ruleChange','drag','dragStart','drop'];
 export const twoWays: string[] = [''];
 
 /**
@@ -33,7 +33,10 @@ export class QueryBuilderComponent extends QueryBuilder implements IComponentBas
 	change: any;
 	created: any;
 	dataBound: any;
-	public ruleChange: any;
+	ruleChange: any;
+	drag: any;
+	dragStart: any;
+	public drop: any;
     public childColumns: QueryList<ColumnsDirective>;
     public tags: string[] = ['columns'];
     /** 

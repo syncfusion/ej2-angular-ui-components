@@ -2,17 +2,9 @@
 
 ## [Unreleased]
 
-## 25.2.6 (2024-05-28)
-
-### common
-
-#### Bug Fixes
-
-- `#I52921` -  Resolved `ngAfterViewChecked` triggered infinite time for array base directives property change.
-
 ## 25.2.4 (2024-05-14)
 
-### common
+### Common
 
 #### Bug Fixes
 
@@ -146,10 +138,10 @@
 - Provided the TypeScript 4.7 compatible support for the Angular components.
 - Provided the option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
 
-| The `npx` command | 
+| The `npx` command |
 |---|
-| Install the Syncfusion packages from `npm`. | 
-| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. | 
+| Install the Syncfusion packages from `npm`. |
+| Add the license key either in the environment variable `SYNCFUSION_LICENSE` or in the `syncfusion-license.txt` text file. |
 | Run the command `npx syncfusion-license activate` to automatically register the license. |
 
 ## 19.1.56 (2021-04-13)
@@ -200,7 +192,7 @@
 #### Bug Fixes
 
 - `I307728` - Provided performance improvement on complex directives.
--  `I312275` - Resolved Script error while unsubscribing events on `OnDestroy` hook.
+- `I312275` - Resolved Script error while unsubscribing events on `OnDestroy` hook.
 
 ## 18.4.41 (2021-02-02)
 
@@ -248,7 +240,7 @@
 
 #### Bug Fixes
 
-- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items. 
+- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items.
 
 ## 18.1.42 (2020-04-01)
 

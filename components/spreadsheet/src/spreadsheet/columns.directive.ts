@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['customWidth', 'format', 'hidden', 'index', 'isLocked', 'validation', 'width'];
+let input: string[] = ['customWidth', 'format', 'hidden', 'index', 'isLocked', 'isReadOnly', 'validation', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Spreadsheet.
@@ -59,6 +59,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default true
      */
     public isLocked: any;
+    /** 
+     * Represents whether a column in the sheet is read-only or not. If set to true, it prevents editing the specified cell in the sheet.
+     * @default false
+     */
+    public isReadOnly: any;
     /** 
      * Specifies the validation of the column.
      * @default ''

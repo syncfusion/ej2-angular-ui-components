@@ -43,7 +43,6 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Specifies the sub fields in columns.
      * @default null
-
      */
     public columns: any;
     /** 

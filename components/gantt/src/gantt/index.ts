@@ -2,6 +2,7 @@ export {ColumnDirective,ColumnsDirective} from './columns.directive';
 export {AddDialogFieldDirective,AddDialogFieldsDirective} from './adddialogfields.directive';
 export {EditDialogFieldDirective,EditDialogFieldsDirective} from './editdialogfields.directive';
 export {DayWorkingTimeDirective,DayWorkingTimeCollectionDirective} from './dayworkingtime.directive';
+export {WeekWorkingTimeDirective,WeekWorkingTimesDirective} from './weekworkingtime.directive';
 export {HolidayDirective,HolidaysDirective} from './holidays.directive';
 export {EventMarkerDirective,EventMarkersDirective} from './eventmarkers.directive';
 export { GanttComponent} from './gantt.component';

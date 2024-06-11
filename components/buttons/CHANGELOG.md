@@ -2,39 +2,13 @@
 
 ## [Unreleased]
 
-## 25.2.7 (2024-06-04)
-
-### Speed Dial
-
-#### Bug Fixes
-
-- `#I591414` - Now the issue with unable to click the Speed Dial items when `opensOnHover` property is enabled has been resolved.
-
-## 25.2.6 (2024-05-28)
+## 26.1.35 (2024-06-11)
 
 ### Switch
 
 #### Bug Fixes
 
-- `#593165` - The issue with "`tabindex HtmlAttributes` property is not properly set on the switch input element." has been resolved.
-
-## 25.2.4 (2024-05-14)
-
-### Checkbox
-
-#### Bug Fixes
-
-- The issue with "Script error thrown in CheckBox `unWireEvents` method" has been resolved.
-
-## 25.1.39 (2024-04-09)
-
-### Checkbox
-
-#### Bug Fixes
-
-- `#I574511` - The issue with "script error thrown while clicking the checkbox through JS." has been resolved.
-
-## 25.1.35 (2024-03-15)
+- `#I382543` - The issue with "Checkbox value not update properly while using edit template of grid" has been resolved.
 
 ### Checkbox
 
@@ -53,12 +27,6 @@
 #### Bug Fixes
 
 - `#I512179` - The issue with "Duplicate Icon Span while using the `onPropertyChange` of button" has been resolved.
-
-### Switch
-
-#### Bug Fixes
-
-- `#I382543` - The issue with "Checkbox value not update properly while using edit template of grid" has been resolved.
 
 ### Chip
 
@@ -87,7 +55,6 @@
 #### Bug Fixes
 
 -`I332876` - cssClass need to be included wrapper element of radio button issue fixed.
-
 
 ## 18.4.44 (2021-02-23)
 
@@ -252,7 +219,6 @@
 
 The Chip control contains a small block of essential information that triggers an event on click action. It also contains the primary text, image, or both, and is mostly used in mails, contacts, or filter tags.
 
-
 - `Input chip` - Basic chip with delete icon that represents a person or entity and enables  removal of chips from the chip list collection.
 - `Choice chip` - Used to select a choice from the available options.
 - `Filter chip` - Used to select multiple choices from the available options.
@@ -271,7 +237,6 @@ The Chip control contains a small block of essential information that triggers a
 ### Chips
 
 The Chip control contains a small block of essential information that triggers an event on click action. It also contains the primary text, image, or both, and is mostly used in mails, contacts, or filter tags.
-
 
 - `Input chip` - Basic chip with delete icon that represents a person or entity and enables  removal of chips from the chip list collection.
 - `Choice chip` - Used to select a choice from the available options.
@@ -318,7 +283,6 @@ The Chip control contains a small block of essential information that triggers a
 
 Switch is a graphical user interface element that allows you to toggle between checked and unchecked states.
 
-
 - **Text** - Supports text.
 - **Sizes** - Provided with different sizes of Switch.
 
@@ -338,27 +302,24 @@ Switch is a graphical user interface element that allows you to toggle between c
 
 Pascal casing changes in Button Component.
 
-
-| Enum Name | Old Property Value | New Property Value | 
-|---|---|---|
-| `IconPosition` | left | Left | 
-| `IconPosition` | right | Right | 
+Enum Name | Old Property Value | New Property Value
+-----|-----|-----
+`IconPosition` | left | Left
+`IconPosition` | right | Right
 
 Pascal casing changes in CheckBox Component.
 
-
-| Enum Name | Old Property Value | New Property Value | 
-|---|---|---|
-| `LabelPosition` | after | After | 
-| `LabelPosition` | before | Before | 
+Enum Name | Old Property Value | New Property Value
+-----|-----|-----
+`LabelPosition` | after | After
+`LabelPosition` | before | Before
 
 Pascal casing changes in RadioButton Component.
 
-
-| Enum Name | Old Property Value | New Property Value | 
-|---|---|---|
-| `RadioLabelPosition` | after | After | 
-| `RadioLabelPosition` | before | Before | 
+Enum Name | Old Property Value | New Property Value
+-----|-----|-----
+`RadioLabelPosition` | after | After
+`RadioLabelPosition` | before | Before
 
 ## 15.4.30-preview (2018-02-14)
 
@@ -426,32 +387,33 @@ Pascal casing changes in RadioButton Component.
 
 Button is a graphical user interface element that triggers an event on its click action.
 
-
 - **Types** - Provided with different types of Button.
+
 - **Predefined Styles** - Provided with predefined styles of Button.
+
 - **Sizes** - Provided with different sizes of Button.
+
 - **Icons** - Supports text and icon on the Button.
 
 ### CheckBox
 
 CheckBox is a graphical user interface element that allows to select one or more options from the choices.
 
-
 - **States** - Provided with different states of CheckBox.
+
 - **Label** - Supports label and its positioning.
+
 - **Sizes** - Provided with different sizes of CheckBox.
 
 ### RadioButton
 
 RadioButton is a graphical user interface element that allows to select one option from the choices.
 
-
 - **States** - Provided with different states of RadioButton.
+
 - **Label** - Supports label and its positioning.
-- **Sizes** - Provided with different sizes of RadioButton.
 
-
-## 17.1.38 (2019-03-29)
+- **Sizes** - Provided with different sizes of RadioButton.## 17.1.38 (2019-03-29)
 
 ### RadioButton
 
@@ -490,5 +452,3 @@ RadioButton is a graphical user interface element that allows to select one opti
 #### Bug Fixes
 
 - Provided renderer support.
-
-

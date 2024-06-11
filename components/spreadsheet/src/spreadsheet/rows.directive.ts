@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { CellsDirective } from './cells.directive';
 
-let input: string[] = ['cells', 'customHeight', 'format', 'height', 'hidden', 'index'];
+let input: string[] = ['cells', 'customHeight', 'format', 'height', 'hidden', 'index', 'isReadOnly'];
 let outputs: string[] = [];
 /**
  * `e-row` directive represent a row of the Angular Spreadsheet.
@@ -66,6 +66,11 @@ export class RowDirective extends ComplexBase<RowDirective> {
      * @asptype int
      */
     public index: any;
+    /** 
+     * Represents whether a row in the sheet is read-only or not. If set to true, it prevents editing the specified cell in the sheet.
+     * @default false
+     */
+    public isReadOnly: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

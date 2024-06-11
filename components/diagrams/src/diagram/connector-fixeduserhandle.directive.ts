@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['alignment', 'cornerRadius', 'displacement', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'offset', 'padding', 'pathData', 'visibility', 'width'];
+let input: string[] = ['alignment', 'cornerRadius', 'displacement', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'offset', 'padding', 'pathData', 'tooltip', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -100,6 +100,11 @@ export class ConnectorFixedUserHandleDirective extends ComplexBase<ConnectorFixe
      * @default ''
      */
     public pathData: any;
+    /** 
+     * Used to show tooltip for fixed user handle on mouse over.
+     * @default {}
+     */
+    public tooltip: any;
     /** 
      * Specifies the visibility of the fixed user handle
      * @default true

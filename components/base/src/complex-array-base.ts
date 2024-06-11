@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { QueryList, SimpleChanges, SimpleChange, EmbeddedViewRef } from '@angular/core';
 import { getValue, setValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { clearTemplate, registerEvents } from './util';
@@ -31,50 +32,50 @@ export class ComplexBase<T> {
     public isInitChanges: boolean;
     private tagObjects?: { name: string, instance: Tag }[] = [];
     private registeredTemplate: { [key: string]: EmbeddedViewRef<Object>[] };
-    // tslint:disable-next-line:no-any
+    private componentType: T;
     public directivePropList: any;
     public ngOnInit(): void {
         this.registeredTemplate = {};
-        for (let tag of this.tags) {
-            let objInstance: Tag = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), this);
+        for (const tag of this.tags) {
+            const objInstance: Tag = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), this);
             if (objInstance) {
                 this.tagObjects.push({ instance: objInstance, name: tag });
             }
         }
         let templateProperties: string[] = Object.keys(this);
-        for(let i = 0; i < templateProperties.length; i++) {
-            var tempProp = getValue(templateProperties[i], this);
+        for (let i: number = 0; i < templateProperties.length; i++) {
+            const tempProp: any = getValue(templateProperties[parseInt(i.toString(), 10)], this);
             if (typeof tempProp === 'object' && tempProp && tempProp.elementRef) {
-                if (!getValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', this)) {
-                    setValue(templateProperties[i].indexOf('Ref') !== -1 ? templateProperties[i] : templateProperties[i] + 'Ref', tempProp, this);
+                if (!getValue(templateProperties[parseInt(i.toString(), 10)].indexOf('Ref') !== -1 ? templateProperties[parseInt(i.toString(), 10)] : templateProperties[parseInt(i.toString(), 10)] + 'Ref', this)) {
+                    setValue(templateProperties[parseInt(i.toString(), 10)].indexOf('Ref') !== -1 ? templateProperties[parseInt(i.toString(), 10)] : templateProperties[parseInt(i.toString(), 10)] + 'Ref', tempProp, this);
                 }
-                if (getValue("viewContainerRef", this) && !getValue("_viewContainerRef", tempProp.elementRef.nativeElement) && !getValue("propName", tempProp.elementRef.nativeElement)) {
-                    setValue("_viewContainerRef", getValue("viewContainerRef", this), tempProp.elementRef.nativeElement);
-                    setValue("propName", templateProperties[i].replace("Ref", ''), tempProp.elementRef.nativeElement);
+                if (getValue('viewContainerRef', this) && !getValue('_viewContainerRef', tempProp.elementRef.nativeElement) && !getValue('propName', tempProp.elementRef.nativeElement)) {
+                    setValue('_viewContainerRef', getValue('viewContainerRef', this), tempProp.elementRef.nativeElement);
+                    setValue('propName', templateProperties[parseInt(i.toString(), 10)].replace('Ref', ''), tempProp.elementRef.nativeElement);
                 }
             }
         }
-        templateProperties = Object.keys(this)
+        templateProperties = Object.keys(this);
         templateProperties = templateProperties.filter((val: string): boolean => {
             return /Ref$/i.test(val);
         });
-        for (let tempName of templateProperties) {
-            let propName: string = tempName.replace('Ref', '');
+        for (const tempName of templateProperties) {
+            const propName: string = tempName.replace('Ref', '');
             setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
         }
 
         // Angular 9 compatibility to overcome ngOnchange not get triggered issue
         // To Update properties to "this.propCollection"
-        let propList: string[] = Object.keys(this);
+        const propList: string[] = Object.keys(this);
         /* istanbul ignore next */
         if (this.directivePropList) {
-        for (let k: number = 0; k < this.directivePropList.length; k++) {
-            let dirPropName: string = this.directivePropList[k];
-            if (propList.indexOf(dirPropName) !== -1  && (getValue(dirPropName, this) === false || getValue(dirPropName, this))) {
-                setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+            for (let k: number = 0; k < this.directivePropList.length; k++) {
+                const dirPropName: string = this.directivePropList[parseInt(k.toString(), 10)];
+                if (propList.indexOf(dirPropName) !== -1  && (getValue(dirPropName, this) === false || getValue(dirPropName, this))) {
+                    setValue(dirPropName, getValue(dirPropName, this), this.propCollection);
+                }
             }
-        }
-        this.hasChanges = true;
+            this.hasChanges = true;
         }
         this.isInitChanges = true;
     }
@@ -84,9 +85,9 @@ export class ComplexBase<T> {
     }
 
     public ngOnChanges(changes: SimpleChanges): void {
-        for (let propName of Object.keys(changes)) {
-            let changedVal: SimpleChange = changes[propName];
-            this.propCollection[propName] = changedVal.currentValue;
+        for (const propName of Object.keys(changes)) {
+            const changedVal: SimpleChange = changes[`${propName}`];
+            this.propCollection[`${propName}`] = changedVal.currentValue;
         }
         this.isUpdated = false;
         this.hasChanges = true;
@@ -98,7 +99,7 @@ export class ComplexBase<T> {
 
     public getProperties(): { [key: string]: Object } {
         /* istanbul ignore next */
-        for (let tagObject of this.tagObjects) {
+        for (const tagObject of this.tagObjects) {
             this.propCollection[tagObject.name] = tagObject.instance.getProperties();
         }
         return this.propCollection;
@@ -107,25 +108,25 @@ export class ComplexBase<T> {
     public isChanged(): boolean {
         let result: boolean = this.hasChanges;
         if (!isNullOrUndefined(this.propCollection[this.property])) {
-            let tempProps: any = this.propCollection[this.property];
-            let props: string[]= Object.keys(tempProps[0]);
+            const tempProps: any = this.propCollection[this.property];
+            const props: string[] = Object.keys(tempProps[0]);
             for (let d: number = 0; d < props.length; d++) {
-                if (!isNullOrUndefined(this.propCollection[props[d]])) {
-                    let val: any = getValue(props[d], this);
-                    let propVal: any = (this.propCollection[this.property] as any)[0][props[d]];
-                    if (!isNullOrUndefined(val) && this.propCollection[props[d]] !== val
+                if (!isNullOrUndefined(this.propCollection[props[parseInt(d.toString(), 10)]])) {
+                    const val: any = getValue(props[parseInt(d.toString(), 10)], this);
+                    const propVal: any = (this.propCollection[this.property] as any)[0][props[parseInt(d.toString(), 10)]];
+                    if (!isNullOrUndefined(val) && this.propCollection[props[parseInt(d.toString(), 10)]] !== val
                     && propVal !== val) {
-                        setValue(props[d], val, (this.propCollection[this.property] as any)[0]);
-                        setValue(props[d], val, this.propCollection);
+                        setValue(props[parseInt(d.toString(), 10)], val, (this.propCollection[this.property] as any)[0]);
+                        setValue(props[parseInt(d.toString(), 10)], val, this.propCollection);
                         this.hasChanges = true;
                         this.isUpdated = false;
                     }
-                    
+
                 }
             }
         }
         /* istanbul ignore next */
-        for (let item of this.tagObjects) {
+        for (const item of this.tagObjects) {
             result = result || item.instance.hasChanges;
         }
         return result || this.hasChanges;
@@ -138,8 +139,8 @@ export class ComplexBase<T> {
             templateProperties = templateProperties.filter((val: string) => {
                 return refRegex.test(val);
             });
-            for (let tempName of templateProperties) {
-                let propName: string = tempName.replace('Ref', '');
+            for (const tempName of templateProperties) {
+                const propName: string = tempName.replace('Ref', '');
                 setValue(propName.replace('_', '.'), getValue(propName, this), this.propCollection);
             }
         }
@@ -156,7 +157,7 @@ export class ComplexBase<T> {
         /* istanbul ignore next */
         this.isInitChanges = false;
     }
-    
+
     public ngOnDestroy(): void {
         /* istanbul ignore next */
         this.directivePropList = [];
@@ -192,8 +193,8 @@ export class ArrayBase<T> {
     }
 
     public getProperties(): Object[] {
-        let onlyProp: Object[] = [];
-        for (let item of this.list) {
+        const onlyProp: Object[] = [];
+        for (const item of this.list) {
             onlyProp.push((<{ getProperties: Function }>item).getProperties());
         }
         return onlyProp;
@@ -203,26 +204,28 @@ export class ArrayBase<T> {
         let result: boolean = false;
         let index: number = 0;
         let isSourceChanged: boolean = false;
-        // tslint:disable-next-line
-        let childrenDataSource: any = this.children.map(
-          (child: T & ComplexBase<T>) => {
-            return child;
-          }
+        const childrenDataSource: any = this.children.map(
+            (child: T & ComplexBase<T>) => {
+                return child;
+            }
         );
         /* istanbul ignore next */
         if (this.list.length === this.children.length) {
             for (let i: number = 0; i < this.list.length; i++) {
-                if (this.list[i].propCollection.dataSource) {
-                    if (this.list[i].dataSource && this.list[i].propCollection.dataSource !== this.list[i].dataSource) {
-                        this.list[i].propCollection.dataSource = this.list[i].dataSource;
-                        this.list[i].hasChanges = true;
+                if (this.list[parseInt(i.toString(), 10)].propCollection.dataSource) {
+                    if (this.list[parseInt(i.toString(), 10)].dataSource &&
+                        this.list[parseInt(i.toString(), 10)].propCollection.dataSource
+                        !== this.list[parseInt(i.toString(), 10)].dataSource) {
+                        this.list[parseInt(i.toString(), 10)].propCollection.dataSource = this.list[parseInt(i.toString(), 10)].dataSource;
+                        this.list[parseInt(i.toString(), 10)].hasChanges = true;
                     }
-                    if (this.list[i].property !== "series") {
-                        isSourceChanged = (JSON.stringify(this.list[i].propCollection.dataSource) !==
-                        JSON.stringify(childrenDataSource[i].propCollection.dataSource));
+                    if (this.list[parseInt(i.toString(), 10)].property !== 'series') {
+                        isSourceChanged = (JSON.stringify(this.list[parseInt(i.toString(), 10)].propCollection.dataSource) !==
+                        JSON.stringify(childrenDataSource[parseInt(i.toString(), 10)].propCollection.dataSource));
                     }
                 }
-                isSourceChanged = this.list[i].hasChanges !== childrenDataSource[i].hasChanges;
+                isSourceChanged = this.list[parseInt(i.toString(), 10)].hasChanges
+                                    !== childrenDataSource[parseInt(i.toString(), 10)].hasChanges;
             }
         }
 
@@ -235,7 +238,7 @@ export class ArrayBase<T> {
             });
         }
         /* istanbul ignore end */
-        for (let item of this.list) {
+        for (const item of this.list) {
             result = result || (<{ hasChanges: boolean }>item).hasChanges;
         }
         return !!this.list.length && result;
@@ -243,9 +246,10 @@ export class ArrayBase<T> {
 
     public clearTemplate(templateNames: string[]): void {
         /* istanbul ignore next */
-        for (let item of this.list) {
+        for (const item of this.list) {
             (<{ clearTemplate: Function }>item).clearTemplate(templateNames && templateNames.map((val: string): string => {
-                return new RegExp(this.propertyName).test(val) ? val.replace(this.propertyName + '.', '') : val;
+                const regExp: RegExpConstructor = RegExp;
+                return new regExp(this.propertyName).test(val) ? val.replace(this.propertyName + '.', '') : val;
             }));
         }
     }
@@ -253,17 +257,17 @@ export class ArrayBase<T> {
     public ngAfterContentChecked(): void {
         this.hasChanges = this.isChanged();
         for (let i: number = 0; i < this.list.length; i++) {
-            if (getValue('childColumns', this.list[i]) && getValue('property', this.list[i]) === 'columns') {
-                setValue('columns', getValue('childColumns', this.list[i]).getProperties(), this.list[i].propCollection);
+            if (getValue('childColumns', this.list[parseInt(i.toString(), 10)]) && getValue('property', this.list[parseInt(i.toString(), 10)]) === 'columns') {
+                setValue('columns', getValue('childColumns', this.list[parseInt(i.toString(), 10)]).getProperties(), this.list[parseInt(i.toString(), 10)].propCollection);
             }
-            this.list[i].isUpdated = true;
+            this.list[parseInt(i.toString(), 10)].isUpdated = true;
         }
     }
 
     public ngAfterViewInit(): void {
         this.isInitChanges = false;
     }
-    
+
     public ngOnDestroy(): void {
         this.list = [];
     }

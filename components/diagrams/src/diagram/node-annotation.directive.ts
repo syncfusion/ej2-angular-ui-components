@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'annotationType', 'constraints', 'content', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'rotationReference', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -114,6 +114,11 @@ export class NodeAnnotationDirective extends ComplexBase<NodeAnnotationDirective
      * @default 0
      */
     public rotateAngle: any;
+    /** 
+     * Gets or sets the reference mode for annotation rotation.
+     * @default 'Parent'
+     */
+    public rotationReference: any;
     /** 
      * Defines the appearance of the text
      * @default new TextStyle()

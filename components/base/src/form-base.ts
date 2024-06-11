@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 import { EventEmitter, ElementRef, ChangeDetectorRef } from '@angular/core';
 import { getValue, setValue, isNullOrUndefined, isObject } from '@syncfusion/ej2-base';
 import { ControlValueAccessor } from '@angular/forms';
@@ -8,15 +9,15 @@ export class FormBase<T> implements ControlValueAccessor {
     public value: T;
     public checked: boolean;
     private skipFromEvent: boolean;
-    static readonly isFormBase = true;
+    static readonly isFormBase: boolean = true;
 
-    public propagateChange(_: T): void { return; }
+    public propagateChange(_?: T): void { return; }
     public propagateTouch(): void { return; }
     public enabled: Object;
     public disabled: Object;
     public angularValue: T;
-    private isFormInit: Boolean;
-    public objCheck: Boolean;
+    private isFormInit: boolean;
+    public objCheck: boolean;
     public duplicateValue: string;
     public duplicateAngularValue: string;
 
@@ -33,8 +34,7 @@ export class FormBase<T> implements ControlValueAccessor {
     public cdr: ChangeDetectorRef;
 
     public localChange(e: { value?: T, checked?: T }): void {
-        //tslint:disable-next-line
-        let value: T | any = (e.checked === undefined ? e.value : e.checked);
+        const value: T | any = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
         if (this.isUpdated === true) {
             this.angularValue = this.oldValue;
@@ -55,8 +55,7 @@ export class FormBase<T> implements ControlValueAccessor {
                     this.propagateChange(value);
                     this.angularValue = value;
                 } else {
-                    //tslint:disable-next-line
-                    let optionalValue: any = value;
+                    const optionalValue: any = value;
                     this.propagateChange(optionalValue);
                     this.angularValue = value;
                 }
@@ -77,8 +76,8 @@ export class FormBase<T> implements ControlValueAccessor {
         this.propagateTouch = registerFunction;
     }
     public twoWaySetter(newVal: Object, prop: string): void {
-        let oldVal: Object = this.oldValue || getValue(prop, this.properties);
-        let ele: HTMLElement = this.inputElement || this.element;
+        const oldVal: Object = this.oldValue || getValue(prop, this.properties);
+        const ele: HTMLElement = this.inputElement || this.element;
         if (ele && oldVal === newVal && this.value === newVal &&
             ((<HTMLInputElement>ele).value === undefined || (<HTMLInputElement>ele).value === '')) {
             return;
@@ -87,24 +86,23 @@ export class FormBase<T> implements ControlValueAccessor {
         setValue(prop, (isNullOrUndefined(newVal) ? null : newVal), this.properties);
         getValue(prop + 'Change', this).emit(newVal);
     }
-    // tslint:disable-next-line:no-any
+
     public ngAfterViewInit(isTempRef?: any): void {
-        // tslint:disable-next-line:no-any
-        let tempFormAfterViewThis: any = isTempRef || this;
+        const tempFormAfterViewThis: any = isTempRef || this;
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         /* istanbul ignore else */
         if (typeof window !== 'undefined') {
             if ((tempFormAfterViewThis.getModuleName()).includes('dropdowntree')) {
-                setTimeout(function () {
+                setTimeout(function (): any {
                     tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
                 });
             }
             else {
                 tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
             }
-            let ele: HTMLElement = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
+            const ele: HTMLElement = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
             ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
             ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
         }
@@ -116,7 +114,7 @@ export class FormBase<T> implements ControlValueAccessor {
     }
 
     public writeValue(value: T): void {
-        let regExp: RegExp = /ejs-radiobutton/g;
+        const regExp: RegExp = /ejs-radiobutton/g;
         //update control value from angular
         if (this.checked === undefined) {
             this.value = value;

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['disabled', 'iconCss', 'text', 'url'];
+let input: string[] = ['disabled', 'iconCss', 'id', 'text', 'url'];
 let outputs: string[] = [];
 /**
  * `e-breadcrumb-item` directive represent a item of the Angular Breadcrumb.
@@ -40,6 +40,11 @@ export class BreadcrumbItemDirective extends ComplexBase<BreadcrumbItemDirective
      * @default null
      */
     public iconCss: any;
+    /** 
+     * Specifies the id of the Breadcrumb item.
+     * @default ''
+     */
+    public id: any;
     /** 
      * Specifies the text content of the Breadcrumb item.
      * @default ''

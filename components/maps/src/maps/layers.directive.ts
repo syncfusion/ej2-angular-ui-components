@@ -6,7 +6,7 @@ import { MarkersDirective } from './markersettings.directive';
 import { BubblesDirective } from './bubblesettings.directive';
 import { NavigationLinesDirective } from './navigationlinesettings.directive';
 
-let input: string[] = ['animationDuration', 'bingMapType', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'key', 'layerType', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'polygonSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'staticMapType', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
+let input: string[] = ['animationDuration', 'bubbleSettings', 'dataLabelSettings', 'dataSource', 'geometryType', 'highlightSettings', 'initialShapeSelection', 'markerClusterSettings', 'markerSettings', 'navigationLineSettings', 'polygonSettings', 'query', 'selectionSettings', 'shapeData', 'shapeDataPath', 'shapePropertyPath', 'shapeSettings', 'toggleLegendSettings', 'tooltipSettings', 'type', 'urlTemplate', 'visible'];
 let outputs: string[] = [];
 /**
  * Represents the directive to define the layer of the maps.
@@ -46,13 +46,6 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      */
     public animationDuration: any;
     /** 
-     * Gets or sets the Bing map type for the layer. If you set GeoJSON data in the map and set the `BingMapType` value without setting the layer type as "Bing", 
-     * then the map will be rendered based on the provided shape data since the default layer type will be set as "Geometry".
-     * @deprecated 
-     * @default Aerial
-     */
-    public bingMapType: any;
-    /** 
      * Gets or sets the options for customizing the bubbles in maps.
      */
     public bubbleSettings: any;
@@ -83,19 +76,6 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * The initial selection of shapes will be performed only when the selection functionality of layer is enabled.
      */
     public initialShapeSelection: any;
-    /** 
-     * Gets or sets the key for the online map provider to render in the layer of the maps.
-     * @deprecated 
-     * @default ''
-     */
-    public key: any;
-    /** 
-     * Gets or sets the type of the layer in maps. If we use layer type with shape data property in layer of the maps 
-     * then map will render based on the provided layer type.
-     * @deprecated 
-     * @default Geometry
-     */
-    public layerType: any;
     /** 
      * Gets or sets the options for customizing the cluster of markers in maps.
      */
@@ -144,12 +124,6 @@ export class LayerDirective extends ComplexBase<LayerDirective> {
      * Gets or sets the options to customize the shape of the maps.
      */
     public shapeSettings: any;
-    /** 
-     * Gets or sets the type of the static maps.
-     * @deprecated 
-     * @default RoadMap
-     */
-    public staticMapType: any;
     /** 
      * Gets or sets the options for customizing the toggle state of shapes when selecting the legend in maps.
      */

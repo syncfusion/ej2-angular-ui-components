@@ -4,6 +4,7 @@ import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { AddDialogFieldDirective, AddDialogFieldsDirective } from './adddialogfields.directive';
 import { EditDialogFieldDirective, EditDialogFieldsDirective } from './editdialogfields.directive';
 import { DayWorkingTimeDirective, DayWorkingTimeCollectionDirective } from './dayworkingtime.directive';
+import { WeekWorkingTimeDirective, WeekWorkingTimesDirective } from './weekworkingtime.directive';
 import { HolidayDirective, HolidaysDirective } from './holidays.directive';
 import { EventMarkerDirective, EventMarkersDirective } from './eventmarkers.directive';
 import { GanttComponent } from './gantt.component';

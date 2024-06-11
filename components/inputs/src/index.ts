@@ -26,5 +26,8 @@ export { SignatureAllModule } from './signature/signature-all.module';
 export { RatingComponent} from './rating/rating.component';
 export { RatingModule } from './rating/rating.module';
 export { RatingAllModule } from './rating/rating-all.module';
+export { OtpInputComponent} from './otp-input/otpinput.component';
+export { OtpInputModule } from './otp-input/otpinput.module';
+export { OtpInputAllModule } from './otp-input/otpinput-all.module';
 export * from './form-validator/form-validator';
 export * from '@syncfusion/ej2-inputs';

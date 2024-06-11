@@ -150,9 +150,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public field: any;
     /** 
      *  Defines the filter options to customize filtering for the particular column.
-     * 
-     *  @default null
-     *     
+     * @default null
      */
     public filter: any;
     /** 

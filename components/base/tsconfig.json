@@ -6,6 +6,7 @@
     "declaration": true,
     "removeComments": false,
     "noLib": false,
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "sourceMap": true,
     "pretty": true,
@@ -18,7 +19,12 @@
     "allowJs": false,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "types": ["jasmine","jasmine-ajax","core-js"]
+    "types": ["jasmine","jasmine-ajax","core-js"],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/typescript",
+      "your/custom/type/definitions"
+    ]
   },
   "exclude": [
     "node_modules",

@@ -1,11 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 /**
  * Angular Component Base Module
  */
 import { getValue, isUndefined, setValue, isNullOrUndefined, attributes, createElement } from '@syncfusion/ej2-base';
 import { EventEmitter, EmbeddedViewRef, Renderer2, ElementRef } from '@angular/core';
 import { clearTemplate, registerEvents } from './util';
-
-const SVG_REG: RegExp = /^svg|^path|^g/;
 
 export interface IComponentBase {
     registerEvents: (eventList: string[]) => void;
@@ -35,6 +34,7 @@ export class ComponentBase<T> {
     protected isProtectedOnChange: boolean = true;
     private isAngular: boolean;
     private isFormInit: boolean = true;
+    private componentType: T;
     public preventChange: boolean;
     public isPreventChange: boolean;
     protected oldProperties: { [key: string]: Object };
@@ -52,26 +52,23 @@ export class ComponentBase<T> {
     private createElement: Function;
     protected saveChanges(key: string, newValue: Object, oldValue: Object): void {
         if (this.isProtectedOnChange) { return; }
-        this.oldProperties[key] = oldValue;
-        this.changedProperties[key] = newValue;
+        this.oldProperties[`${key}`] = oldValue;
+        this.changedProperties[`${key}`] = newValue;
         this.finalUpdate();
-        // tslint:disable-next-line:no-any
-        let changeTime: any = setTimeout(this.dataBind.bind(this));
-        let clearUpdate: Function = () => {
+        const changeTime: any = setTimeout(this.dataBind.bind(this));
+        const clearUpdate: Function = () => {
             clearTimeout(changeTime);
         };
         this.finalUpdate = clearUpdate;
-    };
+    }
 
     public destroy: Function;
     private registeredTemplate: { [key: string]: EmbeddedViewRef<Object>[] };
     private complexTemplate: string[];
 
     private ngBoundedEvents: { [key: string]: Map<object, object> };
-    // tslint:disable-next-line:no-any
     public ngOnInit(isTempRef?: any): void {
-        // tslint:disable-next-line:no-any
-        let tempOnThis: any = isTempRef || this;
+        const tempOnThis: any = isTempRef || this;
         tempOnThis.registeredTemplate = {};
         tempOnThis.ngBoundedEvents = {};
         tempOnThis.isAngular = true;
@@ -86,9 +83,8 @@ export class ComponentBase<T> {
         tempOnThis.ngAttr = this.getAngularAttr(tempOnThis.element);
         /* istanbul ignore next */
         tempOnThis.createElement = (tagName: string, prop?:
-            { id?: string, className?: string, innerHTML?: string, styles?: string, attrs?: { [key: string]: string } }) => {
-            //tslint:disable-next-line
-            let ele: Element = tempOnThis.srenderer ? tempOnThis.srenderer.createElement(tagName) : createElement(tagName);
+        { id?: string, className?: string, innerHTML?: string, styles?: string, attrs?: { [key: string]: string } }) => {
+            const ele: Element = tempOnThis.srenderer ? tempOnThis.srenderer.createElement(tagName) : createElement(tagName);
             if (typeof (prop) === 'undefined') {
                 return <HTMLElement>ele;
             }
@@ -111,8 +107,8 @@ export class ComponentBase<T> {
             }
             return <HTMLElement>ele;
         };
-        for (let tag of tempOnThis.tags) {
-            let tagObject: { name: string, instance: Tag } = {
+        for (const tag of tempOnThis.tags) {
+            const tagObject: { name: string, instance: Tag } = {
                 instance: getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tempOnThis),
                 name: tag
             };
@@ -120,47 +116,46 @@ export class ComponentBase<T> {
         }
 
         let complexTemplates: string[] = Object.keys(tempOnThis);
-        for (let i = 0; i < complexTemplates.length; i++) { 
-            var compProp = getValue(complexTemplates[i], tempOnThis);
+        for (let i: number = 0; i < complexTemplates.length; i++) {
+            const compProp: any = getValue(complexTemplates[parseInt(i.toString(), 10)], tempOnThis);
             if (typeof compProp === 'object' && compProp && compProp.elementRef) {
-                if (typeof compProp === 'object' && compProp && compProp.elementRef && complexTemplates[i].indexOf('_') !== -1 && complexTemplates[i].indexOf('Ref') === -1) {
-                    setValue(complexTemplates[i] + 'Ref', compProp, tempOnThis);
+                if (typeof compProp === 'object' && compProp && compProp.elementRef && complexTemplates[parseInt(i.toString(), 10)].indexOf('_') !== -1 && complexTemplates[parseInt(i.toString(), 10)].indexOf('Ref') === -1) {
+                    setValue(complexTemplates[parseInt(i.toString(), 10)] + 'Ref', compProp, tempOnThis);
                 }
-                if (tempOnThis.viewContainerRef && !getValue("_viewContainerRef", compProp.elementRef.nativeElement) && !getValue("propName", compProp.elementRef.nativeElement)) {
-                    setValue("_viewContainerRef", tempOnThis.viewContainerRef, compProp.elementRef.nativeElement);
-                    setValue("propName", complexTemplates[i].replace("Ref", ''), compProp.elementRef.nativeElement);
+                if (tempOnThis.viewContainerRef && !getValue('_viewContainerRef', compProp.elementRef.nativeElement) && !getValue('propName', compProp.elementRef.nativeElement)) {
+                    setValue('_viewContainerRef', tempOnThis.viewContainerRef, compProp.elementRef.nativeElement);
+                    setValue('propName', complexTemplates[parseInt(i.toString(), 10)].replace('Ref', ''), compProp.elementRef.nativeElement);
                 }
             }
         }
         complexTemplates = Object.keys(tempOnThis);
         complexTemplates = complexTemplates.filter((val: string): boolean => {
-            return /Ref$/i.test(val) && /\_/i.test(val);
+            return /Ref$/i.test(val) && /_/i.test(val);
         });
-        for (let tempName of complexTemplates) {
-            let propName: string = tempName.replace('Ref', '');
-            let val: Object = {};
+        for (const tempName of complexTemplates) {
+            const propName: string = tempName.replace('Ref', '');
+            const val: Object = {};
             setValue(propName.replace('_', '.'), getValue(propName, tempOnThis), val);
             tempOnThis.setProperties(val, true);
         }
     }
 
     public getAngularAttr(ele: Element): string {
-        let attributes: NamedNodeMap = ele.attributes;
-        let length: number = attributes.length;
+        const attributes: NamedNodeMap = ele.attributes;
+        const length: number = attributes.length;
         let ngAr: string;
         for (let i: number = 0; i < length; i++) {
             /* istanbul ignore next */
-            if (/_ngcontent/g.test(attributes[i].name)) {
-                ngAr = attributes[i].name;
+            if (/_ngcontent/g.test(attributes[parseInt(i.toString(), 10)].name)) {
+                ngAr = attributes[parseInt(i.toString(), 10)].name;
             }
         }
         return ngAr;
-    };
-    // tslint:disable-next-line:no-any
+    }
+
     public ngAfterViewInit(isTempRef?: any): void {
-        // tslint:disable-next-line:no-any
-        let tempAfterViewThis: any = isTempRef || this;
-        let regExp: RegExp = /ejs-tab|ejs-accordion/g;
+        const tempAfterViewThis: any = isTempRef || this;
+        const regExp: RegExp = /ejs-tab|ejs-accordion/g;
         /* istanbul ignore next */
         if (regExp.test(tempAfterViewThis.ngEle.nativeElement.outerHTML)) {
             tempAfterViewThis.ngEle.nativeElement.style.visibility = 'hidden';
@@ -172,8 +167,8 @@ export class ComponentBase<T> {
          * so that we have set template value for root level template properties,
          * for example: refer below syntax
          * ```html
-         * <ejs-grid> 
-         * <e-column></e-column> 
+         * <ejs-grid>
+         * <e-column></e-column>
          * <ng-template #editSettingsTemplate></ng-template>
          * </ejs-grid>
          * ```
@@ -182,53 +177,52 @@ export class ComponentBase<T> {
         templateProperties = templateProperties.filter((val: string): boolean => {
             return /Ref$/i.test(val);
         });
-        let ngtempRef: boolean = tempAfterViewThis.getModuleName() === 'DocumentEditor';
-        for (let tempName of templateProperties) {
-            let propName: string = tempName.replace('Ref', '');
+        const ngtempRef: boolean = tempAfterViewThis.getModuleName() === 'DocumentEditor';
+        for (const tempName of templateProperties) {
+            const propName: string = tempName.replace('Ref', '');
             setValue(propName.replace('_', '.'), getValue(propName + 'Ref', tempAfterViewThis), tempAfterViewThis);
         }
         // Used setTimeout for template binding
         // Refer Link: https://github.com/angular/angular/issues/6005
-        const appendToComponent = (tempAfterViewThis: any) => {
+        const appendToComponent: any = (tempAfterViewThis: any) => {
             /* istanbul ignore else  */
             if (typeof window !== 'undefined' && tempAfterViewThis.element || tempAfterViewThis.getModuleName().includes('btn')) {
                 tempAfterViewThis.appendTo(tempAfterViewThis.element);
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
-        }
+        };
         if (!ngtempRef) {
             setTimeout(() => {
                 appendToComponent(tempAfterViewThis);
-            });   
+            });
         } else {
             appendToComponent(tempAfterViewThis);
         }
     }
-    // tslint:disable-next-line:no-any
+
     public ngOnDestroy(isTempRef?: any): void {
-        // tslint:disable-next-line:no-any
-        let tempOnDestroyThis: any = isTempRef || this;
+        const tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
         setTimeout(() => {
             if (typeof window !== 'undefined' && (tempOnDestroyThis.element.classList.contains('e-control'))) {
                 tempOnDestroyThis.destroy();
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy
-                setTimeout(function () {
-                    for (let key of Object.keys(tempOnDestroyThis)) {
-                        let value = tempOnDestroyThis[key];
+                setTimeout(function (): any {
+                    for (const key of Object.keys(tempOnDestroyThis)) {
+                        const value: any = tempOnDestroyThis[`${key}`];
                         if (value && /object/.test(typeof value) && Object.keys(value).length !== 0) {
                             if (/properties|changedProperties|childChangedProperties|oldProperties|moduleLoader/.test(key)) {
-                                for (let propKey of Object.keys(tempOnDestroyThis[key])) {
-                                    let propValue = value[propKey];
+                                for (const propKey of Object.keys(tempOnDestroyThis[`${key}`])) {
+                                    const propValue: any = value[`${propKey}`];
                                     if (propValue && /object/.test(typeof propValue) && Object.keys(propValue).length !== 0 && (propValue.parent || propValue.parentObj)) {
-                                        tempOnDestroyThis[key][propKey] = null;
+                                        tempOnDestroyThis[`${key}`][`${propKey}`] = null;
                                     }
                                 }
                             }
                             else {
                                 if (value.parent || value.parentObj) {
-                                    tempOnDestroyThis[key] = null;
+                                    tempOnDestroyThis[`${key}`] = null;
                                 }
                             }
                         }
@@ -237,56 +231,55 @@ export class ComponentBase<T> {
             }
         });
     }
-    //tslint:disable-next-line
+
     public clearTemplate(templateNames?: string[], index?: any): void {
         clearTemplate(this, templateNames, index);
-    };
-    // tslint:disable-next-line:no-any
-    public ngAfterContentChecked(isTempRef?: any): void {
+    }
 
-        // tslint:disable-next-line:no-any
-        let tempAfterContentThis: any = isTempRef || this;
-        for (let tagObject of tempAfterContentThis.tagObjects) {
+    public ngAfterContentChecked(isTempRef?: any): void {
+        const tempAfterContentThis: any = isTempRef || this;
+        for (const tagObject of tempAfterContentThis.tagObjects) {
             if (!isUndefined(tagObject.instance) &&
                 (tagObject.instance.isInitChanges || tagObject.instance.hasChanges || tagObject.instance.hasNewChildren)) {
-                let propObj: { [key: string]: Object } = {};
+                const propObj: { [key: string]: Object } = {};
                 if (tagObject.instance.isInitChanges) {
                     // For angular 9 compatibility
                     // Not able to get complex directive properties reference ni Onint hook
                     // So we have constructed property here and used
-                    let complexDirProps;
-                    let list = getValue('instance.list', tagObject);
+                    let complexDirProps: any;
+                    const list: any = getValue('instance.list', tagObject);
                     if (list && list.length) {
                         complexDirProps = list[0].directivePropList;
                     }
                     let skip: any = true;
                     if ((tempAfterContentThis as any).getModuleName && (tempAfterContentThis as any).getModuleName() === 'gantt') {
-                        skip = false
+                        skip = false;
                     }
                     if (complexDirProps && skip && complexDirProps.indexOf(tagObject.instance.propertyName) === -1) {
-                        let compDirPropList = Object.keys(tagObject.instance.list[0].propCollection);
-                        for (let h = 0; h < tagObject.instance.list.length; h++) {
-                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName] = [];
-                            let obj: any = {};
-                            for (let k = 0; k < compDirPropList.length; k++) {
-                                let complexPropName = compDirPropList[k];
-                                obj[complexPropName] = tagObject.instance.list[h].propCollection[complexPropName];
+                        const compDirPropList: any = Object.keys(tagObject.instance.list[0].propCollection);
+                        for (let h: number = 0; h < tagObject.instance.list.length; h++) {
+                            tagObject.instance.list[`${h}`].propCollection[tagObject.instance.propertyName] = [];
+                            const obj: any = {};
+                            for (let k: number = 0; k < compDirPropList.length; k++) {
+                                const complexPropName: any = compDirPropList[parseInt(k.toString(), 10)];
+                                obj[`${complexPropName}`] = tagObject.instance.list[`${h}`].propCollection[`${complexPropName}`];
                             }
-                            for (let i = 0; i < tagObject.instance.list[h].tags.length; i++) {
-                                let tag = tagObject.instance.list[h].tags[i];
-                                let childObj = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[h]);
+                            for (let i: number = 0; i < tagObject.instance.list[`${h}`].tags.length; i++) {
+                                const tag: any = tagObject.instance.list[`${h}`].tags[parseInt(i.toString(), 10)];
+                                const childObj: any = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), tagObject.instance.list[`${h}`]);
                                 if (childObj) {
-                                    let innerchildObj = tagObject.instance.list[h]['child' + tag.substring(0, 1).toUpperCase() + tag.substring(1)];
+                                    const innerchildObj: any = tagObject.instance.list[`${h}`]['child' + tag.substring(0, 1).toUpperCase() + tag.substring(1)];
                                     // Update the inner child tag objects
-                                    const updateChildTag = (innerchild: any) => {
-                                        let innerLevelTag: any = [];
+                                    const updateChildTag: any = (innerchild: any) => {
+                                        const innerLevelTag: any = [];
                                         if (innerchild) {
-                                            for (let j = 0; j < innerchild.list.length; j++) {
-                                                let innerTag = innerchild.list[0].tags[0];
+                                            for (let j: number = 0; j < innerchild.list.length; j++) {
+                                                const innerTag: any = innerchild.list[0].tags[0];
                                                 if (innerTag) {
-                                                    let innerchildTag = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchild.list[j]);
+                                                    const innerchildTag: any = getValue('child' + innerTag.substring(0, 1).toUpperCase() + innerTag.substring(1), innerchild.list[parseInt(j.toString(), 10)]);
                                                     if (innerchildTag) {
-                                                        innerchild.list[j].tagObjects.push({ instance: innerchildTag, name: innerTag });
+                                                        innerchild.list[parseInt(j.toString(), 10)].tagObjects
+                                                            .push({ instance: innerchildTag, name: innerTag });
                                                         innerLevelTag.push(innerchildTag);
                                                     }
                                                 }
@@ -294,16 +287,16 @@ export class ComponentBase<T> {
                                         }
                                         // check for inner level tag
                                         if (innerLevelTag.length !== 0) {
-                                            for (let l = 0; l < innerLevelTag.length; l++) {
-                                                updateChildTag(innerLevelTag[l]);
+                                            for (let l: number = 0; l < innerLevelTag.length; l++) {
+                                                updateChildTag(innerLevelTag[parseInt(l.toString(), 10)]);
                                             }
-                                        };
+                                        }
                                     };
                                     updateChildTag(innerchildObj);
-                                    tagObject.instance.list[h].tagObjects.push({ instance: childObj, name: tag });
+                                    tagObject.instance.list[`${h}`].tagObjects.push({ instance: childObj, name: tag });
                                 }
                             }
-                            tagObject.instance.list[h].propCollection[tagObject.instance.propertyName].push(obj);
+                            tagObject.instance.list[`${h}`].propCollection[tagObject.instance.propertyName].push(obj);
                         }
                     }
                     // End angular 9 compatibility
@@ -311,14 +304,14 @@ export class ComponentBase<T> {
                     tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                 } else {
                     /* istanbul ignore next */
-                    let hasDiffLength = false;
+                    let hasDiffLength: boolean = false;
                     if ((tempAfterContentThis[tagObject.name].length !== tagObject.instance.list.length) || (/diagram|DashboardLayout/.test(tempAfterContentThis.getModuleName()))) {
                         tempAfterContentThis[tagObject.name] = tagObject.instance.list;
                         hasDiffLength = true;
                     }
-                    for (let list of tagObject.instance.list) {
-                        let curIndex: number = tagObject.instance.list.indexOf(list);
-                        let curChild: any = getValue(tagObject.name, tempAfterContentThis)[curIndex];
+                    for (const list of tagObject.instance.list) {
+                        const curIndex: number = tagObject.instance.list.indexOf(list);
+                        const curChild: any = getValue(tagObject.name, tempAfterContentThis)[`${curIndex}`];
                         let complexTemplates: string[] = Object.keys(curChild);
                         complexTemplates = complexTemplates.filter((val: string): boolean => {
                             return /Ref$/i.test(val);
@@ -326,8 +319,8 @@ export class ComponentBase<T> {
                         if (curChild.properties && Object.keys(curChild.properties).length !== 0){
                             for (let complexPropName of complexTemplates) {
                                 complexPropName = complexPropName.replace(/Ref/, '');
-                                curChild.properties[complexPropName] = !curChild.properties[complexPropName] ?
-                                    curChild.propCollection[complexPropName] : curChild.properties[complexPropName];
+                                curChild.properties[`${complexPropName}`] = !curChild.properties[`${complexPropName}`] ?
+                                    curChild.propCollection[`${complexPropName}`] : curChild.properties[`${complexPropName}`];
                             }
                         }
                         if (!isUndefined(curChild) && !isUndefined(curChild.setProperties)) {
@@ -353,7 +346,7 @@ export class ComponentBase<T> {
     }
 
     protected twoWaySetter(newVal: Object, prop: string): void {
-        let oldVal: Object = getValue(prop, this.properties);
+        const oldVal: Object = getValue(prop, this.properties);
         if (oldVal === newVal) {
             return;
         }
@@ -363,7 +356,7 @@ export class ComponentBase<T> {
     }
 
     protected addTwoWay(propList: string[]): void {
-        for (let prop of propList) {
+        for (const prop of propList) {
             getValue(prop, this);
             Object.defineProperty(this, prop, {
                 get: () => {
@@ -376,27 +369,27 @@ export class ComponentBase<T> {
     }
 
     public addEventListener(eventName: string, handler: Function): void {
-        let eventObj: EventEmitter<Object> = getValue(eventName, this);
+        const eventObj: EventEmitter<Object> = getValue(eventName, this);
         if (!isUndefined(eventObj)) {
-            if (!this.ngBoundedEvents[eventName]) {
-                this.ngBoundedEvents[eventName] = new Map();
+            if (!this.ngBoundedEvents[`${eventName}`]) {
+                this.ngBoundedEvents[`${eventName}`] = new Map();
             }
-            this.ngBoundedEvents[eventName].set(handler, eventObj.subscribe(handler));
+            this.ngBoundedEvents[`${eventName}`].set(handler, eventObj.subscribe(handler));
         }
     }
 
     public removeEventListener(eventName: string, handler: Function): void {
-        let eventObj: EventEmitter<Object> = getValue(eventName, this);
+        const eventObj: EventEmitter<Object> = getValue(eventName, this);
         if (!isUndefined(eventObj)) {
-            (<EventEmitter<object>>this.ngBoundedEvents[eventName].get(handler)).unsubscribe();
+            (<EventEmitter<object>>this.ngBoundedEvents[`${eventName}`].get(handler)).unsubscribe();
         }
     }
 
     public trigger(eventName: string, eventArgs: Object, success?: Function): void {
 
-        let eventObj: { next: Function } = getValue(eventName, this);
+        const eventObj: { next: Function } = getValue(eventName, this);
 
-        let prevDetection: boolean = this.isProtectedOnChange;
+        const prevDetection: boolean = this.isProtectedOnChange;
         this.isProtectedOnChange = false;
 
         if (eventArgs) {
@@ -406,7 +399,7 @@ export class ComponentBase<T> {
         if (!isUndefined(eventObj)) {
             eventObj.next(eventArgs);
         }
-        let localEventObj: Function = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
+        const localEventObj: Function = getValue('local' + eventName.charAt(0).toUpperCase() + eventName.slice(1), this);
         if (!isUndefined(localEventObj)) {
             localEventObj.call(this, eventArgs);
         }

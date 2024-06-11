@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['cornerRadius', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'margin', 'offset', 'padding', 'pathData', 'visibility', 'width'];
+let input: string[] = ['cornerRadius', 'fill', 'handleStrokeColor', 'handleStrokeWidth', 'height', 'iconStrokeColor', 'iconStrokeWidth', 'id', 'margin', 'offset', 'padding', 'pathData', 'tooltip', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -91,6 +91,11 @@ export class NodeFixedUserHandleDirective extends ComplexBase<NodeFixedUserHandl
      * @default ''
      */
     public pathData: any;
+    /** 
+     * Used to show tooltip for fixed user handle on mouse over.
+     * @default {}
+     */
+    public tooltip: any;
     /** 
      * Specifies the visibility of the fixed user handle
      * @default true

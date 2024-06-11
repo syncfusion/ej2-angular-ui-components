@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'connectionDirection', 'constraints', 'height', 'horizontalAlignment', 'id', 'inEdges', 'margin', 'offset', 'outEdges', 'pathData', 'shape', 'style', 'tooltip', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Nodes Directive
@@ -37,6 +37,16 @@ export class PortDirective extends ComplexBase<PortDirective> {
      * @default undefined
      */
     public addInfo: any;
+    /** 
+     * Defines the allowed direction for connections to the port 
+     * * Auto - Maintains the default behavior of automatic direction calculation. 
+     * * Left - Restricts connections to only connect to the left side of the port. 
+     * * Top - Restricts connections to only connect to the top side of the port. 
+     * * Right - Restricts connections to only connect to the right side of the port. 
+     * * Bottom - Restricts connections to only connect to the bottom side of the port.
+     * @default 'Auto'
+     */
+    public connectionDirection: any;
     /** 
      * Defines the constraints of port
      * @default 'Default'

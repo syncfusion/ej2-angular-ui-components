@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['address', 'dataSource', 'query', 'showFieldAsHeader', 'startCell', 'template'];
+let input: string[] = ['address', 'dataSource', 'fieldsOrder', 'query', 'showFieldAsHeader', 'startCell', 'template'];
 let outputs: string[] = [];
 /**
  * `e-range` directive represent a range of the Angular Spreadsheet.
@@ -43,6 +43,13 @@ export class RangeDirective extends ComplexBase<RangeDirective> {
      * @default null
      */
     public dataSource: any;
+    /** 
+     * By default, when a sheet is bound to a data source, columns are assigned to data source fields sequentially. 
+     * This means that the first data field is assigned to Column A, the second to Column B, and so on. 
+     * You can customize these assignments by specifying the field names in the desired column order using the 'fieldsOrder' property.
+     * @default null
+     */
+    public fieldsOrder: any;
     /** 
      * Defines the external [`Query`](https://ej2.syncfusion.com/documentation/data/api-query.html) 
      * that will be executed along with data processing.
