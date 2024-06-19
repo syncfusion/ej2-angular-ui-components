@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 26.1.38 (2024-06-19)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I587318` - Issues in the Schedule aria-label attributes are fixed.
+- `#I583567` - Resizing the appointment to the last column of the timeline views is not working issue has been resolved.
+- `#I592841` - The issue with the appointment width calculation, when the `endHour` and `timeScale` properties are customized is fixed.
+- `#FB51620` - The `setWorkHours` method sets work hours to the wrong time range if today's date is a DST start is fixed.
+- `#I583293` - The quick info popup shows the wrong time instead of the clicked cell time and adds the appointment to the wrong time if the clicked cell is in the DST start date is fixed.
+
+- `#I597851` - The issue with the event template in the Angular implementation, where it wasn't printing properly in the scheduler, has been fixed.
+
 ## 26.1.35 (2024-06-11)
 
 ### Schedule
@@ -37,6 +51,8 @@
 
 - `#I582520` - The issue with `scrollToResource` not working in the month view has been resolved.
 
+- `#I528774` - The `eventTemplate` causing memory leak on date navigation has been fixed.
+
 ## 25.1.42 (2024-04-30)
 
 ### Schedule
@@ -44,6 +60,8 @@
 #### Bug fixes
 
 - `#I583674` - An issue where the text for today button was not displayed in the toolbar has been fixed.
+
+- `#I577108` - An issue with `quickInfotemplates` is not being properly destroyed has been fixed.
 
 ## 25.1.41 (2024-04-23)
 

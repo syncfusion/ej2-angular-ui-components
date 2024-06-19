@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 26.1.38 (2024-06-19)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I587460` - Console error throws when assigning predecessor to an unscheduled task issue has been fixed.
+- `#I594645` - Cannot edit cell after validation rule is applied issue has been fixed.
+- `#I598329` - Cancel in `actionBegin` event argument doesn't cancel taskbar and dialog edit action issue been fixed.
+- `#I594908`,`#I594882`, `#I592404` - Incorrect validation of resource, work and duration utilization while mapping `taskType` issues has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.1.35 (2024-06-11)
 
 ### GanttChart
@@ -12,9 +25,9 @@
 - `#I287282`, `#I298661`, `#I307272`, `#I313849`, `#I323459`, `#F185672`, - Provided [timelineTemplate](https://ej2.syncfusion.com/documentation/api/gantt/#timelineTemplate) support to render user defined HTML elements in timeline header. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/material3/gantt/timeline-template.html).
 - We have improved to handle the exception of errors made at Gantt component model binding and throws the error information in `actionFailure` event. Please find the documentation link [here](https://ej2.syncfusion.com/documentation/gantt/exception-handling).
 
-#### Bug fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I272613`,`#I269665`,`#I247664`,`#F146782` - Provided [weekWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#weekworkingtime) support, allowing you to define distinct work hours for different working days. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/material3/gantt/working-time-range).
+- `#I287282`, `#I298661`, `#I307272`, `#I313849`, `#I323459`, `#F185672`, - Provided [timelineTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/#timelineTemplate) support to render user defined HTML elements in timeline header. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/material3/gantt/timeline-template).
+- We have improved to handle the exception of errors made at Gantt component model binding and throws the error information in `actionFailure` event. Please find the documentation link [here](https://ej2.syncfusion.com/angular/documentation/gantt/exception-handling).
 
 ## 25.2.5 (2024-05-21)
 

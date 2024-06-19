@@ -102,6 +102,12 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
                 }
             } catch { }
         try {
+                let mod = this.injector.get('ChartsAccumulationHighlight');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
                 let mod = this.injector.get('ChartsAccumulationDataLabel');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)

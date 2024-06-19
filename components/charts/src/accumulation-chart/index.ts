@@ -2,4 +2,4 @@ export {AccumulationSeriesDirective,AccumulationSeriesCollectionDirective} from 
 export {AccumulationAnnotationDirective,AccumulationAnnotationsDirective} from './annotations.directive';
 export { AccumulationChartComponent} from './accumulationchart.component';
 export { AccumulationChartModule } from './accumulationchart.module';
-export { AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService } from './accumulationchart-all.module';
+export { AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationHighlightService, AccumulationDataLabelService, AccumulationAnnotationService } from './accumulationchart-all.module';

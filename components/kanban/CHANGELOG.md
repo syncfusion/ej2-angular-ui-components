@@ -9,6 +9,7 @@
 #### Bug Fixes
 
 - `#I525892` - Now, the card template works properly upon drag-and-drop action in Kanban with remote data.
+
 - `#I550208` - Now, the swimlane header template will work properly in the mobile view.
 
 ## 24.1.47 (2024-01-23)
@@ -42,6 +43,7 @@
 #### Bug Fixes
 
 - `#I513537` - Now, localization of the "Cards" text was done. When you drag the multiple cards, it show up.
+
 - `#I515897` - Now, when the `cancel` argument is set to true in the `dialogClose` event in the kanban, it works properly.
 
 ## 23.1.36 (2023-09-15)
@@ -51,6 +53,7 @@
 #### Bug Fixes
 
 - `#I492818` - Now, fast scrolling from top to bottom of the column continuously works properly.
+
 - `#I495751` - Now, dragging a card to the first position in the Kanban works properly without flickering.
 
 ## 22.1.34 (2023-06-21)
@@ -116,8 +119,11 @@
 #### Bug Fixes
 
 - `I392686` - Now, the drag and drop between the cards will work fine when `showAddButton` is enabled with the Kanban columns.
+
 - `I393080` - Now, the column border of the dragged clone cells will render properly.
+
 - `I393078` - Now, the drag and drop between the cards will work fine with out any flickering.
+
 - `#F176345` - Now, the Sort Comparer Function's API link will work properly.
 
 ## 20.2.38 (2022-07-12)
@@ -127,6 +133,7 @@
 #### Bug Fixes
 
 - `#I385821` - Now, the server-side modified data is returned to the client side while performing the `CRUD` operation.
+
 - `#I390524`, `#F175935` - Now, when dropping the card into an empty column will render it.
 
 ## 20.1.60 (2022-06-14)
@@ -416,10 +423,10 @@
 - Removed the `priority` under the `cardSettings` property and included these functionalities to the sorting order feature by setting the `sortBy` as `Index` under the `sortSettings` property.
 - Replaced the `sortBy` with `sortDirection` under the `swimlaneSettings` property.
 
-| **Previous API** | **Current API** | 
-|---|---|
-| cardSettings.priority | sortSettings.sortBy as `Index` | 
-| swimlaneSettings.sortBy | swimlaneSettings.sortDirection | 
+| **Previous API** | **Current API** |
+| ---- | ---- |
+| cardSettings.priority | sortSettings.sortBy as `Index` |
+| swimlaneSettings.sortBy | swimlaneSettings.sortDirection |
 
 ## 18.1.56 (2020-06-09)
 
@@ -465,7 +472,6 @@
 
 undefinedThe Kanban component is an efficient way to visually depict work at various stages of a process using cards, columns, and swimlane.
 
-
 - **Data binding**: Seamless data binding with various local and remote data sources.
 - **Swimlane**: The horizontal categorization of cards in the kanban, which brings transparency to the workflow. The swimlane rows can be expanded and collapsed.
 - **Key mapping**: Map one or multiple keys to single columns.
@@ -480,15 +486,11 @@ undefinedThe Kanban component is an efficient way to visually depict work at var
 - **Templates**: The key elements such as cards, column headers, swimlanes and tooltip come with template support for embedding any kind of HTML element and CSS style.
 - **Responsive rendering**: Adapts with optimal user interfaces to mobile and desktop form-factors.
 - **Localization**: All the static text content can be localized to any desired language.
-- **RTL**: Display the control contents from right to left.
-
-
-## 17.4.46 (2020-01-30)
+- **RTL**: Display the control contents from right to left.## 17.4.46 (2020-01-30)
 
 ### Kanban
 
 The Kanban component is an efficient way to visually depict work at various stages of a process using cards, columns, and swimlane.
-
 
 - **Data binding**: Seamless data binding with various local and remote data sources.
 - **Swimlane**: The horizontal categorization of cards in the kanban, which brings transparency to the workflow. The swimlane rows can be expanded and collapsed.
@@ -503,5 +505,3 @@ The Kanban component is an efficient way to visually depict work at various stag
 - **Responsive rendering**: Adapts with optimal user interfaces to mobile and desktop form-factors.
 - **Localization**: All the static text content can be localized to any desired language.
 - **RTL**: Display the control contents from right to left.
-
-

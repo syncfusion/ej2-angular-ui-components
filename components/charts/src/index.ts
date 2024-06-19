@@ -18,7 +18,7 @@ export {AccumulationSeriesDirective,AccumulationSeriesCollectionDirective} from 
 export {AccumulationAnnotationDirective,AccumulationAnnotationsDirective} from './accumulation-chart/annotations.directive';
 export { AccumulationChartComponent} from './accumulation-chart/accumulationchart.component';
 export { AccumulationChartModule } from './accumulation-chart/accumulationchart.module';
-export { AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationDataLabelService, AccumulationAnnotationService } from './accumulation-chart/accumulationchart-all.module';
+export { AccumulationChartAllModule, PieSeriesService, FunnelSeriesService, PyramidSeriesService, AccumulationTooltipService, AccumulationLegendService, AccumulationSelectionService, AccumulationHighlightService, AccumulationDataLabelService, AccumulationAnnotationService } from './accumulation-chart/accumulationchart-all.module';
 export {RangenavigatorSeriesDirective,RangenavigatorSeriesCollectionDirective} from './range-navigator/series.directive';
 export { RangeNavigatorComponent} from './range-navigator/rangenavigator.component';
 export { RangeNavigatorModule } from './range-navigator/rangenavigator.module';
