@@ -332,7 +332,7 @@ export class ComponentBase<T> {
                         }
                         list.isUpdated = true;
                     }
-                    if ((/grid/.test(tempAfterContentThis.getModuleName()) && hasDiffLength) || /chart/.test(tempAfterContentThis.getModuleName())) {
+                    if ((/grid/.test(tempAfterContentThis.getModuleName()) && hasDiffLength) || tempAfterContentThis.getModuleName() === 'chart') {
                         propObj[tagObject.name] = tagObject.instance.getProperties();
                         tempAfterContentThis.setProperties(propObj, tagObject.instance.isInitChanges);
                     }
