@@ -27,7 +27,7 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
 
 
     /** 
-     * Specifies the coordinate units of the annotation. They are 
+     * Specifies the coordinate units of the annotation. They are: 
      * * Pixel - Annotation renders based on x and y pixel value. 
      * * Point - Annotation renders based on x and y axis value.
      * @default 'Pixel'
@@ -39,7 +39,7 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      */
     public description: any;
     /** 
-     * Specifies the alignment of the annotation. They are 
+     * Specifies the alignment of the annotation. They are: 
      * * Near - Align the annotation element as top side. 
      * * Far - Align the annotation element as bottom side. 
      * * Center - Align the annotation element as mid point.
@@ -48,14 +48,14 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      */
     public horizontalAlignment: any;
     /** 
-     * Specifies the regions of the annotation. They are 
+     * Specifies the regions of the annotation. They are: 
      * * Chart - Annotation renders based on chart coordinates. 
      * * Series - Annotation renders based on series coordinates.
      * @default 'Chart'
      */
     public region: any;
     /** 
-     * Specifies the position of the annotation. They are 
+     * Specifies the position of the annotation. They are: 
      * * Top - Align the annotation element as top side. 
      * * Bottom - Align the annotation element as bottom side. 
      * * Middle - Align the annotation element as mid point.
@@ -64,14 +64,14 @@ export class AccumulationAnnotationDirective extends ComplexBase<AccumulationAnn
      */
     public verticalAlignment: any;
     /** 
-     * if set coordinateUnit as `Pixel` X specifies the axis value. 
-     * else is specifies pixel or percentage of coordinate.
+     * If set coordinateUnit as `Pixel` X specifies the axis value. 
+     * Else is specifies pixel or percentage of coordinate.
      * @default '0'
      */
     public x: any;
     /** 
-     * if set coordinateUnit as `Pixel` Y specifies the axis value. 
-     * else is specifies pixel or percentage of coordinate.
+     * If set coordinateUnit as `Pixel` Y specifies the axis value. 
+     * Else is specifies pixel or percentage of coordinate.
      * @default '0'
      */
     public y: any;

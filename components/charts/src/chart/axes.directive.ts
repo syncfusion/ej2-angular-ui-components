@@ -305,7 +305,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public startAngle: any;
     /** 
-     * It specifies whether the axis to be start from zero.
+     * It specifies whether the axis should start from zero.
      * @default true
      */
     public startFromZero: any;
@@ -319,7 +319,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public tabIndex: any;
     /** 
-     * Specifies the placement of a ticks to the axis line. They are, 
+     * Specifies the placement of the ticks to the axis line. They are, 
      * * inside: Renders the ticks inside to the axis line. 
      * * outside: Renders the ticks outside to the axis line.
      * @default 'Outside'

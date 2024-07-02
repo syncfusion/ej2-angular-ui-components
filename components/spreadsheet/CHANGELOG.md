@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.1.40 (2024-07-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I572103` - Issue with "unable to select cell references for the formula argument using the `Ctrl+Click` action" has been resolved.
+
 ## 26.1.38 (2024-06-19)
 
 ### Spreadsheet

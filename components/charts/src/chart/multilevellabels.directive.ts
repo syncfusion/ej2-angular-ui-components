@@ -29,19 +29,19 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
     public childCategories: any;
     public tags: string[] = ['categories'];
     /** 
-     * Defines the position of the multi level labels. They are, 
-     * * Near: Places the multi level labels at Near. 
-     * * Center: Places the multi level labels at Center. 
-     * * Far: Places the multi level labels at Far.
+     * Defines the position of the multi level labels. The available options are, 
+     * * Near: Places the multi-level labels near. 
+     * * Center: Places the multi-level label in the center. 
+     * * Far: Places the multi-level labels far.
      * @default 'Center'
      */
     public alignment: any;
     /** 
-     * Border of the multi level labels.
+     * Border of the multi-level labels.
      */
     public border: any;
     /** 
-     * multi level categories for multi level labels.
+     * Multi level categories for multi-level labels.
      */
     public categories: any;
     /** 
@@ -53,7 +53,7 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
      */
     public overflow: any;
     /** 
-     * Options to customize the multi level labels.
+     * Options to customize the multi-level labels.
      */
     public textStyle: any;
 

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 26.1.40 (2024-07-02)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I580914` - Fixed issue with MultiSelect CheckBox mode and large dataset causing page unresponsiveness.
+
+#### Bug fixes
+
+- `#I598990` - The issue where the request to the server was not made when typing faster into the input has been resolved.
+
 ## 26.1.39 (2024-06-25)
 
 ### ListBox

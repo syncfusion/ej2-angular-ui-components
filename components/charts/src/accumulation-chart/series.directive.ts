@@ -55,7 +55,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public dataSource: any;
     /** 
-     * options to customize the empty points in series.
+     * Options to customize the empty points in series.
      */
     public emptyPointSettings: any;
     /** 
@@ -121,7 +121,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public legendImageUrl: any;
     /** 
-     * The shape of the legend. Each series has its own legend shape. They are 
+     * The shape of the legend. Each series has its own legend shape. They are: 
      * * Circle - Renders a circle. 
      * * Rectangle - Renders a rectangle. 
      * * Triangle - Renders a triangle. 
@@ -137,7 +137,7 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public legendShape: any;
     /** 
-     * Specifies the series name
+     * Specifies the series name.
      * @default ''
      */
     public name: any;

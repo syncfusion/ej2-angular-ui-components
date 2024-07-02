@@ -30,7 +30,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public childSegments: any;
     public tags: string[] = ['trendlines', 'segments'];
     /** 
-     * The type of the series are 
+     * The type of the series are: 
      * * Line 
      * * Column 
      * * Area 
@@ -62,7 +62,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public type: any;
     /** 
-     * Options to customizing animation for the series.
+     * Options for customizing animation for the series.
      */
     public animation: any;
     /** 
@@ -72,13 +72,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public bearFillColor: any;
     /** 
-     * The bin interval of each histogram points.
+     * The bin interval of each histogram point.
      * @default null
      * @aspdefaultvalueignore 
      */
     public binInterval: any;
     /** 
-     * Options to customizing the border of the series. This is applicable only for `Column` and `Bar` type series.
+     * Options for customizing the border of the series. This is applicable only for `Column` and `Bar` type series.
      */
     public border: any;
     /** 
@@ -101,20 +101,20 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public cardinalSplineTension: any;
     /** 
-     * The DataSource field that contains the close value of y 
-     * It is applicable for series and technical indicators
+     * The DataSource field that contains the close value of y. 
+     * It is applicable for both series and technical indicators
      * @default ''
      */
     public close: any;
     /** 
-     * The Data Source field that contains the color mapping value. 
+     * The DataSource field that contains the color mapping value. 
      * It is applicable for range color mapping properly.
      */
     public colorName: any;
     /** 
      * Defines the shape of the data in a column and bar chart. 
-     * Rectangle: Displays the data in a column and bar chart in a rectangle shape. 
-     * Cylinder: Displays the data in a column and bar chart in a cylinder shape.
+     * * Rectangle: Displays the data in a column and bar chart in a rectangle shape. 
+     * * Cylinder: Displays the data in a column and bar chart in a cylinder shape.
      * @default 'Rectangle'
      */
     public columnFacet: any;
@@ -162,25 +162,25 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public dragSettings: any;
     /** 
-     * Type of series to be drawn in radar or polar series. They are 
-     *  'Line' 
-     *  'Column' 
-     *  'Area' 
-     *  'Scatter' 
-     *  'Spline' 
-     *  'StackingColumn' 
-     *  'StackingArea' 
-     *  'RangeColumn' 
-     *  'SplineArea'
+     * Type of series to be drawn in radar or polar series. They are: 
+     * * 'Line' 
+     * * 'Column' 
+     * * 'Area' 
+     * * 'Scatter' 
+     * * 'Spline' 
+     * * 'StackingColumn' 
+     * * 'StackingArea' 
+     * * 'RangeColumn' 
+     * * 'SplineArea'
      * @default 'Line'
      */
     public drawType: any;
     /** 
-     * options to customize the empty points in series.
+     * Options to customize the empty points in series.
      */
     public emptyPointSettings: any;
     /** 
-     * This property used to improve chart performance via data mapping for series dataSource.
+     * This property is used to improve chart performance via data mapping for series dataSource.
      * @default false
      */
     public enableComplexProperty: any;
@@ -196,13 +196,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public enableTooltip: any;
     /** 
-     * Options for displaying and customizing error bar for individual point in a series.
+     * Options for displaying and customizing error bar for individual points in a series.
      */
     public errorBar: any;
     /** 
      * The fill color for the series, which can accept values in hex or rgba as a valid CSS color string. 
      * It also represents the color of the signal lines in technical indicators. 
-     * For technical indicators, the default value is 'blue' and for series, it has null.
+     * For technical indicators, the default value is 'blue' and for series, it is null.
      * @default null
      */
     public fill: any;
@@ -213,8 +213,8 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public groupName: any;
     /** 
-     * The DataSource field that contains the high value of y 
-     * It is applicable for series and technical indicators
+     * The DataSource field that contains the high value of y. 
+     * It is applicable for both series and technical indicators.
      * @default ''
      */
     public high: any;
@@ -225,12 +225,12 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public intermediateSumIndexes: any;
     /** 
-     * Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
+     * Specifies whether to join the start and end point of a line/area series used in polar/radar chart to form a closed path.
      * @default true
      */
     public isClosed: any;
     /** 
-     * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
+     * The URL for the image that is to be displayed as a legend icon.  It requires `legendShape` value to be an `Image`.
      * @default ''
      */
     public legendImageUrl: any;
@@ -261,12 +261,12 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public marker: any;
     /** 
-     * Maximum radius
+     * Specifies the maximum radius.
      * @default 3
      */
     public maxRadius: any;
     /** 
-     * Minimum radius
+     * Specifies the minimum radius.
      * @default 1
      */
     public minRadius: any;
@@ -301,7 +301,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public paretoOptions: any;
     /** 
-     * The DataSource field that contains the color value of point. 
+     * The DataSource field that contains the color value of a point. 
      * It is applicable for series.
      * @default ''
      */
@@ -325,7 +325,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public selectionStyle: any;
     /** 
-     * If set true, the mean value for box and whisker will be visible.
+     * If set to true, the mean value for box and whisker will be visible.
      * @default true
      */
     public showMean: any;
@@ -335,19 +335,19 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public showNormalDistribution: any;
     /** 
-     * The DataSource field that contains the size value of y
+     * The DataSource field that contains the size value of y.
      * @default ''
      */
     public size: any;
     /** 
-     * Defines type of spline to be rendered.
+     * Defines the type of spline to be rendered.
      * @default 'Natural'
      */
     public splineType: any;
     /** 
-     * This property allows grouping series in `stacked column / bar` charts. 
+     * This property allows grouping of series in `stacked column / bar` charts. 
      * Any string value can be provided to the stackingGroup property. 
-     * If any two or above series have the same value, those series will be grouped together.
+     * If any two or more series have the same value, those series will be grouped together.
      * @default ''
      */
     public stackingGroup: any;
@@ -381,7 +381,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public tooltipMappingName: any;
     /** 
-     * Defines the collection of trendlines that are used to predict the trend
+     * Defines the collection of trendlines that are used to predict the trend.
      */
     public trendlines: any;
     /** 
@@ -395,8 +395,8 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public visible: any;
     /** 
-     * Defines the data source field that contains the volume value in candle charts 
-     * It is applicable for financial series and technical indicators
+     * Defines the data source field that contains the volume value in candle charts. 
+     * It is applicable for both financial series and technical indicators
      * @default ''
      */
     public volume: any;
@@ -415,7 +415,7 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
     public xAxisName: any;
     /** 
      * The DataSource field that contains the x value. 
-     * It is applicable for series and technical indicators
+     * It is applicable for both series and technical indicators.
      * @default ''
      */
     public xName: any;

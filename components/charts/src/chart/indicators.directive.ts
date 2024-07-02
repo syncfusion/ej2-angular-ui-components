@@ -32,7 +32,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public type: any;
     /** 
-     * Options to customizing animation for the series.
+     * Options for customizing animation for the series.
      */
     public animation: any;
     /** 
@@ -41,13 +41,13 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public bandColor: any;
     /** 
-     * The DataSource field that contains the close value of y 
-     * It is applicable for series and technical indicators
+     * The DataSource field that contains the close value of y. 
+     * It is applicable for both series and technical indicators
      * @default ''
      */
     public close: any;
     /** 
-     * The Data Source field that contains the color mapping value. 
+     * The DataSource field that contains the color mapping value. 
      * It is applicable for range color mapping properly.
      */
     public colorName: any;
@@ -68,7 +68,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public dataSource: any;
     /** 
-     * This property used to improve chart performance via data mapping for series dataSource.
+     * This property is used to improve chart performance via data mapping for series dataSource.
      * @default false
      */
     public enableComplexProperty: any;
@@ -85,13 +85,13 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
     /** 
      * The fill color for the series, which can accept values in hex or rgba as a valid CSS color string. 
      * It also represents the color of the signal lines in technical indicators. 
-     * For technical indicators, the default value is 'blue' and for series, it has null.
+     * For technical indicators, the default value is 'blue' and for series, it is null.
      * @default null
      */
     public fill: any;
     /** 
-     * The DataSource field that contains the high value of y 
-     * It is applicable for series and technical indicators
+     * The DataSource field that contains the high value of y. 
+     * It is applicable for both series and technical indicators.
      * @default ''
      */
     public high: any;
@@ -156,7 +156,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public periodLine: any;
     /** 
-     * The DataSource field that contains the color value of point. 
+     * The DataSource field that contains the color value of a point. 
      * It is applicable for series.
      * @default ''
      */
@@ -204,8 +204,8 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public visible: any;
     /** 
-     * Defines the data source field that contains the volume value in candle charts 
-     * It is applicable for financial series and technical indicators
+     * Defines the data source field that contains the volume value in candle charts. 
+     * It is applicable for both financial series and technical indicators
      * @default ''
      */
     public volume: any;
@@ -224,7 +224,7 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
     public xAxisName: any;
     /** 
      * The DataSource field that contains the x value. 
-     * It is applicable for series and technical indicators
+     * It is applicable for both series and technical indicators.
      * @default ''
      */
     public xName: any;

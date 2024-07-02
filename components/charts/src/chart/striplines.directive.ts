@@ -33,12 +33,12 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      */
     public border: any;
     /** 
-     * Color of the strip line.
+     * Specifies the color of the strip line.
      * @default '#808080'
      */
     public color: any;
     /** 
-     * Dash Array of the strip line.
+     * Dash array of the strip line.
      * @default null
      * @aspdefaultvalueignore 
      */
@@ -63,13 +63,13 @@ export class StripLineDirective extends ComplexBase<StripLineDirective> {
      */
     public imageUrl: any;
     /** 
-     * isRepeat value of the strip line.
+     * Specifies whether the strip line is repeated.
      * @default false
      * @aspdefaultvalueignore 
      */
     public isRepeat: any;
     /** 
-     * isSegmented value of the strip line.
+     * Specifies whether the strip line is segmented.
      * @default false
      * @aspdefaultvalueignore 
      */
