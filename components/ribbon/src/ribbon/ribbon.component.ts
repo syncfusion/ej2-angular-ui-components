@@ -6,7 +6,7 @@ import { RibbonTabsDirective } from './tabs.directive';
 import { RibbonContextualTabsDirective } from './contextualtabs.directive';
 
 export const inputs: string[] = ['activeLayout','backStageMenu','contextualTabs','cssClass','enableKeyTips','enablePersistence','enableRtl','fileMenu','helpPaneTemplate','hideLayoutSwitcher','isMinimized','launcherIconCss','layoutSwitcherKeyTip','locale','selectedTab','tabAnimation','tabs','width'];
-export const outputs: string[] = ['created','launcherIconClick','overflowPopupClose','overflowPopupOpen','ribbonCollapsing','ribbonExpanding','tabSelected','tabSelecting'];
+export const outputs: string[] = ['created','launcherIconClick','overflowPopupClose','overflowPopupOpen','ribbonCollapsing','ribbonExpanding','ribbonLayoutSwitched','tabSelected','tabSelecting'];
 export const twoWays: string[] = [''];
 
 /**
@@ -36,6 +36,7 @@ export class RibbonComponent extends Ribbon implements IComponentBase {
 	overflowPopupOpen: any;
 	ribbonCollapsing: any;
 	ribbonExpanding: any;
+	ribbonLayoutSwitched: any;
 	tabSelected: any;
 	public tabSelecting: any;
     public childTabs: QueryList<RibbonTabsDirective>;

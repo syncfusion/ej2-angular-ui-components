@@ -6,7 +6,7 @@ import { ColumnsDirective } from './columns.directive';
 import { RangesDirective } from './ranges.directive';
 import { ConditionalFormatsDirective } from './conditionalformats.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'password', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'password', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'standardHeight', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -135,6 +135,13 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      * @default true
      */
     public showHeaders: any;
+    /** 
+     * Represents the standard height of the sheet.
+     * @default null
+     * @asptype double
+     * @aspdefaultvalue null
+     */
+    public standardHeight: any;
     /** 
      * Specifies the sheet visibility state. There must be at least one visible sheet in Spreadsheet.
      * @default 'Visible'

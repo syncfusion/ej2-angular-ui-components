@@ -205,6 +205,13 @@ export class ComponentBase<T> {
         /* istanbul ignore else  */
         setTimeout(() => {
             if (typeof window !== 'undefined' && (tempOnDestroyThis.element.classList.contains('e-control'))) {
+                if (tempOnDestroyThis.ngOnFocus !== undefined && tempOnDestroyThis.ngOnBlur !== undefined) {
+                    const ele: HTMLElement = tempOnDestroyThis.inputElement || tempOnDestroyThis.element;
+                    ele.removeEventListener('focus', tempOnDestroyThis.ngOnFocusBound);
+                    ele.removeEventListener('blur', tempOnDestroyThis.ngOnBlurBound);
+                    tempOnDestroyThis.ngOnFocusBound = null;
+                    tempOnDestroyThis.ngOnBlurBound = null;
+                }
                 tempOnDestroyThis.destroy();
                 tempOnDestroyThis.clearTemplate(null);
                 // removing bounded events and tagobjects from component after destroy

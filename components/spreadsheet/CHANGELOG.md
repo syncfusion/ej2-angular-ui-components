@@ -2,13 +2,19 @@
 
 ## [Unreleased]
 
-## 26.1.40 (2024-07-02)
+## 26.1.41 (2024-07-09)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I572103` - Issue with "unable to select cell references for the formula argument using the `Ctrl+Click` action" has been resolved.
+- `#I605907` - The notes dialog box in the Spreadsheet will not appear outside the viewport when scrolling within the control.
+
+- `#I560620` - Now, enhanced row height computation performance when the `needHeightCheck` event argument is enabled.
+
+- `#I601275` - Issue with "filtering is applied to the active sheet when using the `applyFilter()` function to apply a filter to a non-active sheet" has been resolved.
+
+- `#I605907` - The notes dialog box in the Spreadsheet will not appear outside the viewport when scrolling within the control.
 
 ## 26.1.38 (2024-06-19)
 
@@ -1340,7 +1346,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 21.2.9 (2023-06-06)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.1.40 (2024-07-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I572103` - Issue with "unable to select cell references for the formula argument using the `Ctrl+Click` action" has been resolved.
+
+## 21.2.9 (2023-06-06)
 
 ### Spreadsheet
 

@@ -32,7 +32,8 @@ export class FormBase<T> implements ControlValueAccessor {
     public isUpdated: boolean;
     public oldValue: any;
     public cdr: ChangeDetectorRef;
-
+    public ngOnBlurBound: () => void;
+    public ngOnFocusBound: () => void;
     public localChange(e: { value?: T, checked?: T }): void {
         const value: T | any = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
@@ -93,6 +94,8 @@ export class FormBase<T> implements ControlValueAccessor {
         // Refer Link: https://github.com/angular/angular/issues/6005
         // Removed setTimeout, Because we have called markForCheck() method in Angular Template Compiler
         /* istanbul ignore else */
+        tempFormAfterViewThis.ngOnBlurBound = this.ngOnBlur.bind(this);
+        tempFormAfterViewThis.ngOnFocusBound = this.ngOnFocus.bind(this);
         if (typeof window !== 'undefined') {
             if ((tempFormAfterViewThis.getModuleName()).includes('dropdowntree')) {
                 setTimeout(function (): any {
@@ -103,8 +106,8 @@ export class FormBase<T> implements ControlValueAccessor {
                 tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
             }
             const ele: HTMLElement = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
-            ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocus.bind(tempFormAfterViewThis));
-            ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlur.bind(tempFormAfterViewThis));
+            ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocusBound);
+            ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlurBound);
         }
         this.isFormInit = false;
     }
