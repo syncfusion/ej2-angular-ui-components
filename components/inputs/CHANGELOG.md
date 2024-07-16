@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 26.1.42 (2024-07-16)
+
+### Slider
+
+#### Bug Fixes
+
+- `#I605471` - The issue with Range Slider component in material dark theme has been resolved.
+
 ## 26.1.41 (2024-07-09)
 
 ### FormValidator
@@ -15,6 +23,12 @@
 #### Bug Fixes
 
 - `#I605386` - Fixed an issue where removing invalid files in a form did not trigger the select event again in the file upload.
+
+### Inputs
+
+#### Bug Fixes
+
+- `#I591759` - Resolved issue with "script error Issue in input calculate width method because of container is null".
 
 ## 26.1.40 (2024-07-02)
 
