@@ -4,7 +4,7 @@ import { QRCodeGenerator } from '@syncfusion/ej2-barcode-generator';
 
 
 
-export const inputs: string[] = ['backgroundColor','displayText','enablePersistence','enableRtl','errorCorrectionLevel','foreColor','height','locale','margin','mode','value','version','width','xDimension'];
+export const inputs: string[] = ['backgroundColor','displayText','enablePersistence','enableRtl','errorCorrectionLevel','foreColor','height','locale','logo','margin','mode','value','version','width','xDimension'];
 export const outputs: string[] = ['invalid'];
 export const twoWays: string[] = [''];
 

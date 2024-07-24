@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 26.2.4 (2024-07-24)
+
+### GanttChart
+
+#### Features
+
+- `#I577723` - Provided support for dependency type localization in the cell edit.
+
+#### Bug fixes
+
+- `#603505` - Keyboard interaction for selecting all record is not working properly after clicking chart side issue has been fixed.
+- `#I607803`,`#I607856`,`#I607879`,`#I608671`  - Milestone and Work Property Not Working Properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.1.42 (2024-07-16)
 
 ### GanttChart
@@ -20,7 +35,7 @@
 - `#I603710` - Export properties not working properly issue has been fixed.
 - `#I603923` - Row selection toggling not working properly while `persistSelection` is enabled issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I605379` - Value modified in the post method doesn't reflect in UI issue has been fixed.
 
 ## 26.1.41 (2024-07-09)
 

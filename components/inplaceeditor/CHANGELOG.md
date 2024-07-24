@@ -9,6 +9,7 @@
 #### Bug Fixes
 
 - `#I440965` - Now, the validation works properly when using two way binding for the `value` property.
+
 - `#I443357` - Now, when you click the cancel button in the In-place Editor, the Rich Text Editor will no longer be focused.
 
 ## 20.4.48 (2023-02-01)
@@ -34,6 +35,7 @@
 #### Bug Fixes
 
 - `#I335868` - The issue with "value is not being reset after form validation fails, and the cancel button is pressed" has been resolved.
+
 - `#I335868` - In popup mode, pressing the close-icon on the In-place editor `numeric` type changes the value to -1 has been resolved.
 
 ## 19.2.44 (2021-06-30)
@@ -56,7 +58,6 @@
 
 `#292832` - The issue with Validation is not working when template has more then two input elements" has been resolved.
 
-
 ## 18.2.59 (2020-09-21)
 
 ### In-place Editor
@@ -64,7 +65,6 @@
 #### Bug Fixes
 
 `#289326` - The issue with "Script error is thrown when configuring more than two validation rules in the In-place editor" has been resolved.
-
 
 ## 18.2.57 (2020-09-08)
 
@@ -97,6 +97,7 @@
 #### Bug Fixes
 
 - `#F154491` - The issue with "`OnActionBegin` event triggers only during the second time, when configuring validation with Date mode in the In-place Editor" has been resolved.
+
 - `#283160` - The issue with "validation occurs, when the `validationRules` API has not been configured in the In-place Editor" has been resolved.
 
 ## 18.2.44 (2020-07-07)
@@ -170,6 +171,7 @@
 #### Bug Fixes
 
 - `#F146947` - Resolved the argument issue that returns text field instead of value field in the action begin event when rendering the Combo Box within the In-place Editor.
+
 - `#248388` - Resolved the issue with configuring `cssClass` property to customize the appearance of sub-components of the In-place Editor.
 
 ## 17.2.48-beta (2019-08-28)
@@ -252,12 +254,9 @@
 
 The In-place Editor component is used to edit and update the input value dynamically to the server. It supports integrating many component types such as “DropDownList”,”DatePicker”,”AutoComplete”, etc.
 
-
 - **Render mode** - Provides two types of rendering modes when editing the input, namely “Inline” and “Popup”.
 - **Component integration** - Support to integrate components such as “DropDownList”, “DatePicker”,” AutoComplete”, etc. to the In-place Editor.
 - **Data binding**  - Bind the In-place Editor component with an array of JSON objects or DataManager to save the edited data to the server.
 - **Customization**  - Offers UI customization such as popup, buttons, and also denotes editable content state.
 - **Template**  - Templates can be used to integrate custom controls to the In-place Editor.
 - **Globalization**  - Provides right to left and localization support.
-
-

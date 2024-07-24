@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 26.1.42 (2024-07-16)
+## 26.2.4 (2024-07-24)
 
 ### Barcode
 
@@ -81,7 +81,4 @@
 
 The Syncfusion Essential JS Barcode widget enables rendering of one dimension and two dimension barcodes in the web page. Barcode provides you a simple and inexpensive method of encoding text information that can be easily read by electronic readers
 
-
 - Supports 2 two-dimensional barcodes such as QR and DataMatrix barcodes.
-
-

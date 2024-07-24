@@ -22,7 +22,7 @@ export class ImageDirective extends ComplexBase<ImageDirective> {
     /** 
      * Specifies the height of the image.
      * @default 300
-     * @asptype int
+     * @asptype double
      */
     public height: any;
     /** 
@@ -33,7 +33,7 @@ export class ImageDirective extends ComplexBase<ImageDirective> {
     /** 
      * Specifies the width of the image.
      * @default 0
-     * @asptype int
+     * @asptype double
      */
     public left: any;
     /** 
@@ -44,13 +44,13 @@ export class ImageDirective extends ComplexBase<ImageDirective> {
     /** 
      * Specifies the height of the image.
      * @default 0
-     * @asptype int
+     * @asptype double
      */
     public top: any;
     /** 
      * Specifies the width of the image.
      * @default 400
-     * @asptype int
+     * @asptype double
      */
     public width: any;
 

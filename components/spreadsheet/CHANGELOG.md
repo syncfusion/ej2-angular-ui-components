@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 26.2.4 (2024-07-24)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I602542` - Issue with "selection misalignment occurs when importing an Excel file that contains wrapped text in a row with a row height less than the default row height" has been resolved.
+
+- `#I602580` - Issue with "list data validation does not work properly with percentage formatted numbers when entering a value in a cell through editing" has been resolved.
+
+- `#I602577` - Issue with "formula cells are not calculated properly when changing the values of formula dependent cells that have date formatted values" has been resolved.
+
+- `#I609270` - Issue with "additional column cells get selected when clicking the autofill choices button with a little mouse move" has been resolved.
+
+#### Features
+
+- `#I601275` - Now, provided an option to pass the sheet index to the `clearFilter` method to clear the filtered data on the non-active sheet.
+
 ## 26.1.42 (2024-07-16)
 
 ### Spreadsheet
