@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 26.2.5 (2024-07-26)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I608398` - `autoCalculateDateScheduling` property not working properly with `loadChildOnDemand` feature issue has been fixed.
+- `#896027` - `UpdateTaskId` method not working properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.2.4 (2024-07-24)
 
 ### GanttChart
@@ -14,8 +25,6 @@
 
 - `#603505` - Keyboard interaction for selecting all record is not working properly after clicking chart side issue has been fixed.
 - `#I607803`,`#I607856`,`#I607879`,`#I608671`  - Milestone and Work Property Not Working Properly issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.1.42 (2024-07-16)
 
