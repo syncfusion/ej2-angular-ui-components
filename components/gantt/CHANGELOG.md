@@ -2,16 +2,24 @@
 
 ## [Unreleased]
 
-## 26.2.5 (2024-07-26)
+## 26.2.7 (2024-07-30)
 
 ### GanttChart
 
 #### Bug fixes
 
-- `#I608398` - `autoCalculateDateScheduling` property not working properly with `loadChildOnDemand` feature issue has been fixed.
-- `#896027` - `UpdateTaskId` method not working properly issue has been fixed.
+-`#I607879`  - Work Property Value Not Calculating Properly When Adding or Editing a Record issue has been fixed.- `#I607391` - Baseline not render properly  when Pdf export issue has been fixed.
+- `#I614007` - Dependency offset value not updating properly with unscheduled tasks issue has been fixed.
+- `#I603923` - Row selection toggling not working properly while `persistSelection` is enabled issue has been fixed.
+- `#I606658` - `timezone` property is not working properly in Gantt issue has been fixed.
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 26.2.5 (2024-07-26)
+
+### GanttChart
+
+#### Bug fixes
 
 ## 26.2.4 (2024-07-24)
 
@@ -25,6 +33,8 @@
 
 - `#603505` - Keyboard interaction for selecting all record is not working properly after clicking chart side issue has been fixed.
 - `#I607803`,`#I607856`,`#I607879`,`#I608671`  - Milestone and Work Property Not Working Properly issue has been fixed.
+
+- `#607391` - Baseline not render properly  when Pdf export issue has been fixed.
 
 ## 26.1.42 (2024-07-16)
 

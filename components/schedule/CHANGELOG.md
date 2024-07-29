@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 26.2.5 (2024-07-26)
+## 26.2.7 (2024-07-30)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I614002` - Interacting with the scheduler after printing using the `print` method with print options throws Script error has been fixed.
+
+## 26.2.4 (2024-07-24)
 
 ### Schedule
 
