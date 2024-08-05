@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 26.2.8 (2024-08-06)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I189356` - Split tasks not working properly while using `segmentData` property issue has been fixed.
+- `#I607879`  - Predecessor validation is not working correctly for offset days with split tasks issue has been fixed.
+- `#I611815` - `pdfQueryCellInfo` event not working properly in Pdf export issue has been fixed.
+- `#I612296` - Exception thrown when adding a milestone task using the context menu issue has been fixed.
+- `#I612296` - Day light saving is not working properly issue has been fixed.
+- `#I617432` - Exception thrown when updating datasource issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.2.7 (2024-07-30)
 
 ### GanttChart
@@ -12,8 +27,6 @@
 - `#I614007` - Dependency offset value not updating properly with unscheduled tasks issue has been fixed.
 - `#I603923` - Row selection toggling not working properly while `persistSelection` is enabled issue has been fixed.
 - `#I606658` - `timezone` property is not working properly in Gantt issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.2.5 (2024-07-26)
 
