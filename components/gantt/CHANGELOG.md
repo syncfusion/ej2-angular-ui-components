@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 26.2.9 (2024-08-13)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I610470` - Row drag and drop action persists the previous selection in chart side if persist selection & virtualization is enabled issue has been fixed.
+- `#I613295` - Milestone `endDate` not properly validating when convert to task issue has been fixed.
+- `#I612261` - Console error occurs when connecting predecessor with decimal task Id issue has been fixed.
+- `#I608671` - When the resource tab column is edited and tab is switched, the edited value is not saved issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.2.8 (2024-08-06)
 
 ### GanttChart
@@ -14,8 +27,6 @@
 - `#I612296` - Exception thrown when adding a milestone task using the context menu issue has been fixed.
 - `#I612296` - Day light saving is not working properly issue has been fixed.
 - `#I617432` - Exception thrown when updating datasource issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.2.7 (2024-07-30)
 

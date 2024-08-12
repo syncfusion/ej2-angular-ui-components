@@ -5,7 +5,7 @@ import { MultiColumnComboBox } from '@syncfusion/ej2-multicolumn-combobox';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 
-export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowSorting','allowTextWrap','columns','cssClass','dataSource','disabled','enablePersistence','enableRtl','enableVirtualization','fields','filterType','floatLabelType','footerTemplate','gridSettings','groupTemplate','htmlAttributes','index','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','sortType','text','textWrapMode','value','width'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowSorting','columns','cssClass','dataSource','disabled','enablePersistence','enableRtl','enableVirtualization','fields','filterType','floatLabelType','footerTemplate','gridSettings','groupTemplate','htmlAttributes','index','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','sortType','text','value','width'];
 export const outputs: string[] = ['focus', 'blur', 'actionBegin','actionComplete','actionFailure','change','close','created','filtering','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
