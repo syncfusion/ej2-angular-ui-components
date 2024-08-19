@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 26.2.9 (2024-08-13)
+## 26.2.10 (2024-08-20)
 
 ### Schedule
 
 #### Bug fixes
 
-- `#I614002` - Interacting with the scheduler after printing using the `print` method with print options throws Script error has been fixed.
+- `#I607401` - An issue where the events are not aligned in correct position when Scheduler height changed dynamically has been fixed.
 
 ## 26.2.4 (2024-07-24)
 
@@ -2009,7 +2009,15 @@ Schedule is an event calendar which facilitates user with the common Outlook-cal
 - **Adaptive rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
 - **Keyboard interaction** - All the common actions such as traversing through the appointments, multiple cell selection, add/edit/delete the appointments, navigate to other views, dates and much more can be performed through keyboard inputs.
 - **Localization** - All the static text and date content can be localized to any desired language. Also, it can be displayed with appropriate time mode and date-format as per the localized language.
-- **RTL** - Supports displaying the component to display in the direction from right to left.## 16.4.48 (2019-01-22)
+- **RTL** - Supports displaying the component to display in the direction from right to left.## 26.2.7 (2024-07-30)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I614002` - Interacting with the scheduler after printing using the `print` method with print options throws Script error has been fixed.
+
+## 16.4.48 (2019-01-22)
 
 ### Schedule
 

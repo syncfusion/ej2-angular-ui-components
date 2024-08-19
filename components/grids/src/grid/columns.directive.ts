@@ -462,7 +462,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the cell edit template that used as editor for a particular column. 
      * It accepts either template string or HTML element ID.
-     * @aspignore 
+     * @default null
+     * @asptype string
      */
     @ContentChild('editTemplate')
     @Template()
@@ -470,7 +471,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     /** 
      * Defines the filter template/UI that used as filter for a particular column. 
      * It accepts either template string or HTML element ID.
-     * @aspignore 
+     * @default null
+     * @asptype string
      */
     @ContentChild('filterTemplate')
     @Template()

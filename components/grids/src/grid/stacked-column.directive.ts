@@ -466,7 +466,8 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
     /** 
      * Defines the cell edit template that used as editor for a particular column. 
      * It accepts either template string or HTML element ID.
-     * @aspignore 
+     * @default null
+     * @asptype string
      */
     @ContentChild('editTemplate')
     @Template()
@@ -474,7 +475,8 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
     /** 
      * Defines the filter template/UI that used as filter for a particular column. 
      * It accepts either template string or HTML element ID.
-     * @aspignore 
+     * @default null
+     * @asptype string
      */
     @ContentChild('filterTemplate')
     @Template()
