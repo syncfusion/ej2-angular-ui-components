@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 26.2.11 (2024-08-27)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I624244` - Taskbar and weekend not rendered incorrect position issue has been fixed.
+- `#I619938` - White space issue occurs after horizontal scrolling with `enableTimelineVirtualization` issue has been fixed.
+- `#I623700` - Duration value not validated in the edit dialog when the end date is changed issue has been fixed.
+- `#I617142` - Left value miscalculated for taskbar while duration in decimals issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.2.10 (2024-08-20)
 
 ### GanttChart
@@ -15,7 +28,9 @@
 - `#I620597` - `getSelectedRecords` method not return selected records when `persistSelection` is set to true issue has been fixed.
 - `#I617142` - Left value miscalculated for taskbar while duration in decimals issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I621276` - Connector lines rendered in wrong position with `enableTimelineVirtualization` and `enableRtl` issue has been fixed.
+- `#I616825` - Timeline not updated properly while using `setSplitterPosition` issue has been fixed.
+- `#I618909`,`#I607695` - PDF export exception thrown when using different font style  issue has been fixed.
 
 ## 26.2.9 (2024-08-13)
 

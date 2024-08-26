@@ -1381,7 +1381,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.4 (2024-07-24)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 26.2.10 (2024-08-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I602542` - Issue with "selection misalignment happens when selecting a cell with list `data validation` and `minimum row height`" has been resolved.
+
+## 26.2.4 (2024-07-24)
 
 ### Spreadsheet
 
