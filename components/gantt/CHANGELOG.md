@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 26.2.12 (2024-09-03)
+
+### GanttChart
+
+#### Bug fixes
+
+-`#I625331` - An unwanted error message is thrown in the `actionFailure` event issues has been fixed.
+-`#I623226` - Negative offset getting removed while using locale has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 26.2.11 (2024-08-27)
 
 ### GanttChart
@@ -12,8 +23,6 @@
 - `#I619938` - White space issue occurs after horizontal scrolling with `enableTimelineVirtualization` issue has been fixed.
 - `#I623700` - Duration value not validated in the edit dialog when the end date is changed issue has been fixed.
 - `#I617142` - Left value miscalculated for taskbar while duration in decimals issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.2.10 (2024-08-20)
 
