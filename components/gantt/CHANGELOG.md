@@ -2,7 +2,19 @@
 
 ## [Unreleased]
 
-## 26.2.13 (2024-09-05)
+## 26.2.14 (2024-09-10)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I626561` - Separator size property in splitter settings not working properly issue has been fixed.
+- `#I627377` - `allowTaskbarOverlap` property is not working properly with `collapseAllParentTasks` property enabled issue has been fixed.
+- `#I519903` - Spinner showing endlessly  with null value filtering issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 26.2.12 (2024-09-03)
 
 ### GanttChart
 
@@ -10,8 +22,6 @@
 
 -`#I625331` - An unwanted error message is thrown in the `actionFailure` event issues has been fixed.
 -`#I623226` - Negative offset getting removed while using locale has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.2.11 (2024-08-27)
 
