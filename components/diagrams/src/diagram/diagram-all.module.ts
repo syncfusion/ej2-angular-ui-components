@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, BlazorTooltip, LineDistribution, Ej1Serialization} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -29,9 +29,9 @@ export const LayoutAnimationService: ValueProvider = { provide: 'DiagramsLayoutA
 export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu};
 export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
-export const BlazorTooltipService: ValueProvider = { provide: 'DiagramsBlazorTooltip', useValue: BlazorTooltip};
 export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDistribution', useValue: LineDistribution};
 export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Serialization', useValue: Ej1Serialization};
+export const FlowchartLayoutService: ValueProvider = { provide: 'DiagramsFlowchartLayout', useValue: FlowchartLayout};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -57,9 +57,9 @@ export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Ser
         DiagramContextMenuService,
         LineRoutingService,
         ConnectorEditingService,
-        BlazorTooltipService,
         LineDistributionService,
-        Ej1SerializationService
+        Ej1SerializationService,
+        FlowchartLayoutService
     ]
 })
 export class DiagramAllModule { }

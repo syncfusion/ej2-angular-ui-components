@@ -29,26 +29,29 @@ export class MultiLevelLabelDirective extends ComplexBase<MultiLevelLabelDirecti
     public childCategories: any;
     public tags: string[] = ['categories'];
     /** 
-     * Defines the position of the multi level labels. The available options are, 
-     * * Near: Places the multi-level labels near. 
-     * * Center: Places the multi-level label in the center. 
-     * * Far: Places the multi-level labels far.
+     * Defines the position of the multi-level labels. 
+     * The available options are: 
+     * * Near: Places the multi-level labels close to the chart elements. 
+     * * Center: Positions the multi-level labels in the center of the chart elements. 
+     * * Far: Places the multi-level labels further from the chart elements.
      * @default 'Center'
      */
     public alignment: any;
     /** 
-     * Border of the multi-level labels.
+     * The `border` property allows customization of the border for multi-level labels. 
+     * It includes options to set the color, width, and type of the border.
      */
     public border: any;
     /** 
-     * Multi level categories for multi-level labels.
+     * Configures multi-level categories for multi-level labels.
      */
     public categories: any;
     /** 
-     * Defines the textOverFlow for multi level labels. They are, 
-     * * Trim: Trim textOverflow for multi level labels. 
-     * * Wrap: Wrap textOverflow for multi level labels. 
-     * * none: None textOverflow for multi level labels.
+     * Defines the text overflow behavior for multi-level labels. 
+     * The available options are: 
+     * * Trim: Trims the text that overflows for multi-level labels. 
+     * * Wrap: Wraps the text that overflows for multi-level labels. 
+     * * None: No text overflow handling for multi-level labels.
      * @default 'Wrap'
      */
     public overflow: any;

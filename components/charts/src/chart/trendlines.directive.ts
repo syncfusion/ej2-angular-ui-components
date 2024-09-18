@@ -31,7 +31,14 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
 
 
     /** 
-     * Defines the type of the trendline.
+     * Defines the type of trendline used in the series. 
+     * Available types are: 
+     * * Linear - A straight line that shows the general direction of data. 
+     * * Exponential - A curve that fits data with exponential growth or decay. 
+     * * Polynomial - A curve that fits data with a polynomial function. 
+     * * Power - A curve that represents data with a power function. 
+     * * Logarithmic - A curve that fits data with a logarithmic scale. 
+     * * MovingAverage - A trendline that smoothens data using a moving average calculation.
      * @default 'Linear'
      */
     public type: any;
@@ -40,53 +47,53 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      */
     public animation: any;
     /** 
-     * Defines the period, by which the trend has to backward forecast.
+     * Defines the period by which the trend is to be backward forecasted.
      * @default 0
      */
     public backwardForecast: any;
     /** 
-     * Defines the pattern of dashes and gaps to stroke.
+     * Configures the pattern of dashes and gaps in the trendline stroke using the `dashArray` property.
      * @default ''
      */
     public dashArray: any;
     /** 
-     * Enables/disables tooltip for trendlines.
+     * Enables or disables the tooltip for the trendline using the `enableTooltip` property. By default, it is set to true.
      * @default true
      */
     public enableTooltip: any;
     /** 
-     * Defines the fill color of trendline.
+     * The fill color for the trendline, which accepts values in hex or rgba as valid CSS color strings.
      * @default ''
      */
     public fill: any;
     /** 
-     * Defines the period, by which the trend has to forward forecast.
+     * Defines the period by which the trend must be forward forecasted.
      * @default 0
      */
     public forwardForecast: any;
     /** 
-     * Defines the intercept of the trendline.
+     * Specifies the intercept value of the trendline.
      * @default null
      * @aspdefaultvalueignore 
      */
     public intercept: any;
     /** 
-     * Sets the legend shape of the trendline.
+     * The `legendShape` property defines the shape used to represent the trendline in the chart legend.
      * @default 'SeriesType'
      */
     public legendShape: any;
     /** 
-     * Options to customize the marker for trendlines.
+     * Options for customizing the markers for trendlines, including shape, size, color, and other visual aspects.
      * @deprecated 
      */
     public marker: any;
     /** 
-     * Defines the name of trendline.
+     * The `name` property is used to assign a descriptive name to the trendline, which will be displayed in the chart as a legend.
      * @default ''
      */
     public name: any;
     /** 
-     * Defines the period, the price changes over which will be considered to predict moving average trend line.
+     * Defines the period, the price changes over which will be considered to predict the moving average trendline.
      * @default 2
      */
     public period: any;
@@ -96,7 +103,7 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      */
     public polynomialOrder: any;
     /** 
-     * Specifies the visibility of trendline.
+     * The `visible` property controls the display of the trendline. If set to true, the trendline will be rendered on the chart. If set to false, the trendline will be hidden.
      * @default true
      */
     public visible: any;

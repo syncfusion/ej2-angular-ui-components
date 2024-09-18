@@ -25,13 +25,13 @@ export class SelectedDataIndexDirective extends ComplexBase<SelectedDataIndexDir
 
 
     /** 
-     * Specifies the point index.
+     * Specifies the index of the data point within the series.
      * @default 0
      * @asptype int
      */
     public point: any;
     /** 
-     * Specifies the series index.
+     * Specifies the index of the series.
      * @default 0
      * @asptype int
      */

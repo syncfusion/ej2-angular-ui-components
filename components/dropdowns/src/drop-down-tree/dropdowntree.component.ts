@@ -5,7 +5,7 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','destroyPopupOnHide','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','width','wrapText','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','destroyPopupOnHide','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','valueTemplate','width','wrapText','zIndex'];
 export const outputs: string[] = ['actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','keyPress','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -77,6 +77,18 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     @ContentChild('headerTemplate')
     @Template()
     public headerTemplate: any;
+    /** 
+     * Specifies the way to customize the selected values in the Dropdown Tree component based on application needs. If the **valueTemplate** property is set, the template content overrides the displayed item text. 
+     * The property accepts [template string] (https://ej2.syncfusion.com/documentation/common/template-engine/) or HTML element ID holding the content. The context for the valueTemplate comes from the data object passed to it.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('valueTemplate')
+    @Template()
+    public valueTemplate: any;
     /** 
      * Specifies a template to render customized content for all the items. 
      * If the **itemTemplate** property is set, the template content overrides the displayed item text. 

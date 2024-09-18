@@ -5,7 +5,7 @@ import { OtpInput } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['ariaLabels','cssClass','disabled','enablePersistence','enableRtl','htmlAttributes','length','locale','placeholder','separator','stylingMode','type','value'];
+export const inputs: string[] = ['ariaLabels','autoFocus','cssClass','disabled','enablePersistence','enableRtl','htmlAttributes','length','locale','placeholder','separator','stylingMode','textTransform','type','value'];
 export const outputs: string[] = ['blur','created','focus','input','valueChanged','valueChange'];
 export const twoWays: string[] = ['value'];
 

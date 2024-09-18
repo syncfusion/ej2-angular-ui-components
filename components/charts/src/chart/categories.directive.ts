@@ -32,7 +32,8 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
 
 
     /** 
-     * Border type for labels 
+     * Specifies the type of border for labels. 
+     * Available border types: 
      * * Rectangle 
      * * Without Top Border 
      * * Without Top and Bottom Border 
@@ -45,30 +46,30 @@ export class CategoryDirective extends ComplexBase<CategoryDirective> {
      */
     public type: any;
     /** 
-     * Custom data for multi-level labels.
+     * Allows adding custom data for multi-level labels.
      * @default null
      */
     public customAttributes: any;
     /** 
-     * End value of the multi-level labels.
+     * Specifies the end value for the multi-level labels.
      * @default null
      * @aspdefaultvalueignore 
      */
     public end: any;
     /** 
-     * Maximum width of the text for multi-level labels.
+     * Specifies the maximum width of the text for multi-level labels.
      * @default null
      * @aspdefaultvalueignore 
      */
     public maximumTextWidth: any;
     /** 
-     * Start value of the multi level labels.
+     * Specifies the starting value for the multi-level labels.
      * @default null
      * @aspdefaultvalueignore 
      */
     public start: any;
     /** 
-     * Multi level labels text.
+     * Specifies the text to be displayed for the multi-level labels.
      * @default ''
      */
     public text: any;

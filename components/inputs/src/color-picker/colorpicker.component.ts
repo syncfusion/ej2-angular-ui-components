@@ -5,7 +5,7 @@ import { ColorPicker } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['columns','createPopupOnClick','cssClass','disabled','enableOpacity','enablePersistence','enableRtl','inline','locale','mode','modeSwitcher','noColor','presetColors','showButtons','value'];
+export const inputs: string[] = ['columns','createPopupOnClick','cssClass','disabled','enableOpacity','enablePersistence','enableRtl','inline','locale','mode','modeSwitcher','noColor','presetColors','showButtons','showRecentColors','value'];
 export const outputs: string[] = ['focus', 'blur', 'beforeClose','beforeModeSwitch','beforeOpen','beforeTileRender','change','created','onModeSwitch','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 

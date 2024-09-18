@@ -105,7 +105,7 @@ Query Builder component is also offered in the following list of frameworks.
 ## Key features
 
 * [Data Sources](https://ej2.syncfusion.com/angular/documentation/query-builder/data-binding): The Query Builder can be bound to a variety of data sources, including arrays of JSON objects, complex data structures such as nested objects or arrays, and Data Manager. This allows users to filter data from a wide range of sources.
-* [Template](https://ej2.syncfusion.com/angular/documentation/query-builder/templates): The Query Builder offers templates that allow users to create custom user experiences by customizing the user interface for individual values, the entire rule, and the group header. This allows users to tailor the Query Builder to their specific needs and preferences.
+* [Template](https://ej2.syncfusion.com/angular/documentation/query-builder/template): The Query Builder offers templates that allow users to create custom user experiences by customizing the user interface for individual values, the entire rule, and the group header. This allows users to tailor the Query Builder to their specific needs and preferences.
 * [Importing and Exporting](https://ej2.syncfusion.com/angular/documentation/query-builder/import-export): The Query Builder allows users to export filters or conditions as SQL and structured JSON, and to import these filters into the Query Builder for regeneration. This makes it easy for users to save and share their filters with others.
 * [Model Binding](https://ej2.syncfusion.com/angular/documentation/query-builder/model-binding): The Query Builder allows users to bind properties for the components used in the field, operator, and value user interfaces, allowing users to define the behavior and appearance of these components.
 * [RTL support](https://ej2.syncfusion.com/angular/documentation/query-builder/how-to/rtl): The Query Builder supports RTL (right-to-left) mode, which aligns content from right to left. This is useful for languages that are written in a right-to-left script, such as Arabic.
@@ -137,4 +137,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-query-builder-npm) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

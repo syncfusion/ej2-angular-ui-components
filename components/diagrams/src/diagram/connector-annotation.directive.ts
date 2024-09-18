@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'rotationReference', 'segmentAngle', 'style', 'template', 'type', 'verticalAlignment', 'visibility', 'width'];
+let input: string[] = ['addInfo', 'alignment', 'annotationType', 'constraints', 'content', 'displacement', 'dragLimit', 'height', 'horizontalAlignment', 'hyperlink', 'id', 'margin', 'offset', 'rotateAngle', 'rotationReference', 'segmentAngle', 'style', 'template', 'tooltip', 'type', 'verticalAlignment', 'visibility', 'width'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -148,6 +148,11 @@ export class ConnectorAnnotationDirective extends ComplexBase<ConnectorAnnotatio
      * @default 'undefined'
      */
     public template: any;
+    /** 
+     * This property is used to show tooltip for annotation on mouse over.
+     * @default new DiagramToolTip();
+     */
+    public tooltip: any;
     /** 
      * Sets the vertical alignment of the text with respect to the parent node/connector 
      * * Stretch - Stretches the diagram element throughout its immediate parent 

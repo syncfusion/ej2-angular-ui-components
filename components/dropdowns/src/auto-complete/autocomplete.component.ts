@@ -5,7 +5,7 @@ import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','allowObjectBinding','autofill','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','highlight','htmlAttributes','ignoreAccent','ignoreCase','index','itemTemplate','locale','minLength','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','showPopupButton','sortOrder','suggestionCount','text','value','valueTemplate','width','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','allowObjectBinding','autofill','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','highlight','htmlAttributes','ignoreAccent','ignoreCase','index','isDeviceFullScreen','itemTemplate','locale','minLength','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','showPopupButton','sortOrder','suggestionCount','text','value','valueTemplate','width','zIndex'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','customValueSpecifier','dataBound','destroyed','filtering','focus','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 

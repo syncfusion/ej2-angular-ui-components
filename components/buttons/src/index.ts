@@ -21,4 +21,7 @@ export {SpeedDialItemDirective,SpeedDialItemsDirective} from './speed-dial/items
 export { SpeedDialComponent} from './speed-dial/speeddial.component';
 export { SpeedDialModule } from './speed-dial/speeddial.module';
 export { SpeedDialAllModule } from './speed-dial/speeddial-all.module';
+export { SmartPasteButtonComponent} from './smart-paste-button/smartpastebutton.component';
+export { SmartPasteButtonModule } from './smart-paste-button/smartpastebutton.module';
+export { SmartPasteButtonAllModule } from './smart-paste-button/smartpastebutton-all.module';
 export * from '@syncfusion/ej2-buttons';

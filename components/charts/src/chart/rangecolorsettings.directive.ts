@@ -25,19 +25,19 @@ export class RangeColorSettingDirective extends ComplexBase<RangeColorSettingDir
 
 
     /** 
-     * Specify the fill colors of point those lies on the given range, if multiple colors mentioned, then we need to fill gradient.
+     * Specifies the fill colors for points that lie within the given range. If multiple colors are specified, a gradient will be applied.
      */
     public colors: any;
     /** 
-     * Specify the end value of color mapping range.
+     * Specifies the end value of the color mapping range.
      */
     public end: any;
     /** 
-     * Specify name for the range mapping item.
+     * Specifies the name or label for the range mapping item.
      */
     public label: any;
     /** 
-     * Specify the start value of color mapping range.
+     * Specifies the start value of the color mapping range.
      */
     public start: any;
 

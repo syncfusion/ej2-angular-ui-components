@@ -30,7 +30,7 @@ export class RowDirective extends ComplexBase<RowDirective> {
     public border: any;
     /** 
      * The height of the row as a string accepts input both as '100px' and '100%'. 
-     * If specified as '100%, row renders to the full height of its chart.
+     * If specified as '100%', the row renders to the full height of its chart.
      * @default '100%'
      */
     public height: any;

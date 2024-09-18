@@ -4,7 +4,7 @@ The Syncfusion [Angular PDF Viewer](https://www.syncfusion.com/angular-ui-compon
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm">Getting started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm#/material/pdfviewer/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm#/fluent2/pdfviewer/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-pdf-viewer?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm">Learn more</a>
 </p>
 
@@ -141,8 +141,8 @@ PDF Viewer component is also offered in the following list of frameworks.
 * [Toolbar](https://ej2.syncfusion.com/angular/documentation/pdfviewer/toolbar/) - Built-in-toolbar and custom toolbars to perform user interaction of PDF Viewer functionalities.
 * [Navigation](https://ej2.syncfusion.com/angular/documentation/pdfviewer/navigation/) - Easy navigation with the help of bookmarks, thumbnails, hyperlinks, and table of contents.
 * [Magnification](https://ej2.syncfusion.com/angular/documentation/pdfviewer/magnification/) - Fit to page, fit to width, and automatic (fits to the visible area).
-* [Search](https://ej2.syncfusion.com/angular/documentation/pdfviewer/text_search/) - Search a text easily across the PDF document.	
-* [Core Interactions](https://ej2.syncfusion.com/angular/documentation/pdfviewer/interaction_mode/) - Allows scrolling, zooming, panning, selection, and page navigation.
+* [Search](https://ej2.syncfusion.com/angular/documentation/pdfviewer/text-search/) - Search a text easily across the PDF document.	
+* [Core Interactions](https://ej2.syncfusion.com/angular/documentation/pdfviewer/interaction-mode/) - Allows scrolling, zooming, panning, selection, and page navigation.
 * [Print](https://ej2.syncfusion.com/angular/documentation/pdfviewer/print/) - Print the entire document or a specific page directly from the browser.
 * [Globalization](https://ej2.syncfusion.com/angular/documentation/pdfviewer/globalization/) - Provides inherent support to localize the UI.
 
@@ -168,4 +168,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

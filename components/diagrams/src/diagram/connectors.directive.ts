@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ConnectorFixedUserHandlesDirective } from './connector-fixeduserhandle.directive';
 import { ConnectorAnnotationsDirective } from './connector-annotation.directive';
 
-let input: string[] = ['addInfo', 'allowNodeOverlap', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'ports', 'previewSize', 'segmentThumbShape', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
+let input: string[] = ['addInfo', 'allowNodeOverlap', 'annotations', 'bezierSettings', 'bridgeSpace', 'connectionPadding', 'connectorSpacing', 'constraints', 'cornerRadius', 'dragSize', 'excludeFromLayout', 'fixedUserHandles', 'flip', 'flipMode', 'hitPadding', 'id', 'margin', 'maxSegmentThumb', 'ports', 'previewSize', 'segmentThumbShape', 'segmentThumbSize', 'segments', 'shape', 'sourceDecorator', 'sourceID', 'sourcePadding', 'sourcePoint', 'sourcePortID', 'style', 'symbolInfo', 'targetDecorator', 'targetID', 'targetPadding', 'targetPoint', 'targetPortID', 'tooltip', 'type', 'visible', 'wrapper', 'zIndex'];
 let outputs: string[] = [];
 /**
  * Connectors Directive
@@ -179,6 +179,11 @@ export class ConnectorDirective extends ComplexBase<ConnectorDirective> {
      * @default 'Circle'
      */
     public segmentThumbShape: any;
+    /** 
+     * Specifies the size of the segment thumb for individual connector. When not set, it defaults to matching the underlying path data
+     * @default 10
+     */
+    public segmentThumbSize: any;
     /** 
      * Defines the segments
      * @default []

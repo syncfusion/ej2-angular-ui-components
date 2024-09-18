@@ -31,12 +31,12 @@ export class SegmentDirective extends ComplexBase<SegmentDirective> {
 
 
     /** 
-     * Defines the color of a region.
+     * Defines the fill color for the region using a color name, hex code, or rgba value.
      * @default null
      */
     public color: any;
     /** 
-     * Defines the pattern of dashes and gaps to stroke.
+     * Specifies the dash pattern for the stroke of the series. The string format allows defining various dash and gap lengths.
      * @default '0'
      */
     public dashArray: any;

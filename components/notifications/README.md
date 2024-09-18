@@ -10,7 +10,7 @@ The [Angular Badge](https://www.syncfusion.com/angular-components/angular-badge?
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/badge/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/badge/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/badge/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-badge?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm">Learn more</a>
 </p>
 
@@ -20,7 +20,7 @@ The [Angular Badge](https://www.syncfusion.com/angular-components/angular-badge?
 
 #### Key features
 
-* [Types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/badge/types) - Provided 8 different types of Badges.
+* [Types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/badge/types) - Provided 8 different types of Badges.
 * [Predefined colors](https://ej2.syncfusion.com/angular/documentation/badge/types) - Provided 8 predefined situational colours of Badges.
 * [Position](https://ej2.syncfusion.com/angular/documentation/badge/types#position) - Supports 3 different positions, such as `default`, `top` and `bottom`.
 
@@ -30,7 +30,7 @@ The [Angular Message](https://www.syncfusion.com/angular-components/angular-mess
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/message/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/message/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/message/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-message?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm">Learn more</a>
 </p>
 
@@ -41,9 +41,9 @@ The [Angular Message](https://www.syncfusion.com/angular-components/angular-mess
 #### Key features
 
 * [Severity](https://ej2.syncfusion.com/angular/documentation/message/severities) - Provides an option to display the message with distinctive icons and colors based on the severity type. The available severity types such as **Normal**, **Success**, **Info**, **Warning**, and **Error**.
-* [Variants](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/message/variants) - Provides an option to display the message with predefined appearance variants. The available variants such as **Text**, **Outlined**, and **Filled**.
-* [Visibility](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/message/default) - Provides an option to show or hide the message.
-* [Template](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/message/template) - Provides an option to customize the content of the message.
+* [Variants](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/message/variants) - Provides an option to display the message with predefined appearance variants. The available variants such as **Text**, **Outlined**, and **Filled**.
+* [Visibility](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/message/default) - Provides an option to show or hide the message.
+* [Template](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/message/template) - Provides an option to customize the content of the message.
 
 ### Angular Toast
 
@@ -51,7 +51,7 @@ The [Angular Toast](https://www.syncfusion.com/angular-components/angular-toast?
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/toast/getting-started/">Getting Started</a>.
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/toast/default">Online demos</a>.
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/toast/default">Online demos</a>.
     <a href="https://www.syncfusion.com/angular-components/angular-toast?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm">Learn more</a>.
 </p>
 
@@ -61,12 +61,12 @@ The [Angular Toast](https://www.syncfusion.com/angular-components/angular-toast?
 
 #### Key features
 
-* [Position](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/toast/positions) - Enables to position the toast anywhere on the screen. It has a predefined set of positions and custom inputs for position based on the target.
+* [Position](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/toast/positions) - Enables to position the toast anywhere on the screen. It has a predefined set of positions and custom inputs for position based on the target.
 * [Autohide and Timeout](https://ej2.syncfusion.com/angular/documentation/toast/timeout) - Toast can be expired based on the timeOut property; it hides toast automatically when reaches specific time without user interaction.
 * [Multi toast](https://ej2.syncfusion.com/angular/documentation/toast/position) - Toasts can support to display multiple toasts with various time delay.
 * [Progress bar](https://ej2.syncfusion.com/angular/documentation/toast/config#progress-bar) - Supports to visually indicate time lapse when the toast expires.
 * [Action buttons](https://ej2.syncfusion.com/angular/documentation/toast/action-buttons) - Supports to add buttons in the toast for archiving any actions within the toast.
-* [Template](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/material/toast/template) - User customized element can be defined for the toast using the template property.
+* [Template](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notification-npm#/fluent2/toast/template) - User customized element can be defined for the toast using the template property.
 
 ### Angular Skeleton
 
@@ -74,7 +74,7 @@ The [Angular Skeleton](https://www.syncfusion.com/angular-components/angular-ske
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/skeleton/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm#/material/skeleton/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm#/fluent2/skeleton/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-skeleton?utm_source=npm&utm_medium=listing&utm_campaign=angular-notifications-npm">Learn more</a>
 </p>
 
@@ -112,8 +112,8 @@ Notification components are also offered in following list of frameworks.
 
 ## Showcase samples
 
-* Expanse Tracker - [Source](https://github.com/syncfusion/ej2-sample-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=notification)
-* Loan Calculator - [Source](https://github.com/syncfusion/ej2-sample-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=notification)
+* Expanse Tracker - [Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=notification)
+* Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=notification)
 
 ## Support
 

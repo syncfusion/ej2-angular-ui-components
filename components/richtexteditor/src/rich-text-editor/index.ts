@@ -1,3 +1,3 @@
 export { RichTextEditorComponent} from './richtexteditor.component';
 export { RichTextEditorModule } from './richtexteditor.module';
-export { RichTextEditorAllModule, ToolbarService, LinkService, ImageService, AudioService, VideoService, CountService, QuickToolbarService, HtmlEditorService, MarkdownEditorService, TableService, PasteCleanupService, ResizeService, FileManagerService, FormatPainterService, EmojiPickerService } from './richtexteditor-all.module';
+export { RichTextEditorAllModule, ToolbarService, LinkService, ImageService, ImportExportService, AudioService, VideoService, CountService, QuickToolbarService, HtmlEditorService, MarkdownEditorService, TableService, PasteCleanupService, ResizeService, FileManagerService, FormatPainterService, EmojiPickerService, SlashMenuService } from './richtexteditor-all.module';

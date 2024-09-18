@@ -28,88 +28,89 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
     public childMultiLevelLabels: any;
     public tags: string[] = ['stripLines', 'multiLevelLabels'];
     /** 
-     * Border of the multi level labels.
+     * Configures the appearance of the border around multi-level labels, including the color, width, and type of the border.
      */
     public border: any;
     /** 
-     * The polar radar radius position.
+     * The `coefficient` value adjusts the size of the polar radar chart's radius. A higher value increases the radius size, while a smaller value decreases it.
      * @default 100
      */
     public coefficient: any;
     /** 
-     * Specifies the index of the column where the axis is associated, 
-     * when the chart area is divided into multiple plot areas by using `columns`. 
+     * Specifies the index of the column where the axis is associated when the chart area is divided into multiple plot areas using `columns`. 
      * 
      * @default 0
      */
     public columnIndex: any;
     /** 
-     * Specifies the value at which the axis line has to be intersect with the vertical axis or vice versa.
+     * Specifies the value at which the axis line intersects with the vertical axis or vice versa.
      * @default null
      */
     public crossesAt: any;
     /** 
-     * Specifies axis name with which the axis line has to be crossed.
+     * Specifies the name of the axis with which the axis line should intersect.
      * @default null
      */
     public crossesInAxis: any;
     /** 
-     * Options to customize the crosshair ToolTip.
+     * Options to customize the appearance and behavior of the crosshair tooltip that appears when hovering over the chart.
      */
     public crosshairTooltip: any;
     /** 
-     * Description for axis and its element.
+     * A description for the axis that provides additional information about its content for screen readers.
      * @default null
      */
     public description: any;
     /** 
-     * With this property, you can request axis to calculate intervals approximately equal to your specified interval.
+     * The `desiredIntervals` property allows the axis to calculate intervals that are roughly equal to the specified number, promoting a more readable and evenly spaced axis.
      * @default null
      * @aspdefaultvalueignore 
      */
     public desiredIntervals: any;
     /** 
-     * Specifies the position of labels at the edge of the axis.They are, 
-     * * None: No action will be performed. 
-     * * Hide: Edge label will be hidden. 
-     * * Shift: Shifts the edge labels.
+     * The `edgeLabelPlacement` property ensures that labels positioned at the edges of the axis do not overlap with the axis boundaries or other chart elements, offering several options to improve chart readability by managing edge labels effectively. 
+     * Available options are: 
+     * * None: No action will be performed on edge labels. 
+     * * Hide: Edge labels will be hidden to prevent overlap. 
+     * * Shift: Edge labels will be shifted to fit within the axis bounds without overlapping.
      * @default 'None'
      */
     public edgeLabelPlacement: any;
     /** 
-     * If set to true, axis interval will be calculated automatically with respect to the zoomed range.
+     * If set to true, the axis interval will be calculated automatically based on the zoomed range.
      * @default true
      */
     public enableAutoIntervalOnZooming: any;
     /** 
-     * Enables the scrollbar for zooming.
+     * If set to true, a scrollbar will appear while zooming to help navigate through the zoomed content.
      * @default true
      */
     public enableScrollbarOnZooming: any;
     /** 
-     * If set to true, axis labels will be trimmed based on the maximumLabelWidth.
+     * If set to true, axis labels will be trimmed based on the `maximumLabelWidth`.
      * @default false
      */
     public enableTrim: any;
     /** 
-     * Specifies the interval for an axis.
+     * Specifies the interval for the axis.
      * @default null
      * @aspdefaultvalueignore 
      */
     public interval: any;
     /** 
-     * Specifies the interval types for the date-time axis, including `Auto`, `Years`, `Months`, `Days`, `Hours`, and `Minutes`. These types define the interval of the axis as follows: 
-     * * Auto: Defines the interval of the axis based on data. 
-     * * Years: Defines the interval of the axis in years. 
-     * * Months: Defines the interval of the axis in months. 
-     * * Days: Defines the interval of the axis in days. 
-     * * Hours: Defines the interval of the axis in hours. 
-     * * Minutes: Defines the interval of the axis in minutes.
+     * The `intervalType` property defines how the intervals on a date-time axis are calculated and displayed. 
+     * Available options are: 
+     * * Auto: Automatically determines the interval type based on the data and chart settings. 
+     * * Years: Sets the interval of the axis in years. 
+     * * Months: Sets the interval of the axis in months. 
+     * * Days: Sets the interval of the axis in days. 
+     * * Hours: Sets the interval of the axis in hours. 
+     * * Minutes: Sets the interval of the axis in minutes.
      * @default 'Auto'
      */
     public intervalType: any;
     /** 
-     * If set to true, data points are rendered based on the index.
+     * If set to true, data points are rendered based on their index.
      * @default false
      */
     public isIndexed: any;
@@ -119,40 +120,42 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public isInversed: any;
     /** 
-     * Used to format the axis label, which accepts any global string format like 'C', 'n1', 'P', etc. 
-     * It also accepts placeholders like '{value}°C' where 'value' represents the axis label (e.g., 20°C).
+     * Used to format the axis label. This property accepts global string formats such as `C`, `n1`, `P`, etc. 
+     * It also accepts placeholders like `{value}°C`, where `{value}` represents the axis label (e.g., 20°C).
      * @default ''
      */
     public labelFormat: any;
     /** 
-     * Specifies the actions like `None`, `Hide`, `Trim`, `Wrap`, `MultipleRows`, `Rotate45`, and `Rotate90` 
-     * when the axis labels intersect with each other.They are, 
-     * * None: Shows all the labels. 
-     * * Hide: Hides the label when it intersects. 
-     * * Trim: Trim the label when it intersects. 
-     * * Wrap: Wrap the label when it intersects. 
-     * * MultipleRows: Shows the label in MultipleRows when it intersects. 
-     * * Rotate45: Rotates the label to 45 degree when it intersects. 
-     * * Rotate90: Rotates the label to 90 degree when it intersects.
+     * Specifies the action to take when axis labels intersect with each other. 
+     * The available options are: 
+     * * None: Shows all labels without any modification. 
+     * * Hide: Hides the label if it intersects with another label. 
+     * * Trim: Trims the label text to fit within the available space. 
+     * * Wrap: Wraps the label text to fit within the available space. 
+     * * MultipleRows: Displays the label text in multiple rows to avoid intersection. 
+     * * Rotate45: Rotates the label text by 45 degrees to avoid intersection. 
+     * * Rotate90: Rotates the label text by 90 degrees to avoid intersection.
      * @default Trim
      */
     public labelIntersectAction: any;
     /** 
-     * Specifies the padding for the axis labels from axis.
+     * The `labelPadding` property adjusts the distance to ensure a clear space between the axis labels and the axis line.
      * @default 5
      */
     public labelPadding: any;
     /** 
-     * Specifies the placement of a label for category axis. They are, 
-     * * betweenTicks: Renders the label between the ticks. 
-     * * onTicks: Renders the label on the ticks.
+     * The `labelPlacement` property controls where the category axis labels are rendered in relation to the axis ticks. 
+     * Available options are: 
+     * * BetweenTicks: Renders the label between the axis ticks. 
+     * * OnTicks: Renders the label directly on the axis ticks.
      * @default 'BetweenTicks'
      */
     public labelPlacement: any;
     /** 
-     * Specifies the placement of a labels to the axis line. They are, 
-     * * inside: Renders the labels inside to the axis line. 
-     * * outside: Renders the labels outside to the axis line.
+     * The `labelPosition` property determines where the axis labels are rendered in relation to the axis line. 
+     * Available options are: 
+     * * Inside: Renders the labels inside the axis line. 
+     * * Outside: Renders the labels outside the axis line.
      * @default 'Outside'
      */
     public labelPosition: any;
@@ -162,33 +165,34 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public labelRotation: any;
     /** 
-     * Options to customize the axis label.
+     * This property allows defining various font settings to control how the labels are displayed on the axis.
      */
     public labelStyle: any;
     /** 
-     * It specifies alignment of the line break labels.
+     * Determines the alignment of labels when a line break occurs in the axis labels.
      * @default 'Center'
      */
     public lineBreakAlignment: any;
     /** 
-     * Options for customizing axis lines.
+     * Options for customizing the axis lines.
      */
     public lineStyle: any;
     /** 
-     * The base value for logarithmic axis. It requires `valueType` to be `Logarithmic`.
+     * Specifies the base value for a logarithmic axis. 
+     * > Note that `valueType` must be set to `Logarithmic` for this feature to work.
      * @default 10
      */
     public logBase: any;
     /** 
-     * Options for customizing major grid lines.
+     * Options for customizing major grid lines on the axis.
      */
     public majorGridLines: any;
     /** 
-     * Options for customizing major tick lines.
+     * Options for customizing major tick lines on the axis.
      */
     public majorTickLines: any;
     /** 
-     * Specifies the maximum range of an axis.
+     * Specifies the maximum value of the axis range, which sets the upper bound of the axis and defines the largest value displayed on the chart, helping to control the visible range of data.
      * @default null
      */
     public maximum: any;
@@ -198,21 +202,21 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public maximumLabelWidth: any;
     /** 
-     * The maximum number of label count per 100 pixels with respect to the axis length.
+     * Specifies the maximum number of labels per 100 pixels relative to the axis length.
      * @default 3
      */
     public maximumLabels: any;
     /** 
-     * Specifies the minimum range of an axis.
+     * Specifies the minimum value of the axis range, which sets the lower bound of the axis and defines the smallest value that will be displayed on the chart to control the visible range of data.
      * @default null
      */
     public minimum: any;
     /** 
-     * Options for customizing minor grid lines.
+     * Options for customizing minor grid lines on the axis.
      */
     public minorGridLines: any;
     /** 
-     * Options for customizing minor tick lines.
+     * Options for customizing minor tick lines on the axis.
      */
     public minorTickLines: any;
     /** 
@@ -221,136 +225,140 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public minorTicksPerInterval: any;
     /** 
-     * Specifies the multi level labels collection for the axis.
+     * Multi-level labels are used to display hierarchical or grouped labels on the axis, allowing for a more detailed and structured data representation.
      */
     public multiLevelLabels: any;
     /** 
-     * A unique identifier for an axis. To associate an axis with a series, set this name to the xAxisName/yAxisName properties of the series.
+     * A unique identifier for an axis. To associate an axis with a series, set this name to the `xAxisName` or `yAxisName` properties of the series.
      * @default ''
      */
     public name: any;
     /** 
-     * If set to true, the axis will render at the opposite side of its default position.
+     * If set to true, the axis will render on the opposite side of its default position.
      * @default false
      */
     public opposedPosition: any;
     /** 
-     * Specifies whether axis elements like axis labels, axis title, etc has to be crossed with axis line.
+     * Specifies whether axis elements, such as axis labels and the axis title, should be crossed by the axis line.
      * @default true
      */
     public placeNextToAxisLine: any;
     /** 
-     * Left and right padding for the plot area in pixels.
+     * Specifies the padding on the top, bottom, left and right sides of the chart area, in pixels.
      * @default 0
      */
     public plotOffset: any;
     /** 
-     * Bottom padding for the plot area in pixels.
+     * Specifies the bottom padding for the chart area, in pixels.
      * @default null
      */
     public plotOffsetBottom: any;
     /** 
-     * Left padding for the plot area in pixels.
+     * Specifies the left padding for the chart area, in pixels.
      * @default null
      */
     public plotOffsetLeft: any;
     /** 
-     * Right padding for the plot area in pixels.
+     * Specifies the right padding for the chart area, in pixels.
      * @default null
      */
     public plotOffsetRight: any;
     /** 
-     * Top padding for the plot area in pixels.
+     * Specifies the top padding for the chart area, in pixels.
      * @default null
      */
     public plotOffsetTop: any;
     /** 
-     * Specifies the padding for the axis range in terms of interval. Available options are: 
-     * * none: Padding cannot be applied to the axis. 
-     * * normal: Padding is applied to the axis based on the range calculation. 
-     * * additional: Interval of the axis is added as padding to the minimum and maximum values of the range. 
-     * * round: Axis range is rounded to the nearest possible value divided by the interval.
+     * The `rangePadding` property determines how padding is applied to the axis range, affecting the appearance of the chart by adjusting the minimum and maximum values of the axis. 
+     * Available options are: 
+     * * None: No padding is applied to the axis. 
+     * * Normal: Padding is applied based on the range calculation. 
+     * * Additional: The interval of the axis is added as padding to both the minimum and maximum values of the range. 
+     * * Round: The axis range is rounded to the nearest possible value that is divisible by the interval.
      * @default 'Auto'
      */
     public rangePadding: any;
     /** 
-     * Specifies the index of the row where the axis is associated, when the chart area is divided into multiple plot areas by using `rows`. 
+     * Specifies the index of the row where the axis is associated when the chart area is divided into multiple plot areas using `rows`. 
      * 
      * @default 0
      */
     public rowIndex: any;
     /** 
-     * Option to customize scrollbar with lazy loading.
+     * Configures the scrollbar with options for customization, including appearance, behavior, and lazy loading settings.
      */
     public scrollbarSettings: any;
     /** 
-     * Specifies the skeleton format in which the dateTime will be processed.
+     * Specifies the skeleton format used for processing date-time values.
      * @default ''
      */
     public skeleton: any;
     /** 
-     * Specifies the format type to be used in dateTime formatting.
+     * Specifies the format type to be used in date-time formatting.
      * @default 'DateTime'
      * @deprecated 
      */
     public skeletonType: any;
     /** 
-     * Specifies the number of `columns` or `rows` an axis has to span horizontally or vertically.
+     * Specifies the number of `columns` or `rows` that an axis spans horizontally or vertically.
      * @default 1
      */
     public span: any;
     /** 
-     * The start angle for the series.
+     * Specifies the start angle for the series in a polar or radar chart, measured in degrees from the horizontal axis, determining the initial angle from which the series begins.
      * @default 0
      */
     public startAngle: any;
     /** 
-     * It specifies whether the axis should start from zero.
+     * If set to true, the axis starts from zero. 
+     * If set to false, the axis starts from the minimum value of the data.
      * @default true
      */
     public startFromZero: any;
     /** 
-     * Specifies the stripLine collection for the axis.
+     * Specifies the collection of strip lines for the axis, which are visual elements used to mark or highlight specific ranges.
      */
     public stripLines: any;
     /** 
-     * TabIndex value for the axis.
+     * The `tabIndex` value for the axis, determining its position in the tab order.
      * @default 2
      */
     public tabIndex: any;
     /** 
-     * Specifies the placement of the ticks to the axis line. They are, 
-     * * inside: Renders the ticks inside to the axis line. 
-     * * outside: Renders the ticks outside to the axis line.
+     * The `tickPosition` property determines where the axis ticks are rendered in relation to the axis line. 
+     * Available options are: 
+     * * Inside: Renders the ticks inside the axis line. 
+     * * Outside: Renders the ticks outside the axis line.
      * @default 'Outside'
      */
     public tickPosition: any;
     /** 
-     * Specifies the title of an axis.
+     * Specifies the title of an axis, displayed along the axis to provide context about the represented data.
      * @default ''
      */
     public title: any;
     /** 
-     * Specifies the titlePadding from axis label.
+     * Specifies the padding between the axis title and the axis labels.
      * @default 5
      */
     public titlePadding: any;
     /** 
-     * Defines an angle to rotate axis title. By default, angle auto calculated based on position and orientation of axis.
+     * Defines an angle for rotating the axis title. By default, the angle is calculated based on the position and orientation of the axis.
      * @default null
      */
     public titleRotation: any;
     /** 
-     * Options for customizing the axis title.
+     * Options for customizing the appearance of the axis title, including font family, size, style, weight, and color.
      */
     public titleStyle: any;
     /** 
-     * Specifies the data types that the axis can handle. Available options include: 
+     * The `valueType` property defines the type of data that the axis can manage, ensuring correct rendering based on the data type. This property supports multiple data types, each suited for different kinds of data visualization. 
+     * Available options include: 
      * * Double: Used for rendering a numeric axis to accommodate numeric data. 
      * * DateTime: Utilized for rendering a date-time axis to manage date-time data. 
      * * Category: Employed for rendering a category axis to manage categorical data. 
      * * Logarithmic: Applied for rendering a logarithmic axis to handle a wide range of values. 
-     * * DateTimeCategory: Used to render a date time category axis for managing business days.
+     * * DateTimeCategory: Used to render a date-time category axis for managing business days.
      * @default 'Double'
      * @blazortype Syncfusion.EJ2.Blazor.Charts.ValueType
      * @isenumeration true
@@ -362,12 +370,13 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      */
     public visible: any;
     /** 
-     * The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
+     * The axis is scaled by this factor. When `zoomFactor` is 0.5, the chart is scaled by 200% along this axis. 
+     * > Note the value ranges from 0 to 1.
      * @default 1
      */
     public zoomFactor: any;
     /** 
-     * Position of the zoomed axis. Value ranges from 0 to 1.
+     * Sets the position of the zoomed axis on the chart, with the `zoomPosition` property specifying the position within the zoomed range, from 0 (start) to 1 (end).
      * @default 0
      */
     public zoomPosition: any;

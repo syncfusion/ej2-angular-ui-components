@@ -2,19 +2,27 @@
 
 ## [Unreleased]
 
-## 26.2.14 (2024-09-10)
+## 27.1.48 (2024-09-18)
 
-### ComboBox
+### ListBox
 
 #### Bug Fixes
 
-- `#FB60719` - The issue where the "Change Event Was Not Triggered When Removing Bound Value Using the Backspace Key" has been resolved.
+- `#I904248` - Issue with "The `removeItems` method not working properly after drag and drop and specific the index value" has been resolved.
 
 ### DropDownTree
+
+#### New Features
+
+- `#I621087` - Provided support to prevent the check action of disabled child nodes using `checkDisabledChildren` API.
+- `#I610462` - Provided valueTemplate support to customize the display of selected values in the Dropdown Tree component.
 
 #### Bug Fixes
 
 - `#I622674` - The issue where, when multi selection is enabled, selected items were just appended into one string for the aria-label in the Dropdown Tree has been resolved.
+- `#I630411` - Facing an console error when all nodes are not selectable while opening the popup in the Dropdown Tree component have been resolved.
+- `#I624932` - Multiple focus issue when enabled the showSelectAll and allowFiltering properties in the Dropdown Tree component has been resolved.
+- `#I625088` - The issue with selected field in the Dropdown Tree component has been resolved.
 
 ## 26.2.11 (2024-08-27)
 
@@ -25,10 +33,6 @@
 - `#I620910` -  Fixed the misalignment of footer elements in the MultiSelect popup on mobile devices.
 
 - `#I619463` - Fixed an exception that occurred when re-rendering the multiselect component inside the scheduler by clicking the scheduler navigation icon.
-
-- `#I620453` - Fixed the issue where ItemData returned null in the removed event argument when the value was cleared.
-
-- `#I6414793` - Fixed the issue where the Clear Icon fails to create a placeholder in MultiSelect after the selection is reset.
 
 - `#I620453` - Fixed the issue where ItemData returned null in the removed event argument when the value was cleared.
 
@@ -102,12 +106,6 @@
 - `#I608662` - Issue with "listbox `RemoveItems` method performance issue occurs while using large number items" has been resolved.
 - `#I897491` - Issue with "Input filter element was focused while clearing the datasource in the listbox" has been resolved.
 
-### MultiSelect
-
-#### Bug fixes
-
-- `#I612325` - Fixed the issue where the form data did not update when clearing values using the clear icon.
-
 ## 26.2.4 (2024-07-24)
 
 ### DropdownList
@@ -160,8 +158,6 @@
 
 - `#I600290` - Fixed issue where the index property was not updating when changing the data source dynamically.
 
-- `#I606941` - Fixed issue with ItemTemplate causing console error when changing dataSource in beforeOpen event.
-
 ## 26.1.41 (2024-07-09)
 
 ### DropDownTree
@@ -189,10 +185,6 @@
 #### Bug Fixes
 
 - `#I580914` - Fixed issue with MultiSelect CheckBox mode and large dataset causing page unresponsiveness.
-
-#### Bug fixes
-
-- `#I598990` - The issue where the request to the server was not made when typing faster into the input has been resolved.
 
 ## 26.1.39 (2024-06-25)
 

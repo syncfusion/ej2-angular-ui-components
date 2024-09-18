@@ -12,7 +12,7 @@ The [Angular Calendar](https://www.syncfusion.com/angular-components/angular-cal
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/calendar/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Getting Started</a> .
-  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/calendar/default">Online demos</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/calendar/default">Online demos</a> .
   <a href="https://www.syncfusion.com/angular-components/angular-calendar?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Learn more</a>
 </p>
 
@@ -22,12 +22,12 @@ The [Angular Calendar](https://www.syncfusion.com/angular-components/angular-cal
 
 #### Key features
 
-* [Date range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/date-range) - Restricts the range of dates that can be selected by using the `min` and `max` properties.
-* [Customization](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/special-dates) - Allows complete control over the appearance of the calendar component.
+* [Date range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/fluent2/calendar/date-range) - Restricts the range of dates that can be selected by using the `min` and `max` properties.
+* [Customization](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/fluent2/calendar/special-dates) - Allows complete control over the appearance of the calendar component.
 * [Month or year selection](https://ej2.syncfusion.com/angular/documentation/calendar/calendar-views#calendar-views) - Provides a flexible option to select only a month or year as the date value.
 * [First day of week](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/change-the-first-day-of-week#change-the-first-day-of-week) - Changes the first day of all weeks in every month.
 * [Week number](https://ej2.syncfusion.com/angular/documentation/calendar/how-to/render-the-calendar-with-week-numbers#render-calendar-with-week-number) - Displays the week number of the selected date in the calendar by enabling the week number option.
-* [Disabled dates](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/material/calendar/disabled) - Disables any date to prevent the user from selecting that date.
+* [Disabled dates](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=calendar#/fluent2/calendar/disabled) - Disables any date to prevent the user from selecting that date.
 * [Start and depth view](https://ej2.syncfusion.com/angular/documentation/calendar/calendar-views#view-restriction) - The Calendar has `month`, `year`, and `decade` views that provide flexibility to select dates.
 * [Highlight weekends](https://ej2.syncfusion.com/angular/documentation/calendar/customization#highlight-weekends) - The calendar supports to highlighting every weekend in a month.
 * [Globalization](https://ej2.syncfusion.com/angular/documentation/calendar/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and the today button text to any supported language.
@@ -38,7 +38,7 @@ The [Angular DatePicker](https://www.syncfusion.com/angular-components/angular-d
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Getting Started</a> .
-  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/datepicker/default">Online demos</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/datepicker/default">Online demos</a> .
   <a href="https://www.syncfusion.com/angular-components/angular-datepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Learn more</a>
 </p>
 
@@ -49,9 +49,9 @@ The [Angular DatePicker](https://www.syncfusion.com/angular-components/angular-d
 #### Key features
 
 * [Placeholders](https://ej2.syncfusion.com/angular/documentation/datepicker/how-to/disable-placeholder-readonly?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Placeholder is a hint text that is displayed in the DatePicker; it is used to indicate the format of the date that the user should enter, such as mm/dd/yyyy or dd/mm/yyyy.
-* [Mask date input](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/datepicker/input-mask) - The mask date input restricts the user from typing unwanted characters in the text input, allowing only eligible date format to be typed.
-* [Disabled date](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/datepicker/disabled) - To disable a specific date in the picker calendar and restrict it from being set or selected in the DatePicker.
-* [Date format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/datepicker/date-format) - The DatePicker control’s input value can be custom formatted apart from the default culture’s specific date format.
+* [Mask date input](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/datepicker/input-mask) - The mask date input restricts the user from typing unwanted characters in the text input, allowing only eligible date format to be typed.
+* [Disabled date](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/datepicker/disabled) - To disable a specific date in the picker calendar and restrict it from being set or selected in the DatePicker.
+* [Date format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/datepicker/date-format) - The DatePicker control’s input value can be custom formatted apart from the default culture’s specific date format.
 * [Incomplete date validation](https://ej2.syncfusion.com/angular/documentation/datepicker/strict-mode?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - The strictMode is an act that allows entry only of valid dates within the specified min or max range in a text box.
 * [Globalization](https://ej2.syncfusion.com/angular/documentation/datepicker/globalization?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm) - Support globalization (also known as internationalization and localization) to allow you to translate the names of months, days, and other text elements in the calendar to any supported language. This can be useful in cases where you want to display the calendar in a language other than the default language.
 
@@ -61,7 +61,7 @@ The [Angular TimePicker](https://www.syncfusion.com/angular-components/angular-t
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Getting Started</a> .
-  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/timepicker/default">Online demos</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/timepicker/default">Online demos</a> .
   <a href="https://www.syncfusion.com/angular-components/angular-timepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Learn more</a>
 </p>
 
@@ -71,14 +71,14 @@ The [Angular TimePicker](https://www.syncfusion.com/angular-components/angular-t
 
 #### Key features
 
-* [Time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/time-range) - Restricts the entry or selection of time values within a specific range of time by using `min` and `max` properties.
-* [Time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/time-format) - Apart from the default culture specific time format, the time picker control’s input value can also be custom formatted.
+* [Time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/fluent2/timepicker/time-range) - Restricts the entry or selection of time values within a specific range of time by using `min` and `max` properties.
+* [Time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/fluent2/timepicker/time-format) - Apart from the default culture specific time format, the time picker control’s input value can also be custom formatted.
 * [Strict mode](https://ej2.syncfusion.com/angular/documentation/timepicker/strict-mode#timepicker) - The strictMode is an act that allows entry of only valid time values within the specified min and max range in a text box.
-* [Disabled time](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/list-formatting) - Any number of time values can be disabled in the popup list items to prevent selection of those times.
-* [Time intervals](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/list-formatting) -  Allows populating the time list with intervals between the times in the popup list to enable selection of proper time value.
+* [Disabled time](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/fluent2/timepicker/list-formatting) - Any number of time values can be disabled in the popup list items to prevent selection of those times.
+* [Time intervals](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/fluent2/timepicker/list-formatting) -  Allows populating the time list with intervals between the times in the popup list to enable selection of proper time value.
 * [Customization](https://ej2.syncfusion.com/angular/documentation/timepicker/how-to/css-customization#css-customization) - The appearance of the time picker can be customized completely.
-* [Time list with duration](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/material/timepicker/list-formatting) - Supports customization of the control’s popup list items with time duration.
-* [Mask time input](https://ej2.syncfusion.com/angular/demos/#/material/timepicker/input-mask) - The mask time input restricts the user from typing unwanted characters in the text input, allowing only eligible time format to be typed.
+* [Time list with duration](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=timepicker#/fluent2/timepicker/list-formatting) - Supports customization of the control’s popup list items with time duration.
+* [Mask time input](https://ej2.syncfusion.com/angular/demos/#/fluent2/timepicker/input-mask) - The mask time input restricts the user from typing unwanted characters in the text input, allowing only eligible time format to be typed.
 * [Globalization](https://ej2.syncfusion.com/angular/documentation/timepicker/globalization#globalization) - Supports globalization (internationalization and localization) to update time popup list values to match any specified culture.
 
 ### Angular DateTimePicker
@@ -87,7 +87,7 @@ The [Angular DateTimePicker](https://www.syncfusion.com/angular-components/angul
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Getting Started</a> .
-  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/datetimepicker/default">Online demos</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/datetimepicker/default">Online demos</a> .
   <a href="https://www.syncfusion.com/angular-components/angular-datetime-picker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Learn more</a>
 </p>
 
@@ -97,9 +97,9 @@ The [Angular DateTimePicker](https://www.syncfusion.com/angular-components/angul
 
 #### Key features
 
-* [Date time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/range) - Restricts the entry or selection of values within a specific range of dates and times by using `min` and `max` properties.
-* [Date time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/material/datetimepicker/date-time-format) - The control’s input value can be custom formatted apart from the default culture’s specific date time format.
-* [Mask date time input](https://ej2.syncfusion.com/angular/demos/#/material/datetimepicker/input-mask) - The mask date time input restricts the user from typing unwanted characters in the text input, allowing only eligible date and time format to be typed.
+* [Date time range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/fluent2/datetimepicker/range) - Restricts the entry or selection of values within a specific range of dates and times by using `min` and `max` properties.
+* [Date time format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=datetimepicker#/fluent2/datetimepicker/date-time-format) - The control’s input value can be custom formatted apart from the default culture’s specific date time format.
+* [Mask date time input](https://ej2.syncfusion.com/angular/demos/#/fluent2/datetimepicker/input-mask) - The mask date time input restricts the user from typing unwanted characters in the text input, allowing only eligible date and time format to be typed.
 
 ### Angular DateRangePicker
 
@@ -107,7 +107,7 @@ The [Angular DateRangePicker](https://www.syncfusion.com/angular-components/angu
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Getting Started</a> .
-  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/material/daterangepicker/default">Online demos</a> .
+  <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm#/fluent2/daterangepicker/default">Online demos</a> .
   <a href="https://www.syncfusion.com/angular-components/angular-daterangepicker?utm_source=npm&utm_medium=listing&utm_campaign=angular-calendar-npm">Learn more</a>
 </p>
 
@@ -117,13 +117,13 @@ The [Angular DateRangePicker](https://www.syncfusion.com/angular-components/angu
 
 #### Key features
 
-* [Preset ranges](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/presets) - Defines the preset ranges to select the frequently used date range by the end users.
-* [Range restriction](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/date-range) - This control restricts the entry or selection of values within a specific range of date by defining the min and max properties.
-* [Limit the selection range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/day-span) - Directs the end user to select only the date range with specific minimum and maximum number of days’ count by setting the minDays and maxDays options.
+* [Preset ranges](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/fluent2/daterangepicker/presets) - Defines the preset ranges to select the frequently used date range by the end users.
+* [Range restriction](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/fluent2/daterangepicker/date-range) - This control restricts the entry or selection of values within a specific range of date by defining the min and max properties.
+* [Limit the selection range](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/fluent2/daterangepicker/day-span) - Directs the end user to select only the date range with specific minimum and maximum number of days’ count by setting the minDays and maxDays options.
 * [First day of week](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization#first-day-of-week) - Changes the first day of weeks in every month.
 * [Strict mode](https://ej2.syncfusion.com/angular/documentation/daterangepicker/range-selection#strict-mode) - The strictMode is an act that allows entry only of a valid date within the specified min and max range in a textbox.
 * [Customization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/customization#daterangepicker) - The appearance of the component can be customized completely.
-* [Format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/material/daterangepicker/date-format) - The control’s input value can be custom formatted apart from the default culture’s specific date range format.
+* [Format](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=daterangepicker#/fluent2/daterangepicker/date-format) - The control’s input value can be custom formatted apart from the default culture’s specific date range format.
 * [Globalization](https://ej2.syncfusion.com/angular/documentation/daterangepicker/globalization#globalization) - Supports globalization (internationalization and localization) to translate the names of months, days, and button text to any supported language.
 
 <p align="center">
@@ -176,4 +176,4 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.

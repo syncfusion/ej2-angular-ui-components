@@ -4,7 +4,7 @@ import { TreeView } from '@syncfusion/ej2-navigations';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','allowTextWrap','animation','autoCheck','checkedNodes','cssClass','disabled','dragArea','enableHtmlSanitizer','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowNavigable','fullRowSelect','loadOnDemand','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
+export const inputs: string[] = ['allowDragAndDrop','allowEditing','allowMultiSelection','allowTextWrap','animation','autoCheck','checkDisabledChildren','checkedNodes','cssClass','disabled','dragArea','enableHtmlSanitizer','enablePersistence','enableRtl','expandOn','expandedNodes','fields','fullRowNavigable','fullRowSelect','loadOnDemand','locale','nodeTemplate','selectedNodes','showCheckBox','sortOrder'];
 export const outputs: string[] = ['actionFailure','created','dataBound','dataSourceChanged','destroyed','drawNode','keyPress','nodeChecked','nodeChecking','nodeClicked','nodeCollapsed','nodeCollapsing','nodeDragStart','nodeDragStop','nodeDragging','nodeDropped','nodeEdited','nodeEditing','nodeExpanded','nodeExpanding','nodeSelected','nodeSelecting'];
 export const twoWays: string[] = [''];
 

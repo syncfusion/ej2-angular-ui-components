@@ -10,7 +10,7 @@ The [Angular Button](https://www.syncfusion.com/angular-components/angular-butto
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/button/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/material/button/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/fluent2/button/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-button?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Learn more</a>
 </p>
 
@@ -31,7 +31,7 @@ The [Angular CheckBox](https://www.syncfusion.com/angular-components/angular-che
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/check-box/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/material/button/checkbox">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/fluent2/button/checkbox">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-checkbox?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Learn more</a>
 </p>
 
@@ -51,7 +51,7 @@ The [Angular RadioButton](https://www.syncfusion.com/angular-components/angular-
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/material/button/radio-button">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/fluent2/button/radio-button">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-radio-button?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Learn more</a>
 </p>
 
@@ -71,7 +71,7 @@ The [Angular Switch](https://www.syncfusion.com/angular-components/angular-toggl
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/switch/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/material/button/switch">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm#/fluent2/button/switch">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-toggle-switch-button?utm_source=npm&utm_medium=listing&utm_campaign=angular-button-npm">Learn more</a>
 </p>
 
@@ -90,7 +90,7 @@ The [Angular Floating Action Button](https://www.syncfusion.com/angular-componen
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm#/material/floating-action-button/overview">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm#/fluent2/floating-action-button/overview">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-fab?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm">Learn more</a>
 </p>
 
@@ -110,7 +110,7 @@ The [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-s
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/speed-dial/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm">Getting Started</a> .
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm#/material/speed-dial/default">Online demos</a> .
+    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm#/fluent2/speed-dial/default">Online demos</a> .
     <a href="https://www.syncfusion.com/angular-components/angular-speed-dial?utm_source=npm&utm_medium=listing&utm_campaign=angular-buttons-npm">Learn more</a>
 </p>
 
@@ -151,8 +151,8 @@ Button components are available in following list of frameworks.
 
 ## Showcase samples
 
-* Expanse Tracker - [Source](https://github.com/syncfusion/ej2-sample-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=button)
-* Loan Calculator - [Source](https://github.com/syncfusion/ej2-sample-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=button)
+* Expanse Tracker - [Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_campaign=button)
+* Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=button)
 
 ## Support
 

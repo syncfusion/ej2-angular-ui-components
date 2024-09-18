@@ -29,5 +29,8 @@ export { RatingAllModule } from './rating/rating-all.module';
 export { OtpInputComponent} from './otp-input/otpinput.component';
 export { OtpInputModule } from './otp-input/otpinput.module';
 export { OtpInputAllModule } from './otp-input/otpinput-all.module';
+export { SmartTextAreaComponent} from './smart-textarea/smarttextarea.component';
+export { SmartTextAreaModule } from './smart-textarea/smarttextarea.module';
+export { SmartTextAreaAllModule } from './smart-textarea/smarttextarea-all.module';
 export * from './form-validator/form-validator';
 export * from '@syncfusion/ej2-inputs';

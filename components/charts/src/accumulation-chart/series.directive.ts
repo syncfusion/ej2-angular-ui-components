@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animation', 'border', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
+let input: string[] = ['animation', 'applyPattern', 'border', 'borderRadius', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
 let outputs: string[] = [];
 /**
  * AccumulationSeries Directive
@@ -27,193 +27,211 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
 
 
     /** 
-     * Specify the type of the series in accumulation chart.
+     * Specifies the type of series in the accumulation chart.
      * @default 'Pie'
      */
     public type: any;
     /** 
-     * Options for customizing the animation for series.
+     * Options for customizing the animation of the series. 
+     * By default, animation is enabled with a duration of 1000 milliseconds (about 1 second). It can be disabled by setting enable to `false`. 
+     * The following properties are supported in animation: 
+     * * enable: If set to true, the series is animated on initial loading. 
+     * * duration: The duration of the animation in milliseconds. 
+     * * delay: The delay before the animation starts, in milliseconds.
      */
     public animation: any;
+    /** 
+     * When set to true, a different pattern is applied to each slice of the pie.
+     * @default false
+     */
+    public applyPattern: any;
     /** 
      * Options for customizing the border of the series.
      */
     public border: any;
     /** 
-     * Defines the pattern of dashes and gaps to the series border.
+     * Option for customizing the border radius.
+     * @default 0
+     */
+    public borderRadius: any;
+    /** 
+     * Defines the pattern of dashes and gaps for the series border.
      * @default '0'
      */
     public dashArray: any;
     /** 
-     * The data label for the series.
+     * The data label property can be used to show the data label and customize its position and styling.
      */
     public dataLabel: any;
     /** 
-     * Specifies the dataSource for the series. It can be an array of JSON objects or an instance of DataManager. 
+     * Specifies the data source for the series. It can be an array of JSON objects, or an instance of DataManager. 
      * 
      * @default ''
      */
     public dataSource: any;
     /** 
-     * Options to customize the empty points in series.
+     * Customization options for the appearance of empty points in the series, where `null` or `undefined` values are considered as empty points.
      */
     public emptyPointSettings: any;
     /** 
-     * To enable or disable tooltip for a series.
+     * Controls whether the tooltip for the accumulation chart series is enabled or disabled. Set to true to display tooltips on hover, or false to hide them.
      * @default true
      */
     public enableTooltip: any;
     /** 
-     * End angle for a series.
+     * Specifies the ending angle for the series, in degrees.
      * @default null
      */
     public endAngle: any;
     /** 
-     * If set true, series points will be exploded on mouse click or touch.
+     * If set to true, series points will explode on mouse click or touch.
      * @default false
      */
     public explode: any;
     /** 
-     * If set true, all the points in the series will get exploded on load.
+     * If set to true, all the points in the series will explode on load.
      * @default false
      */
     public explodeAll: any;
     /** 
-     * Index of the point, to be exploded on load.
+     * Index of the point in the series to be exploded on initial load.
      * @default null
      * @aspdefaultvalueignore 
      * @blazordefaultvalue Double.NaN
      */
     public explodeIndex: any;
     /** 
-     * Distance of the point from the center, which takes values in both pixels and percentage.
+     * Specifies the distance of the point from the center, which can be defined in both pixels and percentage.
      * @default '30%'
      */
     public explodeOffset: any;
     /** 
-     * Defines the distance between the segments of a funnel/pyramid series. The range will be from 0 to 1
+     * Defines the distance between the segments of a funnel or pyramid series. 
+     * The range is from 0 to 1.
      * @default 0
      */
     public gapRatio: any;
     /** 
-     * AccumulationSeries y values less than groupMode are combined into single slice named others.
+     * In the accumulation series, y-values less than `groupMode` are combined into a single slice named 'others'.
      * @default Value
      */
     public groupMode: any;
     /** 
-     * AccumulationSeries y values less than groupTo are combined into single slice named others.
+     * The y-values of the accumulation series that are less than `groupTo` are combined into a single slice named 'others'.
      * @default null
      */
     public groupTo: any;
     /** 
-     * Defines the height of the funnel/pyramid with respect to the chart area.
+     * Defines the height of the funnel or pyramid series relative to the chart area.
      * @default '80%'
      */
     public height: any;
     /** 
-     * When the innerRadius value is greater than 0 percentage, a donut will appear in pie series. It takes values only in percentage.
+     * When the `innerRadius` value is greater than 0%, a donut shape will appear in the pie series. It accepts only percentage values.
      * @default '0'
      */
     public innerRadius: any;
     /** 
-     * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
+     * The URL for the image to be displayed as a legend icon. 
+     * > Note that `legendShape` must be set to `Image`.
      * @default ''
      */
     public legendImageUrl: any;
     /** 
-     * The shape of the legend. Each series has its own legend shape. They are: 
-     * * Circle - Renders a circle. 
-     * * Rectangle - Renders a rectangle. 
-     * * Triangle - Renders a triangle. 
-     * * Diamond - Renders a diamond. 
-     * * Cross - Renders a cross. 
-     * * HorizontalLine - Renders a horizontalLine. 
-     * * VerticalLine - Renders a verticalLine. 
-     * * Pentagon - Renders a pentagon. 
-     * * InvertedTriangle - Renders a invertedTriangle. 
-     * * SeriesType -Render a legend shape based on series type. 
-     * * Image -Render a image.   *
+     * Specifies the shape of the legend icon for each data point. 
+     * Available shapes for legend: 
+     * * Circle - Renders a circular icon. 
+     * * Rectangle - Renders a rectangular icon. 
+     * * Triangle - Renders a triangular icon. 
+     * * Diamond - Renders a diamond-shaped icon. 
+     * * Cross - Renders a cross-shaped icon. 
+     * * HorizontalLine - Renders a horizontal line icon. 
+     * * VerticalLine - Renders a vertical line icon. 
+     * * Pentagon - Renders a pentagon-shaped icon. 
+     * * InvertedTriangle - Renders an inverted triangle-shaped icon. 
+     * * SeriesType - Uses the default icon shape based on the series type. 
+     * * Image - Renders a custom image for the legend icon.
      * @default 'SeriesType'
      */
     public legendShape: any;
     /** 
-     * Specifies the series name.
+     * The `name` property allows for setting a name for the series.
      * @default ''
      */
     public name: any;
     /** 
-     * Defines the height of the funnel neck with respect to the chart area.
+     * Defines the height of the funnel neck relative to the chart area.
      * @default '20%'
      */
     public neckHeight: any;
     /** 
-     * Defines the width of the funnel neck with respect to the chart area.
+     * Defines the width of the funnel neck relative to the chart area.
      * @default '20%'
      */
     public neckWidth: any;
     /** 
-     * The opacity of the series.
+     * Sets the opacity of the series, with a value between 0 and 1 where 0 is fully transparent and 1 is fully opaque.
      * @default 1.
      */
     public opacity: any;
     /** 
-     * Palette for series points.
+     * The `palettes` array defines a set of colors used for rendering the accumulation chart's points. Each color in the array is applied to each point in order.
      * @default []
      */
     public palettes: any;
     /** 
-     * The DataSource field that contains the color value of point 
-     * It is applicable for series
+     * The data source field that contains the color value of a point. 
+     * It is applicable for series.
      * @default ''
      */
     public pointColorMapping: any;
     /** 
-     * Defines how the values have to be reflected, whether through height/surface of the segments.
+     * Defines how the values are represented, either through the height or surface area of the segments.
      * @default 'Linear'
      */
     public pyramidMode: any;
     /** 
-     * Specifies Query to select data from dataSource. This property is applicable only when the dataSource is `ej.DataManager`.
+     * Specifies a query to select data from the data source. This property is applicable only when the data source is an `ej.DataManager`.
      * @default null
      */
     public query: any;
     /** 
-     * Radius of the pie series and its values in percentage.
+     * Specifies the radius of the pie series as a percentage of the chart's size.
      * @default null
      */
     public radius: any;
     /** 
-     * Custom style for the selected series or points.
+     * The `selectionStyle` property is used to specify custom CSS styles for the selected series or points.
      * @default null
      */
     public selectionStyle: any;
     /** 
-     * Start angle for a series.
+     * Specifies the starting angle for the series, in degrees.
      * @default 0
      */
     public startAngle: any;
     /** 
-     * The provided value will be considered as a Tooltip Mapping name.
+     * The data source field that contains the value to be displayed in the tooltip.
      * @default ''
      */
     public tooltipMappingName: any;
     /** 
-     * Specifies the series visibility.
+     * If set to true, the series will be visible. If set to false, the series will be hidden.
      * @default true
      */
     public visible: any;
     /** 
-     * Defines the width of the funnel/pyramid with respect to the chart area.
+     * Defines the width of the funnel or pyramid series relative to the chart area.
      * @default '80%'
      */
     public width: any;
     /** 
-     * The DataSource field which contains the x value.
+     * The data source field that contains the x value.
      * @default ''
      */
     public xName: any;
     /** 
-     * The DataSource field which contains the y value.
+     * The data source field that contains the y value.
      * @default ''
      */
     public yName: any;

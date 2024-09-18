@@ -5,7 +5,7 @@ import { DateTimePicker } from '@syncfusion/ej2-calendars';
 
 
 
-export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enableMask','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','fullScreenMode','htmlAttributes','isMultiSelection','keyConfigs','locale','maskPlaceholder','max','min','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','weekRule','width','zIndex'];
+export const inputs: string[] = ['allowEdit','calendarMode','cssClass','dayHeaderFormat','depth','enableMask','enablePersistence','enableRtl','enabled','firstDayOfWeek','floatLabelType','format','fullScreenMode','htmlAttributes','isMultiSelection','keyConfigs','locale','maskPlaceholder','max','maxTime','min','minTime','openOnFocus','placeholder','readonly','scrollTo','serverTimezoneOffset','showClearButton','showTodayButton','start','step','strictMode','timeFormat','value','values','weekNumber','weekRule','width','zIndex'];
 export const outputs: string[] = ['blur','change','cleared','close','created','destroyed','focus','navigated','open','renderDayCell','valueChange'];
 export const twoWays: string[] = ['value'];
 

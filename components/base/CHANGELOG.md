@@ -2,22 +2,6 @@
 
 ## [Unreleased]
 
-## 26.1.41 (2024-07-09)
-
-### Common
-
-#### Bug Fixes
-
-- `#I571199` -  Resolved memory leak issue for `Focus` and `Blur` events.
-
-## 26.1.39 (2024-06-25)
-
-### Common
-
-#### Bug Fixes
-
-- `#I600759` -  Resolved `Accumulation Chart` data binding not working properly.
-
 ## 25.2.4 (2024-05-14)
 
 ### Common
