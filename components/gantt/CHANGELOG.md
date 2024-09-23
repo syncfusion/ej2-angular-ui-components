@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 27.1.50 (2024-09-24)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I629988` - Change the event argument action property value while deleting dependency issue has been fixed.
+- `#I629758` - Console error while deleting last record with undo redo and styles not persists in notes tab in dialog issues has been fixed.
+- `#I631900` - Script error occurs while deleting last record when undo redo support is enabled issue has been fixed.
+- `#I625233` - Timeline cell disappeared during `DST` issue has been fixed.
+- `#I631255` - Incorrect left is updated during `DST` issue has been fixed.
+- `#I628433` - When adding a dependency to an unscheduled task, an exception is thrown issue has been fixed.
+- `#I632390` - While collapsing parent custom color applied for child disappeared issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.48 (2024-09-18)
 
 ### GanttChart
@@ -12,17 +28,21 @@
 - `#I885165`,`#F56892`- Provided support for taskbar resizing for manually scheduled parent taskbars [Task Scheduling](https://ej2.syncfusion.com/documentation/gantt/task-scheduling#manually-scheduled-tasks), allowing taskbar resize actions.
 - `#I885310`,`#F56941`- The Gantt Chart now supports localized text for [Dependency](https://ej2.syncfusion.com/documentation/gantt/task-dependency) types (FS, FF, SF, SS), improving readability and providing greater flexibility for localized applications. Please find the demo link [here](https://ej2.syncfusion.com/demos/#/fluent2/gantt/editing.html).
 
+- `#I893608`- The [Zooming](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) feature in the timeline has been enhanced to include touch support and mouse wheel interaction. Users can now perform zoom-in and zoom-out actions by pinching in/out on the chart pane or using the mouse wheel in combination with the 'Ctrl' key. Explore the demo [here](https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/zooming).
+- `#I885165`,`#F56892`- Provided support for taskbar resizing for manually scheduled parent taskbars [Task Scheduling](https://ej2.syncfusion.com/angular/documentation/gantt/task-scheduling#manually-scheduled-tasks), allowing taskbar resize actions.
+- `#I885310`,`#F56941`- The Gantt Chart now supports localized text for [Dependency](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency) types (FS, FF, SF, SS), improving readability and providing greater flexibility for localized applications. Please find the demo link [here](https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/editing).
+
 #### Breaking Changes
 
 - The behaviour of the [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/gantt/#loadchildondemand) property in the Gantt Chart has been modified. Previously, when this property was set to `true`, both parent and child records were loaded simultaneously. Now, when set to true, parent records will initially be rendered in a collapsed state, with child records being loaded only when the parent row is expanded. Additionally, the default value of `loadChildOnDemand` has been changed from `false` to `true`.
+
+- The behaviour of the [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadchildondemand) property in the Gantt Chart has been modified. Previously, when this property was set to `true`, both parent and child records were loaded simultaneously. Now, when set to true, parent records will initially be rendered in a collapsed state, with child records being loaded only when the parent row is expanded. Additionally, the default value of `loadChildOnDemand` has been changed from `false` to `true`.
 
 #### Bug fixes
 
 - `#I629322` - Edit dialog closes even when the action is cancel issue has been fixed.
 - `#I629080` - The console error that occurred when changing the view type dynamically with a button click issue has been fixed.
 - `#I632016` - Console error occurred while connecting `FF` type dependency to duration only tasks issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 26.1.35 (2024-06-11)
 
