@@ -37,6 +37,9 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
     /** 
      * Specifies the template for the footer in the AIAssistView component. 
      * Defines the content or layout used to render the footer. Can be a string or a function.
+     * 
+     * {% codeBlock src='ai-assistview/footerTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -50,6 +53,9 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
      * Specifies the template for rendering prompt items in the AIAssistView component. 
      * Defines the content or layout used to render prompt items, and can be either a string or a function. 
      * The template context includes prompt text and toolbar items.
+     * 
+     * {% codeBlock src='ai-assistview/promptItemTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -63,6 +69,9 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
      * Specifies the template for rendering response items in the AIAssistView component. 
      * Defines the content or layout used to render response items, and can be either a string or a function. 
      * The template context includes the prompt text, response text, and toolbar items.
+     * 
+     * {% codeBlock src='ai-assistview/responseItemTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -76,6 +85,9 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
      * Specifies the template for rendering prompt suggestion items in the AIAssistView component. 
      * Defines the content or layout used to render prompt suggestion items, and can be either a string or a function. 
      * The template context includes the index and suggestion text.
+     * 
+     * {% codeBlock src='ai-assistview/suggestionItemTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -88,6 +100,9 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
     /** 
      * Specifies the template for the banner in the AIAssistView component. 
      * Represents the content or layout used to render the banner. Can be a string or a function.
+     * 
+     * {% codeBlock src='ai-assistview/bannerTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element

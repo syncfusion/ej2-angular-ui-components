@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 27.1.51 (2024-09-30)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I632186` - Custom column not refreshed properly while indent and outdent issue has been fixed.
+- `#I631776` - Dates given in the data source are not displayed same as segment data source issue has been fixed.
+- `#I633422` - Incorrect start date updated using `updateRecordByID` issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.50 (2024-09-24)
 
 ### GanttChart
@@ -16,7 +28,9 @@
 - `#I628433` - When adding a dependency to an unscheduled task, an exception is thrown issue has been fixed.
 - `#I632390` - While collapsing parent custom color applied for child disappeared issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I631900` - Script error occurs while deleting last record when undo redo support is enabled issue has been fixed.
+- `#I625233` - Timeline cell disappeared during `DST` issue has been fixed.
+- `#I631255` - Incorrect left is updated during `DST` issue has been fixed.
 
 ## 27.1.48 (2024-09-18)
 
