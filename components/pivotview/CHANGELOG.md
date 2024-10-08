@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.52 (2024-10-08)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#I627993` - The pivot chart will now be rendered properly within the parent container when used with the grouping bar in Angular.
+
 ## 27.1.51 (2024-09-30)
 
 ### Pivot Table

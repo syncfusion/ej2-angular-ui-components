@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.52 (2024-10-08)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I629863` - The issue preventing users from pasting dates into the Datepicker when mask support is enabled has been resolved.
+
 ## 27.1.51 (2024-09-30)
 
 ### DateTimePicker
