@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 27.1.53 (2024-10-15)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I635267` - Issue with "custom date formats change to short date when copying from Excel to a spreadsheet
+" has been resolved.
+
 ## 27.1.52 (2024-10-08)
 
 ### Spreadsheet

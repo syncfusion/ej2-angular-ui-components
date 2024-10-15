@@ -247,6 +247,36 @@ export class DocumentEditorComponent extends DocumentEditor implements IComponen
                     this.injectedModules.push(mod)
                 }
             } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorOptimized');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTabDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorTextFormFieldDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorDropDownFormFieldDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorCheckBoxFormFieldDialog');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

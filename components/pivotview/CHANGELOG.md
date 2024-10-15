@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 27.1.52 (2024-10-08)
+## 27.1.53 (2024-10-15)
 
 ### Pivot Table
 
 #### Bug fixes
 
-- `#I627993` - The pivot chart will now be rendered properly within the parent container when used with the grouping bar in Angular.
+- The pivot table will now work properly while dynamically disabling grouping with the pivot chart enabled.
 
 ## 27.1.51 (2024-09-30)
 
@@ -927,7 +927,15 @@ The pivot grid is a multi-dimensional data visualization component built on top 
 - **Aggregation** - Provides built in aggregation types like sum, average, min, max and count.
 - **Calculated Field** - Users can add new value field(s) to the report dynamically using this option.
 - **Adaptive Rendering** - Adapts with optimal user interfaces for mobile and desktop form-factors, thus helping the user’s application to scale elegantly across all the form-factors without any additional effort.
-- **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.## 18.2.58 (2020-09-15)
+- **Exporting** - Provides the option to exporting records to Excel, CSV and PDF formats.## 27.1.52 (2024-10-08)
+
+### Pivot Table
+
+#### Bug fixes
+
+- `#I627993` - The pivot chart will now be rendered properly within the parent container when used with the grouping bar in Angular.
+
+## 18.2.58 (2020-09-15)
 
 ### Pivot Table
 

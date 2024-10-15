@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 27.1.52 (2024-10-08)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I629863` - The issue preventing users from pasting dates into the Datepicker when mask support is enabled has been resolved.
-
 ## 27.1.51 (2024-09-30)
 
 ### DateTimePicker
@@ -1275,7 +1267,15 @@ TimePicker component is the pre-filled dropdown list with the time values 12/24 
 
 - **StrictMode** - Allows to entering the only valid time in a textbox.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.## 19.3.56 (2021-12-02)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the TimePicker component features through the keyboard, screen readers, or other assistive technology devices.## 27.1.52 (2024-10-08)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I629863` - The issue preventing users from pasting dates into the Datepicker when mask support is enabled has been resolved.
+
+## 19.3.56 (2021-12-02)
 
 ### TimePicker
 

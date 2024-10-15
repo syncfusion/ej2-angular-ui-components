@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentEditorComponent } from './documenteditor.component';
 import { DocumentEditorModule } from './documenteditor.module';
-import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing, ColumnsDialog, CollaborativeEditingHandler} from '@syncfusion/ej2-documenteditor'
+import {Print, SfdtExport, WordExport, TextExport, Selection, Search, Editor, EditorHistory, OptionsPane, ContextMenu, ImageResizer, HyperlinkDialog, TableDialog, BookmarkDialog, TableOfContentsDialog, PageSetupDialog, ParagraphDialog, ListDialog, StyleDialog, StylesDialog, BulletsAndNumberingDialog, FontDialog, TablePropertiesDialog, BordersAndShadingDialog, TableOptionsDialog, CellOptionsDialog, SpellChecker, SpellCheckDialog, CollaborativeEditing, ColumnsDialog, CollaborativeEditingHandler, Optimized, TabDialog, TextFormFieldDialog, DropDownFormFieldDialog, CheckBoxFormFieldDialog} from '@syncfusion/ej2-documenteditor'
 
 
 export const PrintService: ValueProvider = { provide: 'DocumentEditorPrint', useValue: Print};
@@ -36,6 +36,11 @@ export const SpellCheckDialogService: ValueProvider = { provide: 'DocumentEditor
 export const CollaborativeEditingService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditing', useValue: CollaborativeEditing};
 export const ColumnsDialogService: ValueProvider = { provide: 'DocumentEditorColumnsDialog', useValue: ColumnsDialog};
 export const CollaborativeEditingHandlerService: ValueProvider = { provide: 'DocumentEditorCollaborativeEditingHandler', useValue: CollaborativeEditingHandler};
+export const OptimizedService: ValueProvider = { provide: 'DocumentEditorOptimized', useValue: Optimized};
+export const TabDialogService: ValueProvider = { provide: 'DocumentEditorTabDialog', useValue: TabDialog};
+export const TextFormFieldDialogService: ValueProvider = { provide: 'DocumentEditorTextFormFieldDialog', useValue: TextFormFieldDialog};
+export const DropDownFormFieldDialogService: ValueProvider = { provide: 'DocumentEditorDropDownFormFieldDialog', useValue: DropDownFormFieldDialog};
+export const CheckBoxFormFieldDialogService: ValueProvider = { provide: 'DocumentEditorCheckBoxFormFieldDialog', useValue: CheckBoxFormFieldDialog};
 
 /**
  * NgModule definition for the DocumentEditor component with providers.
@@ -76,7 +81,12 @@ export const CollaborativeEditingHandlerService: ValueProvider = { provide: 'Doc
         SpellCheckDialogService,
         CollaborativeEditingService,
         ColumnsDialogService,
-        CollaborativeEditingHandlerService
+        CollaborativeEditingHandlerService,
+        OptimizedService,
+        TabDialogService,
+        TextFormFieldDialogService,
+        DropDownFormFieldDialogService,
+        CheckBoxFormFieldDialogService
     ]
 })
 export class DocumentEditorAllModule { }
