@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+## 27.1.55 (2024-10-22)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I639460` - Console error occurred when clicking `fittoproject` issue has been fixed.
+- `#I643327` - Custom zooming levels using virtual mode throw a script error when zooming in and out issue has been fixed.
+- `#I641833` - Console error occurs while exporting pdf with empty data and critical path issue has been fixed.
+- `#I637794`,`#I637841` - Pdf export issue with baselines not working properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.53 (2024-10-15)
 
 ### GanttChart
@@ -17,7 +30,8 @@
 - `#I635774` - Portrait mode not working in pdf export while using `A0` page size issue has been fixed.
 - `#I632226` - Performance delay occur during load time issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I634857` - Parent dependency validation is not working properly issue has been fixed.
+- `#I632226` - Performance delay occur during load time issue has been fixed.
 
 ## 27.1.52 (2024-10-08)
 
