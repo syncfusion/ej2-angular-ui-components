@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 27.1.56 (2024-10-23)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.55 (2024-10-22)
 
 ### GanttChart
@@ -11,9 +19,11 @@
 - `#I639460` - Console error occurred when clicking `fittoproject` issue has been fixed.
 - `#I643327` - Custom zooming levels using virtual mode throw a script error when zooming in and out issue has been fixed.
 - `#I641833` - Console error occurs while exporting pdf with empty data and critical path issue has been fixed.
+- `#I639036` - `columnMenuItems` property shows an error when assigning AutoFit and `AutoFitAll` issue has been fixed.
 - `#I637794`,`#I637841` - Pdf export issue with baselines not working properly issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I637794`,`#I637841` - Pdf export issue with baselines not working properly issue has been fixed.
+- `#I643327` - Custom zooming levels using virtual mode throw a script error when zooming in and out issue has been fixed.
 
 ## 27.1.53 (2024-10-15)
 

@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 27.1.55 (2024-10-22)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I633166` - Issue with "exported excel retains the most recently applied conditional formatting rule when multiple conditional formats are applied to the same range" has been resolved.
-
 ## 27.1.52 (2024-10-08)
 
 ### Spreadsheet
@@ -1344,7 +1336,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.53 (2024-10-15)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.55 (2024-10-22)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I633166` - Issue with "exported excel retains the most recently applied conditional formatting rule when multiple conditional formats are applied to the same range" has been resolved.
+
+## 27.1.53 (2024-10-15)
 
 ### Spreadsheet
 

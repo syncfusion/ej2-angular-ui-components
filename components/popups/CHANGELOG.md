@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 27.1.56 (2024-10-23)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I633873` - Resolved the inconsistent resizing behaviour observed with the modal dialog.
+
+- `#I640701` - Resolved the issue of mapping the header content to the aria-labelledby attribute in the Dialog.
+
 ## 27.1.53 (2024-10-15)
 
 ### Dialog
