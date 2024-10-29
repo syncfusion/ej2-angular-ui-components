@@ -2,7 +2,18 @@
 
 ## [Unreleased]
 
-## 27.1.56 (2024-10-23)
+## 27.1.57 (2024-10-29)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I637156` - Tooltip now displays properly on mobile devices with touch interactions.
+- `#I637207` - Nodes are now resizable via touch interactions.
+- `#I639121` - The gradient background of the node is now properly preserved when exporting the diagram as an SVG
+- `#F194691` - The Position Change Event Now Triggers on Keyboard Nudging.
+
+## 27.1.55 (2024-10-22)
 
 ### Diagram
 
