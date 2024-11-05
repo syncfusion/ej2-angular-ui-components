@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 27.1.58 (2024-11-05)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#645586` - Last 3 rows of the taskbar are not exported when performing PDF export with the `pageOrientation` set Portrait issue has been fixed.
+- `#644812` - When adding a record, the validation for taskType as `fixedDuration` is not working properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.57 (2024-10-29)
 
 ### GanttChart
@@ -12,7 +23,7 @@
 - `#I646826` - An invalid resource collection is being passed resulting in a script error issue has been fixed.
 - `#I637870` - White space when expand and collapse action issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I642434` - `recordIndex` property is updating last index for every above or below add action via `contextMenu` issue has been fixed.
 
 ## 27.1.56 (2024-10-23)
 
