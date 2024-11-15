@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 27.2.2 (2024-11-15)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#644829` - Words and taskbar alignment are misaligned in pdf file when row height is less than 20 issue has been fixed.
+- `#I645725` - Console error occurs when taskbar drag and drop with touch interaction issue has been fixed.
+- `#I646644` - Console error occurs while dependency has decimal offset day values issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.1.58 (2024-11-05)
 
 ### GanttChart
@@ -10,8 +22,6 @@
 
 - `#645586` - Last 3 rows of the taskbar are not exported when performing PDF export with the `pageOrientation` set Portrait issue has been fixed.
 - `#644812` - When adding a record, the validation for taskType as `fixedDuration` is not working properly issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 27.1.57 (2024-10-29)
 
