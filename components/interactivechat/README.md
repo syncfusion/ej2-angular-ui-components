@@ -1,10 +1,10 @@
 # Angular Interactive Chat Component
 
-A package of Angular Interactive Chat components which comes with a AI AssistView component to enables users to display AI-generated responses in a user-friendly interface.
+A package of Angular Interactive Chat components which comes with a AI AssistView component to enables users to display AI-generated responses in a user-friendly interface and the Chat UI component which is lightweight, conversational interface for displaying chat messages between the users.
 
 ## What's Included in the Angular Interactive Chat Package
 
-The Angular Interactive Chat package includes the following component.
+The Angular Interactive Chat package includes the following components.
 
 ### Angular AI AssistView
 
@@ -17,7 +17,7 @@ The [Angular AI AssistView](https://www.syncfusion.com/angular-ui-controls/angul
 </p>
 
 <p align="center">
-<img alt="Angular AI AssistView Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-ai-assistview.jpg">
+<img alt="Angular AI AssistView Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-ai-assistview.png">
 </p>
 
 #### Key features
@@ -27,6 +27,29 @@ The [Angular AI AssistView](https://www.syncfusion.com/angular-ui-controls/angul
 * Header toolbar: Allows adding toolbar items in the header with options for executing custom commands.
 * Custom views: Extensive customization options for creating personalized views in addition to the built-in assist view.
 * Customization: Allows customizing the default appearance, including prompts, responses, and more, to suit your needs.
+
+### Angular Chat UI
+
+The [Angular Chat UI](https://www.syncfusion.com/angular-ui-controls/angular-chat-ui?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm) component is a lightweight, user-friendly conversational interface for displaying chat messages between users. It features messages with timestamps, avatar images with fallback text, typing indicators, and extensive customization options, making it ideal for building modern chat applications.
+
+<p align="center">
+  <a href="https://ej2.syncfusion.com/documentation/chat-ui/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm">Getting Started</a> .
+  <a href="https://ej2.syncfusion.com/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm#/fluent2/chat-ui/default">Online demos</a> .
+  <a href="https://www.syncfusion.com/angular-ui-controls/angular-chat-ui?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm">Learn more</a>
+</p>
+
+<p align="center">
+<img alt="Angular Chat UI Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-chat-ui.png">
+</p>
+
+#### Key features
+
+* Message suggestions: Provides on-demand suggestions using customizable templates to enhance user interactions.
+* On-demand messages loading: Dynamically loads messages to optimize performance, especially for lengthy conversations.
+* Header toolbar: Allows adding toolbar items in the header with options for executing custom commands.
+* Timebreak: Automatically inserts time breaks between messages, enhancing readability by grouping conversations by date.
+* Typing indicator: Shows real-time typing activity of users with customizable indicator styles.
+* Customization: Allows users to customize the default appearance, including messages, the footer, and more, to suit their needs.
 
 ## Setup
 To install `interactive chat` and its dependent packages, use the following Command,
@@ -54,10 +77,10 @@ Product support is available through the following mediums.
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-ui-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-ui-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A [free community license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm) for more info.
 
-&copy; Copyright 2024 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2024 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

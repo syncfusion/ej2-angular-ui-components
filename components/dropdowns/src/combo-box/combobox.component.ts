@@ -5,8 +5,8 @@ import { ComboBox } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','allowObjectBinding','autofill','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','index','isDeviceFullScreen','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','text','value','valueTemplate','width','zIndex'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','customValueSpecifier','dataBound','destroyed','filtering','focus','open','select','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','allowCustom','allowFiltering','allowObjectBinding','allowResize','autofill','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','index','isDeviceFullScreen','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','text','value','valueTemplate','width','zIndex'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','customValueSpecifier','dataBound','destroyed','filtering','focus','open','resizeStart','resizeStop','resizing','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -51,6 +51,9 @@ export class ComboBoxComponent extends ComboBox implements IComponentBase {
 	filtering: any;
 	focus: any;
 	open: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
 	select: any;
 	public valueChange: any;
 

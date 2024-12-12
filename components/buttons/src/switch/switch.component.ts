@@ -6,7 +6,7 @@ import { Switch } from '@syncfusion/ej2-buttons';
 
 
 export const inputs: string[] = ['checked','cssClass','disabled','enablePersistence','enableRtl','htmlAttributes','locale','name','offLabel','onLabel','value'];
-export const outputs: string[] = ['focus', 'blur', 'change','created','checkedChange'];
+export const outputs: string[] = ['focus', 'blur', 'beforeChange','change','created','checkedChange'];
 export const twoWays: string[] = ['checked'];
 
 /**
@@ -37,6 +37,7 @@ export class SwitchComponent extends Switch implements IComponentBase {
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	beforeChange: any;
 	change: any;
 	created: any;
 	public checkedChange: any;

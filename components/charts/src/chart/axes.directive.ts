@@ -73,7 +73,7 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * * None: No action will be performed on edge labels. 
      * * Hide: Edge labels will be hidden to prevent overlap. 
      * * Shift: Edge labels will be shifted to fit within the axis bounds without overlapping.
-     * @default 'None'
+     * @default 'Shift'
      */
     public edgeLabelPlacement: any;
     /** 

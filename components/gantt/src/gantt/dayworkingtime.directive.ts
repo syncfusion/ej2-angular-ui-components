@@ -31,12 +31,12 @@ export class DayWorkingTimeDirective extends ComplexBase<DayWorkingTimeDirective
 
 
     /** 
-     * Defines start time of working time range.
+     * Defines the start time of the working time range for the day.
      * @default null
      */
     public from: any;
     /** 
-     * Defines end time of working time range.
+     * Defines the end time of the working time range for the day.
      * @default null
      */
     public to: any;

@@ -1,9 +1,9 @@
-import { Directive, ViewContainerRef, ContentChildren } from '@angular/core';
+import { Directive, ViewContainerRef, ContentChildren, ContentChild } from '@angular/core';
 import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
-
-let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'htmlAttributes', 'leadingIconCss', 'leadingIconUrl', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
+let input: string[] = ['avatarIconCss', 'avatarText', 'cssClass', 'enabled', 'htmlAttributes', 'leadingIconCss', 'leadingIconUrl', 'template', 'text', 'trailingIconCss', 'trailingIconUrl', 'value'];
 let outputs: string[] = [];
 /**
  * `e-chip` directive represent a chip of the Angular ChipList.
@@ -86,6 +86,17 @@ export class ChipDirective extends ComplexBase<ChipDirective> {
      * @default ''
      */
     public value: any;
+    /** 
+     * Specifies the template content to be rendered for each individual chip item. This template allows for the rendering of custom HTML elements, such as anchor tags, SVG icons, or other components, within each chip item.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('template')
+    @Template()
+    public template: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

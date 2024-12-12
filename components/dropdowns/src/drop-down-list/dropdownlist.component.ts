@@ -5,8 +5,8 @@ import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowObjectBinding','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','index','isDeviceFullScreen','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','text','value','valueTemplate','width','zIndex'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','open','select','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowObjectBinding','allowResize','cssClass','dataSource','enablePersistence','enableRtl','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','index','isDeviceFullScreen','itemTemplate','locale','noRecordsTemplate','placeholder','popupHeight','popupWidth','query','readonly','showClearButton','sortOrder','text','value','valueTemplate','width','zIndex'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','open','resizeStart','resizeStop','resizing','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -50,6 +50,9 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
 	filtering: any;
 	focus: any;
 	open: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
 	select: any;
 	public valueChange: any;
 

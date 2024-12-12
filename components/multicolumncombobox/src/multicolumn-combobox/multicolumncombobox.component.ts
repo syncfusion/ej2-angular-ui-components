@@ -98,30 +98,6 @@ export class MultiColumnComboBoxComponent extends MultiColumnComboBox implements
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
-        try {
-                let mod = this.injector.get('MultiColumn-ComboBoxVirtualScroll');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('MultiColumn-ComboBoxSort');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('MultiColumn-ComboBoxEdit');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
-        try {
-                let mod = this.injector.get('MultiColumn-ComboBoxGroup');
-                if(this.injectedModules.indexOf(mod) === -1) {
-                    this.injectedModules.push(mod)
-                }
-            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

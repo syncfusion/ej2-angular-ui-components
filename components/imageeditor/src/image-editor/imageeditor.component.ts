@@ -4,7 +4,7 @@ import { ImageEditor } from '@syncfusion/ej2-image-editor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','fontFamily','height','isReadOnly','locale','quickAccessToolbarTemplate','selectionSettings','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','width','zoomSettings'];
+export const inputs: string[] = ['allowUndoRedo','cssClass','disabled','enablePersistence','enableRtl','finetuneSettings','fontFamily','height','isReadOnly','locale','quickAccessToolbarTemplate','selectionSettings','showQuickAccessToolbar','theme','toolbar','toolbarTemplate','uploadSettings','width','zoomSettings'];
 export const outputs: string[] = ['beforeSave','click','created','cropping','destroyed','editComplete','fileOpened','finetuneValueChanging','flipping','frameChange','imageFiltering','panning','quickAccessToolbarItemClick','quickAccessToolbarOpen','resizing','rotating','saved','selectionChanging','shapeChange','shapeChanging','toolbarCreated','toolbarItemClicked','toolbarUpdating','zooming'];
 export const twoWays: string[] = [''];
 

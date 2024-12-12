@@ -31,12 +31,12 @@ export class WeekWorkingTimeDirective extends ComplexBase<WeekWorkingTimeDirecti
 
 
     /** 
-     * Defines day for setting time customized time range.
+     * Defines the day of the week to apply customized working time.
      * @default null
      */
     public dayOfWeek: any;
     /** 
-     * Defines time range of each day in week.
+     * Defines the time range for each day of the week.
      * @default []
      * @asptype List<GanttDayWorkingTime>
 

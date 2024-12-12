@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## 28.1.33 (2024-12-12)
+
+### GanttChart
+
+#### Features
+
+- `#I639036` - Added `AutoFit` and `AutoFitAll` options in the `columnMenuItems` property to perform autofit on the current column and all existing columns. For more details, refer to the documentation link [here](https://ej2.syncfusion.com/documentation/gantt/columns/column-menu).
+- `#I644719` - Implemented support for applying custom `colors` to individual segments in the PDF Gantt chart using the [`taskSegmentStyles`](https://ej2.syncfusion.com/documentation/api/gantt/iTaskbarStyle/#taskSegmentStyles) property, enabling enhanced customization and improved visualization of tasks and their segments in exported document.
+
+#### Bug fixes
+
+- `#I660593` - Work field column value is inconsistent during cell editing issue has been fixed.
+- `#I645586` - Last rows of the taskbar are not exported when performing PDF export with the `pageOrientation` set Portrait issue has been fixed.
+- `#I656591` - Duplication of timeline issue occurs for PDF export when using a blob object issue has been fixed.
+- `#I657724` - Tooltip misalignment issue in angular template issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 27.2.5 (2024-12-03)
 
 ### GanttChart
@@ -16,7 +34,8 @@
 - `#I654502` - `fontFamily` is not changing in the PDF export for header and footer issue has been fixed.
 - `#F194824` - On expand parent records, data not aligned properly when `loadChildOnDemand` and virtualization enabled issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I643775` - The `queryTaskbarInfo` event wasn't triggered for virtualization with multiple taskbars enabled and tasks in a collapsed state issue has been fixed.
+- `#I654502` - `fontFamily` is not changing in the PDF export for header and footer issue has been fixed.
 
 ## 27.2.4 (2024-11-26)
 

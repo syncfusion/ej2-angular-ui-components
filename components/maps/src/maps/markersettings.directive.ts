@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['animationDelay', 'animationDuration', 'border', 'colorValuePath', 'dashArray', 'dataSource', 'enableDrag', 'fill', 'height', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width'];
+let input: string[] = ['animationDelay', 'animationDuration', 'border', 'clusterSettings', 'colorValuePath', 'dashArray', 'dataSource', 'enableDrag', 'fill', 'height', 'heightValuePath', 'highlightSettings', 'imageUrl', 'imageUrlValuePath', 'initialMarkerSelection', 'latitudeValuePath', 'legendText', 'longitudeValuePath', 'offset', 'opacity', 'query', 'selectionSettings', 'shape', 'shapeValuePath', 'template', 'tooltipSettings', 'visible', 'width', 'widthValuePath'];
 let outputs: string[] = [];
 /**
  * Represents the directive to define the markers in the maps.
@@ -46,6 +46,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      */
     public border: any;
     /** 
+     * Gets or sets the options for customizing the clustering of markers on the map. 
+     * This property is used to cluster markers based on the current marker settings, and it is applied only when the `allowClustering` property is enabled.
+     */
+    public clusterSettings: any;
+    /** 
      * Gets or sets the field name from the marker data source based on which the color is applied for the marker.
      * @default null
      */
@@ -79,6 +84,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      * @default 10
      */
     public height: any;
+    /** 
+     * Gets or sets the field name from the data source that determines the marker height.
+     * @default null
+     */
+    public heightValuePath: any;
     /** 
      * Gets or sets the options to customize the marker when the mouse hovers over the markers in maps.
      */
@@ -153,6 +163,11 @@ export class MarkerDirective extends ComplexBase<MarkerDirective> {
      * @default 10
      */
     public width: any;
+    /** 
+     * Gets or sets the field name from the data source that determines the marker width.
+     * @default null
+     */
+    public widthValuePath: any;
     /** 
      * Gets or sets the template for the marker to render custom elements.
      * @default null

@@ -2,41 +2,17 @@
 
 ## [Unreleased]
 
-## 27.2.5 (2024-12-03)
+## 28.1.33 (2024-12-12)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Features
 
-- `#I656916` - - Issue with "Script error occurs while loading the JSON data with `isNoteEditable` property set to true in the cell model" has been resolved.
+- `#I491300`, `#I271239`, `#I636239` - Now, you can use custom data validation with formulas, allowing you to define rules based on custom formulas.
 
-## 27.2.3 (2024-11-21)
+- `#I370203` - Now, you can experience chunked response processing to enhance performance when opening large Excel files in the Spreadsheet.
 
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I646465` - Issue with "script error occurring when importing an Excel file that contains an exclamation mark (!) in the sheet name" has been resolved.
-
-## 27.2.2 (2024-11-15)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I641003` - Issue with "selection misalignment happens when applying autofill to wrapped cells that are outside of the viewport" has been resolved.
-
-## 27.1.52 (2024-10-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
-
-- `#I633175` - The border styles will now display correctly when printing a sheet or workbook.
-
-- `#I633166` - Issue with "conditional formatting styles (background color and font color) are not exported properly when importing an excel file with conditional formatting and exporting it again as excel" has been resolved.
+- You can now use the manual calculation mode, allowing you to manually trigger formula calculations. This feature continues to enhance performance and accuracy, especially when handling large datasets.
 
 ## 26.1.35 (2024-06-11)
 
@@ -1360,24 +1336,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.55 (2024-10-22)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I633166` - Issue with "exported excel retains the most recently applied conditional formatting rule when multiple conditional formats are applied to the same range" has been resolved.
-
-## 27.1.53 (2024-10-15)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I635267` - Issue with "custom date formats change to short date when copying from Excel to a spreadsheet
-" has been resolved.
-
-## 27.1.48 (2024-09-18)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.48 (2024-09-18)
 
 ### Spreadsheet
 

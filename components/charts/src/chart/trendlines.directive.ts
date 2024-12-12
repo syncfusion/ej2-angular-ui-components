@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
+let input: string[] = ['accessibility', 'animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -42,6 +42,10 @@ export class TrendlineDirective extends ComplexBase<TrendlineDirective> {
      * @default 'Linear'
      */
     public type: any;
+    /** 
+     * Options to improve accessibility for chart trendline elements.
+     */
+    public accessibility: any;
     /** 
      * Options to customize the animation for trendlines.
      */

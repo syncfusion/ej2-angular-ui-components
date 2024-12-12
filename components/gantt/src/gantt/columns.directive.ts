@@ -65,11 +65,10 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public allowSorting: any;
     /** 
-     * Defines the cell content's overflow mode. The available modes are 
+     * Defines the overflow mode for cell content. The available modes are: 
      * * `Clip` -  Truncates the cell content when it overflows its area. 
-     * * `Ellipsis` -  Displays ellipsis when the cell content overflows its area. 
-     * * `EllipsisWithTooltip` - Displays ellipsis when the cell content overflows its area 
-     * also it will display tooltip while hover on ellipsis applied cell.
+     * * `Ellipsis` -  Displays an ellipsis when the cell content overflows its area. 
+     * * `EllipsisWithTooltip` - Displays an ellipsis when the cell content overflows its area, and shows a tooltip on hover over the ellipsis.
      * @default Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip
      * @isenumeration true
      * @asptype Syncfusion.EJ2.Grids.ClipMode
@@ -81,7 +80,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public customAttributes: any;
     /** 
-     * If `disableHtmlEncode` is set to true, it encodes the HTML of the header and content cells.
+     * If `disableHtmlEncode` is set to true, it disables HTML encoding for the content of specific column.
      * @default false
      */
     public disableHtmlEncode: any;
@@ -96,7 +95,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public edit: any;
     /** 
-     * Defines the type of component for editing.
+     * Defines the type of component used for editing the field.
      * @default 'stringedit'
      */
     public editType: any;
@@ -109,9 +108,9 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     public field: any;
     /** 
      * It is used to customize the default filter options for a specific columns. 
-     * * ui - to render custom component for specific column it has following functions. 
-     * * ui.create – It is used for creating custom components. 
-     * * ui.read -  It is used for read the value from the component. 
+     * * ui - to render custom component for specific column. It has following functions: 
+     * * ui.create - It is used for creating custom components. 
+     * * ui.read - It is used for read the value from the component. 
      * * ui.write - It is used to apply component model as dynamically.
      * @default null
      */
@@ -178,7 +177,8 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public textAlign: any;
     /** 
-     * Defines rules to validate data before creating and updating.
+     * Defines validation rules for data before creating or updating records. 
+     * The rules are used to ensure that data meets specific criteria before it is saved or updated.
      * @default null
      */
     public validationRules: any;

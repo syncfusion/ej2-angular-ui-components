@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['iconCss', 'id', 'items', 'separator', 'text', 'url'];
+let input: string[] = ['htmlAttributes', 'iconCss', 'id', 'items', 'separator', 'text', 'url'];
 let outputs: string[] = [];
 
 @Directive({
@@ -19,6 +19,11 @@ export class MenuItemDirective extends ComplexBase<MenuItemDirective> {
 	
 
 
+    /** 
+     * Specifies the htmlAttributes property to support adding custom attributes to the menu items in the menu component.
+     * @default null
+     */
+    public htmlAttributes: any;
     /** 
      * Defines class/multiple classes separated by a space for the menu Item that is used to include an icon. 
      * Menu Item can include font icon and sprite image.

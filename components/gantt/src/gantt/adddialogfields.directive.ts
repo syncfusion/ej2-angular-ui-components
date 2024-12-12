@@ -31,22 +31,24 @@ export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective
 
 
     /** 
-     * Defines types of tab which contains editor for columns. 
-     * * `General` - Defines tab container type as general. 
-     * * `Dependency` - Defines tab as dependency editor. 
-     * * `Resources` - Defines tab as resources editor. 
-     * * `Notes` - Defines tab as notes editor. 
-     * * `Custom` - Defines tab as custom column editor.
+     * Specifies the types of tabs that contain editors for columns. 
+     * Available tab types: 
+     * * `General` - Represents the general information editor tab. 
+     * * `Dependency` - Represents the dependency editor tab. 
+     * * `Resources` - Represents the resource editor tab. 
+     * * `Notes` - Represents the notes editor tab. 
+     * * `Segments` - Represents the segments editor tab. 
+     * * `Custom` - Represents the custom column editor tab.
      * @default null
      */
     public type: any;
     /** 
-     * Defines the properties of Grid or RTE or TreeGrid controls in Gantt edit dialog.
+     * Specifies the configuration properties for Grid, Rich Text Editor (RTE), or TreeGrid controls within the Gantt edit dialog.
      * @default null
      */
     public additionalParams: any;
     /** 
-     * Defines edited column fields placed inside the tab.
+     * Specifies the edited column fields to be placed inside the tab.
      * @default null
      */
     public fields: any;

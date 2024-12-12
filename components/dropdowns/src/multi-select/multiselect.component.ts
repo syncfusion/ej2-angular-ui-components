@@ -5,8 +5,8 @@ import { MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','addTagOnBlur','allowCustomValue','allowFiltering','allowObjectBinding','changeOnBlur','closePopupOnSelect','cssClass','dataSource','delimiterChar','enableGroupCheckBox','enableHtmlSanitizer','enablePersistence','enableRtl','enableSelectionOrder','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','hideSelectedItem','htmlAttributes','ignoreAccent','ignoreCase','isDeviceFullScreen','itemTemplate','locale','maximumSelectionLength','mode','noRecordsTemplate','openOnClick','placeholder','popupHeight','popupWidth','query','readonly','selectAllText','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','unSelectAllText','value','valueTemplate','width','zIndex'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','beforeSelectAll','blur','change','chipSelection','close','created','customValueSelection','dataBound','destroyed','filtering','focus','open','removed','removing','select','selectedAll','tagging','valueChange'];
+export const inputs: string[] = ['actionFailureTemplate','addTagOnBlur','allowCustomValue','allowFiltering','allowObjectBinding','allowResize','changeOnBlur','closePopupOnSelect','cssClass','dataSource','delimiterChar','enableGroupCheckBox','enableHtmlSanitizer','enablePersistence','enableRtl','enableSelectionOrder','enableVirtualization','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','groupTemplate','headerTemplate','hideSelectedItem','htmlAttributes','ignoreAccent','ignoreCase','isDeviceFullScreen','itemTemplate','locale','maximumSelectionLength','mode','noRecordsTemplate','openOnClick','placeholder','popupHeight','popupWidth','query','readonly','selectAllText','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','unSelectAllText','value','valueTemplate','width','zIndex'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','beforeSelectAll','blur','change','chipSelection','close','created','customValueSelection','dataBound','destroyed','filtering','focus','open','removed','removing','resizeStart','resizeStop','resizing','select','selectedAll','tagging','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -55,6 +55,9 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
 	open: any;
 	removed: any;
 	removing: any;
+	resizeStart: any;
+	resizeStop: any;
+	resizing: any;
 	select: any;
 	selectedAll: any;
 	tagging: any;

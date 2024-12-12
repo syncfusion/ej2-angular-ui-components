@@ -35,7 +35,7 @@ ng new my-app
 cd my-app
 ```
 
-### Adding Syncfusion Kanban package
+### Adding Syncfusion<sup>®</sup> Kanban package
 
 To install Kanban and its dependent packages, use the following command.
 
@@ -47,13 +47,13 @@ The above command does the below configuration to your Angular app.
 
  * Adds `@syncfusion/ej2-angular-kanban` package and its peer dependencies to your `package.json` file.
  * Imports the `KanbanModule` in your application module `app.module.ts`.
- * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
+ * Registers the Syncfusion<sup>®</sup> UI default theme (material) in the `angular.json` file.
 
-This makes it easy to add the Syncfusion Angular Kanban module to your project and start using it in your application.
+This makes it easy to add the Syncfusion<sup>®</sup> Angular Kanban module to your project and start using it in your application.
 
 ### Add Kanban component
 
-In **src/app/app.component.ts**, use `<ejs-kanban>` selector in `template` attribute of  `@Component` directive to render the Syncfusion Angular Kanban component.
+In **src/app/app.component.ts**, use `<ejs-kanban>` selector in `template` attribute of  `@Component` directive to render the Syncfusion<sup>®</sup> Angular Kanban component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -130,10 +130,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion<sup>®</sup> licensed software, including this component, is subject to the terms and conditions of Syncfusion<sup>®</sup> [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-kanban-npm) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-kanban-npm) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2022 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.

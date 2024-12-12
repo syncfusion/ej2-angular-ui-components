@@ -6,7 +6,7 @@ import { LayersDirective } from './layers.directive';
 import { AnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['allowImageExport','allowPdfExport','allowPrint','annotations','background','baseLayerIndex','border','centerPosition','description','enablePersistence','enableRtl','format','height','layers','legendSettings','locale','mapsArea','margin','projectionType','tabIndex','theme','titleSettings','tooltipDisplayMode','useGroupingSeparator','width','zoomSettings'];
-export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','legendRendering','load','loaded','markerClick','markerClusterClick','markerClusterMouseMove','markerClusterRendering','markerDragEnd','markerDragStart','markerMouseMove','markerRendering','onclick','pan','panComplete','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','tooltipRenderComplete','zoom','zoomComplete','dataSourceChange'];
+export const outputs: string[] = ['animationComplete','annotationRendering','beforePrint','bubbleClick','bubbleMouseMove','bubbleRendering','click','dataLabelRendering','doubleClick','itemHighlight','itemSelection','layerRendering','legendRendering','load','loaded','markerClick','markerClusterClick','markerClusterMouseMove','markerClusterRendering','markerDragEnd','markerDragStart','markerMouseMove','markerRendering','mouseMove','onclick','pan','panComplete','resize','rightClick','shapeHighlight','shapeRendering','shapeSelected','tooltipRender','tooltipRenderComplete','zoom','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -54,6 +54,7 @@ export class MapsComponent extends Maps implements IComponentBase {
 	markerDragStart: any;
 	markerMouseMove: any;
 	markerRendering: any;
+	mouseMove: any;
 	onclick: any;
 	pan: any;
 	panComplete: any;

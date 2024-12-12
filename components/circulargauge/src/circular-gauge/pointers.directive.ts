@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
+let input: string[] = ['animation', 'border', 'cap', 'color', 'description', 'enableDrag', 'imageUrl', 'linearGradient', 'markerHeight', 'markerShape', 'markerWidth', 'needleEndWidth', 'needleStartWidth', 'needleTail', 'offset', 'pointerWidth', 'position', 'radialGradient', 'radius', 'roundedCornerRadius', 'text', 'textStyle', 'type', 'value'];
 let outputs: string[] = [];
 /**
  * Represents the directive to render and customize the pointers in an axis of circular gauge.
@@ -51,6 +51,11 @@ export class PointerDirective extends ComplexBase<PointerDirective> {
      * @default null
      */
     public description: any;
+    /** 
+     * Enables and disables drag movement of the pointer in the circular gauge.
+     * @default false
+     */
+    public enableDrag: any;
     /** 
      * Sets and gets the URL for the image that is to be displayed as pointer. 
      * It requires marker shape value to be `Image`.

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
+let input: string[] = ['accessibility', 'content', 'coordinateUnits', 'description', 'horizontalAlignment', 'region', 'verticalAlignment', 'x', 'xAxisName', 'y', 'yAxisName'];
 let outputs: string[] = [];
 /**
  * Annotation Directive
@@ -25,6 +25,10 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
 
 
     /** 
+     * Options to improve accessibility for chart annotation elements.
+     */
+    public accessibility: any;
+    /** 
      * Specifies the coordinate units of the annotation. 
      * The options are: 
      * * Pixel - Renders the annotation based on x and y pixel values. 
@@ -35,6 +39,7 @@ export class AnnotationDirective extends ComplexBase<AnnotationDirective> {
     /** 
      * A description for the annotation that provides additional information about its content for screen readers.
      * @default null
+     * @deprecated 
      */
     public description: any;
     /** 
