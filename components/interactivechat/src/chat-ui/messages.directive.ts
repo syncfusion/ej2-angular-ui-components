@@ -13,7 +13,7 @@ let outputs: string[] = [];
  *     <e-message>
  *     </e-message>
  *    </e-messages>
- * </ejs-aiassistview>
+ * </ejs-chatui>
  * ```
  */
 @Directive({
