@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 28.1.36 (2024-12-24)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I664845`, `#I664429` - Unable to Add Dependency When Task Name Contains a Hyphen issue has been fixed.
+- `#I666904` - When the resource unit is changed, the duration field is not updated issue has been fixed.
+- `#I665780` - Baseline width not validated properly for less than one day issue has been fixed.
+- `#I663274` - Taskbar not rendering properly with fixed work issue has been fixed.
+- `#I663985` - Script error thrown when collapsing the root node with task mode set to custom and `enableMultiTaskbar` enabled issue has been fixed.
+- `#I665270` - Work not calculated correctly on parent task, after child outdent issue has been fixed.
+- `#I662513`, `#F195374`  - Console error thrown when scrolling in virtualization sample with `allowSelection` set to false issue has been fixed.
+- `#I666264` - Console error occurred while taskbar drag with null duration issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.1.35 (2024-12-18)
 
 ### GanttChart
@@ -18,7 +35,10 @@
 - `#I664048` - Issue in child-parent predecessor validation issue has been fixed.
 - `#I664336` - Convert to task does not work for milestone task with task type as fixed work issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I660168` - Vertical scrollbar hides when resizing splitter to left or right issue has been fixed.
+- `#I665389` - Splitter position changes dynamically, but when splitter is manually dragged, position does not update issue has been fixed.
+- `#I660498`,`#I659031` - Angular Gantt not working for `Content-Security-Policy` of meta tag issue has been fixed.
+- `#I660467` - Gantt crashes when timezone is set to `berlin` issue has been fixed.
 
 ## 28.1.33 (2024-12-12)
 
