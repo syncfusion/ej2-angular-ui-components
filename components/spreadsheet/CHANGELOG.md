@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.1.37 (2024-12-31)
+
+### Spreadsheet
+
+#### Bug fixes
+
+-`#I666956` - Issue with "Shift + arrow key navigation is not functioning correctly in RTL mode" has been resolved.
+
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet
