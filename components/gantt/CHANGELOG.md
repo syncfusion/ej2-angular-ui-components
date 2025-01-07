@@ -2,7 +2,33 @@
 
 ## [Unreleased]
 
+## 28.1.38 (2025-01-07)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I668777` - Toolbar visible property not working issue has been fixed.
+- `#I668317` - Timeline tiers get misaligned while using timeline virtualization in `DST` zone issue has been fixed.
+- `#I674918` - When virtualization is enabled, the resource collection does not display properly in the resource tab issue has been fixed.
+- `#I667515` - Horizontal scroll jumps to starting point while scrolling after zooming actions issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.1.37 (2024-12-31)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I656160` - White space and scrolling issues while using load child on demand has been fixed.
+- `#I668559` - Event marker position is not rendering correctly on the timeline issue has been fixed.
+- `#I665780` - Baseline width is not set properly for decimal duration issue has been fixed.
+
+- `#I656160` - White space and scrolling issues while using load child on demand has been fixed.
+- `#I668559` - Event marker position is not rendering correctly on the timeline issue has been fixed.
+
+## 28.1.36 (2024-12-25)
 
 ### GanttChart
 
@@ -17,7 +43,8 @@
 - `#I662513`, `#F195374`  - Console error thrown when scrolling in virtualization sample with `allowSelection` set to false issue has been fixed.
 - `#I666264` - Console error occurred while taskbar drag with null duration issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I664845`, `#I664429` - Unable to Add Dependency When Task Name Contains a Hyphen issue has been fixed.
+- `#I662513` - Console error thrown when scrolling in virtualization sample with `allowSelection` set to false issue has been fixed.
 
 ## 28.1.35 (2024-12-18)
 
