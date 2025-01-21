@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 28.1.41 (2025-01-21)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I665780` - Baseline and taskbar width mismatched when using the same dates for both issue has been fixed.
+- `#I678186` - Decimal work value is updating, when record add issue has been fixed.
+- `#I679179` - Offset value was not calculated properly issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.1.39 (2024-01-14)
 
 ### GanttChart
@@ -16,7 +28,9 @@
 - `#I661832` - collapsed records were not in the viewport for the last set of records with a large number of child records, issue has been fixed.
 - `#I664339` - Template not destroyed while zooming action issue has been fixed.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I668317` - Timeline tiers get misaligned while using timeline virtualization in `DST` zone issue has been fixed.
+- `#I676849` - When the context menu action is cancel, the added child record is still considered as a parent issue has been fixed.
+- `#I676845` - Console error occurred while exporting PDF without columns property issue has been fixed.
 
 ## 28.1.38 (2025-01-07)
 
