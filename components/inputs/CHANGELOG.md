@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 28.2.3 (2025-01-29)
+
+### Form Validator
+
+#### Bug Fixes
+
+- `#I677916` - Fixed an issue where validation rules for the date property were not functioning correctly in the `ar` culture.
+
+### Rating
+
+#### Bug Fixes
+
+- `#I667904` - The Form data is not updated when the Rating value changes
+
 ## 28.1.41 (2025-01-21)
 
 ### Signature

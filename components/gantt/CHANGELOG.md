@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 28.2.3 (2025-01-29)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I679476` - Delay occurs when sample is loaded with the critical path issue has been fixed.
+- `#I679518` - Invalid dependency lines are displayed when edit settings are not enabled issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.1.41 (2025-01-21)
 
 ### GanttChart
@@ -11,8 +22,6 @@
 - `#I665780` - Baseline and taskbar width mismatched when using the same dates for both issue has been fixed.
 - `#I678186` - Decimal work value is updating, when record add issue has been fixed.
 - `#I679179` - Offset value was not calculated properly issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 28.1.39 (2024-01-14)
 
