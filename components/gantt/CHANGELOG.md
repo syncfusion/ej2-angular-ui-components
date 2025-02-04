@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.4 (2025-02-04)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.2.3 (2025-01-29)
 
 ### GanttChart
@@ -10,8 +18,6 @@
 
 - `#I679476` - Delay occurs when sample is loaded with the critical path issue has been fixed.
 - `#I679518` - Invalid dependency lines are displayed when edit settings are not enabled issue has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 28.1.41 (2025-01-21)
 

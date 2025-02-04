@@ -186,12 +186,12 @@ export class ComponentBase<T> {
         // Refer Link: https://github.com/angular/angular/issues/6005
         const appendToComponent: any = (tempAfterViewThis: any) => {
             /* istanbul ignore else  */
-            if (typeof window !== 'undefined' && tempAfterViewThis.element || tempAfterViewThis.getModuleName().includes('btn')) {
+            if (typeof window !== 'undefined' && tempAfterViewThis.element) {
                 tempAfterViewThis.appendTo(tempAfterViewThis.element);
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
         };
-        if (!ngtempRef) {
+        if (!ngtempRef || !tempAfterViewThis.getModuleName().includes('btn')) {
             setTimeout(() => {
                 appendToComponent(tempAfterViewThis);
             });

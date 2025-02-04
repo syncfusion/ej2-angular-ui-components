@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.4 (2025-02-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I638858` - Issue with "exception occurred when exporting a spreadsheet containing a defined name that referred to a table reference" has been resolved.
+
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet
