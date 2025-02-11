@@ -191,7 +191,7 @@ export class ComponentBase<T> {
                 tempAfterViewThis.ngEle.nativeElement.style.visibility = '';
             }
         };
-        if (!ngtempRef || !tempAfterViewThis.getModuleName().includes('btn')) {
+        if (!ngtempRef && !tempAfterViewThis.getModuleName().includes('btn')) {
             setTimeout(() => {
                 appendToComponent(tempAfterViewThis);
             });

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.5 (2025-02-11)
+
+### Common
+
+#### Bug Fixes
+
+- `#FB27111` -  Resolved the Button flicker on angular page load.
+
 ## 25.2.4 (2024-05-14)
 
 ### Common
