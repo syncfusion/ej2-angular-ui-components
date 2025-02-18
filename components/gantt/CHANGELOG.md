@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 28.2.6 (2025-02-18)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I684077` - The console error that occurred while updating a record with start and end dates as strings using the `updateRecordByID` method has been resolved.
+- `#I668559` - Event marker and weekends are rendering incorrect place while using `warsaw` timezone issue has been fixed.
+- `#I683525` - Resource was not included the second time when using edit in column issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.2.5 (2025-02-11)
 
 ### GanttChart
@@ -10,8 +22,6 @@
 
 - `#I678529` - When row drag and drop is used, the issue where modified records were not updating properly in the actionComplete event has been fixed.
 - `#I683525` - Resolved a script error that occurred during cell editing of the Resource field when the resource collection was modified through column editing.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 28.2.4 (2025-02-04)
 
