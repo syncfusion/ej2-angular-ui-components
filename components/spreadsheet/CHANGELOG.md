@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 28.2.7 (2025-02-25)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I685225` - Issue with "copied value of '0.0000' incorrectly changed to '0' when pasted into a cell formatted as text" has been resolved.
+
 ## 28.1.35 (2024-12-18)
 
 ### Spreadsheet
