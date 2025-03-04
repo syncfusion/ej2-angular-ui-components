@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 28.2.9 (2025-03-04)
+
+### GanttChart
+
+#### Bug fixes
+
+ `#I689599` -  Resolved a console error that occurred when undoing a deleted split task.
+ `#I692333` -  When the `includeWeekend` property is set to true, the split taskbar cannot be dragged and dropped issue has been resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.2.7 (2025-02-25)
 
 ### GanttChart
@@ -14,7 +25,9 @@
 - `#I691907` - Incorrect values are saved during edit action of work field with `FixedDuration` and `FixedWork` task types issue has been resolved.
 - `#I690721` - Console error occurs when user map level property in datasource issue has been resolved.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I685559` - `updateRecordByID` method does not work when a predecessor dependency value is passed with offset days issue has been resolved.
+- Task not rendered at given time in datasource when `dayWorkingTime` is enabled issue has been resolved.
+- `#I690721` - Console error occurs when user map level property in datasource issue has been resolved.
 
 ## 28.2.6 (2025-02-18)
 
