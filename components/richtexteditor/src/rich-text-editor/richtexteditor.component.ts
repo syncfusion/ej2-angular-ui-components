@@ -80,9 +80,9 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
 
 
     /** 
-     * Accepts the template design and assigns it as RichTextEditor’s content. 
-     * The built-in template engine which provides options to compile template string into a executable function. 
-     * For EX: We have expression evolution as like ES6 expression string literals
+     * Accepts a template design and assigns it as the content of the Rich Text Editor. 
+     * The built-in template engine provides options to compile a template string into an executable function. 
+     * For example, it supports expression evaluation similar to ES6 template string literals.
      * 
      * {% codeBlock src='rich-text-editor/value-template/index.md' %}{% endcodeBlock %}
      *     

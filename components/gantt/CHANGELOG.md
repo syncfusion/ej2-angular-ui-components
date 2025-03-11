@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 28.2.11 (2025-03-11)
+
+### GanttChart
+
+#### Bug fixes
+
+ `#I693977` - Resolved an issue where the `durationUnit` property did not function correctly when the work field was mapped.
+ `#I698273` - Milestone end date is not validated properly during cell editing issue has been resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 28.2.9 (2025-03-04)
 
 ### GanttChart
@@ -10,8 +21,6 @@
 
  `#I689599` -  Resolved a console error that occurred when undoing a deleted split task.
  `#I692333` -  When the `includeWeekend` property is set to true, the split taskbar cannot be dragged and dropped issue has been resolved.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 28.2.7 (2025-02-25)
 
