@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 28.2.11 (2025-03-11)
 
 ### GanttChart
 
@@ -11,7 +19,7 @@
  `#I693977` - Resolved an issue where the `durationUnit` property did not function correctly when the work field was mapped.
  `#I698273` - Milestone end date is not validated properly during cell editing issue has been resolved.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+ `#I693977` - Resolved an issue where the `durationUnit` property did not function correctly when the work field was mapped.
 
 ## 28.2.9 (2025-03-04)
 

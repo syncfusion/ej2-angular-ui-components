@@ -2,23 +2,15 @@
 
 ## [Unreleased]
 
-## 28.2.12 (2025-03-19)
+## 29.1.33 (2025-03-25)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I690915` - Issue with "the formula cell range being incorrect while importing an Excel file containing a user-defined function" has been resolved.
+- This release improves usability and stability in Spreadsheet by addressing issues in Conditional Formatting, Editing, Notes, Autofit, Autofill, Protection, Undo/Redo, Filtering, Sorting, and Virtual Scrolling. Enhancements in Import/Export, Data Validation, Number and Cell Formatting, Wrap, Merge, Freeze Pane, and Read-Only Mode further optimize performance, security, and user experience.
 
-## 28.1.35 (2024-12-18)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I647640` - Issue with "data got changed when multiple text-formatted values from Excel were pasted into Spreadsheet" has been resolved.
-
-- `#I654861` - Issue with "incorrect expression resulted when comparing negative values preceded by comparison operators" has been resolved.
+- `#I694368` - Issue with "hidden cells being included while calculating aggregate values" has been resolved.
 
 ## 28.1.33 (2024-12-12)
 
@@ -1354,47 +1346,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 28.2.7 (2025-02-25)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I685225` - Issue with "copied value of '0.0000' incorrectly changed to '0' when pasted into a cell formatted as text" has been resolved.
-
-## 28.2.4 (2025-02-04)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I638858` - Issue with "exception occurred when exporting a spreadsheet containing a defined name that referred to a table reference" has been resolved.
-
-## 28.1.41 (2025-01-21)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I656006` - Issue with "page becomes unresponsive when using the `calculateNow` method with multiple `VLOOKUP` formulas that have longer cell ranges" has been resolved.
-
-## 28.1.39 (2024-01-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I674612` - Issue with "list validation drop-down becomes misaligned in RTL mode" has been resolved.
-
-## 28.1.37 (2024-12-31)
-
-### Spreadsheet
-
-#### Bug fixes
-
--`#I666956` - Issue with "Shift + arrow key navigation is not functioning correctly in RTL mode" has been resolved.
-
-## 27.1.48 (2024-09-18)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.48 (2024-09-18)
 
 ### Spreadsheet
 

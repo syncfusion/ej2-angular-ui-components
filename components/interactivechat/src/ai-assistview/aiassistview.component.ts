@@ -5,7 +5,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ViewsDirective } from './views.directive';
 
 export const inputs: string[] = ['activeView','bannerTemplate','cssClass','enablePersistence','enableRtl','footerTemplate','height','locale','prompt','promptIconCss','promptItemTemplate','promptPlaceholder','promptSuggestionItemTemplate','promptSuggestions','promptSuggestionsHeader','promptToolbarSettings','prompts','responseIconCss','responseItemTemplate','responseToolbarSettings','showClearButton','showHeader','toolbarSettings','views','width'];
-export const outputs: string[] = ['created','promptChanged','promptRequest','promptChange'];
+export const outputs: string[] = ['created','promptChanged','promptRequest','stopRespondingClick','promptChange'];
 export const twoWays: string[] = ['prompt'];
 
 /**
@@ -31,6 +31,7 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
 	created: any;
 	promptChanged: any;
 	promptRequest: any;
+	stopRespondingClick: any;
 	public promptChange: any;
     public childViews: QueryList<ViewsDirective>;
     public tags: string[] = ['views'];

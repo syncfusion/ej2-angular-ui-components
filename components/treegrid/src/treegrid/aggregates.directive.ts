@@ -38,12 +38,12 @@ export class AggregateDirective extends ComplexBase<AggregateDirective> {
     public childColumns: any;
     public tags: string[] = ['columns'];
     /** 
-     * Configures the aggregate columns.
+     * Configures the collection of aggregate columns.
      * @default []
      */
     public columns: any;
     /** 
-     * Display the childSummary for each parent.
+     * Determines whether to display child summaries for each parent row.
      */
     public showChildSummary: any;
 

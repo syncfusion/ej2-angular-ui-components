@@ -317,6 +317,14 @@ export class ComponentBase<T> {
                         hasDiffLength = true;
                     }
                     for (const list of tagObject.instance.list) {
+                        if (list.tags) {
+                            for (const tag of list.tags) {
+                                const innerChild: any = getValue('child' + tag.substring(0, 1).toUpperCase() + tag.substring(1), list);
+                                if (innerChild) {
+                                    list.tagObjects.push({ instance: innerChild, name: tag });
+                                }
+                            }
+                        }
                         const curIndex: number = tagObject.instance.list.indexOf(list);
                         const curChild: any = getValue(tagObject.name, tempAfterContentThis)[`${curIndex}`];
                         let complexTemplates: string[] = Object.keys(curChild);

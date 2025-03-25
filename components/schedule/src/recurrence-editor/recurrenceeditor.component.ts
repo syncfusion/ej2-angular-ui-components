@@ -5,7 +5,7 @@ import { RecurrenceEditor } from '@syncfusion/ej2-schedule';
 
 
 export const inputs: string[] = ['calendarMode','cssClass','dateFormat','enablePersistence','enableRtl','endTypes','firstDayOfWeek','frequencies','locale','maxDate','minDate','selectedType','startDate','value'];
-export const outputs: string[] = ['change'];
+export const outputs: string[] = ['change','created','destroyed'];
 export const twoWays: string[] = [];
 
 /**
@@ -28,7 +28,9 @@ export const twoWays: string[] = [];
 export class RecurrenceEditorComponent extends RecurrenceEditor implements IComponentBase {
     public context : any;
     public tagObjects: any;
-	public change: any;
+	change: any;
+	created: any;
+	public destroyed: any;
 
 
 

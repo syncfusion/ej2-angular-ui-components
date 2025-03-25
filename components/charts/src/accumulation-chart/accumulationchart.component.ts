@@ -6,7 +6,7 @@ import { AccumulationSeriesCollectionDirective } from './series.directive';
 import { AccumulationAnnotationsDirective } from './annotations.directive';
 
 export const inputs: string[] = ['accessibility','allowExport','annotations','background','backgroundImage','border','center','centerLabel','currencyCode','dataSource','enableAnimation','enableBorderOnMouseMove','enableExport','enableHtmlSanitizer','enablePersistence','enableRtl','enableSmartLabels','focusBorderColor','focusBorderMargin','focusBorderWidth','height','highlightColor','highlightMode','highlightPattern','isMultiSelect','legendSettings','locale','margin','selectedDataIndexes','selectionMode','selectionPattern','series','subTitle','subTitleStyle','theme','title','titleStyle','tooltip','useGroupingSeparator','width'];
-export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforePrint','beforeResize','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendClick','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','selectionComplete','seriesRender','textRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['afterExport','animationComplete','annotationRender','beforeExport','beforePrint','beforeResize','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','legendClick','legendRender','load','loaded','pointClick','pointMove','pointRender','resized','selectionComplete','seriesRender','textRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -33,6 +33,7 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
 	afterExport: any;
 	animationComplete: any;
 	annotationRender: any;
+	beforeExport: any;
 	beforePrint: any;
 	beforeResize: any;
 	chartDoubleClick: any;

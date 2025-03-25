@@ -12,7 +12,7 @@ import { StockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','legendSettings','locale','margin','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','stockEvents','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
-export const outputs: string[] = ['axisLabelRender','legendClick','legendRender','load','loaded','onZooming','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['axisLabelRender','beforeExport','legendClick','legendRender','load','loaded','onZooming','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -43,6 +43,7 @@ export class StockChartComponent extends StockChart implements IComponentBase {
     public context : any;
     public tagObjects: any;
 	axisLabelRender: any;
+	beforeExport: any;
 	legendClick: any;
 	legendRender: any;
 	load: any;

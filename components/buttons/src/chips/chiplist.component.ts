@@ -4,8 +4,8 @@ import { ChipList } from '@syncfusion/ej2-buttons';
 
 import { ChipsDirective } from './chips.directive';
 
-export const inputs: string[] = ['avatarIconCss','avatarText','chips','cssClass','enableDelete','enablePersistence','enableRtl','enabled','htmlAttributes','leadingIconCss','leadingIconUrl','locale','selectedChips','selection','text','trailingIconCss','trailingIconUrl'];
-export const outputs: string[] = ['beforeClick','click','created','delete','deleted'];
+export const inputs: string[] = ['allowDragAndDrop','avatarIconCss','avatarText','chips','cssClass','dragArea','enableDelete','enablePersistence','enableRtl','enabled','htmlAttributes','leadingIconCss','leadingIconUrl','locale','selectedChips','selection','text','trailingIconCss','trailingIconUrl'];
+export const outputs: string[] = ['beforeClick','click','created','delete','deleted','dragStart','dragStop','dragging'];
 export const twoWays: string[] = [''];
 
 /**
@@ -32,7 +32,10 @@ export class ChipListComponent extends ChipList implements IComponentBase {
 	click: any;
 	created: any;
 	delete: any;
-	public deleted: any;
+	deleted: any;
+	dragStart: any;
+	dragStop: any;
+	public dragging: any;
     public childChips: QueryList<ChipsDirective>;
     public tags: string[] = ['chips'];
 

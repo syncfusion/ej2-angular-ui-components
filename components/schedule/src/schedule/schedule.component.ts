@@ -7,8 +7,8 @@ import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowClipboard','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','toolbarItems','views','weekRule','width','workDays','workHours'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforePaste','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventDoubleClick','eventRendered','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','virtualScrollStart','virtualScrollStop','currentViewChange','selectedDateChange'];
+export const inputs: string[] = ['agendaDaysCount','allowClipboard','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowOverlap','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','overscanCount','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','toolbarItems','views','weekRule','width','workDays','workHours'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforePaste','beforePrint','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventDoubleClick','eventRendered','excelExport','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','tooltipOpen','virtualScrollStart','virtualScrollStop','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
 /**
@@ -38,6 +38,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
 	actionComplete: any;
 	actionFailure: any;
 	beforePaste: any;
+	beforePrint: any;
 	cellClick: any;
 	cellDoubleClick: any;
 	created: any;
@@ -50,6 +51,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
 	eventClick: any;
 	eventDoubleClick: any;
 	eventRendered: any;
+	excelExport: any;
 	hover: any;
 	moreEventsClick: any;
 	navigating: any;
@@ -60,6 +62,7 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
 	resizeStop: any;
 	resizing: any;
 	select: any;
+	tooltipOpen: any;
 	virtualScrollStart: any;
 	virtualScrollStop: any;
 	currentViewChange: any;

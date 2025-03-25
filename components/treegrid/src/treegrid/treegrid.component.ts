@@ -111,7 +111,7 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
      * or HTML element ID. 
      * > * The row template must be a table row.
      * 
-     * > Check the [`Row Template`](../../treegrid/row) customization.
+     * > Check the [Row Template](../../treegrid/row) customization.
      *     
      * @asptype string
      */

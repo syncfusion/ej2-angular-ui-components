@@ -74,7 +74,7 @@ export function clearTemplate(_this: any, templateNames?: string[], index?: any)
             (val: string) => {
                 return (/\./g.test(val) ? false : true);
             });
-        const tabaccordionTemp: boolean = /tab|accordion|toolbar/.test(_this.getModuleName());
+        const tabaccordionTemp: boolean = /tab|accordion|toolbar/.test(_this.getModuleName?.());
         for (const registeredTemplate of (regProperties && regProperties || regTemplates)) {
             /* istanbul ignore next */
             if (index && index.length) {

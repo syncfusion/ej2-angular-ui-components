@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['accessibility', 'animation', 'applyPattern', 'border', 'borderRadius', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
+let input: string[] = ['accessibility', 'animation', 'applyPattern', 'border', 'borderRadius', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'funnelMode', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
 let outputs: string[] = [];
 /**
  * AccumulationSeries Directive
@@ -109,6 +109,14 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * @default '30%'
      */
     public explodeOffset: any;
+    /** 
+     * Defines the rendering mode for the funnel chart. 
+     * Available options are: 
+     * * Standard - Displays a funnel shape that narrows down to a point. 
+     * * Trapezoid - Displays a funnel shape with parallel sides near the top.
+     * @default 'Standard'
+     */
+    public funnelMode: any;
     /** 
      * Defines the distance between the segments of a funnel or pyramid series. 
      * The range is from 0 to 1.

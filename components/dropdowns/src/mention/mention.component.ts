@@ -4,7 +4,7 @@ import { Mention } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['allowSpaces','cssClass','dataSource','displayTemplate','fields','filterType','highlight','ignoreCase','itemTemplate','locale','mentionChar','minLength','noRecordsTemplate','popupHeight','popupWidth','query','showMentionChar','sortOrder','spinnerTemplate','suffixText','suggestionCount','target'];
+export const inputs: string[] = ['allowSpaces','cssClass','dataSource','displayTemplate','fields','filterType','highlight','ignoreCase','itemTemplate','locale','mentionChar','minLength','noRecordsTemplate','popupHeight','popupWidth','query','requireLeadingSpace','showMentionChar','sortOrder','spinnerTemplate','suffixText','suggestionCount','target'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeOpen','change','closed','created','destroyed','filtering','opened','select'];
 export const twoWays: string[] = [''];
 

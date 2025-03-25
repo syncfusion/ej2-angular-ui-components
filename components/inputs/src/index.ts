@@ -32,5 +32,8 @@ export { OtpInputAllModule } from './otp-input/otpinput-all.module';
 export { SmartTextAreaComponent} from './smart-textarea/smarttextarea.component';
 export { SmartTextAreaModule } from './smart-textarea/smarttextarea.module';
 export { SmartTextAreaAllModule } from './smart-textarea/smarttextarea-all.module';
+export { SpeechToTextComponent} from './speech-to-text/speechtotext.component';
+export { SpeechToTextModule } from './speech-to-text/speechtotext.module';
+export { SpeechToTextAllModule } from './speech-to-text/speechtotext-all.module';
 export * from './form-validator/form-validator';
 export * from '@syncfusion/ej2-inputs';

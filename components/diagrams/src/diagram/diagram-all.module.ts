@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -28,6 +28,7 @@ export const UndoRedoService: ValueProvider = { provide: 'DiagramsUndoRedo', use
 export const LayoutAnimationService: ValueProvider = { provide: 'DiagramsLayoutAnimation', useValue: LayoutAnimation};
 export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu};
 export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
+export const AvoidLineOverlappingService: ValueProvider = { provide: 'DiagramsAvoidLineOverlapping', useValue: AvoidLineOverlapping};
 export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnectorEditing', useValue: ConnectorEditing};
 export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDistribution', useValue: LineDistribution};
 export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Serialization', useValue: Ej1Serialization};
@@ -56,6 +57,7 @@ export const FlowchartLayoutService: ValueProvider = { provide: 'DiagramsFlowcha
         LayoutAnimationService,
         DiagramContextMenuService,
         LineRoutingService,
+        AvoidLineOverlappingService,
         ConnectorEditingService,
         LineDistributionService,
         Ej1SerializationService,

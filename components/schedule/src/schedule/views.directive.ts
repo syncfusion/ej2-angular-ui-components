@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'enableLazyLoading', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'maxEventsPerRow', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowOverlap', 'allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'enableLazyLoading', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'maxEventsPerRow', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'overscanCount', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -30,6 +30,22 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
 	
 
 
+    /** 
+     * Specifies whether overlapping appointments are allowed within the same time slot in the Scheduler.
+     * @remarks When set to `false`, the Scheduler enforces restrictions to prevent creating or displaying overlapping appointments within the same time duration.
+This setting includes the following limitations:
+
+- **Initial Loading**: The alert for overlapping appointments will not display during the initial load. Overlapping events will be ignored in rendering, including occurrences.
+
+- **Dynamic Add/Edit**: When adding or editing events dynamically, overlapping validation is performed. If an overlap is detected for a single event, an alert will be shown, and the event will not be saved.
+
+For recurring events, an alert will be displayed, and the event will not be saved. To save recurring events while ignoring overlapping occurrences, trigger the `PopupOpen` event. The `Data` field will contain the parent recurrence data, and the `overlapEvents` field will contain the overlap events. Using these details, users can include exceptions in the recurrence events and save them with the `addEvent` method.
+
+- **Out-of-Date-Range Events**: The `allowOverlap` setting only prevents overlaps for events within the current view date range. To validate overlap events outside the current date range, use the `actionBegin` event to send a request to the server for validation and return a promise-based response. Assign this promise response to the `promise` field in `ActionEventArgs` to handle asynchronous server validation.
+
+     * @default true
+     */
+    public allowOverlap: any;
     /** 
      * It is used to allow or disallow the virtual scrolling functionality.
      * @default false
@@ -152,6 +168,16 @@ export class ViewDirective extends ComplexBase<ViewDirective> {
      * @default 'Horizontal'
      */
     public orientation: any;
+    /** 
+     * Specifies the number of additional rows or columns to render outside the visible area during virtual scrolling. 
+     * This property helps in achieving smoother scrolling by pre-loading data just outside the visible region.
+     * @remarks The default value is 3. Increasing this value can result in smoother scrolling but may impact performance
+with larger datasets. Decreasing it can improve performance but may cause more frequent data fetches during scrolling.
+This property only takes effect when `allowVirtualScrolling` is enabled for the current view.
+
+     * @default 3
+     */
+    public overscanCount: any;
     /** 
      * When set to `true`, displays a quick popup with cell or event details on single clicking over the cells or on events. 
      *  By default, it is set to `true`. It gets applied only to the view objects on which it is defined.

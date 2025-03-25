@@ -79,7 +79,7 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     public headerTemplate: any;
     /** 
      * Specifies the way to customize the selected values in the Dropdown Tree component based on application needs. If the **valueTemplate** property is set, the template content overrides the displayed item text. 
-     * The property accepts [template string](https://ej2.syncfusion.com/documentation/common/template-engine/) or HTML element ID holding the content. The context for the valueTemplate comes from the data object passed to it.
+     * The property accepts [template string] (https://ej2.syncfusion.com/documentation/common/template-engine/) or HTML element ID holding the content. The context for the valueTemplate comes from the data object passed to it.
      * @default null
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
