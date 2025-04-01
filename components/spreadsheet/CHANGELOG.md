@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 29.1.35 (2025-04-01)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I696599` - Issue with "spreadsheet becomes unresponsive when switching to a sheet with table-referenced formulas" has been resolved.
+
+- `#I697174` - Issue with "disabled toolbar icons are unexpectedly enabled after loading a new document" has been resolved.
+
 ## 29.1.33 (2025-03-25)
 
 ### Spreadsheet
