@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 29.1.37 (2025-04-08)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I700006` - Issue with "images missing or being misplaced when importing an Excel file into the Spreadsheet" has been resolved.
+
+- `#I703649` - Issue with "charts in duplicated sheets still refer to the original sheet data" has been resolved.
+
 ## 29.1.35 (2025-04-01)
 
 ### Spreadsheet
