@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 29.1.38 (2025-04-15)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I707530` - Filter menu does not render in the correct position, when the Gantt chart is rendered with a sidebar issue has been resolved.
+- `#I704479` - Expand action does not work properly with `loadChildOnDemand` and virtualization disabled issue has been fixed.
+- `#I705099` - Taskbar tooltip misaligned when dragging the taskbar issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 29.1.37 (2025-04-08)
 
 ### GanttChart
@@ -9,8 +21,6 @@
 #### Bug fixes
 
 - `#I709572` - The spinner is incorrectly loading when performing zoom-in or zoom-out actions, even when `args.cancel` is set as true issue has been resolved.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 29.1.35 (2025-04-01)
 
