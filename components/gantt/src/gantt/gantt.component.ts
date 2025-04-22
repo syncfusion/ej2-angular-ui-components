@@ -144,6 +144,9 @@ export class GanttComponent extends Gantt implements IComponentBase {
     @ContentChild('taskbarTemplate')
     @Template()
     public taskbarTemplate: any;
+    @ContentChild('editTemplate')
+    @Template()
+    public editTemplate: any;
     @ContentChild('labelSettingsRightLabel')
     @Template()
     public labelSettings_rightLabel: any;

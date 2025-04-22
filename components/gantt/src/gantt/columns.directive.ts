@@ -214,6 +214,9 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('headerTemplate')
     @Template()
     public headerTemplate: any;
+    @ContentChild('editTemplate')
+    @Template()
+    public editTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();
