@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 29.1.40 (2025-04-29)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I705510` - Issue with "#value error occurs when concatenating nested formulas with text using '&' in formula " has been resolved.
+
 ## 29.1.39 (2025-04-22)
 
 ### Spreadsheet
