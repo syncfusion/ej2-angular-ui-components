@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 29.1.41 (2025-05-06)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I710483` - The `editTemplate` functionality is not working in the columns issue has been fixed.
+- `#I713764` - Text in the cell are misaligned when row height is changed in pdf export issue has been fixed.
+- `#I717385`,`#I716901` - The custom colours applied are not reflected in the PDF export for unscheduled and manually scheduled tasks issue has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 29.1.40 (2025-04-29)
 
 ### GanttChart
@@ -13,7 +25,9 @@
 - `#I704334` - Misalignment of text and image in column templates during PDF export when columns are added dynamically issue has been fixed.
 - `#I706560` - Resolved an issue in PDF export where event markers, grid lines, and holiday labels extended beyond the last visible record. These elements now correctly render only up to the final visible record in the Gantt chart.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I709433` - Resolved an issue where, with `dayWorkingTime` set to 24 hours and `autoCalculateDateScheduling` disabled, the taskbar rendered incorrect dates that did not align with the data source.
+- `#I712599` - Task label misalignment occurs in the PDF export when using `taskMode` set to manual issue has been fixed.
+- `#I704334` - Misalignment of text and image in column templates during PDF export when columns are added dynamically issue has been fixed.
 
 ## 29.1.39 (2025-04-22)
 
