@@ -6,7 +6,7 @@
 
 #### Bug fixes
 
-- `#I717301` - Issue with "auto-fill is not working in finite mode with limited rows and columns" has been resolved.
+- `#I719002` - Issue with "exception occurs when exporting a Spreadsheet with a sheet name longer than 31 characters" has been resolved.
 
 ## 29.1.41 (2025-05-06)
 
@@ -1389,7 +1389,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.1.40 (2025-04-29)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.4 (2025-05-14)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I717301` - Issue with "auto-fill is not working in finite mode with limited rows and columns" has been resolved.
+
+## 29.1.40 (2025-04-29)
 
 ### Spreadsheet
 

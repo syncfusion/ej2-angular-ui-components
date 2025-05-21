@@ -4,6 +4,14 @@
 
 ### Image Editor
 
+#### Bug Fixes
+
+- The issue with "Image smoothing not working properly after window resize" has been resolved.
+
+## 29.2.4 (2025-05-14)
+
+### Image Editor
+
 #### Features
 
 - The Image Editor component now supports image smoothing through the new `imageSmoothingEnabled` property. This property allows users to enable or disable the smoothing effect applied to high-resolution images during rendering. When enabled, it improves visual clarity by reducing pixelation with high-quality smoothing. This enhancement ensures sharper image rendering, especially when working with detailed images.

@@ -6,6 +6,16 @@
 
 #### Bug Fixes
 
+- `#I719879` - Fixed an issue where inserting multiple new rows in batch editing and pressing the Update button caused focus to incorrectly return to a cell input with validation errors.
+- `#I720056` - In `ResetOnRowClick` mode, fixed an issue where using `SHIFT + click` on checkbox selected only a single row instead of a range of rows.
+- `#I726231` – Resolved a script error that occurred when changing the operator in `the filter menu popup` for a date time column.
+
+## 29.2.4 (2025-05-14)
+
+### Grid
+
+#### Bug Fixes
+
 - `#I715931` - The issue with filtering a hidden column while using `column virtualization` through the `filterByColumn` method has been fixed.
 - `#I713440` – The issue where an incorrect group query was added while filtering a `ForeignKey` column in the Grid using the `ODataV4Adaptor` has been resolved.
 - `#I707868` - Resolved an issue where persistence was not retained correctly when using `setCulture`.

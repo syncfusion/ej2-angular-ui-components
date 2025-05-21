@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### DatePicker
+
+#### Bug Fixes
+
+- `#I711579` - Fixed an issue where the DatePicker popup did not close on mobile devices when clicking outside of it.
+
 ## 29.1.40 (2025-04-29)
 
 ### DateRangePicker

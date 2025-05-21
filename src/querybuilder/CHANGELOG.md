@@ -6,6 +6,15 @@
 
 #### Bug Fixes
 
+- `#I717768` -  Resolved an issue where a child group was incorrectly converted to a condition when the parent group's condition was changed to "OR".
+- `#I720928` - Resolved an issue where a setRulesFromSql fails on Valid SQL Syntax Without Parentheses in LIKE Clause.
+
+## 29.1.41 (2025-05-06)
+
+### QueryBuilder
+
+#### Bug Fixes
+
 - `#I711196` - Fixed an exception that occurs when clearing the value in the custom Dropdown field within the QueryBuilder component
 - `#I705752` - Resolved an issue where the rule value was incorrect when switching from the 'in' operator to the 'notin' operator, particularly when the dataSource property was not configured in the Query Builder.
 
