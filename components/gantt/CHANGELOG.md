@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 29.2.10 (2025-06-10)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I729260` -  Resolved an issue where connector lines couldn't connect between two tasks and the tooltip position was displayed incorrectly.
+- `#I731175` - The issue of incorrect dates in PDF export when the `showWeekend` property is disabled has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 29.2.8 (2025-06-03)
 
 ### GanttChart
@@ -13,7 +24,9 @@
 - `#I728854` - The issue where the taskbar template was rendered outside the Gantt Chart container after performing a row drag-and-drop has been resolved.
 - `#I729516` - The issue where dependency lines were rendering incorrectly when connecting tasks using `SSType` has been resolved.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I729423` - Revert to Previous Dates if End Date is Set to the Same as Start Date on Cell Edit Save and vice versa issue has been resolved.
+- `#I726732` - Resolved an issue where filtering was not maintained after performing a sorting action.
+- `#I728854` - The issue where the taskbar template was rendered outside the Gantt Chart container after performing a row drag-and-drop has been resolved.
 
 ## 29.2.7 (2025-05-21)
 

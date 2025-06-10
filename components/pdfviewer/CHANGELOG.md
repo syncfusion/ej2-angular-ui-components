@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 29.2.10 (2025-06-10)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I728109` - Fixed an issue where the multiline input text gets combined into one line without `Formdesigner` module on Re-render.
+- `#I730602` - Resolved an issue where the current author name doesn't get updated when editing note in the comment panel.
+- `#I731710` - The script error no longer occurs when the `destroy` method is called without annotation module.
+
 ## 29.2.8 (2025-06-03)
 
 ### PDF Viewer

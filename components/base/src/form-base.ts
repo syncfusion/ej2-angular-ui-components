@@ -143,6 +143,7 @@ export class FormBase<T> implements ControlValueAccessor {
         this.preventChange = this.isFormInit ? false : true;
         this.cdr.markForCheck();
         if (value === null) {
+            this.preventChange = false;
             return;
         }
 
