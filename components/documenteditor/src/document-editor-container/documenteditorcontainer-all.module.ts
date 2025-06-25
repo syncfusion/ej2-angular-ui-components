@@ -2,10 +2,11 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DocumentEditorContainerComponent } from './documenteditorcontainer.component';
 import { DocumentEditorContainerModule } from './documenteditorcontainer.module';
-import {Toolbar} from '@syncfusion/ej2-documenteditor'
+import {Toolbar, Ribbon} from '@syncfusion/ej2-documenteditor'
 
 
 export const ToolbarService: ValueProvider = { provide: 'DocumentEditorToolbar', useValue: Toolbar};
+export const RibbonService: ValueProvider = { provide: 'DocumentEditorRibbon', useValue: Ribbon};
 
 /**
  * NgModule definition for the DocumentEditorContainer component with providers.
@@ -16,7 +17,8 @@ export const ToolbarService: ValueProvider = { provide: 'DocumentEditorToolbar',
         DocumentEditorContainerModule
     ],
     providers:[
-        ToolbarService
+        ToolbarService,
+        RibbonService
     ]
 })
 export class DocumentEditorContainerAllModule { }

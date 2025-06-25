@@ -5,7 +5,7 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','codeBlockSettings','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterMediaDelete','afterPasteCleanup','beforeDialogClose','beforeDialogOpen','beforeFileUpload','beforeImageDrop','beforeImageUpload','beforePasteCleanup','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','slashMenuItemSelect','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -196,6 +196,12 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('RichTextEditorSlashMenu');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorCodeBlock');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

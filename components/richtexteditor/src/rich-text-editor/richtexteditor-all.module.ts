@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RichTextEditorComponent } from './richtexteditor.component';
 import { RichTextEditorModule } from './richtexteditor.module';
-import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu} from '@syncfusion/ej2-richtexteditor'
+import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu, CodeBlock} from '@syncfusion/ej2-richtexteditor'
 
 
 export const ToolbarService: ValueProvider = { provide: 'RichTextEditorToolbar', useValue: Toolbar};
@@ -22,6 +22,7 @@ export const FileManagerService: ValueProvider = { provide: 'RichTextEditorFileM
 export const FormatPainterService: ValueProvider = { provide: 'RichTextEditorFormatPainter', useValue: FormatPainter};
 export const EmojiPickerService: ValueProvider = { provide: 'RichTextEditorEmojiPicker', useValue: EmojiPicker};
 export const SlashMenuService: ValueProvider = { provide: 'RichTextEditorSlashMenu', useValue: SlashMenu};
+export const CodeBlockService: ValueProvider = { provide: 'RichTextEditorCodeBlock', useValue: CodeBlock};
 
 /**
  * NgModule definition for the RichTextEditor component with providers.
@@ -48,7 +49,8 @@ export const SlashMenuService: ValueProvider = { provide: 'RichTextEditorSlashMe
         FileManagerService,
         FormatPainterService,
         EmojiPickerService,
-        SlashMenuService
+        SlashMenuService,
+        CodeBlockService
     ]
 })
 export class RichTextEditorAllModule { }

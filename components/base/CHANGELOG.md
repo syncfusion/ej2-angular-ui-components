@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 29.2.11 (2025-06-17)
-
-### Common
-
-#### Bug Fixes
-
-- `#I720669` -  Resolved `TimePicker` change event not triggering after form reset when value is null.
-
 ## 25.2.4 (2024-05-14)
 
 ### Common

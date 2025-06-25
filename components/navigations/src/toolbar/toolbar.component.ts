@@ -5,7 +5,7 @@ import { Toolbar } from '@syncfusion/ej2-navigations';
 import { ItemsDirective } from './items.directive';
 
 export const inputs: string[] = ['allowKeyboard','cssClass','enableCollision','enableHtmlSanitizer','enablePersistence','enableRtl','height','items','locale','overflowMode','scrollStep','width'];
-export const outputs: string[] = ['beforeCreate','clicked','created','destroyed'];
+export const outputs: string[] = ['beforeCreate','clicked','created','destroyed','keyDown'];
 export const twoWays: string[] = [''];
 
 /**
@@ -31,7 +31,8 @@ export class ToolbarComponent extends Toolbar implements IComponentBase {
 	beforeCreate: any;
 	clicked: any;
 	created: any;
-	public destroyed: any;
+	destroyed: any;
+	public keyDown: any;
     public childItems: QueryList<ItemsDirective>;
     public tags: string[] = ['items'];
 

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['author', 'id', 'status', 'text', 'timeStamp', 'timeStampFormat'];
+let input: string[] = ['author', 'id', 'isForwarded', 'isPinned', 'replyTo', 'status', 'text', 'timeStamp', 'timeStampFormat'];
 let outputs: string[] = [];
 /**
  * Represents the Essential JS 2 Angular ChatUI Component.
@@ -41,6 +41,24 @@ export class MessageDirective extends ComplexBase<MessageDirective> {
      * @default '''
      */
     public id: any;
+    /** 
+     * Specifies whether the message has been forwarded. 
+     * When set to true, the message is visually marked as forwarded.
+     * @default false
+     */
+    public isForwarded: any;
+    /** 
+     * Specifies whether the message is pinned. 
+     * When set to true, the message will be visually highlighted and can be displayed in a pinned messages section.
+     * @default false
+     */
+    public isPinned: any;
+    /** 
+     * Specifies the reference to the original message when this message is a reply. 
+     * Contains the MessageModel of the message being replied to.
+     * @default null
+     */
+    public replyTo: any;
     /** 
      * Specifies the status of the message in the Chat UI component. 
      * Represents the current status of the message, such as sent, received, or read. It helps in tracking the messages within the chat component.

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { StockChartTrendlinesDirective } from './trendlines.directive';
 
-let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'legendImageUrl', 'legendShape', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'selectionStyle', 'showNearestTooltip', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
+let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'selectionStyle', 'showNearestTooltip', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -123,6 +123,10 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      * @default ''
      */
     public high: any;
+    /** 
+     * Options for customizing and displaying the last value in the series.
+     */
+    public lastValueLabel: any;
     /** 
      * The URL for the Image that is to be displayed as a Legend icon.  It requires  `legendShape` value to be an `Image`.
      * @default ''

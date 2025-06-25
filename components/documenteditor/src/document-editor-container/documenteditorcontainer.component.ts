@@ -4,8 +4,8 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 
-export const inputs: string[] = ['autoResizeOnVisibilityChange','currentUser','documentEditorSettings','documentSettings','enableAutoFocus','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','headers','height','layoutType','locale','restrictEditing','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','userColor','width','zIndex'];
-export const outputs: string[] = ['beforeAcceptRejectChanges','beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
+export const inputs: string[] = ['autoResizeOnVisibilityChange','backstageMenu','currentUser','documentEditorSettings','documentSettings','enableAutoFocus','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','fileMenuItems','headers','height','layoutType','locale','restrictEditing','ribbonLayout','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','toolbarMode','userColor','width','zIndex'];
+export const outputs: string[] = ['beforeAcceptRejectChanges','beforeCommentAction','beforePaneSwitch','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','fileMenuItemClick','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
 export const twoWays: string[] = [];
 
 /**
@@ -39,6 +39,7 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer im
 	customContextMenuSelect: any;
 	destroyed: any;
 	documentChange: any;
+	fileMenuItemClick: any;
 	selectionChange: any;
 	serviceFailure: any;
 	toolbarClick: any;
@@ -53,6 +54,12 @@ export class DocumentEditorContainerComponent extends DocumentEditorContainer im
         this.injectedModules = this.injectedModules || [];
         try {
                 let mod = this.injector.get('DocumentEditorToolbar');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DocumentEditorRibbon');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

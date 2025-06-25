@@ -2,50 +2,17 @@
 
 ## [Unreleased]
 
-## 29.2.11 (2025-06-17)
+## 30.1.37 (2025-06-25)
 
 ### Spreadsheet
 
-#### Bug fixes
+#### Features
 
-- `#I714036` - Issue with "custom data validation formula containing double quotes with cell reference is altered unexpectedly" has been resolved.
-
-## 29.1.41 (2025-05-06)
-
-### Spreadsheet
+- **Improved Excel import performance:** Added support to skip styles and formats during Excel file import using the server-side library. This optimization reduces the generated JSON size and significantly improves rendering speed, especially for large or style-heavy Excel files.
 
 #### Bug fixes
 
-- `#I714036` - Issue with "custom data validation formula is not retained as entered when the formula contains `?`" has been resolved.
-- `#I709078` - Issue with "double quotes not parsed correctly in nested formulas using & for string concatenation" has been resolved.
-
-## 29.1.39 (2025-04-22)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I700006` - Issue with "image left position changes when switching between sheets after importing" has been resolved.
-
-## 29.1.37 (2025-04-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I700006` - Issue with "images missing or being misplaced when importing an Excel file into the Spreadsheet" has been resolved.
-
-- `#I703649` - Issue with "charts in duplicated sheets still refer to the original sheet data" has been resolved.
-
-## 29.1.35 (2025-04-01)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I696599` - Issue with "spreadsheet becomes unresponsive when switching to a sheet with table-referenced formulas" has been resolved.
-
-- `#I697174` - Issue with "disabled toolbar icons are unexpectedly enabled after loading a new document" has been resolved.
+- `#I733762` - Issue with "`IF` formula with string values being mistakenly considered as date values and returning the wrong result" has been resolved.
 
 ## 29.1.33 (2025-03-25)
 
@@ -1391,31 +1358,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 29.2.5 (2025-05-21)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I719002` - Issue with "exception occurs when exporting a Spreadsheet with a sheet name longer than 31 characters" has been resolved.
-
-## 29.2.4 (2025-05-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I717301` - Issue with "auto-fill is not working in finite mode with limited rows and columns" has been resolved.
-
-## 29.1.40 (2025-04-29)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I705510` - Issue with "#value error occurs when concatenating nested formulas with text using '&' in formula " has been resolved.
-
-## 27.1.48 (2024-09-18)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.48 (2024-09-18)
 
 ### Spreadsheet
 

@@ -4,7 +4,7 @@ import { ChatUI } from '@syncfusion/ej2-interactive-chat';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { MessagesDirective } from './messages.directive';
 
-export const inputs: string[] = ['autoScrollToBottom','cssClass','emptyChatTemplate','enablePersistence','enableRtl','footerTemplate','headerIconCss','headerText','headerToolbar','height','loadOnDemand','locale','messageTemplate','messages','placeholder','showFooter','showHeader','showTimeBreak','showTimeStamp','suggestionTemplate','suggestions','timeBreakTemplate','timeStampFormat','typingUsers','typingUsersTemplate','user','width'];
+export const inputs: string[] = ['autoScrollToBottom','cssClass','emptyChatTemplate','enableCompactMode','enablePersistence','enableRtl','footerTemplate','headerIconCss','headerText','headerToolbar','height','loadOnDemand','locale','messageTemplate','messageToolbarSettings','messages','placeholder','showFooter','showHeader','showTimeBreak','showTimeStamp','suggestionTemplate','suggestions','timeBreakTemplate','timeStampFormat','typingUsers','typingUsersTemplate','user','width'];
 export const outputs: string[] = ['created','messageSend','userTyping'];
 export const twoWays: string[] = [''];
 

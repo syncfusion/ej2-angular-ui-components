@@ -4,7 +4,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { TrendlinesDirective } from './trendlines.directive';
 import { SegmentsDirective } from './segments.directive';
 
-let input: string[] = ['accessibility', 'animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnFacet', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'noRisers', 'nonHighlightStyle', 'opacity', 'open', 'paretoOptions', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNearestTooltip', 'showNormalDistribution', 'showOutliers', 'size', 'splineType', 'stackingGroup', 'step', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+let input: string[] = ['accessibility', 'animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnFacet', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'noRisers', 'nonHighlightStyle', 'opacity', 'open', 'paretoOptions', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNearestTooltip', 'showNormalDistribution', 'showOutliers', 'size', 'splineType', 'stackingGroup', 'step', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -245,6 +245,10 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * @default true
      */
     public isClosed: any;
+    /** 
+     * Options for customizing and displaying the last value in the series.
+     */
+    public lastValueLabel: any;
     /** 
      * The URL for the image to be displayed as a legend icon. 
      * > Note that `legendShape` must be set to `Image`.
