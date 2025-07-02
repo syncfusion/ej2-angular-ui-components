@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.38 (2025-07-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I734303` - Issue with "custom date format `mm-dd-yyyy` being incorrectly interpreted as the short date format `m/d/yyyy`" has been resolved.
+
 ## 30.1.37 (2025-06-25)
 
 ### Spreadsheet
