@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 30.1.39 (2025-07-08)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I740257` - End date timing not updating properly when `autoCalculateDateScheduling` property is set to false has been resolved.
+- `#F197010` - The issue where the last collapsed parent task was not visible during Gantt chart scrolling has been resolved.
+- `#I722922` - Initial load and scroll performance of the Gantt Chart with virtualization has improved significantly, resulting in a 60% increase in rendering efficiency.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 30.1.38 (2025-07-02)
 
 ### GanttChart
@@ -13,7 +25,9 @@
 - `#I730000` - Resolved the issue where the scrollbar reverted to the top and white space appeared during child load in combination with the expand-on-demand action.
 - `#F196826` - Resolved the performance issue occurring when the critical path was enabled dynamically for large data sets.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I737233` - Unwanted Element Appearing Next to Gantt Chart During Row Drag and Drop issue has been resolved.
+- `#F196872` - The issue where the Gantt chart became unresponsive when editing the start date of a task with multiple dependency connections has been resolved.
+- `#F196826` - Resolved the performance issue occurring when the critical path was enabled dynamically for large data sets.
 
 ## 30.1.37 (2025-06-25)
 
