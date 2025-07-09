@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/423253e9-6ad9-462a-9e14-202afb0e1512)
 # Angular Image Editor Component (React Photo Editor Component)
 
 The [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-image-editor-npm) component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
@@ -39,12 +40,12 @@ cd my-app
 All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the angular image editor package, use the following command.
 
 ```bash
-ng add @syncfusion/ej2-angular-image-editors
+ng add @syncfusion/ej2-angular-image-editor
 ```
 
 The above command does the below configuration to your Angular app.
  
- * Adds `@syncfusion/ej2-angular-image-editors` package and its peer dependencies to your `package.json` file.
+ * Adds `@syncfusion/ej2-angular-image-editor` package and its peer dependencies to your `package.json` file.
  * Imports the `ImageEditorModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
 
