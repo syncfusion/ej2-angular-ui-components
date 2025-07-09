@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/423253e9-6ad9-462a-9e14-202afb0e1512)
 # Angular Image Editor Component (React Photo Editor Component)
 
 The [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-image-editor-npm) component is a graphical user interface used for editing images. It provides built-in support for rotate, flip, zoom, and crop the images based on the selection. It also has support for inserting an annotations including rectangle, ellipse, line, text, and freehand drawings.
