@@ -39,12 +39,12 @@ cd my-app
 All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the angular image editor package, use the following command.
 
 ```bash
-ng add @syncfusion/ej2-angular-image-editors
+ng add @syncfusion/ej2-angular-image-editor
 ```
 
 The above command does the below configuration to your Angular app.
  
- * Adds `@syncfusion/ej2-angular-image-editors` package and its peer dependencies to your `package.json` file.
+ * Adds `@syncfusion/ej2-angular-image-editor` package and its peer dependencies to your `package.json` file.
  * Imports the `ImageEditorModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
 
