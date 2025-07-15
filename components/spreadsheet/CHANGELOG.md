@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 30.1.39 (2025-07-08)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I740743` - Issue with "memory not being released after importing an Excel file, leading to continuous memory usage growth" has been resolved.
-
 ## 30.1.37 (2025-06-25)
 
 ### Spreadsheet
@@ -1366,7 +1358,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.38 (2025-07-02)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 30.1.39 (2025-07-08)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I740743` - Issue with "memory not being released after importing an Excel file, leading to continuous memory usage growth" has been resolved.
+
+## 30.1.38 (2025-07-02)
 
 ### Spreadsheet
 
