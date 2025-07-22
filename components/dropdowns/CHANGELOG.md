@@ -2,11 +2,23 @@
 
 ## [Unreleased]
 
+## 30.1.41 (2025-07-22)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I741404` - The issue with the Multiselect span element not rendering after a form reset has been resolved.
+
 ## 30.1.40 (2025-07-15)
 
 ### MultiSelect
 
 #### Bug fixes
+
+- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
+
+- `#I714583` - Fixed an issue where the value was not updating dynamically when using `groupTemplate`.
 
 - `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
 

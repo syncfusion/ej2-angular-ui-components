@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
-## 30.1.40 (2025-07-15)
+## 30.1.41 (2025-07-22)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#F197011` - Fixed an issue where collapsed parent tasks automatically expanded during drag-and-drop in the `multitaskbar` feature, ensuring they remain collapsed as intended.
+- `#I744105` - Console error occurs while refresh the component with toolbar template issue has been resolved.
+- `#I744544` - Fixed incorrect parent taskbar rendering by ensuring child tasks update before parent during dependency has been resolved.
+- `#I746332` - Console error occurs when refresh action is performed in Gantt followed by toolbar add action issue has been resolved.
+- `#I748609` - The issue where the `actionBegin` event was not triggered during the save operation following cell editing has been successfully resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 30.1.39 (2025-07-08)
 
 ### GanttChart
 
@@ -12,7 +26,7 @@
 - `#F197010` - The issue where the last collapsed parent task was not visible during Gantt chart scrolling has been resolved.
 - `#I722922` - Initial load and scroll performance of the Gantt Chart with virtualization has improved significantly, resulting in a 60% increase in rendering efficiency.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I740257` - End date timing not updating properly when `autoCalculateDateScheduling` property is set to false has been resolved.
 
 ## 30.1.38 (2025-07-02)
 
