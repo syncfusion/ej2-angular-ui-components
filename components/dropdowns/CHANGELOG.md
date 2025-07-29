@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 30.1.41 (2025-07-22)
+## 30.1.42 (2025-07-29)
 
 ### MultiSelect
 
@@ -11,6 +11,12 @@
 - `#I741404` - The issue with the Multiselect span element not rendering after a form reset has been resolved.
 
 ## 30.1.40 (2025-07-15)
+
+### DropDownTree
+
+#### Bug fixes
+
+- `#I744501` - Dropdown Tree opening issue in the Firefox browser has been Resolved.
 
 ### MultiSelect
 

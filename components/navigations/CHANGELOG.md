@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 30.1.41 (2025-07-22)
+## 30.1.42 (2025-07-29)
 
 ### Breadcrumb
 
@@ -15,6 +15,7 @@
 #### Bug Fixes
 
 - `#I733289` - Resolved a console error that occurred when switching between large header tab items in popup mode.
+- `#I746796` - An issue where the toolbar popup does not close when clicked outside the popup has been fixed.
 
 ### ContextMenu
 

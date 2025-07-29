@@ -136,6 +136,7 @@ export class FormBase<T> implements ControlValueAccessor {
                 }
             }
         }
+        const isNullValue: boolean = this.angularValue == null;
         this.angularValue = value;
         this.isUpdated = true;
         // When binding Html textbox value to syncfusion textbox, change event triggered dynamically.
@@ -143,7 +144,9 @@ export class FormBase<T> implements ControlValueAccessor {
         this.preventChange = this.isFormInit ? false : true;
         this.cdr.markForCheck();
         if (value === null) {
-            this.preventChange = false;
+            if (isNullValue) {
+                this.preventChange = false;
+            }
             return;
         }
 

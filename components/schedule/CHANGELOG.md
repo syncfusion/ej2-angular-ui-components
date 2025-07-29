@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 30.1.41 (2025-07-22)
+## 30.1.42 (2025-07-29)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I745472` - Fixed an issue where drag functionality was not working after being conditionally cancelled for multiple appointments.
+
+## 30.1.39 (2025-07-08)
 
 ### Schedule
 

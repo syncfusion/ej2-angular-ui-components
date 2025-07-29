@@ -2,7 +2,19 @@
 
 ## [Unreleased]
 
-## 30.1.41 (2025-07-22)
+## 30.1.42 (2025-07-29)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I745434` - Taskbar rendering is mismatched between UI and pdf export while using split task issue has been resolved.
+- `#I732347` - Spinner is not shown when editing a cell issue has been resolved.
+- `#I751091` - Disabling `allowEditing` property for custom columns does not work issue has been resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 30.1.41 (2025-07-08)
 
 ### GanttChart
 
@@ -14,7 +26,9 @@
 - `#I746332` - Console error occurs when refresh action is performed in Gantt followed by toolbar add action issue has been resolved.
 - `#I748609` - The issue where the `actionBegin` event was not triggered during the save operation following cell editing has been successfully resolved.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#F197011` - Fixed an issue where collapsed parent tasks automatically expanded during drag-and-drop in the `multitaskbar` feature, ensuring they remain collapsed as intended.
+- `#I746332` - Console error occurs when refresh action is performed in Gantt followed by toolbar add action issue has been resolved.
+- `#I748609` - The issue where the `actionBegin` event was not triggered during the save operation following cell editing has been successfully resolved.
 
 ## 30.1.39 (2025-07-08)
 

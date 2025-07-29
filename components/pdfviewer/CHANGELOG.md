@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.1.42 (2025-07-29)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I741878` - Enhanced performance of the `findText` and `deleteAnnotations` methods.
+
 ## 30.1.41 (2025-07-22)
 
 ### PDF Viewer

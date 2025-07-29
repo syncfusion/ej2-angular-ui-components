@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 30.1.42 (2025-07-29)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I743792` - Enhanced connector interaction, When initiating a connector from an InConnect-only port, the target end now correctly attaches to the port, while the source end follows the mouse pointer during drawing.
+- `#I745390` - Fixed an issue where an exception was thrown when loading an EJ1 diagram with PreventDefaults set to true in an EJ2 diagram.
+
 ## 30.1.41 (2025-07-22)
 
 ### Diagram

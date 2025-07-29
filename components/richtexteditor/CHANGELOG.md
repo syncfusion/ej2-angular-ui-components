@@ -2,15 +2,21 @@
 
 ## [Unreleased]
 
-## 30.1.41 (2025-07-22)
+## 30.1.42 (2025-07-29)
 
 ### RichTextEditor
 
 #### Bug Fixes
 
+- `#I747774` - Now, after deleting a table by removing its rows in the Rich Text Editor, the cursor is accurately positioned at the correct location.
+
 - `#I743536` - Now, the Rich Text Editor works properly when resizing tables without editor focus, correctly updating values.
 
 - `#F68651` - Now, the Rich Text Editor works properly when pressing the Shift + Enter key before an image, without throwing a script error.
+
+- `#I746733` - Now, the Clear Format action in the Rich Text Editor works properly by removing the highlighted background color from new lines.
+
+- `#I746844` - Now, the Rich Text Editor works properly by enforcing the character limit in code view, preventing users from exceeding the maximum allowed length.
 
 ## 30.1.40 (2025-07-15)
 
