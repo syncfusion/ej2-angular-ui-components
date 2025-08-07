@@ -4,6 +4,12 @@
 
 ## 30.1.42 (2025-07-29)
 
+### Stepper
+
+#### Bug Fixes
+
+- `#FB68847` - An issue where null value is not assignable to isValid property in the stepper component has been resolved..
+
 ### Breadcrumb
 
 #### Bug Fixes

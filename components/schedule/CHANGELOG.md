@@ -9,6 +9,7 @@
 #### Bug fixes
 
 - `#I745472` - Fixed an issue where drag functionality was not working after being conditionally cancelled for multiple appointments.
+- `#I746809` - Resolved an issue where a script error occurred when closing the Quick Info popup that was customized using `quickInfoTemplates`.
 
 ## 30.1.39 (2025-07-08)
 

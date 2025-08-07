@@ -46,7 +46,10 @@ export class StepDirective extends ComplexBase<StepDirective> {
      */
     public iconCss: any;
     /** 
-     * Defines the state whether it is valid completion or not.
+     * Defines the state whether it is valid completion or not. 
+     * If set to true, the completion is valid. 
+     * If false, the completion is invalid. 
+     * If null, the completion state is not determined.
      * @asptype bool?
      * @default null
      */

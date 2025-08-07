@@ -2,7 +2,39 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I749286` - Fixed an issue where the numeric keypad `0` was not triggering the listbox filtering.
+
+### MultiSelect
+
+#### Bug fixes
+
+- `#I732425` - Fixed an issue where the `actionComplete` event was being triggered twice when the `allowCustomValue` property was enabled.
+
+- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
+
+- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
+
+- `#I745468` - Fixed an issue where disabled items were not re-enabled after clearing the value when the maximumSelectionLength property was enabled.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I747869` - Fixed an issue where the selected value would be removed when the Escape key was pressed while the popup was open.
+
 ## 30.1.42 (2025-07-29)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I729862` - Fixed an issue where enabling virtualization caused the scrollbar to unexpectedly jump back to the top when scrolling to the bottom of the list.
 
 ### MultiSelect
 
@@ -22,11 +54,7 @@
 
 #### Bug fixes
 
-- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
-
 - `#I714583` - Fixed an issue where the value was not updating dynamically when using `groupTemplate`.
-
-- `#I732169` - Fixed an issue where focus was not applied to the custom value when the Sort Order property was enabled.
 
 ### ListBox
 

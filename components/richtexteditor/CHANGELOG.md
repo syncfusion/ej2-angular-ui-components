@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I750223` - Now, images dragged and dropped into the Rich Text Editor will be rendered correctly after a previously pasted image has been removed from the DOM.
+
+- `#I749159` - Now, the Rich Text Editor works properly by allowing users to clear the background color of white space after applying styles.
+
+- `#I742732` - Now, pressing the Enter key on a video rendered within an `iframe` will no longer remove the video element from the DOM in the Rich Text Editor.
+
+- `#I744461` - Now, the inline toolbar opens properly when quickly selecting content in the editor and releasing the mouse outside the Rich Text Editor.
+
+- `#F67499` - Now, the Rich Text Editor font family and font size toolbar status update properly when the selection is made from right to left by releasing the mouse outside the Rich Text Editor.
+
+- `#I749159` - Now, the Rich Text Editor works properly when an image is pasted from the clipboard and the backspace key is pressed, ensuring the cursor remains in the correct position.
+
+- `#I750583` - Now, the Rich Text Editor works properly when backspacing text inside nested `<div>` elements.
+
 ## 30.1.42 (2025-07-29)
 
 ### RichTextEditor

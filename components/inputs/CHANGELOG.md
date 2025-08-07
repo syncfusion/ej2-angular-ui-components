@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
-## 30.1.42 (2025-07-29)
+## 30.2.4 (2025-08-07)
+
+### Rating
+
+#### Bug Fixes
+
+- `#I736421` - Fixed flickering issue that occurred when hovering over the `emptyTemplate` rating component.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I743657` - The issue with mask behavior on Android devices has been resolved.
+
+## 30.1.40 (2025-07-15)
 
 ### Textbox
 

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.4 (2025-08-07)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I748546` - Fixed an issue where same tooltip content was shown for different group nodes.
+
 ## 30.1.42 (2025-07-29)
 
 ### Diagram

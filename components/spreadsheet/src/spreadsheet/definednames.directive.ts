@@ -31,22 +31,25 @@ export class DefinedNameDirective extends ComplexBase<DefinedNameDirective> {
 
 
     /** 
-     * Specifies comment for the defined name.
+     * Provides a comment or description for the defined name.
      * @default ''
      */
     public comment: any;
     /** 
-     * Specifies name for the defined name, which can be used in formula.
+     * Specifies a unique name for the defined name, which can be used in formulas.
      * @default ''
      */
     public name: any;
     /** 
-     * Specifies reference for the defined name.
+     * Specifies the cell or range reference associated with the defined name. 
+     * The reference can be provided with or without the `=` prefix.
      * @default ''
      */
     public refersTo: any;
     /** 
-     * Specifies scope for the defined name.
+     * Defines the scope of the name. 
+     * If not specified, the name is scoped to the entire workbook. 
+     * If a sheet name is provided, the name will be available only within that specific sheet.
      * @default ''
      */
     public scope: any;
