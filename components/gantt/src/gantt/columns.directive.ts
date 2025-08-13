@@ -217,6 +217,12 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('editTemplate')
     @Template()
     public editTemplate: any;
+    @ContentChild('filterItemTemplate')
+    @Template()
+    public filter_itemTemplate: any;
+    @ContentChild('filterTemplate')
+    @Template()
+    public filterTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 30.2.5 (2025-08-13)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I753107` - Issue with "`#REF!` error occurs when referencing a cell from a sheet without enclosing the sheet name in single quotes" has been resolved.
+
 ## 30.2.4 (2025-08-07)
 
 ### Spreadsheet

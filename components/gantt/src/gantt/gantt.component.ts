@@ -173,6 +173,12 @@ export class GanttComponent extends Gantt implements IComponentBase {
     @ContentChild('tooltipSettingsTimeline')
     @Template()
     public tooltipSettings_timeline: any;
+    @ContentChild('filterItemTemplate')
+    @Template()
+    public filter_itemTemplate: any;
+    @ContentChild('filterTemplate')
+    @Template()
+    public filterTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
