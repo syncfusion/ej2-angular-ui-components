@@ -1,0 +1,58 @@
+{
+	"name": "@syncfusion/ej2-angular-pdfviewer",
+	"version": "31.1.17",
+	"description": "Essential JS 2 PDF viewer Component for Angular",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"schematics": "./schematics/collection.json",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-angular-base": "*",
+		"@syncfusion/ej2-pdfviewer": "*"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "~13.0.4",
+		"@angular/animations": "~13.0.0",
+		"@angular/cli": "~13.0.1",
+		"@angular/common": "~13.0.0",
+		"@angular/compiler": "~13.0.1",
+		"@angular/compiler-cli": "~13.0.0",
+		"@angular/core": "~13.0.0",
+		"@angular/forms": "~13.0.0",
+		"@angular/platform-browser": "~13.0.0",
+		"@angular/platform-browser-dynamic": "~13.0.0",
+		"@angular/router": "~13.0.0",
+		"@types/jasmine": "~3.10.0",
+		"@types/node": "^12.11.1",
+		"glob": "^8.0.3",
+		"gulp": "^3.9.1",
+		"jasmine-core": "~3.10.0",
+		"karma": "~6.3.0",
+		"karma-chrome-launcher": "~3.1.0",
+		"karma-coverage": "~2.0.3",
+		"karma-jasmine": "~4.0.0",
+		"karma-jasmine-html-reporter": "~1.7.0",
+		"ng-packagr": "^13.2.1",
+		"rxjs": "~7.4.0",
+		"shelljs": "^0.8.5",
+		"tslib": "^2.3.0",
+		"typescript": "2.3.4",
+		"zone.js": "~0.11.4",
+		"es6-promise": "^3.2.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3"
+	},
+	"keywords": [
+		"angular",
+		"angular-pdf-viewer"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-angular-ui-components.git"
+	},
+	"scripts": {
+		"build": "gulp build"
+	},
+	"sideEffects": true
+}
