@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 31.1.20 (2025-09-10)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I756422` - Issue with "`INDEX` formula not working correctly when using multiple array references as the first argument" has been resolved.
+- `#I746202` - Issue with "custom formulas with a dot in the name return `#NAME?` error" has been resolved.
+- `#I751043` - Issue with "chart not maintaining proper layout after resize and drag-and-drop inside the freeze pane" has been resolved.
+- `#I756178` - Issue with "exception occurring when saving a spreadsheet containing series-plotted charts" has been resolved.
+
 ## 30.1.37 (2025-06-25)
 
 ### Spreadsheet

@@ -2,7 +2,21 @@
 
 ## [Unreleased]
 
-## 30.1.37 (2025-06-25)
+## 31.1.20 (2025-09-10)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I753728` - Fixed an issue where the date range picker with the preset range popup would open behind the drawer.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I752582` - The issue where the default time was not reset properly after clearing a date and selecting a new one in the DateTimePicker has been resolved.
+
+## 31.1.17 (2025-09-05)
 
 ### DatePicker
 
