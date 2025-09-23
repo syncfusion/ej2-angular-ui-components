@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 31.1.21 (2025-09-23)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I764123` - Resolved an issue where parent task progress values were not displaying in decimal format, even when child tasks were configured with decimal values. Decimal rendering for both parent and child tasks is now properly handled by defining the appropriate format in columns.
+- `#I763016` - The date and time change unexpectedly when using the timezone property during cell edit or add operations issue has been resolved.
+- `#I761818` - The issue with critical path validation not working when two parent tasks are connected via a predecessor has been resolved.
+- `#I757458` - The issue where time converted unnecessarily when the timezone was set to 'UTC' at initial load has been resolved.
+- `#I767390` - The issue where the resource column was not rendering as `dropdown` when dynamically assigning the column collection has been resolved.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 31.1.20 (2025-09-10)
 
 ### GanttChart
@@ -14,7 +28,9 @@
 - `#I759336` - Resolved critical task calculation to use `projectEndDate` as the maximum end date when it is mapped, replacing the previous approach of considering the task's maximum end date.
 - `#I759336` - Resolved an issue where the `workWeek` and `weekWorkingTime` properties were not functioning correctly, causing unresponsiveness during dynamic updates.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I762115` - The issue where the Offset value was not updating correctly when a dependency was connected to parent tasks has been resolved.
+- `#I759114` - The issue where the 'Start No Later Than' constraint type was not properly enforced on the Start Date has been resolved.
+- `#I759336` - Resolved an issue where the `workWeek` and `weekWorkingTime` properties were not functioning correctly, causing unresponsiveness during dynamic updates.
 
 ## 31.1.18 (2025-09-10)
 

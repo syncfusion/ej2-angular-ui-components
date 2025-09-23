@@ -2,16 +2,16 @@
 
 ## [Unreleased]
 
-## 31.1.20 (2025-09-10)
+## 31.1.21 (2025-09-23)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#I756422` - Issue with "`INDEX` formula not working correctly when using multiple array references as the first argument" has been resolved.
-- `#I746202` - Issue with "custom formulas with a dot in the name return `#NAME?` error" has been resolved.
-- `#I751043` - Issue with "chart not maintaining proper layout after resize and drag-and-drop inside the freeze pane" has been resolved.
-- `#I756178` - Issue with "exception occurring when saving a spreadsheet containing series-plotted charts" has been resolved.
+-`#I706975` - Issue with "chart axis label inconsistency while inserting a chart in `Blazor Spreadsheet` with `Javascript-ES5` packages" has been resolved.
+
+- `#I760350` - Issue with "cells becoming misaligned when pasting external content into wrap-applied cells" has been resolved.
+- `#I764692` - Issue with "deleting content selected directly in the formula bar not reflecting in the cell editor" has been resolved.
 
 ## 30.1.37 (2025-06-25)
 
@@ -1369,7 +1369,18 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 27.1.48 (2024-09-18)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.1.20 (2025-09-10)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I756422` - Issue with "`INDEX` formula not working correctly when using multiple array references as the first argument" has been resolved.
+- `#I746202` - Issue with "custom formulas with a dot in the name return `#NAME?` error" has been resolved.
+- `#I751043` - Issue with "chart not maintaining proper layout after resize and drag-and-drop inside the freeze pane" has been resolved.
+- `#I756178` - Issue with "exception occurring when saving a spreadsheet containing series-plotted charts" has been resolved.
+
+## 27.1.48 (2024-09-18)
 
 ### Spreadsheet
 

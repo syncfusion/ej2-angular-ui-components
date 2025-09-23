@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.1.21 (2025-09-23)
+
+### Image Editor
+
+#### Bug Fixes
+
+- `#I762246` - The issue with "Cancel argument not working for select action in 'ShapeChanging' event" has been resolved.
+
 ## 31.1.17 (2025-09-05)
 
 ### Image Editor
