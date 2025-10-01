@@ -2,6 +2,26 @@
 
 ## [Unreleased]
 
+## 31.1.22 (2025-10-01)
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I764613` - The issue with the child nodes are receiving an undefined value in the input when `loadOnDemand` and `allowMultiSelection` are enabled for the remote data in the Dropdown Tree Component has been resolved.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I770970` - Resolved the null exception possibilities while Float element processing.
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I757717` - The issue where an uppercase value was selected when typing a lowercase value in the combo box has been resolved.
+
 ## 31.1.20 (2025-09-10)
 
 ### Mention

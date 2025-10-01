@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 31.1.22 (2025-10-01)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I761711` - Resolved an issue where the duration value did not appear in the edit dialog when the duration column was configured with `numericedit`.
+- `#I766224` - The issue with the `modifiedRecords` collection not displaying data properly in the arguments of the `actionComplete` event has been resolved.
+- `#I766986` - The issue of duplicate tasks being created when using indent and outdent actions has been resolved.
+- `#I766218` - The `taskbarBgColor` property is now correctly applied to child records when using the Material 3 theme.
+- `#I766999` - The inconsistency in the `headerText` property between the Grid and Gantt components, which prevented rendering an empty string as header text, has been fixed.
+- `#I766241` - The issue preventing the context menu from opening for parent records in the resource view has been resolved. The context menu can be opened when `args.cancel` is set to false in the `contextMenuOpen` event.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 31.1.21 (2025-09-23)
 
 ### GanttChart
@@ -14,7 +29,9 @@
 - `#I757458` - The issue where time converted unnecessarily when the timezone was set to 'UTC' at initial load has been resolved.
 - `#I767390` - The issue where the resource column was not rendering as `dropdown` when dynamically assigning the column collection has been resolved.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I764123` - Resolved an issue where parent task progress values were not displaying in decimal format, even when child tasks were configured with decimal values. Decimal rendering for both parent and child tasks is now properly handled by defining the appropriate format in columns.
+- `#I757458` - The issue where time converted unnecessarily when the timezone was set to 'UTC' at initial load has been resolved.
+- `#I767390` - The issue where the resource column was not rendering as `dropdown` when dynamically assigning the column collection has been resolved.
 
 ## 31.1.20 (2025-09-10)
 

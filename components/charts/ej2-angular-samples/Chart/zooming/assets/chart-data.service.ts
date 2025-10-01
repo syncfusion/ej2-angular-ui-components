@@ -1,3 +1,5 @@
+import { secureRandom } from "../../../../spec/chart/base/data.spec";
+
 /**
  * chart data source
  */
@@ -12,12 +14,12 @@ export class ChartDataService {
         let i: number;
         for (i = 1; i < 250; i++) {
 
-            if (Math.random() > .5) {
-                value += Math.random();
-                value1 += Math.random();
+            if (secureRandom() > .5) {
+                value += secureRandom();
+                value1 += secureRandom();
             } else {
-                value -= Math.random();
-                value1 -= Math.random();
+                value -= secureRandom();
+                value1 -= secureRandom();
             }
             point1 = { x: new Date(2000, i, 1), y: value };
             point2 = { x: new Date(2000, i, 1), y: value1 };
@@ -34,20 +36,20 @@ export class ChartDataService {
         let value1: number = 70;
         let i: number;
         for (i = 1; i < 120; i++) {
-            if (Math.random() > 0.5) {
-                value += Math.random();
+            if (secureRandom() > 0.5) {
+                value += secureRandom();
             } else {
-                value -= Math.random();
+                value -= secureRandom();
             }
             value = value < 60 ? 60 : value > 90 ? 90 : value;
             point1 = { x: (145 + (i / 3)).toFixed(1), y: value.toFixed(1) };
             series1.push(point1);
         }
         for (i = 1; i < 120; i++) {
-            if (Math.random() > 0.5) {
-                value1 += Math.random();
+            if (secureRandom() > 0.5) {
+                value1 += secureRandom();
             } else {
-                value1 -= Math.random();
+                value1 -= secureRandom();
             }
             value1 = value1 < 60 ? 60 : value1 > 90 ? 90 : value1;
             point1 = { x: (145 + (i / 3)).toFixed(1), y: value1.toFixed(1) };
@@ -65,12 +67,12 @@ export class ChartDataService {
         let i: number;
         for (i = 1; i < 500; i++) {
 
-            if (Math.random() > .5) {
-                value += Math.random();
-                value1 += Math.random();
+            if (secureRandom() > .5) {
+                value += secureRandom();
+                value1 += secureRandom();
             } else {
-                value -= Math.random();
-                value1 -= Math.random();
+                value -= secureRandom();
+                value1 -= secureRandom();
             }
             point1 = { x: new Date(1960, (i + 1), i), y: Math.round(value) };
             point2 = { x: new Date(1960, (i + 1), i), y: Math.round(value1) };
@@ -85,10 +87,10 @@ export class ChartDataService {
         let value: number = 80;
         let i: number;
         for (i = 1; i < 500; i++) {
-            if (Math.random() > .5) {
-                value += Math.random();
+            if (secureRandom() > .5) {
+                value += secureRandom();
             } else {
-                value -= Math.random();
+                value -= secureRandom();
             }
             point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
             series1.push(point1);
