@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 31.1.23 (2025-10-07)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I767142` - Resolved issue where records added via context menu using add `Above` or `Below` options were not displayed after Gantt refresh.
+- `#I769702` - Issue with predecessor values containing spaces not being validated correctly has been fixed.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 31.1.22 (2025-10-01)
 
 ### GanttChart
@@ -15,7 +26,8 @@
 - `#I766999` - The inconsistency in the `headerText` property between the Grid and Gantt components, which prevented rendering an empty string as header text, has been fixed.
 - `#I766241` - The issue preventing the context menu from opening for parent records in the resource view has been resolved. The context menu can be opened when `args.cancel` is set to false in the `contextMenuOpen` event.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I766224` - The issue with the `modifiedRecords` collection not displaying data properly in the arguments of the `actionComplete` event has been resolved.
+- `#I766986` - The issue of duplicate tasks being created when using indent and outdent actions has been resolved.
 
 ## 31.1.21 (2025-09-23)
 
