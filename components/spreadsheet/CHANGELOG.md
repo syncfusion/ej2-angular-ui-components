@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+## 31.2.2 (2025-10-15)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I764626` - Issue with "`Alt+Enter` not retaining focus in the formula bar during editing" has been resolved.
+- `#I769414` - Issue with "image positions not adjusting properly when updating the row height programmatically after loading an Excel file with images" has been resolved.
+
+## 31.1.22 (2025-10-01)
+
+### Spreadsheet
+
+#### Bug fixes
+
+-`#I752195` - Issue with "`getSingleSelectedRange` was not found in spreadsheet while building an Angular application with Angular Spreadsheet's `ngcc` package" has been resolved.
+
 ## 31.1.21 (2025-09-23)
 
 ### Spreadsheet

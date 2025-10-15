@@ -70,12 +70,12 @@ export function Template(defaultValue?: Object): PropertyDecorator {
  * @returns {Function} The setter function.
  */
 function setter(key: string): Function {
-    return function (val: AngularElementType): void {
+    return function (val: any): void {
         if (val === undefined) { return; }
         setValue(key + 'Ref', val, this);
-        if (typeof val !== 'string') {
-            val.elementRef.nativeElement._viewContainerRef = this.viewContainerRef;
-            val.elementRef.nativeElement.propName = key;
+        if (typeof val !== 'string' && !(typeof val === 'function' && (val as Function).prototype && (val as Function).prototype.CSPTemplate)) {
+            (val as any).elementRef.nativeElement._viewContainerRef = this.viewContainerRef;
+            (val as any).elementRef.nativeElement.propName = key;
         } else {
             if (this.saveChanges) {
                 this.saveChanges(key, val, undefined);

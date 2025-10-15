@@ -2,11 +2,21 @@
 
 ## [Unreleased]
 
-## 31.1.23 (2025-10-07)
+## 31.2.2 (2025-10-15)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I757444` - Added spinner loading support during rule rendering in the query builder.
+
+## 31.1.22 (2025-10-01)
 
 ### QueryBuilder
 
 - `#I764996` - Issue where the lock rule did not disable the field selector in complex data binding scenarios.
+
+- `#I766063` - Fixed the issue where the rule condition value was not updating for new empty rules with new conditions.
 
 ## 31.1.17 (2025-09-05)
 

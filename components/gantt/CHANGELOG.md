@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## 31.2.2 (2025-10-15)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I769900` - Fixed an issue where template columns failed to display correctly after dynamically refreshing the Gantt Chart.
+- `#I769454` - Addressed inconsistent rendering of `dropdown` values in the dependency tab within both `Add` and `Edit` dialog.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+#### Feature
+
+- `#I765000` - Introduced seamless date object conversion and timezone handling for custom columns, editing, and CRUD operations across both remote and local data sources.
+
 ## 31.1.23 (2025-10-07)
 
 ### GanttChart
@@ -10,8 +25,6 @@
 
 - `#I767142` - Resolved issue where records added via context menu using add `Above` or `Below` options were not displayed after Gantt refresh.
 - `#I769702` - Issue with predecessor values containing spaces not being validated correctly has been fixed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 31.1.22 (2025-10-01)
 

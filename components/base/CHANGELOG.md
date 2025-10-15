@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 31.1.23 (2025-10-07)
-
-### Common
-
-#### Bug Fixes
-
-- `#I745300` -  Resolved input dependent controls remain dirty after form reset.
-
 ## 25.2.4 (2024-05-14)
 
 ### Common
