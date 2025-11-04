@@ -105,6 +105,14 @@ export class DiagramComponent extends Diagram implements IComponentBase {
     @Template()
     public nodeTemplate: any;
     /** 
+     * This property allows us to define HTML elements for fixed user handle
+     * @default undefined
+     * @asptype string
+     */
+    @ContentChild('fixedUserHandleTemplate')
+    @Template()
+    public fixedUserHandleTemplate: any;
+    /** 
      * This property represents the template content of a user handle. The user can define any HTML element as a template.
      * @default undefined
      * @asptype string

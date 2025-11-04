@@ -14,7 +14,7 @@ The [Angular TreeGrid](https://www.syncfusion.com/angular-components/angular-tre
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
   </a>
 </p>
 
@@ -35,9 +35,9 @@ ng new my-app
 cd my-app
 ```
 
-### Adding Syncfusion Tree Grid package
+### Adding Syncfusion<sup>®</sup> Tree Grid package
 
-All Syncfusion angular packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install angular tree grid package, use the following command.
+All Syncfusion<sup>®</sup> angular packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. To install angular tree grid package, use the following command.
 
 ```bash
 ng add @syncfusion/ej2-angular-treegrid
@@ -47,13 +47,13 @@ The above command does the below configuration to your Angular app.
  
  * Adds `@syncfusion/ej2-angular-treegrid` package and its peer dependencies to your `package.json` file.
  * Imports the `TreeGridModule` in your application module `app.module.ts`.
- * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
+ * Registers the Syncfusion<sup>®</sup> UI default theme (material) in the `angular.json` file.
 
-This makes it easy to add the Syncfusion Angular TreeGrid module to your project and start using it in your application.
+This makes it easy to add the Syncfusion<sup>®</sup> Angular TreeGrid module to your project and start using it in your application.
 
 ### Add Tree Grid Component
 
-In **src/app/app.component.ts**, use `<ejs-treegrid>` selector in `template` attribute of  `@Component` directive to render the Syncfusion Angular TreeGrid component.
+In **src/app/app.component.ts**, use `<ejs-treegrid>` selector in `template` attribute of  `@Component` directive to render the Syncfusion<sup>®</sup> Angular TreeGrid component.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -124,6 +124,14 @@ TreeGrid component is also offered in the following list of frameworks.
 * [RTL support](https://ej2.syncfusion.com/angular/documentation/treegrid/global-local/#right-to-left-rtl): Provides the right-to-left mode which aligns content in the TreeGrid component from right to left. This improves user experience and accessibility for those who work with RTL languages like Hebrew and Arabic.
 * [Localization](https://ej2.syncfusion.com/angular/documentation/treegrid/global-local/#localization): Provides inherent support to localize the UI.
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/overview)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/angular)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=angular&type=all)
+
 ## Support
 
 Product support is available through the following mediums.
@@ -140,10 +148,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-treegrid-npm) for more info.
 
-&copy; Copyright 2022 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+&copy; Copyright 2025 Syncfusion, Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio license and copyright applies to this distribution.

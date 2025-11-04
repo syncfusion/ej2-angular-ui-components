@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.5 (2025-11-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#776766` - Issue with "formula references being updated incorrectly during copy-paste, resulting in a `#REF!` error" has been resolved.
+
 ## 31.2.4 (2025-10-28)
 
 ### Spreadsheet
