@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isPrimaryKey', 'maxWidth', 'minWidth', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Gantt. 
@@ -154,6 +154,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default false
      */
     public isPrimaryKey: any;
+    /** 
+     * Prevents column reordering when set to true, locking the column into a set position.
+     * @default false
+     */
+    public lockColumn: any;
     /** 
      * Defines the maximum width of the column in pixel or percentage, which will restrict resizing beyond this pixel or percentage.
      * @default null

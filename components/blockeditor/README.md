@@ -34,7 +34,7 @@ This [Angular Block Editor](https://www.syncfusion.com/angular-components/angula
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com/">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Syncfusion logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Syncfusion logo">
   </a>
 </p>
 
@@ -58,6 +58,14 @@ blockeditor components are also offered in following list of frameworks.
 * Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo]( https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=slider)
 * Cloud Pricing - [Live Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=slider#/fluent2/range-slider/azure-pricing)
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/angular/documentation/block-editor/getting-started)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/angular)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=angular&type=all)
+
 ## Support
 
 Product support is available through following mediums.
@@ -74,10 +82,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license/?utm_source=npm&utm_campaign=input) for more info.
 
-© Copyright 2025 Syncfusion, Inc. All Rights Reserved. The Syncfusion Essential Studio license and copyright applies to this distribution.
+© Copyright 2025 Syncfusion<sup>®</sup>, Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio license and copyright applies to this distribution.

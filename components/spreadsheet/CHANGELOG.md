@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 31.2.5 (2025-11-04)
+## 31.2.10 (2025-11-13)
 
 ### Spreadsheet
 
 #### Bug fixes
 
-- `#776766` - Issue with "formula references being updated incorrectly during copy-paste, resulting in a `#REF!` error" has been resolved.
+- `#I756181` - Issue with "script errors when refreshing charts with empty data ranges during cell updates in the Spreadsheet" has been resolved.
 
 ## 31.2.4 (2025-10-28)
 
@@ -1401,7 +1401,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.2 (2025-10-15)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.5 (2025-11-04)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I776766` - Issue with "formula references being updated incorrectly during copy-paste, resulting in a `#REF!` error" has been resolved.
+
+## 31.2.2 (2025-10-15)
 
 ### Spreadsheet
 

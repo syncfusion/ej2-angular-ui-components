@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 31.2.10 (2025-11-13)
+
+### GanttChart
+
+#### Feature
+
+- `#I731224` - Enhanced checkbox selection with virtualization support for large datasets, delivering faster, more accurate multi-selection and smoother CRUD operations.
+
+#### Bug fixes
+
+- `#I783506` - Fixed the invalid string to date conversion issue in the custom column of the Gantt Chart.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 31.2.5 (2025-11-04)
 
 ### GanttChart
@@ -13,7 +27,8 @@
 - `#I778404` - Resolved unpredictable task shifts and miscalculated dependency offsets in the Gantt chart.
 - `#I778127` - Resolved an issue where navigating with Tab and arrow keys caused duplicate focus highlights on row cells and column headers.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I777187` - Fixed an issue where offsets were calculated incorrectly when `editSettings` was not configured.
+- `#I778404` - Resolved unpredictable task shifts and miscalculated dependency offsets in the Gantt chart.
 
 ## 31.2.4 (2025-10-28)
 

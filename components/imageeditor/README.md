@@ -13,7 +13,7 @@ The [Angular Image Editor](https://www.syncfusion.com/angular-components/angular
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/syncfusion/syncfusion-trusted-companies.webp" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
   </a>
 </p>
 
@@ -34,9 +34,9 @@ ng new my-app
 cd my-app
 ```
 
-### Adding Syncfusion Angular Image Editor package
+### Adding Syncfusion<sup>®</sup> Angular Image Editor package
 
-All Syncfusion Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the angular image editor package, use the following command.
+All Syncfusion<sup>®</sup> Angular packages are available in [npmjs.com](https://www.npmjs.com/~syncfusionorg). To install the angular image editor package, use the following command.
 
 ```bash
 ng add @syncfusion/ej2-angular-image-editors
@@ -46,13 +46,13 @@ The above command does the below configuration to your Angular app.
  
  * Adds `@syncfusion/ej2-angular-image-editors` package and its peer dependencies to your `package.json` file.
  * Imports the `ImageEditorModule` in your application module `app.module.ts`.
- * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
+ * Registers the Syncfusion<sup>®</sup> UI default theme (material) in the `angular.json` file.
 
-This makes it easy to add the Syncfusion Angular Image Editor module to your project and start using it in your application.
+This makes it easy to add the Syncfusion<sup>®</sup> Angular Image Editor module to your project and start using it in your application.
 
-### Add Syncfusion Angular Image Editor component
+### Add Syncfusion<sup>®</sup> Angular Image Editor component
 
-In **src/app/app.component.ts**, use `<ejs-imageeditor>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion Angular Image Editor component.
+In **src/app/app.component.ts**, use `<ejs-imageeditor>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion<sup>®</sup> Angular Image Editor component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -86,6 +86,14 @@ Image Editor component is also offered in the following list of frameworks.
 * RTL and localization support: The control supports RTL (right-to-left) mode and provides inherent support for localization, allowing users to easily translate the user interface into different languages.
 * Various theme support: The component supports a range of themes, including fluent, tailwind css, bootstrap 5, material, and high contrast, giving users the ability to customize the look and feel of the image editor to match their preferences or brand guidelines.
 
+## Resources
+
+* [Documentation](https://ej2.syncfusion.com/angular/documentation/image-editor/getting-started)
+* [Theme Studio](https://ej2.syncfusion.com/themestudio/)
+* [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_medium=listing&utm_source=github)
+* [Road Map](https://www.syncfusion.com/products/roadmap/angular)
+* [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=angular&type=all)
+
 ## Support
 
 Product support is available through the following mediums.
@@ -102,10 +110,10 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 ## License and copyright
 
-> This is a commercial product and requires a paid license for possession or use.Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>licensed software, including this component, is subject to the terms and conditions ofSyncfusion<sup>®</sup> Essential Studio<sup>®</sup>[EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 80+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
+> This is a commercial product and requires a paid license for possession or use.Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>licensed software, including this component, is subject to the terms and conditions ofSyncfusion<sup>®</sup> Essential Studio<sup>®</sup>[EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
 > A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-image-editor-npm) for more info.
 
-&copy; Copyright 2024Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
+&copy; Copyright 2025 Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
