@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.12 (2025-11-18)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 31.2.10 (2025-11-13)
 
 ### GanttChart
@@ -13,8 +21,6 @@
 #### Bug fixes
 
 - `#I783506` - Fixed the invalid string to date conversion issue in the custom column of the Gantt Chart.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 31.2.5 (2025-11-04)
 
