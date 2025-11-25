@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.15 (2025-11-25)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I776787` - Issue with "unwanted white space entries in filter options and the `LEN` formula not returning correct values when counting white space in the Spreadsheet" has been resolved.
+
 ## 31.2.4 (2025-10-28)
 
 ### Spreadsheet
