@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 31.2.16 (2025-12-02)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I788004` - Resolved an issue where retrieving RuleModel using the `getRules` method did not work correctly after cloning a group in QueryBuilder.
+
 ## 31.2.15 (2025-11-25)
 
 ### QueryBuilder

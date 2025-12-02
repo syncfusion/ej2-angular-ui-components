@@ -2,13 +2,22 @@
 
 ## [Unreleased]
 
-## 31.2.15 (2025-11-25)
+## 31.2.16 (2025-12-02)
 
 ### GanttChart
 
 #### Bug fixes
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
+## 31.2.15 (2025-11-25)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I760382` - Fixed the issue where mouse events and selection were not working in the Gantt Chart after dynamically updating the datasource.
+- `#I783794` - Fixed an issue where the right label did not render when multi taskbar was enabled and the record was collapsed.
 
 ## 31.2.10 (2025-11-13)
 
