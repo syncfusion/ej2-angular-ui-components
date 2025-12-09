@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 31.2.16 (2025-12-02)
+## 31.2.18 (2025-12-09)
 
 ### DatePicker
 
@@ -20,12 +20,6 @@
 
 - `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the DateRangePicker using `HtmlAttributes`.
 
-### TimePicker
-
-#### Bug Fixes
-
-- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the TimePicker using `HtmlAttributes`.
-
 ### DateTimePicker
 
 #### Bug Fixes
@@ -33,6 +27,12 @@
 - `#I752582` - The issue where the default time was not reset properly after clearing a date and selecting a new one in the DateTimePicker has been resolved.
 
 - `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the DateTimePicker using `HtmlAttributes`.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the TimePicker using `HtmlAttributes`.
 
 ## 31.1.17 (2025-09-05)
 

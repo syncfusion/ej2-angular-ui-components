@@ -2,16 +2,6 @@
 
 ## [Unreleased]
 
-## 31.2.16 (2025-12-02)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I787679` - Issue with "when `VLOOKUP` is used as a nested formula, comparing a blank cell to an empty string returns `FALSE`" has been resolved.
-- `#I787263` - Issue with "script error occurred while saving the Spreadsheet if the previously loaded data contained the `UNIQUE` formula" has been resolved.
-- `#I787086` - Issue with "conditional formatting with string values was not maintained properly while importing a file" has been resolved.
-
 ## 31.2.4 (2025-10-28)
 
 ### Spreadsheet
@@ -1403,7 +1393,17 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.15 (2025-11-25)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.16 (2025-12-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I787679` - Issue with "when `VLOOKUP` is used as a nested formula, comparing a blank cell to an empty string returns `FALSE`" has been resolved.
+- `#I787263` - Issue with "script error occurred while saving the Spreadsheet if the previously loaded data contained the `UNIQUE` formula" has been resolved.
+- `#I787086` - Issue with "conditional formatting with string values was not maintained properly while importing a file" has been resolved.
+
+## 31.2.15 (2025-11-25)
 
 ### Spreadsheet
 
