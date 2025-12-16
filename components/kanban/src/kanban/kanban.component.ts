@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { StackedHeadersDirective } from './stackedheaders.directive';
 
-export const inputs: string[] = ['allowDragAndDrop','allowKeyboard','cardHeight','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableTooltip','enableVirtualization','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
+export const inputs: string[] = ['allowColumnDragAndDrop','allowDragAndDrop','allowKeyboard','cardHeight','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableTooltip','enableVirtualization','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','columnDrag','columnDragStart','columnDrop','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
 export const twoWays: string[] = [''];
 
 /**
@@ -36,6 +36,9 @@ export class KanbanComponent extends Kanban implements IComponentBase {
 	cardClick: any;
 	cardDoubleClick: any;
 	cardRendered: any;
+	columnDrag: any;
+	columnDragStart: any;
+	columnDrop: any;
 	created: any;
 	dataBinding: any;
 	dataBound: any;

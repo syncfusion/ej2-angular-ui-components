@@ -2,11 +2,11 @@ import { Component, ElementRef, ViewContainerRef, Renderer2, Injector, ChangeDet
 import { ComponentBase, ComponentMixins, IComponentBase, applyMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { BlockEditor } from '@syncfusion/ej2-blockeditor';
 
-import { BlocksDirective } from './blocks.directive';
 
-export const inputs: string[] = ['blockActionsMenu','blocks','commandMenu','contextMenu','cssClass','enableAutoHttps','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','height','inlineToolbar','keyConfig','labelSettings','locale','pasteSettings','readOnly','undoRedoStack','users','width'];
-export const outputs: string[] = ['afterPaste','beforePaste','blockAdded','blockDrag','blockDragStart','blockDrop','blockMoved','blockRemoved','blur','contentChanged','created','focus','keyActionExecuted','selectionChanged','undoRedoPerformed'];
-export const twoWays: string[] = [];
+
+export const inputs: string[] = ['blockActionMenuSettings','blocks','codeBlockSettings','commandMenuSettings','contextMenuSettings','cssClass','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','height','imageBlockSettings','inlineToolbarSettings','keyConfig','labelSettings','locale','pasteCleanupSettings','readOnly','undoRedoStack','users','width'];
+export const outputs: string[] = ['afterPasteCleanup','beforePasteCleanup','blockChanged','blockDragStart','blockDragging','blockDropped','blur','created','focus','selectionChanged','blocksChange'];
+export const twoWays: string[] = ['blocks'];
 
 /**
  * Represents the Essential JS 2 Angular BlockEditor Component.
@@ -15,36 +15,32 @@ export const twoWays: string[] = [];
  * ```
  */
 @Component({
-    selector: '[ejs-blockeditor]',
+    selector: '[ejs-blockeditor], ejs-blockeditor',
     inputs: inputs,
     outputs: outputs,
     template: `<ng-content ></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     queries: {
-        childBlocks: new ContentChild(BlocksDirective)
+        
     }
 })
 @ComponentMixins([ComponentBase])
 export class BlockEditorComponent extends BlockEditor implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
-	afterPaste: any;
-	beforePaste: any;
-	blockAdded: any;
-	blockDrag: any;
+	afterPasteCleanup: any;
+	beforePasteCleanup: any;
+	blockChanged: any;
 	blockDragStart: any;
-	blockDrop: any;
-	blockMoved: any;
-	blockRemoved: any;
+	blockDragging: any;
+	blockDropped: any;
 	blur: any;
-	contentChanged: any;
 	created: any;
 	focus: any;
-	keyActionExecuted: any;
 	selectionChanged: any;
-	public undoRedoPerformed: any;
-    public childBlocks: QueryList<BlocksDirective>;
-    public tags: string[] = ['blocks'];
+	public blocksChange: any;
+
+    public tags: string[] = [''];
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -70,7 +66,7 @@ export class BlockEditorComponent extends BlockEditor implements IComponentBase 
     }
 
     public ngAfterContentChecked(): void {
-        this.tagObjects[0].instance = this.childBlocks;
+        
         this.containerContext.ngAfterContentChecked(this);
     }
 

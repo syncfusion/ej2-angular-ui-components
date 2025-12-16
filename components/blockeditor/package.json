@@ -46,8 +46,13 @@
 	"keywords": [
 		"angular",
 		"ng",
-		"ej2-ng-blockeditor",
-		"ng-blockeditor"
+		"ej2-angular-blockeditor",
+		"angular-blockeditor",
+		"block editor",
+		"blocks",
+		"editor",
+		"modular-editor",
+		"block-based"
 	],
 	"repository": {
 		"type": "git",

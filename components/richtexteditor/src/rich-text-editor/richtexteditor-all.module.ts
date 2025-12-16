@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RichTextEditorComponent } from './richtexteditor.component';
 import { RichTextEditorModule } from './richtexteditor.module';
-import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu, CodeBlock} from '@syncfusion/ej2-richtexteditor'
+import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu, CodeBlock, ClipBoardCleanup, AutoFormat, AIAssistant} from '@syncfusion/ej2-richtexteditor'
 
 
 export const ToolbarService: ValueProvider = { provide: 'RichTextEditorToolbar', useValue: Toolbar};
@@ -23,6 +23,9 @@ export const FormatPainterService: ValueProvider = { provide: 'RichTextEditorFor
 export const EmojiPickerService: ValueProvider = { provide: 'RichTextEditorEmojiPicker', useValue: EmojiPicker};
 export const SlashMenuService: ValueProvider = { provide: 'RichTextEditorSlashMenu', useValue: SlashMenu};
 export const CodeBlockService: ValueProvider = { provide: 'RichTextEditorCodeBlock', useValue: CodeBlock};
+export const ClipBoardCleanupService: ValueProvider = { provide: 'RichTextEditorClipBoardCleanup', useValue: ClipBoardCleanup};
+export const AutoFormatService: ValueProvider = { provide: 'RichTextEditorAutoFormat', useValue: AutoFormat};
+export const AIAssistantService: ValueProvider = { provide: 'RichTextEditorAIAssistant', useValue: AIAssistant};
 
 /**
  * NgModule definition for the RichTextEditor component with providers.
@@ -50,7 +53,10 @@ export const CodeBlockService: ValueProvider = { provide: 'RichTextEditorCodeBlo
         FormatPainterService,
         EmojiPickerService,
         SlashMenuService,
-        CodeBlockService
+        CodeBlockService,
+        ClipBoardCleanupService,
+        AutoFormatService,
+        AIAssistantService
     ]
 })
 export class RichTextEditorAllModule { }

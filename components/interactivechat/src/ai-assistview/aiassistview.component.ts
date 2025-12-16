@@ -4,7 +4,7 @@ import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ViewsDirective } from './views.directive';
 
-export const inputs: string[] = ['activeView','attachmentSettings','bannerTemplate','cssClass','enableAttachments','enablePersistence','enableRtl','footerTemplate','height','locale','prompt','promptIconCss','promptItemTemplate','promptPlaceholder','promptSuggestionItemTemplate','promptSuggestions','promptSuggestionsHeader','promptToolbarSettings','prompts','responseIconCss','responseItemTemplate','responseToolbarSettings','showClearButton','showHeader','toolbarSettings','views','width'];
+export const inputs: string[] = ['activeView','attachmentSettings','bannerTemplate','cssClass','enableAttachments','enablePersistence','enableRtl','footerTemplate','footerToolbarSettings','height','locale','prompt','promptIconCss','promptItemTemplate','promptPlaceholder','promptSuggestionItemTemplate','promptSuggestions','promptSuggestionsHeader','promptToolbarSettings','prompts','responseIconCss','responseItemTemplate','responseToolbarSettings','showClearButton','showHeader','toolbarSettings','views','width'];
 export const outputs: string[] = ['attachmentRemoved','attachmentUploadFailure','attachmentUploadSuccess','beforeAttachmentUpload','created','promptChanged','promptRequest','stopRespondingClick','promptChange'];
 export const twoWays: string[] = ['prompt'];
 
@@ -15,7 +15,7 @@ export const twoWays: string[] = ['prompt'];
  * ```
  */
 @Component({
-    selector: '[ejs-aiassistview]',
+    selector: '[ejs-aiassistview], ejs-aiassistview',
     inputs: inputs,
     outputs: outputs,
     template: `<ng-content ></ng-content>`,

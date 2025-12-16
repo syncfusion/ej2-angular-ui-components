@@ -4,8 +4,8 @@ import { ChatUI } from '@syncfusion/ej2-interactive-chat';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { MessagesDirective } from './messages.directive';
 
-export const inputs: string[] = ['autoScrollToBottom','cssClass','emptyChatTemplate','enableCompactMode','enablePersistence','enableRtl','footerTemplate','headerIconCss','headerText','headerToolbar','height','loadOnDemand','locale','mentionTriggerChar','mentionUsers','messageTemplate','messageToolbarSettings','messages','placeholder','showFooter','showHeader','showTimeBreak','showTimeStamp','suggestionTemplate','suggestions','timeBreakTemplate','timeStampFormat','typingUsers','typingUsersTemplate','user','width'];
-export const outputs: string[] = ['created','mentionSelect','messageSend','userTyping'];
+export const inputs: string[] = ['attachmentSettings','autoScrollToBottom','cssClass','emptyChatTemplate','enableAttachments','enableCompactMode','enablePersistence','enableRtl','footerTemplate','headerIconCss','headerText','headerToolbar','height','loadOnDemand','locale','mentionTriggerChar','mentionUsers','messageTemplate','messageToolbarSettings','messages','placeholder','showFooter','showHeader','showTimeBreak','showTimeStamp','suggestionTemplate','suggestions','timeBreakTemplate','timeStampFormat','typingUsers','typingUsersTemplate','user','width'];
+export const outputs: string[] = ['attachmentRemoved','attachmentUploadFailure','attachmentUploadSuccess','beforeAttachmentUpload','created','mentionSelect','messageSend','userTyping'];
 export const twoWays: string[] = [''];
 
 /**
@@ -15,7 +15,7 @@ export const twoWays: string[] = [''];
  * ```
  */
 @Component({
-    selector: '[ejs-chatui]',
+    selector: '[ejs-chatui], ejs-chatui',
     inputs: inputs,
     outputs: outputs,
     template: `<ng-content ></ng-content>`,
@@ -28,6 +28,10 @@ export const twoWays: string[] = [''];
 export class ChatUIComponent extends ChatUI implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	attachmentRemoved: any;
+	attachmentUploadFailure: any;
+	attachmentUploadSuccess: any;
+	beforeAttachmentUpload: any;
 	created: any;
 	mentionSelect: any;
 	messageSend: any;
@@ -107,6 +111,12 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     @ContentChild('timeBreakTemplate')
     @Template()
     public timeBreakTemplate: any;
+    @ContentChild('previewTemplate')
+    @Template()
+    public previewTemplate: any;
+    @ContentChild('attachmentTemplate')
+    @Template()
+    public attachmentTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

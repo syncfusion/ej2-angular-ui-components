@@ -10,7 +10,7 @@ import { WeekWorkingTimesDirective } from './weekworkingtime.directive';
 import { HolidaysDirective } from './holidays.directive';
 import { EventMarkersDirective } from './eventmarkers.directive';
 
-export const inputs: string[] = ['UpdateOffsetOnTaskbarEdit','addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowParentDependency','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTaskbarDragAndDrop','allowTaskbarOverlap','allowUnscheduledTasks','autoCalculateDateScheduling','autoFocusTasks','baselineColor','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','enableAdaptiveUI','enableAutoWbsUpdate','enableContextMenu','enableCriticalPath','enableHover','enableHtmlSanitizer','enableImmutableMode','enableMultiTaskbar','enablePersistence','enablePredecessorValidation','enableRtl','enableTimelineVirtualization','enableUndoRedo','enableVirtualMaskRow','enableVirtualization','enableWBS','eventMarkers','filterSettings','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','loadChildOnDemand','loadingIndicator','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','readOnly','renderBaseline','resourceFields','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','segmentData','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','showOverAllocation','sortSettings','splitterSettings','taskFields','taskMode','taskType','taskbarHeight','taskbarTemplate','timelineSettings','timelineTemplate','timezone','toolbar','tooltipSettings','treeColumnIndex','undoRedoActions','undoRedoStepsCount','updateOffsetOnTaskbarEdit','validateManualTasksOnLinking','viewType','weekWorkingTime','width','workUnit','workWeek','zoomingLevels'];
+export const inputs: string[] = ['addDialogFields','allowExcelExport','allowFiltering','allowKeyboard','allowParentDependency','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTaskbarDragAndDrop','allowTaskbarOverlap','allowUnscheduledTasks','autoCalculateDateScheduling','autoFocusTasks','baselineColor','calendarSettings','collapseAllParentTasks','columnMenuItems','columns','connectorLineBackground','connectorLineWidth','contextMenuItems','dataSource','dateFormat','dayWorkingTime','disableHtmlEncode','durationUnit','editDialogFields','editSettings','emptyRecordTemplate','enableAdaptiveUI','enableAutoWbsUpdate','enableContextMenu','enableCriticalPath','enableHover','enableHtmlSanitizer','enableImmutableMode','enableMultiTaskbar','enablePersistence','enablePredecessorValidation','enableRtl','enableTimelineVirtualization','enableUndoRedo','enableVirtualMaskRow','enableVirtualization','enableWBS','eventMarkers','filterSettings','frozenColumns','gridLines','height','highlightWeekends','holidays','includeWeekend','labelSettings','loadChildOnDemand','loadingIndicator','locale','milestoneTemplate','parentTaskbarTemplate','projectEndDate','projectStartDate','query','readOnly','renderBaseline','resourceFields','resourceIDMapping','resourceNameMapping','resources','rowHeight','searchSettings','segmentData','selectedRowIndex','selectionSettings','showColumnMenu','showInlineNotes','showOverAllocation','sortSettings','splitterSettings','taskFields','taskMode','taskType','taskbarHeight','taskbarTemplate','timelineSettings','timelineTemplate','timezone','toolbar','tooltipSettings','treeColumnIndex','undoRedoActions','undoRedoStepsCount','updateOffsetOnTaskbarEdit','validateManualTasksOnLinking','viewType','weekWorkingTime','width','workUnit','workWeek','zoomingLevels'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeDataBound','beforeExcelExport','beforePdfExport','beforeTooltipRender','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSelected','cellSelecting','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataStateChange','destroyed','endEdit','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','onMouseMove','onTaskbarClick','pdfColumnHeaderQueryCellInfo','pdfExportComplete','pdfQueryCellInfo','pdfQueryTaskbarInfo','pdfQueryTimelineCellInfo','queryCellInfo','queryTaskbarInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','splitterResizeStart','splitterResized','splitterResizing','taskbarEdited','taskbarEditing','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -179,6 +179,18 @@ export class GanttComponent extends Gantt implements IComponentBase {
     @ContentChild('filterTemplate')
     @Template()
     public filterTemplate: any;
+    /** 
+     * Defines a custom template to display when the Gantt chart has no records.
+     * 
+     * This template replaces the default empty record message and can include text, HTML elements, or images.
+     *Accepts either a template string or an HTML element ID.
+     *     
+     * @default null
+     * @asptype string
+     */
+    @ContentChild('emptyRecordTemplate')
+    @Template()
+    public emptyRecordTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -276,6 +288,12 @@ export class GanttComponent extends Gantt implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('GanttUndoRedo');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('GanttFreeze');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

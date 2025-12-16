@@ -1,10 +1,10 @@
 import { Component, ElementRef, ViewContainerRef, ChangeDetectionStrategy, QueryList, Renderer2, Injector, ValueProvider, ContentChild } from '@angular/core';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, setValue } from '@syncfusion/ej2-angular-base';
 import { FileManager } from '@syncfusion/ej2-filemanager';
-
+import { Template } from '@syncfusion/ej2-angular-base';
 import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRangeSelection','enableRtl','enableVirtualization','fileSystemData','height','locale','navigationPaneSettings','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortComparer','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
+export const inputs: string[] = ['ajaxSettings','allowDragAndDrop','allowMultiSelection','contextMenuSettings','cssClass','detailsViewSettings','enableHtmlSanitizer','enablePersistence','enableRangeSelection','enableRtl','enableVirtualization','fileSystemData','height','largeIconsTemplate','locale','navigationPaneSettings','navigationPaneTemplate','path','popupTarget','rootAliasName','searchSettings','selectedItems','showFileExtension','showHiddenItems','showItemCheckBoxes','showThumbnail','sortBy','sortComparer','sortOrder','toolbarItems','toolbarSettings','uploadSettings','view','width'];
 export const outputs: string[] = ['beforeDelete','beforeDownload','beforeFolderCreate','beforeImageLoad','beforeMove','beforePopupClose','beforePopupOpen','beforeRename','beforeSend','created','delete','destroyed','failure','fileDragStart','fileDragStop','fileDragging','fileDropped','fileLoad','fileOpen','fileSelect','fileSelection','folderCreate','menuClick','menuClose','menuOpen','move','popupClose','popupOpen','rename','search','success','toolbarClick','toolbarCreate','uploadListCreate'];
 export const twoWays: string[] = [''];
 
@@ -64,6 +64,32 @@ export class FileManagerComponent extends FileManager implements IComponentBase 
 	public uploadListCreate: any;
     public childToolbarItems: QueryList<ToolbarItemsDirective>;
     public tags: string[] = ['toolbarItems'];
+    /** 
+     * Specifies a template to render customized content for all the files or folders in the large icons view. If the `largeIconsTemplate` property 
+     * is set, the template content overrides the displayed files or folders text in the File Manager large icons view. The property accepts template string 
+     * or HTML element ID holding the content.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('largeIconsTemplate')
+    @Template()
+    public largeIconsTemplate: any;
+    /** 
+     * Specifies a template to render customized content for all the nodes. If the `navigationPaneTemplate` property 
+     * is set, the template content overrides the displayed node text in the File Manager navigation pane. 
+     * The property accepts a template string or HTML element ID holding the content.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('navigationPaneTemplate')
+    @Template()
+    public navigationPaneTemplate: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

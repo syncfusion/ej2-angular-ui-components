@@ -278,7 +278,6 @@ Navigation components are also offered in following list of frameworks.
 
 ## Resources
 
-* [Documentation](https://ej2.syncfusion.com/angular/documentation/introduction)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
 * [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_medium=listing&utm_source=github)
 * [Road Map](https://www.syncfusion.com/products/roadmap/angular)

@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, ChangeDetectorRef, forwardRef } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, ChangeDetectorRef, forwardRef, ContentChild } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { TextArea } from '@syncfusion/ej2-inputs';
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
-
-export const inputs: string[] = ['cols','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','readonly','resizeMode','rows','showClearButton','value','width'];
+export const inputs: string[] = ['adornmentFlow','adornmentOrientation','appendTemplate','cols','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','prependTemplate','readonly','resizeMode','rows','showClearButton','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -46,6 +46,32 @@ export class TextAreaComponent extends TextArea implements IComponentBase {
 	public valueChange: any;
 
 
+    /** 
+     * Specifies the HTML template to prepend inside the TextArea wrapper. 
+     * Accepts an HTML string or a function returning an HTML string. 
+     * Updates dynamically when the property value changes.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('prependTemplate')
+    @Template()
+    public prependTemplate: any;
+    /** 
+     * Specifies the HTML template to append inside the TextArea wrapper. 
+     * Accepts an HTML string or a function returning an HTML string. 
+     * Updates dynamically when the property value changes.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('appendTemplate')
+    @Template()
+    public appendTemplate: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector, private cdr: ChangeDetectorRef) {

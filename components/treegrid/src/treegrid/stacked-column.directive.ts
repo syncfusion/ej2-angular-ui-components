@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'columns', 'commands', 'customAttributes', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableColumnSpan', 'enableRowSpan', 'field', 'filter', 'filterBarTemplate', 'filterTemplate', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showCheckbox', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-stacked-column` directive represent the stacked column of the Angular TreeGrid.
@@ -137,6 +137,16 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
      * @default 'stringedit'
      */
     public editType: any;
+    /** 
+     * Allows treegrid to perform column spanning on the specified column.
+     * @default true
+     */
+    public enableColumnSpan: any;
+    /** 
+     * Allows treegrid to perform row spanning on the specified column.
+     * @default true
+     */
+    public enableRowSpan: any;
     /** 
      * Specifies the field name in the data source to which the column is bound. This field is used for operations like sorting and filtering. 
      * The field name must be a valid JavaScript identifier, beginning with a letter and avoiding spaces and special characters.

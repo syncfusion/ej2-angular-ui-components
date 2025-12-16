@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { StripLinesDirective } from './striplines.directive';
 import { MultiLevelLabelsDirective } from './multilevellabels.directive';
 
-let input: string[] = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableScrollbarOnZooming', 'enableTrim', 'enableWrap', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'lineBreakAlignment', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titlePadding', 'titleRotation', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
+let input: string[] = ['border', 'coefficient', 'columnIndex', 'crossesAt', 'crossesInAxis', 'crosshairTooltip', 'description', 'desiredIntervals', 'edgeLabelPlacement', 'enableAutoIntervalOnZooming', 'enableScrollbarOnZooming', 'enableTrim', 'enableWrap', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelPosition', 'labelRotation', 'labelStyle', 'labelTemplate', 'lineBreakAlignment', 'lineStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'multiLevelLabels', 'name', 'opposedPosition', 'placeNextToAxisLine', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'scrollbarSettings', 'skeleton', 'skeletonType', 'span', 'startAngle', 'startFromZero', 'stripLines', 'tabIndex', 'tickPosition', 'title', 'titlePadding', 'titleRotation', 'titleStyle', 'valueType', 'visible', 'zoomFactor', 'zoomPosition'];
 let outputs: string[] = [];
 /**
  * Axis Directive
@@ -174,6 +174,29 @@ export class AxisDirective extends ComplexBase<AxisDirective> {
      * This property allows defining various font settings to control how the labels are displayed on the axis.
      */
     public labelStyle: any;
+    /** 
+     * Specifies the template used to render axis labels, allowing for customized labels with text, images, or other UI elements. 
+     * The template is provided as a string with placeholders for interpolation. Use `${label}` to insert the axis label and `${value}` for the axis label value. 
+     * For security, string templates use dangerouslySetInnerHTML in React—ensure input is trusted to avoid XSS vulnerabilities. 
+     * If null or undefined, the axis will render default labels. 
+     * Compatible with both categorical and numerical axes.
+     * @example ```html
+<div id='Chart'></div>
+```
+```typescript
+let chart: Chart = new Chart({
+...
+primaryXAxis: {
+labelTemplate: '<div>Country: ${label}</div>'
+}
+...
+});
+chart.appendTo('#Chart');
+```
+
+     * @default null
+     */
+    public labelTemplate: any;
     /** 
      * Determines the alignment of labels when a line break occurs in the axis labels.
      * @default 'Center'

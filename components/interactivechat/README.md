@@ -67,8 +67,8 @@ Interactive chat components are also offered in following list of frameworks.
 
 ## Resources
 
-* [AI AssistView Documentation](https://ej2.syncfusion.com/angular/documentation/ai-assistview/getting-started)
-* [Chat UI Documentation](https://ej2.syncfusion.com/angular/documentation/chat-ui/getting-started)
+* [AI AssistView  Documentation](https://ej2.syncfusion.com/angular/documentation/ai-assistview/getting-started)
+* [Chat UI  Documentation](https://ej2.syncfusion.com/angular/documentation/chat-ui/getting-started)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
 * [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_medium=listing&utm_source=github)
 * [Road Map](https://www.syncfusion.com/products/roadmap/angular)

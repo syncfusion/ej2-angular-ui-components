@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 31.2.18 (2025-12-09)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I761820` - Fixed an issue where the DatePicker became disabled or unresponsive when the `min` property changed from null to a date value.
-
-- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the DatePicker using `HtmlAttributes`.
+## 32.1.19 (2025-12-16)
 
 ### DateRangePicker
 
@@ -18,21 +10,11 @@
 
 - `#I753728` - Fixed an issue where the date range picker with the preset range popup would open behind the drawer.
 
-- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the DateRangePicker using `HtmlAttributes`.
-
 ### DateTimePicker
 
 #### Bug Fixes
 
 - `#I752582` - The issue where the default time was not reset properly after clearing a date and selecting a new one in the DateTimePicker has been resolved.
-
-- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the DateTimePicker using `HtmlAttributes`.
-
-### TimePicker
-
-#### Bug Fixes
-
-- `#I775039` - Resolved the issue of being unable to customize the `tabindex` of the TimePicker using `HtmlAttributes`.
 
 ## 31.1.17 (2025-09-05)
 

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Gantt. 
@@ -131,6 +131,13 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public formatter: any;
     /** 
+     * Determines which side (left, right, or fixed) the column should be frozen on.
+     * @default Syncfusion.EJ2.Grids.FreezeDirection.None
+     * @isenumeration true
+     * @asptype Syncfusion.EJ2.Grids.FreezeDirection
+     */
+    public freeze: any;
+    /** 
      * Defines the header text of column which is used to display in column header. 
      * If `headerText` is not defined, then field name value will be assigned to header text.
      * @default null
@@ -149,6 +156,11 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      * @default null
      */
     public hideAtMedia: any;
+    /** 
+     * Freezes the column if set to `true`.
+     * @default false
+     */
+    public isFrozen: any;
     /** 
      * If `isPrimaryKey` is set to true, considers this column as the primary key constraint.
      * @default false
@@ -228,6 +240,9 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('filterTemplate')
     @Template()
     public filterTemplate: any;
+    @ContentChild('emptyRecordTemplate')
+    @Template()
+    public emptyRecordTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

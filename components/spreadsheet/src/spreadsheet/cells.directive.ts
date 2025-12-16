@@ -4,7 +4,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { ImagesDirective } from './image.directive';
 import { ChartsDirective } from './chart.directive';
 
-let input: string[] = ['chart', 'colSpan', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'isReadOnly', 'notes', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+let input: string[] = ['chart', 'colSpan', 'comment', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'isReadOnly', 'notes', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -40,6 +40,18 @@ export class CellDirective extends ComplexBase<CellDirective> {
     public childImage: any;
     public childChart: any;
     public tags: string[] = ['image', 'chart'];
+    /** 
+     * Represents the threaded comment associated with the cell. 
+     * A threaded comment allows users to add a main comment and maintain a discussion through replies. 
+     * Each cell supports a single comment thread, which includes: 
+     * - **author**: The name of the person who created the comment. 
+     * - **text**: The main content of the comment. 
+     * - **createdTime**: The timestamp indicating when the comment was added. 
+     * - **isResolved**: Indicates whether the thread is marked as resolved. 
+     * - **replies**: A collection of reply comments, each with its own `author`, `text`, and `createdTime`.
+     * @default null
+     */
+    public comment: any;
     /** 
      * Specifies the chart of the cell.
      * @default []

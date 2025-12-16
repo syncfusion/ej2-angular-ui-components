@@ -151,6 +151,12 @@ export class ToolbarItemDirective extends ComplexBase<ToolbarItemDirective> {
     @ContentChild('template')
     @Template()
     public template: any;
+    @ContentChild('largeIconsTemplate')
+    @Template()
+    public largeIconsTemplate: any;
+    @ContentChild('navigationPaneTemplate')
+    @Template()
+    public navigationPaneTemplate: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

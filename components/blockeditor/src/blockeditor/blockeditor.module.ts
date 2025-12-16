@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlockDirective, BlocksDirective } from './blocks.directive';
 import { BlockEditorComponent } from './blockeditor.component';
 
 /**
@@ -9,14 +8,10 @@ import { BlockEditorComponent } from './blockeditor.component';
 @NgModule({
     imports: [CommonModule],
     declarations: [
-        BlockEditorComponent,
-        BlockDirective,
-        BlocksDirective
+        BlockEditorComponent
     ],
     exports: [
-        BlockEditorComponent,
-        BlockDirective,
-        BlocksDirective
+        BlockEditorComponent
     ]
 })
 export class BlockEditorModule { }

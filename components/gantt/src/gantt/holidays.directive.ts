@@ -31,22 +31,35 @@ export class HolidayDirective extends ComplexBase<HolidayDirective> {
 
 
     /** 
-     * Defines custom css class of holiday to customize background and label.
+     * Defines a custom CSS class for styling the holiday marker and label.
+     * 
+     * Use this to apply custom background, borders, or font styles.
+     *     
      * @default null
      */
     public cssClass: any;
     /** 
-     * Defines start date of holiday.
+     * Specifies the start date of the holiday.
+     * 
+     * Accepts a `Date` object or ISO-formatted string.
+     *     
      * @default null
      */
     public from: any;
     /** 
-     * Defines label of holiday.
+     * Defines a label or description for the holiday.
+     * 
+     * Useful for tooltips, annotations, and export metadata.
+     *     
      * @default null
      */
     public label: any;
     /** 
-     * Defines end date of holiday.
+     * Specifies the end date of the holiday.
+     * 
+     * Accepts a `Date` object or ISO-formatted string.
+     *If omitted, the holiday is treated as a single-day event.
+     *     
      * @default null
      */
     public to: any;

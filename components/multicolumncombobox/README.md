@@ -6,6 +6,13 @@ The [Angular MultiColumn ComboBox](https://www.syncfusion.com/angular-components
 <img alt="Angular Multicolumn ComboBox Control" src="https://ft.syncfusion.com/featuretour/angular-js2/images/multicolumn-combobox/angular-multicolumn-combobox.png">
 </p>
 
+<p align="center">
+Trusted by the world's leading companies
+  <a href="https://www.syncfusion.com">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
+  </a>
+</p>
+
 ## Setup
   
 To install the MultiColumn ComboBox and its dependent packages, use the following command.

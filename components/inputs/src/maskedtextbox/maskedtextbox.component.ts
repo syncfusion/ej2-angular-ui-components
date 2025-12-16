@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, ChangeDetectorRef, forwardRef } from '@angular/core';
+import { Component, ElementRef, ViewContainerRef, ValueProvider, Renderer2, Injector, ChangeDetectionStrategy, ChangeDetectorRef, forwardRef, ContentChild } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComponentBase, IComponentBase, applyMixins, ComponentMixins, PropertyCollectionInfo, FormBase, setValue } from '@syncfusion/ej2-angular-base';
 import { MaskedTextBox } from '@syncfusion/ej2-inputs';
+import { Template } from '@syncfusion/ej2-angular-base';
 
 
-
-export const inputs: string[] = ['cssClass','customCharacters','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','mask','placeholder','promptChar','readonly','showClearButton','value','width'];
+export const inputs: string[] = ['appendTemplate','cssClass','customCharacters','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','mask','placeholder','prependTemplate','promptChar','readonly','showClearButton','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -45,6 +45,30 @@ export class MaskedTextBoxComponent extends MaskedTextBox implements IComponentB
 	public valueChange: any;
 
 
+    /** 
+     * Specifies the HTML template string for custom elements to prepend to the MaskedTextBox input. 
+     * Supports icons, buttons, or any valid HTML. Updates dynamically on property change.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('prependTemplate')
+    @Template()
+    public prependTemplate: any;
+    /** 
+     * Specifies the HTML template string for custom elements to append to the MaskedTextBox input. 
+     * Supports icons, buttons, or any valid HTML. Updates dynamically on property change.
+     * @default null
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('appendTemplate')
+    @Template()
+    public appendTemplate: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector, private cdr: ChangeDetectorRef) {

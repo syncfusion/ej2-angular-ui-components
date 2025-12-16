@@ -46,13 +46,13 @@ The above command does the below configuration to your Angular app.
  
  * Adds `@syncfusion/ej2-angular-grids` package and its peer dependencies to your `package.json` file.
  * Imports the `GridModule` in your application module `app.module.ts`.
- * Registers the Syncfusion<sup>®</sup> UI default theme (material) in the `angular.json` file.
+ * Registers the Syncfusion<sup>®</sup>  UI default theme (material) in the `angular.json` file.
 
 This makes it easy to add the Syncfusion<sup>®</sup> Angular Grids module to your project and start using it in your application.
 
 ### Add Grid component
 
-In **src/app/app.component.ts**, use `<ejs-grid>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion<sup>®</sup> Angular Grid component.
+In **src/app/app.component.ts**, use `<ejs-grid>` selector in the `template` attribute of the `@Component` directive to render the Syncfusion<sup>®</sup>   Angular Grid component.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

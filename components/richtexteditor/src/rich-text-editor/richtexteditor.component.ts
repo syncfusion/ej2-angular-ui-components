@@ -5,8 +5,8 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['autoSaveOnIdle','backgroundColor','bulletFormatList','codeBlockSettings','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterMediaDelete','afterPasteCleanup','beforeDialogClose','beforeDialogOpen','beforeFileUpload','beforeImageDrop','beforeImageUpload','beforeMediaDrop','beforePasteCleanup','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','selectionChanged','slashMenuItemSelect','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','valueChange'];
+export const inputs: string[] = ['aiAssistantSettings','autoSaveOnIdle','backgroundColor','bulletFormatList','codeBlockSettings','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableClipboardCleanup','enableHtmlEncode','enableHtmlSanitizer','enableMarkdownAutoFormat','enablePersistence','enableResize','enableRtl','enableTabKey','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','lineHeight','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterMediaDelete','afterPasteCleanup','aiAssistantPromptRequest','aiAssistantStopRespondingClick','aiAssistantToolbarClick','beforeClipboardWrite','beforeDialogClose','beforeDialogOpen','beforeFileUpload','beforeImageDrop','beforeImageUpload','beforeMediaDrop','beforePasteCleanup','beforePopupClose','beforePopupOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','blur','change','created','destroyed','dialogClose','dialogOpen','documentExporting','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','selectionChanged','slashMenuItemSelect','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','wordImporting','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -42,6 +42,10 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
 	afterImageDelete: any;
 	afterMediaDelete: any;
 	afterPasteCleanup: any;
+	aiAssistantPromptRequest: any;
+	aiAssistantStopRespondingClick: any;
+	aiAssistantToolbarClick: any;
+	beforeClipboardWrite: any;
 	beforeDialogClose: any;
 	beforeDialogOpen: any;
 	beforeFileUpload: any;
@@ -49,6 +53,8 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
 	beforeImageUpload: any;
 	beforeMediaDrop: any;
 	beforePasteCleanup: any;
+	beforePopupClose: any;
+	beforePopupOpen: any;
 	beforeQuickToolbarOpen: any;
 	beforeSanitizeHtml: any;
 	blur: any;
@@ -57,6 +63,7 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
 	destroyed: any;
 	dialogClose: any;
 	dialogOpen: any;
+	documentExporting: any;
 	fileRemoving: any;
 	fileSelected: any;
 	fileUploadFailed: any;
@@ -78,6 +85,7 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
 	toolbarClick: any;
 	toolbarStatusUpdate: any;
 	updatedToolbarStatus: any;
+	wordImporting: any;
 	public valueChange: any;
 
 
@@ -94,6 +102,9 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
     @ContentChild('valueTemplate')
     @Template()
     public valueTemplate: any;
+    @ContentChild('aiAssistantSettingsBannerTemplate')
+    @Template()
+    public aiAssistantSettings_bannerTemplate: any;
 
     private skipFromEvent:boolean = true;
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector, private cdr: ChangeDetectorRef) {
@@ -204,6 +215,24 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('RichTextEditorCodeBlock');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorClipBoardCleanup');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorAutoFormat');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorAIAssistant');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

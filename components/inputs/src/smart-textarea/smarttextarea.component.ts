@@ -5,8 +5,8 @@ import { SmartTextArea } from '@syncfusion/ej2-inputs';
 
 
 
-export const inputs: string[] = ['UserPhrases','aiSuggestionHandler','cols','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','readonly','resizeMode','rows','showClearButton','showSuggestionOnPopup','userRole','value','width'];
-export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
+export const inputs: string[] = ['UserPhrases','adornmentFlow','adornmentOrientation','aiSuggestionHandler','appendTemplate','cols','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','placeholder','prependTemplate','readonly','resizeMode','rows','showClearButton','showSuggestionOnPopup','userRole','value','width'];
+export const outputs: string[] = ['afterSuggestionInsert','beforeSuggestionInsert','blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -37,6 +37,8 @@ export class SmartTextAreaComponent extends SmartTextArea implements IComponentB
     public formCompContext : any;
     public formContext : any;
     public tagObjects: any;
+	afterSuggestionInsert: any;
+	beforeSuggestionInsert: any;
 	blur: any;
 	change: any;
 	created: any;

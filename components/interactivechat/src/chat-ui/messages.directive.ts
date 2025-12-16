@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['author', 'id', 'isForwarded', 'isPinned', 'mentionUsers', 'replyTo', 'status', 'text', 'timeStamp', 'timeStampFormat'];
+let input: string[] = ['attachedFile', 'author', 'id', 'isForwarded', 'isPinned', 'mentionUsers', 'replyTo', 'status', 'text', 'timeStamp', 'timeStampFormat'];
 let outputs: string[] = [];
 /**
  * Represents the Essential JS 2 Angular ChatUI Component.
@@ -29,6 +29,13 @@ export class MessageDirective extends ComplexBase<MessageDirective> {
 	
 
 
+    /** 
+     * Specifies the list of files attached within the Chat UI. 
+     * This property accepts an array of FileInfo objects that represent the files to be attached. 
+     * By providing these files, they will be rendered during the initial rendering of the component.
+     * @default null
+     */
+    public attachedFile: any;
     /** 
      * Specifies the author of the message in the Chat UI component. 
      * This property references a `UserModel` object that contains details about the user who sent the message.

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['cssClass', 'day', 'label'];
+let input: string[] = ['cssClass', 'day', 'label', 'top'];
 let outputs: string[] = [];
 /**
  * `e-event-markers` directive represent a event marker collection in Gantt. 
@@ -46,6 +46,13 @@ export class EventMarkerDirective extends ComplexBase<EventMarkerDirective> {
      * @default null
      */
     public label: any;
+    /** 
+     * Vertical offset of the label from the timeline top. 
+     * Must be in pixels (e.g., '50px'). Invalid values default to '50px'. 
+     * Negative values are normalized to '50px'.
+     * @default '50px'
+     */
+    public top: any;
 
     constructor(private viewContainerRef:ViewContainerRef) {
         super();

@@ -1,6 +1,6 @@
 # Angular Block Editor Component
 
-A package of Angular blockeditor is a modern, block-based content editing solution for web applications. It provides an intuitive and flexible interface for creating rich, structured documents using interactive content blocks.
+A package of Angular blockeditor is a modern, block-based content editor for web applications. It provides an intuitive interface for composing rich, structured documents using interactive content blocks, inline elements, and contextual tools.
 
 ## What's Included in the Angular Block Editor Package
 
@@ -8,7 +8,7 @@ The Angular Block Editor package includes the following,
 
 ### Angular Block Editor
 
-This [Angular Block Editor](https://www.syncfusion.com/angular-components/angular-blockeditor?utm_source=npm&utm_medium=listing&utm_campaign=angular-blockeditor-npm) component is designed to support a wide range of block types and text formatting options, enabling users to compose and manage content with precision and ease. Whether for document editing, note-taking, or content creation tools, the Block Editor offers a seamless editing experience.
+This [Angular Block Editor](https://www.syncfusion.com/angular-components/angular-blockeditor?utm_source=npm&utm_medium=listing&utm_campaign=angular-blockeditor-npm) is a modern, block-based editor for composing rich, structured documents. It’s ideal for document editing, knowledge bases, note-taking, and content creation tools. The editor provides an intuitive UI with mobile support and modular architecture. It offers multiple block types, inline content (mentions, links, labels), slash commands, and contextual menus, returning well-structured content models and valid HTML when needed.
 
 <p align="center">
   <a href="https://ej2.syncfusion.com/angular/documentation/block-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-blockeditor-npm">Getting Started</a> .
@@ -20,16 +20,47 @@ This [Angular Block Editor](https://www.syncfusion.com/angular-components/angula
 <img alt="Angular Block Editor Component" src="https://raw.githubusercontent.com/SyncfusionExamples/nuget-img/master/angular/angular-blockeditor.png">
 </p>
 
-#### Key features
- 
-* **Multiple block types**: Includes Heading levels 1-4, Paragraph, Lists, Checklist, Quote, Callout, Divider, Code block, and more.
-* **Slash commands**: Interactive `/` commands to insert or transform content blocks efficiently.
+## ⚡️ Quick Start
+
+The Angular Block Editor is easy to set up. Install the package, add a container, import the editor, and initialize it.
+
+### Installation
+
+Install via npm:
+
+```sh
+npm install @syncfusion/ej2-angular-blockeditor
+```
+
+### Add the Editor Element
+
+```html
+  <ejs-blockeditor id="blockEditor" height="500px"></ejs-blockeditor>
+```
+
+### Run the Application
+
+Now, open your project in a browser, and the Block Editor will be displayed! 🚀
+
+<blockquote>
+    <p>ℹ[U+FE0F] <b>Note:</b></p>
+    <span>For more information on using Block Editor with Syncfusion, refer to our <a href="https://ej2.syncfusion.com/documentation/block-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-blockeditor-npm">Documentation</a>.</span>
+</blockquote>
+
+## ✨ Key features
+
+* **Multiple block types**: Includes Heading levels 1-4, Table, Paragraph, Lists, Checklist, Quote, Callout, Divider, Code block, Table blocks and more.
+* **Inline conten**: Insert mentions, anchors, and labels; includes cleanup of mention artifacts.
+* **Slash commands**: Interactive `/` commands to insert or transform content blocks, with filtering and keyboard shortcuts.
 * **Drag and drop**: Reorder blocks effortlessly with built-in drag-and-drop support.
 * **Rich text formatting**: Apply styles such as Bold, Italic, Underline, Strikethrough, Uppercase and more.
 * **Action menu**: Perform block-level operations such as Move, Delete, and Duplicate.
 * **Contextmenu support**: Right-click context menus for quick block actions.
 * **Inline content support**: Insert inline elements like Links, Labels and Mention directly within blocks.
 * **Undo/Redo operations**: Undo and redo support for the user interactions.
+* **Events for Customization**: The Block Editor includes a rich set of events such as block addition, removal, update, selection change, command execution, paste, and mention selection allowing developers to customize and extend functionality easily.
+* **Accessibility & WCAG 2.0 Compliance**: Accessibility support for assistive technologies and keyboard navigation.
+* **Keyboard Navigation**: Navigate and manage blocks efficiently using intuitive keyboard shortcuts for a faster editing experience.
 
 <p align="center">
 Trusted by the world's leading companies
@@ -38,27 +69,19 @@ Trusted by the world's leading companies
   </a>
 </p>
 
-## Setup
-
-To install `blockeditor` and its dependent packages, use the following command.
-
-```sh
-npm install @syncfusion/ej2-angular-blockeditor
-```
-
-## Supported frameworks
+## 🛠️ Supported frameworks
 
 blockeditor components are also offered in following list of frameworks.
 
 | [<img src="https://ej2.syncfusion.com/github/images/js.svg" height="50" />](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/react.svg"  height="50" />](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[React](https://www.syncfusion.com/react-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/vue.svg" height="50" />](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Vue](https://www.syncfusion.com/vue-ui-components?utm_medium=listing&utm_source=github)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netcore.svg" height="50" />](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | [<img src="https://ej2.syncfusion.com/github/images/netmvc.svg" height="50" />](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)<br/>&nbsp;&nbsp;[ASP.NET&nbsp;MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_medium=listing&utm_source=github)&nbsp;&nbsp; | 
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 
-## Showcase samples
+## 🏗️ Showcase samples
 
 * Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loancalculator), [Live Demo]( https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_campaign=slider)
 * Cloud Pricing - [Live Demo](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=slider#/fluent2/range-slider/azure-pricing)
 
-## Resources
+## 📚 Resources
 
 * [Documentation](https://ej2.syncfusion.com/angular/documentation/block-editor/getting-started)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/)
@@ -66,7 +89,7 @@ blockeditor components are also offered in following list of frameworks.
 * [Road Map](https://www.syncfusion.com/products/roadmap/angular)
 * [E-Books](https://www.syncfusion.com/succinctly-free-ebooks?searchkey=angular&type=all)
 
-## Support
+## 🤝 Support
 
 Product support is available through following mediums.
 
@@ -76,11 +99,11 @@ Product support is available through following mediums.
 * [Request feature or report bug](https://www.syncfusion.com/feedback/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-blockeditor-npm)
 * Live chat
 
-## Changelog
+## 🔄 Changelog
 
 Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/components/blockeditor/CHANGELOG.md/?utm_source=npm&utm_campaign=input). Get minor improvements and bug fixes every week to stay up to date with frequent updates.
 
-## License and copyright
+## ⚖️ License and copyright
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
