@@ -2,11 +2,17 @@
 
 ## [Unreleased]
 
-## 32.1.19 (2025-12-16)
+## 32.1.20 (2025-12-23)
 
 ### GanttChart
 
 #### Bug fixes
+
+- `#I791822` - Fixed `gridLines` misalignment when virtualization was enabled in the Firefox browser.
+- `#I791825` - Resolved the issue where vertical `gridLines` disappeared after scrolling with virtualization enabled in Firefox browser.
+- `#I796445` - Resolved the issue where taskbars are not visible while filtering the collapsed record.
+- `#I786381` - Resolved the issue where cyclic dependency validation incorrectly handled Parent-Child task relationships, leading to inaccurate render of dependencies.
+- `#I792757` - Resolved performance degradation during CRUD operations in the React Gantt component when column templates are enabled, delivering improved responsiveness and a smoother user experience.
 
 - `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 

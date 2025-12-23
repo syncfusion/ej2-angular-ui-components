@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 32.1.20 (2025-12-23)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
 ## 32.1.19 (2025-12-16)
 
 ### DateRangePicker

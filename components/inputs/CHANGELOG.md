@@ -2,6 +2,32 @@
 
 ## [Unreleased]
 
+## 32.1.20 (2025-12-23)
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I707657` - Resolved the issue where the blur event returned the previous value instead of the current value after a Ctrl+Z operation.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
+### TextArea
+
+#### Bug Fixes
+
+- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
+
 ## 32.1.19 (2025-12-16)
 
 ### ColorPicker

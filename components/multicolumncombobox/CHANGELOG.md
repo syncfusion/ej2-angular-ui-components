@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.20 (2025-12-23)
+
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I793918` - Fixed an issue where the `popup` list became empty after the data source was updated.
+
 ## 27.1.48 (2024-09-18)
 
 ### MultiColumn ComboBox
