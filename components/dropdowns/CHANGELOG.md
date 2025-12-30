@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### Mention
+
+#### Bug Fixes
+
+- `#F197891` - Resolved the issue where the popup closes immediately after typing '@a'.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I795891` - Fixed an issue where the MultiSelect Dropdown with virtualization failed at a specific record count and addressed the item reorder problem.
+
 ## 32.1.20 (2025-12-23)
 
 ### DropDownTree

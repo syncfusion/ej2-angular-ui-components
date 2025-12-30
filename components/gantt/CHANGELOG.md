@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 32.1.20 (2025-12-23)
 
 ### GanttChart
@@ -14,7 +22,7 @@
 - `#I786381` - Resolved the issue where cyclic dependency validation incorrectly handled Parent-Child task relationships, leading to inaccurate render of dependencies.
 - `#I792757` - Resolved performance degradation during CRUD operations in the React Gantt component when column templates are enabled, delivering improved responsiveness and a smoother user experience.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I796445` - Resolved the issue where taskbars are not visible while filtering the collapsed record.
 
 ## 30.1.37 (2025-06-25)
 

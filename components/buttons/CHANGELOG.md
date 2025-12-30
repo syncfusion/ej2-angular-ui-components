@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### Chip
+
+#### Bug Fixes
+
+- `#790562`,`#790612` - Fixed an issue where chip selection was not retained when changing the selection type and ensured correct handling of dynamically updated string and number indexes in the selectedChips property.
+
 ## 32.1.19 (2025-12-16)
 
 ### Chip

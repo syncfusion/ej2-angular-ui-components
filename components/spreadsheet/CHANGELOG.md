@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.1.21 (2025-12-30)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I787911` - Issue with "left border not applied properly in the merged cells during scrolling" has been resolved.
+
+- `#I795505` - Issue with "bullet points not displaying when pasting tables from PowerPoint into the Spreadsheet due to negative text-indent values" has been resolved.
+
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet

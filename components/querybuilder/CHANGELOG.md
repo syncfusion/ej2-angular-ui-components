@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 32.1.20 (2025-12-23)
+## 32.1.21 (2025-12-30)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#I792871` - Fixed the validation error `popup` positioning issue within a custom scrollable element in QueryBuilder.
+
+## 32.1.19 (2025-12-16)
 
 ### QueryBuilder
 
