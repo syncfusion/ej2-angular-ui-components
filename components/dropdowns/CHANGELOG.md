@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.24 (2026-01-20)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I794030` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ComboBox.
+
 ## 32.1.23 (2026-01-13)
 
 ### MultiSelect

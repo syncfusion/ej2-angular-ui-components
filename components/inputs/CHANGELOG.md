@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 32.1.23 (2026-01-13)
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I798472` - Resolved an issue where the clear button in the Numeric Textbox did not reset the form value when the component was placed inside a form.
-
 ## 32.1.19 (2025-12-16)
 
 ### ColorPicker
@@ -1374,7 +1366,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.20 (2025-12-23)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I798472` - Resolved an issue where the clear button in the Numeric Textbox did not reset the form value when the component was placed inside a form.
+
+## 32.1.20 (2025-12-23)
 
 ### TextBox
 

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.1.23 (2026-01-13)
+## 32.1.24 (2026-01-20)
 
 ### DropDownButton
 
 #### Bug Fixes
 
-- `I796590` - Issue in "DropDownButton Popup stops following its target on window resize" has been resolved.
+- `I801275` - Resolved memory leak issue in the window resize handler of DropDownButton.
 
 ## 28.1.33 (2024-12-12)
 
@@ -284,4 +284,11 @@ SplitButton component has primary and secondary button. Primary button is used t
 
 - **Separator** - Supports Popup items grouping by using the Separator.
 
-- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.
+- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- `I796590` - Issue in "DropDownButton Popup stops following its target on window resize" has been resolved.
+

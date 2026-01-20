@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 32.1.24 (2026-01-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I796692` - Issue with "the defined names not working with `non-ASCII` characters" has been resolved.
+- `#I798245` - Issue with "the `TIME` and `NOW` formulas returned incorrect output when the spreadsheet was rendered in other culture" has been resolved.
+- `#I798245` - Issue with "the `TEXT` formula returned an empty string instead of the month name when using the `mmmm` format" has been resolved.
+- `#I798245` - Issue with "the `VLOOKUP` formula returned `#REF!` error after adding and deleting a non formula referenced sheet" has been resolved.
+
 ## 32.1.21 (2025-12-30)
 
 ### Spreadsheet

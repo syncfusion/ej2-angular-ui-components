@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 32.1.24 (2026-01-20)
+
+### GanttChart
+
+#### Bug fix
+
+- `#I800500` - Resolved the issue where `calendarSettings` were not applied correctly when child tasks property were mapped with an empty array.
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 32.1.23 (2026-01-13)
 
 ### GanttChart
@@ -9,10 +21,6 @@
 #### Bug fix
 
 - `#I797272` - Fixed issue where the critical path was rendered incorrectly when `updateOffsetOnTaskbarEdit` was set to false.
-
-#### Bug fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 32.1.21 (2025-12-30)
 
