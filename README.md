@@ -60,7 +60,7 @@ Real-world demos built with Syncfusion Angular components:
 - **Webmail** — Responsive email client  
   [Demo](https://ej2.syncfusion.com/showcase/angular/webmail/) | [GitHub](https://github.com/syncfusion/ej2-showcase-angular-webmail)
 - **Fitness Tracker** — Health monitoring with visualizations  
-  [Demo](https://ej2.syncfusion.com/showcase/angular/fitness-tracker/)
+  [Demo](https://ej2.syncfusion.com/showcase/angular/fitness-tracker-app/)
 - **Loan Calculator** — Interactive computations  
   [Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/)
 - **Diagram Builder** — Drag-and-drop diagramming  
