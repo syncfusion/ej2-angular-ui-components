@@ -74,7 +74,7 @@ Explore more at: https://www.syncfusion.com/showcase-apps/angular
 The Essential JS 2 is also offered in following list of frameworks.
 * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
-* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-react-ui-components)
+* [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 
