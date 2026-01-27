@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.1.25 (2026-01-27)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#I802697` - Fixed duplicate rules appearing when cloning nested groups in QueryBuilder.
+
 ## 32.1.19 (2025-12-16)
 
 ### QueryBuilder

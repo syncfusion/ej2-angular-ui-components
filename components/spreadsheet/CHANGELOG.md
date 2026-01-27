@@ -2,17 +2,6 @@
 
 ## [Unreleased]
 
-## 32.1.24 (2026-01-20)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I796692` - Issue with "the defined names not working with `non-ASCII` characters" has been resolved.
-- `#I798245` - Issue with "the `TIME` and `NOW` formulas returned incorrect output when the spreadsheet was rendered in other culture" has been resolved.
-- `#I798245` - Issue with "the `TEXT` formula returned an empty string instead of the month name when using the `mmmm` format" has been resolved.
-- `#I798245` - Issue with "the `VLOOKUP` formula returned `#REF!` error after adding and deleting a non formula referenced sheet" has been resolved.
-
 ## 32.1.21 (2025-12-30)
 
 ### Spreadsheet
@@ -1436,7 +1425,18 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 32.1.24 (2026-01-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I796692` - Issue with "the defined names not working with `non-ASCII` characters" has been resolved.
+- `#I798245` - Issue with "the `TIME` and `NOW` formulas returned incorrect output when the spreadsheet was rendered in other culture" has been resolved.
+- `#I798245` - Issue with "the `TEXT` formula returned an empty string instead of the month name when using the `mmmm` format" has been resolved.
+- `#I798245` - Issue with "the `VLOOKUP` formula returned `#REF!` error after adding and deleting a non formula referenced sheet" has been resolved.
+
+## 32.1.22 (2026-01-06)
 
 ### Spreadsheet
 

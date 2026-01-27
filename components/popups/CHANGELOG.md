@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.1.25 (2026-01-27)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I802080` - Resolved the issue where the Document Editor lost focus after closing a dialog.
+
+- `#T801239` - Fixed an issue where focus escaped the modal dialog during Tab navigation when footer buttons were hidden or disabled.
+
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip
