@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.3 (2026-02-05)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#T802026` - Fixed an issue where the Tooltip rendered HTML entities as symbols even when enableHtmlParse and enableHtmlSanitizer were disabled.
+
 ## 32.1.25 (2026-01-27)
 
 ### Dialog

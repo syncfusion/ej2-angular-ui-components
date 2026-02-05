@@ -4,7 +4,7 @@ import { ListView } from '@syncfusion/ej2-lists';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['animation','checkBoxPosition','cssClass','dataSource','enable','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','fields','groupTemplate','headerTemplate','headerTitle','height','htmlAttributes','locale','query','showCheckBox','showHeader','showIcon','sortOrder','template','width'];
+export const inputs: string[] = ['animation','checkBoxPosition','cssClass','dataSource','enable','enableHtmlSanitizer','enablePersistence','enableRtl','enableVirtualization','enabled','fields','groupTemplate','headerTemplate','headerTitle','height','htmlAttributes','locale','query','showCheckBox','showHeader','showIcon','sortOrder','template','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','scroll','select'];
 export const twoWays: string[] = [''];
 

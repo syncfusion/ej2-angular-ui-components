@@ -2,19 +2,13 @@
 
 ## [Unreleased]
 
-## 32.1.25 (2026-01-27)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I801682` - Resolved the issue where arrow key navigation failed when Autofill was enabled during filtering.
+## 32.2.3 (2026-02-05)
 
 ### MultiSelect
 
 #### Bug Fixes
 
-- `#I798150` - Resolved the issue where the Multiselect popup did not close when clicking outside while using the `showPopup` method.
+- `#I694939` - Fixed an issue where preselected values were not displayed correctly in Angular when using virtualization with checkbox mode.
 
 ## 32.1.23 (2026-01-13)
 
@@ -2486,7 +2480,21 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.1.24 (2026-01-20)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.1.25 (2026-01-27)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I801682` - Resolved the issue where arrow key navigation failed when Autofill was enabled during filtering.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I798150` - Resolved the issue where the Multiselect popup did not close when clicking outside while using the `showPopup` method.
+
+## 32.1.24 (2026-01-20)
 
 ### ComboBox
 

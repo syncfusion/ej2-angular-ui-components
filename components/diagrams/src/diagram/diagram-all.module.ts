@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout, ImportAndExportVisio} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -33,6 +33,7 @@ export const ConnectorEditingService: ValueProvider = { provide: 'DiagramsConnec
 export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDistribution', useValue: LineDistribution};
 export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Serialization', useValue: Ej1Serialization};
 export const FlowchartLayoutService: ValueProvider = { provide: 'DiagramsFlowchartLayout', useValue: FlowchartLayout};
+export const ImportAndExportVisioService: ValueProvider = { provide: 'DiagramsImportAndExportVisio', useValue: ImportAndExportVisio};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -61,7 +62,8 @@ export const FlowchartLayoutService: ValueProvider = { provide: 'DiagramsFlowcha
         ConnectorEditingService,
         LineDistributionService,
         Ej1SerializationService,
-        FlowchartLayoutService
+        FlowchartLayoutService,
+        ImportAndExportVisioService
     ]
 })
 export class DiagramAllModule { }

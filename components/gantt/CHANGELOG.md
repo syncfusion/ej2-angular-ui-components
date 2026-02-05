@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.3 (2026-02-05)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 32.1.25 (2026-01-27)
 
 ### GanttChart
@@ -11,7 +19,9 @@
 - `#I802590` - Fixed issue where task dates were rendered incorrectly when adding a dependency with timezone set to UTC.
 - `#I803975` - Fixed the console error triggered by dragging rows and hovering over the chart in Firefox browser.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+#### Bug fix
+
+- `#I803975` - Fixed the console error triggered by dragging rows and hovering over the chart in Firefox browser.
 
 ## 32.1.24 (2026-01-20)
 

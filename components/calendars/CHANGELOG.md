@@ -2,7 +2,13 @@
 
 ## [Unreleased]
 
-## 32.1.25 (2026-01-27)
+## 32.2.3 (2026-02-05)
+
+### Calendar
+
+#### Bug Fixes
+
+- `#I802045` - Fixed an issue where the Calendar is not behaving as expected when placed within a ContextMenu.
 
 ### DatePicker
 
