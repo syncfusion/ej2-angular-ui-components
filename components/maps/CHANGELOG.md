@@ -8,6 +8,14 @@
 
 ## [Unreleased]
 
+## 32.2.4 (2026-02-11)
+
+### Maps
+
+#### Bug fixes
+
+- `#I807214` - The map will no longer pan after resetting the zoom.
+
 ## 32.1.21 (2025-12-30)
 
 ### Maps

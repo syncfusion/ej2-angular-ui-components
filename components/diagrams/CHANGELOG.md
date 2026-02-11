@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 32.2.4 (2026-02-11)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I806066` - Resolved selection tool not activated issue for nodes that exceed the page settings bounds.
+- `#I808217` - Resolved the undefined exception occurs while setting allowDrag to false for symbol palette.
+
 ## 32.1.25 (2026-01-27)
 
 ### Diagram

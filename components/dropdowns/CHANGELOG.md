@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.3 (2026-02-05)
+## 32.2.4 (2026-02-11)
 
-### MultiSelect
+### DropDownList
 
-#### Bug Fixes
+#### Bug fixes
 
-- `#I694939` - Fixed an issue where preselected values were not displayed correctly in Angular when using virtualization with checkbox mode.
+- `#I801864` - The issue with programmatic value binding in a virtualization dropdown has been fixed.
 
 ## 32.1.23 (2026-01-13)
 
@@ -2480,7 +2480,15 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.1.25 (2026-01-27)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.2.3 (2026-02-05)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I694939` - Fixed an issue where preselected values were not displayed correctly in Angular when using virtualization with checkbox mode.
+
+## 32.1.25 (2026-01-27)
 
 ### ComboBox
 

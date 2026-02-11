@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.2.4 (2026-02-11)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I801058` - Issue with "wrap not calculated correctly for cells in the same row during initial rendering" has been resolved.
+
+- `#I802216` - Issue with "delay occurs while switching to the sheet containing a `MATCH` formula nested within an `INDEX` formula" has been resolved.
+
 ## 32.2.3 (2026-02-05)
 
 ### Spreadsheet

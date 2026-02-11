@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.3 (2026-02-05)
+## 32.2.4 (2026-02-11)
 
 ### QueryBuilder
 
 #### Bug Fixes
 
-`#I802697` - Fixed duplicate rules appearing when cloning nested groups in QueryBuilder.
+`#I802697` - Fixed the issue where Clone Group was inserting cloned rules into the parent group instead of creating a new root-level sibling group.
 
 ## 32.1.19 (2025-12-16)
 
@@ -781,7 +781,15 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 32.1.21 (2025-12-30)
+- **Queries**: Queries supports JSON/SQL rules.## 32.1.25 (2026-01-27)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#I802697` - Fixed duplicate rules appearing when cloning nested groups in QueryBuilder.
+
+## 32.1.21 (2025-12-30)
 
 ### QueryBuilder
 

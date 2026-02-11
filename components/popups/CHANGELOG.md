@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.3 (2026-02-05)
+## 32.2.4 (2026-02-11)
 
-### Tooltip
+### Dialog
 
 #### Bug Fixes
 
-- `#T802026` - Fixed an issue where the Tooltip rendered HTML entities as symbols even when enableHtmlParse and enableHtmlSanitizer were disabled.
+- `#I802885` - The issue related to abnormal dialog behaviour during resize and drag operations has been resolved.
 
 ## 32.1.25 (2026-01-27)
 
@@ -669,7 +669,15 @@ Dialog is a window that displays information to the user, and used to get the us
 
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 
-- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 18.1.42 (2020-04-01)
+- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 32.2.3 (2026-02-05)
+
+### Tooltip
+
+#### Bug Fixes
+
+- `#T802026` - Fixed an issue where the Tooltip rendered HTML entities as symbols even when enableHtmlParse and enableHtmlSanitizer were disabled.
+
+## 18.1.42 (2020-04-01)
 
 ### Tooltip
 

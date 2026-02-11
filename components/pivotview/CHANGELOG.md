@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.4 (2026-02-11)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- PDF exports now preserve indentation, values, subtotals, and visual formatting consistent with the Pivot Table UI, ensuring exported documents match on‑screen presentation for review and distribution.
+
 ## 32.2.3 (2026-02-05)
 
 ### Pivot Table
