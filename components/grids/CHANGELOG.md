@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 32.2.5 (2026-02-17)
+
+### Grid
+
+#### Bug fixes
+
+- `#I806203` - Resolved an issue where initial filtering did not work when applying multiple date values with `greaterthanorequal` and `lessthanorequal` operators.
+- `#I807300` - Resolved an issue where a script error occurs during Pdf export when the stacked header has no visible columns.
+- `#I792923` - Memory leak issue when deleting a record with `showAddNewRow` enabled has been resolved.
+
 ## 32.2.3 (2026-02-05)
 
 ### Grid

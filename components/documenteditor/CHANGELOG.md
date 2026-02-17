@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.5 (2026-02-17)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#I802098` - Incorrect transparency applied to the header shape during rendering.
+
 ## 32.2.4 (2026-02-11)
 
 ### DocumentEditor

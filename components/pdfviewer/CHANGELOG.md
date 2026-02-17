@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 32.2.5 (2026-02-17)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I802786` - Resolved an issue where the free text annotation was not rendering similar to Adobe PDF Viewer.
+- `#I803496` - Resolved an issue where opacity was not applied properly for free text when setting through the `freeTextSettings` API in edit mode.
+- `#I804127` - Resolved an issue where the free text annotation position changed in the downloaded PDF when opened in other viewers.
+- `#I804293` - Resolved an issue where the free text annotation height increased when typing at zoom levels below 100%.
+- `#I807821` - Resolved an issue where the size of existing free text annotations changed while editing.
+- `#I808119` - Resolved an issue where the selected state of the Ink annotation tool was not removed when selecting the free text tool.
+- `#I809604` - Resolved an issue where measurement settings were not applied to calibration annotations that were added programmatically.
+- `#I809631` - Fixed an issue where both `strikethrough` and underline were not applied to free text annotations.
+- `#I808218` - Fixed an issue where the primary toolbar was hidden on PDF click after updating the viewer container while the annotation toolbar was open.
+
 ## 32.2.4 (2026-02-11)
 
 ### PDF Viewer

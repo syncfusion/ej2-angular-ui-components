@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 32.2.5 (2026-02-17)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I811186` - Fixed an issue where, with virtualization enabled and `enableVirtualMaskRow` set to false, scrolling caused initially loaded records to become hidden.
+- `#I811633` - Fixed an issue in the `rowSelecting` event where the target value was not properly reset when performing a right-click action using a mouse pad / trackpad.
+- `#I810428` - Fixed timeline cell misalignment in PDF export when `projectStartDate` is entered in `YYYY-MM-DD` format.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 32.2.4 (2026-02-11)
 
 ### GanttChart
@@ -13,8 +25,6 @@
 - `#I805439` - Fixed incorrect task validations when editing a child task with dependencies.
 - `#I804804` - Resolved the issue for dynamically modifying the edited record values in the `actionBegin` event by using the field mapping names defined in the `taskFields` for that respective record.
 - `#I805685` - Resolved an issue where unnecessary white space appeared at the bottom of the chart during vertical scrolling after tasks were collapsed.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 32.1.25 (2026-01-27)
 

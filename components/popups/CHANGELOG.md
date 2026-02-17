@@ -2,13 +2,15 @@
 
 ## [Unreleased]
 
-## 32.2.4 (2026-02-11)
+## 32.2.5 (2026-02-17)
 
 ### Dialog
 
 #### Bug Fixes
 
 - `#I802885` - The issue related to abnormal dialog behaviour during resize and drag operations has been resolved.
+
+- `#F198040` - Fixed an issue where the Dialog would unlock body scrolling while another dialog was still open.
 
 ## 32.1.25 (2026-01-27)
 
