@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Dialog.
+
 ## 32.2.5 (2026-02-17)
 
 ### Dialog

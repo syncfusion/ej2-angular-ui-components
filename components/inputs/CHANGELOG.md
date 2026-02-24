@@ -2,6 +2,52 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Uploader.
+
+### Signature
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Signature.
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ColorPicker.
+
+- `#I811155` - Resolved an issue where `colorpicker` appeared beneath Angular `dialogs` in Angular 21.
+
+### TextArea
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextArea
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextBox.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion MaskedTextBox.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion NumericTextBox.
+
 ## 32.2.5 (2026-02-17)
 
 ### Slider

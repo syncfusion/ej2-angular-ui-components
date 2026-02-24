@@ -113,9 +113,23 @@ export class DropDownListComponent extends DropDownList implements IComponentBas
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
+    /** 
+     * Accepts the template design and assigns it to popup list of component 
+     * when no data is available on the component.
+     * @default 'No records found'
+     * @asptype string
+     * @deprecated 
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;
+    /** 
+     * Accepts the template and assigns it to the popup list content of the component 
+     * when the data fetch request from the remote server fails.
+     * @default 'Request failed'
+     * @asptype string
+     * @deprecated 
+     */
     @ContentChild('actionFailureTemplate')
     @Template('Request failed')
     public actionFailureTemplate: any;

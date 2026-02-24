@@ -2,7 +2,56 @@
 
 ## [Unreleased]
 
-## 32.2.5 (2026-02-17)
+## 32.2.7 (2026-02-24)
+
+### DropDownTree
+
+#### Feature
+
+- `#I803243` - Introduced the new `disableHtmlEncode` property to control how text content is rendered in the Dropdown Tree. When set to `true`, the component will render raw text exactly as provided (including HTML tags or special characters) without encoding or truncation. To preserve and render raw HTML content correctly, `enableHtmlSanitizer` must also be set to `false`. This update provides greater flexibility in displaying literal text and HTML content within Dropdown Tree nodes.
+
+**Example Usage**
+
+```typescript
+  import { DropDownTree } from '@syncfusion/ej2-dropdowns';
+  let data: Object[] = [ { id: '1', name: 'Australia' }, { id: '2', name: 'New<york' }, { id: '3', name: 'Normal Text' } ];
+    //Initialize DropDownTree control 
+    let dropDownTreeObj: DropDownTree = new DropDownTree({
+        fields: { dataSource: data, value: 'id', text: 'name' }, 
+        disableHtmlEncode: true, 
+        enableHtmlSanitizer: false
+    });
+    //Render initialized DropDownTree 
+    dropDownTreeObj.appendTo('#ddt');
+```
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion MultiSelect.
+
+### Mention
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Mention.
+
+- `#I811155` - Resolved an issue where mention appeared beneath Angular `dialogs` in Angular 21.
+
+### ListBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ListBox.
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I794030` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion DropDownList.
+
+## 32.2.4 (2026-02-11)
 
 ### DropDownList
 

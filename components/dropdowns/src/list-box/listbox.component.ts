@@ -68,6 +68,13 @@ export class ListBoxComponent extends ListBox implements IComponentBase {
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
+    /** 
+     * Accepts the template design and assigns it to popup list of component 
+     * when no data is available on the component.
+     * @default 'No records found'
+     * @asptype string
+     * @deprecated 
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;

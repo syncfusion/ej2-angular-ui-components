@@ -64,6 +64,10 @@ export class MentionComponent extends Mention implements IComponentBase {
     @ContentChild('spinnerTemplate')
     @Template()
     public spinnerTemplate: any;
+    /** 
+     * Specifies the template for no matched item which is displayed when there are no items to display in the suggestion list.
+     * @default 'No records found'
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;

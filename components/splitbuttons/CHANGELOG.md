@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 32.2.7 (2026-02-24)
+
+### DropDownButton
+
+#### Bug Fixes
+
+- `#I811155` - Resolved an issue where `dropdownbutton` appeared beneath Angular `dialogs` in Angular 21.
+
+### SplitButton
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Split buttons.
+
+- `#I811155` - Resolved an issue where `splitbutton` appeared beneath Angular `dialogs` in Angular 21.
+
 ## 32.1.24 (2026-01-20)
 
 ### DropDownButton

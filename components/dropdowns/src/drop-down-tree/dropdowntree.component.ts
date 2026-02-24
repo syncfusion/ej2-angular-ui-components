@@ -5,7 +5,7 @@ import { DropDownTree } from '@syncfusion/ej2-dropdowns';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','destroyPopupOnHide','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','valueTemplate','width','wrapText','zIndex'];
+export const inputs: string[] = ['actionFailureTemplate','allowFiltering','allowMultiSelection','changeOnBlur','cssClass','customTemplate','delimiterChar','destroyPopupOnHide','disableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','enabled','fields','filterBarPlaceholder','filterType','floatLabelType','footerTemplate','headerTemplate','htmlAttributes','ignoreAccent','ignoreCase','itemTemplate','locale','mode','noRecordsTemplate','placeholder','popupHeight','popupWidth','readonly','selectAllText','showCheckBox','showClearButton','showDropDownIcon','showSelectAll','sortOrder','text','treeSettings','unSelectAllText','value','valueTemplate','width','wrapText','zIndex'];
 export const outputs: string[] = ['actionFailure','beforeOpen','blur','change','close','created','dataBound','destroyed','filtering','focus','keyPress','open','select','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -103,9 +103,21 @@ export class DropDownTreeComponent extends DropDownTree implements IComponentBas
     @ContentChild('itemTemplate')
     @Template()
     public itemTemplate: any;
+    /** 
+     * Specifies the template that renders a customized pop-up list content when there is no data available 
+     * to be displayed within the pop-up.
+     * @default 'No Records Found'
+     * @asptype string
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No Records Found')
     public noRecordsTemplate: any;
+    /** 
+     * Specifies the template that renders to the popup list content of the 
+     * Dropdown Tree component when the data fetch request from the remote server fails.
+     * @default 'The Request Failed'
+     * @asptype string
+     */
     @ContentChild('actionFailureTemplate')
     @Template('The Request Failed')
     public actionFailureTemplate: any;

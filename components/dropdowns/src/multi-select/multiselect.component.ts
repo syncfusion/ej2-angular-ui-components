@@ -119,9 +119,21 @@ export class MultiSelectComponent extends MultiSelect implements IComponentBase 
     @ContentChild('groupTemplate')
     @Template()
     public groupTemplate: any;
+    /** 
+     * Accepts the template design and assigns it to popup list of MultiSelect component 
+     * when no data is available on the component.
+     * @default 'No records found'
+     * @asptype string
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;
+    /** 
+     * Accepts the template and assigns it to the popup list content of the MultiSelect component 
+     * when the data fetch request from the remote server fails.
+     * @default 'Request failed'
+     * @asptype string
+     */
     @ContentChild('actionFailureTemplate')
     @Template('Request failed')
     public actionFailureTemplate: any;
