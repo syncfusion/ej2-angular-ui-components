@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.8 (2025-12-22)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I814842` - Resolved an issue where dropdownlist appeared beneath Angular `dialogs` in Angular 21.
+
 ## 32.2.7 (2026-02-24)
 
 ### DropDownTree

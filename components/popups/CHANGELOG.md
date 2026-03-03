@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.7 (2026-02-24)
+## 32.2.8 (2025-12-22)
 
-### Dialog
+### Tooltip
 
 #### Bug Fixes
 
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Dialog.
+- `#I814842` - Resolved an issue where tooltip appeared beneath Angular `dialogs` in Angular 21.
 
 ## 32.2.5 (2026-02-17)
 
@@ -679,7 +679,15 @@ Dialog is a window that displays information to the user, and used to get the us
 
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 
-- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 32.2.3 (2026-02-05)
+- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 32.2.7 (2026-02-24)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Dialog.
+
+## 32.2.3 (2026-02-05)
 
 ### Tooltip
 

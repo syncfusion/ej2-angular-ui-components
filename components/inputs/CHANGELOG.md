@@ -2,51 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.7 (2026-02-24)
-
-### Uploader
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Uploader.
-
-### Signature
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Signature.
-
-### ColorPicker
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ColorPicker.
-
-- `#I811155` - Resolved an issue where `colorpicker` appeared beneath Angular `dialogs` in Angular 21.
-
-### TextArea
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextArea
+## 32.2.8 (2025-12-22)
 
 ### TextBox
 
 #### Bug Fixes
 
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextBox.
-
-### MaskedTextBox
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion MaskedTextBox.
-
-### NumericTextBox
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion NumericTextBox.
+- `#I816493` - Fixed an issue where the `getComponent` method failed to retrieve TextBox component instances correctly.
 
 ## 32.2.5 (2026-02-17)
 
@@ -1420,7 +1382,53 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 32.2.7 (2026-02-24)
+
+### Uploader
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Uploader.
+
+### Signature
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Signature.
+
+### ColorPicker
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ColorPicker.
+
+- `#I811155` - Resolved an issue where `colorpicker` appeared beneath Angular `dialogs` in Angular 21.
+
+### TextArea
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextArea
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion TextBox.
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion MaskedTextBox.
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion NumericTextBox.
+
+## 32.1.22 (2026-01-06)
 
 ### NumericTextBox
 
