@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.8 (2025-12-22)
+## 32.2.9 (2026-03-10)
 
-### Speed Dial
+### Chip
 
 #### Bug Fixes
 
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Speed Dial.
+- `#I812433` - The issue where the "click event was triggered twice in the Angular Chip component" has been resolved.
 
 ## 32.1.23 (2026-01-13)
 
@@ -541,7 +541,15 @@ RadioButton is a graphical user interface element that allows to select one opti
 
 - **Label** - Supports label and its positioning.
 
-- **Sizes** - Provided with different sizes of RadioButton.## 32.1.21 (2025-12-30)
+- **Sizes** - Provided with different sizes of RadioButton.## 32.2.7 (2026-02-24)
+
+### Speed Dial
+
+#### Bug Fixes
+
+- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Speed Dial.
+
+## 32.1.21 (2025-12-30)
 
 ### Chip
 

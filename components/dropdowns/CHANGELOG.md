@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 
-## 32.2.8 (2025-12-22)
+## 32.2.9 (2026-03-10)
 
 ### DropDownList
 
 #### Bug Fixes
 
-- `#I814842` - Resolved an issue where dropdownlist appeared beneath Angular `dialogs` in Angular 21.
+- `#I812495` - The issue with programmatic value binding in a virtualization dropdown has been fixed.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I808111` - Fixed an issue where an empty popup appeared after selecting all items by properly closing the popup when all values are selected.
+
+- `#I816580` - Fixed the issue where the `selectedAll` event was not providing the complete data from the value property.
 
 ## 32.2.7 (2026-02-24)
 
@@ -2537,7 +2545,15 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.2.3 (2026-02-05)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.2.8 (2025-12-22)
+
+### DropDownList
+
+#### Bug Fixes
+
+- `#I814842` - Resolved an issue where dropdownlist appeared beneath Angular `dialogs` in Angular 21.
+
+## 32.2.3 (2026-02-05)
 
 ### MultiSelect
 

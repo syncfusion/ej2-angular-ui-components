@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 32.2.9 (2026-03-10)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I802697` - Fixed the issue When cloning the first group, the getValidRules method returns incorrect rule data.
+
 ## 32.1.19 (2025-12-16)
 
 ### QueryBuilder

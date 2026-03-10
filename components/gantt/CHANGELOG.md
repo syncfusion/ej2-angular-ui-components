@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 32.2.9 (2026-03-10)
+
+### GanttChart
+
+#### Bug fix
+
+- `I816571` - The issue where the `rowSelected` event returned an incorrect target element while selecting rows on Grid side in iPad Safari has been resolved.
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 32.2.8 (2025-12-22)
 
 ### GanttChart
@@ -12,7 +24,8 @@
 - `#I816171` - Fixed an issue where the baseline tooltip displayed incorrect values after applying a filter.
 - `#I813079` - Fixed an issue where the spinner remained visible after dynamically clearing filters via an external button or checkbox click.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I814670` - Fixed an issue where, after performing `zoomToFit` with virtualization, vertical scrolling caused the chart to jump to the selected row instead of scrolling down.
+- `#I813079` - Fixed an issue where the spinner remained visible after dynamically clearing filters via an external button or checkbox click.
 
 ## 32.2.7 (2026-02-24)
 

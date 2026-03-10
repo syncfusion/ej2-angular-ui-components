@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 32.2.9 (2026-03-10)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I810308` - Fixed an issue where grouped radio buttons did not update their selected state correctly during interaction.
+- `#I810736` - Resolved a script error that occurred when annotation comments were edited programmatically after the annotation was locked.
+- `#I813442` - Fixed an issue where the Angular Material Dialog was not properly disposed after closing when the PDF Viewer was used inside it.
+- `#I813892` - Resolved an issue where `exportAsImages` returned empty or invalid image data when exporting after loading a second password-protected document.
+
 ## 32.2.8 (2025-12-22)
 
 ### PDF Viewer
