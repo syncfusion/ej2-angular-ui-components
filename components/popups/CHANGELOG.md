@@ -2,34 +2,6 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#I814842` - Resolved an issue where tooltip appeared beneath Angular `dialogs` in Angular 21.
-
-## 32.2.5 (2026-02-17)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I802885` - The issue related to abnormal dialog behaviour during resize and drag operations has been resolved.
-
-- `#F198040` - Fixed an issue where the Dialog would unlock body scrolling while another dialog was still open.
-
-## 32.1.25 (2026-01-27)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I802080` - Resolved the issue where the Document Editor lost focus after closing a dialog.
-
-- `#T801239` - Fixed an issue where focus escaped the modal dialog during Tab navigation when footer buttons were hidden or disabled.
-
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip
@@ -679,23 +651,7 @@ Dialog is a window that displays information to the user, and used to get the us
 
 - **Accessibility** - Built-in compliance with the WAI-ARIA specifications.
 
-- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 32.2.7 (2026-02-24)
-
-### Dialog
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Dialog.
-
-## 32.2.3 (2026-02-05)
-
-### Tooltip
-
-#### Bug Fixes
-
-- `#T802026` - Fixed an issue where the Tooltip rendered HTML entities as symbols even when enableHtmlParse and enableHtmlSanitizer were disabled.
-
-## 18.1.42 (2020-04-01)
+- **Keyboard Interaction** - The Dialog can be intractable through keyboard.## 18.1.42 (2020-04-01)
 
 ### Tooltip
 

@@ -85,9 +85,25 @@ export class MultiColumnComboBoxComponent extends MultiColumnComboBox implements
     @ContentChild('groupTemplate')
     @Template()
     public groupTemplate: any;
+    /** 
+     * Accepts the template design and assigns it to popup list of component when no data is available on the component.
+     * @default 'No records found'
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
     @ContentChild('noRecordsTemplate')
     @Template('No records found')
     public noRecordsTemplate: any;
+    /** 
+     * Accepts the template and assigns it to the popup content when the data fetch request from the remote server fails.
+     * @default 'Request Failed'
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
     @ContentChild('actionFailureTemplate')
     @Template('Request Failed')
     public actionFailureTemplate: any;

@@ -2,69 +2,7 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### Common
-
-#### Feature
-
-- `#I803243` - Introduced the new `disableHtmlEncode` property to control how text content is rendered in the List components. When set to `true`, the component will render raw text exactly as provided (including HTML tags or special characters) without encoding or truncation. To preserve and render raw HTML content correctly, `enableHtmlSanitizer` must also be set to `false`. This update provides greater flexibility in displaying literal text and HTML content within List text.
-
-**Example Usage**
-
-```typescript
-  import { ListView } from '@syncfusion/ej2-lists';
-  const data: { id: string, text: string }[] = [
-    { id: '1', text: 'Australia' },
-    { id: '2', text: 'New<york' },
-    { id: '3', text: 'Normal Text' }
-  ];
-  const listview = new ListView({
-    fields: { dataSource: data, id: 'id', text: 'text' },
-    disableHtmlEncode: true,
-    enableHtmlSanitizer: false
-  });
-listview.appendTo('#listview');
-```
-
-## 32.2.3 (2026-02-05)
-
-### ListView
-
-#### Feature
-
-- `#I770932` – Introduced the new `enabled` property to enable or disable the ListView, replacing the older `enable` API. This update improves consistency with standard naming conventions and enhances clarity in documentation.
-
-**Example Usage**
-
-```typescript
-  import {ListView} from '@syncfusion/ej2-lists';
-  let arts: string[] = ["Artwork", "Abstract", "Modern Painting", "Ceramics", "Animation Art", "Oil Painting"];
-
-    //Initialize ListView control
-    let listviewObject: ListView = new ListView({
-        //set the data to datasource property
-        dataSource: arts,
-        enabled: false
-    });
-
-    //Render initialized ListView
-    listviewObject.appendTo("#list");
-```
-
-**Deprecated**
-
-- The `enable` property has been deprecated and replaced with `enabled` to align with API standards. The deprecated `enable` property will be supported for four major releases before removal.
-
-## 32.1.23 (2026-01-13)
-
-### ListView
-
-#### Bug Fixes
-
-- `#I758967` -  The issue where the context value of the selected item was returning `undefined` in the ListView `select` event when virtualization was enabled has been resolved.
-
-## 32.1.19 (2025-12-16)
+## 33.1.44 (2026-03-16)
 
 ### ListView
 

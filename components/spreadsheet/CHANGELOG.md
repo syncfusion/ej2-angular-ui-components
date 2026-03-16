@@ -2,52 +2,6 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I817595` - Issue with "formula parsing failing when a formula containing a cell reference ending in 0 is immediately followed by the division operator and a quoted sheet reference, resulting in an incorrect result" has been resolved.
-
-## 32.2.5 (2026-02-17)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I798632` - Issue with "image position not being preserved after performing a drag and drop operation when saving and reloading the `JSON`" has been resolved.
-
-- `#I807278` - Issue with "the threaded comment's created time were adjusted improperly due to the web service time zone during importing" has been resolved.
-
-## 32.2.4 (2026-02-11)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I801058` - Issue with "wrap not calculated correctly for cells in the same row during initial rendering" has been resolved.
-
-- `#I802216` - Issue with "delay occurs while switching to the sheet containing a `MATCH` formula nested within an `INDEX` formula" has been resolved.
-
-## 32.2.3 (2026-02-05)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I795894` - Issue with "cell values containing large decimal values not rounding correctly when a number format is applied" has been resolved.
-
-## 32.1.21 (2025-12-30)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I787911` - Issue with "left border not applied properly in the merged cells during scrolling" has been resolved.
-
-- `#I795505` - Issue with "bullet points not displaying when pasting tables from PowerPoint into the Spreadsheet due to negative text-indent values" has been resolved.
-
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet
@@ -1461,28 +1415,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 32.1.24 (2026-01-20)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I796692` - Issue with "the defined names not working with `non-ASCII` characters" has been resolved.
-- `#I798245` - Issue with "the `TIME` and `NOW` formulas returned incorrect output when the spreadsheet was rendered in other culture" has been resolved.
-- `#I798245` - Issue with "the `TEXT` formula returned an empty string instead of the month name when using the `mmmm` format" has been resolved.
-- `#I798245` - Issue with "the `VLOOKUP` formula returned `#REF!` error after adding and deleting a non formula referenced sheet" has been resolved.
-
-## 32.1.22 (2026-01-06)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I798245` - Issue with "the `COUNTIF` formula evaluating incorrectly when referencing a single cell" has been resolved.
-- `#I798245` - Issue with "the `DATEVALUE` formula evaluating incorrectly when given a date string without a year" has been resolved.
-- `#I798245` - Issue with "the `TEXT` formula evaluating incorrectly when using the `aaaa` or `aaa` format codes" has been resolved.
-
-## 31.2.16 (2025-12-02)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.16 (2025-12-02)
 
 ### Spreadsheet
 

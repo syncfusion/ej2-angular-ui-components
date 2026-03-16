@@ -4,8 +4,8 @@ import { BlockEditor } from '@syncfusion/ej2-blockeditor';
 
 
 
-export const inputs: string[] = ['blockActionMenuSettings','blocks','codeBlockSettings','commandMenuSettings','contextMenuSettings','cssClass','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','height','imageBlockSettings','inlineToolbarSettings','keyConfig','labelSettings','locale','pasteCleanupSettings','readOnly','undoRedoStack','users','width'];
-export const outputs: string[] = ['afterPasteCleanup','beforePasteCleanup','blockChanged','blockDragStart','blockDragging','blockDropped','blur','created','focus','selectionChanged','blocksChange'];
+export const inputs: string[] = ['backgroundColorSettings','blockActionMenuSettings','blocks','codeBlockSettings','commandMenuSettings','contextMenuSettings','cssClass','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','fontColorSettings','height','imageBlockSettings','inlineToolbarSettings','keyConfig','labelSettings','locale','pasteCleanupSettings','readOnly','transformSettings','undoRedoStack','users','width'];
+export const outputs: string[] = ['afterPasteCleanup','beforeFileUpload','beforePasteCleanup','blockChanged','blockDragStart','blockDragging','blockDropped','blur','created','fileUploadFailed','fileUploadSuccess','fileUploading','focus','selectionChanged','blocksChange'];
 export const twoWays: string[] = ['blocks'];
 
 /**
@@ -29,6 +29,7 @@ export class BlockEditorComponent extends BlockEditor implements IComponentBase 
     public containerContext : any;
     public tagObjects: any;
 	afterPasteCleanup: any;
+	beforeFileUpload: any;
 	beforePasteCleanup: any;
 	blockChanged: any;
 	blockDragStart: any;
@@ -36,6 +37,9 @@ export class BlockEditorComponent extends BlockEditor implements IComponentBase 
 	blockDropped: any;
 	blur: any;
 	created: any;
+	fileUploadFailed: any;
+	fileUploadSuccess: any;
+	fileUploading: any;
 	focus: any;
 	selectionChanged: any;
 	public blocksChange: any;

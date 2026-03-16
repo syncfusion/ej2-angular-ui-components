@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowReordering', 'allowResizing', 'allowSorting', 'clipMode', 'customAttributes', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editType', 'field', 'filter', 'filterTemplate', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'hideAtMedia', 'isFrozen', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'sortComparer', 'template', 'textAlign', 'type', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-column` directive represent a column of the Angular Gantt. 
@@ -182,7 +182,7 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
      */
     public minWidth: any;
     /** 
-     * Disables column menu for the column if set to `false`. By default, column menus are enabled for all columns.
+     * Decides if the column menu should be available, providing options for column customization.
      * @default true
      */
     public showColumnMenu: any;
@@ -242,6 +242,10 @@ export class ColumnDirective extends ComplexBase<ColumnDirective> {
     @ContentChild('filterItemTemplate')
     @Template()
     public filter_itemTemplate: any;
+    /** 
+     * Specifies a custom template or UI for filtering within this column, utilizing either string templates or HTML element IDs.
+     * @aspignore 
+     */
     @ContentChild('filterTemplate')
     @Template()
     public filterTemplate: any;

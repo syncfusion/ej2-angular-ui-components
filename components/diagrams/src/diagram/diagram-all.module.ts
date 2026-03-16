@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout, ImportAndExportVisio} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, DiagramCollaboration, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout, ImportAndExportVisio} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -25,6 +25,7 @@ export const BpmnDiagramsService: ValueProvider = { provide: 'DiagramsBpmnDiagra
 export const SymmetricLayoutService: ValueProvider = { provide: 'DiagramsSymmetricLayout', useValue: SymmetricLayout};
 export const ConnectorBridgingService: ValueProvider = { provide: 'DiagramsConnectorBridging', useValue: ConnectorBridging};
 export const UndoRedoService: ValueProvider = { provide: 'DiagramsUndoRedo', useValue: UndoRedo};
+export const DiagramCollaborationService: ValueProvider = { provide: 'DiagramsDiagramCollaboration', useValue: DiagramCollaboration};
 export const LayoutAnimationService: ValueProvider = { provide: 'DiagramsLayoutAnimation', useValue: LayoutAnimation};
 export const DiagramContextMenuService: ValueProvider = { provide: 'DiagramsDiagramContextMenu', useValue: DiagramContextMenu};
 export const LineRoutingService: ValueProvider = { provide: 'DiagramsLineRouting', useValue: LineRouting};
@@ -55,6 +56,7 @@ export const ImportAndExportVisioService: ValueProvider = { provide: 'DiagramsIm
         SymmetricLayoutService,
         ConnectorBridgingService,
         UndoRedoService,
+        DiagramCollaborationService,
         LayoutAnimationService,
         DiagramContextMenuService,
         LineRoutingService,

@@ -2,126 +2,13 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
+## 33.1.44 (2026-03-16)
 
-### DropDownList
-
-#### Bug Fixes
-
-- `#I812495` - The issue with programmatic value binding in a virtualization dropdown has been fixed.
-
-### MultiSelect
+### ComboBox
 
 #### Bug Fixes
 
-- `#I808111` - Fixed an issue where an empty popup appeared after selecting all items by properly closing the popup when all values are selected.
-
-- `#I816580` - Fixed the issue where the `selectedAll` event was not providing the complete data from the value property.
-
-## 32.2.7 (2026-02-24)
-
-### DropDownTree
-
-#### Feature
-
-- `#I803243` - Introduced the new `disableHtmlEncode` property to control how text content is rendered in the Dropdown Tree. When set to `true`, the component will render raw text exactly as provided (including HTML tags or special characters) without encoding or truncation. To preserve and render raw HTML content correctly, `enableHtmlSanitizer` must also be set to `false`. This update provides greater flexibility in displaying literal text and HTML content within Dropdown Tree nodes.
-
-**Example Usage**
-
-```typescript
-  import { DropDownTree } from '@syncfusion/ej2-dropdowns';
-  let data: Object[] = [ { id: '1', name: 'Australia' }, { id: '2', name: 'New<york' }, { id: '3', name: 'Normal Text' } ];
-    //Initialize DropDownTree control 
-    let dropDownTreeObj: DropDownTree = new DropDownTree({
-        fields: { dataSource: data, value: 'id', text: 'name' }, 
-        disableHtmlEncode: true, 
-        enableHtmlSanitizer: false
-    });
-    //Render initialized DropDownTree 
-    dropDownTreeObj.appendTo('#ddt');
-```
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion MultiSelect.
-
-### Mention
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Mention.
-
-- `#I811155` - Resolved an issue where mention appeared beneath Angular `dialogs` in Angular 21.
-
-### ListBox
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ListBox.
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I794030` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion DropDownList.
-
-## 32.2.4 (2026-02-11)
-
-### DropDownList
-
-#### Bug fixes
-
-- `#I801864` - The issue with programmatic value binding in a virtualization dropdown has been fixed.
-
-## 32.1.23 (2026-01-13)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I792156` - Resolved an issue where the multi-select search filter input did not work on the first attempt when Narrator was enabled.
-
-## 32.1.22 (2026-01-06)
-
-### Mention
-
-#### Bug Fixes
-
-- `#I797154` - Resolved an issue where the Mention component popup was partially hidden off-screen in mobile view, ensuring the popup is fully visible within the viewport.
-
-- `#I796358` - Fixed the error that occurred when scrolling after rendering the 'No Records Found' mention popup.
-
-- `#I757895` - Resolved the issue where the first backspace key press did not delete any text.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I795891` - Fixed an issue where the MultiSelect Dropdown with virtualization failed at a specific record count when scrolling up and down after selecting an item.
-
-## 32.1.21 (2025-12-30)
-
-### Mention
-
-#### Bug Fixes
-
-- `#F197891` - Resolved the issue where the popup closes immediately after typing '@a'.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I795891` - Fixed an issue where the MultiSelect Dropdown with virtualization failed at a specific record count and addressed the item reorder problem.
-
-## 32.1.20 (2025-12-23)
-
-### DropDownTree
-
-#### Bug Fixes
-
-- `#I778358` - The issue with pre-filtered selections cleared When click on the close icon in Dropdown Tree Component has been resolved.
+- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
 
 ## 28.2.9 (2025-03-04)
 
@@ -2545,45 +2432,7 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 32.2.8 (2025-12-22)
-
-### DropDownList
-
-#### Bug Fixes
-
-- `#I814842` - Resolved an issue where dropdownlist appeared beneath Angular `dialogs` in Angular 21.
-
-## 32.2.3 (2026-02-05)
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I694939` - Fixed an issue where preselected values were not displayed correctly in Angular when using virtualization with checkbox mode.
-
-## 32.1.25 (2026-01-27)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I801682` - Resolved the issue where arrow key navigation failed when Autofill was enabled during filtering.
-
-### MultiSelect
-
-#### Bug Fixes
-
-- `#I798150` - Resolved the issue where the Multiselect popup did not close when clicking outside while using the `showPopup` method.
-
-## 32.1.24 (2026-01-20)
-
-### ComboBox
-
-#### Bug Fixes
-
-- `#I794030` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion ComboBox.
-
-## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
 
 ### Mention
 

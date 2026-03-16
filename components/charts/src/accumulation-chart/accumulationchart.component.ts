@@ -61,6 +61,9 @@ export class AccumulationChartComponent extends AccumulationChart implements ICo
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;
+    @ContentChild('legendSettingsTemplate')
+    @Template()
+    public legendSettings_template: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();

@@ -2,35 +2,17 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### Chip
-
-#### Bug Fixes
-
-- `#I812433` - The issue where the "click event was triggered twice in the Angular Chip component" has been resolved.
-
-## 32.1.23 (2026-01-13)
-
-### Button
-
-#### Bug Fixes
-
-- `#I795532` - The issue with "Button font-weight in Fluent2 not proper" has now been fixed.
-
-### RadioButton
-
-#### Bug Fixes
-
-- `#I799238`- The issue with "radio button not checked when setting ID via htmlAttributes" has been fixed.
-
-## 32.1.19 (2025-12-16)
+## 33.1.44 (2026-03-16)
 
 ### Chip
 
 #### Features
 
 - `#FB63852` - Provided drag-and-drop functionality to rearrange chips and move them between containers. To enable drag and drop, set `allowDragAndDrop` to true.
+
+#### Bug Fixes
+
+- `#790562`,`#790612` - Fixed an issue where chip selection was not retained when changing the selection type and ensured correct handling of dynamically updated string and number indexes in the selectedChips property.
 
 ## 28.2.7 (2025-02-25)
 
@@ -541,23 +523,7 @@ RadioButton is a graphical user interface element that allows to select one opti
 
 - **Label** - Supports label and its positioning.
 
-- **Sizes** - Provided with different sizes of RadioButton.## 32.2.7 (2026-02-24)
-
-### Speed Dial
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Speed Dial.
-
-## 32.1.21 (2025-12-30)
-
-### Chip
-
-#### Bug Fixes
-
-- `#790562`,`#790612` - Fixed an issue where chip selection was not retained when changing the selection type and ensured correct handling of dynamically updated string and number indexes in the selectedChips property.
-
-## 17.1.38 (2019-03-29)
+- **Sizes** - Provided with different sizes of RadioButton.## 17.1.38 (2019-03-29)
 
 ### RadioButton
 

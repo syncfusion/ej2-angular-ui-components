@@ -8,23 +8,7 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### Maps
-
-#### Bug fixes
-
-- `#I807214` - The map will no longer pan after resetting the zoom.
-
-## 32.1.21 (2025-12-30)
-
-### Maps
-
-#### Bug fixes
-
-- `#I793444` - Color mappings without an initially specified value now function correctly when toggling the legend.
-
-## 32.1.19 (2025-12-16)
+## 33.1.44 (2026-03-16)
 
 ### Maps
 

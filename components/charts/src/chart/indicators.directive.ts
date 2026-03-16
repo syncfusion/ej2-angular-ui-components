@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['accessibility', 'animation', 'bandColor', 'close', 'colorName', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+let input: string[] = ['accessibility', 'animation', 'bandColor', 'close', 'colorName', 'dPeriod', 'dashArray', 'dataSource', 'enableComplexProperty', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'linearGradient', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'radialGradient', 'segmentAxis', 'segments', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 let outputs: string[] = [];
 /**
  * Indicator Directive
@@ -120,6 +120,11 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      */
     public kPeriod: any;
     /** 
+     * Applies a linear gradient fill to the indicator.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * The data source field that contains the low value. 
      * It is applicable for both financial series and technical indicators.
      * @default ''
@@ -185,6 +190,11 @@ export class IndicatorDirective extends ComplexBase<IndicatorDirective> {
      * @default ''
      */
     public query: any;
+    /** 
+     * Applies a radial gradient fill to the indicator.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Defines the axis along which the line series will be split.
      */

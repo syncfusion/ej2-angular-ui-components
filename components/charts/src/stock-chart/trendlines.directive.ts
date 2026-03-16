@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['accessibility', 'animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'marker', 'name', 'period', 'polynomialOrder', 'type', 'visible', 'width'];
+let input: string[] = ['accessibility', 'animation', 'backwardForecast', 'dashArray', 'enableTooltip', 'fill', 'forwardForecast', 'intercept', 'legendShape', 'linearGradient', 'marker', 'name', 'period', 'polynomialOrder', 'radialGradient', 'type', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -88,6 +88,11 @@ export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlin
      */
     public legendShape: any;
     /** 
+     * Applies a linear gradient fill to the trendline.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * Options for customizing the markers for trendlines, including shape, size, color, and other visual aspects.
      * @deprecated 
      */
@@ -107,6 +112,11 @@ export class StockChartTrendlineDirective extends ComplexBase<StockChartTrendlin
      * @default 2
      */
     public polynomialOrder: any;
+    /** 
+     * Applies a radial gradient fill to the trendline.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * The `visible` property controls the display of the trendline. If set to true, the trendline will be rendered on the chart. If set to false, the trendline will be hidden.
      * @default true

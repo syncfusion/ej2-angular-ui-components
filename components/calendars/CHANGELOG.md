@@ -2,49 +2,7 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### DatePicker
-
-#### Bug Fixes
-
-- `#I805840`, `#I801368` - Resolved an issue where datepicker appeared beneath Angular `dialogs` in Angular 21.
-
-- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
-
-- `#I69736` - Resolved an issue where the error class was not applied immediately when the max date was set dynamically.
-
-### DateRangePicker
-
-#### Bug Fixes
-
-- `#I805840`, `#I801368` - Resolved an issue where daterangepicker appeared beneath Angular `dialogs` in Angular 21.
-
-- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
-
-### TimePicker
-
-#### Bug Fixes
-
-- `#I805840`, `#I801368` - Resolved an issue where timepicker appeared beneath Angular `dialogs` in Angular 21.
-
-- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
-
-### DateTimePicker
-
-#### Bug Fixes
-
-- `#I805840`, `#I801368` - Resolved an issue where datetimepicker appeared beneath Angular `dialogs` in Angular 21.
-
-- `#I792230` - Resolved an issue where the top border in the Material theme did not render correctly after selecting a value.
-
-### Calendar
-
-#### Bug Fixes
-
-- `#I802045` - Fixed an issue where the Calendar is not behaving as expected when placed within a ContextMenu.
-
-## 32.1.19 (2025-12-16)
+## 33.1.44 (2026-03-16)
 
 ### DateRangePicker
 
@@ -52,11 +10,21 @@
 
 - `#I753728` - Fixed an issue where the date range picker with the preset range popup would open behind the drawer.
 
+- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
+
 ### DateTimePicker
 
 #### Bug Fixes
 
 - `#I752582` - The issue where the default time was not reset properly after clearing a date and selecting a new one in the DateTimePicker has been resolved.
+
+- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
 
 ## 31.1.17 (2025-09-05)
 

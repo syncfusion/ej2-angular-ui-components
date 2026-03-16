@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { StockChartTrendlinesDirective } from './trendlines.directive';
 
-let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'selectionStyle', 'showNearestTooltip', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
+let input: string[] = ['animation', 'bearFillColor', 'border', 'bullFillColor', 'cardinalSplineTension', 'close', 'columnSpacing', 'columnWidth', 'cornerRadius', 'dashArray', 'dataSource', 'emptyPointSettings', 'enableSolidCandles', 'enableTooltip', 'fill', 'high', 'labelSettings', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'linearGradient', 'low', 'marker', 'name', 'opacity', 'open', 'pointColorMapping', 'query', 'radialGradient', 'selectionStyle', 'showNearestTooltip', 'tooltipMappingName', 'trendlines', 'type', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -124,6 +124,10 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      */
     public high: any;
     /** 
+     * Configures the options for displaying series names as inline labels in the stock chart.
+     */
+    public labelSettings: any;
+    /** 
      * Options for customizing and displaying the last value in the series.
      */
     public lastValueLabel: any;
@@ -148,6 +152,13 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      * @default 'SeriesType'
      */
     public legendShape: any;
+    /** 
+     * Applies a linear gradient fill to the series. 
+     * The gradient transitions colors along a straight line. 
+     * When both linearGradient and radialGradient are specified, linearGradient takes precedence.
+     * @default null
+     */
+    public linearGradient: any;
     /** 
      * The DataSource field that contains the low value of y 
      * It is applicable for series and technical indicators
@@ -185,6 +196,12 @@ export class StockChartSeriesDirective extends ComplexBase<StockChartSeriesDirec
      * @default null
      */
     public query: any;
+    /** 
+     * Applies a radial gradient fill to the series. 
+     * The gradient transitions colors outward from a central point.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Custom style for the selected series or points.
      * @default null

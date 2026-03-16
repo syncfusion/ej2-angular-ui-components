@@ -12,7 +12,7 @@ import { StockEventsDirective } from './stockevents.directive';
 import { StockChartIndicatorsDirective } from './indicators.directive';
 
 export const inputs: string[] = ['annotations','axes','background','border','chartArea','crosshair','dataSource','enableCustomRange','enablePeriodSelector','enablePersistence','enableRtl','enableSelector','exportType','height','indicatorType','indicators','isMultiSelect','isSelect','isTransposed','legendSettings','locale','margin','noDataTemplate','periods','primaryXAxis','primaryYAxis','rows','selectedDataIndexes','selectionMode','series','seriesType','stockEvents','theme','title','titleStyle','tooltip','trendlineType','width','zoomSettings'];
-export const outputs: string[] = ['axisLabelRender','beforeExport','legendClick','legendRender','load','loaded','onZooming','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
+export const outputs: string[] = ['axisLabelRender','beforeExport','crosshairLabelRender','legendClick','legendRender','load','loaded','onZooming','pointClick','pointMove','rangeChange','selectorRender','seriesRender','stockChartMouseClick','stockChartMouseDown','stockChartMouseLeave','stockChartMouseMove','stockChartMouseUp','stockEventRender','tooltipRender','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -44,6 +44,7 @@ export class StockChartComponent extends StockChart implements IComponentBase {
     public tagObjects: any;
 	axisLabelRender: any;
 	beforeExport: any;
+	crosshairLabelRender: any;
 	legendClick: any;
 	legendRender: any;
 	load: any;
@@ -74,6 +75,9 @@ export class StockChartComponent extends StockChart implements IComponentBase {
     @ContentChild('tooltipTemplate')
     @Template()
     public tooltip_template: any;
+    @ContentChild('legendSettingsTemplate')
+    @Template()
+    public legendSettings_template: any;
 
     constructor(private ngEle: ElementRef, private srenderer: Renderer2, private viewContainerRef:ViewContainerRef, private injector: Injector) {
         super();
@@ -273,6 +277,12 @@ export class StockChartComponent extends StockChart implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ChartsLastValueLabel');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsSeriesLabel');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

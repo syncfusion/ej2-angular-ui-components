@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I802697` - Fixed the issue When cloning the first group, the getValidRules method returns incorrect rule data.
-
-## 32.1.19 (2025-12-16)
+## 33.1.44 (2026-03-16)
 
 ### QueryBuilder
 
@@ -781,39 +773,7 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 32.2.7 (2026-02-24)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I809049` -  Fixed a memory leak issue caused by the window resize handler and corrected improper event destroy in the QueryBuilder.
-
-## 32.2.4 (2026-02-11)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I802697` - Fixed the issue where Clone Group was inserting cloned rules into the parent group instead of creating a new root-level sibling group.
-
-## 32.1.25 (2026-01-27)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I802697` - Fixed duplicate rules appearing when cloning nested groups in QueryBuilder.
-
-## 32.1.21 (2025-12-30)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I792871` - Fixed the validation error `popup` positioning issue within a custom scrollable element in QueryBuilder.
-
-## 18.2.47 (2020-07-28)
+- **Queries**: Queries supports JSON/SQL rules.## 18.2.47 (2020-07-28)
 
 ### QueryBuilder
 

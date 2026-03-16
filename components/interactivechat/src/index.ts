@@ -6,4 +6,7 @@ export {MessageDirective,MessagesDirective} from './chat-ui/messages.directive';
 export { ChatUIComponent} from './chat-ui/chatui.component';
 export { ChatUIModule } from './chat-ui/chatui.module';
 export { ChatUIAllModule } from './chat-ui/chatui-all.module';
+export { InlineAIAssistComponent} from './inline-ai-assist/inlineaiassist.component';
+export { InlineAIAssistModule } from './inline-ai-assist/inlineaiassist.module';
+export { InlineAIAssistAllModule } from './inline-ai-assist/inlineaiassist-all.module';
 export * from '@syncfusion/ej2-interactive-chat';

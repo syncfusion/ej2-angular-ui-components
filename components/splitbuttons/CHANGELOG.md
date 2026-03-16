@@ -2,30 +2,6 @@
 
 ## [Unreleased]
 
-## 32.2.9 (2026-03-10)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `#I811155` - Resolved an issue where `dropdownbutton` appeared beneath Angular `dialogs` in Angular 21.
-
-### SplitButton
-
-#### Bug Fixes
-
-- `#I809049` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion Split buttons.
-
-- `#I811155` - Resolved an issue where `splitbutton` appeared beneath Angular `dialogs` in Angular 21.
-
-## 32.1.24 (2026-01-20)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `I801275` - Resolved memory leak issue in the window resize handler of DropDownButton.
-
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton
@@ -300,11 +276,4 @@ SplitButton component has primary and secondary button. Primary button is used t
 
 - **Separator** - Supports Popup items grouping by using the Separator.
 
-- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.## 32.1.22 (2026-01-06)
-
-### DropDownButton
-
-#### Bug Fixes
-
-- `I796590` - Issue in "DropDownButton Popup stops following its target on window resize" has been resolved.
-
+- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.

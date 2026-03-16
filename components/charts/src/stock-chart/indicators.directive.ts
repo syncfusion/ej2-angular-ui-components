@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
+let input: string[] = ['animation', 'bandColor', 'close', 'dPeriod', 'dashArray', 'dataSource', 'fastPeriod', 'field', 'fill', 'high', 'kPeriod', 'linearGradient', 'low', 'lowerLine', 'macdLine', 'macdNegativeColor', 'macdPositiveColor', 'macdType', 'open', 'overBought', 'overSold', 'period', 'periodLine', 'pointColorMapping', 'query', 'radialGradient', 'seriesName', 'showZones', 'slowPeriod', 'standardDeviation', 'type', 'upperLine', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName'];
 let outputs: string[] = [];
 /**
  * Indicator Directive
@@ -91,6 +91,13 @@ export class StockChartIndicatorDirective extends ComplexBase<StockChartIndicato
      */
     public kPeriod: any;
     /** 
+     * Applies a linear gradient fill to the series. 
+     * The gradient transitions colors along a straight line. 
+     * When both linearGradient and radialGradient are specified, linearGradient takes precedence.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * The DataSource field that contains the low value of y 
      * It is applicable for series and technical indicators
      * @default ''
@@ -156,6 +163,12 @@ export class StockChartIndicatorDirective extends ComplexBase<StockChartIndicato
      * @default null
      */
     public query: any;
+    /** 
+     * Applies a radial gradient fill to the series. 
+     * The gradient transitions colors outward from a central point.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Defines the name of the series, the data of which has to be depicted as indicator.
      * @default ''

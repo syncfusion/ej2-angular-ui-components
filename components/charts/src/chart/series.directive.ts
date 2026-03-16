@@ -4,7 +4,7 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { TrendlinesDirective } from './trendlines.directive';
 import { SegmentsDirective } from './segments.directive';
 
-let input: string[] = ['accessibility', 'animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnFacet', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'noRisers', 'nonHighlightStyle', 'opacity', 'open', 'paretoOptions', 'pointColorMapping', 'query', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNearestTooltip', 'showNormalDistribution', 'showOutliers', 'size', 'splineType', 'stackingGroup', 'step', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
+let input: string[] = ['accessibility', 'animation', 'bearFillColor', 'binInterval', 'border', 'boxPlotMode', 'bullFillColor', 'cardinalSplineTension', 'close', 'colorName', 'columnFacet', 'columnSpacing', 'columnWidth', 'columnWidthInPixel', 'connector', 'cornerRadius', 'dashArray', 'dataSource', 'dragSettings', 'drawType', 'emptyPointSettings', 'enableComplexProperty', 'enableSolidCandles', 'enableTooltip', 'errorBar', 'fill', 'groupName', 'high', 'intermediateSumIndexes', 'isClosed', 'labelSettings', 'lastValueLabel', 'legendImageUrl', 'legendShape', 'linearGradient', 'low', 'marker', 'maxRadius', 'minRadius', 'name', 'negativeFillColor', 'noRisers', 'nonHighlightStyle', 'opacity', 'open', 'paretoOptions', 'pointColorMapping', 'query', 'radialGradient', 'segmentAxis', 'segments', 'selectionStyle', 'showMean', 'showNearestTooltip', 'showNormalDistribution', 'showOutliers', 'size', 'splineType', 'stackingGroup', 'step', 'sumIndexes', 'summaryFillColor', 'tooltipFormat', 'tooltipMappingName', 'trendlines', 'type', 'unSelectedStyle', 'visible', 'volume', 'width', 'xAxisName', 'xName', 'yAxisName', 'yName', 'zOrder'];
 let outputs: string[] = [];
 /**
  * Series Directive
@@ -246,6 +246,10 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      */
     public isClosed: any;
     /** 
+     * Configures the options for displaying series names as inline labels in the chart.
+     */
+    public labelSettings: any;
+    /** 
      * Options for customizing and displaying the last value in the series.
      */
     public lastValueLabel: any;
@@ -272,6 +276,13 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * @default 'SeriesType'
      */
     public legendShape: any;
+    /** 
+     * Applies a linear gradient fill to the series. 
+     * The gradient transitions colors along a straight line. 
+     * When both linearGradient and radialGradient are specified, linearGradient takes precedence.
+     * @default null
+     */
+    public linearGradient: any;
     /** 
      * The data source field that contains the low value. 
      * It is applicable for both financial series and technical indicators.
@@ -339,6 +350,12 @@ export class SeriesDirective extends ComplexBase<SeriesDirective> {
      * @default ''
      */
     public query: any;
+    /** 
+     * Applies a radial gradient fill to the series. 
+     * The gradient transitions colors outward from a central point.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Defines the axis along which the line series will be split.
      */

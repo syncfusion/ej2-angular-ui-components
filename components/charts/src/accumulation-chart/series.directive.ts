@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['accessibility', 'animation', 'applyPattern', 'border', 'borderRadius', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'funnelMode', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
+let input: string[] = ['accessibility', 'animation', 'applyPattern', 'border', 'borderRadius', 'dashArray', 'dataLabel', 'dataSource', 'emptyPointSettings', 'enableTooltip', 'endAngle', 'explode', 'explodeAll', 'explodeIndex', 'explodeOffset', 'funnelMode', 'gapRatio', 'groupMode', 'groupTo', 'height', 'innerRadius', 'legendImageUrl', 'legendShape', 'linearGradient', 'name', 'neckHeight', 'neckWidth', 'opacity', 'palettes', 'pointColorMapping', 'pyramidMode', 'query', 'radialGradient', 'radius', 'selectionStyle', 'startAngle', 'tooltipMappingName', 'type', 'visible', 'width', 'xName', 'yName'];
 let outputs: string[] = [];
 /**
  * AccumulationSeries Directive
@@ -167,6 +167,13 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      */
     public legendShape: any;
     /** 
+     * Applies a linear gradient fill to the series. 
+     * The gradient transitions colors along a straight line. 
+     * When both linearGradient and radialGradient are specified, linearGradient takes precedence.
+     * @default null
+     */
+    public linearGradient: any;
+    /** 
      * The `name` property allows for setting a name for the series.
      * @default ''
      */
@@ -207,6 +214,12 @@ export class AccumulationSeriesDirective extends ComplexBase<AccumulationSeriesD
      * @default null
      */
     public query: any;
+    /** 
+     * Applies a radial gradient fill to the series. 
+     * The gradient transitions colors outward from a central point.
+     * @default null
+     */
+    public radialGradient: any;
     /** 
      * Specifies the radius of the pie series as a percentage of the chart's size.
      * @default null

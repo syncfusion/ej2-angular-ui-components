@@ -7,7 +7,7 @@ import { CustomCursorsDirective } from './customcursor.directive';
 import { ConnectorsDirective } from './connectors.directive';
 import { NodesDirective } from './nodes.directive';
 
-export const inputs: string[] = ['addInfo','annotationTemplate','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','diagramSettings','drawingObject','enableConnectorSplit','enablePersistence','enableRtl','fixedUserHandleTemplate','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','model','nodeDefaults','nodeTemplate','nodes','pageSettings','rulerSettings','scrollSettings','segmentThumbShape','segmentThumbSize','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','userHandleTemplate','width'];
+export const inputs: string[] = ['addInfo','annotationTemplate','backgroundColor','bridgeDirection','commandManager','connectorDefaults','connectors','constraints','contextMenuSettings','customCursor','dataSourceSettings','diagramSettings','drawingObject','enableCollaborativeEditing','enableConnectorSplit','enablePersistence','enableRtl','fixedUserHandleTemplate','getConnectorDefaults','getCustomCursor','getCustomProperty','getCustomTool','getDescription','getNodeDefaults','height','historyManager','layers','layout','locale','mode','model','nodeDefaults','nodeTemplate','nodes','pageSettings','rulerSettings','scrollSettings','segmentThumbShape','segmentThumbSize','selectedItems','serializationSettings','setNodeTemplate','snapSettings','tool','tooltip','updateSelection','userHandleTemplate','width'];
 export const outputs: string[] = ['animationComplete','click','collectionChange','commandExecute','connectionChange','contextMenuBeforeItemRender','contextMenuClick','contextMenuOpen','created','dataLoaded','diagramExporting','diagramImporting','doubleClick','dragEnter','dragLeave','dragOver','drop','elementDraw','expandStateChange','fixedUserHandleClick','historyChange','historyStateChange','keyDown','keyUp','layoutUpdated','load','loaded','mouseEnter','mouseLeave','mouseOver','mouseWheel','onFixedUserHandleMouseDown','onFixedUserHandleMouseEnter','onFixedUserHandleMouseLeave','onFixedUserHandleMouseUp','onImageLoad','onUserHandleMouseDown','onUserHandleMouseEnter','onUserHandleMouseLeave','onUserHandleMouseUp','positionChange','propertyChange','rotateChange','scrollChange','segmentChange','segmentCollectionChange','selectionChange','sizeChange','sourcePointChange','targetPointChange','textEdit'];
 export const twoWays: string[] = [''];
 
@@ -189,6 +189,12 @@ export class DiagramComponent extends Diagram implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('DiagramsUndoRedo');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('DiagramsDiagramCollaboration');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }
