@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.45 (2026-03-24)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#I812812`,`#I812811` - Fixed multiple accessibility issues in the File Manager component related to focus handling. Closing the context menu with the Esc key, closing dialogs after operations such as details or rename, opening folders, and deleting items now correctly restore focus to the appropriate file or folder, ensuring consistent and reliable navigation.
+
 ## 33.1.44 (2026-03-16)
 
 ### FileManager
