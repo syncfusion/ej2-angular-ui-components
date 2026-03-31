@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I818439` - Issue with "unable to select a formula cell reference when editing a formula in the formula bar in Firefox browser" has been resolved.
+
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet

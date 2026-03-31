@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#FB73187` - Fixed an issue where taskbar customization using `queryTaskbarInfo` with `enableMultiTaskbar` was not applied when a record was collapsed.
+- `#FB73189` - Fixed an issue where the last record was not visible after dynamically adding or deleting a record and scrolling when `allowTaskbarOverlap` was set to `false`.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 33.1.45 (2026-03-24)
 
 ### GanttChart
@@ -13,7 +24,9 @@
 - `#I819476` - Fixed an issue where column headers and values mismatched after refresh when persistence and frozen columns were enabled.
 - `#I785919` - Resolved an issue where filtering collapsed child records incorrectly displayed `No records to display` after vertical scrolling when virtualization was enabled.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+- `#I769883` - Fixed an issue where the auto-validated task collection returned an incorrect record when valid data was passed during load time.
+- `#I819476` - Fixed an issue where column headers and values mismatched after refresh when persistence and frozen columns were enabled.
+- `#I785919` - Resolved an issue where filtering collapsed child records incorrectly displayed `No records to display` after vertical scrolling when virtualization was enabled.
 
 ## 30.1.37 (2025-06-25)
 

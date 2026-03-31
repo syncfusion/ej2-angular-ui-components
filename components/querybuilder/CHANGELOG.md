@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#I821297` - Fixed an issue where the Query Builder field selector switched from a DropDownList to a plain input after removing another Query Builder.
+
 ## 33.1.44 (2026-03-16)
 
 ### QueryBuilder

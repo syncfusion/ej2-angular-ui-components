@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### Grid
+
+#### Bug Fixes
+
+- `#I823454` - The issue where the edit dialog did not close when `virtualization` and row height were enabled has been resolved.
+
+- `#I823454` - The issue where the edit dialog did not close when `virtualization` and row height were enabled has been resolved.
+- `#I814348` - Fixed an issue causing grid `popup` to appear behind `Angular CDK` dialog in `Angular 21`.
+
 ## 33.1.45 (2026-03-24)
 
 ### Grid

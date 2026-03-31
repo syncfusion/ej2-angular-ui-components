@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.46 (2026-03-31)
+
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I816979` -  Fixed an issue where the MultiColumnComboBox did not clear the value programmatically.
+
 ## 27.1.48 (2024-09-18)
 
 ### MultiColumn ComboBox

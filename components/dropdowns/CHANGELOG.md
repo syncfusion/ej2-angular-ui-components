@@ -2,13 +2,29 @@
 
 ## [Unreleased]
 
-## 33.1.45 (2026-03-24)
+## 33.1.46 (2026-03-31)
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I816579` - Resolved a console error that occurred when filtering in the DropDown Tree component with node IDs containing the hash `#` symbol.
 
 ### ComboBox
 
 #### Bug Fixes
 
-- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
+- `#I815337` - Fixed an issue where Accessibility violations when using ComboBox component.
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I810920` - Fixed an issue related to accessibility gaps in Multiselect Component.
+
+- `#I815337` - Fixed an issue where Accessibility violations when using Multiselect component.
+
+- `#I812150` - Fixed an issue where, when dynamically selecting all records, the popup UI displayed a skeleton loader instead of the actual list items.
 
 ## 28.2.9 (2025-03-04)
 
@@ -2432,7 +2448,15 @@ DropDownList component contains a list of predefined values from which a single 
 
 - **Templates** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 29.1.33 (2025-03-25)
+- **Accessibility** - Provided with built-in accessibility support which helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.## 33.1.44 (2026-03-16)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I811858` - Fixed an issue where the span element was removed during dynamic placeholder updates, affecting the label structure.
+
+## 29.1.33 (2025-03-25)
 
 ### Mention
 

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
-import { EventEmitter, ElementRef, ChangeDetectorRef } from '@angular/core';
+import { EventEmitter, ElementRef, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { getValue, setValue, isNullOrUndefined, isObject } from '@syncfusion/ej2-base';
 import { ControlValueAccessor } from '@angular/forms';
 /**
  * Angular Form Base Module
  */
-export class FormBase<T> implements ControlValueAccessor {
+export class FormBase<T> implements ControlValueAccessor, OnDestroy {
     public value: T;
     public checked: boolean;
     private skipFromEvent: boolean;
@@ -32,8 +32,13 @@ export class FormBase<T> implements ControlValueAccessor {
     public isUpdated: boolean;
     public oldValue: any;
     public cdr: ChangeDetectorRef;
-    public ngOnBlurBound: () => void;
-    public ngOnFocusBound: () => void;
+    public ngOnBlurBound?: (e: Event) => void;
+    public ngOnFocusBound?: (e: Event) => void;
+    public destroy?: Function;
+    constructor() {
+        this.ngOnBlurBound = this.ngOnBlur.bind(this);
+        this.ngOnFocusBound = this.ngOnFocus.bind(this);
+    }
     public localChange(e: { value?: T, checked?: T }): void {
         const value: T | any = (e.checked === undefined ? e.value : e.checked);
         this.objCheck = isObject(value);
@@ -106,8 +111,8 @@ export class FormBase<T> implements ControlValueAccessor {
                 tempFormAfterViewThis.appendTo(tempFormAfterViewThis.element);
             }
             const ele: HTMLElement = tempFormAfterViewThis.inputElement || tempFormAfterViewThis.element;
-            ele.addEventListener('focus', tempFormAfterViewThis.ngOnFocusBound);
-            ele.addEventListener('blur', tempFormAfterViewThis.ngOnBlurBound);
+            ele.addEventListener('focus', this.ngOnFocusBound);
+            ele.addEventListener('blur', this.ngOnBlurBound);
         }
         this.isFormInit = false;
     }
@@ -167,5 +172,12 @@ export class FormBase<T> implements ControlValueAccessor {
             this.blur.emit(e);
         }
         this.cdr.markForCheck();
+    }
+    // Add ngOnDestroy to clean up event listeners
+    public ngOnDestroy(): void {
+        // This ensures ComponentBase cleanup
+        if (this.destroy && typeof this.destroy === 'function') {
+            this.destroy.call(this);
+        }
     }
 }
