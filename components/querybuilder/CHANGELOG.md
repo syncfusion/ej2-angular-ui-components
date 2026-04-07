@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.1.46 (2026-03-31)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I821297` - Fixed an issue where the Query Builder field selector switched from a DropDownList to a plain input after removing another Query Builder.
-
 ## 33.1.44 (2026-03-16)
 
 ### QueryBuilder
@@ -781,7 +773,15 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 18.2.47 (2020-07-28)
+- **Queries**: Queries supports JSON/SQL rules.## 33.1.46 (2026-03-31)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+`#I821297` - Fixed an issue where the Query Builder field selector switched from a DropDownList to a plain input after removing another Query Builder.
+
+## 18.2.47 (2020-07-28)
 
 ### QueryBuilder
 

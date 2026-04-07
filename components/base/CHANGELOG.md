@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.1.46 (2026-03-31)
-
-### Common
-
-#### Bug Fixes
-
-- `#I813443` - Resolved event listener memory leak by binding handlers in constructor and properly removing them in `ngOnDestroy`.
-
 ## 25.2.4 (2024-05-14)
 
 ### Common
