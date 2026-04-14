@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### QueryBuilder
+
+- `#I830102` - Fixed an issue where cloning a group after unmounting and remounting the Query Builder resulted in an incorrect rule count and improper rule nesting.
+
 ## 33.1.44 (2026-03-16)
 
 ### QueryBuilder

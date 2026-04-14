@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### SplitButton
+
+#### Bug Fixes
+
+- `I824699` - Fixed an accessibility issue by applying aria-haspopup only to the dropdown icon button in the SplitButton component.
+
 ## 28.1.33 (2024-12-12)
 
 ### DropDownButton

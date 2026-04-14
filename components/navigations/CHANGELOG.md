@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### ContextMenu
+
+#### Bug fixes
+
+- `#I816408` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion context menu component
+
 ## 33.1.47 (2026-04-07)
 
 ### Accordion

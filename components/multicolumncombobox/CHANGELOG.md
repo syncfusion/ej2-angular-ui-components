@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.1.47 (2026-04-07)
+## 33.1.49 (2026-04-14)
 
 ### MultiColumn ComboBox
 
 #### Bug Fixes
 
-- `#I816979` -  Fixed an issue where the MultiColumnComboBox did not clear the value programmatically.
+- `#F198183` - Popup misalignment during filtering when the dropdown opens above the input in the MultiColumn ComboBox has been resolved.
 
 ## 27.1.48 (2024-09-18)
 
@@ -47,4 +47,11 @@ Explore the demo [here](https://ej2.syncfusion.com/angular/demos/#/fluent2/multi
 - **Filtering**: Provides advanced filtering capabilities to easily find and select items from large datasets.
 - **Sorting**: Allows sorting of items in ascending or descending order and single or multi-column sorting.
 - **Virtualization**: Supports virtualization to efficiently display large datasets by loading data on demand.
-- **Templates**: Allow customization of the appearance and layout, including header, footer and list items in the pop-up list using templates.
+- **Templates**: Allow customization of the appearance and layout, including header, footer and list items in the pop-up list using templates.## 33.1.46 (2026-03-31)
+
+### MultiColumn ComboBox
+
+#### Bug Fixes
+
+- `#I816979` -  Fixed an issue where the MultiColumnComboBox did not clear the value programmatically.
+

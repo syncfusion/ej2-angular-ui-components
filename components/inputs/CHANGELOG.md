@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### MaskedTextBox
+
+#### Bug Fixes
+
+- `#I826419` - Fixed MaskedTextBox cursor movement at end-of-mask boundary and input is now properly rejected with cursor position preserved.
+
+### TextBox
+
+#### Bug Fixes
+
+- `#I826665` - The TextBox placeholder visibility issue after changing the culture via set Culture has been fixed.
+
 ## 33.1.47 (2026-04-07)
 
 ### MaskedTextBox

@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.1.49 (2026-04-14)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I827842` - Issue with "applying a top border to a cell with font styles caused selection misalignment" has been resolved.
+
+- `#I823318` - Issue with "horizontal scrollbar in `Firefox` being less accessible compared to `Chrome` and `Edge`" has been resolved.
+
+#### Features
+
+- `#I756181` - Enhanced the `SORT` formula in the Spreadsheet component to support dynamic arrays. The output now auto-resizes and updates in real time as source data changes, with support for undo/redo, edit, and insert/delete actions.
+
 ## 33.1.47 (2026-04-07)
 
 ### Spreadsheet
