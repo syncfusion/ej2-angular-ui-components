@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.3 (2026-04-21)
+
+### Grid
+
+#### Bugs
+
+- `I828282` - Resolved an issue where the shimmer effect was not removed when Immutable Mode was enabled in the Grid.
+
 ## 33.1.49 (2026-04-14)
 
 ### Grid

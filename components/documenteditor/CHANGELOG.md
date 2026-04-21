@@ -8,7 +8,13 @@
 
 #### Bug Fixes
 
-`#I818385` - Fixed an issue where the Editor crashed due to an infinite loop during the Select All action.
+`#I823329` - An issue causing text to be inserted at incorrect positions when collaborator tabs were closed has been fixed.
+`#I823639` - Numbered lists no longer disappear after opening a document in Java.
+`#I824947` - The header and footer pane no longer gets stuck after realigning page numbers using the Backspace key.
+`#I817031` - Line-spacing mismatch that occurred after pressing Enter in a paragraph has been corrected.
+`#I824160` - Text distortion caused by shapes when adjusting table spacing has been addressed.
+`#I819950` - Cursor movement is now allowed outside the bookmark range after pressing Backspace.
+`#I818385` - An Editor crash caused by an infinite loop during the Select All action has been fixed.
 
 ## 33.1.47 (2026-04-07)
 

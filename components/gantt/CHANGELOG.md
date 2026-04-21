@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.2.3 (2026-04-21)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#I821215` - The white space flash issue during scrolling with `enableVirtualization` and custom column templates has been resolved.
+- `#FB73516` - Resolved expand and collapse issues and resize handle flickering after expanding tasks when `enableMultiTaskbar` was enabled.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 33.1.49 (2026-04-14)
 
 ### GanttChart
@@ -10,8 +21,6 @@
 
 - `#I825110` - Fixed an issue where selection between the `TreeGrid` and Gantt chart is not maintained after a menu filter action, and additional white space appears when scrolling to the last collapsed record.
 - `#I807756` - Fixed an issue where using an ng-template for the editing tooltip template caused it to appear below the Gantt grid instead of the correct position when connecting tasks.
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 33.1.47 (2026-04-07)
 

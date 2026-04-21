@@ -200,7 +200,7 @@ export class ComponentBase<T> {
         }
     }
 
-    public ngOnDestroy(isTempRef?: any): void {
+    public baseDestroy(isTempRef?: any): void {
         const tempOnDestroyThis: any = isTempRef || this;
         /* istanbul ignore else  */
         setTimeout(() => {
@@ -237,6 +237,10 @@ export class ComponentBase<T> {
                 });
             }
         });
+    }
+
+    public ngOnDestroy(isTempRef?: any): void {
+        this.baseDestroy(isTempRef);
     }
 
     public clearTemplate(templateNames?: string[], index?: any): void {

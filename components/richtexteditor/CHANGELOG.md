@@ -8,6 +8,8 @@
 
 #### Bug Fixes
 
+- `#I823383` - Now, pasting a list copied from a Microsoft Word document that contains additional left indentation preserves the correct alignment.
+
 - `#I822861` - Now, the image quick toolbar opens as expected and does not conflict with the iOS Cut, Copy, and Paste pop-up in the Rich Text Editor.
 
 - `#I825108` - Now, the SVG element inside the Rich Text Editor will be removed properly on backspace.

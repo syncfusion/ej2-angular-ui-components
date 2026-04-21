@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.3 (2026-04-21)
+
+### Spreadsheet
+
+#### Features
+
+- `#I802051` -  Introduced support for custom function categories in the spreadsheet `Insert Function` dialog. Users can now create new categories, associate custom functions with them, and add category descriptions for better organization and discoverability.
+
 ## 33.1.49 (2026-04-14)
 
 ### Spreadsheet

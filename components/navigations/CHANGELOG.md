@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.1.49 (2026-04-14)
-
-### ContextMenu
-
-#### Bug fixes
-
-- `#I816408` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion context menu component
-
 ## 33.1.47 (2026-04-07)
 
 ### Accordion
@@ -3184,7 +3176,15 @@ TreeView component is used to represent hierarchical data in a tree like structu
 
 - **Template** - Allows you to customize the nodes in TreeView.
 
-- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.## 22.2.8 (2023-08-08)
+- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.## 33.1.49 (2026-04-14)
+
+### ContextMenu
+
+#### Bug fixes
+
+- `#I816408` - Resolved a memory leak issue that occurred when using Angular Material Dialog in combination with Syncfusion context menu component
+
+## 22.2.8 (2023-08-08)
 
 ### Tab
 

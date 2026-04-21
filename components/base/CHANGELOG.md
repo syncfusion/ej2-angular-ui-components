@@ -2,6 +2,62 @@
 
 ## [Unreleased]
 
+## 33.2.3 (2026-04-21)
+
+### Common
+
+#### Bug Fixes
+
+- `#I813443` - Resolved event listener memory leak by binding handlers in constructor and properly removing them in `ngOnDestroy`.
+
+## 30.1.42 (2025-07-29)
+
+### Common
+
+#### Bug Fixes
+
+- `#I745300` -  Resolved input dependent controls remain dirty after form reset.
+
+## 29.2.10 (2025-06-10)
+
+### Common
+
+#### Bug Fixes
+
+- `#I720669` -  Resolved `TimePicker` change event not triggering after form reset when value is null.
+
+## 28.2.5 (2025-02-11)
+
+### Common
+
+#### Bug Fixes
+
+- `#FB27111` -  Resolved the Button flicker on angular page load.
+
+## 26.1.41 (2024-07-09)
+
+### Common
+
+#### Bug Fixes
+
+- `#I571199` -  Resolved memory leak issue for `Focus` and `Blur` events.
+
+## 26.1.39 (2024-06-25)
+
+### Common
+
+#### Bug Fixes
+
+- `#I600759` -  Resolved `Accumulation Chart` data binding not working properly.
+
+## 25.2.6 (2024-05-28)
+
+### common
+
+#### Bug Fixes
+
+- `#I52921` -  Resolved `ngAfterViewChecked` triggered infinite time for array base directives property change.
+
 ## 25.2.4 (2024-05-14)
 
 ### Common
