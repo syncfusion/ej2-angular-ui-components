@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### DocumentEditor
+
+#### Bug Fixes
+
+`#F73578` - Fixed an issue where the footnote separator line always rendered left-aligned in RTL documents.
+`#I829025` - Resolved an issue where ribbon styles were not applied when the style icon was collapsed.
+`#I826799` - Fixed an issue where the document language changed from English (UK) to the local locale (English - Nigeria) after download.
+`#I829897` - Fixed misalignment of the text cursor caused by the Page Number button in the Header & Footer tab.
+`#I824705` - Resolved corrupted rendering when `enableSelection` was used in React DocumentEditor read-only mode.
+`#I830170` - Fixed an issue where text moved out of the content control on pressing Enter and could not be deleted or edited.
+`#I829697` - Fixed truncation of labels in the Format Picture tab when using the Italian locale in ribbon mode.
+`#I821272` - Fixed table layout misalignment after copying and pasting content within cells and reopening the document.
+`#I821118` - Resolved an issue where the Document Editor became unresponsive when opening a file.
+`#I800755` - Fixed an issue where page numbers were not preserved during PDF conversion.
+`#I817069` - Fixed text overlapping with the paragraph mark when deleting a line break.
+`#I829081` - Fixed an issue where the table background gradient option had no effect on table appearance.
+`#I827240` - Resolved an exception that occurred when serializing Group content controls on the server side.
+`#I819564` - Fixed an issue where spell-check replacements were not reflected in the document text.
+
 ## 33.1.49 (2026-04-14)
 
 ### DocumentEditor

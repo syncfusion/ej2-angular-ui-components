@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
 
 ### QueryBuilder
 
-- `#I830102` - Fixed an issue where cloning a group after unmounting and remounting the Query Builder resulted in an incorrect rule count and improper rule nesting.
+#### Bug Fixes
+
+- `#I832976` - Fixed an issue where dragging a group between root-level conditions caused it to revert to its original position.
 
 ## 33.1.44 (2026-03-16)
 
@@ -779,7 +781,13 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 33.1.46 (2026-03-31)
+- **Queries**: Queries supports JSON/SQL rules.## 33.1.49 (2026-04-14)
+
+### QueryBuilder
+
+- `#I830102` - Fixed an issue where cloning a group after unmounting and remounting the Query Builder resulted in an incorrect rule count and improper rule nesting.
+
+## 33.1.46 (2026-03-31)
 
 ### QueryBuilder
 

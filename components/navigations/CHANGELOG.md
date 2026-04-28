@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### Toolbar
+
+#### Bug Fixes
+
+- `I821512` - Resolved a Toolbar memory leak caused by improperly cleared item click event handlers during dynamic item updates.
+
+### Tab
+
+#### Bug Fixes
+
+- `FB73499` - Fixed an issue in `Fill` mode where the Tab component showed an unwanted browser scrollbar when used inside a nested container without an immediate height.
+
 ## 33.1.47 (2026-04-07)
 
 ### Accordion

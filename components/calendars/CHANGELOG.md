@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### DateRangePicker
+
+#### Bug Fixes
+
+- `#I830285` - Fixed a console error that occurred when presets was set to an empty array ([]) in the date range picker.
+
+## 33.1.44 (2026-03-16)
 
 ### DateRangePicker
 

@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
 
-#### Features
+#### Bug fixes
 
-- `#I802051` -  Introduced support for custom function categories in the spreadsheet `Insert Function` dialog. Users can now create new categories, associate custom functions with them, and add category descriptions for better organization and discoverability.
+- `#I829459` - Issue with "exception occurs when rendering charts with discontinuous data ranges containing empty cells" has been resolved.
+
+- `#I829043` - Issue with "formulas prefixed with `+` or `-` not being recognized and evaluated" has been resolved.
+- `#I830256` - Issue with "incorrect formula reference highlighting when selecting cells through defined names" has been resolved.
+- `#I829434` - Issue with "string arguments passed to user-defined functions being auto-detected as dates and converted to date serial numbers" has been resolved.
 
 ## 33.1.49 (2026-04-14)
 
@@ -1445,7 +1449,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.1.46 (2026-03-31)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.3 (2026-04-21)
+
+### Spreadsheet
+
+#### Features
+
+- `#I802051` -  Introduced support for custom function categories in the spreadsheet `Insert Function` dialog. Users can now create new categories, associate custom functions with them, and add category descriptions for better organization and discoverability.
+
+## 33.1.46 (2026-03-31)
 
 ### Spreadsheet
 

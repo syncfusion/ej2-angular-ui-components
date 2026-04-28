@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I829449` - Fixed an issue where NumericTextBox cleared the value on Enter when decimals was used together with max.
+
 ## 33.1.47 (2026-04-07)
 
 ### MaskedTextBox

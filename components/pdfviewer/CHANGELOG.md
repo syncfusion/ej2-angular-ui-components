@@ -2,7 +2,20 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### PDF Viewer
+
+#### Bug Fixes
+
+- `#I824790` - Resolved an issue where the `showToolbarItem` method did not work for custom toolbar items.
+- `#I829535` - Fixed an issue where the area annotation label was not displayed after exporting and importing a document in the PDF Viewer.
+- `#I830721` - Fixed an issue where the `findText` method did not work properly with a customer provided document.
+- `#I830154` - Fixed an exception that occurred while downloading a document containing a straight line ink annotation.
+- `#I831256` - Fixed an issue where form field names with underscores were not set properly when the Form Designer module was disabled.
+- `#I830801` - Fixed an issue where the ink annotation was not completed properly when selecting a text markup tool while ink mode was active.
+
+## 33.1.49 (2026-04-14)
 
 ### PDF Viewer
 

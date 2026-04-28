@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### FileManager
+
+#### Bug Fixes
+
+- `#F198188` - An issue with range selection when using mouse dragging with mouse wheel scrolling in File Manager component has been resolved.
+
+## 33.1.47 (2026-04-07)
 
 ### FileManager
 

@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### GanttChart
+
+#### Bug fixes
+
+- `#FB73605` - Fixed an issue where the context menu did not open in both the Grid and Chart areas when the Gantt component had no records to display.
+- `#I830330` - Fixed an issue where, on initial load, the parent task ignored unscheduled child task dates, resulting in an incorrect parent taskbar timeline.
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 33.2.3 (2026-04-21)
 
 ### GanttChart
@@ -11,7 +22,9 @@
 - `#I821215` - The white space flash issue during scrolling with `enableVirtualization` and custom column templates has been resolved.
 - `#FB73516` - Resolved expand and collapse issues and resize handle flickering after expanding tasks when `enableMultiTaskbar` was enabled.
 
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+#### Bug fix
+
+- `#I821215` - The white space flash issue during scrolling with `enableVirtualization` and custom column templates has been resolved.
 
 ## 33.1.49 (2026-04-14)
 

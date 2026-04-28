@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I815160` - The scrollbar now retains its position when `chart.refresh()` is called after a data update. This also applies to the inverted scrollbar.
+- `#I827966` - Data label line breaks (`\n`) are now correctly applied when mapped from the data source
+
+## 33.1.47 (2026-04-07)
 
 ### Chart
 

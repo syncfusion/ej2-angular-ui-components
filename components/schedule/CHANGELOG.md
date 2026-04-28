@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### Schedule
+
+#### Bug fixes
+
+- `#I829835`, `#I830482` - Fixed an issue where events were rendered incorrectly after the resize operation in the `TimelineMonth` view.
+
+## 33.1.47 (2026-04-07)
 
 ### Schedule
 

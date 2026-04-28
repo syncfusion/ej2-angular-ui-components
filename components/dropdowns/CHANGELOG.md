@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### MultiSelect
+
+#### Bug Fixes
+
+- `#I829508` - Fixed an issue where binding 6,000+ preselected values with virtualization enabled resulted in a “Maximum call stack size exceeded” error.
+
+### Mention
+
+#### Bug Fixes
+
+- `#I58529` - Resolved an issue where mention filtering did not trigger after existing text when `allowSpaces`: true and the data source was empty.
+
+### DropDownTree
+
+#### Bug Fixes
+
+- `#I829239` - Resolved an issue where `Select All` was incorrectly hidden during filtering in `DropDownTree` based on filtered item count.
+
+- `#I813436` - Resolved a memory leak in the DropDownTree component by ensuring the window resize event listener is correctly detached during destroy, preventing retained instances in Angular Material Dialog scenarios.
+
 ## 33.1.49 (2026-04-14)
 
 ### MultiSelect
@@ -9,12 +31,6 @@
 #### Bug Fixes
 
 - `#I816920` - Resolved an issue where the MultiSelect “Select All” option selected only the first 30 items when using string arrays with virtualization enabled.
-
-## 33.1.47 (2026-04-07)
-
-### drop-down-tree
-
-- `#I813436` - Resolved a memory leak in the DropDownTree component by ensuring the window resize event listener is correctly detached during destroy, preventing retained instances in Angular Material Dialog scenarios.
 
 ## 33.1.46 (2026-03-31)
 

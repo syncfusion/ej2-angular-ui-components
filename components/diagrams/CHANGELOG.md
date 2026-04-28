@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### Diagram
+
+#### Bug Fixes
+
+- `#I829702` - The `v-slot nodeTemplate` now renders HTML nodes correctly in the Vue Diagram and Symbol Palette.
+- `#I830395` - Now UML relationship connectors labels preserve user defined annotations and marked as read only.
+
 ## 33.1.49 (2026-04-14)
 
 ### Diagram

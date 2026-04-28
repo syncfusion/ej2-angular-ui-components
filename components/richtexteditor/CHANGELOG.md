@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### RichTextEditor
+
+#### Bug Fixes
+
+- `#I827874` - Now, automatic list creation is prevented when typing in the middle or at the end of a line in the Rich Text Editor.
+
+- `#I828953` - Now, the https:// prepends to `www` links inserted through the link dialog when `enableAutoUrl` is enabled.
+
+- `#I828855` - Now, the alignment dropdown maintains the proper active state for centre aligned pasted content in the Rich Text Editor.
+
 ## 33.1.49 (2026-04-14)
 
 ### RichTextEditor

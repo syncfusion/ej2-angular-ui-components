@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.3 (2026-04-21)
+## 33.2.4 (2026-04-28)
+
+### Ribbon
+
+#### Bug Fixes
+
+- `#I831323` - Now the issue with gallery popup position misalignment in overflow state has been resolved.
+
+## 33.1.49 (2026-04-14)
 
 ### Ribbon
 

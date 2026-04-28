@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### Grid
+
+#### Bugs
+
+- `I826547` - Resolved an issue where the custom format was not applied to date columns when the custom format type was not specified.
+
 ## 33.2.3 (2026-04-21)
 
 ### Grid

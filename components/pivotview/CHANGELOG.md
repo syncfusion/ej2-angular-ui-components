@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 33.2.4 (2026-04-28)
+
+### Pivot Table
+
+#### Bug Fixes
+
+- `#I828186` - Fixed an issue where the `indexObject` was not available for row headers in the tabular Pivot Table.
+- `#I830313` - Fixed an issue where child row headers were missing during server-side Excel export of the tabular Pivot Table.
+- `#I829878` - Fixed an issue where the Pivot Table did not export correctly when Turkish characters were included in PDF document headers.
+
 ## 33.1.49 (2026-04-14)
 
 ### Pivot Table
