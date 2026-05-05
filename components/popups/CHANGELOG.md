@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.5 (2026-05-05)
+
+### Dialog
+
+#### Bug Fixes
+
+- `#I831383` - Fixed an issue where NVDA read the dialog header and Close button multiple times when the dialog opened.
+
 ## 21.1.35 (2023-03-23)
 
 ### Tooltip

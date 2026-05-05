@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.5 (2026-05-05)
+
+### CheckBox
+
+#### Bug Fixes
+
+- `#I833797` -  Fixed an issue where getComponent Method fails to retrieve CheckBox Instance.
+
 ## 33.1.44 (2026-03-16)
 
 ### Chip

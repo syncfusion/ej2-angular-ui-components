@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 33.2.5 (2026-05-05)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I828635` - Issue with "values are not properly added to the cells while using `updateRange` method" has been resolved.
+- `#I830256` - Issue with "incorrect formula reference highlighting when selecting cells through defined names" has been resolved.
+- `#I834471` - Issue with "left autofill produces incorrect output after right autofill on selected range" has been resolved.
+
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
@@ -11,7 +21,6 @@
 - `#I829459` - Issue with "exception occurs when rendering charts with discontinuous data ranges containing empty cells" has been resolved.
 
 - `#I829043` - Issue with "formulas prefixed with `+` or `-` not being recognized and evaluated" has been resolved.
-- `#I830256` - Issue with "incorrect formula reference highlighting when selecting cells through defined names" has been resolved.
 - `#I829434` - Issue with "string arguments passed to user-defined functions being auto-detected as dates and converted to date serial numbers" has been resolved.
 
 ## 33.1.49 (2026-04-14)

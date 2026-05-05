@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.4 (2026-04-28)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I832976` - Fixed an issue where dragging a group between root-level conditions caused it to revert to its original position.
-
 ## 33.1.44 (2026-03-16)
 
 ### QueryBuilder
@@ -781,7 +773,15 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 33.1.49 (2026-04-14)
+- **Queries**: Queries supports JSON/SQL rules.## 33.2.4 (2026-04-28)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I832976` - Fixed an issue where dragging a group between root-level conditions caused it to revert to its original position.
+
+## 33.1.49 (2026-04-14)
 
 ### QueryBuilder
 

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.4 (2026-04-28)
+## 33.2.5 (2026-05-05)
 
-### NumericTextBox
+### Uploader
 
 #### Bug Fixes
 
-- `#I829449` - Fixed an issue where NumericTextBox cleared the value on Enter when decimals was used together with max.
+- `#I834648` - Fixed a memory leak caused by event listeners not being removed when the Uploader component was destroyed.
 
 ## 33.1.47 (2026-04-07)
 
@@ -1388,7 +1388,15 @@ MaskedTextBox allows the user to enter the valid input only based on the provide
 
 - **Regular Expression** - can be used as a mask element for each character of the MaskedTextBox.
 
-- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 33.1.49 (2026-04-14)
+- **Accessibility** - provides built-in accessibility support which helps to access all the MaskedTextBox component features through keyboard, on-screen readers, or other assistive technology devices.## 33.2.4 (2026-04-28)
+
+### NumericTextBox
+
+#### Bug Fixes
+
+- `#I829449` - Fixed an issue where NumericTextBox cleared the value on Enter when decimals was used together with max.
+
+## 33.1.49 (2026-04-14)
 
 ### MaskedTextBox
 
