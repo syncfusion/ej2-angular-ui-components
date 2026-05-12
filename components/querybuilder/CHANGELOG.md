@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.6 (2026-05-12)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I836154` - Fixed an issue where the Query Builder header template was not rendering correctly, causing the first-row layout to break.
+
 ## 33.1.44 (2026-03-16)
 
 ### QueryBuilder

@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.5 (2026-05-05)
+## 33.2.6 (2026-05-12)
 
-### SplitButton
+### ProgressButton
 
 #### Bug Fixes
 
-- `I824699` - Fixed an accessibility issue by applying aria-haspopup only to the dropdown icon button in the SplitButton component.
+- `#I831927` - Fixed an issue where the ProgressButton BDS theme incorrectly used the Material 3 skin name instead of Tailwind.
 
 ## 28.1.33 (2024-12-12)
 
@@ -284,4 +284,11 @@ SplitButton component has primary and secondary button. Primary button is used t
 
 - **Separator** - Supports Popup items grouping by using the Separator.
 
-- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.
+- **Accessibility** - Provided with built-in accessibility support that helps to access all the SplitButton component features through the keyboard, screen readers, or other assistive technology devices.## 33.1.49 (2026-04-14)
+
+### SplitButton
+
+#### Bug Fixes
+
+- `I824699` - Fixed an accessibility issue by applying aria-haspopup only to the dropdown icon button in the SplitButton component.
+

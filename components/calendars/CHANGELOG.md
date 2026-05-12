@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.5 (2026-05-05)
+## 33.2.6 (2026-05-12)
 
 ### DateRangePicker
 
@@ -11,6 +11,8 @@
 - `#I830285` - Fixed a console error that occurred when presets was set to an empty array ([]) in the date range picker.
 
 - `#I832441` - Fixed an issue where the DateRangePicker start date did not update on the first selection when the popup was opened via the input field after using the range icon.
+
+- `#I831012` - Fixed an issue where the DateRangePicker marked the reactive form control as touched when the popup was opened via icon click.
 
 ## 33.1.44 (2026-03-16)
 
