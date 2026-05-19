@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.6 (2026-05-12)
+## 33.2.7 (2026-05-19)
 
 ### QueryBuilder
 
 #### Bug Fixes
 
-- `#I836154` - Fixed an issue where the Query Builder header template was not rendering correctly, causing the first-row layout to break.
+- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping conditions has been resolved.
 
 ## 33.1.44 (2026-03-16)
 
@@ -781,7 +781,15 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 33.2.4 (2026-04-28)
+- **Queries**: Queries supports JSON/SQL rules.## 33.2.6 (2026-05-12)
+
+### QueryBuilder
+
+#### Bug Fixes
+
+- `#I836154` - Fixed an issue where the Query Builder header template was not rendering correctly, causing the first-row layout to break.
+
+## 33.2.4 (2026-04-28)
 
 ### QueryBuilder
 

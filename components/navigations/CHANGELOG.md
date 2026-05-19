@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 33.2.7 (2026-05-19)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I838036` - Resolved an issue where the TreeView component displayed an unwanted border outline during interaction.
+
+### Tab
+
+#### Bug Fixes
+
+- `I832506` - Resolved drag and drop not fully disabling by ensuring existing draggable instances are destroyed and cleaned up when `allowDragAndDrop` is turned off.
+
+- `#I830876` - The issue where the Tab component header scrollbar did not render when the parent element width exceeded 500px has been resolved.
+
 ## 33.2.6 (2026-05-12)
 
 ### TreeView
