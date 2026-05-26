@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.7 (2026-05-19)
+## 33.2.8 (2026-05-26)
+
+### DatePicker
+
+#### Bug Fixes
+
+- `#I838664` - Fixed an accessibility issue causing repeated screen reader announcements in the DatePicker.
+
+- `#I1026156` - Fixed an issue where date selection in the DatePicker calendar popup was not working on iPhone when openOnFocus was enabled.
 
 ### DateRangePicker
 

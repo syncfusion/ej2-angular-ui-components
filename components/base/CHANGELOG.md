@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## 33.2.7 (2026-05-19)
+## 33.2.8 (2026-05-26)
+
+### Common
+
+#### Bug Fixes
+
+- `#I842006` - The issue where an error occurred during Angular package installation stating "Could not find file for path" has been resolved.
+
+## 33.2.3 (2026-04-21)
 
 ### Common
 
