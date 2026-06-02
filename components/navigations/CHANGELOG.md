@@ -2,21 +2,19 @@
 
 ## [Unreleased]
 
-## 33.2.8 (2026-05-26)
+## 33.2.10 (2026-06-02)
+
+### TreeView
+
+#### Bug Fixes
+
+- `#I842780` - Issue with "Console error occurs when opening ContextMenu in TreeView" has been resolved.
 
 ### Sidebar
 
 #### Bug Fixes
 
 - `#I835140` - Issue with "Sidebar closes when switching the type values, even when close event cancellation is applied" has been resolved.
-
-### Tab
-
-#### Bug Fixes
-
-- `#I835967` - Resolved issue with accordion header border styling during mouse interaction.
-
-- `#I838107` - An accessibility issue with expand icon when using `overflowMode` as popup has been resolved.
 
 ## 33.2.7 (2026-05-19)
 
@@ -3244,7 +3242,23 @@ TreeView component is used to represent hierarchical data in a tree like structu
 
 - **Template** - Allows you to customize the nodes in TreeView.
 
-- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.## 33.1.49 (2026-04-14)
+- **Accessibility** - Provides built-in accessibility support that helps to access all the TreeView component features through the keyboard, on-screen readers, or other assistive technology devices.## 33.2.8 (2026-05-26)
+
+### Tab
+
+#### Bug Fixes
+
+- `#I835967` - Resolved issue with accordion header border styling during mouse interaction.
+
+- `#I838107` - An accessibility issue with expand icon when using `overflowMode` as popup has been resolved.
+
+### Sidebar
+
+#### Bug Fixes
+
+- `#I835140` - Issue with "Sidebar closes when switching the type values, even when close event cancellation is applied" has been resolved.
+
+## 33.1.49 (2026-04-14)
 
 ### ContextMenu
 

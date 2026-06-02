@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 33.2.10 (2026-06-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I840130` - Issue with "custom formula handler executes twice when a formula cell is copy-pasted" has been resolved.
+
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
