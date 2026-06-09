@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 33.2.10 (2026-06-02)
+## 33.2.12 (2026-06-09)
 
 ### DatePicker
 
@@ -10,7 +10,11 @@
 
 - `#I838664` - Fixed an accessibility issue causing repeated screen reader announcements in the DatePicker.
 
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
 - `#I1026156` - Fixed an issue where date selection in the DatePicker calendar popup was not working on iPhone when openOnFocus was enabled.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 
 ### DateRangePicker
 
@@ -20,7 +24,23 @@
 
 - `#I832441` - Fixed an issue where the DateRangePicker start date did not update on the first selection when the popup was opened via the input field after using the range icon.
 
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
 - `#I831012` - Fixed an issue where the DateRangePicker marked the reactive form control as touched when the popup was opened via icon click.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+### DateTimePicker
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+### TimePicker
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 
 ## 33.1.44 (2026-03-16)
 

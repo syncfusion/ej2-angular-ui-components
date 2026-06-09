@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 33.2.12 (2026-06-09)
+
+### ComboBox
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+### DropdownList
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
+- `#I841769` - Fixed an issue where `No records found` message is not announced by NVDA when using DropDownList with Reactive Forms.
+
+### AutoComplete
+
+#### Bug Fixes
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
+
 ## 33.2.10 (2026-06-02)
 
 ### MultiSelect
