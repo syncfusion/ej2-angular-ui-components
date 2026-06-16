@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.12 (2026-06-09)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I840130` - Issue with "custom formula handler executes twice when a formula cell is copy-pasted" has been resolved.
-
 ## 33.2.4 (2026-04-28)
 
 ### Spreadsheet
@@ -1456,7 +1448,15 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.5 (2026-05-05)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.10 (2026-06-02)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I840130` - Issue with "custom formula handler executes twice when a formula cell is copy-pasted" has been resolved.
+
+## 33.2.5 (2026-05-05)
 
 ### Spreadsheet
 
