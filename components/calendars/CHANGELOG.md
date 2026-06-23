@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
+## 33.2.15 (2026-06-23)
 
 ### DatePicker
 
 #### Bug Fixes
+
+- `#1030875` - The issue where the DatePicker popup failed to maintain focus, causing it to close unexpectedly during keyboard navigation, has now been resolved.
 
 - `#I838664` - Fixed an accessibility issue causing repeated screen reader announcements in the DatePicker.
 
@@ -33,6 +35,10 @@
 ### DateTimePicker
 
 #### Bug Fixes
+
+- `#1030875` - The issue where the DatePicker popup failed to maintain focus, causing it to close unexpectedly during keyboard navigation, has now been resolved.
+
+- `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 
 - `#I839807` - Fixed an issue where form controls were incorrectly marked as dirty after reset due to dependent `patchValue` operations.
 

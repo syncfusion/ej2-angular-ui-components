@@ -2,13 +2,13 @@
 
 ## [Unreleased]
 
-## 33.2.13 (2026-06-16)
+## 33.2.15 (2026-06-23)
 
-### CheckBox
+### Chip
 
 #### Bug Fixes
 
-- `#I833797` -  Fixed an issue where getComponent Method fails to retrieve CheckBox Instance.
+- `#I844690` - Resolved an issue where the ChipList component click event did not provide the clickEventArgs.
 
 ## 33.1.44 (2026-03-16)
 
@@ -531,7 +531,15 @@ RadioButton is a graphical user interface element that allows to select one opti
 
 - **Label** - Supports label and its positioning.
 
-- **Sizes** - Provided with different sizes of RadioButton.## 17.1.38 (2019-03-29)
+- **Sizes** - Provided with different sizes of RadioButton.## 33.2.5 (2026-05-05)
+
+### CheckBox
+
+#### Bug Fixes
+
+- `#I833797` -  Fixed an issue where getComponent Method fails to retrieve CheckBox Instance.
+
+## 17.1.38 (2019-03-29)
 
 ### RadioButton
 
