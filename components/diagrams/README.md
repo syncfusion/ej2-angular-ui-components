@@ -4,7 +4,7 @@ The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diag
 
 <p align="center">
     <a href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Getting started</a> . 
-    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm#/bootstrap5/diagram/default-functionalities">Online demos</a> . 
+    <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/diagram/default-functionalities?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Online demos</a> . 
     <a href="https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Learn more</a>
 </p>
 

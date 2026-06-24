@@ -270,7 +270,7 @@ Chart components are available in following list of frameworks.
 * Expense Tracker - [Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loan-calculator?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * [Angular Stock Chart demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
-* Fitness Tracker - [Source](hhttps://github.com/SyncfusionExamples/showcase-angular-health-tracker-dashboard-demo?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/healthtracker/src/#/dashboard/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
+* Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-angular-health-tracker-dashboard-demo?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/healthtracker/src/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 
 ## Resources
 
