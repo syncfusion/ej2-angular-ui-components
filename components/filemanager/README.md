@@ -4,7 +4,7 @@ The [Angular FileManager](https://www.syncfusion.com/angular-components/angular-
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm">Getting Started</a> .
-   <a href="https://ej2.syncfusion.com/angular/demos/#/tailwind3/file-manager/overview?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm#/bootstrap5/file-manager/overview">Online demos</a> .
    <a href="https://www.syncfusion.com/angular-components/angular-file-manager?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm">Learn more</a>
 </p>
 
@@ -92,12 +92,12 @@ The FileManager component is also offered in following list of frameworks,
 
 ## Key features
  
-* [File and directory management](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/file-manager/directory-upload?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component allows users to upload, download, rename, sort, cut, copy, and paste files and directories.
+* [File and directory management](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm#/bootstrap5/file-manager/directory-upload): The component allows users to upload, download, rename, sort, cut, copy, and paste files and directories.
 * [Multiple layout options](https://ej2.syncfusion.com/angular/documentation/file-manager/user-interface#view?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component supports both large icons view and details view layout, giving users the ability to choose the display option that works best for them.
-* [Multiple file providers](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/file-manager/azure-service?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component supports a range of file providers, including Amazon S3, MS Azure, NodeJS, Google file systems, and local physical file providers, giving users flexibility in how they store and access their files.
+* [Multiple file providers](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm#/bootstrap5/file-manager/azure-service): The component supports a range of file providers, including Amazon S3, MS Azure, NodeJS, Google file systems, and local physical file providers, giving users flexibility in how they store and access their files.
 * [Search functionality](https://ej2.syncfusion.com/angular/documentation/file-manager/file-operations#search?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component includes a search feature that allows users to easily locate specific files within their file system.
-* [Customizable interface](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/file-manager/custom?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component's interface can be customized to fit the needs and preferences of users, allowing for a personalized experience.
-* [Responsive design](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/file-manager/overview?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component is designed to be responsive, ensuring that it works seamlessly across a range of devices and screen sizes.
+* [Customizable interface](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm#/bootstrap5/file-manager/custom): The component's interface can be customized to fit the needs and preferences of users, allowing for a personalized experience.
+* [Responsive design](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm#/bootstrap5/file-manager/overview): The component is designed to be responsive, ensuring that it works seamlessly across a range of devices and screen sizes.
 * [Easy integration](https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component is easy to integrate into existing projects, making it a convenient and straightforward solution for file management.
 * [Context menu](https://ej2.syncfusion.com/angular/documentation/file-manager/user-interface#context-menu?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component includes a context menu that allows users to quickly and easily access file management options.
 * [Toolbar](https://ej2.syncfusion.com/angular/documentation/file-manager/user-interface#toolbar?utm_source=npm&utm_medium=listing&utm_campaign=angular-filemanager-npm): The component's toolbar provides a flexible way to manage file operations, making it easy for users to perform common tasks.

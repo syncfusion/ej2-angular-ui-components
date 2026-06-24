@@ -13,7 +13,7 @@ The [Angular Chart Component](https://www.syncfusion.com/angular-components/angu
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/overview-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> . 
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/overview-chart">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -38,16 +38,16 @@ The [Angular Chart Component](https://www.syncfusion.com/angular-components/angu
    * [Angular Box Plot Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/box-and-whisker-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
    * [Angular Histogram Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/histogram-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
    * [Angular Financial Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
-* [Data binding](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/local-data?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Bind the Chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
-* [Axis types](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/numeric?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports multiple axes, and able to plot different data such as numbers, datetime, logarithmic and string.
+* [Data binding](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/local-data): Bind the Chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
+* [Axis types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/numeric): Supports multiple axes, and able to plot different data such as numbers, datetime, logarithmic and string.
 * [Rendering modes](https://ej2.syncfusion.com/angular/documentation/chart/render-methods?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports two type of rendering: SVG and Canvas. By default chart rendered in SVG, You can easily switch between the two simple configuration.
-* [Data label](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/data-label-template?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports data label to annotate points with label to improve the readability of data.
-* [Annotation](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/pie-annotation?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides support to mark any specific area of interest by adding custom element.
-* [Zooming and panning](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/zooming?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to visualize the data points under any region using rectangular selection, pinch, or mouse wheel zooming.
-* [Crosshair & trackball](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/cross-hair?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to track data points closer to the mouse position or touch action.
-* [Selection](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/range-selection?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Allows you to select any data point or subset of points using selection feature.
-* [Export](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/export?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides the options to Export the chart to  PDF, SVG and CSV formats.
-* [RTL support](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/rtl?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
+* [Data label](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/data-label-template): Supports data label to annotate points with label to improve the readability of data.
+* [Annotation](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/pie-annotation): Provides support to mark any specific area of interest by adding custom element.
+* [Zooming and panning](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/zooming): Provides options to visualize the data points under any region using rectangular selection, pinch, or mouse wheel zooming.
+* [Crosshair & trackball](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)#/bootstrap5/chart/cross-hair: Provides options to track data points closer to the mouse position or touch action.
+* [Selection](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/range-selection): Allows you to select any data point or subset of points using selection feature.
+* [Export](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/export): Provides the options to Export the chart to  PDF, SVG and CSV formats.
+* [RTL support](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/rtl): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
 * [Appearance](https://ej2.syncfusion.com/angular/documentation/chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the charts are picked by the built-in theme, but each element of the chart can be customized by simple configuration options.
 * [Accessibility](https://ej2.syncfusion.com/angular/documentation/chart/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the chart can be effectively used with assistive technologies such as screen readers.
 * [Localization](https://ej2.syncfusion.com/angular/documentation/chart/localization?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): The Localization library enables you to adapt the default text content of the chart to fit the language and cultural preferences of your target audience.
@@ -58,7 +58,7 @@ Built-in support for pie, doughnut, pyramid and funnel chart types, to show the 
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/default-pie?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> . 
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/default-pie">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -72,11 +72,11 @@ Built-in support for pie, doughnut, pyramid and funnel chart types, to show the 
    * [Angular Doughnut Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/donut-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
    * [Angular Pyramid Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/pyramid-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
    * [Angular Funnel Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/funnel-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
-* [Smart labels](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/smart-labels?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports arrangement of data labels smartly to avoid overlapping when the data point value falls in close range.
-* [Grouping](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/grouping?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports grouping of data points based on value and point count.
-* [Semi-pie](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/semi-pie?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to customize the start and end angle of the pie chart.
-* [Legend](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/pie-legend?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to display additional information about the points with the help of legend.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chart/donut?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, drill-down, events, and selection.
+* [Smart labels](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/smart-labels): Supports arrangement of data labels smartly to avoid overlapping when the data point value falls in close range.
+* [Grouping](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/grouping): Supports grouping of data points based on value and point count.
+* [Semi-pie](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/semi-pie): Provides options to customize the start and end angle of the pie chart.
+* [Legend](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/pie-legend): Provides options to display additional information about the points with the help of legend.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/donut): Provides great user experiance by including a set of interactive features such as tooltip, drill-down, events, and selection.
 
 ### Angular Stock Chart
 
@@ -84,7 +84,7 @@ The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> .
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/angular-components/angular-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -95,14 +95,14 @@ The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-
 #### Key features
 
 * [Data binding](https://ej2.syncfusion.com/angular/documentation/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
-* [Range selector](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/disabled-period?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports range selector to filter a date range for data that needs to be visualized.
-* [Period selector](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/disabled-navigator?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports period selector to select predefined periods just by a single click.
-* [Technical indicators](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
-* [Trendlines](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Predicts the future trends with predetermined data for any measurements.
-* [Stock events](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/stock-events?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports stock events to show different kinds of market events on the chart.
-* [Export](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/multi-pane?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
+* [Range selector](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/disabled-period): Supports range selector to filter a date range for data that needs to be visualized.
+* [Period selector](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/disabled-navigator): Supports period selector to select predefined periods just by a single click.
+* [Technical indicators](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
+* [Trendlines](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default): Predicts the future trends with predetermined data for any measurements.
+* [Stock events](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/stock-events): Supports stock events to show different kinds of market events on the chart.
+* [Export](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/multi-pane): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
 * [Appearance](https://ej2.syncfusion.com/angular/documentation/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/tailwind3/stock-chart/multi-pane?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/multi-pane): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### Angular Range Navigator
 
@@ -110,7 +110,7 @@ The [Angular Range Navigator Component](https://www.syncfusion.com/angular-compo
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/range-navigator/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/range-navigator/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> . 
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -120,11 +120,11 @@ The [Angular Range Navigator Component](https://www.syncfusion.com/angular-compo
 
 #### Key features
 
-* [Data sources](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Bind the range navigator component with an array of JSON objects or DataManager.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and animation.
-* [Lightweight](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/light-weight?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports light-weight range navigator to load in mobile device.
-* [Period selector](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/period-default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to select the data over the custom period.
-* [Axis types](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/date-time?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
+* [Data sources](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/stock-chart): Bind the range navigator component with an array of JSON objects or DataManager.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/default): Provides great user experiance by including a set of interactive features such as tooltip, events, and animation.
+* [Lightweight](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/light-weight): Supports light-weight range navigator to load in mobile device.
+* [Period selector](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/period-default): Provides options to select the data over the custom period.
+* [Axis types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/date-time): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
 
 ### Angular Sparkline
 
@@ -132,7 +132,7 @@ The [Angular Sparkline Component](https://www.syncfusion.com/angular-components/
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/sparkline/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> . 
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -142,11 +142,11 @@ The [Angular Sparkline Component](https://www.syncfusion.com/angular-components/
 
 #### Key features
 
-* [Series types](https://ej2.syncfusion.com/angular/demos/#/tailwind3/sparkline/series-type?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports five types of sparklines : line, area, column, win loss, and pie to show data trends.
-* [Axis types](https://ej2.syncfusion.com/angular/demos/#/tailwind3/sparkline/axis-type?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
-* [Data label](https://ej2.syncfusion.com/angular/demos/#/tailwind3/sparkline/customization?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm):  Supports data label to annotate points with label to improve the readability of data.
-* [Range band](https://ej2.syncfusion.com/angular/demos/#/tailwind3/sparkline/range-band?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to highlight specific range of values.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/tailwind3/sparkline/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
+* [Series types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/series-type): Supports five types of sparklines : line, area, column, win loss, and pie to show data trends.
+* [Axis types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/axis-type): Supports multiple axis and able to plot different data such as numbers, datetime, logarithmic and string.
+* [Data label](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/customization):  Supports data label to annotate points with label to improve the readability of data.
+* [Range band](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/range-band): Provides options to highlight specific range of values.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/default): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### Angular Bullet Chart
 
@@ -164,10 +164,10 @@ The [Angular Bullet Chart Component](https://www.syncfusion.com/angular-componen
 
 #### Key features
 
-* [Multiple measures](https://ej2.syncfusion.com/angular/demos/#/tailwind3/bullet-chart/multiple-data?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to render multiple measure bars as well as multiple target bars to allow comparison of several measures at once.
-* [Legend](https://ej2.syncfusion.com/angular/demos/#/tailwind3/bullet-chart/bullet-legend?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to display additional information about the target and actual bar.
-* [RTL support](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_campaign=bulletchart#/material/bullet-chart/rtl?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/tailwind3/bullet-chart/tooltip?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to display additional information about target and actual on mouse hover.
+* [Multiple measures](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/bullet-chart/multiple-data): Provides options to render multiple measure bars as well as multiple target bars to allow comparison of several measures at once.
+* [Legend](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/bullet-chart/bullet-legend): Provides options to display additional information about the target and actual bar.
+* [RTL support](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npmt#/bootstrap5/grid/over-view): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/bullet-chart/tooltip): Provides options to display additional information about target and actual on mouse hover.
 
 ### Angular Smith Chart
 
@@ -175,7 +175,7 @@ The [Angular Smith Chart Component](https://www.syncfusion.com/angular-component
 
 <p align="center">
    <a href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
-   <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/smith-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Online demos</a> . 
+   <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-smith-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
 
@@ -185,10 +185,10 @@ The [Angular Smith Chart Component](https://www.syncfusion.com/angular-component
 
 #### Key features
 
-* [Legend](https://ej2.syncfusion.com/angular/demos/#/tailwind3/smith-chart/default?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to display additional information about the series.
-* [Data label](https://ej2.syncfusion.com/angular/demos/#/tailwind3/smith-chart/custom?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports data label to annotate points with label to improve the readability of data.
-* [Tooltip](https://ej2.syncfusion.com/angular/demos/#/tailwind3/smith-chart/custom?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides options to display additional information about data points on mouse hover.
-* [Print and Export](https://ej2.syncfusion.com/angular/demos/#/tailwind3/smith-chart/print-export?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Provides support to print and export the rendered smith chart for future use.
+* [Legend](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/default): Provides options to display additional information about the series.
+* [Data label](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/custom): Supports data label to annotate points with label to improve the readability of data.
+* [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/custom): Provides options to display additional information about data points on mouse hover.
+* [Print and Export](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/print-export): Provides support to print and export the rendered smith chart for future use.
 
 ## Setup
 
@@ -269,7 +269,7 @@ Chart components are available in following list of frameworks.
 
 * Expense Tracker - [Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * Loan Calculator - [Source](https://github.com/syncfusion/ej2-showcase-angular-loan-calculator?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
-* [Angular Stock Chart demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
+* [Angular Stock Chart demo](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * Fitness Tracker - [Source](https://github.com/SyncfusionExamples/showcase-angular-health-tracker-dashboard-demo?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/healthtracker/src/#/dashboard?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 
 ## Resources
