@@ -4,7 +4,7 @@ The [Angular RichTextEditor](https://www.syncfusion.com/angular-components/angul
 
 <div align="center">
     <h4>
-        <a href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">📖Getting started</a> &#x2022;
+        <a href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">📖Getting started</a> &#x2022;
         <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools">🚀Online demos</a> &#x2022; 
         <a href="https://www.syncfusion.com/angular-components/angular-rich-text-editor?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm">🌐Learn more</a>
     </h4>
@@ -127,7 +127,7 @@ Rich Text Editor component is also offered in following list of frameworks.
 
 * [Markdown content preview](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#/bootstrap5/rich-text-editor/tools) - Preview of the modified Markdown content in the editor, you can give users the ability to see what the formatted content will look like before they save it.
 
-* [Tools](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar/toolbar-types#toolbar-items?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - The rich text editor handles a wide range of features, including inserting images, hyperlinks, tables, formatting tools, and more.
+* [Tools](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar/toolbar-types?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#toolbar-items) - The rich text editor handles a wide range of features, including inserting images, hyperlinks, tables, formatting tools, and more.
 
 * [Toolbar appearance](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#/bootstrap5/rich-text-editor/types) - The rich text editor can provide a fully customizable toolbar that allows users to access the various formatting and editing options that are available.
 
@@ -137,7 +137,7 @@ Rich Text Editor component is also offered in following list of frameworks.
 
 * [Undo and redo](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/undo-redo?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - Users can use undo and redo actions to reverse or repeat actions they took while editing the content.
 
-* [Module injection](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started#module-injection?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
+* [Module injection](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#module-injection) - It is possible to create a editor that utilizes a modular library to load the necessary functionality on demand. This can be useful for optimizing the performance of the editor.
 
 * [Third-party integration](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - It is possible to integrate a third-party library into a rich text editor to add additional functionality or features to the editor like `Code-mirror`, `Embedly` and more.
 

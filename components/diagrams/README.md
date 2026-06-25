@@ -3,7 +3,7 @@
 The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm) component is used for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 
 <p align="center">
-    <a href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Getting started</a> . 
+    <a href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Getting started</a> . 
     <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm#/bootstrap5/diagram/default-functionalities">Online demos</a> . 
     <a href="https://www.syncfusion.com/angular-components/angular-diagram?utm_source=npm&utm_medium=listing&utm_campaign=angular-diagram-npm">Learn more</a>
 </p>

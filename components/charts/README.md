@@ -12,7 +12,7 @@ The [Angular Charts](https://www.syncfusion.com/angular-components/angular-chart
 The [Angular Chart Component](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) is a feature-rich chart component with built-in support for over 50 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/overview-chart">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -57,7 +57,7 @@ The [Angular Chart Component](https://www.syncfusion.com/angular-components/angu
 Built-in support for pie, doughnut, pyramid and funnel chart types, to show the proportions and percentages between the categories.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/default-pie">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -83,7 +83,7 @@ Built-in support for pie, doughnut, pyramid and funnel chart types, to show the 
 The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) Component is a well-crafted, easy-to-use financial charting package to track and visualize stock price of any company over a specific period using charting and range tools.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
+   <a href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/angular-components/angular-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -174,7 +174,7 @@ The [Angular Bullet Chart Component](https://www.syncfusion.com/angular-componen
 The [Angular Smith Chart Component](https://www.syncfusion.com/angular-components/angular-smith-chart) visualize data of high frequency circuit applications. It contains two sets of circles to plot parameters of transmission lines.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-smith-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
