@@ -4,8 +4,8 @@ import { Fab } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale','position','target','visible'];
-export const outputs: string[] = ['created'];
+export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRepeat','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale','position','repeatDelay','repeatInterval','target','visible'];
+export const outputs: string[] = ['clicked','created'];
 export const twoWays: string[] = [];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [];
 export class FabComponent extends Fab implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	clicked: any;
 	public created: any;
 
 

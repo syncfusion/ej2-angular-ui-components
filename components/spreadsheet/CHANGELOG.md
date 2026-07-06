@@ -2,39 +2,6 @@
 
 ## [Unreleased]
 
-## 33.2.4 (2026-04-28)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I829459` - Issue with "exception occurs when rendering charts with discontinuous data ranges containing empty cells" has been resolved.
-
-- `#I829043` - Issue with "formulas prefixed with `+` or `-` not being recognized and evaluated" has been resolved.
-- `#I829434` - Issue with "string arguments passed to user-defined functions being auto-detected as dates and converted to date serial numbers" has been resolved.
-
-## 33.1.49 (2026-04-14)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I827842` - Issue with "applying a top border to a cell with font styles caused selection misalignment" has been resolved.
-
-- `#I823318` - Issue with "horizontal scrollbar in `Firefox` being less accessible compared to `Chrome` and `Edge`" has been resolved.
-
-#### Features
-
-- `#I756181` - Enhanced the `SORT` formula in the Spreadsheet component to support dynamic arrays. The output now auto-resizes and updates in real time as source data changes, with support for undo/redo, edit, and insert/delete actions.
-
-## 33.1.47 (2026-04-07)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I805278` - Issue with "pie chart rendered empty when the data range contained both string and numeric columns" has been resolved.
-
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet
@@ -1448,41 +1415,7 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 33.2.10 (2026-06-02)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I840130` - Issue with "custom formula handler executes twice when a formula cell is copy-pasted" has been resolved.
-
-## 33.2.5 (2026-05-05)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I828635` - Issue with "values are not properly added to the cells while using `updateRange` method" has been resolved.
-- `#I830256` - Issue with "incorrect formula reference highlighting when selecting cells through defined names" has been resolved.
-- `#I834471` - Issue with "left autofill produces incorrect output after right autofill on selected range" has been resolved.
-
-## 33.2.3 (2026-04-21)
-
-### Spreadsheet
-
-#### Features
-
-- `#I802051` -  Introduced support for custom function categories in the spreadsheet `Insert Function` dialog. Users can now create new categories, associate custom functions with them, and add category descriptions for better organization and discoverability.
-
-## 33.1.46 (2026-03-31)
-
-### Spreadsheet
-
-#### Bug fixes
-
-- `#I818439` - Issue with "unable to select a formula cell reference when editing a formula in the formula bar in Firefox browser" has been resolved.
-
-## 31.2.16 (2025-12-02)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.16 (2025-12-02)
 
 ### Spreadsheet
 

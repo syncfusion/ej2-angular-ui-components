@@ -5,7 +5,7 @@ import { TextBox } from '@syncfusion/ej2-inputs';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['appendTemplate','autocomplete','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','multiline','placeholder','prependTemplate','readonly','showClearButton','type','value','width'];
+export const inputs: string[] = ['appendTemplate','autocomplete','cssClass','enablePersistence','enableRtl','enabled','floatLabelType','htmlAttributes','locale','maxLength','multiline','placeholder','prependTemplate','readonly','showClearButton','type','value','width'];
 export const outputs: string[] = ['blur','change','created','destroyed','focus','input','valueChange'];
 export const twoWays: string[] = ['value'];
 

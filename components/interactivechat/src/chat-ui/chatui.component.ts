@@ -42,6 +42,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
      * Specifies the template for rendering suggestion items in the Chat UI component. 
      * Defines the content or layout used to render suggestion items, and can be either a string or a function. 
      * The template context includes the index and suggestion text.
+     * 
+     * {% codeBlock src='chat-ui/suggestionTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -54,6 +57,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     /** 
      * Specifies the template for the footer area in the Chat UI component. 
      * Defines the content or layout used to render the footer, which can be provided as a string or a function.
+     * 
+     * {% codeBlock src='chat-ui/footerTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -66,6 +72,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     /** 
      * Specifies the template for rendering the empty state of the Chat UI component. 
      * This property can accept either a string or a function to customize the appearance when there are no messages to display in the chat.
+     * 
+     * {% codeBlock src='chat-ui/emptyChatTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -78,6 +87,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     /** 
      * Specifies the template for rendering individual messages in the Chat UI component. 
      * This property can accept either a string or a function to customize the appearance of messages. The template context includes message and index.
+     * 
+     * {% codeBlock src='chat-ui/messageTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -90,6 +102,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     /** 
      * Template for displaying users currently typing in the chat interface. 
      * Accepts a string or function to customize the display format.
+     * 
+     * {% codeBlock src='chat-ui/typingUsersTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -102,6 +117,9 @@ export class ChatUIComponent extends ChatUI implements IComponentBase {
     /** 
      * Defines a custom template for rendering time breaks in the Chat UI component. 
      * Accepts a string or function that formats the appearance of date-based separators, allowing customization of how messages are visually grouped by date.
+     * 
+     * {% codeBlock src='chat-ui/timebreakTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element

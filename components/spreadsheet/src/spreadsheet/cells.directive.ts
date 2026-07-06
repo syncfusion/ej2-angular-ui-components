@@ -3,8 +3,9 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 import { ImagesDirective } from './image.directive';
 import { ChartsDirective } from './chart.directive';
+import { RichTextsDirective } from './richtext.directive';
 
-let input: string[] = ['chart', 'colSpan', 'comment', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'isReadOnly', 'notes', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
+let input: string[] = ['chart', 'colSpan', 'comment', 'format', 'formula', 'hyperlink', 'image', 'index', 'isLocked', 'isReadOnly', 'notes', 'richText', 'rowSpan', 'style', 'validation', 'value', 'wrap'];
 let outputs: string[] = [];
 /**
  * `e-cell` directive represent a cell of the Angular Spreadsheet.
@@ -31,7 +32,8 @@ let outputs: string[] = [];
     outputs: outputs,    
     queries: {
         childImage: new ContentChild(ImagesDirective), 
-        childChart: new ContentChild(ChartsDirective)
+        childChart: new ContentChild(ChartsDirective), 
+        childRichText: new ContentChild(RichTextsDirective)
     }
 })
 export class CellDirective extends ComplexBase<CellDirective> {
@@ -39,7 +41,8 @@ export class CellDirective extends ComplexBase<CellDirective> {
 	
     public childImage: any;
     public childChart: any;
-    public tags: string[] = ['image', 'chart'];
+    public childRichText: any;
+    public tags: string[] = ['image', 'chart', 'richText'];
     /** 
      * Represents the threaded comment associated with the cell. 
      * A threaded comment allows users to add a main comment and maintain a discussion through replies. 
@@ -104,6 +107,15 @@ export class CellDirective extends ComplexBase<CellDirective> {
      * @default ''
      */
     public notes: any;
+    /** 
+     * Specifies the rich text segments for the cell text, allowing superscript and subscript formatting within the content. 
+     * Uses the RichText model to apply formatting to specific text segments. The options are: 
+     * - **text**: Specifies the text content for each segment. 
+     * - **style**: Specifies the style for each segment; it supports superscript and subscript formatting. 
+     * Set `verticalAlign` as `super` for superscript formatting and `sub` for subscript formatting.
+     * @default []
+     */
+    public richText: any;
     /** 
      * Specifies the row-wise cell merge count.
      * @default 1

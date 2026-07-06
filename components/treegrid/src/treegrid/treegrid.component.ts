@@ -10,7 +10,7 @@ export const outputs: string[] = ['actionBegin','actionComplete','actionFailure'
 export const twoWays: string[] = ['dataSource'];
 
 /**
- * `ejs-treegrid` represents the Angular TreeTreeGrid Component.
+ * `ejs-treegrid` represents the Angular TreeGrid Component.
  * ```html
  * <ejs-treegrid [dataSource]='data' allowPaging='true' allowSorting='true'></ejs-treegrid>
  * ```
