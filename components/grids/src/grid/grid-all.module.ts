@@ -6,7 +6,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { GridComponent } from './grid.component';
 import { GridModule } from './grid.module';
-import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, InfiniteScroll, LazyLoadGroup} from '@syncfusion/ej2-grids'
+import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, InfiniteScroll, LazyLoadGroup, DomVirtualization} from '@syncfusion/ej2-grids'
 
 
 export const FilterService: ValueProvider = { provide: 'GridsFilter', useValue: Filter};
@@ -33,6 +33,7 @@ export const ColumnChooserService: ValueProvider = { provide: 'GridsColumnChoose
 export const ForeignKeyService: ValueProvider = { provide: 'GridsForeignKey', useValue: ForeignKey};
 export const InfiniteScrollService: ValueProvider = { provide: 'GridsInfiniteScroll', useValue: InfiniteScroll};
 export const LazyLoadGroupService: ValueProvider = { provide: 'GridsLazyLoadGroup', useValue: LazyLoadGroup};
+export const DomVirtualizationService: ValueProvider = { provide: 'GridsDomVirtualization', useValue: DomVirtualization};
 
 /**
  * NgModule definition for the Grid component with providers.
@@ -66,7 +67,8 @@ export const LazyLoadGroupService: ValueProvider = { provide: 'GridsLazyLoadGrou
         ColumnChooserService,
         ForeignKeyService,
         InfiniteScrollService,
-        LazyLoadGroupService
+        LazyLoadGroupService,
+        DomVirtualizationService
     ]
 })
 export class GridAllModule { }
