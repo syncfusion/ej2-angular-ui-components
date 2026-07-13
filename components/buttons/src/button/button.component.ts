@@ -4,8 +4,8 @@ import { Button } from '@syncfusion/ej2-buttons';
 
 
 
-export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale'];
-export const outputs: string[] = ['created'];
+export const inputs: string[] = ['content','cssClass','disabled','enableHtmlSanitizer','enablePersistence','enableRepeat','enableRtl','iconCss','iconPosition','isPrimary','isToggle','locale','repeatDelay','repeatInterval'];
+export const outputs: string[] = ['clicked','created'];
 export const twoWays: string[] = [];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [];
 export class ButtonComponent extends Button implements IComponentBase {
     public containerContext : any;
     public tagObjects: any;
+	clicked: any;
 	public created: any;
 
 

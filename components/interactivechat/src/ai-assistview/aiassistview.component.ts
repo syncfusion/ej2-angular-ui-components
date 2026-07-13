@@ -4,8 +4,8 @@ import { AIAssistView } from '@syncfusion/ej2-interactive-chat';
 import { Template } from '@syncfusion/ej2-angular-base';
 import { ViewsDirective } from './views.directive';
 
-export const inputs: string[] = ['activeView','attachmentSettings','bannerTemplate','cssClass','enableAttachments','enablePersistence','enableRtl','enableScrollToBottom','enableStreaming','footerTemplate','footerToolbarSettings','height','locale','prompt','promptIconCss','promptItemTemplate','promptPlaceholder','promptSuggestionItemTemplate','promptSuggestions','promptSuggestionsHeader','promptToolbarSettings','prompts','responseIconCss','responseItemTemplate','responseToolbarSettings','showClearButton','showHeader','speechToTextSettings','toolbarSettings','views','width'];
-export const outputs: string[] = ['attachmentRemoved','attachmentUploadFailure','attachmentUploadSuccess','beforeAttachmentUpload','created','promptChanged','promptRequest','stopRespondingClick','promptChange'];
+export const inputs: string[] = ['activeView','attachmentSettings','bannerTemplate','blockTemplate','cssClass','enableAttachments','enablePersistence','enableRtl','enableScrollToBottom','enableStreaming','footerTemplate','footerToolbarSettings','height','itemTemplate','locale','prompt','promptIconCss','promptItemTemplate','promptPlaceholder','promptSuggestionItemTemplate','promptSuggestions','promptSuggestionsHeader','promptToolbarSettings','prompts','responseIconCss','responseItemTemplate','responseToolbarSettings','showClearButton','showHeader','speechToTextSettings','textToSpeechSettings','toolbarSettings','views','width'];
+export const outputs: string[] = ['attachmentRemoved','attachmentUploadFailure','attachmentUploadSuccess','beforeAttachmentUpload','created','editableContextClicked','promptChanged','promptRequest','stopRespondingClick','promptChange'];
 export const twoWays: string[] = ['prompt'];
 
 /**
@@ -33,6 +33,7 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
 	attachmentUploadSuccess: any;
 	beforeAttachmentUpload: any;
 	created: any;
+	editableContextClicked: any;
 	promptChanged: any;
 	promptRequest: any;
 	stopRespondingClick: any;
@@ -103,6 +104,30 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
     @Template()
     public promptSuggestionItemTemplate: any;
     /** 
+     * Specifies the content template for rendering the stage item. 
+     * Can be a string or function template to customize the stage display.
+     * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('itemTemplate')
+    @Template()
+    public itemTemplate: any;
+    /** 
+     * Specifies the content template for rendering the thinking block item. 
+     * Can be a string or function template to customize the block's HTML structure.
+     * @default ''
+     * @angulartype string | object
+     * @reacttype string | function | JSX.Element
+     * @vuetype string | function
+     * @asptype string
+     */
+    @ContentChild('blockTemplate')
+    @Template()
+    public blockTemplate: any;
+    /** 
      * Specifies the template for the banner in the AIAssistView component. 
      * Represents the content or layout used to render the banner. Can be a string or a function.
      * 
@@ -122,6 +147,12 @@ export class AIAssistViewComponent extends AIAssistView implements IComponentBas
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('Interactive-ChatAssistThinking');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

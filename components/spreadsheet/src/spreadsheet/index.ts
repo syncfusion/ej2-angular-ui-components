@@ -1,5 +1,6 @@
 export {ImageDirective,ImagesDirective} from './image.directive';
 export {ChartDirective,ChartsDirective} from './chart.directive';
+export {RichTextDirective,RichTextsDirective} from './richtext.directive';
 export {CellDirective,CellsDirective} from './cells.directive';
 export {RowDirective,RowsDirective} from './rows.directive';
 export {ColumnDirective,ColumnsDirective} from './columns.directive';
@@ -9,4 +10,4 @@ export {SheetDirective,SheetsDirective} from './sheets.directive';
 export {DefinedNameDirective,DefinedNamesDirective} from './definednames.directive';
 export { SpreadsheetComponent} from './spreadsheet.component';
 export { SpreadsheetModule } from './spreadsheet.module';
-export { SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, CellFormatService, NumberFormatService, FormulaService } from './spreadsheet-all.module';
+export { SpreadsheetAllModule, ClipboardService, EditService, KeyboardNavigationService, KeyboardShortcutService, SelectionService, ContextMenuService, FormulaBarService, RibbonService, SaveService, OpenService, SheetTabsService, DataBindService, CellFormatService, NumberFormatService, FormulaService, AIAssistService } from './spreadsheet-all.module';

@@ -2,23 +2,17 @@
 
 ## [Unreleased]
 
-## 33.2.15 (2026-06-23)
+## 34.1.30 (2026-07-09)
 
 ### QueryBuilder
 
 #### Bug Fixes
 
-- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping groups and conditions has been resolved.
+- `#I851973` - Resolved an accessibility issue in QueryBuilder that occurred when both `enableSeparateConnector` and `allowDragAndDrop` were enabled.
 
-## 33.2.7 (2026-05-19)
+- `#I852514` - Resolved an issue where QueryBuilder allowed multiple connector selections during keyboard navigation.
 
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I839882` - The issue where the `OR` operator changed to `AND` while dragging and dropping conditions has been resolved.
-
-## 33.1.44 (2026-03-16)
+## 34.1.29 (2026-07-06)
 
 ### QueryBuilder
 
@@ -789,37 +783,7 @@ The Query Builder component is a graphical user interface that allows users to c
 
 - **Template**: Supports templates and it is applicable for all input components.
 
-- **Queries**: Queries supports JSON/SQL rules.## 33.2.6 (2026-05-12)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I836154` - Fixed an issue where the Query Builder header template was not rendering correctly, causing the first-row layout to break.
-
-## 33.2.4 (2026-04-28)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-- `#I832976` - Fixed an issue where dragging a group between root-level conditions caused it to revert to its original position.
-
-## 33.1.49 (2026-04-14)
-
-### QueryBuilder
-
-- `#I830102` - Fixed an issue where cloning a group after unmounting and remounting the Query Builder resulted in an incorrect rule count and improper rule nesting.
-
-## 33.1.46 (2026-03-31)
-
-### QueryBuilder
-
-#### Bug Fixes
-
-`#I821297` - Fixed an issue where the Query Builder field selector switched from a DropDownList to a plain input after removing another Query Builder.
-
-## 18.2.47 (2020-07-28)
+- **Queries**: Queries supports JSON/SQL rules.## 18.2.47 (2020-07-28)
 
 ### QueryBuilder
 

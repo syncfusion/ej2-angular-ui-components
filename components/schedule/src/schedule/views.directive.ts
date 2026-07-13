@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowOverlap', 'allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'enableLazyLoading', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'maxEventsPerRow', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'overscanCount', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
+let input: string[] = ['allowOverlap', 'allowVirtualScrolling', 'cellHeaderTemplate', 'cellTemplate', 'dateFormat', 'dateHeaderTemplate', 'dateRangeTemplate', 'dayHeaderTemplate', 'displayDate', 'displayName', 'enableLazyLoading', 'endHour', 'eventTemplate', 'firstDayOfWeek', 'firstMonthOfYear', 'group', 'headerIndentTemplate', 'headerRows', 'interval', 'isSelected', 'maxEventStack', 'maxEventsPerRow', 'monthHeaderTemplate', 'monthsCount', 'numberOfWeeks', 'option', 'orientation', 'overscanCount', 'readonly', 'resourceHeaderTemplate', 'showWeekNumber', 'showWeekend', 'startHour', 'timeFormat', 'timeScale', 'workDays'];
 let outputs: string[] = [];
 /**
  * `e-views` directive represent a view of the Angular Schedule. 
@@ -120,6 +120,16 @@ For recurring events, an alert will be displayed, and the event will not be save
      * @default false
      */
     public isSelected: any;
+    /** 
+     * Specifies the maximum number of events to be displayed per cell in vertical views. 
+     * This property is applicable only to Day, Week and WorkWeek views when the TimeScale option is enabled.
+     * @remarks - When set to 0 (default), all events are displayed without any limit, maintaining backward compatibility.
+- When set to a positive integer (e.g., 1, 2), only that many events will be visible, and remaining events are hidden.
+
+     * @default 0
+     * @asptype int
+     */
+    public maxEventStack: any;
     /** 
      * Specifies the maximum number of events to be displayed in a single row. 
      * This property is applicable when the 'rowAutoHeight' property is disabled. 

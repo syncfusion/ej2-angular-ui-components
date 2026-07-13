@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { SheetsDirective } from './sheets.directive';
 import { DefinedNamesDirective } from './definednames.directive';
 
-export const inputs: string[] = ['activeSheetIndex','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowFreezePane','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowPrint','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','author','autoFillSettings','calculationMode','cellStyle','cssClass','currencyCode','definedNames','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enableNotes','enablePersistence','enableRtl','height','isProtected','listSeparator','locale','openSettings','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showCommentsPane','showFormulaBar','showRibbon','showSheetTabs','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeCellUpdate','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEdited','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','queryCellInfo','saveComplete','select','sortComplete'];
+export const inputs: string[] = ['activeSheetIndex','aiAssistSettings','allowAutoFill','allowCellFormatting','allowChart','allowConditionalFormat','allowDataValidation','allowDelete','allowEditing','allowFiltering','allowFindAndReplace','allowFreezePane','allowHyperlink','allowImage','allowInsert','allowMerge','allowNumberFormatting','allowOpen','allowPrint','allowResizing','allowSave','allowScrolling','allowSorting','allowUndoRedo','allowWrap','author','autoFillSettings','calculationMode','cellStyle','cssClass','currencyCode','definedNames','enableAIAssist','enableClipboard','enableContextMenu','enableKeyboardNavigation','enableKeyboardShortcut','enableNotes','enablePersistence','enableRtl','height','isProtected','listSeparator','locale','openSettings','openUrl','password','saveUrl','scrollSettings','selectionSettings','sheets','showAggregate','showCommentsPane','showFormulaBar','showRibbon','showSheetTabs','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','afterHyperlinkClick','afterHyperlinkCreate','beforeCellFormat','beforeCellRender','beforeCellSave','beforeCellUpdate','beforeConditionalFormat','beforeDataBound','beforeHyperlinkClick','beforeHyperlinkCreate','beforeOpen','beforeSave','beforeSelect','beforeSort','cellEdit','cellEdited','cellEditing','cellSave','contextMenuBeforeClose','contextMenuBeforeOpen','contextMenuItemSelect','created','dataBound','dataSourceChanged','dialogBeforeOpen','fileMenuBeforeClose','fileMenuBeforeOpen','fileMenuItemSelect','openComplete','openFailure','promptRequest','promptResponse','queryCellInfo','saveComplete','select','sortComplete'];
 export const twoWays: string[] = [''];
 
 /**
@@ -62,6 +62,8 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
 	fileMenuItemSelect: any;
 	openComplete: any;
 	openFailure: any;
+	promptRequest: any;
+	promptResponse: any;
 	queryCellInfo: any;
 	saveComplete: any;
 	select: any;
@@ -163,6 +165,12 @@ export class SpreadsheetComponent extends Spreadsheet implements IComponentBase 
             } catch { }
         try {
                 let mod = this.injector.get('SpreadsheetFormula');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('SpreadsheetAIAssist');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

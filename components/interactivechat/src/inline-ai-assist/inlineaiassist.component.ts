@@ -37,6 +37,9 @@ export class InlineAIAssistComponent extends InlineAIAssist implements IComponen
     /** 
      * Specifies a custom template (string or function) for rendering the prompt input area. 
      * Specifies a string template or a function that returns the editor UI markup.
+     * 
+     * {% codeBlock src='inline-ai-assist/editorTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element
@@ -49,6 +52,9 @@ export class InlineAIAssistComponent extends InlineAIAssist implements IComponen
     /** 
      * Specifies a custom template (string or function) for rendering AI-generated response content. 
      * Specifies that a function receives a ResponseTemplateContext and returns markup or text.
+     * 
+     * {% codeBlock src='inline-ai-assist/responseTemplate/index.md' %}{% endcodeBlock %}
+     *     
      * @default ''
      * @angulartype string | object
      * @reacttype string | function | JSX.Element

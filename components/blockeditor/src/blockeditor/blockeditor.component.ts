@@ -4,7 +4,7 @@ import { BlockEditor } from '@syncfusion/ej2-blockeditor';
 
 
 
-export const inputs: string[] = ['backgroundColorSettings','blockActionMenuSettings','blocks','codeBlockSettings','commandMenuSettings','contextMenuSettings','cssClass','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','fontColorSettings','height','imageBlockSettings','inlineToolbarSettings','keyConfig','labelSettings','locale','pasteCleanupSettings','readOnly','transformSettings','undoRedoStack','users','width'];
+export const inputs: string[] = ['backgroundColorSettings','blockActionMenuSettings','blocks','codeBlockSettings','collaborationSettings','commandMenuSettings','contextMenuSettings','cssClass','currentUserId','enableDragAndDrop','enableHtmlEncode','enableHtmlSanitizer','enablePersistence','enableRtl','fontColorSettings','height','imageBlockSettings','inlineToolbarSettings','keyConfig','labelSettings','locale','pasteCleanupSettings','readOnly','transformSettings','undoRedoStack','users','width'];
 export const outputs: string[] = ['afterPasteCleanup','beforeFileUpload','beforePasteCleanup','blockChanged','blockDragStart','blockDragging','blockDropped','blur','created','fileUploadFailed','fileUploadSuccess','fileUploading','focus','selectionChanged','blocksChange'];
 export const twoWays: string[] = ['blocks'];
 
@@ -50,6 +50,18 @@ export class BlockEditorComponent extends BlockEditor implements IComponentBase 
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('BlockEditorCollaboration');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('BlockEditorVersionHistory');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);
