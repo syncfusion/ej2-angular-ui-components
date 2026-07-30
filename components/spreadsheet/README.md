@@ -94,7 +94,8 @@ Spreadsheet component is also offered in the following list of frameworks.
 
 ## Showcase samples
 
-* Document Explorer - [Source](https://github.com/essential-studio/ej2-angular-document-explorer/?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/documentexplorer/?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm#/dashboard)
+* Expense Tracker - [Source](https://github.com/syncfusion/ej2-showcase-angular-expensetracker?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/expensetracker/?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm#/dashboard)
+* Loan Calculator - [Source](https://github.com/syncfusion/ej2-sample-ng-loancalculator?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm), [Live Demo](https://ej2.syncfusion.com/showcase/angular/loancalculator/?utm_source=npm&utm_medium=listing&utm_campaign=angular-spreadsheet-npm)
 
 
 ## Key features
