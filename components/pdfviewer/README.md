@@ -136,15 +136,15 @@ PDF Viewer component is also offered in the following list of frameworks.
 
 * [View PDF Document](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Open and display both the normal and the protected PDF files with AES and RC4 encryption.
 * [Annotations](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/annotation/text-markup-annotation?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Annotate with text markup, shapes, stamps, ink, and sticky notes.
-* [Form Fields](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/form-designer/create-fillable-pdf-forms/create-programmatically?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Form filling and form designing can be done.
-* [Signature](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/handwritten-signature?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Hand-written and digital signatures are allowed.
+* [Form Fields](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/forms/form-filling?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Form filling and form designing can be done.
+* [Signature](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/annotation/signature-annotation?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Hand-written and digital signatures are allowed.
 * [Toolbar](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/toolbar?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Built-in-toolbar and custom toolbars to perform user interaction of PDF Viewer functionalities.
 * [Navigation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/navigation?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Easy navigation with the help of bookmarks, thumbnails, hyperlinks, and table of contents.
 * [Magnification](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/magnification?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Fit to page, fit to width, and automatic (fits to the visible area).
 * [Search](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/text-search?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Search a text easily across the PDF document.	
 * [Core Interactions](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/interaction-mode?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Allows scrolling, zooming, panning, selection, and page navigation.
 * [Print](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/print?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Print the entire document or a specific page directly from the browser.
-* [Globalization](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/globalization?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Provides inherent support to localize the UI.
+* [Globalization](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/angular/localization/default-language?utm_source=npm&utm_medium=listing&utm_campaign=angular-pdf-viewer-npm) - Provides inherent support to localize the UI.
 
 ## Resources
 
