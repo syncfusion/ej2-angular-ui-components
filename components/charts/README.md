@@ -12,7 +12,7 @@ The [Angular Charts](https://www.syncfusion.com/angular-components/angular-chart
 The [Angular Chart Component](https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) is a feature-rich chart component with built-in support for over 50 chart types, technical indictors, trendline, zooming, tooltip, selection, crosshair and trackball.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://help.syncfusion.com/chart-sdk/angular/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/overview-chart">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -40,7 +40,7 @@ The [Angular Chart Component](https://www.syncfusion.com/angular-components/angu
    * [Angular Financial Chart](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * [Data binding](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/local-data): Bind the Chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
 * [Axis types](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/numeric): Supports multiple axes, and able to plot different data such as numbers, datetime, logarithmic and string.
-* [Rendering modes](https://ej2.syncfusion.com/angular/documentation/chart/render-methods?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports two type of rendering: SVG and Canvas. By default chart rendered in SVG, You can easily switch between the two simple configuration.
+* [Rendering modes](https://help.syncfusion.com/chart-sdk/angular/chart/render-methods?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Supports two type of rendering: SVG and Canvas. By default chart rendered in SVG, You can easily switch between the two simple configuration.
 * [Data label](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/data-label-template): Supports data label to annotate points with label to improve the readability of data.
 * [Annotation](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/pie-annotation): Provides support to mark any specific area of interest by adding custom element.
 * [Zooming and panning](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/zooming): Provides options to visualize the data points under any region using rectangular selection, pinch, or mouse wheel zooming.
@@ -48,16 +48,16 @@ The [Angular Chart Component](https://www.syncfusion.com/angular-components/angu
 * [Selection](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/range-selection): Allows you to select any data point or subset of points using selection feature.
 * [Export](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/export): Provides the options to Export the chart to  PDF, SVG and CSV formats.
 * [RTL support](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/rtl): Provides a full-fledged right-to-left mode which aligns axis, tooltip, legend and data in the chart component from right to left.
-* [Appearance](https://ej2.syncfusion.com/angular/documentation/chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the charts are picked by the built-in theme, but each element of the chart can be customized by simple configuration options.
-* [Accessibility](https://ej2.syncfusion.com/angular/documentation/chart/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the chart can be effectively used with assistive technologies such as screen readers.
-* [Localization](https://ej2.syncfusion.com/angular/documentation/chart/localization?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): The Localization library enables you to adapt the default text content of the chart to fit the language and cultural preferences of your target audience.
+* [Appearance](https://help.syncfusion.com/chart-sdk/angular/chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the charts are picked by the built-in theme, but each element of the chart can be customized by simple configuration options.
+* [Accessibility](https://help.syncfusion.com/chart-sdk/angular/chart/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Designed to be accessible to users with disabilities, with features such as WAI-ARIA standard compliance and keyboard navigation to ensure that the chart can be effectively used with assistive technologies such as screen readers.
+* [Localization](https://help.syncfusion.com/chart-sdk/angular/chart/localization?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): The Localization library enables you to adapt the default text content of the chart to fit the language and cultural preferences of your target audience.
 
 ### Angular Accumulation Charts
 
 Built-in support for pie, doughnut, pyramid and funnel chart types, to show the proportions and percentages between the categories.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://help.syncfusion.com/chart-sdk/angular/accumulation-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/chart/default-pie">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-charts?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -83,7 +83,7 @@ Built-in support for pie, doughnut, pyramid and funnel chart types, to show the 
 The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) Component is a well-crafted, easy-to-use financial charting package to track and visualize stock price of any company over a specific period using charting and range tools.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/angular/stock-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/angular-components/angular-stock-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -94,14 +94,14 @@ The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-
 
 #### Key features
 
-* [Data binding](https://ej2.syncfusion.com/angular/documentation/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
+* [Data binding](https://help.syncfusion.com/chart-sdk/angular/stock-chart/working-with-data?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Bind the stock chart component with an array of JSON objects or DataManager. Other than chart series, data label and tooltip can also bound to your data.
 * [Range selector](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/disabled-period): Supports range selector to filter a date range for data that needs to be visualized.
 * [Period selector](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/disabled-navigator): Supports period selector to select predefined periods just by a single click.
 * [Technical indicators](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default): Incidators allows to analyze the past and predict the future market trends based on historic price, volume, or open interest.
 * [Trendlines](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/default): Predicts the future trends with predetermined data for any measurements.
 * [Stock events](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/stock-events): Supports stock events to show different kinds of market events on the chart.
 * [Export](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/multi-pane): Provides the options to Export the stock chart to  PDF, SVG and CSV formats.
-* [Appearance](https://ej2.syncfusion.com/angular/documentation/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
+* [Appearance](https://help.syncfusion.com/chart-sdk/angular/stock-chart/appearance?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm): Colors for the stock chart are picked by the built-in theme, but each element of the stock chart can be customized by simple configuration options.
 * [Tooltip](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/stock-chart/multi-pane): Provides great user experiance by including a set of interactive features such as tooltip, events, and trackball.
 
 ### Angular Range Navigator
@@ -109,7 +109,7 @@ The [Angular Stock Chart](https://www.syncfusion.com/angular-components/angular-
 The [Angular Range Navigator Component](https://www.syncfusion.com/angular-components/angular-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) is an interface for selecting a small range from a large collection. It is commonly used in financial dashboards to filter a date range for data that needs to be visualized.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/range-navigator/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://help.syncfusion.com/chart-sdk/angular/range-navigator/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/range-navigator/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-range-selector?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -131,7 +131,7 @@ The [Angular Range Navigator Component](https://www.syncfusion.com/angular-compo
 The [Angular Sparkline Component](https://www.syncfusion.com/angular-components/angular-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) is a very small chart control drawn without axes or coordinates. The sparklines are easy to interpret and convey more information to users by visualizing data in a small amount of space.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://help.syncfusion.com/chart-sdk/angular/sparkline/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/sparkline/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-sparkline?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -153,7 +153,7 @@ The [Angular Sparkline Component](https://www.syncfusion.com/angular-components/
 The [Angular Bullet Chart Component](https://www.syncfusion.com/angular-components/angular-bullet-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm) is a interface to visually compare measures, similar to the commonly used bar chart. A bullet chart displays one or more measures and compares them with a target value.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
+   <a href="https://help.syncfusion.com/chart-sdk/angular/bullet-chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> .
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/bullet-chart/default">Online demos</a> .
    <a href="https://www.syncfusion.com/angular-components/angular-bullet-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -174,7 +174,7 @@ The [Angular Bullet Chart Component](https://www.syncfusion.com/angular-componen
 The [Angular Smith Chart Component](https://www.syncfusion.com/angular-components/angular-smith-chart) visualize data of high frequency circuit applications. It contains two sets of circles to plot parameters of transmission lines.
 
 <p align="center">
-   <a href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
+   <a href="https://help.syncfusion.com/chart-sdk/angular/smithchart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Getting started</a> . 
    <a href="https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm#/bootstrap5/smith-chart/default">Online demos</a> . 
    <a href="https://www.syncfusion.com/angular-components/angular-smith-chart?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm">Learn more</a>
 </p>
@@ -274,7 +274,7 @@ Chart components are available in following list of frameworks.
 
 ## Resources
 
-* [Documentation](https://ej2.syncfusion.com/angular/documentation/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
+* [Documentation](https://help.syncfusion.com/chart-sdk/angular/chart/getting-started?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * [Theme Studio](https://ej2.syncfusion.com/themestudio/?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * [What's New](https://www.syncfusion.com/products/whatsnew/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)
 * [Road Map](https://www.syncfusion.com/products/roadmap/angular?utm_source=npm&utm_medium=listing&utm_campaign=angular-charts-npm)

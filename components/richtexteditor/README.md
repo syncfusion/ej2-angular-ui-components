@@ -117,7 +117,7 @@ Rich Text Editor component is also offered in following list of frameworks.
 
 * [Checklist Suport](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm#/material35/rich-text-editor/tools) - Allows users to create checklists (to-do lists) directly within the editor. Users can easily add interactive checkbox items to their content.
 
-* [Accessibility & WCAG 2.0 Compliance](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - Ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
+* [Accessibility & WCAG 2.0 Compliance](https://help.syncfusion.com/rich-text-editor-sdk/overview?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - Ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
 * [Preventing Cross-Site Scripting (XSS)](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/prevent-cross-site-scripting?utm_source=npm&utm_medium=listing&utm_campaign=angular-rich-text-editor-npm) - The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS).
 
