@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 34.2.2 (2026-08-05)
+
+### GanttChart
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 34.1.30 (2026-07-09)
 
 ### GanttChart
@@ -9,10 +17,6 @@
 #### Bug fix
 
 - `#F198447` - Performance degradation after repeated expand/collapse and row drag-and-drop actions with multiple column templates has been fixed.
-
-#### Bug fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 30.1.37 (2025-06-25)
 

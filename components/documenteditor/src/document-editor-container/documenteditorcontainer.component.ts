@@ -4,7 +4,7 @@ import { DocumentEditorContainer } from '@syncfusion/ej2-documenteditor';
 
 
 
-export const inputs: string[] = ['autoResizeOnVisibilityChange','backstageMenu','currentUser','documentEditorSettings','documentSettings','enableAutoFocus','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','fileMenuItems','headers','height','layoutType','locale','restrictEditing','ribbonLayout','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','toolbarMode','userColor','width','zIndex'];
+export const inputs: string[] = ['autoResizeOnVisibilityChange','backstageMenu','currentUser','documentEditorSettings','documentSettings','enableAutoFocus','enableComment','enableCsp','enableLocalPaste','enableLockAndEdit','enablePersistence','enableRtl','enableSpellCheck','enableToolbar','enableTrackChanges','fileMenuItems','headers','height','isModalDialog','layoutType','locale','restrictEditing','ribbonLayout','serverActionSettings','serviceUrl','showPropertiesPane','toolbarItems','toolbarMode','userColor','width','zIndex'];
 export const outputs: string[] = ['beforeAcceptRejectChanges','beforeCommentAction','beforePaneSwitch','beforePaste','commentDelete','contentChange','contentControl','created','customContextMenuBeforeOpen','customContextMenuSelect','destroyed','documentChange','fileMenuItemClick','selectionChange','serviceFailure','toolbarClick','trackChange','beforeXmlHttpRequestSend'];
 export const twoWays: string[] = [];
 
