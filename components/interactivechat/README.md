@@ -93,3 +93,14 @@ Product support is available through the following mediums.
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-interactive-chat-npm) for more info.
 
 &copy; Copyright 2025 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
+
+
+## Other Popular Angular Components
+
+Explore other popular Syncfusion<sup>®</sup> Angular components curated from UI components, standalone SDKs, and document solution suites.
+
+|  |  |  |  |  |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) | [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) | [Angular Scheduler](https://www.syncfusion.com/scheduler-sdk/angular-scheduler) | [Angular Diagram](https://www.syncfusion.com/diagram-sdk/angular-diagram) | [Angular Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor) |
+| [Angular Maps](https://www.syncfusion.com/angular-components/angular-maps-library) | [Angular Gantt Chart](https://www.syncfusion.com/gantt-sdk/angular-gantt-chart) | [Angular PDF Viewer](https://www.syncfusion.com/pdf-viewer-sdk/angular-pdf-viewer) | [Angular Docx Editor](https://www.syncfusion.com/docx-editor-sdk/angular-docx-editor) | [Angular Spreadsheet Editor](https://www.syncfusion.com/spreadsheet-editor-sdk/angular-spreadsheet-editor) |
+
