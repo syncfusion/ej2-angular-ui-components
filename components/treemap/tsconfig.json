@@ -1,16 +1,23 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "es2015",
-        "moduleResolution": "node",
+        "target": "es2022",
+        "module": "es2022",
+        "moduleResolution": "bundler",
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "declaration": true,
-        "lib": ["es2015", "dom"],
+        "declarationMap": true,
+        "lib": ["es2022", "dom"],
         "noImplicitAny": true,
         "skipLibCheck": true,
-        "suppressImplicitAnyIndexErrors": true
+        "useDefineForClassFields": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": false
     },
     "include": [
         "./*.ts",
@@ -24,6 +31,9 @@
         "src/index.ts"
     ],
     "angularCompilerOptions": {
-        "genDir": "aot"
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": false
     }
 }

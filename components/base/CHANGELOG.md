@@ -2,15 +2,20 @@
 
 ## [Unreleased]
 
-## 34.2.9 (2026-09-22)
+## 34.1.29 (2026-07-06)
 
 ### Common
 
-#### Bug Fixes
+#### New Features
 
-- `#I842006` - The issue where an error occurred during Angular package installation stating "Could not find file for path" has been resolved.
+- Upgraded `SASS` to the latest version `1.100.0`.
+- Enhanced Syncfusion [theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages) to support both consolidated and component-level styles. Each component now provides dedicated style files with an `index.css/index.scss` that includes required dependencies, enabling simpler and more modular style management.
 
-## 33.2.3 (2026-04-21)
+#### Breaking Changes
+
+- SCSS files are no longer supported within component packages and [EJ2 package](https://www.npmjs.com/package/@syncfusion/ej2), and direct SCSS imports will not work. Use SCSS theming by importing styles from centralized [theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#reference-themes-in-the-angular-application).
+
+## 33.2.4 (2026-04-28)
 
 ### Common
 
@@ -272,7 +277,7 @@
 
 #### Bug Fixes
 
-- Fixed ngFor databinding items have property losses if `directives` have child content template property.
+- Fixed ngFor `databinding` items have property losses if `directives` have child content template property.
 
 ## 18.4.30 (2020-12-17)
 
@@ -304,7 +309,7 @@
 
 #### Bug Fixes
 
-- `I275509,I274538,I278435` - Fixed ngFor databinding not worked while dynamically add items.
+- `I275509,I274538,I278435` - Fixed ngFor `databinding` not worked while dynamically add items.
 
 ## 18.1.42 (2020-04-01)
 

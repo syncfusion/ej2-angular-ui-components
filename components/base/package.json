@@ -1,6 +1,6 @@
 {
 	"name": "@syncfusion/ej2-angular-base",
-	"version": "33.2.8",
+	"version": "34.2.0",
 	"description": "A common package of Essential JS 2 base Angular libraries, methods and class definitions",
 	"author": "Syncfusion Inc.",
 	"license": "SEE LICENSE IN license",
@@ -33,6 +33,7 @@
 		"@angular/platform-browser-dynamic": "^15.1.0",
 		"@angular/router": "^15.1.0",
 		"@schematics/angular": "^15.1.4",
+		"@syncfusion/ej2-staging": "^1.0.1",
 		"@types/chai": "^3.4.28",
 		"@types/core-js": "0.9.39",
 		"@types/jasmine": "~4.3.0",
