@@ -1,0 +1,60 @@
+{
+	"name": "@syncfusion/ej2-angular-workflow-designer",
+	"version": "1.0.0-preview.1",
+	"description": "Syncfusion EJ2 Workflow Designer component for creating, connecting, configuring and persisting visual workflows. for Angular",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"schematics": "./schematics/collection.json",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-angular-base": "*",
+		"@syncfusion/ej2-workflow-designer": "*"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "22.0.0",
+		"@angular/animations": "22.0.0",
+		"@angular/cli": "22.0.0",
+		"@angular/common": "22.0.0",
+		"@angular/compiler": "22.0.0",
+		"@angular/compiler-cli": "22.0.0",
+		"@angular/core": "22.0.0",
+		"@angular/forms": "22.0.0",
+		"@angular/platform-browser": "22.0.0",
+		"@angular/platform-browser-dynamic": "22.0.0",
+		"@angular/router": "22.0.0",
+		"@types/jasmine": "~5.1.0",
+		"@types/node": "^18.19.0",
+		"glob": "^8.0.3",
+		"gulp": "^3.9.1",
+		"jasmine-core": "^5.1.0",
+		"karma": "^6.4.0",
+		"karma-chrome-launcher": "^3.1.0",
+		"karma-coverage": "^2.0.3",
+		"karma-jasmine": "^5.1.0",
+		"karma-jasmine-html-reporter": "^2.1.0",
+		"ng-packagr": "22.0.0",
+		"rxjs": "^7.8.0",
+		"shelljs": "^0.8.5",
+		"tslib": "^2.3.0",
+		"typescript": "2.3.4",
+		"zone.js": "^0.15.0",
+		"es6-promise": "^3.2.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3"
+	},
+	"keywords": [
+		"angular",
+		"ng",
+		"ng-workflow-designer",
+		"ej2-ng-workflow-designer"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-angular-ui-components.git"
+	},
+	"scripts": {
+		"build": "gulp build"
+	},
+	"sideEffects": true
+}

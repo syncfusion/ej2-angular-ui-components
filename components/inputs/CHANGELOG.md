@@ -2,15 +2,7 @@
 
 ## [Unreleased]
 
-## 34.2.5 (2026-08-25)
-
-### ColorPicker
-
-#### Bug Fixes
-
--`#I847673` - Issue with "ColorPicker `popup` not responsive on mobile devices" has been resolved.
-
-## 34.1.29 (2026-07-06)
+## 35.1.37 (2026-09-29)
 
 ### ColorPicker
 

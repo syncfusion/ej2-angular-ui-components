@@ -2,14 +2,6 @@
 
 ## [Unreleased]
 
-## 34.2.5 (2026-08-25)
-
-### Kanban
-
-#### Bug Fix
-
-- `#I830267` - Now, cards rendered in the DOM are matching the take count when using remote data in Kanban.
-
 ## 33.1.44 (2026-03-16)
 
 ### Kanban
