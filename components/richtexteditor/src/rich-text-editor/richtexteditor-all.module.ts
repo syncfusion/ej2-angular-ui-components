@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RichTextEditorComponent } from './richtexteditor.component';
 import { RichTextEditorModule } from './richtexteditor.module';
-import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu, CodeBlock, ClipBoardCleanup, AutoFormat, AIAssistant} from '@syncfusion/ej2-richtexteditor'
+import {Toolbar, Link, Image, ImportExport, Audio, Video, Count, QuickToolbar, HtmlEditor, MarkdownEditor, Table, PasteCleanup, Resize, FileManager, FormatPainter, EmojiPicker, SlashMenu, CodeBlock, ClipBoardCleanup, AutoFormat, AIAssistant, WebMcpRichTextEditor} from '@syncfusion/ej2-richtexteditor'
 
 
 export const ToolbarService: ValueProvider = { provide: 'RichTextEditorToolbar', useValue: Toolbar};
@@ -26,6 +26,7 @@ export const CodeBlockService: ValueProvider = { provide: 'RichTextEditorCodeBlo
 export const ClipBoardCleanupService: ValueProvider = { provide: 'RichTextEditorClipBoardCleanup', useValue: ClipBoardCleanup};
 export const AutoFormatService: ValueProvider = { provide: 'RichTextEditorAutoFormat', useValue: AutoFormat};
 export const AIAssistantService: ValueProvider = { provide: 'RichTextEditorAIAssistant', useValue: AIAssistant};
+export const WebMcpRichTextEditorService: ValueProvider = { provide: 'RichTextEditorWebMcpRichTextEditor', useValue: WebMcpRichTextEditor};
 
 /**
  * NgModule definition for the RichTextEditor component with providers.
@@ -56,7 +57,8 @@ export const AIAssistantService: ValueProvider = { provide: 'RichTextEditorAIAss
         CodeBlockService,
         ClipBoardCleanupService,
         AutoFormatService,
-        AIAssistantService
+        AIAssistantService,
+        WebMcpRichTextEditorService
     ]
 })
 export class RichTextEditorAllModule { }

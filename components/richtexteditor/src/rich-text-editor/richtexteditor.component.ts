@@ -5,7 +5,7 @@ import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['aiAssistantSettings','autoSaveOnIdle','backgroundColor','bulletFormatList','codeBlockSettings','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableClipboardCleanup','enableHtmlEncode','enableHtmlSanitizer','enableMarkdownAutoFormat','enablePersistence','enableResize','enableRtl','enableTabKey','enableWebMcp','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','lineHeight','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','width'];
+export const inputs: string[] = ['aiAssistantSettings','autoSaveOnIdle','backgroundColor','bulletFormatList','codeBlockSettings','cssClass','editorMode','emojiPickerSettings','enableAutoUrl','enableClipboardCleanup','enableHtmlEncode','enableHtmlSanitizer','enableMarkdownAutoFormat','enablePersistence','enableResize','enableRtl','enableTabKey','enableWebMcp','enableXhtml','enabled','enterKey','exportPdf','exportWord','fileManagerSettings','floatingToolbarOffset','fontColor','fontFamily','fontSize','format','formatPainterSettings','formatter','height','htmlAttributes','iframeSettings','importWord','inlineMode','insertAudioSettings','insertImageSettings','insertVideoSettings','keyConfig','lineHeight','locale','maxLength','numberFormatList','pasteCleanupSettings','placeholder','quickToolbarSettings','readonly','saveInterval','shiftEnterKey','showCharCount','showTooltip','slashMenuSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueTemplate','webMcpSettings','width'];
 export const outputs: string[] = ['actionBegin','actionComplete','afterImageDelete','afterMediaDelete','afterPasteCleanup','aiAssistantPromptRequest','aiAssistantStopRespondingClick','aiAssistantToolbarClick','beforeClipboardWrite','beforeDialogClose','beforeDialogOpen','beforeFileUpload','beforeImageDrop','beforeImageUpload','beforeMediaDrop','beforePasteCleanup','beforePopupClose','beforePopupOpen','beforeQuickToolbarOpen','beforeSanitizeHtml','beforeWebMcpToolExecute','blur','change','created','destroyed','dialogClose','dialogOpen','documentExporting','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','imageRemoving','imageSelected','imageUploadFailed','imageUploadSuccess','imageUploading','quickToolbarClose','quickToolbarOpen','resizeStart','resizeStop','resizing','selectionChanged','slashMenuItemSelect','toolbarClick','toolbarStatusUpdate','updatedToolbarStatus','wordImporting','valueChange'];
 export const twoWays: string[] = ['value'];
 
@@ -220,6 +220,12 @@ export class RichTextEditorComponent extends RichTextEditor implements IComponen
             } catch { }
         try {
                 let mod = this.injector.get('RichTextEditorAIAssistant');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('RichTextEditorWebMcpRichTextEditor');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

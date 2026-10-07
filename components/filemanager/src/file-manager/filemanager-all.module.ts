@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ToolbarItemDirective, ToolbarItemsDirective } from './toolbaritems.directive';
 import { FileManagerComponent } from './filemanager.component';
 import { FileManagerModule } from './filemanager.module';
-import {DetailsView, NavigationPane, LargeIconsView, Toolbar, ContextMenu, BreadCrumbBar, Virtualization} from '@syncfusion/ej2-filemanager'
+import {DetailsView, NavigationPane, LargeIconsView, Toolbar, ContextMenu, BreadCrumbBar, Virtualization, WebMcpFileManager} from '@syncfusion/ej2-filemanager'
 
 
 export const DetailsViewService: ValueProvider = { provide: 'FileManagerDetailsView', useValue: DetailsView};
@@ -13,6 +13,7 @@ export const ToolbarService: ValueProvider = { provide: 'FileManagerToolbar', us
 export const ContextMenuService: ValueProvider = { provide: 'FileManagerContextMenu', useValue: ContextMenu};
 export const BreadCrumbBarService: ValueProvider = { provide: 'FileManagerBreadCrumbBar', useValue: BreadCrumbBar};
 export const VirtualizationService: ValueProvider = { provide: 'FileManagerVirtualization', useValue: Virtualization};
+export const WebMcpFileManagerService: ValueProvider = { provide: 'FileManagerWebMcpFileManager', useValue: WebMcpFileManager};
 
 /**
  * NgModule definition for the FileManager component with providers.
@@ -29,7 +30,8 @@ export const VirtualizationService: ValueProvider = { provide: 'FileManagerVirtu
         ToolbarService,
         ContextMenuService,
         BreadCrumbBarService,
-        VirtualizationService
+        VirtualizationService,
+        WebMcpFileManagerService
     ]
 })
 export class FileManagerAllModule { }

@@ -11,7 +11,7 @@ import { PortDirective, PortsDirective } from './ports.directive';
 import { NodeDirective, NodesDirective } from './nodes.directive';
 import { DiagramComponent } from './diagram.component';
 import { DiagramModule } from './diagram.module';
-import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, DiagramCollaboration, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout, ImportAndExportVisio} from '@syncfusion/ej2-diagrams'
+import {HierarchicalTree, MindMap, RadialTree, ComplexHierarchicalTree, DataBinding, Snapping, PrintAndExport, BpmnDiagrams, SymmetricLayout, ConnectorBridging, UndoRedo, DiagramCollaboration, LayoutAnimation, DiagramContextMenu, LineRouting, AvoidLineOverlapping, ConnectorEditing, LineDistribution, Ej1Serialization, FlowchartLayout, ImportAndExportVisio, WebMcpDiagram} from '@syncfusion/ej2-diagrams'
 
 
 export const HierarchicalTreeService: ValueProvider = { provide: 'DiagramsHierarchicalTree', useValue: HierarchicalTree};
@@ -35,6 +35,7 @@ export const LineDistributionService: ValueProvider = { provide: 'DiagramsLineDi
 export const Ej1SerializationService: ValueProvider = { provide: 'DiagramsEj1Serialization', useValue: Ej1Serialization};
 export const FlowchartLayoutService: ValueProvider = { provide: 'DiagramsFlowchartLayout', useValue: FlowchartLayout};
 export const ImportAndExportVisioService: ValueProvider = { provide: 'DiagramsImportAndExportVisio', useValue: ImportAndExportVisio};
+export const WebMcpDiagramService: ValueProvider = { provide: 'DiagramsWebMcpDiagram', useValue: WebMcpDiagram};
 
 /**
  * NgModule definition for the Diagram component with providers.
@@ -65,7 +66,8 @@ export const ImportAndExportVisioService: ValueProvider = { provide: 'DiagramsIm
         LineDistributionService,
         Ej1SerializationService,
         FlowchartLayoutService,
-        ImportAndExportVisioService
+        ImportAndExportVisioService,
+        WebMcpDiagramService
     ]
 })
 export class DiagramAllModule { }

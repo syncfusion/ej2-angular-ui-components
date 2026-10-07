@@ -9,7 +9,7 @@ import { HolidayDirective, HolidaysDirective } from './holidays.directive';
 import { EventMarkerDirective, EventMarkersDirective } from './eventmarkers.directive';
 import { GanttComponent } from './gantt.component';
 import { GanttModule } from './gantt.module';
-import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport, RowDD, ColumnMenu, PdfExport, VirtualScroll, CriticalPath, UndoRedo, Freeze} from '@syncfusion/ej2-gantt'
+import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport, RowDD, ColumnMenu, PdfExport, VirtualScroll, CriticalPath, UndoRedo, Freeze, WebMcpGantt} from '@syncfusion/ej2-gantt'
 
 
 export const FilterService: ValueProvider = { provide: 'GanttFilter', useValue: Filter};
@@ -29,6 +29,7 @@ export const VirtualScrollService: ValueProvider = { provide: 'GanttVirtualScrol
 export const CriticalPathService: ValueProvider = { provide: 'GanttCriticalPath', useValue: CriticalPath};
 export const UndoRedoService: ValueProvider = { provide: 'GanttUndoRedo', useValue: UndoRedo};
 export const FreezeService: ValueProvider = { provide: 'GanttFreeze', useValue: Freeze};
+export const WebMcpGanttService: ValueProvider = { provide: 'GanttWebMcpGantt', useValue: WebMcpGantt};
 
 /**
  * NgModule definition for the Gantt component with providers.
@@ -55,7 +56,8 @@ export const FreezeService: ValueProvider = { provide: 'GanttFreeze', useValue: 
         VirtualScrollService,
         CriticalPathService,
         UndoRedoService,
-        FreezeService
+        FreezeService,
+        WebMcpGanttService
     ]
 })
 export class GanttAllModule { }

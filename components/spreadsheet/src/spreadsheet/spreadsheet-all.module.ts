@@ -12,7 +12,7 @@ import { SheetDirective, SheetsDirective } from './sheets.directive';
 import { DefinedNameDirective, DefinedNamesDirective } from './definednames.directive';
 import { SpreadsheetComponent } from './spreadsheet.component';
 import { SpreadsheetModule } from './spreadsheet.module';
-import {Clipboard, Edit, KeyboardNavigation, KeyboardShortcut, Selection, ContextMenu, FormulaBar, Ribbon, Save, Open, SheetTabs, DataBind, CellFormat, NumberFormat, Formula, AIAssist, WebMcpAdapter, CollaborativeEditingHandler} from '@syncfusion/ej2-spreadsheet'
+import {Clipboard, Edit, KeyboardNavigation, KeyboardShortcut, Selection, ContextMenu, FormulaBar, Ribbon, Save, Open, SheetTabs, DataBind, CellFormat, NumberFormat, Formula, AIAssist, WebMcpSpreadsheet, CollaborativeEditingHandler} from '@syncfusion/ej2-spreadsheet'
 
 
 export const ClipboardService: ValueProvider = { provide: 'SpreadsheetClipboard', useValue: Clipboard};
@@ -31,7 +31,7 @@ export const CellFormatService: ValueProvider = { provide: 'SpreadsheetCellForma
 export const NumberFormatService: ValueProvider = { provide: 'SpreadsheetNumberFormat', useValue: NumberFormat};
 export const FormulaService: ValueProvider = { provide: 'SpreadsheetFormula', useValue: Formula};
 export const AIAssistService: ValueProvider = { provide: 'SpreadsheetAIAssist', useValue: AIAssist};
-export const WebMcpAdapterService: ValueProvider = { provide: 'SpreadsheetWebMcpAdapter', useValue: WebMcpAdapter};
+export const WebMcpSpreadsheetService: ValueProvider = { provide: 'SpreadsheetWebMcpSpreadsheet', useValue: WebMcpSpreadsheet};
 export const CollaborativeEditingHandlerService: ValueProvider = { provide: 'SpreadsheetCollaborativeEditingHandler', useValue: CollaborativeEditingHandler};
 
 /**
@@ -59,7 +59,7 @@ export const CollaborativeEditingHandlerService: ValueProvider = { provide: 'Spr
         NumberFormatService,
         FormulaService,
         AIAssistService,
-        WebMcpAdapterService,
+        WebMcpSpreadsheetService,
         CollaborativeEditingHandlerService
     ]
 })

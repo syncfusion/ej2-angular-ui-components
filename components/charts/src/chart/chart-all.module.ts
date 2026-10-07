@@ -15,7 +15,7 @@ import { SelectedDataIndexDirective, SelectedDataIndexesDirective } from './sele
 import { IndicatorDirective, IndicatorsDirective } from './indicators.directive';
 import { ChartComponent } from './chart.component';
 import { ChartModule } from './chart.module';
-import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, StackingStepAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, RangeStepAreaSeries, SplineRangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing, Highlight, LastValueLabel, SeriesLabel} from '@syncfusion/ej2-charts'
+import {LineSeries, ScatterSeries, ColumnSeries, SplineSeries, SplineAreaSeries, StripLine, AreaSeries, ScrollBar, StepLineSeries, StepAreaSeries, StackingColumnSeries, StackingLineSeries, StackingAreaSeries, StackingStepAreaSeries, BarSeries, StackingBarSeries, RangeColumnSeries, BubbleSeries, Tooltip, Crosshair, Category, DateTime, Logarithmic, Legend, Zoom, DataLabel, Selection, ChartAnnotation, HiloSeries, HiloOpenCloseSeries, WaterfallSeries, RangeAreaSeries, RangeStepAreaSeries, SplineRangeAreaSeries, CandleSeries, PolarSeries, RadarSeries, SmaIndicator, TmaIndicator, EmaIndicator, AccumulationDistributionIndicator, MacdIndicator, AtrIndicator, RsiIndicator, MomentumIndicator, StochasticIndicator, BollingerBands, BoxAndWhiskerSeries, HistogramSeries, ErrorBar, Trendlines, DateTimeCategory, MultiColoredLineSeries, MultiColoredAreaSeries, MultiLevelLabel, ParetoSeries, Export, DataEditing, Highlight, LastValueLabel, SeriesLabel, WebMcpChart} from '@syncfusion/ej2-charts'
 
 
 export const LineSeriesService: ValueProvider = { provide: 'ChartsLineSeries', useValue: LineSeries};
@@ -79,6 +79,7 @@ export const DataEditingService: ValueProvider = { provide: 'ChartsDataEditing',
 export const HighlightService: ValueProvider = { provide: 'ChartsHighlight', useValue: Highlight};
 export const LastValueLabelService: ValueProvider = { provide: 'ChartsLastValueLabel', useValue: LastValueLabel};
 export const SeriesLabelService: ValueProvider = { provide: 'ChartsSeriesLabel', useValue: SeriesLabel};
+export const WebMcpChartService: ValueProvider = { provide: 'ChartsWebMcpChart', useValue: WebMcpChart};
 
 /**
  * NgModule definition for the Chart component with providers.
@@ -149,7 +150,8 @@ export const SeriesLabelService: ValueProvider = { provide: 'ChartsSeriesLabel',
         DataEditingService,
         HighlightService,
         LastValueLabelService,
-        SeriesLabelService
+        SeriesLabelService,
+        WebMcpChartService
     ]
 })
 export class ChartAllModule { }

@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.1.37 (2026-09-29)
+
+### RichTextEditor
+
+#### Features
+
+The Rich Text Editor supports the Web Model Context Protocol (WebMCP), enabling AI models and agents to interact with editor content through built-in tools. Write operations require user confirmation, and the beforeWebMcpToolExecute event lets users inspect, modify, or cancel tool execution.
+
 ## 34.1.29 (2026-07-06)
 
 ### RichTextEditor

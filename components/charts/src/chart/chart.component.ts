@@ -11,7 +11,7 @@ import { AnnotationsDirective } from './annotations.directive';
 import { SelectedDataIndexesDirective } from './selecteddataindexes.directive';
 import { IndicatorsDirective } from './indicators.directive';
 
-export const inputs: string[] = ['accessibility','allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enableHtmlSanitizer','enablePersistence','enableRtl','enableSideBySidePlacement','enableWebMcp','focusBorderColor','focusBorderMargin','focusBorderWidth','height','highlightColor','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','noDataTemplate','palettes','primaryXAxis','primaryYAxis','rangeColorSettings','rows','selectedDataIndexes','selectionMode','selectionPattern','series','stackLabels','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','width','zoomSettings'];
+export const inputs: string[] = ['accessibility','allowExport','allowMultiSelection','annotations','axes','background','backgroundImage','border','chartArea','columns','crosshair','currencyCode','dataSource','description','enableAnimation','enableAutoIntervalOnBothAxis','enableCanvas','enableExport','enableHtmlSanitizer','enablePersistence','enableRtl','enableSideBySidePlacement','enableWebMcp','focusBorderColor','focusBorderMargin','focusBorderWidth','height','highlightColor','highlightMode','highlightPattern','indicators','isMultiSelect','isTransposed','legendSettings','locale','margin','noDataTemplate','palettes','primaryXAxis','primaryYAxis','rangeColorSettings','rows','selectedDataIndexes','selectionMode','selectionPattern','series','stackLabels','subTitle','subTitleStyle','tabIndex','theme','title','titleStyle','tooltip','useGroupingSeparator','webMcpSettings','width','zoomSettings'];
 export const outputs: string[] = ['afterExport','animationComplete','annotationRender','axisLabelClick','axisLabelRender','axisMultiLabelRender','axisRangeCalculated','beforeExport','beforePrint','beforeResize','beforeWebMcpToolExecute','chartDoubleClick','chartMouseClick','chartMouseDown','chartMouseLeave','chartMouseMove','chartMouseUp','crosshairLabelRender','drag','dragComplete','dragEnd','dragStart','legendClick','legendRender','load','loaded','multiLevelLabelClick','onZooming','pointClick','pointDoubleClick','pointMove','pointRender','resized','scrollChanged','scrollEnd','scrollStart','selectionComplete','seriesRender','sharedTooltipRender','textRender','tooltipRender','zoomComplete','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
@@ -463,6 +463,12 @@ export class ChartComponent extends Chart implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('ChartsSeriesLabel');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('ChartsWebMcpChart');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

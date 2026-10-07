@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PdfViewerComponent } from './pdfviewer.component';
 import { PdfViewerModule } from './pdfviewer.module';
-import {LinkAnnotation, BookmarkView, Magnification, ThumbnailView, Toolbar, Navigation, Print, TextSelection, TextSearch, Annotation, FormDesigner, FormFields, PageOrganizer} from '@syncfusion/ej2-pdfviewer'
+import {LinkAnnotation, BookmarkView, Magnification, ThumbnailView, Toolbar, Navigation, Print, TextSelection, TextSearch, Annotation, FormDesigner, FormFields, PageOrganizer, WebMcpPdfViewer} from '@syncfusion/ej2-pdfviewer'
 
 
 export const LinkAnnotationService: ValueProvider = { provide: 'PdfViewerLinkAnnotation', useValue: LinkAnnotation};
@@ -18,6 +18,7 @@ export const AnnotationService: ValueProvider = { provide: 'PdfViewerAnnotation'
 export const FormDesignerService: ValueProvider = { provide: 'PdfViewerFormDesigner', useValue: FormDesigner};
 export const FormFieldsService: ValueProvider = { provide: 'PdfViewerFormFields', useValue: FormFields};
 export const PageOrganizerService: ValueProvider = { provide: 'PdfViewerPageOrganizer', useValue: PageOrganizer};
+export const WebMcpPdfViewerService: ValueProvider = { provide: 'PdfViewerWebMcpPdfViewer', useValue: WebMcpPdfViewer};
 
 /**
  * NgModule definition for the PdfViewer component with providers.
@@ -40,7 +41,8 @@ export const PageOrganizerService: ValueProvider = { provide: 'PdfViewerPageOrga
         AnnotationService,
         FormDesignerService,
         FormFieldsService,
-        PageOrganizerService
+        PageOrganizerService,
+        WebMcpPdfViewerService
     ]
 })
 export class PdfViewerAllModule { }

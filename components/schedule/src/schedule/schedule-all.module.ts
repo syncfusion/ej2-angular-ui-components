@@ -6,7 +6,7 @@ import { HeaderRowDirective, HeaderRowsDirective } from './headerrows.directive'
 import { ToolbarItemDirective, ToolbarItemsDirective } from './toolbaritems.directive';
 import { ScheduleComponent } from './schedule.component';
 import { ScheduleModule } from './schedule.module';
-import {Day, Week, WorkWeek, Month, Year, Agenda, MonthAgenda, TimelineViews, TimelineMonth, TimelineYear, Resize, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Print} from '@syncfusion/ej2-schedule'
+import {Day, Week, WorkWeek, Month, Year, Agenda, MonthAgenda, TimelineViews, TimelineMonth, TimelineYear, Resize, DragAndDrop, ExcelExport, ICalendarExport, ICalendarImport, Print, WebMcpScheduler} from '@syncfusion/ej2-schedule'
 
 
 export const DayService: ValueProvider = { provide: 'ScheduleDay', useValue: Day};
@@ -25,6 +25,7 @@ export const ExcelExportService: ValueProvider = { provide: 'ScheduleExcelExport
 export const ICalendarExportService: ValueProvider = { provide: 'ScheduleICalendarExport', useValue: ICalendarExport};
 export const ICalendarImportService: ValueProvider = { provide: 'ScheduleICalendarImport', useValue: ICalendarImport};
 export const PrintService: ValueProvider = { provide: 'SchedulePrint', useValue: Print};
+export const WebMcpSchedulerService: ValueProvider = { provide: 'ScheduleWebMcpScheduler', useValue: WebMcpScheduler};
 
 /**
  * NgModule definition for the Schedule component with providers.
@@ -50,7 +51,8 @@ export const PrintService: ValueProvider = { provide: 'SchedulePrint', useValue:
         ExcelExportService,
         ICalendarExportService,
         ICalendarImportService,
-        PrintService
+        PrintService,
+        WebMcpSchedulerService
     ]
 })
 export class ScheduleAllModule { }
