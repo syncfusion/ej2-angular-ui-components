@@ -1,5 +1,5 @@
 # Syncfusion Angular UI Components Library (Essential JS 2)
- Syncfusion Angular UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 70+ UI components that every applications will ever need.
+ Syncfusion Angular UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 80+ UI components that every applications will ever need.
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
 > A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
@@ -151,6 +151,57 @@
            <a href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started/">Documentation</a>
        </td>
    </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/rich-text-editor-sdk/angular-block-editor"><b>Block Editor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-blockeditor" title="@syncfusion/ej2-angular-blockeditor" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/blockeditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/block-editor/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/block-editor/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <b>Markdown Editor</b>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-markdowneditor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-markdowneditor" title="@syncfusion/ej2-angular-markdowneditor" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/markdowneditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/markdown-editor/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/markdown-editor/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <b>Rich Text Editor UI</b>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor-ui"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-richtexteditor-ui" title="@syncfusion/ej2-angular-richtexteditor-ui" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/richtexteditorui/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor-ui/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor-ui/getting-started/">Documentation</a>
+       </td>
+   </tr>
 </table>
 
 ### Dropdowns
@@ -241,6 +292,23 @@
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/angular-components/angular-multicolumn-combobox"><b>MultiColumn ComboBox</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-multicolumn-combobox" title="@syncfusion/ej2-angular-multicolumn-combobox" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-multicolumn-combobox"><img src="https://ej2.syncfusion.com/badges/ej2-multicolumn-combobox/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-multicolumn-combobox" title="@syncfusion/ej2-angular-multicolumn-combobox" /></a>
+       </td>
+       <td>
+           <a href="components/multicolumncombobox/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/multicolumn-combobox/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/multicolumn-combobox/getting-started/">Documentation</a>
        </td>
    </tr>
 </table>
@@ -392,6 +460,23 @@
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/angular-components/angular-image-editor"><b>Image Editor</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-image-editor"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-image-editor" title="@syncfusion/ej2-angular-image-editor" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-image-editor"><img src="https://ej2.syncfusion.com/badges/ej2-image-editor/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-image-editor" title="@syncfusion/ej2-angular-image-editor" /></a>
+       </td>
+       <td>
+           <a href="components/imageeditor/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/image-editor/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/image-editor/getting-started/">Documentation</a>
        </td>
    </tr>
 </table>
@@ -885,6 +970,40 @@
            <a href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started/">Documentation</a>
        </td>
    </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/angular-components/angular-ribbon"><b>Ribbon</b></a>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-ribbon" title="@syncfusion/ej2-angular-ribbon" style="height:20px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ej2.syncfusion.com/badges/ej2-ribbon"><img src="https://ej2.syncfusion.com/badges/ej2-ribbon/coverage.svg" alt="code coverage of @syncfusion/ej2-angular-ribbon" title="@syncfusion/ej2-angular-ribbon" /></a>
+       </td>
+       <td>
+           <a href="components/ribbon/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/ribbon/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/ribbon/getting-started">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <b>Workflow Designer</b>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-workflow-designer"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-workflow-designer" title="@syncfusion/ej2-angular-workflow-designer" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/workflowdesigner/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/workflow-designer/overview">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/workflow-designer/getting-started/">Documentation</a>
+       </td>
+   </tr>
 </table>
 
 ### Buttons
@@ -1165,6 +1284,76 @@
        </td>
        <td>
            <a href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started/">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <b>Form Builder</b>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-form-builder"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-form-builder" title="@syncfusion/ej2-angular-form-builder" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/formbuilder/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/form-builder/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/form-builder/getting-started">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <b>Form Renderer</b>
+       </td>
+       <td>
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-form-renderer"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-form-renderer" title="@syncfusion/ej2-angular-form-renderer" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/formrenderer/src">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/form-renderer/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/form-renderer/getting-started/">Documentation</a>
+       </td>
+   </tr>
+</table>
+
+### Interactive Chat
+
+<table>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/angular-ui-controls/angular-ai-assistview"><b>AI AssistView</b></a>
+       </td>
+       <td rowspan="2">
+           <a href="https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat"><img src="https://ej2.syncfusion.com/github/images/npm-logo.png" alt="npm package @syncfusion/ej2-angular-interactive-chat" title="@syncfusion/ej2-angular-interactive-chat" style="height:20px;" /></a>
+       </td>
+       <td>
+           <a href="components/interactivechat/src/ai-assistview">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/ai-assistview/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/ai-assistview/getting-started">Documentation</a>
+       </td>
+   </tr>
+   <tr>
+       <td>
+           <a href="https://www.syncfusion.com/angular-ui-controls/angular-chat-ui"><b>Chat UI</b></a>
+       </td>
+       <td>
+           <a href="components/interactivechat/src/chat-ui">Source</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/demos/#/bootstrap5/chat-ui/default">Live demo</a>
+       </td>
+       <td>
+           <a href="https://ej2.syncfusion.com/angular/documentation/chat-ui/getting-started">Documentation</a>
        </td>
    </tr>
 </table>
