@@ -6,7 +6,7 @@ import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 
 export const inputs: string[] = ['backgroundColor','cssClass','enable','enablePersistence','enableRtl','fontColor','fontFamily','fontSize','format','height','htmlAttributes','imageSettings','interactionSettings','keyBindings','linkSettings','listSettings','locale','placeholder','quickToolbarSettings','readonly','saveInterval','slashCommandSettings','tableSettings','toolbarSettings','undoRedoSteps','undoRedoTimer','value','valueFormat','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogClose','beforeDialogOpen','beforeFileDrop','beforeFileUpload','beforePopupClose','beforePopupOpen','blur','change','created','destroyed','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','resize','resizeStop','resizing','valueChange'];
+export const outputs: string[] = ['actionBegin','actionComplete','beforeDialogClose','beforeDialogOpen','beforeFileDrop','beforeFileUpload','blur','change','created','destroyed','fileRemoving','fileSelected','fileUploadFailed','fileUploadSuccess','fileUploading','focus','valueChange'];
 export const twoWays: string[] = ['value'];
 
 /**
@@ -43,8 +43,6 @@ export class RichTextEditorUIComponent extends RichTextEditorUI implements IComp
 	declare beforeDialogOpen: any;
 	declare beforeFileDrop: any;
 	declare beforeFileUpload: any;
-	declare beforePopupClose: any;
-	declare beforePopupOpen: any;
 	declare blur: any;
 	declare change: any;
 	declare created: any;
@@ -55,9 +53,6 @@ export class RichTextEditorUIComponent extends RichTextEditorUI implements IComp
 	declare fileUploadSuccess: any;
 	declare fileUploading: any;
 	declare focus: any;
-	declare resize: any;
-	declare resizeStop: any;
-	declare resizing: any;
 	public declare valueChange: any;
 
 

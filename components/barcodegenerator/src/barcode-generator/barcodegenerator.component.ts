@@ -4,8 +4,8 @@ import { BarcodeGenerator } from '@syncfusion/ej2-barcode-generator';
 
 
 
-export const inputs: string[] = ['backgroundColor','displayText','enableCheckSum','enablePersistence','enableRtl','foreColor','height','locale','margin','mode','type','value','width'];
-export const outputs: string[] = ['invalid'];
+export const inputs: string[] = ['backgroundColor','bearerBar','bearerBarWidth','displayText','enableCheckSum','enablePersistence','enableRtl','enableWebMcp','foreColor','height','locale','margin','mode','segmentsPerRow','type','value','webMcpSettings','width'];
+export const outputs: string[] = ['beforeWebMcpToolExecute','invalid'];
 export const twoWays: string[] = [''];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [''];
 export class BarcodeGeneratorComponent extends BarcodeGenerator implements IComponentBase {
     public declare context : any;
     public declare tagObjects: any;
+	declare beforeWebMcpToolExecute: any;
 	public declare invalid: any;
 
 
@@ -36,6 +37,12 @@ export class BarcodeGeneratorComponent extends BarcodeGenerator implements IComp
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('Barcode-GeneratorWebMcpBarcode');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

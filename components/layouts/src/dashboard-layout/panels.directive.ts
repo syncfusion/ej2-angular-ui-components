@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['col', 'content', 'cssClass', 'enabled', 'header', 'id', 'maxSizeX', 'maxSizeY', 'minSizeX', 'minSizeY', 'mobilePanelHeight', 'row', 'sizeX', 'sizeY', 'zIndex'];
+let input: string[] = ['busyIndicatorTemplate', 'col', 'content', 'cssClass', 'enabled', 'header', 'id', 'maxSizeX', 'maxSizeY', 'minSizeX', 'minSizeY', 'mobilePanelHeight', 'row', 'showBusyIndicator', 'sizeX', 'sizeY', 'zIndex'];
 let outputs: string[] = [];
 /**
  * 'e-panels' directive represent a panels of angular dashboardlayout 
@@ -32,6 +32,12 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
 	
 
 
+    /** 
+     * Defines a template to display as a busy indicator in the panel header.
+     * @default null
+     * @asptype string
+     */
+    public declare busyIndicatorTemplate: any;
     /** 
      * Defines the column value where the panel to be placed.
      * @default 0
@@ -90,6 +96,11 @@ export class PanelDirective extends ComplexBase<PanelDirective> {
      * @asptype int
      */
     public declare row: any;
+    /** 
+     * Specifies whether to display the busy indicator template in the panel header.
+     * @default false
+     */
+    public declare showBusyIndicator: any;
     /** 
      * Specifies the width of the panel in the layout in cells count.
      * @default 1

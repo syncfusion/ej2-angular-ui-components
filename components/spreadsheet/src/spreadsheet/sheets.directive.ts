@@ -5,8 +5,9 @@ import { RowsDirective } from './rows.directive';
 import { ColumnsDirective } from './columns.directive';
 import { RangesDirective } from './ranges.directive';
 import { ConditionalFormatsDirective } from './conditionalformats.directive';
+import { FormControlsDirective } from './formcontrols.directive';
 
-let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'password', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'standardHeight', 'state', 'topLeftCell', 'usedRange'];
+let input: string[] = ['activeCell', 'colCount', 'columns', 'conditionalFormats', 'formControls', 'frozenColumns', 'frozenRows', 'index', 'isProtected', 'name', 'paneTopLeftCell', 'password', 'protectSettings', 'ranges', 'rowCount', 'rows', 'selectedRange', 'showGridLines', 'showHeaders', 'standardHeight', 'state', 'topLeftCell', 'usedRange'];
 let outputs: string[] = [];
 /**
  * `e-sheet` directive represent a sheet of the Angular Spreadsheet.
@@ -29,7 +30,8 @@ let outputs: string[] = [];
         childRows: new ContentChild(RowsDirective),
         childColumns: new ContentChild(ColumnsDirective),
         childRanges: new ContentChild(RangesDirective),
-        childConditionalFormats: new ContentChild(ConditionalFormatsDirective)
+        childConditionalFormats: new ContentChild(ConditionalFormatsDirective),
+        childFormControls: new ContentChild(FormControlsDirective)
     }
 })
 export class SheetDirective extends ComplexBase<SheetDirective> {
@@ -39,7 +41,8 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
     public declare childColumns: any;
     public declare childRanges: any;
     public declare childConditionalFormats: any;
-    public tags: string[] = ['rows', 'columns', 'ranges', 'conditionalFormats'];
+    public declare childFormControls: any;
+    public tags: string[] = ['rows', 'columns', 'ranges', 'conditionalFormats', 'formControls'];
     /** 
      * Specifies active cell within `selectedRange` in the sheet.
      * @default 'A1'
@@ -61,6 +64,11 @@ export class SheetDirective extends ComplexBase<SheetDirective> {
      * @default []
      */
     public declare conditionalFormats: any;
+    /** 
+     * Specifies the collection of form controls in the sheet.
+     * @default []
+     */
+    public declare formControls: any;
     /** 
      * Gets or sets the number of frozen columns.
      * @default 0

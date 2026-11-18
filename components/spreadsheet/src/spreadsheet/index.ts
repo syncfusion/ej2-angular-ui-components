@@ -6,6 +6,7 @@ export {RowDirective,RowsDirective} from './rows.directive';
 export {ColumnDirective,ColumnsDirective} from './columns.directive';
 export {RangeDirective,RangesDirective} from './ranges.directive';
 export {ConditionalFormatDirective,ConditionalFormatsDirective} from './conditionalformats.directive';
+export {FormControlDirective,FormControlsDirective} from './formcontrols.directive';
 export {SheetDirective,SheetsDirective} from './sheets.directive';
 export {DefinedNameDirective,DefinedNamesDirective} from './definednames.directive';
 export { SpreadsheetComponent} from './spreadsheet.component';

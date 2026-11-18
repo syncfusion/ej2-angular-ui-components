@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { StackedHeadersDirective } from './stackedheaders.directive';
 
-export const inputs: string[] = ['allowColumnDragAndDrop','allowDragAndDrop','allowKeyboard','cardHeight','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableTooltip','enableVirtualization','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','cardClick','cardDoubleClick','cardRendered','columnDrag','columnDragStart','columnDrop','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
+export const inputs: string[] = ['allowColumnDragAndDrop','allowDragAndDrop','allowKeyboard','cardHeight','cardSettings','columns','constraintType','cssClass','dataSource','dialogSettings','enableHtmlSanitizer','enablePersistence','enableRtl','enableTooltip','enableVirtualization','enableWebMcp','externalDropId','height','keyField','locale','query','showEmptyColumn','sortSettings','stackedHeaders','swimlaneSettings','tooltipTemplate','webMcpSettings','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforeWebMcpToolExecute','cardClick','cardDoubleClick','cardRendered','columnDrag','columnDragStart','columnDrop','created','dataBinding','dataBound','dataSourceChanged','dataStateChange','dialogClose','dialogOpen','drag','dragStart','dragStop','queryCellInfo'];
 export const twoWays: string[] = [''];
 
 /**
@@ -39,6 +39,7 @@ export class KanbanComponent extends Kanban implements IComponentBase {
 	declare actionBegin: any;
 	declare actionComplete: any;
 	declare actionFailure: any;
+	declare beforeWebMcpToolExecute: any;
 	declare cardClick: any;
 	declare cardDoubleClick: any;
 	declare cardRendered: any;
@@ -64,6 +65,12 @@ export class KanbanComponent extends Kanban implements IComponentBase {
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('KanbanWebMcpKanban');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

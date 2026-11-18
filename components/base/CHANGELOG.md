@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 35.1.41 (2026-10-20)
+
+### Common
+
+#### Bug Fixes
+
+- `#I881285` - Resolved an issue where components were not updating when Signal Form values changed.
+
+## 35.1.39 (2026-10-07)
+
+### Common
+
+#### Bug Fixes
+
+- `#I870696` - Resolved Signal integration issues causing repeated value updates and re-renders.
+
 ## 34.1.29 (2026-07-06)
 
 ### Common

@@ -6,7 +6,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { GridComponent } from './grid.component';
 import { GridModule } from './grid.module';
-import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, InfiniteScroll, LazyLoadGroup, DomVirtualization, Formula, AdvancedFilter, WebMcpGrid} from '@syncfusion/ej2-grids'
+import {Filter, Page, Selection, Sort, Group, Reorder, RowDD, DetailRow, Toolbar, Aggregate, Search, VirtualScroll, Edit, Resize, ExcelExport, PdfExport, CommandColumn, ContextMenu, Freeze, ColumnMenu, ColumnChooser, ForeignKey, InfiniteScroll, LazyLoadGroup, DomVirtualization, Formula, AdvancedFilter, WebMcpGrid, Find} from '@syncfusion/ej2-grids'
 
 
 export const FilterService: ValueProvider = { provide: 'GridsFilter', useValue: Filter};
@@ -37,6 +37,7 @@ export const DomVirtualizationService: ValueProvider = { provide: 'GridsDomVirtu
 export const FormulaService: ValueProvider = { provide: 'GridsFormula', useValue: Formula};
 export const AdvancedFilterService: ValueProvider = { provide: 'GridsAdvancedFilter', useValue: AdvancedFilter};
 export const WebMcpGridService: ValueProvider = { provide: 'GridsWebMcpGrid', useValue: WebMcpGrid};
+export const FindService: ValueProvider = { provide: 'GridsFind', useValue: Find};
 
 /**
  * NgModule definition for the Grid component with providers.
@@ -74,7 +75,8 @@ export const WebMcpGridService: ValueProvider = { provide: 'GridsWebMcpGrid', us
         DomVirtualizationService,
         FormulaService,
         AdvancedFilterService,
-        WebMcpGridService
+        WebMcpGridService,
+        FindService
     ]
 })
 export class GridAllModule { }

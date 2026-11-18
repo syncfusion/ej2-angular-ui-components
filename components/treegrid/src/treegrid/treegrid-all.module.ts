@@ -6,7 +6,7 @@ import { AggregateColumnDirective, AggregateColumnsDirective } from './aggregate
 import { AggregateDirective, AggregatesDirective } from './aggregates.directive';
 import { TreeGridComponent } from './treegrid.component';
 import { TreeGridModule } from './treegrid.module';
-import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit, Selection, VirtualScroll, DetailRow, RowDD, Freeze, ColumnChooser, Logger, InfiniteScroll, DomVirtualization} from '@syncfusion/ej2-treegrid'
+import {Filter, Page, Sort, Reorder, Toolbar, Aggregate, Resize, ColumnMenu, ExcelExport, PdfExport, CommandColumn, ContextMenu, Edit, Selection, VirtualScroll, DetailRow, RowDD, Freeze, ColumnChooser, Logger, InfiniteScroll, DomVirtualization, WebMcpTreegrid} from '@syncfusion/ej2-treegrid'
 
 
 export const FilterService: ValueProvider = { provide: 'TreeGridFilter', useValue: Filter};
@@ -31,6 +31,7 @@ export const ColumnChooserService: ValueProvider = { provide: 'TreeGridColumnCho
 export const LoggerService: ValueProvider = { provide: 'TreeGridLogger', useValue: Logger};
 export const InfiniteScrollService: ValueProvider = { provide: 'TreeGridInfiniteScroll', useValue: InfiniteScroll};
 export const DomVirtualizationService: ValueProvider = { provide: 'TreeGridDomVirtualization', useValue: DomVirtualization};
+export const WebMcpTreegridService: ValueProvider = { provide: 'TreeGridWebMcpTreegrid', useValue: WebMcpTreegrid};
 
 /**
  * NgModule definition for the TreeGrid component with providers.
@@ -62,7 +63,8 @@ export const DomVirtualizationService: ValueProvider = { provide: 'TreeGridDomVi
         ColumnChooserService,
         LoggerService,
         InfiniteScrollService,
-        DomVirtualizationService
+        DomVirtualizationService,
+        WebMcpTreegridService
     ]
 })
 export class TreeGridAllModule { }

@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+## 35.2.12 (2026-11-18)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I879710` - Fixed the issue where the date-time axis range padding and labels were incorrect when all the series were hidden.
+
+## 35.1.46 (2026-11-11)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I883721` - Fixed the issue where chart freezes due to an infinite loop in text wrap when axis title width is smaller than a single character.
+
+## 35.1.43 (2026-11-03)
+
+### Chart
+
+#### Bug Fixes
+
+- `#I876923` - Fixed stack label vertical alignment issue on the last bar in a `StackingBar` chart when `plotOffsetTop` and `plotOffsetBottom` are applied.
+
 ## 35.1.37 (2026-09-29)
 
 ### Chart
@@ -3839,4 +3863,19 @@ Graphics (SVG).
 - **Animation** - Chart series will be animated when rendering and refreshing the chart widget.
 - **User Interaction** - Supports interactive features that are zooming, panning, crosshair, trackball, tooltip, and data point selection.
 - **Annotation** - Supports annotation to mark a specific area in chart.
-- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.
+- **Export** - Supports to print the chart directly from the browser and exports the chart in both JPEG and PNG format.## 35.1.42 (2026-10-27)
+
+### Charts
+
+#### Bug Fixes
+
+- `#I880717` - The legend text and icon now appear faded consistently in dark themes when a series is hidden through the legend, clearly indicating the disabled state.
+
+## 35.1.41 (2026-10-20)
+
+### Charts
+
+#### Bug Fixes
+
+- `#I880719` - Fixed an issue where hovering over a chart threw the error `Cannot read properties of undefined (reading 'childNodes')` when a series had its `visible` property set to `false`.
+

@@ -4,10 +4,10 @@ import { ColumnDirective, ColumnsDirective } from './columns.directive';
 import { StackedHeaderDirective, StackedHeadersDirective } from './stackedheaders.directive';
 import { KanbanComponent } from './kanban.component';
 import { KanbanModule } from './kanban.module';
+import {WebMcpKanban} from '@syncfusion/ej2-kanban'
 
 
-
-
+export const WebMcpKanbanService: ValueProvider = { provide: 'KanbanWebMcpKanban', useValue: WebMcpKanban};
 
 /**
  * NgModule definition for the Kanban component with providers.
@@ -18,7 +18,7 @@ import { KanbanModule } from './kanban.module';
         KanbanModule
     ],
     providers:[
-        
+        WebMcpKanbanService
     ]
 })
 export class KanbanAllModule { }

@@ -4,8 +4,8 @@ import { DataMatrixGenerator } from '@syncfusion/ej2-barcode-generator';
 
 
 
-export const inputs: string[] = ['backgroundColor','displayText','enablePersistence','enableRtl','encoding','foreColor','height','locale','margin','mode','size','value','width','xDimension'];
-export const outputs: string[] = ['invalid'];
+export const inputs: string[] = ['backgroundColor','displayText','enableGS1','enablePersistence','enableRtl','enableWebMcp','encoding','foreColor','height','locale','margin','mode','size','value','webMcpSettings','width','xDimension'];
+export const outputs: string[] = ['beforeWebMcpToolExecute','invalid'];
 export const twoWays: string[] = [''];
 
 /**
@@ -28,6 +28,7 @@ export const twoWays: string[] = [''];
 export class DataMatrixGeneratorComponent extends DataMatrixGenerator implements IComponentBase {
     public declare context : any;
     public declare tagObjects: any;
+	declare beforeWebMcpToolExecute: any;
 	public declare invalid: any;
 
 
@@ -36,6 +37,12 @@ export class DataMatrixGeneratorComponent extends DataMatrixGenerator implements
         super();
         this.element = this.ngEle.nativeElement;
         this.injectedModules = this.injectedModules || [];
+        try {
+                let mod = this.injector.get('Barcode-GeneratorWebMcpBarcode');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
 
         this.registerEvents(outputs);
         this.addTwoWay.call(this, twoWays);

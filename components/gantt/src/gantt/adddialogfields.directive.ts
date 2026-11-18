@@ -43,7 +43,7 @@ export class AddDialogFieldDirective extends ComplexBase<AddDialogFieldDirective
      */
     public declare type: any;
     /** 
-     * Specifies the configuration properties for Grid, Rich Text Editor (RTE), or TreeGrid controls within the Gantt edit dialog.
+     * Specifies the configuration properties for Grid, Notes editor, or TreeGrid controls within the Gantt edit dialog.
      * @default null
      */
     public declare additionalParams: any;

@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['columnIndex', 'desiredIntervals', 'edgeLabelPlacement', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelRotation', 'labelStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startFromZero', 'title', 'titlePadding', 'titleRotation', 'titleStyle', 'valueType', 'visible'];
+let input: string[] = ['allowDecimals', 'columnIndex', 'desiredIntervals', 'edgeLabelPlacement', 'enableTrim', 'interval', 'intervalType', 'isIndexed', 'isInversed', 'labelFormat', 'labelIntersectAction', 'labelPadding', 'labelPlacement', 'labelRotation', 'labelStyle', 'logBase', 'majorGridLines', 'majorTickLines', 'maximum', 'maximumLabelWidth', 'maximumLabels', 'minimum', 'minorGridLines', 'minorTickLines', 'minorTicksPerInterval', 'name', 'opposedPosition', 'plotOffset', 'plotOffsetBottom', 'plotOffsetLeft', 'plotOffsetRight', 'plotOffsetTop', 'rangePadding', 'rowIndex', 'skeleton', 'skeletonType', 'span', 'startFromZero', 'title', 'titlePadding', 'titleRotation', 'titleStyle', 'valueType', 'visible'];
 let outputs: string[] = [];
 /**
  * Axis3D Directive
@@ -24,6 +24,13 @@ export class Chart3DAxisDirective extends ComplexBase<Chart3DAxisDirective> {
 	
 
 
+    /** 
+     * If set to `false`, the axis labels will not contain decimals. 
+     * For example, when counting integers such as persons or hits on a web page, decimals are 
+     * avoided in the labels. By default, decimals are allowed on small scale axes.
+     * @default true
+     */
+    public declare allowDecimals: any;
     /** 
      * Specifies the index of the column where the axis is associated, 
      * when the chart area is divided into multiple plot areas by using `columns`. 

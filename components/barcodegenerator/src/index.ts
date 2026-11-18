@@ -1,10 +1,16 @@
 export { BarcodeGeneratorComponent} from './barcode-generator/barcodegenerator.component';
 export { BarcodeGeneratorModule } from './barcode-generator/barcodegenerator.module';
-export { BarcodeGeneratorAllModule } from './barcode-generator/barcodegenerator-all.module';
+export { BarcodeGeneratorAllModule, WebMcpBarcodeService } from './barcode-generator/barcodegenerator-all.module';
 export { QRCodeGeneratorComponent} from './qrcode-generator/qrcodegenerator.component';
 export { QRCodeGeneratorModule } from './qrcode-generator/qrcodegenerator.module';
 export { QRCodeGeneratorAllModule } from './qrcode-generator/qrcodegenerator-all.module';
 export { DataMatrixGeneratorComponent} from './datamatrix-generator/datamatrixgenerator.component';
 export { DataMatrixGeneratorModule } from './datamatrix-generator/datamatrixgenerator.module';
 export { DataMatrixGeneratorAllModule } from './datamatrix-generator/datamatrixgenerator-all.module';
+export { PDF417GeneratorComponent} from './pdf417-generator/pdf417generator.component';
+export { PDF417GeneratorModule } from './pdf417-generator/pdf417generator.module';
+export { PDF417GeneratorAllModule } from './pdf417-generator/pdf417generator-all.module';
+export { DotCodeGeneratorComponent} from './dotcode-generator/dotcodegenerator.component';
+export { DotCodeGeneratorModule } from './dotcode-generator/dotcodegenerator.module';
+export { DotCodeGeneratorAllModule } from './dotcode-generator/dotcodegenerator-all.module';
 export * from '@syncfusion/ej2-barcode-generator';

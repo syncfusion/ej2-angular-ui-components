@@ -5,8 +5,8 @@ import { Template } from '@syncfusion/ej2-angular-base';
 import { ColumnsDirective } from './columns.directive';
 import { AggregatesDirective } from './aggregates.directive';
 
-export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','childMapping','clipMode','columnChooserSettings','columnMenuItems','columnQueryMode','columns','contextMenuItems','copyHierarchyMode','currencyCode','dataSource','detailTemplate','domVirtualizationSettings','editSettings','emptyRecordTemplate','enableAdaptiveUI','enableAltRow','enableAutoFill','enableCollapseAll','enableColumnSpan','enableColumnVirtualization','enableDomVirtualization','enableHover','enableHtmlSanitizer','enableImmutableMode','enableInfiniteScrolling','enablePersistence','enableRowSpan','enableRtl','enableStickyHeader','enableVirtualMaskRow','enableVirtualization','expandStateMapping','filterSettings','frozenColumns','frozenRows','gridLines','hasChildMapping','height','hierarchyCheckboxMode','idMapping','infiniteScrollSettings','isRowSelectable','loadChildOnDemand','loadingIndicator','locale','pageSettings','pagerTemplate','parentIdMapping','printMode','query','rowDropSettings','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnChooser','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','batchAdd','batchCancel','batchDelete','beforeBatchAdd','beforeBatchDelete','beforeBatchSave','beforeCopy','beforeDataBound','beforeExcelExport','beforePaste','beforePdfExport','beforePrint','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSaved','cellSelected','cellSelecting','checkboxChange','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','detailDataBound','excelAggregateQueryCellInfo','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','pdfAggregateQueryCellInfo','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
+export const inputs: string[] = ['aggregates','allowExcelExport','allowFiltering','allowMultiSorting','allowPaging','allowPdfExport','allowReordering','allowResizing','allowRowDragAndDrop','allowSelection','allowSorting','allowTextWrap','childMapping','clipMode','columnChooserSettings','columnMenuItems','columnQueryMode','columns','contextMenuItems','copyHierarchyMode','currencyCode','dataSource','detailTemplate','domVirtualizationSettings','editSettings','emptyRecordTemplate','enableAdaptiveUI','enableAltRow','enableAutoFill','enableCollapseAll','enableColumnSpan','enableColumnVirtualization','enableDomVirtualization','enableHover','enableHtmlSanitizer','enableImmutableMode','enableInfiniteScrolling','enablePersistence','enableRowSpan','enableRtl','enableStickyHeader','enableVirtualMaskRow','enableVirtualization','enableWebMcp','expandStateMapping','filterSettings','frozenColumns','frozenRows','gridLines','hasChildMapping','height','hierarchyCheckboxMode','idMapping','infiniteScrollSettings','isRowSelectable','loadChildOnDemand','loadingIndicator','locale','pageSettings','pagerTemplate','parentIdMapping','printMode','query','rowDropSettings','rowHeight','rowTemplate','searchSettings','selectedRowIndex','selectionSettings','showColumnChooser','showColumnMenu','sortSettings','textWrapSettings','toolbar','treeColumnIndex','webMcpSettings','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','batchAdd','batchCancel','batchDelete','beforeBatchAdd','beforeBatchDelete','beforeBatchSave','beforeCopy','beforeDataBound','beforeExcelExport','beforePaste','beforePdfExport','beforePrint','beforeWebMcpToolExecute','beginEdit','cellDeselected','cellDeselecting','cellEdit','cellSave','cellSaved','cellSelected','cellSelecting','checkboxChange','collapsed','collapsing','columnDrag','columnDragStart','columnDrop','columnMenuClick','columnMenuOpen','contextMenuClick','contextMenuOpen','created','dataBound','dataSourceChanged','dataStateChange','detailDataBound','excelAggregateQueryCellInfo','excelExportComplete','excelHeaderQueryCellInfo','excelQueryCellInfo','expanded','expanding','headerCellInfo','load','pdfAggregateQueryCellInfo','pdfExportComplete','pdfHeaderQueryCellInfo','pdfQueryCellInfo','printComplete','queryCellInfo','recordDoubleClick','resizeStart','resizeStop','resizing','rowDataBound','rowDeselected','rowDeselecting','rowDrag','rowDragStart','rowDragStartHelper','rowDrop','rowSelected','rowSelecting','toolbarClick','dataSourceChange'];
 export const twoWays: string[] = ['dataSource'];
 
 /**
@@ -55,6 +55,7 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
 	declare beforePaste: any;
 	declare beforePdfExport: any;
 	declare beforePrint: any;
+	declare beforeWebMcpToolExecute: any;
 	declare beginEdit: any;
 	declare cellDeselected: any;
 	declare cellDeselecting: any;
@@ -243,6 +244,12 @@ export class TreeGridComponent extends TreeGrid implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('TreeGridDomVirtualization');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('TreeGridWebMcpTreegrid');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

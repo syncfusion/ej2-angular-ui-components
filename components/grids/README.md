@@ -13,7 +13,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-ui-components/angular
 <p align="center">
 Trusted by the world's leading companies
   <a href="https://www.syncfusion.com">
-    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Bootstrap logo">
+    <img src="https://ej2.syncfusion.com/home/images/trusted_companies.png" alt="Trusted by top brands">
   </a>
 </p>
 
@@ -59,7 +59,7 @@ ng add @syncfusion/ej2-angular-grids
 The above command does the below configuration to your Angular app.
  
  * Adds `@syncfusion/ej2-angular-grids` package and its peer dependencies to your `package.json` file.
- * Imports the `GridModule` in your application module `app.module.ts`.
+ * Standalone components (ng new default since Angular 17; no app.module.ts).
  * Registers the Syncfusion<sup>®</sup>  UI default theme (material) in the `angular.json` file.
 
 This makes it easy to add the Syncfusion<sup>®</sup> Angular Grids module to your project and start using it in your application.
@@ -122,7 +122,7 @@ Grid component is also offered in the following list of frameworks.
 * [Selection](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/selection): Select rows or cells either by using checkbox or by simply clicking them. Select more than one row or cell by holding Ctrl or Shift or Command, or simply dragging the pointer over the cells, or programmatically.
 * [Hierarchical binding](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/hierarchy): Allows you to display table data in a hierarchical structure, allowing you to visualize the relationships between parent and child records in a clear and organized way.
 * [Templates](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/column-template): Using templates, users can create custom UI. It provides various template options to create custom headers, custom cell contents, custom rows, detail rows, toolbars, and custom editors for edit action.
-* [Row drag and drop](https://ej2.syncfusion.com/vue/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/row-drag-and-drop.html): The Grid rows can be reordered while drag and drop the rows within the grid. Also allows to drop the dragged rows another Grid or custom component.
+* [Row drag and drop](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/drag-and-drop): The Grid rows can be reordered while drag and drop the rows within the grid. Also allows to drop the dragged rows another Grid or custom component.
 * Columns: Column definitions are used as the dataSource schema in the Grid. This plays a vital role in rendering column values in the required format.
   * [Reordering](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/column/reorder): Allows you to rearrange the columns in the grid by dragging and dropping them to a new position in the column header row.
   * [Column chooser](https://ej2.syncfusion.com/angular/demos/?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm#/material/grid/column/column-chooser): It provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
@@ -163,7 +163,7 @@ Check the changelog [here](https://github.com/syncfusion/ej2-angular-ui-componen
 
 > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's [EULA](https://www.syncfusion.com/eula/es/). To acquire a license for 140+ [Angular UI components](https://www.syncfusion.com/angular-components), you can [purchase](https://www.syncfusion.com/sales/products) or [start a free 30-day trial](https://www.syncfusion.com/account/manage-trials/start-trials).
 
-> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community [license](https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1M revenue, 5 or fewer developers, 10 or fewer employees, never greater than $3M outside capital.
 
 See [LICENSE FILE](https://github.com/syncfusion/ej2-angular-ui-components/blob/master/license?utm_source=npm&utm_medium=listing&utm_campaign=angular-grid-npm) for more info.
 

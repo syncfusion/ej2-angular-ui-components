@@ -2,6 +2,38 @@
 
 ## [Unreleased]
 
+## 35.1.46 (2026-11-11)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I881010` - Issue with "selection misalignment due to a thick top border when using merged cells with lesser row height" has been resolved.
+
+## 35.1.41 (2026-10-20)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I876660` - Issue with "previously hidden file menu items become visible after adding a cell comment and opening the comments review pane" has been resolved.
+
+- `#I869118` - Issue with "spreadsheet memory leak that occurs during repeated mount and destroy cycles in angular when the ribbon file menu is not properly destroyed" has been resolved.
+
+## 35.1.40 (2026-10-13)
+
+### Spreadsheet
+
+#### Features
+
+- Introduced client-side import and export support in Spreadsheet, enabling to open and save `.xlsx` files directly on the client side without requiring server-side `openUrl` and `saveUrl` endpoints.
+
+- `#I665007`, `#I713111`, `#I743514`, `#I750600`, `#I781970`, `#I795523` - Introduced client-side import and export support in Spreadsheet, enabling to open and save `.xlsx` files directly on the client side without requiring server-side `openUrl` and `saveUrl` endpoints.
+
+#### Bug fixes
+
+- `#I871024` - Issue with "spreadsheet not automatically recalculating its layout when the parent container is resized while the height is set to 100%" has been resolved.
+
 ## 32.1.20 (2025-12-23)
 
 ### Spreadsheet
@@ -1415,7 +1447,24 @@ The Spreadsheet is an user interactive component to organize and analyze data in
 - **Save:** Provides option to save spreadsheet data as excel file.
 - **RTL:** Provides right-to-left mode which aligns content in the spreadsheet component from right to left.
 - **Localization:** Provides inherent support to localize the UI.
-- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 31.2.16 (2025-12-02)
+- **Accessibility:** Provides with built-in accessibility support which helps to access all the spreadsheet component features using the keyboard, screen readers, or other assistive technology devices.## 35.1.43 (2026-11-03)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I882173` - Issue with "the horizontal scroll position changing unexpectedly while navigating within frozen columns using keyboard arrow keys" has been resolved.
+- `#I878033` - Issue with "exception thrown during direct JSON-to-Excel conversion on the server side when the workbook JSON contains notes" has been resolved.
+
+## 35.1.39 (2026-10-07)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I870961` - Issue with "the spreadsheet insert function dialog truncating long function descriptions in material and other affected themes" has been resolved.
+
+## 31.2.16 (2025-12-02)
 
 ### Spreadsheet
 
