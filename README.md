@@ -1,8 +1,8 @@
-# Syncfusion Angular UI Components Library (Essential JS 2)
- Syncfusion Angular UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 80+ UI components that every applications will ever need.
+# Syncfusion UI Component Suite
+ Syncfusion Angular UI Components library has been built from the ground up to be lightweight, responsive, modular and touch friendly. It offers 140+ Angular UI components that every applications will ever need.
  > This is a commercial product and requires a paid license for possession or use. Syncfusion’s licensed software, including this component, is subject to the terms and conditions of Syncfusion's EULA (https://www.syncfusion.com/eula/es/). To acquire a license, you can purchase one at https://www.syncfusion.com/sales/products or start a free 30-day trial here (https://www.syncfusion.com/account/manage-trials/start-trials).
 > 
-> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1 million USD in annual gross revenue and five or fewer developers.
+> A free community license (https://www.syncfusion.com/products/communitylicense) is also available for companies and individuals whose organizations have less than $1M revenue, 5 or fewer devs, 10 or fewer employees, never greater than $3M outside capital.
  ## Resources
  * [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [View Online Demos](https://ej2.syncfusion.com/angular/demos?utm_source=npm&utm_campaign=ej2-angular-ui-components)
@@ -1381,7 +1381,7 @@
 </table>
  
  ## Supported Frameworks
- The Syncfusion Essential JS 2 is also offered in following list of frameworks.
+ The Syncfusion UI Component Suite is also offered in following list of frameworks.
  * [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [React](https://www.syncfusion.com/react-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
 * [Vue.js](https://www.syncfusion.com/vue-ui-components?utm_source=npm&utm_campaign=ej2-angular-ui-components)
@@ -1403,4 +1403,4 @@
  ## Changelog
  Check the changelog [here](https://ej2.syncfusion.com/angular/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-angular-ui-components)
      © Copyright 2026 Syncfusion<sup>®</sup> Inc. All Rights Reserved. The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> license and copyright applies to this distribution.
-    The Syncfusion Essential Studio license and copyright applies to this distribution.
+    The Syncfusion UI Component Suite license and copyright applies to this distribution.
