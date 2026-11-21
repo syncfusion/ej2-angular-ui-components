@@ -21,7 +21,7 @@
 		"@angular/forms": "22.0.0",
 		"@angular/platform-browser": "22.0.0",
 		"@angular/platform-browser-dynamic": "22.0.0",
-		"@angular/router": "22.0.0",
+		"@angular/router": "22.2.1",
 		"@types/jasmine": "~5.1.0",
 		"@types/node": "^18.19.0",
 		"glob": "^8.0.3",
