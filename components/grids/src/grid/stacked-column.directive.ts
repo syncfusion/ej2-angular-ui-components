@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-let input: string[] = ['allowEditing', 'allowFiltering', 'allowFormula', 'allowGrouping', 'allowReordering', 'allowResizing', 'allowSearching', 'allowSorting', 'autoFit', 'clipMode', 'columns', 'commands', 'customAttributes', 'dataSource', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableColumnSpan', 'enableGroupByFormat', 'enableRowSpan', 'field', 'filter', 'filterBarTemplate', 'filterComparer', 'filterTemplate', 'foreignKeyField', 'foreignKeyValue', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'headerValueAccessor', 'hideAtMedia', 'index', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'templateOptions', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
+let input: string[] = ['allowEditing', 'allowFiltering', 'allowFormula', 'allowGrouping', 'allowReordering', 'allowResizing', 'allowSearching', 'allowSorting', 'autoFit', 'clipMode', 'columns', 'commands', 'customAttributes', 'dataSource', 'defaultValue', 'disableHtmlEncode', 'displayAsCheckBox', 'edit', 'editTemplate', 'editType', 'enableColumnSpan', 'enableGroupByFormat', 'enableHighlightOnDataChange', 'enableRowSpan', 'field', 'filter', 'filterBarTemplate', 'filterComparer', 'filterTemplate', 'foreignKeyField', 'foreignKeyValue', 'format', 'formatter', 'freeze', 'headerTemplate', 'headerText', 'headerTextAlign', 'headerValueAccessor', 'hideAtMedia', 'index', 'isFrozen', 'isIdentity', 'isPrimaryKey', 'lockColumn', 'maxWidth', 'minWidth', 'showColumnMenu', 'showInColumnChooser', 'sortComparer', 'template', 'templateOptions', 'textAlign', 'type', 'uid', 'validationRules', 'valueAccessor', 'visible', 'width'];
 let outputs: string[] = [];
 /**
  * `e-stacked-column` directive represent the stacked column of the Angular Grid.
@@ -224,6 +224,13 @@ export class StackedColumnDirective extends ComplexBase<StackedColumnDirective> 
      * @default true
      */
     public declare enableGroupByFormat: any;
+    /** 
+     * If `enableHighlightOnDataChange` is set to false, then it disables highlighting for a particular column, 
+     * overriding the grid-level setting. Manual highlighting via flashCells() is not affected. 
+     * By default, column uses the grid-level setting.
+     * @default null
+     */
+    public declare enableHighlightOnDataChange: any;
     /** 
      * Allows grid to perform row spanning on the specified column.
      * @default true

@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 35.2.13 (2026-11-24)
+
+### GanttChart
+
+#### Feature
+
+**Introduced Dom Virtualization for Improved Scrolling Performance**
+
+Dom Virtualization improves Gantt Chart scrolling performance when working with large task collections by rendering only the rows visible within the viewport and dynamically updating the Dom during scrolling. This reduces the number of rendered elements, resulting in smoother scrolling, lower memory consumption, and improved responsiveness when navigating large datasets.
+
+To use this feature, inject the `DomVirtualization` module using `Gantt.Inject(DomVirtualization)` and enable it through the `enableDomVirtualization` property. You can also configure the number of buffered rows rendered outside the viewport through `domVirtualizationSettings.rowBuffer` (default: `20`).
+
+#### Bug fixes
+
+- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
+
 ## 35.2.12 (2026-11-18)
 
 ### GanttChart
@@ -13,10 +29,6 @@
 #### Bug fix
 
 - `I888876` - Resolved a null reference exception that occurred during parent taskbar editing when the parent task was linked to an unscheduled task in the Gantt Chart.
-
-#### Bug fixes
-
-- `F159354` - Issue in locale text of predecessor tooltip has been fixed.
 
 ## 35.1.43 (2026-11-03)
 

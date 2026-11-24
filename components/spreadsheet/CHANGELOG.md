@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## 35.2.13 (2026-11-24)
+
+### Spreadsheet
+
+#### Bug fixes
+
+- `#I891180` - Issue with "author of notes is not preserved when saving the workbook client-side" has been resolved.
+
 ## 35.1.46 (2026-11-11)
 
 ### Spreadsheet
