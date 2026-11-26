@@ -7,8 +7,8 @@ import { ResourcesDirective } from './resources.directive';
 import { HeaderRowsDirective } from './headerrows.directive';
 import { ToolbarItemsDirective } from './toolbaritems.directive';
 
-export const inputs: string[] = ['agendaDaysCount','allowClipboard','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowOverlap','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentTimeIndicatorSettings','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','enableWebMcp','endHour','eventDragArea','eventSettings','firstDayOfWeek','firstMonthOfYear','group','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','overscanCount','prerenderDialogs','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','selectedResource','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','timeFormat','timeScale','timezone','timezoneDataSource','toolbarItems','views','webMcpSettings','weekRule','width','workDays','workHours'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforePaste','beforePrint','beforeWebMcpToolExecute','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventDoubleClick','eventRendered','excelExport','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','resizeStart','resizeStop','resizing','select','tooltipOpen','virtualScrollStart','virtualScrollStop','currentViewChange','selectedDateChange'];
+export const inputs: string[] = ['agendaDaysCount','allowClipboard','allowDragAndDrop','allowInline','allowKeyboardInteraction','allowMultiCellSelection','allowMultiDrag','allowMultiRowSelection','allowOverlap','allowResizing','allowSwiping','calendarMode','cellHeaderTemplate','cellTemplate','cssClass','currentTimeIndicatorSettings','currentView','dateFormat','dateHeaderTemplate','dateRangeTemplate','dayHeaderTemplate','editorFooterTemplate','editorHeaderTemplate','editorTemplate','enableAdaptiveUI','enableAllDayScroll','enableHtmlSanitizer','enablePersistence','enableRecurrenceValidation','enableRtl','enableWebMcp','endHour','eventDragArea','eventSettings','eventSpacing','firstDayOfWeek','firstMonthOfYear','group','groupSummary','headerIndentTemplate','headerRows','height','hideEmptyAgendaDays','locale','maxDate','minDate','monthHeaderTemplate','monthsCount','overscanCount','prerenderDialogs','quickInfoOnSelectionEnd','quickInfoTemplates','readonly','resourceHeaderTemplate','resources','rowAutoHeight','selectedDate','selectedResource','showHeaderBar','showQuickInfo','showTimeIndicator','showWeekNumber','showWeekend','startHour','summaryColumn','summaryRow','timeFormat','timeScale','timezone','timezoneDataSource','toolbarItems','views','webMcpSettings','weekRule','width','workDays','workHours','zoomLevel','zoomLevels'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','beforePaste','beforePrint','beforeWebMcpToolExecute','cellClick','cellDoubleClick','created','dataBinding','dataBound','destroyed','drag','dragStart','dragStop','eventClick','eventDoubleClick','eventRendered','excelExport','hover','moreEventsClick','navigating','popupClose','popupOpen','renderCell','renderSummaryCell','resizeStart','resizeStop','resizing','select','summaryCellClick','tooltipOpen','virtualScrollStart','virtualScrollStop','currentViewChange','selectedDateChange'];
 export const twoWays: string[] = ['currentView', 'selectedDate'];
 
 /**
@@ -79,10 +79,12 @@ export class ScheduleComponent extends Schedule implements IComponentBase {
 	declare popupClose: any;
 	declare popupOpen: any;
 	declare renderCell: any;
+	declare renderSummaryCell: any;
 	declare resizeStart: any;
 	declare resizeStop: any;
 	declare resizing: any;
 	declare select: any;
+	declare summaryCellClick: any;
 	declare tooltipOpen: any;
 	declare virtualScrollStart: any;
 	declare virtualScrollStop: any;

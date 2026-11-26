@@ -9,7 +9,7 @@ import { HolidayDirective, HolidaysDirective } from './holidays.directive';
 import { EventMarkerDirective, EventMarkersDirective } from './eventmarkers.directive';
 import { GanttComponent } from './gantt.component';
 import { GanttModule } from './gantt.module';
-import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport, RowDD, ColumnMenu, PdfExport, VirtualScroll, DomVirtualization, CriticalPath, UndoRedo, Freeze, WebMcpGantt, NotesEditor} from '@syncfusion/ej2-gantt'
+import {Filter, Selection, Sort, Reorder, Resize, Edit, DayMarkers, Toolbar, ContextMenu, ExcelExport, RowDD, ColumnMenu, PdfExport, VirtualScroll, DomVirtualization, CriticalPath, ProgressLine, UndoRedo, Freeze, WebMcpGantt, SCurve, NotesEditor} from '@syncfusion/ej2-gantt'
 
 
 export const FilterService: ValueProvider = { provide: 'GanttFilter', useValue: Filter};
@@ -28,9 +28,11 @@ export const PdfExportService: ValueProvider = { provide: 'GanttPdfExport', useV
 export const VirtualScrollService: ValueProvider = { provide: 'GanttVirtualScroll', useValue: VirtualScroll};
 export const DomVirtualizationService: ValueProvider = { provide: 'GanttDomVirtualization', useValue: DomVirtualization};
 export const CriticalPathService: ValueProvider = { provide: 'GanttCriticalPath', useValue: CriticalPath};
+export const ProgressLineService: ValueProvider = { provide: 'GanttProgressLine', useValue: ProgressLine};
 export const UndoRedoService: ValueProvider = { provide: 'GanttUndoRedo', useValue: UndoRedo};
 export const FreezeService: ValueProvider = { provide: 'GanttFreeze', useValue: Freeze};
 export const WebMcpGanttService: ValueProvider = { provide: 'GanttWebMcpGantt', useValue: WebMcpGantt};
+export const SCurveService: ValueProvider = { provide: 'GanttSCurve', useValue: SCurve};
 export const NotesEditorService: ValueProvider = { provide: 'GanttNotesEditor', useValue: NotesEditor};
 
 /**
@@ -58,9 +60,11 @@ export const NotesEditorService: ValueProvider = { provide: 'GanttNotesEditor', 
         VirtualScrollService,
         DomVirtualizationService,
         CriticalPathService,
+        ProgressLineService,
         UndoRedoService,
         FreezeService,
         WebMcpGanttService,
+        SCurveService,
         NotesEditorService
     ]
 })

@@ -1,0 +1,27 @@
+{
+	"name": "@syncfusion/ej2-angular-workflow-designer",
+	"version": "35.1.37",
+	"description": "Syncfusion EJ2 Workflow Designer component for creating, connecting, configuring and persisting visual workflows. for Angular",
+	"author": "Syncfusion Inc.",
+	"license": "SEE LICENSE IN license",
+	"schematics": "./schematics/collection.json",
+	"dependencies": {
+		"@syncfusion/ej2-base": "*",
+		"@syncfusion/ej2-angular-base": "*",
+		"@syncfusion/ej2-workflow-designer": "*"
+	},
+	"keywords": [
+		"angular",
+		"ng",
+		"ng-workflow-designer",
+		"ej2-ng-workflow-designer"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/syncfusion/ej2-angular-ui-components.git"
+	},
+	"scripts": {
+		"build": "gulp build"
+	},
+	"sideEffects": true
+}

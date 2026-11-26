@@ -2,7 +2,7 @@ import { NgModule, ValueProvider } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PivotViewComponent } from './pivotview.component';
 import { PivotViewModule } from './pivotview.module';
-import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough, Toolbar, PivotChart, PDFExport, ExcelExport, NumberFormatting, Grouping, Pager, WebMcpPivotView, FlatLayout} from '@syncfusion/ej2-pivotview'
+import {GroupingBar, FieldList, CalculatedField, ConditionalFormatting, VirtualScroll, DrillThrough, Toolbar, PivotChart, PDFExport, ExcelExport, NumberFormatting, Grouping, Pager, WebMcpPivotView, HtmlExport, FlatLayout} from '@syncfusion/ej2-pivotview'
 
 
 export const GroupingBarService: ValueProvider = { provide: 'PivotViewGroupingBar', useValue: GroupingBar};
@@ -19,6 +19,7 @@ export const NumberFormattingService: ValueProvider = { provide: 'PivotViewNumbe
 export const GroupingService: ValueProvider = { provide: 'PivotViewGrouping', useValue: Grouping};
 export const PagerService: ValueProvider = { provide: 'PivotViewPager', useValue: Pager};
 export const WebMcpPivotViewService: ValueProvider = { provide: 'PivotViewWebMcpPivotView', useValue: WebMcpPivotView};
+export const HtmlExportService: ValueProvider = { provide: 'PivotViewHtmlExport', useValue: HtmlExport};
 export const FlatLayoutService: ValueProvider = { provide: 'PivotViewFlatLayout', useValue: FlatLayout};
 
 /**
@@ -44,6 +45,7 @@ export const FlatLayoutService: ValueProvider = { provide: 'PivotViewFlatLayout'
         GroupingService,
         PagerService,
         WebMcpPivotViewService,
+        HtmlExportService,
         FlatLayoutService
     ]
 })

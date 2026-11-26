@@ -4,8 +4,8 @@ import { PivotView } from '@syncfusion/ej2-pivotview';
 import { Template } from '@syncfusion/ej2-angular-base';
 
 
-export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowConditionalFormatting','allowDataCompression','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowGrouping','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','chartTypes','cssClass','dataSourceSettings','displayOption','editSettings','enableFieldSearching','enableHtmlSanitizer','enablePaging','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','enableWebMcp','exportAllPages','flatSettings','gridSettings','groupingBarSettings','height','hyperlinkSettings','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','maxRowsInDrillThrough','pageSettings','pagerSettings','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','spinnerTemplate','toolbar','toolbarTemplate','tooltipTemplate','virtualScrollSettings','webMcpSettings','width'];
-export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','afterServiceInvoke','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforeServiceInvoke','beforeWebMcpToolExecute','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','exportComplete','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
+export const inputs: string[] = ['aggregateTypes','allowCalculatedField','allowConditionalFormatting','allowDataCompression','allowDeferLayoutUpdate','allowDrillThrough','allowExcelExport','allowGrouping','allowHtmlExport','allowImageExport','allowNumberFormatting','allowPdfExport','cellTemplate','chartSettings','chartTypes','cssClass','dataSourceSettings','displayOption','editSettings','enableFieldSearching','enableHtmlSanitizer','enablePaging','enablePersistence','enableRtl','enableValueSorting','enableVirtualization','enableWebMcp','exportAllPages','flatSettings','gridSettings','groupingBarSettings','height','hyperlinkSettings','loadOnDemandInMemberEditor','locale','maxNodeLimitInMemberEditor','maxRowsInDrillThrough','pageSettings','pagerSettings','pivotValues','showFieldList','showGroupingBar','showToolbar','showTooltip','showValuesButton','spinnerTemplate','toolbar','toolbarTemplate','tooltipTemplate','virtualScrollSettings','webMcpSettings','width'];
+export const outputs: string[] = ['actionBegin','actionComplete','actionFailure','afterServiceInvoke','aggregateCellInfo','aggregateMenuOpen','beforeExport','beforePrint','beforeServiceInvoke','beforeWebMcpToolExecute','beginDrillThrough','calculatedFieldCreate','cellClick','cellSelected','cellSelecting','chartSeriesCreated','conditionalFormatting','created','dataBound','destroyed','drill','drillThrough','editCompleted','enginePopulated','enginePopulating','exportComplete','fetchReport','fieldDragStart','fieldDrop','fieldListRefreshed','fieldRemove','hyperlinkCellClick','load','loadReport','memberEditorOpen','memberFiltering','newReport','numberFormatting','onFieldDropped','onHeadersSort','onPdfCellRender','printComplete','removeReport','renameReport','saveReport','toolbarClick','toolbarRender'];
 export const twoWays: string[] = [];
 
 /**
@@ -37,6 +37,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
 	declare aggregateCellInfo: any;
 	declare aggregateMenuOpen: any;
 	declare beforeExport: any;
+	declare beforePrint: any;
 	declare beforeServiceInvoke: any;
 	declare beforeWebMcpToolExecute: any;
 	declare beginDrillThrough: any;
@@ -70,6 +71,7 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
 	declare onFieldDropped: any;
 	declare onHeadersSort: any;
 	declare onPdfCellRender: any;
+	declare printComplete: any;
 	declare removeReport: any;
 	declare renameReport: any;
 	declare saveReport: any;
@@ -162,6 +164,12 @@ export class PivotViewComponent extends PivotView implements IComponentBase {
             } catch { }
         try {
                 let mod = this.injector.get('PivotViewWebMcpPivotView');
+                if(this.injectedModules.indexOf(mod) === -1) {
+                    this.injectedModules.push(mod)
+                }
+            } catch { }
+        try {
+                let mod = this.injector.get('PivotViewHtmlExport');
                 if(this.injectedModules.indexOf(mod) === -1) {
                     this.injectedModules.push(mod)
                 }

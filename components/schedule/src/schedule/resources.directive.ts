@@ -3,7 +3,7 @@ import { ComplexBase, ArrayBase, setValue } from '@syncfusion/ej2-angular-base';
 
 
 
-let input: string[] = ['allowMultiple', 'colorField', 'cssClassField', 'dataSource', 'endHourField', 'expandedField', 'field', 'groupIDField', 'idField', 'name', 'query', 'startHourField', 'textField', 'title', 'workDaysField'];
+let input: string[] = ['allowMultiple', 'colorField', 'cssClassField', 'dataSource', 'endHourField', 'expandedField', 'field', 'fixedField', 'groupIDField', 'idField', 'name', 'query', 'startHourField', 'textField', 'title', 'workDaysField'];
 let outputs: string[] = [];
 /**
  * `e-resources` directive represent a resources of the Angular Schedule. 
@@ -72,6 +72,13 @@ export class ResourceDirective extends ComplexBase<ResourceDirective> {
      * @default null
      */
     public declare field: any;
+    /** 
+     * It maps the `fixed` field from the dataSource, which is used to specify whether each resource row in 
+     * timeline views needs to be placed in the fixed region at the top of the content area by default. 
+     * The Scheduler only reads this field and never writes the fixed state back to the data.
+     * @default 'Fixed'
+     */
+    public declare fixedField: any;
     /** 
      * It maps the `groupID` field from the dataSource, which is used to specify under which parent resource, 
      *  the child should be grouped.
